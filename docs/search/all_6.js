@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['graph_0',['graph',['../index.html#autotoc_md10',1,'Compute Graph'],['../classmuda_1_1_graph.html',1,'muda::Graph']]],
+  ['graph_0',['graph',['../index.html#autotoc_md13',1,'Compute Graph'],['../classmuda_1_1_graph.html',1,'muda::Graph']]],
   ['graphexec_1',['GraphExec',['../classmuda_1_1_graph_exec.html',1,'muda']]],
   ['graphfireandforget_2',['GraphFireAndForget',['../classmuda_1_1_stream_1_1_graph_fire_and_forget.html',1,'muda::Stream']]],
   ['graphlaunch_3',['GraphLaunch',['../classmuda_1_1_graph_launch.html',1,'muda']]],

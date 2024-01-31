@@ -45,6 +45,6 @@ var searchData=
   ['read_5fwrite_5fviewer_3c_20graphviewer_20_3e_42',['read_write_viewer&lt; GraphViewer &gt;',['../structmuda_1_1read__write__viewer_3_01_graph_viewer_01_4.html',1,'muda']]],
   ['read_5fwrite_5fviewer_3c_20lbvh_3a_3acbvhviewer_3c_20real_2c_20object_20_3e_20_3e_43',['read_write_viewer&lt; lbvh::CBVHViewer&lt; Real, Object &gt; &gt;',['../structmuda_1_1read__write__viewer_3_01lbvh_1_1_c_b_v_h_viewer_3_01_real_00_01_object_01_4_01_4.html',1,'muda']]],
   ['read_5fwrite_5fviewer_3c_20tripletmatrixview_3c_20ty_2c_20n_20_3e_20_3e_44',['read_write_viewer&lt; TripletMatrixView&lt; Ty, N &gt; &gt;',['../structmuda_1_1read__write__viewer_3_01_triplet_matrix_view_3_01_ty_00_01_n_01_4_01_4.html',1,'muda']]],
-  ['related_20work_45',['Related Work',['../index.html#autotoc_md22',1,'']]],
+  ['related_20work_45',['Related Work',['../index.html#autotoc_md24',1,'']]],
   ['runtime_5ferror_46',['runtime_error',['../classmuda_1_1runtime__error.html',1,'muda']]]
 ];

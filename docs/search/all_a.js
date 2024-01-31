@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['launch_0',['launch',['../classmuda_1_1_launch.html',1,'muda::Launch'],['../index.html#autotoc_md2',1,'Launch']]],
+  ['launch_0',['launch',['../classmuda_1_1_launch.html',1,'muda::Launch'],['../index.html#autotoc_md5',1,'Launch']]],
   ['launch_2eh_1',['launch.h',['../launch_2launch_8h.html',1,'']]],
   ['launchbase_2',['LaunchBase',['../classmuda_1_1_launch_base.html',1,'muda']]],
   ['launchbase_3c_20bufferlaunch_20_3e_3',['LaunchBase&lt; BufferLaunch &gt;',['../classmuda_1_1_launch_base.html',1,'muda']]],
@@ -27,8 +27,8 @@ var searchData=
   ['launchcallable_24',['LaunchCallable',['../structmuda_1_1details_1_1_launch_callable.html',1,'muda::details']]],
   ['launchcore_25',['LaunchCore',['../classmuda_1_1_launch_core.html',1,'muda']]],
   ['launchinfocache_26',['LaunchInfoCache',['../classmuda_1_1details_1_1_launch_info_cache.html',1,'muda::details']]],
-  ['layout_27',['[Extension] Field Layout',['../index.html#autotoc_md9',1,'']]],
-  ['linear_20system_20support_28',['[Extension] Linear System Support',['../index.html#autotoc_md8',1,'']]],
+  ['layout_27',['[Extension] Field Layout',['../index.html#autotoc_md12',1,'']]],
+  ['linear_20system_20support_28',['[Extension] Linear System Support',['../index.html#autotoc_md11',1,'']]],
   ['linearsystemalgorithm_29',['LinearSystemAlgorithm',['../classmuda_1_1_linear_system_algorithm.html',1,'muda']]],
   ['linearsystemcontext_30',['LinearSystemContext',['../classmuda_1_1_linear_system_context.html',1,'muda']]],
   ['linearsystemcontextcreateinfo_31',['LinearSystemContextCreateInfo',['../classmuda_1_1_linear_system_context_create_info.html',1,'muda']]],
@@ -37,7 +37,7 @@ var searchData=
   ['linearsystemsolvetolerance_34',['LinearSystemSolveTolerance',['../classmuda_1_1_linear_system_solve_tolerance.html',1,'muda']]],
   ['localvarid_35',['LocalVarId',['../classmuda_1_1details_1_1_local_var_id.html',1,'muda::details']]],
   ['localvarinfo_36',['LocalVarInfo',['../classmuda_1_1details_1_1_local_var_info.html',1,'muda::details']]],
-  ['logger_37',['logger',['../classmuda_1_1_logger.html',1,'muda::Logger'],['../index.html#autotoc_md3',1,'Logger']]],
+  ['logger_37',['logger',['../classmuda_1_1_logger.html',1,'muda::Logger'],['../index.html#autotoc_md6',1,'Logger']]],
   ['loggerdatacontainer_38',['LoggerDataContainer',['../classmuda_1_1_logger_data_container.html',1,'muda']]],
   ['loggermetadata_39',['loggermetadata',['../classmuda_1_1details_1_1_logger_meta_data.html',1,'muda::details::LoggerMetaData'],['../classmuda_1_1_logger_meta_data.html',1,'muda::LoggerMetaData']]],
   ['loggeroffset_40',['LoggerOffset',['../classmuda_1_1details_1_1_logger_offset.html',1,'muda::details']]],
