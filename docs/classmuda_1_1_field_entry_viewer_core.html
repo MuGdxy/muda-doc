@@ -90,6 +90,7 @@ $(document).ready(function(){initNavTree('classmuda_1_1_field_entry_viewer_core.
 
 <div class="header">
   <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pro-types">Protected Types</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
@@ -120,6 +121,21 @@ Inheritance diagram for muda::FieldEntryViewerCore&lt; IsConst, T, Layout, M, N 
   </map>
 </div></div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a8cd2add894a548388e9217bf3c8759a9" id="r_a8cd2add894a548388e9217bf3c8759a9"><td class="memItemLeft" align="right" valign="top"><a id="a8cd2add894a548388e9217bf3c8759a9" name="a8cd2add894a548388e9217bf3c8759a9"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>MatStride</b> = details::field::MatStride</td></tr>
+<tr class="separator:a8cd2add894a548388e9217bf3c8759a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9e1c73ccfa697f2c7b5eb13562417ed" id="r_ae9e1c73ccfa697f2c7b5eb13562417ed"><td class="memItemLeft" align="right" valign="top"><a id="ae9e1c73ccfa697f2c7b5eb13562417ed" name="ae9e1c73ccfa697f2c7b5eb13562417ed"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>ConstMatMap</b> = Eigen::Map&lt; const Eigen::Matrix&lt; T, M, N &gt;, 0, MatStride &gt;</td></tr>
+<tr class="separator:ae9e1c73ccfa697f2c7b5eb13562417ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51a08a9537723c1ae5ec8207e11b82b2" id="r_a51a08a9537723c1ae5ec8207e11b82b2"><td class="memItemLeft" align="right" valign="top"><a id="a51a08a9537723c1ae5ec8207e11b82b2" name="a51a08a9537723c1ae5ec8207e11b82b2"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>NonConstMatMap</b> = Eigen::Map&lt; Eigen::Matrix&lt; T, M, N &gt;, 0, MatStride &gt;</td></tr>
+<tr class="separator:a51a08a9537723c1ae5ec8207e11b82b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73cb269461612a3a8fd275dc88e80a73" id="r_a73cb269461612a3a8fd275dc88e80a73"><td class="memItemLeft" align="right" valign="top"><a id="a73cb269461612a3a8fd275dc88e80a73" name="a73cb269461612a3a8fd275dc88e80a73"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>ThisMatMap</b> = std::conditional_t&lt; IsConst, ConstMatMap, NonConstMatMap &gt;</td></tr>
+<tr class="separator:a73cb269461612a3a8fd275dc88e80a73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a6213bf5ecb7f54a9253d0b3f38dadf7c" id="r_a6213bf5ecb7f54a9253d0b3f38dadf7c"><td class="memItemLeft" align="right" valign="top"><a id="a6213bf5ecb7f54a9253d0b3f38dadf7c" name="a6213bf5ecb7f54a9253d0b3f38dadf7c"></a>
@@ -171,18 +187,6 @@ Protected Types</h2></td></tr>
 template&lt;typename T &gt; </td></tr>
 <tr class="memitem:ace592fd6a85be4c0ae76d7756b76bccd"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><b>auto_const_t</b> = Base::template auto_const_t&lt; T &gt;</td></tr>
 <tr class="separator:ace592fd6a85be4c0ae76d7756b76bccd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa3b28881f8239fdb8ea7ace3391a75e0" id="r_aa3b28881f8239fdb8ea7ace3391a75e0"><td class="memItemLeft" align="right" valign="top"><a id="aa3b28881f8239fdb8ea7ace3391a75e0" name="aa3b28881f8239fdb8ea7ace3391a75e0"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>MatStride</b> = Eigen::Stride&lt; Eigen::Dynamic, Eigen::Dynamic &gt;</td></tr>
-<tr class="separator:aa3b28881f8239fdb8ea7ace3391a75e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae9e1c73ccfa697f2c7b5eb13562417ed" id="r_ae9e1c73ccfa697f2c7b5eb13562417ed"><td class="memItemLeft" align="right" valign="top"><a id="ae9e1c73ccfa697f2c7b5eb13562417ed" name="ae9e1c73ccfa697f2c7b5eb13562417ed"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>ConstMatMap</b> = Eigen::Map&lt; const Eigen::Matrix&lt; T, M, N &gt;, 0, MatStride &gt;</td></tr>
-<tr class="separator:ae9e1c73ccfa697f2c7b5eb13562417ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a51a08a9537723c1ae5ec8207e11b82b2" id="r_a51a08a9537723c1ae5ec8207e11b82b2"><td class="memItemLeft" align="right" valign="top"><a id="a51a08a9537723c1ae5ec8207e11b82b2" name="a51a08a9537723c1ae5ec8207e11b82b2"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>NonConstMatMap</b> = Eigen::Map&lt; Eigen::Matrix&lt; T, M, N &gt;, 0, MatStride &gt;</td></tr>
-<tr class="separator:a51a08a9537723c1ae5ec8207e11b82b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a73cb269461612a3a8fd275dc88e80a73" id="r_a73cb269461612a3a8fd275dc88e80a73"><td class="memItemLeft" align="right" valign="top"><a id="a73cb269461612a3a8fd275dc88e80a73" name="a73cb269461612a3a8fd275dc88e80a73"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>ThisMatMap</b> = std::conditional_t&lt; IsConst, ConstMatMap, NonConstMatMap &gt;</td></tr>
-<tr class="separator:a73cb269461612a3a8fd275dc88e80a73"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_types_classmuda_1_1_viewer_base"><td colspan="2" onclick="javascript:toggleInherit('pro_types_classmuda_1_1_viewer_base')"><img src="closed.png" alt="-"/>&#160;Protected Types inherited from <a class="el" href="classmuda_1_1_viewer_base.html">muda::ViewerBase&lt; IsConst &gt;</a></td></tr>
 <tr class="memitem:a564fb484ff4eece77e7ce62f42b5e7c4 inherit pro_types_classmuda_1_1_viewer_base" id="r_a564fb484ff4eece77e7ce62f42b5e7c4"><td class="memItemLeft" align="right" valign="top">
 using&#160;</td><td class="memItemRight" valign="bottom"><b>auto_const_t</b> = std::conditional_t&lt; IsConst, const T, T &gt;</td></tr>

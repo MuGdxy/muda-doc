@@ -21,5 +21,6 @@ var searchData=
   ['build_18',['build',['../classmuda_1_1_field_builder.html#a47fa5424773f0f69cab24d3323438008',1,'muda::FieldBuilder::build()'],['../index.html#autotoc_md16',1,'Build']]],
   ['builder_19',['builder',['../classmuda_1_1_sub_field.html#a234eb6c11a2c857e0d59b41a55163723',1,'muda::SubField']]],
   ['bvh_20',['BVH',['../classmuda_1_1lbvh_1_1_b_v_h.html',1,'muda::lbvh']]],
-  ['bvhviewerbase_21',['BVHViewerBase',['../classmuda_1_1lbvh_1_1details_1_1_b_v_h_viewer_base.html',1,'muda::lbvh::details']]]
+  ['bvhviewerbase_21',['BVHViewerBase',['../classmuda_1_1lbvh_1_1details_1_1_b_v_h_viewer_base.html',1,'muda::lbvh::details']]],
+  ['bytetempbuffer_22',['ByteTempBuffer',['../classmuda_1_1details_1_1_byte_temp_buffer.html',1,'muda::details']]]
 ];

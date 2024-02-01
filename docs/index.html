@@ -132,7 +132,7 @@ Introduction</h1>
 <h2><a class="anchor" id="autotoc_md1"></a>
 What is muda?</h2>
 <ul>
-<li>header-only library right out of the box</li>
+<li>Header-only library right out of the box</li>
 <li>Depends only on CUDA and standard libraries</li>
 <li>Improve readability, maintainability, security, and debugging efficiency of CUDA code.</li>
 <li>Reduce the difficulty of building CUDA Graphs and increase automation.</li>
@@ -216,7 +216,7 @@ Launch</h2>
 <div class="ttc" id="aclassmuda_1_1_kernel_html"><div class="ttname"><a href="classmuda_1_1_kernel.html">muda::Kernel</a></div><div class="ttdef"><b>Definition</b> kernel.h:11</div></div>
 <div class="ttc" id="aclassmuda_1_1_launch_html"><div class="ttname"><a href="classmuda_1_1_launch.html">muda::Launch</a></div><div class="ttdoc">A wrapper of raw cuda kernel launch in muda style, removing the &lt;&lt;&lt;&gt;&gt;&gt; usage, for better intellisense...</div><div class="ttdef"><b>Definition</b> launch.h:86</div></div>
 <div class="ttc" id="aclassmuda_1_1_parallel_for_html"><div class="ttname"><a href="classmuda_1_1_parallel_for.html">muda::ParallelFor</a></div><div class="ttdoc">a frequently used parallel for loop, DynamicBlockDim and GridStrideLoop strategy are provided,...</div><div class="ttdef"><b>Definition</b> parallel_for.h:116</div></div>
-<div class="ttc" id="aclassmuda_1_1_stream_html"><div class="ttname"><a href="classmuda_1_1_stream.html">muda::Stream</a></div><div class="ttdoc">RAII wrapper for cudaStream.</div><div class="ttdef"><b>Definition</b> stream.h:14</div></div>
+<div class="ttc" id="aclassmuda_1_1_stream_html"><div class="ttname"><a href="classmuda_1_1_stream.html">muda::Stream</a></div><div class="ttdoc">RAII wrapper for cudaStream.</div><div class="ttdef"><b>Definition</b> stream.h:18</div></div>
 </div><!-- fragment --><h2><a class="anchor" id="autotoc_md6"></a>
 Logger</h2>
 <p>A <code>std::cout</code> like output stream with overload formatting.</p>
@@ -279,10 +279,10 @@ Buffer</h2>
 <div class="line"> </div>
 <div class="line"><span class="comment">// safe and easy resize</span></div>
 <div class="line"><a class="code hl_class" href="classmuda_1_1_device_buffer2_d.html">DeviceBuffer2D&lt;int&gt;</a> buffer2d;</div>
-<div class="line">buffer.resize(<a class="code hl_class" href="classmuda_1_1_extent2_d.html">Extent2D</a>{5, 5}, 1);</div>
-<div class="line">buffer.resize(<a class="code hl_class" href="classmuda_1_1_extent2_d.html">Extent2D</a>{7, 2}, 2);</div>
-<div class="line">buffer.resize(<a class="code hl_class" href="classmuda_1_1_extent2_d.html">Extent2D</a>{2, 7}, 3);</div>
-<div class="line">buffer.resize(<a class="code hl_class" href="classmuda_1_1_extent2_d.html">Extent2D</a>{9, 9}, 4);</div>
+<div class="line">buffer2d.resize(<a class="code hl_class" href="classmuda_1_1_extent2_d.html">Extent2D</a>{5, 5}, 1);</div>
+<div class="line">buffer2d.resize(<a class="code hl_class" href="classmuda_1_1_extent2_d.html">Extent2D</a>{7, 2}, 2);</div>
+<div class="line">buffer2d.resize(<a class="code hl_class" href="classmuda_1_1_extent2_d.html">Extent2D</a>{2, 7}, 3);</div>
+<div class="line">buffer2d.resize(<a class="code hl_class" href="classmuda_1_1_extent2_d.html">Extent2D</a>{9, 9}, 4);</div>
 <div class="line"><span class="comment">// subview </span></div>
 <div class="line">buffer2d.view(<a class="code hl_class" href="classmuda_1_1_offset2_d.html">Offset2D</a>{1,1}, <a class="code hl_class" href="classmuda_1_1_extent2_d.html">Extent2D</a>{3,3});</div>
 <div class="line">buffer2d.copy_to(host);</div>
@@ -296,11 +296,11 @@ Buffer</h2>
 <div class="ttc" id="aclassmuda_1_1_extent2_d_html"><div class="ttname"><a href="classmuda_1_1_extent2_d.html">muda::Extent2D</a></div><div class="ttdef"><b>Definition</b> extent.h:10</div></div>
 <div class="ttc" id="aclassmuda_1_1_extent3_d_html"><div class="ttname"><a href="classmuda_1_1_extent3_d.html">muda::Extent3D</a></div><div class="ttdef"><b>Definition</b> extent.h:40</div></div>
 <div class="ttc" id="aclassmuda_1_1_offset2_d_html"><div class="ttname"><a href="classmuda_1_1_offset2_d.html">muda::Offset2D</a></div><div class="ttdef"><b>Definition</b> extent.h:72</div></div>
-</div><!-- fragment --><p>The old data will be safely kept if you resize a 2D or 3D buffer. If you don't want to keep the old data, use <code>.clear()</code> before your <code>.resize()</code>. An example of resizing a 2D buffer is shown below.</p>
+</div><!-- fragment --><p>The old data will be safely kept if you resize a 2D or 3D buffer. If you don't want to keep the old data, use <code>.clear()</code> before your <code>.resize()</code>. The result of the above chain of 2D buffer resizing is shown below.</p>
 <p><img src="img/buffer2d_resize.svg" alt="buffer2d_resize" style="pointer-events: none; zoom: 80%;" class="inline"/></p>
 <h2><a class="anchor" id="autotoc_md8"></a>
 Viewer In Kernel</h2>
-<p>MUDA <b>Viewers</b> provide safe inner-kernel memory access, which checks all input to make sure access does not go out of range and does not dereference a null pointer. If something goes wrong, they report the debug information as much as possible and trap the kernel to prevent further errors. Don't forget to fill the <code>kernel_name()</code> and <code>name()</code> out.</p>
+<p>MUDA <b>Viewers</b> provide safe inner-kernel memory access, which checks all input to ensure access does not go out of range and does not dereference a null pointer. If something goes wrong, they report the debug information as much as possible and trap the kernel to prevent further errors. Don't forget to fill the <code>kernel_name()</code> and <code>name()</code> out.</p>
 <div class="fragment"><div class="line"><a class="code hl_class" href="classmuda_1_1_device_var.html">DeviceVar&lt;int&gt;</a> single;</div>
 <div class="line"><a class="code hl_class" href="classmuda_1_1_device_buffer.html">DeviceBuffer&lt;int&gt;</a> array;</div>
 <div class="line"><a class="code hl_class" href="classmuda_1_1_device_buffer2_d.html">DeviceBuffer2D&lt;int&gt;</a> array2d;</div>
@@ -372,7 +372,7 @@ Asynchronous Operation</h2>
 <div class="line"><a class="code hl_class" href="classmuda_1_1_buffer_launch.html">BufferLaunch</a>(stream).copy(<a class="code hl_class" href="classmuda_1_1_buffer_view.html">BufferView</a>, ...).wait();</div>
 <div class="line"><a class="code hl_class" href="classmuda_1_1_buffer_launch.html">BufferLaunch</a>(stream).fill(<a class="code hl_class" href="classmuda_1_1_buffer_view.html">BufferView</a>,...).wait();</div>
 <div class="ttc" id="aclassmuda_1_1_buffer_launch_html"><div class="ttname"><a href="classmuda_1_1_buffer_launch.html">muda::BufferLaunch</a></div><div class="ttdef"><b>Definition</b> buffer_launch.h:37</div></div>
-<div class="ttc" id="aclassmuda_1_1_buffer_view_html"><div class="ttname"><a href="classmuda_1_1_buffer_view.html">muda::BufferView</a></div><div class="ttdef"><b>Definition</b> buffer_view.h:134</div></div>
+<div class="ttc" id="aclassmuda_1_1_buffer_view_html"><div class="ttname"><a href="classmuda_1_1_buffer_view.html">muda::BufferView</a></div><div class="ttdef"><b>Definition</b> buffer_view.h:145</div></div>
 <div class="ttc" id="aclassmuda_1_1_graph_launch_html"><div class="ttname"><a href="classmuda_1_1_graph_launch.html">muda::GraphLaunch</a></div><div class="ttdef"><b>Definition</b> graph_launch.h:8</div></div>
 <div class="ttc" id="aclassmuda_1_1_memory_html"><div class="ttname"><a href="classmuda_1_1_memory.html">muda::Memory</a></div><div class="ttdef"><b>Definition</b> memory.h:8</div></div>
 </div><!-- fragment --><p>Feel free to ignore <code>Memory</code> <code>BufferLaunch</code> <b>Launcher</b> when building your fast demo. Directly use the convenient synchronous APIs of <code>DeviceBuffer/BufferView</code> until you find it's the performance hotpot that will save you a lot of time.</p>
@@ -459,7 +459,7 @@ Asynchronous Operation</h2>
 </div><!-- fragment --><p>[TODO:] Later, we may involve <a href="https://en.wikipedia.org/wiki/Expression_templates">Expression Template</a> to strengthen the linear algebra calculation and use lazy evaluation to arrange as many element-wise/scattering operations as possible in a single kernel.</p>
 <h2><a class="anchor" id="autotoc_md12"></a>
 [Extension] Field Layout</h2>
-<p>MUDA now supports the <code>SoA/AoS/AoSoA</code> layouts. Users can switch between them seamlessly(with different builder parameters). The copy operation is in all directions, and the layout is well-supported.</p>
+<p>MUDA now supports the <code>SoA/AoS/AoSoA</code> layouts. Users can switch between them seamlessly(with different builder parameters). The copy operation in all directions and layouts is well-supported.</p>
 <p>Most of the time, <code>AoSoA</code> is the best layout for Vector and Matrix, with better <a href="https://nichijou.co/cuda5-coalesce/">memory coalescing</a> and more compact memory storage. With the help of <code>Eigen::Map&lt;&gt;</code>, the read/write of a Vector/Matrix is as trivial as accessing a struct-version Vector/Matrix.</p>
 <p>Here is a simple example of <code><a class="el" href="classmuda_1_1_field.html">muda::Field</a></code>.</p>
 <div class="fragment"><div class="line"><span class="preprocessor">#include &lt;muda/ext/field.h&gt;</span> <span class="comment">// all you need for muda::Field</span></div>

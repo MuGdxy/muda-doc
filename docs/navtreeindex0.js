@@ -38,6 +38,7 @@ var NAVTREEINDEX0 =
 "buffer__view_8inl_source.html":[2,0,0,0,0,0,1,3],
 "bvh_8h_source.html":[2,0,0,0,0,6,2,0,1],
 "bvh__viewer_8h_source.html":[2,0,0,0,0,6,2,0,2],
+"byte__temp__buffer_8h_source.html":[2,0,0,0,0,12,0],
 "check_8h_source.html":[2,0,0,0,0,1,0],
 "check__cublas_8h_source.html":[2,0,0,0,0,1,1],
 "check__cuda__errors_8h_source.html":[2,0,0,0,0,1,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX0 =
 "classmuda_1_1_sub_field_interface.html":[1,0,0,234],
 "classmuda_1_1_triplet_matrix_view_base.html":[1,0,0,236],
 "classmuda_1_1_triplet_matrix_view_base_3_01_is_const_00_01_ty_00_011_01_4.html":[1,0,0,237],
-"classmuda_1_1_triplet_matrix_viewer.html":[1,0,0,238],
-"classmuda_1_1_triplet_matrix_viewer_1_1_proxy.html":[1,0,0,238,0]
+"classmuda_1_1_triplet_matrix_viewer.html":[1,0,0,238]
 };

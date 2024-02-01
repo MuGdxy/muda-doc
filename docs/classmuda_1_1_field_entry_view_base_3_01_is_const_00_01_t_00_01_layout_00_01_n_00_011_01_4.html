@@ -121,6 +121,12 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>ThisView</b> = <a cl
 <tr class="memitem:a7d1cd4e2c842abfd27836ea634d8cb36" id="r_a7d1cd4e2c842abfd27836ea634d8cb36"><td class="memItemLeft" align="right" valign="top"><a id="a7d1cd4e2c842abfd27836ea634d8cb36" name="a7d1cd4e2c842abfd27836ea634d8cb36"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>ElementType</b> = Eigen::Vector&lt; T, N &gt;</td></tr>
 <tr class="separator:a7d1cd4e2c842abfd27836ea634d8cb36"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a245c1df713d95d4b20b63269c18fc03a" id="r_a245c1df713d95d4b20b63269c18fc03a"><td class="memItemLeft" align="right" valign="top"><a id="a245c1df713d95d4b20b63269c18fc03a" name="a245c1df713d95d4b20b63269c18fc03a"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>ConstVectorMap</b> = typename Base::ConstMatMap</td></tr>
+<tr class="separator:a245c1df713d95d4b20b63269c18fc03a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43475820bc0e4f64b1d310bec7c582e0" id="r_a43475820bc0e4f64b1d310bec7c582e0"><td class="memItemLeft" align="right" valign="top"><a id="a43475820bc0e4f64b1d310bec7c582e0" name="a43475820bc0e4f64b1d310bec7c582e0"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>ThisVectorMap</b> = typename Base::ThisMatMap</td></tr>
+<tr class="separator:a43475820bc0e4f64b1d310bec7c582e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_types_classmuda_1_1_field_entry_view_core"><td colspan="2" onclick="javascript:toggleInherit('pub_types_classmuda_1_1_field_entry_view_core')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="classmuda_1_1_field_entry_view_core.html">muda::FieldEntryViewCore&lt; IsConst, T, Layout, N, 1 &gt;</a></td></tr>
 <tr class="memitem:a18bb997efe8f400229cc944644f4ab58 inherit pub_types_classmuda_1_1_field_entry_view_core" id="r_a18bb997efe8f400229cc944644f4ab58"><td class="memItemLeft" align="right" valign="top">
 using&#160;</td><td class="memItemRight" valign="bottom"><b>auto_const_t</b> = typename Base::auto_const_t&lt; T &gt;</td></tr>
@@ -134,6 +140,18 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>NonConstViewer</b> =
 <tr class="memitem:a39d12454e2ba14907ced4e0942f5399b inherit pub_types_classmuda_1_1_field_entry_view_core" id="r_a39d12454e2ba14907ced4e0942f5399b"><td class="memItemLeft" align="right" valign="top">
 using&#160;</td><td class="memItemRight" valign="bottom"><b>ThisViewer</b> = std::conditional_t&lt; IsConst, <a class="el" href="classmuda_1_1_c_field_entry_viewer.html">ConstViewer</a>, <a class="el" href="classmuda_1_1_field_entry_viewer.html">NonConstViewer</a> &gt;</td></tr>
 <tr class="separator:a39d12454e2ba14907ced4e0942f5399b inherit pub_types_classmuda_1_1_field_entry_view_core"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6076eb4cc20882dc0d35617e0b9bb448 inherit pub_types_classmuda_1_1_field_entry_view_core" id="r_a6076eb4cc20882dc0d35617e0b9bb448"><td class="memItemLeft" align="right" valign="top">
+using&#160;</td><td class="memItemRight" valign="bottom"><b>MatStride</b> = typename ViewerCore::MatStride</td></tr>
+<tr class="separator:a6076eb4cc20882dc0d35617e0b9bb448 inherit pub_types_classmuda_1_1_field_entry_view_core"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80ef5850968ccb2faf81f240a1e74084 inherit pub_types_classmuda_1_1_field_entry_view_core" id="r_a80ef5850968ccb2faf81f240a1e74084"><td class="memItemLeft" align="right" valign="top">
+using&#160;</td><td class="memItemRight" valign="bottom"><b>ConstMatMap</b> = typename ViewerCore::ConstMatMap</td></tr>
+<tr class="separator:a80ef5850968ccb2faf81f240a1e74084 inherit pub_types_classmuda_1_1_field_entry_view_core"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a580307aec8c7a039d9afa682b97b9d3d inherit pub_types_classmuda_1_1_field_entry_view_core" id="r_a580307aec8c7a039d9afa682b97b9d3d"><td class="memItemLeft" align="right" valign="top">
+using&#160;</td><td class="memItemRight" valign="bottom"><b>NonConstMatMap</b> = typename ViewerCore::NonConstMatMap</td></tr>
+<tr class="separator:a580307aec8c7a039d9afa682b97b9d3d inherit pub_types_classmuda_1_1_field_entry_view_core"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aace8c9e1b3e0a7febad4be2f2bf4781c inherit pub_types_classmuda_1_1_field_entry_view_core" id="r_aace8c9e1b3e0a7febad4be2f2bf4781c"><td class="memItemLeft" align="right" valign="top">
+using&#160;</td><td class="memItemRight" valign="bottom"><b>ThisMatMap</b> = typename ViewerCore::ThisMatMap</td></tr>
+<tr class="separator:aace8c9e1b3e0a7febad4be2f2bf4781c inherit pub_types_classmuda_1_1_field_entry_view_core"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_types_classmuda_1_1_view_base"><td colspan="2" onclick="javascript:toggleInherit('pub_types_classmuda_1_1_view_base')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="classmuda_1_1_view_base.html">muda::ViewBase&lt; IsConst &gt;</a></td></tr>
 <tr class="memitem:a29d921d2da80a01914c933c140b743de inherit pub_types_classmuda_1_1_view_base" id="r_a29d921d2da80a01914c933c140b743de"><td class="memTemplParams" colspan="2">
 template&lt;typename T &gt; </td></tr>
@@ -158,6 +176,12 @@ MUDA_GENERIC auto_const_t&lt; T &gt; *&#160;</td><td class="memItemRight" valign
 <tr class="memitem:a2778ab21ee2522ebdfffc1926872fa50" id="r_a2778ab21ee2522ebdfffc1926872fa50"><td class="memItemLeft" align="right" valign="top"><a id="a2778ab21ee2522ebdfffc1926872fa50" name="a2778ab21ee2522ebdfffc1926872fa50"></a>
 MUDA_GENERIC const T *&#160;</td><td class="memItemRight" valign="bottom"><b>data</b> (int i, int comp_j) const</td></tr>
 <tr class="separator:a2778ab21ee2522ebdfffc1926872fa50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3aed666757fe8c12e9ce1d504324d4bc" id="r_a3aed666757fe8c12e9ce1d504324d4bc"><td class="memItemLeft" align="right" valign="top"><a id="a3aed666757fe8c12e9ce1d504324d4bc" name="a3aed666757fe8c12e9ce1d504324d4bc"></a>
+MUDA_GENERIC auto&#160;</td><td class="memItemRight" valign="bottom"><b>operator[]</b> (int i)</td></tr>
+<tr class="separator:a3aed666757fe8c12e9ce1d504324d4bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d247007f368bbc9223fc0af7cffbc6b" id="r_a8d247007f368bbc9223fc0af7cffbc6b"><td class="memItemLeft" align="right" valign="top"><a id="a8d247007f368bbc9223fc0af7cffbc6b" name="a8d247007f368bbc9223fc0af7cffbc6b"></a>
+MUDA_GENERIC auto&#160;</td><td class="memItemRight" valign="bottom"><b>operator[]</b> (int i) const</td></tr>
+<tr class="separator:a8d247007f368bbc9223fc0af7cffbc6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab6f8e650ca4facf6dcb7f7f2c8eeded5" id="r_ab6f8e650ca4facf6dcb7f7f2c8eeded5"><td class="memItemLeft" align="right" valign="top"><a id="ab6f8e650ca4facf6dcb7f7f2c8eeded5" name="ab6f8e650ca4facf6dcb7f7f2c8eeded5"></a>
 MUDA_GENERIC auto&#160;</td><td class="memItemRight" valign="bottom"><b>subview</b> (int offset) const</td></tr>
 <tr class="separator:ab6f8e650ca4facf6dcb7f7f2c8eeded5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -227,10 +251,16 @@ MUDA_GENERIC T *&#160;</td><td class="memItemRight" valign="bottom"><b>data</b> 
 <tr class="memitem:ac6b2c755a62f129892c5ce4ffef4e6ba inherit pro_methods_classmuda_1_1_field_entry_view_core" id="r_ac6b2c755a62f129892c5ce4ffef4e6ba"><td class="memItemLeft" align="right" valign="top">
 MUDA_GENERIC T *&#160;</td><td class="memItemRight" valign="bottom"><b>data</b> (int i, int row_index, int col_index) const</td></tr>
 <tr class="separator:ac6b2c755a62f129892c5ce4ffef4e6ba inherit pro_methods_classmuda_1_1_field_entry_view_core"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f70d35c19f31f7d6e3524391abbc501 inherit pro_methods_classmuda_1_1_field_entry_view_core" id="r_a8f70d35c19f31f7d6e3524391abbc501"><td class="memItemLeft" align="right" valign="top">
+MUDA_GENERIC&#160;</td><td class="memItemRight" valign="bottom"><b>FieldEntryViewCore</b> (const <a class="el" href="classmuda_1_1_field_entry_core.html">FieldEntryCore</a> &amp;core, int offset, int size, AsIterator)</td></tr>
+<tr class="separator:a8f70d35c19f31f7d6e3524391abbc501 inherit pro_methods_classmuda_1_1_field_entry_view_core"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_classmuda_1_1_field_entry_view_core"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classmuda_1_1_field_entry_view_core')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classmuda_1_1_field_entry_view_core.html">muda::FieldEntryViewCore&lt; IsConst, T, Layout, N, 1 &gt;</a></td></tr>
 <tr class="memitem:a35dccfd39f990b420c29810415c480e7 inherit pro_attribs_classmuda_1_1_field_entry_view_core" id="r_a35dccfd39f990b420c29810415c480e7"><td class="memItemLeft" align="right" valign="top">
 <a class="el" href="classmuda_1_1_field_entry_core.html">FieldEntryCore</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_core</b></td></tr>
 <tr class="separator:a35dccfd39f990b420c29810415c480e7 inherit pro_attribs_classmuda_1_1_field_entry_view_core"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24dfc42162d720c4cea503e33536a83d inherit pro_attribs_classmuda_1_1_field_entry_view_core" id="r_a24dfc42162d720c4cea503e33536a83d"><td class="memItemLeft" align="right" valign="top">
+MatStride&#160;</td><td class="memItemRight" valign="bottom"><b>m_stride</b></td></tr>
+<tr class="separator:a24dfc42162d720c4cea503e33536a83d inherit pro_attribs_classmuda_1_1_field_entry_view_core"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acb2cd3ede97373ddd17405c793c32a56 inherit pro_attribs_classmuda_1_1_field_entry_view_core" id="r_acb2cd3ede97373ddd17405c793c32a56"><td class="memItemLeft" align="right" valign="top">
 int&#160;</td><td class="memItemRight" valign="bottom"><b>m_offset</b></td></tr>
 <tr class="separator:acb2cd3ede97373ddd17405c793c32a56 inherit pro_attribs_classmuda_1_1_field_entry_view_core"><td class="memSeparator" colspan="2">&#160;</td></tr>

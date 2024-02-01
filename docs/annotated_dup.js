@@ -11,6 +11,7 @@ var annotated_dup =
         [ "eigen", null, [
           [ "un", "unionmuda_1_1details_1_1eigen_1_1un.html", null ]
         ] ],
+        [ "ByteTempBuffer", "classmuda_1_1details_1_1_byte_temp_buffer.html", null ],
         [ "ComputeGraphAccessor", "classmuda_1_1details_1_1_compute_graph_accessor.html", null ],
         [ "HostDeviceStringCache", "classmuda_1_1details_1_1_host_device_string_cache.html", null ],
         [ "LaunchCallable", "structmuda_1_1details_1_1_launch_callable.html", null ],
@@ -165,7 +166,7 @@ var annotated_dup =
       [ "FieldEntryViewBase", "classmuda_1_1_field_entry_view_base.html", null ],
       [ "FieldEntryViewBase< IsConst, T, Layout, 1, 1 >", "classmuda_1_1_field_entry_view_base_3_01_is_const_00_01_t_00_01_layout_00_011_00_011_01_4.html", null ],
       [ "FieldEntryViewBase< IsConst, T, Layout, N, 1 >", "classmuda_1_1_field_entry_view_base_3_01_is_const_00_01_t_00_01_layout_00_01_n_00_011_01_4.html", null ],
-      [ "FieldEntryViewCore", "classmuda_1_1_field_entry_view_core.html", null ],
+      [ "FieldEntryViewCore", "classmuda_1_1_field_entry_view_core.html", "classmuda_1_1_field_entry_view_core" ],
       [ "FieldEntryViewer", "classmuda_1_1_field_entry_viewer.html", null ],
       [ "FieldEntryViewer< T, Layout, 1, 1 >", "classmuda_1_1_field_entry_viewer_3_01_t_00_01_layout_00_011_00_011_01_4.html", null ],
       [ "FieldEntryViewer< T, Layout, N, 1 >", "classmuda_1_1_field_entry_viewer_3_01_t_00_01_layout_00_01_n_00_011_01_4.html", null ],

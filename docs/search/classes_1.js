@@ -16,5 +16,6 @@ var searchData=
   ['bufferviewbase_3c_20false_2c_20t_20_3e_13',['BufferViewBase&lt; false, T &gt;',['../classmuda_1_1_buffer_view_base.html',1,'muda']]],
   ['bufferviewbase_3c_20true_2c_20t_20_3e_14',['BufferViewBase&lt; true, T &gt;',['../classmuda_1_1_buffer_view_base.html',1,'muda']]],
   ['bvh_15',['BVH',['../classmuda_1_1lbvh_1_1_b_v_h.html',1,'muda::lbvh']]],
-  ['bvhviewerbase_16',['BVHViewerBase',['../classmuda_1_1lbvh_1_1details_1_1_b_v_h_viewer_base.html',1,'muda::lbvh::details']]]
+  ['bvhviewerbase_16',['BVHViewerBase',['../classmuda_1_1lbvh_1_1details_1_1_b_v_h_viewer_base.html',1,'muda::lbvh::details']]],
+  ['bytetempbuffer_17',['ByteTempBuffer',['../classmuda_1_1details_1_1_byte_temp_buffer.html',1,'muda::details']]]
 ];

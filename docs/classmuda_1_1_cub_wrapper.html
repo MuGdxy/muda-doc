@@ -91,6 +91,7 @@ $(document).ready(function(){initNavTree('classmuda_1_1_cub_wrapper.html',''); i
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="classmuda_1_1_cub_wrapper-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">muda::CubWrapper&lt; Derive &gt; Class Template Reference</div></div>
@@ -109,9 +110,9 @@ Inheritance diagram for muda::CubWrapper&lt; Derive &gt;:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a3b7a1a228672e4bc0f1d7f59c928ed82" id="r_a3b7a1a228672e4bc0f1d7f59c928ed82"><td class="memItemLeft" align="right" valign="top"><a id="a3b7a1a228672e4bc0f1d7f59c928ed82" name="a3b7a1a228672e4bc0f1d7f59c928ed82"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>CubWrapper</b> (cudaStream_t stream=nullptr)</td></tr>
-<tr class="separator:a3b7a1a228672e4bc0f1d7f59c928ed82"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a846ad2ff72dccee396a542f1ec0b4aeb" id="r_a846ad2ff72dccee396a542f1ec0b4aeb"><td class="memItemLeft" align="right" valign="top"><a id="a846ad2ff72dccee396a542f1ec0b4aeb" name="a846ad2ff72dccee396a542f1ec0b4aeb"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>CubWrapper</b> (<a class="el" href="classmuda_1_1_stream.html">Stream</a> &amp;stream=Stream::Default())</td></tr>
+<tr class="separator:a846ad2ff72dccee396a542f1ec0b4aeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a71f741726d4ab894c196264043bd2922" id="r_a71f741726d4ab894c196264043bd2922"><td class="memItemLeft" align="right" valign="top"><a id="a71f741726d4ab894c196264043bd2922" name="a71f741726d4ab894c196264043bd2922"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>kernel_name</b> (std::string_view)=delete</td></tr>
 <tr class="separator:a71f741726d4ab894c196264043bd2922"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -218,14 +219,17 @@ template&lt;typename... ViewT&gt; </td></tr>
 <tr class="memitem:afdaa029e6c712c914d2ed5d21dc2a778 inherit pub_methods_classmuda_1_1_launch_core"><td class="memTemplItemLeft" align="right" valign="top">MUDA_INLINE void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>wait</b> (const <a class="el" href="classmuda_1_1_compute_graph_var.html">ComputeGraphVar</a>&lt; cudaEvent_t &gt; &amp;e, <a class="el" href="classmuda_1_1_compute_graph_var.html">ComputeGraphVar</a>&lt; ViewT &gt; &amp;... vars)</td></tr>
 <tr class="separator:afdaa029e6c712c914d2ed5d21dc2a778 inherit pub_methods_classmuda_1_1_launch_core"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:a5e0f31303ea2f56ba4cfe04fb2ca7738" id="r_a5e0f31303ea2f56ba4cfe04fb2ca7738"><td class="memItemLeft" align="right" valign="top"><a id="a5e0f31303ea2f56ba4cfe04fb2ca7738" name="a5e0f31303ea2f56ba4cfe04fb2ca7738"></a>
+<a class="el" href="classmuda_1_1_stream.html">Stream</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_muda_stream</b> = nullptr</td></tr>
+<tr class="separator:a5e0f31303ea2f56ba4cfe04fb2ca7738"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:a667622f1920d6ac24939ce3fe454dfc4" id="r_a667622f1920d6ac24939ce3fe454dfc4"><td class="memItemLeft" align="right" valign="top"><a id="a667622f1920d6ac24939ce3fe454dfc4" name="a667622f1920d6ac24939ce3fe454dfc4"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>prepare_buffer</b> (<a class="el" href="classmuda_1_1_device_vector.html">DeviceVector</a>&lt; std::byte &gt; &amp;buf, size_t reqSize)</td></tr>
-<tr class="separator:a667622f1920d6ac24939ce3fe454dfc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af97e3fe42b9323c4ad84d223bacf4252" id="r_af97e3fe42b9323c4ad84d223bacf4252"><td class="memItemLeft" align="right" valign="top"><a id="af97e3fe42b9323c4ad84d223bacf4252" name="af97e3fe42b9323c4ad84d223bacf4252"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>prepare_buffer</b> (<a class="el" href="classmuda_1_1_device_buffer.html">DeviceBuffer</a>&lt; std::byte &gt; &amp;buf, size_t reqSize)</td></tr>
-<tr class="separator:af97e3fe42b9323c4ad84d223bacf4252"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1007ebfdee88f21fd67283499730991" id="r_af1007ebfdee88f21fd67283499730991"><td class="memItemLeft" align="right" valign="top"><a id="af1007ebfdee88f21fd67283499730991" name="af1007ebfdee88f21fd67283499730991"></a>
+std::byte *&#160;</td><td class="memItemRight" valign="bottom"><b>prepare_buffer</b> (size_t reqSize)</td></tr>
+<tr class="separator:af1007ebfdee88f21fd67283499730991"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_classmuda_1_1_launch_base"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classmuda_1_1_launch_base')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classmuda_1_1_launch_base.html">muda::LaunchBase&lt; Derive &gt;</a></td></tr>
 <tr class="memitem:abfa848a96c5c341420ee158bff1bd97e inherit pro_methods_classmuda_1_1_launch_base" id="r_abfa848a96c5c341420ee158bff1bd97e"><td class="memItemLeft" align="right" valign="top">
 Derive &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>pop_kernel_name</b> ()</td></tr>
