@@ -131,12 +131,18 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:afd6e35757c7ae15826ecd9ce0b796c04" id="r_afd6e35757c7ae15826ecd9ce0b796c04"><td class="memItemLeft" align="right" valign="top"><a id="afd6e35757c7ae15826ecd9ce0b796c04" name="afd6e35757c7ae15826ecd9ce0b796c04"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>build</b> ()=0</td></tr>
-<tr class="separator:afd6e35757c7ae15826ecd9ce0b796c04"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a55e461c88ca5c9110e8ec67331aaf185" id="r_a55e461c88ca5c9110e8ec67331aaf185"><td class="memItemLeft" align="right" valign="top"><a id="a55e461c88ca5c9110e8ec67331aaf185" name="a55e461c88ca5c9110e8ec67331aaf185"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>resize</b> (size_t num_elements)=0</td></tr>
-<tr class="separator:a55e461c88ca5c9110e8ec67331aaf185"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5226ee97bd164420392b99259cda7e74" id="r_a5226ee97bd164420392b99259cda7e74"><td class="memItemLeft" align="right" valign="top"><a id="a5226ee97bd164420392b99259cda7e74" name="a5226ee97bd164420392b99259cda7e74"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>build_impl</b> ()=0</td></tr>
+<tr class="separator:a5226ee97bd164420392b99259cda7e74"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acba932c31d0cc0fe82af06806b3f73c1" id="r_acba932c31d0cc0fe82af06806b3f73c1"><td class="memItemLeft" align="right" valign="top"><a id="acba932c31d0cc0fe82af06806b3f73c1" name="acba932c31d0cc0fe82af06806b3f73c1"></a>
+virtual size_t&#160;</td><td class="memItemRight" valign="bottom"><b>require_total_buffer_byte_size</b> (size_t element_count)=0</td></tr>
+<tr class="separator:acba932c31d0cc0fe82af06806b3f73c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:addd016c746b1fb92f793706f7f1ab6c5" id="r_addd016c746b1fb92f793706f7f1ab6c5"><td class="memItemLeft" align="right" valign="top"><a id="addd016c746b1fb92f793706f7f1ab6c5" name="addd016c746b1fb92f793706f7f1ab6c5"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>calculate_new_cores</b> (std::byte *byte_buffer, size_t total_bytes, size_t element_count, span&lt; <a class="el" href="classmuda_1_1_field_entry_core.html">FieldEntryCore</a> &gt; new_cores)=0</td></tr>
+<tr class="separator:addd016c746b1fb92f793706f7f1ab6c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa40d8fc8420a840017c5d63b4f1a545" id="r_afa40d8fc8420a840017c5d63b4f1a545"><td class="memItemLeft" align="right" valign="top"><a id="afa40d8fc8420a840017c5d63b4f1a545" name="afa40d8fc8420a840017c5d63b4f1a545"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>allow_inplace_shrink</b> () const</td></tr>
+<tr class="separator:afa40d8fc8420a840017c5d63b4f1a545"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af0fb3944e567a659dd438eb01be46fc7" id="r_af0fb3944e567a659dd438eb01be46fc7"><td class="memItemLeft" align="right" valign="top"><a id="af0fb3944e567a659dd438eb01be46fc7" name="af0fb3944e567a659dd438eb01be46fc7"></a>
 const <a class="el" href="classmuda_1_1_field_entry_layout_info.html">FieldEntryLayoutInfo</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>layout_info</b> () const</td></tr>
 <tr class="separator:af0fb3944e567a659dd438eb01be46fc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -146,13 +152,6 @@ const <a class="el" href="classmuda_1_1_field_build_options.html">FieldBuildOpti
 <tr class="memitem:a0afe964cdc136a92870a9fb83ae43465" id="r_a0afe964cdc136a92870a9fb83ae43465"><td class="memItemLeft" align="right" valign="top"><a id="a0afe964cdc136a92870a9fb83ae43465" name="a0afe964cdc136a92870a9fb83ae43465"></a>
 size_t&#160;</td><td class="memItemRight" valign="bottom"><b>num_elements</b> () const</td></tr>
 <tr class="separator:a0afe964cdc136a92870a9fb83ae43465"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a464517921adf55cd85c1f132402b7a12" id="r_a464517921adf55cd85c1f132402b7a12"><td class="memItemLeft" align="right" valign="top"><a id="a464517921adf55cd85c1f132402b7a12" name="a464517921adf55cd85c1f132402b7a12"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>copy_resize_data_buffer</b> (size_t size)</td></tr>
-<tr class="separator:a464517921adf55cd85c1f132402b7a12"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac2c15f37a4aac6e2bcac7a5b0dbfb7b5" id="r_ac2c15f37a4aac6e2bcac7a5b0dbfb7b5"><td class="memTemplParams" colspan="2"><a id="ac2c15f37a4aac6e2bcac7a5b0dbfb7b5" name="ac2c15f37a4aac6e2bcac7a5b0dbfb7b5"></a>
-template&lt;typename F &gt; </td></tr>
-<tr class="memitem:ac2c15f37a4aac6e2bcac7a5b0dbfb7b5"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>resize_data_buffer</b> (size_t size, F &amp;&amp;func)</td></tr>
-<tr class="separator:ac2c15f37a4aac6e2bcac7a5b0dbfb7b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-static-methods" name="pro-static-methods"></a>
 Static Protected Member Functions</h2></td></tr>

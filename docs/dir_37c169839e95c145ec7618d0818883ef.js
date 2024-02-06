@@ -7,6 +7,7 @@ var dir_37c169839e95c145ec7618d0818883ef =
     [ "filesystem.h", "filesystem_8h_source.html", null ],
     [ "flag.h", "flag_8h_source.html", null ],
     [ "fuzzy.h", "fuzzy_8h_source.html", null ],
+    [ "host_device_config.h", "host__device__config_8h_source.html", null ],
     [ "host_device_string_cache.h", "host__device__string__cache_8h_source.html", null ],
     [ "id_with_type.h", "id__with__type_8h_source.html", null ],
     [ "launch_info_cache.h", "launch__info__cache_8h_source.html", null ],

@@ -1,5 +1,7 @@
 var NAVTREEINDEX1 =
 {
+"classmuda_1_1_triplet_matrix_view_base_3_01_is_const_00_01_ty_00_011_01_4.html":[1,0,0,237],
+"classmuda_1_1_triplet_matrix_viewer.html":[1,0,0,238],
 "classmuda_1_1_triplet_matrix_viewer_1_1_proxy.html":[1,0,0,238,0],
 "classmuda_1_1_triplet_matrix_viewer_3_01_t_00_011_01_4.html":[1,0,0,239],
 "classmuda_1_1_triplet_matrix_viewer_3_01_t_00_011_01_4_1_1_proxy.html":[1,0,0,239,0],
@@ -199,7 +201,6 @@ var NAVTREEINDEX1 =
 "doublet__vector__viewer_8h_source.html":[2,0,0,0,0,6,3,22],
 "doublet__vector__viewer_8inl_source.html":[2,0,0,0,0,6,3,0,20],
 "eigen_8h_source.html":[2,0,0,0,0,6,4],
-"entry__viewer__common_8inl_source.html":[2,0,0,0,0,6,1,0,1,0],
 "evd_8h_source.html":[2,0,0,0,0,6,0,4],
 "event_8h_source.html":[2,0,0,0,0,8,1],
 "event_8inl_source.html":[2,0,0,0,0,8,0,0],
@@ -227,9 +228,9 @@ var NAVTREEINDEX1 =
 "field__entry__view__scalar_8inl_source.html":[2,0,0,0,0,6,1,0,0,1],
 "field__entry__view__vector_8inl_source.html":[2,0,0,0,0,6,1,0,0,2],
 "field__entry__viewer_8h_source.html":[2,0,0,0,0,6,1,12],
-"field__entry__viewer__matrix_8inl_source.html":[2,0,0,0,0,6,1,0,1,1],
-"field__entry__viewer__scalar_8inl_source.html":[2,0,0,0,0,6,1,0,1,2],
-"field__entry__viewer__vector_8inl_source.html":[2,0,0,0,0,6,1,0,1,3],
+"field__entry__viewer__matrix_8inl_source.html":[2,0,0,0,0,6,1,0,1,0],
+"field__entry__viewer__scalar_8inl_source.html":[2,0,0,0,0,6,1,0,1,1],
+"field__entry__viewer__vector_8inl_source.html":[2,0,0,0,0,6,1,0,1,2],
 "field__viewer_8h_source.html":[2,0,0,0,0,6,1,13],
 "files.html":[2,0],
 "filesystem_8h_source.html":[2,0,0,0,0,12,4],
@@ -248,6 +249,5 @@ var NAVTREEINDEX1 =
 "graph__buffer__3d__view_8inl_source.html":[2,0,0,0,0,0,1,9],
 "graph__buffer__view_8h_source.html":[2,0,0,0,0,0,16],
 "graph__buffer__view_8inl_source.html":[2,0,0,0,0,0,1,10],
-"graph__exec_8h_source.html":[2,0,0,0,0,7,4],
-"graph__exec_8inl_source.html":[2,0,0,0,0,7,0,1]
+"graph__exec_8h_source.html":[2,0,0,0,0,7,4]
 };

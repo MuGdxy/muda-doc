@@ -85,6 +85,9 @@ var hierarchy =
     [ "muda::DeviceVar< T >", "classmuda_1_1_device_var.html", null ],
     [ "muda::DeviceVar< int >", "classmuda_1_1_device_var.html", null ],
     [ "muda::DeviceVar< muda::details::LoggerOffset >", "classmuda_1_1_device_var.html", null ],
+    [ "muda::DeviceVar< muda::FieldEntryCore >", "classmuda_1_1_device_var.html", null ],
+    [ "muda::FieldEntryViewBase< IsConst, T, Layout, M, N >::DummyPointer", "classmuda_1_1_field_entry_view_base_1_1_dummy_pointer.html", null ],
+    [ "muda::FieldEntryViewBase< IsConst, T, Layout, N, 1 >::DummyPointer", "classmuda_1_1_field_entry_view_base_3_01_is_const_00_01_t_00_01_layout_00_01_n_00_011_01_4_1_1_dummy_pointer.html", null ],
     [ "muda::FieldBuilder< Layout >::EntryProxy", "classmuda_1_1_field_builder_1_1_entry_proxy.html", null ],
     [ "muda::Event", "classmuda_1_1_event.html", null ],
     [ "std::exception", null, [
@@ -110,9 +113,7 @@ var hierarchy =
     [ "muda::FieldBuilder< Layout >", "classmuda_1_1_field_builder.html", null ],
     [ "muda::FieldBuildOptions", "classmuda_1_1_field_build_options.html", null ],
     [ "muda::FieldEntryBase", "classmuda_1_1_field_entry_base.html", [
-      [ "muda::FieldEntry< T, Layout, M, N >", "classmuda_1_1_field_entry.html", null ],
-      [ "muda::FieldEntry< T, Layout, FieldEntryDynamicSize, 1 >", "classmuda_1_1_field_entry_3_01_t_00_01_layout_00_01_field_entry_dynamic_size_00_011_01_4.html", null ],
-      [ "muda::FieldEntry< T, Layout, FieldEntryDynamicSize, FieldEntryDynamicSize >", "classmuda_1_1_field_entry_3_01_t_00_01_layout_00_01_field_entry_dynamic_size_00_01_field_entry_dynamic_size_01_4.html", null ]
+      [ "muda::FieldEntry< T, Layout, M, N >", "classmuda_1_1_field_entry.html", null ]
     ] ],
     [ "muda::FieldEntryBaseData", "classmuda_1_1_field_entry_base_data.html", null ],
     [ "muda::FieldEntryCore", "classmuda_1_1_field_entry_core.html", null ],
@@ -143,6 +144,8 @@ var hierarchy =
     [ "thrust::host_vector", null, [
       [ "muda::HostVector< T >", "classmuda_1_1_host_vector.html", null ]
     ] ],
+    [ "muda::HostDeviceConfig< T >", "classmuda_1_1_host_device_config.html", null ],
+    [ "muda::HostDeviceConfig< muda::FieldEntryCore >", "classmuda_1_1_host_device_config.html", null ],
     [ "muda::details::HostDeviceStringCache", "classmuda_1_1details_1_1_host_device_string_cache.html", null ],
     [ "muda::IdWithType< T >", "classmuda_1_1_id_with_type.html", [
       [ "muda::ClosureId", "classmuda_1_1_closure_id.html", null ],
@@ -339,10 +342,6 @@ var hierarchy =
       [ "TCB_SPAN_NAMESPACE_NAME::detail::is_std_array< std::array< T, N > >", "struct_t_c_b___s_p_a_n___n_a_m_e_s_p_a_c_e___n_a_m_e_1_1detail_1_1is__std__array_3_01std_1_1array_3_01_t_00_01_n_01_4_01_4.html", null ]
     ] ],
     [ "muda::details::eigen::un", "unionmuda_1_1details_1_1eigen_1_1un.html", null ],
-    [ "muda::VarViewBase< T >", "classmuda_1_1_var_view_base.html", [
-      [ "muda::CVarView< T >", "classmuda_1_1_c_var_view.html", null ],
-      [ "muda::VarView< T >", "classmuda_1_1_var_view.html", null ]
-    ] ],
     [ "muda::lbvh::vector_of< T >", "structmuda_1_1lbvh_1_1vector__of.html", null ],
     [ "muda::lbvh::vector_of< double >", "structmuda_1_1lbvh_1_1vector__of_3_01double_01_4.html", null ],
     [ "muda::lbvh::vector_of< float >", "structmuda_1_1lbvh_1_1vector__of_3_01float_01_4.html", null ],
@@ -378,6 +377,12 @@ var hierarchy =
       [ "muda::FieldEntryViewCore< IsConst, T, Layout, N, 1 >", "classmuda_1_1_field_entry_view_core.html", [
         [ "muda::FieldEntryViewBase< IsConst, T, Layout, N, 1 >", "classmuda_1_1_field_entry_view_base_3_01_is_const_00_01_t_00_01_layout_00_01_n_00_011_01_4.html", null ]
       ] ],
+      [ "muda::VarViewBase< true, T >", "classmuda_1_1_var_view_base.html", [
+        [ "muda::CVarView< T >", "classmuda_1_1_c_var_view.html", null ]
+      ] ],
+      [ "muda::VarViewBase< false, T >", "classmuda_1_1_var_view_base.html", [
+        [ "muda::VarView< T >", "classmuda_1_1_var_view.html", null ]
+      ] ],
       [ "muda::BSRMatrixViewBase< IsConst, Ty, N >", "classmuda_1_1_b_s_r_matrix_view_base.html", null ],
       [ "muda::Buffer2DViewBase< IsConst, T >", "classmuda_1_1_buffer2_d_view_base.html", null ],
       [ "muda::Buffer3DViewBase< IsConst, T >", "classmuda_1_1_buffer3_d_view_base.html", null ],
@@ -411,7 +416,12 @@ var hierarchy =
         [ "muda::FieldEntryViewBase< IsConst, T, Layout, M, N >", "classmuda_1_1_field_entry_view_base.html", null ]
       ] ],
       [ "muda::TripletMatrixViewBase< IsConst, Ty, N >", "classmuda_1_1_triplet_matrix_view_base.html", null ],
-      [ "muda::TripletMatrixViewBase< IsConst, Ty, 1 >", "classmuda_1_1_triplet_matrix_view_base_3_01_is_const_00_01_ty_00_011_01_4.html", null ]
+      [ "muda::TripletMatrixViewBase< IsConst, Ty, 1 >", "classmuda_1_1_triplet_matrix_view_base_3_01_is_const_00_01_ty_00_011_01_4.html", null ],
+      [ "muda::VarViewBase< IsConst, T >", "classmuda_1_1_var_view_base.html", null ]
+    ] ],
+    [ "muda::ViewBase< true >", "classmuda_1_1_view_base.html", [
+      [ "muda::HostDeviceConfigView< muda::FieldEntryCore >", "classmuda_1_1_host_device_config_view.html", null ],
+      [ "muda::HostDeviceConfigView< T >", "classmuda_1_1_host_device_config_view.html", null ]
     ] ],
     [ "muda::ViewerBase< IsConst >", "classmuda_1_1_viewer_base.html", null ],
     [ "muda::ViewerBase< false >", "classmuda_1_1_viewer_base.html", [

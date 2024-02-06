@@ -98,7 +98,7 @@ $(document).ready(function(){initNavTree('field__entry_8inl_source.html',''); in
 </div><!--header-->
 <div class="contents">
 <div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#include &lt;muda/ext/field/sub_field.h&gt;</span></div>
-<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#include &quot;field_entry.h&quot;</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="keyword">namespace </span>muda</div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span>{</div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment">//using T                  = float;</span></div>
@@ -140,7 +140,7 @@ $(document).ready(function(){initNavTree('field__entry_8inl_source.html',''); in
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>                src.size(),</div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>                count());</div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    m_workpace.resize(count());</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    BufferLaunch().copy(m_workpace.view(), src.data());</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    BufferLaunch().copy(m_workpace.view(), src.data()).wait();</div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    FieldEntryLaunch().copy(view(), std::as_const(m_workpace).view()).wait();</div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>}</div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>

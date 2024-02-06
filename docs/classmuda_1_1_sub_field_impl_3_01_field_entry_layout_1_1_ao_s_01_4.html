@@ -137,11 +137,16 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:ac5c4658caa705c311cde9c81b4905df5" id="r_ac5c4658caa705c311cde9c81b4905df5"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuda_1_1_sub_field_impl_3_01_field_entry_layout_1_1_ao_s_01_4.html#ac5c4658caa705c311cde9c81b4905df5">build</a> () override</td></tr>
-<tr class="separator:ac5c4658caa705c311cde9c81b4905df5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3dbbf8e39110d267514fa96246000f51" id="r_a3dbbf8e39110d267514fa96246000f51"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuda_1_1_sub_field_impl_3_01_field_entry_layout_1_1_ao_s_01_4.html#a3dbbf8e39110d267514fa96246000f51">resize</a> (size_t num_elements) override</td></tr>
-<tr class="separator:a3dbbf8e39110d267514fa96246000f51"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2943afdc05c1a773a17de79fd8efc4b" id="r_ad2943afdc05c1a773a17de79fd8efc4b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuda_1_1_sub_field_impl_3_01_field_entry_layout_1_1_ao_s_01_4.html#ad2943afdc05c1a773a17de79fd8efc4b">build_impl</a> () override</td></tr>
+<tr class="separator:ad2943afdc05c1a773a17de79fd8efc4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad11e3928d13e4c50c3e4e346fbe87d20" id="r_ad11e3928d13e4c50c3e4e346fbe87d20"><td class="memItemLeft" align="right" valign="top">virtual size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuda_1_1_sub_field_impl_3_01_field_entry_layout_1_1_ao_s_01_4.html#ad11e3928d13e4c50c3e4e346fbe87d20">require_total_buffer_byte_size</a> (size_t element_count) override</td></tr>
+<tr class="separator:ad11e3928d13e4c50c3e4e346fbe87d20"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa541c84f063940ae457ed2ddd6e34cfa" id="r_aa541c84f063940ae457ed2ddd6e34cfa"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmuda_1_1_sub_field_impl_3_01_field_entry_layout_1_1_ao_s_01_4.html#aa541c84f063940ae457ed2ddd6e34cfa">calculate_new_cores</a> (std::byte *byte_buffer, size_t total_bytes, size_t element_count, span&lt; <a class="el" href="classmuda_1_1_field_entry_core.html">FieldEntryCore</a> &gt; new_cores) override</td></tr>
+<tr class="separator:aa541c84f063940ae457ed2ddd6e34cfa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_classmuda_1_1_sub_field_interface"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classmuda_1_1_sub_field_interface')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classmuda_1_1_sub_field_interface.html">muda::SubFieldInterface</a></td></tr>
+<tr class="memitem:afa40d8fc8420a840017c5d63b4f1a545 inherit pro_methods_classmuda_1_1_sub_field_interface" id="r_afa40d8fc8420a840017c5d63b4f1a545"><td class="memItemLeft" align="right" valign="top">
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>allow_inplace_shrink</b> () const</td></tr>
+<tr class="separator:afa40d8fc8420a840017c5d63b4f1a545 inherit pro_methods_classmuda_1_1_sub_field_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af0fb3944e567a659dd438eb01be46fc7 inherit pro_methods_classmuda_1_1_sub_field_interface" id="r_af0fb3944e567a659dd438eb01be46fc7"><td class="memItemLeft" align="right" valign="top">
 const <a class="el" href="classmuda_1_1_field_entry_layout_info.html">FieldEntryLayoutInfo</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>layout_info</b> () const</td></tr>
 <tr class="separator:af0fb3944e567a659dd438eb01be46fc7 inherit pro_methods_classmuda_1_1_sub_field_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -151,13 +156,6 @@ const <a class="el" href="classmuda_1_1_field_build_options.html">FieldBuildOpti
 <tr class="memitem:a0afe964cdc136a92870a9fb83ae43465 inherit pro_methods_classmuda_1_1_sub_field_interface" id="r_a0afe964cdc136a92870a9fb83ae43465"><td class="memItemLeft" align="right" valign="top">
 size_t&#160;</td><td class="memItemRight" valign="bottom"><b>num_elements</b> () const</td></tr>
 <tr class="separator:a0afe964cdc136a92870a9fb83ae43465 inherit pro_methods_classmuda_1_1_sub_field_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a464517921adf55cd85c1f132402b7a12 inherit pro_methods_classmuda_1_1_sub_field_interface" id="r_a464517921adf55cd85c1f132402b7a12"><td class="memItemLeft" align="right" valign="top">
-void&#160;</td><td class="memItemRight" valign="bottom"><b>copy_resize_data_buffer</b> (size_t size)</td></tr>
-<tr class="separator:a464517921adf55cd85c1f132402b7a12 inherit pro_methods_classmuda_1_1_sub_field_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac2c15f37a4aac6e2bcac7a5b0dbfb7b5 inherit pro_methods_classmuda_1_1_sub_field_interface" id="r_ac2c15f37a4aac6e2bcac7a5b0dbfb7b5"><td class="memTemplParams" colspan="2">
-template&lt;typename F &gt; </td></tr>
-<tr class="memitem:ac2c15f37a4aac6e2bcac7a5b0dbfb7b5 inherit pro_methods_classmuda_1_1_sub_field_interface"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>resize_data_buffer</b> (size_t size, F &amp;&amp;func)</td></tr>
-<tr class="separator:ac2c15f37a4aac6e2bcac7a5b0dbfb7b5 inherit pro_methods_classmuda_1_1_sub_field_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
 Friends</h2></td></tr>
@@ -204,8 +202,8 @@ size_t&#160;</td><td class="memItemRight" valign="bottom"><b>m_data_buffer_size<
 <tr class="separator:aebbfb9b800ca342144d0514db9bbb5b8 inherit pro_attribs_classmuda_1_1_sub_field_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="ac5c4658caa705c311cde9c81b4905df5" name="ac5c4658caa705c311cde9c81b4905df5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac5c4658caa705c311cde9c81b4905df5">&#9670;&#160;</a></span>build()</h2>
+<a id="ad2943afdc05c1a773a17de79fd8efc4b" name="ad2943afdc05c1a773a17de79fd8efc4b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad2943afdc05c1a773a17de79fd8efc4b">&#9670;&#160;</a></span>build_impl()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -214,7 +212,7 @@ size_t&#160;</td><td class="memItemRight" valign="bottom"><b>m_data_buffer_size<
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">MUDA_INLINE void <a class="el" href="classmuda_1_1_sub_field_impl.html">muda::SubFieldImpl</a>&lt; FieldEntryLayout::AoS &gt;::build </td>
+          <td class="memname">MUDA_INLINE void <a class="el" href="classmuda_1_1_sub_field_impl.html">muda::SubFieldImpl</a>&lt; FieldEntryLayout::AoS &gt;::build_impl </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -231,8 +229,8 @@ size_t&#160;</td><td class="memItemRight" valign="bottom"><b>m_data_buffer_size<
 
 </div>
 </div>
-<a id="a3dbbf8e39110d267514fa96246000f51" name="a3dbbf8e39110d267514fa96246000f51"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3dbbf8e39110d267514fa96246000f51">&#9670;&#160;</a></span>resize()</h2>
+<a id="aa541c84f063940ae457ed2ddd6e34cfa" name="aa541c84f063940ae457ed2ddd6e34cfa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa541c84f063940ae457ed2ddd6e34cfa">&#9670;&#160;</a></span>calculate_new_cores()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -241,10 +239,60 @@ size_t&#160;</td><td class="memItemRight" valign="bottom"><b>m_data_buffer_size<
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">MUDA_INLINE void <a class="el" href="classmuda_1_1_sub_field_impl.html">muda::SubFieldImpl</a>&lt; FieldEntryLayout::AoS &gt;::resize </td>
+          <td class="memname">virtual void <a class="el" href="classmuda_1_1_sub_field_impl.html">muda::SubFieldImpl</a>&lt; FieldEntryLayout::AoS &gt;::calculate_new_cores </td>
+          <td>(</td>
+          <td class="paramtype">std::byte *&#160;</td>
+          <td class="paramname"><em>byte_buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>total_bytes</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>element_count</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">span&lt; <a class="el" href="classmuda_1_1_field_entry_core.html">FieldEntryCore</a> &gt;&#160;</td>
+          <td class="paramname"><em>new_cores</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implements <a class="el" href="classmuda_1_1_sub_field_interface.html">muda::SubFieldInterface</a>.</p>
+
+</div>
+</div>
+<a id="ad11e3928d13e4c50c3e4e346fbe87d20" name="ad11e3928d13e4c50c3e4e346fbe87d20"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad11e3928d13e4c50c3e4e346fbe87d20">&#9670;&#160;</a></span>require_total_buffer_byte_size()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">MUDA_INLINE size_t <a class="el" href="classmuda_1_1_sub_field_impl.html">muda::SubFieldImpl</a>&lt; FieldEntryLayout::AoS &gt;::require_total_buffer_byte_size </td>
           <td>(</td>
           <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>num_elements</em></td><td>)</td>
+          <td class="paramname"><em>element_count</em></td><td>)</td>
           <td></td>
         </tr>
       </table>

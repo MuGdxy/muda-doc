@@ -5,8 +5,12 @@ var searchData=
   ['hash_3c_20muda_3a_3adetails_3a_3amatrixformatconvertertype_20_3e_2',['hash&lt; muda::details::MatrixFormatConverterType &gt;',['../structstd_1_1hash_3_01muda_1_1details_1_1_matrix_format_converter_type_01_4.html',1,'std']]],
   ['hash_3c_20muda_3a_3aidwithtype_3c_20t_20_3e_20_3e_3',['hash&lt; muda::IdWithType&lt; T &gt; &gt;',['../structstd_1_1hash_3_01muda_1_1_id_with_type_3_01_t_01_4_01_4.html',1,'std']]],
   ['hostcall_4',['HostCall',['../classmuda_1_1_host_call.html',1,'muda']]],
-  ['hostdevicestringcache_5',['HostDeviceStringCache',['../classmuda_1_1details_1_1_host_device_string_cache.html',1,'muda::details']]],
-  ['hostnode_6',['HostNode',['../classmuda_1_1_host_node.html',1,'muda']]],
-  ['hostnodeparms_7',['HostNodeParms',['../classmuda_1_1_host_node_parms.html',1,'muda']]],
-  ['hostvector_8',['HostVector',['../classmuda_1_1_host_vector.html',1,'muda']]]
+  ['hostdeviceconfig_5',['HostDeviceConfig',['../classmuda_1_1_host_device_config.html',1,'muda']]],
+  ['hostdeviceconfig_3c_20muda_3a_3afieldentrycore_20_3e_6',['HostDeviceConfig&lt; muda::FieldEntryCore &gt;',['../classmuda_1_1_host_device_config.html',1,'muda']]],
+  ['hostdeviceconfigview_7',['HostDeviceConfigView',['../classmuda_1_1_host_device_config_view.html',1,'muda']]],
+  ['hostdeviceconfigview_3c_20muda_3a_3afieldentrycore_20_3e_8',['HostDeviceConfigView&lt; muda::FieldEntryCore &gt;',['../classmuda_1_1_host_device_config_view.html',1,'muda']]],
+  ['hostdevicestringcache_9',['HostDeviceStringCache',['../classmuda_1_1details_1_1_host_device_string_cache.html',1,'muda::details']]],
+  ['hostnode_10',['HostNode',['../classmuda_1_1_host_node.html',1,'muda']]],
+  ['hostnodeparms_11',['HostNodeParms',['../classmuda_1_1_host_node_parms.html',1,'muda']]],
+  ['hostvector_12',['HostVector',['../classmuda_1_1_host_vector.html',1,'muda']]]
 ];

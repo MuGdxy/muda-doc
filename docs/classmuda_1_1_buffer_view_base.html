@@ -131,6 +131,21 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>ThisViewer</b> = std
 template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a97d7c2b861ffd6f1c3703d5658d2c6d0"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><b>auto_const_t</b> = <a class="el" href="classmuda_1_1_view_base.html">ViewBase</a>&lt; IsConst &gt;::template auto_const_t&lt; T &gt;</td></tr>
 <tr class="separator:a97d7c2b861ffd6f1c3703d5658d2c6d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2875b5e28e4ebea8107b57dac45c7997" id="r_a2875b5e28e4ebea8107b57dac45c7997"><td class="memItemLeft" align="right" valign="top"><a id="a2875b5e28e4ebea8107b57dac45c7997" name="a2875b5e28e4ebea8107b57dac45c7997"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>value_type</b> = T</td></tr>
+<tr class="separator:a2875b5e28e4ebea8107b57dac45c7997"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58941c106d5de238b310fa9def295a5e" id="r_a58941c106d5de238b310fa9def295a5e"><td class="memItemLeft" align="right" valign="top"><a id="a58941c106d5de238b310fa9def295a5e" name="a58941c106d5de238b310fa9def295a5e"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>reference</b> = T &amp;</td></tr>
+<tr class="separator:a58941c106d5de238b310fa9def295a5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a804320dfaf90b34dd84d3d48978b220f" id="r_a804320dfaf90b34dd84d3d48978b220f"><td class="memItemLeft" align="right" valign="top"><a id="a804320dfaf90b34dd84d3d48978b220f" name="a804320dfaf90b34dd84d3d48978b220f"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>pointer</b> = T *</td></tr>
+<tr class="separator:a804320dfaf90b34dd84d3d48978b220f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66255189cb88d793e384e76e8723dea9" id="r_a66255189cb88d793e384e76e8723dea9"><td class="memItemLeft" align="right" valign="top"><a id="a66255189cb88d793e384e76e8723dea9" name="a66255189cb88d793e384e76e8723dea9"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>iterator_category</b> = std::random_access_iterator_tag</td></tr>
+<tr class="separator:a66255189cb88d793e384e76e8723dea9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afcdb68b3d31cb4fac0b7c5c525113553" id="r_afcdb68b3d31cb4fac0b7c5c525113553"><td class="memItemLeft" align="right" valign="top"><a id="afcdb68b3d31cb4fac0b7c5c525113553" name="afcdb68b3d31cb4fac0b7c5c525113553"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>difference_type</b> = size_t</td></tr>
+<tr class="separator:afcdb68b3d31cb4fac0b7c5c525113553"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_types_classmuda_1_1_view_base"><td colspan="2" onclick="javascript:toggleInherit('pub_types_classmuda_1_1_view_base')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="classmuda_1_1_view_base.html">muda::ViewBase&lt; IsConst &gt;</a></td></tr>
 <tr class="memitem:a29d921d2da80a01914c933c140b743de inherit pub_types_classmuda_1_1_view_base" id="r_a29d921d2da80a01914c933c140b743de"><td class="memTemplParams" colspan="2">
 template&lt;typename T &gt; </td></tr>
@@ -197,6 +212,21 @@ MUDA_GENERIC auto_const_t&lt; T &gt; &amp;&#160;</td><td class="memItemRight" va
 <tr class="memitem:a73ce9ae2c1fab24bfe57a3635602917d" id="r_a73ce9ae2c1fab24bfe57a3635602917d"><td class="memItemLeft" align="right" valign="top"><a id="a73ce9ae2c1fab24bfe57a3635602917d" name="a73ce9ae2c1fab24bfe57a3635602917d"></a>
 MUDA_GENERIC const T &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator[]</b> (size_t i) const MUDA_NOEXCEPT</td></tr>
 <tr class="separator:a73ce9ae2c1fab24bfe57a3635602917d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2204808a67ea6b1a69a89b4fab2d7846" id="r_a2204808a67ea6b1a69a89b4fab2d7846"><td class="memItemLeft" align="right" valign="top"><a id="a2204808a67ea6b1a69a89b4fab2d7846" name="a2204808a67ea6b1a69a89b4fab2d7846"></a>
+MUDA_GENERIC <a class="el" href="classmuda_1_1_buffer_view_base.html">ThisView</a>&#160;</td><td class="memItemRight" valign="bottom"><b>operator+</b> (int i)</td></tr>
+<tr class="separator:a2204808a67ea6b1a69a89b4fab2d7846"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb467b818d11ad1daf61f4861e7d2022" id="r_adb467b818d11ad1daf61f4861e7d2022"><td class="memItemLeft" align="right" valign="top"><a id="adb467b818d11ad1daf61f4861e7d2022" name="adb467b818d11ad1daf61f4861e7d2022"></a>
+MUDA_GENERIC <a class="el" href="classmuda_1_1_buffer_view_base.html">ConstView</a>&#160;</td><td class="memItemRight" valign="bottom"><b>operator+</b> (int i) const</td></tr>
+<tr class="separator:adb467b818d11ad1daf61f4861e7d2022"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99fb56de8b7c93943c0fb57b6f0b5469" id="r_a99fb56de8b7c93943c0fb57b6f0b5469"><td class="memItemLeft" align="right" valign="top"><a id="a99fb56de8b7c93943c0fb57b6f0b5469" name="a99fb56de8b7c93943c0fb57b6f0b5469"></a>
+MUDA_GENERIC reference&#160;</td><td class="memItemRight" valign="bottom"><b>operator*</b> ()</td></tr>
+<tr class="separator:a99fb56de8b7c93943c0fb57b6f0b5469"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29280c72c56ea2582066c213a3697b9c" id="r_a29280c72c56ea2582066c213a3697b9c"><td class="memItemLeft" align="right" valign="top"><a id="a29280c72c56ea2582066c213a3697b9c" name="a29280c72c56ea2582066c213a3697b9c"></a>
+MUDA_GENERIC auto_const_t&lt; T &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator[]</b> (int i)</td></tr>
+<tr class="separator:a29280c72c56ea2582066c213a3697b9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3e20927c5f62ee69cba7062b641a24c" id="r_ac3e20927c5f62ee69cba7062b641a24c"><td class="memItemLeft" align="right" valign="top"><a id="ac3e20927c5f62ee69cba7062b641a24c" name="ac3e20927c5f62ee69cba7062b641a24c"></a>
+MUDA_GENERIC const T &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator[]</b> (int i) const</td></tr>
+<tr class="separator:ac3e20927c5f62ee69cba7062b641a24c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>

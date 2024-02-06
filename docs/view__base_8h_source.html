@@ -113,9 +113,12 @@ $(document).ready(function(){initNavTree('view__base_8h_source.html',''); initRe
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    <span class="keyword">using </span>auto_const_t = std::conditional_t&lt;IsConst, const T, T&gt;;</div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    <span class="keyword">using </span>non_const_enable_t = std::enable_if_t&lt;IsNonConst, T&gt;;</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>};</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>  <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    std::byte _dummy; <span class="comment">// a workaround to avoid NVCC EBO bug.</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>};</div>
 </div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>}  <span class="comment">// namespace muda</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>}  <span class="comment">// namespace muda</span></div>
 <div class="ttc" id="aclassmuda_1_1_view_base_html"><div class="ttname"><a href="classmuda_1_1_view_base.html">muda::ViewBase</a></div><div class="ttdef"><b>Definition</b> view_base.h:8</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

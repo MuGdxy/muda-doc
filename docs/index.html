@@ -244,7 +244,7 @@ Logger</h2>
 <div class="line">{</div>
 <div class="line">    <span class="comment">// setup global logger</span></div>
 <div class="line">    <a class="code hl_class" href="classmuda_1_1_logger_viewer.html">LoggerViewer</a>* viewer_ptr = <span class="keyword">nullptr</span>;</div>
-<div class="line">    checkCudaErrors(cudaGetSymbolAddress(&amp;viewer, cout));</div>
+<div class="line">    checkCudaErrors(cudaGetSymbolAddress(&amp;viewer_ptr, foo::cout));</div>
 <div class="line">    <a class="code hl_class" href="classmuda_1_1_logger.html">Logger</a> logger(viewer_ptr);</div>
 <div class="line">    </div>
 <div class="line">    <a class="code hl_class" href="classmuda_1_1_launch.html">Launch</a>().apply([]__device__() <span class="keyword">mutable</span></div>
@@ -372,7 +372,7 @@ Asynchronous Operation</h2>
 <div class="line"><a class="code hl_class" href="classmuda_1_1_buffer_launch.html">BufferLaunch</a>(stream).copy(<a class="code hl_class" href="classmuda_1_1_buffer_view.html">BufferView</a>, ...).wait();</div>
 <div class="line"><a class="code hl_class" href="classmuda_1_1_buffer_launch.html">BufferLaunch</a>(stream).fill(<a class="code hl_class" href="classmuda_1_1_buffer_view.html">BufferView</a>,...).wait();</div>
 <div class="ttc" id="aclassmuda_1_1_buffer_launch_html"><div class="ttname"><a href="classmuda_1_1_buffer_launch.html">muda::BufferLaunch</a></div><div class="ttdef"><b>Definition</b> buffer_launch.h:37</div></div>
-<div class="ttc" id="aclassmuda_1_1_buffer_view_html"><div class="ttname"><a href="classmuda_1_1_buffer_view.html">muda::BufferView</a></div><div class="ttdef"><b>Definition</b> buffer_view.h:145</div></div>
+<div class="ttc" id="aclassmuda_1_1_buffer_view_html"><div class="ttname"><a href="classmuda_1_1_buffer_view.html">muda::BufferView</a></div><div class="ttdef"><b>Definition</b> buffer_view.h:168</div></div>
 <div class="ttc" id="aclassmuda_1_1_graph_launch_html"><div class="ttname"><a href="classmuda_1_1_graph_launch.html">muda::GraphLaunch</a></div><div class="ttdef"><b>Definition</b> graph_launch.h:8</div></div>
 <div class="ttc" id="aclassmuda_1_1_memory_html"><div class="ttname"><a href="classmuda_1_1_memory.html">muda::Memory</a></div><div class="ttdef"><b>Definition</b> memory.h:8</div></div>
 </div><!-- fragment --><p>Feel free to ignore <code>Memory</code> <code>BufferLaunch</code> <b>Launcher</b> when building your fast demo. Directly use the convenient synchronous APIs of <code>DeviceBuffer/BufferView</code> until you find it's the performance hotpot that will save you a lot of time.</p>
@@ -559,7 +559,12 @@ Asynchronous Operation</h2>
 <div class="line">    <a class="code hl_class" href="classmuda_1_1_device_buffer.html">DeviceBuffer&lt;Vector3f&gt;</a> pos_buf;</div>
 <div class="line">    pos.copy_to(pos_buf);</div>
 <div class="line">    pos.copy_from(pos_buf);</div>
+<div class="line">    </div>
+<div class="line">    <span class="comment">// using cub to do reduction on any format</span></div>
+<div class="line">    <a class="code hl_class" href="classmuda_1_1_device_var.html">DeviceVar&lt;float&gt;</a> total_mass;</div>
+<div class="line">    <a class="code hl_class" href="classmuda_1_1_device_reduce.html">DeviceReduce</a>().Sum(m.view(), total_mass.view(), m.count());</div>
 <div class="line">}</div>
+<div class="ttc" id="aclassmuda_1_1_device_reduce_html"><div class="ttname"><a href="classmuda_1_1_device_reduce.html">muda::DeviceReduce</a></div><div class="ttdef"><b>Definition</b> device_reduce.h:12</div></div>
 <div class="ttc" id="aclassmuda_1_1_field_html"><div class="ttname"><a href="classmuda_1_1_field.html">muda::Field</a></div><div class="ttdef"><b>Definition</b> field.h:17</div></div>
 </div><!-- fragment --><p>Additionally, resizing a subfield will resize all the entries, and the resizing is safe; all entries will be copied to a new buffer if the new size exceeds the capacity.</p>
 <div class="fragment"><div class="line"><span class="comment">// safe resize, all entries will be copied to the new buffer.</span></div>
