@@ -46,7 +46,7 @@ var NAVTREEINDEX =
 [
 "aabb_8h_source.html",
 "classmuda_1_1_triplet_matrix_view_base_3_01_is_const_00_01_ty_00_011_01_4.html",
-"graph__exec_8inl_source.html"
+"graph__graph__viewer_8h_source.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

@@ -446,7 +446,7 @@ Asynchronous Operation</h2>
 <div class="line">        H(i).write(row,col, hessin);</div>
 <div class="line">        </div>
 <div class="line">        <span class="comment">// atomic add the gradient vector</span></div>
-<div class="line">        g.segment&lt;3&gt;(i * 3).atomic_add(gradient);</div>
+<div class="line">        g.segment&lt;3&gt;(row * 3).atomic_add(gradient);</div>
 <div class="line">    }).wait();</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// convert to bcoo for better performance on SPMV.</span></div>
