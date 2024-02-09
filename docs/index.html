@@ -153,7 +153,7 @@ Why muda?</h2>
 </ul>
 <p>Simple to extend.</p>
 <ul>
-<li>User can obey the basic interface of muda to define their own object to reuse the MUDA facility</li>
+<li>User can obey the primary interface of muda to define their own object to reuse the MUDA facility</li>
 <li>Almost all "Resource View Type" can be used directly in the MUDA <code>ComputeGraph</code>.</li>
 </ul>
 <h2><a class="anchor" id="autotoc_md3"></a>
@@ -164,7 +164,25 @@ A substitution of thrust?</h2>
 </blockquote>
 <p>Using iterators to prevent range error is a high-level approach. However, we still need to access the memory manually in our own kernel, no matter whether using raw cuda kernel launch <code>&lt;&lt;&lt;&gt;&gt;&gt;</code> or using thrust agent kernel (most of the time, using a <code>thrust::counting_iterator</code> in a <code>thrust::for_each</code> algorithm).</p>
 <p>So, I think MUDA is a mid-level approach. We have the same purpose but different levels and aim at different problems. Feel comfortable to use them together!</p>
-<h1><a class="anchor" id="autotoc_md4"></a>
+<p>Here is an example for using Thrust and MUDA together.</p>
+<div class="fragment"><div class="line"><span class="keyword">using namespace </span>muda;</div>
+<div class="line"><span class="keyword">using namespace </span>thrust;</div>
+<div class="line"> </div>
+<div class="line"><span class="keyword">constexpr</span> <span class="keyword">auto</span> N = 10;</div>
+<div class="line"><a class="code hl_class" href="classmuda_1_1_device_vector.html">DeviceVector&lt;float&gt;</a> x(N); <span class="comment">// DeviceVector is derived from thrust::device_vector  </span></div>
+<div class="line"> </div>
+<div class="line"><a class="code hl_class" href="classmuda_1_1_kernel_label.html">KernelLabel</a> lebal{<span class="stringliteral">&quot;setup_concise&quot;</span>}; <span class="comment">// give a kernel label for better debug info</span></div>
+<div class="line"> </div>
+<div class="line"><span class="comment">// equivalent to parallel for </span></div>
+<div class="line">for_each(thrust::cuda::par_nosync, <span class="comment">// no sync after execution</span></div>
+<div class="line">         make_counting_iterator(0), make_counting_iterator(N), <span class="comment">// make a sequence from 0 -&gt; N</span></div>
+<div class="line">         [x = x.viewer().name(<span class="stringliteral">&quot;x&quot;</span>)] __device__(<span class="keywordtype">int</span> i) <span class="keyword">mutable</span></div>
+<div class="line">         {</div>
+<div class="line">             x(i) = i; <span class="comment">// safe access through muda viewer</span></div>
+<div class="line">         });</div>
+<div class="ttc" id="aclassmuda_1_1_device_vector_html"><div class="ttname"><a href="classmuda_1_1_device_vector.html">muda::DeviceVector</a></div><div class="ttdef"><b>Definition</b> vector.h:23</div></div>
+<div class="ttc" id="aclassmuda_1_1_kernel_label_html"><div class="ttname"><a href="classmuda_1_1_kernel_label.html">muda::KernelLabel</a></div><div class="ttdef"><b>Definition</b> kernel_label.h:7</div></div>
+</div><!-- fragment --><h1><a class="anchor" id="autotoc_md4"></a>
 Overview</h1>
 <p>This is a quick overview of some muda APIs.</p>
 <p>You can check it to find out something useful for you. A comprehensive description of MUDA is placed at Tutorial.</p>
@@ -650,7 +668,6 @@ Compute Graph</h2>
 <div class="line">    <span class="comment">// launch all nodes on a single stream (fallback to origin cuda kernel launch)</span></div>
 <div class="line">    graph.launch(<span class="keyword">true</span>, stream);</div>
 <div class="line">}</div>
-<div class="ttc" id="aclassmuda_1_1_device_vector_html"><div class="ttname"><a href="classmuda_1_1_device_vector.html">muda::DeviceVector</a></div><div class="ttdef"><b>Definition</b> vector.h:23</div></div>
 </div><!-- fragment --><h2><a class="anchor" id="autotoc_md14"></a>
 Dynamic Parallelism</h2>
 <p>MUDA support dynamic parallelism based on MUDA ComputeGraph.</p>

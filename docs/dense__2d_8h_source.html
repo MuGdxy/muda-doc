@@ -179,7 +179,7 @@ $(document).ready(function(){initNavTree('dense__2d_8h_source.html',''); initRes
 <div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>        <span class="keywordflow">if</span> <span class="keyword">constexpr</span>(DEBUG_VIEWER)</div>
 <div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>        {</div>
 <div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>            MUDA_KERNEL_ASSERT(i &gt;= 0 &amp;&amp; i &lt; total_size(),</div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>                               <span class="stringliteral">&quot;dense2D[%s:%s]: out of range, index=%d, total_size=%d&quot;</span>,</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>                               <span class="stringliteral">&quot;Dense2D[%s:%s]: out of range, index=%d, total_size=%d&quot;</span>,</div>
 <div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>                               this-&gt;name(),</div>
 <div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>                               this-&gt;kernel_name(),</div>
 <div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>                               i,</div>
@@ -231,7 +231,7 @@ $(document).ready(function(){initNavTree('dense__2d_8h_source.html',''); initRes
 <div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>        <span class="keywordflow">if</span> <span class="keyword">constexpr</span>(DEBUG_VIEWER)</div>
 <div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>            <span class="keywordflow">if</span>(!(x &gt;= 0 &amp;&amp; x &lt; m_dim.x &amp;&amp; y &gt;= 0 &amp;&amp; y &lt; m_dim.y))</div>
 <div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>            {</div>
-<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>                MUDA_KERNEL_ERROR(<span class="stringliteral">&quot;dense2D[%s:%s]: out of range, index=(%d,%d) dim=(%d,%d)&quot;</span>,</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>                MUDA_KERNEL_ERROR(<span class="stringliteral">&quot;Dense2D[%s:%s]: out of range, index=(%d,%d) dim=(%d,%d)&quot;</span>,</div>
 <div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>                                  this-&gt;name(),</div>
 <div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>                                  this-&gt;kernel_name(),</div>
 <div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>                                  x,</div>
@@ -246,7 +246,7 @@ $(document).ready(function(){initNavTree('dense__2d_8h_source.html',''); initRes
 <div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>        <span class="keywordflow">if</span> <span class="keyword">constexpr</span>(DEBUG_VIEWER)</div>
 <div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>        {</div>
 <div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>            MUDA_KERNEL_ASSERT(m_data,</div>
-<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>                               <span class="stringliteral">&quot;dense2D[%s:%s]: m_data is null&quot;</span>,</div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>                               <span class="stringliteral">&quot;Dense2D[%s:%s]: m_data is null&quot;</span>,</div>
 <div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>                               this-&gt;name(),</div>
 <div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>                               this-&gt;kernel_name());</div>
 <div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>        }</div>

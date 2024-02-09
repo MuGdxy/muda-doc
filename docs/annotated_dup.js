@@ -32,11 +32,11 @@ var annotated_dup =
       [ "lbvh", null, [
         [ "details", null, [
           [ "BVHViewerBase", "classmuda_1_1lbvh_1_1details_1_1_b_v_h_viewer_base.html", "classmuda_1_1lbvh_1_1details_1_1_b_v_h_viewer_base" ],
-          [ "node", "structmuda_1_1lbvh_1_1details_1_1node.html", null ]
+          [ "Node", "structmuda_1_1lbvh_1_1details_1_1_node.html", null ]
         ] ],
         [ "AABB", "structmuda_1_1lbvh_1_1_a_a_b_b.html", null ],
         [ "BVH", "classmuda_1_1lbvh_1_1_b_v_h.html", null ],
-        [ "default_morton_code_calculator", "structmuda_1_1lbvh_1_1default__morton__code__calculator.html", null ],
+        [ "DefaultMortonCodeCalculator", "structmuda_1_1lbvh_1_1_default_morton_code_calculator.html", null ],
         [ "query_nearest", "structmuda_1_1lbvh_1_1query__nearest.html", null ],
         [ "query_overlap", "structmuda_1_1lbvh_1_1query__overlap.html", null ],
         [ "vector_of", "structmuda_1_1lbvh_1_1vector__of.html", null ],
@@ -192,6 +192,7 @@ var annotated_dup =
       [ "IdWithType", "classmuda_1_1_id_with_type.html", null ],
       [ "invalid_argument", "classmuda_1_1invalid__argument.html", null ],
       [ "Kernel", "classmuda_1_1_kernel.html", null ],
+      [ "KernelLabel", "classmuda_1_1_kernel_label.html", null ],
       [ "KernelNode", "classmuda_1_1_kernel_node.html", null ],
       [ "KernelNodeParms", "classmuda_1_1_kernel_node_parms.html", null ],
       [ "Launch", "classmuda_1_1_launch.html", null ],

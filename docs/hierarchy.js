@@ -37,7 +37,7 @@ var hierarchy =
     [ "muda::TripletMatrixViewerBase< IsConst, T, 1 >::CTriplet", "structmuda_1_1_triplet_matrix_viewer_base_3_01_is_const_00_01_t_00_011_01_4_1_1_c_triplet.html", null ],
     [ "muda::Debug", "classmuda_1_1_debug.html", null ],
     [ "muda::Default", "structmuda_1_1_default.html", null ],
-    [ "muda::lbvh::default_morton_code_calculator< Real, Object >", "structmuda_1_1lbvh_1_1default__morton__code__calculator.html", null ],
+    [ "muda::lbvh::DefaultMortonCodeCalculator< Real, Object >", "structmuda_1_1lbvh_1_1_default_morton_code_calculator.html", null ],
     [ "muda::lbvh::details::BVHViewerBase< IsConst, Real, Object >::DefaultQueryCallback", "structmuda_1_1lbvh_1_1details_1_1_b_v_h_viewer_base_1_1_default_query_callback.html", null ],
     [ "muda::details::buffer::DestructInfo< BufferView >", "classmuda_1_1details_1_1buffer_1_1_destruct_info.html", null ],
     [ "thrust::device_vector", null, [
@@ -46,7 +46,7 @@ var hierarchy =
       [ "muda::DeviceVector< int >", "classmuda_1_1_device_vector.html", null ],
       [ "muda::DeviceVector< object_type >", "classmuda_1_1_device_vector.html", null ],
       [ "muda::DeviceVector< muda::lbvh::AABB >", "classmuda_1_1_device_vector.html", null ],
-      [ "muda::DeviceVector< muda::lbvh::details::node >", "classmuda_1_1_device_vector.html", null ],
+      [ "muda::DeviceVector< muda::lbvh::details::Node >", "classmuda_1_1_device_vector.html", null ],
       [ "muda::DeviceVector< T >", "classmuda_1_1_device_vector.html", null ]
     ] ],
     [ "muda::DeviceBSRMatrix< Ty, N >", "classmuda_1_1_device_b_s_r_matrix.html", null ],
@@ -155,6 +155,7 @@ var hierarchy =
     ] ],
     [ "TCB_SPAN_NAMESPACE_NAME::detail::is_container< C, U >", "struct_t_c_b___s_p_a_n___n_a_m_e_s_p_a_c_e___n_a_m_e_1_1detail_1_1is__container.html", null ],
     [ "muda::Kernel< F >", "classmuda_1_1_kernel.html", null ],
+    [ "muda::KernelLabel", "classmuda_1_1_kernel_label.html", null ],
     [ "muda::details::LaunchCallable< F >", "structmuda_1_1details_1_1_launch_callable.html", null ],
     [ "muda::LaunchCore", "classmuda_1_1_launch_core.html", [
       [ "muda::LaunchBase< BufferLaunch >", "classmuda_1_1_launch_base.html", [
@@ -256,7 +257,7 @@ var hierarchy =
     [ "muda::details::MatrixFormatConverterType", "classmuda_1_1details_1_1_matrix_format_converter_type.html", null ],
     [ "muda::MatrixMapInfo< T, M, N >", "classmuda_1_1_matrix_map_info.html", null ],
     [ "muda::NDReshaper", "classmuda_1_1_n_d_reshaper.html", null ],
-    [ "muda::lbvh::details::node", "structmuda_1_1lbvh_1_1details_1_1node.html", null ],
+    [ "muda::lbvh::details::Node", "structmuda_1_1lbvh_1_1details_1_1_node.html", null ],
     [ "muda::NodeParms", "classmuda_1_1_node_parms.html", [
       [ "muda::HostNodeParms< T >", "classmuda_1_1_host_node_parms.html", null ],
       [ "muda::KernelNodeParms< U >", "classmuda_1_1_kernel_node_parms.html", null ]

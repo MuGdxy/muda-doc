@@ -2,7 +2,7 @@ var searchData=
 [
   ['debug_0',['Debug',['../classmuda_1_1_debug.html',1,'muda']]],
   ['default_1',['Default',['../structmuda_1_1_default.html',1,'muda']]],
-  ['default_5fmorton_5fcode_5fcalculator_2',['default_morton_code_calculator',['../structmuda_1_1lbvh_1_1default__morton__code__calculator.html',1,'muda::lbvh']]],
+  ['defaultmortoncodecalculator_2',['DefaultMortonCodeCalculator',['../structmuda_1_1lbvh_1_1_default_morton_code_calculator.html',1,'muda::lbvh']]],
   ['defaultquerycallback_3',['DefaultQueryCallback',['../structmuda_1_1lbvh_1_1details_1_1_b_v_h_viewer_base_1_1_default_query_callback.html',1,'muda::lbvh::details::BVHViewerBase']]],
   ['dense_4',['Dense',['../classmuda_1_1_dense.html',1,'muda']]],
   ['dense1dbase_5',['Dense1DBase',['../classmuda_1_1_dense1_d_base.html',1,'muda']]],
@@ -80,7 +80,7 @@ var searchData=
   ['devicevector_77',['DeviceVector',['../classmuda_1_1_device_vector.html',1,'muda']]],
   ['devicevector_3c_20int_20_3e_78',['DeviceVector&lt; int &gt;',['../classmuda_1_1_device_vector.html',1,'muda']]],
   ['devicevector_3c_20muda_3a_3albvh_3a_3aaabb_20_3e_79',['DeviceVector&lt; muda::lbvh::AABB &gt;',['../classmuda_1_1_device_vector.html',1,'muda']]],
-  ['devicevector_3c_20muda_3a_3albvh_3a_3adetails_3a_3anode_20_3e_80',['DeviceVector&lt; muda::lbvh::details::node &gt;',['../classmuda_1_1_device_vector.html',1,'muda']]],
+  ['devicevector_3c_20muda_3a_3albvh_3a_3adetails_3a_3anode_20_3e_80',['DeviceVector&lt; muda::lbvh::details::Node &gt;',['../classmuda_1_1_device_vector.html',1,'muda']]],
   ['devicevector_3c_20object_5ftype_20_3e_81',['DeviceVector&lt; object_type &gt;',['../classmuda_1_1_device_vector.html',1,'muda']]],
   ['devicevector_3c_20uint32_5ft_20_3e_82',['DeviceVector&lt; uint32_t &gt;',['../classmuda_1_1_device_vector.html',1,'muda']]],
   ['devicevector_3c_20unsigned_20long_20long_20int_20_3e_83',['DeviceVector&lt; unsigned long long int &gt;',['../classmuda_1_1_device_vector.html',1,'muda']]],

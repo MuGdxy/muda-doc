@@ -4,6 +4,7 @@ var dir_440d6ef7395341c98b5d944289d06a83 =
     [ "event.h", "event_8h_source.html", null ],
     [ "host_call.h", "host__call_8h_source.html", null ],
     [ "kernel.h", "kernel_8h_source.html", null ],
+    [ "kernel_label.h", "kernel__label_8h_source.html", null ],
     [ "kernel_tag.h", "kernel__tag_8h_source.html", null ],
     [ "launch.h", "launch_2launch_8h.html", "launch_2launch_8h" ],
     [ "launch_base.h", "launch__base_8h_source.html", null ],
