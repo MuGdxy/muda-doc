@@ -92,6 +92,7 @@ $(document).ready(function(){initNavTree('classmuda_1_1_dense1_d_base.html','');
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-types">Protected Types</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="classmuda_1_1_dense1_d_base-members.html">List of all members</a>  </div>
@@ -184,6 +185,20 @@ MUDA_GENERIC const char *&#160;</td><td class="memItemRight" valign="bottom"><b>
 <a class="el" href="classmuda_1_1_viewer_base.html">ViewerBase</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (<a class="el" href="classmuda_1_1_viewer_base.html">ViewerBase</a> &amp;&amp;)=default</td></tr>
 <tr class="separator:ae7e28ea21e0642351f3f0c119ed854ed inherit pub_methods_classmuda_1_1_viewer_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-types" name="pro-types"></a>
+Protected Types</h2></td></tr>
+<tr class="memitem:a5ae541cfa73e63cb5bedd7b74482ebb3" id="r_a5ae541cfa73e63cb5bedd7b74482ebb3"><td class="memTemplParams" colspan="2"><a id="a5ae541cfa73e63cb5bedd7b74482ebb3" name="a5ae541cfa73e63cb5bedd7b74482ebb3"></a>
+template&lt;typename U &gt; </td></tr>
+<tr class="memitem:a5ae541cfa73e63cb5bedd7b74482ebb3"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><b>auto_const_t</b> = typename Base::auto_const_t&lt; U &gt;</td></tr>
+<tr class="separator:a5ae541cfa73e63cb5bedd7b74482ebb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_types_classmuda_1_1_viewer_base"><td colspan="2" onclick="javascript:toggleInherit('pro_types_classmuda_1_1_viewer_base')"><img src="closed.png" alt="-"/>&#160;Protected Types inherited from <a class="el" href="classmuda_1_1_viewer_base.html">muda::ViewerBase&lt; IsConst &gt;</a></td></tr>
+<tr class="memitem:a564fb484ff4eece77e7ce62f42b5e7c4 inherit pro_types_classmuda_1_1_viewer_base" id="r_a564fb484ff4eece77e7ce62f42b5e7c4"><td class="memItemLeft" align="right" valign="top">
+using&#160;</td><td class="memItemRight" valign="bottom"><b>auto_const_t</b> = std::conditional_t&lt; IsConst, const T, T &gt;</td></tr>
+<tr class="separator:a564fb484ff4eece77e7ce62f42b5e7c4 inherit pro_types_classmuda_1_1_viewer_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae0888bb665aee8ea133d66e71862525 inherit pro_types_classmuda_1_1_viewer_base" id="r_aae0888bb665aee8ea133d66e71862525"><td class="memItemLeft" align="right" valign="top">
+using&#160;</td><td class="memItemRight" valign="bottom"><b>non_const_enable_t</b> = std::enable_if_t&lt; IsNonConst, T &gt;</td></tr>
+<tr class="separator:aae0888bb665aee8ea133d66e71862525 inherit pro_types_classmuda_1_1_viewer_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
 <tr class="memitem:aa40990bd5048befbf17575c02b33cc2f" id="r_aa40990bd5048befbf17575c02b33cc2f"><td class="memItemLeft" align="right" valign="top"><a id="aa40990bd5048befbf17575c02b33cc2f" name="aa40990bd5048befbf17575c02b33cc2f"></a>
@@ -218,13 +233,6 @@ static constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsCo
 <tr class="memitem:a1530678b12884c2d419fba9bdf167501 inherit pub_static_attribs_classmuda_1_1_viewer_base" id="r_a1530678b12884c2d419fba9bdf167501"><td class="memItemLeft" align="right" valign="top">
 static constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsNonConst</b></td></tr>
 <tr class="separator:a1530678b12884c2d419fba9bdf167501 inherit pub_static_attribs_classmuda_1_1_viewer_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pro_types_classmuda_1_1_viewer_base"><td colspan="2" onclick="javascript:toggleInherit('pro_types_classmuda_1_1_viewer_base')"><img src="closed.png" alt="-"/>&#160;Protected Types inherited from <a class="el" href="classmuda_1_1_viewer_base.html">muda::ViewerBase&lt; IsConst &gt;</a></td></tr>
-<tr class="memitem:a564fb484ff4eece77e7ce62f42b5e7c4 inherit pro_types_classmuda_1_1_viewer_base" id="r_a564fb484ff4eece77e7ce62f42b5e7c4"><td class="memItemLeft" align="right" valign="top">
-using&#160;</td><td class="memItemRight" valign="bottom"><b>auto_const_t</b> = std::conditional_t&lt; IsConst, const T, T &gt;</td></tr>
-<tr class="separator:a564fb484ff4eece77e7ce62f42b5e7c4 inherit pro_types_classmuda_1_1_viewer_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aae0888bb665aee8ea133d66e71862525 inherit pro_types_classmuda_1_1_viewer_base" id="r_aae0888bb665aee8ea133d66e71862525"><td class="memItemLeft" align="right" valign="top">
-using&#160;</td><td class="memItemRight" valign="bottom"><b>non_const_enable_t</b> = std::enable_if_t&lt; IsNonConst, T &gt;</td></tr>
-<tr class="separator:aae0888bb665aee8ea133d66e71862525 inherit pro_types_classmuda_1_1_viewer_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>src/muda/viewer/dense/<a class="el" href="dense__1d_8h_source.html">dense_1d.h</a></li>

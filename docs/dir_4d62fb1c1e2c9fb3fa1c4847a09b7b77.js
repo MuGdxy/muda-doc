@@ -1,6 +1,7 @@
 var dir_4d62fb1c1e2c9fb3fa1c4847a09b7b77 =
 [
     [ "byte_temp_buffer.h", "byte__temp__buffer_8h_source.html", null ],
+    [ "cuda_vec_utils.h", "cuda__vec__utils_8h_source.html", null ],
     [ "debug_break.h", "debug__break_8h_source.html", null ],
     [ "debug_log.h", "debug__log_8h_source.html", null ],
     [ "extent.h", "extent_8h_source.html", null ],

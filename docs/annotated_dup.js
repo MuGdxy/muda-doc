@@ -29,6 +29,10 @@ var annotated_dup =
         [ "StringPointer", "classmuda_1_1details_1_1_string_pointer.html", null ],
         [ "ViewerBaseAccessor", "classmuda_1_1details_1_1_viewer_base_accessor.html", null ]
       ] ],
+      [ "eigen", null, [
+        [ "AnalyticalInverse", "structmuda_1_1eigen_1_1_analytical_inverse.html", null ],
+        [ "GaussEliminationInverse", "structmuda_1_1eigen_1_1_gauss_elimination_inverse.html", null ]
+      ] ],
       [ "lbvh", null, [
         [ "details", null, [
           [ "BVHViewerBase", "classmuda_1_1lbvh_1_1details_1_1_b_v_h_viewer_base.html", "classmuda_1_1lbvh_1_1details_1_1_b_v_h_viewer_base" ],
@@ -42,6 +46,21 @@ var annotated_dup =
         [ "vector_of", "structmuda_1_1lbvh_1_1vector__of.html", null ],
         [ "vector_of< double >", "structmuda_1_1lbvh_1_1vector__of_3_01double_01_4.html", null ],
         [ "vector_of< float >", "structmuda_1_1lbvh_1_1vector__of_3_01float_01_4.html", null ]
+      ] ],
+      [ "spatial_hash", null, [
+        [ "details", null, [
+          [ "SparseSpatialHashImpl", "classmuda_1_1spatial__hash_1_1details_1_1_sparse_spatial_hash_impl.html", null ]
+        ] ],
+        [ "AABB", "classmuda_1_1spatial__hash_1_1_a_a_b_b.html", null ],
+        [ "BoundingSphere", "classmuda_1_1spatial__hash_1_1_bounding_sphere.html", null ],
+        [ "CollisionPair", "classmuda_1_1spatial__hash_1_1_collision_pair.html", null ],
+        [ "DefaultPredication", "classmuda_1_1spatial__hash_1_1_default_predication.html", null ],
+        [ "Morton", "classmuda_1_1spatial__hash_1_1_morton.html", null ],
+        [ "Morton< uint32_t >", "classmuda_1_1spatial__hash_1_1_morton_3_01uint32__t_01_4.html", null ],
+        [ "Morton< uint64_t >", "classmuda_1_1spatial__hash_1_1_morton_3_01uint64__t_01_4.html", null ],
+        [ "SparseSpatialHash", "classmuda_1_1spatial__hash_1_1_sparse_spatial_hash.html", null ],
+        [ "SpatialHashTableInfo", "classmuda_1_1spatial__hash_1_1_spatial_hash_table_info.html", null ],
+        [ "SpatialPartitionCell", "classmuda_1_1spatial__hash_1_1_spatial_partition_cell.html", null ]
       ] ],
       [ "always_false", "structmuda_1_1always__false.html", null ],
       [ "always_true", "structmuda_1_1always__true.html", null ],

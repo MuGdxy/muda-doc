@@ -187,7 +187,7 @@ $(document).ready(function(){initNavTree('svd_8inl_source.html',''); initResizab
 <div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>    S = V * Sigma.asDiagonal() * V.transpose();</div>
 <div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>}</div>
 <div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span> </div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>MUDA_GENERIC <span class="keywordtype">void</span> svd(<span class="keyword">const</span> Eigen::Matrix&lt;double, 3, 3&gt;&amp; F,</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>MUDA_INLINE MUDA_GENERIC <span class="keywordtype">void</span> svd(<span class="keyword">const</span> Eigen::Matrix&lt;double, 3, 3&gt;&amp; F,</div>
 <div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>                      Eigen::Matrix&lt;double, 3, 3&gt;&amp;       U,</div>
 <div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>                      Eigen::Vector3&lt;double&gt;&amp;            Sigma,</div>
 <div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>                      Eigen::Matrix&lt;double, 3, 3&gt;&amp;       V)</div>
@@ -201,7 +201,7 @@ $(document).ready(function(){initNavTree('svd_8inl_source.html',''); initResizab
 <div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>    V     = fV.cast&lt;<span class="keywordtype">double</span>&gt;();</div>
 <div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>}</div>
 <div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span> </div>
-<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>MUDA_GENERIC <span class="keywordtype">void</span> pd(<span class="keyword">const</span> Eigen::Matrix&lt;double, 3, 3&gt;&amp; F,</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>MUDA_INLINE MUDA_GENERIC <span class="keywordtype">void</span> pd(<span class="keyword">const</span> Eigen::Matrix&lt;double, 3, 3&gt;&amp; F,</div>
 <div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>                     Eigen::Matrix&lt;double, 3, 3&gt;&amp;       R,</div>
 <div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>                     Eigen::Matrix&lt;double, 3, 3&gt;&amp;       S)</div>
 <div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>{</div>

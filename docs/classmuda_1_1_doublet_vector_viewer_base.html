@@ -131,21 +131,15 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>ThisViewer</b> = <a 
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ae3acd5996773a5eb1943629838da15f4" id="r_ae3acd5996773a5eb1943629838da15f4"><td class="memItemLeft" align="right" valign="top"><a id="ae3acd5996773a5eb1943629838da15f4" name="ae3acd5996773a5eb1943629838da15f4"></a>
-MUDA_GENERIC&#160;</td><td class="memItemRight" valign="bottom"><b>DoubletVectorViewerBase</b> (int segment_count, int doublet_index_offset, int doublet_count, int total_doublet_count, auto_const_t&lt; int &gt; *segment_indices, auto_const_t&lt; SegmentVector &gt; *segment_values)</td></tr>
-<tr class="separator:ae3acd5996773a5eb1943629838da15f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab975aa3cd2ba4bed5baa548e78e295de" id="r_ab975aa3cd2ba4bed5baa548e78e295de"><td class="memItemLeft" align="right" valign="top"><a id="ab975aa3cd2ba4bed5baa548e78e295de" name="ab975aa3cd2ba4bed5baa548e78e295de"></a>
+MUDA_GENERIC&#160;</td><td class="memItemRight" valign="bottom"><b>DoubletVectorViewerBase</b> (int total_segment_count, int doublet_index_offset, int doublet_count, int total_doublet_count, int subvector_offset, int subvector_extent, auto_const_t&lt; int &gt; *segment_indices, auto_const_t&lt; SegmentVector &gt; *segment_values)</td></tr>
+<tr class="separator:ab975aa3cd2ba4bed5baa548e78e295de"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7e9bfb1e4a9678497233c2f49b8aa693" id="r_a7e9bfb1e4a9678497233c2f49b8aa693"><td class="memItemLeft" align="right" valign="top"><a id="a7e9bfb1e4a9678497233c2f49b8aa693" name="a7e9bfb1e4a9678497233c2f49b8aa693"></a>
 MUDA_GENERIC <a class="el" href="classmuda_1_1_doublet_vector_viewer_base.html">ConstViewer</a>&#160;</td><td class="memItemRight" valign="bottom"><b>as_const</b> () const noexcept</td></tr>
 <tr class="separator:a7e9bfb1e4a9678497233c2f49b8aa693"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a795a97459ac0f938da1d7f153e6cd49e" id="r_a795a97459ac0f938da1d7f153e6cd49e"><td class="memItemLeft" align="right" valign="top"><a id="a795a97459ac0f938da1d7f153e6cd49e" name="a795a97459ac0f938da1d7f153e6cd49e"></a>
 MUDA_GENERIC&#160;</td><td class="memItemRight" valign="bottom"><b>operator ConstViewer</b> () const noexcept</td></tr>
 <tr class="separator:a795a97459ac0f938da1d7f153e6cd49e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a82966d131e8e5569d39d084de9b00775" id="r_a82966d131e8e5569d39d084de9b00775"><td class="memItemLeft" align="right" valign="top"><a id="a82966d131e8e5569d39d084de9b00775" name="a82966d131e8e5569d39d084de9b00775"></a>
-MUDA_GENERIC <a class="el" href="classmuda_1_1_doublet_vector_viewer_base.html">ThisViewer</a>&#160;</td><td class="memItemRight" valign="bottom"><b>subview</b> (int offset, int count) noexcept</td></tr>
-<tr class="separator:a82966d131e8e5569d39d084de9b00775"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab5dcfad205a2542af6dbccde0949d0e3" id="r_ab5dcfad205a2542af6dbccde0949d0e3"><td class="memItemLeft" align="right" valign="top"><a id="ab5dcfad205a2542af6dbccde0949d0e3" name="ab5dcfad205a2542af6dbccde0949d0e3"></a>
-MUDA_GENERIC <a class="el" href="classmuda_1_1_doublet_vector_viewer_base.html">ThisViewer</a>&#160;</td><td class="memItemRight" valign="bottom"><b>subview</b> (int offset) noexcept</td></tr>
-<tr class="separator:ab5dcfad205a2542af6dbccde0949d0e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7e6f7714944f0cd7e8258397bfa18285" id="r_a7e6f7714944f0cd7e8258397bfa18285"><td class="memItemLeft" align="right" valign="top"><a id="a7e6f7714944f0cd7e8258397bfa18285" name="a7e6f7714944f0cd7e8258397bfa18285"></a>
 MUDA_GENERIC int&#160;</td><td class="memItemRight" valign="bottom"><b>doublet_count</b> () const noexcept</td></tr>
 <tr class="separator:a7e6f7714944f0cd7e8258397bfa18285"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -155,12 +149,6 @@ MUDA_GENERIC int&#160;</td><td class="memItemRight" valign="bottom"><b>total_dou
 <tr class="memitem:a1871d885719c640a8b32639bce5443cc" id="r_a1871d885719c640a8b32639bce5443cc"><td class="memItemLeft" align="right" valign="top"><a id="a1871d885719c640a8b32639bce5443cc" name="a1871d885719c640a8b32639bce5443cc"></a>
 MUDA_GENERIC <a class="el" href="structmuda_1_1_doublet_vector_viewer_base_1_1_c_doublet.html">CDoublet</a>&#160;</td><td class="memItemRight" valign="bottom"><b>operator()</b> (int i) const</td></tr>
 <tr class="separator:a1871d885719c640a8b32639bce5443cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a04045149393ec443277a95eac0c38789" id="r_a04045149393ec443277a95eac0c38789"><td class="memItemLeft" align="right" valign="top"><a id="a04045149393ec443277a95eac0c38789" name="a04045149393ec443277a95eac0c38789"></a>
-MUDA_GENERIC <a class="el" href="classmuda_1_1_doublet_vector_viewer_base.html">ConstViewer</a>&#160;</td><td class="memItemRight" valign="bottom"><b>subview</b> (int offset, int count) const</td></tr>
-<tr class="separator:a04045149393ec443277a95eac0c38789"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af3dcb2eed885f181a31d91f8095ab474" id="r_af3dcb2eed885f181a31d91f8095ab474"><td class="memItemLeft" align="right" valign="top"><a id="af3dcb2eed885f181a31d91f8095ab474" name="af3dcb2eed885f181a31d91f8095ab474"></a>
-MUDA_GENERIC <a class="el" href="classmuda_1_1_doublet_vector_viewer_base.html">ConstViewer</a>&#160;</td><td class="memItemRight" valign="bottom"><b>subview</b> (int offset) const</td></tr>
-<tr class="separator:af3dcb2eed885f181a31d91f8095ab474"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classmuda_1_1_viewer_base"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classmuda_1_1_viewer_base')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classmuda_1_1_viewer_base.html">muda::ViewerBase&lt; IsConst &gt;</a></td></tr>
 <tr class="memitem:a55e0e349519c593ece19cdb9b8e8c652 inherit pub_methods_classmuda_1_1_viewer_base" id="r_a55e0e349519c593ece19cdb9b8e8c652"><td class="memItemLeft" align="right" valign="top">
 &#160;</td><td class="memItemRight" valign="bottom"><b>ViewerBase</b> (const <a class="el" href="classmuda_1_1_viewer_base.html">ViewerBase</a> &amp;)=default</td></tr>
@@ -186,6 +174,9 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:a9ec47de355e10504a2d5f9baa6fbdf2c" id="r_a9ec47de355e10504a2d5f9baa6fbdf2c"><td class="memItemLeft" align="right" valign="top"><a id="a9ec47de355e10504a2d5f9baa6fbdf2c" name="a9ec47de355e10504a2d5f9baa6fbdf2c"></a>
 MUDA_INLINE MUDA_GENERIC int&#160;</td><td class="memItemRight" valign="bottom"><b>get_index</b> (int i) const noexcept</td></tr>
 <tr class="separator:a9ec47de355e10504a2d5f9baa6fbdf2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4eec0bdec952b36586140992a13e59e3" id="r_a4eec0bdec952b36586140992a13e59e3"><td class="memItemLeft" align="right" valign="top"><a id="a4eec0bdec952b36586140992a13e59e3" name="a4eec0bdec952b36586140992a13e59e3"></a>
+MUDA_INLINE MUDA_GENERIC int&#160;</td><td class="memItemRight" valign="bottom"><b>check_in_subvector</b> (int i) const noexcept</td></tr>
+<tr class="separator:a4eec0bdec952b36586140992a13e59e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_classmuda_1_1_viewer_base"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classmuda_1_1_viewer_base')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classmuda_1_1_viewer_base.html">muda::ViewerBase&lt; IsConst &gt;</a></td></tr>
 <tr class="memitem:a3c5e53b631be215d4e18a8fb09b6dbf7 inherit pro_methods_classmuda_1_1_viewer_base" id="r_a3c5e53b631be215d4e18a8fb09b6dbf7"><td class="memItemLeft" align="right" valign="top">
 MUDA_INLINE MUDA_HOST void&#160;</td><td class="memItemRight" valign="bottom"><b>name</b> (const char *n) MUDA_NOEXCEPT</td></tr>
@@ -196,15 +187,9 @@ MUDA_INLINE MUDA_GENERIC void&#160;</td><td class="memItemRight" valign="bottom"
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
-<tr class="memitem:aa5891ba47c96822ff4035d9112a6d367" id="r_aa5891ba47c96822ff4035d9112a6d367"><td class="memItemLeft" align="right" valign="top"><a id="aa5891ba47c96822ff4035d9112a6d367" name="aa5891ba47c96822ff4035d9112a6d367"></a>
-auto_const_t&lt; int &gt; *&#160;</td><td class="memItemRight" valign="bottom"><b>m_segment_indices</b></td></tr>
-<tr class="separator:aa5891ba47c96822ff4035d9112a6d367"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a175cbdd2e08e9bc509345925ef9272fc" id="r_a175cbdd2e08e9bc509345925ef9272fc"><td class="memItemLeft" align="right" valign="top"><a id="a175cbdd2e08e9bc509345925ef9272fc" name="a175cbdd2e08e9bc509345925ef9272fc"></a>
-auto_const_t&lt; SegmentVector &gt; *&#160;</td><td class="memItemRight" valign="bottom"><b>m_segment_values</b></td></tr>
-<tr class="separator:a175cbdd2e08e9bc509345925ef9272fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2a8f4fd551a4988de2c32e4b682e788e" id="r_a2a8f4fd551a4988de2c32e4b682e788e"><td class="memItemLeft" align="right" valign="top"><a id="a2a8f4fd551a4988de2c32e4b682e788e" name="a2a8f4fd551a4988de2c32e4b682e788e"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>m_size</b> = 0</td></tr>
-<tr class="separator:a2a8f4fd551a4988de2c32e4b682e788e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0fecde92e2405e41b7ecafdd8ebf54dd" id="r_a0fecde92e2405e41b7ecafdd8ebf54dd"><td class="memItemLeft" align="right" valign="top"><a id="a0fecde92e2405e41b7ecafdd8ebf54dd" name="a0fecde92e2405e41b7ecafdd8ebf54dd"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>m_total_segment_count</b> = 0</td></tr>
+<tr class="separator:a0fecde92e2405e41b7ecafdd8ebf54dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5be258b84da6ed66b690c67387076074" id="r_a5be258b84da6ed66b690c67387076074"><td class="memItemLeft" align="right" valign="top"><a id="a5be258b84da6ed66b690c67387076074" name="a5be258b84da6ed66b690c67387076074"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>m_doublet_index_offset</b> = 0</td></tr>
 <tr class="separator:a5be258b84da6ed66b690c67387076074"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -214,6 +199,18 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>m_doublet_count</b> = 
 <tr class="memitem:ab149253454b2bd13bbfcf13a5363139c" id="r_ab149253454b2bd13bbfcf13a5363139c"><td class="memItemLeft" align="right" valign="top"><a id="ab149253454b2bd13bbfcf13a5363139c" name="ab149253454b2bd13bbfcf13a5363139c"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>m_total_doublet_count</b> = 0</td></tr>
 <tr class="separator:ab149253454b2bd13bbfcf13a5363139c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9311ed5afdae9d91331859f425d9f89" id="r_af9311ed5afdae9d91331859f425d9f89"><td class="memItemLeft" align="right" valign="top"><a id="af9311ed5afdae9d91331859f425d9f89" name="af9311ed5afdae9d91331859f425d9f89"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>m_subvector_offset</b> = 0</td></tr>
+<tr class="separator:af9311ed5afdae9d91331859f425d9f89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5383f6a15b173449e30219d6ea102c2e" id="r_a5383f6a15b173449e30219d6ea102c2e"><td class="memItemLeft" align="right" valign="top"><a id="a5383f6a15b173449e30219d6ea102c2e" name="a5383f6a15b173449e30219d6ea102c2e"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>m_subvector_extent</b> = 0</td></tr>
+<tr class="separator:a5383f6a15b173449e30219d6ea102c2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5891ba47c96822ff4035d9112a6d367" id="r_aa5891ba47c96822ff4035d9112a6d367"><td class="memItemLeft" align="right" valign="top"><a id="aa5891ba47c96822ff4035d9112a6d367" name="aa5891ba47c96822ff4035d9112a6d367"></a>
+auto_const_t&lt; int &gt; *&#160;</td><td class="memItemRight" valign="bottom"><b>m_segment_indices</b></td></tr>
+<tr class="separator:aa5891ba47c96822ff4035d9112a6d367"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a175cbdd2e08e9bc509345925ef9272fc" id="r_a175cbdd2e08e9bc509345925ef9272fc"><td class="memItemLeft" align="right" valign="top"><a id="a175cbdd2e08e9bc509345925ef9272fc" name="a175cbdd2e08e9bc509345925ef9272fc"></a>
+auto_const_t&lt; SegmentVector &gt; *&#160;</td><td class="memItemRight" valign="bottom"><b>m_segment_values</b></td></tr>
+<tr class="separator:a175cbdd2e08e9bc509345925ef9272fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
 Additional Inherited Members</h2></td></tr>

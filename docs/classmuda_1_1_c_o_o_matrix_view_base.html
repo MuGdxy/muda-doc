@@ -130,9 +130,12 @@ template&lt;typename T &gt; </td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aa66d00833eab1b51f00162d036c6e040" id="r_aa66d00833eab1b51f00162d036c6e040"><td class="memItemLeft" align="right" valign="top"><a id="aa66d00833eab1b51f00162d036c6e040" name="aa66d00833eab1b51f00162d036c6e040"></a>
-MUDA_GENERIC&#160;</td><td class="memItemRight" valign="bottom"><b>COOMatrixViewBase</b> (int rows, int cols, int triplet_index_offset, int triplet_count, int total_triplet_count, auto_const_t&lt; int &gt; *row_indices, auto_const_t&lt; int &gt; *col_indices, auto_const_t&lt; Ty &gt; *values, cusparseSpMatDescr_t descr, cusparseMatDescr_t legacy_descr, bool trans)</td></tr>
-<tr class="separator:aa66d00833eab1b51f00162d036c6e040"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f85b617d714134f88888a776818f9ed" id="r_a6f85b617d714134f88888a776818f9ed"><td class="memItemLeft" align="right" valign="top"><a id="a6f85b617d714134f88888a776818f9ed" name="a6f85b617d714134f88888a776818f9ed"></a>
+MUDA_GENERIC&#160;</td><td class="memItemRight" valign="bottom"><b>COOMatrixViewBase</b> (int rows, int cols, int triplet_index_offset, int triplet_count, int total_triplet_count, int2 submatrix_offset, int2 submatrix_extent, auto_const_t&lt; int &gt; *row_indices, auto_const_t&lt; int &gt; *col_indices, auto_const_t&lt; Ty &gt; *values, cusparseSpMatDescr_t descr, cusparseMatDescr_t legacy_descr, bool trans)</td></tr>
+<tr class="separator:a6f85b617d714134f88888a776818f9ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04ddc3f717292a865eb8d77756938ad7" id="r_a04ddc3f717292a865eb8d77756938ad7"><td class="memItemLeft" align="right" valign="top"><a id="a04ddc3f717292a865eb8d77756938ad7" name="a04ddc3f717292a865eb8d77756938ad7"></a>
+MUDA_GENERIC&#160;</td><td class="memItemRight" valign="bottom"><b>COOMatrixViewBase</b> (int rows, int cols, int total_triplet_count, auto_const_t&lt; int &gt; *row_indices, auto_const_t&lt; int &gt; *col_indices, auto_const_t&lt; Ty &gt; *values, cusparseSpMatDescr_t descr, cusparseMatDescr_t legacy_descr, bool trans)</td></tr>
+<tr class="separator:a04ddc3f717292a865eb8d77756938ad7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac3f395720938f9c987712b61837a268b" id="r_ac3f395720938f9c987712b61837a268b"><td class="memItemLeft" align="right" valign="top"><a id="ac3f395720938f9c987712b61837a268b" name="ac3f395720938f9c987712b61837a268b"></a>
 MUDA_GENERIC auto&#160;</td><td class="memItemRight" valign="bottom"><b>as_const</b> () const</td></tr>
 <tr class="separator:ac3f395720938f9c987712b61837a268b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -145,18 +148,6 @@ MUDA_GENERIC auto&#160;</td><td class="memItemRight" valign="bottom"><b>cviewer<
 <tr class="memitem:ae22b58fc819f3ef8a88a45d253ce1e9a" id="r_ae22b58fc819f3ef8a88a45d253ce1e9a"><td class="memItemLeft" align="right" valign="top"><a id="ae22b58fc819f3ef8a88a45d253ce1e9a" name="ae22b58fc819f3ef8a88a45d253ce1e9a"></a>
 MUDA_GENERIC auto&#160;</td><td class="memItemRight" valign="bottom"><b>viewer</b> ()</td></tr>
 <tr class="separator:ae22b58fc819f3ef8a88a45d253ce1e9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad21cbf63dff8be8c95b5cfb496eb5bad" id="r_ad21cbf63dff8be8c95b5cfb496eb5bad"><td class="memItemLeft" align="right" valign="top"><a id="ad21cbf63dff8be8c95b5cfb496eb5bad" name="ad21cbf63dff8be8c95b5cfb496eb5bad"></a>
-MUDA_GENERIC auto&#160;</td><td class="memItemRight" valign="bottom"><b>subview</b> (int offset, int count)</td></tr>
-<tr class="separator:ad21cbf63dff8be8c95b5cfb496eb5bad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ace2e24c76d6be97f57e08e4eb1ddac4d" id="r_ace2e24c76d6be97f57e08e4eb1ddac4d"><td class="memItemLeft" align="right" valign="top"><a id="ace2e24c76d6be97f57e08e4eb1ddac4d" name="ace2e24c76d6be97f57e08e4eb1ddac4d"></a>
-MUDA_GENERIC auto&#160;</td><td class="memItemRight" valign="bottom"><b>subview</b> (int offset)</td></tr>
-<tr class="separator:ace2e24c76d6be97f57e08e4eb1ddac4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab4e0787013bec217ea473731f79733f1" id="r_ab4e0787013bec217ea473731f79733f1"><td class="memItemLeft" align="right" valign="top"><a id="ab4e0787013bec217ea473731f79733f1" name="ab4e0787013bec217ea473731f79733f1"></a>
-MUDA_GENERIC <a class="el" href="classmuda_1_1_c_o_o_matrix_view_base.html">ConstView</a>&#160;</td><td class="memItemRight" valign="bottom"><b>subview</b> (int offset, int count) const</td></tr>
-<tr class="separator:ab4e0787013bec217ea473731f79733f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab6f9bf53067d87f3954c6ca4d775aca4" id="r_ab6f9bf53067d87f3954c6ca4d775aca4"><td class="memItemLeft" align="right" valign="top"><a id="ab6f9bf53067d87f3954c6ca4d775aca4" name="ab6f9bf53067d87f3954c6ca4d775aca4"></a>
-MUDA_GENERIC <a class="el" href="classmuda_1_1_c_o_o_matrix_view_base.html">ConstView</a>&#160;</td><td class="memItemRight" valign="bottom"><b>subview</b> (int offset) const</td></tr>
-<tr class="separator:ab6f9bf53067d87f3954c6ca4d775aca4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac885ee285795dd7210c2ba49a125805e" id="r_ac885ee285795dd7210c2ba49a125805e"><td class="memItemLeft" align="right" valign="top"><a id="ac885ee285795dd7210c2ba49a125805e" name="ac885ee285795dd7210c2ba49a125805e"></a>
 auto_const_t&lt; Ty &gt; *&#160;</td><td class="memItemRight" valign="bottom"><b>block_values</b> ()</td></tr>
 <tr class="separator:ac885ee285795dd7210c2ba49a125805e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -217,6 +208,12 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>m_triplet_count</b> = 
 <tr class="memitem:ada312703fdc5c53427d49c7131eaed50" id="r_ada312703fdc5c53427d49c7131eaed50"><td class="memItemLeft" align="right" valign="top"><a id="ada312703fdc5c53427d49c7131eaed50" name="ada312703fdc5c53427d49c7131eaed50"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>m_total_triplet_count</b> = 0</td></tr>
 <tr class="separator:ada312703fdc5c53427d49c7131eaed50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aace660e43092d2f212e780b53544dc12" id="r_aace660e43092d2f212e780b53544dc12"><td class="memItemLeft" align="right" valign="top"><a id="aace660e43092d2f212e780b53544dc12" name="aace660e43092d2f212e780b53544dc12"></a>
+int2&#160;</td><td class="memItemRight" valign="bottom"><b>m_submatrix_offset</b> = {0, 0}</td></tr>
+<tr class="separator:aace660e43092d2f212e780b53544dc12"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e017f1b53fd19d061cbc14cd8bef8b0" id="r_a0e017f1b53fd19d061cbc14cd8bef8b0"><td class="memItemLeft" align="right" valign="top"><a id="a0e017f1b53fd19d061cbc14cd8bef8b0" name="a0e017f1b53fd19d061cbc14cd8bef8b0"></a>
+int2&#160;</td><td class="memItemRight" valign="bottom"><b>m_submatrix_extent</b> = {0, 0}</td></tr>
+<tr class="separator:a0e017f1b53fd19d061cbc14cd8bef8b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a53b325d7f775be8428c9a8cc0d57ba10" id="r_a53b325d7f775be8428c9a8cc0d57ba10"><td class="memItemLeft" align="right" valign="top"><a id="a53b325d7f775be8428c9a8cc0d57ba10" name="a53b325d7f775be8428c9a8cc0d57ba10"></a>
 auto_const_t&lt; int &gt; *&#160;</td><td class="memItemRight" valign="bottom"><b>m_row_indices</b></td></tr>
 <tr class="separator:a53b325d7f775be8428c9a8cc0d57ba10"><td class="memSeparator" colspan="2">&#160;</td></tr>
