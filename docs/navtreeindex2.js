@@ -1,5 +1,8 @@
 var NAVTREEINDEX2 =
 {
+"field__entry__base__data_8h_source.html":[2,0,0,0,6,1,6],
+"field__entry__core_8h_source.html":[2,0,0,0,6,1,7],
+"field__entry__core_8inl_source.html":[2,0,0,0,6,1,0,5],
 "field__entry__launch_8h_source.html":[2,0,0,0,6,1,8],
 "field__entry__launch_8inl_source.html":[2,0,0,0,6,1,0,6],
 "field__entry__layout_8h_source.html":[2,0,0,0,6,1,9],
@@ -130,7 +133,7 @@ var NAVTREEINDEX2 =
 "memory__node_8h_source.html":[2,0,0,0,7,11],
 "mm_8inl_source.html":[2,0,0,0,6,3,0,0,5],
 "morton__code_8h_source.html":[2,0,0,0,6,2,1,4],
-"morton__hash_8h_source.html":[2,0,0,0,6,2,2,2],
+"morton__hash_8h_source.html":[2,0,0,0,6,2,2,3],
 "muda_8h_source.html":[2,0,0,0,26],
 "muda__config_8h_source.html":[2,0,0,0,27],
 "muda__def_8h_source.html":[2,0,0,0,28],
@@ -163,8 +166,9 @@ var NAVTREEINDEX2 =
 "solve__sparse_8inl_source.html":[2,0,0,0,6,3,0,0,0,1],
 "span_8h_source.html":[2,0,0,0,11,1],
 "span_8hpp_source.html":[2,0,0,0,11,0,0],
-"sparse__spatial__hash_8h_source.html":[2,0,0,0,6,2,2,3],
-"sparse__spatial__hash_8inl_source.html":[2,0,0,0,6,2,2,0,0],
+"sparse__spatial__hash_8h_source.html":[2,0,0,0,6,2,2,4],
+"sparse__spatial__hash__impl_8h_source.html":[2,0,0,0,6,2,2,5],
+"sparse__spatial__hash__impl_8inl_source.html":[2,0,0,0,6,2,2,0,0],
 "spatial__hash_8h_source.html":[2,0,0,0,6,2,5],
 "spmv_8inl_source.html":[2,0,0,0,6,3,0,0,9],
 "stream_8h_source.html":[2,0,0,0,8,10],
@@ -245,9 +249,5 @@ var NAVTREEINDEX2 =
 "structmuda_1_1read__write__viewer_3_01_c_dense3_d_3_01_t_01_4_01_4.html":[1,0,0,217],
 "structmuda_1_1read__write__viewer_3_01_c_dense_3_01_t_01_4_01_4.html":[1,0,0,218],
 "structmuda_1_1read__write__viewer_3_01_c_dense_vector_viewer_3_01_t_01_4_01_4.html":[1,0,0,219],
-"structmuda_1_1read__write__viewer_3_01_c_doublet_vector_view_3_01_ty_00_01_n_01_4_01_4.html":[1,0,0,220],
-"structmuda_1_1read__write__viewer_3_01_c_field_entry_view_3_01_t_00_01_layout_00_01_m_00_01_n_01_4_01_4.html":[1,0,0,221],
-"structmuda_1_1read__write__viewer_3_01_c_s_r_matrix_view_3_01_ty_01_4_01_4.html":[1,0,0,223],
-"structmuda_1_1read__write__viewer_3_01_c_var_view_3_01_t_01_4_01_4.html":[1,0,0,225],
-"structmuda_1_1read__write__viewer_3_01_dense_vector_view_3_01_ty_01_4_01_4.html":[1,0,0,226]
+"structmuda_1_1read__write__viewer_3_01_c_doublet_vector_view_3_01_ty_00_01_n_01_4_01_4.html":[1,0,0,220]
 };

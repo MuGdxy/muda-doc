@@ -10,7 +10,7 @@ var searchData=
   ['sparsespatialhashimpl_7',['SparseSpatialHashImpl',['../classmuda_1_1spatial__hash_1_1details_1_1_sparse_spatial_hash_impl.html',1,'muda::spatial_hash::details']]],
   ['sparsespatialhashimpl_3c_20morton_3c_20uint32_5ft_20_3e_20_3e_8',['SparseSpatialHashImpl&lt; Morton&lt; uint32_t &gt; &gt;',['../classmuda_1_1spatial__hash_1_1details_1_1_sparse_spatial_hash_impl.html',1,'muda::spatial_hash::details']]],
   ['spatialhashtableinfo_9',['SpatialHashTableInfo',['../classmuda_1_1spatial__hash_1_1_spatial_hash_table_info.html',1,'muda::spatial_hash']]],
-  ['spatialhashtableinfo_3c_20muda_3a_3aspatial_5fhash_3a_3amorton_20_3e_10',['SpatialHashTableInfo&lt; muda::spatial_hash::Morton &gt;',['../classmuda_1_1spatial__hash_1_1_spatial_hash_table_info.html',1,'muda::spatial_hash']]],
+  ['spatialhashtableinfo_3c_20morton_3c_20uint32_5ft_20_3e_20_3e_10',['SpatialHashTableInfo&lt; Morton&lt; uint32_t &gt; &gt;',['../classmuda_1_1spatial__hash_1_1_spatial_hash_table_info.html',1,'muda::spatial_hash']]],
   ['spatialpartitioncell_11',['SpatialPartitionCell',['../classmuda_1_1spatial__hash_1_1_spatial_partition_cell.html',1,'muda::spatial_hash']]],
   ['stream_12',['stream',['../index.html#autotoc_md9',1,'Event And Stream'],['../classmuda_1_1_stream.html',1,'muda::Stream']]],
   ['stringpointer_13',['StringPointer',['../classmuda_1_1details_1_1_string_pointer.html',1,'muda::details']]],

@@ -58,7 +58,7 @@ var annotated_dup =
         [ "Morton", "classmuda_1_1spatial__hash_1_1_morton.html", null ],
         [ "Morton< uint32_t >", "classmuda_1_1spatial__hash_1_1_morton_3_01uint32__t_01_4.html", null ],
         [ "Morton< uint64_t >", "classmuda_1_1spatial__hash_1_1_morton_3_01uint64__t_01_4.html", null ],
-        [ "SparseSpatialHash", "classmuda_1_1spatial__hash_1_1_sparse_spatial_hash.html", null ],
+        [ "SparseSpatialHash", "classmuda_1_1spatial__hash_1_1_sparse_spatial_hash.html", "classmuda_1_1spatial__hash_1_1_sparse_spatial_hash" ],
         [ "SpatialHashTableInfo", "classmuda_1_1spatial__hash_1_1_spatial_hash_table_info.html", null ],
         [ "SpatialPartitionCell", "classmuda_1_1spatial__hash_1_1_spatial_partition_cell.html", null ]
       ] ],
