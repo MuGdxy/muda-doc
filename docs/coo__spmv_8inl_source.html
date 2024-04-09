@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>MUDA: src/muda/ext/linear_system/details/routines/spmv/coo_spmv.inl Source File</title>
+<title>MUDA_APP: src/muda/ext/linear_system/details/routines/spmv/coo_spmv.inl Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -25,7 +25,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">MUDA
+   <div id="projectname">MUDA_APP
    </div>
   </td>
  </tr>
@@ -111,13 +111,11 @@ $(document).ready(function(){initNavTree('coo__spmv_8inl_source.html',''); initR
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>}</div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="keywordtype">void</span> LinearSystemContext::spmv(CCOOMatrixView&lt;T&gt;&amp;   A,</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>                               CDenseVectorView&lt;T&gt;&amp; x,</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>                               DenseVectorView&lt;T&gt;&amp;  y)</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>{</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    spmv(T{1}, A, x, T{0}, y);</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>}</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>}  <span class="comment">// namespace muda</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="keywordtype">void</span> LinearSystemContext::spmv(CCOOMatrixView&lt;T&gt; A, CDenseVectorView&lt;T&gt; x, DenseVectorView&lt;T&gt; y)</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>{</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    spmv(T{1}, A, x, T{0}, y);</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>}</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>}  <span class="comment">// namespace muda</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

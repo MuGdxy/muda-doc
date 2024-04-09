@@ -26,6 +26,5 @@ var dir_43ea02a1f8e541f35d5f42408c7065ae =
     [ "matrix_format_converter_impl.inl", "matrix__format__converter__impl_8inl_source.html", null ],
     [ "matrix_format_converter_impl_block.inl", "matrix__format__converter__impl__block_8inl_source.html", null ],
     [ "triplet_matrix_view.inl", "triplet__matrix__view_8inl_source.html", null ],
-    [ "triplet_matrix_viewer.inl", "triplet__matrix__viewer_8inl_source.html", null ],
-    [ "vector_format_converter.inl", "vector__format__converter_8inl_source.html", null ]
+    [ "triplet_matrix_viewer.inl", "triplet__matrix__viewer_8inl_source.html", null ]
 ];

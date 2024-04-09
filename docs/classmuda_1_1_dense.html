@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>MUDA: muda::Dense&lt; T &gt; Class Template Reference</title>
+<title>MUDA_APP: muda::Dense&lt; T &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -25,7 +25,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">MUDA
+   <div id="projectname">MUDA_APP
    </div>
   </td>
  </tr>
@@ -213,9 +213,9 @@ static constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsCo
 static constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsNonConst</b></td></tr>
 <tr class="separator:a1530678b12884c2d419fba9bdf167501 inherit pub_static_attribs_classmuda_1_1_viewer_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_types_classmuda_1_1_dense_viewer_base"><td colspan="2" onclick="javascript:toggleInherit('pro_types_classmuda_1_1_dense_viewer_base')"><img src="closed.png" alt="-"/>&#160;Protected Types inherited from <a class="el" href="classmuda_1_1_dense_viewer_base.html">muda::DenseViewerBase&lt; false, T &gt;</a></td></tr>
-<tr class="memitem:acca1b4711d4e718c44bc01fefa4f60e7 inherit pro_types_classmuda_1_1_dense_viewer_base" id="r_acca1b4711d4e718c44bc01fefa4f60e7"><td class="memItemLeft" align="right" valign="top">
-using&#160;</td><td class="memItemRight" valign="bottom"><b>auto_const_t</b> = typename Base::auto_const_t&lt; U &gt;</td></tr>
-<tr class="separator:acca1b4711d4e718c44bc01fefa4f60e7 inherit pro_types_classmuda_1_1_dense_viewer_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8ffdcbe39bf5103c453e67e5d329160 inherit pro_types_classmuda_1_1_dense_viewer_base" id="r_aa8ffdcbe39bf5103c453e67e5d329160"><td class="memItemLeft" align="right" valign="top">
+using&#160;</td><td class="memItemRight" valign="bottom"><b>auto_const_t</b> = typename Base::template auto_const_t&lt; U &gt;</td></tr>
+<tr class="separator:aa8ffdcbe39bf5103c453e67e5d329160 inherit pro_types_classmuda_1_1_dense_viewer_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_types_classmuda_1_1_viewer_base"><td colspan="2" onclick="javascript:toggleInherit('pro_types_classmuda_1_1_viewer_base')"><img src="closed.png" alt="-"/>&#160;Protected Types inherited from <a class="el" href="classmuda_1_1_viewer_base.html">muda::ViewerBase&lt; IsConst &gt;</a></td></tr>
 <tr class="memitem:a564fb484ff4eece77e7ce62f42b5e7c4 inherit pro_types_classmuda_1_1_viewer_base" id="r_a564fb484ff4eece77e7ce62f42b5e7c4"><td class="memItemLeft" align="right" valign="top">
 using&#160;</td><td class="memItemRight" valign="bottom"><b>auto_const_t</b> = std::conditional_t&lt; IsConst, const T, T &gt;</td></tr>
@@ -234,6 +234,9 @@ MUDA_INLINE MUDA_HOST void&#160;</td><td class="memItemRight" valign="bottom"><b
 <tr class="memitem:a411d6d977b744a572751875f25a95d81 inherit pro_methods_classmuda_1_1_viewer_base" id="r_a411d6d977b744a572751875f25a95d81"><td class="memItemLeft" align="right" valign="top">
 MUDA_INLINE MUDA_GENERIC void&#160;</td><td class="memItemRight" valign="bottom"><b>name</b> (<a class="el" href="classmuda_1_1details_1_1_string_pointer.html">details::StringPointer</a> pointer) MUDA_NOEXCEPT</td></tr>
 <tr class="separator:a411d6d977b744a572751875f25a95d81 inherit pro_methods_classmuda_1_1_viewer_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9cd674afed975d575de6a4d36315f108 inherit pro_methods_classmuda_1_1_viewer_base" id="r_a9cd674afed975d575de6a4d36315f108"><td class="memItemLeft" align="right" valign="top">
+MUDA_INLINE MUDA_GENERIC void&#160;</td><td class="memItemRight" valign="bottom"><b>copy_name</b> (const <a class="el" href="classmuda_1_1_viewer_base.html">ViewerBase</a> &amp;other) MUDA_NOEXCEPT</td></tr>
+<tr class="separator:a9cd674afed975d575de6a4d36315f108 inherit pro_methods_classmuda_1_1_viewer_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_classmuda_1_1_dense_viewer_base"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classmuda_1_1_dense_viewer_base')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classmuda_1_1_dense_viewer_base.html">muda::DenseViewerBase&lt; false, T &gt;</a></td></tr>
 <tr class="memitem:a0d3b3c44586fdd558d1a60b1fe2bd1dc inherit pro_attribs_classmuda_1_1_dense_viewer_base" id="r_a0d3b3c44586fdd558d1a60b1fe2bd1dc"><td class="memItemLeft" align="right" valign="top">
 auto_const_t&lt; T &gt; *&#160;</td><td class="memItemRight" valign="bottom"><b>m_data</b></td></tr>

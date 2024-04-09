@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>MUDA: muda::Dense2DBase&lt; IsConst, T &gt; Class Template Reference</title>
+<title>MUDA_APP: muda::Dense2DBase&lt; IsConst, T &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -25,7 +25,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">MUDA
+   <div id="projectname">MUDA_APP
    </div>
   </td>
  </tr>
@@ -193,10 +193,10 @@ MUDA_GENERIC const char *&#160;</td><td class="memItemRight" valign="bottom"><b>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-types" name="pro-types"></a>
 Protected Types</h2></td></tr>
-<tr class="memitem:a9c053536d9334104946bd4661ed18d63" id="r_a9c053536d9334104946bd4661ed18d63"><td class="memTemplParams" colspan="2"><a id="a9c053536d9334104946bd4661ed18d63" name="a9c053536d9334104946bd4661ed18d63"></a>
+<tr class="memitem:ab6b3885c786df0bdabc7ddc10c665686" id="r_ab6b3885c786df0bdabc7ddc10c665686"><td class="memTemplParams" colspan="2"><a id="ab6b3885c786df0bdabc7ddc10c665686" name="ab6b3885c786df0bdabc7ddc10c665686"></a>
 template&lt;typename U &gt; </td></tr>
-<tr class="memitem:a9c053536d9334104946bd4661ed18d63"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><b>auto_const_t</b> = typename Base::auto_const_t&lt; U &gt;</td></tr>
-<tr class="separator:a9c053536d9334104946bd4661ed18d63"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6b3885c786df0bdabc7ddc10c665686"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><b>auto_const_t</b> = typename Base::template auto_const_t&lt; U &gt;</td></tr>
+<tr class="separator:ab6b3885c786df0bdabc7ddc10c665686"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_types_classmuda_1_1_viewer_base"><td colspan="2" onclick="javascript:toggleInherit('pro_types_classmuda_1_1_viewer_base')"><img src="closed.png" alt="-"/>&#160;Protected Types inherited from <a class="el" href="classmuda_1_1_viewer_base.html">muda::ViewerBase&lt; IsConst &gt;</a></td></tr>
 <tr class="memitem:a564fb484ff4eece77e7ce62f42b5e7c4 inherit pro_types_classmuda_1_1_viewer_base" id="r_a564fb484ff4eece77e7ce62f42b5e7c4"><td class="memItemLeft" align="right" valign="top">
 using&#160;</td><td class="memItemRight" valign="bottom"><b>auto_const_t</b> = std::conditional_t&lt; IsConst, const T, T &gt;</td></tr>
@@ -220,6 +220,9 @@ MUDA_INLINE MUDA_HOST void&#160;</td><td class="memItemRight" valign="bottom"><b
 <tr class="memitem:a411d6d977b744a572751875f25a95d81 inherit pro_methods_classmuda_1_1_viewer_base" id="r_a411d6d977b744a572751875f25a95d81"><td class="memItemLeft" align="right" valign="top">
 MUDA_INLINE MUDA_GENERIC void&#160;</td><td class="memItemRight" valign="bottom"><b>name</b> (<a class="el" href="classmuda_1_1details_1_1_string_pointer.html">details::StringPointer</a> pointer) MUDA_NOEXCEPT</td></tr>
 <tr class="separator:a411d6d977b744a572751875f25a95d81 inherit pro_methods_classmuda_1_1_viewer_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9cd674afed975d575de6a4d36315f108 inherit pro_methods_classmuda_1_1_viewer_base" id="r_a9cd674afed975d575de6a4d36315f108"><td class="memItemLeft" align="right" valign="top">
+MUDA_INLINE MUDA_GENERIC void&#160;</td><td class="memItemRight" valign="bottom"><b>copy_name</b> (const <a class="el" href="classmuda_1_1_viewer_base.html">ViewerBase</a> &amp;other) MUDA_NOEXCEPT</td></tr>
+<tr class="separator:a9cd674afed975d575de6a4d36315f108 inherit pro_methods_classmuda_1_1_viewer_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>

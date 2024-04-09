@@ -39,5 +39,6 @@ var searchData=
   ['loggermetadata_36',['loggermetadata',['../classmuda_1_1details_1_1_logger_meta_data.html',1,'muda::details::LoggerMetaData'],['../classmuda_1_1_logger_meta_data.html',1,'muda::LoggerMetaData']]],
   ['loggeroffset_37',['LoggerOffset',['../classmuda_1_1details_1_1_logger_offset.html',1,'muda::details']]],
   ['loggerviewer_38',['LoggerViewer',['../classmuda_1_1_logger_viewer.html',1,'muda']]],
-  ['logic_5ferror_39',['logic_error',['../classmuda_1_1logic__error.html',1,'muda']]]
+  ['logic_5ferror_39',['logic_error',['../classmuda_1_1logic__error.html',1,'muda']]],
+  ['logproxy_40',['LogProxy',['../classmuda_1_1_log_proxy.html',1,'muda']]]
 ];

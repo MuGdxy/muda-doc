@@ -7,5 +7,5 @@ var searchData=
   ['parallelfordetails_4',['ParallelForDetails',['../classmuda_1_1_parallel_for_details.html',1,'muda']]],
   ['parallelism_5',['Dynamic Parallelism',['../index.html#autotoc_md14',1,'']]],
   ['profile_6',['Profile',['../classmuda_1_1_profile.html',1,'muda']]],
-  ['proxy_7',['proxy',['../classmuda_1_1_doublet_vector_viewer_1_1_proxy.html',1,'muda::DoubletVectorViewer&lt; T, N &gt;::Proxy'],['../classmuda_1_1_doublet_vector_viewer_3_01_t_00_011_01_4_1_1_proxy.html',1,'muda::DoubletVectorViewer&lt; T, 1 &gt;::Proxy'],['../classmuda_1_1_logger_viewer_1_1_proxy.html',1,'muda::LoggerViewer::Proxy'],['../classmuda_1_1_triplet_matrix_viewer_1_1_proxy.html',1,'muda::TripletMatrixViewer&lt; T, N &gt;::Proxy'],['../classmuda_1_1_triplet_matrix_viewer_3_01_t_00_011_01_4_1_1_proxy.html',1,'muda::TripletMatrixViewer&lt; T, 1 &gt;::Proxy']]]
+  ['proxy_7',['proxy',['../classmuda_1_1_doublet_vector_viewer_1_1_proxy.html',1,'muda::DoubletVectorViewer&lt; T, N &gt;::Proxy'],['../classmuda_1_1_doublet_vector_viewer_3_01_t_00_011_01_4_1_1_proxy.html',1,'muda::DoubletVectorViewer&lt; T, 1 &gt;::Proxy'],['../classmuda_1_1_triplet_matrix_viewer_1_1_proxy.html',1,'muda::TripletMatrixViewer&lt; T, N &gt;::Proxy'],['../classmuda_1_1_triplet_matrix_viewer_3_01_t_00_011_01_4_1_1_proxy.html',1,'muda::TripletMatrixViewer&lt; T, 1 &gt;::Proxy']]]
 ];

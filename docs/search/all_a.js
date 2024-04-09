@@ -39,8 +39,9 @@ var searchData=
   ['localvarinfo_36',['LocalVarInfo',['../classmuda_1_1details_1_1_local_var_info.html',1,'muda::details']]],
   ['logger_37',['logger',['../classmuda_1_1_logger.html',1,'muda::Logger'],['../index.html#autotoc_md6',1,'Logger']]],
   ['loggerdatacontainer_38',['LoggerDataContainer',['../classmuda_1_1_logger_data_container.html',1,'muda']]],
-  ['loggermetadata_39',['loggermetadata',['../classmuda_1_1details_1_1_logger_meta_data.html',1,'muda::details::LoggerMetaData'],['../classmuda_1_1_logger_meta_data.html',1,'muda::LoggerMetaData']]],
+  ['loggermetadata_39',['loggermetadata',['../classmuda_1_1_logger_meta_data.html',1,'muda::LoggerMetaData'],['../classmuda_1_1details_1_1_logger_meta_data.html',1,'muda::details::LoggerMetaData']]],
   ['loggeroffset_40',['LoggerOffset',['../classmuda_1_1details_1_1_logger_offset.html',1,'muda::details']]],
   ['loggerviewer_41',['LoggerViewer',['../classmuda_1_1_logger_viewer.html',1,'muda']]],
-  ['logic_5ferror_42',['logic_error',['../classmuda_1_1logic__error.html',1,'muda']]]
+  ['logic_5ferror_42',['logic_error',['../classmuda_1_1logic__error.html',1,'muda']]],
+  ['logproxy_43',['LogProxy',['../classmuda_1_1_log_proxy.html',1,'muda']]]
 ];

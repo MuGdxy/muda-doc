@@ -30,6 +30,5 @@ var dir_6f09a74f7ee1db37d591c4a0fc2f2223 =
     [ "matrix_format_converter.h", "matrix__format__converter_8h_source.html", null ],
     [ "matrix_format_converter_impl.h", "matrix__format__converter__impl_8h_source.html", null ],
     [ "triplet_matrix_view.h", "triplet__matrix__view_8h_source.html", null ],
-    [ "triplet_matrix_viewer.h", "triplet__matrix__viewer_8h_source.html", null ],
-    [ "vector_format_converter.h", "vector__format__converter_8h_source.html", null ]
+    [ "triplet_matrix_viewer.h", "triplet__matrix__viewer_8h_source.html", null ]
 ];

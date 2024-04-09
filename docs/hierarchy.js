@@ -11,7 +11,6 @@ var hierarchy =
     [ "muda::spatial_hash::BoundingSphere", "classmuda_1_1spatial__hash_1_1_bounding_sphere.html", null ],
     [ "muda::details::buffer::BufferInfoAccessor< BufferView >", "classmuda_1_1details_1_1buffer_1_1_buffer_info_accessor.html", null ],
     [ "muda::lbvh::BVH< Real, Object, AABBGetter, MortonCodeCalculator >", "classmuda_1_1lbvh_1_1_b_v_h.html", null ],
-    [ "muda::details::ByteTempBuffer", "classmuda_1_1details_1_1_byte_temp_buffer.html", null ],
     [ "muda::DoubletVectorViewerBase< IsConst, T, N >::CDoublet", "structmuda_1_1_doublet_vector_viewer_base_1_1_c_doublet.html", null ],
     [ "muda::DoubletVectorViewerBase< IsConst, T, 1 >::CDoublet", "structmuda_1_1_doublet_vector_viewer_base_3_01_is_const_00_01_t_00_011_01_4_1_1_c_doublet.html", null ],
     [ "muda::CMatrixMapInfo< T, M, N >", "classmuda_1_1_c_matrix_map_info.html", null ],
@@ -60,19 +59,16 @@ var hierarchy =
     [ "muda::DeviceBuffer2D< Ty >", "classmuda_1_1_device_buffer2_d.html", null ],
     [ "muda::DeviceBuffer3D< T >", "classmuda_1_1_device_buffer3_d.html", null ],
     [ "muda::DeviceBuffer< BlockMatrix >", "classmuda_1_1_device_buffer.html", null ],
-    [ "muda::DeviceBuffer< char >", "classmuda_1_1_device_buffer.html", null ],
     [ "muda::DeviceBuffer< ElementType >", "classmuda_1_1_device_buffer.html", null ],
     [ "muda::DeviceBuffer< float >", "classmuda_1_1_device_buffer.html", null ],
     [ "muda::DeviceBuffer< int >", "classmuda_1_1_device_buffer.html", null ],
     [ "muda::DeviceBuffer< int2 >", "classmuda_1_1_device_buffer.html", null ],
-    [ "muda::DeviceBuffer< muda::details::LoggerMetaData >", "classmuda_1_1_device_buffer.html", null ],
     [ "muda::DeviceBuffer< muda::details::SoACopyMap >", "classmuda_1_1_device_buffer.html", null ],
     [ "muda::DeviceBuffer< muda::spatial_hash::CollisionPair >", "classmuda_1_1_device_buffer.html", null ],
     [ "muda::DeviceBuffer< muda::spatial_hash::SpatialPartitionCell >", "classmuda_1_1_device_buffer.html", null ],
     [ "muda::DeviceBuffer< SegmentVector >", "classmuda_1_1_device_buffer.html", null ],
     [ "muda::DeviceBuffer< std::byte >", "classmuda_1_1_device_buffer.html", null ],
     [ "muda::DeviceBuffer< Ty >", "classmuda_1_1_device_buffer.html", null ],
-    [ "muda::DeviceBuffer< uint32_t >", "classmuda_1_1_device_buffer.html", null ],
     [ "muda::DeviceBuffer< Vector3 >", "classmuda_1_1_device_buffer.html", null ],
     [ "muda::DeviceCSRMatrix< Ty >", "classmuda_1_1_device_c_s_r_matrix.html", null ],
     [ "muda::DeviceDenseMatrix< Ty >", "classmuda_1_1_device_dense_matrix.html", null ],
@@ -94,7 +90,6 @@ var hierarchy =
     [ "muda::DeviceVar< T >", "classmuda_1_1_device_var.html", null ],
     [ "muda::DeviceVar< float >", "classmuda_1_1_device_var.html", null ],
     [ "muda::DeviceVar< int >", "classmuda_1_1_device_var.html", null ],
-    [ "muda::DeviceVar< muda::details::LoggerOffset >", "classmuda_1_1_device_var.html", null ],
     [ "muda::DeviceVar< muda::FieldEntryCore >", "classmuda_1_1_device_var.html", null ],
     [ "muda::DeviceVar< muda::spatial_hash::SpatialHashTableInfo< Morton< uint32_t > > >", "classmuda_1_1_device_var.html", null ],
     [ "muda::DeviceVar< Vector3 >", "classmuda_1_1_device_var.html", null ],
@@ -167,6 +162,7 @@ var hierarchy =
       [ "muda::details::LocalVarId", "classmuda_1_1details_1_1_local_var_id.html", null ]
     ] ],
     [ "TCB_SPAN_NAMESPACE_NAME::detail::is_container< C, U >", "struct_t_c_b___s_p_a_n___n_a_m_e_s_p_a_c_e___n_a_m_e_1_1detail_1_1is__container.html", null ],
+    [ "muda::is_cuda_arch", "structmuda_1_1is__cuda__arch.html", null ],
     [ "muda::Kernel< F >", "classmuda_1_1_kernel.html", null ],
     [ "muda::KernelLabel", "classmuda_1_1_kernel_label.html", null ],
     [ "muda::details::LaunchCallable< F >", "structmuda_1_1details_1_1_launch_callable.html", null ],
@@ -262,6 +258,8 @@ var hierarchy =
     [ "muda::details::LoggerMetaData", "classmuda_1_1details_1_1_logger_meta_data.html", null ],
     [ "muda::LoggerMetaData", "classmuda_1_1_logger_meta_data.html", null ],
     [ "muda::details::LoggerOffset", "classmuda_1_1details_1_1_logger_offset.html", null ],
+    [ "muda::LoggerViewer", "classmuda_1_1_logger_viewer.html", null ],
+    [ "muda::LogProxy", "classmuda_1_1_log_proxy.html", null ],
     [ "muda::MatrixFormatConverter", "classmuda_1_1_matrix_format_converter.html", null ],
     [ "muda::details::MatrixFormatConverterBase", "classmuda_1_1details_1_1_matrix_format_converter_base.html", [
       [ "muda::details::MatrixFormatConverter< T, N >", "classmuda_1_1details_1_1_matrix_format_converter.html", null ],
@@ -285,7 +283,6 @@ var hierarchy =
     [ "muda::Profile", "classmuda_1_1_profile.html", null ],
     [ "muda::DoubletVectorViewer< T, N >::Proxy", "classmuda_1_1_doublet_vector_viewer_1_1_proxy.html", null ],
     [ "muda::DoubletVectorViewer< T, 1 >::Proxy", "classmuda_1_1_doublet_vector_viewer_3_01_t_00_011_01_4_1_1_proxy.html", null ],
-    [ "muda::LoggerViewer::Proxy", "classmuda_1_1_logger_viewer_1_1_proxy.html", null ],
     [ "muda::TripletMatrixViewer< T, N >::Proxy", "classmuda_1_1_triplet_matrix_viewer_1_1_proxy.html", null ],
     [ "muda::TripletMatrixViewer< T, 1 >::Proxy", "classmuda_1_1_triplet_matrix_viewer_3_01_t_00_011_01_4_1_1_proxy.html", null ],
     [ "muda::lbvh::query_nearest< Real >", "structmuda_1_1lbvh_1_1query__nearest.html", null ],
@@ -357,6 +354,11 @@ var hierarchy =
     ] ],
     [ "muda::Tag< T >", "structmuda_1_1_tag.html", null ],
     [ "muda::Stream::TailLaunch", "classmuda_1_1_stream_1_1_tail_launch.html", null ],
+    [ "muda::details::TempBuffer< T >", "classmuda_1_1details_1_1_temp_buffer.html", null ],
+    [ "muda::details::TempBuffer< char >", "classmuda_1_1details_1_1_temp_buffer.html", null ],
+    [ "muda::details::TempBuffer< muda::details::LoggerMetaData >", "classmuda_1_1details_1_1_temp_buffer.html", null ],
+    [ "muda::details::TempBuffer< muda::details::LoggerOffset >", "classmuda_1_1details_1_1_temp_buffer.html", null ],
+    [ "muda::details::TempBuffer< uint32_t >", "classmuda_1_1details_1_1_temp_buffer.html", null ],
     [ "std::true_type", null, [
       [ "TCB_SPAN_NAMESPACE_NAME::detail::has_size_and_data< T, void_t< decltype(detail::size(std::declval< T >())), decltype(detail::data(std::declval< T >()))> >", "struct_t_c_b___s_p_a_n___n_a_m_e_s_p_a_c_e___n_a_m_e_1_1detail_1_1has__size__and__data_3_01_t_00fcf51269242c64e6f704600d32eb2114.html", null ],
       [ "TCB_SPAN_NAMESPACE_NAME::detail::is_complete< T, decltype(sizeof(T))>", "struct_t_c_b___s_p_a_n___n_a_m_e_s_p_a_c_e___n_a_m_e_1_1detail_1_1is__complete_3_01_t_00_01decltype_07sizeof_07_t_08_08_4.html", null ],
@@ -450,13 +452,7 @@ var hierarchy =
       [ "muda::HostDeviceConfigView< T >", "classmuda_1_1_host_device_config_view.html", null ]
     ] ],
     [ "muda::ViewerBase< IsConst >", "classmuda_1_1_viewer_base.html", null ],
-    [ "muda::ViewerBase< false >", "classmuda_1_1_viewer_base.html", [
-      [ "muda::LoggerViewer", "classmuda_1_1_logger_viewer.html", null ]
-    ] ],
     [ "muda::ViewerBase< IsConst >", "classmuda_1_1_viewer_base.html", [
-      [ "muda::Dense1DBase< uint32_t >", "classmuda_1_1_dense1_d_base.html", null ],
-      [ "muda::Dense1DBase< muda::details::LoggerMetaData >", "classmuda_1_1_dense1_d_base.html", null ],
-      [ "muda::Dense1DBase< char >", "classmuda_1_1_dense1_d_base.html", null ],
       [ "muda::DenseMatrixViewerBase< true, T >", "classmuda_1_1_dense_matrix_viewer_base.html", [
         [ "muda::CDenseMatrixViewer< T >", "classmuda_1_1_c_dense_matrix_viewer.html", null ]
       ] ],
@@ -472,7 +468,6 @@ var hierarchy =
       [ "muda::DenseViewerBase< false, T >", "classmuda_1_1_dense_viewer_base.html", [
         [ "muda::Dense< T >", "classmuda_1_1_dense.html", null ]
       ] ],
-      [ "muda::DenseViewerBase< false, muda::details::LoggerOffset >", "classmuda_1_1_dense_viewer_base.html", null ],
       [ "muda::DoubletVectorViewerBase< true, T, N >", "classmuda_1_1_doublet_vector_viewer_base.html", [
         [ "muda::CDoubletVectorViewer< T, N >", "classmuda_1_1_c_doublet_vector_viewer.html", null ]
       ] ],
@@ -508,9 +503,7 @@ var hierarchy =
       [ "muda::Dense3DBase< IsConst, T >", "classmuda_1_1_dense3_d_base.html", null ],
       [ "muda::DenseMatrixViewerBase< IsConst, T >", "classmuda_1_1_dense_matrix_viewer_base.html", null ],
       [ "muda::DenseVectorViewerBase< IsConst, T >", "classmuda_1_1_dense_vector_viewer_base.html", null ],
-      [ "muda::DenseViewerBase< IsConst, T >", "classmuda_1_1_dense_viewer_base.html", [
-        [ "muda::Dense< muda::details::LoggerOffset >", "classmuda_1_1_dense.html", null ]
-      ] ],
+      [ "muda::DenseViewerBase< IsConst, T >", "classmuda_1_1_dense_viewer_base.html", null ],
       [ "muda::DoubletVectorViewerBase< IsConst, T, N >", "classmuda_1_1_doublet_vector_viewer_base.html", null ],
       [ "muda::DoubletVectorViewerBase< IsConst, T, 1 >", "classmuda_1_1_doublet_vector_viewer_base_3_01_is_const_00_01_t_00_011_01_4.html", null ],
       [ "muda::FieldEntryViewerCore< IsConst, T, Layout, M, N >", "classmuda_1_1_field_entry_viewer_core.html", [
@@ -540,6 +533,5 @@ var hierarchy =
     ] ],
     [ "muda::ViewerBase< true >", "classmuda_1_1_viewer_base.html", [
       [ "muda::GraphViewer", "classmuda_1_1_graph_viewer.html", null ]
-    ] ],
-    [ "muda::details::ViewerBaseAccessor", "classmuda_1_1details_1_1_viewer_base_accessor.html", null ]
+    ] ]
 ];

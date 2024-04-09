@@ -11,7 +11,6 @@ var annotated_dup =
         [ "eigen", null, [
           [ "un", "unionmuda_1_1details_1_1eigen_1_1un.html", null ]
         ] ],
-        [ "ByteTempBuffer", "classmuda_1_1details_1_1_byte_temp_buffer.html", null ],
         [ "ComputeGraphAccessor", "classmuda_1_1details_1_1_compute_graph_accessor.html", null ],
         [ "HostDeviceStringCache", "classmuda_1_1details_1_1_host_device_string_cache.html", null ],
         [ "LaunchCallable", "structmuda_1_1details_1_1_launch_callable.html", null ],
@@ -27,7 +26,7 @@ var annotated_dup =
         [ "ParallelForCallable", "classmuda_1_1details_1_1_parallel_for_callable.html", null ],
         [ "SoACopyMap", "structmuda_1_1details_1_1_so_a_copy_map.html", null ],
         [ "StringPointer", "classmuda_1_1details_1_1_string_pointer.html", null ],
-        [ "ViewerBaseAccessor", "classmuda_1_1details_1_1_viewer_base_accessor.html", null ]
+        [ "TempBuffer", "classmuda_1_1details_1_1_temp_buffer.html", null ]
       ] ],
       [ "eigen", null, [
         [ "AnalyticalInverse", "structmuda_1_1eigen_1_1_analytical_inverse.html", null ],
@@ -210,6 +209,7 @@ var annotated_dup =
       [ "HostVector", "classmuda_1_1_host_vector.html", null ],
       [ "IdWithType", "classmuda_1_1_id_with_type.html", null ],
       [ "invalid_argument", "classmuda_1_1invalid__argument.html", null ],
+      [ "is_cuda_arch", "structmuda_1_1is__cuda__arch.html", null ],
       [ "Kernel", "classmuda_1_1_kernel.html", null ],
       [ "KernelLabel", "classmuda_1_1_kernel_label.html", null ],
       [ "KernelNode", "classmuda_1_1_kernel_node.html", null ],
@@ -226,8 +226,9 @@ var annotated_dup =
       [ "Logger", "classmuda_1_1_logger.html", null ],
       [ "LoggerDataContainer", "classmuda_1_1_logger_data_container.html", null ],
       [ "LoggerMetaData", "classmuda_1_1_logger_meta_data.html", null ],
-      [ "LoggerViewer", "classmuda_1_1_logger_viewer.html", "classmuda_1_1_logger_viewer" ],
+      [ "LoggerViewer", "classmuda_1_1_logger_viewer.html", null ],
       [ "logic_error", "classmuda_1_1logic__error.html", null ],
+      [ "LogProxy", "classmuda_1_1_log_proxy.html", null ],
       [ "MatrixFormatConverter", "classmuda_1_1_matrix_format_converter.html", null ],
       [ "MatrixMapInfo", "classmuda_1_1_matrix_map_info.html", null ],
       [ "MemcpyNode", "classmuda_1_1_memcpy_node.html", null ],

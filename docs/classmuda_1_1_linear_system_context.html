@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>MUDA: muda::LinearSystemContext Class Reference</title>
+<title>MUDA_APP: muda::LinearSystemContext Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -25,7 +25,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">MUDA
+   <div id="projectname">MUDA_APP
    </div>
   </td>
  </tr>
@@ -134,6 +134,12 @@ auto &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>tolerance</b> (
 <tr class="memitem:aa95e2a1fd39c60e06ebb49dbd1954925" id="r_aa95e2a1fd39c60e06ebb49dbd1954925"><td class="memItemLeft" align="right" valign="top"><a id="aa95e2a1fd39c60e06ebb49dbd1954925" name="aa95e2a1fd39c60e06ebb49dbd1954925"></a>
 auto &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>reorder</b> ()</td></tr>
 <tr class="separator:aa95e2a1fd39c60e06ebb49dbd1954925"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0e07e1a84727152b8fc04552dfee047" id="r_aa0e07e1a84727152b8fc04552dfee047"><td class="memItemLeft" align="right" valign="top"><a id="aa0e07e1a84727152b8fc04552dfee047" name="aa0e07e1a84727152b8fc04552dfee047"></a>
+auto&#160;</td><td class="memItemRight" valign="bottom"><b>reserve_ratio</b> () const</td></tr>
+<tr class="separator:aa0e07e1a84727152b8fc04552dfee047"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad975972eec1f4f6c242d95c9b92da616" id="r_ad975972eec1f4f6c242d95c9b92da616"><td class="memItemLeft" align="right" valign="top"><a id="ad975972eec1f4f6c242d95c9b92da616" name="ad975972eec1f4f6c242d95c9b92da616"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>reserve_ratio</b> (float ratio)</td></tr>
+<tr class="separator:ad975972eec1f4f6c242d95c9b92da616"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8ac64bf3feb466654518d06054a6632e" id="r_a8ac64bf3feb466654518d06054a6632e"><td class="memTemplParams" colspan="2"><a id="a8ac64bf3feb466654518d06054a6632e" name="a8ac64bf3feb466654518d06054a6632e"></a>
 template&lt;typename T , int N&gt; </td></tr>
 <tr class="memitem:a8ac64bf3feb466654518d06054a6632e"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>convert</b> (const <a class="el" href="classmuda_1_1_device_triplet_matrix.html">DeviceTripletMatrix</a>&lt; T, N &gt; &amp;from, <a class="el" href="classmuda_1_1_device_b_c_o_o_matrix.html">DeviceBCOOMatrix</a>&lt; T, N &gt; &amp;to)</td></tr>
@@ -234,34 +240,34 @@ template&lt;typename T &gt; </td></tr>
 template&lt;typename T , int N&gt; </td></tr>
 <tr class="memitem:a03a8163394a49ee43c58d7afb173432f"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>spmv</b> (const T &amp;a, <a class="el" href="classmuda_1_1_b_s_r_matrix_view_base.html">CBSRMatrixView</a>&lt; T, N &gt; A, <a class="el" href="classmuda_1_1_dense_vector_view_base.html">CDenseVectorView</a>&lt; T &gt; x, const T &amp;b, <a class="el" href="classmuda_1_1_dense_vector_view_base.html">DenseVectorView</a>&lt; T &gt; &amp;y)</td></tr>
 <tr class="separator:a03a8163394a49ee43c58d7afb173432f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af4fabcee1bc35041b95766a6d61d6d1c" id="r_af4fabcee1bc35041b95766a6d61d6d1c"><td class="memTemplParams" colspan="2"><a id="af4fabcee1bc35041b95766a6d61d6d1c" name="af4fabcee1bc35041b95766a6d61d6d1c"></a>
+<tr class="memitem:a405eff8f0ac6c14bf3f41e7427420aee" id="r_a405eff8f0ac6c14bf3f41e7427420aee"><td class="memTemplParams" colspan="2"><a id="a405eff8f0ac6c14bf3f41e7427420aee" name="a405eff8f0ac6c14bf3f41e7427420aee"></a>
 template&lt;typename T , int N&gt; </td></tr>
-<tr class="memitem:af4fabcee1bc35041b95766a6d61d6d1c"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>spmv</b> (<a class="el" href="classmuda_1_1_b_s_r_matrix_view_base.html">CBSRMatrixView</a>&lt; T, N &gt; &amp;A, <a class="el" href="classmuda_1_1_dense_vector_view_base.html">CDenseVectorView</a>&lt; T &gt; &amp;x, <a class="el" href="classmuda_1_1_dense_vector_view_base.html">DenseVectorView</a>&lt; T &gt; &amp;y)</td></tr>
-<tr class="separator:af4fabcee1bc35041b95766a6d61d6d1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a405eff8f0ac6c14bf3f41e7427420aee"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>spmv</b> (<a class="el" href="classmuda_1_1_b_s_r_matrix_view_base.html">CBSRMatrixView</a>&lt; T, N &gt; A, <a class="el" href="classmuda_1_1_dense_vector_view_base.html">CDenseVectorView</a>&lt; T &gt; x, <a class="el" href="classmuda_1_1_dense_vector_view_base.html">DenseVectorView</a>&lt; T &gt; y)</td></tr>
+<tr class="separator:a405eff8f0ac6c14bf3f41e7427420aee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab6252790198b4517b075cbdef8433cfc" id="r_ab6252790198b4517b075cbdef8433cfc"><td class="memTemplParams" colspan="2"><a id="ab6252790198b4517b075cbdef8433cfc" name="ab6252790198b4517b075cbdef8433cfc"></a>
 template&lt;typename T &gt; </td></tr>
 <tr class="memitem:ab6252790198b4517b075cbdef8433cfc"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>spmv</b> (const T &amp;a, <a class="el" href="classmuda_1_1_c_s_r_matrix_view_base.html">CCSRMatrixView</a>&lt; T &gt; A, <a class="el" href="classmuda_1_1_dense_vector_view_base.html">CDenseVectorView</a>&lt; T &gt; x, const T &amp;b, <a class="el" href="classmuda_1_1_dense_vector_view_base.html">DenseVectorView</a>&lt; T &gt; &amp;y)</td></tr>
 <tr class="separator:ab6252790198b4517b075cbdef8433cfc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acdad13ad5b0e25ada7b60c0c23584447" id="r_acdad13ad5b0e25ada7b60c0c23584447"><td class="memTemplParams" colspan="2"><a id="acdad13ad5b0e25ada7b60c0c23584447" name="acdad13ad5b0e25ada7b60c0c23584447"></a>
+<tr class="memitem:ac8d5c3b7d5e3e4b00e9a47f8f609756f" id="r_ac8d5c3b7d5e3e4b00e9a47f8f609756f"><td class="memTemplParams" colspan="2"><a id="ac8d5c3b7d5e3e4b00e9a47f8f609756f" name="ac8d5c3b7d5e3e4b00e9a47f8f609756f"></a>
 template&lt;typename T &gt; </td></tr>
-<tr class="memitem:acdad13ad5b0e25ada7b60c0c23584447"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>spmv</b> (<a class="el" href="classmuda_1_1_c_s_r_matrix_view_base.html">CCSRMatrixView</a>&lt; T &gt; &amp;A, <a class="el" href="classmuda_1_1_dense_vector_view_base.html">CDenseVectorView</a>&lt; T &gt; &amp;x, <a class="el" href="classmuda_1_1_dense_vector_view_base.html">DenseVectorView</a>&lt; T &gt; &amp;y)</td></tr>
-<tr class="separator:acdad13ad5b0e25ada7b60c0c23584447"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8d5c3b7d5e3e4b00e9a47f8f609756f"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>spmv</b> (<a class="el" href="classmuda_1_1_c_s_r_matrix_view_base.html">CCSRMatrixView</a>&lt; T &gt; A, <a class="el" href="classmuda_1_1_dense_vector_view_base.html">CDenseVectorView</a>&lt; T &gt; x, <a class="el" href="classmuda_1_1_dense_vector_view_base.html">DenseVectorView</a>&lt; T &gt; y)</td></tr>
+<tr class="separator:ac8d5c3b7d5e3e4b00e9a47f8f609756f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a593184f0bc8ec34762dd9135a9da3155" id="r_a593184f0bc8ec34762dd9135a9da3155"><td class="memTemplParams" colspan="2"><a id="a593184f0bc8ec34762dd9135a9da3155" name="a593184f0bc8ec34762dd9135a9da3155"></a>
 template&lt;typename T , int N&gt; </td></tr>
 <tr class="memitem:a593184f0bc8ec34762dd9135a9da3155"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>spmv</b> (const T &amp;a, <a class="el" href="classmuda_1_1_triplet_matrix_view_base.html">CTripletMatrixView</a>&lt; T, N &gt; A, <a class="el" href="classmuda_1_1_dense_vector_view_base.html">CDenseVectorView</a>&lt; T &gt; x, const T &amp;b, <a class="el" href="classmuda_1_1_dense_vector_view_base.html">DenseVectorView</a>&lt; T &gt; &amp;y)</td></tr>
 <tr class="separator:a593184f0bc8ec34762dd9135a9da3155"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3586642b4a91492feceef55f92d064ad" id="r_a3586642b4a91492feceef55f92d064ad"><td class="memTemplParams" colspan="2"><a id="a3586642b4a91492feceef55f92d064ad" name="a3586642b4a91492feceef55f92d064ad"></a>
+<tr class="memitem:a90a51cd844616640784dc80499b106f0" id="r_a90a51cd844616640784dc80499b106f0"><td class="memTemplParams" colspan="2"><a id="a90a51cd844616640784dc80499b106f0" name="a90a51cd844616640784dc80499b106f0"></a>
 template&lt;typename T , int N&gt; </td></tr>
-<tr class="memitem:a3586642b4a91492feceef55f92d064ad"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>spmv</b> (<a class="el" href="classmuda_1_1_triplet_matrix_view_base.html">CTripletMatrixView</a>&lt; T, N &gt; &amp;A, <a class="el" href="classmuda_1_1_dense_vector_view_base.html">CDenseVectorView</a>&lt; T &gt; &amp;x, <a class="el" href="classmuda_1_1_dense_vector_view_base.html">DenseVectorView</a>&lt; T &gt; &amp;y)</td></tr>
-<tr class="separator:a3586642b4a91492feceef55f92d064ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90a51cd844616640784dc80499b106f0"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>spmv</b> (<a class="el" href="classmuda_1_1_triplet_matrix_view_base.html">CTripletMatrixView</a>&lt; T, N &gt; A, <a class="el" href="classmuda_1_1_dense_vector_view_base.html">CDenseVectorView</a>&lt; T &gt; x, <a class="el" href="classmuda_1_1_dense_vector_view_base.html">DenseVectorView</a>&lt; T &gt; y)</td></tr>
+<tr class="separator:a90a51cd844616640784dc80499b106f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a157b7053b4e365d5b01d8e1aa895340f" id="r_a157b7053b4e365d5b01d8e1aa895340f"><td class="memTemplParams" colspan="2"><a id="a157b7053b4e365d5b01d8e1aa895340f" name="a157b7053b4e365d5b01d8e1aa895340f"></a>
 template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a157b7053b4e365d5b01d8e1aa895340f"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>spmv</b> (const T &amp;a, <a class="el" href="classmuda_1_1_c_o_o_matrix_view_base.html">CCOOMatrixView</a>&lt; T &gt; A, <a class="el" href="classmuda_1_1_dense_vector_view_base.html">CDenseVectorView</a>&lt; T &gt; x, const T &amp;b, <a class="el" href="classmuda_1_1_dense_vector_view_base.html">DenseVectorView</a>&lt; T &gt; &amp;y)</td></tr>
 <tr class="separator:a157b7053b4e365d5b01d8e1aa895340f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a88b0669d73111c024be080785b64589f" id="r_a88b0669d73111c024be080785b64589f"><td class="memTemplParams" colspan="2"><a id="a88b0669d73111c024be080785b64589f" name="a88b0669d73111c024be080785b64589f"></a>
+<tr class="memitem:a8b412a59c372088bf4222b7281d0498e" id="r_a8b412a59c372088bf4222b7281d0498e"><td class="memTemplParams" colspan="2"><a id="a8b412a59c372088bf4222b7281d0498e" name="a8b412a59c372088bf4222b7281d0498e"></a>
 template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a88b0669d73111c024be080785b64589f"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>spmv</b> (<a class="el" href="classmuda_1_1_c_o_o_matrix_view_base.html">CCOOMatrixView</a>&lt; T &gt; &amp;A, <a class="el" href="classmuda_1_1_dense_vector_view_base.html">CDenseVectorView</a>&lt; T &gt; &amp;x, <a class="el" href="classmuda_1_1_dense_vector_view_base.html">DenseVectorView</a>&lt; T &gt; &amp;y)</td></tr>
-<tr class="separator:a88b0669d73111c024be080785b64589f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b412a59c372088bf4222b7281d0498e"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>spmv</b> (<a class="el" href="classmuda_1_1_c_o_o_matrix_view_base.html">CCOOMatrixView</a>&lt; T &gt; A, <a class="el" href="classmuda_1_1_dense_vector_view_base.html">CDenseVectorView</a>&lt; T &gt; x, <a class="el" href="classmuda_1_1_dense_vector_view_base.html">DenseVectorView</a>&lt; T &gt; y)</td></tr>
+<tr class="separator:a8b412a59c372088bf4222b7281d0498e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae7314bea981f88844640d0b5ddd8fc87" id="r_ae7314bea981f88844640d0b5ddd8fc87"><td class="memTemplParams" colspan="2"><a id="ae7314bea981f88844640d0b5ddd8fc87" name="ae7314bea981f88844640d0b5ddd8fc87"></a>
 template&lt;typename T &gt; </td></tr>
 <tr class="memitem:ae7314bea981f88844640d0b5ddd8fc87"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>mv</b> (<a class="el" href="classmuda_1_1_c_dense_matrix_view.html">CDenseMatrixView</a>&lt; T &gt; A, const T &amp;alpha, <a class="el" href="classmuda_1_1_dense_vector_view_base.html">CDenseVectorView</a>&lt; T &gt; x, const T &amp;beta, <a class="el" href="classmuda_1_1_dense_vector_view_base.html">DenseVectorView</a>&lt; T &gt; y)</td></tr>

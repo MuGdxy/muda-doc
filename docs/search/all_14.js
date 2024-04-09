@@ -13,9 +13,7 @@ var searchData=
   ['viewbase_3c_20true_20_3e_10',['ViewBase&lt; true &gt;',['../classmuda_1_1_view_base.html',1,'muda']]],
   ['viewer_20in_20kernel_11',['Viewer In Kernel',['../index.html#autotoc_md8',1,'']]],
   ['viewerbase_12',['ViewerBase',['../classmuda_1_1_viewer_base.html',1,'muda']]],
-  ['viewerbase_3c_20false_20_3e_13',['ViewerBase&lt; false &gt;',['../classmuda_1_1_viewer_base.html',1,'muda']]],
-  ['viewerbase_3c_20isconst_20_3e_14',['ViewerBase&lt; IsConst &gt;',['../classmuda_1_1_viewer_base.html',1,'muda']]],
-  ['viewerbase_3c_20true_20_3e_15',['ViewerBase&lt; true &gt;',['../classmuda_1_1_viewer_base.html',1,'muda']]],
-  ['viewerbaseaccessor_16',['ViewerBaseAccessor',['../classmuda_1_1details_1_1_viewer_base_accessor.html',1,'muda::details']]],
-  ['vs_20cuda_17',['MUDA vs. CUDA',['../index.html#autotoc_md15',1,'']]]
+  ['viewerbase_3c_20isconst_20_3e_13',['ViewerBase&lt; IsConst &gt;',['../classmuda_1_1_viewer_base.html',1,'muda']]],
+  ['viewerbase_3c_20true_20_3e_14',['ViewerBase&lt; true &gt;',['../classmuda_1_1_viewer_base.html',1,'muda']]],
+  ['vs_20cuda_15',['MUDA vs. CUDA',['../index.html#autotoc_md15',1,'']]]
 ];

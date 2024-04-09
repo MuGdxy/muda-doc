@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>MUDA: Main Page</title>
+<title>MUDA_APP: Main Page</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -25,7 +25,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">MUDA
+   <div id="projectname">MUDA_APP
    </div>
   </td>
  </tr>
@@ -224,17 +224,19 @@ Launch</h2>
 <div class="line">            print(<span class="stringliteral">&quot;hello muda %d!\n&quot;</span>, i); </div>
 <div class="line">        }).wait();</div>
 <div class="line">    </div>
-<div class="line">    <span class="comment">// intellisense-friendly wrapper </span></div>
-<div class="line">    <a class="code hl_class" href="classmuda_1_1_kernel.html">Kernel</a>{raw_kernel}();</div>
-<div class="line">    <a class="code hl_class" href="classmuda_1_1_kernel.html">Kernel</a>{32<span class="comment">/*grid size*/</span>, 64<span class="comment">/*block size*/</span>,0<span class="comment">/*shared memory*/</span>, stream, other_kernel}(...)</div>
+<div class="line">    <span class="comment">// automatic block size choosing</span></div>
+<div class="line">    <a class="code hl_class" href="classmuda_1_1_parallel_for.html">ParallelFor</a>().apply(N,</div>
+<div class="line">        [] __device__(<span class="keywordtype">int</span> i) </div>
+<div class="line">        {</div>
+<div class="line">            print(<span class="stringliteral">&quot;hello muda %d!\n&quot;</span>, i); </div>
+<div class="line">        }).wait();</div>
 <div class="line">    </div>
-<div class="line">    <a class="code hl_class" href="classmuda_1_1_stream.html">Stream</a> stream;</div>
-<div class="line">    on(stream).wait();</div>
+<div class="line">    <span class="comment">// intellisense-friendly wrapper </span></div>
+<div class="line">    <a class="code hl_class" href="classmuda_1_1_kernel.html">Kernel</a>{32<span class="comment">/*grid size*/</span>, 64<span class="comment">/*block size*/</span>,0<span class="comment">/*shared memory*/</span>, stream, other_kernel}(...)</div>
 <div class="line">}</div>
 <div class="ttc" id="aclassmuda_1_1_kernel_html"><div class="ttname"><a href="classmuda_1_1_kernel.html">muda::Kernel</a></div><div class="ttdef"><b>Definition</b> kernel.h:11</div></div>
 <div class="ttc" id="aclassmuda_1_1_launch_html"><div class="ttname"><a href="classmuda_1_1_launch.html">muda::Launch</a></div><div class="ttdoc">A wrapper of raw cuda kernel launch in muda style, removing the &lt;&lt;&lt;&gt;&gt;&gt; usage, for better intellisense...</div><div class="ttdef"><b>Definition</b> launch.h:86</div></div>
 <div class="ttc" id="aclassmuda_1_1_parallel_for_html"><div class="ttname"><a href="classmuda_1_1_parallel_for.html">muda::ParallelFor</a></div><div class="ttdoc">a frequently used parallel for loop, DynamicBlockDim and GridStrideLoop strategy are provided,...</div><div class="ttdef"><b>Definition</b> parallel_for.h:116</div></div>
-<div class="ttc" id="aclassmuda_1_1_stream_html"><div class="ttname"><a href="classmuda_1_1_stream.html">muda::Stream</a></div><div class="ttdoc">RAII wrapper for cudaStream.</div><div class="ttdef"><b>Definition</b> stream.h:18</div></div>
 </div><!-- fragment --><h2><a class="anchor" id="autotoc_md6"></a>
 Logger</h2>
 <p>A <code>std::cout</code> like output stream with overload formatting.</p>
@@ -250,7 +252,7 @@ Logger</h2>
 <div class="line">    .wait();</div>
 <div class="line"><span class="comment">// download the result to any ostream you like. </span></div>
 <div class="line">logger.retrieve(std::cout);</div>
-<div class="ttc" id="aclassmuda_1_1_logger_html"><div class="ttname"><a href="classmuda_1_1_logger.html">muda::Logger</a></div><div class="ttdef"><b>Definition</b> logger.h:35</div></div>
+<div class="ttc" id="aclassmuda_1_1_logger_html"><div class="ttname"><a href="classmuda_1_1_logger.html">muda::Logger</a></div><div class="ttdef"><b>Definition</b> logger.h:36</div></div>
 </div><!-- fragment --><p>You can define a global<code>__device__ LoggerViewer cout</code> and call the overloaded constructor <code>Logger(LoggerViewer* global_viewer)</code> to use it without any capturing, which is useful when you need to use logger in some function but don't want to put the <code>LoggerViewer</code> in the function parameter.</p>
 <div class="fragment"><div class="line"><span class="keyword">namespace </span>foo</div>
 <div class="line">{</div>
@@ -262,7 +264,7 @@ Logger</h2>
 <div class="line">{</div>
 <div class="line">    <span class="comment">// setup global logger</span></div>
 <div class="line">    <a class="code hl_class" href="classmuda_1_1_logger_viewer.html">LoggerViewer</a>* viewer_ptr = <span class="keyword">nullptr</span>;</div>
-<div class="line">    checkCudaErrors(cudaGetSymbolAddress(&amp;viewer_ptr, foo::cout));</div>
+<div class="line">    checkCudaErrors(cudaGetSymbolAddress((<span class="keywordtype">void</span>**)&amp;viewer_ptr, foo::cout));</div>
 <div class="line">    <a class="code hl_class" href="classmuda_1_1_logger.html">Logger</a> logger(viewer_ptr);</div>
 <div class="line">    </div>
 <div class="line">    <a class="code hl_class" href="classmuda_1_1_launch.html">Launch</a>().apply([]__device__() <span class="keyword">mutable</span></div>
@@ -273,7 +275,27 @@ Logger</h2>
 <div class="line">    </div>
 <div class="line">    logger.retrieve(std::cout);</div>
 <div class="line">}</div>
-<div class="ttc" id="aclassmuda_1_1_logger_viewer_html"><div class="ttname"><a href="classmuda_1_1_logger_viewer.html">muda::LoggerViewer</a></div><div class="ttdef"><b>Definition</b> logger_viewer.h:10</div></div>
+<div class="ttc" id="aclassmuda_1_1_logger_viewer_html"><div class="ttname"><a href="classmuda_1_1_logger_viewer.html">muda::LoggerViewer</a></div><div class="ttdef"><b>Definition</b> logger_viewer.h:47</div></div>
+</div><!-- fragment --><p>Further, you can use <code>muda::Debug::set_sync_callback()</code> to retrieve the output once <code>wait()</code> is called, as:</p>
+<div class="fragment"><div class="line">__device__ <a class="code hl_class" href="classmuda_1_1_logger_viewer.html">LoggerViewer</a> cout;</div>
+<div class="line"> </div>
+<div class="line"><span class="keywordtype">int</span> main()</div>
+<div class="line">{</div>
+<div class="line">    <span class="comment">// setup global logger</span></div>
+<div class="line">    <a class="code hl_class" href="classmuda_1_1_logger_viewer.html">LoggerViewer</a>* viewer_ptr = <span class="keyword">nullptr</span>;</div>
+<div class="line">    checkCudaErrors(cudaGetSymbolAddress((<span class="keywordtype">void</span>**)&amp;viewer_ptr, foo::cout));</div>
+<div class="line">    <a class="code hl_class" href="classmuda_1_1_logger.html">Logger</a> logger(viewer_ptr);</div>
+<div class="line">    </div>
+<div class="line">    muda::Debug::set_sync_callback([&amp;] { logger.retrieve(std::cout); });</div>
+<div class="line">    </div>
+<div class="line">    <a class="code hl_class" href="classmuda_1_1_launch.html">Launch</a>().apply([]__device__() <span class="keyword">mutable</span></div>
+<div class="line">        {</div>
+<div class="line">            cout &lt;&lt; <span class="stringliteral">&quot;hello\n&quot;</span>;</div>
+<div class="line">        })</div>
+<div class="line">    .wait();</div>
+<div class="line">    </div>
+<div class="line">    <span class="comment">// no need to retrieve manully</span></div>
+<div class="line">}</div>
 </div><!-- fragment --><h2><a class="anchor" id="autotoc_md7"></a>
 Buffer</h2>
 <p>A lightweight <code>std::vector</code>-like cuda device memory container.</p>
@@ -332,7 +354,7 @@ Viewer In Kernel</h2>
 <div class="line">        array   = buffer.viewer().name(<span class="stringliteral">&quot;array&quot;</span>),</div>
 <div class="line">        array2d = buffer_2d.viewer().name(<span class="stringliteral">&quot;array2d&quot;</span>),</div>
 <div class="line">        array3d = buffer_3d.viewer().name(<span class="stringliteral">&quot;array3d&quot;</span>),</div>
-<div class="line">        logger  = logger.viewer().name(<span class="stringliteral">&quot;logger&quot;</span>),</div>
+<div class="line">        logger  = logger.viewer(),</div>
 <div class="line">        ...</div>
 <div class="line">    ] __device__ () <span class="keyword">mutable</span></div>
 <div class="line">    {</div>
@@ -371,6 +393,7 @@ Event And Stream</h2>
 <div class="line">    .apply([v = v.viewer()] __device__()</div>
 <div class="line">           { <span class="keywordtype">int</span> res = v; });</div>
 <div class="ttc" id="aclassmuda_1_1_event_html"><div class="ttname"><a href="classmuda_1_1_event.html">muda::Event</a></div><div class="ttdoc">RAII wrapper for cudaEvent.</div><div class="ttdef"><b>Definition</b> event.h:15</div></div>
+<div class="ttc" id="aclassmuda_1_1_stream_html"><div class="ttname"><a href="classmuda_1_1_stream.html">muda::Stream</a></div><div class="ttdoc">RAII wrapper for cudaStream.</div><div class="ttdef"><b>Definition</b> stream.h:18</div></div>
 </div><!-- fragment --><h2><a class="anchor" id="autotoc_md10"></a>
 Asynchronous Operation</h2>
 <p>MUDA <b>Launchers</b>' functions are Asynchronous, meaning we need to call <code>.wait()</code> to synchronize it on the host, unlike some APIs such as <code>BufferView::copy_fom</code>. NOTE: Operations of a <b>Launcher</b> will be asynchronous as possible, so you should synchronize the stream by yourself, while other APIs will synchronize themselves.</p>
@@ -390,7 +413,7 @@ Asynchronous Operation</h2>
 <div class="line"><a class="code hl_class" href="classmuda_1_1_buffer_launch.html">BufferLaunch</a>(stream).copy(<a class="code hl_class" href="classmuda_1_1_buffer_view.html">BufferView</a>, ...).wait();</div>
 <div class="line"><a class="code hl_class" href="classmuda_1_1_buffer_launch.html">BufferLaunch</a>(stream).fill(<a class="code hl_class" href="classmuda_1_1_buffer_view.html">BufferView</a>,...).wait();</div>
 <div class="ttc" id="aclassmuda_1_1_buffer_launch_html"><div class="ttname"><a href="classmuda_1_1_buffer_launch.html">muda::BufferLaunch</a></div><div class="ttdef"><b>Definition</b> buffer_launch.h:37</div></div>
-<div class="ttc" id="aclassmuda_1_1_buffer_view_html"><div class="ttname"><a href="classmuda_1_1_buffer_view.html">muda::BufferView</a></div><div class="ttdef"><b>Definition</b> buffer_view.h:168</div></div>
+<div class="ttc" id="aclassmuda_1_1_buffer_view_html"><div class="ttname"><a href="classmuda_1_1_buffer_view.html">muda::BufferView</a></div><div class="ttdef"><b>Definition</b> buffer_view.h:162</div></div>
 <div class="ttc" id="aclassmuda_1_1_graph_launch_html"><div class="ttname"><a href="classmuda_1_1_graph_launch.html">muda::GraphLaunch</a></div><div class="ttdef"><b>Definition</b> graph_launch.h:8</div></div>
 <div class="ttc" id="aclassmuda_1_1_memory_html"><div class="ttname"><a href="classmuda_1_1_memory.html">muda::Memory</a></div><div class="ttdef"><b>Definition</b> memory.h:8</div></div>
 </div><!-- fragment --><p>Feel free to ignore <code>Memory</code> <code>BufferLaunch</code> <b>Launcher</b> when building your fast demo. Directly use the convenient synchronous APIs of <code>DeviceBuffer/BufferView</code> until you find it's the performance hotpot that will save you a lot of time.</p>
@@ -434,10 +457,10 @@ Asynchronous Operation</h2>
 <div class="line">ctx.convert(A_bcoo, A_dense);</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// so for the Sparse Vector ...</span></div>
-<div class="ttc" id="aclassmuda_1_1_device_b_c_o_o_matrix_html"><div class="ttname"><a href="classmuda_1_1_device_b_c_o_o_matrix.html">muda::DeviceBCOOMatrix</a></div><div class="ttdef"><b>Definition</b> device_bcoo_matrix.h:10</div></div>
-<div class="ttc" id="aclassmuda_1_1_device_b_s_r_matrix_html"><div class="ttname"><a href="classmuda_1_1_device_b_s_r_matrix.html">muda::DeviceBSRMatrix</a></div><div class="ttdef"><b>Definition</b> device_bsr_matrix.h:17</div></div>
+<div class="ttc" id="aclassmuda_1_1_device_b_c_o_o_matrix_html"><div class="ttname"><a href="classmuda_1_1_device_b_c_o_o_matrix.html">muda::DeviceBCOOMatrix</a></div><div class="ttdef"><b>Definition</b> device_bcoo_matrix.h:18</div></div>
+<div class="ttc" id="aclassmuda_1_1_device_b_s_r_matrix_html"><div class="ttname"><a href="classmuda_1_1_device_b_s_r_matrix.html">muda::DeviceBSRMatrix</a></div><div class="ttdef"><b>Definition</b> device_bsr_matrix.h:16</div></div>
 <div class="ttc" id="aclassmuda_1_1_device_c_s_r_matrix_html"><div class="ttname"><a href="classmuda_1_1_device_c_s_r_matrix.html">muda::DeviceCSRMatrix</a></div><div class="ttdef"><b>Definition</b> device_csr_matrix.h:16</div></div>
-<div class="ttc" id="aclassmuda_1_1_device_dense_matrix_html"><div class="ttname"><a href="classmuda_1_1_device_dense_matrix.html">muda::DeviceDenseMatrix</a></div><div class="ttdef"><b>Definition</b> device_dense_matrix.h:10</div></div>
+<div class="ttc" id="aclassmuda_1_1_device_dense_matrix_html"><div class="ttname"><a href="classmuda_1_1_device_dense_matrix.html">muda::DeviceDenseMatrix</a></div><div class="ttdef"><b>Definition</b> device_dense_matrix.h:16</div></div>
 <div class="ttc" id="aclassmuda_1_1_device_triplet_matrix_html"><div class="ttname"><a href="classmuda_1_1_device_triplet_matrix.html">muda::DeviceTripletMatrix</a></div><div class="ttdef"><b>Definition</b> device_triplet_matrix.h:14</div></div>
 <div class="ttc" id="aclassmuda_1_1_linear_system_context_html"><div class="ttname"><a href="classmuda_1_1_linear_system_context.html">muda::LinearSystemContext</a></div><div class="ttdef"><b>Definition</b> linear_system_context.h:28</div></div>
 </div><!-- fragment --><p>We only allow users to assemble a Sparse Matrix from Triplet Matrix. And allow users to read from BCOOMatrix.</p>
@@ -473,7 +496,7 @@ Asynchronous Operation</h2>
 <div class="line"> </div>
 <div class="line"><span class="comment">// maybe in some iterative solver:</span></div>
 <div class="line">ctx.spmv(A_bsr.cview(), x.cview(), b.view());</div>
-<div class="ttc" id="aclassmuda_1_1_device_dense_vector_html"><div class="ttname"><a href="classmuda_1_1_device_dense_vector.html">muda::DeviceDenseVector</a></div><div class="ttdef"><b>Definition</b> device_dense_vector.h:10</div></div>
+<div class="ttc" id="aclassmuda_1_1_device_dense_vector_html"><div class="ttname"><a href="classmuda_1_1_device_dense_vector.html">muda::DeviceDenseVector</a></div><div class="ttdef"><b>Definition</b> device_dense_vector.h:16</div></div>
 </div><!-- fragment --><p>[TODO:] Later, we may involve <a href="https://en.wikipedia.org/wiki/Expression_templates">Expression Template</a> to strengthen the linear algebra calculation and use lazy evaluation to arrange as many element-wise/scattering operations as possible in a single kernel.</p>
 <h2><a class="anchor" id="autotoc_md12"></a>
 [Extension] Field Layout</h2>
