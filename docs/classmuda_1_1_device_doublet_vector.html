@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>MUDA_APP: muda::DeviceDoubletVector&lt; T, N &gt; Class Template Reference</title>
+<title>MUDA: muda::DeviceDoubletVector&lt; T, N &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -25,7 +25,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">MUDA_APP
+   <div id="projectname">MUDA
    </div>
   </td>
  </tr>
@@ -119,9 +119,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ae33eb7a86b113a63e3e0ce6179596a06" id="r_ae33eb7a86b113a63e3e0ce6179596a06"><td class="memItemLeft" align="right" valign="top"><a id="ae33eb7a86b113a63e3e0ce6179596a06" name="ae33eb7a86b113a63e3e0ce6179596a06"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>reshape</b> (int num_segment)</td></tr>
 <tr class="separator:ae33eb7a86b113a63e3e0ce6179596a06"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad231b316cf39ad35d613a306376c3627" id="r_ad231b316cf39ad35d613a306376c3627"><td class="memItemLeft" align="right" valign="top"><a id="ad231b316cf39ad35d613a306376c3627" name="ad231b316cf39ad35d613a306376c3627"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>resize_doublet</b> (size_t nonzero_count)</td></tr>
-<tr class="separator:ad231b316cf39ad35d613a306376c3627"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3e9c3e324cb96a866927ccfc1b7a194" id="r_ab3e9c3e324cb96a866927ccfc1b7a194"><td class="memItemLeft" align="right" valign="top"><a id="ab3e9c3e324cb96a866927ccfc1b7a194" name="ab3e9c3e324cb96a866927ccfc1b7a194"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>resize_doublets</b> (size_t nonzero_count)</td></tr>
+<tr class="separator:ab3e9c3e324cb96a866927ccfc1b7a194"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77fff9612703073c15048ddb76f3d783" id="r_a77fff9612703073c15048ddb76f3d783"><td class="memItemLeft" align="right" valign="top"><a id="a77fff9612703073c15048ddb76f3d783" name="a77fff9612703073c15048ddb76f3d783"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>reserve_doublets</b> (size_t nonzero_count)</td></tr>
+<tr class="separator:a77fff9612703073c15048ddb76f3d783"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae2ddef2fdd81b3ba7962c7a0ff262850" id="r_ae2ddef2fdd81b3ba7962c7a0ff262850"><td class="memItemLeft" align="right" valign="top"><a id="ae2ddef2fdd81b3ba7962c7a0ff262850" name="ae2ddef2fdd81b3ba7962c7a0ff262850"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>resize</b> (int num_segment, size_t nonzero_count)</td></tr>
 <tr class="separator:ae2ddef2fdd81b3ba7962c7a0ff262850"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -146,6 +149,9 @@ auto&#160;</td><td class="memItemRight" valign="bottom"><b>segment_indices</b> (
 <tr class="memitem:a7d32a61ac6392e8e9be3b742b6b0c5eb" id="r_a7d32a61ac6392e8e9be3b742b6b0c5eb"><td class="memItemLeft" align="right" valign="top"><a id="a7d32a61ac6392e8e9be3b742b6b0c5eb" name="a7d32a61ac6392e8e9be3b742b6b0c5eb"></a>
 auto&#160;</td><td class="memItemRight" valign="bottom"><b>doublet_count</b> () const</td></tr>
 <tr class="separator:a7d32a61ac6392e8e9be3b742b6b0c5eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2b9a5b96f254c9a23a95f3d79a01f60" id="r_af2b9a5b96f254c9a23a95f3d79a01f60"><td class="memItemLeft" align="right" valign="top"><a id="af2b9a5b96f254c9a23a95f3d79a01f60" name="af2b9a5b96f254c9a23a95f3d79a01f60"></a>
+auto&#160;</td><td class="memItemRight" valign="bottom"><b>doublet_capacity</b> () const</td></tr>
+<tr class="separator:af2b9a5b96f254c9a23a95f3d79a01f60"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0beece712cd92e4954bbeaf3eda407d9" id="r_a0beece712cd92e4954bbeaf3eda407d9"><td class="memItemLeft" align="right" valign="top"><a id="a0beece712cd92e4954bbeaf3eda407d9" name="a0beece712cd92e4954bbeaf3eda407d9"></a>
 auto&#160;</td><td class="memItemRight" valign="bottom"><b>view</b> ()</td></tr>
 <tr class="separator:a0beece712cd92e4954bbeaf3eda407d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -174,7 +180,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>m_segment_count</b> = 
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
 Friends</h2></td></tr>
 <tr class="memitem:af08ecf9e5111e729f7c039733b5d98c3" id="r_af08ecf9e5111e729f7c039733b5d98c3"><td class="memTemplParams" colspan="2"><a id="af08ecf9e5111e729f7c039733b5d98c3" name="af08ecf9e5111e729f7c039733b5d98c3"></a>
-template&lt;typename T , int N&gt; </td></tr>
+template&lt;typename U , int M&gt; </td></tr>
 <tr class="memitem:af08ecf9e5111e729f7c039733b5d98c3"><td class="memTemplItemLeft" align="right" valign="top">class&#160;</td><td class="memTemplItemRight" valign="bottom"><b>details::MatrixFormatConverter</b></td></tr>
 <tr class="separator:af08ecf9e5111e729f7c039733b5d98c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>MUDA_APP: src/muda/launch/kernel_label.h Source File</title>
+<title>MUDA: src/muda/launch/kernel_label.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -25,7 +25,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">MUDA_APP
+   <div id="projectname">MUDA
    </div>
   </td>
  </tr>
@@ -106,20 +106,28 @@ $(document).ready(function(){initNavTree('kernel__label_8h_source.html',''); ini
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno"><a class="line" href="classmuda_1_1_kernel_label.html">    6</a></span><span class="keyword">class </span><a class="code hl_class" href="classmuda_1_1_kernel_label.html">KernelLabel</a></div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>{</div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>  <span class="keyword">public</span>:</div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>    <a class="code hl_class" href="classmuda_1_1_kernel_label.html">KernelLabel</a>(std::string_view name)</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>    <a class="code hl_class" href="classmuda_1_1_kernel_label.html">KernelLabel</a>(std::string_view name, std::string_view file = <span class="stringliteral">&quot;&quot;</span>, <span class="keywordtype">size_t</span> line = ~0ull)</div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>    {</div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>        <span class="keywordflow">if</span> <span class="keyword">constexpr</span>(muda::RUNTIME_CHECK_ON)</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>            details::LaunchInfoCache::current_kernel_name(name);</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    }</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    <a class="code hl_class" href="classmuda_1_1_kernel_label.html">~KernelLabel</a>()</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    {</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>        <span class="keywordflow">if</span> <span class="keyword">constexpr</span>(muda::RUNTIME_CHECK_ON)</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>            details::LaunchInfoCache::current_kernel_name(<span class="stringliteral">&quot;&quot;</span>);</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    }</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>};</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>        {</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>            details::LaunchInfoCache::current_kernel_name(name);</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>            details::LaunchInfoCache::current_kernel_file(file);</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>            details::LaunchInfoCache::current_kernel_line(line);</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>        }</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    }</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    <a class="code hl_class" href="classmuda_1_1_kernel_label.html">~KernelLabel</a>()</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    {</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>        <span class="keywordflow">if</span> <span class="keyword">constexpr</span>(muda::RUNTIME_CHECK_ON)</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>        {</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>            details::LaunchInfoCache::current_kernel_name(<span class="stringliteral">&quot;&quot;</span>);</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>            details::LaunchInfoCache::current_kernel_file(<span class="stringliteral">&quot;&quot;</span>);</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>            details::LaunchInfoCache::current_kernel_line(~0ull);</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>        }</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    }</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>};</div>
 </div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>}  <span class="comment">// namespace muda</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>}  <span class="comment">// namespace muda</span></div>
 <div class="ttc" id="aclassmuda_1_1_kernel_label_html"><div class="ttname"><a href="classmuda_1_1_kernel_label.html">muda::KernelLabel</a></div><div class="ttdef"><b>Definition</b> kernel_label.h:7</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

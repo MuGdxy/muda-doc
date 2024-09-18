@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>MUDA_APP: src/muda/ext/linear_system/details/device_csr_matrix.inl Source File</title>
+<title>MUDA: src/muda/ext/linear_system/details/device_csr_matrix.inl Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -25,7 +25,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">MUDA_APP
+   <div id="projectname">MUDA
    </div>
   </td>
  </tr>
@@ -200,14 +200,14 @@ $(document).ready(function(){initNavTree('device__csr__matrix_8inl_source.html',
 <div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>    {</div>
 <div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>        checkCudaErrors(cusparseCreateCsr(</div>
 <div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>            &amp;m_descr,</div>
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>            m_row,</div>
-<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>            m_col,</div>
-<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>            m_values.size(),</div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>            remove_const(m_row_offsets.data()),</div>
-<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>            remove_const(m_col_indices.data()),</div>
-<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>            remove_const(m_values.data()),</div>
-<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>            cusparse_index_type&lt;<span class="keyword">decltype</span>(m_row_offsets)::value_type&gt;(),</div>
-<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>            cusparse_index_type&lt;<span class="keyword">decltype</span>(m_col_indices)::value_type&gt;(),</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>            this-&gt;m_row,</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>            this-&gt;m_col,</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>            this-&gt;m_values.size(),</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>            remove_const(this-&gt;m_row_offsets.data()),</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>            remove_const(this-&gt;m_col_indices.data()),</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>            remove_const(this-&gt;m_values.data()),</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>            cusparse_index_type&lt;<span class="keyword">typename</span> <span class="keyword">decltype</span>(this-&gt;m_row_offsets)::value_type&gt;(),</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>            cusparse_index_type&lt;<span class="keyword">typename</span> <span class="keyword">decltype</span>(this-&gt;m_col_indices)::value_type&gt;(),</div>
 <div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>            CUSPARSE_INDEX_BASE_ZERO,</div>
 <div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>            cuda_data_type&lt;Ty&gt;()));</div>
 <div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>    }</div>

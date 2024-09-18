@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>MUDA_APP: src/muda/ext/geo/distance/distance_type.h Source File</title>
+<title>MUDA: src/muda/ext/geo/distance/distance_type.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -25,7 +25,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">MUDA_APP
+   <div id="projectname">MUDA
    </div>
   </td>
  </tr>
@@ -100,7 +100,7 @@ $(document).ready(function(){initNavTree('distance__type_8h_source.html',''); in
 <div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#include &lt;muda/muda_def.h&gt;</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &lt;muda/tools/debug_log.h&gt;</span></div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;Eigen/Core&gt;</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;muda/ext/eigen/eigen_core_cxx20.h&gt;</span></div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;Eigen/Geometry&gt;</span></div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="keyword">namespace </span>muda::distance</div>
@@ -161,17 +161,17 @@ $(document).ready(function(){initNavTree('distance__type_8h_source.html',''); in
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt;</div>
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>MUDA_GENERIC PointTriangleDistanceType</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>point_triangle_distance_type(Eigen::Vector&lt;T, 3&gt;&amp; p,</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>                             Eigen::Vector&lt;T, 3&gt;&amp; t0,</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>                             Eigen::Vector&lt;T, 3&gt;&amp; t1,</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>                             Eigen::Vector&lt;T, 3&gt;&amp; t2);</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>point_triangle_distance_type(<span class="keyword">const</span> Eigen::Vector&lt;T, 3&gt;&amp; p,</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>                             <span class="keyword">const</span> Eigen::Vector&lt;T, 3&gt;&amp; t0,</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>                             <span class="keyword">const</span> Eigen::Vector&lt;T, 3&gt;&amp; t1,</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>                             <span class="keyword">const</span> Eigen::Vector&lt;T, 3&gt;&amp; t2);</div>
 <div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
 <div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span><span class="comment">// a more robust implementation of http://geomalgorithms.com/a07-_distance.html</span></div>
 <div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span><span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt;</div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>MUDA_GENERIC EdgeEdgeDistanceType edge_edge_distance_type(Eigen::Vector&lt;T, 3&gt;&amp; ea0,</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>                                                          Eigen::Vector&lt;T, 3&gt;&amp; ea1,</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>                                                          Eigen::Vector&lt;T, 3&gt;&amp; eb0,</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>                                                          Eigen::Vector&lt;T, 3&gt;&amp; eb1);</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>MUDA_GENERIC EdgeEdgeDistanceType edge_edge_distance_type(<span class="keyword">const</span> Eigen::Vector&lt;T, 3&gt;&amp; ea0,</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>                                                          <span class="keyword">const</span> Eigen::Vector&lt;T, 3&gt;&amp; ea1,</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>                                                          <span class="keyword">const</span> Eigen::Vector&lt;T, 3&gt;&amp; eb0,</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>                                                          <span class="keyword">const</span> Eigen::Vector&lt;T, 3&gt;&amp; eb1);</div>
 <div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> </div>
 <div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>}  <span class="comment">// namespace muda::distance</span></div>
 <div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span> </div>

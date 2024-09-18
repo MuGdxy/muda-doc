@@ -9,7 +9,7 @@ var hierarchy =
     [ "muda::eigen::AnalyticalInverse", "structmuda_1_1eigen_1_1_analytical_inverse.html", null ],
     [ "muda::FieldEntryViewCore< IsConst, T, Layout, M, N >::AsIterator", "structmuda_1_1_field_entry_view_core_1_1_as_iterator.html", null ],
     [ "muda::spatial_hash::BoundingSphere", "classmuda_1_1spatial__hash_1_1_bounding_sphere.html", null ],
-    [ "muda::details::buffer::BufferInfoAccessor< BufferView >", "classmuda_1_1details_1_1buffer_1_1_buffer_info_accessor.html", null ],
+    [ "muda::details::buffer::BufferInfoAccessor", "classmuda_1_1details_1_1buffer_1_1_buffer_info_accessor.html", null ],
     [ "muda::lbvh::BVH< Real, Object, AABBGetter, MortonCodeCalculator >", "classmuda_1_1lbvh_1_1_b_v_h.html", null ],
     [ "muda::DoubletVectorViewerBase< IsConst, T, N >::CDoublet", "structmuda_1_1_doublet_vector_viewer_base_1_1_c_doublet.html", null ],
     [ "muda::DoubletVectorViewerBase< IsConst, T, 1 >::CDoublet", "structmuda_1_1_doublet_vector_viewer_base_3_01_is_const_00_01_t_00_011_01_4_1_1_c_doublet.html", null ],
@@ -69,6 +69,7 @@ var hierarchy =
     [ "muda::DeviceBuffer< SegmentVector >", "classmuda_1_1_device_buffer.html", null ],
     [ "muda::DeviceBuffer< std::byte >", "classmuda_1_1_device_buffer.html", null ],
     [ "muda::DeviceBuffer< Ty >", "classmuda_1_1_device_buffer.html", null ],
+    [ "muda::DeviceBuffer< uint64_t >", "classmuda_1_1_device_buffer.html", null ],
     [ "muda::DeviceBuffer< Vector3 >", "classmuda_1_1_device_buffer.html", null ],
     [ "muda::DeviceCSRMatrix< Ty >", "classmuda_1_1_device_c_s_r_matrix.html", null ],
     [ "muda::DeviceDenseMatrix< Ty >", "classmuda_1_1_device_dense_matrix.html", null ],
@@ -371,26 +372,13 @@ var hierarchy =
     [ "muda::lbvh::vector_of< double >", "structmuda_1_1lbvh_1_1vector__of_3_01double_01_4.html", null ],
     [ "muda::lbvh::vector_of< float >", "structmuda_1_1lbvh_1_1vector__of_3_01float_01_4.html", null ],
     [ "muda::lbvh::vector_of< Real >", "structmuda_1_1lbvh_1_1vector__of.html", null ],
+    [ "muda::ViewBase< IsConst_ >", "classmuda_1_1_view_base.html", null ],
     [ "muda::ViewBase< IsConst >", "classmuda_1_1_view_base.html", [
-      [ "muda::Buffer2DViewBase< false, T >", "classmuda_1_1_buffer2_d_view_base.html", [
-        [ "muda::Buffer2DView< T >", "classmuda_1_1_buffer2_d_view.html", null ]
-      ] ],
-      [ "muda::Buffer2DViewBase< true, T >", "classmuda_1_1_buffer2_d_view_base.html", [
-        [ "muda::CBuffer2DView< T >", "classmuda_1_1_c_buffer2_d_view.html", null ]
-      ] ],
-      [ "muda::Buffer3DViewBase< false, T >", "classmuda_1_1_buffer3_d_view_base.html", [
-        [ "muda::Buffer3DView< T >", "classmuda_1_1_buffer3_d_view.html", null ]
-      ] ],
-      [ "muda::Buffer3DViewBase< true, T >", "classmuda_1_1_buffer3_d_view_base.html", [
-        [ "muda::CBuffer3DView< T >", "classmuda_1_1_c_buffer3_d_view.html", null ]
-      ] ],
-      [ "muda::BufferViewBase< false, T >", "classmuda_1_1_buffer_view_base.html", [
-        [ "muda::BufferView< T >", "classmuda_1_1_buffer_view.html", null ]
-      ] ],
-      [ "muda::BufferViewBase< true, T >", "classmuda_1_1_buffer_view_base.html", [
-        [ "muda::CBufferView< T >", "classmuda_1_1_c_buffer_view.html", null ]
-      ] ],
-      [ "muda::BufferViewBase< true, muda::spatial_hash::BoundingSphere >", "classmuda_1_1_buffer_view_base.html", null ],
+      [ "muda::Buffer2DViewT< T >", "classmuda_1_1_buffer2_d_view_t.html", null ],
+      [ "muda::Buffer3DViewT< T >", "classmuda_1_1_buffer3_d_view_t.html", null ],
+      [ "muda::BufferViewT< T >", "classmuda_1_1_buffer_view_t.html", null ],
+      [ "muda::BufferViewT< false, T >", "classmuda_1_1_buffer_view_t.html", null ],
+      [ "muda::BufferViewT< muda::spatial_hash::BoundingSphere >", "classmuda_1_1_buffer_view_t.html", null ],
       [ "muda::DenseMatrixViewBase< true, Ty >", "classmuda_1_1_dense_matrix_view_base.html", [
         [ "muda::CDenseMatrixView< Ty >", "classmuda_1_1_c_dense_matrix_view.html", null ]
       ] ],
@@ -403,18 +391,11 @@ var hierarchy =
       [ "muda::FieldEntryViewCore< IsConst, T, Layout, N, 1 >", "classmuda_1_1_field_entry_view_core.html", [
         [ "muda::FieldEntryViewBase< IsConst, T, Layout, N, 1 >", "classmuda_1_1_field_entry_view_base_3_01_is_const_00_01_t_00_01_layout_00_01_n_00_011_01_4.html", null ]
       ] ],
-      [ "muda::VarViewBase< true, T >", "classmuda_1_1_var_view_base.html", [
-        [ "muda::CVarView< T >", "classmuda_1_1_c_var_view.html", null ]
-      ] ],
-      [ "muda::VarViewBase< false, T >", "classmuda_1_1_var_view_base.html", [
-        [ "muda::VarView< T >", "classmuda_1_1_var_view.html", null ]
-      ] ],
+      [ "muda::VarViewT< T >", "classmuda_1_1_var_view_t.html", null ],
       [ "muda::BSRMatrixViewBase< IsConst, Ty, N >", "classmuda_1_1_b_s_r_matrix_view_base.html", null ],
-      [ "muda::Buffer2DViewBase< IsConst, T >", "classmuda_1_1_buffer2_d_view_base.html", null ],
-      [ "muda::Buffer3DViewBase< IsConst, T >", "classmuda_1_1_buffer3_d_view_base.html", null ],
-      [ "muda::BufferViewBase< IsConst, T >", "classmuda_1_1_buffer_view_base.html", [
-        [ "muda::CBufferView< muda::spatial_hash::BoundingSphere >", "classmuda_1_1_c_buffer_view.html", null ]
-      ] ],
+      [ "muda::Buffer2DViewT< IsConst, T >", "classmuda_1_1_buffer2_d_view_t.html", null ],
+      [ "muda::Buffer3DViewT< IsConst, T >", "classmuda_1_1_buffer3_d_view_t.html", null ],
+      [ "muda::BufferViewT< IsConst, T >", "classmuda_1_1_buffer_view_t.html", null ],
       [ "muda::COOMatrixViewBase< IsConst, Ty >", "classmuda_1_1_c_o_o_matrix_view_base.html", null ],
       [ "muda::COOVectorViewBase< IsConst, T >", "classmuda_1_1_c_o_o_vector_view_base.html", null ],
       [ "muda::CSRMatrixViewBase< IsConst, Ty >", "classmuda_1_1_c_s_r_matrix_view_base.html", null ],
@@ -445,13 +426,13 @@ var hierarchy =
       ] ],
       [ "muda::TripletMatrixViewBase< IsConst, Ty, N >", "classmuda_1_1_triplet_matrix_view_base.html", null ],
       [ "muda::TripletMatrixViewBase< IsConst, Ty, 1 >", "classmuda_1_1_triplet_matrix_view_base_3_01_is_const_00_01_ty_00_011_01_4.html", null ],
-      [ "muda::VarViewBase< IsConst, T >", "classmuda_1_1_var_view_base.html", null ]
+      [ "muda::VarViewT< IsConst, T >", "classmuda_1_1_var_view_t.html", null ]
     ] ],
     [ "muda::ViewBase< true >", "classmuda_1_1_view_base.html", [
       [ "muda::HostDeviceConfigView< muda::FieldEntryCore >", "classmuda_1_1_host_device_config_view.html", null ],
       [ "muda::HostDeviceConfigView< T >", "classmuda_1_1_host_device_config_view.html", null ]
     ] ],
-    [ "muda::ViewerBase< IsConst >", "classmuda_1_1_viewer_base.html", null ],
+    [ "muda::ViewerBase< IsConst_ >", "classmuda_1_1_viewer_base.html", null ],
     [ "muda::ViewerBase< IsConst >", "classmuda_1_1_viewer_base.html", [
       [ "muda::DenseMatrixViewerBase< true, T >", "classmuda_1_1_dense_matrix_viewer_base.html", [
         [ "muda::CDenseMatrixViewer< T >", "classmuda_1_1_c_dense_matrix_viewer.html", null ]
@@ -464,9 +445,6 @@ var hierarchy =
       ] ],
       [ "muda::DenseVectorViewerBase< false, T >", "classmuda_1_1_dense_vector_viewer_base.html", [
         [ "muda::DenseVectorViewer< T >", "classmuda_1_1_dense_vector_viewer.html", null ]
-      ] ],
-      [ "muda::DenseViewerBase< false, T >", "classmuda_1_1_dense_viewer_base.html", [
-        [ "muda::Dense< T >", "classmuda_1_1_dense.html", null ]
       ] ],
       [ "muda::DoubletVectorViewerBase< true, T, N >", "classmuda_1_1_doublet_vector_viewer_base.html", [
         [ "muda::CDoubletVectorViewer< T, N >", "classmuda_1_1_c_doublet_vector_viewer.html", null ]
@@ -498,12 +476,12 @@ var hierarchy =
       [ "muda::TripletMatrixViewerBase< false, T, 1 >", "classmuda_1_1_triplet_matrix_viewer_base.html", [
         [ "muda::TripletMatrixViewer< T, 1 >", "classmuda_1_1_triplet_matrix_viewer_3_01_t_00_011_01_4.html", null ]
       ] ],
-      [ "muda::Dense1DBase< IsConst, T >", "classmuda_1_1_dense1_d_base.html", null ],
+      [ "muda::Dense1DT< IsConst, T >", "classmuda_1_1_dense1_d_t.html", null ],
       [ "muda::Dense2DBase< IsConst, T >", "classmuda_1_1_dense2_d_base.html", null ],
       [ "muda::Dense3DBase< IsConst, T >", "classmuda_1_1_dense3_d_base.html", null ],
       [ "muda::DenseMatrixViewerBase< IsConst, T >", "classmuda_1_1_dense_matrix_viewer_base.html", null ],
       [ "muda::DenseVectorViewerBase< IsConst, T >", "classmuda_1_1_dense_vector_viewer_base.html", null ],
-      [ "muda::DenseViewerBase< IsConst, T >", "classmuda_1_1_dense_viewer_base.html", null ],
+      [ "muda::DenseViewerT< IsConst, T >", "classmuda_1_1_dense_viewer_t.html", null ],
       [ "muda::DoubletVectorViewerBase< IsConst, T, N >", "classmuda_1_1_doublet_vector_viewer_base.html", null ],
       [ "muda::DoubletVectorViewerBase< IsConst, T, 1 >", "classmuda_1_1_doublet_vector_viewer_base_3_01_is_const_00_01_t_00_011_01_4.html", null ],
       [ "muda::FieldEntryViewerCore< IsConst, T, Layout, M, N >", "classmuda_1_1_field_entry_viewer_core.html", [

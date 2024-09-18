@@ -24,7 +24,7 @@
 */
 var NAVTREE =
 [
-  [ "MUDA_APP", "index.html", [
+  [ "MUDA", "index.html", [
     [ "Main Page", "index.html", "index" ],
     [ "Classes", "annotated.html", [
       [ "Class List", "annotated.html", "annotated_dup" ],
@@ -45,9 +45,9 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "aabb_8h_source.html",
-"classmuda_1_1_sub_field_impl_3_01_field_entry_layout_1_1_ao_so_a_01_4.html",
-"field__entry__launch_8h_source.html",
-"structmuda_1_1read__write__viewer_3_01_c_var_view_3_01_t_01_4_01_4.html"
+"classmuda_1_1_triplet_matrix_viewer_3_01_t_00_011_01_4_1_1_proxy.html",
+"field__entry__view__scalar_8inl_source.html",
+"structstd_1_1hash_3_01muda_1_1_id_with_type_3_01_t_01_4_01_4.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

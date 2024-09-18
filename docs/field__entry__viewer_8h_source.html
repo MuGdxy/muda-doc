@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>MUDA_APP: src/muda/ext/field/field_entry_viewer.h Source File</title>
+<title>MUDA: src/muda/ext/field/field_entry_viewer.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -25,7 +25,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">MUDA_APP
+   <div id="projectname">MUDA
    </div>
   </td>
  </tr>
@@ -104,7 +104,7 @@ $(document).ready(function(){initNavTree('field__entry__viewer_8h_source.html','
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;muda/ext/field/field_entry_core.h&gt;</span></div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &lt;muda/ext/field/matrix_map_info.h&gt;</span></div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;muda/tools/host_device_config.h&gt;</span></div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &lt;Eigen/Core&gt;</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &lt;muda/ext/eigen/eigen_core_cxx20.h&gt;</span></div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="keyword">namespace </span>muda</div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>{</div>
@@ -150,8 +150,8 @@ $(document).ready(function(){initNavTree('field__entry__viewer_8h_source.html','
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    <span class="keyword">using </span>ThisMatMap = std::conditional_t&lt;IsConst, ConstMatMap, NonConstMatMap&gt;;</div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>  <span class="keyword">protected</span>:</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    <span class="keyword">using </span>auto_const_t = Base::template auto_const_t&lt;T&gt;;</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> U&gt;</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    <span class="keyword">using </span>auto_const_t = <span class="keyword">typename</span> Base::template auto_const_t&lt;U&gt;;</div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    <a class="code hl_class" href="classmuda_1_1_host_device_config_view.html">HostDeviceConfigView&lt;FieldEntryCore&gt;</a> m_core;</div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    MatStride                            m_stride;</div>
@@ -170,9 +170,9 @@ $(document).ready(function(){initNavTree('field__entry__viewer_8h_source.html','
 <div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
 <div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>        MUDA_KERNEL_ASSERT(m_offset &gt;= 0 &amp;&amp; m_size &gt;= 0 &amp;&amp; m_offset + m_size &lt;= total_count(),</div>
 <div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>                           <span class="stringliteral">&quot;FieldEntryViewer[%s:%s]: offset/size indexing out of range, size=%d, offset=%d, size=%d&quot;</span>,</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>                           name(),</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>                           kernel_name(),</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>                           total_count(),</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>                           this-&gt;name(),</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>                           this-&gt;kernel_name(),</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>                           this-&gt;total_count(),</div>
 <div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>                           m_offset,</div>
 <div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>                           m_size);</div>
 <div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span> </div>
@@ -195,8 +195,8 @@ $(document).ready(function(){initNavTree('field__entry__viewer_8h_source.html','
 <div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span> </div>
 <div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>        MUDA_KERNEL_ASSERT(j &lt; shape().x,</div>
 <div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>                           <span class="stringliteral">&quot;FieldEntry[%s:%s]: vector component indexing out of range, shape=(%d, %d), index=%d&quot;</span>,</div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>                           name(),</div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>                           kernel_name(),</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>                           this-&gt;name(),</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>                           this-&gt;kernel_name(),</div>
 <div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>                           shape().x,</div>
 <div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>                           shape().y,</div>
 <div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>                           j);</div>
@@ -209,8 +209,8 @@ $(document).ready(function(){initNavTree('field__entry__viewer_8h_source.html','
 <div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span> </div>
 <div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>        MUDA_KERNEL_ASSERT(row_index &lt; shape().x &amp;&amp; col_index &lt; shape().y,</div>
 <div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>                           <span class="stringliteral">&quot;FieldEntry[%s:%s]: vector component indexing out of range, shape=(%d,%d), index=(%d,%d)&quot;</span>,</div>
-<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>                           name(),</div>
-<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>                           kernel_name(),</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>                           this-&gt;name(),</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>                           this-&gt;kernel_name(),</div>
 <div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>                           shape().x,</div>
 <div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>                           shape().y,</div>
 <div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>                           row_index,</div>
@@ -237,12 +237,12 @@ $(document).ready(function(){initNavTree('field__entry__viewer_8h_source.html','
 <div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span><span class="keyword">    </span>{</div>
 <div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>        MUDA_KERNEL_ASSERT(i &lt; m_size,</div>
 <div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>                           <span class="stringliteral">&quot;FieldEntryViewer[%s:%s]: indexing out of range, index=%d, size=%d, offset=%d, entry_total_count=%d&quot;</span>,</div>
-<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>                           name(),</div>
-<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>                           kernel_name(),</div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>                           this-&gt;name(),</div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>                           this-&gt;kernel_name(),</div>
 <div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>                           i,</div>
 <div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>                           m_size,</div>
 <div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>                           m_offset,</div>
-<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>                           total_count());</div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>                           this-&gt;total_count());</div>
 <div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>    }</div>
 <div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>};</div>
 </div>
@@ -266,7 +266,7 @@ $(document).ready(function(){initNavTree('field__entry__viewer_8h_source.html','
 <div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span><span class="preprocessor">#include &quot;details/entry_viewers/field_entry_viewer_scalar.inl&quot;</span></div>
 <div class="ttc" id="aclassmuda_1_1_field_entry_viewer_core_html"><div class="ttname"><a href="classmuda_1_1_field_entry_viewer_core.html">muda::FieldEntryViewerCore</a></div><div class="ttdef"><b>Definition</b> field_entry_viewer.h:42</div></div>
 <div class="ttc" id="aclassmuda_1_1_host_device_config_view_html"><div class="ttname"><a href="classmuda_1_1_host_device_config_view.html">muda::HostDeviceConfigView</a></div><div class="ttdef"><b>Definition</b> host_device_config.h:12</div></div>
-<div class="ttc" id="aclassmuda_1_1_viewer_base_html"><div class="ttname"><a href="classmuda_1_1_viewer_base.html">muda::ViewerBase</a></div><div class="ttdef"><b>Definition</b> viewer_base.h:22</div></div>
+<div class="ttc" id="aclassmuda_1_1_viewer_base_html"><div class="ttname"><a href="classmuda_1_1_viewer_base.html">muda::ViewerBase</a></div><div class="ttdef"><b>Definition</b> viewer_base.h:18</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

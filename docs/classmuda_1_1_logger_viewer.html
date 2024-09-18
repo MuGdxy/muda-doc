@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>MUDA_APP: muda::LoggerViewer Class Reference</title>
+<title>MUDA: muda::LoggerViewer Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -25,7 +25,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">MUDA_APP
+   <div id="projectname">MUDA
    </div>
   </td>
  </tr>
@@ -91,7 +91,6 @@ $(document).ready(function(){initNavTree('classmuda_1_1_logger_viewer.html','');
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="#friends">Friends</a> &#124;
 <a href="classmuda_1_1_logger_viewer-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">muda::LoggerViewer Class Reference</div></div>
@@ -114,15 +113,9 @@ template&lt;bool IsFmt&gt; </td></tr>
 <tr class="memitem:ac35500260e3a0914e2c5ab8e877b35f6" id="r_ac35500260e3a0914e2c5ab8e877b35f6"><td class="memItemLeft" align="right" valign="top"><a id="ac35500260e3a0914e2c5ab8e877b35f6" name="ac35500260e3a0914e2c5ab8e877b35f6"></a>
 MUDA_DEVICE <a class="el" href="classmuda_1_1_log_proxy.html">LogProxy</a>&#160;</td><td class="memItemRight" valign="bottom"><b>proxy</b> ()</td></tr>
 <tr class="separator:ac35500260e3a0914e2c5ab8e877b35f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af8db33ce04f4640d47a5b8f906de18c7" id="r_af8db33ce04f4640d47a5b8f906de18c7"><td class="memItemLeft" align="right" valign="top"><a id="af8db33ce04f4640d47a5b8f906de18c7" name="af8db33ce04f4640d47a5b8f906de18c7"></a>
-MUDA_DEVICE uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>next_meta_data_idx</b> () const</td></tr>
-<tr class="separator:af8db33ce04f4640d47a5b8f906de18c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac274c9f58ebd0872825034006d3fb976" id="r_ac274c9f58ebd0872825034006d3fb976"><td class="memItemLeft" align="right" valign="top"><a id="ac274c9f58ebd0872825034006d3fb976" name="ac274c9f58ebd0872825034006d3fb976"></a>
-MUDA_DEVICE uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>next_buffer_idx</b> (uint32_t size) const</td></tr>
-<tr class="separator:ac274c9f58ebd0872825034006d3fb976"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a07a3864db6abf268ecce4ab0c9e35337" id="r_a07a3864db6abf268ecce4ab0c9e35337"><td class="memItemLeft" align="right" valign="top"><a id="a07a3864db6abf268ecce4ab0c9e35337" name="a07a3864db6abf268ecce4ab0c9e35337"></a>
-MUDA_DEVICE bool&#160;</td><td class="memItemRight" valign="bottom"><b>push_data</b> (<a class="el" href="classmuda_1_1details_1_1_logger_meta_data.html">details::LoggerMetaData</a> meta, const void *data)</td></tr>
-<tr class="separator:a07a3864db6abf268ecce4ab0c9e35337"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15b8997e63668b6530513b2680c02727" id="r_a15b8997e63668b6530513b2680c02727"><td class="memItemLeft" align="right" valign="top"><a id="a15b8997e63668b6530513b2680c02727" name="a15b8997e63668b6530513b2680c02727"></a>
+MUDA_GENERIC&#160;</td><td class="memItemRight" valign="bottom"><b>operator bool</b> () const</td></tr>
+<tr class="separator:a15b8997e63668b6530513b2680c02727"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a54ad2a3c292e207c331653e2a5e76f3d" id="r_a54ad2a3c292e207c331653e2a5e76f3d"><td class="memTemplParams" colspan="2"><a id="a54ad2a3c292e207c331653e2a5e76f3d" name="a54ad2a3c292e207c331653e2a5e76f3d"></a>
 template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a54ad2a3c292e207c331653e2a5e76f3d"><td class="memTemplItemLeft" align="right" valign="top">MUDA_INLINE MUDA_DEVICE <a class="el" href="classmuda_1_1_log_proxy.html">LogProxy</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator&lt;&lt;</b> (const T &amp;t)</td></tr>
@@ -132,35 +125,14 @@ template&lt;bool IsFmt&gt; </td></tr>
 <tr class="memitem:acd694cc0c4ce520b8cb6d275043868f1"><td class="memTemplItemLeft" align="right" valign="top">MUDA_INLINE MUDA_DEVICE <a class="el" href="classmuda_1_1_log_proxy.html">LogProxy</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><b>push_string</b> (const char *str)</td></tr>
 <tr class="separator:acd694cc0c4ce520b8cb6d275043868f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
-Public Attributes</h2></td></tr>
-<tr class="memitem:a018a32d959ce5ad881ed92dbb589b356" id="r_a018a32d959ce5ad881ed92dbb589b356"><td class="memItemLeft" align="right" valign="top"><a id="a018a32d959ce5ad881ed92dbb589b356" name="a018a32d959ce5ad881ed92dbb589b356"></a>
-uint32_t *&#160;</td><td class="memItemRight" valign="bottom"><b>m_meta_data_id</b> = nullptr</td></tr>
-<tr class="separator:a018a32d959ce5ad881ed92dbb589b356"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a42acd7b5636d624f6cd45a5f0b063bf2" id="r_a42acd7b5636d624f6cd45a5f0b063bf2"><td class="memItemLeft" align="right" valign="top"><a id="a42acd7b5636d624f6cd45a5f0b063bf2" name="a42acd7b5636d624f6cd45a5f0b063bf2"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>m_meta_data_id_size</b> = 0</td></tr>
-<tr class="separator:a42acd7b5636d624f6cd45a5f0b063bf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8994ad5eb23691d62dfd67bade85ab0e" id="r_a8994ad5eb23691d62dfd67bade85ab0e"><td class="memItemLeft" align="right" valign="top"><a id="a8994ad5eb23691d62dfd67bade85ab0e" name="a8994ad5eb23691d62dfd67bade85ab0e"></a>
-<a class="el" href="classmuda_1_1details_1_1_logger_meta_data.html">details::LoggerMetaData</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_meta_data</b> = nullptr</td></tr>
-<tr class="separator:a8994ad5eb23691d62dfd67bade85ab0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a47ee91079c52a7c5a8e927a146e31b63" id="r_a47ee91079c52a7c5a8e927a146e31b63"><td class="memItemLeft" align="right" valign="top"><a id="a47ee91079c52a7c5a8e927a146e31b63" name="a47ee91079c52a7c5a8e927a146e31b63"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>m_meta_data_size</b> = 0</td></tr>
-<tr class="separator:a47ee91079c52a7c5a8e927a146e31b63"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2567a9e8af94f5ae446cbab95c036345" id="r_a2567a9e8af94f5ae446cbab95c036345"><td class="memItemLeft" align="right" valign="top"><a id="a2567a9e8af94f5ae446cbab95c036345" name="a2567a9e8af94f5ae446cbab95c036345"></a>
-char *&#160;</td><td class="memItemRight" valign="bottom"><b>m_buffer</b> = nullptr</td></tr>
-<tr class="separator:a2567a9e8af94f5ae446cbab95c036345"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a21ab3213186030008f1ede57b01d40e9" id="r_a21ab3213186030008f1ede57b01d40e9"><td class="memItemLeft" align="right" valign="top"><a id="a21ab3213186030008f1ede57b01d40e9" name="a21ab3213186030008f1ede57b01d40e9"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>m_buffer_size</b> = 0</td></tr>
-<tr class="separator:a21ab3213186030008f1ede57b01d40e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aefac8d894410ac353e156bb137e74d43" id="r_aefac8d894410ac353e156bb137e74d43"><td class="memItemLeft" align="right" valign="top"><a id="aefac8d894410ac353e156bb137e74d43" name="aefac8d894410ac353e156bb137e74d43"></a>
-<a class="el" href="classmuda_1_1details_1_1_logger_offset.html">details::LoggerOffset</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_offset</b> = nullptr</td></tr>
-<tr class="separator:aefac8d894410ac353e156bb137e74d43"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
 Friends</h2></td></tr>
 <tr class="memitem:aff02b76416d2846736b7ecd798921a0a" id="r_aff02b76416d2846736b7ecd798921a0a"><td class="memItemLeft" align="right" valign="top"><a id="aff02b76416d2846736b7ecd798921a0a" name="aff02b76416d2846736b7ecd798921a0a"></a>
 class&#160;</td><td class="memItemRight" valign="bottom"><b>Logger</b></td></tr>
 <tr class="separator:aff02b76416d2846736b7ecd798921a0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e003ca324dd4c9445455402f40ae9ae" id="r_a9e003ca324dd4c9445455402f40ae9ae"><td class="memItemLeft" align="right" valign="top"><a id="a9e003ca324dd4c9445455402f40ae9ae" name="a9e003ca324dd4c9445455402f40ae9ae"></a>
+class&#160;</td><td class="memItemRight" valign="bottom"><b>LogProxy</b></td></tr>
+<tr class="separator:a9e003ca324dd4c9445455402f40ae9ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>src/muda/logger/<a class="el" href="logger__viewer_8h_source.html">logger_viewer.h</a></li>

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>MUDA_APP: src/muda/ext/geo/distance/details/point_edge.inl Source File</title>
+<title>MUDA: src/muda/ext/geo/distance/details/point_edge.inl Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -25,7 +25,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">MUDA_APP
+   <div id="projectname">MUDA
    </div>
   </td>
  </tr>
@@ -102,10 +102,10 @@ $(document).ready(function(){initNavTree('point__edge_8inl_source.html',''); ini
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="keyword">namespace </span>muda::distance</div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span>{</div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="keyword">template</span> &lt;<span class="keyword">class</span> T, <span class="keywordtype">int</span> dim&gt;</div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>MUDA_GENERIC <span class="keywordtype">void</span> point_edge_distance(<span class="keyword">const</span> Eigen::Matrix&lt;T, dim, 1&gt;&amp; p,</div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>                                      <span class="keyword">const</span> Eigen::Matrix&lt;T, dim, 1&gt;&amp; e0,</div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>                                      <span class="keyword">const</span> Eigen::Matrix&lt;T, dim, 1&gt;&amp; e1,</div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>                                      T&amp;                              dist2)</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>MUDA_GENERIC <span class="keywordtype">void</span> point_edge_distance(<span class="keyword">const</span> Eigen::Vector&lt;T, dim&gt;&amp; p,</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>                                      <span class="keyword">const</span> Eigen::Vector&lt;T, dim&gt;&amp; e0,</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>                                      <span class="keyword">const</span> Eigen::Vector&lt;T, dim&gt;&amp; e1,</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>                                      T&amp;                           dist2)</div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>{</div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>    <span class="keywordflow">if</span> <span class="keyword">constexpr</span>(dim == 2)</div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>    {</div>
@@ -665,10 +665,10 @@ $(document).ready(function(){initNavTree('point__edge_8inl_source.html',''); ini
 <div class="line"><a id="l00566" name="l00566"></a><span class="lineno">  566</span> </div>
 <div class="line"><a id="l00567" name="l00567"></a><span class="lineno">  567</span> </div>
 <div class="line"><a id="l00568" name="l00568"></a><span class="lineno">  568</span><span class="keyword">template</span> &lt;<span class="keyword">class</span> T, <span class="keywordtype">int</span> dim&gt;</div>
-<div class="line"><a id="l00569" name="l00569"></a><span class="lineno">  569</span>MUDA_GENERIC <span class="keywordtype">void</span> point_edge_distance_gradient(<span class="keyword">const</span> Eigen::Matrix&lt;T, dim, 1&gt;&amp; p,</div>
-<div class="line"><a id="l00570" name="l00570"></a><span class="lineno">  570</span>                                               <span class="keyword">const</span> Eigen::Matrix&lt;T, dim, 1&gt;&amp; e0,</div>
-<div class="line"><a id="l00571" name="l00571"></a><span class="lineno">  571</span>                                               <span class="keyword">const</span> Eigen::Matrix&lt;T, dim, 1&gt;&amp; e1,</div>
-<div class="line"><a id="l00572" name="l00572"></a><span class="lineno">  572</span>                                               Eigen::Matrix&lt;T, dim * 3, 1&gt;&amp; grad)</div>
+<div class="line"><a id="l00569" name="l00569"></a><span class="lineno">  569</span>MUDA_GENERIC <span class="keywordtype">void</span> point_edge_distance_gradient(<span class="keyword">const</span> Eigen::Vector&lt;T, dim&gt;&amp; p,</div>
+<div class="line"><a id="l00570" name="l00570"></a><span class="lineno">  570</span>                                               <span class="keyword">const</span> Eigen::Vector&lt;T, dim&gt;&amp; e0,</div>
+<div class="line"><a id="l00571" name="l00571"></a><span class="lineno">  571</span>                                               <span class="keyword">const</span> Eigen::Vector&lt;T, dim&gt;&amp; e1,</div>
+<div class="line"><a id="l00572" name="l00572"></a><span class="lineno">  572</span>                                               Eigen::Vector&lt;T, dim * 3&gt;&amp; grad)</div>
 <div class="line"><a id="l00573" name="l00573"></a><span class="lineno">  573</span>{</div>
 <div class="line"><a id="l00574" name="l00574"></a><span class="lineno">  574</span>    <span class="keywordflow">if</span> <span class="keyword">constexpr</span>(dim == 2)</div>
 <div class="line"><a id="l00575" name="l00575"></a><span class="lineno">  575</span>    {</div>
@@ -681,9 +681,9 @@ $(document).ready(function(){initNavTree('point__edge_8inl_source.html',''); ini
 <div class="line"><a id="l00582" name="l00582"></a><span class="lineno">  582</span>}</div>
 <div class="line"><a id="l00583" name="l00583"></a><span class="lineno">  583</span> </div>
 <div class="line"><a id="l00584" name="l00584"></a><span class="lineno">  584</span><span class="keyword">template</span> &lt;<span class="keyword">class</span> T, <span class="keywordtype">int</span> dim&gt;</div>
-<div class="line"><a id="l00585" name="l00585"></a><span class="lineno">  585</span>MUDA_GENERIC <span class="keywordtype">void</span> point_edge_distance_hessian(<span class="keyword">const</span> Eigen::Matrix&lt;T, dim, 1&gt;&amp; p,</div>
-<div class="line"><a id="l00586" name="l00586"></a><span class="lineno">  586</span>                                              <span class="keyword">const</span> Eigen::Matrix&lt;T, dim, 1&gt;&amp; e0,</div>
-<div class="line"><a id="l00587" name="l00587"></a><span class="lineno">  587</span>                                              <span class="keyword">const</span> Eigen::Matrix&lt;T, dim, 1&gt;&amp; e1,</div>
+<div class="line"><a id="l00585" name="l00585"></a><span class="lineno">  585</span>MUDA_GENERIC <span class="keywordtype">void</span> point_edge_distance_hessian(<span class="keyword">const</span> Eigen::Vector&lt;T, dim&gt;&amp; p,</div>
+<div class="line"><a id="l00586" name="l00586"></a><span class="lineno">  586</span>                                              <span class="keyword">const</span> Eigen::Vector&lt;T, dim&gt;&amp; e0,</div>
+<div class="line"><a id="l00587" name="l00587"></a><span class="lineno">  587</span>                                              <span class="keyword">const</span> Eigen::Vector&lt;T, dim&gt;&amp; e1,</div>
 <div class="line"><a id="l00588" name="l00588"></a><span class="lineno">  588</span>                                              Eigen::Matrix&lt;T, dim * 3, dim * 3&gt;&amp; Hessian)</div>
 <div class="line"><a id="l00589" name="l00589"></a><span class="lineno">  589</span>{</div>
 <div class="line"><a id="l00590" name="l00590"></a><span class="lineno">  590</span>    <span class="keywordflow">if</span> <span class="keyword">constexpr</span>(dim == 2)</div>

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>MUDA_APP: src/muda/ext/field/details/entry_view/field_entry_view_scalar.inl Source File</title>
+<title>MUDA: src/muda/ext/field/details/entry_view/field_entry_view_scalar.inl Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -25,7 +25,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">MUDA_APP
+   <div id="projectname">MUDA
    </div>
   </td>
  </tr>
@@ -106,7 +106,7 @@ $(document).ready(function(){initNavTree('field__entry__view__scalar_8inl_source
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>{</div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>    <span class="keyword">using </span><a class="code hl_class" href="classmuda_1_1_field_entry_view_core.html">Base</a> = <a class="code hl_class" href="classmuda_1_1_field_entry_view_core.html">FieldEntryViewCore&lt;IsConst, T, Layout, 1, 1&gt;</a>;</div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> U&gt;</div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>    <span class="keyword">using </span>auto_const_t = Base::template auto_const_t&lt;U&gt;;</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>    <span class="keyword">using </span>auto_const_t = <span class="keyword">typename</span> Base::template auto_const_t&lt;U&gt;;</div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>  <span class="keyword">public</span>:</div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>    <span class="keyword">using </span><a class="code hl_class" href="classmuda_1_1_view_base.html">Base::Base</a>;</div>
@@ -121,7 +121,7 @@ $(document).ready(function(){initNavTree('field__entry__view__scalar_8inl_source
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    MUDA_GENERIC <span class="keyword">auto</span> as_const()<span class="keyword"> const</span></div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="keyword">    </span>{</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>        <span class="keywordflow">return</span> <a class="code hl_class" href="classmuda_1_1_field_entry_view_base.html">ConstView</a>{m_core, Base::offset(), Base::size()};</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>        <span class="keywordflow">return</span> <a class="code hl_class" href="classmuda_1_1_field_entry_view_base.html">ConstView</a>{this-&gt;m_core, Base::offset(), Base::size()};</div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    }</div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    MUDA_GENERIC <span class="keyword">operator</span> <a class="code hl_class" href="classmuda_1_1_field_entry_view_base.html">ConstView</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> as_const(); }</div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
@@ -133,22 +133,22 @@ $(document).ready(function(){initNavTree('field__entry__view__scalar_8inl_source
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    MUDA_GENERIC <span class="keyword">auto</span> subview(<span class="keywordtype">int</span> offset)<span class="keyword"> const</span></div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="keyword">    </span>{</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>        <span class="keywordflow">return</span> <a class="code hl_class" href="classmuda_1_1_field_entry_view_base.html">ConstView</a>{m_core, m_offset + offset, m_size - offset};</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>        <span class="keywordflow">return</span> <a class="code hl_class" href="classmuda_1_1_field_entry_view_base.html">ConstView</a>{this-&gt;m_core, this-&gt;m_offset + offset, this-&gt;m_size - offset};</div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    }</div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    MUDA_GENERIC <span class="keyword">auto</span> subview(<span class="keywordtype">int</span> offset, <span class="keywordtype">int</span> size)<span class="keyword"> const</span></div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="keyword">    </span>{</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>        <span class="keywordflow">return</span> <a class="code hl_class" href="classmuda_1_1_field_entry_view_base.html">ConstView</a>{m_core, m_offset + offset, size};</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>        <span class="keywordflow">return</span> <a class="code hl_class" href="classmuda_1_1_field_entry_view_base.html">ConstView</a>{this-&gt;m_core, this-&gt;m_offset + offset, size};</div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    }</div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    MUDA_GENERIC <span class="keyword">auto</span> subview(<span class="keywordtype">int</span> offset)</div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    {</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>        <span class="keywordflow">return</span> <a class="code hl_class" href="classmuda_1_1_field_entry_view_base_3_01_is_const_00_01_t_00_01_layout_00_011_00_011_01_4.html">ThisView</a>{m_core, m_offset + offset, m_size - offset};</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>        <span class="keywordflow">return</span> <a class="code hl_class" href="classmuda_1_1_field_entry_view_base_3_01_is_const_00_01_t_00_01_layout_00_011_00_011_01_4.html">ThisView</a>{this-&gt;m_core, this-&gt;m_offset + offset, this-&gt;m_size - offset};</div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    }</div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    MUDA_GENERIC <span class="keyword">auto</span> subview(<span class="keywordtype">int</span> offset, <span class="keywordtype">int</span> size)</div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    {</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        <span class="keywordflow">return</span> <a class="code hl_class" href="classmuda_1_1_field_entry_view_base_3_01_is_const_00_01_t_00_01_layout_00_011_00_011_01_4.html">ThisView</a>{m_core, m_offset + offset, size};</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        <span class="keywordflow">return</span> <a class="code hl_class" href="classmuda_1_1_field_entry_view_base_3_01_is_const_00_01_t_00_01_layout_00_011_00_011_01_4.html">ThisView</a>{this-&gt;m_core, this-&gt;m_offset + offset, size};</div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    }</div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="comment">    /**********************************************************************************</span></div>
@@ -164,7 +164,7 @@ $(document).ready(function(){initNavTree('field__entry__view__scalar_8inl_source
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    MUDA_GENERIC <a class="code hl_class" href="classmuda_1_1_field_entry_view_base_3_01_is_const_00_01_t_00_01_layout_00_011_00_011_01_4.html">ThisView</a> operator+(<span class="keywordtype">int</span> i)</div>
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    {</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>        <span class="keywordflow">return</span> <a class="code hl_class" href="classmuda_1_1_field_entry_view_base_3_01_is_const_00_01_t_00_01_layout_00_011_00_011_01_4.html">ThisView</a>{m_core, m_offset + i, m_size - i, <span class="keyword">typename</span> Base::AsIterator{}};</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>        <span class="keywordflow">return</span> <a class="code hl_class" href="classmuda_1_1_field_entry_view_base_3_01_is_const_00_01_t_00_01_layout_00_011_00_011_01_4.html">ThisView</a>{this-&gt;m_core, this-&gt;m_offset + i, this-&gt;m_size - i, <span class="keyword">typename</span> Base::AsIterator{}};</div>
 <div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    }</div>
 <div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    MUDA_GENERIC <a class="code hl_class" href="classmuda_1_1_field_entry_view_base.html">ConstView</a> operator+(<span class="keywordtype">int</span> i)<span class="keyword"> const</span></div>
 <div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span><span class="keyword">    </span>{</div>
@@ -219,7 +219,7 @@ $(document).ready(function(){initNavTree('field__entry__view__scalar_8inl_source
 <div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>        <span class="keywordflow">return</span> <a class="code hl_class" href="classmuda_1_1_c_field_entry_view_3_01_t_00_01_layout_00_011_00_011_01_4.html">ThisView</a>{Base::subview(offset, size)};</div>
 <div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>    }</div>
 <div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span> </div>
-<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>    MUDA_HOST <span class="keywordtype">void</span> copy_to(<a class="code hl_class" href="classmuda_1_1_buffer_view.html">BufferView&lt;T&gt;</a> dst) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>    MUDA_HOST <span class="keywordtype">void</span> copy_to(<a class="code hl_class" href="classmuda_1_1_buffer_view_t.html">BufferView&lt;T&gt;</a> dst) <span class="keyword">const</span>;</div>
 <div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>};</div>
 </div>
 <div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span> </div>
@@ -269,9 +269,9 @@ $(document).ready(function(){initNavTree('field__entry__view__scalar_8inl_source
 <div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span> </div>
 <div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>    <span class="keyword">template</span> &lt;FieldEntryLayout SrcLayout&gt;</div>
 <div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>    MUDA_HOST <span class="keywordtype">void</span> copy_from(<a class="code hl_class" href="classmuda_1_1_c_field_entry_view.html">CFieldEntryView&lt;T, SrcLayout, 1, 1&gt;</a> src);</div>
-<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>    MUDA_HOST <span class="keywordtype">void</span> copy_from(<a class="code hl_class" href="classmuda_1_1_c_buffer_view.html">CBufferView&lt;T&gt;</a> src);</div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>    MUDA_HOST <span class="keywordtype">void</span> copy_from(<a class="code hl_class" href="classmuda_1_1_buffer_view_t.html">CBufferView&lt;T&gt;</a> src);</div>
 <div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span> </div>
-<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>    MUDA_HOST <span class="keywordtype">void</span> copy_to(<a class="code hl_class" href="classmuda_1_1_buffer_view.html">BufferView&lt;T&gt;</a> dst)<span class="keyword"> const </span>{ as_const().copy_to(dst); }</div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>    MUDA_HOST <span class="keywordtype">void</span> copy_to(<a class="code hl_class" href="classmuda_1_1_buffer_view_t.html">BufferView&lt;T&gt;</a> dst)<span class="keyword"> const </span>{ as_const().copy_to(dst); }</div>
 <div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span> </div>
 <div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>    MUDA_HOST <span class="keywordtype">void</span> fill(<span class="keyword">const</span> T&amp; value);</div>
 <div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>};</div>
@@ -315,8 +315,7 @@ $(document).ready(function(){initNavTree('field__entry__view__scalar_8inl_source
 <div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span>        .wait();</div>
 <div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>}</div>
 <div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span>}  <span class="comment">// namespace muda</span></div>
-<div class="ttc" id="aclassmuda_1_1_buffer_view_html"><div class="ttname"><a href="classmuda_1_1_buffer_view.html">muda::BufferView</a></div><div class="ttdef"><b>Definition</b> buffer_view.h:162</div></div>
-<div class="ttc" id="aclassmuda_1_1_c_buffer_view_html"><div class="ttname"><a href="classmuda_1_1_c_buffer_view.html">muda::CBufferView</a></div><div class="ttdef"><b>Definition</b> buffer_view.h:134</div></div>
+<div class="ttc" id="aclassmuda_1_1_buffer_view_t_html"><div class="ttname"><a href="classmuda_1_1_buffer_view_t.html">muda::BufferViewT&lt; false, T &gt;</a></div></div>
 <div class="ttc" id="aclassmuda_1_1_c_field_entry_view_3_01_t_00_01_layout_00_011_00_011_01_4_html"><div class="ttname"><a href="classmuda_1_1_c_field_entry_view_3_01_t_00_01_layout_00_011_00_011_01_4.html">muda::CFieldEntryView&lt; T, Layout, 1, 1 &gt;</a></div><div class="ttdef"><b>Definition</b> field_entry_view_scalar.inl:81</div></div>
 <div class="ttc" id="aclassmuda_1_1_c_field_entry_view_html"><div class="ttname"><a href="classmuda_1_1_c_field_entry_view.html">muda::CFieldEntryView</a></div><div class="ttdef"><b>Definition</b> field_entry_view_matrix.inl:110</div></div>
 <div class="ttc" id="aclassmuda_1_1_c_field_entry_viewer_3_01_t_00_01_layout_00_011_00_011_01_4_html"><div class="ttname"><a href="classmuda_1_1_c_field_entry_viewer_3_01_t_00_01_layout_00_011_00_011_01_4.html">muda::CFieldEntryViewer&lt; T, Layout, 1, 1 &gt;</a></div><div class="ttdef"><b>Definition</b> field_entry_viewer_scalar.inl:34</div></div>
@@ -328,7 +327,7 @@ $(document).ready(function(){initNavTree('field__entry__view__scalar_8inl_source
 <div class="ttc" id="aclassmuda_1_1_field_entry_view_html"><div class="ttname"><a href="classmuda_1_1_field_entry_view.html">muda::FieldEntryView</a></div><div class="ttdef"><b>Definition</b> field_entry_view_matrix.inl:154</div></div>
 <div class="ttc" id="aclassmuda_1_1_field_entry_viewer_3_01_t_00_01_layout_00_011_00_011_01_4_html"><div class="ttname"><a href="classmuda_1_1_field_entry_viewer_3_01_t_00_01_layout_00_011_00_011_01_4.html">muda::FieldEntryViewer&lt; T, Layout, 1, 1 &gt;</a></div><div class="ttdef"><b>Definition</b> field_entry_viewer_scalar.inl:59</div></div>
 <div class="ttc" id="aclassmuda_1_1_field_entry_viewer_html"><div class="ttname"><a href="classmuda_1_1_field_entry_viewer.html">muda::FieldEntryViewer</a></div><div class="ttdef"><b>Definition</b> field_entry_viewer_matrix.inl:77</div></div>
-<div class="ttc" id="aclassmuda_1_1_view_base_html"><div class="ttname"><a href="classmuda_1_1_view_base.html">muda::ViewBase</a></div><div class="ttdef"><b>Definition</b> view_base.h:8</div></div>
+<div class="ttc" id="aclassmuda_1_1_view_base_html"><div class="ttname"><a href="classmuda_1_1_view_base.html">muda::ViewBase&lt; IsConst &gt;</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

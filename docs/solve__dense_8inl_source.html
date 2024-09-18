@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>MUDA_APP: src/muda/ext/linear_system/details/routines/solve/solve_dense.inl Source File</title>
+<title>MUDA: src/muda/ext/linear_system/details/routines/solve/solve_dense.inl Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -25,7 +25,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">MUDA_APP
+   <div id="projectname">MUDA
    </div>
   </td>
  </tr>
@@ -196,11 +196,11 @@ $(document).ready(function(){initNavTree('solve__dense_8inl_source.html',''); in
 <div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span> </div>
 <div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>    <span class="keyword">auto</span> buffer = temp_buffer(d_lwork * <span class="keyword">sizeof</span>(T) + d_piv_count * <span class="keyword">sizeof</span>(int64_t));</div>
 <div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span> </div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>    <span class="keyword">auto</span> device_buffer = <a class="code hl_class" href="classmuda_1_1_buffer_view.html">muda::BufferView&lt;T&gt;</a>{(T*)buffer.data(), 0, d_lwork};</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>    <span class="keyword">auto</span> device_buffer = <a class="code hl_class" href="classmuda_1_1_buffer_view_t.html">muda::BufferView&lt;T&gt;</a>{(T*)buffer.data(), 0, d_lwork};</div>
 <div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span> </div>
 <div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>    <span class="keyword">auto</span> last = device_buffer.data(d_lwork);</div>
 <div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span> </div>
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>    <span class="keyword">auto</span> d_piv = <a class="code hl_class" href="classmuda_1_1_buffer_view.html">muda::BufferView&lt;int64_t&gt;</a>{(int64_t*)(last), 0, d_piv_count};</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>    <span class="keyword">auto</span> d_piv = <a class="code hl_class" href="classmuda_1_1_buffer_view_t.html">muda::BufferView&lt;int64_t&gt;</a>{(int64_t*)(last), 0, d_piv_count};</div>
 <div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span> </div>
 <div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>    <span class="keyword">auto</span> host_buffer = temp_host_buffer&lt;T&gt;(h_lwork);</div>
 <div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span> </div>
@@ -263,7 +263,7 @@ $(document).ready(function(){initNavTree('solve__dense_8inl_source.html',''); in
 <div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>    }</div>
 <div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>}</div>
 <div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>}  <span class="comment">// namespace muda</span></div>
-<div class="ttc" id="aclassmuda_1_1_buffer_view_html"><div class="ttname"><a href="classmuda_1_1_buffer_view.html">muda::BufferView</a></div><div class="ttdef"><b>Definition</b> buffer_view.h:162</div></div>
+<div class="ttc" id="aclassmuda_1_1_buffer_view_t_html"><div class="ttname"><a href="classmuda_1_1_buffer_view_t.html">muda::BufferViewT&lt; false, T &gt;</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

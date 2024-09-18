@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>MUDA_APP: src/muda/buffer/reshape_nd/details/nd_reshaper.inl Source File</title>
+<title>MUDA: src/muda/buffer/reshape_nd/details/nd_reshaper.inl Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -25,7 +25,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">MUDA_APP
+   <div id="projectname">MUDA
    </div>
   </td>
  </tr>
@@ -114,8 +114,8 @@ $(document).ready(function(){initNavTree('nd__reshaper_8inl_source.html',''); in
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="classmuda_1_1details_1_1buffer_1_1_copy_construct_info.html">   14</a></span><span class="keyword">class </span><a class="code hl_class" href="classmuda_1_1details_1_1buffer_1_1_copy_construct_info.html">CopyConstructInfo</a></div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>{</div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>  <span class="keyword">public</span>:</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <a class="code hl_class" href="classmuda_1_1_buffer_view.html">BufferView</a> dst;</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    <a class="code hl_class" href="classmuda_1_1_buffer_view.html">BufferView</a> src;</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <a class="code hl_class" href="classmuda_1_1_buffer_view_t.html">BufferView</a> dst;</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    <a class="code hl_class" href="classmuda_1_1_buffer_view_t.html">BufferView</a> src;</div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>};</div>
 </div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
@@ -124,7 +124,7 @@ $(document).ready(function(){initNavTree('nd__reshaper_8inl_source.html',''); in
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="classmuda_1_1details_1_1buffer_1_1_construct_info.html">   22</a></span><span class="keyword">class </span><a class="code hl_class" href="classmuda_1_1details_1_1buffer_1_1_construct_info.html">ConstructInfo</a></div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>{</div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>  <span class="keyword">public</span>:</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <a class="code hl_class" href="classmuda_1_1_buffer_view.html">BufferView</a> dst;</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <a class="code hl_class" href="classmuda_1_1_buffer_view_t.html">BufferView</a> dst;</div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>};</div>
 </div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
@@ -133,7 +133,7 @@ $(document).ready(function(){initNavTree('nd__reshaper_8inl_source.html',''); in
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="classmuda_1_1details_1_1buffer_1_1_destruct_info.html">   29</a></span><span class="keyword">class </span><a class="code hl_class" href="classmuda_1_1details_1_1buffer_1_1_destruct_info.html">DestructInfo</a></div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>{</div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>  <span class="keyword">public</span>:</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    <a class="code hl_class" href="classmuda_1_1_buffer_view.html">BufferView</a> dst;</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    <a class="code hl_class" href="classmuda_1_1_buffer_view_t.html">BufferView</a> dst;</div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>};</div>
 </div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
@@ -755,7 +755,7 @@ $(document).ready(function(){initNavTree('nd__reshaper_8inl_source.html',''); in
 <div class="line"><a id="l00650" name="l00650"></a><span class="lineno">  650</span>    m_capacity         = new_capacity;</div>
 <div class="line"><a id="l00651" name="l00651"></a><span class="lineno">  651</span>}</div>
 <div class="line"><a id="l00652" name="l00652"></a><span class="lineno">  652</span>}  <span class="comment">// namespace muda</span></div>
-<div class="ttc" id="aclassmuda_1_1_buffer_view_html"><div class="ttname"><a href="classmuda_1_1_buffer_view.html">muda::BufferView</a></div><div class="ttdef"><b>Definition</b> buffer_view.h:162</div></div>
+<div class="ttc" id="aclassmuda_1_1_buffer_view_t_html"><div class="ttname"><a href="classmuda_1_1_buffer_view_t.html">muda::BufferViewT&lt; false, T &gt;</a></div></div>
 <div class="ttc" id="aclassmuda_1_1details_1_1buffer_1_1_construct_info_html"><div class="ttname"><a href="classmuda_1_1details_1_1buffer_1_1_construct_info.html">muda::details::buffer::ConstructInfo</a></div><div class="ttdef"><b>Definition</b> nd_reshaper.inl:23</div></div>
 <div class="ttc" id="aclassmuda_1_1details_1_1buffer_1_1_copy_construct_info_html"><div class="ttname"><a href="classmuda_1_1details_1_1buffer_1_1_copy_construct_info.html">muda::details::buffer::CopyConstructInfo</a></div><div class="ttdef"><b>Definition</b> nd_reshaper.inl:15</div></div>
 <div class="ttc" id="aclassmuda_1_1details_1_1buffer_1_1_destruct_info_html"><div class="ttname"><a href="classmuda_1_1details_1_1buffer_1_1_destruct_info.html">muda::details::buffer::DestructInfo</a></div><div class="ttdef"><b>Definition</b> nd_reshaper.inl:30</div></div>

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>MUDA_APP: src/muda/ext/geo/spatial_hash/details/sparse_spatial_hash_impl.inl Source File</title>
+<title>MUDA: src/muda/ext/geo/spatial_hash/details/sparse_spatial_hash_impl.inl Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -25,7 +25,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">MUDA_APP
+   <div id="projectname">MUDA
    </div>
   </td>
  </tr>
@@ -531,7 +531,7 @@ $(document).ready(function(){initNavTree('sparse__spatial__hash__impl_8inl_sourc
 <div class="line"><a id="l00432" name="l00432"></a><span class="lineno">  432</span>    <span class="comment">// e.g.</span></div>
 <div class="line"><a id="l00433" name="l00433"></a><span class="lineno">  433</span>    <span class="comment">// count = 14</span></div>
 <div class="line"><a id="l00434" name="l00434"></a><span class="lineno">  434</span>    <span class="keywordtype">int</span> collisionPairCountUpperBound = 0;</div>
-<div class="line"><a id="l00435" name="l00435"></a><span class="lineno">  435</span>    <a class="code hl_class" href="classmuda_1_1_buffer_launch.html">BufferLaunch</a>(m_stream).copy(&amp;collisionPairCountUpperBound,</div>
+<div class="line"><a id="l00435" name="l00435"></a><span class="lineno">  435</span>    <a class="code hl_class" href="classmuda_1_1_buffer_launch.html">BufferLaunch</a>(m_stream).copy&lt;<span class="keywordtype">int</span>&gt;(&amp;collisionPairCountUpperBound,</div>
 <div class="line"><a id="l00436" name="l00436"></a><span class="lineno">  436</span>                                cellToCollisionPairUpperBoundPrefixSum.view(validCellCount));</div>
 <div class="line"><a id="l00437" name="l00437"></a><span class="lineno">  437</span> </div>
 <div class="line"><a id="l00438" name="l00438"></a><span class="lineno">  438</span>    <span class="comment">// e.g.</span></div>
@@ -682,7 +682,7 @@ $(document).ready(function(){initNavTree('sparse__spatial__hash__impl_8inl_sourc
 <div class="line"><a id="l00583" name="l00583"></a><span class="lineno">  583</span>    <a class="code hl_class" href="classmuda_1_1_buffer_launch.html">BufferLaunch</a>(m_stream).resize(collisionPairs, collisionPairOffset + validCollisionPairCount);</div>
 <div class="line"><a id="l00584" name="l00584"></a><span class="lineno">  584</span>}</div>
 <div class="line"><a id="l00585" name="l00585"></a><span class="lineno">  585</span>}  <span class="comment">// namespace muda::spatial_hash::details</span></div>
-<div class="ttc" id="aclassmuda_1_1_buffer_launch_html"><div class="ttname"><a href="classmuda_1_1_buffer_launch.html">muda::BufferLaunch</a></div><div class="ttdef"><b>Definition</b> buffer_launch.h:37</div></div>
+<div class="ttc" id="aclassmuda_1_1_buffer_launch_html"><div class="ttname"><a href="classmuda_1_1_buffer_launch.html">muda::BufferLaunch</a></div><div class="ttdef"><b>Definition</b> buffer_launch.h:13</div></div>
 <div class="ttc" id="aclassmuda_1_1_device_buffer_html"><div class="ttname"><a href="classmuda_1_1_device_buffer.html">muda::DeviceBuffer</a></div><div class="ttdoc">A std::vector like wrapper of cuda device memory, allows user to:</div><div class="ttdef"><b>Definition</b> device_buffer.h:46</div></div>
 <div class="ttc" id="aclassmuda_1_1_device_radix_sort_html"><div class="ttname"><a href="classmuda_1_1_device_radix_sort.html">muda::DeviceRadixSort</a></div><div class="ttdef"><b>Definition</b> device_radix_sort.h:18</div></div>
 <div class="ttc" id="aclassmuda_1_1_device_run_length_encode_html"><div class="ttname"><a href="classmuda_1_1_device_run_length_encode.html">muda::DeviceRunLengthEncode</a></div><div class="ttdef"><b>Definition</b> device_run_length_encode.h:12</div></div>

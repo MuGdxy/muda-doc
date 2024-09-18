@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>MUDA_APP: muda::details::MatrixFormatConverter&lt; T, N &gt; Class Template Reference</title>
+<title>MUDA: muda::details::MatrixFormatConverter&lt; T, N &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -25,7 +25,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">MUDA_APP
+   <div id="projectname">MUDA
    </div>
   </td>
  </tr>
@@ -113,6 +113,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a0c0990dd97932da3b1fd17d6bc9af8ad" id="r_a0c0990dd97932da3b1fd17d6bc9af8ad"><td class="memItemLeft" align="right" valign="top"><a id="a0c0990dd97932da3b1fd17d6bc9af8ad" name="a0c0990dd97932da3b1fd17d6bc9af8ad"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>convert</b> (const <a class="el" href="classmuda_1_1_device_triplet_matrix.html">DeviceTripletMatrix</a>&lt; T, N &gt; &amp;from, <a class="el" href="classmuda_1_1_device_b_c_o_o_matrix.html">DeviceBCOOMatrix</a>&lt; T, N &gt; &amp;to)</td></tr>
 <tr class="separator:a0c0990dd97932da3b1fd17d6bc9af8ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf8ce6187f5b16077d32894dd6fff8b5" id="r_abf8ce6187f5b16077d32894dd6fff8b5"><td class="memItemLeft" align="right" valign="top"><a id="abf8ce6187f5b16077d32894dd6fff8b5" name="abf8ce6187f5b16077d32894dd6fff8b5"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>radix_sort_indices_and_blocks</b> (const <a class="el" href="classmuda_1_1_device_triplet_matrix.html">DeviceTripletMatrix</a>&lt; T, N &gt; &amp;from, <a class="el" href="classmuda_1_1_device_b_c_o_o_matrix.html">DeviceBCOOMatrix</a>&lt; T, N &gt; &amp;to)</td></tr>
+<tr class="separator:abf8ce6187f5b16077d32894dd6fff8b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef73e22f3d09d291c89c8d84633fedd1" id="r_aef73e22f3d09d291c89c8d84633fedd1"><td class="memItemLeft" align="right" valign="top"><a id="aef73e22f3d09d291c89c8d84633fedd1" name="aef73e22f3d09d291c89c8d84633fedd1"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>make_unique_indices_and_blocks</b> (const <a class="el" href="classmuda_1_1_device_triplet_matrix.html">DeviceTripletMatrix</a>&lt; T, N &gt; &amp;from, <a class="el" href="classmuda_1_1_device_b_c_o_o_matrix.html">DeviceBCOOMatrix</a>&lt; T, N &gt; &amp;to)</td></tr>
+<tr class="separator:aef73e22f3d09d291c89c8d84633fedd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaf85588ad3574f05ed8b321a1699533f" id="r_aaf85588ad3574f05ed8b321a1699533f"><td class="memItemLeft" align="right" valign="top"><a id="aaf85588ad3574f05ed8b321a1699533f" name="aaf85588ad3574f05ed8b321a1699533f"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>merge_sort_indices_and_blocks</b> (const <a class="el" href="classmuda_1_1_device_triplet_matrix.html">DeviceTripletMatrix</a>&lt; T, N &gt; &amp;from, <a class="el" href="classmuda_1_1_device_b_c_o_o_matrix.html">DeviceBCOOMatrix</a>&lt; T, N &gt; &amp;to)</td></tr>
 <tr class="separator:aaf85588ad3574f05ed8b321a1699533f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -189,10 +195,10 @@ auto&#160;</td><td class="memItemRight" valign="bottom"><b>cusolver_sp</b> () co
 <tr class="memitem:a744b14e6e01dffdbcd6a1384bdf9dfac inherit pub_methods_classmuda_1_1details_1_1_matrix_format_converter_base" id="r_a744b14e6e01dffdbcd6a1384bdf9dfac"><td class="memItemLeft" align="right" valign="top">
 auto&#160;</td><td class="memItemRight" valign="bottom"><b>cusolver_dn</b> () const</td></tr>
 <tr class="separator:a744b14e6e01dffdbcd6a1384bdf9dfac inherit pub_methods_classmuda_1_1details_1_1_matrix_format_converter_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad920c4336075379af674af68dd1ef123 inherit pub_methods_classmuda_1_1details_1_1_matrix_format_converter_base" id="r_ad920c4336075379af674af68dd1ef123"><td class="memTemplParams" colspan="2">
+<tr class="memitem:a4938fea7d95f0737c0fb35ef14be9490 inherit pub_methods_classmuda_1_1details_1_1_matrix_format_converter_base" id="r_a4938fea7d95f0737c0fb35ef14be9490"><td class="memTemplParams" colspan="2">
 template&lt;typename T &gt; </td></tr>
-<tr class="memitem:ad920c4336075379af674af68dd1ef123 inherit pub_methods_classmuda_1_1details_1_1_matrix_format_converter_base"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>loose_resize</b> (<a class="el" href="classmuda_1_1_device_buffer.html">muda::DeviceBuffer</a>&lt; T &gt; &amp;buf, size_t new_size)</td></tr>
-<tr class="separator:ad920c4336075379af674af68dd1ef123 inherit pub_methods_classmuda_1_1details_1_1_matrix_format_converter_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4938fea7d95f0737c0fb35ef14be9490 inherit pub_methods_classmuda_1_1details_1_1_matrix_format_converter_base"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>loose_resize</b> (<a class="el" href="classmuda_1_1_device_buffer.html">DeviceBuffer</a>&lt; T &gt; &amp;buf, size_t new_size)</td></tr>
+<tr class="separator:a4938fea7d95f0737c0fb35ef14be9490 inherit pub_methods_classmuda_1_1details_1_1_matrix_format_converter_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
 Additional Inherited Members</h2></td></tr>

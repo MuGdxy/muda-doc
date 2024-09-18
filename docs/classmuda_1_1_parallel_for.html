@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>MUDA_APP: muda::ParallelFor Class Reference</title>
+<title>MUDA: muda::ParallelFor Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -25,7 +25,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">MUDA_APP
+   <div id="projectname">MUDA
    </div>
   </td>
  </tr>
@@ -185,9 +185,9 @@ MUDA_GENERIC&#160;</td><td class="memItemRight" valign="bottom"><b>LaunchBase</b
 <tr class="memitem:ac412be72c054ac359678fff75857dd06 inherit pub_methods_classmuda_1_1_launch_base" id="r_ac412be72c054ac359678fff75857dd06"><td class="memItemLeft" align="right" valign="top">
 <a class="el" href="classmuda_1_1_parallel_for.html">ParallelFor</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>kernel_name</b> (std::string_view name)</td></tr>
 <tr class="separator:ac412be72c054ac359678fff75857dd06 inherit pub_methods_classmuda_1_1_launch_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad9ddbe57d59ab1dd2cac0d537936c933 inherit pub_methods_classmuda_1_1_launch_base" id="r_ad9ddbe57d59ab1dd2cac0d537936c933"><td class="memItemLeft" align="right" valign="top">
-std::string_view&#160;</td><td class="memItemRight" valign="bottom"><b>kernel_name</b> () const</td></tr>
-<tr class="separator:ad9ddbe57d59ab1dd2cac0d537936c933 inherit pub_methods_classmuda_1_1_launch_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee4564eac54df98ab98085379370a2ec inherit pub_methods_classmuda_1_1_launch_base" id="r_aee4564eac54df98ab98085379370a2ec"><td class="memItemLeft" align="right" valign="top">
+<a class="el" href="classmuda_1_1_parallel_for.html">ParallelFor</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>file_line</b> (std::string_view file, int line)</td></tr>
+<tr class="separator:aee4564eac54df98ab98085379370a2ec inherit pub_methods_classmuda_1_1_launch_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad069d4ad6219f5a3b51e7c8d9e4d596f inherit pub_methods_classmuda_1_1_launch_base" id="r_ad069d4ad6219f5a3b51e7c8d9e4d596f"><td class="memItemLeft" align="right" valign="top">
 <a class="el" href="classmuda_1_1_parallel_for.html">ParallelFor</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>record</b> (cudaEvent_t e, int flag=cudaEventRecordDefault)</td></tr>
 <tr class="separator:ad069d4ad6219f5a3b51e7c8d9e4d596f inherit pub_methods_classmuda_1_1_launch_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -284,9 +284,9 @@ static MUDA_GENERIC int&#160;</td><td class="memItemRight" valign="bottom"><b>ca
 <tr class="memitem:a1abc27d3862afa9c1d063c44a02cf6c2 inherit pub_static_methods_classmuda_1_1_launch_core" id="r_a1abc27d3862afa9c1d063c44a02cf6c2"><td class="memItemLeft" align="right" valign="top">
 static void&#160;</td><td class="memItemRight" valign="bottom"><b>kernel_name</b> (std::string_view name)</td></tr>
 <tr class="separator:a1abc27d3862afa9c1d063c44a02cf6c2 inherit pub_static_methods_classmuda_1_1_launch_core"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa58acbea537233614d61c9b4ef7f676a inherit pub_static_methods_classmuda_1_1_launch_core" id="r_aa58acbea537233614d61c9b4ef7f676a"><td class="memItemLeft" align="right" valign="top">
-static std::string_view&#160;</td><td class="memItemRight" valign="bottom"><b>kernel_name</b> ()</td></tr>
-<tr class="separator:aa58acbea537233614d61c9b4ef7f676a inherit pub_static_methods_classmuda_1_1_launch_core"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e822d3053eb5cd50768458620f88faf inherit pub_static_methods_classmuda_1_1_launch_core" id="r_a6e822d3053eb5cd50768458620f88faf"><td class="memItemLeft" align="right" valign="top">
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>file_line</b> (std::string_view file, int line)</td></tr>
+<tr class="separator:a6e822d3053eb5cd50768458620f88faf inherit pub_static_methods_classmuda_1_1_launch_core"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa8471b35988941763e856281305ffd86 inherit pub_static_methods_classmuda_1_1_launch_core" id="r_aa8471b35988941763e856281305ffd86"><td class="memItemLeft" align="right" valign="top">
 static void&#160;</td><td class="memItemRight" valign="bottom"><b>wait_event</b> (cudaEvent_t event)</td></tr>
 <tr class="separator:aa8471b35988941763e856281305ffd86 inherit pub_static_methods_classmuda_1_1_launch_core"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -305,16 +305,16 @@ template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a8aeb9e37d421f835e0fcae124e3ce0de inherit pro_types_classmuda_1_1_launch_core"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><b>S</b> = std::shared_ptr&lt; T &gt;</td></tr>
 <tr class="separator:a8aeb9e37d421f835e0fcae124e3ce0de inherit pro_types_classmuda_1_1_launch_core"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_classmuda_1_1_launch_base"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classmuda_1_1_launch_base')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classmuda_1_1_launch_base.html">muda::LaunchBase&lt; ParallelFor &gt;</a></td></tr>
-<tr class="memitem:abfa848a96c5c341420ee158bff1bd97e inherit pro_methods_classmuda_1_1_launch_base" id="r_abfa848a96c5c341420ee158bff1bd97e"><td class="memItemLeft" align="right" valign="top">
-<a class="el" href="classmuda_1_1_parallel_for.html">ParallelFor</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>pop_kernel_name</b> ()</td></tr>
-<tr class="separator:abfa848a96c5c341420ee158bff1bd97e inherit pro_methods_classmuda_1_1_launch_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65538f7d445fa3cc56ab33e609fe566a inherit pro_methods_classmuda_1_1_launch_base" id="r_a65538f7d445fa3cc56ab33e609fe566a"><td class="memItemLeft" align="right" valign="top">
+<a class="el" href="classmuda_1_1_parallel_for.html">ParallelFor</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>pop_kernel_label</b> ()</td></tr>
+<tr class="separator:a65538f7d445fa3cc56ab33e609fe566a inherit pro_methods_classmuda_1_1_launch_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_classmuda_1_1_launch_core"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classmuda_1_1_launch_core')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classmuda_1_1_launch_core.html">muda::LaunchCore</a></td></tr>
 <tr class="memitem:ab78b991329337c97d2ac3e32e995a62f inherit pro_methods_classmuda_1_1_launch_core" id="r_ab78b991329337c97d2ac3e32e995a62f"><td class="memItemLeft" align="right" valign="top">
 MUDA_GENERIC::cudaStream_t&#160;</td><td class="memItemRight" valign="bottom"><b>stream</b> () const</td></tr>
 <tr class="separator:ab78b991329337c97d2ac3e32e995a62f inherit pro_methods_classmuda_1_1_launch_core"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad7960a052685efa0e249e20e014d1e9a inherit pro_methods_classmuda_1_1_launch_core" id="r_ad7960a052685efa0e249e20e014d1e9a"><td class="memItemLeft" align="right" valign="top">
-MUDA_HOST void&#160;</td><td class="memItemRight" valign="bottom"><b>pop_kernel_name</b> ()</td></tr>
-<tr class="separator:ad7960a052685efa0e249e20e014d1e9a inherit pro_methods_classmuda_1_1_launch_core"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af17610ea6d57ab4ba761da342fa44305 inherit pro_methods_classmuda_1_1_launch_core" id="r_af17610ea6d57ab4ba761da342fa44305"><td class="memItemLeft" align="right" valign="top">
+MUDA_HOST void&#160;</td><td class="memItemRight" valign="bottom"><b>pop_kernel_label</b> ()</td></tr>
+<tr class="separator:af17610ea6d57ab4ba761da342fa44305 inherit pro_methods_classmuda_1_1_launch_core"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_classmuda_1_1_launch_core"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classmuda_1_1_launch_core')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classmuda_1_1_launch_core.html">muda::LaunchCore</a></td></tr>
 <tr class="memitem:a3b5544456087d57904981118c4cdcaf8 inherit pro_attribs_classmuda_1_1_launch_core" id="r_a3b5544456087d57904981118c4cdcaf8"><td class="memItemLeft" align="right" valign="top">
 ::cudaStream_t&#160;</td><td class="memItemRight" valign="bottom"><b>m_stream</b></td></tr>

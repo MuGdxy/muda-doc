@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>MUDA_APP: src/muda/ext/field/details/entry_viewers/field_entry_viewer_vector.inl Source File</title>
+<title>MUDA: src/muda/ext/field/details/entry_viewers/field_entry_viewer_vector.inl Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -25,7 +25,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">MUDA_APP
+   <div id="projectname">MUDA
    </div>
   </td>
  </tr>
@@ -107,7 +107,7 @@ $(document).ready(function(){initNavTree('field__entry__viewer__vector_8inl_sour
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>    <span class="keyword">using </span><a class="code hl_class" href="classmuda_1_1_field_entry_viewer_core.html">Base</a> = <a class="code hl_class" href="classmuda_1_1_field_entry_viewer_core.html">FieldEntryViewerCore&lt;IsConst, T, Layout, N, 1&gt;</a>;</div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> U&gt;</div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>    <span class="keyword">using </span>auto_const_t = Base::template auto_const_t&lt;U&gt;;</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>    <span class="keyword">using </span>auto_const_t = <span class="keyword">typename</span> Base::template auto_const_t&lt;U&gt;;</div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>  <span class="keyword">public</span>:</div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    <span class="keyword">using </span><a class="code hl_class" href="classmuda_1_1_viewer_base.html">Base::Base</a>;</div>
@@ -118,7 +118,7 @@ $(document).ready(function(){initNavTree('field__entry__viewer__vector_8inl_sour
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    <span class="keyword">using </span>ConstVectorMap = <span class="keyword">typename</span> Base::ConstMatMap;</div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    <span class="keyword">using </span>ThisVectorMap  = <span class="keyword">typename</span> Base::ThisMatMap;</div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    MUDA_GENERIC <span class="keyword">auto</span> as_const()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code hl_class" href="classmuda_1_1_field_entry_viewer_base.html">ConstViewer</a>{m_core}; }</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    MUDA_GENERIC <span class="keyword">auto</span> as_const()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code hl_class" href="classmuda_1_1_field_entry_viewer_base.html">ConstViewer</a>{this-&gt;m_core}; }</div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    MUDA_GENERIC <span class="keyword">operator</span> <a class="code hl_class" href="classmuda_1_1_field_entry_viewer_base.html">ConstViewer</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> as_const(); }</div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    MUDA_GENERIC auto_const_t&lt;T&gt;* data(<span class="keywordtype">int</span> i, <span class="keywordtype">int</span> comp_j)</div>
