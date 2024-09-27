@@ -1,0 +1,120 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classmuda_1_1spatial__hash_1_1_bounding_sphere" kind="class" language="C++" prot="public">
+    <compoundname>muda::spatial_hash::BoundingSphere</compoundname>
+    <sectiondef kind="private-type">
+      <memberdef kind="typedef" id="classmuda_1_1spatial__hash_1_1_bounding_sphere_1a4ad8b535d39fcd3ad7bdcee0cfe1b03c" prot="private" static="no">
+        <type>Eigen::Vector3f</type>
+        <definition>using muda::spatial_hash::BoundingSphere::Vector3 =  Eigen::Vector3f</definition>
+        <argsstring></argsstring>
+        <name>Vector3</name>
+        <qualifiedname>muda::spatial_hash::BoundingSphere::Vector3</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/spatial_hash/bounding_volume.h" line="10" column="5" bodyfile="src/muda/ext/geo/spatial_hash/bounding_volume.h" bodystart="10" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classmuda_1_1spatial__hash_1_1_bounding_sphere_1a71a39a156ab93a6383db0ca7bb1ed3f3" prot="public" static="no" mutable="no">
+        <type>Vector3</type>
+        <definition>Vector3 muda::spatial_hash::BoundingSphere::o</definition>
+        <argsstring></argsstring>
+        <name>o</name>
+        <qualifiedname>muda::spatial_hash::BoundingSphere::o</qualifiedname>
+        <initializer>= Vector3::Zero()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/spatial_hash/bounding_volume.h" line="20" column="13" bodyfile="src/muda/ext/geo/spatial_hash/bounding_volume.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1spatial__hash_1_1_bounding_sphere_1aae27c6ef06c128389ff852c932996761" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float muda::spatial_hash::BoundingSphere::r</definition>
+        <argsstring></argsstring>
+        <name>r</name>
+        <qualifiedname>muda::spatial_hash::BoundingSphere::r</qualifiedname>
+        <initializer>= 0.0f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/spatial_hash/bounding_volume.h" line="21" column="13" bodyfile="src/muda/ext/geo/spatial_hash/bounding_volume.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1spatial__hash_1_1_bounding_sphere_1a3a4591bac0f855e7ce6f2673e7b92d6f" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int muda::spatial_hash::BoundingSphere::level</definition>
+        <argsstring></argsstring>
+        <name>level</name>
+        <qualifiedname>muda::spatial_hash::BoundingSphere::level</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/spatial_hash/bounding_volume.h" line="22" column="13" bodyfile="src/muda/ext/geo/spatial_hash/bounding_volume.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmuda_1_1spatial__hash_1_1_bounding_sphere_1ac8c294f956fc0afebbe3d17914f3b1b4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>MUDA_GENERIC</type>
+        <definition>MUDA_GENERIC muda::spatial_hash::BoundingSphere::BoundingSphere</definition>
+        <argsstring>(const Vector3 &amp;o, float r)</argsstring>
+        <name>BoundingSphere</name>
+        <qualifiedname>muda::spatial_hash::BoundingSphere::BoundingSphere</qualifiedname>
+        <param>
+          <type>const Vector3 &amp;</type>
+          <declname>o</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>r</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/spatial_hash/bounding_volume.h" line="13" column="18" bodyfile="src/muda/ext/geo/spatial_hash/bounding_volume.h" bodystart="13" bodyend="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1spatial__hash_1_1_bounding_sphere_1a04f915633286ee0baa3dbae12ce36993" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>MUDA_GENERIC</type>
+        <definition>MUDA_GENERIC muda::spatial_hash::BoundingSphere::BoundingSphere</definition>
+        <argsstring>()=default</argsstring>
+        <name>BoundingSphere</name>
+        <qualifiedname>muda::spatial_hash::BoundingSphere::BoundingSphere</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/spatial_hash/bounding_volume.h" line="18" column="18"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/muda/ext/geo/spatial_hash/bounding_volume.h" line="8" column="1" bodyfile="src/muda/ext/geo/spatial_hash/bounding_volume.h" bodystart="9" bodyend="23"/>
+    <listofallmembers>
+      <member refid="classmuda_1_1spatial__hash_1_1_bounding_sphere_1ac8c294f956fc0afebbe3d17914f3b1b4" prot="public" virt="non-virtual"><scope>muda::spatial_hash::BoundingSphere</scope><name>BoundingSphere</name></member>
+      <member refid="classmuda_1_1spatial__hash_1_1_bounding_sphere_1a04f915633286ee0baa3dbae12ce36993" prot="public" virt="non-virtual"><scope>muda::spatial_hash::BoundingSphere</scope><name>BoundingSphere</name></member>
+      <member refid="classmuda_1_1spatial__hash_1_1_bounding_sphere_1a3a4591bac0f855e7ce6f2673e7b92d6f" prot="public" virt="non-virtual"><scope>muda::spatial_hash::BoundingSphere</scope><name>level</name></member>
+      <member refid="classmuda_1_1spatial__hash_1_1_bounding_sphere_1a71a39a156ab93a6383db0ca7bb1ed3f3" prot="public" virt="non-virtual"><scope>muda::spatial_hash::BoundingSphere</scope><name>o</name></member>
+      <member refid="classmuda_1_1spatial__hash_1_1_bounding_sphere_1aae27c6ef06c128389ff852c932996761" prot="public" virt="non-virtual"><scope>muda::spatial_hash::BoundingSphere</scope><name>r</name></member>
+      <member refid="classmuda_1_1spatial__hash_1_1_bounding_sphere_1a4ad8b535d39fcd3ad7bdcee0cfe1b03c" prot="private" virt="non-virtual"><scope>muda::spatial_hash::BoundingSphere</scope><name>Vector3</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

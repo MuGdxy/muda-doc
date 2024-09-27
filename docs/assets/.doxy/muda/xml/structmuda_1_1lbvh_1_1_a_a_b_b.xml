@@ -1,0 +1,139 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structmuda_1_1lbvh_1_1_a_a_b_b" kind="struct" language="C++" prot="public">
+    <compoundname>muda::lbvh::AABB</compoundname>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structmuda_1_1lbvh_1_1_a_a_b_b_1a23ccff819c7b182e94a4eeb6b2943da1" prot="public" static="no" mutable="no">
+        <type><ref refid="structmuda_1_1lbvh_1_1vector__of" kindref="compound">vector_of</ref>&lt; T &gt;::type</type>
+        <definition>vector_of&lt;T&gt;::type muda::lbvh::AABB&lt; T &gt;::upper</definition>
+        <argsstring></argsstring>
+        <name>upper</name>
+        <qualifiedname>muda::lbvh::AABB::upper</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/lbvh/aabb.h" line="12" column="31" bodyfile="src/muda/ext/geo/lbvh/aabb.h" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmuda_1_1lbvh_1_1_a_a_b_b_1a3a0b7c0f4981068fd714fd377c03a94e" prot="public" static="no" mutable="no">
+        <type><ref refid="structmuda_1_1lbvh_1_1vector__of" kindref="compound">vector_of</ref>&lt; T &gt;::type</type>
+        <definition>vector_of&lt;T&gt;::type muda::lbvh::AABB&lt; T &gt;::lower</definition>
+        <argsstring></argsstring>
+        <name>lower</name>
+        <qualifiedname>muda::lbvh::AABB::lower</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/lbvh/aabb.h" line="13" column="31" bodyfile="src/muda/ext/geo/lbvh/aabb.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="structmuda_1_1lbvh_1_1_a_a_b_b_1abd86ef7ef802f79d430e75836a234563" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>MUDA_GENERIC</type>
+        <definition>MUDA_GENERIC muda::lbvh::AABB&lt; T &gt;::AABB</definition>
+        <argsstring>() noexcept=default</argsstring>
+        <name>AABB</name>
+        <qualifiedname>muda::lbvh::AABB::AABB</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/lbvh/aabb.h" line="15" column="24"/>
+      </memberdef>
+      <memberdef kind="function" id="structmuda_1_1lbvh_1_1_a_a_b_b_1aa0793495786690495046f2e1ab3928c1" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>MUDA_GENERIC</type>
+        <definition>MUDA_GENERIC muda::lbvh::AABB&lt; T &gt;::AABB</definition>
+        <argsstring>(const AABB&lt; T &gt; &amp;) noexcept=default</argsstring>
+        <name>AABB</name>
+        <qualifiedname>muda::lbvh::AABB::AABB</qualifiedname>
+        <param>
+          <type>const <ref refid="structmuda_1_1lbvh_1_1_a_a_b_b" kindref="compound">AABB</ref>&lt; T &gt; &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/lbvh/aabb.h" line="16" column="24"/>
+      </memberdef>
+      <memberdef kind="function" id="structmuda_1_1lbvh_1_1_a_a_b_b_1ace360b62a6af396a61f208990a2655d9" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>MUDA_GENERIC</type>
+        <definition>MUDA_GENERIC muda::lbvh::AABB&lt; T &gt;::AABB</definition>
+        <argsstring>(AABB&lt; T &gt; &amp;&amp;) noexcept=default</argsstring>
+        <name>AABB</name>
+        <qualifiedname>muda::lbvh::AABB::AABB</qualifiedname>
+        <param>
+          <type><ref refid="structmuda_1_1lbvh_1_1_a_a_b_b" kindref="compound">AABB</ref>&lt; T &gt; &amp;&amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/lbvh/aabb.h" line="17" column="24"/>
+      </memberdef>
+      <memberdef kind="function" id="structmuda_1_1lbvh_1_1_a_a_b_b_1af8d4bb4e39bab8f25ae304b9e1841df5" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>MUDA_GENERIC <ref refid="structmuda_1_1lbvh_1_1_a_a_b_b" kindref="compound">AABB</ref> &amp;</type>
+        <definition>MUDA_GENERIC AABB &amp; muda::lbvh::AABB&lt; T &gt;::operator=</definition>
+        <argsstring>(const AABB&lt; T &gt; &amp;) noexcept=default</argsstring>
+        <name>operator=</name>
+        <qualifiedname>muda::lbvh::AABB::operator=</qualifiedname>
+        <param>
+          <type>const <ref refid="structmuda_1_1lbvh_1_1_a_a_b_b" kindref="compound">AABB</ref>&lt; T &gt; &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/lbvh/aabb.h" line="18" column="23"/>
+      </memberdef>
+      <memberdef kind="function" id="structmuda_1_1lbvh_1_1_a_a_b_b_1a4a1c36ccec5fb8f86f57b158d12c6ec9" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>MUDA_GENERIC <ref refid="structmuda_1_1lbvh_1_1_a_a_b_b" kindref="compound">AABB</ref> &amp;</type>
+        <definition>MUDA_GENERIC AABB &amp; muda::lbvh::AABB&lt; T &gt;::operator=</definition>
+        <argsstring>(AABB&lt; T &gt; &amp;&amp;) noexcept=default</argsstring>
+        <name>operator=</name>
+        <qualifiedname>muda::lbvh::AABB::operator=</qualifiedname>
+        <param>
+          <type><ref refid="structmuda_1_1lbvh_1_1_a_a_b_b" kindref="compound">AABB</ref>&lt; T &gt; &amp;&amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/lbvh/aabb.h" line="19" column="23"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/muda/ext/geo/lbvh/aabb.h" line="10" column="1" bodyfile="src/muda/ext/geo/lbvh/aabb.h" bodystart="11" bodyend="20"/>
+    <listofallmembers>
+      <member refid="structmuda_1_1lbvh_1_1_a_a_b_b_1abd86ef7ef802f79d430e75836a234563" prot="public" virt="non-virtual"><scope>muda::lbvh::AABB</scope><name>AABB</name></member>
+      <member refid="structmuda_1_1lbvh_1_1_a_a_b_b_1aa0793495786690495046f2e1ab3928c1" prot="public" virt="non-virtual"><scope>muda::lbvh::AABB</scope><name>AABB</name></member>
+      <member refid="structmuda_1_1lbvh_1_1_a_a_b_b_1ace360b62a6af396a61f208990a2655d9" prot="public" virt="non-virtual"><scope>muda::lbvh::AABB</scope><name>AABB</name></member>
+      <member refid="structmuda_1_1lbvh_1_1_a_a_b_b_1a3a0b7c0f4981068fd714fd377c03a94e" prot="public" virt="non-virtual"><scope>muda::lbvh::AABB</scope><name>lower</name></member>
+      <member refid="structmuda_1_1lbvh_1_1_a_a_b_b_1af8d4bb4e39bab8f25ae304b9e1841df5" prot="public" virt="non-virtual"><scope>muda::lbvh::AABB</scope><name>operator=</name></member>
+      <member refid="structmuda_1_1lbvh_1_1_a_a_b_b_1a4a1c36ccec5fb8f86f57b158d12c6ec9" prot="public" virt="non-virtual"><scope>muda::lbvh::AABB</scope><name>operator=</name></member>
+      <member refid="structmuda_1_1lbvh_1_1_a_a_b_b_1a23ccff819c7b182e94a4eeb6b2943da1" prot="public" virt="non-virtual"><scope>muda::lbvh::AABB</scope><name>upper</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

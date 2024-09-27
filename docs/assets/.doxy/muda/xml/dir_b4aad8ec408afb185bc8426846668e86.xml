@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="dir_b4aad8ec408afb185bc8426846668e86" kind="dir">
+    <compoundname>src/muda/compute_graph</compoundname>
+    <innerdir refid="dir_7ff8159720d09b9da5f49b4c95af33a4">src/muda/compute_graph/nodes</innerdir>
+    <innerfile refid="compute__graph_2compute__graph_8h">compute_graph.h</innerfile>
+    <innerfile refid="compute__graph__accessor_8h">compute_graph_accessor.h</innerfile>
+    <innerfile refid="compute__graph__builder_8h">compute_graph_builder.h</innerfile>
+    <innerfile refid="compute__graph__closure_8h">compute_graph_closure.h</innerfile>
+    <innerfile refid="compute__graph__closure__id_8h">compute_graph_closure_id.h</innerfile>
+    <innerfile refid="compute__graph__dependency_8h">compute_graph_dependency.h</innerfile>
+    <innerfile refid="compute__graph__flag_8h">compute_graph_flag.h</innerfile>
+    <innerfile refid="compute__graph__fwd_8h">compute_graph_fwd.h</innerfile>
+    <innerfile refid="compute__graph__node_8h">compute_graph_node.h</innerfile>
+    <innerfile refid="compute__graph__node__id_8h">compute_graph_node_id.h</innerfile>
+    <innerfile refid="compute__graph__node__type_8h">compute_graph_node_type.h</innerfile>
+    <innerfile refid="compute__graph__phase_8h">compute_graph_phase.h</innerfile>
+    <innerfile refid="compute__graph__var_8h">compute_graph_var.h</innerfile>
+    <innerfile refid="compute__graph__var__id_8h">compute_graph_var_id.h</innerfile>
+    <innerfile refid="compute__graph__var__manager_8h">compute_graph_var_manager.h</innerfile>
+    <innerfile refid="compute__graph__var__usage_8h">compute_graph_var_usage.h</innerfile>
+    <innerfile refid="graphviz__options_8h">graphviz_options.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/muda/compute_graph/"/>
+  </compounddef>
+</doxygen>

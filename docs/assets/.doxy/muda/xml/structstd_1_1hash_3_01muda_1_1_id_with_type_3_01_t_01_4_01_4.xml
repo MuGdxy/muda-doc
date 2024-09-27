@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structstd_1_1hash_3_01muda_1_1_id_with_type_3_01_t_01_4_01_4" kind="struct" language="C++" prot="protected">
+    <compoundname>std::hash&lt; muda::IdWithType&lt; T &gt; &gt;</compoundname>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="structstd_1_1hash_3_01muda_1_1_id_with_type_3_01_t_01_4_01_4_1ab0ee95d2c112f25ae156ab734d340e28" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t std::hash&lt; muda::IdWithType&lt; T &gt; &gt;::operator()</definition>
+        <argsstring>(const muda::IdWithType&lt; T &gt; &amp;s) const noexcept</argsstring>
+        <name>operator()</name>
+        <qualifiedname>std::hash&lt; muda::IdWithType&lt; T &gt; &gt;::operator()</qualifiedname>
+        <param>
+          <type>const <ref refid="classmuda_1_1_id_with_type" kindref="compound">muda::IdWithType</ref>&lt; T &gt; &amp;</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/tools/id_with_type.h" line="64" column="12" bodyfile="src/muda/tools/id_with_type.h" bodystart="64" bodyend="67"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/muda/tools/id_with_type.h" line="62" column="1" bodyfile="src/muda/tools/id_with_type.h" bodystart="63" bodyend="68"/>
+    <listofallmembers>
+      <member refid="structstd_1_1hash_3_01muda_1_1_id_with_type_3_01_t_01_4_01_4_1ab0ee95d2c112f25ae156ab734d340e28" prot="public" virt="non-virtual"><scope>std::hash&lt; muda::IdWithType&lt; T &gt; &gt;</scope><name>operator()</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

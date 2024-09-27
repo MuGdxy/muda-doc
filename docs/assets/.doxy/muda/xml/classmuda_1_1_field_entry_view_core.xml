@@ -1,0 +1,633 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classmuda_1_1_field_entry_view_core" kind="class" language="C++" prot="public">
+    <compoundname>muda::FieldEntryViewCore</compoundname>
+    <basecompoundref refid="classmuda_1_1_view_base" prot="public" virt="non-virtual">muda::ViewBase&lt; IsConst &gt;</basecompoundref>
+    <innerclass refid="structmuda_1_1_field_entry_view_core_1_1_as_iterator" prot="protected">muda::FieldEntryViewCore::AsIterator</innerclass>
+    <templateparamlist>
+      <param>
+        <type>bool</type>
+        <declname>IsConst</declname>
+        <defname>IsConst</defname>
+      </param>
+      <param>
+        <type>typename T</type>
+      </param>
+      <param>
+        <type>FieldEntryLayout</type>
+        <declname>Layout</declname>
+        <defname>Layout</defname>
+      </param>
+      <param>
+        <type>int</type>
+        <declname>M</declname>
+        <defname>M</defname>
+      </param>
+      <param>
+        <type>int</type>
+        <declname>N</declname>
+        <defname>N</defname>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="private-type">
+      <memberdef kind="typedef" id="classmuda_1_1_field_entry_view_core_1aa30ac1f1f0b10112fc5d8940e6322eff" prot="private" static="no">
+        <type><ref refid="classmuda_1_1_view_base" kindref="compound">ViewBase</ref>&lt; IsConst &gt;</type>
+        <definition>using muda::FieldEntryViewCore&lt; IsConst, T, Layout, M, N &gt;::Base =  ViewBase&lt;IsConst&gt;</definition>
+        <argsstring></argsstring>
+        <name>Base</name>
+        <qualifiedname>muda::FieldEntryViewCore::Base</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/field/field_entry_view.h" line="17" column="5" bodyfile="src/muda/ext/field/field_entry_view.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classmuda_1_1_field_entry_view_core_1a9c4113ea5289a9d1156ec172c5c51a8a" prot="private" static="no">
+        <type><ref refid="classmuda_1_1_field_entry_viewer_core" kindref="compound">FieldEntryViewerCore</ref>&lt; IsConst, T, Layout, M, N &gt;</type>
+        <definition>using muda::FieldEntryViewCore&lt; IsConst, T, Layout, M, N &gt;::ViewerCore =  FieldEntryViewerCore&lt;IsConst, T, Layout, M, N&gt;</definition>
+        <argsstring></argsstring>
+        <name>ViewerCore</name>
+        <qualifiedname>muda::FieldEntryViewCore::ViewerCore</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/field/field_entry_view.h" line="18" column="5" bodyfile="src/muda/ext/field/field_entry_view.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classmuda_1_1_field_entry_view_core_1a1413b197ab1353b7e254b89e0d23e8d8" prot="public" static="no">
+        <templateparamlist>
+          <param>
+            <type>typename U</type>
+          </param>
+        </templateparamlist>
+        <type>typename Base::template auto_const_t&lt; U &gt;</type>
+        <definition>using muda::FieldEntryViewCore&lt; IsConst, T, Layout, M, N &gt;::auto_const_t =  typename Base::template auto_const_t&lt;U&gt;</definition>
+        <argsstring></argsstring>
+        <name>auto_const_t</name>
+        <qualifiedname>muda::FieldEntryViewCore::auto_const_t</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/field/field_entry_view.h" line="23" column="5" bodyfile="src/muda/ext/field/field_entry_view.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classmuda_1_1_field_entry_view_core_1aa07ab9a72808aa3fd667b884176294d1" prot="public" static="no">
+        <type>CFieldEntryViewer&lt; T, Layout, M, N &gt;</type>
+        <definition>using muda::FieldEntryViewCore&lt; IsConst, T, Layout, M, N &gt;::ConstViewer =  CFieldEntryViewer&lt;T, Layout, M, N&gt;</definition>
+        <argsstring></argsstring>
+        <name>ConstViewer</name>
+        <qualifiedname>muda::FieldEntryViewCore::ConstViewer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/field/field_entry_view.h" line="25" column="5" bodyfile="src/muda/ext/field/field_entry_view.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classmuda_1_1_field_entry_view_core_1a121c310c3fc775c340f2032591315a64" prot="public" static="no">
+        <type>FieldEntryViewer&lt; T, Layout, M, N &gt;</type>
+        <definition>using muda::FieldEntryViewCore&lt; IsConst, T, Layout, M, N &gt;::NonConstViewer =  FieldEntryViewer&lt;T, Layout, M, N&gt;</definition>
+        <argsstring></argsstring>
+        <name>NonConstViewer</name>
+        <qualifiedname>muda::FieldEntryViewCore::NonConstViewer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/field/field_entry_view.h" line="26" column="5" bodyfile="src/muda/ext/field/field_entry_view.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classmuda_1_1_field_entry_view_core_1a39d12454e2ba14907ced4e0942f5399b" prot="public" static="no">
+        <type>std::conditional_t&lt; IsConst, ConstViewer, NonConstViewer &gt;</type>
+        <definition>using muda::FieldEntryViewCore&lt; IsConst, T, Layout, M, N &gt;::ThisViewer =  std::conditional_t&lt;IsConst, ConstViewer, NonConstViewer&gt;</definition>
+        <argsstring></argsstring>
+        <name>ThisViewer</name>
+        <qualifiedname>muda::FieldEntryViewCore::ThisViewer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/field/field_entry_view.h" line="27" column="5" bodyfile="src/muda/ext/field/field_entry_view.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classmuda_1_1_field_entry_view_core_1a6076eb4cc20882dc0d35617e0b9bb448" prot="public" static="no">
+        <type>typename ViewerCore::MatStride</type>
+        <definition>using muda::FieldEntryViewCore&lt; IsConst, T, Layout, M, N &gt;::MatStride =  typename ViewerCore::MatStride</definition>
+        <argsstring></argsstring>
+        <name>MatStride</name>
+        <qualifiedname>muda::FieldEntryViewCore::MatStride</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/field/field_entry_view.h" line="29" column="5" bodyfile="src/muda/ext/field/field_entry_view.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classmuda_1_1_field_entry_view_core_1a80ef5850968ccb2faf81f240a1e74084" prot="public" static="no">
+        <type>typename ViewerCore::ConstMatMap</type>
+        <definition>using muda::FieldEntryViewCore&lt; IsConst, T, Layout, M, N &gt;::ConstMatMap =  typename ViewerCore::ConstMatMap</definition>
+        <argsstring></argsstring>
+        <name>ConstMatMap</name>
+        <qualifiedname>muda::FieldEntryViewCore::ConstMatMap</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/field/field_entry_view.h" line="30" column="5" bodyfile="src/muda/ext/field/field_entry_view.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classmuda_1_1_field_entry_view_core_1a580307aec8c7a039d9afa682b97b9d3d" prot="public" static="no">
+        <type>typename ViewerCore::NonConstMatMap</type>
+        <definition>using muda::FieldEntryViewCore&lt; IsConst, T, Layout, M, N &gt;::NonConstMatMap =  typename ViewerCore::NonConstMatMap</definition>
+        <argsstring></argsstring>
+        <name>NonConstMatMap</name>
+        <qualifiedname>muda::FieldEntryViewCore::NonConstMatMap</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/field/field_entry_view.h" line="31" column="5" bodyfile="src/muda/ext/field/field_entry_view.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classmuda_1_1_field_entry_view_core_1aace8c9e1b3e0a7febad4be2f2bf4781c" prot="public" static="no">
+        <type>typename ViewerCore::ThisMatMap</type>
+        <definition>using muda::FieldEntryViewCore&lt; IsConst, T, Layout, M, N &gt;::ThisMatMap =  typename ViewerCore::ThisMatMap</definition>
+        <argsstring></argsstring>
+        <name>ThisMatMap</name>
+        <qualifiedname>muda::FieldEntryViewCore::ThisMatMap</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/field/field_entry_view.h" line="32" column="5" bodyfile="src/muda/ext/field/field_entry_view.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="friend">
+      <memberdef kind="friend" id="classmuda_1_1_field_entry_view_core_1a48bf388f595ed3bfea5ca4b9ea9f91b3" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class FieldEntryLaunch</definition>
+        <argsstring></argsstring>
+        <name>FieldEntryLaunch</name>
+        <qualifiedname>muda::FieldEntryViewCore::FieldEntryLaunch</qualifiedname>
+        <param>
+          <type><ref refid="classmuda_1_1_field_entry_launch" kindref="compound">FieldEntryLaunch</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/field/field_entry_view.h" line="19" column="18" bodyfile="src/muda/ext/field/field_entry_view.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classmuda_1_1_field_entry_view_core_1a05df18865c1622853c084483bbb4bcf4" prot="protected" static="no" mutable="no">
+        <type><ref refid="classmuda_1_1_host_device_config_view" kindref="compound">HostDeviceConfigView</ref>&lt; <ref refid="classmuda_1_1_field_entry_core" kindref="compound">FieldEntryCore</ref> &gt;</type>
+        <definition>HostDeviceConfigView&lt;FieldEntryCore&gt; muda::FieldEntryViewCore&lt; IsConst, T, Layout, M, N &gt;::m_core</definition>
+        <argsstring></argsstring>
+        <name>m_core</name>
+        <qualifiedname>muda::FieldEntryViewCore::m_core</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/field/field_entry_view.h" line="35" column="26" bodyfile="src/muda/ext/field/field_entry_view.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1_field_entry_view_core_1a24dfc42162d720c4cea503e33536a83d" prot="protected" static="no" mutable="no">
+        <type>MatStride</type>
+        <definition>MatStride muda::FieldEntryViewCore&lt; IsConst, T, Layout, M, N &gt;::m_stride</definition>
+        <argsstring></argsstring>
+        <name>m_stride</name>
+        <qualifiedname>muda::FieldEntryViewCore::m_stride</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/field/field_entry_view.h" line="36" column="42" bodyfile="src/muda/ext/field/field_entry_view.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1_field_entry_view_core_1acb2cd3ede97373ddd17405c793c32a56" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int muda::FieldEntryViewCore&lt; IsConst, T, Layout, M, N &gt;::m_offset</definition>
+        <argsstring></argsstring>
+        <name>m_offset</name>
+        <qualifiedname>muda::FieldEntryViewCore::m_offset</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/field/field_entry_view.h" line="37" column="42" bodyfile="src/muda/ext/field/field_entry_view.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1_field_entry_view_core_1ada7f7165cc33c7927f48210290858a33" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int muda::FieldEntryViewCore&lt; IsConst, T, Layout, M, N &gt;::m_size</definition>
+        <argsstring></argsstring>
+        <name>m_size</name>
+        <qualifiedname>muda::FieldEntryViewCore::m_size</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/field/field_entry_view.h" line="38" column="42" bodyfile="src/muda/ext/field/field_entry_view.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classmuda_1_1_field_entry_view_core_1af6e3619c2b3c8b561685cd4359754623" prot="protected" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>MUDA_GENERIC T *</type>
+        <definition>MUDA_GENERIC T * muda::FieldEntryViewCore&lt; IsConst, T, Layout, M, N &gt;::data</definition>
+        <argsstring>(int i) const</argsstring>
+        <name>data</name>
+        <qualifiedname>muda::FieldEntryViewCore::data</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/field/field_entry_view.h" line="41" column="20" bodyfile="src/muda/ext/field/field_entry_view.h" bodystart="41" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_field_entry_view_core_1ab1ecb171969a39fdabe18ce2ee5586e9" prot="protected" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>MUDA_GENERIC T *</type>
+        <definition>MUDA_GENERIC T * muda::FieldEntryViewCore&lt; IsConst, T, Layout, M, N &gt;::data</definition>
+        <argsstring>(int i, int j) const</argsstring>
+        <name>data</name>
+        <qualifiedname>muda::FieldEntryViewCore::data</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>j</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/field/field_entry_view.h" line="46" column="20" bodyfile="src/muda/ext/field/field_entry_view.h" bodystart="46" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_field_entry_view_core_1ac6b2c755a62f129892c5ce4ffef4e6ba" prot="protected" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>MUDA_GENERIC T *</type>
+        <definition>MUDA_GENERIC T * muda::FieldEntryViewCore&lt; IsConst, T, Layout, M, N &gt;::data</definition>
+        <argsstring>(int i, int row_index, int col_index) const</argsstring>
+        <name>data</name>
+        <qualifiedname>muda::FieldEntryViewCore::data</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>row_index</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>col_index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/field/field_entry_view.h" line="52" column="20" bodyfile="src/muda/ext/field/field_entry_view.h" bodystart="52" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_field_entry_view_core_1a688e55b3d5bed60f92919068d9df45d2" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>MUDA_GENERIC</type>
+        <definition>MUDA_GENERIC muda::FieldEntryViewCore&lt; IsConst, T, Layout, M, N &gt;::FieldEntryViewCore</definition>
+        <argsstring>(HostDeviceConfigView&lt; FieldEntryCore &gt; core, int offset, int size, AsIterator)</argsstring>
+        <name>FieldEntryViewCore</name>
+        <qualifiedname>muda::FieldEntryViewCore::FieldEntryViewCore</qualifiedname>
+        <param>
+          <type><ref refid="classmuda_1_1_host_device_config_view" kindref="compound">HostDeviceConfigView</ref>&lt; <ref refid="classmuda_1_1_field_entry_core" kindref="compound">FieldEntryCore</ref> &gt;</type>
+          <declname>core</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>offset</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type><ref refid="structmuda_1_1_field_entry_view_core_1_1_as_iterator" kindref="compound">AsIterator</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/field/field_entry_view.h" line="62" column="18" bodyfile="src/muda/ext/field/field_entry_view.h" bodystart="62" bodyend="68"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmuda_1_1_field_entry_view_core_1acf71c03048f899892d241b1dc28d8339" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>MUDA_GENERIC</type>
+        <definition>MUDA_GENERIC muda::FieldEntryViewCore&lt; IsConst, T, Layout, M, N &gt;::FieldEntryViewCore</definition>
+        <argsstring>()=default</argsstring>
+        <name>FieldEntryViewCore</name>
+        <qualifiedname>muda::FieldEntryViewCore::FieldEntryViewCore</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/field/field_entry_view.h" line="71" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_field_entry_view_core_1ac85c37a9c34fabdd5786381d32994395" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>MUDA_GENERIC</type>
+        <definition>MUDA_GENERIC muda::FieldEntryViewCore&lt; IsConst, T, Layout, M, N &gt;::FieldEntryViewCore</definition>
+        <argsstring>(HostDeviceConfigView&lt; FieldEntryCore &gt; core, int offset, int size)</argsstring>
+        <name>FieldEntryViewCore</name>
+        <qualifiedname>muda::FieldEntryViewCore::FieldEntryViewCore</qualifiedname>
+        <param>
+          <type><ref refid="classmuda_1_1_host_device_config_view" kindref="compound">HostDeviceConfigView</ref>&lt; <ref refid="classmuda_1_1_field_entry_core" kindref="compound">FieldEntryCore</ref> &gt;</type>
+          <declname>core</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>offset</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/field/field_entry_view.h" line="72" column="18" bodyfile="src/muda/ext/field/field_entry_view.h" bodystart="72" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_field_entry_view_core_1a1bce8f77a41f7114e0db6ceaed155993" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>MUDA_GENERIC auto</type>
+        <definition>MUDA_GENERIC auto muda::FieldEntryViewCore&lt; IsConst, T, Layout, M, N &gt;::layout_info</definition>
+        <argsstring>() const</argsstring>
+        <name>layout_info</name>
+        <qualifiedname>muda::FieldEntryViewCore::layout_info</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/field/field_entry_view.h" line="82" column="23" bodyfile="src/muda/ext/field/field_entry_view.h" bodystart="82" bodyend="82"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_field_entry_view_core_1a8b764d28bb8d3473907c5de4030415a9" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>MUDA_GENERIC auto</type>
+        <definition>MUDA_GENERIC auto muda::FieldEntryViewCore&lt; IsConst, T, Layout, M, N &gt;::layout</definition>
+        <argsstring>() const</argsstring>
+        <name>layout</name>
+        <qualifiedname>muda::FieldEntryViewCore::layout</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/field/field_entry_view.h" line="83" column="23" bodyfile="src/muda/ext/field/field_entry_view.h" bodystart="83" bodyend="83"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_field_entry_view_core_1a3ca65243179c4cb86755d0f953049084" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>MUDA_GENERIC auto</type>
+        <definition>MUDA_GENERIC auto muda::FieldEntryViewCore&lt; IsConst, T, Layout, M, N &gt;::offset</definition>
+        <argsstring>() const</argsstring>
+        <name>offset</name>
+        <qualifiedname>muda::FieldEntryViewCore::offset</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/field/field_entry_view.h" line="84" column="23" bodyfile="src/muda/ext/field/field_entry_view.h" bodystart="84" bodyend="84"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_field_entry_view_core_1a218cc61992f4b06214c01540c19ae8fe" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>MUDA_GENERIC auto</type>
+        <definition>MUDA_GENERIC auto muda::FieldEntryViewCore&lt; IsConst, T, Layout, M, N &gt;::size</definition>
+        <argsstring>() const</argsstring>
+        <name>size</name>
+        <qualifiedname>muda::FieldEntryViewCore::size</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/field/field_entry_view.h" line="85" column="23" bodyfile="src/muda/ext/field/field_entry_view.h" bodystart="85" bodyend="85"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_field_entry_view_core_1aa6489f710753b7f8064f1e80d313ef4c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>MUDA_GENERIC auto</type>
+        <definition>MUDA_GENERIC auto muda::FieldEntryViewCore&lt; IsConst, T, Layout, M, N &gt;::total_count</definition>
+        <argsstring>() const</argsstring>
+        <name>total_count</name>
+        <qualifiedname>muda::FieldEntryViewCore::total_count</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/field/field_entry_view.h" line="86" column="23" bodyfile="src/muda/ext/field/field_entry_view.h" bodystart="86" bodyend="86"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_field_entry_view_core_1ac03a4376dee87c96c6c3213bef65bf27" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>MUDA_GENERIC auto</type>
+        <definition>MUDA_GENERIC auto muda::FieldEntryViewCore&lt; IsConst, T, Layout, M, N &gt;::elem_byte_size</definition>
+        <argsstring>() const</argsstring>
+        <name>elem_byte_size</name>
+        <qualifiedname>muda::FieldEntryViewCore::elem_byte_size</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/field/field_entry_view.h" line="87" column="23" bodyfile="src/muda/ext/field/field_entry_view.h" bodystart="87" bodyend="90"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_field_entry_view_core_1a3b0f79218ef7e90f0f701508cc5f3f49" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>MUDA_GENERIC auto</type>
+        <definition>MUDA_GENERIC auto muda::FieldEntryViewCore&lt; IsConst, T, Layout, M, N &gt;::shape</definition>
+        <argsstring>() const</argsstring>
+        <name>shape</name>
+        <qualifiedname>muda::FieldEntryViewCore::shape</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/field/field_entry_view.h" line="91" column="23" bodyfile="src/muda/ext/field/field_entry_view.h" bodystart="91" bodyend="91"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_field_entry_view_core_1abe576ee697c7ac24848c8ed4bba01161" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>MUDA_GENERIC auto</type>
+        <definition>MUDA_GENERIC auto muda::FieldEntryViewCore&lt; IsConst, T, Layout, M, N &gt;::struct_stride</definition>
+        <argsstring>() const</argsstring>
+        <name>struct_stride</name>
+        <qualifiedname>muda::FieldEntryViewCore::struct_stride</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/field/field_entry_view.h" line="92" column="23" bodyfile="src/muda/ext/field/field_entry_view.h" bodystart="92" bodyend="92"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_field_entry_view_core_1a721d07b057847c23564f56739aa2d069" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>MUDA_GENERIC auto</type>
+        <definition>MUDA_GENERIC auto muda::FieldEntryViewCore&lt; IsConst, T, Layout, M, N &gt;::name</definition>
+        <argsstring>() const</argsstring>
+        <name>name</name>
+        <qualifiedname>muda::FieldEntryViewCore::name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/field/field_entry_view.h" line="94" column="23" bodyfile="src/muda/ext/field/field_entry_view.h" bodystart="94" bodyend="94"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_field_entry_view_core_1a771d886e80d9113c77c4d22824348a68" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>MUDA_GENERIC auto</type>
+        <definition>MUDA_GENERIC auto muda::FieldEntryViewCore&lt; IsConst, T, Layout, M, N &gt;::viewer</definition>
+        <argsstring>()</argsstring>
+        <name>viewer</name>
+        <qualifiedname>muda::FieldEntryViewCore::viewer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/field/field_entry_view.h" line="95" column="23" bodyfile="src/muda/ext/field/field_entry_view.h" bodystart="95" bodyend="95"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_field_entry_view_core_1a68328dc6d92841e6ec9fc1d8777ca721" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>MUDA_GENERIC auto</type>
+        <definition>MUDA_GENERIC auto muda::FieldEntryViewCore&lt; IsConst, T, Layout, M, N &gt;::cviewer</definition>
+        <argsstring>() const</argsstring>
+        <name>cviewer</name>
+        <qualifiedname>muda::FieldEntryViewCore::cviewer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/field/field_entry_view.h" line="96" column="23" bodyfile="src/muda/ext/field/field_entry_view.h" bodystart="96" bodyend="99"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>muda::ViewBase&lt; IsConst &gt;</label>
+        <link refid="classmuda_1_1_view_base"/>
+      </node>
+      <node id="1">
+        <label>muda::FieldEntryViewCore&lt; IsConst, T, Layout, M, N &gt;</label>
+        <link refid="classmuda_1_1_field_entry_view_core"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>muda::HostDeviceConfigView&lt; muda::FieldEntryCore &gt;</label>
+        <link refid="classmuda_1_1_host_device_config_view"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>muda::ViewBase&lt; IsConst &gt;</label>
+        <link refid="classmuda_1_1_view_base"/>
+      </node>
+      <node id="4">
+        <label>muda::ViewBase&lt; true &gt;</label>
+        <link refid="classmuda_1_1_view_base"/>
+      </node>
+      <node id="1">
+        <label>muda::FieldEntryViewCore&lt; IsConst, T, Layout, M, N &gt;</label>
+        <link refid="classmuda_1_1_field_entry_view_core"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>m_core</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="src/muda/ext/field/field_entry_view.h" line="15" column="1" bodyfile="src/muda/ext/field/field_entry_view.h" bodystart="16" bodyend="100"/>
+    <listofallmembers>
+      <member refid="classmuda_1_1_field_entry_view_core_1a1413b197ab1353b7e254b89e0d23e8d8" prot="public" virt="non-virtual"><scope>muda::FieldEntryViewCore</scope><name>auto_const_t</name></member>
+      <member refid="classmuda_1_1_field_entry_view_core_1aa30ac1f1f0b10112fc5d8940e6322eff" prot="private" virt="non-virtual"><scope>muda::FieldEntryViewCore</scope><name>Base</name></member>
+      <member refid="classmuda_1_1_field_entry_view_core_1a80ef5850968ccb2faf81f240a1e74084" prot="public" virt="non-virtual"><scope>muda::FieldEntryViewCore</scope><name>ConstMatMap</name></member>
+      <member refid="classmuda_1_1_field_entry_view_core_1aa07ab9a72808aa3fd667b884176294d1" prot="public" virt="non-virtual"><scope>muda::FieldEntryViewCore</scope><name>ConstViewer</name></member>
+      <member refid="classmuda_1_1_field_entry_view_core_1a68328dc6d92841e6ec9fc1d8777ca721" prot="public" virt="non-virtual"><scope>muda::FieldEntryViewCore</scope><name>cviewer</name></member>
+      <member refid="classmuda_1_1_field_entry_view_core_1af6e3619c2b3c8b561685cd4359754623" prot="protected" virt="non-virtual"><scope>muda::FieldEntryViewCore</scope><name>data</name></member>
+      <member refid="classmuda_1_1_field_entry_view_core_1ab1ecb171969a39fdabe18ce2ee5586e9" prot="protected" virt="non-virtual"><scope>muda::FieldEntryViewCore</scope><name>data</name></member>
+      <member refid="classmuda_1_1_field_entry_view_core_1ac6b2c755a62f129892c5ce4ffef4e6ba" prot="protected" virt="non-virtual"><scope>muda::FieldEntryViewCore</scope><name>data</name></member>
+      <member refid="classmuda_1_1_field_entry_view_core_1ac03a4376dee87c96c6c3213bef65bf27" prot="public" virt="non-virtual"><scope>muda::FieldEntryViewCore</scope><name>elem_byte_size</name></member>
+      <member refid="classmuda_1_1_field_entry_view_core_1a48bf388f595ed3bfea5ca4b9ea9f91b3" prot="private" virt="non-virtual"><scope>muda::FieldEntryViewCore</scope><name>FieldEntryLaunch</name></member>
+      <member refid="classmuda_1_1_field_entry_view_core_1a688e55b3d5bed60f92919068d9df45d2" prot="protected" virt="non-virtual"><scope>muda::FieldEntryViewCore</scope><name>FieldEntryViewCore</name></member>
+      <member refid="classmuda_1_1_field_entry_view_core_1acf71c03048f899892d241b1dc28d8339" prot="public" virt="non-virtual"><scope>muda::FieldEntryViewCore</scope><name>FieldEntryViewCore</name></member>
+      <member refid="classmuda_1_1_field_entry_view_core_1ac85c37a9c34fabdd5786381d32994395" prot="public" virt="non-virtual"><scope>muda::FieldEntryViewCore</scope><name>FieldEntryViewCore</name></member>
+      <member refid="classmuda_1_1_view_base_1a462988275a74be2325fcf57408700ce9" prot="public" virt="non-virtual"><scope>muda::FieldEntryViewCore</scope><name>IsConst</name></member>
+      <member refid="classmuda_1_1_view_base_1ae40f0a1f86127bc4dfeae5e08027e1dc" prot="public" virt="non-virtual"><scope>muda::FieldEntryViewCore</scope><name>IsNonConst</name></member>
+      <member refid="classmuda_1_1_field_entry_view_core_1a8b764d28bb8d3473907c5de4030415a9" prot="public" virt="non-virtual"><scope>muda::FieldEntryViewCore</scope><name>layout</name></member>
+      <member refid="classmuda_1_1_field_entry_view_core_1a1bce8f77a41f7114e0db6ceaed155993" prot="public" virt="non-virtual"><scope>muda::FieldEntryViewCore</scope><name>layout_info</name></member>
+      <member refid="classmuda_1_1_field_entry_view_core_1a05df18865c1622853c084483bbb4bcf4" prot="protected" virt="non-virtual"><scope>muda::FieldEntryViewCore</scope><name>m_core</name></member>
+      <member refid="classmuda_1_1_field_entry_view_core_1acb2cd3ede97373ddd17405c793c32a56" prot="protected" virt="non-virtual"><scope>muda::FieldEntryViewCore</scope><name>m_offset</name></member>
+      <member refid="classmuda_1_1_field_entry_view_core_1ada7f7165cc33c7927f48210290858a33" prot="protected" virt="non-virtual"><scope>muda::FieldEntryViewCore</scope><name>m_size</name></member>
+      <member refid="classmuda_1_1_field_entry_view_core_1a24dfc42162d720c4cea503e33536a83d" prot="protected" virt="non-virtual"><scope>muda::FieldEntryViewCore</scope><name>m_stride</name></member>
+      <member refid="classmuda_1_1_field_entry_view_core_1a6076eb4cc20882dc0d35617e0b9bb448" prot="public" virt="non-virtual"><scope>muda::FieldEntryViewCore</scope><name>MatStride</name></member>
+      <member refid="classmuda_1_1_field_entry_view_core_1a721d07b057847c23564f56739aa2d069" prot="public" virt="non-virtual"><scope>muda::FieldEntryViewCore</scope><name>name</name></member>
+      <member refid="classmuda_1_1_view_base_1a39d227092dd2b7baba8b7c74bf018f37" prot="public" virt="non-virtual"><scope>muda::FieldEntryViewCore</scope><name>non_const_enable_t</name></member>
+      <member refid="classmuda_1_1_field_entry_view_core_1a580307aec8c7a039d9afa682b97b9d3d" prot="public" virt="non-virtual"><scope>muda::FieldEntryViewCore</scope><name>NonConstMatMap</name></member>
+      <member refid="classmuda_1_1_field_entry_view_core_1a121c310c3fc775c340f2032591315a64" prot="public" virt="non-virtual"><scope>muda::FieldEntryViewCore</scope><name>NonConstViewer</name></member>
+      <member refid="classmuda_1_1_field_entry_view_core_1a3ca65243179c4cb86755d0f953049084" prot="public" virt="non-virtual"><scope>muda::FieldEntryViewCore</scope><name>offset</name></member>
+      <member refid="classmuda_1_1_field_entry_view_core_1a3b0f79218ef7e90f0f701508cc5f3f49" prot="public" virt="non-virtual"><scope>muda::FieldEntryViewCore</scope><name>shape</name></member>
+      <member refid="classmuda_1_1_field_entry_view_core_1a218cc61992f4b06214c01540c19ae8fe" prot="public" virt="non-virtual"><scope>muda::FieldEntryViewCore</scope><name>size</name></member>
+      <member refid="classmuda_1_1_field_entry_view_core_1abe576ee697c7ac24848c8ed4bba01161" prot="public" virt="non-virtual"><scope>muda::FieldEntryViewCore</scope><name>struct_stride</name></member>
+      <member refid="classmuda_1_1_field_entry_view_core_1aace8c9e1b3e0a7febad4be2f2bf4781c" prot="public" virt="non-virtual"><scope>muda::FieldEntryViewCore</scope><name>ThisMatMap</name></member>
+      <member refid="classmuda_1_1_field_entry_view_core_1a39d12454e2ba14907ced4e0942f5399b" prot="public" virt="non-virtual"><scope>muda::FieldEntryViewCore</scope><name>ThisViewer</name></member>
+      <member refid="classmuda_1_1_field_entry_view_core_1aa6489f710753b7f8064f1e80d313ef4c" prot="public" virt="non-virtual"><scope>muda::FieldEntryViewCore</scope><name>total_count</name></member>
+      <member refid="classmuda_1_1_field_entry_view_core_1a771d886e80d9113c77c4d22824348a68" prot="public" virt="non-virtual"><scope>muda::FieldEntryViewCore</scope><name>viewer</name></member>
+      <member refid="classmuda_1_1_field_entry_view_core_1a9c4113ea5289a9d1156ec172c5c51a8a" prot="private" virt="non-virtual"><scope>muda::FieldEntryViewCore</scope><name>ViewerCore</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

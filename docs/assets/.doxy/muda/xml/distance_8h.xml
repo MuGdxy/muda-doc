@@ -1,0 +1,292 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="distance_8h" kind="file" language="C++">
+    <compoundname>distance.h</compoundname>
+    <includes refid="distance__unclassified_8h" local="no">muda/ext/geo/distance/distance_unclassified.h</includes>
+    <includes refid="ccd_8h" local="no">muda/ext/geo/distance/ccd.h</includes>
+    <incdepgraph>
+      <node id="14">
+        <label>muda/assert.h</label>
+        <link refid="assert_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>cuda_runtime.h</label>
+        <link refid="cuda__runtime_8h_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>cuda_runtime_api.h</label>
+        <link refid="cuda__runtime__api_8h_source"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>muda/ext/eigen/eigen_core_cxx20.h</label>
+        <link refid="eigen__core__cxx20_8h_source"/>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>muda/ext/eigen/eigen_cxx20.h</label>
+        <link refid="eigen__cxx20_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>src/muda/ext/geo/distance.h</label>
+        <link refid="distance_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+      </node>
+      <node id="35">
+        <label>muda/ext/geo/distance/ccd.h</label>
+        <link refid="ccd_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>muda/ext/geo/distance/distance_type.h</label>
+        <link refid="distance__type_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>muda/ext/geo/distance/distance_unclassified.h</label>
+        <link refid="distance__unclassified_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>muda/ext/geo/distance/edge_edge.h</label>
+        <link refid="edge__edge_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>muda/ext/geo/distance/edge_edge_mollified.h</label>
+        <link refid="edge__edge__mollified_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>muda/ext/geo/distance/point_edge.h</label>
+        <link refid="point__edge_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>muda/ext/geo/distance/point_point.h</label>
+        <link refid="point__point_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>muda/ext/geo/distance/point_triangle.h</label>
+        <link refid="point__triangle_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>muda/muda_config.h</label>
+        <link refid="muda__config_8h_source"/>
+      </node>
+      <node id="3">
+        <label>muda/muda_def.h</label>
+        <link refid="muda__def_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>muda/print.h</label>
+        <link refid="print_8h_source"/>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>muda/tools/debug_break.h</label>
+        <link refid="debug__break_8h_source"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>muda/tools/debug_log.h</label>
+        <link refid="debug__log_8h_source"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>muda/tools/fuzzy.h</label>
+        <link refid="fuzzy_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>muda/tools/platform.h</label>
+        <link refid="platform_8h_source"/>
+      </node>
+      <node id="21">
+        <label>Eigen/Core</label>
+      </node>
+      <node id="22">
+        <label>Eigen/Geometry</label>
+      </node>
+      <node id="12">
+        <label>cassert</label>
+      </node>
+      <node id="36">
+        <label>cmath</label>
+      </node>
+      <node id="18">
+        <label>cstdio</label>
+      </node>
+      <node id="11">
+        <label>cstdlib</label>
+      </node>
+      <node id="6">
+        <label>cuda.h</label>
+      </node>
+      <node id="37">
+        <label>details/ccd.inl</label>
+      </node>
+      <node id="23">
+        <label>details/distance_type.inl</label>
+      </node>
+      <node id="34">
+        <label>details/distance_unclassified.inl</label>
+      </node>
+      <node id="31">
+        <label>details/edge_edge.inl</label>
+      </node>
+      <node id="33">
+        <label>details/edge_edge_mollified.inl</label>
+      </node>
+      <node id="27">
+        <label>details/point_edge.inl</label>
+      </node>
+      <node id="29">
+        <label>details/point_point.inl</label>
+      </node>
+      <node id="25">
+        <label>details/point_triangle.inl</label>
+      </node>
+      <node id="16">
+        <label>signal.h</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+<para>distance calculation for point/edge/triangle </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>MuGdxy </para>
+</simplesect>
+<simplesect kind="date"><para>February 2024</para>
+</simplesect>
+All files in directory <computeroutput>./distance/</computeroutput> is referenced from the following repository:</para>
+<para><ulink url="https://github.com/ipc-sim/Codim-IPC/tree/main/Library/Math/Distance">https://github.com/ipc-sim/Codim-IPC/tree/main/Library/Math/Distance</ulink></para>
+<para><itemizedlist>
+<listitem><para>To make it more readable, logically consistent and GPU compatible, the original code is modified.</para>
+</listitem><listitem><para>Thanks to the original author for the great work.</para>
+</listitem><listitem><para>The original code is licensed under the Apache License, Version 2.0. </para>
+</listitem></itemizedlist>
+</para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">/*****************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;muda/ext/geo/distance/distance_unclassified.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;muda/ext/geo/distance/ccd.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="src/muda/ext/geo/distance.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="dir_be047e8c00f93e2e88c2a417393a7f42" kind="dir">
+    <compoundname>src/muda</compoundname>
+    <innerdir refid="dir_9b44f68c181db0b11e9502e462454d05">src/muda/buffer</innerdir>
+    <innerdir refid="dir_3ada5fb1291f7068cec99adbe813154e">src/muda/check</innerdir>
+    <innerdir refid="dir_b4aad8ec408afb185bc8426846668e86">src/muda/compute_graph</innerdir>
+    <innerdir refid="dir_abdf540317f100377c0fed488fb71651">src/muda/container</innerdir>
+    <innerdir refid="dir_98c5d599fe44dff86fbf620b2a1f3e8e">src/muda/cub</innerdir>
+    <innerdir refid="dir_e7c11f96f9eccdf52a5e0655beb83835">src/muda/cuda</innerdir>
+    <innerdir refid="dir_dee31a662aa40cb7fc08cb07824f4a9a">src/muda/ext</innerdir>
+    <innerdir refid="dir_946c6946a1291bae853a7ff8b793a277">src/muda/graph</innerdir>
+    <innerdir refid="dir_440d6ef7395341c98b5d944289d06a83">src/muda/launch</innerdir>
+    <innerdir refid="dir_b382702c5a05deb664663fe4596d147e">src/muda/literal</innerdir>
+    <innerdir refid="dir_7d83e812141fe1e865a4aab383f85074">src/muda/logger</innerdir>
+    <innerdir refid="dir_76b30f276e6a3b8973955140272e7c63">src/muda/mstl</innerdir>
+    <innerdir refid="dir_4d62fb1c1e2c9fb3fa1c4847a09b7b77">src/muda/tools</innerdir>
+    <innerdir refid="dir_604bea9d06d02462c18f7966e507987c">src/muda/type_traits</innerdir>
+    <innerdir refid="dir_db2dafed41077e2be62453d93935ca4c">src/muda/view</innerdir>
+    <innerdir refid="dir_b8d9e5dede9d3b62139c9f3b116c88e0">src/muda/viewer</innerdir>
+    <innerfile refid="assert_8h">assert.h</innerfile>
+    <innerfile refid="atomic_8h">atomic.h</innerfile>
+    <innerfile refid="buffer_8h">buffer.h</innerfile>
+    <innerfile refid="compute__graph_8h">compute_graph.h</innerfile>
+    <innerfile refid="container_8h">container.h</innerfile>
+    <innerfile refid="debug_8h">debug.h</innerfile>
+    <innerfile refid="exception_8h">exception.h</innerfile>
+    <innerfile refid="graph_8h">graph.h</innerfile>
+    <innerfile refid="launch_8h">launch.h</innerfile>
+    <innerfile refid="logger_8h">logger.h</innerfile>
+    <innerfile refid="muda_8h">muda.h</innerfile>
+    <innerfile refid="muda__config_8h">muda_config.h</innerfile>
+    <innerfile refid="muda__def_8h">muda_def.h</innerfile>
+    <innerfile refid="print_8h">print.h</innerfile>
+    <innerfile refid="profiler_8h">profiler.h</innerfile>
+    <innerfile refid="syntax__sugar_8h">syntax_sugar.h</innerfile>
+    <innerfile refid="type__define_8h">type_define.h</innerfile>
+    <innerfile refid="viewer_8h">viewer.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/muda/"/>
+  </compounddef>
+</doxygen>

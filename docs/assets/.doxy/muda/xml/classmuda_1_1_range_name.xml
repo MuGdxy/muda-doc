@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classmuda_1_1_range_name" kind="class" language="C++" prot="public">
+    <compoundname>muda::RangeName</compoundname>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmuda_1_1_range_name_1a1251c6f3694b1c2cf8165e4c22312d0f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>muda::RangeName::RangeName</definition>
+        <argsstring>(const std::string &amp;name) MUDA_NOEXCEPT</argsstring>
+        <name>RangeName</name>
+        <qualifiedname>muda::RangeName::RangeName</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/profiler.h" line="63" column="5" bodyfile="src/muda/profiler.h" bodystart="63" bodyend="73"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_range_name_1a70ea1909f072422759ffb11b9f2af4fe" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>muda::RangeName::~RangeName</definition>
+        <argsstring>()</argsstring>
+        <name>~RangeName</name>
+        <qualifiedname>muda::RangeName::~RangeName</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/profiler.h" line="75" column="5" bodyfile="src/muda/profiler.h" bodystart="75" bodyend="75"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/muda/profiler.h" line="60" column="1" bodyfile="src/muda/profiler.h" bodystart="61" bodyend="76"/>
+    <listofallmembers>
+      <member refid="classmuda_1_1_range_name_1a1251c6f3694b1c2cf8165e4c22312d0f" prot="public" virt="non-virtual"><scope>muda::RangeName</scope><name>RangeName</name></member>
+      <member refid="classmuda_1_1_range_name_1a70ea1909f072422759ffb11b9f2af4fe" prot="public" virt="non-virtual"><scope>muda::RangeName</scope><name>~RangeName</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

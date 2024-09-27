@@ -1,0 +1,77 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classmuda_1_1_matrix_map_info" kind="class" language="C++" prot="public">
+    <compoundname>muda::MatrixMapInfo</compoundname>
+    <includes refid="matrix__map__info_8h" local="no">matrix_map_info.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+      <param>
+        <type>int</type>
+        <declname>M</declname>
+        <defname>M</defname>
+      </param>
+      <param>
+        <type>int</type>
+        <declname>N</declname>
+        <defname>N</defname>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classmuda_1_1_matrix_map_info_1aef3d347eb3f09a1b2633811616bb923b" prot="public" static="no" mutable="no">
+        <type>T *</type>
+        <definition>T* muda::MatrixMapInfo&lt; T, M, N &gt;::begin</definition>
+        <argsstring></argsstring>
+        <name>begin</name>
+        <qualifiedname>muda::MatrixMapInfo::begin</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/field/matrix_map_info.h" line="12" column="8" bodyfile="src/muda/ext/field/matrix_map_info.h" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1_matrix_map_info_1af6e9723ca3c24ab6ada2ce943b11a9e4" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int muda::MatrixMapInfo&lt; T, M, N &gt;::outer_stride</definition>
+        <argsstring></argsstring>
+        <name>outer_stride</name>
+        <qualifiedname>muda::MatrixMapInfo::outer_stride</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/field/matrix_map_info.h" line="13" column="9" bodyfile="src/muda/ext/field/matrix_map_info.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1_matrix_map_info_1aa35ff0175499adf252255501cbbc66dc" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int muda::MatrixMapInfo&lt; T, M, N &gt;::inner_stride</definition>
+        <argsstring></argsstring>
+        <name>inner_stride</name>
+        <qualifiedname>muda::MatrixMapInfo::inner_stride</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/field/matrix_map_info.h" line="14" column="9" bodyfile="src/muda/ext/field/matrix_map_info.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>For MapMatrix e.g. Eigen::Map&lt; ... &gt; </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/muda/ext/field/matrix_map_info.h" line="9" column="1" bodyfile="src/muda/ext/field/matrix_map_info.h" bodystart="10" bodyend="15"/>
+    <listofallmembers>
+      <member refid="classmuda_1_1_matrix_map_info_1aef3d347eb3f09a1b2633811616bb923b" prot="public" virt="non-virtual"><scope>muda::MatrixMapInfo</scope><name>begin</name></member>
+      <member refid="classmuda_1_1_matrix_map_info_1aa35ff0175499adf252255501cbbc66dc" prot="public" virt="non-virtual"><scope>muda::MatrixMapInfo</scope><name>inner_stride</name></member>
+      <member refid="classmuda_1_1_matrix_map_info_1af6e9723ca3c24ab6ada2ce943b11a9e4" prot="public" virt="non-virtual"><scope>muda::MatrixMapInfo</scope><name>outer_stride</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

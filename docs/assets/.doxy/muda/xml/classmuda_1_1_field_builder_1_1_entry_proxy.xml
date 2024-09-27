@@ -1,0 +1,265 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classmuda_1_1_field_builder_1_1_entry_proxy" kind="class" language="C++" prot="public">
+    <compoundname>muda::FieldBuilder::EntryProxy</compoundname>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classmuda_1_1_field_builder_1_1_entry_proxy_1abb78976f1d0560ba7832c93b05cec148" prot="private" static="no" mutable="no">
+        <type><ref refid="classmuda_1_1_field_builder" kindref="compound">FieldBuilder</ref>&lt; Layout &gt; &amp;</type>
+        <definition>FieldBuilder&lt;Layout&gt;&amp; muda::FieldBuilder&lt; Layout &gt;::EntryProxy::m_builder</definition>
+        <argsstring></argsstring>
+        <name>m_builder</name>
+        <qualifiedname>muda::FieldBuilder::EntryProxy::m_builder</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/field/field_builder.h" line="19" column="22" bodyfile="src/muda/ext/field/field_builder.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1_field_builder_1_1_entry_proxy_1a424b0755c1f1f66c3aad86268f064bae" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string muda::FieldBuilder&lt; Layout &gt;::EntryProxy::m_name</definition>
+        <argsstring></argsstring>
+        <name>m_name</name>
+        <qualifiedname>muda::FieldBuilder::EntryProxy::m_name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/field/field_builder.h" line="21" column="21" bodyfile="src/muda/ext/field/field_builder.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmuda_1_1_field_builder_1_1_entry_proxy_1aa0e32f11cc37bcfc6428c1771b60fdbe" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>muda::FieldBuilder&lt; Layout &gt;::EntryProxy::EntryProxy</definition>
+        <argsstring>(FieldBuilder&lt; Layout &gt; &amp;builder, std::string_view name)</argsstring>
+        <name>EntryProxy</name>
+        <qualifiedname>muda::FieldBuilder::EntryProxy::EntryProxy</qualifiedname>
+        <param>
+          <type><ref refid="classmuda_1_1_field_builder" kindref="compound">FieldBuilder</ref>&lt; Layout &gt; &amp;</type>
+          <declname>builder</declname>
+        </param>
+        <param>
+          <type>std::string_view</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/field/field_builder.h" line="24" column="9" bodyfile="src/muda/ext/field/field_builder.h" bodystart="24" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_field_builder_1_1_entry_proxy_1a7f17e87706556613e0bd599b759f65c5" prot="public" static="no" const="no" explicit="no" inline="no" refqual="rvalue" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classmuda_1_1_field_entry" kindref="compound">FieldEntry</ref>&lt; T, Layout, 1, 1 &gt; &amp;</type>
+        <definition>FieldEntry&lt; T, Layout, 1, 1 &gt; &amp; muda::FieldBuilder&lt; Layout &gt;::EntryProxy::scalar</definition>
+        <argsstring>() &amp;&amp;</argsstring>
+        <name>scalar</name>
+        <qualifiedname>muda::FieldBuilder::EntryProxy::scalar</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/field/field_builder.h" line="30" column="20"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_field_builder_1_1_entry_proxy_1ad495b8539f3a708257c51a493b5e1d2a" prot="public" static="no" const="no" explicit="no" inline="no" refqual="rvalue" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+          <param>
+            <type>int</type>
+            <declname>N</declname>
+            <defname>N</defname>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classmuda_1_1_field_entry" kindref="compound">FieldEntry</ref>&lt; T, Layout, N, 1 &gt; &amp;</type>
+        <definition>FieldEntry&lt; T, Layout, N, 1 &gt; &amp; muda::FieldBuilder&lt; Layout &gt;::EntryProxy::vector</definition>
+        <argsstring>() &amp;&amp;</argsstring>
+        <name>vector</name>
+        <qualifiedname>muda::FieldBuilder::EntryProxy::vector</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/field/field_builder.h" line="33" column="20"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_field_builder_1_1_entry_proxy_1a06402ba7c375bd54864e9790299ef4bc" prot="public" static="no" const="no" explicit="no" inline="no" refqual="rvalue" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classmuda_1_1_field_entry" kindref="compound">FieldEntry</ref>&lt; T, Layout, 2, 1 &gt; &amp;</type>
+        <definition>FieldEntry&lt; T, Layout, 2, 1 &gt; &amp; muda::FieldBuilder&lt; Layout &gt;::EntryProxy::vector2</definition>
+        <argsstring>() &amp;&amp;</argsstring>
+        <name>vector2</name>
+        <qualifiedname>muda::FieldBuilder::EntryProxy::vector2</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/field/field_builder.h" line="36" column="20"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_field_builder_1_1_entry_proxy_1a964c5b47a762feff6e52a3a01a290403" prot="public" static="no" const="no" explicit="no" inline="no" refqual="rvalue" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classmuda_1_1_field_entry" kindref="compound">FieldEntry</ref>&lt; T, Layout, 3, 1 &gt; &amp;</type>
+        <definition>FieldEntry&lt; T, Layout, 3, 1 &gt; &amp; muda::FieldBuilder&lt; Layout &gt;::EntryProxy::vector3</definition>
+        <argsstring>() &amp;&amp;</argsstring>
+        <name>vector3</name>
+        <qualifiedname>muda::FieldBuilder::EntryProxy::vector3</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/field/field_builder.h" line="38" column="20"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_field_builder_1_1_entry_proxy_1ad655133792e7f4a0925845ff71e7ee19" prot="public" static="no" const="no" explicit="no" inline="no" refqual="rvalue" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classmuda_1_1_field_entry" kindref="compound">FieldEntry</ref>&lt; T, Layout, 4, 1 &gt; &amp;</type>
+        <definition>FieldEntry&lt; T, Layout, 4, 1 &gt; &amp; muda::FieldBuilder&lt; Layout &gt;::EntryProxy::vector4</definition>
+        <argsstring>() &amp;&amp;</argsstring>
+        <name>vector4</name>
+        <qualifiedname>muda::FieldBuilder::EntryProxy::vector4</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/field/field_builder.h" line="40" column="20"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_field_builder_1_1_entry_proxy_1a8c733221e3ab239395335d7ded678cd2" prot="public" static="no" const="no" explicit="no" inline="no" refqual="rvalue" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+          <param>
+            <type>int</type>
+            <declname>M</declname>
+            <defname>M</defname>
+          </param>
+          <param>
+            <type>int</type>
+            <declname>N</declname>
+            <defname>N</defname>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classmuda_1_1_field_entry" kindref="compound">FieldEntry</ref>&lt; T, Layout, M, N &gt; &amp;</type>
+        <definition>FieldEntry&lt; T, Layout, M, N &gt; &amp; muda::FieldBuilder&lt; Layout &gt;::EntryProxy::matrix</definition>
+        <argsstring>() &amp;&amp;</argsstring>
+        <name>matrix</name>
+        <qualifiedname>muda::FieldBuilder::EntryProxy::matrix</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/field/field_builder.h" line="43" column="20"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_field_builder_1_1_entry_proxy_1ad3c774565c7e287f6b7448efbd3cfe15" prot="public" static="no" const="no" explicit="no" inline="no" refqual="rvalue" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classmuda_1_1_field_entry" kindref="compound">FieldEntry</ref>&lt; T, Layout, 2, 2 &gt; &amp;</type>
+        <definition>FieldEntry&lt; T, Layout, 2, 2 &gt; &amp; muda::FieldBuilder&lt; Layout &gt;::EntryProxy::matrix2x2</definition>
+        <argsstring>() &amp;&amp;</argsstring>
+        <name>matrix2x2</name>
+        <qualifiedname>muda::FieldBuilder::EntryProxy::matrix2x2</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/field/field_builder.h" line="46" column="20"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_field_builder_1_1_entry_proxy_1a89b1b53872349a952f1778e820c2e6ad" prot="public" static="no" const="no" explicit="no" inline="no" refqual="rvalue" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classmuda_1_1_field_entry" kindref="compound">FieldEntry</ref>&lt; T, Layout, 3, 3 &gt; &amp;</type>
+        <definition>FieldEntry&lt; T, Layout, 3, 3 &gt; &amp; muda::FieldBuilder&lt; Layout &gt;::EntryProxy::matrix3x3</definition>
+        <argsstring>() &amp;&amp;</argsstring>
+        <name>matrix3x3</name>
+        <qualifiedname>muda::FieldBuilder::EntryProxy::matrix3x3</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/field/field_builder.h" line="48" column="20"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_field_builder_1_1_entry_proxy_1a481ca8f89f3cb0397c45f1b113612fe1" prot="public" static="no" const="no" explicit="no" inline="no" refqual="rvalue" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classmuda_1_1_field_entry" kindref="compound">FieldEntry</ref>&lt; T, Layout, 4, 4 &gt; &amp;</type>
+        <definition>FieldEntry&lt; T, Layout, 4, 4 &gt; &amp; muda::FieldBuilder&lt; Layout &gt;::EntryProxy::matrix4x4</definition>
+        <argsstring>() &amp;&amp;</argsstring>
+        <name>matrix4x4</name>
+        <qualifiedname>muda::FieldBuilder::EntryProxy::matrix4x4</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/field/field_builder.h" line="50" column="20"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/muda/ext/field/field_builder.h" line="17" column="5" bodyfile="src/muda/ext/field/field_builder.h" bodystart="18" bodyend="51"/>
+    <listofallmembers>
+      <member refid="classmuda_1_1_field_builder_1_1_entry_proxy_1aa0e32f11cc37bcfc6428c1771b60fdbe" prot="public" virt="non-virtual"><scope>muda::FieldBuilder::EntryProxy</scope><name>EntryProxy</name></member>
+      <member refid="classmuda_1_1_field_builder_1_1_entry_proxy_1abb78976f1d0560ba7832c93b05cec148" prot="private" virt="non-virtual"><scope>muda::FieldBuilder::EntryProxy</scope><name>m_builder</name></member>
+      <member refid="classmuda_1_1_field_builder_1_1_entry_proxy_1a424b0755c1f1f66c3aad86268f064bae" prot="private" virt="non-virtual"><scope>muda::FieldBuilder::EntryProxy</scope><name>m_name</name></member>
+      <member refid="classmuda_1_1_field_builder_1_1_entry_proxy_1a8c733221e3ab239395335d7ded678cd2" prot="public" virt="non-virtual"><scope>muda::FieldBuilder::EntryProxy</scope><name>matrix</name></member>
+      <member refid="classmuda_1_1_field_builder_1_1_entry_proxy_1ad3c774565c7e287f6b7448efbd3cfe15" prot="public" virt="non-virtual"><scope>muda::FieldBuilder::EntryProxy</scope><name>matrix2x2</name></member>
+      <member refid="classmuda_1_1_field_builder_1_1_entry_proxy_1a89b1b53872349a952f1778e820c2e6ad" prot="public" virt="non-virtual"><scope>muda::FieldBuilder::EntryProxy</scope><name>matrix3x3</name></member>
+      <member refid="classmuda_1_1_field_builder_1_1_entry_proxy_1a481ca8f89f3cb0397c45f1b113612fe1" prot="public" virt="non-virtual"><scope>muda::FieldBuilder::EntryProxy</scope><name>matrix4x4</name></member>
+      <member refid="classmuda_1_1_field_builder_1_1_entry_proxy_1a7f17e87706556613e0bd599b759f65c5" prot="public" virt="non-virtual"><scope>muda::FieldBuilder::EntryProxy</scope><name>scalar</name></member>
+      <member refid="classmuda_1_1_field_builder_1_1_entry_proxy_1ad495b8539f3a708257c51a493b5e1d2a" prot="public" virt="non-virtual"><scope>muda::FieldBuilder::EntryProxy</scope><name>vector</name></member>
+      <member refid="classmuda_1_1_field_builder_1_1_entry_proxy_1a06402ba7c375bd54864e9790299ef4bc" prot="public" virt="non-virtual"><scope>muda::FieldBuilder::EntryProxy</scope><name>vector2</name></member>
+      <member refid="classmuda_1_1_field_builder_1_1_entry_proxy_1a964c5b47a762feff6e52a3a01a290403" prot="public" virt="non-virtual"><scope>muda::FieldBuilder::EntryProxy</scope><name>vector3</name></member>
+      <member refid="classmuda_1_1_field_builder_1_1_entry_proxy_1ad655133792e7f4a0925845ff71e7ee19" prot="public" virt="non-virtual"><scope>muda::FieldBuilder::EntryProxy</scope><name>vector4</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

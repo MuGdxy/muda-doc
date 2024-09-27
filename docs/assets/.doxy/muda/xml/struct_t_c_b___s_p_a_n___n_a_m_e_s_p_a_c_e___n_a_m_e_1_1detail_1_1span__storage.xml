@@ -1,0 +1,98 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="struct_t_c_b___s_p_a_n___n_a_m_e_s_p_a_c_e___n_a_m_e_1_1detail_1_1span__storage" kind="struct" language="C++" prot="public">
+    <compoundname>TCB_SPAN_NAMESPACE_NAME::detail::span_storage</compoundname>
+    <templateparamlist>
+      <param>
+        <type>typename E</type>
+      </param>
+      <param>
+        <type>std::size_t</type>
+        <declname>S</declname>
+        <defname>S</defname>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_t_c_b___s_p_a_n___n_a_m_e_s_p_a_c_e___n_a_m_e_1_1detail_1_1span__storage_1ac06bc5b64bafee66082302031c13eca0" prot="public" static="no" mutable="no">
+        <type>E *</type>
+        <definition>E* TCB_SPAN_NAMESPACE_NAME::detail::span_storage&lt; E, S &gt;::ptr</definition>
+        <argsstring></argsstring>
+        <name>ptr</name>
+        <qualifiedname>TCB_SPAN_NAMESPACE_NAME::detail::span_storage::ptr</qualifiedname>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/mstl/tcb/span.hpp" line="160" column="7" bodyfile="src/muda/mstl/tcb/span.hpp" bodystart="160" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="struct_t_c_b___s_p_a_n___n_a_m_e_s_p_a_c_e___n_a_m_e_1_1detail_1_1span__storage_1a910543bb9f617d05749166a2fa6c3fdd" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr std::size_t</type>
+        <definition>constexpr std::size_t TCB_SPAN_NAMESPACE_NAME::detail::span_storage&lt; E, S &gt;::size</definition>
+        <argsstring></argsstring>
+        <name>size</name>
+        <qualifiedname>TCB_SPAN_NAMESPACE_NAME::detail::span_storage::size</qualifiedname>
+        <initializer>= S</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/mstl/tcb/span.hpp" line="161" column="34" bodyfile="src/muda/mstl/tcb/span.hpp" bodystart="161" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_t_c_b___s_p_a_n___n_a_m_e_s_p_a_c_e___n_a_m_e_1_1detail_1_1span__storage_1a62f42edc81ec41745e1a14e6861a835b" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>constexpr</type>
+        <definition>constexpr TCB_SPAN_NAMESPACE_NAME::detail::span_storage&lt; E, S &gt;::span_storage</definition>
+        <argsstring>() noexcept=default</argsstring>
+        <name>span_storage</name>
+        <qualifiedname>TCB_SPAN_NAMESPACE_NAME::detail::span_storage::span_storage</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/mstl/tcb/span.hpp" line="154" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_t_c_b___s_p_a_n___n_a_m_e_s_p_a_c_e___n_a_m_e_1_1detail_1_1span__storage_1afd8aa6a1a7d82e6668bed57cd2279c94" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>constexpr</type>
+        <definition>constexpr TCB_SPAN_NAMESPACE_NAME::detail::span_storage&lt; E, S &gt;::span_storage</definition>
+        <argsstring>(E *p_ptr, std::size_t) noexcept</argsstring>
+        <name>span_storage</name>
+        <qualifiedname>TCB_SPAN_NAMESPACE_NAME::detail::span_storage::span_storage</qualifiedname>
+        <param>
+          <type>E *</type>
+          <declname>p_ptr</declname>
+        </param>
+        <param>
+          <type>std::size_t</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/mstl/tcb/span.hpp" line="156" column="15" bodyfile="src/muda/mstl/tcb/span.hpp" bodystart="156" bodyend="158"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/muda/mstl/tcb/span.hpp" line="153" column="1" bodyfile="src/muda/mstl/tcb/span.hpp" bodystart="153" bodyend="162"/>
+    <listofallmembers>
+      <member refid="struct_t_c_b___s_p_a_n___n_a_m_e_s_p_a_c_e___n_a_m_e_1_1detail_1_1span__storage_1ac06bc5b64bafee66082302031c13eca0" prot="public" virt="non-virtual"><scope>TCB_SPAN_NAMESPACE_NAME::detail::span_storage</scope><name>ptr</name></member>
+      <member refid="struct_t_c_b___s_p_a_n___n_a_m_e_s_p_a_c_e___n_a_m_e_1_1detail_1_1span__storage_1a910543bb9f617d05749166a2fa6c3fdd" prot="public" virt="non-virtual"><scope>TCB_SPAN_NAMESPACE_NAME::detail::span_storage</scope><name>size</name></member>
+      <member refid="struct_t_c_b___s_p_a_n___n_a_m_e_s_p_a_c_e___n_a_m_e_1_1detail_1_1span__storage_1a62f42edc81ec41745e1a14e6861a835b" prot="public" virt="non-virtual"><scope>TCB_SPAN_NAMESPACE_NAME::detail::span_storage</scope><name>span_storage</name></member>
+      <member refid="struct_t_c_b___s_p_a_n___n_a_m_e_s_p_a_c_e___n_a_m_e_1_1detail_1_1span__storage_1afd8aa6a1a7d82e6668bed57cd2279c94" prot="public" virt="non-virtual"><scope>TCB_SPAN_NAMESPACE_NAME::detail::span_storage</scope><name>span_storage</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

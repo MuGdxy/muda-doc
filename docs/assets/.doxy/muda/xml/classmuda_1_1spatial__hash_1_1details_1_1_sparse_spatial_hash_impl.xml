@@ -1,0 +1,944 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classmuda_1_1spatial__hash_1_1details_1_1_sparse_spatial_hash_impl" kind="class" language="C++" prot="public">
+    <compoundname>muda::spatial_hash::details::SparseSpatialHashImpl</compoundname>
+    <templateparamlist>
+      <param>
+        <type>typename Hash</type>
+        <defval><ref refid="classmuda_1_1spatial__hash_1_1_morton" kindref="compound">Morton</ref>&lt;uint32_t&gt;</defval>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classmuda_1_1spatial__hash_1_1details_1_1_sparse_spatial_hash_impl_1a31b3068ebf4386b9c9e0ec841beaab34" prot="public" static="no">
+        <type><ref refid="classmuda_1_1spatial__hash_1_1_spatial_partition_cell" kindref="compound">SpatialPartitionCell</ref></type>
+        <definition>using muda::spatial_hash::details::SparseSpatialHashImpl&lt; Hash &gt;::Cell =  SpatialPartitionCell</definition>
+        <argsstring></argsstring>
+        <name>Cell</name>
+        <qualifiedname>muda::spatial_hash::details::SparseSpatialHashImpl::Cell</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/spatial_hash/sparse_spatial_hash_impl.h" line="171" column="9" bodyfile="src/muda/ext/geo/spatial_hash/sparse_spatial_hash_impl.h" bodystart="171" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classmuda_1_1spatial__hash_1_1details_1_1_sparse_spatial_hash_impl_1a695795f3a8c4e74cacdb5c67857d5e12" prot="public" static="no">
+        <type>uint32_t</type>
+        <definition>using muda::spatial_hash::details::SparseSpatialHashImpl&lt; Hash &gt;::U32 =  uint32_t</definition>
+        <argsstring></argsstring>
+        <name>U32</name>
+        <qualifiedname>muda::spatial_hash::details::SparseSpatialHashImpl::U32</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/spatial_hash/sparse_spatial_hash_impl.h" line="172" column="9" bodyfile="src/muda/ext/geo/spatial_hash/sparse_spatial_hash_impl.h" bodystart="172" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classmuda_1_1spatial__hash_1_1details_1_1_sparse_spatial_hash_impl_1a2c883526b1c748e044b1b56822d30666" prot="public" static="no">
+        <type>int32_t</type>
+        <definition>using muda::spatial_hash::details::SparseSpatialHashImpl&lt; Hash &gt;::I32 =  int32_t</definition>
+        <argsstring></argsstring>
+        <name>I32</name>
+        <qualifiedname>muda::spatial_hash::details::SparseSpatialHashImpl::I32</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/spatial_hash/sparse_spatial_hash_impl.h" line="173" column="9" bodyfile="src/muda/ext/geo/spatial_hash/sparse_spatial_hash_impl.h" bodystart="173" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classmuda_1_1spatial__hash_1_1details_1_1_sparse_spatial_hash_impl_1a55e1f4b61c54a2c5010437757ea35153" prot="public" static="no">
+        <type>Eigen::Vector3&lt; U32 &gt;</type>
+        <definition>using muda::spatial_hash::details::SparseSpatialHashImpl&lt; Hash &gt;::Vector3u =  Eigen::Vector3&lt;U32&gt;</definition>
+        <argsstring></argsstring>
+        <name>Vector3u</name>
+        <qualifiedname>muda::spatial_hash::details::SparseSpatialHashImpl::Vector3u</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/spatial_hash/sparse_spatial_hash_impl.h" line="174" column="9" bodyfile="src/muda/ext/geo/spatial_hash/sparse_spatial_hash_impl.h" bodystart="174" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classmuda_1_1spatial__hash_1_1details_1_1_sparse_spatial_hash_impl_1a417ea9c85b090d56ff751fb52862a83d" prot="public" static="no">
+        <type>Eigen::Vector3&lt; I32 &gt;</type>
+        <definition>using muda::spatial_hash::details::SparseSpatialHashImpl&lt; Hash &gt;::Vector3i =  Eigen::Vector3&lt;I32&gt;</definition>
+        <argsstring></argsstring>
+        <name>Vector3i</name>
+        <qualifiedname>muda::spatial_hash::details::SparseSpatialHashImpl::Vector3i</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/spatial_hash/sparse_spatial_hash_impl.h" line="175" column="9" bodyfile="src/muda/ext/geo/spatial_hash/sparse_spatial_hash_impl.h" bodystart="175" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classmuda_1_1spatial__hash_1_1details_1_1_sparse_spatial_hash_impl_1a7389b2ba3cdd6284a80e941b28c61020" prot="public" static="no">
+        <type>Eigen::Vector3f</type>
+        <definition>using muda::spatial_hash::details::SparseSpatialHashImpl&lt; Hash &gt;::Vector3 =  Eigen::Vector3f</definition>
+        <argsstring></argsstring>
+        <name>Vector3</name>
+        <qualifiedname>muda::spatial_hash::details::SparseSpatialHashImpl::Vector3</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/spatial_hash/sparse_spatial_hash_impl.h" line="176" column="9" bodyfile="src/muda/ext/geo/spatial_hash/sparse_spatial_hash_impl.h" bodystart="176" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classmuda_1_1spatial__hash_1_1details_1_1_sparse_spatial_hash_impl_1a6a267a7a52daaf33f27b9cd5c8fa1021" prot="public" static="no" mutable="no">
+        <type><ref refid="classmuda_1_1_stream" kindref="compound">muda::Stream</ref> &amp;</type>
+        <definition>muda::Stream&amp; muda::spatial_hash::details::SparseSpatialHashImpl&lt; Hash &gt;::m_stream</definition>
+        <argsstring></argsstring>
+        <name>m_stream</name>
+        <qualifiedname>muda::spatial_hash::details::SparseSpatialHashImpl::m_stream</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/spatial_hash/sparse_spatial_hash_impl.h" line="178" column="22" bodyfile="src/muda/ext/geo/spatial_hash/sparse_spatial_hash_impl.h" bodystart="178" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1spatial__hash_1_1details_1_1_sparse_spatial_hash_impl_1a7634ffb82159ddd4f625413fdeae7618" prot="public" static="no" mutable="no">
+        <type><ref refid="classmuda_1_1_buffer_view_t" kindref="compound">CBufferView</ref>&lt; <ref refid="classmuda_1_1spatial__hash_1_1_bounding_sphere" kindref="compound">BoundingSphere</ref> &gt;</type>
+        <definition>CBufferView&lt;BoundingSphere&gt; muda::spatial_hash::details::SparseSpatialHashImpl&lt; Hash &gt;::spheres</definition>
+        <argsstring></argsstring>
+        <name>spheres</name>
+        <qualifiedname>muda::spatial_hash::details::SparseSpatialHashImpl::spheres</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/spatial_hash/sparse_spatial_hash_impl.h" line="180" column="21" bodyfile="src/muda/ext/geo/spatial_hash/sparse_spatial_hash_impl.h" bodystart="180" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1spatial__hash_1_1details_1_1_sparse_spatial_hash_impl_1a00723dcf5ba337b57fdc11fc24edb245" prot="public" static="no" mutable="no">
+        <type><ref refid="classmuda_1_1_device_var" kindref="compound">DeviceVar</ref>&lt; int &gt;</type>
+        <definition>DeviceVar&lt;int&gt; muda::spatial_hash::details::SparseSpatialHashImpl&lt; Hash &gt;::cellCount</definition>
+        <argsstring></argsstring>
+        <name>cellCount</name>
+        <qualifiedname>muda::spatial_hash::details::SparseSpatialHashImpl::cellCount</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/spatial_hash/sparse_spatial_hash_impl.h" line="182" column="23" bodyfile="src/muda/ext/geo/spatial_hash/sparse_spatial_hash_impl.h" bodystart="182" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1spatial__hash_1_1details_1_1_sparse_spatial_hash_impl_1a13ba6905f5ed3df5bb4859882e054341" prot="public" static="no" mutable="no">
+        <type><ref refid="classmuda_1_1_device_var" kindref="compound">DeviceVar</ref>&lt; int &gt;</type>
+        <definition>DeviceVar&lt;int&gt; muda::spatial_hash::details::SparseSpatialHashImpl&lt; Hash &gt;::pairCount</definition>
+        <argsstring></argsstring>
+        <name>pairCount</name>
+        <qualifiedname>muda::spatial_hash::details::SparseSpatialHashImpl::pairCount</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/spatial_hash/sparse_spatial_hash_impl.h" line="183" column="23" bodyfile="src/muda/ext/geo/spatial_hash/sparse_spatial_hash_impl.h" bodystart="183" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1spatial__hash_1_1details_1_1_sparse_spatial_hash_impl_1a03eed7a432e35dc441f676cb2efc7ef4" prot="public" static="no" mutable="no">
+        <type><ref refid="classmuda_1_1_device_var" kindref="compound">DeviceVar</ref>&lt; float &gt;</type>
+        <definition>DeviceVar&lt;float&gt; muda::spatial_hash::details::SparseSpatialHashImpl&lt; Hash &gt;::maxRadius</definition>
+        <argsstring></argsstring>
+        <name>maxRadius</name>
+        <qualifiedname>muda::spatial_hash::details::SparseSpatialHashImpl::maxRadius</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/spatial_hash/sparse_spatial_hash_impl.h" line="184" column="21" bodyfile="src/muda/ext/geo/spatial_hash/sparse_spatial_hash_impl.h" bodystart="184" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1spatial__hash_1_1details_1_1_sparse_spatial_hash_impl_1ac9ade71962cb12932bfb6c6d13f4e0d0" prot="public" static="no" mutable="no">
+        <type><ref refid="classmuda_1_1_device_var" kindref="compound">DeviceVar</ref>&lt; Vector3 &gt;</type>
+        <definition>DeviceVar&lt;Vector3&gt; muda::spatial_hash::details::SparseSpatialHashImpl&lt; Hash &gt;::minCoord</definition>
+        <argsstring></argsstring>
+        <name>minCoord</name>
+        <qualifiedname>muda::spatial_hash::details::SparseSpatialHashImpl::minCoord</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/spatial_hash/sparse_spatial_hash_impl.h" line="185" column="19" bodyfile="src/muda/ext/geo/spatial_hash/sparse_spatial_hash_impl.h" bodystart="185" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1spatial__hash_1_1details_1_1_sparse_spatial_hash_impl_1a8a51d4a177c55778fbf03ae625bedfe1" prot="public" static="no" mutable="no">
+        <type><ref refid="classmuda_1_1_device_var" kindref="compound">DeviceVar</ref>&lt; <ref refid="classmuda_1_1spatial__hash_1_1_spatial_hash_table_info" kindref="compound">SpatialHashTableInfo</ref>&lt; Hash &gt; &gt;</type>
+        <definition>DeviceVar&lt;SpatialHashTableInfo&lt;Hash&gt; &gt; muda::spatial_hash::details::SparseSpatialHashImpl&lt; Hash &gt;::spatialHashConfig</definition>
+        <argsstring></argsstring>
+        <name>spatialHashConfig</name>
+        <qualifiedname>muda::spatial_hash::details::SparseSpatialHashImpl::spatialHashConfig</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/spatial_hash/sparse_spatial_hash_impl.h" line="187" column="19" bodyfile="src/muda/ext/geo/spatial_hash/sparse_spatial_hash_impl.h" bodystart="187" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1spatial__hash_1_1details_1_1_sparse_spatial_hash_impl_1aaf115739f836a25c27bedc0daf3d4bf5" prot="public" static="no" mutable="no">
+        <type><ref refid="classmuda_1_1spatial__hash_1_1_spatial_hash_table_info" kindref="compound">SpatialHashTableInfo</ref>&lt; Hash &gt;</type>
+        <definition>SpatialHashTableInfo&lt;Hash&gt; muda::spatial_hash::details::SparseSpatialHashImpl&lt; Hash &gt;::h_spatialHashConfig</definition>
+        <argsstring></argsstring>
+        <name>h_spatialHashConfig</name>
+        <qualifiedname>muda::spatial_hash::details::SparseSpatialHashImpl::h_spatialHashConfig</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/spatial_hash/sparse_spatial_hash_impl.h" line="188" column="41" bodyfile="src/muda/ext/geo/spatial_hash/sparse_spatial_hash_impl.h" bodystart="188" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1spatial__hash_1_1details_1_1_sparse_spatial_hash_impl_1a9774442fd3c4365f873e447e372f17a0" prot="public" static="no" mutable="no">
+        <type><ref refid="classmuda_1_1_device_buffer" kindref="compound">DeviceBuffer</ref>&lt; <ref refid="classmuda_1_1spatial__hash_1_1_spatial_partition_cell" kindref="compound">SpatialPartitionCell</ref> &gt;</type>
+        <definition>DeviceBuffer&lt;SpatialPartitionCell&gt; muda::spatial_hash::details::SparseSpatialHashImpl&lt; Hash &gt;::cellArrayValue</definition>
+        <argsstring></argsstring>
+        <name>cellArrayValue</name>
+        <qualifiedname>muda::spatial_hash::details::SparseSpatialHashImpl::cellArrayValue</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/spatial_hash/sparse_spatial_hash_impl.h" line="190" column="22" bodyfile="src/muda/ext/geo/spatial_hash/sparse_spatial_hash_impl.h" bodystart="190" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1spatial__hash_1_1details_1_1_sparse_spatial_hash_impl_1a10defcf697b90d5357f875f20d5fb369" prot="public" static="no" mutable="no">
+        <type><ref refid="classmuda_1_1_device_buffer" kindref="compound">DeviceBuffer</ref>&lt; <ref refid="classmuda_1_1spatial__hash_1_1_spatial_partition_cell" kindref="compound">SpatialPartitionCell</ref> &gt;</type>
+        <definition>DeviceBuffer&lt;SpatialPartitionCell&gt; muda::spatial_hash::details::SparseSpatialHashImpl&lt; Hash &gt;::cellArrayValueSorted</definition>
+        <argsstring></argsstring>
+        <name>cellArrayValueSorted</name>
+        <qualifiedname>muda::spatial_hash::details::SparseSpatialHashImpl::cellArrayValueSorted</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/spatial_hash/sparse_spatial_hash_impl.h" line="191" column="22" bodyfile="src/muda/ext/geo/spatial_hash/sparse_spatial_hash_impl.h" bodystart="191" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1spatial__hash_1_1details_1_1_sparse_spatial_hash_impl_1a0df48ee1a2101adc4f906055b874f9e8" prot="public" static="no" mutable="no">
+        <type><ref refid="classmuda_1_1_device_buffer" kindref="compound">DeviceBuffer</ref>&lt; int &gt;</type>
+        <definition>DeviceBuffer&lt;int&gt; muda::spatial_hash::details::SparseSpatialHashImpl&lt; Hash &gt;::cellArrayKey</definition>
+        <argsstring></argsstring>
+        <name>cellArrayKey</name>
+        <qualifiedname>muda::spatial_hash::details::SparseSpatialHashImpl::cellArrayKey</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/spatial_hash/sparse_spatial_hash_impl.h" line="192" column="39" bodyfile="src/muda/ext/geo/spatial_hash/sparse_spatial_hash_impl.h" bodystart="192" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1spatial__hash_1_1details_1_1_sparse_spatial_hash_impl_1a2cb6c41195760c29ec33d057dbf86335" prot="public" static="no" mutable="no">
+        <type><ref refid="classmuda_1_1_device_buffer" kindref="compound">DeviceBuffer</ref>&lt; int &gt;</type>
+        <definition>DeviceBuffer&lt;int&gt; muda::spatial_hash::details::SparseSpatialHashImpl&lt; Hash &gt;::cellArrayKeySorted</definition>
+        <argsstring></argsstring>
+        <name>cellArrayKeySorted</name>
+        <qualifiedname>muda::spatial_hash::details::SparseSpatialHashImpl::cellArrayKeySorted</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/spatial_hash/sparse_spatial_hash_impl.h" line="193" column="39" bodyfile="src/muda/ext/geo/spatial_hash/sparse_spatial_hash_impl.h" bodystart="193" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1spatial__hash_1_1details_1_1_sparse_spatial_hash_impl_1a9305bcb8e243d47d99418e84b2ada0e8" prot="public" static="no" mutable="no">
+        <type><ref refid="classmuda_1_1_device_buffer" kindref="compound">DeviceBuffer</ref>&lt; int &gt;</type>
+        <definition>DeviceBuffer&lt;int&gt; muda::spatial_hash::details::SparseSpatialHashImpl&lt; Hash &gt;::uniqueKey</definition>
+        <argsstring></argsstring>
+        <name>uniqueKey</name>
+        <qualifiedname>muda::spatial_hash::details::SparseSpatialHashImpl::uniqueKey</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/spatial_hash/sparse_spatial_hash_impl.h" line="195" column="22" bodyfile="src/muda/ext/geo/spatial_hash/sparse_spatial_hash_impl.h" bodystart="195" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1spatial__hash_1_1details_1_1_sparse_spatial_hash_impl_1abc5a0cbfea70848117759119e2452522" prot="public" static="no" mutable="no">
+        <type><ref refid="classmuda_1_1_device_var" kindref="compound">DeviceVar</ref>&lt; int &gt;</type>
+        <definition>DeviceVar&lt;int&gt; muda::spatial_hash::details::SparseSpatialHashImpl&lt; Hash &gt;::uniqueKeyCount</definition>
+        <argsstring></argsstring>
+        <name>uniqueKeyCount</name>
+        <qualifiedname>muda::spatial_hash::details::SparseSpatialHashImpl::uniqueKeyCount</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/spatial_hash/sparse_spatial_hash_impl.h" line="196" column="22" bodyfile="src/muda/ext/geo/spatial_hash/sparse_spatial_hash_impl.h" bodystart="196" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1spatial__hash_1_1details_1_1_sparse_spatial_hash_impl_1a58c1985b15afb6fb38b374653573df97" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int muda::spatial_hash::details::SparseSpatialHashImpl&lt; Hash &gt;::validCellCount</definition>
+        <argsstring></argsstring>
+        <name>validCellCount</name>
+        <qualifiedname>muda::spatial_hash::details::SparseSpatialHashImpl::validCellCount</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/spatial_hash/sparse_spatial_hash_impl.h" line="197" column="27" bodyfile="src/muda/ext/geo/spatial_hash/sparse_spatial_hash_impl.h" bodystart="197" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1spatial__hash_1_1details_1_1_sparse_spatial_hash_impl_1af83b9d1719358f67fb7609984499da06" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int muda::spatial_hash::details::SparseSpatialHashImpl&lt; Hash &gt;::sum</definition>
+        <argsstring></argsstring>
+        <name>sum</name>
+        <qualifiedname>muda::spatial_hash::details::SparseSpatialHashImpl::sum</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/spatial_hash/sparse_spatial_hash_impl.h" line="198" column="27" bodyfile="src/muda/ext/geo/spatial_hash/sparse_spatial_hash_impl.h" bodystart="198" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1spatial__hash_1_1details_1_1_sparse_spatial_hash_impl_1a466a8d0b778a04e1cb1009a2b39e38bc" prot="public" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t muda::spatial_hash::details::SparseSpatialHashImpl&lt; Hash &gt;::pairListOffset</definition>
+        <argsstring></argsstring>
+        <name>pairListOffset</name>
+        <qualifiedname>muda::spatial_hash::details::SparseSpatialHashImpl::pairListOffset</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/spatial_hash/sparse_spatial_hash_impl.h" line="199" column="27" bodyfile="src/muda/ext/geo/spatial_hash/sparse_spatial_hash_impl.h" bodystart="199" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1spatial__hash_1_1details_1_1_sparse_spatial_hash_impl_1ae3c2155d37149c0b47362deb781c64f9" prot="public" static="no" mutable="no">
+        <type><ref refid="classmuda_1_1_device_buffer" kindref="compound">DeviceBuffer</ref>&lt; int &gt;</type>
+        <definition>DeviceBuffer&lt;int&gt; muda::spatial_hash::details::SparseSpatialHashImpl&lt; Hash &gt;::objCountInCell</definition>
+        <argsstring></argsstring>
+        <name>objCountInCell</name>
+        <qualifiedname>muda::spatial_hash::details::SparseSpatialHashImpl::objCountInCell</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/spatial_hash/sparse_spatial_hash_impl.h" line="201" column="22" bodyfile="src/muda/ext/geo/spatial_hash/sparse_spatial_hash_impl.h" bodystart="201" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1spatial__hash_1_1details_1_1_sparse_spatial_hash_impl_1a8e24e1a2aa2efc23a3c749f695735e13" prot="public" static="no" mutable="no">
+        <type><ref refid="classmuda_1_1_device_buffer" kindref="compound">DeviceBuffer</ref>&lt; int &gt;</type>
+        <definition>DeviceBuffer&lt;int&gt; muda::spatial_hash::details::SparseSpatialHashImpl&lt; Hash &gt;::objCountInCellPrefixSum</definition>
+        <argsstring></argsstring>
+        <name>objCountInCellPrefixSum</name>
+        <qualifiedname>muda::spatial_hash::details::SparseSpatialHashImpl::objCountInCellPrefixSum</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/spatial_hash/sparse_spatial_hash_impl.h" line="202" column="22" bodyfile="src/muda/ext/geo/spatial_hash/sparse_spatial_hash_impl.h" bodystart="202" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1spatial__hash_1_1details_1_1_sparse_spatial_hash_impl_1aeb19196ba1e47037a6b2e65ac046fe85" prot="public" static="no" mutable="no">
+        <type><ref refid="classmuda_1_1_device_buffer" kindref="compound">DeviceBuffer</ref>&lt; int &gt;</type>
+        <definition>DeviceBuffer&lt;int&gt; muda::spatial_hash::details::SparseSpatialHashImpl&lt; Hash &gt;::collisionPairCount</definition>
+        <argsstring></argsstring>
+        <name>collisionPairCount</name>
+        <qualifiedname>muda::spatial_hash::details::SparseSpatialHashImpl::collisionPairCount</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/spatial_hash/sparse_spatial_hash_impl.h" line="204" column="22" bodyfile="src/muda/ext/geo/spatial_hash/sparse_spatial_hash_impl.h" bodystart="204" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1spatial__hash_1_1details_1_1_sparse_spatial_hash_impl_1a8af38ab7385ea2508024d8414e8474a5" prot="public" static="no" mutable="no">
+        <type><ref refid="classmuda_1_1_device_buffer" kindref="compound">DeviceBuffer</ref>&lt; int &gt;</type>
+        <definition>DeviceBuffer&lt;int&gt; muda::spatial_hash::details::SparseSpatialHashImpl&lt; Hash &gt;::collisionPairPrefixSum</definition>
+        <argsstring></argsstring>
+        <name>collisionPairPrefixSum</name>
+        <qualifiedname>muda::spatial_hash::details::SparseSpatialHashImpl::collisionPairPrefixSum</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/spatial_hash/sparse_spatial_hash_impl.h" line="205" column="22" bodyfile="src/muda/ext/geo/spatial_hash/sparse_spatial_hash_impl.h" bodystart="205" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1spatial__hash_1_1details_1_1_sparse_spatial_hash_impl_1a6bdd19942943298836c96bbe3ab6dece" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int muda::spatial_hash::details::SparseSpatialHashImpl&lt; Hash &gt;::level</definition>
+        <argsstring></argsstring>
+        <name>level</name>
+        <qualifiedname>muda::spatial_hash::details::SparseSpatialHashImpl::level</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/spatial_hash/sparse_spatial_hash_impl.h" line="207" column="14" bodyfile="src/muda/ext/geo/spatial_hash/sparse_spatial_hash_impl.h" bodystart="207" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1spatial__hash_1_1details_1_1_sparse_spatial_hash_impl_1a3d3029291b67285040db90c6e83454ed" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool muda::spatial_hash::details::SparseSpatialHashImpl&lt; Hash &gt;::empty_level</definition>
+        <argsstring></argsstring>
+        <name>empty_level</name>
+        <qualifiedname>muda::spatial_hash::details::SparseSpatialHashImpl::empty_level</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/spatial_hash/sparse_spatial_hash_impl.h" line="208" column="14" bodyfile="src/muda/ext/geo/spatial_hash/sparse_spatial_hash_impl.h" bodystart="208" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1spatial__hash_1_1details_1_1_sparse_spatial_hash_impl_1a5840474d2e612f2eaa63118f2d22b1fa" prot="public" static="no" mutable="no">
+        <type><ref refid="classmuda_1_1_device_buffer" kindref="compound">DeviceBuffer</ref>&lt; float &gt;</type>
+        <definition>DeviceBuffer&lt;float&gt; muda::spatial_hash::details::SparseSpatialHashImpl&lt; Hash &gt;::allRadius</definition>
+        <argsstring></argsstring>
+        <name>allRadius</name>
+        <qualifiedname>muda::spatial_hash::details::SparseSpatialHashImpl::allRadius</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/spatial_hash/sparse_spatial_hash_impl.h" line="222" column="30" bodyfile="src/muda/ext/geo/spatial_hash/sparse_spatial_hash_impl.h" bodystart="222" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1spatial__hash_1_1details_1_1_sparse_spatial_hash_impl_1a48d150a816215ab3877ed89a326f4621" prot="public" static="no" mutable="no">
+        <type><ref refid="classmuda_1_1_device_buffer" kindref="compound">DeviceBuffer</ref>&lt; Vector3 &gt;</type>
+        <definition>DeviceBuffer&lt;Vector3&gt; muda::spatial_hash::details::SparseSpatialHashImpl&lt; Hash &gt;::allCoords</definition>
+        <argsstring></argsstring>
+        <name>allCoords</name>
+        <qualifiedname>muda::spatial_hash::details::SparseSpatialHashImpl::allCoords</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/spatial_hash/sparse_spatial_hash_impl.h" line="223" column="28" bodyfile="src/muda/ext/geo/spatial_hash/sparse_spatial_hash_impl.h" bodystart="223" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1spatial__hash_1_1details_1_1_sparse_spatial_hash_impl_1ac321708eaaa5dc436541b83302196097" prot="public" static="no" mutable="no">
+        <type><ref refid="classmuda_1_1_device_buffer" kindref="compound">DeviceBuffer</ref>&lt; int &gt;</type>
+        <definition>DeviceBuffer&lt;int&gt; muda::spatial_hash::details::SparseSpatialHashImpl&lt; Hash &gt;::cellToCollisionPairUpperBound</definition>
+        <argsstring></argsstring>
+        <name>cellToCollisionPairUpperBound</name>
+        <qualifiedname>muda::spatial_hash::details::SparseSpatialHashImpl::cellToCollisionPairUpperBound</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/spatial_hash/sparse_spatial_hash_impl.h" line="224" column="32" bodyfile="src/muda/ext/geo/spatial_hash/sparse_spatial_hash_impl.h" bodystart="224" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1spatial__hash_1_1details_1_1_sparse_spatial_hash_impl_1a39de74290640ebf318b22198eafe74ac" prot="public" static="no" mutable="no">
+        <type><ref refid="classmuda_1_1_device_buffer" kindref="compound">DeviceBuffer</ref>&lt; int &gt;</type>
+        <definition>DeviceBuffer&lt;int&gt; muda::spatial_hash::details::SparseSpatialHashImpl&lt; Hash &gt;::cellToCollisionPairUpperBoundPrefixSum</definition>
+        <argsstring></argsstring>
+        <name>cellToCollisionPairUpperBoundPrefixSum</name>
+        <qualifiedname>muda::spatial_hash::details::SparseSpatialHashImpl::cellToCollisionPairUpperBoundPrefixSum</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/spatial_hash/sparse_spatial_hash_impl.h" line="225" column="32" bodyfile="src/muda/ext/geo/spatial_hash/sparse_spatial_hash_impl.h" bodystart="225" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1spatial__hash_1_1details_1_1_sparse_spatial_hash_impl_1a459f638fd225981227d649ccabebc453" prot="public" static="no" mutable="no">
+        <type><ref refid="classmuda_1_1_device_buffer" kindref="compound">DeviceBuffer</ref>&lt; int &gt;</type>
+        <definition>DeviceBuffer&lt;int&gt; muda::spatial_hash::details::SparseSpatialHashImpl&lt; Hash &gt;::potentialCollisionPairIdToCellIndexBuffer</definition>
+        <argsstring></argsstring>
+        <name>potentialCollisionPairIdToCellIndexBuffer</name>
+        <qualifiedname>muda::spatial_hash::details::SparseSpatialHashImpl::potentialCollisionPairIdToCellIndexBuffer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/spatial_hash/sparse_spatial_hash_impl.h" line="226" column="32" bodyfile="src/muda/ext/geo/spatial_hash/sparse_spatial_hash_impl.h" bodystart="226" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1spatial__hash_1_1details_1_1_sparse_spatial_hash_impl_1a5c6ce80fe48787a94537f5598d939f23" prot="public" static="no" mutable="no">
+        <type><ref refid="classmuda_1_1_device_buffer" kindref="compound">DeviceBuffer</ref>&lt; int &gt;</type>
+        <definition>DeviceBuffer&lt;int&gt; muda::spatial_hash::details::SparseSpatialHashImpl&lt; Hash &gt;::potentialCollisionPairIdToCellIndex</definition>
+        <argsstring></argsstring>
+        <name>potentialCollisionPairIdToCellIndex</name>
+        <qualifiedname>muda::spatial_hash::details::SparseSpatialHashImpl::potentialCollisionPairIdToCellIndex</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/spatial_hash/sparse_spatial_hash_impl.h" line="227" column="32" bodyfile="src/muda/ext/geo/spatial_hash/sparse_spatial_hash_impl.h" bodystart="227" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1spatial__hash_1_1details_1_1_sparse_spatial_hash_impl_1a21e917adf7b02aa891400d57da1aa1ad" prot="public" static="no" mutable="no">
+        <type><ref refid="classmuda_1_1_device_buffer" kindref="compound">DeviceBuffer</ref>&lt; <ref refid="classmuda_1_1spatial__hash_1_1_collision_pair" kindref="compound">CollisionPair</ref> &gt;</type>
+        <definition>DeviceBuffer&lt;CollisionPair&gt; muda::spatial_hash::details::SparseSpatialHashImpl&lt; Hash &gt;::collisionPairBuffer</definition>
+        <argsstring></argsstring>
+        <name>collisionPairBuffer</name>
+        <qualifiedname>muda::spatial_hash::details::SparseSpatialHashImpl::collisionPairBuffer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/spatial_hash/sparse_spatial_hash_impl.h" line="228" column="22" bodyfile="src/muda/ext/geo/spatial_hash/sparse_spatial_hash_impl.h" bodystart="228" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1spatial__hash_1_1details_1_1_sparse_spatial_hash_impl_1a205bb70664bad6d1047f1d05818ff94a" prot="public" static="no" mutable="no">
+        <type><ref refid="classmuda_1_1_device_var" kindref="compound">DeviceVar</ref>&lt; int &gt;</type>
+        <definition>DeviceVar&lt;int&gt; muda::spatial_hash::details::SparseSpatialHashImpl&lt; Hash &gt;::validCollisionPairCount</definition>
+        <argsstring></argsstring>
+        <name>validCollisionPairCount</name>
+        <qualifiedname>muda::spatial_hash::details::SparseSpatialHashImpl::validCollisionPairCount</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/spatial_hash/sparse_spatial_hash_impl.h" line="229" column="32" bodyfile="src/muda/ext/geo/spatial_hash/sparse_spatial_hash_impl.h" bodystart="229" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmuda_1_1spatial__hash_1_1details_1_1_sparse_spatial_hash_impl_1a97da93ef8caee23719d6ae2184cd30ca" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>muda::spatial_hash::details::SparseSpatialHashImpl&lt; Hash &gt;::SparseSpatialHashImpl</definition>
+        <argsstring>(muda::Stream &amp;stream=muda::Stream::Default())</argsstring>
+        <name>SparseSpatialHashImpl</name>
+        <qualifiedname>muda::spatial_hash::details::SparseSpatialHashImpl::SparseSpatialHashImpl</qualifiedname>
+        <param>
+          <type><ref refid="classmuda_1_1_stream" kindref="compound">muda::Stream</ref> &amp;</type>
+          <declname>stream</declname>
+          <defval>muda::Stream::Default()</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/spatial_hash/sparse_spatial_hash_impl.h" line="211" column="9" bodyfile="src/muda/ext/geo/spatial_hash/sparse_spatial_hash_impl.h" bodystart="211" bodyend="214"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1spatial__hash_1_1details_1_1_sparse_spatial_hash_impl_1a39282d3dcf92ab6b45780e26eea31852" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Pred</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void muda::spatial_hash::details::SparseSpatialHashImpl&lt; Hash &gt;::detect</definition>
+        <argsstring>(CBufferView&lt; BoundingSphere &gt; boundingSphereList, bool append, DeviceBuffer&lt; CollisionPair &gt; &amp;collisionPairs, Pred &amp;&amp;pred)</argsstring>
+        <name>detect</name>
+        <qualifiedname>muda::spatial_hash::details::SparseSpatialHashImpl::detect</qualifiedname>
+        <param>
+          <type><ref refid="classmuda_1_1_buffer_view_t" kindref="compound">CBufferView</ref>&lt; <ref refid="classmuda_1_1spatial__hash_1_1_bounding_sphere" kindref="compound">BoundingSphere</ref> &gt;</type>
+          <declname>boundingSphereList</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>append</declname>
+        </param>
+        <param>
+          <type><ref refid="classmuda_1_1_device_buffer" kindref="compound">DeviceBuffer</ref>&lt; <ref refid="classmuda_1_1spatial__hash_1_1_collision_pair" kindref="compound">CollisionPair</ref> &gt; &amp;</type>
+          <declname>collisionPairs</declname>
+        </param>
+        <param>
+          <type>Pred &amp;&amp;</type>
+          <declname>pred</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/spatial_hash/sparse_spatial_hash_impl.h" line="217" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1spatial__hash_1_1details_1_1_sparse_spatial_hash_impl_1acf11a1dc28594a74097a9f3baebe5b26" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void muda::spatial_hash::details::SparseSpatialHashImpl&lt; Hash &gt;::calculate_hash_table_basic_info</definition>
+        <argsstring>()</argsstring>
+        <name>calculate_hash_table_basic_info</name>
+        <qualifiedname>muda::spatial_hash::details::SparseSpatialHashImpl::calculate_hash_table_basic_info</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/spatial_hash/sparse_spatial_hash_impl.h" line="231" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1spatial__hash_1_1details_1_1_sparse_spatial_hash_impl_1ac6877f48564e5a4ca6b2c5d127bf6127" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void muda::spatial_hash::details::SparseSpatialHashImpl&lt; Hash &gt;::setup_hash_table</definition>
+        <argsstring>()</argsstring>
+        <name>setup_hash_table</name>
+        <qualifiedname>muda::spatial_hash::details::SparseSpatialHashImpl::setup_hash_table</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/spatial_hash/sparse_spatial_hash_impl.h" line="233" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1spatial__hash_1_1details_1_1_sparse_spatial_hash_impl_1a6429dae3dad9f807ddeac267e80d4612" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void muda::spatial_hash::details::SparseSpatialHashImpl&lt; Hash &gt;::fill_hash_cells</definition>
+        <argsstring>()</argsstring>
+        <name>fill_hash_cells</name>
+        <qualifiedname>muda::spatial_hash::details::SparseSpatialHashImpl::fill_hash_cells</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/spatial_hash/sparse_spatial_hash_impl.h" line="235" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1spatial__hash_1_1details_1_1_sparse_spatial_hash_impl_1a0990c617f00384855404c96a8409c56c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void muda::spatial_hash::details::SparseSpatialHashImpl&lt; Hash &gt;::count_object_per_cell</definition>
+        <argsstring>()</argsstring>
+        <name>count_object_per_cell</name>
+        <qualifiedname>muda::spatial_hash::details::SparseSpatialHashImpl::count_object_per_cell</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/spatial_hash/sparse_spatial_hash_impl.h" line="237" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1spatial__hash_1_1details_1_1_sparse_spatial_hash_impl_1ab6594891436d05c54b38d81a14acca1b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Pred</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void muda::spatial_hash::details::SparseSpatialHashImpl&lt; Hash &gt;::simple_setup_collision_pairs</definition>
+        <argsstring>(Pred &amp;&amp;pred, DeviceBuffer&lt; CollisionPair &gt; &amp;collisionPairs)</argsstring>
+        <name>simple_setup_collision_pairs</name>
+        <qualifiedname>muda::spatial_hash::details::SparseSpatialHashImpl::simple_setup_collision_pairs</qualifiedname>
+        <param>
+          <type>Pred &amp;&amp;</type>
+          <declname>pred</declname>
+        </param>
+        <param>
+          <type><ref refid="classmuda_1_1_device_buffer" kindref="compound">DeviceBuffer</ref>&lt; <ref refid="classmuda_1_1spatial__hash_1_1_collision_pair" kindref="compound">CollisionPair</ref> &gt; &amp;</type>
+          <declname>collisionPairs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/spatial_hash/sparse_spatial_hash_impl.h" line="240" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1spatial__hash_1_1details_1_1_sparse_spatial_hash_impl_1a15278ec8d18eb4b9a7eb54c4a28c270d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Pred</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void muda::spatial_hash::details::SparseSpatialHashImpl&lt; Hash &gt;::simple_count_collision_pairs</definition>
+        <argsstring>(Pred &amp;&amp;pred)</argsstring>
+        <name>simple_count_collision_pairs</name>
+        <qualifiedname>muda::spatial_hash::details::SparseSpatialHashImpl::simple_count_collision_pairs</qualifiedname>
+        <param>
+          <type>Pred &amp;&amp;</type>
+          <declname>pred</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/spatial_hash/sparse_spatial_hash_impl.h" line="243" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1spatial__hash_1_1details_1_1_sparse_spatial_hash_impl_1ab231ca084e4e45a123939eb03e655c0a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void muda::spatial_hash::details::SparseSpatialHashImpl&lt; Hash &gt;::alloc_collision_pair_list</definition>
+        <argsstring>(DeviceBuffer&lt; CollisionPair &gt; &amp;collisionPairs, int totalCollisionPairCount)</argsstring>
+        <name>alloc_collision_pair_list</name>
+        <qualifiedname>muda::spatial_hash::details::SparseSpatialHashImpl::alloc_collision_pair_list</qualifiedname>
+        <param>
+          <type><ref refid="classmuda_1_1_device_buffer" kindref="compound">DeviceBuffer</ref>&lt; <ref refid="classmuda_1_1spatial__hash_1_1_collision_pair" kindref="compound">CollisionPair</ref> &gt; &amp;</type>
+          <declname>collisionPairs</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>totalCollisionPairCount</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/spatial_hash/sparse_spatial_hash_impl.h" line="245" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1spatial__hash_1_1details_1_1_sparse_spatial_hash_impl_1a9293cbb23cdbed3bcf4a51b818b5ec86" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Pred</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void muda::spatial_hash::details::SparseSpatialHashImpl&lt; Hash &gt;::simple_fill_collision_pair_list</definition>
+        <argsstring>(DeviceBuffer&lt; CollisionPair &gt; &amp;collisionPairs, Pred &amp;&amp;pred)</argsstring>
+        <name>simple_fill_collision_pair_list</name>
+        <qualifiedname>muda::spatial_hash::details::SparseSpatialHashImpl::simple_fill_collision_pair_list</qualifiedname>
+        <param>
+          <type><ref refid="classmuda_1_1_device_buffer" kindref="compound">DeviceBuffer</ref>&lt; <ref refid="classmuda_1_1spatial__hash_1_1_collision_pair" kindref="compound">CollisionPair</ref> &gt; &amp;</type>
+          <declname>collisionPairs</declname>
+        </param>
+        <param>
+          <type>Pred &amp;&amp;</type>
+          <declname>pred</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/spatial_hash/sparse_spatial_hash_impl.h" line="249" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1spatial__hash_1_1details_1_1_sparse_spatial_hash_impl_1a1df9da692677546e4e90ab65205f8a6c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Pred</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void muda::spatial_hash::details::SparseSpatialHashImpl&lt; Hash &gt;::balanced_setup_collision_pairs</definition>
+        <argsstring>(bool append, DeviceBuffer&lt; CollisionPair &gt; &amp;collisionPairs, Pred &amp;&amp;pred)</argsstring>
+        <name>balanced_setup_collision_pairs</name>
+        <qualifiedname>muda::spatial_hash::details::SparseSpatialHashImpl::balanced_setup_collision_pairs</qualifiedname>
+        <param>
+          <type>bool</type>
+          <declname>append</declname>
+        </param>
+        <param>
+          <type><ref refid="classmuda_1_1_device_buffer" kindref="compound">DeviceBuffer</ref>&lt; <ref refid="classmuda_1_1spatial__hash_1_1_collision_pair" kindref="compound">CollisionPair</ref> &gt; &amp;</type>
+          <declname>collisionPairs</declname>
+        </param>
+        <param>
+          <type>Pred &amp;&amp;</type>
+          <declname>pred</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/spatial_hash/sparse_spatial_hash_impl.h" line="253" column="14"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="3">
+        <label>muda::BufferViewT&lt; muda::spatial_hash::BoundingSphere &gt;</label>
+        <link refid="classmuda_1_1_buffer_view_t"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>muda::DeviceBuffer&lt; Vector3 &gt;</label>
+        <link refid="classmuda_1_1_device_buffer"/>
+      </node>
+      <node id="12">
+        <label>muda::DeviceBuffer&lt; float &gt;</label>
+        <link refid="classmuda_1_1_device_buffer"/>
+      </node>
+      <node id="11">
+        <label>muda::DeviceBuffer&lt; int &gt;</label>
+        <link refid="classmuda_1_1_device_buffer"/>
+      </node>
+      <node id="14">
+        <label>muda::DeviceBuffer&lt; muda::spatial_hash::CollisionPair &gt;</label>
+        <link refid="classmuda_1_1_device_buffer"/>
+      </node>
+      <node id="10">
+        <label>muda::DeviceBuffer&lt; muda::spatial_hash::SpatialPartitionCell &gt;</label>
+        <link refid="classmuda_1_1_device_buffer"/>
+      </node>
+      <node id="7">
+        <label>muda::DeviceVar&lt; Vector3 &gt;</label>
+        <link refid="classmuda_1_1_device_var"/>
+      </node>
+      <node id="6">
+        <label>muda::DeviceVar&lt; float &gt;</label>
+        <link refid="classmuda_1_1_device_var"/>
+      </node>
+      <node id="5">
+        <label>muda::DeviceVar&lt; int &gt;</label>
+        <link refid="classmuda_1_1_device_var"/>
+      </node>
+      <node id="8">
+        <label>muda::DeviceVar&lt; muda::spatial_hash::SpatialHashTableInfo&lt; Morton&lt; uint32_t &gt; &gt; &gt;</label>
+        <link refid="classmuda_1_1_device_var"/>
+      </node>
+      <node id="9">
+        <label>muda::spatial_hash::SpatialHashTableInfo&lt; Morton&lt; uint32_t &gt; &gt;</label>
+        <link refid="classmuda_1_1spatial__hash_1_1_spatial_hash_table_info"/>
+      </node>
+      <node id="4">
+        <label>muda::ViewBase&lt; IsConst &gt;</label>
+        <link refid="classmuda_1_1_view_base"/>
+      </node>
+      <node id="2">
+        <label>muda::Stream</label>
+        <link refid="classmuda_1_1_stream"/>
+      </node>
+      <node id="1">
+        <label>muda::spatial_hash::details::SparseSpatialHashImpl&lt; Hash &gt;</label>
+        <link refid="classmuda_1_1spatial__hash_1_1details_1_1_sparse_spatial_hash_impl"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>m_stream</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>spheres</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>cellCount</edgelabel>
+          <edgelabel>pairCount</edgelabel>
+          <edgelabel>uniqueKeyCount</edgelabel>
+          <edgelabel>validCollisionPairCount</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>maxRadius</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>minCoord</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>spatialHashConfig</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>h_spatialHashConfig</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>cellArrayValue</edgelabel>
+          <edgelabel>cellArrayValueSorted</edgelabel>
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>cellArrayKey</edgelabel>
+          <edgelabel>cellArrayKeySorted</edgelabel>
+          <edgelabel>cellToCollisionPairUpperBound</edgelabel>
+          <edgelabel>cellToCollisionPairUpperBoundPrefixSum</edgelabel>
+          <edgelabel>collisionPairCount</edgelabel>
+          <edgelabel>collisionPairPrefixSum</edgelabel>
+          <edgelabel>objCountInCell</edgelabel>
+          <edgelabel>objCountInCellPrefixSum</edgelabel>
+          <edgelabel>potentialCollisionPairIdToCellIndex</edgelabel>
+          <edgelabel>potentialCollisionPairIdToCellIndexBuffer</edgelabel>
+          <edgelabel>...</edgelabel>
+        </childnode>
+        <childnode refid="12" relation="usage">
+          <edgelabel>allRadius</edgelabel>
+        </childnode>
+        <childnode refid="13" relation="usage">
+          <edgelabel>allCoords</edgelabel>
+        </childnode>
+        <childnode refid="14" relation="usage">
+          <edgelabel>collisionPairBuffer</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="src/muda/ext/geo/spatial_hash/sparse_spatial_hash_impl.h" line="168" column="5" bodyfile="src/muda/ext/geo/spatial_hash/sparse_spatial_hash_impl.h" bodystart="169" bodyend="256"/>
+    <listofallmembers>
+      <member refid="classmuda_1_1spatial__hash_1_1details_1_1_sparse_spatial_hash_impl_1a48d150a816215ab3877ed89a326f4621" prot="public" virt="non-virtual"><scope>muda::spatial_hash::details::SparseSpatialHashImpl</scope><name>allCoords</name></member>
+      <member refid="classmuda_1_1spatial__hash_1_1details_1_1_sparse_spatial_hash_impl_1ab231ca084e4e45a123939eb03e655c0a" prot="public" virt="non-virtual"><scope>muda::spatial_hash::details::SparseSpatialHashImpl</scope><name>alloc_collision_pair_list</name></member>
+      <member refid="classmuda_1_1spatial__hash_1_1details_1_1_sparse_spatial_hash_impl_1a5840474d2e612f2eaa63118f2d22b1fa" prot="public" virt="non-virtual"><scope>muda::spatial_hash::details::SparseSpatialHashImpl</scope><name>allRadius</name></member>
+      <member refid="classmuda_1_1spatial__hash_1_1details_1_1_sparse_spatial_hash_impl_1a1df9da692677546e4e90ab65205f8a6c" prot="public" virt="non-virtual"><scope>muda::spatial_hash::details::SparseSpatialHashImpl</scope><name>balanced_setup_collision_pairs</name></member>
+      <member refid="classmuda_1_1spatial__hash_1_1details_1_1_sparse_spatial_hash_impl_1acf11a1dc28594a74097a9f3baebe5b26" prot="public" virt="non-virtual"><scope>muda::spatial_hash::details::SparseSpatialHashImpl</scope><name>calculate_hash_table_basic_info</name></member>
+      <member refid="classmuda_1_1spatial__hash_1_1details_1_1_sparse_spatial_hash_impl_1a31b3068ebf4386b9c9e0ec841beaab34" prot="public" virt="non-virtual"><scope>muda::spatial_hash::details::SparseSpatialHashImpl</scope><name>Cell</name></member>
+      <member refid="classmuda_1_1spatial__hash_1_1details_1_1_sparse_spatial_hash_impl_1a0df48ee1a2101adc4f906055b874f9e8" prot="public" virt="non-virtual"><scope>muda::spatial_hash::details::SparseSpatialHashImpl</scope><name>cellArrayKey</name></member>
+      <member refid="classmuda_1_1spatial__hash_1_1details_1_1_sparse_spatial_hash_impl_1a2cb6c41195760c29ec33d057dbf86335" prot="public" virt="non-virtual"><scope>muda::spatial_hash::details::SparseSpatialHashImpl</scope><name>cellArrayKeySorted</name></member>
+      <member refid="classmuda_1_1spatial__hash_1_1details_1_1_sparse_spatial_hash_impl_1a9774442fd3c4365f873e447e372f17a0" prot="public" virt="non-virtual"><scope>muda::spatial_hash::details::SparseSpatialHashImpl</scope><name>cellArrayValue</name></member>
+      <member refid="classmuda_1_1spatial__hash_1_1details_1_1_sparse_spatial_hash_impl_1a10defcf697b90d5357f875f20d5fb369" prot="public" virt="non-virtual"><scope>muda::spatial_hash::details::SparseSpatialHashImpl</scope><name>cellArrayValueSorted</name></member>
+      <member refid="classmuda_1_1spatial__hash_1_1details_1_1_sparse_spatial_hash_impl_1a00723dcf5ba337b57fdc11fc24edb245" prot="public" virt="non-virtual"><scope>muda::spatial_hash::details::SparseSpatialHashImpl</scope><name>cellCount</name></member>
+      <member refid="classmuda_1_1spatial__hash_1_1details_1_1_sparse_spatial_hash_impl_1ac321708eaaa5dc436541b83302196097" prot="public" virt="non-virtual"><scope>muda::spatial_hash::details::SparseSpatialHashImpl</scope><name>cellToCollisionPairUpperBound</name></member>
+      <member refid="classmuda_1_1spatial__hash_1_1details_1_1_sparse_spatial_hash_impl_1a39de74290640ebf318b22198eafe74ac" prot="public" virt="non-virtual"><scope>muda::spatial_hash::details::SparseSpatialHashImpl</scope><name>cellToCollisionPairUpperBoundPrefixSum</name></member>
+      <member refid="classmuda_1_1spatial__hash_1_1details_1_1_sparse_spatial_hash_impl_1a21e917adf7b02aa891400d57da1aa1ad" prot="public" virt="non-virtual"><scope>muda::spatial_hash::details::SparseSpatialHashImpl</scope><name>collisionPairBuffer</name></member>
+      <member refid="classmuda_1_1spatial__hash_1_1details_1_1_sparse_spatial_hash_impl_1aeb19196ba1e47037a6b2e65ac046fe85" prot="public" virt="non-virtual"><scope>muda::spatial_hash::details::SparseSpatialHashImpl</scope><name>collisionPairCount</name></member>
+      <member refid="classmuda_1_1spatial__hash_1_1details_1_1_sparse_spatial_hash_impl_1a8af38ab7385ea2508024d8414e8474a5" prot="public" virt="non-virtual"><scope>muda::spatial_hash::details::SparseSpatialHashImpl</scope><name>collisionPairPrefixSum</name></member>
+      <member refid="classmuda_1_1spatial__hash_1_1details_1_1_sparse_spatial_hash_impl_1a0990c617f00384855404c96a8409c56c" prot="public" virt="non-virtual"><scope>muda::spatial_hash::details::SparseSpatialHashImpl</scope><name>count_object_per_cell</name></member>
+      <member refid="classmuda_1_1spatial__hash_1_1details_1_1_sparse_spatial_hash_impl_1a39282d3dcf92ab6b45780e26eea31852" prot="public" virt="non-virtual"><scope>muda::spatial_hash::details::SparseSpatialHashImpl</scope><name>detect</name></member>
+      <member refid="classmuda_1_1spatial__hash_1_1details_1_1_sparse_spatial_hash_impl_1a3d3029291b67285040db90c6e83454ed" prot="public" virt="non-virtual"><scope>muda::spatial_hash::details::SparseSpatialHashImpl</scope><name>empty_level</name></member>
+      <member refid="classmuda_1_1spatial__hash_1_1details_1_1_sparse_spatial_hash_impl_1a6429dae3dad9f807ddeac267e80d4612" prot="public" virt="non-virtual"><scope>muda::spatial_hash::details::SparseSpatialHashImpl</scope><name>fill_hash_cells</name></member>
+      <member refid="classmuda_1_1spatial__hash_1_1details_1_1_sparse_spatial_hash_impl_1aaf115739f836a25c27bedc0daf3d4bf5" prot="public" virt="non-virtual"><scope>muda::spatial_hash::details::SparseSpatialHashImpl</scope><name>h_spatialHashConfig</name></member>
+      <member refid="classmuda_1_1spatial__hash_1_1details_1_1_sparse_spatial_hash_impl_1a2c883526b1c748e044b1b56822d30666" prot="public" virt="non-virtual"><scope>muda::spatial_hash::details::SparseSpatialHashImpl</scope><name>I32</name></member>
+      <member refid="classmuda_1_1spatial__hash_1_1details_1_1_sparse_spatial_hash_impl_1a6bdd19942943298836c96bbe3ab6dece" prot="public" virt="non-virtual"><scope>muda::spatial_hash::details::SparseSpatialHashImpl</scope><name>level</name></member>
+      <member refid="classmuda_1_1spatial__hash_1_1details_1_1_sparse_spatial_hash_impl_1a6a267a7a52daaf33f27b9cd5c8fa1021" prot="public" virt="non-virtual"><scope>muda::spatial_hash::details::SparseSpatialHashImpl</scope><name>m_stream</name></member>
+      <member refid="classmuda_1_1spatial__hash_1_1details_1_1_sparse_spatial_hash_impl_1a03eed7a432e35dc441f676cb2efc7ef4" prot="public" virt="non-virtual"><scope>muda::spatial_hash::details::SparseSpatialHashImpl</scope><name>maxRadius</name></member>
+      <member refid="classmuda_1_1spatial__hash_1_1details_1_1_sparse_spatial_hash_impl_1ac9ade71962cb12932bfb6c6d13f4e0d0" prot="public" virt="non-virtual"><scope>muda::spatial_hash::details::SparseSpatialHashImpl</scope><name>minCoord</name></member>
+      <member refid="classmuda_1_1spatial__hash_1_1details_1_1_sparse_spatial_hash_impl_1ae3c2155d37149c0b47362deb781c64f9" prot="public" virt="non-virtual"><scope>muda::spatial_hash::details::SparseSpatialHashImpl</scope><name>objCountInCell</name></member>
+      <member refid="classmuda_1_1spatial__hash_1_1details_1_1_sparse_spatial_hash_impl_1a8e24e1a2aa2efc23a3c749f695735e13" prot="public" virt="non-virtual"><scope>muda::spatial_hash::details::SparseSpatialHashImpl</scope><name>objCountInCellPrefixSum</name></member>
+      <member refid="classmuda_1_1spatial__hash_1_1details_1_1_sparse_spatial_hash_impl_1a13ba6905f5ed3df5bb4859882e054341" prot="public" virt="non-virtual"><scope>muda::spatial_hash::details::SparseSpatialHashImpl</scope><name>pairCount</name></member>
+      <member refid="classmuda_1_1spatial__hash_1_1details_1_1_sparse_spatial_hash_impl_1a466a8d0b778a04e1cb1009a2b39e38bc" prot="public" virt="non-virtual"><scope>muda::spatial_hash::details::SparseSpatialHashImpl</scope><name>pairListOffset</name></member>
+      <member refid="classmuda_1_1spatial__hash_1_1details_1_1_sparse_spatial_hash_impl_1a5c6ce80fe48787a94537f5598d939f23" prot="public" virt="non-virtual"><scope>muda::spatial_hash::details::SparseSpatialHashImpl</scope><name>potentialCollisionPairIdToCellIndex</name></member>
+      <member refid="classmuda_1_1spatial__hash_1_1details_1_1_sparse_spatial_hash_impl_1a459f638fd225981227d649ccabebc453" prot="public" virt="non-virtual"><scope>muda::spatial_hash::details::SparseSpatialHashImpl</scope><name>potentialCollisionPairIdToCellIndexBuffer</name></member>
+      <member refid="classmuda_1_1spatial__hash_1_1details_1_1_sparse_spatial_hash_impl_1ac6877f48564e5a4ca6b2c5d127bf6127" prot="public" virt="non-virtual"><scope>muda::spatial_hash::details::SparseSpatialHashImpl</scope><name>setup_hash_table</name></member>
+      <member refid="classmuda_1_1spatial__hash_1_1details_1_1_sparse_spatial_hash_impl_1a15278ec8d18eb4b9a7eb54c4a28c270d" prot="public" virt="non-virtual"><scope>muda::spatial_hash::details::SparseSpatialHashImpl</scope><name>simple_count_collision_pairs</name></member>
+      <member refid="classmuda_1_1spatial__hash_1_1details_1_1_sparse_spatial_hash_impl_1a9293cbb23cdbed3bcf4a51b818b5ec86" prot="public" virt="non-virtual"><scope>muda::spatial_hash::details::SparseSpatialHashImpl</scope><name>simple_fill_collision_pair_list</name></member>
+      <member refid="classmuda_1_1spatial__hash_1_1details_1_1_sparse_spatial_hash_impl_1ab6594891436d05c54b38d81a14acca1b" prot="public" virt="non-virtual"><scope>muda::spatial_hash::details::SparseSpatialHashImpl</scope><name>simple_setup_collision_pairs</name></member>
+      <member refid="classmuda_1_1spatial__hash_1_1details_1_1_sparse_spatial_hash_impl_1a97da93ef8caee23719d6ae2184cd30ca" prot="public" virt="non-virtual"><scope>muda::spatial_hash::details::SparseSpatialHashImpl</scope><name>SparseSpatialHashImpl</name></member>
+      <member refid="classmuda_1_1spatial__hash_1_1details_1_1_sparse_spatial_hash_impl_1a8a51d4a177c55778fbf03ae625bedfe1" prot="public" virt="non-virtual"><scope>muda::spatial_hash::details::SparseSpatialHashImpl</scope><name>spatialHashConfig</name></member>
+      <member refid="classmuda_1_1spatial__hash_1_1details_1_1_sparse_spatial_hash_impl_1a7634ffb82159ddd4f625413fdeae7618" prot="public" virt="non-virtual"><scope>muda::spatial_hash::details::SparseSpatialHashImpl</scope><name>spheres</name></member>
+      <member refid="classmuda_1_1spatial__hash_1_1details_1_1_sparse_spatial_hash_impl_1af83b9d1719358f67fb7609984499da06" prot="public" virt="non-virtual"><scope>muda::spatial_hash::details::SparseSpatialHashImpl</scope><name>sum</name></member>
+      <member refid="classmuda_1_1spatial__hash_1_1details_1_1_sparse_spatial_hash_impl_1a695795f3a8c4e74cacdb5c67857d5e12" prot="public" virt="non-virtual"><scope>muda::spatial_hash::details::SparseSpatialHashImpl</scope><name>U32</name></member>
+      <member refid="classmuda_1_1spatial__hash_1_1details_1_1_sparse_spatial_hash_impl_1a9305bcb8e243d47d99418e84b2ada0e8" prot="public" virt="non-virtual"><scope>muda::spatial_hash::details::SparseSpatialHashImpl</scope><name>uniqueKey</name></member>
+      <member refid="classmuda_1_1spatial__hash_1_1details_1_1_sparse_spatial_hash_impl_1abc5a0cbfea70848117759119e2452522" prot="public" virt="non-virtual"><scope>muda::spatial_hash::details::SparseSpatialHashImpl</scope><name>uniqueKeyCount</name></member>
+      <member refid="classmuda_1_1spatial__hash_1_1details_1_1_sparse_spatial_hash_impl_1a58c1985b15afb6fb38b374653573df97" prot="public" virt="non-virtual"><scope>muda::spatial_hash::details::SparseSpatialHashImpl</scope><name>validCellCount</name></member>
+      <member refid="classmuda_1_1spatial__hash_1_1details_1_1_sparse_spatial_hash_impl_1a205bb70664bad6d1047f1d05818ff94a" prot="public" virt="non-virtual"><scope>muda::spatial_hash::details::SparseSpatialHashImpl</scope><name>validCollisionPairCount</name></member>
+      <member refid="classmuda_1_1spatial__hash_1_1details_1_1_sparse_spatial_hash_impl_1a7389b2ba3cdd6284a80e941b28c61020" prot="public" virt="non-virtual"><scope>muda::spatial_hash::details::SparseSpatialHashImpl</scope><name>Vector3</name></member>
+      <member refid="classmuda_1_1spatial__hash_1_1details_1_1_sparse_spatial_hash_impl_1a417ea9c85b090d56ff751fb52862a83d" prot="public" virt="non-virtual"><scope>muda::spatial_hash::details::SparseSpatialHashImpl</scope><name>Vector3i</name></member>
+      <member refid="classmuda_1_1spatial__hash_1_1details_1_1_sparse_spatial_hash_impl_1a55e1f4b61c54a2c5010437757ea35153" prot="public" virt="non-virtual"><scope>muda::spatial_hash::details::SparseSpatialHashImpl</scope><name>Vector3u</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

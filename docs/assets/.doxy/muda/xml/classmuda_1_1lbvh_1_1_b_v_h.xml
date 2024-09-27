@@ -1,0 +1,594 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classmuda_1_1lbvh_1_1_b_v_h" kind="class" language="C++" prot="public">
+    <compoundname>muda::lbvh::BVH</compoundname>
+    <templateparamlist>
+      <param>
+        <type>typename Real</type>
+      </param>
+      <param>
+        <type>typename Object</type>
+      </param>
+      <param>
+        <type>typename AABBGetter</type>
+      </param>
+      <param>
+        <type>typename MortonCodeCalculator</type>
+        <defval><ref refid="structmuda_1_1lbvh_1_1_default_morton_code_calculator" kindref="compound">DefaultMortonCodeCalculator</ref>&lt;Real, Object&gt;</defval>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classmuda_1_1lbvh_1_1_b_v_h_1a43bbc923a170ac88ed8a438dc59ef5d7" prot="public" static="no">
+        <type>Real</type>
+        <definition>using muda::lbvh::BVH&lt; Real, Object, AABBGetter, MortonCodeCalculator &gt;::real_type =  Real</definition>
+        <argsstring></argsstring>
+        <name>real_type</name>
+        <qualifiedname>muda::lbvh::BVH::real_type</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/lbvh/bvh.h" line="92" column="5" bodyfile="src/muda/ext/geo/lbvh/bvh.h" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classmuda_1_1lbvh_1_1_b_v_h_1aeba812019543de9027859694a0081f6a" prot="public" static="no">
+        <type>std::uint32_t</type>
+        <definition>using muda::lbvh::BVH&lt; Real, Object, AABBGetter, MortonCodeCalculator &gt;::index_type =  std::uint32_t</definition>
+        <argsstring></argsstring>
+        <name>index_type</name>
+        <qualifiedname>muda::lbvh::BVH::index_type</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/lbvh/bvh.h" line="93" column="5" bodyfile="src/muda/ext/geo/lbvh/bvh.h" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classmuda_1_1lbvh_1_1_b_v_h_1a0810f56902699ac46069758187da7abb" prot="public" static="no">
+        <type>Object</type>
+        <definition>using muda::lbvh::BVH&lt; Real, Object, AABBGetter, MortonCodeCalculator &gt;::object_type =  Object</definition>
+        <argsstring></argsstring>
+        <name>object_type</name>
+        <qualifiedname>muda::lbvh::BVH::object_type</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/lbvh/bvh.h" line="94" column="5" bodyfile="src/muda/ext/geo/lbvh/bvh.h" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classmuda_1_1lbvh_1_1_b_v_h_1ae8a655c51d8ed5ae5265d38cac2e7d19" prot="public" static="no">
+        <type><ref refid="structmuda_1_1lbvh_1_1_a_a_b_b" kindref="compound">AABB</ref>&lt; real_type &gt;</type>
+        <definition>using muda::lbvh::BVH&lt; Real, Object, AABBGetter, MortonCodeCalculator &gt;::aabb_type =  AABB&lt;real_type&gt;</definition>
+        <argsstring></argsstring>
+        <name>aabb_type</name>
+        <qualifiedname>muda::lbvh::BVH::aabb_type</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/lbvh/bvh.h" line="95" column="5" bodyfile="src/muda/ext/geo/lbvh/bvh.h" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classmuda_1_1lbvh_1_1_b_v_h_1abfe9f3d41a55a6ab136c035d09ad0c19" prot="public" static="no">
+        <type><ref refid="structmuda_1_1lbvh_1_1details_1_1_node" kindref="compound">details::Node</ref></type>
+        <definition>using muda::lbvh::BVH&lt; Real, Object, AABBGetter, MortonCodeCalculator &gt;::node_type =  details::Node</definition>
+        <argsstring></argsstring>
+        <name>node_type</name>
+        <qualifiedname>muda::lbvh::BVH::node_type</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/lbvh/bvh.h" line="96" column="5" bodyfile="src/muda/ext/geo/lbvh/bvh.h" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classmuda_1_1lbvh_1_1_b_v_h_1acc37d11048d2654f6bd39b72471e53e5" prot="public" static="no">
+        <type>AABBGetter</type>
+        <definition>using muda::lbvh::BVH&lt; Real, Object, AABBGetter, MortonCodeCalculator &gt;::aabb_getter_type =  AABBGetter</definition>
+        <argsstring></argsstring>
+        <name>aabb_getter_type</name>
+        <qualifiedname>muda::lbvh::BVH::aabb_getter_type</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/lbvh/bvh.h" line="97" column="5" bodyfile="src/muda/ext/geo/lbvh/bvh.h" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classmuda_1_1lbvh_1_1_b_v_h_1a2414d555ede490f7354b8d24e11c6412" prot="public" static="no">
+        <type>MortonCodeCalculator</type>
+        <definition>using muda::lbvh::BVH&lt; Real, Object, AABBGetter, MortonCodeCalculator &gt;::morton_code_calculator_type =  MortonCodeCalculator</definition>
+        <argsstring></argsstring>
+        <name>morton_code_calculator_type</name>
+        <qualifiedname>muda::lbvh::BVH::morton_code_calculator_type</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/lbvh/bvh.h" line="98" column="5" bodyfile="src/muda/ext/geo/lbvh/bvh.h" bodystart="98" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classmuda_1_1lbvh_1_1_b_v_h_1afb535fa007deb6e154951ee7fe29fbf2" prot="private" static="no" mutable="no">
+        <type><ref refid="classmuda_1_1_device_vector" kindref="compound">muda::DeviceVector</ref>&lt; uint32_t &gt;</type>
+        <definition>muda::DeviceVector&lt;uint32_t&gt; muda::lbvh::BVH&lt; Real, Object, AABBGetter, MortonCodeCalculator &gt;::m_morton</definition>
+        <argsstring></argsstring>
+        <name>m_morton</name>
+        <qualifiedname>muda::lbvh::BVH::m_morton</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/lbvh/bvh.h" line="344" column="38" bodyfile="src/muda/ext/geo/lbvh/bvh.h" bodystart="344" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1lbvh_1_1_b_v_h_1a5a251502c1ea3860f1551fe81525333e" prot="private" static="no" mutable="no">
+        <type><ref refid="classmuda_1_1_device_vector" kindref="compound">muda::DeviceVector</ref>&lt; uint32_t &gt;</type>
+        <definition>muda::DeviceVector&lt;uint32_t&gt; muda::lbvh::BVH&lt; Real, Object, AABBGetter, MortonCodeCalculator &gt;::m_indices</definition>
+        <argsstring></argsstring>
+        <name>m_indices</name>
+        <qualifiedname>muda::lbvh::BVH::m_indices</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/lbvh/bvh.h" line="345" column="38" bodyfile="src/muda/ext/geo/lbvh/bvh.h" bodystart="345" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1lbvh_1_1_b_v_h_1aadeffef10e51ffb07cbbbaa7abaab555" prot="private" static="no" mutable="no">
+        <type><ref refid="classmuda_1_1_device_vector" kindref="compound">muda::DeviceVector</ref>&lt; unsigned long long int &gt;</type>
+        <definition>muda::DeviceVector&lt;unsigned long long int&gt; muda::lbvh::BVH&lt; Real, Object, AABBGetter, MortonCodeCalculator &gt;::m_morton64</definition>
+        <argsstring></argsstring>
+        <name>m_morton64</name>
+        <qualifiedname>muda::lbvh::BVH::m_morton64</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/lbvh/bvh.h" line="346" column="24" bodyfile="src/muda/ext/geo/lbvh/bvh.h" bodystart="346" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1lbvh_1_1_b_v_h_1a7e174411dd7b058c0dc7c5015bc8b0e5" prot="private" static="no" mutable="no">
+        <type><ref refid="classmuda_1_1_device_vector" kindref="compound">muda::DeviceVector</ref>&lt; int &gt;</type>
+        <definition>muda::DeviceVector&lt;int&gt; muda::lbvh::BVH&lt; Real, Object, AABBGetter, MortonCodeCalculator &gt;::m_flag_container</definition>
+        <argsstring></argsstring>
+        <name>m_flag_container</name>
+        <qualifiedname>muda::lbvh::BVH::m_flag_container</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/lbvh/bvh.h" line="347" column="43" bodyfile="src/muda/ext/geo/lbvh/bvh.h" bodystart="347" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1lbvh_1_1_b_v_h_1adf244a7d0af754d30e28892d1bebefd0" prot="private" static="no" mutable="no">
+        <type><ref refid="classmuda_1_1_device_vector" kindref="compound">muda::DeviceVector</ref>&lt; object_type &gt;</type>
+        <definition>muda::DeviceVector&lt;object_type&gt; muda::lbvh::BVH&lt; Real, Object, AABBGetter, MortonCodeCalculator &gt;::m_objects</definition>
+        <argsstring></argsstring>
+        <name>m_objects</name>
+        <qualifiedname>muda::lbvh::BVH::m_objects</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/lbvh/bvh.h" line="349" column="24" bodyfile="src/muda/ext/geo/lbvh/bvh.h" bodystart="349" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1lbvh_1_1_b_v_h_1ac18230b24debc8cc6b41203f85fccaa9" prot="private" static="no" mutable="no">
+        <type><ref refid="classmuda_1_1_device_vector" kindref="compound">muda::DeviceVector</ref>&lt; <ref refid="structmuda_1_1lbvh_1_1_a_a_b_b" kindref="compound">aabb_type</ref> &gt;</type>
+        <definition>muda::DeviceVector&lt;aabb_type&gt; muda::lbvh::BVH&lt; Real, Object, AABBGetter, MortonCodeCalculator &gt;::m_aabbs</definition>
+        <argsstring></argsstring>
+        <name>m_aabbs</name>
+        <qualifiedname>muda::lbvh::BVH::m_aabbs</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/lbvh/bvh.h" line="350" column="26" bodyfile="src/muda/ext/geo/lbvh/bvh.h" bodystart="350" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1lbvh_1_1_b_v_h_1ad8dad9c684f7922b63ea75bcd30bd868" prot="private" static="no" mutable="no">
+        <type><ref refid="classmuda_1_1_device_vector" kindref="compound">muda::DeviceVector</ref>&lt; <ref refid="structmuda_1_1lbvh_1_1details_1_1_node" kindref="compound">node_type</ref> &gt;</type>
+        <definition>muda::DeviceVector&lt;node_type&gt; muda::lbvh::BVH&lt; Real, Object, AABBGetter, MortonCodeCalculator &gt;::m_nodes</definition>
+        <argsstring></argsstring>
+        <name>m_nodes</name>
+        <qualifiedname>muda::lbvh::BVH::m_nodes</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/lbvh/bvh.h" line="351" column="26" bodyfile="src/muda/ext/geo/lbvh/bvh.h" bodystart="351" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1lbvh_1_1_b_v_h_1abbdfabded7c1ba0ae19248e25e0803ae" prot="private" static="no" mutable="yes">
+        <type>bool</type>
+        <definition>bool muda::lbvh::BVH&lt; Real, Object, AABBGetter, MortonCodeCalculator &gt;::m_host_dirty</definition>
+        <argsstring></argsstring>
+        <name>m_host_dirty</name>
+        <qualifiedname>muda::lbvh::BVH::m_host_dirty</qualifiedname>
+        <initializer>= true</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/lbvh/bvh.h" line="353" column="46" bodyfile="src/muda/ext/geo/lbvh/bvh.h" bodystart="353" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1lbvh_1_1_b_v_h_1add630d32a0dbcced938fba8d4a3f90e7" prot="private" static="no" mutable="yes">
+        <type>thrust::host_vector&lt; object_type &gt;</type>
+        <definition>thrust::host_vector&lt;object_type&gt; muda::lbvh::BVH&lt; Real, Object, AABBGetter, MortonCodeCalculator &gt;::m_h_objects</definition>
+        <argsstring></argsstring>
+        <name>m_h_objects</name>
+        <qualifiedname>muda::lbvh::BVH::m_h_objects</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/lbvh/bvh.h" line="354" column="33" bodyfile="src/muda/ext/geo/lbvh/bvh.h" bodystart="354" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1lbvh_1_1_b_v_h_1a660637728583718d7fd244d61e4e8a88" prot="private" static="no" mutable="yes">
+        <type>thrust::host_vector&lt; <ref refid="structmuda_1_1lbvh_1_1_a_a_b_b" kindref="compound">aabb_type</ref> &gt;</type>
+        <definition>thrust::host_vector&lt;aabb_type&gt; muda::lbvh::BVH&lt; Real, Object, AABBGetter, MortonCodeCalculator &gt;::m_h_aabbs</definition>
+        <argsstring></argsstring>
+        <name>m_h_aabbs</name>
+        <qualifiedname>muda::lbvh::BVH::m_h_aabbs</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/lbvh/bvh.h" line="355" column="35" bodyfile="src/muda/ext/geo/lbvh/bvh.h" bodystart="355" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1lbvh_1_1_b_v_h_1a4bfee120cdc96643470c7ca45e66ea67" prot="private" static="no" mutable="yes">
+        <type>thrust::host_vector&lt; <ref refid="structmuda_1_1lbvh_1_1details_1_1_node" kindref="compound">node_type</ref> &gt;</type>
+        <definition>thrust::host_vector&lt;node_type&gt; muda::lbvh::BVH&lt; Real, Object, AABBGetter, MortonCodeCalculator &gt;::m_h_nodes</definition>
+        <argsstring></argsstring>
+        <name>m_h_nodes</name>
+        <qualifiedname>muda::lbvh::BVH::m_h_nodes</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/lbvh/bvh.h" line="356" column="35" bodyfile="src/muda/ext/geo/lbvh/bvh.h" bodystart="356" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmuda_1_1lbvh_1_1_b_v_h_1acfdec047cb68e828949fb1cdcadef6a4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>muda::lbvh::BVH&lt; Real, Object, AABBGetter, MortonCodeCalculator &gt;::BVH</definition>
+        <argsstring>()=default</argsstring>
+        <name>BVH</name>
+        <qualifiedname>muda::lbvh::BVH::BVH</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/lbvh/bvh.h" line="101" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1lbvh_1_1_b_v_h_1aec15a2a428032a7df5b3d68f07753108" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>muda::lbvh::BVH&lt; Real, Object, AABBGetter, MortonCodeCalculator &gt;::~BVH</definition>
+        <argsstring>()=default</argsstring>
+        <name>~BVH</name>
+        <qualifiedname>muda::lbvh::BVH::~BVH</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/lbvh/bvh.h" line="102" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1lbvh_1_1_b_v_h_1a9d1fff2983c0a4a1a6023bc8f2728236" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>muda::lbvh::BVH&lt; Real, Object, AABBGetter, MortonCodeCalculator &gt;::BVH</definition>
+        <argsstring>(const BVH &amp;)=default</argsstring>
+        <name>BVH</name>
+        <qualifiedname>muda::lbvh::BVH::BVH</qualifiedname>
+        <param>
+          <type>const <ref refid="classmuda_1_1lbvh_1_1_b_v_h" kindref="compound">BVH</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/lbvh/bvh.h" line="103" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1lbvh_1_1_b_v_h_1a99f7d22306f9eb0a71e9b0dc2059004d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>muda::lbvh::BVH&lt; Real, Object, AABBGetter, MortonCodeCalculator &gt;::BVH</definition>
+        <argsstring>(BVH &amp;&amp;)=default</argsstring>
+        <name>BVH</name>
+        <qualifiedname>muda::lbvh::BVH::BVH</qualifiedname>
+        <param>
+          <type><ref refid="classmuda_1_1lbvh_1_1_b_v_h" kindref="compound">BVH</ref> &amp;&amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/lbvh/bvh.h" line="104" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1lbvh_1_1_b_v_h_1ada603412282e6f5dee88c7113ac50cee" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classmuda_1_1lbvh_1_1_b_v_h" kindref="compound">BVH</ref> &amp;</type>
+        <definition>BVH &amp; muda::lbvh::BVH&lt; Real, Object, AABBGetter, MortonCodeCalculator &gt;::operator=</definition>
+        <argsstring>(const BVH &amp;)=default</argsstring>
+        <name>operator=</name>
+        <qualifiedname>muda::lbvh::BVH::operator=</qualifiedname>
+        <param>
+          <type>const <ref refid="classmuda_1_1lbvh_1_1_b_v_h" kindref="compound">BVH</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/lbvh/bvh.h" line="105" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1lbvh_1_1_b_v_h_1a9eb441af866824159cc1651425928a53" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classmuda_1_1lbvh_1_1_b_v_h" kindref="compound">BVH</ref> &amp;</type>
+        <definition>BVH &amp; muda::lbvh::BVH&lt; Real, Object, AABBGetter, MortonCodeCalculator &gt;::operator=</definition>
+        <argsstring>(BVH &amp;&amp;)=default</argsstring>
+        <name>operator=</name>
+        <qualifiedname>muda::lbvh::BVH::operator=</qualifiedname>
+        <param>
+          <type><ref refid="classmuda_1_1lbvh_1_1_b_v_h" kindref="compound">BVH</ref> &amp;&amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/lbvh/bvh.h" line="106" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1lbvh_1_1_b_v_h_1a0def5805896146e6c77804a32e9904b2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void muda::lbvh::BVH&lt; Real, Object, AABBGetter, MortonCodeCalculator &gt;::clear</definition>
+        <argsstring>()</argsstring>
+        <name>clear</name>
+        <qualifiedname>muda::lbvh::BVH::clear</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/lbvh/bvh.h" line="108" column="10" bodyfile="src/muda/ext/geo/lbvh/bvh.h" bodystart="108" bodyend="114"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1lbvh_1_1_b_v_h_1a1b4f0c3e269f76508192f1d18acf6999" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type><ref refid="classmuda_1_1lbvh_1_1details_1_1_b_v_h_viewer_base" kindref="compound">BVHViewer</ref>&lt; real_type, object_type &gt;</type>
+        <definition>BVHViewer&lt; real_type, object_type &gt; muda::lbvh::BVH&lt; Real, Object, AABBGetter, MortonCodeCalculator &gt;::viewer</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>viewer</name>
+        <qualifiedname>muda::lbvh::BVH::viewer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/lbvh/bvh.h" line="116" column="15" bodyfile="src/muda/ext/geo/lbvh/bvh.h" bodystart="116" bodyend="124"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1lbvh_1_1_b_v_h_1ad09074109bcac139ae933e70f412d08c" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type><ref refid="classmuda_1_1lbvh_1_1details_1_1_b_v_h_viewer_base" kindref="compound">CBVHViewer</ref>&lt; real_type, object_type &gt;</type>
+        <definition>CBVHViewer&lt; real_type, object_type &gt; muda::lbvh::BVH&lt; Real, Object, AABBGetter, MortonCodeCalculator &gt;::cviewer</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>cviewer</name>
+        <qualifiedname>muda::lbvh::BVH::cviewer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/lbvh/bvh.h" line="126" column="16" bodyfile="src/muda/ext/geo/lbvh/bvh.h" bodystart="126" bodyend="134"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1lbvh_1_1_b_v_h_1ab0b7ff208cbdecdbcb492ec3d144166b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void muda::lbvh::BVH&lt; Real, Object, AABBGetter, MortonCodeCalculator &gt;::build</definition>
+        <argsstring>(cudaStream_t stream=nullptr)</argsstring>
+        <name>build</name>
+        <qualifiedname>muda::lbvh::BVH::build</qualifiedname>
+        <param>
+          <type>cudaStream_t</type>
+          <declname>stream</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/lbvh/bvh.h" line="137" column="10" bodyfile="src/muda/ext/geo/lbvh/bvh.h" bodystart="137" bodyend="320"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1lbvh_1_1_b_v_h_1ad87f67756f80acd1f802815bd37c97e9" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>const auto &amp;</type>
+        <definition>const auto &amp; muda::lbvh::BVH&lt; Real, Object, AABBGetter, MortonCodeCalculator &gt;::objects</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>objects</name>
+        <qualifiedname>muda::lbvh::BVH::objects</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/lbvh/bvh.h" line="322" column="16" bodyfile="src/muda/ext/geo/lbvh/bvh.h" bodystart="322" bodyend="322"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1lbvh_1_1_b_v_h_1a3a3fab1d04fdb0ceade242732449ce88" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>auto &amp;</type>
+        <definition>auto &amp; muda::lbvh::BVH&lt; Real, Object, AABBGetter, MortonCodeCalculator &gt;::objects</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>objects</name>
+        <qualifiedname>muda::lbvh::BVH::objects</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/lbvh/bvh.h" line="323" column="16" bodyfile="src/muda/ext/geo/lbvh/bvh.h" bodystart="323" bodyend="323"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1lbvh_1_1_b_v_h_1ab2af4b20fc5580f04369160d009476af" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>const auto &amp;</type>
+        <definition>const auto &amp; muda::lbvh::BVH&lt; Real, Object, AABBGetter, MortonCodeCalculator &gt;::aabbs</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>aabbs</name>
+        <qualifiedname>muda::lbvh::BVH::aabbs</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/lbvh/bvh.h" line="324" column="16" bodyfile="src/muda/ext/geo/lbvh/bvh.h" bodystart="324" bodyend="324"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1lbvh_1_1_b_v_h_1a24934d4595548c0a7a03ee80d9352e01" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>const auto &amp;</type>
+        <definition>const auto &amp; muda::lbvh::BVH&lt; Real, Object, AABBGetter, MortonCodeCalculator &gt;::nodes</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>nodes</name>
+        <qualifiedname>muda::lbvh::BVH::nodes</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/lbvh/bvh.h" line="325" column="16" bodyfile="src/muda/ext/geo/lbvh/bvh.h" bodystart="325" bodyend="325"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1lbvh_1_1_b_v_h_1aa4a036f01fc798b446808a5366a687b0" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>const auto &amp;</type>
+        <definition>const auto &amp; muda::lbvh::BVH&lt; Real, Object, AABBGetter, MortonCodeCalculator &gt;::host_objects</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>host_objects</name>
+        <qualifiedname>muda::lbvh::BVH::host_objects</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/lbvh/bvh.h" line="327" column="16" bodyfile="src/muda/ext/geo/lbvh/bvh.h" bodystart="327" bodyend="331"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1lbvh_1_1_b_v_h_1a159075b079d56c0b0f4df256efa08bb0" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>const auto &amp;</type>
+        <definition>const auto &amp; muda::lbvh::BVH&lt; Real, Object, AABBGetter, MortonCodeCalculator &gt;::host_aabbs</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>host_aabbs</name>
+        <qualifiedname>muda::lbvh::BVH::host_aabbs</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/lbvh/bvh.h" line="332" column="16" bodyfile="src/muda/ext/geo/lbvh/bvh.h" bodystart="332" bodyend="336"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1lbvh_1_1_b_v_h_1ad099af752eaaea326fb0ed029785a48e" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>const auto &amp;</type>
+        <definition>const auto &amp; muda::lbvh::BVH&lt; Real, Object, AABBGetter, MortonCodeCalculator &gt;::host_nodes</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>host_nodes</name>
+        <qualifiedname>muda::lbvh::BVH::host_nodes</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/lbvh/bvh.h" line="337" column="16" bodyfile="src/muda/ext/geo/lbvh/bvh.h" bodystart="337" bodyend="341"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classmuda_1_1lbvh_1_1_b_v_h_1a39b9c0297cad50c17bddf64e9abc1e44" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void muda::lbvh::BVH&lt; Real, Object, AABBGetter, MortonCodeCalculator &gt;::download_if_dirty</definition>
+        <argsstring>() const</argsstring>
+        <name>download_if_dirty</name>
+        <qualifiedname>muda::lbvh::BVH::download_if_dirty</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/lbvh/bvh.h" line="358" column="10" bodyfile="src/muda/ext/geo/lbvh/bvh.h" bodystart="358" bodyend="367"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/muda/ext/geo/lbvh/bvh.h" line="89" column="1" bodyfile="src/muda/ext/geo/lbvh/bvh.h" bodystart="90" bodyend="368"/>
+    <listofallmembers>
+      <member refid="classmuda_1_1lbvh_1_1_b_v_h_1acc37d11048d2654f6bd39b72471e53e5" prot="public" virt="non-virtual"><scope>muda::lbvh::BVH</scope><name>aabb_getter_type</name></member>
+      <member refid="classmuda_1_1lbvh_1_1_b_v_h_1ae8a655c51d8ed5ae5265d38cac2e7d19" prot="public" virt="non-virtual"><scope>muda::lbvh::BVH</scope><name>aabb_type</name></member>
+      <member refid="classmuda_1_1lbvh_1_1_b_v_h_1ab2af4b20fc5580f04369160d009476af" prot="public" virt="non-virtual"><scope>muda::lbvh::BVH</scope><name>aabbs</name></member>
+      <member refid="classmuda_1_1lbvh_1_1_b_v_h_1ab0b7ff208cbdecdbcb492ec3d144166b" prot="public" virt="non-virtual"><scope>muda::lbvh::BVH</scope><name>build</name></member>
+      <member refid="classmuda_1_1lbvh_1_1_b_v_h_1acfdec047cb68e828949fb1cdcadef6a4" prot="public" virt="non-virtual"><scope>muda::lbvh::BVH</scope><name>BVH</name></member>
+      <member refid="classmuda_1_1lbvh_1_1_b_v_h_1a9d1fff2983c0a4a1a6023bc8f2728236" prot="public" virt="non-virtual"><scope>muda::lbvh::BVH</scope><name>BVH</name></member>
+      <member refid="classmuda_1_1lbvh_1_1_b_v_h_1a99f7d22306f9eb0a71e9b0dc2059004d" prot="public" virt="non-virtual"><scope>muda::lbvh::BVH</scope><name>BVH</name></member>
+      <member refid="classmuda_1_1lbvh_1_1_b_v_h_1a0def5805896146e6c77804a32e9904b2" prot="public" virt="non-virtual"><scope>muda::lbvh::BVH</scope><name>clear</name></member>
+      <member refid="classmuda_1_1lbvh_1_1_b_v_h_1ad09074109bcac139ae933e70f412d08c" prot="public" virt="non-virtual"><scope>muda::lbvh::BVH</scope><name>cviewer</name></member>
+      <member refid="classmuda_1_1lbvh_1_1_b_v_h_1a39b9c0297cad50c17bddf64e9abc1e44" prot="private" virt="non-virtual"><scope>muda::lbvh::BVH</scope><name>download_if_dirty</name></member>
+      <member refid="classmuda_1_1lbvh_1_1_b_v_h_1a159075b079d56c0b0f4df256efa08bb0" prot="public" virt="non-virtual"><scope>muda::lbvh::BVH</scope><name>host_aabbs</name></member>
+      <member refid="classmuda_1_1lbvh_1_1_b_v_h_1ad099af752eaaea326fb0ed029785a48e" prot="public" virt="non-virtual"><scope>muda::lbvh::BVH</scope><name>host_nodes</name></member>
+      <member refid="classmuda_1_1lbvh_1_1_b_v_h_1aa4a036f01fc798b446808a5366a687b0" prot="public" virt="non-virtual"><scope>muda::lbvh::BVH</scope><name>host_objects</name></member>
+      <member refid="classmuda_1_1lbvh_1_1_b_v_h_1aeba812019543de9027859694a0081f6a" prot="public" virt="non-virtual"><scope>muda::lbvh::BVH</scope><name>index_type</name></member>
+      <member refid="classmuda_1_1lbvh_1_1_b_v_h_1ac18230b24debc8cc6b41203f85fccaa9" prot="private" virt="non-virtual"><scope>muda::lbvh::BVH</scope><name>m_aabbs</name></member>
+      <member refid="classmuda_1_1lbvh_1_1_b_v_h_1a7e174411dd7b058c0dc7c5015bc8b0e5" prot="private" virt="non-virtual"><scope>muda::lbvh::BVH</scope><name>m_flag_container</name></member>
+      <member refid="classmuda_1_1lbvh_1_1_b_v_h_1a660637728583718d7fd244d61e4e8a88" prot="private" virt="non-virtual"><scope>muda::lbvh::BVH</scope><name>m_h_aabbs</name></member>
+      <member refid="classmuda_1_1lbvh_1_1_b_v_h_1a4bfee120cdc96643470c7ca45e66ea67" prot="private" virt="non-virtual"><scope>muda::lbvh::BVH</scope><name>m_h_nodes</name></member>
+      <member refid="classmuda_1_1lbvh_1_1_b_v_h_1add630d32a0dbcced938fba8d4a3f90e7" prot="private" virt="non-virtual"><scope>muda::lbvh::BVH</scope><name>m_h_objects</name></member>
+      <member refid="classmuda_1_1lbvh_1_1_b_v_h_1abbdfabded7c1ba0ae19248e25e0803ae" prot="private" virt="non-virtual"><scope>muda::lbvh::BVH</scope><name>m_host_dirty</name></member>
+      <member refid="classmuda_1_1lbvh_1_1_b_v_h_1a5a251502c1ea3860f1551fe81525333e" prot="private" virt="non-virtual"><scope>muda::lbvh::BVH</scope><name>m_indices</name></member>
+      <member refid="classmuda_1_1lbvh_1_1_b_v_h_1afb535fa007deb6e154951ee7fe29fbf2" prot="private" virt="non-virtual"><scope>muda::lbvh::BVH</scope><name>m_morton</name></member>
+      <member refid="classmuda_1_1lbvh_1_1_b_v_h_1aadeffef10e51ffb07cbbbaa7abaab555" prot="private" virt="non-virtual"><scope>muda::lbvh::BVH</scope><name>m_morton64</name></member>
+      <member refid="classmuda_1_1lbvh_1_1_b_v_h_1ad8dad9c684f7922b63ea75bcd30bd868" prot="private" virt="non-virtual"><scope>muda::lbvh::BVH</scope><name>m_nodes</name></member>
+      <member refid="classmuda_1_1lbvh_1_1_b_v_h_1adf244a7d0af754d30e28892d1bebefd0" prot="private" virt="non-virtual"><scope>muda::lbvh::BVH</scope><name>m_objects</name></member>
+      <member refid="classmuda_1_1lbvh_1_1_b_v_h_1a2414d555ede490f7354b8d24e11c6412" prot="public" virt="non-virtual"><scope>muda::lbvh::BVH</scope><name>morton_code_calculator_type</name></member>
+      <member refid="classmuda_1_1lbvh_1_1_b_v_h_1abfe9f3d41a55a6ab136c035d09ad0c19" prot="public" virt="non-virtual"><scope>muda::lbvh::BVH</scope><name>node_type</name></member>
+      <member refid="classmuda_1_1lbvh_1_1_b_v_h_1a24934d4595548c0a7a03ee80d9352e01" prot="public" virt="non-virtual"><scope>muda::lbvh::BVH</scope><name>nodes</name></member>
+      <member refid="classmuda_1_1lbvh_1_1_b_v_h_1a0810f56902699ac46069758187da7abb" prot="public" virt="non-virtual"><scope>muda::lbvh::BVH</scope><name>object_type</name></member>
+      <member refid="classmuda_1_1lbvh_1_1_b_v_h_1ad87f67756f80acd1f802815bd37c97e9" prot="public" virt="non-virtual"><scope>muda::lbvh::BVH</scope><name>objects</name></member>
+      <member refid="classmuda_1_1lbvh_1_1_b_v_h_1a3a3fab1d04fdb0ceade242732449ce88" prot="public" virt="non-virtual"><scope>muda::lbvh::BVH</scope><name>objects</name></member>
+      <member refid="classmuda_1_1lbvh_1_1_b_v_h_1ada603412282e6f5dee88c7113ac50cee" prot="public" virt="non-virtual"><scope>muda::lbvh::BVH</scope><name>operator=</name></member>
+      <member refid="classmuda_1_1lbvh_1_1_b_v_h_1a9eb441af866824159cc1651425928a53" prot="public" virt="non-virtual"><scope>muda::lbvh::BVH</scope><name>operator=</name></member>
+      <member refid="classmuda_1_1lbvh_1_1_b_v_h_1a43bbc923a170ac88ed8a438dc59ef5d7" prot="public" virt="non-virtual"><scope>muda::lbvh::BVH</scope><name>real_type</name></member>
+      <member refid="classmuda_1_1lbvh_1_1_b_v_h_1a1b4f0c3e269f76508192f1d18acf6999" prot="public" virt="non-virtual"><scope>muda::lbvh::BVH</scope><name>viewer</name></member>
+      <member refid="classmuda_1_1lbvh_1_1_b_v_h_1aec15a2a428032a7df5b3d68f07753108" prot="public" virt="non-virtual"><scope>muda::lbvh::BVH</scope><name>~BVH</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,552 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classmuda_1_1_parallel_for" kind="class" language="C++" prot="public">
+    <compoundname>muda::ParallelFor</compoundname>
+    <basecompoundref refid="classmuda_1_1_launch_base" prot="public" virt="non-virtual">muda::LaunchBase&lt; ParallelFor &gt;</basecompoundref>
+    <includes refid="parallel__for_8h" local="no">parallel_for.h</includes>
+    <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classmuda_1_1_parallel_for_1a27ad6912f0df904cfca765adb28d7d6b" prot="public" static="no">
+        <templateparamlist>
+          <param>
+            <type>typename F</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classmuda_1_1_kernel_node_parms" kindref="compound">KernelNodeParms</ref>&lt; <ref refid="classmuda_1_1details_1_1_parallel_for_callable" kindref="compound">details::ParallelForCallable</ref>&lt; raw_type_t&lt; F &gt; &gt; &gt;</type>
+        <definition>using muda::ParallelFor::NodeParms =  KernelNodeParms&lt;details::ParallelForCallable&lt;raw_type_t&lt;F&gt; &gt;&gt;</definition>
+        <argsstring></argsstring>
+        <name>NodeParms</name>
+        <qualifiedname>muda::ParallelFor::NodeParms</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/launch/parallel_for.h" line="123" column="5" bodyfile="src/muda/launch/parallel_for.h" bodystart="123" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classmuda_1_1_parallel_for_1afe1615395cbffdd82890d3ebe86ba03e" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int muda::ParallelFor::m_grid_dim</definition>
+        <argsstring></argsstring>
+        <name>m_grid_dim</name>
+        <qualifiedname>muda::ParallelFor::m_grid_dim</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/launch/parallel_for.h" line="117" column="12" bodyfile="src/muda/launch/parallel_for.h" bodystart="117" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1_parallel_for_1a9e05aa43e1a7f2d7838100cf0c38fcc1" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int muda::ParallelFor::m_block_dim</definition>
+        <argsstring></argsstring>
+        <name>m_block_dim</name>
+        <qualifiedname>muda::ParallelFor::m_block_dim</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/launch/parallel_for.h" line="118" column="12" bodyfile="src/muda/launch/parallel_for.h" bodystart="118" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1_parallel_for_1ad3bddeff60466ad5a30f058041f6ce4c" prot="private" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t muda::ParallelFor::m_shared_mem_size</definition>
+        <argsstring></argsstring>
+        <name>m_shared_mem_size</name>
+        <qualifiedname>muda::ParallelFor::m_shared_mem_size</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/launch/parallel_for.h" line="119" column="12" bodyfile="src/muda/launch/parallel_for.h" bodystart="119" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmuda_1_1_parallel_for_1a38d7f6d161b783a7954bc10953b64ecc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>MUDA_HOST</type>
+        <definition>MUDA_HOST muda::ParallelFor::ParallelFor</definition>
+        <argsstring>(size_t shared_mem_size=0, cudaStream_t stream=nullptr) MUDA_NOEXCEPT</argsstring>
+        <name>ParallelFor</name>
+        <qualifiedname>muda::ParallelFor::ParallelFor</qualifiedname>
+        <param>
+          <type>size_t</type>
+          <declname>shared_mem_size</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>cudaStream_t</type>
+          <declname>stream</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+<para>Calculate grid dim automatically to cover the range, automatially choose the block size to achieve max occupancy. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><programlisting><codeline><highlight class="normal">DeviceBuffer&lt;int&gt;<sp/>buffer(256);</highlight></codeline>
+<codeline><highlight class="normal"><ref refid="classmuda_1_1_parallel_for_1a38d7f6d161b783a7954bc10953b64ecc" kindref="member">ParallelFor</ref>()</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>.kernel_name(</highlight><highlight class="stringliteral">&quot;set_buffer&quot;</highlight><highlight class="normal">)<sp/></highlight><highlight class="comment">//<sp/>optional</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>.apply(buffer.size(),<sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>buffer<sp/>=<sp/>buffer.viewer().name(</highlight><highlight class="stringliteral">&quot;buffer&quot;</highlight><highlight class="normal">)<sp/></highlight><highlight class="comment">//<sp/>name<sp/>is<sp/>optional</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>]<sp/>__device__(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i)<sp/></highlight><highlight class="keyword">mutable</highlight><highlight class="normal"><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>buffer(i)<sp/>=<sp/>1;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>});</highlight></codeline>
+</programlisting> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/launch/parallel_for.h" line="142" column="15" bodyfile="src/muda/launch/parallel_for.h" bodystart="142" bodyend="148"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_parallel_for_1a95d8677934a713c13ef242e5a02b5724" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>MUDA_HOST</type>
+        <definition>MUDA_HOST muda::ParallelFor::ParallelFor</definition>
+        <argsstring>(int blockDim, size_t shared_mem_size=0, cudaStream_t stream=nullptr) MUDA_NOEXCEPT</argsstring>
+        <name>ParallelFor</name>
+        <qualifiedname>muda::ParallelFor::ParallelFor</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>blockDim</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>shared_mem_size</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>cudaStream_t</type>
+          <declname>stream</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+<para>Calculate grid dim automatically to cover the range, but you need mannally set the block size. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><programlisting><codeline><highlight class="normal">DeviceBuffer&lt;int&gt;<sp/>buffer(256);</highlight></codeline>
+<codeline><highlight class="normal"><ref refid="classmuda_1_1_parallel_for_1a38d7f6d161b783a7954bc10953b64ecc" kindref="member">ParallelFor</ref>(64)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>.kernel_name(</highlight><highlight class="stringliteral">&quot;set_buffer&quot;</highlight><highlight class="normal">)<sp/></highlight><highlight class="comment">//<sp/>optional</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>.apply(buffer.size(),<sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>buffer<sp/>=<sp/>buffer.viewer().name(</highlight><highlight class="stringliteral">&quot;buffer&quot;</highlight><highlight class="normal">)<sp/></highlight><highlight class="comment">//<sp/>name<sp/>is<sp/>optional</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>]<sp/>__device__(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i)<sp/></highlight><highlight class="keyword">mutable</highlight><highlight class="normal"><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>buffer(i)<sp/>=<sp/>1;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>});</highlight></codeline>
+</programlisting> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/launch/parallel_for.h" line="166" column="15" bodyfile="src/muda/launch/parallel_for.h" bodystart="166" bodyend="172"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_parallel_for_1a7eed864199a2253ed12e5fee493c0c42" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>MUDA_HOST</type>
+        <definition>MUDA_HOST muda::ParallelFor::ParallelFor</definition>
+        <argsstring>(int gridDim, int blockDim, size_t shared_mem_size=0, cudaStream_t stream=nullptr) MUDA_NOEXCEPT</argsstring>
+        <name>ParallelFor</name>
+        <qualifiedname>muda::ParallelFor::ParallelFor</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>gridDim</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>blockDim</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>shared_mem_size</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>cudaStream_t</type>
+          <declname>stream</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+<para>Use Gride Stride Loop to cover the range, you need mannally set the grid size and block size. Gride Stride Loop: if grid_dim * block_dim &lt; count, there will be a loop in every thread, to process multiple indices. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><programlisting><codeline><highlight class="normal">DeviceBuffer&lt;int&gt;<sp/>buffer(256);</highlight></codeline>
+<codeline><highlight class="normal"><ref refid="classmuda_1_1_parallel_for_1a38d7f6d161b783a7954bc10953b64ecc" kindref="member">ParallelFor</ref>(2,<sp/>64)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>.kernel_name(</highlight><highlight class="stringliteral">&quot;set_buffer&quot;</highlight><highlight class="normal">)<sp/></highlight><highlight class="comment">//<sp/>optional</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>.apply(buffer.size(),<sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>buffer<sp/>=<sp/>buffer.viewer().name(</highlight><highlight class="stringliteral">&quot;buffer&quot;</highlight><highlight class="normal">)<sp/></highlight><highlight class="comment">//<sp/>name<sp/>is<sp/>optional</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>]<sp/>__device__(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i)<sp/></highlight><highlight class="keyword">mutable</highlight><highlight class="normal"><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>buffer(i)<sp/>=<sp/>1;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>});</highlight></codeline>
+</programlisting> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/launch/parallel_for.h" line="192" column="15" bodyfile="src/muda/launch/parallel_for.h" bodystart="192" bodyend="201"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_parallel_for_1a23c370cca7d292196ce61c963d223fe8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename F</type>
+          </param>
+          <param>
+            <type>typename UserTag</type>
+            <defval><ref refid="structmuda_1_1_default" kindref="compound">Default</ref></defval>
+          </param>
+        </templateparamlist>
+        <type>MUDA_HOST <ref refid="classmuda_1_1_parallel_for" kindref="compound">ParallelFor</ref> &amp;</type>
+        <definition>MUDA_HOST ParallelFor &amp; muda::ParallelFor::apply</definition>
+        <argsstring>(int count, F &amp;&amp;f)</argsstring>
+        <name>apply</name>
+        <qualifiedname>muda::ParallelFor::apply</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>count</declname>
+        </param>
+        <param>
+          <type>F &amp;&amp;</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/launch/parallel_for.h" line="204" column="27"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_parallel_for_1a8c21b9b566ba0476a9605bde78d4643e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename F</type>
+          </param>
+          <param>
+            <type>typename UserTag</type>
+            <defval><ref refid="structmuda_1_1_default" kindref="compound">Default</ref></defval>
+          </param>
+        </templateparamlist>
+        <type>MUDA_HOST <ref refid="classmuda_1_1_parallel_for" kindref="compound">ParallelFor</ref> &amp;</type>
+        <definition>MUDA_HOST ParallelFor &amp; muda::ParallelFor::apply</definition>
+        <argsstring>(int count, F &amp;&amp;f, Tag&lt; UserTag &gt;)</argsstring>
+        <name>apply</name>
+        <qualifiedname>muda::ParallelFor::apply</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>count</declname>
+        </param>
+        <param>
+          <type>F &amp;&amp;</type>
+          <declname>f</declname>
+        </param>
+        <param>
+          <type><ref refid="structmuda_1_1_tag" kindref="compound">Tag</ref>&lt; UserTag &gt;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/launch/parallel_for.h" line="207" column="27"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_parallel_for_1a612a94c3cc76d2872adbb1f54dcd40ae" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename F</type>
+          </param>
+          <param>
+            <type>typename UserTag</type>
+            <defval><ref refid="structmuda_1_1_default" kindref="compound">Default</ref></defval>
+          </param>
+        </templateparamlist>
+        <type>MUDA_HOST MUDA_NODISCARD auto</type>
+        <definition>MUDA_HOST MUDA_NODISCARD auto muda::ParallelFor::as_node_parms</definition>
+        <argsstring>(int count, F &amp;&amp;f) -&gt; S&lt; NodeParms&lt; F &gt; &gt;</argsstring>
+        <name>as_node_parms</name>
+        <qualifiedname>muda::ParallelFor::as_node_parms</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>count</declname>
+        </param>
+        <param>
+          <type>F &amp;&amp;</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/launch/parallel_for.h" line="211" column="35"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_parallel_for_1a086fddcacdd56e7899460e8fbe8ef39a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename F</type>
+          </param>
+          <param>
+            <type>typename UserTag</type>
+            <defval><ref refid="structmuda_1_1_default" kindref="compound">Default</ref></defval>
+          </param>
+        </templateparamlist>
+        <type>MUDA_HOST MUDA_NODISCARD auto</type>
+        <definition>MUDA_HOST MUDA_NODISCARD auto muda::ParallelFor::as_node_parms</definition>
+        <argsstring>(int count, F &amp;&amp;f, Tag&lt; UserTag &gt;) -&gt; S&lt; NodeParms&lt; F &gt; &gt;</argsstring>
+        <name>as_node_parms</name>
+        <qualifiedname>muda::ParallelFor::as_node_parms</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>count</declname>
+        </param>
+        <param>
+          <type>F &amp;&amp;</type>
+          <declname>f</declname>
+        </param>
+        <param>
+          <type><ref refid="structmuda_1_1_tag" kindref="compound">Tag</ref>&lt; UserTag &gt;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/launch/parallel_for.h" line="214" column="35"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_parallel_for_1a7934f854e0888784ff9d882aed815da0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename F</type>
+          </param>
+          <param>
+            <type>typename UserTag</type>
+          </param>
+        </templateparamlist>
+        <type>MUDA_HOST void</type>
+        <definition>MUDA_HOST void muda::ParallelFor::invoke</definition>
+        <argsstring>(int count, F &amp;&amp;f)</argsstring>
+        <name>invoke</name>
+        <qualifiedname>muda::ParallelFor::invoke</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>count</declname>
+        </param>
+        <param>
+          <type>F &amp;&amp;</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/launch/parallel_for.h" line="224" column="20"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_parallel_for_1afa111a1f13a74d5df28d2b80cdc0e80b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename F</type>
+          </param>
+          <param>
+            <type>typename UserTag</type>
+          </param>
+        </templateparamlist>
+        <type>MUDA_GENERIC int</type>
+        <definition>MUDA_GENERIC int muda::ParallelFor::calculate_block_dim</definition>
+        <argsstring>(int count) const MUDA_NOEXCEPT</argsstring>
+        <name>calculate_block_dim</name>
+        <qualifiedname>muda::ParallelFor::calculate_block_dim</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>count</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/launch/parallel_for.h" line="227" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_parallel_for_1a79373348ac1396777f0438ef1136acd5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>MUDA_GENERIC int</type>
+        <definition>MUDA_GENERIC int muda::ParallelFor::calculate_grid_dim</definition>
+        <argsstring>(int count) const MUDA_NOEXCEPT</argsstring>
+        <name>calculate_grid_dim</name>
+        <qualifiedname>muda::ParallelFor::calculate_grid_dim</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>count</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/launch/parallel_for.h" line="229" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_parallel_for_1adbc76dbe82253a0e1138abdf1b976777" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>MUDA_GENERIC void</type>
+        <definition>MUDA_GENERIC void muda::ParallelFor::check_input</definition>
+        <argsstring>(int count) const MUDA_NOEXCEPT</argsstring>
+        <name>check_input</name>
+        <qualifiedname>muda::ParallelFor::check_input</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>count</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/launch/parallel_for.h" line="233" column="23"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classmuda_1_1_parallel_for_1a6e0ff586a2911bf709c3d3e1d44e394a" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>MUDA_GENERIC static MUDA_NODISCARD int</type>
+        <definition>MUDA_GENERIC static MUDA_NODISCARD int muda::ParallelFor::round_up_blocks</definition>
+        <argsstring>(int count, int block_dim) MUDA_NOEXCEPT</argsstring>
+        <name>round_up_blocks</name>
+        <qualifiedname>muda::ParallelFor::round_up_blocks</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>count</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>block_dim</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/launch/parallel_for.h" line="217" column="44" bodyfile="src/muda/launch/parallel_for.h" bodystart="217" bodyend="220"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_parallel_for_1ad19a9cf4e2a25f8dace00026ae40c213" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>MUDA_GENERIC int</type>
+        <definition>static MUDA_GENERIC int muda::ParallelFor::calculate_grid_dim</definition>
+        <argsstring>(int count, int block_dim) MUDA_NOEXCEPT</argsstring>
+        <name>calculate_grid_dim</name>
+        <qualifiedname>muda::ParallelFor::calculate_grid_dim</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>count</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>block_dim</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/launch/parallel_for.h" line="231" column="29"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>a frequently used parallel for loop, <bold>DynamicBlockDim</bold> and <bold>GridStrideLoop</bold> strategy are provided, and can be switched seamlessly to each other. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>muda::LaunchBase&lt; ParallelFor &gt;</label>
+        <link refid="classmuda_1_1_launch_base"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>muda::LaunchCore</label>
+        <link refid="classmuda_1_1_launch_core"/>
+      </node>
+      <node id="1">
+        <label>muda::ParallelFor</label>
+        <link refid="classmuda_1_1_parallel_for"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>muda::LaunchBase&lt; ParallelFor &gt;</label>
+        <link refid="classmuda_1_1_launch_base"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>muda::LaunchCore</label>
+        <link refid="classmuda_1_1_launch_core"/>
+      </node>
+      <node id="1">
+        <label>muda::ParallelFor</label>
+        <link refid="classmuda_1_1_parallel_for"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="src/muda/launch/parallel_for.h" line="115" column="1" bodyfile="src/muda/launch/parallel_for.h" bodystart="116" bodyend="234"/>
+    <listofallmembers>
+      <member refid="classmuda_1_1_parallel_for_1a23c370cca7d292196ce61c963d223fe8" prot="public" virt="non-virtual"><scope>muda::ParallelFor</scope><name>apply</name></member>
+      <member refid="classmuda_1_1_parallel_for_1a8c21b9b566ba0476a9605bde78d4643e" prot="public" virt="non-virtual"><scope>muda::ParallelFor</scope><name>apply</name></member>
+      <member refid="classmuda_1_1_parallel_for_1a612a94c3cc76d2872adbb1f54dcd40ae" prot="public" virt="non-virtual"><scope>muda::ParallelFor</scope><name>as_node_parms</name></member>
+      <member refid="classmuda_1_1_parallel_for_1a086fddcacdd56e7899460e8fbe8ef39a" prot="public" virt="non-virtual"><scope>muda::ParallelFor</scope><name>as_node_parms</name></member>
+      <member refid="classmuda_1_1_parallel_for_1afa111a1f13a74d5df28d2b80cdc0e80b" prot="public" virt="non-virtual"><scope>muda::ParallelFor</scope><name>calculate_block_dim</name></member>
+      <member refid="classmuda_1_1_parallel_for_1a79373348ac1396777f0438ef1136acd5" prot="public" virt="non-virtual"><scope>muda::ParallelFor</scope><name>calculate_grid_dim</name></member>
+      <member refid="classmuda_1_1_parallel_for_1ad19a9cf4e2a25f8dace00026ae40c213" prot="public" virt="non-virtual"><scope>muda::ParallelFor</scope><name>calculate_grid_dim</name></member>
+      <member refid="classmuda_1_1_launch_base_1aa8490139890f43555c1b7baa57378616" prot="public" virt="non-virtual"><scope>muda::ParallelFor</scope><name>callback</name></member>
+      <member refid="classmuda_1_1_parallel_for_1adbc76dbe82253a0e1138abdf1b976777" prot="public" virt="non-virtual"><scope>muda::ParallelFor</scope><name>check_input</name></member>
+      <member refid="classmuda_1_1_launch_base_1a8a59e9a27775e4e12ca19a6d590790f4" prot="public" virt="non-virtual"><scope>muda::ParallelFor</scope><name>derived_type</name></member>
+      <member refid="classmuda_1_1_launch_base_1aee4564eac54df98ab98085379370a2ec" prot="public" virt="non-virtual"><scope>muda::ParallelFor</scope><name>file_line</name></member>
+      <member refid="classmuda_1_1_launch_core_1a38c542a99edea149552d82639e385ab5" prot="public" virt="non-virtual"><scope>muda::ParallelFor</scope><name>init_stream</name></member>
+      <member refid="classmuda_1_1_parallel_for_1a7934f854e0888784ff9d882aed815da0" prot="public" virt="non-virtual"><scope>muda::ParallelFor</scope><name>invoke</name></member>
+      <member refid="classmuda_1_1_launch_base_1ac412be72c054ac359678fff75857dd06" prot="public" virt="non-virtual"><scope>muda::ParallelFor</scope><name>kernel_name</name></member>
+      <member refid="classmuda_1_1_launch_base_1ab73495b0bfa3a7a1864284aebceb51a8" prot="public" virt="non-virtual"><scope>muda::ParallelFor</scope><name>LaunchBase</name></member>
+      <member refid="classmuda_1_1_launch_core_1a8503eff885f818a12319ca57dfd75011" prot="public" virt="non-virtual"><scope>muda::ParallelFor</scope><name>LaunchCore</name></member>
+      <member refid="classmuda_1_1_parallel_for_1a9e05aa43e1a7f2d7838100cf0c38fcc1" prot="private" virt="non-virtual"><scope>muda::ParallelFor</scope><name>m_block_dim</name></member>
+      <member refid="classmuda_1_1_parallel_for_1afe1615395cbffdd82890d3ebe86ba03e" prot="private" virt="non-virtual"><scope>muda::ParallelFor</scope><name>m_grid_dim</name></member>
+      <member refid="classmuda_1_1_parallel_for_1ad3bddeff60466ad5a30f058041f6ce4c" prot="private" virt="non-virtual"><scope>muda::ParallelFor</scope><name>m_shared_mem_size</name></member>
+      <member refid="classmuda_1_1_launch_core_1a3b5544456087d57904981118c4cdcaf8" prot="protected" virt="non-virtual"><scope>muda::ParallelFor</scope><name>m_stream</name></member>
+      <member refid="classmuda_1_1_launch_base_1a395b0a10fee3bf2c591f49a3119df1b8" prot="public" virt="non-virtual"><scope>muda::ParallelFor</scope><name>next</name></member>
+      <member refid="classmuda_1_1_launch_base_1a841db3ede786d3312a6ca2de2139ad10" prot="public" virt="non-virtual"><scope>muda::ParallelFor</scope><name>next</name></member>
+      <member refid="classmuda_1_1_parallel_for_1a27ad6912f0df904cfca765adb28d7d6b" prot="public" virt="non-virtual"><scope>muda::ParallelFor</scope><name>NodeParms</name></member>
+      <member refid="classmuda_1_1_parallel_for_1a38d7f6d161b783a7954bc10953b64ecc" prot="public" virt="non-virtual"><scope>muda::ParallelFor</scope><name>ParallelFor</name></member>
+      <member refid="classmuda_1_1_parallel_for_1a95d8677934a713c13ef242e5a02b5724" prot="public" virt="non-virtual"><scope>muda::ParallelFor</scope><name>ParallelFor</name></member>
+      <member refid="classmuda_1_1_parallel_for_1a7eed864199a2253ed12e5fee493c0c42" prot="public" virt="non-virtual"><scope>muda::ParallelFor</scope><name>ParallelFor</name></member>
+      <member refid="classmuda_1_1_launch_base_1a65538f7d445fa3cc56ab33e609fe566a" prot="protected" virt="non-virtual"><scope>muda::ParallelFor</scope><name>pop_kernel_label</name></member>
+      <member refid="classmuda_1_1_launch_base_1ab6b75621024e7977edcdff26c04bcdc1" prot="public" virt="non-virtual"><scope>muda::ParallelFor</scope><name>pop_range</name></member>
+      <member refid="classmuda_1_1_launch_base_1ad6dcaaf3ea0726809ebbdb10084c3183" prot="public" virt="non-virtual"><scope>muda::ParallelFor</scope><name>push_range</name></member>
+      <member refid="classmuda_1_1_launch_base_1ad069d4ad6219f5a3b51e7c8d9e4d596f" prot="public" virt="non-virtual"><scope>muda::ParallelFor</scope><name>record</name></member>
+      <member refid="classmuda_1_1_launch_base_1a12cf6b18c76787654460c1c043907547" prot="public" virt="non-virtual"><scope>muda::ParallelFor</scope><name>record</name></member>
+      <member refid="classmuda_1_1_launch_base_1a77d57b9368424d70cd740af6eaf45a6f" prot="public" virt="non-virtual"><scope>muda::ParallelFor</scope><name>record</name></member>
+      <member refid="classmuda_1_1_parallel_for_1a6e0ff586a2911bf709c3d3e1d44e394a" prot="public" virt="non-virtual"><scope>muda::ParallelFor</scope><name>round_up_blocks</name></member>
+      <member refid="classmuda_1_1_launch_core_1a8aeb9e37d421f835e0fcae124e3ce0de" prot="protected" virt="non-virtual"><scope>muda::ParallelFor</scope><name>S</name></member>
+      <member refid="classmuda_1_1_launch_core_1ab78b991329337c97d2ac3e32e995a62f" prot="protected" virt="non-virtual"><scope>muda::ParallelFor</scope><name>stream</name></member>
+      <member refid="classmuda_1_1_launch_base_1a88cbf9478fbeaa7434ece7f300dc1c0e" prot="public" virt="non-virtual"><scope>muda::ParallelFor</scope><name>wait</name></member>
+      <member refid="classmuda_1_1_launch_base_1ab0fc5fbed4ec5f69a3b599af99900d98" prot="public" virt="non-virtual"><scope>muda::ParallelFor</scope><name>wait</name></member>
+      <member refid="classmuda_1_1_launch_base_1acbf042e86efae1683e2ab08c95095da7" prot="public" virt="non-virtual"><scope>muda::ParallelFor</scope><name>wait</name></member>
+      <member refid="classmuda_1_1_launch_base_1abe061bff24568f9c2fcf326a62843292" prot="public" virt="non-virtual"><scope>muda::ParallelFor</scope><name>wait</name></member>
+      <member refid="classmuda_1_1_launch_core_1a58e970f699c546d37c70af9bb4d3a93c" prot="public" virt="non-virtual"><scope>muda::ParallelFor</scope><name>wait_device</name></member>
+      <member refid="classmuda_1_1_launch_core_1a7b29e878817d4e42bc533edc0c89b645" prot="public" virt="non-virtual"><scope>muda::ParallelFor</scope><name>wait_event</name></member>
+      <member refid="classmuda_1_1_launch_core_1a73d5d54a7b3b59dcf8eea792e796337b" prot="public" virt="non-virtual"><scope>muda::ParallelFor</scope><name>wait_stream</name></member>
+      <member refid="classmuda_1_1_launch_base_1a59a525fea511ea1c90f5857be5d62d43" prot="public" virt="non-virtual"><scope>muda::ParallelFor</scope><name>when</name></member>
+      <member refid="classmuda_1_1_launch_base_1a543548ac0516b2c10adba68d2ae7066b" prot="public" virt="non-virtual"><scope>muda::ParallelFor</scope><name>~LaunchBase</name></member>
+      <member refid="classmuda_1_1_launch_core_1a5e4ae3435bce9d4ad706b5e347a3040f" prot="public" virt="non-virtual"><scope>muda::ParallelFor</scope><name>~LaunchCore</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

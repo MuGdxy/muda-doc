@@ -1,0 +1,692 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classmuda_1_1_graph" kind="class" language="C++" prot="public">
+    <compoundname>muda::Graph</compoundname>
+    <sectiondef kind="private-type">
+      <memberdef kind="typedef" id="classmuda_1_1_graph_1a93cd197a4b50976bd4def33596fa39ed" prot="private" static="no">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>std::shared_ptr&lt; T &gt;</type>
+        <definition>using muda::Graph::S =  std::shared_ptr&lt;T&gt;</definition>
+        <argsstring></argsstring>
+        <name>S</name>
+        <qualifiedname>muda::Graph::S</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/graph/graph.h" line="20" column="5" bodyfile="src/muda/graph/graph.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classmuda_1_1_graph_1add4394ad315db3cfc3ac7ce4885824ef" prot="private" static="no">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>std::unique_ptr&lt; T &gt;</type>
+        <definition>using muda::Graph::U =  std::unique_ptr&lt;T&gt;</definition>
+        <argsstring></argsstring>
+        <name>U</name>
+        <qualifiedname>muda::Graph::U</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/graph/graph.h" line="22" column="5" bodyfile="src/muda/graph/graph.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="friend">
+      <memberdef kind="friend" id="classmuda_1_1_graph_1ac8aabe4ee86ce7f94543c88ef1df090e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class GraphExec</definition>
+        <argsstring></argsstring>
+        <name>GraphExec</name>
+        <qualifiedname>muda::Graph::GraphExec</qualifiedname>
+        <param>
+          <type><ref refid="classmuda_1_1_graph_exec" kindref="compound">GraphExec</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/graph/graph.h" line="37" column="18" bodyfile="src/muda/graph/graph.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="classmuda_1_1_graph_1a66b9768517f5297e37b51cdf3cd03343" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class std::shared_ptr&lt; Graph &gt;</definition>
+        <argsstring></argsstring>
+        <name>std::shared_ptr&lt; Graph &gt;</name>
+        <qualifiedname>muda::Graph::shared_ptr&lt; Graph &gt;</qualifiedname>
+        <param>
+          <type>std::shared_ptr&lt; <ref refid="classmuda_1_1_graph" kindref="compound">Graph</ref> &gt;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/graph/graph.h" line="37" column="18" bodyfile="src/muda/graph/graph.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classmuda_1_1_graph_1a65292f027f62ac85ce8a8ab3b1a5cfde" prot="private" static="no" mutable="no">
+        <type>cudaGraph_t</type>
+        <definition>cudaGraph_t muda::Graph::m_handle</definition>
+        <argsstring></argsstring>
+        <name>m_handle</name>
+        <qualifiedname>muda::Graph::m_handle</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/graph/graph.h" line="87" column="17" bodyfile="src/muda/graph/graph.h" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1_graph_1a3005a7385f29ac1dd9cd9a6749ece066" prot="private" static="no" mutable="no">
+        <type>std::list&lt; S&lt; <ref refid="classmuda_1_1_node_parms" kindref="compound">NodeParms</ref> &gt; &gt;</type>
+        <definition>std::list&lt;S&lt;NodeParms&gt; &gt; muda::Graph::m_cached</definition>
+        <argsstring></argsstring>
+        <name>m_cached</name>
+        <qualifiedname>muda::Graph::m_cached</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/graph/graph.h" line="89" column="15" bodyfile="src/muda/graph/graph.h" bodystart="89" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmuda_1_1_graph_1acce2548676ceadbe2b5745ffa6dbd7c2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>muda::Graph::Graph</definition>
+        <argsstring>()</argsstring>
+        <name>Graph</name>
+        <qualifiedname>muda::Graph::Graph</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/graph/graph.h" line="25" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_graph_1ae5367a0a0540f6ef24b45e14029a9af5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>muda::Graph::~Graph</definition>
+        <argsstring>()</argsstring>
+        <name>~Graph</name>
+        <qualifiedname>muda::Graph::~Graph</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/graph/graph.h" line="26" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_graph_1a61598ae93c93ecd732ddc3acf5c338f6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>muda::Graph::Graph</definition>
+        <argsstring>(const Graph &amp;)=delete</argsstring>
+        <name>Graph</name>
+        <qualifiedname>muda::Graph::Graph</qualifiedname>
+        <param>
+          <type>const <ref refid="classmuda_1_1_graph" kindref="compound">Graph</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/graph/graph.h" line="29" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_graph_1ad0c5d57431e42085d1ac9a36af76d400" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classmuda_1_1_graph" kindref="compound">Graph</ref> &amp;</type>
+        <definition>Graph &amp; muda::Graph::operator=</definition>
+        <argsstring>(const Graph &amp;)=delete</argsstring>
+        <name>operator=</name>
+        <qualifiedname>muda::Graph::operator=</qualifiedname>
+        <param>
+          <type>const <ref refid="classmuda_1_1_graph" kindref="compound">Graph</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/graph/graph.h" line="30" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_graph_1a3217abfa78ed8e47d3e724213f166083" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>muda::Graph::Graph</definition>
+        <argsstring>(Graph &amp;&amp;)</argsstring>
+        <name>Graph</name>
+        <qualifiedname>muda::Graph::Graph</qualifiedname>
+        <param>
+          <type><ref refid="classmuda_1_1_graph" kindref="compound">Graph</ref> &amp;&amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/graph/graph.h" line="33" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_graph_1a8a7c11a062a594412a29a71c98edb320" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classmuda_1_1_graph" kindref="compound">Graph</ref> &amp;</type>
+        <definition>Graph &amp; muda::Graph::operator=</definition>
+        <argsstring>(Graph &amp;&amp;)</argsstring>
+        <name>operator=</name>
+        <qualifiedname>muda::Graph::operator=</qualifiedname>
+        <param>
+          <type><ref refid="classmuda_1_1_graph" kindref="compound">Graph</ref> &amp;&amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/graph/graph.h" line="34" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_graph_1afa804b008d511e03516eb4e274af0e34" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>MUDA_NODISCARD S&lt; <ref refid="classmuda_1_1_graph_exec" kindref="compound">GraphExec</ref> &gt;</type>
+        <definition>MUDA_NODISCARD S&lt; GraphExec &gt; muda::Graph::instantiate</definition>
+        <argsstring>()</argsstring>
+        <name>instantiate</name>
+        <qualifiedname>muda::Graph::instantiate</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/graph/graph.h" line="40" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_graph_1aff4f3c66d3aa729082d39e120965c673" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>MUDA_NODISCARD S&lt; <ref refid="classmuda_1_1_graph_exec" kindref="compound">GraphExec</ref> &gt;</type>
+        <definition>MUDA_NODISCARD S&lt; GraphExec &gt; muda::Graph::instantiate</definition>
+        <argsstring>(Flags&lt; GraphInstantiateFlagBit &gt; flags)</argsstring>
+        <name>instantiate</name>
+        <qualifiedname>muda::Graph::instantiate</qualifiedname>
+        <param>
+          <type><ref refid="classmuda_1_1_flags" kindref="compound">Flags</ref>&lt; GraphInstantiateFlagBit &gt;</type>
+          <declname>flags</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/graph/graph.h" line="41" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_graph_1ae470149889bf60292e80c16821b5dfb2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>S&lt; <ref refid="classmuda_1_1_kernel_node" kindref="compound">KernelNode</ref> &gt;</type>
+        <definition>S&lt; KernelNode &gt; muda::Graph::add_kernel_node</definition>
+        <argsstring>(const S&lt; KernelNodeParms&lt; T &gt; &gt; &amp;kernelParms, const std::vector&lt; S&lt; GraphNode &gt; &gt; &amp;deps)</argsstring>
+        <name>add_kernel_node</name>
+        <qualifiedname>muda::Graph::add_kernel_node</qualifiedname>
+        <param>
+          <type>const S&lt; <ref refid="classmuda_1_1_kernel_node_parms" kindref="compound">KernelNodeParms</ref>&lt; T &gt; &gt; &amp;</type>
+          <declname>kernelParms</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; S&lt; <ref refid="classmuda_1_1_graph_node" kindref="compound">GraphNode</ref> &gt; &gt; &amp;</type>
+          <declname>deps</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/graph/graph.h" line="44" column="7"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_graph_1a6072a4773c766023d977544a397ba6c1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>S&lt; <ref refid="classmuda_1_1_kernel_node" kindref="compound">KernelNode</ref> &gt;</type>
+        <definition>S&lt; KernelNode &gt; muda::Graph::add_kernel_node</definition>
+        <argsstring>(const S&lt; KernelNodeParms&lt; T &gt; &gt; &amp;kernelParms)</argsstring>
+        <name>add_kernel_node</name>
+        <qualifiedname>muda::Graph::add_kernel_node</qualifiedname>
+        <param>
+          <type>const S&lt; <ref refid="classmuda_1_1_kernel_node_parms" kindref="compound">KernelNodeParms</ref>&lt; T &gt; &gt; &amp;</type>
+          <declname>kernelParms</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/graph/graph.h" line="47" column="7"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_graph_1a4837fd5b4ebf02c350597e6fadeae863" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>S&lt; <ref refid="classmuda_1_1_host_node" kindref="compound">HostNode</ref> &gt;</type>
+        <definition>S&lt; HostNode &gt; muda::Graph::add_host_node</definition>
+        <argsstring>(const S&lt; HostNodeParms&lt; T &gt; &gt; &amp;hostParms, const std::vector&lt; S&lt; GraphNode &gt; &gt; &amp;deps)</argsstring>
+        <name>add_host_node</name>
+        <qualifiedname>muda::Graph::add_host_node</qualifiedname>
+        <param>
+          <type>const S&lt; <ref refid="classmuda_1_1_host_node_parms" kindref="compound">HostNodeParms</ref>&lt; T &gt; &gt; &amp;</type>
+          <declname>hostParms</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; S&lt; <ref refid="classmuda_1_1_graph_node" kindref="compound">GraphNode</ref> &gt; &gt; &amp;</type>
+          <declname>deps</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/graph/graph.h" line="51" column="7"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_graph_1a45db7b6c317377bd8369151ecf806465" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>S&lt; <ref refid="classmuda_1_1_host_node" kindref="compound">HostNode</ref> &gt;</type>
+        <definition>S&lt; HostNode &gt; muda::Graph::add_host_node</definition>
+        <argsstring>(const S&lt; HostNodeParms&lt; T &gt; &gt; &amp;hostParms)</argsstring>
+        <name>add_host_node</name>
+        <qualifiedname>muda::Graph::add_host_node</qualifiedname>
+        <param>
+          <type>const S&lt; <ref refid="classmuda_1_1_host_node_parms" kindref="compound">HostNodeParms</ref>&lt; T &gt; &gt; &amp;</type>
+          <declname>hostParms</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/graph/graph.h" line="54" column="7"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_graph_1ac41106ed87b5aa9048362277cbbd261d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>S&lt; <ref refid="classmuda_1_1_memcpy_node" kindref="compound">MemcpyNode</ref> &gt;</type>
+        <definition>S&lt; MemcpyNode &gt; muda::Graph::add_memcpy_node</definition>
+        <argsstring>(void *dst, const void *src, size_t size_bytes, cudaMemcpyKind kind, const std::vector&lt; S&lt; GraphNode &gt; &gt; &amp;deps)</argsstring>
+        <name>add_memcpy_node</name>
+        <qualifiedname>muda::Graph::add_memcpy_node</qualifiedname>
+        <param>
+          <type>void *</type>
+          <declname>dst</declname>
+        </param>
+        <param>
+          <type>const void *</type>
+          <declname>src</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>size_bytes</declname>
+        </param>
+        <param>
+          <type>cudaMemcpyKind</type>
+          <declname>kind</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; S&lt; <ref refid="classmuda_1_1_graph_node" kindref="compound">GraphNode</ref> &gt; &gt; &amp;</type>
+          <declname>deps</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/graph/graph.h" line="57" column="7"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_graph_1a15efd2d4e68a43c282d3f198123ecdce" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>S&lt; <ref refid="classmuda_1_1_memcpy_node" kindref="compound">MemcpyNode</ref> &gt;</type>
+        <definition>S&lt; MemcpyNode &gt; muda::Graph::add_memcpy_node</definition>
+        <argsstring>(void *dst, const void *src, size_t size_bytes, cudaMemcpyKind kind)</argsstring>
+        <name>add_memcpy_node</name>
+        <qualifiedname>muda::Graph::add_memcpy_node</qualifiedname>
+        <param>
+          <type>void *</type>
+          <declname>dst</declname>
+        </param>
+        <param>
+          <type>const void *</type>
+          <declname>src</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>size_bytes</declname>
+        </param>
+        <param>
+          <type>cudaMemcpyKind</type>
+          <declname>kind</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/graph/graph.h" line="62" column="7"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_graph_1a21f63b25a11e99977ebed2191af745f2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>S&lt; <ref refid="classmuda_1_1_memcpy_node" kindref="compound">MemcpyNode</ref> &gt;</type>
+        <definition>S&lt; MemcpyNode &gt; muda::Graph::add_memcpy_node</definition>
+        <argsstring>(const cudaMemcpy3DParms &amp;parms)</argsstring>
+        <name>add_memcpy_node</name>
+        <qualifiedname>muda::Graph::add_memcpy_node</qualifiedname>
+        <param>
+          <type>const cudaMemcpy3DParms &amp;</type>
+          <declname>parms</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/graph/graph.h" line="63" column="7"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_graph_1a376f39c1f7157d4321a232e189e6e439" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>S&lt; <ref refid="classmuda_1_1_memcpy_node" kindref="compound">MemcpyNode</ref> &gt;</type>
+        <definition>S&lt; MemcpyNode &gt; muda::Graph::add_memcpy_node</definition>
+        <argsstring>(const cudaMemcpy3DParms &amp;parms, const std::vector&lt; S&lt; GraphNode &gt; &gt; &amp;deps)</argsstring>
+        <name>add_memcpy_node</name>
+        <qualifiedname>muda::Graph::add_memcpy_node</qualifiedname>
+        <param>
+          <type>const cudaMemcpy3DParms &amp;</type>
+          <declname>parms</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; S&lt; <ref refid="classmuda_1_1_graph_node" kindref="compound">GraphNode</ref> &gt; &gt; &amp;</type>
+          <declname>deps</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/graph/graph.h" line="64" column="7"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_graph_1abee6b8d0ed16f9c223e279b20000433e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>S&lt; <ref refid="classmuda_1_1_memset_node" kindref="compound">MemsetNode</ref> &gt;</type>
+        <definition>S&lt; MemsetNode &gt; muda::Graph::add_memset_node</definition>
+        <argsstring>(const cudaMemsetParams &amp;parms, const std::vector&lt; S&lt; GraphNode &gt; &gt; &amp;deps)</argsstring>
+        <name>add_memset_node</name>
+        <qualifiedname>muda::Graph::add_memset_node</qualifiedname>
+        <param>
+          <type>const cudaMemsetParams &amp;</type>
+          <declname>parms</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; S&lt; <ref refid="classmuda_1_1_graph_node" kindref="compound">GraphNode</ref> &gt; &gt; &amp;</type>
+          <declname>deps</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/graph/graph.h" line="67" column="7"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_graph_1ac823b49dfcb01d1d6d79db017e16d0b1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>S&lt; <ref refid="classmuda_1_1_memset_node" kindref="compound">MemsetNode</ref> &gt;</type>
+        <definition>S&lt; MemsetNode &gt; muda::Graph::add_memset_node</definition>
+        <argsstring>(const cudaMemsetParams &amp;parms)</argsstring>
+        <name>add_memset_node</name>
+        <qualifiedname>muda::Graph::add_memset_node</qualifiedname>
+        <param>
+          <type>const cudaMemsetParams &amp;</type>
+          <declname>parms</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/graph/graph.h" line="69" column="7"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_graph_1aef80e50c40348c99b104f2e204fdb91d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>S&lt; <ref refid="classmuda_1_1_event_record_node" kindref="compound">EventRecordNode</ref> &gt;</type>
+        <definition>S&lt; EventRecordNode &gt; muda::Graph::add_event_record_node</definition>
+        <argsstring>(cudaEvent_t e, const std::vector&lt; S&lt; GraphNode &gt; &gt; &amp;deps)</argsstring>
+        <name>add_event_record_node</name>
+        <qualifiedname>muda::Graph::add_event_record_node</qualifiedname>
+        <param>
+          <type>cudaEvent_t</type>
+          <declname>e</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; S&lt; <ref refid="classmuda_1_1_graph_node" kindref="compound">GraphNode</ref> &gt; &gt; &amp;</type>
+          <declname>deps</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/graph/graph.h" line="72" column="7"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_graph_1ad01ac8849402243c4ba06266c03c8697" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>S&lt; <ref refid="classmuda_1_1_event_record_node" kindref="compound">EventRecordNode</ref> &gt;</type>
+        <definition>S&lt; EventRecordNode &gt; muda::Graph::add_event_record_node</definition>
+        <argsstring>(cudaEvent_t e)</argsstring>
+        <name>add_event_record_node</name>
+        <qualifiedname>muda::Graph::add_event_record_node</qualifiedname>
+        <param>
+          <type>cudaEvent_t</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/graph/graph.h" line="74" column="7"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_graph_1aace1876e4de51f2a5a184bbb62107628" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>S&lt; <ref refid="classmuda_1_1_event_wait_node" kindref="compound">EventWaitNode</ref> &gt;</type>
+        <definition>S&lt; EventWaitNode &gt; muda::Graph::add_event_wait_node</definition>
+        <argsstring>(cudaEvent_t e, const std::vector&lt; S&lt; GraphNode &gt; &gt; &amp;deps)</argsstring>
+        <name>add_event_wait_node</name>
+        <qualifiedname>muda::Graph::add_event_wait_node</qualifiedname>
+        <param>
+          <type>cudaEvent_t</type>
+          <declname>e</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; S&lt; <ref refid="classmuda_1_1_graph_node" kindref="compound">GraphNode</ref> &gt; &gt; &amp;</type>
+          <declname>deps</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/graph/graph.h" line="75" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_graph_1acc405e18d7e44b7d80239b4bbe7b16f2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>S&lt; <ref refid="classmuda_1_1_event_wait_node" kindref="compound">EventWaitNode</ref> &gt;</type>
+        <definition>S&lt; EventWaitNode &gt; muda::Graph::add_event_wait_node</definition>
+        <argsstring>(cudaEvent_t e)</argsstring>
+        <name>add_event_wait_node</name>
+        <qualifiedname>muda::Graph::add_event_wait_node</qualifiedname>
+        <param>
+          <type>cudaEvent_t</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/graph/graph.h" line="77" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_graph_1a9b7d9953ddc0e0dec0fbf40e91adc3a9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void muda::Graph::add_dependency</definition>
+        <argsstring>(S&lt; GraphNode &gt; from, S&lt; GraphNode &gt; to)</argsstring>
+        <name>add_dependency</name>
+        <qualifiedname>muda::Graph::add_dependency</qualifiedname>
+        <param>
+          <type>S&lt; <ref refid="classmuda_1_1_graph_node" kindref="compound">GraphNode</ref> &gt;</type>
+          <declname>from</declname>
+        </param>
+        <param>
+          <type>S&lt; <ref refid="classmuda_1_1_graph_node" kindref="compound">GraphNode</ref> &gt;</type>
+          <declname>to</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/graph/graph.h" line="80" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_graph_1a33ddc5fd2da13cb2fd80ecc56fe32479" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>cudaGraph_t</type>
+        <definition>cudaGraph_t muda::Graph::handle</definition>
+        <argsstring>() const</argsstring>
+        <name>handle</name>
+        <qualifiedname>muda::Graph::handle</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/graph/graph.h" line="82" column="17" bodyfile="src/muda/graph/graph.h" bodystart="82" bodyend="82"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_graph_1a62b9ca00b52a2f4676020ac496d23406" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>cudaGraph_t</type>
+        <definition>cudaGraph_t muda::Graph::handle</definition>
+        <argsstring>()</argsstring>
+        <name>handle</name>
+        <qualifiedname>muda::Graph::handle</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/graph/graph.h" line="83" column="17" bodyfile="src/muda/graph/graph.h" bodystart="83" bodyend="83"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classmuda_1_1_graph_1ab9bdfcde9991a13ec0bf07e67de7af2c" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>auto</type>
+        <definition>static auto muda::Graph::create</definition>
+        <argsstring>()</argsstring>
+        <name>create</name>
+        <qualifiedname>muda::Graph::create</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/graph/graph.h" line="84" column="17" bodyfile="src/muda/graph/graph.h" bodystart="84" bodyend="84"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="classmuda_1_1_graph_1a21b06a5698be702708916b5565a3b6eb" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; cudaGraphNode_t &gt;</type>
+        <definition>static std::vector&lt; cudaGraphNode_t &gt; muda::Graph::map_dependencies</definition>
+        <argsstring>(const std::vector&lt; S&lt; GraphNode &gt; &gt; &amp;deps)</argsstring>
+        <name>map_dependencies</name>
+        <qualifiedname>muda::Graph::map_dependencies</qualifiedname>
+        <param>
+          <type>const std::vector&lt; S&lt; <ref refid="classmuda_1_1_graph_node" kindref="compound">GraphNode</ref> &gt; &gt; &amp;</type>
+          <declname>deps</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/graph/graph.h" line="90" column="24"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/muda/graph/graph.h" line="17" column="1" bodyfile="src/muda/graph/graph.h" bodystart="18" bodyend="91"/>
+    <listofallmembers>
+      <member refid="classmuda_1_1_graph_1a9b7d9953ddc0e0dec0fbf40e91adc3a9" prot="public" virt="non-virtual"><scope>muda::Graph</scope><name>add_dependency</name></member>
+      <member refid="classmuda_1_1_graph_1aef80e50c40348c99b104f2e204fdb91d" prot="public" virt="non-virtual"><scope>muda::Graph</scope><name>add_event_record_node</name></member>
+      <member refid="classmuda_1_1_graph_1ad01ac8849402243c4ba06266c03c8697" prot="public" virt="non-virtual"><scope>muda::Graph</scope><name>add_event_record_node</name></member>
+      <member refid="classmuda_1_1_graph_1aace1876e4de51f2a5a184bbb62107628" prot="public" virt="non-virtual"><scope>muda::Graph</scope><name>add_event_wait_node</name></member>
+      <member refid="classmuda_1_1_graph_1acc405e18d7e44b7d80239b4bbe7b16f2" prot="public" virt="non-virtual"><scope>muda::Graph</scope><name>add_event_wait_node</name></member>
+      <member refid="classmuda_1_1_graph_1a4837fd5b4ebf02c350597e6fadeae863" prot="public" virt="non-virtual"><scope>muda::Graph</scope><name>add_host_node</name></member>
+      <member refid="classmuda_1_1_graph_1a45db7b6c317377bd8369151ecf806465" prot="public" virt="non-virtual"><scope>muda::Graph</scope><name>add_host_node</name></member>
+      <member refid="classmuda_1_1_graph_1ae470149889bf60292e80c16821b5dfb2" prot="public" virt="non-virtual"><scope>muda::Graph</scope><name>add_kernel_node</name></member>
+      <member refid="classmuda_1_1_graph_1a6072a4773c766023d977544a397ba6c1" prot="public" virt="non-virtual"><scope>muda::Graph</scope><name>add_kernel_node</name></member>
+      <member refid="classmuda_1_1_graph_1ac41106ed87b5aa9048362277cbbd261d" prot="public" virt="non-virtual"><scope>muda::Graph</scope><name>add_memcpy_node</name></member>
+      <member refid="classmuda_1_1_graph_1a15efd2d4e68a43c282d3f198123ecdce" prot="public" virt="non-virtual"><scope>muda::Graph</scope><name>add_memcpy_node</name></member>
+      <member refid="classmuda_1_1_graph_1a21f63b25a11e99977ebed2191af745f2" prot="public" virt="non-virtual"><scope>muda::Graph</scope><name>add_memcpy_node</name></member>
+      <member refid="classmuda_1_1_graph_1a376f39c1f7157d4321a232e189e6e439" prot="public" virt="non-virtual"><scope>muda::Graph</scope><name>add_memcpy_node</name></member>
+      <member refid="classmuda_1_1_graph_1abee6b8d0ed16f9c223e279b20000433e" prot="public" virt="non-virtual"><scope>muda::Graph</scope><name>add_memset_node</name></member>
+      <member refid="classmuda_1_1_graph_1ac823b49dfcb01d1d6d79db017e16d0b1" prot="public" virt="non-virtual"><scope>muda::Graph</scope><name>add_memset_node</name></member>
+      <member refid="classmuda_1_1_graph_1ab9bdfcde9991a13ec0bf07e67de7af2c" prot="public" virt="non-virtual"><scope>muda::Graph</scope><name>create</name></member>
+      <member refid="classmuda_1_1_graph_1acce2548676ceadbe2b5745ffa6dbd7c2" prot="public" virt="non-virtual"><scope>muda::Graph</scope><name>Graph</name></member>
+      <member refid="classmuda_1_1_graph_1a61598ae93c93ecd732ddc3acf5c338f6" prot="public" virt="non-virtual"><scope>muda::Graph</scope><name>Graph</name></member>
+      <member refid="classmuda_1_1_graph_1a3217abfa78ed8e47d3e724213f166083" prot="public" virt="non-virtual"><scope>muda::Graph</scope><name>Graph</name></member>
+      <member refid="classmuda_1_1_graph_1ac8aabe4ee86ce7f94543c88ef1df090e" prot="public" virt="non-virtual"><scope>muda::Graph</scope><name>GraphExec</name></member>
+      <member refid="classmuda_1_1_graph_1a33ddc5fd2da13cb2fd80ecc56fe32479" prot="public" virt="non-virtual"><scope>muda::Graph</scope><name>handle</name></member>
+      <member refid="classmuda_1_1_graph_1a62b9ca00b52a2f4676020ac496d23406" prot="public" virt="non-virtual"><scope>muda::Graph</scope><name>handle</name></member>
+      <member refid="classmuda_1_1_graph_1afa804b008d511e03516eb4e274af0e34" prot="public" virt="non-virtual"><scope>muda::Graph</scope><name>instantiate</name></member>
+      <member refid="classmuda_1_1_graph_1aff4f3c66d3aa729082d39e120965c673" prot="public" virt="non-virtual"><scope>muda::Graph</scope><name>instantiate</name></member>
+      <member refid="classmuda_1_1_graph_1a3005a7385f29ac1dd9cd9a6749ece066" prot="private" virt="non-virtual"><scope>muda::Graph</scope><name>m_cached</name></member>
+      <member refid="classmuda_1_1_graph_1a65292f027f62ac85ce8a8ab3b1a5cfde" prot="private" virt="non-virtual"><scope>muda::Graph</scope><name>m_handle</name></member>
+      <member refid="classmuda_1_1_graph_1a21b06a5698be702708916b5565a3b6eb" prot="private" virt="non-virtual"><scope>muda::Graph</scope><name>map_dependencies</name></member>
+      <member refid="classmuda_1_1_graph_1ad0c5d57431e42085d1ac9a36af76d400" prot="public" virt="non-virtual"><scope>muda::Graph</scope><name>operator=</name></member>
+      <member refid="classmuda_1_1_graph_1a8a7c11a062a594412a29a71c98edb320" prot="public" virt="non-virtual"><scope>muda::Graph</scope><name>operator=</name></member>
+      <member refid="classmuda_1_1_graph_1a93cd197a4b50976bd4def33596fa39ed" prot="private" virt="non-virtual"><scope>muda::Graph</scope><name>S</name></member>
+      <member refid="classmuda_1_1_graph_1a66b9768517f5297e37b51cdf3cd03343" prot="public" virt="non-virtual"><scope>muda::Graph</scope><name>std::shared_ptr&lt; Graph &gt;</name></member>
+      <member refid="classmuda_1_1_graph_1add4394ad315db3cfc3ac7ce4885824ef" prot="private" virt="non-virtual"><scope>muda::Graph</scope><name>U</name></member>
+      <member refid="classmuda_1_1_graph_1ae5367a0a0540f6ef24b45e14029a9af5" prot="public" virt="non-virtual"><scope>muda::Graph</scope><name>~Graph</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

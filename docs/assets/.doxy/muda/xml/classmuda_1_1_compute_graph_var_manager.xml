@@ -1,0 +1,538 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classmuda_1_1_compute_graph_var_manager" kind="class" language="C++" prot="public">
+    <compoundname>muda::ComputeGraphVarManager</compoundname>
+    <sectiondef kind="private-type">
+      <memberdef kind="typedef" id="classmuda_1_1_compute_graph_var_manager_1a0417d10640d52d839baebdfb0cb1a778" prot="private" static="no">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>std::shared_ptr&lt; T &gt;</type>
+        <definition>using muda::ComputeGraphVarManager::S =  std::shared_ptr&lt;T&gt;</definition>
+        <argsstring></argsstring>
+        <name>S</name>
+        <qualifiedname>muda::ComputeGraphVarManager::S</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/compute_graph/compute_graph_var_manager.h" line="17" column="5" bodyfile="src/muda/compute_graph/compute_graph_var_manager.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="friend">
+      <memberdef kind="friend" id="classmuda_1_1_compute_graph_var_manager_1ab23709c145a1c448654edf5f911bafe9" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class ComputeGraph</definition>
+        <argsstring></argsstring>
+        <name>ComputeGraph</name>
+        <qualifiedname>muda::ComputeGraphVarManager::ComputeGraph</qualifiedname>
+        <param>
+          <type><ref refid="classmuda_1_1_compute_graph" kindref="compound">ComputeGraph</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/compute_graph/compute_graph_var_manager.h" line="58" column="18" bodyfile="src/muda/compute_graph/compute_graph_var_manager.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="classmuda_1_1_compute_graph_var_manager_1ad38734f28b3ab919558ee6592ee018e5" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class ComputeGraphNodeBase</definition>
+        <argsstring></argsstring>
+        <name>ComputeGraphNodeBase</name>
+        <qualifiedname>muda::ComputeGraphVarManager::ComputeGraphNodeBase</qualifiedname>
+        <param>
+          <type><ref refid="classmuda_1_1_compute_graph_node_base" kindref="compound">ComputeGraphNodeBase</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/compute_graph/compute_graph_var_manager.h" line="59" column="18" bodyfile="src/muda/compute_graph/compute_graph_var_manager.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="classmuda_1_1_compute_graph_var_manager_1a00070a633bc030b8454662605f5080e7" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class ComputeGraphClosure</definition>
+        <argsstring></argsstring>
+        <name>ComputeGraphClosure</name>
+        <qualifiedname>muda::ComputeGraphVarManager::ComputeGraphClosure</qualifiedname>
+        <param>
+          <type><ref refid="classmuda_1_1_compute_graph_closure" kindref="compound">ComputeGraphClosure</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/compute_graph/compute_graph_var_manager.h" line="60" column="18" bodyfile="src/muda/compute_graph/compute_graph_var_manager.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classmuda_1_1_compute_graph_var_manager_1a7f560a4a9ae3e4f42ead4461d030a64d" prot="private" static="no" mutable="no">
+        <type>std::unordered_map&lt; std::string, <ref refid="classmuda_1_1_compute_graph_var_base" kindref="compound">ComputeGraphVarBase</ref> * &gt;</type>
+        <definition>std::unordered_map&lt;std::string, ComputeGraphVarBase*&gt; muda::ComputeGraphVarManager::m_vars_map</definition>
+        <argsstring></argsstring>
+        <name>m_vars_map</name>
+        <qualifiedname>muda::ComputeGraphVarManager::m_vars_map</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/compute_graph/compute_graph_var_manager.h" line="62" column="24" bodyfile="src/muda/compute_graph/compute_graph_var_manager.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1_compute_graph_var_manager_1adea6b9b24bf7ab0399bfd9111e75748c" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classmuda_1_1_compute_graph_var_base" kindref="compound">ComputeGraphVarBase</ref> * &gt;</type>
+        <definition>std::vector&lt;ComputeGraphVarBase*&gt; muda::ComputeGraphVarManager::m_vars</definition>
+        <argsstring></argsstring>
+        <name>m_vars</name>
+        <qualifiedname>muda::ComputeGraphVarManager::m_vars</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/compute_graph/compute_graph_var_manager.h" line="63" column="37" bodyfile="src/muda/compute_graph/compute_graph_var_manager.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1_compute_graph_var_manager_1a422009b3f356aad1df35e3e04e1e9911" prot="private" static="no" mutable="no">
+        <type>std::unordered_set&lt; <ref refid="classmuda_1_1_compute_graph" kindref="compound">ComputeGraph</ref> * &gt;</type>
+        <definition>std::unordered_set&lt;ComputeGraph*&gt; muda::ComputeGraphVarManager::m_graphs</definition>
+        <argsstring></argsstring>
+        <name>m_graphs</name>
+        <qualifiedname>muda::ComputeGraphVarManager::m_graphs</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/compute_graph/compute_graph_var_manager.h" line="64" column="44" bodyfile="src/muda/compute_graph/compute_graph_var_manager.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmuda_1_1_compute_graph_var_manager_1ac6edc07e517a1fd40eb9c543ae4a4c36" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>muda::ComputeGraphVarManager::ComputeGraphVarManager</definition>
+        <argsstring>()=default</argsstring>
+        <name>ComputeGraphVarManager</name>
+        <qualifiedname>muda::ComputeGraphVarManager::ComputeGraphVarManager</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/compute_graph/compute_graph_var_manager.h" line="20" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_compute_graph_var_manager_1afa489be5c20d4419d6db1e8b9fd48c9d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>muda::ComputeGraphVarManager::~ComputeGraphVarManager</definition>
+        <argsstring>()</argsstring>
+        <name>~ComputeGraphVarManager</name>
+        <qualifiedname>muda::ComputeGraphVarManager::~ComputeGraphVarManager</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/compute_graph/compute_graph_var_manager.h" line="21" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_compute_graph_var_manager_1a2151502b1bd3c58f5a66b261f9e6d9d1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>S&lt; <ref refid="classmuda_1_1_compute_graph" kindref="compound">ComputeGraph</ref> &gt;</type>
+        <definition>S&lt; ComputeGraph &gt; muda::ComputeGraphVarManager::create_graph</definition>
+        <argsstring>(std::string_view name=&quot;graph&quot;, ComputeGraphFlag flags={})</argsstring>
+        <name>create_graph</name>
+        <qualifiedname>muda::ComputeGraphVarManager::create_graph</qualifiedname>
+        <param>
+          <type>std::string_view</type>
+          <declname>name</declname>
+          <defval>&quot;graph&quot;</defval>
+        </param>
+        <param>
+          <type>ComputeGraphFlag</type>
+          <declname>flags</declname>
+          <defval>{}</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/compute_graph/compute_graph_var_manager.h" line="23" column="7"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_compute_graph_var_manager_1a7495126eac75df94e681a4d7b049c586" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classmuda_1_1_compute_graph_var" kindref="compound">ComputeGraphVar</ref>&lt; T &gt; &amp;</type>
+        <definition>ComputeGraphVar&lt; T &gt; &amp; muda::ComputeGraphVarManager::create_var</definition>
+        <argsstring>(std::string_view name)</argsstring>
+        <name>create_var</name>
+        <qualifiedname>muda::ComputeGraphVarManager::create_var</qualifiedname>
+        <param>
+          <type>std::string_view</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/compute_graph/compute_graph_var_manager.h" line="33" column="21"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_compute_graph_var_manager_1a1142178a0009409331d13e05560624bf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classmuda_1_1_compute_graph_var" kindref="compound">ComputeGraphVar</ref>&lt; T &gt; &amp;</type>
+        <definition>ComputeGraphVar&lt; T &gt; &amp; muda::ComputeGraphVarManager::create_var</definition>
+        <argsstring>(std::string_view name, const T &amp;init_value)</argsstring>
+        <name>create_var</name>
+        <qualifiedname>muda::ComputeGraphVarManager::create_var</qualifiedname>
+        <param>
+          <type>std::string_view</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>const T &amp;</type>
+          <declname>init_value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/compute_graph/compute_graph_var_manager.h" line="35" column="21"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_compute_graph_var_manager_1ac400d205e08ae16e8fed4525ce3b253b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classmuda_1_1_compute_graph_var" kindref="compound">ComputeGraphVar</ref>&lt; T &gt; *</type>
+        <definition>ComputeGraphVar&lt; T &gt; * muda::ComputeGraphVarManager::find_var</definition>
+        <argsstring>(std::string_view name)</argsstring>
+        <name>find_var</name>
+        <qualifiedname>muda::ComputeGraphVarManager::find_var</qualifiedname>
+        <param>
+          <type>std::string_view</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/compute_graph/compute_graph_var_manager.h" line="37" column="21"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_compute_graph_var_manager_1a7516e975d19bee80231f110878e36275" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool muda::ComputeGraphVarManager::is_using</definition>
+        <argsstring>() const</argsstring>
+        <name>is_using</name>
+        <qualifiedname>muda::ComputeGraphVarManager::is_using</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/compute_graph/compute_graph_var_manager.h" line="39" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_compute_graph_var_manager_1abd3876a43a6ee6e6911bc6d102b1eb53" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void muda::ComputeGraphVarManager::sync</definition>
+        <argsstring>() const</argsstring>
+        <name>sync</name>
+        <qualifiedname>muda::ComputeGraphVarManager::sync</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/compute_graph/compute_graph_var_manager.h" line="40" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_compute_graph_var_manager_1a12f738db3725e75859a31a6e7fef09c1" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void muda::ComputeGraphVarManager::sync_on</definition>
+        <argsstring>(cudaStream_t stream) const</argsstring>
+        <name>sync_on</name>
+        <qualifiedname>muda::ComputeGraphVarManager::sync_on</qualifiedname>
+        <param>
+          <type>cudaStream_t</type>
+          <declname>stream</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/compute_graph/compute_graph_var_manager.h" line="41" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_compute_graph_var_manager_1a90f4ac58bb804cb46f48187e1ecc1f40" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename...</type>
+            <declname>T</declname>
+            <defname>T</defname>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool muda::ComputeGraphVarManager::is_using</definition>
+        <argsstring>(const ComputeGraphVar&lt; T &gt; &amp;... vars) const</argsstring>
+        <name>is_using</name>
+        <qualifiedname>muda::ComputeGraphVarManager::is_using</qualifiedname>
+        <param>
+          <type>const <ref refid="classmuda_1_1_compute_graph_var" kindref="compound">ComputeGraphVar</ref>&lt; T &gt; &amp;...</type>
+          <declname>vars</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/compute_graph/compute_graph_var_manager.h" line="44" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_compute_graph_var_manager_1a6c3ab975986b144a1ce086a7c103338b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename...</type>
+            <declname>T</declname>
+            <defname>T</defname>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void muda::ComputeGraphVarManager::sync</definition>
+        <argsstring>(const ComputeGraphVar&lt; T &gt; &amp;... vars) const</argsstring>
+        <name>sync</name>
+        <qualifiedname>muda::ComputeGraphVarManager::sync</qualifiedname>
+        <param>
+          <type>const <ref refid="classmuda_1_1_compute_graph_var" kindref="compound">ComputeGraphVar</ref>&lt; T &gt; &amp;...</type>
+          <declname>vars</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/compute_graph/compute_graph_var_manager.h" line="46" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_compute_graph_var_manager_1a3018bc3614d24cdc424ec26b9fa1c16a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename...</type>
+            <declname>T</declname>
+            <defname>T</defname>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void muda::ComputeGraphVarManager::sync_on</definition>
+        <argsstring>(cudaStream_t stream, const ComputeGraphVar&lt; T &gt; &amp;... vars) const</argsstring>
+        <name>sync_on</name>
+        <qualifiedname>muda::ComputeGraphVarManager::sync_on</qualifiedname>
+        <param>
+          <type>cudaStream_t</type>
+          <declname>stream</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classmuda_1_1_compute_graph_var" kindref="compound">ComputeGraphVar</ref>&lt; T &gt; &amp;...</type>
+          <declname>vars</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/compute_graph/compute_graph_var_manager.h" line="48" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_compute_graph_var_manager_1ac394eaf6fe9ead2923efe68088d3b790" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool muda::ComputeGraphVarManager::is_using</definition>
+        <argsstring>(const span&lt; const ComputeGraphVarBase * &gt; vars) const</argsstring>
+        <name>is_using</name>
+        <qualifiedname>muda::ComputeGraphVarManager::is_using</qualifiedname>
+        <param>
+          <type>const span&lt; const <ref refid="classmuda_1_1_compute_graph_var_base" kindref="compound">ComputeGraphVarBase</ref> * &gt;</type>
+          <declname>vars</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/compute_graph/compute_graph_var_manager.h" line="50" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_compute_graph_var_manager_1aa5f299998171fc3f3fb9565b403f9c37" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void muda::ComputeGraphVarManager::sync</definition>
+        <argsstring>(const span&lt; const ComputeGraphVarBase * &gt; vars) const</argsstring>
+        <name>sync</name>
+        <qualifiedname>muda::ComputeGraphVarManager::sync</qualifiedname>
+        <param>
+          <type>const span&lt; const <ref refid="classmuda_1_1_compute_graph_var_base" kindref="compound">ComputeGraphVarBase</ref> * &gt;</type>
+          <declname>vars</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/compute_graph/compute_graph_var_manager.h" line="51" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_compute_graph_var_manager_1ace2b65e3e88af9d7968faab9f7923d6a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void muda::ComputeGraphVarManager::sync_on</definition>
+        <argsstring>(cudaStream_t stream, const span&lt; const ComputeGraphVarBase * &gt; vars) const</argsstring>
+        <name>sync_on</name>
+        <qualifiedname>muda::ComputeGraphVarManager::sync_on</qualifiedname>
+        <param>
+          <type>cudaStream_t</type>
+          <declname>stream</declname>
+        </param>
+        <param>
+          <type>const span&lt; const <ref refid="classmuda_1_1_compute_graph_var_base" kindref="compound">ComputeGraphVarBase</ref> * &gt;</type>
+          <declname>vars</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/compute_graph/compute_graph_var_manager.h" line="52" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_compute_graph_var_manager_1a8e3a48610f42ee734d050e4aad7d123f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const auto &amp;</type>
+        <definition>const auto &amp; muda::ComputeGraphVarManager::graphs</definition>
+        <argsstring>() const</argsstring>
+        <name>graphs</name>
+        <qualifiedname>muda::ComputeGraphVarManager::graphs</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/compute_graph/compute_graph_var_manager.h" line="54" column="16" bodyfile="src/muda/compute_graph/compute_graph_var_manager.h" bodystart="54" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_compute_graph_var_manager_1a1997c14e30df935e88f3bee35f5132a4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void muda::ComputeGraphVarManager::graphviz</definition>
+        <argsstring>(std::ostream &amp;os, const ComputeGraphGraphvizOptions &amp;options={}) const</argsstring>
+        <name>graphviz</name>
+        <qualifiedname>muda::ComputeGraphVarManager::graphviz</qualifiedname>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>os</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classmuda_1_1_compute_graph_graphviz_options" kindref="compound">ComputeGraphGraphvizOptions</ref> &amp;</type>
+          <declname>options</declname>
+          <defval>{}</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/compute_graph/compute_graph_var_manager.h" line="55" column="10"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classmuda_1_1_compute_graph_var_manager_1a6c442138d8743c6d0854fbb21aa6be63" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="classmuda_1_1_compute_graph" kindref="compound">ComputeGraph</ref> * &gt;</type>
+        <definition>std::vector&lt; ComputeGraph * &gt; muda::ComputeGraphVarManager::unique_graphs</definition>
+        <argsstring>(span&lt; const ComputeGraphVarBase * &gt; vars) const</argsstring>
+        <name>unique_graphs</name>
+        <qualifiedname>muda::ComputeGraphVarManager::unique_graphs</qualifiedname>
+        <param>
+          <type>span&lt; const <ref refid="classmuda_1_1_compute_graph_var_base" kindref="compound">ComputeGraphVarBase</ref> * &gt;</type>
+          <declname>vars</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/compute_graph/compute_graph_var_manager.h" line="61" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_compute_graph_var_manager_1a705da9ca8d7b2feb2ceefb33c26855b9" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>span&lt; const <ref refid="classmuda_1_1_compute_graph_var_base" kindref="compound">ComputeGraphVarBase</ref> * &gt;</type>
+        <definition>span&lt; const ComputeGraphVarBase * &gt; muda::ComputeGraphVarManager::var_span</definition>
+        <argsstring>() const</argsstring>
+        <name>var_span</name>
+        <qualifiedname>muda::ComputeGraphVarManager::var_span</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/compute_graph/compute_graph_var_manager.h" line="65" column="31"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/muda/compute_graph/compute_graph_var_manager.h" line="14" column="1" bodyfile="src/muda/compute_graph/compute_graph_var_manager.h" bodystart="15" bodyend="66"/>
+    <listofallmembers>
+      <member refid="classmuda_1_1_compute_graph_var_manager_1ab23709c145a1c448654edf5f911bafe9" prot="private" virt="non-virtual"><scope>muda::ComputeGraphVarManager</scope><name>ComputeGraph</name></member>
+      <member refid="classmuda_1_1_compute_graph_var_manager_1a00070a633bc030b8454662605f5080e7" prot="private" virt="non-virtual"><scope>muda::ComputeGraphVarManager</scope><name>ComputeGraphClosure</name></member>
+      <member refid="classmuda_1_1_compute_graph_var_manager_1ad38734f28b3ab919558ee6592ee018e5" prot="private" virt="non-virtual"><scope>muda::ComputeGraphVarManager</scope><name>ComputeGraphNodeBase</name></member>
+      <member refid="classmuda_1_1_compute_graph_var_manager_1ac6edc07e517a1fd40eb9c543ae4a4c36" prot="public" virt="non-virtual"><scope>muda::ComputeGraphVarManager</scope><name>ComputeGraphVarManager</name></member>
+      <member refid="classmuda_1_1_compute_graph_var_manager_1a2151502b1bd3c58f5a66b261f9e6d9d1" prot="public" virt="non-virtual"><scope>muda::ComputeGraphVarManager</scope><name>create_graph</name></member>
+      <member refid="classmuda_1_1_compute_graph_var_manager_1a7495126eac75df94e681a4d7b049c586" prot="public" virt="non-virtual"><scope>muda::ComputeGraphVarManager</scope><name>create_var</name></member>
+      <member refid="classmuda_1_1_compute_graph_var_manager_1a1142178a0009409331d13e05560624bf" prot="public" virt="non-virtual"><scope>muda::ComputeGraphVarManager</scope><name>create_var</name></member>
+      <member refid="classmuda_1_1_compute_graph_var_manager_1ac400d205e08ae16e8fed4525ce3b253b" prot="public" virt="non-virtual"><scope>muda::ComputeGraphVarManager</scope><name>find_var</name></member>
+      <member refid="classmuda_1_1_compute_graph_var_manager_1a8e3a48610f42ee734d050e4aad7d123f" prot="public" virt="non-virtual"><scope>muda::ComputeGraphVarManager</scope><name>graphs</name></member>
+      <member refid="classmuda_1_1_compute_graph_var_manager_1a1997c14e30df935e88f3bee35f5132a4" prot="public" virt="non-virtual"><scope>muda::ComputeGraphVarManager</scope><name>graphviz</name></member>
+      <member refid="classmuda_1_1_compute_graph_var_manager_1a7516e975d19bee80231f110878e36275" prot="public" virt="non-virtual"><scope>muda::ComputeGraphVarManager</scope><name>is_using</name></member>
+      <member refid="classmuda_1_1_compute_graph_var_manager_1a90f4ac58bb804cb46f48187e1ecc1f40" prot="public" virt="non-virtual"><scope>muda::ComputeGraphVarManager</scope><name>is_using</name></member>
+      <member refid="classmuda_1_1_compute_graph_var_manager_1ac394eaf6fe9ead2923efe68088d3b790" prot="public" virt="non-virtual"><scope>muda::ComputeGraphVarManager</scope><name>is_using</name></member>
+      <member refid="classmuda_1_1_compute_graph_var_manager_1a422009b3f356aad1df35e3e04e1e9911" prot="private" virt="non-virtual"><scope>muda::ComputeGraphVarManager</scope><name>m_graphs</name></member>
+      <member refid="classmuda_1_1_compute_graph_var_manager_1adea6b9b24bf7ab0399bfd9111e75748c" prot="private" virt="non-virtual"><scope>muda::ComputeGraphVarManager</scope><name>m_vars</name></member>
+      <member refid="classmuda_1_1_compute_graph_var_manager_1a7f560a4a9ae3e4f42ead4461d030a64d" prot="private" virt="non-virtual"><scope>muda::ComputeGraphVarManager</scope><name>m_vars_map</name></member>
+      <member refid="classmuda_1_1_compute_graph_var_manager_1a0417d10640d52d839baebdfb0cb1a778" prot="private" virt="non-virtual"><scope>muda::ComputeGraphVarManager</scope><name>S</name></member>
+      <member refid="classmuda_1_1_compute_graph_var_manager_1abd3876a43a6ee6e6911bc6d102b1eb53" prot="public" virt="non-virtual"><scope>muda::ComputeGraphVarManager</scope><name>sync</name></member>
+      <member refid="classmuda_1_1_compute_graph_var_manager_1a6c3ab975986b144a1ce086a7c103338b" prot="public" virt="non-virtual"><scope>muda::ComputeGraphVarManager</scope><name>sync</name></member>
+      <member refid="classmuda_1_1_compute_graph_var_manager_1aa5f299998171fc3f3fb9565b403f9c37" prot="public" virt="non-virtual"><scope>muda::ComputeGraphVarManager</scope><name>sync</name></member>
+      <member refid="classmuda_1_1_compute_graph_var_manager_1a12f738db3725e75859a31a6e7fef09c1" prot="public" virt="non-virtual"><scope>muda::ComputeGraphVarManager</scope><name>sync_on</name></member>
+      <member refid="classmuda_1_1_compute_graph_var_manager_1a3018bc3614d24cdc424ec26b9fa1c16a" prot="public" virt="non-virtual"><scope>muda::ComputeGraphVarManager</scope><name>sync_on</name></member>
+      <member refid="classmuda_1_1_compute_graph_var_manager_1ace2b65e3e88af9d7968faab9f7923d6a" prot="public" virt="non-virtual"><scope>muda::ComputeGraphVarManager</scope><name>sync_on</name></member>
+      <member refid="classmuda_1_1_compute_graph_var_manager_1a6c442138d8743c6d0854fbb21aa6be63" prot="private" virt="non-virtual"><scope>muda::ComputeGraphVarManager</scope><name>unique_graphs</name></member>
+      <member refid="classmuda_1_1_compute_graph_var_manager_1a705da9ca8d7b2feb2ceefb33c26855b9" prot="private" virt="non-virtual"><scope>muda::ComputeGraphVarManager</scope><name>var_span</name></member>
+      <member refid="classmuda_1_1_compute_graph_var_manager_1afa489be5c20d4419d6db1e8b9fd48c9d" prot="public" virt="non-virtual"><scope>muda::ComputeGraphVarManager</scope><name>~ComputeGraphVarManager</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

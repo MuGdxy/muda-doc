@@ -1,0 +1,323 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classmuda_1_1_viewer_base" kind="class" language="C++" prot="public">
+    <compoundname>muda::ViewerBase</compoundname>
+    <templateparamlist>
+      <param>
+        <type>bool</type>
+        <declname>IsConst_</declname>
+        <defname>IsConst_</defname>
+        <defval>false</defval>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="protected-type">
+      <memberdef kind="typedef" id="classmuda_1_1_viewer_base_1aa1a759a33c97b1e72b78848aeb96eb37" prot="protected" static="no">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>std::conditional_t&lt; IsConst, const T, T &gt;</type>
+        <definition>using muda::ViewerBase&lt; IsConst_ &gt;::auto_const_t =  std::conditional_t&lt;IsConst, const T, T&gt;</definition>
+        <argsstring></argsstring>
+        <name>auto_const_t</name>
+        <qualifiedname>muda::ViewerBase::auto_const_t</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/viewer/viewer_base.h" line="25" column="5" bodyfile="src/muda/viewer/viewer_base.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classmuda_1_1_viewer_base_1a9447a51a53c20567fcb38fcdc275d812" prot="protected" static="no">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>std::enable_if_t&lt; IsNonConst, T &gt;</type>
+        <definition>using muda::ViewerBase&lt; IsConst_ &gt;::non_const_enable_t =  std::enable_if_t&lt;IsNonConst, T&gt;</definition>
+        <argsstring></argsstring>
+        <name>non_const_enable_t</name>
+        <qualifiedname>muda::ViewerBase::non_const_enable_t</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/viewer/viewer_base.h" line="27" column="5" bodyfile="src/muda/viewer/viewer_base.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classmuda_1_1_viewer_base_1ae9e7348b91c4dc1f3fc0de8e63335576" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr bool</type>
+        <definition>constexpr bool muda::ViewerBase&lt; IsConst_ &gt;::IsConst</definition>
+        <argsstring></argsstring>
+        <name>IsConst</name>
+        <qualifiedname>muda::ViewerBase::IsConst</qualifiedname>
+        <initializer>= IsConst_</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/viewer/viewer_base.h" line="20" column="27" bodyfile="src/muda/viewer/viewer_base.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1_viewer_base_1adc31410f57cf34b15824f4f3fcb434a3" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr bool</type>
+        <definition>constexpr bool muda::ViewerBase&lt; IsConst_ &gt;::IsNonConst</definition>
+        <argsstring></argsstring>
+        <name>IsNonConst</name>
+        <qualifiedname>muda::ViewerBase::IsNonConst</qualifiedname>
+        <initializer>= !IsConst_</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/viewer/viewer_base.h" line="21" column="27" bodyfile="src/muda/viewer/viewer_base.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classmuda_1_1_viewer_base_1a22014bbe8cff000bee2073004bb71931" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int muda::ViewerBase&lt; IsConst_ &gt;::m_dummy</definition>
+        <argsstring></argsstring>
+        <name>m_dummy</name>
+        <qualifiedname>muda::ViewerBase::m_dummy</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/viewer/viewer_base.h" line="38" column="9" bodyfile="src/muda/viewer/viewer_base.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmuda_1_1_viewer_base_1aab07b74590e3ae50b1352372f66080f8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>MUDA_GENERIC</type>
+        <definition>MUDA_GENERIC muda::ViewerBase&lt; IsConst_ &gt;::ViewerBase</definition>
+        <argsstring>() MUDA_NOEXCEPT</argsstring>
+        <name>ViewerBase</name>
+        <qualifiedname>muda::ViewerBase::ViewerBase</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/viewer/viewer_base.h" line="41" column="18" bodyfile="src/muda/viewer/viewer_base.h" bodystart="41" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_viewer_base_1a4cb1c578b4abbf1b113e9cf7a3d771d8" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>MUDA_GENERIC const char *</type>
+        <definition>MUDA_GENERIC const char * muda::ViewerBase&lt; IsConst_ &gt;::name</definition>
+        <argsstring>() const MUDA_NOEXCEPT</argsstring>
+        <name>name</name>
+        <qualifiedname>muda::ViewerBase::name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/viewer/viewer_base.h" line="52" column="29" bodyfile="src/muda/viewer/viewer_base.h" bodystart="52" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_viewer_base_1a9b65192d349fd93c05c8ccad4d4014d4" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>MUDA_GENERIC const char *</type>
+        <definition>MUDA_GENERIC const char * muda::ViewerBase&lt; IsConst_ &gt;::kernel_name</definition>
+        <argsstring>() const MUDA_NOEXCEPT</argsstring>
+        <name>kernel_name</name>
+        <qualifiedname>muda::ViewerBase::kernel_name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/viewer/viewer_base.h" line="62" column="29" bodyfile="src/muda/viewer/viewer_base.h" bodystart="62" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_viewer_base_1a35b42fb3c890f8343c551451bceab3f1" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>MUDA_GENERIC const char *</type>
+        <definition>MUDA_GENERIC const char * muda::ViewerBase&lt; IsConst_ &gt;::kernel_file</definition>
+        <argsstring>() const MUDA_NOEXCEPT</argsstring>
+        <name>kernel_file</name>
+        <qualifiedname>muda::ViewerBase::kernel_file</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/viewer/viewer_base.h" line="72" column="29" bodyfile="src/muda/viewer/viewer_base.h" bodystart="72" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_viewer_base_1a3247ca184afa57b2e00f8da9e080a2a1" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>MUDA_GENERIC int</type>
+        <definition>MUDA_GENERIC int muda::ViewerBase&lt; IsConst_ &gt;::kernel_line</definition>
+        <argsstring>() const MUDA_NOEXCEPT</argsstring>
+        <name>kernel_line</name>
+        <qualifiedname>muda::ViewerBase::kernel_line</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/viewer/viewer_base.h" line="82" column="22" bodyfile="src/muda/viewer/viewer_base.h" bodystart="82" bodyend="88"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_viewer_base_1a1e3c7201751bec476d5f9b9c26be94b5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>MUDA_INLINE MUDA_GENERIC void</type>
+        <definition>MUDA_INLINE MUDA_GENERIC void muda::ViewerBase&lt; IsConst_ &gt;::copy_label</definition>
+        <argsstring>(const ViewerBase &amp;other) MUDA_NOEXCEPT</argsstring>
+        <name>copy_label</name>
+        <qualifiedname>muda::ViewerBase::copy_label</qualifiedname>
+        <param>
+          <type>const <ref refid="classmuda_1_1_viewer_base" kindref="compound">ViewerBase</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/viewer/viewer_base.h" line="90" column="35" bodyfile="src/muda/viewer/viewer_base.h" bodystart="90" bodyend="98"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_viewer_base_1aac0b5cbd86bfb6653c7dddeac2907428" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>muda::ViewerBase&lt; IsConst_ &gt;::ViewerBase</definition>
+        <argsstring>(const ViewerBase &amp;)=default</argsstring>
+        <name>ViewerBase</name>
+        <qualifiedname>muda::ViewerBase::ViewerBase</qualifiedname>
+        <param>
+          <type>const <ref refid="classmuda_1_1_viewer_base" kindref="compound">ViewerBase</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/viewer/viewer_base.h" line="101" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_viewer_base_1a70b803f760ff21c327b454f7c9fc0ef3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>muda::ViewerBase&lt; IsConst_ &gt;::ViewerBase</definition>
+        <argsstring>(ViewerBase &amp;&amp;)=default</argsstring>
+        <name>ViewerBase</name>
+        <qualifiedname>muda::ViewerBase::ViewerBase</qualifiedname>
+        <param>
+          <type><ref refid="classmuda_1_1_viewer_base" kindref="compound">ViewerBase</ref> &amp;&amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/viewer/viewer_base.h" line="102" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_viewer_base_1a8ce13df13b4a82e63c7a6230ee1e0b7c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classmuda_1_1_viewer_base" kindref="compound">ViewerBase</ref> &amp;</type>
+        <definition>ViewerBase &amp; muda::ViewerBase&lt; IsConst_ &gt;::operator=</definition>
+        <argsstring>(const ViewerBase &amp;)=default</argsstring>
+        <name>operator=</name>
+        <qualifiedname>muda::ViewerBase::operator=</qualifiedname>
+        <param>
+          <type>const <ref refid="classmuda_1_1_viewer_base" kindref="compound">ViewerBase</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/viewer/viewer_base.h" line="103" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_viewer_base_1ac73a737a8a64ff2026adcd7bc5f2738a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classmuda_1_1_viewer_base" kindref="compound">ViewerBase</ref> &amp;</type>
+        <definition>ViewerBase &amp; muda::ViewerBase&lt; IsConst_ &gt;::operator=</definition>
+        <argsstring>(ViewerBase &amp;&amp;)=default</argsstring>
+        <name>operator=</name>
+        <qualifiedname>muda::ViewerBase::operator=</qualifiedname>
+        <param>
+          <type><ref refid="classmuda_1_1_viewer_base" kindref="compound">ViewerBase</ref> &amp;&amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/viewer/viewer_base.h" line="104" column="16"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classmuda_1_1_viewer_base_1a57bbb7a9a3e4cb77a0a05bdee3a3e5fd" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>MUDA_INLINE MUDA_HOST void</type>
+        <definition>MUDA_INLINE MUDA_HOST void muda::ViewerBase&lt; IsConst_ &gt;::name</definition>
+        <argsstring>(const char *n) MUDA_NOEXCEPT</argsstring>
+        <name>name</name>
+        <qualifiedname>muda::ViewerBase::name</qualifiedname>
+        <param>
+          <type>const char *</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/viewer/viewer_base.h" line="107" column="32" bodyfile="src/muda/viewer/viewer_base.h" bodystart="107" bodyend="112"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_viewer_base_1a31d6dd944a28c6d428e5e79cd7c034a0" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>MUDA_INLINE MUDA_GENERIC void</type>
+        <definition>MUDA_INLINE MUDA_GENERIC void muda::ViewerBase&lt; IsConst_ &gt;::name</definition>
+        <argsstring>(details::StringPointer pointer) MUDA_NOEXCEPT</argsstring>
+        <name>name</name>
+        <qualifiedname>muda::ViewerBase::name</qualifiedname>
+        <param>
+          <type><ref refid="classmuda_1_1details_1_1_string_pointer" kindref="compound">details::StringPointer</ref></type>
+          <declname>pointer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/viewer/viewer_base.h" line="114" column="35" bodyfile="src/muda/viewer/viewer_base.h" bodystart="114" bodyend="119"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/muda/viewer/viewer_base.h" line="17" column="1" bodyfile="src/muda/viewer/viewer_base.h" bodystart="18" bodyend="120"/>
+    <listofallmembers>
+      <member refid="classmuda_1_1_viewer_base_1aa1a759a33c97b1e72b78848aeb96eb37" prot="protected" virt="non-virtual"><scope>muda::ViewerBase</scope><name>auto_const_t</name></member>
+      <member refid="classmuda_1_1_viewer_base_1a1e3c7201751bec476d5f9b9c26be94b5" prot="public" virt="non-virtual"><scope>muda::ViewerBase</scope><name>copy_label</name></member>
+      <member refid="classmuda_1_1_viewer_base_1ae9e7348b91c4dc1f3fc0de8e63335576" prot="public" virt="non-virtual"><scope>muda::ViewerBase</scope><name>IsConst</name></member>
+      <member refid="classmuda_1_1_viewer_base_1adc31410f57cf34b15824f4f3fcb434a3" prot="public" virt="non-virtual"><scope>muda::ViewerBase</scope><name>IsNonConst</name></member>
+      <member refid="classmuda_1_1_viewer_base_1a35b42fb3c890f8343c551451bceab3f1" prot="public" virt="non-virtual"><scope>muda::ViewerBase</scope><name>kernel_file</name></member>
+      <member refid="classmuda_1_1_viewer_base_1a3247ca184afa57b2e00f8da9e080a2a1" prot="public" virt="non-virtual"><scope>muda::ViewerBase</scope><name>kernel_line</name></member>
+      <member refid="classmuda_1_1_viewer_base_1a9b65192d349fd93c05c8ccad4d4014d4" prot="public" virt="non-virtual"><scope>muda::ViewerBase</scope><name>kernel_name</name></member>
+      <member refid="classmuda_1_1_viewer_base_1a22014bbe8cff000bee2073004bb71931" prot="private" virt="non-virtual"><scope>muda::ViewerBase</scope><name>m_dummy</name></member>
+      <member refid="classmuda_1_1_viewer_base_1a4cb1c578b4abbf1b113e9cf7a3d771d8" prot="public" virt="non-virtual"><scope>muda::ViewerBase</scope><name>name</name></member>
+      <member refid="classmuda_1_1_viewer_base_1a57bbb7a9a3e4cb77a0a05bdee3a3e5fd" prot="protected" virt="non-virtual"><scope>muda::ViewerBase</scope><name>name</name></member>
+      <member refid="classmuda_1_1_viewer_base_1a31d6dd944a28c6d428e5e79cd7c034a0" prot="protected" virt="non-virtual"><scope>muda::ViewerBase</scope><name>name</name></member>
+      <member refid="classmuda_1_1_viewer_base_1a9447a51a53c20567fcb38fcdc275d812" prot="protected" virt="non-virtual"><scope>muda::ViewerBase</scope><name>non_const_enable_t</name></member>
+      <member refid="classmuda_1_1_viewer_base_1a8ce13df13b4a82e63c7a6230ee1e0b7c" prot="public" virt="non-virtual"><scope>muda::ViewerBase</scope><name>operator=</name></member>
+      <member refid="classmuda_1_1_viewer_base_1ac73a737a8a64ff2026adcd7bc5f2738a" prot="public" virt="non-virtual"><scope>muda::ViewerBase</scope><name>operator=</name></member>
+      <member refid="classmuda_1_1_viewer_base_1aab07b74590e3ae50b1352372f66080f8" prot="public" virt="non-virtual"><scope>muda::ViewerBase</scope><name>ViewerBase</name></member>
+      <member refid="classmuda_1_1_viewer_base_1aac0b5cbd86bfb6653c7dddeac2907428" prot="public" virt="non-virtual"><scope>muda::ViewerBase</scope><name>ViewerBase</name></member>
+      <member refid="classmuda_1_1_viewer_base_1a70b803f760ff21c327b454f7c9fc0ef3" prot="public" virt="non-virtual"><scope>muda::ViewerBase</scope><name>ViewerBase</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

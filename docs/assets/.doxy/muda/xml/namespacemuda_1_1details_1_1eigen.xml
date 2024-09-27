@@ -1,0 +1,150 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="namespacemuda_1_1details_1_1eigen" kind="namespace" language="C++">
+    <compoundname>muda::details::eigen</compoundname>
+    <innerclass refid="unionmuda_1_1details_1_1eigen_1_1un" prot="public">muda::details::eigen::un</innerclass>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="svd__impl_8h_1a571041ed2c6f69731e46bd587c1bc4d9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>__device__ __forceinline__ void</type>
+        <definition>__device__ __forceinline__ void muda::details::eigen::svd3x3</definition>
+        <argsstring>(float a11, float a12, float a13, float a21, float a22, float a23, float a31, float a32, float a33, float &amp;u11, float &amp;u12, float &amp;u13, float &amp;u21, float &amp;u22, float &amp;u23, float &amp;u31, float &amp;u32, float &amp;u33, float &amp;s11, float &amp;s22, float &amp;s33, float &amp;v11, float &amp;v12, float &amp;v13, float &amp;v21, float &amp;v22, float &amp;v23, float &amp;v31, float &amp;v32, float &amp;v33)</argsstring>
+        <name>svd3x3</name>
+        <qualifiedname>muda::details::eigen::svd3x3</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>a11</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>a12</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>a13</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>a21</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>a22</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>a23</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>a31</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>a32</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>a33</declname>
+        </param>
+        <param>
+          <type>float &amp;</type>
+          <declname>u11</declname>
+        </param>
+        <param>
+          <type>float &amp;</type>
+          <declname>u12</declname>
+        </param>
+        <param>
+          <type>float &amp;</type>
+          <declname>u13</declname>
+        </param>
+        <param>
+          <type>float &amp;</type>
+          <declname>u21</declname>
+        </param>
+        <param>
+          <type>float &amp;</type>
+          <declname>u22</declname>
+        </param>
+        <param>
+          <type>float &amp;</type>
+          <declname>u23</declname>
+        </param>
+        <param>
+          <type>float &amp;</type>
+          <declname>u31</declname>
+        </param>
+        <param>
+          <type>float &amp;</type>
+          <declname>u32</declname>
+        </param>
+        <param>
+          <type>float &amp;</type>
+          <declname>u33</declname>
+        </param>
+        <param>
+          <type>float &amp;</type>
+          <declname>s11</declname>
+        </param>
+        <param>
+          <type>float &amp;</type>
+          <declname>s22</declname>
+        </param>
+        <param>
+          <type>float &amp;</type>
+          <declname>s33</declname>
+        </param>
+        <param>
+          <type>float &amp;</type>
+          <declname>v11</declname>
+        </param>
+        <param>
+          <type>float &amp;</type>
+          <declname>v12</declname>
+        </param>
+        <param>
+          <type>float &amp;</type>
+          <declname>v13</declname>
+        </param>
+        <param>
+          <type>float &amp;</type>
+          <declname>v21</declname>
+        </param>
+        <param>
+          <type>float &amp;</type>
+          <declname>v22</declname>
+        </param>
+        <param>
+          <type>float &amp;</type>
+          <declname>v23</declname>
+        </param>
+        <param>
+          <type>float &amp;</type>
+          <declname>v31</declname>
+        </param>
+        <param>
+          <type>float &amp;</type>
+          <declname>v32</declname>
+        </param>
+        <param>
+          <type>float &amp;</type>
+          <declname>v33</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para><heading level="6"></heading>
+</para>
+        </inbodydescription>
+        <location file="src/muda/ext/eigen/svd/svd_impl.h" line="13" column="33" bodyfile="src/muda/ext/eigen/svd/svd_impl.h" bodystart="13" bodyend="1078"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/muda/ext/eigen/svd/svd_impl.h" line="4" column="1"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,325 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classmuda_1_1_logger_viewer" kind="class" language="C++" prot="public">
+    <compoundname>muda::LoggerViewer</compoundname>
+    <sectiondef kind="friend">
+      <memberdef kind="friend" id="classmuda_1_1_logger_viewer_1aff02b76416d2846736b7ecd798921a0a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class Logger</definition>
+        <argsstring></argsstring>
+        <name>Logger</name>
+        <qualifiedname>muda::LoggerViewer::Logger</qualifiedname>
+        <param>
+          <type><ref refid="classmuda_1_1_logger" kindref="compound">Logger</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/logger/logger_viewer.h" line="73" column="18" bodyfile="src/muda/logger/logger_viewer.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="classmuda_1_1_logger_viewer_1a9e003ca324dd4c9445455402f40ae9ae" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class LogProxy</definition>
+        <argsstring></argsstring>
+        <name>LogProxy</name>
+        <qualifiedname>muda::LoggerViewer::LogProxy</qualifiedname>
+        <param>
+          <type><ref refid="classmuda_1_1_log_proxy" kindref="compound">LogProxy</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/logger/logger_viewer.h" line="74" column="18" bodyfile="src/muda/logger/logger_viewer.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classmuda_1_1_logger_viewer_1a018a32d959ce5ad881ed92dbb589b356" prot="private" static="no" mutable="no">
+        <type>uint32_t *</type>
+        <definition>uint32_t* muda::LoggerViewer::m_meta_data_id</definition>
+        <argsstring></argsstring>
+        <name>m_meta_data_id</name>
+        <qualifiedname>muda::LoggerViewer::m_meta_data_id</qualifiedname>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/logger/logger_viewer.h" line="91" column="29" bodyfile="src/muda/logger/logger_viewer.h" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1_logger_viewer_1a42acd7b5636d624f6cd45a5f0b063bf2" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int muda::LoggerViewer::m_meta_data_id_size</definition>
+        <argsstring></argsstring>
+        <name>m_meta_data_id_size</name>
+        <qualifiedname>muda::LoggerViewer::m_meta_data_id_size</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/logger/logger_viewer.h" line="92" column="30" bodyfile="src/muda/logger/logger_viewer.h" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1_logger_viewer_1a8994ad5eb23691d62dfd67bade85ab0e" prot="private" static="no" mutable="no">
+        <type><ref refid="classmuda_1_1details_1_1_logger_meta_data" kindref="compound">details::LoggerMetaData</ref> *</type>
+        <definition>details::LoggerMetaData* muda::LoggerViewer::m_meta_data</definition>
+        <argsstring></argsstring>
+        <name>m_meta_data</name>
+        <qualifiedname>muda::LoggerViewer::m_meta_data</qualifiedname>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/logger/logger_viewer.h" line="93" column="29" bodyfile="src/muda/logger/logger_viewer.h" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1_logger_viewer_1a47ee91079c52a7c5a8e927a146e31b63" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int muda::LoggerViewer::m_meta_data_size</definition>
+        <argsstring></argsstring>
+        <name>m_meta_data_size</name>
+        <qualifiedname>muda::LoggerViewer::m_meta_data_size</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/logger/logger_viewer.h" line="94" column="30" bodyfile="src/muda/logger/logger_viewer.h" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1_logger_viewer_1a2567a9e8af94f5ae446cbab95c036345" prot="private" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* muda::LoggerViewer::m_buffer</definition>
+        <argsstring></argsstring>
+        <name>m_buffer</name>
+        <qualifiedname>muda::LoggerViewer::m_buffer</qualifiedname>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/logger/logger_viewer.h" line="95" column="29" bodyfile="src/muda/logger/logger_viewer.h" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1_logger_viewer_1a21ab3213186030008f1ede57b01d40e9" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int muda::LoggerViewer::m_buffer_size</definition>
+        <argsstring></argsstring>
+        <name>m_buffer_size</name>
+        <qualifiedname>muda::LoggerViewer::m_buffer_size</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/logger/logger_viewer.h" line="96" column="30" bodyfile="src/muda/logger/logger_viewer.h" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1_logger_viewer_1aefac8d894410ac353e156bb137e74d43" prot="private" static="no" mutable="no">
+        <type><ref refid="classmuda_1_1details_1_1_logger_offset" kindref="compound">details::LoggerOffset</ref> *</type>
+        <definition>details::LoggerOffset* muda::LoggerViewer::m_offset</definition>
+        <argsstring></argsstring>
+        <name>m_offset</name>
+        <qualifiedname>muda::LoggerViewer::m_offset</qualifiedname>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/logger/logger_viewer.h" line="97" column="29" bodyfile="src/muda/logger/logger_viewer.h" bodystart="97" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmuda_1_1_logger_viewer_1a2eb679e595318ea5b5428268230a5f09" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>MUDA_DEVICE <ref refid="classmuda_1_1_log_proxy" kindref="compound">LogProxy</ref></type>
+        <definition>MUDA_DEVICE LogProxy muda::LoggerViewer::operator&lt;&lt;</definition>
+        <argsstring>(const T &amp;t)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <qualifiedname>muda::LoggerViewer::operator&lt;&lt;</qualifiedname>
+        <param>
+          <type>const T &amp;</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/logger/logger_viewer.h" line="77" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_logger_viewer_1a357582b8a72b148dcfd54a810fefffca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>MUDA_DEVICE <ref refid="classmuda_1_1_log_proxy" kindref="compound">LogProxy</ref></type>
+        <definition>MUDA_DEVICE LogProxy muda::LoggerViewer::operator&lt;&lt;</definition>
+        <argsstring>(const char *s)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <qualifiedname>muda::LoggerViewer::operator&lt;&lt;</qualifiedname>
+        <param>
+          <type>const char *</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/logger/logger_viewer.h" line="78" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_logger_viewer_1a991a8330bde2a2ba037c3eda7f69540d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>bool</type>
+            <declname>IsFmt</declname>
+            <defname>IsFmt</defname>
+          </param>
+        </templateparamlist>
+        <type>MUDA_DEVICE <ref refid="classmuda_1_1_log_proxy" kindref="compound">LogProxy</ref></type>
+        <definition>MUDA_DEVICE LogProxy muda::LoggerViewer::push_string</definition>
+        <argsstring>(const char *str)</argsstring>
+        <name>push_string</name>
+        <qualifiedname>muda::LoggerViewer::push_string</qualifiedname>
+        <param>
+          <type>const char *</type>
+          <declname>str</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/logger/logger_viewer.h" line="80" column="26"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_logger_viewer_1ac35500260e3a0914e2c5ab8e877b35f6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>MUDA_DEVICE <ref refid="classmuda_1_1_log_proxy" kindref="compound">LogProxy</ref></type>
+        <definition>MUDA_DEVICE LogProxy muda::LoggerViewer::proxy</definition>
+        <argsstring>()</argsstring>
+        <name>proxy</name>
+        <qualifiedname>muda::LoggerViewer::proxy</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/logger/logger_viewer.h" line="81" column="26" bodyfile="src/muda/logger/logger_viewer.h" bodystart="81" bodyend="81"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_logger_viewer_1a15b8997e63668b6530513b2680c02727" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>MUDA_GENERIC</type>
+        <definition>MUDA_GENERIC muda::LoggerViewer::operator bool</definition>
+        <argsstring>() const</argsstring>
+        <name>operator bool</name>
+        <qualifiedname>muda::LoggerViewer::operator bool</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/logger/logger_viewer.h" line="83" column="18" bodyfile="src/muda/logger/logger_viewer.h" bodystart="83" bodyend="86"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classmuda_1_1_logger_viewer_1af0ea6d4f50b590b19d4ef1991e69b76f" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>MUDA_DEVICE uint32_t</type>
+        <definition>MUDA_DEVICE uint32_t muda::LoggerViewer::next_meta_data_idx</definition>
+        <argsstring>() const</argsstring>
+        <name>next_meta_data_idx</name>
+        <qualifiedname>muda::LoggerViewer::next_meta_data_idx</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/logger/logger_viewer.h" line="99" column="26"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_logger_viewer_1aa2412151f5ad817d959ba077717179d4" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>MUDA_DEVICE uint32_t</type>
+        <definition>MUDA_DEVICE uint32_t muda::LoggerViewer::next_buffer_idx</definition>
+        <argsstring>(uint32_t size) const</argsstring>
+        <name>next_buffer_idx</name>
+        <qualifiedname>muda::LoggerViewer::next_buffer_idx</qualifiedname>
+        <param>
+          <type>uint32_t</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/logger/logger_viewer.h" line="100" column="26"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_logger_viewer_1a272f19ae99234fb6252e313ae2567a47" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>MUDA_DEVICE bool</type>
+        <definition>MUDA_DEVICE bool muda::LoggerViewer::push_data</definition>
+        <argsstring>(details::LoggerMetaData meta, const void *data)</argsstring>
+        <name>push_data</name>
+        <qualifiedname>muda::LoggerViewer::push_data</qualifiedname>
+        <param>
+          <type><ref refid="classmuda_1_1details_1_1_logger_meta_data" kindref="compound">details::LoggerMetaData</ref></type>
+          <declname>meta</declname>
+        </param>
+        <param>
+          <type>const void *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/logger/logger_viewer.h" line="101" column="22"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/muda/logger/logger_viewer.h" line="70" column="1" bodyfile="src/muda/logger/logger_viewer.h" bodystart="71" bodyend="102"/>
+    <listofallmembers>
+      <member refid="classmuda_1_1_logger_viewer_1aff02b76416d2846736b7ecd798921a0a" prot="public" virt="non-virtual"><scope>muda::LoggerViewer</scope><name>Logger</name></member>
+      <member refid="classmuda_1_1_logger_viewer_1a9e003ca324dd4c9445455402f40ae9ae" prot="public" virt="non-virtual"><scope>muda::LoggerViewer</scope><name>LogProxy</name></member>
+      <member refid="classmuda_1_1_logger_viewer_1a2567a9e8af94f5ae446cbab95c036345" prot="private" virt="non-virtual"><scope>muda::LoggerViewer</scope><name>m_buffer</name></member>
+      <member refid="classmuda_1_1_logger_viewer_1a21ab3213186030008f1ede57b01d40e9" prot="private" virt="non-virtual"><scope>muda::LoggerViewer</scope><name>m_buffer_size</name></member>
+      <member refid="classmuda_1_1_logger_viewer_1a8994ad5eb23691d62dfd67bade85ab0e" prot="private" virt="non-virtual"><scope>muda::LoggerViewer</scope><name>m_meta_data</name></member>
+      <member refid="classmuda_1_1_logger_viewer_1a018a32d959ce5ad881ed92dbb589b356" prot="private" virt="non-virtual"><scope>muda::LoggerViewer</scope><name>m_meta_data_id</name></member>
+      <member refid="classmuda_1_1_logger_viewer_1a42acd7b5636d624f6cd45a5f0b063bf2" prot="private" virt="non-virtual"><scope>muda::LoggerViewer</scope><name>m_meta_data_id_size</name></member>
+      <member refid="classmuda_1_1_logger_viewer_1a47ee91079c52a7c5a8e927a146e31b63" prot="private" virt="non-virtual"><scope>muda::LoggerViewer</scope><name>m_meta_data_size</name></member>
+      <member refid="classmuda_1_1_logger_viewer_1aefac8d894410ac353e156bb137e74d43" prot="private" virt="non-virtual"><scope>muda::LoggerViewer</scope><name>m_offset</name></member>
+      <member refid="classmuda_1_1_logger_viewer_1aa2412151f5ad817d959ba077717179d4" prot="private" virt="non-virtual"><scope>muda::LoggerViewer</scope><name>next_buffer_idx</name></member>
+      <member refid="classmuda_1_1_logger_viewer_1af0ea6d4f50b590b19d4ef1991e69b76f" prot="private" virt="non-virtual"><scope>muda::LoggerViewer</scope><name>next_meta_data_idx</name></member>
+      <member refid="classmuda_1_1_logger_viewer_1a15b8997e63668b6530513b2680c02727" prot="public" virt="non-virtual"><scope>muda::LoggerViewer</scope><name>operator bool</name></member>
+      <member refid="classmuda_1_1_logger_viewer_1a2eb679e595318ea5b5428268230a5f09" prot="public" virt="non-virtual"><scope>muda::LoggerViewer</scope><name>operator&lt;&lt;</name></member>
+      <member refid="classmuda_1_1_logger_viewer_1a357582b8a72b148dcfd54a810fefffca" prot="public" virt="non-virtual"><scope>muda::LoggerViewer</scope><name>operator&lt;&lt;</name></member>
+      <member refid="classmuda_1_1_logger_viewer_1ac35500260e3a0914e2c5ab8e877b35f6" prot="public" virt="non-virtual"><scope>muda::LoggerViewer</scope><name>proxy</name></member>
+      <member refid="classmuda_1_1_logger_viewer_1a272f19ae99234fb6252e313ae2567a47" prot="private" virt="non-virtual"><scope>muda::LoggerViewer</scope><name>push_data</name></member>
+      <member refid="classmuda_1_1_logger_viewer_1a991a8330bde2a2ba037c3eda7f69540d" prot="public" virt="non-virtual"><scope>muda::LoggerViewer</scope><name>push_string</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

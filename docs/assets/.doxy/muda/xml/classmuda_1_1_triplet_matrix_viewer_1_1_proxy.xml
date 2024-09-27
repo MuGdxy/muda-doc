@@ -1,0 +1,150 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classmuda_1_1_triplet_matrix_viewer_1_1_proxy" kind="class" language="C++" prot="public">
+    <compoundname>muda::TripletMatrixViewer::Proxy</compoundname>
+    <sectiondef kind="friend">
+      <memberdef kind="friend" id="classmuda_1_1_triplet_matrix_viewer_1_1_proxy_1ae837fdfe2460441c4bcc0417244355e3" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class TripletMatrixViewer</definition>
+        <argsstring></argsstring>
+        <name>TripletMatrixViewer</name>
+        <qualifiedname>muda::TripletMatrixViewer::Proxy::TripletMatrixViewer</qualifiedname>
+        <param>
+          <type><ref refid="classmuda_1_1_triplet_matrix_viewer" kindref="compound">TripletMatrixViewer</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/triplet_matrix_viewer.h" line="240" column="22" bodyfile="src/muda/ext/linear_system/triplet_matrix_viewer.h" bodystart="240" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classmuda_1_1_triplet_matrix_viewer_1_1_proxy_1a6b64c1416d4689b8017972daec63daff" prot="private" static="no" mutable="no">
+        <type><ref refid="classmuda_1_1_triplet_matrix_viewer" kindref="compound">TripletMatrixViewer</ref> &amp;</type>
+        <definition>TripletMatrixViewer&amp; muda::TripletMatrixViewer&lt; T, N &gt;::Proxy::m_viewer</definition>
+        <argsstring></argsstring>
+        <name>m_viewer</name>
+        <qualifiedname>muda::TripletMatrixViewer::Proxy::m_viewer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/triplet_matrix_viewer.h" line="241" column="29" bodyfile="src/muda/ext/linear_system/triplet_matrix_viewer.h" bodystart="241" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1_triplet_matrix_viewer_1_1_proxy_1aa6221ec2dc68f43b10527f85542721e2" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int muda::TripletMatrixViewer&lt; T, N &gt;::Proxy::m_index</definition>
+        <argsstring></argsstring>
+        <name>m_index</name>
+        <qualifiedname>muda::TripletMatrixViewer::Proxy::m_index</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/triplet_matrix_viewer.h" line="242" column="30" bodyfile="src/muda/ext/linear_system/triplet_matrix_viewer.h" bodystart="242" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classmuda_1_1_triplet_matrix_viewer_1_1_proxy_1a41739d1a67358b0c88eeb5abb7ff6783" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>MUDA_GENERIC</type>
+        <definition>MUDA_GENERIC muda::TripletMatrixViewer&lt; T, N &gt;::Proxy::Proxy</definition>
+        <argsstring>(TripletMatrixViewer &amp;viewer, int index)</argsstring>
+        <name>Proxy</name>
+        <qualifiedname>muda::TripletMatrixViewer::Proxy::Proxy</qualifiedname>
+        <param>
+          <type><ref refid="classmuda_1_1_triplet_matrix_viewer" kindref="compound">TripletMatrixViewer</ref> &amp;</type>
+          <declname>viewer</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/triplet_matrix_viewer.h" line="245" column="22" bodyfile="src/muda/ext/linear_system/triplet_matrix_viewer.h" bodystart="245" bodyend="249"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmuda_1_1_triplet_matrix_viewer_1_1_proxy_1a107c9d90c3e71ef4dc4b5906cd746a72" prot="public" static="no" const="no" explicit="no" inline="yes" refqual="rvalue" virt="non-virtual">
+        <type>MUDA_GENERIC auto</type>
+        <definition>MUDA_GENERIC auto muda::TripletMatrixViewer&lt; T, N &gt;::Proxy::read</definition>
+        <argsstring>() &amp;&amp;</argsstring>
+        <name>read</name>
+        <qualifiedname>muda::TripletMatrixViewer::Proxy::read</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/triplet_matrix_viewer.h" line="252" column="27" bodyfile="src/muda/ext/linear_system/triplet_matrix_viewer.h" bodystart="252" bodyend="255"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_triplet_matrix_viewer_1_1_proxy_1a8a3d33378f2b1e191dd7cf35f4480d33" prot="public" static="no" const="no" explicit="no" inline="yes" refqual="rvalue" virt="non-virtual">
+        <type>MUDA_GENERIC void</type>
+        <definition>MUDA_GENERIC void muda::TripletMatrixViewer&lt; T, N &gt;::Proxy::write</definition>
+        <argsstring>(int block_row_index, int block_col_index, const BlockMatrix &amp;block) &amp;&amp;</argsstring>
+        <name>write</name>
+        <qualifiedname>muda::TripletMatrixViewer::Proxy::write</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>block_row_index</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>block_col_index</declname>
+        </param>
+        <param>
+          <type>const BlockMatrix &amp;</type>
+          <declname>block</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/triplet_matrix_viewer.h" line="258" column="14" bodyfile="src/muda/ext/linear_system/triplet_matrix_viewer.h" bodystart="258" bodyend="270"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_triplet_matrix_viewer_1_1_proxy_1a217fa1ec9c3c30baaa7deabff4e50e20" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>MUDA_GENERIC</type>
+        <definition>MUDA_GENERIC muda::TripletMatrixViewer&lt; T, N &gt;::Proxy::~Proxy</definition>
+        <argsstring>()=default</argsstring>
+        <name>~Proxy</name>
+        <qualifiedname>muda::TripletMatrixViewer::Proxy::~Proxy</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/triplet_matrix_viewer.h" line="272" column="22"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/muda/ext/linear_system/triplet_matrix_viewer.h" line="238" column="5" bodyfile="src/muda/ext/linear_system/triplet_matrix_viewer.h" bodystart="239" bodyend="273"/>
+    <listofallmembers>
+      <member refid="classmuda_1_1_triplet_matrix_viewer_1_1_proxy_1aa6221ec2dc68f43b10527f85542721e2" prot="private" virt="non-virtual"><scope>muda::TripletMatrixViewer::Proxy</scope><name>m_index</name></member>
+      <member refid="classmuda_1_1_triplet_matrix_viewer_1_1_proxy_1a6b64c1416d4689b8017972daec63daff" prot="private" virt="non-virtual"><scope>muda::TripletMatrixViewer::Proxy</scope><name>m_viewer</name></member>
+      <member refid="classmuda_1_1_triplet_matrix_viewer_1_1_proxy_1a41739d1a67358b0c88eeb5abb7ff6783" prot="private" virt="non-virtual"><scope>muda::TripletMatrixViewer::Proxy</scope><name>Proxy</name></member>
+      <member refid="classmuda_1_1_triplet_matrix_viewer_1_1_proxy_1a107c9d90c3e71ef4dc4b5906cd746a72" prot="public" virt="non-virtual"><scope>muda::TripletMatrixViewer::Proxy</scope><name>read</name></member>
+      <member refid="classmuda_1_1_triplet_matrix_viewer_1_1_proxy_1ae837fdfe2460441c4bcc0417244355e3" prot="private" virt="non-virtual"><scope>muda::TripletMatrixViewer::Proxy</scope><name>TripletMatrixViewer</name></member>
+      <member refid="classmuda_1_1_triplet_matrix_viewer_1_1_proxy_1a8a3d33378f2b1e191dd7cf35f4480d33" prot="public" virt="non-virtual"><scope>muda::TripletMatrixViewer::Proxy</scope><name>write</name></member>
+      <member refid="classmuda_1_1_triplet_matrix_viewer_1_1_proxy_1a217fa1ec9c3c30baaa7deabff4e50e20" prot="public" virt="non-virtual"><scope>muda::TripletMatrixViewer::Proxy</scope><name>~Proxy</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

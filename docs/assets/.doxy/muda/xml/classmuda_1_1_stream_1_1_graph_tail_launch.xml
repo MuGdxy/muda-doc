@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classmuda_1_1_stream_1_1_graph_tail_launch" kind="class" language="C++" prot="public">
+    <compoundname>muda::Stream::GraphTailLaunch</compoundname>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmuda_1_1_stream_1_1_graph_tail_launch_1ae1866b3dd12cb1bd6159342bb60d152d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>MUDA_DEVICE</type>
+        <definition>MUDA_DEVICE muda::Stream::GraphTailLaunch::GraphTailLaunch</definition>
+        <argsstring>()</argsstring>
+        <name>GraphTailLaunch</name>
+        <qualifiedname>muda::Stream::GraphTailLaunch::GraphTailLaunch</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/launch/stream.h" line="66" column="21" bodyfile="src/muda/launch/stream.h" bodystart="66" bodyend="66"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_stream_1_1_graph_tail_launch_1a1e3a2c7aaef32506d545b07975f29bf0" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>MUDA_DEVICE</type>
+        <definition>MUDA_DEVICE muda::Stream::GraphTailLaunch::operator cudaStream_t</definition>
+        <argsstring>() const</argsstring>
+        <name>operator cudaStream_t</name>
+        <qualifiedname>muda::Stream::GraphTailLaunch::operator cudaStream_t</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/launch/stream.h" line="67" column="21"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/muda/launch/stream.h" line="63" column="5" bodyfile="src/muda/launch/stream.h" bodystart="64" bodyend="68"/>
+    <listofallmembers>
+      <member refid="classmuda_1_1_stream_1_1_graph_tail_launch_1ae1866b3dd12cb1bd6159342bb60d152d" prot="public" virt="non-virtual"><scope>muda::Stream::GraphTailLaunch</scope><name>GraphTailLaunch</name></member>
+      <member refid="classmuda_1_1_stream_1_1_graph_tail_launch_1a1e3a2c7aaef32506d545b07975f29bf0" prot="public" virt="non-virtual"><scope>muda::Stream::GraphTailLaunch</scope><name>operator cudaStream_t</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

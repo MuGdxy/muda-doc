@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="dir_23ef7a0035d05de8c06b1bf3400c653b" kind="dir">
+    <compoundname>src/muda/viewer/dense</compoundname>
+    <innerfile refid="dense__0d_8h">dense_0d.h</innerfile>
+    <innerfile refid="dense__1d_8h">dense_1d.h</innerfile>
+    <innerfile refid="dense__2d_8h">dense_2d.h</innerfile>
+    <innerfile refid="dense__3d_8h">dense_3d.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/muda/viewer/dense/"/>
+  </compounddef>
+</doxygen>

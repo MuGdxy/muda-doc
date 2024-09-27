@@ -1,0 +1,435 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classmuda_1_1_compute_graph_builder" kind="class" language="C++" prot="public">
+    <compoundname>muda::ComputeGraphBuilder</compoundname>
+    <sectiondef kind="private-type">
+      <memberdef kind="typedef" id="classmuda_1_1_compute_graph_builder_1a3438b4fc99b4f67420bb293f8beb33e3" prot="private" static="no">
+        <type>ComputeGraphPhase</type>
+        <definition>using muda::ComputeGraphBuilder::Phase =  ComputeGraphPhase</definition>
+        <argsstring></argsstring>
+        <name>Phase</name>
+        <qualifiedname>muda::ComputeGraphBuilder::Phase</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/compute_graph/compute_graph_builder.h" line="12" column="5" bodyfile="src/muda/compute_graph/compute_graph_builder.h" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classmuda_1_1_compute_graph_builder_1a73b090761297c4b4d36925370bd82e1b" prot="private" static="no">
+        <type>std::function&lt; void()&gt;</type>
+        <definition>using muda::ComputeGraphBuilder::PhaseAction =  std::function&lt;void()&gt;</definition>
+        <argsstring></argsstring>
+        <name>PhaseAction</name>
+        <qualifiedname>muda::ComputeGraphBuilder::PhaseAction</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/compute_graph/compute_graph_builder.h" line="13" column="5" bodyfile="src/muda/compute_graph/compute_graph_builder.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classmuda_1_1_compute_graph_builder_1a6be7cae89bb4ef40608a7f61330258a8" prot="private" static="no">
+        <type>std::function&lt; void(cudaStream_t)&gt;</type>
+        <definition>using muda::ComputeGraphBuilder::CaptureAction =  std::function&lt;void(cudaStream_t)&gt;</definition>
+        <argsstring></argsstring>
+        <name>CaptureAction</name>
+        <qualifiedname>muda::ComputeGraphBuilder::CaptureAction</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/compute_graph/compute_graph_builder.h" line="14" column="5" bodyfile="src/muda/compute_graph/compute_graph_builder.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="friend">
+      <memberdef kind="friend" id="classmuda_1_1_compute_graph_builder_1ab23709c145a1c448654edf5f911bafe9" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class ComputeGraph</definition>
+        <argsstring></argsstring>
+        <name>ComputeGraph</name>
+        <qualifiedname>muda::ComputeGraphBuilder::ComputeGraph</qualifiedname>
+        <param>
+          <type><ref refid="classmuda_1_1_compute_graph" kindref="compound">ComputeGraph</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/compute_graph/compute_graph_builder.h" line="79" column="18" bodyfile="src/muda/compute_graph/compute_graph_builder.h" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="classmuda_1_1_compute_graph_builder_1a5a1c3d0e37baf788c6750f6075dcfeb7" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class ComputeGraphVarBase</definition>
+        <argsstring></argsstring>
+        <name>ComputeGraphVarBase</name>
+        <qualifiedname>muda::ComputeGraphBuilder::ComputeGraphVarBase</qualifiedname>
+        <param>
+          <type><ref refid="classmuda_1_1_compute_graph_var_base" kindref="compound">ComputeGraphVarBase</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/compute_graph/compute_graph_builder.h" line="80" column="18" bodyfile="src/muda/compute_graph/compute_graph_builder.h" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="classmuda_1_1_compute_graph_builder_1ac70fef384dd042f2bd784368c9e394de" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class details::ComputeGraphAccessor</definition>
+        <argsstring></argsstring>
+        <name>details::ComputeGraphAccessor</name>
+        <qualifiedname>muda::ComputeGraphBuilder::ComputeGraphAccessor</qualifiedname>
+        <param>
+          <type><ref refid="classmuda_1_1details_1_1_compute_graph_accessor" kindref="compound">details::ComputeGraphAccessor</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/compute_graph/compute_graph_builder.h" line="83" column="18" bodyfile="src/muda/compute_graph/compute_graph_builder.h" bodystart="83" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classmuda_1_1_compute_graph_builder_1a25d9bbb6ff21aaebfa0e9b2f0302a3bc" prot="private" static="no" mutable="no">
+        <type><ref refid="classmuda_1_1_compute_graph" kindref="compound">ComputeGraph</ref> *</type>
+        <definition>ComputeGraph* muda::ComputeGraphBuilder::m_current_graph</definition>
+        <argsstring></argsstring>
+        <name>m_current_graph</name>
+        <qualifiedname>muda::ComputeGraphBuilder::m_current_graph</qualifiedname>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/compute_graph/compute_graph_builder.h" line="89" column="18" bodyfile="src/muda/compute_graph/compute_graph_builder.h" bodystart="89" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="classmuda_1_1_compute_graph_builder_1ae8029a4b137ee6c466f865f4f4fff469" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classmuda_1_1_compute_graph_builder" kindref="compound">ComputeGraphBuilder</ref> &amp;</type>
+        <definition>static ComputeGraphBuilder &amp; muda::ComputeGraphBuilder::instance</definition>
+        <argsstring>()</argsstring>
+        <name>instance</name>
+        <qualifiedname>muda::ComputeGraphBuilder::instance</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/compute_graph/compute_graph_builder.h" line="11" column="32"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_compute_graph_builder_1a0938ef9c47c4874c483a1631e739469b" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void muda::ComputeGraphBuilder::current_graph</definition>
+        <argsstring>(ComputeGraph *graph)</argsstring>
+        <name>current_graph</name>
+        <qualifiedname>muda::ComputeGraphBuilder::current_graph</qualifiedname>
+        <param>
+          <type><ref refid="classmuda_1_1_compute_graph" kindref="compound">ComputeGraph</ref> *</type>
+          <declname>graph</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/compute_graph/compute_graph_builder.h" line="82" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_compute_graph_builder_1adc36436d817f4f639b02785d2a2a377a" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>auto</type>
+        <definition>static auto muda::ComputeGraphBuilder::current_graph</definition>
+        <argsstring>()</argsstring>
+        <name>current_graph</name>
+        <qualifiedname>muda::ComputeGraphBuilder::current_graph</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/compute_graph/compute_graph_builder.h" line="84" column="17" bodyfile="src/muda/compute_graph/compute_graph_builder.h" bodystart="84" bodyend="84"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classmuda_1_1_compute_graph_builder_1af43d0b25fa4ed4fe44e4bb35d97cae79" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Phase</type>
+        <definition>static Phase muda::ComputeGraphBuilder::current_phase</definition>
+        <argsstring>()</argsstring>
+        <name>current_phase</name>
+        <qualifiedname>muda::ComputeGraphBuilder::current_phase</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/compute_graph/compute_graph_builder.h" line="17" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_compute_graph_builder_1a2ee2c5e1e37dc1efc5743bd49cc98fb9" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void muda::ComputeGraphBuilder::capture</definition>
+        <argsstring>(CaptureAction &amp;&amp;cap)</argsstring>
+        <name>capture</name>
+        <qualifiedname>muda::ComputeGraphBuilder::capture</qualifiedname>
+        <param>
+          <type>CaptureAction &amp;&amp;</type>
+          <declname>cap</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/compute_graph/compute_graph_builder.h" line="18" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_compute_graph_builder_1ae1292438a5f5e5c28bdf2fcc31421b8b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void muda::ComputeGraphBuilder::capture</definition>
+        <argsstring>(std::string_view name, CaptureAction &amp;&amp;cap)</argsstring>
+        <name>capture</name>
+        <qualifiedname>muda::ComputeGraphBuilder::capture</qualifiedname>
+        <param>
+          <type>std::string_view</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>CaptureAction &amp;&amp;</type>
+          <declname>cap</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/compute_graph/compute_graph_builder.h" line="19" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_compute_graph_builder_1a45a94467420414729f5b8fb705939137" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool muda::ComputeGraphBuilder::is_phase_none</definition>
+        <argsstring>()</argsstring>
+        <name>is_phase_none</name>
+        <qualifiedname>muda::ComputeGraphBuilder::is_phase_none</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/compute_graph/compute_graph_builder.h" line="20" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_compute_graph_builder_1a46eeaa2cd6ad5a5ab0b528b3ffa1dde8" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool muda::ComputeGraphBuilder::is_phase_serial_launching</definition>
+        <argsstring>()</argsstring>
+        <name>is_phase_serial_launching</name>
+        <qualifiedname>muda::ComputeGraphBuilder::is_phase_serial_launching</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/compute_graph/compute_graph_builder.h" line="21" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_compute_graph_builder_1ae3a147669c381050e51db238ddea138e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool muda::ComputeGraphBuilder::is_topo_building</definition>
+        <argsstring>()</argsstring>
+        <name>is_topo_building</name>
+        <qualifiedname>muda::ComputeGraphBuilder::is_topo_building</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/compute_graph/compute_graph_builder.h" line="22" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_compute_graph_builder_1a77dc67d04e224b3c4bc69863c8330b82" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool muda::ComputeGraphBuilder::is_building</definition>
+        <argsstring>()</argsstring>
+        <name>is_building</name>
+        <qualifiedname>muda::ComputeGraphBuilder::is_building</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/compute_graph/compute_graph_builder.h" line="23" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_compute_graph_builder_1a5abcc70854c3dc787082bf21fa756331" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool muda::ComputeGraphBuilder::is_direct_launching</definition>
+        <argsstring>()</argsstring>
+        <name>is_direct_launching</name>
+        <qualifiedname>muda::ComputeGraphBuilder::is_direct_launching</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/compute_graph/compute_graph_builder.h" line="25" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_compute_graph_builder_1a267bad394d0ed24736bffe44edf280de" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool muda::ComputeGraphBuilder::is_caturing</definition>
+        <argsstring>()</argsstring>
+        <name>is_caturing</name>
+        <qualifiedname>muda::ComputeGraphBuilder::is_caturing</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/compute_graph/compute_graph_builder.h" line="26" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_compute_graph_builder_1a31af55bc982040a99901a47386827234" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void muda::ComputeGraphBuilder::invoke_phase_actions</definition>
+        <argsstring>(PhaseAction &amp;&amp;do_when_direct_launch, PhaseAction &amp;&amp;do_when_set_node, PhaseAction &amp;&amp;do_when_topo_building_set_node)</argsstring>
+        <name>invoke_phase_actions</name>
+        <qualifiedname>muda::ComputeGraphBuilder::invoke_phase_actions</qualifiedname>
+        <param>
+          <type>PhaseAction &amp;&amp;</type>
+          <declname>do_when_direct_launch</declname>
+        </param>
+        <param>
+          <type>PhaseAction &amp;&amp;</type>
+          <declname>do_when_set_node</declname>
+        </param>
+        <param>
+          <type>PhaseAction &amp;&amp;</type>
+          <declname>do_when_topo_building_set_node</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/compute_graph/compute_graph_builder.h" line="49" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_compute_graph_builder_1a699b4fee0f553dcb1b6fff833486f668" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void muda::ComputeGraphBuilder::invoke_phase_actions</definition>
+        <argsstring>(PhaseAction &amp;&amp;do_when_direct_launch, PhaseAction &amp;&amp;do_when_set_node)</argsstring>
+        <name>invoke_phase_actions</name>
+        <qualifiedname>muda::ComputeGraphBuilder::invoke_phase_actions</qualifiedname>
+        <param>
+          <type>PhaseAction &amp;&amp;</type>
+          <declname>do_when_direct_launch</declname>
+        </param>
+        <param>
+          <type>PhaseAction &amp;&amp;</type>
+          <declname>do_when_set_node</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/compute_graph/compute_graph_builder.h" line="65" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_compute_graph_builder_1ad1e2eb94148d0b8b1568e6beedfec23c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void muda::ComputeGraphBuilder::invoke_phase_actions</definition>
+        <argsstring>(PhaseAction &amp;&amp;do_in_every_phase)</argsstring>
+        <name>invoke_phase_actions</name>
+        <qualifiedname>muda::ComputeGraphBuilder::invoke_phase_actions</qualifiedname>
+        <param>
+          <type>PhaseAction &amp;&amp;</type>
+          <declname>do_in_every_phase</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/compute_graph/compute_graph_builder.h" line="76" column="17"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classmuda_1_1_compute_graph_builder_1ad313371debc6a3ca7e8c050988605407" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>muda::ComputeGraphBuilder::ComputeGraphBuilder</definition>
+        <argsstring>()=default</argsstring>
+        <name>ComputeGraphBuilder</name>
+        <qualifiedname>muda::ComputeGraphBuilder::ComputeGraphBuilder</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/compute_graph/compute_graph_builder.h" line="86" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_compute_graph_builder_1ad12bbd157f38bd321e73ec33a4cff8b9" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>muda::ComputeGraphBuilder::~ComputeGraphBuilder</definition>
+        <argsstring>()=default</argsstring>
+        <name>~ComputeGraphBuilder</name>
+        <qualifiedname>muda::ComputeGraphBuilder::~ComputeGraphBuilder</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/compute_graph/compute_graph_builder.h" line="87" column="5"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/muda/compute_graph/compute_graph_builder.h" line="9" column="1" bodyfile="src/muda/compute_graph/compute_graph_builder.h" bodystart="10" bodyend="90"/>
+    <listofallmembers>
+      <member refid="classmuda_1_1_compute_graph_builder_1a2ee2c5e1e37dc1efc5743bd49cc98fb9" prot="public" virt="non-virtual"><scope>muda::ComputeGraphBuilder</scope><name>capture</name></member>
+      <member refid="classmuda_1_1_compute_graph_builder_1ae1292438a5f5e5c28bdf2fcc31421b8b" prot="public" virt="non-virtual"><scope>muda::ComputeGraphBuilder</scope><name>capture</name></member>
+      <member refid="classmuda_1_1_compute_graph_builder_1a6be7cae89bb4ef40608a7f61330258a8" prot="private" virt="non-virtual"><scope>muda::ComputeGraphBuilder</scope><name>CaptureAction</name></member>
+      <member refid="classmuda_1_1_compute_graph_builder_1ab23709c145a1c448654edf5f911bafe9" prot="private" virt="non-virtual"><scope>muda::ComputeGraphBuilder</scope><name>ComputeGraph</name></member>
+      <member refid="classmuda_1_1_compute_graph_builder_1ad313371debc6a3ca7e8c050988605407" prot="private" virt="non-virtual"><scope>muda::ComputeGraphBuilder</scope><name>ComputeGraphBuilder</name></member>
+      <member refid="classmuda_1_1_compute_graph_builder_1a5a1c3d0e37baf788c6750f6075dcfeb7" prot="private" virt="non-virtual"><scope>muda::ComputeGraphBuilder</scope><name>ComputeGraphVarBase</name></member>
+      <member refid="classmuda_1_1_compute_graph_builder_1a0938ef9c47c4874c483a1631e739469b" prot="private" virt="non-virtual"><scope>muda::ComputeGraphBuilder</scope><name>current_graph</name></member>
+      <member refid="classmuda_1_1_compute_graph_builder_1adc36436d817f4f639b02785d2a2a377a" prot="private" virt="non-virtual"><scope>muda::ComputeGraphBuilder</scope><name>current_graph</name></member>
+      <member refid="classmuda_1_1_compute_graph_builder_1af43d0b25fa4ed4fe44e4bb35d97cae79" prot="public" virt="non-virtual"><scope>muda::ComputeGraphBuilder</scope><name>current_phase</name></member>
+      <member refid="classmuda_1_1_compute_graph_builder_1ac70fef384dd042f2bd784368c9e394de" prot="public" virt="non-virtual"><scope>muda::ComputeGraphBuilder</scope><name>details::ComputeGraphAccessor</name></member>
+      <member refid="classmuda_1_1_compute_graph_builder_1ae8029a4b137ee6c466f865f4f4fff469" prot="private" virt="non-virtual"><scope>muda::ComputeGraphBuilder</scope><name>instance</name></member>
+      <member refid="classmuda_1_1_compute_graph_builder_1a31af55bc982040a99901a47386827234" prot="public" virt="non-virtual"><scope>muda::ComputeGraphBuilder</scope><name>invoke_phase_actions</name></member>
+      <member refid="classmuda_1_1_compute_graph_builder_1a699b4fee0f553dcb1b6fff833486f668" prot="public" virt="non-virtual"><scope>muda::ComputeGraphBuilder</scope><name>invoke_phase_actions</name></member>
+      <member refid="classmuda_1_1_compute_graph_builder_1ad1e2eb94148d0b8b1568e6beedfec23c" prot="public" virt="non-virtual"><scope>muda::ComputeGraphBuilder</scope><name>invoke_phase_actions</name></member>
+      <member refid="classmuda_1_1_compute_graph_builder_1a77dc67d04e224b3c4bc69863c8330b82" prot="public" virt="non-virtual"><scope>muda::ComputeGraphBuilder</scope><name>is_building</name></member>
+      <member refid="classmuda_1_1_compute_graph_builder_1a267bad394d0ed24736bffe44edf280de" prot="public" virt="non-virtual"><scope>muda::ComputeGraphBuilder</scope><name>is_caturing</name></member>
+      <member refid="classmuda_1_1_compute_graph_builder_1a5abcc70854c3dc787082bf21fa756331" prot="public" virt="non-virtual"><scope>muda::ComputeGraphBuilder</scope><name>is_direct_launching</name></member>
+      <member refid="classmuda_1_1_compute_graph_builder_1a45a94467420414729f5b8fb705939137" prot="public" virt="non-virtual"><scope>muda::ComputeGraphBuilder</scope><name>is_phase_none</name></member>
+      <member refid="classmuda_1_1_compute_graph_builder_1a46eeaa2cd6ad5a5ab0b528b3ffa1dde8" prot="public" virt="non-virtual"><scope>muda::ComputeGraphBuilder</scope><name>is_phase_serial_launching</name></member>
+      <member refid="classmuda_1_1_compute_graph_builder_1ae3a147669c381050e51db238ddea138e" prot="public" virt="non-virtual"><scope>muda::ComputeGraphBuilder</scope><name>is_topo_building</name></member>
+      <member refid="classmuda_1_1_compute_graph_builder_1a25d9bbb6ff21aaebfa0e9b2f0302a3bc" prot="private" virt="non-virtual"><scope>muda::ComputeGraphBuilder</scope><name>m_current_graph</name></member>
+      <member refid="classmuda_1_1_compute_graph_builder_1a3438b4fc99b4f67420bb293f8beb33e3" prot="private" virt="non-virtual"><scope>muda::ComputeGraphBuilder</scope><name>Phase</name></member>
+      <member refid="classmuda_1_1_compute_graph_builder_1a73b090761297c4b4d36925370bd82e1b" prot="private" virt="non-virtual"><scope>muda::ComputeGraphBuilder</scope><name>PhaseAction</name></member>
+      <member refid="classmuda_1_1_compute_graph_builder_1ad12bbd157f38bd321e73ec33a4cff8b9" prot="private" virt="non-virtual"><scope>muda::ComputeGraphBuilder</scope><name>~ComputeGraphBuilder</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,2035 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classmuda_1_1_linear_system_context" kind="class" language="C++" prot="public">
+    <compoundname>muda::LinearSystemContext</compoundname>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classmuda_1_1_linear_system_context_1ae53d17119649482cb718da923dcb3364" prot="private" static="no" mutable="no">
+        <type><ref refid="classmuda_1_1_linear_system_handles" kindref="compound">LinearSystemHandles</ref></type>
+        <definition>LinearSystemHandles muda::LinearSystemContext::m_handles</definition>
+        <argsstring></argsstring>
+        <name>m_handles</name>
+        <qualifiedname>muda::LinearSystemContext::m_handles</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/linear_system_context.h" line="30" column="40" bodyfile="src/muda/ext/linear_system/linear_system_context.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1_linear_system_context_1a5db5fe6050af5ddb57ee3001cc2451bc" prot="private" static="no" mutable="no">
+        <type>std::list&lt; <ref refid="classmuda_1_1_device_buffer" kindref="compound">DeviceBuffer</ref>&lt; std::byte &gt; &gt;</type>
+        <definition>std::list&lt;DeviceBuffer&lt;std::byte&gt; &gt; muda::LinearSystemContext::m_buffers</definition>
+        <argsstring></argsstring>
+        <name>m_buffers</name>
+        <qualifiedname>muda::LinearSystemContext::m_buffers</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/linear_system_context.h" line="31" column="15" bodyfile="src/muda/ext/linear_system/linear_system_context.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1_linear_system_context_1a4385b9bb4da655feba54c4ac4ae04587" prot="private" static="no" mutable="no">
+        <type>std::list&lt; std::vector&lt; std::byte &gt; &gt;</type>
+        <definition>std::list&lt;std::vector&lt;std::byte&gt; &gt; muda::LinearSystemContext::m_host_buffers</definition>
+        <argsstring></argsstring>
+        <name>m_host_buffers</name>
+        <qualifiedname>muda::LinearSystemContext::m_host_buffers</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/linear_system_context.h" line="32" column="16" bodyfile="src/muda/ext/linear_system/linear_system_context.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1_linear_system_context_1aebe364fc768d27e76dcc06a49c99a2b7" prot="private" static="no" mutable="no">
+        <type><ref refid="classmuda_1_1_device_buffer" kindref="compound">DeviceBuffer</ref>&lt; std::byte &gt;</type>
+        <definition>DeviceBuffer&lt;std::byte&gt; muda::LinearSystemContext::m_scalar_buffer</definition>
+        <argsstring></argsstring>
+        <name>m_scalar_buffer</name>
+        <qualifiedname>muda::LinearSystemContext::m_scalar_buffer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/linear_system_context.h" line="33" column="29" bodyfile="src/muda/ext/linear_system/linear_system_context.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1_linear_system_context_1ae8e034aabb64fb982eaaa705616affb4" prot="private" static="no" mutable="no">
+        <type><ref refid="classmuda_1_1_linear_system_context_create_info" kindref="compound">LinearSystemContextCreateInfo</ref></type>
+        <definition>LinearSystemContextCreateInfo muda::LinearSystemContext::m_create_info</definition>
+        <argsstring></argsstring>
+        <name>m_create_info</name>
+        <qualifiedname>muda::LinearSystemContext::m_create_info</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/linear_system_context.h" line="35" column="38" bodyfile="src/muda/ext/linear_system/linear_system_context.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1_linear_system_context_1a7d3a0f65784e7ef1f9335c370a9bd98f" prot="private" static="no" mutable="no">
+        <type>std::list&lt; std::function&lt; void()&gt; &gt;</type>
+        <definition>std::list&lt;std::function&lt;void()&gt; &gt; muda::LinearSystemContext::m_sync_callbacks</definition>
+        <argsstring></argsstring>
+        <name>m_sync_callbacks</name>
+        <qualifiedname>muda::LinearSystemContext::m_sync_callbacks</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/linear_system_context.h" line="36" column="15" bodyfile="src/muda/ext/linear_system/linear_system_context.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1_linear_system_context_1aeb0a349f19d6baa9d83a828be05b4c38" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string muda::LinearSystemContext::m_current_label</definition>
+        <argsstring></argsstring>
+        <name>m_current_label</name>
+        <qualifiedname>muda::LinearSystemContext::m_current_label</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/linear_system_context.h" line="37" column="38" bodyfile="src/muda/ext/linear_system/linear_system_context.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1_linear_system_context_1a95f7b90bb11d9609a798b766a6755a85" prot="private" static="no" mutable="no">
+        <type><ref refid="classmuda_1_1_linear_system_solve_tolerance" kindref="compound">LinearSystemSolveTolerance</ref></type>
+        <definition>LinearSystemSolveTolerance muda::LinearSystemContext::m_tolerance</definition>
+        <argsstring></argsstring>
+        <name>m_tolerance</name>
+        <qualifiedname>muda::LinearSystemContext::m_tolerance</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/linear_system_context.h" line="54" column="32" bodyfile="src/muda/ext/linear_system/linear_system_context.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1_linear_system_context_1a7e4d82390faf3ae6266185debef979e8" prot="private" static="no" mutable="no">
+        <type><ref refid="classmuda_1_1_linear_system_solve_reorder" kindref="compound">LinearSystemSolveReorder</ref></type>
+        <definition>LinearSystemSolveReorder muda::LinearSystemContext::m_reorder</definition>
+        <argsstring></argsstring>
+        <name>m_reorder</name>
+        <qualifiedname>muda::LinearSystemContext::m_reorder</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/linear_system_context.h" line="55" column="32" bodyfile="src/muda/ext/linear_system/linear_system_context.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1_linear_system_context_1a5b64d94195dc8e291264b7281fbd2f7e" prot="private" static="no" mutable="no">
+        <type><ref refid="classmuda_1_1_matrix_format_converter" kindref="compound">MatrixFormatConverter</ref></type>
+        <definition>MatrixFormatConverter muda::LinearSystemContext::m_converter</definition>
+        <argsstring></argsstring>
+        <name>m_converter</name>
+        <qualifiedname>muda::LinearSystemContext::m_converter</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/linear_system_context.h" line="56" column="32" bodyfile="src/muda/ext/linear_system/linear_system_context.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classmuda_1_1_linear_system_context_1a7e743a786e8ef3efd421aebda3fea237" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void muda::LinearSystemContext::set_pointer_mode_device</definition>
+        <argsstring>()</argsstring>
+        <name>set_pointer_mode_device</name>
+        <qualifiedname>muda::LinearSystemContext::set_pointer_mode_device</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/linear_system_context.h" line="39" column="27"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_linear_system_context_1ab66d0a4e40dbccd0ecbf8dc06456af02" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void muda::LinearSystemContext::set_pointer_mode_host</definition>
+        <argsstring>()</argsstring>
+        <name>set_pointer_mode_host</name>
+        <qualifiedname>muda::LinearSystemContext::set_pointer_mode_host</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/linear_system_context.h" line="40" column="27"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_linear_system_context_1ac1425082f707c1b98be06011c2671357" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void muda::LinearSystemContext::shrink_temp_buffers</definition>
+        <argsstring>()</argsstring>
+        <name>shrink_temp_buffers</name>
+        <qualifiedname>muda::LinearSystemContext::shrink_temp_buffers</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/linear_system_context.h" line="41" column="27"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_linear_system_context_1a610d814f8ffaf9755009efd95953d124" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void muda::LinearSystemContext::add_sync_callback</definition>
+        <argsstring>(std::function&lt; void()&gt; &amp;&amp;callback)</argsstring>
+        <name>add_sync_callback</name>
+        <qualifiedname>muda::LinearSystemContext::add_sync_callback</qualifiedname>
+        <param>
+          <type>std::function&lt; void()&gt; &amp;&amp;</type>
+          <declname>callback</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/linear_system_context.h" line="42" column="27"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_linear_system_context_1a7d3773649c6c749b39a75a8ec1a6f50d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classmuda_1_1_buffer_view_t" kindref="compound">BufferView</ref>&lt; std::byte &gt;</type>
+        <definition>BufferView&lt; std::byte &gt; muda::LinearSystemContext::temp_buffer</definition>
+        <argsstring>(size_t size)</argsstring>
+        <name>temp_buffer</name>
+        <qualifiedname>muda::LinearSystemContext::temp_buffer</qualifiedname>
+        <param>
+          <type>size_t</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/linear_system_context.h" line="43" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_linear_system_context_1a5e16ae01c64d65663ccbf4705913427c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>span&lt; std::byte &gt;</type>
+        <definition>span&lt; std::byte &gt; muda::LinearSystemContext::temp_host_buffer</definition>
+        <argsstring>(size_t size)</argsstring>
+        <name>temp_host_buffer</name>
+        <qualifiedname>muda::LinearSystemContext::temp_host_buffer</qualifiedname>
+        <param>
+          <type>size_t</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/linear_system_context.h" line="44" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_linear_system_context_1a55f17ee7557c65dd23acc11f4f3fc6ba" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classmuda_1_1_buffer_view_t" kindref="compound">BufferView</ref>&lt; T &gt;</type>
+        <definition>BufferView&lt; T &gt; muda::LinearSystemContext::temp_buffer</definition>
+        <argsstring>(size_t size)</argsstring>
+        <name>temp_buffer</name>
+        <qualifiedname>muda::LinearSystemContext::temp_buffer</qualifiedname>
+        <param>
+          <type>size_t</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/linear_system_context.h" line="46" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_linear_system_context_1aeeca6e5007802c763ad67552a8bc611a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>span&lt; T &gt;</type>
+        <definition>span&lt; T &gt; muda::LinearSystemContext::temp_host_buffer</definition>
+        <argsstring>(size_t size)</argsstring>
+        <name>temp_host_buffer</name>
+        <qualifiedname>muda::LinearSystemContext::temp_host_buffer</qualifiedname>
+        <param>
+          <type>size_t</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/linear_system_context.h" line="48" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_linear_system_context_1a6459ab767a01ed6a0abcbd70fabcd7ab" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>std::vector&lt; T * &gt;</type>
+        <definition>std::vector&lt; T * &gt; muda::LinearSystemContext::temp_buffers</definition>
+        <argsstring>(size_t size_in_buffer, size_t num_buffer)</argsstring>
+        <name>temp_buffers</name>
+        <qualifiedname>muda::LinearSystemContext::temp_buffers</qualifiedname>
+        <param>
+          <type>size_t</type>
+          <declname>size_in_buffer</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>num_buffer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/linear_system_context.h" line="50" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_linear_system_context_1a61a8c43a7e18d33a677abd21522a8cb9" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>std::vector&lt; T * &gt;</type>
+        <definition>std::vector&lt; T * &gt; muda::LinearSystemContext::temp_host_buffers</definition>
+        <argsstring>(size_t size_in_buffer, size_t num_buffer)</argsstring>
+        <name>temp_host_buffers</name>
+        <qualifiedname>muda::LinearSystemContext::temp_host_buffers</qualifiedname>
+        <param>
+          <type>size_t</type>
+          <declname>size_in_buffer</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>num_buffer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/linear_system_context.h" line="52" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_linear_system_context_1a87b1001082a15fa49f87ae22d77a2e95" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto muda::LinearSystemContext::cublas</definition>
+        <argsstring>() const</argsstring>
+        <name>cublas</name>
+        <qualifiedname>muda::LinearSystemContext::cublas</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/linear_system_context.h" line="59" column="10" bodyfile="src/muda/ext/linear_system/linear_system_context.h" bodystart="59" bodyend="59"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_linear_system_context_1af04c00cbff5d26354158ed3443ecac91" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto muda::LinearSystemContext::cusparse</definition>
+        <argsstring>() const</argsstring>
+        <name>cusparse</name>
+        <qualifiedname>muda::LinearSystemContext::cusparse</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/linear_system_context.h" line="60" column="10" bodyfile="src/muda/ext/linear_system/linear_system_context.h" bodystart="60" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_linear_system_context_1a8141013bb488e22a89ae990875b85d66" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto muda::LinearSystemContext::cusolver_dn</definition>
+        <argsstring>() const</argsstring>
+        <name>cusolver_dn</name>
+        <qualifiedname>muda::LinearSystemContext::cusolver_dn</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/linear_system_context.h" line="61" column="10" bodyfile="src/muda/ext/linear_system/linear_system_context.h" bodystart="61" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_linear_system_context_1a75945738f11b9dadd682b4ae77f59393" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto muda::LinearSystemContext::cusolver_sp</definition>
+        <argsstring>() const</argsstring>
+        <name>cusolver_sp</name>
+        <qualifiedname>muda::LinearSystemContext::cusolver_sp</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/linear_system_context.h" line="62" column="10" bodyfile="src/muda/ext/linear_system/linear_system_context.h" bodystart="62" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_linear_system_context_1acd59820ef73d8e85728b70b03988470f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void muda::LinearSystemContext::generic_spmv</definition>
+        <argsstring>(const T &amp;a, cusparseOperation_t op, cusparseSpMatDescr_t A, const cusparseDnVecDescr *x, const T &amp;b, cusparseDnVecDescr_t y)</argsstring>
+        <name>generic_spmv</name>
+        <qualifiedname>muda::LinearSystemContext::generic_spmv</qualifiedname>
+        <param>
+          <type>const T &amp;</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>cusparseOperation_t</type>
+          <declname>op</declname>
+        </param>
+        <param>
+          <type>cusparseSpMatDescr_t</type>
+          <declname>A</declname>
+        </param>
+        <param>
+          <type>const cusparseDnVecDescr *</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>const T &amp;</type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type>cusparseDnVecDescr_t</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/linear_system_context.h" line="271" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_linear_system_context_1a450ade1645c6af91e614ac6823d1d71d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void muda::LinearSystemContext::sysv</definition>
+        <argsstring>(DenseMatrixView&lt; T &gt; A_to_fact, DenseVectorView&lt; T &gt; b_to_x)</argsstring>
+        <name>sysv</name>
+        <qualifiedname>muda::LinearSystemContext::sysv</qualifiedname>
+        <param>
+          <type><ref refid="classmuda_1_1_dense_matrix_view" kindref="compound">DenseMatrixView</ref>&lt; T &gt;</type>
+          <declname>A_to_fact</declname>
+        </param>
+        <param>
+          <type><ref refid="classmuda_1_1_dense_vector_view_base" kindref="compound">DenseVectorView</ref>&lt; T &gt;</type>
+          <declname>b_to_x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/linear_system_context.h" line="278" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_linear_system_context_1ad07a1ab9493503a71e52cefe56e237ad" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void muda::LinearSystemContext::gesv</definition>
+        <argsstring>(DenseMatrixView&lt; T &gt; A_to_fact, DenseVectorView&lt; T &gt; b_to_x)</argsstring>
+        <name>gesv</name>
+        <qualifiedname>muda::LinearSystemContext::gesv</qualifiedname>
+        <param>
+          <type><ref refid="classmuda_1_1_dense_matrix_view" kindref="compound">DenseMatrixView</ref>&lt; T &gt;</type>
+          <declname>A_to_fact</declname>
+        </param>
+        <param>
+          <type><ref refid="classmuda_1_1_dense_vector_view_base" kindref="compound">DenseVectorView</ref>&lt; T &gt;</type>
+          <declname>b_to_x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/linear_system_context.h" line="280" column="10"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmuda_1_1_linear_system_context_1a2478ec3bd00462a24a3a76acbd01bdbc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>muda::LinearSystemContext::LinearSystemContext</definition>
+        <argsstring>(const LinearSystemContextCreateInfo &amp;info={})</argsstring>
+        <name>LinearSystemContext</name>
+        <qualifiedname>muda::LinearSystemContext::LinearSystemContext</qualifiedname>
+        <param>
+          <type>const <ref refid="classmuda_1_1_linear_system_context_create_info" kindref="compound">LinearSystemContextCreateInfo</ref> &amp;</type>
+          <declname>info</declname>
+          <defval>{}</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/linear_system_context.h" line="65" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_linear_system_context_1aa681d3258f1898f73c453e61366e156f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>muda::LinearSystemContext::LinearSystemContext</definition>
+        <argsstring>(const LinearSystemContext &amp;)=delete</argsstring>
+        <name>LinearSystemContext</name>
+        <qualifiedname>muda::LinearSystemContext::LinearSystemContext</qualifiedname>
+        <param>
+          <type>const <ref refid="classmuda_1_1_linear_system_context" kindref="compound">LinearSystemContext</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/linear_system_context.h" line="66" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_linear_system_context_1ab59a473ff97b43a097bfdbeda877facf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classmuda_1_1_linear_system_context" kindref="compound">LinearSystemContext</ref> &amp;</type>
+        <definition>LinearSystemContext &amp; muda::LinearSystemContext::operator=</definition>
+        <argsstring>(const LinearSystemContext &amp;)=delete</argsstring>
+        <name>operator=</name>
+        <qualifiedname>muda::LinearSystemContext::operator=</qualifiedname>
+        <param>
+          <type>const <ref refid="classmuda_1_1_linear_system_context" kindref="compound">LinearSystemContext</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/linear_system_context.h" line="67" column="25"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_linear_system_context_1a74088da5ad741804f78ef291aaee0fcc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>muda::LinearSystemContext::LinearSystemContext</definition>
+        <argsstring>(LinearSystemContext &amp;&amp;)=delete</argsstring>
+        <name>LinearSystemContext</name>
+        <qualifiedname>muda::LinearSystemContext::LinearSystemContext</qualifiedname>
+        <param>
+          <type><ref refid="classmuda_1_1_linear_system_context" kindref="compound">LinearSystemContext</ref> &amp;&amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/linear_system_context.h" line="68" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_linear_system_context_1a8b66da216799af5332adc2df432d5bdb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classmuda_1_1_linear_system_context" kindref="compound">LinearSystemContext</ref> &amp;</type>
+        <definition>LinearSystemContext &amp; muda::LinearSystemContext::operator=</definition>
+        <argsstring>(LinearSystemContext &amp;&amp;)=delete</argsstring>
+        <name>operator=</name>
+        <qualifiedname>muda::LinearSystemContext::operator=</qualifiedname>
+        <param>
+          <type><ref refid="classmuda_1_1_linear_system_context" kindref="compound">LinearSystemContext</ref> &amp;&amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/linear_system_context.h" line="69" column="25"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_linear_system_context_1af6480223a6c432490919a2946c77f9a7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>muda::LinearSystemContext::~LinearSystemContext</definition>
+        <argsstring>()</argsstring>
+        <name>~LinearSystemContext</name>
+        <qualifiedname>muda::LinearSystemContext::~LinearSystemContext</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/linear_system_context.h" line="70" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_linear_system_context_1ac72afcdd738cc13051af679e93dd5e36" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void muda::LinearSystemContext::label</definition>
+        <argsstring>(std::string_view label)</argsstring>
+        <name>label</name>
+        <qualifiedname>muda::LinearSystemContext::label</qualifiedname>
+        <param>
+          <type>std::string_view</type>
+          <declname>label</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/linear_system_context.h" line="72" column="10" bodyfile="src/muda/ext/linear_system/linear_system_context.h" bodystart="72" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_linear_system_context_1a8f759bf12a2ec9e7da20bcc293e059eb" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto muda::LinearSystemContext::label</definition>
+        <argsstring>() const -&gt; std::string_view</argsstring>
+        <name>label</name>
+        <qualifiedname>muda::LinearSystemContext::label</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/linear_system_context.h" line="73" column="10" bodyfile="src/muda/ext/linear_system/linear_system_context.h" bodystart="73" bodyend="73"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_linear_system_context_1ae75f5332f0bc6d64541d8b84094a5aa2" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto muda::LinearSystemContext::stream</definition>
+        <argsstring>() const</argsstring>
+        <name>stream</name>
+        <qualifiedname>muda::LinearSystemContext::stream</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/linear_system_context.h" line="74" column="10" bodyfile="src/muda/ext/linear_system/linear_system_context.h" bodystart="74" bodyend="74"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_linear_system_context_1a7f7c2edaa861629cc2c5a96440c2293e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void muda::LinearSystemContext::stream</definition>
+        <argsstring>(cudaStream_t stream)</argsstring>
+        <name>stream</name>
+        <qualifiedname>muda::LinearSystemContext::stream</qualifiedname>
+        <param>
+          <type>cudaStream_t</type>
+          <declname>stream</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/linear_system_context.h" line="75" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_linear_system_context_1acdba7dbefa14a13a5a33aff5ecc99a9d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void muda::LinearSystemContext::sync</definition>
+        <argsstring>()</argsstring>
+        <name>sync</name>
+        <qualifiedname>muda::LinearSystemContext::sync</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/linear_system_context.h" line="76" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_linear_system_context_1a577bc829efca864cf8efc8843ac41a58" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>auto &amp;</type>
+        <definition>auto &amp; muda::LinearSystemContext::tolerance</definition>
+        <argsstring>()</argsstring>
+        <name>tolerance</name>
+        <qualifiedname>muda::LinearSystemContext::tolerance</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/linear_system_context.h" line="82" column="10" bodyfile="src/muda/ext/linear_system/linear_system_context.h" bodystart="82" bodyend="82"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_linear_system_context_1aa95e2a1fd39c60e06ebb49dbd1954925" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>auto &amp;</type>
+        <definition>auto &amp; muda::LinearSystemContext::reorder</definition>
+        <argsstring>()</argsstring>
+        <name>reorder</name>
+        <qualifiedname>muda::LinearSystemContext::reorder</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/linear_system_context.h" line="83" column="10" bodyfile="src/muda/ext/linear_system/linear_system_context.h" bodystart="83" bodyend="83"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_linear_system_context_1aa0e07e1a84727152b8fc04552dfee047" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto muda::LinearSystemContext::reserve_ratio</definition>
+        <argsstring>() const</argsstring>
+        <name>reserve_ratio</name>
+        <qualifiedname>muda::LinearSystemContext::reserve_ratio</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/linear_system_context.h" line="84" column="11" bodyfile="src/muda/ext/linear_system/linear_system_context.h" bodystart="84" bodyend="84"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_linear_system_context_1ad975972eec1f4f6c242d95c9b92da616" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void muda::LinearSystemContext::reserve_ratio</definition>
+        <argsstring>(float ratio)</argsstring>
+        <name>reserve_ratio</name>
+        <qualifiedname>muda::LinearSystemContext::reserve_ratio</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>ratio</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/linear_system_context.h" line="85" column="11" bodyfile="src/muda/ext/linear_system/linear_system_context.h" bodystart="85" bodyend="85"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_linear_system_context_1a8ac64bf3feb466654518d06054a6632e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+          <param>
+            <type>int</type>
+            <declname>N</declname>
+            <defname>N</defname>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void muda::LinearSystemContext::convert</definition>
+        <argsstring>(const DeviceTripletMatrix&lt; T, N &gt; &amp;from, DeviceBCOOMatrix&lt; T, N &gt; &amp;to)</argsstring>
+        <name>convert</name>
+        <qualifiedname>muda::LinearSystemContext::convert</qualifiedname>
+        <param>
+          <type>const <ref refid="classmuda_1_1_device_triplet_matrix" kindref="compound">DeviceTripletMatrix</ref>&lt; T, N &gt; &amp;</type>
+          <declname>from</declname>
+        </param>
+        <param>
+          <type><ref refid="classmuda_1_1_device_b_c_o_o_matrix" kindref="compound">DeviceBCOOMatrix</ref>&lt; T, N &gt; &amp;</type>
+          <declname>to</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/linear_system_context.h" line="94" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_linear_system_context_1a7f113b302bfb59fc068324acf35f7276" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+          <param>
+            <type>int</type>
+            <declname>N</declname>
+            <defname>N</defname>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void muda::LinearSystemContext::convert</definition>
+        <argsstring>(const DeviceBCOOMatrix&lt; T, N &gt; &amp;from, DeviceDenseMatrix&lt; T &gt; &amp;to, bool clear_dense_matrix=true)</argsstring>
+        <name>convert</name>
+        <qualifiedname>muda::LinearSystemContext::convert</qualifiedname>
+        <param>
+          <type>const <ref refid="classmuda_1_1_device_b_c_o_o_matrix" kindref="compound">DeviceBCOOMatrix</ref>&lt; T, N &gt; &amp;</type>
+          <declname>from</declname>
+        </param>
+        <param>
+          <type><ref refid="classmuda_1_1_device_dense_matrix" kindref="compound">DeviceDenseMatrix</ref>&lt; T &gt; &amp;</type>
+          <declname>to</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>clear_dense_matrix</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/linear_system_context.h" line="98" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_linear_system_context_1ad91589d87a6f058f392daa246a464561" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+          <param>
+            <type>int</type>
+            <declname>N</declname>
+            <defname>N</defname>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void muda::LinearSystemContext::convert</definition>
+        <argsstring>(const DeviceBCOOMatrix&lt; T, N &gt; &amp;from, DeviceCOOMatrix&lt; T &gt; &amp;to)</argsstring>
+        <name>convert</name>
+        <qualifiedname>muda::LinearSystemContext::convert</qualifiedname>
+        <param>
+          <type>const <ref refid="classmuda_1_1_device_b_c_o_o_matrix" kindref="compound">DeviceBCOOMatrix</ref>&lt; T, N &gt; &amp;</type>
+          <declname>from</declname>
+        </param>
+        <param>
+          <type><ref refid="classmuda_1_1_device_b_c_o_o_matrix" kindref="compound">DeviceCOOMatrix</ref>&lt; T &gt; &amp;</type>
+          <declname>to</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/linear_system_context.h" line="104" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_linear_system_context_1a6c9690275d15c20bf39e114ad7426283" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+          <param>
+            <type>int</type>
+            <declname>N</declname>
+            <defname>N</defname>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void muda::LinearSystemContext::convert</definition>
+        <argsstring>(const DeviceBCOOMatrix&lt; T, N &gt; &amp;from, DeviceBSRMatrix&lt; T, N &gt; &amp;to)</argsstring>
+        <name>convert</name>
+        <qualifiedname>muda::LinearSystemContext::convert</qualifiedname>
+        <param>
+          <type>const <ref refid="classmuda_1_1_device_b_c_o_o_matrix" kindref="compound">DeviceBCOOMatrix</ref>&lt; T, N &gt; &amp;</type>
+          <declname>from</declname>
+        </param>
+        <param>
+          <type><ref refid="classmuda_1_1_device_b_s_r_matrix" kindref="compound">DeviceBSRMatrix</ref>&lt; T, N &gt; &amp;</type>
+          <declname>to</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/linear_system_context.h" line="108" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_linear_system_context_1a487e484e8fef6b4d818f47e5c7c82469" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+          <param>
+            <type>int</type>
+            <declname>N</declname>
+            <defname>N</defname>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void muda::LinearSystemContext::convert</definition>
+        <argsstring>(const DeviceDoubletVector&lt; T, N &gt; &amp;from, DeviceBCOOVector&lt; T, N &gt; &amp;to)</argsstring>
+        <name>convert</name>
+        <qualifiedname>muda::LinearSystemContext::convert</qualifiedname>
+        <param>
+          <type>const <ref refid="classmuda_1_1_device_doublet_vector" kindref="compound">DeviceDoubletVector</ref>&lt; T, N &gt; &amp;</type>
+          <declname>from</declname>
+        </param>
+        <param>
+          <type><ref refid="classmuda_1_1_device_b_c_o_o_vector" kindref="compound">DeviceBCOOVector</ref>&lt; T, N &gt; &amp;</type>
+          <declname>to</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/linear_system_context.h" line="112" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_linear_system_context_1a61d57eba3597f7264c2d6e095d74e8ee" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+          <param>
+            <type>int</type>
+            <declname>N</declname>
+            <defname>N</defname>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void muda::LinearSystemContext::convert</definition>
+        <argsstring>(const DeviceBCOOVector&lt; T, N &gt; &amp;from, DeviceDenseVector&lt; T &gt; &amp;to, bool clear_dense_vector=true)</argsstring>
+        <name>convert</name>
+        <qualifiedname>muda::LinearSystemContext::convert</qualifiedname>
+        <param>
+          <type>const <ref refid="classmuda_1_1_device_b_c_o_o_vector" kindref="compound">DeviceBCOOVector</ref>&lt; T, N &gt; &amp;</type>
+          <declname>from</declname>
+        </param>
+        <param>
+          <type><ref refid="classmuda_1_1_device_dense_vector" kindref="compound">DeviceDenseVector</ref>&lt; T &gt; &amp;</type>
+          <declname>to</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>clear_dense_vector</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/linear_system_context.h" line="116" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_linear_system_context_1a5872e1d035d04f1b06f73769347e54be" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+          <param>
+            <type>int</type>
+            <declname>N</declname>
+            <defname>N</defname>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void muda::LinearSystemContext::convert</definition>
+        <argsstring>(const DeviceDoubletVector&lt; T, N &gt; &amp;from, DeviceDenseVector&lt; T &gt; &amp;to, bool clear_dense_vector=true)</argsstring>
+        <name>convert</name>
+        <qualifiedname>muda::LinearSystemContext::convert</qualifiedname>
+        <param>
+          <type>const <ref refid="classmuda_1_1_device_doublet_vector" kindref="compound">DeviceDoubletVector</ref>&lt; T, N &gt; &amp;</type>
+          <declname>from</declname>
+        </param>
+        <param>
+          <type><ref refid="classmuda_1_1_device_dense_vector" kindref="compound">DeviceDenseVector</ref>&lt; T &gt; &amp;</type>
+          <declname>to</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>clear_dense_vector</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/linear_system_context.h" line="122" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_linear_system_context_1a3fcdfc8da09992016f4a47528579f9c8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+          <param>
+            <type>int</type>
+            <declname>N</declname>
+            <defname>N</defname>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void muda::LinearSystemContext::convert</definition>
+        <argsstring>(const DeviceBSRMatrix&lt; T, N &gt; &amp;from, DeviceCSRMatrix&lt; T &gt; &amp;to)</argsstring>
+        <name>convert</name>
+        <qualifiedname>muda::LinearSystemContext::convert</qualifiedname>
+        <param>
+          <type>const <ref refid="classmuda_1_1_device_b_s_r_matrix" kindref="compound">DeviceBSRMatrix</ref>&lt; T, N &gt; &amp;</type>
+          <declname>from</declname>
+        </param>
+        <param>
+          <type><ref refid="classmuda_1_1_device_c_s_r_matrix" kindref="compound">DeviceCSRMatrix</ref>&lt; T &gt; &amp;</type>
+          <declname>to</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/linear_system_context.h" line="128" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_linear_system_context_1adf70500a3c5286a443526b78a63edb92" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void muda::LinearSystemContext::convert</definition>
+        <argsstring>(const DeviceTripletMatrix&lt; T, 1 &gt; &amp;from, DeviceCOOMatrix&lt; T &gt; &amp;to)</argsstring>
+        <name>convert</name>
+        <qualifiedname>muda::LinearSystemContext::convert</qualifiedname>
+        <param>
+          <type>const <ref refid="classmuda_1_1_device_triplet_matrix" kindref="compound">DeviceTripletMatrix</ref>&lt; T, 1 &gt; &amp;</type>
+          <declname>from</declname>
+        </param>
+        <param>
+          <type><ref refid="classmuda_1_1_device_b_c_o_o_matrix" kindref="compound">DeviceCOOMatrix</ref>&lt; T &gt; &amp;</type>
+          <declname>to</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/linear_system_context.h" line="132" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_linear_system_context_1ac769275f01e4c6e609dbfb822573bda3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void muda::LinearSystemContext::convert</definition>
+        <argsstring>(const DeviceCOOMatrix&lt; T &gt; &amp;from, DeviceDenseMatrix&lt; T &gt; &amp;to, bool clear_dense_matrix=true)</argsstring>
+        <name>convert</name>
+        <qualifiedname>muda::LinearSystemContext::convert</qualifiedname>
+        <param>
+          <type>const <ref refid="classmuda_1_1_device_b_c_o_o_matrix" kindref="compound">DeviceCOOMatrix</ref>&lt; T &gt; &amp;</type>
+          <declname>from</declname>
+        </param>
+        <param>
+          <type><ref refid="classmuda_1_1_device_dense_matrix" kindref="compound">DeviceDenseMatrix</ref>&lt; T &gt; &amp;</type>
+          <declname>to</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>clear_dense_matrix</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/linear_system_context.h" line="136" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_linear_system_context_1a1517eec0e756ff5924f14c7ff567456b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void muda::LinearSystemContext::convert</definition>
+        <argsstring>(const DeviceCOOMatrix&lt; T &gt; &amp;from, DeviceCSRMatrix&lt; T &gt; &amp;to)</argsstring>
+        <name>convert</name>
+        <qualifiedname>muda::LinearSystemContext::convert</qualifiedname>
+        <param>
+          <type>const <ref refid="classmuda_1_1_device_b_c_o_o_matrix" kindref="compound">DeviceCOOMatrix</ref>&lt; T &gt; &amp;</type>
+          <declname>from</declname>
+        </param>
+        <param>
+          <type><ref refid="classmuda_1_1_device_c_s_r_matrix" kindref="compound">DeviceCSRMatrix</ref>&lt; T &gt; &amp;</type>
+          <declname>to</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/linear_system_context.h" line="142" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_linear_system_context_1a4a09d7a9d3fd4537c80a5dfcbb485111" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void muda::LinearSystemContext::convert</definition>
+        <argsstring>(DeviceCOOMatrix&lt; T &gt; &amp;&amp;from, DeviceCSRMatrix&lt; T &gt; &amp;to)</argsstring>
+        <name>convert</name>
+        <qualifiedname>muda::LinearSystemContext::convert</qualifiedname>
+        <param>
+          <type><ref refid="classmuda_1_1_device_b_c_o_o_matrix" kindref="compound">DeviceCOOMatrix</ref>&lt; T &gt; &amp;&amp;</type>
+          <declname>from</declname>
+        </param>
+        <param>
+          <type><ref refid="classmuda_1_1_device_c_s_r_matrix" kindref="compound">DeviceCSRMatrix</ref>&lt; T &gt; &amp;</type>
+          <declname>to</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/linear_system_context.h" line="144" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_linear_system_context_1a832b395509598c1c3662572b99333c1f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void muda::LinearSystemContext::convert</definition>
+        <argsstring>(const DeviceDoubletVector&lt; T, 1 &gt; &amp;from, DeviceCOOVector&lt; T &gt; &amp;to)</argsstring>
+        <name>convert</name>
+        <qualifiedname>muda::LinearSystemContext::convert</qualifiedname>
+        <param>
+          <type>const <ref refid="classmuda_1_1_device_doublet_vector" kindref="compound">DeviceDoubletVector</ref>&lt; T, 1 &gt; &amp;</type>
+          <declname>from</declname>
+        </param>
+        <param>
+          <type><ref refid="classmuda_1_1_device_b_c_o_o_vector_3_01_t_00_011_01_4" kindref="compound">DeviceCOOVector</ref>&lt; T &gt; &amp;</type>
+          <declname>to</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/linear_system_context.h" line="148" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_linear_system_context_1a75c6d9499d81f0fb6a474ff5429faa63" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void muda::LinearSystemContext::convert</definition>
+        <argsstring>(const DeviceCOOVector&lt; T &gt; &amp;from, DeviceDenseVector&lt; T &gt; &amp;to, bool clear_dense_vector=true)</argsstring>
+        <name>convert</name>
+        <qualifiedname>muda::LinearSystemContext::convert</qualifiedname>
+        <param>
+          <type>const <ref refid="classmuda_1_1_device_b_c_o_o_vector_3_01_t_00_011_01_4" kindref="compound">DeviceCOOVector</ref>&lt; T &gt; &amp;</type>
+          <declname>from</declname>
+        </param>
+        <param>
+          <type><ref refid="classmuda_1_1_device_dense_vector" kindref="compound">DeviceDenseVector</ref>&lt; T &gt; &amp;</type>
+          <declname>to</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>clear_dense_vector</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/linear_system_context.h" line="152" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_linear_system_context_1a54a96875914533b3ea665943ce57912d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void muda::LinearSystemContext::convert</definition>
+        <argsstring>(const DeviceDoubletVector&lt; T, 1 &gt; &amp;from, DeviceDenseVector&lt; T &gt; &amp;to, bool clear_dense_vector=true)</argsstring>
+        <name>convert</name>
+        <qualifiedname>muda::LinearSystemContext::convert</qualifiedname>
+        <param>
+          <type>const <ref refid="classmuda_1_1_device_doublet_vector" kindref="compound">DeviceDoubletVector</ref>&lt; T, 1 &gt; &amp;</type>
+          <declname>from</declname>
+        </param>
+        <param>
+          <type><ref refid="classmuda_1_1_device_dense_vector" kindref="compound">DeviceDenseVector</ref>&lt; T &gt; &amp;</type>
+          <declname>to</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>clear_dense_vector</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/linear_system_context.h" line="158" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_linear_system_context_1ae9c825d8b1f50ef08720d725f26f3dea" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>T</type>
+        <definition>T muda::LinearSystemContext::norm</definition>
+        <argsstring>(CDenseVectorView&lt; T &gt; x)</argsstring>
+        <name>norm</name>
+        <qualifiedname>muda::LinearSystemContext::norm</qualifiedname>
+        <param>
+          <type><ref refid="classmuda_1_1_dense_vector_view_base" kindref="compound">CDenseVectorView</ref>&lt; T &gt;</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/linear_system_context.h" line="167" column="7"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_linear_system_context_1afdac1baf24b6a7933e9ed4658c39464e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void muda::LinearSystemContext::norm</definition>
+        <argsstring>(CDenseVectorView&lt; T &gt; x, VarView&lt; T &gt; result)</argsstring>
+        <name>norm</name>
+        <qualifiedname>muda::LinearSystemContext::norm</qualifiedname>
+        <param>
+          <type><ref refid="classmuda_1_1_dense_vector_view_base" kindref="compound">CDenseVectorView</ref>&lt; T &gt;</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type><ref refid="classmuda_1_1_var_view_t" kindref="compound">VarView</ref>&lt; T &gt;</type>
+          <declname>result</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/linear_system_context.h" line="169" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_linear_system_context_1afabdfcf679a5ef36d165b00a55213c5b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void muda::LinearSystemContext::norm</definition>
+        <argsstring>(CDenseVectorView&lt; T &gt; x, T *result)</argsstring>
+        <name>norm</name>
+        <qualifiedname>muda::LinearSystemContext::norm</qualifiedname>
+        <param>
+          <type><ref refid="classmuda_1_1_dense_vector_view_base" kindref="compound">CDenseVectorView</ref>&lt; T &gt;</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>T *</type>
+          <declname>result</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/linear_system_context.h" line="171" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_linear_system_context_1a14cf666607e53b0add69a6113f79bb84" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>T</type>
+        <definition>T muda::LinearSystemContext::dot</definition>
+        <argsstring>(CDenseVectorView&lt; T &gt; x, CDenseVectorView&lt; T &gt; y)</argsstring>
+        <name>dot</name>
+        <qualifiedname>muda::LinearSystemContext::dot</qualifiedname>
+        <param>
+          <type><ref refid="classmuda_1_1_dense_vector_view_base" kindref="compound">CDenseVectorView</ref>&lt; T &gt;</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type><ref refid="classmuda_1_1_dense_vector_view_base" kindref="compound">CDenseVectorView</ref>&lt; T &gt;</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/linear_system_context.h" line="177" column="7"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_linear_system_context_1ad7eeb6db0aacf2eb9059b2864bf08774" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void muda::LinearSystemContext::dot</definition>
+        <argsstring>(CDenseVectorView&lt; T &gt; x, CDenseVectorView&lt; T &gt; y, VarView&lt; T &gt; result)</argsstring>
+        <name>dot</name>
+        <qualifiedname>muda::LinearSystemContext::dot</qualifiedname>
+        <param>
+          <type><ref refid="classmuda_1_1_dense_vector_view_base" kindref="compound">CDenseVectorView</ref>&lt; T &gt;</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type><ref refid="classmuda_1_1_dense_vector_view_base" kindref="compound">CDenseVectorView</ref>&lt; T &gt;</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type><ref refid="classmuda_1_1_var_view_t" kindref="compound">VarView</ref>&lt; T &gt;</type>
+          <declname>result</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/linear_system_context.h" line="179" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_linear_system_context_1a9f0e2a9923f8c0e72414fa713cc085db" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void muda::LinearSystemContext::dot</definition>
+        <argsstring>(CDenseVectorView&lt; T &gt; x, CDenseVectorView&lt; T &gt; y, T *result)</argsstring>
+        <name>dot</name>
+        <qualifiedname>muda::LinearSystemContext::dot</qualifiedname>
+        <param>
+          <type><ref refid="classmuda_1_1_dense_vector_view_base" kindref="compound">CDenseVectorView</ref>&lt; T &gt;</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type><ref refid="classmuda_1_1_dense_vector_view_base" kindref="compound">CDenseVectorView</ref>&lt; T &gt;</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>T *</type>
+          <declname>result</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/linear_system_context.h" line="181" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_linear_system_context_1a69a0aa850ffb9e0d2736dd61f27954af" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void muda::LinearSystemContext::axpby</definition>
+        <argsstring>(const T &amp;alpha, CDenseVectorView&lt; T &gt; x, const T &amp;beta, DenseVectorView&lt; T &gt; y)</argsstring>
+        <name>axpby</name>
+        <qualifiedname>muda::LinearSystemContext::axpby</qualifiedname>
+        <param>
+          <type>const T &amp;</type>
+          <declname>alpha</declname>
+        </param>
+        <param>
+          <type><ref refid="classmuda_1_1_dense_vector_view_base" kindref="compound">CDenseVectorView</ref>&lt; T &gt;</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>const T &amp;</type>
+          <declname>beta</declname>
+        </param>
+        <param>
+          <type><ref refid="classmuda_1_1_dense_vector_view_base" kindref="compound">DenseVectorView</ref>&lt; T &gt;</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/linear_system_context.h" line="195" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_linear_system_context_1aa40f69eeb6214d7bd4b1894749bec5ec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void muda::LinearSystemContext::axpby</definition>
+        <argsstring>(CVarView&lt; T &gt; alpha, CDenseVectorView&lt; T &gt; x, CVarView&lt; T &gt; beta, DenseVectorView&lt; T &gt; y)</argsstring>
+        <name>axpby</name>
+        <qualifiedname>muda::LinearSystemContext::axpby</qualifiedname>
+        <param>
+          <type><ref refid="classmuda_1_1_var_view_t" kindref="compound">CVarView</ref>&lt; T &gt;</type>
+          <declname>alpha</declname>
+        </param>
+        <param>
+          <type><ref refid="classmuda_1_1_dense_vector_view_base" kindref="compound">CDenseVectorView</ref>&lt; T &gt;</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type><ref refid="classmuda_1_1_var_view_t" kindref="compound">CVarView</ref>&lt; T &gt;</type>
+          <declname>beta</declname>
+        </param>
+        <param>
+          <type><ref refid="classmuda_1_1_dense_vector_view_base" kindref="compound">DenseVectorView</ref>&lt; T &gt;</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/linear_system_context.h" line="198" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_linear_system_context_1aeab13bd8d9181cafd4e7fb6661501272" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void muda::LinearSystemContext::plus</definition>
+        <argsstring>(CDenseVectorView&lt; T &gt; x, CDenseVectorView&lt; T &gt; y, DenseVectorView&lt; T &gt; z)</argsstring>
+        <name>plus</name>
+        <qualifiedname>muda::LinearSystemContext::plus</qualifiedname>
+        <param>
+          <type><ref refid="classmuda_1_1_dense_vector_view_base" kindref="compound">CDenseVectorView</ref>&lt; T &gt;</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type><ref refid="classmuda_1_1_dense_vector_view_base" kindref="compound">CDenseVectorView</ref>&lt; T &gt;</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type><ref refid="classmuda_1_1_dense_vector_view_base" kindref="compound">DenseVectorView</ref>&lt; T &gt;</type>
+          <declname>z</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/linear_system_context.h" line="201" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_linear_system_context_1a03a8163394a49ee43c58d7afb173432f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+          <param>
+            <type>int</type>
+            <declname>N</declname>
+            <defname>N</defname>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void muda::LinearSystemContext::spmv</definition>
+        <argsstring>(const T &amp;a, CBSRMatrixView&lt; T, N &gt; A, CDenseVectorView&lt; T &gt; x, const T &amp;b, DenseVectorView&lt; T &gt; &amp;y)</argsstring>
+        <name>spmv</name>
+        <qualifiedname>muda::LinearSystemContext::spmv</qualifiedname>
+        <param>
+          <type>const T &amp;</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type><ref refid="classmuda_1_1_b_s_r_matrix_view_base" kindref="compound">CBSRMatrixView</ref>&lt; T, N &gt;</type>
+          <declname>A</declname>
+        </param>
+        <param>
+          <type><ref refid="classmuda_1_1_dense_vector_view_base" kindref="compound">CDenseVectorView</ref>&lt; T &gt;</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>const T &amp;</type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type><ref refid="classmuda_1_1_dense_vector_view_base" kindref="compound">DenseVectorView</ref>&lt; T &gt; &amp;</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/linear_system_context.h" line="209" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_linear_system_context_1a405eff8f0ac6c14bf3f41e7427420aee" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+          <param>
+            <type>int</type>
+            <declname>N</declname>
+            <defname>N</defname>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void muda::LinearSystemContext::spmv</definition>
+        <argsstring>(CBSRMatrixView&lt; T, N &gt; A, CDenseVectorView&lt; T &gt; x, DenseVectorView&lt; T &gt; y)</argsstring>
+        <name>spmv</name>
+        <qualifiedname>muda::LinearSystemContext::spmv</qualifiedname>
+        <param>
+          <type><ref refid="classmuda_1_1_b_s_r_matrix_view_base" kindref="compound">CBSRMatrixView</ref>&lt; T, N &gt;</type>
+          <declname>A</declname>
+        </param>
+        <param>
+          <type><ref refid="classmuda_1_1_dense_vector_view_base" kindref="compound">CDenseVectorView</ref>&lt; T &gt;</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type><ref refid="classmuda_1_1_dense_vector_view_base" kindref="compound">DenseVectorView</ref>&lt; T &gt;</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/linear_system_context.h" line="215" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_linear_system_context_1ab6252790198b4517b075cbdef8433cfc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void muda::LinearSystemContext::spmv</definition>
+        <argsstring>(const T &amp;a, CCSRMatrixView&lt; T &gt; A, CDenseVectorView&lt; T &gt; x, const T &amp;b, DenseVectorView&lt; T &gt; &amp;y)</argsstring>
+        <name>spmv</name>
+        <qualifiedname>muda::LinearSystemContext::spmv</qualifiedname>
+        <param>
+          <type>const T &amp;</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type><ref refid="classmuda_1_1_c_s_r_matrix_view_base" kindref="compound">CCSRMatrixView</ref>&lt; T &gt;</type>
+          <declname>A</declname>
+        </param>
+        <param>
+          <type><ref refid="classmuda_1_1_dense_vector_view_base" kindref="compound">CDenseVectorView</ref>&lt; T &gt;</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>const T &amp;</type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type><ref refid="classmuda_1_1_dense_vector_view_base" kindref="compound">DenseVectorView</ref>&lt; T &gt; &amp;</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/linear_system_context.h" line="218" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_linear_system_context_1ac8d5c3b7d5e3e4b00e9a47f8f609756f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void muda::LinearSystemContext::spmv</definition>
+        <argsstring>(CCSRMatrixView&lt; T &gt; A, CDenseVectorView&lt; T &gt; x, DenseVectorView&lt; T &gt; y)</argsstring>
+        <name>spmv</name>
+        <qualifiedname>muda::LinearSystemContext::spmv</qualifiedname>
+        <param>
+          <type><ref refid="classmuda_1_1_c_s_r_matrix_view_base" kindref="compound">CCSRMatrixView</ref>&lt; T &gt;</type>
+          <declname>A</declname>
+        </param>
+        <param>
+          <type><ref refid="classmuda_1_1_dense_vector_view_base" kindref="compound">CDenseVectorView</ref>&lt; T &gt;</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type><ref refid="classmuda_1_1_dense_vector_view_base" kindref="compound">DenseVectorView</ref>&lt; T &gt;</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/linear_system_context.h" line="220" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_linear_system_context_1a593184f0bc8ec34762dd9135a9da3155" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+          <param>
+            <type>int</type>
+            <declname>N</declname>
+            <defname>N</defname>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void muda::LinearSystemContext::spmv</definition>
+        <argsstring>(const T &amp;a, CTripletMatrixView&lt; T, N &gt; A, CDenseVectorView&lt; T &gt; x, const T &amp;b, DenseVectorView&lt; T &gt; &amp;y)</argsstring>
+        <name>spmv</name>
+        <qualifiedname>muda::LinearSystemContext::spmv</qualifiedname>
+        <param>
+          <type>const T &amp;</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type><ref refid="classmuda_1_1_triplet_matrix_view_base" kindref="compound">CTripletMatrixView</ref>&lt; T, N &gt;</type>
+          <declname>A</declname>
+        </param>
+        <param>
+          <type><ref refid="classmuda_1_1_dense_vector_view_base" kindref="compound">CDenseVectorView</ref>&lt; T &gt;</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>const T &amp;</type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type><ref refid="classmuda_1_1_dense_vector_view_base" kindref="compound">DenseVectorView</ref>&lt; T &gt; &amp;</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/linear_system_context.h" line="223" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_linear_system_context_1a90a51cd844616640784dc80499b106f0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+          <param>
+            <type>int</type>
+            <declname>N</declname>
+            <defname>N</defname>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void muda::LinearSystemContext::spmv</definition>
+        <argsstring>(CTripletMatrixView&lt; T, N &gt; A, CDenseVectorView&lt; T &gt; x, DenseVectorView&lt; T &gt; y)</argsstring>
+        <name>spmv</name>
+        <qualifiedname>muda::LinearSystemContext::spmv</qualifiedname>
+        <param>
+          <type><ref refid="classmuda_1_1_triplet_matrix_view_base" kindref="compound">CTripletMatrixView</ref>&lt; T, N &gt;</type>
+          <declname>A</declname>
+        </param>
+        <param>
+          <type><ref refid="classmuda_1_1_dense_vector_view_base" kindref="compound">CDenseVectorView</ref>&lt; T &gt;</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type><ref refid="classmuda_1_1_dense_vector_view_base" kindref="compound">DenseVectorView</ref>&lt; T &gt;</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/linear_system_context.h" line="229" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_linear_system_context_1a157b7053b4e365d5b01d8e1aa895340f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void muda::LinearSystemContext::spmv</definition>
+        <argsstring>(const T &amp;a, CCOOMatrixView&lt; T &gt; A, CDenseVectorView&lt; T &gt; x, const T &amp;b, DenseVectorView&lt; T &gt; &amp;y)</argsstring>
+        <name>spmv</name>
+        <qualifiedname>muda::LinearSystemContext::spmv</qualifiedname>
+        <param>
+          <type>const T &amp;</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type><ref refid="classmuda_1_1_c_o_o_matrix_view_base" kindref="compound">CCOOMatrixView</ref>&lt; T &gt;</type>
+          <declname>A</declname>
+        </param>
+        <param>
+          <type><ref refid="classmuda_1_1_dense_vector_view_base" kindref="compound">CDenseVectorView</ref>&lt; T &gt;</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>const T &amp;</type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type><ref refid="classmuda_1_1_dense_vector_view_base" kindref="compound">DenseVectorView</ref>&lt; T &gt; &amp;</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/linear_system_context.h" line="232" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_linear_system_context_1a8b412a59c372088bf4222b7281d0498e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void muda::LinearSystemContext::spmv</definition>
+        <argsstring>(CCOOMatrixView&lt; T &gt; A, CDenseVectorView&lt; T &gt; x, DenseVectorView&lt; T &gt; y)</argsstring>
+        <name>spmv</name>
+        <qualifiedname>muda::LinearSystemContext::spmv</qualifiedname>
+        <param>
+          <type><ref refid="classmuda_1_1_c_o_o_matrix_view_base" kindref="compound">CCOOMatrixView</ref>&lt; T &gt;</type>
+          <declname>A</declname>
+        </param>
+        <param>
+          <type><ref refid="classmuda_1_1_dense_vector_view_base" kindref="compound">CDenseVectorView</ref>&lt; T &gt;</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type><ref refid="classmuda_1_1_dense_vector_view_base" kindref="compound">DenseVectorView</ref>&lt; T &gt;</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/linear_system_context.h" line="234" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_linear_system_context_1ae7314bea981f88844640d0b5ddd8fc87" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void muda::LinearSystemContext::mv</definition>
+        <argsstring>(CDenseMatrixView&lt; T &gt; A, const T &amp;alpha, CDenseVectorView&lt; T &gt; x, const T &amp;beta, DenseVectorView&lt; T &gt; y)</argsstring>
+        <name>mv</name>
+        <qualifiedname>muda::LinearSystemContext::mv</qualifiedname>
+        <param>
+          <type><ref refid="classmuda_1_1_c_dense_matrix_view" kindref="compound">CDenseMatrixView</ref>&lt; T &gt;</type>
+          <declname>A</declname>
+        </param>
+        <param>
+          <type>const T &amp;</type>
+          <declname>alpha</declname>
+        </param>
+        <param>
+          <type><ref refid="classmuda_1_1_dense_vector_view_base" kindref="compound">CDenseVectorView</ref>&lt; T &gt;</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>const T &amp;</type>
+          <declname>beta</declname>
+        </param>
+        <param>
+          <type><ref refid="classmuda_1_1_dense_vector_view_base" kindref="compound">DenseVectorView</ref>&lt; T &gt;</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/linear_system_context.h" line="242" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_linear_system_context_1a99c5cb2bad502ee9311d70712f46b990" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void muda::LinearSystemContext::mv</definition>
+        <argsstring>(CDenseMatrixView&lt; T &gt; A, CVarView&lt; T &gt; alpha, CDenseVectorView&lt; T &gt; x, CVarView&lt; T &gt; beta, DenseVectorView&lt; T &gt; y)</argsstring>
+        <name>mv</name>
+        <qualifiedname>muda::LinearSystemContext::mv</qualifiedname>
+        <param>
+          <type><ref refid="classmuda_1_1_c_dense_matrix_view" kindref="compound">CDenseMatrixView</ref>&lt; T &gt;</type>
+          <declname>A</declname>
+        </param>
+        <param>
+          <type><ref refid="classmuda_1_1_var_view_t" kindref="compound">CVarView</ref>&lt; T &gt;</type>
+          <declname>alpha</declname>
+        </param>
+        <param>
+          <type><ref refid="classmuda_1_1_dense_vector_view_base" kindref="compound">CDenseVectorView</ref>&lt; T &gt;</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type><ref refid="classmuda_1_1_var_view_t" kindref="compound">CVarView</ref>&lt; T &gt;</type>
+          <declname>beta</declname>
+        </param>
+        <param>
+          <type><ref refid="classmuda_1_1_dense_vector_view_base" kindref="compound">DenseVectorView</ref>&lt; T &gt;</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/linear_system_context.h" line="248" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_linear_system_context_1aa7b9cfe381ea4ebc05f2bcfe51a34374" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void muda::LinearSystemContext::mv</definition>
+        <argsstring>(CDenseMatrixView&lt; T &gt; A, CDenseVectorView&lt; T &gt; x, DenseVectorView&lt; T &gt; y)</argsstring>
+        <name>mv</name>
+        <qualifiedname>muda::LinearSystemContext::mv</qualifiedname>
+        <param>
+          <type><ref refid="classmuda_1_1_c_dense_matrix_view" kindref="compound">CDenseMatrixView</ref>&lt; T &gt;</type>
+          <declname>A</declname>
+        </param>
+        <param>
+          <type><ref refid="classmuda_1_1_dense_vector_view_base" kindref="compound">CDenseVectorView</ref>&lt; T &gt;</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type><ref refid="classmuda_1_1_dense_vector_view_base" kindref="compound">DenseVectorView</ref>&lt; T &gt;</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/linear_system_context.h" line="254" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_linear_system_context_1a38894f4738b180ff865c2f0077e64255" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void muda::LinearSystemContext::solve</definition>
+        <argsstring>(DenseMatrixView&lt; T &gt; A_to_fact, DenseVectorView&lt; T &gt; b_to_x)</argsstring>
+        <name>solve</name>
+        <qualifiedname>muda::LinearSystemContext::solve</qualifiedname>
+        <param>
+          <type><ref refid="classmuda_1_1_dense_matrix_view" kindref="compound">DenseMatrixView</ref>&lt; T &gt;</type>
+          <declname>A_to_fact</declname>
+        </param>
+        <param>
+          <type><ref refid="classmuda_1_1_dense_vector_view_base" kindref="compound">DenseVectorView</ref>&lt; T &gt;</type>
+          <declname>b_to_x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/linear_system_context.h" line="263" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_linear_system_context_1aa12b7648425cdec0b10ab50448b5135e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void muda::LinearSystemContext::solve</definition>
+        <argsstring>(DenseVectorView&lt; T &gt; x, CCSRMatrixView&lt; T &gt; A, CDenseVectorView&lt; T &gt; b)</argsstring>
+        <name>solve</name>
+        <qualifiedname>muda::LinearSystemContext::solve</qualifiedname>
+        <param>
+          <type><ref refid="classmuda_1_1_dense_vector_view_base" kindref="compound">DenseVectorView</ref>&lt; T &gt;</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type><ref refid="classmuda_1_1_c_s_r_matrix_view_base" kindref="compound">CCSRMatrixView</ref>&lt; T &gt;</type>
+          <declname>A</declname>
+        </param>
+        <param>
+          <type><ref refid="classmuda_1_1_dense_vector_view_base" kindref="compound">CDenseVectorView</ref>&lt; T &gt;</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/linear_system_context.h" line="267" column="10"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/muda/ext/linear_system/linear_system_context.h" line="27" column="1" bodyfile="src/muda/ext/linear_system/linear_system_context.h" bodystart="28" bodyend="281"/>
+    <listofallmembers>
+      <member refid="classmuda_1_1_linear_system_context_1a610d814f8ffaf9755009efd95953d124" prot="private" virt="non-virtual"><scope>muda::LinearSystemContext</scope><name>add_sync_callback</name></member>
+      <member refid="classmuda_1_1_linear_system_context_1a69a0aa850ffb9e0d2736dd61f27954af" prot="public" virt="non-virtual"><scope>muda::LinearSystemContext</scope><name>axpby</name></member>
+      <member refid="classmuda_1_1_linear_system_context_1aa40f69eeb6214d7bd4b1894749bec5ec" prot="public" virt="non-virtual"><scope>muda::LinearSystemContext</scope><name>axpby</name></member>
+      <member refid="classmuda_1_1_linear_system_context_1a8ac64bf3feb466654518d06054a6632e" prot="public" virt="non-virtual"><scope>muda::LinearSystemContext</scope><name>convert</name></member>
+      <member refid="classmuda_1_1_linear_system_context_1a7f113b302bfb59fc068324acf35f7276" prot="public" virt="non-virtual"><scope>muda::LinearSystemContext</scope><name>convert</name></member>
+      <member refid="classmuda_1_1_linear_system_context_1ad91589d87a6f058f392daa246a464561" prot="public" virt="non-virtual"><scope>muda::LinearSystemContext</scope><name>convert</name></member>
+      <member refid="classmuda_1_1_linear_system_context_1a6c9690275d15c20bf39e114ad7426283" prot="public" virt="non-virtual"><scope>muda::LinearSystemContext</scope><name>convert</name></member>
+      <member refid="classmuda_1_1_linear_system_context_1a487e484e8fef6b4d818f47e5c7c82469" prot="public" virt="non-virtual"><scope>muda::LinearSystemContext</scope><name>convert</name></member>
+      <member refid="classmuda_1_1_linear_system_context_1a61d57eba3597f7264c2d6e095d74e8ee" prot="public" virt="non-virtual"><scope>muda::LinearSystemContext</scope><name>convert</name></member>
+      <member refid="classmuda_1_1_linear_system_context_1a5872e1d035d04f1b06f73769347e54be" prot="public" virt="non-virtual"><scope>muda::LinearSystemContext</scope><name>convert</name></member>
+      <member refid="classmuda_1_1_linear_system_context_1a3fcdfc8da09992016f4a47528579f9c8" prot="public" virt="non-virtual"><scope>muda::LinearSystemContext</scope><name>convert</name></member>
+      <member refid="classmuda_1_1_linear_system_context_1adf70500a3c5286a443526b78a63edb92" prot="public" virt="non-virtual"><scope>muda::LinearSystemContext</scope><name>convert</name></member>
+      <member refid="classmuda_1_1_linear_system_context_1ac769275f01e4c6e609dbfb822573bda3" prot="public" virt="non-virtual"><scope>muda::LinearSystemContext</scope><name>convert</name></member>
+      <member refid="classmuda_1_1_linear_system_context_1a1517eec0e756ff5924f14c7ff567456b" prot="public" virt="non-virtual"><scope>muda::LinearSystemContext</scope><name>convert</name></member>
+      <member refid="classmuda_1_1_linear_system_context_1a4a09d7a9d3fd4537c80a5dfcbb485111" prot="public" virt="non-virtual"><scope>muda::LinearSystemContext</scope><name>convert</name></member>
+      <member refid="classmuda_1_1_linear_system_context_1a832b395509598c1c3662572b99333c1f" prot="public" virt="non-virtual"><scope>muda::LinearSystemContext</scope><name>convert</name></member>
+      <member refid="classmuda_1_1_linear_system_context_1a75c6d9499d81f0fb6a474ff5429faa63" prot="public" virt="non-virtual"><scope>muda::LinearSystemContext</scope><name>convert</name></member>
+      <member refid="classmuda_1_1_linear_system_context_1a54a96875914533b3ea665943ce57912d" prot="public" virt="non-virtual"><scope>muda::LinearSystemContext</scope><name>convert</name></member>
+      <member refid="classmuda_1_1_linear_system_context_1a87b1001082a15fa49f87ae22d77a2e95" prot="private" virt="non-virtual"><scope>muda::LinearSystemContext</scope><name>cublas</name></member>
+      <member refid="classmuda_1_1_linear_system_context_1a8141013bb488e22a89ae990875b85d66" prot="private" virt="non-virtual"><scope>muda::LinearSystemContext</scope><name>cusolver_dn</name></member>
+      <member refid="classmuda_1_1_linear_system_context_1a75945738f11b9dadd682b4ae77f59393" prot="private" virt="non-virtual"><scope>muda::LinearSystemContext</scope><name>cusolver_sp</name></member>
+      <member refid="classmuda_1_1_linear_system_context_1af04c00cbff5d26354158ed3443ecac91" prot="private" virt="non-virtual"><scope>muda::LinearSystemContext</scope><name>cusparse</name></member>
+      <member refid="classmuda_1_1_linear_system_context_1a14cf666607e53b0add69a6113f79bb84" prot="public" virt="non-virtual"><scope>muda::LinearSystemContext</scope><name>dot</name></member>
+      <member refid="classmuda_1_1_linear_system_context_1ad7eeb6db0aacf2eb9059b2864bf08774" prot="public" virt="non-virtual"><scope>muda::LinearSystemContext</scope><name>dot</name></member>
+      <member refid="classmuda_1_1_linear_system_context_1a9f0e2a9923f8c0e72414fa713cc085db" prot="public" virt="non-virtual"><scope>muda::LinearSystemContext</scope><name>dot</name></member>
+      <member refid="classmuda_1_1_linear_system_context_1acd59820ef73d8e85728b70b03988470f" prot="private" virt="non-virtual"><scope>muda::LinearSystemContext</scope><name>generic_spmv</name></member>
+      <member refid="classmuda_1_1_linear_system_context_1ad07a1ab9493503a71e52cefe56e237ad" prot="private" virt="non-virtual"><scope>muda::LinearSystemContext</scope><name>gesv</name></member>
+      <member refid="classmuda_1_1_linear_system_context_1ac72afcdd738cc13051af679e93dd5e36" prot="public" virt="non-virtual"><scope>muda::LinearSystemContext</scope><name>label</name></member>
+      <member refid="classmuda_1_1_linear_system_context_1a8f759bf12a2ec9e7da20bcc293e059eb" prot="public" virt="non-virtual"><scope>muda::LinearSystemContext</scope><name>label</name></member>
+      <member refid="classmuda_1_1_linear_system_context_1a2478ec3bd00462a24a3a76acbd01bdbc" prot="public" virt="non-virtual"><scope>muda::LinearSystemContext</scope><name>LinearSystemContext</name></member>
+      <member refid="classmuda_1_1_linear_system_context_1aa681d3258f1898f73c453e61366e156f" prot="public" virt="non-virtual"><scope>muda::LinearSystemContext</scope><name>LinearSystemContext</name></member>
+      <member refid="classmuda_1_1_linear_system_context_1a74088da5ad741804f78ef291aaee0fcc" prot="public" virt="non-virtual"><scope>muda::LinearSystemContext</scope><name>LinearSystemContext</name></member>
+      <member refid="classmuda_1_1_linear_system_context_1a5db5fe6050af5ddb57ee3001cc2451bc" prot="private" virt="non-virtual"><scope>muda::LinearSystemContext</scope><name>m_buffers</name></member>
+      <member refid="classmuda_1_1_linear_system_context_1a5b64d94195dc8e291264b7281fbd2f7e" prot="private" virt="non-virtual"><scope>muda::LinearSystemContext</scope><name>m_converter</name></member>
+      <member refid="classmuda_1_1_linear_system_context_1ae8e034aabb64fb982eaaa705616affb4" prot="private" virt="non-virtual"><scope>muda::LinearSystemContext</scope><name>m_create_info</name></member>
+      <member refid="classmuda_1_1_linear_system_context_1aeb0a349f19d6baa9d83a828be05b4c38" prot="private" virt="non-virtual"><scope>muda::LinearSystemContext</scope><name>m_current_label</name></member>
+      <member refid="classmuda_1_1_linear_system_context_1ae53d17119649482cb718da923dcb3364" prot="private" virt="non-virtual"><scope>muda::LinearSystemContext</scope><name>m_handles</name></member>
+      <member refid="classmuda_1_1_linear_system_context_1a4385b9bb4da655feba54c4ac4ae04587" prot="private" virt="non-virtual"><scope>muda::LinearSystemContext</scope><name>m_host_buffers</name></member>
+      <member refid="classmuda_1_1_linear_system_context_1a7e4d82390faf3ae6266185debef979e8" prot="private" virt="non-virtual"><scope>muda::LinearSystemContext</scope><name>m_reorder</name></member>
+      <member refid="classmuda_1_1_linear_system_context_1aebe364fc768d27e76dcc06a49c99a2b7" prot="private" virt="non-virtual"><scope>muda::LinearSystemContext</scope><name>m_scalar_buffer</name></member>
+      <member refid="classmuda_1_1_linear_system_context_1a7d3a0f65784e7ef1f9335c370a9bd98f" prot="private" virt="non-virtual"><scope>muda::LinearSystemContext</scope><name>m_sync_callbacks</name></member>
+      <member refid="classmuda_1_1_linear_system_context_1a95f7b90bb11d9609a798b766a6755a85" prot="private" virt="non-virtual"><scope>muda::LinearSystemContext</scope><name>m_tolerance</name></member>
+      <member refid="classmuda_1_1_linear_system_context_1ae7314bea981f88844640d0b5ddd8fc87" prot="public" virt="non-virtual"><scope>muda::LinearSystemContext</scope><name>mv</name></member>
+      <member refid="classmuda_1_1_linear_system_context_1a99c5cb2bad502ee9311d70712f46b990" prot="public" virt="non-virtual"><scope>muda::LinearSystemContext</scope><name>mv</name></member>
+      <member refid="classmuda_1_1_linear_system_context_1aa7b9cfe381ea4ebc05f2bcfe51a34374" prot="public" virt="non-virtual"><scope>muda::LinearSystemContext</scope><name>mv</name></member>
+      <member refid="classmuda_1_1_linear_system_context_1ae9c825d8b1f50ef08720d725f26f3dea" prot="public" virt="non-virtual"><scope>muda::LinearSystemContext</scope><name>norm</name></member>
+      <member refid="classmuda_1_1_linear_system_context_1afdac1baf24b6a7933e9ed4658c39464e" prot="public" virt="non-virtual"><scope>muda::LinearSystemContext</scope><name>norm</name></member>
+      <member refid="classmuda_1_1_linear_system_context_1afabdfcf679a5ef36d165b00a55213c5b" prot="public" virt="non-virtual"><scope>muda::LinearSystemContext</scope><name>norm</name></member>
+      <member refid="classmuda_1_1_linear_system_context_1ab59a473ff97b43a097bfdbeda877facf" prot="public" virt="non-virtual"><scope>muda::LinearSystemContext</scope><name>operator=</name></member>
+      <member refid="classmuda_1_1_linear_system_context_1a8b66da216799af5332adc2df432d5bdb" prot="public" virt="non-virtual"><scope>muda::LinearSystemContext</scope><name>operator=</name></member>
+      <member refid="classmuda_1_1_linear_system_context_1aeab13bd8d9181cafd4e7fb6661501272" prot="public" virt="non-virtual"><scope>muda::LinearSystemContext</scope><name>plus</name></member>
+      <member refid="classmuda_1_1_linear_system_context_1aa95e2a1fd39c60e06ebb49dbd1954925" prot="public" virt="non-virtual"><scope>muda::LinearSystemContext</scope><name>reorder</name></member>
+      <member refid="classmuda_1_1_linear_system_context_1aa0e07e1a84727152b8fc04552dfee047" prot="public" virt="non-virtual"><scope>muda::LinearSystemContext</scope><name>reserve_ratio</name></member>
+      <member refid="classmuda_1_1_linear_system_context_1ad975972eec1f4f6c242d95c9b92da616" prot="public" virt="non-virtual"><scope>muda::LinearSystemContext</scope><name>reserve_ratio</name></member>
+      <member refid="classmuda_1_1_linear_system_context_1a7e743a786e8ef3efd421aebda3fea237" prot="private" virt="non-virtual"><scope>muda::LinearSystemContext</scope><name>set_pointer_mode_device</name></member>
+      <member refid="classmuda_1_1_linear_system_context_1ab66d0a4e40dbccd0ecbf8dc06456af02" prot="private" virt="non-virtual"><scope>muda::LinearSystemContext</scope><name>set_pointer_mode_host</name></member>
+      <member refid="classmuda_1_1_linear_system_context_1ac1425082f707c1b98be06011c2671357" prot="private" virt="non-virtual"><scope>muda::LinearSystemContext</scope><name>shrink_temp_buffers</name></member>
+      <member refid="classmuda_1_1_linear_system_context_1a38894f4738b180ff865c2f0077e64255" prot="public" virt="non-virtual"><scope>muda::LinearSystemContext</scope><name>solve</name></member>
+      <member refid="classmuda_1_1_linear_system_context_1aa12b7648425cdec0b10ab50448b5135e" prot="public" virt="non-virtual"><scope>muda::LinearSystemContext</scope><name>solve</name></member>
+      <member refid="classmuda_1_1_linear_system_context_1a03a8163394a49ee43c58d7afb173432f" prot="public" virt="non-virtual"><scope>muda::LinearSystemContext</scope><name>spmv</name></member>
+      <member refid="classmuda_1_1_linear_system_context_1a405eff8f0ac6c14bf3f41e7427420aee" prot="public" virt="non-virtual"><scope>muda::LinearSystemContext</scope><name>spmv</name></member>
+      <member refid="classmuda_1_1_linear_system_context_1ab6252790198b4517b075cbdef8433cfc" prot="public" virt="non-virtual"><scope>muda::LinearSystemContext</scope><name>spmv</name></member>
+      <member refid="classmuda_1_1_linear_system_context_1ac8d5c3b7d5e3e4b00e9a47f8f609756f" prot="public" virt="non-virtual"><scope>muda::LinearSystemContext</scope><name>spmv</name></member>
+      <member refid="classmuda_1_1_linear_system_context_1a593184f0bc8ec34762dd9135a9da3155" prot="public" virt="non-virtual"><scope>muda::LinearSystemContext</scope><name>spmv</name></member>
+      <member refid="classmuda_1_1_linear_system_context_1a90a51cd844616640784dc80499b106f0" prot="public" virt="non-virtual"><scope>muda::LinearSystemContext</scope><name>spmv</name></member>
+      <member refid="classmuda_1_1_linear_system_context_1a157b7053b4e365d5b01d8e1aa895340f" prot="public" virt="non-virtual"><scope>muda::LinearSystemContext</scope><name>spmv</name></member>
+      <member refid="classmuda_1_1_linear_system_context_1a8b412a59c372088bf4222b7281d0498e" prot="public" virt="non-virtual"><scope>muda::LinearSystemContext</scope><name>spmv</name></member>
+      <member refid="classmuda_1_1_linear_system_context_1ae75f5332f0bc6d64541d8b84094a5aa2" prot="public" virt="non-virtual"><scope>muda::LinearSystemContext</scope><name>stream</name></member>
+      <member refid="classmuda_1_1_linear_system_context_1a7f7c2edaa861629cc2c5a96440c2293e" prot="public" virt="non-virtual"><scope>muda::LinearSystemContext</scope><name>stream</name></member>
+      <member refid="classmuda_1_1_linear_system_context_1acdba7dbefa14a13a5a33aff5ecc99a9d" prot="public" virt="non-virtual"><scope>muda::LinearSystemContext</scope><name>sync</name></member>
+      <member refid="classmuda_1_1_linear_system_context_1a450ade1645c6af91e614ac6823d1d71d" prot="private" virt="non-virtual"><scope>muda::LinearSystemContext</scope><name>sysv</name></member>
+      <member refid="classmuda_1_1_linear_system_context_1a7d3773649c6c749b39a75a8ec1a6f50d" prot="private" virt="non-virtual"><scope>muda::LinearSystemContext</scope><name>temp_buffer</name></member>
+      <member refid="classmuda_1_1_linear_system_context_1a55f17ee7557c65dd23acc11f4f3fc6ba" prot="private" virt="non-virtual"><scope>muda::LinearSystemContext</scope><name>temp_buffer</name></member>
+      <member refid="classmuda_1_1_linear_system_context_1a6459ab767a01ed6a0abcbd70fabcd7ab" prot="private" virt="non-virtual"><scope>muda::LinearSystemContext</scope><name>temp_buffers</name></member>
+      <member refid="classmuda_1_1_linear_system_context_1a5e16ae01c64d65663ccbf4705913427c" prot="private" virt="non-virtual"><scope>muda::LinearSystemContext</scope><name>temp_host_buffer</name></member>
+      <member refid="classmuda_1_1_linear_system_context_1aeeca6e5007802c763ad67552a8bc611a" prot="private" virt="non-virtual"><scope>muda::LinearSystemContext</scope><name>temp_host_buffer</name></member>
+      <member refid="classmuda_1_1_linear_system_context_1a61a8c43a7e18d33a677abd21522a8cb9" prot="private" virt="non-virtual"><scope>muda::LinearSystemContext</scope><name>temp_host_buffers</name></member>
+      <member refid="classmuda_1_1_linear_system_context_1a577bc829efca864cf8efc8843ac41a58" prot="public" virt="non-virtual"><scope>muda::LinearSystemContext</scope><name>tolerance</name></member>
+      <member refid="classmuda_1_1_linear_system_context_1af6480223a6c432490919a2946c77f9a7" prot="public" virt="non-virtual"><scope>muda::LinearSystemContext</scope><name>~LinearSystemContext</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

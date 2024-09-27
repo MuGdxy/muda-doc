@@ -1,0 +1,80 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classmuda_1_1details_1_1_string_pointer" kind="class" language="C++" prot="public">
+    <compoundname>muda::details::StringPointer</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classmuda_1_1details_1_1_string_pointer_1a263d8171fe212cb5bab2ea01c4efd252" prot="public" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* muda::details::StringPointer::device_string</definition>
+        <argsstring></argsstring>
+        <name>device_string</name>
+        <qualifiedname>muda::details::StringPointer::device_string</qualifiedname>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/tools/string_pointer.h" line="9" column="17" bodyfile="src/muda/tools/string_pointer.h" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1details_1_1_string_pointer_1aa51e4e3e127f1f7de052e65c158245d2" prot="public" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* muda::details::StringPointer::host_string</definition>
+        <argsstring></argsstring>
+        <name>host_string</name>
+        <qualifiedname>muda::details::StringPointer::host_string</qualifiedname>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/tools/string_pointer.h" line="10" column="17" bodyfile="src/muda/tools/string_pointer.h" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1details_1_1_string_pointer_1a5d1589d94a17a58f3858eed3a51eb55c" prot="public" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int muda::details::StringPointer::length</definition>
+        <argsstring></argsstring>
+        <name>length</name>
+        <qualifiedname>muda::details::StringPointer::length</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/tools/string_pointer.h" line="11" column="18" bodyfile="src/muda/tools/string_pointer.h" bodystart="11" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmuda_1_1details_1_1_string_pointer_1a45bda8ea3af317dcdf673842a497de23" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>MUDA_INLINE MUDA_GENERIC const char *</type>
+        <definition>MUDA_INLINE MUDA_GENERIC const char * muda::details::StringPointer::auto_select</definition>
+        <argsstring>() const MUDA_NOEXCEPT</argsstring>
+        <name>auto_select</name>
+        <qualifiedname>muda::details::StringPointer::auto_select</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/tools/string_pointer.h" line="13" column="41" bodyfile="src/muda/tools/string_pointer.h" bodystart="13" bodyend="20"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/muda/tools/string_pointer.h" line="6" column="1" bodyfile="src/muda/tools/string_pointer.h" bodystart="7" bodyend="21"/>
+    <listofallmembers>
+      <member refid="classmuda_1_1details_1_1_string_pointer_1a45bda8ea3af317dcdf673842a497de23" prot="public" virt="non-virtual"><scope>muda::details::StringPointer</scope><name>auto_select</name></member>
+      <member refid="classmuda_1_1details_1_1_string_pointer_1a263d8171fe212cb5bab2ea01c4efd252" prot="public" virt="non-virtual"><scope>muda::details::StringPointer</scope><name>device_string</name></member>
+      <member refid="classmuda_1_1details_1_1_string_pointer_1aa51e4e3e127f1f7de052e65c158245d2" prot="public" virt="non-virtual"><scope>muda::details::StringPointer</scope><name>host_string</name></member>
+      <member refid="classmuda_1_1details_1_1_string_pointer_1a5d1589d94a17a58f3858eed3a51eb55c" prot="public" virt="non-virtual"><scope>muda::details::StringPointer</scope><name>length</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

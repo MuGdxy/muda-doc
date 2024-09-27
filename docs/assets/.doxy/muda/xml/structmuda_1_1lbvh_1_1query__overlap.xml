@@ -1,0 +1,198 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structmuda_1_1lbvh_1_1query__overlap" kind="struct" language="C++" prot="public">
+    <compoundname>muda::lbvh::query_overlap</compoundname>
+    <templateparamlist>
+      <param>
+        <type>typename Real</type>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structmuda_1_1lbvh_1_1query__overlap_1ae9af9f5362ab706166ed633ddfed7d6d" prot="public" static="no" mutable="no">
+        <type><ref refid="structmuda_1_1lbvh_1_1_a_a_b_b" kindref="compound">AABB</ref>&lt; Real &gt;</type>
+        <definition>AABB&lt;Real&gt; muda::lbvh::query_overlap&lt; Real &gt;::target</definition>
+        <argsstring></argsstring>
+        <name>target</name>
+        <qualifiedname>muda::lbvh::query_overlap::target</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/lbvh/predicator.h" line="26" column="10" bodyfile="src/muda/ext/geo/lbvh/predicator.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="structmuda_1_1lbvh_1_1query__overlap_1ac9583551875e4365c15c706036f57ef3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>MUDA_GENERIC</type>
+        <definition>MUDA_GENERIC muda::lbvh::query_overlap&lt; Real &gt;::query_overlap</definition>
+        <argsstring>(const AABB&lt; Real &gt; &amp;tgt)</argsstring>
+        <name>query_overlap</name>
+        <qualifiedname>muda::lbvh::query_overlap::query_overlap</qualifiedname>
+        <param>
+          <type>const <ref refid="structmuda_1_1lbvh_1_1_a_a_b_b" kindref="compound">AABB</ref>&lt; Real &gt; &amp;</type>
+          <declname>tgt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/lbvh/predicator.h" line="9" column="18" bodyfile="src/muda/ext/geo/lbvh/predicator.h" bodystart="9" bodyend="12"/>
+      </memberdef>
+      <memberdef kind="function" id="structmuda_1_1lbvh_1_1query__overlap_1acabcf350a5d9e0faba169c599c531ae1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>muda::lbvh::query_overlap&lt; Real &gt;::query_overlap</definition>
+        <argsstring>()=default</argsstring>
+        <name>query_overlap</name>
+        <qualifiedname>muda::lbvh::query_overlap::query_overlap</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/lbvh/predicator.h" line="14" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="structmuda_1_1lbvh_1_1query__overlap_1ab6ce7856d2bff81be6cbbfe5783caaff" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>muda::lbvh::query_overlap&lt; Real &gt;::~query_overlap</definition>
+        <argsstring>()=default</argsstring>
+        <name>~query_overlap</name>
+        <qualifiedname>muda::lbvh::query_overlap::~query_overlap</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/lbvh/predicator.h" line="15" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="structmuda_1_1lbvh_1_1query__overlap_1aaf4e6435150df4d7ad53ed0a6ef7f215" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>muda::lbvh::query_overlap&lt; Real &gt;::query_overlap</definition>
+        <argsstring>(const query_overlap &amp;)=default</argsstring>
+        <name>query_overlap</name>
+        <qualifiedname>muda::lbvh::query_overlap::query_overlap</qualifiedname>
+        <param>
+          <type>const <ref refid="structmuda_1_1lbvh_1_1query__overlap" kindref="compound">query_overlap</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/lbvh/predicator.h" line="16" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="structmuda_1_1lbvh_1_1query__overlap_1aaa5426c7dcb6b578825c3a5a70bdbe61" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>muda::lbvh::query_overlap&lt; Real &gt;::query_overlap</definition>
+        <argsstring>(query_overlap &amp;&amp;)=default</argsstring>
+        <name>query_overlap</name>
+        <qualifiedname>muda::lbvh::query_overlap::query_overlap</qualifiedname>
+        <param>
+          <type><ref refid="structmuda_1_1lbvh_1_1query__overlap" kindref="compound">query_overlap</ref> &amp;&amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/lbvh/predicator.h" line="17" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="structmuda_1_1lbvh_1_1query__overlap_1a5f425c03e67aee73ab13ddcc55651583" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structmuda_1_1lbvh_1_1query__overlap" kindref="compound">query_overlap</ref> &amp;</type>
+        <definition>query_overlap &amp; muda::lbvh::query_overlap&lt; Real &gt;::operator=</definition>
+        <argsstring>(const query_overlap &amp;)=default</argsstring>
+        <name>operator=</name>
+        <qualifiedname>muda::lbvh::query_overlap::operator=</qualifiedname>
+        <param>
+          <type>const <ref refid="structmuda_1_1lbvh_1_1query__overlap" kindref="compound">query_overlap</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/lbvh/predicator.h" line="18" column="19"/>
+      </memberdef>
+      <memberdef kind="function" id="structmuda_1_1lbvh_1_1query__overlap_1a6f6bc3bc93826055e361e08a83fcb808" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structmuda_1_1lbvh_1_1query__overlap" kindref="compound">query_overlap</ref> &amp;</type>
+        <definition>query_overlap &amp; muda::lbvh::query_overlap&lt; Real &gt;::operator=</definition>
+        <argsstring>(query_overlap &amp;&amp;)=default</argsstring>
+        <name>operator=</name>
+        <qualifiedname>muda::lbvh::query_overlap::operator=</qualifiedname>
+        <param>
+          <type><ref refid="structmuda_1_1lbvh_1_1query__overlap" kindref="compound">query_overlap</ref> &amp;&amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/lbvh/predicator.h" line="19" column="19"/>
+      </memberdef>
+      <memberdef kind="function" id="structmuda_1_1lbvh_1_1query__overlap_1a29b495206d2b13ec803b8041589a131c" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>MUDA_GENERIC bool</type>
+        <definition>MUDA_GENERIC bool muda::lbvh::query_overlap&lt; Real &gt;::operator()</definition>
+        <argsstring>(const AABB&lt; Real &gt; &amp;box) noexcept</argsstring>
+        <name>operator()</name>
+        <qualifiedname>muda::lbvh::query_overlap::operator()</qualifiedname>
+        <param>
+          <type>const <ref refid="structmuda_1_1lbvh_1_1_a_a_b_b" kindref="compound">AABB</ref>&lt; Real &gt; &amp;</type>
+          <declname>box</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/lbvh/predicator.h" line="21" column="30" bodyfile="src/muda/ext/geo/lbvh/predicator.h" bodystart="21" bodyend="24"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>muda::lbvh::AABB&lt; Real &gt;</label>
+        <link refid="structmuda_1_1lbvh_1_1_a_a_b_b"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>lower</edgelabel>
+          <edgelabel>upper</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>muda::lbvh::query_overlap&lt; Real &gt;</label>
+        <link refid="structmuda_1_1lbvh_1_1query__overlap"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>target</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>muda::lbvh::vector_of&lt; Real &gt;</label>
+        <link refid="structmuda_1_1lbvh_1_1vector__of"/>
+      </node>
+    </collaborationgraph>
+    <location file="src/muda/ext/geo/lbvh/predicator.h" line="7" column="1" bodyfile="src/muda/ext/geo/lbvh/predicator.h" bodystart="8" bodyend="27"/>
+    <listofallmembers>
+      <member refid="structmuda_1_1lbvh_1_1query__overlap_1a29b495206d2b13ec803b8041589a131c" prot="public" virt="non-virtual"><scope>muda::lbvh::query_overlap</scope><name>operator()</name></member>
+      <member refid="structmuda_1_1lbvh_1_1query__overlap_1a5f425c03e67aee73ab13ddcc55651583" prot="public" virt="non-virtual"><scope>muda::lbvh::query_overlap</scope><name>operator=</name></member>
+      <member refid="structmuda_1_1lbvh_1_1query__overlap_1a6f6bc3bc93826055e361e08a83fcb808" prot="public" virt="non-virtual"><scope>muda::lbvh::query_overlap</scope><name>operator=</name></member>
+      <member refid="structmuda_1_1lbvh_1_1query__overlap_1ac9583551875e4365c15c706036f57ef3" prot="public" virt="non-virtual"><scope>muda::lbvh::query_overlap</scope><name>query_overlap</name></member>
+      <member refid="structmuda_1_1lbvh_1_1query__overlap_1acabcf350a5d9e0faba169c599c531ae1" prot="public" virt="non-virtual"><scope>muda::lbvh::query_overlap</scope><name>query_overlap</name></member>
+      <member refid="structmuda_1_1lbvh_1_1query__overlap_1aaf4e6435150df4d7ad53ed0a6ef7f215" prot="public" virt="non-virtual"><scope>muda::lbvh::query_overlap</scope><name>query_overlap</name></member>
+      <member refid="structmuda_1_1lbvh_1_1query__overlap_1aaa5426c7dcb6b578825c3a5a70bdbe61" prot="public" virt="non-virtual"><scope>muda::lbvh::query_overlap</scope><name>query_overlap</name></member>
+      <member refid="structmuda_1_1lbvh_1_1query__overlap_1ae9af9f5362ab706166ed633ddfed7d6d" prot="public" virt="non-virtual"><scope>muda::lbvh::query_overlap</scope><name>target</name></member>
+      <member refid="structmuda_1_1lbvh_1_1query__overlap_1ab6ce7856d2bff81be6cbbfe5783caaff" prot="public" virt="non-virtual"><scope>muda::lbvh::query_overlap</scope><name>~query_overlap</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

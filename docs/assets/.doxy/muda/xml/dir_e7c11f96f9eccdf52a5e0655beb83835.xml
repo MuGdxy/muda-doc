@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="dir_e7c11f96f9eccdf52a5e0655beb83835" kind="dir">
+    <compoundname>src/muda/cuda</compoundname>
+    <innerdir refid="dir_53530ff3f1b052ab68c04b2b54c680d7">src/muda/cuda/cooperative_groups</innerdir>
+    <innerfile refid="cooperative__groups_8h">cooperative_groups.h</innerfile>
+    <innerfile refid="cuda__runtime_8h">cuda_runtime.h</innerfile>
+    <innerfile refid="cuda__runtime__api_8h">cuda_runtime_api.h</innerfile>
+    <innerfile refid="device__atomic__functions_8h">device_atomic_functions.h</innerfile>
+    <innerfile refid="device__functions_8h">device_functions.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/muda/cuda/"/>
+  </compounddef>
+</doxygen>

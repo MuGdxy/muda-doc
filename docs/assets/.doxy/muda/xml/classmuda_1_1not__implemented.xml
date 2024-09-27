@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classmuda_1_1not__implemented" kind="class" language="C++" prot="public">
+    <compoundname>muda::not_implemented</compoundname>
+    <basecompoundref refid="classmuda_1_1exception" prot="public" virt="non-virtual">muda::exception</basecompoundref>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmuda_1_1not__implemented_1a3665ed47aff91d56cc8b8ce3fb561576" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>muda::not_implemented::not_implemented</definition>
+        <argsstring>(const std::string &amp;msg)</argsstring>
+        <name>not_implemented</name>
+        <qualifiedname>muda::not_implemented::not_implemented</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/exception.h" line="29" column="5" bodyfile="src/muda/exception.h" bodystart="29" bodyend="32"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>muda::exception</label>
+        <link refid="classmuda_1_1exception"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>muda::not_implemented</label>
+        <link refid="classmuda_1_1not__implemented"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>std::exception</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>muda::exception</label>
+        <link refid="classmuda_1_1exception"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>muda::not_implemented</label>
+        <link refid="classmuda_1_1not__implemented"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>std::exception</label>
+      </node>
+    </collaborationgraph>
+    <location file="src/muda/exception.h" line="26" column="1" bodyfile="src/muda/exception.h" bodystart="27" bodyend="33"/>
+    <listofallmembers>
+      <member refid="classmuda_1_1exception_1abd6be2026b5f7cd10bb31b6d92818e43" prot="public" virt="non-virtual"><scope>muda::not_implemented</scope><name>exception</name></member>
+      <member refid="classmuda_1_1not__implemented_1a3665ed47aff91d56cc8b8ce3fb561576" prot="public" virt="non-virtual"><scope>muda::not_implemented</scope><name>not_implemented</name></member>
+      <member refid="classmuda_1_1exception_1a60519375d5b3d21ea5c2a70cdc1f51bd" prot="public" virt="virtual"><scope>muda::not_implemented</scope><name>what</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

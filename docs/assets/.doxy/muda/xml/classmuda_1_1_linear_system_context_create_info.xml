@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classmuda_1_1_linear_system_context_create_info" kind="class" language="C++" prot="public">
+    <compoundname>muda::LinearSystemContextCreateInfo</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classmuda_1_1_linear_system_context_create_info_1a6cdcb0834e16bdae8a920ac71e65004f" prot="public" static="no" mutable="no">
+        <type>cudaStream_t</type>
+        <definition>cudaStream_t muda::LinearSystemContextCreateInfo::stream</definition>
+        <argsstring></argsstring>
+        <name>stream</name>
+        <qualifiedname>muda::LinearSystemContextCreateInfo::stream</qualifiedname>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/linear_system_context.h" line="21" column="18" bodyfile="src/muda/ext/linear_system/linear_system_context.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1_linear_system_context_create_info_1a2239dcecd406cf052963e79b27355595" prot="public" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t muda::LinearSystemContextCreateInfo::buffer_byte_size_base</definition>
+        <argsstring></argsstring>
+        <name>buffer_byte_size_base</name>
+        <qualifiedname>muda::LinearSystemContextCreateInfo::buffer_byte_size_base</qualifiedname>
+        <initializer>= 256_M</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/linear_system_context.h" line="25" column="12" bodyfile="src/muda/ext/linear_system/linear_system_context.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/muda/ext/linear_system/linear_system_context.h" line="18" column="1" bodyfile="src/muda/ext/linear_system/linear_system_context.h" bodystart="19" bodyend="26"/>
+    <listofallmembers>
+      <member refid="classmuda_1_1_linear_system_context_create_info_1a2239dcecd406cf052963e79b27355595" prot="public" virt="non-virtual"><scope>muda::LinearSystemContextCreateInfo</scope><name>buffer_byte_size_base</name></member>
+      <member refid="classmuda_1_1_linear_system_context_create_info_1a6cdcb0834e16bdae8a920ac71e65004f" prot="public" virt="non-virtual"><scope>muda::LinearSystemContextCreateInfo</scope><name>stream</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

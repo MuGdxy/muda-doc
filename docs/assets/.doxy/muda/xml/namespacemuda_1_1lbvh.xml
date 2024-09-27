@@ -1,0 +1,609 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="namespacemuda_1_1lbvh" kind="namespace" language="C++">
+    <compoundname>muda::lbvh</compoundname>
+    <innerclass refid="structmuda_1_1lbvh_1_1_a_a_b_b" prot="public">muda::lbvh::AABB</innerclass>
+    <innerclass refid="classmuda_1_1lbvh_1_1_b_v_h" prot="public">muda::lbvh::BVH</innerclass>
+    <innerclass refid="structmuda_1_1lbvh_1_1_default_morton_code_calculator" prot="public">muda::lbvh::DefaultMortonCodeCalculator</innerclass>
+    <innerclass refid="structmuda_1_1lbvh_1_1query__nearest" prot="public">muda::lbvh::query_nearest</innerclass>
+    <innerclass refid="structmuda_1_1lbvh_1_1query__overlap" prot="public">muda::lbvh::query_overlap</innerclass>
+    <innerclass refid="structmuda_1_1lbvh_1_1vector__of" prot="public">muda::lbvh::vector_of</innerclass>
+    <innerclass refid="structmuda_1_1lbvh_1_1vector__of_3_01double_01_4" prot="public">muda::lbvh::vector_of&lt; double &gt;</innerclass>
+    <innerclass refid="structmuda_1_1lbvh_1_1vector__of_3_01float_01_4" prot="public">muda::lbvh::vector_of&lt; float &gt;</innerclass>
+    <innernamespace refid="namespacemuda_1_1lbvh_1_1details">muda::lbvh::details</innernamespace>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="bvh__viewer_8h_1a2998e0067a3a8de6d6714e5625440d96" prot="public" static="no">
+        <templateparamlist>
+          <param>
+            <type>typename Real</type>
+          </param>
+          <param>
+            <type>typename Object</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classmuda_1_1lbvh_1_1details_1_1_b_v_h_viewer_base" kindref="compound">details::BVHViewerBase</ref>&lt; false, Real, Object &gt;</type>
+        <definition>using muda::lbvh::BVHViewer = typedef details::BVHViewerBase&lt;false, Real, Object&gt;</definition>
+        <argsstring></argsstring>
+        <name>BVHViewer</name>
+        <qualifiedname>muda::lbvh::BVHViewer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/lbvh/bvh_viewer.h" line="360" column="1" bodyfile="src/muda/ext/geo/lbvh/bvh_viewer.h" bodystart="360" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="bvh__viewer_8h_1a4c9ec450adb2477c86c98b98b8d0c482" prot="public" static="no">
+        <templateparamlist>
+          <param>
+            <type>typename Real</type>
+          </param>
+          <param>
+            <type>typename Object</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classmuda_1_1lbvh_1_1details_1_1_b_v_h_viewer_base" kindref="compound">details::BVHViewerBase</ref>&lt; true, Real, Object &gt;</type>
+        <definition>using muda::lbvh::CBVHViewer = typedef details::BVHViewerBase&lt;true, Real, Object&gt;</definition>
+        <argsstring></argsstring>
+        <name>CBVHViewer</name>
+        <qualifiedname>muda::lbvh::CBVHViewer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/lbvh/bvh_viewer.h" line="362" column="1" bodyfile="src/muda/ext/geo/lbvh/bvh_viewer.h" bodystart="362" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="utility_8h_1a3db19ac2711fb63d64d37c0f9fc1b00b" prot="public" static="no">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>typename <ref refid="structmuda_1_1lbvh_1_1vector__of" kindref="compound">vector_of</ref>&lt; T &gt;::type</type>
+        <definition>using muda::lbvh::vector_of_t = typedef typename vector_of&lt;T&gt;::type</definition>
+        <argsstring></argsstring>
+        <name>vector_of_t</name>
+        <qualifiedname>muda::lbvh::vector_of_t</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/lbvh/utility.h" line="22" column="1" bodyfile="src/muda/ext/geo/lbvh/utility.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="aabb_8h_1a7263e0ccc50b204c6f7a916e63423406" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>MUDA_GENERIC bool</type>
+        <definition>MUDA_GENERIC bool muda::lbvh::intersects</definition>
+        <argsstring>(const AABB&lt; T &gt; &amp;lhs, const AABB&lt; T &gt; &amp;rhs) noexcept</argsstring>
+        <name>intersects</name>
+        <qualifiedname>muda::lbvh::intersects</qualifiedname>
+        <param>
+          <type>const <ref refid="structmuda_1_1lbvh_1_1_a_a_b_b" kindref="compound">AABB</ref>&lt; T &gt; &amp;</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structmuda_1_1lbvh_1_1_a_a_b_b" kindref="compound">AABB</ref>&lt; T &gt; &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/lbvh/aabb.h" line="23" column="26" bodyfile="src/muda/ext/geo/lbvh/aabb.h" bodystart="23" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="aabb_8h_1a8cce393825567f373bb054470cf3eff4" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>MUDA_GENERIC <ref refid="structmuda_1_1lbvh_1_1_a_a_b_b" kindref="compound">AABB</ref>&lt; double &gt;</type>
+        <definition>MUDA_GENERIC AABB&lt; double &gt; muda::lbvh::merge</definition>
+        <argsstring>(const AABB&lt; double &gt; &amp;lhs, const AABB&lt; double &gt; &amp;rhs) noexcept</argsstring>
+        <name>merge</name>
+        <qualifiedname>muda::lbvh::merge</qualifiedname>
+        <param>
+          <type>const <ref refid="structmuda_1_1lbvh_1_1_a_a_b_b" kindref="compound">AABB</ref>&lt; double &gt; &amp;</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structmuda_1_1lbvh_1_1_a_a_b_b" kindref="compound">AABB</ref>&lt; double &gt; &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/lbvh/aabb.h" line="40" column="26" bodyfile="src/muda/ext/geo/lbvh/aabb.h" bodystart="40" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="aabb_8h_1a93a3cd09d2a18e9eed4af3f020358442" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>MUDA_GENERIC <ref refid="structmuda_1_1lbvh_1_1_a_a_b_b" kindref="compound">AABB</ref>&lt; float &gt;</type>
+        <definition>MUDA_GENERIC AABB&lt; float &gt; muda::lbvh::merge</definition>
+        <argsstring>(const AABB&lt; float &gt; &amp;lhs, const AABB&lt; float &gt; &amp;rhs) noexcept</argsstring>
+        <name>merge</name>
+        <qualifiedname>muda::lbvh::merge</qualifiedname>
+        <param>
+          <type>const <ref refid="structmuda_1_1lbvh_1_1_a_a_b_b" kindref="compound">AABB</ref>&lt; float &gt; &amp;</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structmuda_1_1lbvh_1_1_a_a_b_b" kindref="compound">AABB</ref>&lt; float &gt; &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/lbvh/aabb.h" line="52" column="26" bodyfile="src/muda/ext/geo/lbvh/aabb.h" bodystart="52" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="function" id="aabb_8h_1a9ebea6f0c49ff241a5c466bd7502c840" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>MUDA_GENERIC float</type>
+        <definition>MUDA_GENERIC float muda::lbvh::mindist</definition>
+        <argsstring>(const AABB&lt; float &gt; &amp;lhs, const float4 &amp;rhs) noexcept</argsstring>
+        <name>mindist</name>
+        <qualifiedname>muda::lbvh::mindist</qualifiedname>
+        <param>
+          <type>const <ref refid="structmuda_1_1lbvh_1_1_a_a_b_b" kindref="compound">AABB</ref>&lt; float &gt; &amp;</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type>const float4 &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/lbvh/aabb.h" line="68" column="27" bodyfile="src/muda/ext/geo/lbvh/aabb.h" bodystart="68" bodyend="74"/>
+      </memberdef>
+      <memberdef kind="function" id="aabb_8h_1aff8b20c5a70d8e59b271c5c63fedcac1" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>MUDA_GENERIC double</type>
+        <definition>MUDA_GENERIC double muda::lbvh::mindist</definition>
+        <argsstring>(const AABB&lt; double &gt; &amp;lhs, const double4 &amp;rhs) noexcept</argsstring>
+        <name>mindist</name>
+        <qualifiedname>muda::lbvh::mindist</qualifiedname>
+        <param>
+          <type>const <ref refid="structmuda_1_1lbvh_1_1_a_a_b_b" kindref="compound">AABB</ref>&lt; double &gt; &amp;</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type>const double4 &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/lbvh/aabb.h" line="76" column="28" bodyfile="src/muda/ext/geo/lbvh/aabb.h" bodystart="76" bodyend="82"/>
+      </memberdef>
+      <memberdef kind="function" id="aabb_8h_1abb73dbd06e915abaf8de69092882ebdb" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>MUDA_GENERIC float</type>
+        <definition>MUDA_GENERIC float muda::lbvh::minmaxdist</definition>
+        <argsstring>(const AABB&lt; float &gt; &amp;lhs, const float4 &amp;rhs) noexcept</argsstring>
+        <name>minmaxdist</name>
+        <qualifiedname>muda::lbvh::minmaxdist</qualifiedname>
+        <param>
+          <type>const <ref refid="structmuda_1_1lbvh_1_1_a_a_b_b" kindref="compound">AABB</ref>&lt; float &gt; &amp;</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type>const float4 &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/lbvh/aabb.h" line="84" column="27" bodyfile="src/muda/ext/geo/lbvh/aabb.h" bodystart="84" bodyend="110"/>
+      </memberdef>
+      <memberdef kind="function" id="aabb_8h_1a74c8a75e22f54b1aff40c44abd244c07" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>MUDA_GENERIC double</type>
+        <definition>MUDA_GENERIC double muda::lbvh::minmaxdist</definition>
+        <argsstring>(const AABB&lt; double &gt; &amp;lhs, const double4 &amp;rhs) noexcept</argsstring>
+        <name>minmaxdist</name>
+        <qualifiedname>muda::lbvh::minmaxdist</qualifiedname>
+        <param>
+          <type>const <ref refid="structmuda_1_1lbvh_1_1_a_a_b_b" kindref="compound">AABB</ref>&lt; double &gt; &amp;</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type>const double4 &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/lbvh/aabb.h" line="112" column="28" bodyfile="src/muda/ext/geo/lbvh/aabb.h" bodystart="112" bodyend="138"/>
+      </memberdef>
+      <memberdef kind="function" id="aabb_8h_1a94c211df95e218011b6d2124a6cff1e7" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>MUDA_GENERIC <ref refid="structmuda_1_1lbvh_1_1vector__of" kindref="compound">vector_of</ref>&lt; T &gt;::type</type>
+        <definition>MUDA_GENERIC vector_of&lt; T &gt;::type muda::lbvh::centroid</definition>
+        <argsstring>(const AABB&lt; T &gt; &amp;box) noexcept</argsstring>
+        <name>centroid</name>
+        <qualifiedname>muda::lbvh::centroid</qualifiedname>
+        <param>
+          <type>const <ref refid="structmuda_1_1lbvh_1_1_a_a_b_b" kindref="compound">AABB</ref>&lt; T &gt; &amp;</type>
+          <declname>box</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/lbvh/aabb.h" line="141" column="47" bodyfile="src/muda/ext/geo/lbvh/aabb.h" bodystart="141" bodyend="148"/>
+      </memberdef>
+      <memberdef kind="function" id="morton__code_8h_1abbab9d8ec04bbfaf61fc2ed07799a936" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>MUDA_GENERIC MUDA_INLINE std::uint32_t</type>
+        <definition>MUDA_GENERIC MUDA_INLINE std::uint32_t muda::lbvh::expand_bits</definition>
+        <argsstring>(std::uint32_t v) noexcept</argsstring>
+        <name>expand_bits</name>
+        <qualifiedname>muda::lbvh::expand_bits</qualifiedname>
+        <param>
+          <type>std::uint32_t</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/lbvh/morton_code.h" line="8" column="40" bodyfile="src/muda/ext/geo/lbvh/morton_code.h" bodystart="8" bodyend="15"/>
+      </memberdef>
+      <memberdef kind="function" id="morton__code_8h_1a55ccaa713fedba193b35a597561350f2" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>MUDA_GENERIC MUDA_INLINE std::uint32_t</type>
+        <definition>MUDA_GENERIC MUDA_INLINE std::uint32_t muda::lbvh::morton_code</definition>
+        <argsstring>(float4 xyz, float resolution=1024.0f) noexcept</argsstring>
+        <name>morton_code</name>
+        <qualifiedname>muda::lbvh::morton_code</qualifiedname>
+        <param>
+          <type>float4</type>
+          <declname>xyz</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>resolution</declname>
+          <defval>1024.0f</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/lbvh/morton_code.h" line="19" column="40" bodyfile="src/muda/ext/geo/lbvh/morton_code.h" bodystart="19" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="morton__code_8h_1a8008a38870b76bf3db204044e12e5129" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>MUDA_GENERIC MUDA_INLINE std::uint32_t</type>
+        <definition>MUDA_GENERIC MUDA_INLINE std::uint32_t muda::lbvh::morton_code</definition>
+        <argsstring>(double4 xyz, double resolution=1024.0) noexcept</argsstring>
+        <name>morton_code</name>
+        <qualifiedname>muda::lbvh::morton_code</qualifiedname>
+        <param>
+          <type>double4</type>
+          <declname>xyz</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>resolution</declname>
+          <defval>1024.0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/lbvh/morton_code.h" line="30" column="40" bodyfile="src/muda/ext/geo/lbvh/morton_code.h" bodystart="30" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="function" id="morton__code_8h_1a1c79baf324de639d46d31278154a031d" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>__device__ MUDA_INLINE int</type>
+        <definition>__device__ MUDA_INLINE int muda::lbvh::common_upper_bits</definition>
+        <argsstring>(const unsigned int lhs, const unsigned int rhs) noexcept</argsstring>
+        <name>common_upper_bits</name>
+        <qualifiedname>muda::lbvh::common_upper_bits</qualifiedname>
+        <param>
+          <type>const unsigned int</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type>const unsigned int</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/lbvh/morton_code.h" line="41" column="28" bodyfile="src/muda/ext/geo/lbvh/morton_code.h" bodystart="41" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="morton__code_8h_1acb983a9740150f751736580aa39b67bb" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>__device__ MUDA_INLINE int</type>
+        <definition>__device__ MUDA_INLINE int muda::lbvh::common_upper_bits</definition>
+        <argsstring>(const unsigned long long int lhs, const unsigned long long int rhs) noexcept</argsstring>
+        <name>common_upper_bits</name>
+        <qualifiedname>muda::lbvh::common_upper_bits</qualifiedname>
+        <param>
+          <type>const unsigned long long int</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type>const unsigned long long int</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/lbvh/morton_code.h" line="45" column="28" bodyfile="src/muda/ext/geo/lbvh/morton_code.h" bodystart="45" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="predicator_8h_1acf4d78956fcd861502154c278b19a0e6" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Real</type>
+          </param>
+        </templateparamlist>
+        <type>MUDA_GENERIC <ref refid="structmuda_1_1lbvh_1_1query__overlap" kindref="compound">query_overlap</ref>&lt; Real &gt;</type>
+        <definition>MUDA_GENERIC query_overlap&lt; Real &gt; muda::lbvh::overlaps</definition>
+        <argsstring>(const AABB&lt; Real &gt; &amp;region) noexcept</argsstring>
+        <name>overlaps</name>
+        <qualifiedname>muda::lbvh::overlaps</qualifiedname>
+        <param>
+          <type>const <ref refid="structmuda_1_1lbvh_1_1_a_a_b_b" kindref="compound">AABB</ref>&lt; Real &gt; &amp;</type>
+          <declname>region</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/lbvh/predicator.h" line="30" column="28" bodyfile="src/muda/ext/geo/lbvh/predicator.h" bodystart="30" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="function" id="predicator_8h_1aa668d3959c8a8146eb7afd4b8978482f" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>MUDA_GENERIC <ref refid="structmuda_1_1lbvh_1_1query__nearest" kindref="compound">query_nearest</ref>&lt; float &gt;</type>
+        <definition>MUDA_GENERIC query_nearest&lt; float &gt; muda::lbvh::nearest</definition>
+        <argsstring>(const float4 &amp;point) noexcept</argsstring>
+        <name>nearest</name>
+        <qualifiedname>muda::lbvh::nearest</qualifiedname>
+        <param>
+          <type>const float4 &amp;</type>
+          <declname>point</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/lbvh/predicator.h" line="56" column="35" bodyfile="src/muda/ext/geo/lbvh/predicator.h" bodystart="56" bodyend="59"/>
+      </memberdef>
+      <memberdef kind="function" id="predicator_8h_1a28e95c6b7a22f3c629c37e756c4e0417" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>MUDA_GENERIC <ref refid="structmuda_1_1lbvh_1_1query__nearest" kindref="compound">query_nearest</ref>&lt; float &gt;</type>
+        <definition>MUDA_GENERIC query_nearest&lt; float &gt; muda::lbvh::nearest</definition>
+        <argsstring>(const float3 &amp;point) noexcept</argsstring>
+        <name>nearest</name>
+        <qualifiedname>muda::lbvh::nearest</qualifiedname>
+        <param>
+          <type>const float3 &amp;</type>
+          <declname>point</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/lbvh/predicator.h" line="60" column="35" bodyfile="src/muda/ext/geo/lbvh/predicator.h" bodystart="60" bodyend="63"/>
+      </memberdef>
+      <memberdef kind="function" id="predicator_8h_1afff7167dace840dc16bfea70aa64c231" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>MUDA_GENERIC <ref refid="structmuda_1_1lbvh_1_1query__nearest" kindref="compound">query_nearest</ref>&lt; double &gt;</type>
+        <definition>MUDA_GENERIC query_nearest&lt; double &gt; muda::lbvh::nearest</definition>
+        <argsstring>(const double4 &amp;point) noexcept</argsstring>
+        <name>nearest</name>
+        <qualifiedname>muda::lbvh::nearest</qualifiedname>
+        <param>
+          <type>const double4 &amp;</type>
+          <declname>point</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/lbvh/predicator.h" line="64" column="35" bodyfile="src/muda/ext/geo/lbvh/predicator.h" bodystart="64" bodyend="67"/>
+      </memberdef>
+      <memberdef kind="function" id="predicator_8h_1a96d32a40327c0ea1cbd69627f4a365a1" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>MUDA_GENERIC <ref refid="structmuda_1_1lbvh_1_1query__nearest" kindref="compound">query_nearest</ref>&lt; double &gt;</type>
+        <definition>MUDA_GENERIC query_nearest&lt; double &gt; muda::lbvh::nearest</definition>
+        <argsstring>(const double3 &amp;point) noexcept</argsstring>
+        <name>nearest</name>
+        <qualifiedname>muda::lbvh::nearest</qualifiedname>
+        <param>
+          <type>const double3 &amp;</type>
+          <declname>point</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/lbvh/predicator.h" line="68" column="35" bodyfile="src/muda/ext/geo/lbvh/predicator.h" bodystart="68" bodyend="71"/>
+      </memberdef>
+      <memberdef kind="function" id="query_8h_1a6faa1b05e8a92e3ec53c95b103d254d5" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Real</type>
+          </param>
+          <param>
+            <type>typename Objects</type>
+          </param>
+          <param>
+            <type>typename AABBGetter</type>
+          </param>
+          <param>
+            <type>typename MortonCodeCalculator</type>
+          </param>
+          <param>
+            <type>typename OutputBackInserter</type>
+          </param>
+        </templateparamlist>
+        <type>MUDA_HOST uint32_t</type>
+        <definition>MUDA_HOST uint32_t muda::lbvh::query</definition>
+        <argsstring>(const BVH&lt; Real, Objects, AABBGetter, MortonCodeCalculator &gt; &amp;tree, const query_overlap&lt; Real &gt; q, OutputBackInserter outiter) noexcept</argsstring>
+        <name>query</name>
+        <qualifiedname>muda::lbvh::query</qualifiedname>
+        <param>
+          <type>const <ref refid="classmuda_1_1lbvh_1_1_b_v_h" kindref="compound">BVH</ref>&lt; Real, Objects, AABBGetter, MortonCodeCalculator &gt; &amp;</type>
+          <declname>tree</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structmuda_1_1lbvh_1_1query__overlap" kindref="compound">query_overlap</ref>&lt; Real &gt;</type>
+          <declname>q</declname>
+        </param>
+        <param>
+          <type>OutputBackInserter</type>
+          <declname>outiter</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/lbvh/query.h" line="8" column="20" bodyfile="src/muda/ext/geo/lbvh/query.h" bodystart="8" bodyend="57"/>
+      </memberdef>
+      <memberdef kind="function" id="query_8h_1af9dc32833fc665a6490296b66254cc37" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Real</type>
+          </param>
+          <param>
+            <type>typename Objects</type>
+          </param>
+          <param>
+            <type>typename AABBGetter</type>
+          </param>
+          <param>
+            <type>typename MortonCodeCalculator</type>
+          </param>
+          <param>
+            <type>typename DistanceCalculator</type>
+          </param>
+        </templateparamlist>
+        <type>MUDA_HOST std::pair&lt; uint32_t, Real &gt;</type>
+        <definition>MUDA_HOST std::pair&lt; uint32_t, Real &gt; muda::lbvh::query</definition>
+        <argsstring>(const BVH&lt; Real, Objects, AABBGetter, MortonCodeCalculator &gt; &amp;tree, const query_nearest&lt; Real &gt; &amp;q, DistanceCalculator calc_dist) noexcept</argsstring>
+        <name>query</name>
+        <qualifiedname>muda::lbvh::query</qualifiedname>
+        <param>
+          <type>const <ref refid="classmuda_1_1lbvh_1_1_b_v_h" kindref="compound">BVH</ref>&lt; Real, Objects, AABBGetter, MortonCodeCalculator &gt; &amp;</type>
+          <declname>tree</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structmuda_1_1lbvh_1_1query__nearest" kindref="compound">query_nearest</ref>&lt; Real &gt; &amp;</type>
+          <declname>q</declname>
+        </param>
+        <param>
+          <type>DistanceCalculator</type>
+          <declname>calc_dist</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/lbvh/query.h" line="60" column="21" bodyfile="src/muda/ext/geo/lbvh/query.h" bodystart="60" bodyend="142"/>
+      </memberdef>
+      <memberdef kind="function" id="utility_8h_1a9b595aed1b7bf576045d2160b4a514dd" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>__device__ T</type>
+        <definition>__device__ T muda::lbvh::infinity</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>infinity</name>
+        <qualifiedname>muda::lbvh::infinity</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/lbvh/utility.h" line="25" column="21" declfile="src/muda/ext/geo/lbvh/utility.h" declline="25" declcolumn="21"/>
+      </memberdef>
+      <memberdef kind="function" id="utility_8h_1a5386e47dc6cc81d48577ca60a90c8f13" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+        </templateparamlist>
+        <type>__device__ float</type>
+        <definition>__device__ float muda::lbvh::infinity&lt; float &gt;</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>infinity&lt; float &gt;</name>
+        <qualifiedname>muda::lbvh::infinity&lt; float &gt;</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/lbvh/utility.h" line="28" column="19" bodyfile="src/muda/ext/geo/lbvh/utility.h" bodystart="28" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="utility_8h_1a5dd30b33b4ff4a69af3758241c7d9a6e" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+        </templateparamlist>
+        <type>__device__ double</type>
+        <definition>__device__ double muda::lbvh::infinity&lt; double &gt;</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>infinity&lt; double &gt;</name>
+        <qualifiedname>muda::lbvh::infinity&lt; double &gt;</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/lbvh/utility.h" line="33" column="19" bodyfile="src/muda/ext/geo/lbvh/utility.h" bodystart="33" bodyend="36"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/muda/ext/geo/lbvh/aabb.h" line="7" column="1"/>
+  </compounddef>
+</doxygen>

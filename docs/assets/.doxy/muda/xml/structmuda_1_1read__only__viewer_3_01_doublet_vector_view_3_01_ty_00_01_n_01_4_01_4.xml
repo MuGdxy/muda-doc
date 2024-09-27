@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structmuda_1_1read__only__viewer_3_01_doublet_vector_view_3_01_ty_00_01_n_01_4_01_4" kind="struct" language="C++" prot="public">
+    <compoundname>muda::read_only_viewer&lt; DoubletVectorView&lt; Ty, N &gt; &gt;</compoundname>
+    <templateparamlist>
+      <param>
+        <type>typename Ty</type>
+      </param>
+      <param>
+        <type>int</type>
+        <declname>N</declname>
+        <defname>N</defname>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="structmuda_1_1read__only__viewer_3_01_doublet_vector_view_3_01_ty_00_01_n_01_4_01_4_1a11ac28e07fde156dce531e1e9a576e30" prot="public" static="no">
+        <type><ref refid="classmuda_1_1_doublet_vector_view_base" kindref="compound">CDoubletVectorView</ref>&lt; Ty, N &gt;</type>
+        <definition>using muda::read_only_viewer&lt; DoubletVectorView&lt; Ty, N &gt; &gt;::type =  CDoubletVectorView&lt;Ty, N&gt;</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <qualifiedname>muda::read_only_viewer&lt; DoubletVectorView&lt; Ty, N &gt; &gt;::type</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/doublet_vector_view.h" line="378" column="5" bodyfile="src/muda/ext/linear_system/doublet_vector_view.h" bodystart="378" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/muda/ext/linear_system/doublet_vector_view.h" line="376" column="1" bodyfile="src/muda/ext/linear_system/doublet_vector_view.h" bodystart="377" bodyend="379"/>
+    <listofallmembers>
+      <member refid="structmuda_1_1read__only__viewer_3_01_doublet_vector_view_3_01_ty_00_01_n_01_4_01_4_1a11ac28e07fde156dce531e1e9a576e30" prot="public" virt="non-virtual"><scope>muda::read_only_viewer&lt; DoubletVectorView&lt; Ty, N &gt; &gt;</scope><name>type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

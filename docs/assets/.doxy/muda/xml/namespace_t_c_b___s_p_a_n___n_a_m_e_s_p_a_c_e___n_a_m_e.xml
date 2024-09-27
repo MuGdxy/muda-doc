@@ -1,0 +1,300 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="namespace_t_c_b___s_p_a_n___n_a_m_e_s_p_a_c_e___n_a_m_e" kind="namespace" language="C++">
+    <compoundname>TCB_SPAN_NAMESPACE_NAME</compoundname>
+    <innerclass refid="class_t_c_b___s_p_a_n___n_a_m_e_s_p_a_c_e___n_a_m_e_1_1span" prot="public">TCB_SPAN_NAMESPACE_NAME::span</innerclass>
+    <innernamespace refid="namespace_t_c_b___s_p_a_n___n_a_m_e_s_p_a_c_e___n_a_m_e_1_1detail">TCB_SPAN_NAMESPACE_NAME::detail</innernamespace>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="span_8hpp_1add3514d658e15f203bfef6e0a614115b" prot="public" static="no">
+        <type>unsigned char</type>
+        <definition>using TCB_SPAN_NAMESPACE_NAME::byte = typedef unsigned char</definition>
+        <argsstring></argsstring>
+        <name>byte</name>
+        <qualifiedname>TCB_SPAN_NAMESPACE_NAME::byte</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/mstl/tcb/span.hpp" line="136" column="1" bodyfile="src/muda/mstl/tcb/span.hpp" bodystart="136" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="var">
+      <memberdef kind="variable" id="span_8hpp_1aeda6c15ebe482562893915d9734944b3" prot="public" static="no" constexpr="yes" mutable="no">
+        <type>TCB_SPAN_INLINE_VAR constexpr std::size_t</type>
+        <definition>TCB_SPAN_INLINE_VAR constexpr std::size_t TCB_SPAN_NAMESPACE_NAME::dynamic_extent</definition>
+        <argsstring></argsstring>
+        <name>dynamic_extent</name>
+        <qualifiedname>TCB_SPAN_NAMESPACE_NAME::dynamic_extent</qualifiedname>
+        <initializer>= SIZE_MAX</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/mstl/tcb/span.hpp" line="145" column="43" bodyfile="src/muda/mstl/tcb/span.hpp" bodystart="145" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="span_8hpp_1a50f1fcc663d9996ea8b3d00f76e1f7ae" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename ElementType</type>
+          </param>
+          <param>
+            <type>std::size_t</type>
+            <declname>Extent</declname>
+            <defname>Extent</defname>
+          </param>
+        </templateparamlist>
+        <type>constexpr <ref refid="class_t_c_b___s_p_a_n___n_a_m_e_s_p_a_c_e___n_a_m_e_1_1span" kindref="compound">span</ref>&lt; ElementType, Extent &gt;</type>
+        <definition>constexpr span&lt; ElementType, Extent &gt; TCB_SPAN_NAMESPACE_NAME::make_span</definition>
+        <argsstring>(span&lt; ElementType, Extent &gt; s) noexcept</argsstring>
+        <name>make_span</name>
+        <qualifiedname>TCB_SPAN_NAMESPACE_NAME::make_span</qualifiedname>
+        <param>
+          <type><ref refid="class_t_c_b___s_p_a_n___n_a_m_e_s_p_a_c_e___n_a_m_e_1_1span" kindref="compound">span</ref>&lt; ElementType, Extent &gt;</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/mstl/tcb/span.hpp" line="532" column="1" bodyfile="src/muda/mstl/tcb/span.hpp" bodystart="532" bodyend="535"/>
+      </memberdef>
+      <memberdef kind="function" id="span_8hpp_1a10543fc9bd3b7a98fe37598d2a80e900" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+          <param>
+            <type>std::size_t</type>
+            <declname>N</declname>
+            <defname>N</defname>
+          </param>
+        </templateparamlist>
+        <type>constexpr <ref refid="class_t_c_b___s_p_a_n___n_a_m_e_s_p_a_c_e___n_a_m_e_1_1span" kindref="compound">span</ref>&lt; T, N &gt;</type>
+        <definition>constexpr span&lt; T, N &gt; TCB_SPAN_NAMESPACE_NAME::make_span</definition>
+        <argsstring>(T(&amp;arr)[N]) noexcept</argsstring>
+        <name>make_span</name>
+        <qualifiedname>TCB_SPAN_NAMESPACE_NAME::make_span</qualifiedname>
+        <param>
+          <type>T(&amp;)</type>
+          <declname>arr</declname>
+          <array>[N]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/mstl/tcb/span.hpp" line="538" column="16" bodyfile="src/muda/mstl/tcb/span.hpp" bodystart="538" bodyend="541"/>
+      </memberdef>
+      <memberdef kind="function" id="span_8hpp_1abe3485a0d5292dc295ac108683b6d1f7" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+          <param>
+            <type>std::size_t</type>
+            <declname>N</declname>
+            <defname>N</defname>
+          </param>
+        </templateparamlist>
+        <type>TCB_SPAN_ARRAY_CONSTEXPR <ref refid="class_t_c_b___s_p_a_n___n_a_m_e_s_p_a_c_e___n_a_m_e_1_1span" kindref="compound">span</ref>&lt; T, N &gt;</type>
+        <definition>TCB_SPAN_ARRAY_CONSTEXPR span&lt; T, N &gt; TCB_SPAN_NAMESPACE_NAME::make_span</definition>
+        <argsstring>(std::array&lt; T, N &gt; &amp;arr) noexcept</argsstring>
+        <name>make_span</name>
+        <qualifiedname>TCB_SPAN_NAMESPACE_NAME::make_span</qualifiedname>
+        <param>
+          <type>std::array&lt; T, N &gt; &amp;</type>
+          <declname>arr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/mstl/tcb/span.hpp" line="544" column="31" bodyfile="src/muda/mstl/tcb/span.hpp" bodystart="544" bodyend="547"/>
+      </memberdef>
+      <memberdef kind="function" id="span_8hpp_1a5aeccf614cd61e34bd8ecd7f45079a9b" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+          <param>
+            <type>std::size_t</type>
+            <declname>N</declname>
+            <defname>N</defname>
+          </param>
+        </templateparamlist>
+        <type>TCB_SPAN_ARRAY_CONSTEXPR <ref refid="class_t_c_b___s_p_a_n___n_a_m_e_s_p_a_c_e___n_a_m_e_1_1span" kindref="compound">span</ref>&lt; const T, N &gt;</type>
+        <definition>TCB_SPAN_ARRAY_CONSTEXPR span&lt; const T, N &gt; TCB_SPAN_NAMESPACE_NAME::make_span</definition>
+        <argsstring>(const std::array&lt; T, N &gt; &amp;arr) noexcept</argsstring>
+        <name>make_span</name>
+        <qualifiedname>TCB_SPAN_NAMESPACE_NAME::make_span</qualifiedname>
+        <param>
+          <type>const std::array&lt; T, N &gt; &amp;</type>
+          <declname>arr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/mstl/tcb/span.hpp" line="551" column="1" bodyfile="src/muda/mstl/tcb/span.hpp" bodystart="551" bodyend="554"/>
+      </memberdef>
+      <memberdef kind="function" id="span_8hpp_1a17cdec9b6bc4a6bffb43e8843b182659" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Container</type>
+          </param>
+        </templateparamlist>
+        <type>constexpr <ref refid="class_t_c_b___s_p_a_n___n_a_m_e_s_p_a_c_e___n_a_m_e_1_1span" kindref="compound">span</ref>&lt; typenamestd::remove_reference&lt; decltype(*detail::data(std::declval&lt; Container &amp; &gt;()))&gt;::type</type>
+        <definition>constexpr span&lt; typenamestd::remove_reference&lt; decltype(*detail::data(std::declval&lt; Container &amp; &gt;()))&gt;::type TCB_SPAN_NAMESPACE_NAME::make_span</definition>
+        <argsstring>(Container &amp;cont)</argsstring>
+        <name>make_span</name>
+        <qualifiedname>TCB_SPAN_NAMESPACE_NAME::make_span</qualifiedname>
+        <param>
+          <type>Container &amp;</type>
+          <declname>cont</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/mstl/tcb/span.hpp" line="559" column="1" bodyfile="src/muda/mstl/tcb/span.hpp" bodystart="559" bodyend="562"/>
+      </memberdef>
+      <memberdef kind="function" id="span_8hpp_1a7a345a8a2d0b84b9cb78f7f95b759fff" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Container</type>
+          </param>
+        </templateparamlist>
+        <type>constexpr <ref refid="class_t_c_b___s_p_a_n___n_a_m_e_s_p_a_c_e___n_a_m_e_1_1span" kindref="compound">span</ref>&lt; const typename Container::value_type &gt;</type>
+        <definition>constexpr span&lt; const typename Container::value_type &gt; TCB_SPAN_NAMESPACE_NAME::make_span</definition>
+        <argsstring>(const Container &amp;cont)</argsstring>
+        <name>make_span</name>
+        <qualifiedname>TCB_SPAN_NAMESPACE_NAME::make_span</qualifiedname>
+        <param>
+          <type>const Container &amp;</type>
+          <declname>cont</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/mstl/tcb/span.hpp" line="566" column="1" bodyfile="src/muda/mstl/tcb/span.hpp" bodystart="566" bodyend="569"/>
+      </memberdef>
+      <memberdef kind="function" id="span_8hpp_1a5d4e93eb0bccaae115b0a9729c9fc206" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename ElementType</type>
+          </param>
+          <param>
+            <type>std::size_t</type>
+            <declname>Extent</declname>
+            <defname>Extent</defname>
+          </param>
+        </templateparamlist>
+        <type><ref refid="class_t_c_b___s_p_a_n___n_a_m_e_s_p_a_c_e___n_a_m_e_1_1span" kindref="compound">span</ref>&lt; const byte,((Extent==dynamic_extent) ? dynamic_extent :sizeof(ElementType) *Extent)&gt;</type>
+        <definition>span&lt; const byte,((Extent==dynamic_extent) ? dynamic_extent :sizeof(ElementType) *Extent)&gt; TCB_SPAN_NAMESPACE_NAME::as_bytes</definition>
+        <argsstring>(span&lt; ElementType, Extent &gt; s) noexcept</argsstring>
+        <name>as_bytes</name>
+        <qualifiedname>TCB_SPAN_NAMESPACE_NAME::as_bytes</qualifiedname>
+        <param>
+          <type><ref refid="class_t_c_b___s_p_a_n___n_a_m_e_s_p_a_c_e___n_a_m_e_1_1span" kindref="compound">span</ref>&lt; ElementType, Extent &gt;</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/mstl/tcb/span.hpp" line="574" column="1" bodyfile="src/muda/mstl/tcb/span.hpp" bodystart="574" bodyend="577"/>
+      </memberdef>
+      <memberdef kind="function" id="span_8hpp_1a1decb3a15bf4d59908ca6f7d37988262" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class ElementType</type>
+          </param>
+          <param>
+            <type>size_t</type>
+            <declname>Extent</declname>
+            <defname>Extent</defname>
+          </param>
+          <param>
+            <type>typename std::enable_if&lt;!std::is_const&lt; ElementType &gt;::value, int &gt;::type</type>
+            <defval>0</defval>
+          </param>
+        </templateparamlist>
+        <type><ref refid="class_t_c_b___s_p_a_n___n_a_m_e_s_p_a_c_e___n_a_m_e_1_1span" kindref="compound">span</ref>&lt; byte,((Extent==dynamic_extent) ? dynamic_extent :sizeof(ElementType) *Extent)&gt;</type>
+        <definition>span&lt; byte,((Extent==dynamic_extent) ? dynamic_extent :sizeof(ElementType) *Extent)&gt; TCB_SPAN_NAMESPACE_NAME::as_writable_bytes</definition>
+        <argsstring>(span&lt; ElementType, Extent &gt; s) noexcept</argsstring>
+        <name>as_writable_bytes</name>
+        <qualifiedname>TCB_SPAN_NAMESPACE_NAME::as_writable_bytes</qualifiedname>
+        <param>
+          <type><ref refid="class_t_c_b___s_p_a_n___n_a_m_e_s_p_a_c_e___n_a_m_e_1_1span" kindref="compound">span</ref>&lt; ElementType, Extent &gt;</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/mstl/tcb/span.hpp" line="584" column="1" bodyfile="src/muda/mstl/tcb/span.hpp" bodystart="584" bodyend="587"/>
+      </memberdef>
+      <memberdef kind="function" id="span_8hpp_1a68c06f1798040809feb6ef90fc110b70" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>std::size_t</type>
+            <declname>N</declname>
+            <defname>N</defname>
+          </param>
+          <param>
+            <type>typename E</type>
+          </param>
+          <param>
+            <type>std::size_t</type>
+            <declname>S</declname>
+            <defname>S</defname>
+          </param>
+        </templateparamlist>
+        <type>constexpr auto</type>
+        <definition>constexpr auto TCB_SPAN_NAMESPACE_NAME::get</definition>
+        <argsstring>(span&lt; E, S &gt; s) -&gt; decltype(s[N])</argsstring>
+        <name>get</name>
+        <qualifiedname>TCB_SPAN_NAMESPACE_NAME::get</qualifiedname>
+        <param>
+          <type><ref refid="class_t_c_b___s_p_a_n___n_a_m_e_s_p_a_c_e___n_a_m_e_1_1span" kindref="compound">span</ref>&lt; E, S &gt;</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/mstl/tcb/span.hpp" line="590" column="16" bodyfile="src/muda/mstl/tcb/span.hpp" bodystart="590" bodyend="593"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/muda/mstl/tcb/span.hpp" line="46" column="1"/>
+  </compounddef>
+</doxygen>

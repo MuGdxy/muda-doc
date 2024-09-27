@@ -1,0 +1,81 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classmuda_1_1_profile" kind="class" language="C++" prot="public">
+    <compoundname>muda::Profile</compoundname>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classmuda_1_1_profile_1a25e3adfbab3c9ec250d828aa0289fb88" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool muda::Profile::need_pop</definition>
+        <argsstring></argsstring>
+        <name>need_pop</name>
+        <qualifiedname>muda::Profile::need_pop</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/profiler.h" line="32" column="10" bodyfile="src/muda/profiler.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmuda_1_1_profile_1a1568ea2a54b01ea63ec2394a4df8b52c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>muda::Profile::Profile</definition>
+        <argsstring>() MUDA_NOEXCEPT</argsstring>
+        <name>Profile</name>
+        <qualifiedname>muda::Profile::Profile</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/profiler.h" line="35" column="5" bodyfile="src/muda/profiler.h" bodystart="35" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_profile_1a88ea35321ac89a03ea39a9361790da01" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>muda::Profile::Profile</definition>
+        <argsstring>(const std::string &amp;name) MUDA_NOEXCEPT</argsstring>
+        <name>Profile</name>
+        <qualifiedname>muda::Profile::Profile</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/profiler.h" line="39" column="5" bodyfile="src/muda/profiler.h" bodystart="39" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_profile_1a8c86f509e8c39ca2be15c85989d9d3a8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>muda::Profile::~Profile</definition>
+        <argsstring>()</argsstring>
+        <name>~Profile</name>
+        <qualifiedname>muda::Profile::~Profile</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/profiler.h" line="52" column="5" bodyfile="src/muda/profiler.h" bodystart="52" bodyend="57"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/muda/profiler.h" line="30" column="1" bodyfile="src/muda/profiler.h" bodystart="31" bodyend="58"/>
+    <listofallmembers>
+      <member refid="classmuda_1_1_profile_1a25e3adfbab3c9ec250d828aa0289fb88" prot="private" virt="non-virtual"><scope>muda::Profile</scope><name>need_pop</name></member>
+      <member refid="classmuda_1_1_profile_1a1568ea2a54b01ea63ec2394a4df8b52c" prot="public" virt="non-virtual"><scope>muda::Profile</scope><name>Profile</name></member>
+      <member refid="classmuda_1_1_profile_1a88ea35321ac89a03ea39a9361790da01" prot="public" virt="non-virtual"><scope>muda::Profile</scope><name>Profile</name></member>
+      <member refid="classmuda_1_1_profile_1a8c86f509e8c39ca2be15c85989d9d3a8" prot="public" virt="non-virtual"><scope>muda::Profile</scope><name>~Profile</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

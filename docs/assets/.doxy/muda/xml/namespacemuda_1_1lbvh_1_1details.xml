@@ -1,0 +1,119 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="namespacemuda_1_1lbvh_1_1details" kind="namespace" language="C++">
+    <compoundname>muda::lbvh::details</compoundname>
+    <innerclass refid="classmuda_1_1lbvh_1_1details_1_1_b_v_h_viewer_base" prot="public">muda::lbvh::details::BVHViewerBase</innerclass>
+    <innerclass refid="structmuda_1_1lbvh_1_1details_1_1_node" prot="public">muda::lbvh::details::Node</innerclass>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="bvh_8h_1a3292550921d9fa79f0b8ab891826df87" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename DerivedPolicy</type>
+          </param>
+          <param>
+            <type>typename UInt</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void muda::lbvh::details::construct_internal_nodes</definition>
+        <argsstring>(const thrust::detail::execution_policy_base&lt; DerivedPolicy &gt; &amp;policy, Node *nodes, UInt const *node_code, const uint32_t num_objects)</argsstring>
+        <name>construct_internal_nodes</name>
+        <qualifiedname>muda::lbvh::details::construct_internal_nodes</qualifiedname>
+        <param>
+          <type>const thrust::detail::execution_policy_base&lt; DerivedPolicy &gt; &amp;</type>
+          <declname>policy</declname>
+        </param>
+        <param>
+          <type><ref refid="structmuda_1_1lbvh_1_1details_1_1_node" kindref="compound">Node</ref> *</type>
+          <declname>nodes</declname>
+        </param>
+        <param>
+          <type>UInt const *</type>
+          <declname>node_code</declname>
+        </param>
+        <param>
+          <type>const uint32_t</type>
+          <declname>num_objects</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/lbvh/bvh.h" line="27" column="10" bodyfile="src/muda/ext/geo/lbvh/bvh.h" bodystart="27" bodyend="57"/>
+      </memberdef>
+      <memberdef kind="function" id="bvh__viewer_8h_1afda17f35df6014ea9dbcee7591823321" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename UInt</type>
+          </param>
+        </templateparamlist>
+        <type>MUDA_GENERIC uint2</type>
+        <definition>MUDA_GENERIC uint2 muda::lbvh::details::determine_range</definition>
+        <argsstring>(UInt const *node_code, const uint32_t num_leaves, uint32_t idx)</argsstring>
+        <name>determine_range</name>
+        <qualifiedname>muda::lbvh::details::determine_range</qualifiedname>
+        <param>
+          <type>UInt const *</type>
+          <declname>node_code</declname>
+        </param>
+        <param>
+          <type>const uint32_t</type>
+          <declname>num_leaves</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>idx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/lbvh/bvh_viewer.h" line="24" column="24" bodyfile="src/muda/ext/geo/lbvh/bvh_viewer.h" bodystart="24" bodyend="81"/>
+      </memberdef>
+      <memberdef kind="function" id="bvh__viewer_8h_1a3d9aae88667d499f07945d73a7738100" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename UInt</type>
+          </param>
+        </templateparamlist>
+        <type>MUDA_GENERIC uint32_t</type>
+        <definition>MUDA_GENERIC uint32_t muda::lbvh::details::find_split</definition>
+        <argsstring>(UInt const *node_code, const uint32_t num_leaves, const uint32_t first, const uint32_t last) noexcept</argsstring>
+        <name>find_split</name>
+        <qualifiedname>muda::lbvh::details::find_split</qualifiedname>
+        <param>
+          <type>UInt const *</type>
+          <declname>node_code</declname>
+        </param>
+        <param>
+          <type>const uint32_t</type>
+          <declname>num_leaves</declname>
+        </param>
+        <param>
+          <type>const uint32_t</type>
+          <declname>first</declname>
+        </param>
+        <param>
+          <type>const uint32_t</type>
+          <declname>last</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/lbvh/bvh_viewer.h" line="84" column="27" bodyfile="src/muda/ext/geo/lbvh/bvh_viewer.h" bodystart="84" bodyend="115"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/muda/ext/geo/lbvh/bvh.h" line="24" column="1"/>
+  </compounddef>
+</doxygen>

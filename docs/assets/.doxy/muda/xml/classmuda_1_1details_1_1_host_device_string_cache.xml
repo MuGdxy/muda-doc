@@ -1,0 +1,256 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classmuda_1_1details_1_1_host_device_string_cache" kind="class" language="C++" prot="public">
+    <compoundname>muda::details::HostDeviceStringCache</compoundname>
+    <innerclass refid="classmuda_1_1details_1_1_host_device_string_cache_1_1_string_location" prot="private">muda::details::HostDeviceStringCache::StringLocation</innerclass>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classmuda_1_1details_1_1_host_device_string_cache_1aab106a90c5832c8d61f59a3e5fdd5ef9" prot="private" static="no" mutable="no">
+        <type>std::unordered_map&lt; std::string, StringLocation &gt;</type>
+        <definition>std::unordered_map&lt;std::string, StringLocation&gt; muda::details::HostDeviceStringCache::m_string_map</definition>
+        <argsstring></argsstring>
+        <name>m_string_map</name>
+        <qualifiedname>muda::details::HostDeviceStringCache::m_string_map</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/tools/host_device_string_cache.h" line="24" column="24" bodyfile="src/muda/tools/host_device_string_cache.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1details_1_1_host_device_string_cache_1ab1964d37c09ff7e713267205c4c93230" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; char * &gt;</type>
+        <definition>std::vector&lt;char*&gt; muda::details::HostDeviceStringCache::m_device_string_buffers</definition>
+        <argsstring></argsstring>
+        <name>m_device_string_buffers</name>
+        <qualifiedname>muda::details::HostDeviceStringCache::m_device_string_buffers</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/tools/host_device_string_cache.h" line="26" column="17" bodyfile="src/muda/tools/host_device_string_cache.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1details_1_1_host_device_string_cache_1aaf0f655c90fe5e35184387237f727baa" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; char * &gt;</type>
+        <definition>std::vector&lt;char*&gt; muda::details::HostDeviceStringCache::m_host_string_buffers</definition>
+        <argsstring></argsstring>
+        <name>m_host_string_buffers</name>
+        <qualifiedname>muda::details::HostDeviceStringCache::m_host_string_buffers</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/tools/host_device_string_cache.h" line="27" column="17" bodyfile="src/muda/tools/host_device_string_cache.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1details_1_1_host_device_string_cache_1af4077101c382939c2e07112ce587ef5a" prot="private" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t muda::details::HostDeviceStringCache::m_current_buffer_offset</definition>
+        <argsstring></argsstring>
+        <name>m_current_buffer_offset</name>
+        <qualifiedname>muda::details::HostDeviceStringCache::m_current_buffer_offset</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/tools/host_device_string_cache.h" line="29" column="12" bodyfile="src/muda/tools/host_device_string_cache.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1details_1_1_host_device_string_cache_1a894eacad14de94589ae0478b955fa3a0" prot="private" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t muda::details::HostDeviceStringCache::m_buffer_size</definition>
+        <argsstring></argsstring>
+        <name>m_buffer_size</name>
+        <qualifiedname>muda::details::HostDeviceStringCache::m_buffer_size</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/tools/host_device_string_cache.h" line="30" column="12" bodyfile="src/muda/tools/host_device_string_cache.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1details_1_1_host_device_string_cache_1a4d2bfee88bf0cfdfee82025a2fe49502" prot="private" static="no" mutable="no">
+        <type><ref refid="classmuda_1_1details_1_1_string_pointer" kindref="compound">StringPointer</ref></type>
+        <definition>StringPointer muda::details::HostDeviceStringCache::m_empty_string_pointer</definition>
+        <argsstring></argsstring>
+        <name>m_empty_string_pointer</name>
+        <qualifiedname>muda::details::HostDeviceStringCache::m_empty_string_pointer</qualifiedname>
+        <initializer>{}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/tools/host_device_string_cache.h" line="32" column="19" bodyfile="src/muda/tools/host_device_string_cache.h" bodystart="32" bodyend="32"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmuda_1_1details_1_1_host_device_string_cache_1ae1b9a49d8102b0af44795fac4477fe51" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>muda::details::HostDeviceStringCache::HostDeviceStringCache</definition>
+        <argsstring>(size_t buffer_size=4_M)</argsstring>
+        <name>HostDeviceStringCache</name>
+        <qualifiedname>muda::details::HostDeviceStringCache::HostDeviceStringCache</qualifiedname>
+        <param>
+          <type>size_t</type>
+          <declname>buffer_size</declname>
+          <defval>4_M</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/tools/host_device_string_cache.h" line="35" column="5" bodyfile="src/muda/tools/host_device_string_cache.h" bodystart="35" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1details_1_1_host_device_string_cache_1afa458fd5e18c29e8b748cd58e834e196" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>muda::details::HostDeviceStringCache::~HostDeviceStringCache</definition>
+        <argsstring>()</argsstring>
+        <name>~HostDeviceStringCache</name>
+        <qualifiedname>muda::details::HostDeviceStringCache::~HostDeviceStringCache</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/tools/host_device_string_cache.h" line="49" column="5" bodyfile="src/muda/tools/host_device_string_cache.h" bodystart="49" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1details_1_1_host_device_string_cache_1a02fd7a58eb24c49be2f55471237e9a7d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>muda::details::HostDeviceStringCache::HostDeviceStringCache</definition>
+        <argsstring>(const HostDeviceStringCache &amp;)=delete</argsstring>
+        <name>HostDeviceStringCache</name>
+        <qualifiedname>muda::details::HostDeviceStringCache::HostDeviceStringCache</qualifiedname>
+        <param>
+          <type>const <ref refid="classmuda_1_1details_1_1_host_device_string_cache" kindref="compound">HostDeviceStringCache</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/tools/host_device_string_cache.h" line="57" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1details_1_1_host_device_string_cache_1a44cbaa021ba3b5cc114fec89a5aae562" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classmuda_1_1details_1_1_host_device_string_cache" kindref="compound">HostDeviceStringCache</ref> &amp;</type>
+        <definition>HostDeviceStringCache &amp; muda::details::HostDeviceStringCache::operator=</definition>
+        <argsstring>(const HostDeviceStringCache &amp;)=delete</argsstring>
+        <name>operator=</name>
+        <qualifiedname>muda::details::HostDeviceStringCache::operator=</qualifiedname>
+        <param>
+          <type>const <ref refid="classmuda_1_1details_1_1_host_device_string_cache" kindref="compound">HostDeviceStringCache</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/tools/host_device_string_cache.h" line="58" column="27"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1details_1_1_host_device_string_cache_1a67bf97a563961fc6225d200a2ea7e476" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>muda::details::HostDeviceStringCache::HostDeviceStringCache</definition>
+        <argsstring>(HostDeviceStringCache &amp;&amp;)=default</argsstring>
+        <name>HostDeviceStringCache</name>
+        <qualifiedname>muda::details::HostDeviceStringCache::HostDeviceStringCache</qualifiedname>
+        <param>
+          <type><ref refid="classmuda_1_1details_1_1_host_device_string_cache" kindref="compound">HostDeviceStringCache</ref> &amp;&amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/tools/host_device_string_cache.h" line="60" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1details_1_1_host_device_string_cache_1ad7c35818dff653535d97ad9b1008be6f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classmuda_1_1details_1_1_host_device_string_cache" kindref="compound">HostDeviceStringCache</ref> &amp;</type>
+        <definition>HostDeviceStringCache &amp; muda::details::HostDeviceStringCache::operator=</definition>
+        <argsstring>(HostDeviceStringCache &amp;&amp;)=default</argsstring>
+        <name>operator=</name>
+        <qualifiedname>muda::details::HostDeviceStringCache::operator=</qualifiedname>
+        <param>
+          <type><ref refid="classmuda_1_1details_1_1_host_device_string_cache" kindref="compound">HostDeviceStringCache</ref> &amp;&amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/tools/host_device_string_cache.h" line="61" column="27"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1details_1_1_host_device_string_cache_1a749a76de8fd253fa745b5a158a364e11" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classmuda_1_1details_1_1_string_pointer" kindref="compound">StringPointer</ref></type>
+        <definition>StringPointer muda::details::HostDeviceStringCache::operator[]</definition>
+        <argsstring>(std::string_view s)</argsstring>
+        <name>operator[]</name>
+        <qualifiedname>muda::details::HostDeviceStringCache::operator[]</qualifiedname>
+        <param>
+          <type>std::string_view</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/tools/host_device_string_cache.h" line="63" column="19" bodyfile="src/muda/tools/host_device_string_cache.h" bodystart="63" bodyend="70"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classmuda_1_1details_1_1_host_device_string_cache_1a3cabad8df271b69a084e1488f3238144" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classmuda_1_1details_1_1_string_pointer" kindref="compound">StringPointer</ref></type>
+        <definition>StringPointer muda::details::HostDeviceStringCache::get_string_pointer</definition>
+        <argsstring>(std::string_view s)</argsstring>
+        <name>get_string_pointer</name>
+        <qualifiedname>muda::details::HostDeviceStringCache::get_string_pointer</qualifiedname>
+        <param>
+          <type>std::string_view</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/tools/host_device_string_cache.h" line="73" column="19" bodyfile="src/muda/tools/host_device_string_cache.h" bodystart="73" bodyend="126"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/muda/tools/host_device_string_cache.h" line="14" column="1" bodyfile="src/muda/tools/host_device_string_cache.h" bodystart="15" bodyend="127"/>
+    <listofallmembers>
+      <member refid="classmuda_1_1details_1_1_host_device_string_cache_1a3cabad8df271b69a084e1488f3238144" prot="private" virt="non-virtual"><scope>muda::details::HostDeviceStringCache</scope><name>get_string_pointer</name></member>
+      <member refid="classmuda_1_1details_1_1_host_device_string_cache_1ae1b9a49d8102b0af44795fac4477fe51" prot="public" virt="non-virtual"><scope>muda::details::HostDeviceStringCache</scope><name>HostDeviceStringCache</name></member>
+      <member refid="classmuda_1_1details_1_1_host_device_string_cache_1a02fd7a58eb24c49be2f55471237e9a7d" prot="public" virt="non-virtual"><scope>muda::details::HostDeviceStringCache</scope><name>HostDeviceStringCache</name></member>
+      <member refid="classmuda_1_1details_1_1_host_device_string_cache_1a67bf97a563961fc6225d200a2ea7e476" prot="public" virt="non-virtual"><scope>muda::details::HostDeviceStringCache</scope><name>HostDeviceStringCache</name></member>
+      <member refid="classmuda_1_1details_1_1_host_device_string_cache_1a894eacad14de94589ae0478b955fa3a0" prot="private" virt="non-virtual"><scope>muda::details::HostDeviceStringCache</scope><name>m_buffer_size</name></member>
+      <member refid="classmuda_1_1details_1_1_host_device_string_cache_1af4077101c382939c2e07112ce587ef5a" prot="private" virt="non-virtual"><scope>muda::details::HostDeviceStringCache</scope><name>m_current_buffer_offset</name></member>
+      <member refid="classmuda_1_1details_1_1_host_device_string_cache_1ab1964d37c09ff7e713267205c4c93230" prot="private" virt="non-virtual"><scope>muda::details::HostDeviceStringCache</scope><name>m_device_string_buffers</name></member>
+      <member refid="classmuda_1_1details_1_1_host_device_string_cache_1a4d2bfee88bf0cfdfee82025a2fe49502" prot="private" virt="non-virtual"><scope>muda::details::HostDeviceStringCache</scope><name>m_empty_string_pointer</name></member>
+      <member refid="classmuda_1_1details_1_1_host_device_string_cache_1aaf0f655c90fe5e35184387237f727baa" prot="private" virt="non-virtual"><scope>muda::details::HostDeviceStringCache</scope><name>m_host_string_buffers</name></member>
+      <member refid="classmuda_1_1details_1_1_host_device_string_cache_1aab106a90c5832c8d61f59a3e5fdd5ef9" prot="private" virt="non-virtual"><scope>muda::details::HostDeviceStringCache</scope><name>m_string_map</name></member>
+      <member refid="classmuda_1_1details_1_1_host_device_string_cache_1a44cbaa021ba3b5cc114fec89a5aae562" prot="public" virt="non-virtual"><scope>muda::details::HostDeviceStringCache</scope><name>operator=</name></member>
+      <member refid="classmuda_1_1details_1_1_host_device_string_cache_1ad7c35818dff653535d97ad9b1008be6f" prot="public" virt="non-virtual"><scope>muda::details::HostDeviceStringCache</scope><name>operator=</name></member>
+      <member refid="classmuda_1_1details_1_1_host_device_string_cache_1a749a76de8fd253fa745b5a158a364e11" prot="public" virt="non-virtual"><scope>muda::details::HostDeviceStringCache</scope><name>operator[]</name></member>
+      <member refid="classmuda_1_1details_1_1_host_device_string_cache_1afa458fd5e18c29e8b748cd58e834e196" prot="public" virt="non-virtual"><scope>muda::details::HostDeviceStringCache</scope><name>~HostDeviceStringCache</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="dir_b382702c5a05deb664663fe4596d147e" kind="dir">
+    <compoundname>src/muda/literal</compoundname>
+    <innerfile refid="unit_8h">unit.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/muda/literal/"/>
+  </compounddef>
+</doxygen>

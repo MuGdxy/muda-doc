@@ -1,0 +1,322 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classmuda_1_1_linear_system_handles" kind="class" language="C++" prot="public">
+    <compoundname>muda::LinearSystemHandles</compoundname>
+    <sectiondef kind="friend">
+      <memberdef kind="friend" id="classmuda_1_1_linear_system_handles_1ae86832c9989d6959c67e536da1f48105" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class LinearSystemContext</definition>
+        <argsstring></argsstring>
+        <name>LinearSystemContext</name>
+        <qualifiedname>muda::LinearSystemHandles::LinearSystemContext</qualifiedname>
+        <param>
+          <type><ref refid="classmuda_1_1_linear_system_context" kindref="compound">LinearSystemContext</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/linear_system_handles.h" line="17" column="18" bodyfile="src/muda/ext/linear_system/linear_system_handles.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classmuda_1_1_linear_system_handles_1aceab1045614f832baf42d3a169cb5f98" prot="private" static="no" mutable="no">
+        <type>cudaStream_t</type>
+        <definition>cudaStream_t muda::LinearSystemHandles::m_stream</definition>
+        <argsstring></argsstring>
+        <name>m_stream</name>
+        <qualifiedname>muda::LinearSystemHandles::m_stream</qualifiedname>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/linear_system_handles.h" line="18" column="24" bodyfile="src/muda/ext/linear_system/linear_system_handles.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1_linear_system_handles_1a5965dae7e35a0566d00c2c206216b2ff" prot="private" static="no" mutable="no">
+        <type>cublasHandle_t</type>
+        <definition>cublasHandle_t muda::LinearSystemHandles::m_cublas</definition>
+        <argsstring></argsstring>
+        <name>m_cublas</name>
+        <qualifiedname>muda::LinearSystemHandles::m_cublas</qualifiedname>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/linear_system_handles.h" line="19" column="24" bodyfile="src/muda/ext/linear_system/linear_system_handles.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1_linear_system_handles_1ab4c7db2728b8df94fb4389ab035ff0f8" prot="private" static="no" mutable="no">
+        <type>cusparseHandle_t</type>
+        <definition>cusparseHandle_t muda::LinearSystemHandles::m_cusparse</definition>
+        <argsstring></argsstring>
+        <name>m_cusparse</name>
+        <qualifiedname>muda::LinearSystemHandles::m_cusparse</qualifiedname>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/linear_system_handles.h" line="20" column="24" bodyfile="src/muda/ext/linear_system/linear_system_handles.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1_linear_system_handles_1ab4e2e984ef8a02afc5fe3a079cb9edc3" prot="private" static="no" mutable="no">
+        <type>cusolverDnHandle_t</type>
+        <definition>cusolverDnHandle_t muda::LinearSystemHandles::m_cusolver_dn</definition>
+        <argsstring></argsstring>
+        <name>m_cusolver_dn</name>
+        <qualifiedname>muda::LinearSystemHandles::m_cusolver_dn</qualifiedname>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/linear_system_handles.h" line="21" column="24" bodyfile="src/muda/ext/linear_system/linear_system_handles.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1_linear_system_handles_1af08e6ff943651ca57eb1174db8a455fb" prot="private" static="no" mutable="no">
+        <type>cusolverSpHandle_t</type>
+        <definition>cusolverSpHandle_t muda::LinearSystemHandles::m_cusolver_sp</definition>
+        <argsstring></argsstring>
+        <name>m_cusolver_sp</name>
+        <qualifiedname>muda::LinearSystemHandles::m_cusolver_sp</qualifiedname>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/linear_system_handles.h" line="22" column="24" bodyfile="src/muda/ext/linear_system/linear_system_handles.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1_linear_system_handles_1ad09a4e1afa1876746fbe961239643e74" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool muda::LinearSystemHandles::m_pointer_mode_device</definition>
+        <argsstring></argsstring>
+        <name>m_pointer_mode_device</name>
+        <qualifiedname>muda::LinearSystemHandles::m_pointer_mode_device</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/linear_system_handles.h" line="23" column="24" bodyfile="src/muda/ext/linear_system/linear_system_handles.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1_linear_system_handles_1a930035fa16e90a86741580cc45f03ad4" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float muda::LinearSystemHandles::m_reserve_ratio</definition>
+        <argsstring></argsstring>
+        <name>m_reserve_ratio</name>
+        <qualifiedname>muda::LinearSystemHandles::m_reserve_ratio</qualifiedname>
+        <initializer>= 1.5f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/linear_system_handles.h" line="24" column="24" bodyfile="src/muda/ext/linear_system/linear_system_handles.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmuda_1_1_linear_system_handles_1af06c297224a25748271c39d4a02c67d0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>muda::LinearSystemHandles::LinearSystemHandles</definition>
+        <argsstring>(cudaStream_t s)</argsstring>
+        <name>LinearSystemHandles</name>
+        <qualifiedname>muda::LinearSystemHandles::LinearSystemHandles</qualifiedname>
+        <param>
+          <type>cudaStream_t</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/linear_system_handles.h" line="27" column="5" bodyfile="src/muda/ext/linear_system/linear_system_handles.h" bodystart="27" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_linear_system_handles_1a494c6636843f044f5e3902cc512b6bb2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>muda::LinearSystemHandles::~LinearSystemHandles</definition>
+        <argsstring>()</argsstring>
+        <name>~LinearSystemHandles</name>
+        <qualifiedname>muda::LinearSystemHandles::~LinearSystemHandles</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/linear_system_handles.h" line="40" column="5" bodyfile="src/muda/ext/linear_system/linear_system_handles.h" bodystart="40" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_linear_system_handles_1a052e7624a6f4feb3d999412eab643e77" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void muda::LinearSystemHandles::stream</definition>
+        <argsstring>(cudaStream_t s)</argsstring>
+        <name>stream</name>
+        <qualifiedname>muda::LinearSystemHandles::stream</qualifiedname>
+        <param>
+          <type>cudaStream_t</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/linear_system_handles.h" line="52" column="10" bodyfile="src/muda/ext/linear_system/linear_system_handles.h" bodystart="52" bodyend="59"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_linear_system_handles_1a2759eee3bd36ba17672edab55982db12" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>MUDA_INLINE void</type>
+        <definition>MUDA_INLINE void muda::LinearSystemHandles::set_pointer_mode_device</definition>
+        <argsstring>()</argsstring>
+        <name>set_pointer_mode_device</name>
+        <qualifiedname>muda::LinearSystemHandles::set_pointer_mode_device</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/linear_system_handles.h" line="61" column="22" bodyfile="src/muda/ext/linear_system/linear_system_handles.h" bodystart="61" bodyend="68"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_linear_system_handles_1a8366d03cbbd269d575bf85b42d669b9b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>MUDA_INLINE void</type>
+        <definition>MUDA_INLINE void muda::LinearSystemHandles::set_pointer_mode_host</definition>
+        <argsstring>()</argsstring>
+        <name>set_pointer_mode_host</name>
+        <qualifiedname>muda::LinearSystemHandles::set_pointer_mode_host</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/linear_system_handles.h" line="70" column="22" bodyfile="src/muda/ext/linear_system/linear_system_handles.h" bodystart="70" bodyend="77"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_linear_system_handles_1ae4be1769b4294128190cca0ec511a3e1" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>cudaStream_t</type>
+        <definition>cudaStream_t muda::LinearSystemHandles::stream</definition>
+        <argsstring>() const</argsstring>
+        <name>stream</name>
+        <qualifiedname>muda::LinearSystemHandles::stream</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/linear_system_handles.h" line="79" column="24" bodyfile="src/muda/ext/linear_system/linear_system_handles.h" bodystart="79" bodyend="79"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_linear_system_handles_1a6cc46266622adfc7236e10136937e8e4" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>cublasHandle_t</type>
+        <definition>cublasHandle_t muda::LinearSystemHandles::cublas</definition>
+        <argsstring>() const</argsstring>
+        <name>cublas</name>
+        <qualifiedname>muda::LinearSystemHandles::cublas</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/linear_system_handles.h" line="80" column="24" bodyfile="src/muda/ext/linear_system/linear_system_handles.h" bodystart="80" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_linear_system_handles_1abec1b63da8431ef0391350755b1b2512" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>cusparseHandle_t</type>
+        <definition>cusparseHandle_t muda::LinearSystemHandles::cusparse</definition>
+        <argsstring>() const</argsstring>
+        <name>cusparse</name>
+        <qualifiedname>muda::LinearSystemHandles::cusparse</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/linear_system_handles.h" line="81" column="24" bodyfile="src/muda/ext/linear_system/linear_system_handles.h" bodystart="81" bodyend="81"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_linear_system_handles_1a79ddcfe943b0cecd9f3f87a3bd048537" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>cusolverDnHandle_t</type>
+        <definition>cusolverDnHandle_t muda::LinearSystemHandles::cusolver_dn</definition>
+        <argsstring>() const</argsstring>
+        <name>cusolver_dn</name>
+        <qualifiedname>muda::LinearSystemHandles::cusolver_dn</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/linear_system_handles.h" line="82" column="24" bodyfile="src/muda/ext/linear_system/linear_system_handles.h" bodystart="82" bodyend="82"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_linear_system_handles_1a28e8d6306d97d3bc42f0eec1166e0f78" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>cusolverSpHandle_t</type>
+        <definition>cusolverSpHandle_t muda::LinearSystemHandles::cusolver_sp</definition>
+        <argsstring>() const</argsstring>
+        <name>cusolver_sp</name>
+        <qualifiedname>muda::LinearSystemHandles::cusolver_sp</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/linear_system_handles.h" line="83" column="24" bodyfile="src/muda/ext/linear_system/linear_system_handles.h" bodystart="83" bodyend="83"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_linear_system_handles_1a254caaf106ddd1c7cef88db999d65614" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto muda::LinearSystemHandles::reserve_ratio</definition>
+        <argsstring>() const</argsstring>
+        <name>reserve_ratio</name>
+        <qualifiedname>muda::LinearSystemHandles::reserve_ratio</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/linear_system_handles.h" line="84" column="10" bodyfile="src/muda/ext/linear_system/linear_system_handles.h" bodystart="84" bodyend="84"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/muda/ext/linear_system/linear_system_handles.h" line="15" column="1" bodyfile="src/muda/ext/linear_system/linear_system_handles.h" bodystart="16" bodyend="85"/>
+    <listofallmembers>
+      <member refid="classmuda_1_1_linear_system_handles_1a6cc46266622adfc7236e10136937e8e4" prot="public" virt="non-virtual"><scope>muda::LinearSystemHandles</scope><name>cublas</name></member>
+      <member refid="classmuda_1_1_linear_system_handles_1a79ddcfe943b0cecd9f3f87a3bd048537" prot="public" virt="non-virtual"><scope>muda::LinearSystemHandles</scope><name>cusolver_dn</name></member>
+      <member refid="classmuda_1_1_linear_system_handles_1a28e8d6306d97d3bc42f0eec1166e0f78" prot="public" virt="non-virtual"><scope>muda::LinearSystemHandles</scope><name>cusolver_sp</name></member>
+      <member refid="classmuda_1_1_linear_system_handles_1abec1b63da8431ef0391350755b1b2512" prot="public" virt="non-virtual"><scope>muda::LinearSystemHandles</scope><name>cusparse</name></member>
+      <member refid="classmuda_1_1_linear_system_handles_1ae86832c9989d6959c67e536da1f48105" prot="private" virt="non-virtual"><scope>muda::LinearSystemHandles</scope><name>LinearSystemContext</name></member>
+      <member refid="classmuda_1_1_linear_system_handles_1af06c297224a25748271c39d4a02c67d0" prot="public" virt="non-virtual"><scope>muda::LinearSystemHandles</scope><name>LinearSystemHandles</name></member>
+      <member refid="classmuda_1_1_linear_system_handles_1a5965dae7e35a0566d00c2c206216b2ff" prot="private" virt="non-virtual"><scope>muda::LinearSystemHandles</scope><name>m_cublas</name></member>
+      <member refid="classmuda_1_1_linear_system_handles_1ab4e2e984ef8a02afc5fe3a079cb9edc3" prot="private" virt="non-virtual"><scope>muda::LinearSystemHandles</scope><name>m_cusolver_dn</name></member>
+      <member refid="classmuda_1_1_linear_system_handles_1af08e6ff943651ca57eb1174db8a455fb" prot="private" virt="non-virtual"><scope>muda::LinearSystemHandles</scope><name>m_cusolver_sp</name></member>
+      <member refid="classmuda_1_1_linear_system_handles_1ab4c7db2728b8df94fb4389ab035ff0f8" prot="private" virt="non-virtual"><scope>muda::LinearSystemHandles</scope><name>m_cusparse</name></member>
+      <member refid="classmuda_1_1_linear_system_handles_1ad09a4e1afa1876746fbe961239643e74" prot="private" virt="non-virtual"><scope>muda::LinearSystemHandles</scope><name>m_pointer_mode_device</name></member>
+      <member refid="classmuda_1_1_linear_system_handles_1a930035fa16e90a86741580cc45f03ad4" prot="private" virt="non-virtual"><scope>muda::LinearSystemHandles</scope><name>m_reserve_ratio</name></member>
+      <member refid="classmuda_1_1_linear_system_handles_1aceab1045614f832baf42d3a169cb5f98" prot="private" virt="non-virtual"><scope>muda::LinearSystemHandles</scope><name>m_stream</name></member>
+      <member refid="classmuda_1_1_linear_system_handles_1a254caaf106ddd1c7cef88db999d65614" prot="public" virt="non-virtual"><scope>muda::LinearSystemHandles</scope><name>reserve_ratio</name></member>
+      <member refid="classmuda_1_1_linear_system_handles_1a2759eee3bd36ba17672edab55982db12" prot="public" virt="non-virtual"><scope>muda::LinearSystemHandles</scope><name>set_pointer_mode_device</name></member>
+      <member refid="classmuda_1_1_linear_system_handles_1a8366d03cbbd269d575bf85b42d669b9b" prot="public" virt="non-virtual"><scope>muda::LinearSystemHandles</scope><name>set_pointer_mode_host</name></member>
+      <member refid="classmuda_1_1_linear_system_handles_1a052e7624a6f4feb3d999412eab643e77" prot="public" virt="non-virtual"><scope>muda::LinearSystemHandles</scope><name>stream</name></member>
+      <member refid="classmuda_1_1_linear_system_handles_1ae4be1769b4294128190cca0ec511a3e1" prot="public" virt="non-virtual"><scope>muda::LinearSystemHandles</scope><name>stream</name></member>
+      <member refid="classmuda_1_1_linear_system_handles_1a494c6636843f044f5e3902cc512b6bb2" prot="public" virt="non-virtual"><scope>muda::LinearSystemHandles</scope><name>~LinearSystemHandles</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

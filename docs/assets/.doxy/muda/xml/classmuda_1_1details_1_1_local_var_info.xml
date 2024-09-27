@@ -1,0 +1,73 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classmuda_1_1details_1_1_local_var_info" kind="class" language="C++" prot="public">
+    <compoundname>muda::details::LocalVarInfo</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classmuda_1_1details_1_1_local_var_info_1a749e73c061a1f65b7a0a69fd9ea8f25c" prot="public" static="no" mutable="no">
+        <type><ref refid="classmuda_1_1details_1_1_local_var_id" kindref="compound">LocalVarId</ref></type>
+        <definition>LocalVarId muda::details::LocalVarInfo::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <qualifiedname>muda::details::LocalVarInfo::id</qualifiedname>
+        <initializer>{}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/compute_graph/compute_graph.h" line="32" column="30" bodyfile="src/muda/compute_graph/compute_graph.h" bodystart="32" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1details_1_1_local_var_info_1a1d700fd3959ffd4162fc7d6e39beb4b3" prot="public" static="no" mutable="no">
+        <type><ref refid="classmuda_1_1_compute_graph_var_base" kindref="compound">ComputeGraphVarBase</ref> *</type>
+        <definition>ComputeGraphVarBase* muda::details::LocalVarInfo::var</definition>
+        <argsstring></argsstring>
+        <name>var</name>
+        <qualifiedname>muda::details::LocalVarInfo::var</qualifiedname>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/compute_graph/compute_graph.h" line="33" column="29" bodyfile="src/muda/compute_graph/compute_graph.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="3">
+        <label>U64IdWithType</label>
+        <link refid="classmuda_1_1_id_with_type"/>
+      </node>
+      <node id="4">
+        <label>muda::ComputeGraphVarBase</label>
+        <link refid="classmuda_1_1_compute_graph_var_base"/>
+      </node>
+      <node id="2">
+        <label>muda::details::LocalVarId</label>
+        <link refid="classmuda_1_1details_1_1_local_var_id"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>muda::details::LocalVarInfo</label>
+        <link refid="classmuda_1_1details_1_1_local_var_info"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>id</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>var</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="src/muda/compute_graph/compute_graph.h" line="29" column="5" bodyfile="src/muda/compute_graph/compute_graph.h" bodystart="30" bodyend="34"/>
+    <listofallmembers>
+      <member refid="classmuda_1_1details_1_1_local_var_info_1a749e73c061a1f65b7a0a69fd9ea8f25c" prot="public" virt="non-virtual"><scope>muda::details::LocalVarInfo</scope><name>id</name></member>
+      <member refid="classmuda_1_1details_1_1_local_var_info_1a1d700fd3959ffd4162fc7d6e39beb4b3" prot="public" virt="non-virtual"><scope>muda::details::LocalVarInfo</scope><name>var</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

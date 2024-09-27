@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classmuda_1_1_stream_1_1_graph_fire_and_forget" kind="class" language="C++" prot="public">
+    <compoundname>muda::Stream::GraphFireAndForget</compoundname>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmuda_1_1_stream_1_1_graph_fire_and_forget_1add25e8622bc42f2f114ce16559e8c2e4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>MUDA_DEVICE</type>
+        <definition>MUDA_DEVICE muda::Stream::GraphFireAndForget::GraphFireAndForget</definition>
+        <argsstring>()</argsstring>
+        <name>GraphFireAndForget</name>
+        <qualifiedname>muda::Stream::GraphFireAndForget::GraphFireAndForget</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/launch/stream.h" line="73" column="21" bodyfile="src/muda/launch/stream.h" bodystart="73" bodyend="73"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_stream_1_1_graph_fire_and_forget_1a95c368ba4ac06ca239018c73f849c49b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>MUDA_DEVICE</type>
+        <definition>MUDA_DEVICE muda::Stream::GraphFireAndForget::operator cudaStream_t</definition>
+        <argsstring>() const</argsstring>
+        <name>operator cudaStream_t</name>
+        <qualifiedname>muda::Stream::GraphFireAndForget::operator cudaStream_t</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/launch/stream.h" line="74" column="21"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/muda/launch/stream.h" line="70" column="5" bodyfile="src/muda/launch/stream.h" bodystart="71" bodyend="75"/>
+    <listofallmembers>
+      <member refid="classmuda_1_1_stream_1_1_graph_fire_and_forget_1add25e8622bc42f2f114ce16559e8c2e4" prot="public" virt="non-virtual"><scope>muda::Stream::GraphFireAndForget</scope><name>GraphFireAndForget</name></member>
+      <member refid="classmuda_1_1_stream_1_1_graph_fire_and_forget_1a95c368ba4ac06ca239018c73f849c49b" prot="public" virt="non-virtual"><scope>muda::Stream::GraphFireAndForget</scope><name>operator cudaStream_t</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

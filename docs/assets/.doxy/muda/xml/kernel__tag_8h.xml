@@ -1,0 +1,301 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="kernel__tag_8h" kind="file" language="C++">
+    <compoundname>kernel_tag.h</compoundname>
+    <includedby refid="launch_2launch_8h" local="no">src/muda/launch/launch.h</includedby>
+    <includedby refid="launch__base_8h" local="no">src/muda/launch/launch_base.h</includedby>
+    <includedby refid="parallel__for_8h" local="no">src/muda/launch/parallel_for.h</includedby>
+    <invincdepgraph>
+      <node id="10">
+        <label>src/muda/buffer.h</label>
+        <link refid="buffer_8h_source"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>src/muda/buffer/buffer_launch.h</label>
+        <link refid="buffer__launch_8h_source"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="35">
+        <label>src/muda/buffer/reshape_nd/reserve.h</label>
+        <link refid="reserve_8h_source"/>
+      </node>
+      <node id="14">
+        <label>src/muda/cub/cub.h</label>
+        <link refid="cub_8h_source"/>
+      </node>
+      <node id="13">
+        <label>src/muda/cub/cub_device.h</label>
+        <link refid="cub__device_8h_source"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>src/muda/cub/device/cub_wrapper.h</label>
+        <link refid="cub__wrapper_8h_source"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>src/muda/cub/device/device_adjacent_difference.h</label>
+        <link refid="device__adjacent__difference_8h_source"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>src/muda/cub/device/device_histogram.h</label>
+        <link refid="device__histogram_8h_source"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>src/muda/cub/device/device_merge_sort.h</label>
+        <link refid="device__merge__sort_8h_source"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>src/muda/cub/device/device_partition.h</label>
+        <link refid="device__partition_8h_source"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>src/muda/cub/device/device_radix_sort.h</label>
+        <link refid="device__radix__sort_8h_source"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>src/muda/cub/device/device_reduce.h</label>
+        <link refid="device__reduce_8h_source"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>src/muda/cub/device/device_run_length_encode.h</label>
+        <link refid="device__run__length__encode_8h_source"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>src/muda/cub/device/device_scan.h</label>
+        <link refid="device__scan_8h_source"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>src/muda/cub/device/device_segmented_radix_sort.h</label>
+        <link refid="device__segmented__radix__sort_8h_source"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>src/muda/cub/device/device_segmented_reduce.h</label>
+        <link refid="device__segmented__reduce_8h_source"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>src/muda/cub/device/device_segmented_sort.h</label>
+        <link refid="device__segmented__sort_8h_source"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>src/muda/cub/device/device_select.h</label>
+        <link refid="device__select_8h_source"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>src/muda/cub/device/device_spmv.h</label>
+        <link refid="device__spmv_8h_source"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="37">
+        <label>src/muda/ext/field/field_entry_launch.h</label>
+        <link refid="field__entry__launch_8h_source"/>
+      </node>
+      <node id="22">
+        <label>src/muda/ext/geo/lbvh.h</label>
+        <link refid="lbvh_8h_source"/>
+      </node>
+      <node id="20">
+        <label>src/muda/ext/geo/lbvh/bvh.h</label>
+        <link refid="bvh_8h_source"/>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>src/muda/ext/geo/lbvh/lbvh.h</label>
+        <link refid="lbvh_2lbvh_8h_source"/>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>src/muda/ext/geo/lbvh/query.h</label>
+        <link refid="query_8h_source"/>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>src/muda/ext/geo/spatial_hash.h</label>
+        <link refid="spatial__hash_8h_source"/>
+      </node>
+      <node id="4">
+        <label>src/muda/ext/geo/spatial_hash/sparse_spatial_hash.h</label>
+        <link refid="sparse__spatial__hash_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>src/muda/ext/geo/spatial_hash/sparse_spatial_hash_impl.h</label>
+        <link refid="sparse__spatial__hash__impl_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>src/muda/graph.h</label>
+        <link refid="graph_8h_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>src/muda/graph/graph_launch.h</label>
+        <link refid="graph__launch_8h_source"/>
+        <childnode refid="32" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>src/muda/launch.h</label>
+        <link refid="launch_8h_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="33">
+        <label>src/muda/launch/host_call.h</label>
+        <link refid="host__call_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>src/muda/launch/kernel_tag.h</label>
+        <link refid="kernel__tag_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>src/muda/launch/launch.h</label>
+        <link refid="launch_2launch_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>src/muda/launch/launch_base.h</label>
+        <link refid="launch__base_8h_source"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+      </node>
+      <node id="34">
+        <label>src/muda/launch/memory.h</label>
+        <link refid="memory_8h_source"/>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="36">
+        <label>src/muda/launch/parallel_for.h</label>
+        <link refid="parallel__for_8h"/>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>src/muda/muda.h</label>
+        <link refid="muda_8h_source"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structmuda_1_1_tag" prot="public">muda::Tag</innerclass>
+    <innerclass refid="structmuda_1_1_default" prot="public">muda::Default</innerclass>
+    <innernamespace refid="namespacemuda">muda</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">muda</highlight></codeline>
+<codeline lineno="3"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="5" refid="structmuda_1_1_tag" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structmuda_1_1_tag" kindref="compound">Tag</ref></highlight></codeline>
+<codeline lineno="6"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="7"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9" refid="structmuda_1_1_default" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structmuda_1_1_default" kindref="compound">Default</ref></highlight></codeline>
+<codeline lineno="10"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="structmuda_1_1_tag" kindref="compound">DefaultTag</ref><sp/>=<sp/><ref refid="structmuda_1_1_tag" kindref="compound">Tag&lt;Default&gt;</ref>;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal">}<sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>muda</highlight></codeline>
+    </programlisting>
+    <location file="src/muda/launch/kernel_tag.h"/>
+  </compounddef>
+</doxygen>

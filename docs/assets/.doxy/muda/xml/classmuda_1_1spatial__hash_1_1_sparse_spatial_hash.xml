@@ -1,0 +1,242 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classmuda_1_1spatial__hash_1_1_sparse_spatial_hash" kind="class" language="C++" prot="public">
+    <compoundname>muda::spatial_hash::SparseSpatialHash</compoundname>
+    <templateparamlist>
+      <param>
+        <type>typename Hash</type>
+        <defval><ref refid="classmuda_1_1spatial__hash_1_1_morton" kindref="compound">Morton</ref>&lt;uint32_t&gt;</defval>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="private-type">
+      <memberdef kind="typedef" id="classmuda_1_1spatial__hash_1_1_sparse_spatial_hash_1a44d43c7104625e5b35c4f5780c2f355f" prot="private" static="no">
+        <type><ref refid="classmuda_1_1spatial__hash_1_1details_1_1_sparse_spatial_hash_impl" kindref="compound">details::SparseSpatialHashImpl</ref>&lt; Hash &gt;</type>
+        <definition>using muda::spatial_hash::SparseSpatialHash&lt; Hash &gt;::Impl =  details::SparseSpatialHashImpl&lt;Hash&gt;</definition>
+        <argsstring></argsstring>
+        <name>Impl</name>
+        <qualifiedname>muda::spatial_hash::SparseSpatialHash::Impl</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/spatial_hash/sparse_spatial_hash.h" line="18" column="5" bodyfile="src/muda/ext/geo/spatial_hash/sparse_spatial_hash.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classmuda_1_1spatial__hash_1_1_sparse_spatial_hash_1a7435263da4e2e417bda48992d3028068" prot="private" static="no" mutable="no">
+        <type><ref refid="classmuda_1_1spatial__hash_1_1details_1_1_sparse_spatial_hash_impl" kindref="compound">Impl</ref></type>
+        <definition>Impl muda::spatial_hash::SparseSpatialHash&lt; Hash &gt;::m_impl</definition>
+        <argsstring></argsstring>
+        <name>m_impl</name>
+        <qualifiedname>muda::spatial_hash::SparseSpatialHash::m_impl</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/spatial_hash/sparse_spatial_hash.h" line="20" column="10" bodyfile="src/muda/ext/geo/spatial_hash/sparse_spatial_hash.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmuda_1_1spatial__hash_1_1_sparse_spatial_hash_1ae5a615adfb95bdca79579cf9cccbeef7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>muda::spatial_hash::SparseSpatialHash&lt; Hash &gt;::SparseSpatialHash</definition>
+        <argsstring>(muda::Stream &amp;stream=muda::Stream::Default())</argsstring>
+        <name>SparseSpatialHash</name>
+        <qualifiedname>muda::spatial_hash::SparseSpatialHash::SparseSpatialHash</qualifiedname>
+        <param>
+          <type><ref refid="classmuda_1_1_stream" kindref="compound">muda::Stream</ref> &amp;</type>
+          <declname>stream</declname>
+          <defval>muda::Stream::Default()</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/spatial_hash/sparse_spatial_hash.h" line="23" column="5" bodyfile="src/muda/ext/geo/spatial_hash/sparse_spatial_hash.h" bodystart="23" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1spatial__hash_1_1_sparse_spatial_hash_1a1d0b9e55180c14ea46de60b55ba82717" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Pred</type>
+            <defval><ref refid="classmuda_1_1spatial__hash_1_1_default_predication" kindref="compound">DefaultPredication</ref></defval>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void muda::spatial_hash::SparseSpatialHash&lt; Hash &gt;::detect</definition>
+        <argsstring>(CBufferView&lt; BoundingSphere &gt; spheres, DeviceBuffer&lt; CollisionPair &gt; &amp;collisionPairs, Pred &amp;&amp;pred={})</argsstring>
+        <name>detect</name>
+        <qualifiedname>muda::spatial_hash::SparseSpatialHash::detect</qualifiedname>
+        <param>
+          <type><ref refid="classmuda_1_1_buffer_view_t" kindref="compound">CBufferView</ref>&lt; <ref refid="classmuda_1_1spatial__hash_1_1_bounding_sphere" kindref="compound">BoundingSphere</ref> &gt;</type>
+          <declname>spheres</declname>
+        </param>
+        <param>
+          <type><ref refid="classmuda_1_1_device_buffer" kindref="compound">DeviceBuffer</ref>&lt; <ref refid="classmuda_1_1spatial__hash_1_1_collision_pair" kindref="compound">CollisionPair</ref> &gt; &amp;</type>
+          <declname>collisionPairs</declname>
+        </param>
+        <param>
+          <type>Pred &amp;&amp;</type>
+          <declname>pred</declname>
+          <defval>{}</defval>
+        </param>
+        <briefdescription>
+<para>Detect collision pairs from bounding spheres. Note that: </para>
+        </briefdescription>
+        <detaileddescription>
+<para><itemizedlist>
+<listitem><para>The collision pairs are unique but not sorted.</para>
+</listitem><listitem><para>All <computeroutput>(i,j)</computeroutput> pairs in collisionPairs satisfy <computeroutput>i &lt; j</computeroutput>.</para>
+</listitem></itemizedlist>
+</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">spheres</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>bounding spheres </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">collisionPairs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>output collision pairs </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">pred</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>predication function. f: <computeroutput>__device__ (int i, int j) -&gt; bool</computeroutput>. If <computeroutput>pred(i,j)</computeroutput> is true, then the collision pair <computeroutput>(i,j)</computeroutput> is recorded, else the collision pair is discarded. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classmuda_1_1spatial__hash_1_1_default_predication" kindref="compound">DefaultPredication</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/spatial_hash/sparse_spatial_hash.h" line="41" column="10" bodyfile="src/muda/ext/geo/spatial_hash/sparse_spatial_hash.h" bodystart="41" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1spatial__hash_1_1_sparse_spatial_hash_1aa2d3abc4009435c1f273d4456bd1ee32" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Pred</type>
+            <defval><ref refid="classmuda_1_1spatial__hash_1_1_default_predication" kindref="compound">DefaultPredication</ref></defval>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void muda::spatial_hash::SparseSpatialHash&lt; Hash &gt;::detect</definition>
+        <argsstring>(int level, CBufferView&lt; BoundingSphere &gt; spheres, DeviceBuffer&lt; CollisionPair &gt; &amp;collisionPairs, Pred &amp;&amp;pred={})</argsstring>
+        <name>detect</name>
+        <qualifiedname>muda::spatial_hash::SparseSpatialHash::detect</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>level</declname>
+        </param>
+        <param>
+          <type><ref refid="classmuda_1_1_buffer_view_t" kindref="compound">CBufferView</ref>&lt; <ref refid="classmuda_1_1spatial__hash_1_1_bounding_sphere" kindref="compound">BoundingSphere</ref> &gt;</type>
+          <declname>spheres</declname>
+        </param>
+        <param>
+          <type><ref refid="classmuda_1_1_device_buffer" kindref="compound">DeviceBuffer</ref>&lt; <ref refid="classmuda_1_1spatial__hash_1_1_collision_pair" kindref="compound">CollisionPair</ref> &gt; &amp;</type>
+          <declname>collisionPairs</declname>
+        </param>
+        <param>
+          <type>Pred &amp;&amp;</type>
+          <declname>pred</declname>
+          <defval>{}</defval>
+        </param>
+        <briefdescription>
+<para>Detect collision pairs from bounding spheres at a specific level (level &gt;= 0). This is used for hierarchical spatial hashing collision detection. Its user&apos;s responsibility to set <computeroutput>level</computeroutput> value to a bounding sphere. Normally, higher level means larger bounding sphere. Users should decide a proper range of radius for each level, like: </para>
+        </briefdescription>
+        <detaileddescription>
+<para><programlisting filename=".cpp"><codeline><highlight class="normal">BoundingSphere<sp/>s{o,r};</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(r<sp/>&lt;<sp/>r0)<sp/>s.level<sp/>=<sp/>0;</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(r<sp/>&lt;<sp/>r1)<sp/>s.level<sp/>=<sp/>1;</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>s.level<sp/>=<sp/>2;</highlight></codeline>
+<codeline><highlight class="normal">...</highlight></codeline>
+</programlisting> Note that:<itemizedlist>
+<listitem><para>For a level <computeroutput>L</computeroutput>, any bounding spheres has a <computeroutput>level &lt;= L</computeroutput> will be taken into account.</para>
+</listitem><listitem><para>The collision pairs are unique but not sorted.</para>
+</listitem><listitem><para>All <computeroutput>(i,j)</computeroutput> pairs in collisionPairs satisfy <computeroutput>i &lt; j</computeroutput>.</para>
+</listitem><listitem><para>The <computeroutput>collisionPairs</computeroutput> will be appended with new collision pairs (not cleared).</para>
+</listitem></itemizedlist>
+</para>
+<para>Typical usage: <programlisting filename=".cpp"><codeline><highlight class="normal">DeviceBuffer&lt;BoundingSphere&gt;<sp/>spheres;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>Your<sp/>code<sp/>to<sp/>fill<sp/>spheres<sp/>with<sp/>proper<sp/>level</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>...</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">DeviceBuffer&lt;CollisionPair&gt;<sp/>collisionPairs;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>level<sp/>=<sp/>0;<sp/>level<sp/>&lt;<sp/>level_count;<sp/>++level)</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classmuda_1_1spatial__hash_1_1_sparse_spatial_hash_1a1d0b9e55180c14ea46de60b55ba82717" kindref="member">detect</ref>(level,<sp/>spheres,<sp/>collisionPairs);</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting></para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">level</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the hierarchy level we want to detect </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">spheres</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>bounding spheres </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">collisionPairs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>appended output collision pairs </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">pred</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>predication function. f: <computeroutput>__device__ (int i, int j) -&gt; bool</computeroutput>. If <computeroutput>pred(i,j)</computeroutput> is true, then the collision pair <computeroutput>(i,j)</computeroutput> is recorded, else the collision pair is discarded.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classmuda_1_1spatial__hash_1_1_default_predication" kindref="compound">DefaultPredication</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/spatial_hash/sparse_spatial_hash.h" line="92" column="10" bodyfile="src/muda/ext/geo/spatial_hash/sparse_spatial_hash.h" bodystart="92" bodyend="100"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/muda/ext/geo/spatial_hash/sparse_spatial_hash.h" line="13" column="1" bodyfile="src/muda/ext/geo/spatial_hash/sparse_spatial_hash.h" bodystart="14" bodyend="101"/>
+    <listofallmembers>
+      <member refid="classmuda_1_1spatial__hash_1_1_sparse_spatial_hash_1a1d0b9e55180c14ea46de60b55ba82717" prot="public" virt="non-virtual"><scope>muda::spatial_hash::SparseSpatialHash</scope><name>detect</name></member>
+      <member refid="classmuda_1_1spatial__hash_1_1_sparse_spatial_hash_1aa2d3abc4009435c1f273d4456bd1ee32" prot="public" virt="non-virtual"><scope>muda::spatial_hash::SparseSpatialHash</scope><name>detect</name></member>
+      <member refid="classmuda_1_1spatial__hash_1_1_sparse_spatial_hash_1a44d43c7104625e5b35c4f5780c2f355f" prot="private" virt="non-virtual"><scope>muda::spatial_hash::SparseSpatialHash</scope><name>Impl</name></member>
+      <member refid="classmuda_1_1spatial__hash_1_1_sparse_spatial_hash_1a7435263da4e2e417bda48992d3028068" prot="private" virt="non-virtual"><scope>muda::spatial_hash::SparseSpatialHash</scope><name>m_impl</name></member>
+      <member refid="classmuda_1_1spatial__hash_1_1_sparse_spatial_hash_1ae5a615adfb95bdca79579cf9cccbeef7" prot="public" virt="non-virtual"><scope>muda::spatial_hash::SparseSpatialHash</scope><name>SparseSpatialHash</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

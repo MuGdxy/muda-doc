@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="dir_604bea9d06d02462c18f7966e507987c" kind="dir">
+    <compoundname>src/muda/type_traits</compoundname>
+    <innerfile refid="always_8h">always.h</innerfile>
+    <innerfile refid="cuda__arch_8h">cuda_arch.h</innerfile>
+    <innerfile refid="type__label_8h">type_label.h</innerfile>
+    <innerfile refid="type__modifier_8h">type_modifier.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/muda/type_traits/"/>
+  </compounddef>
+</doxygen>

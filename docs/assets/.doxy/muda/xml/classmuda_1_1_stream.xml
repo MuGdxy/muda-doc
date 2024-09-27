@@ -1,0 +1,334 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classmuda_1_1_stream" kind="class" language="C++" prot="public">
+    <compoundname>muda::Stream</compoundname>
+    <includes refid="stream_8h" local="no">stream.h</includes>
+    <innerclass refid="classmuda_1_1_stream_1_1_fire_and_forget" prot="public">muda::Stream::FireAndForget</innerclass>
+    <innerclass refid="classmuda_1_1_stream_1_1_graph_fire_and_forget" prot="public">muda::Stream::GraphFireAndForget</innerclass>
+    <innerclass refid="classmuda_1_1_stream_1_1_graph_tail_launch" prot="public">muda::Stream::GraphTailLaunch</innerclass>
+    <innerclass refid="classmuda_1_1_stream_1_1_tail_launch" prot="public">muda::Stream::TailLaunch</innerclass>
+    <sectiondef kind="public-type">
+      <memberdef kind="enum" id="classmuda_1_1_stream_1ac8fa61299e86eefd7a9990df5d1b5caf" prot="public" static="no" strong="yes">
+        <type>unsigned int</type>
+        <name>Flag</name>
+        <qualifiedname>muda::Stream::Flag</qualifiedname>
+        <enumvalue id="classmuda_1_1_stream_1ac8fa61299e86eefd7a9990df5d1b5cafaaf71f03861810014d736fcbae9d6050e" prot="public">
+          <name>eDefault</name>
+          <initializer>= cudaStreamDefault</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classmuda_1_1_stream_1ac8fa61299e86eefd7a9990df5d1b5cafa8d0d927be351a9d317ef36db0cb691aa" prot="public">
+          <name>eNonBlocking</name>
+          <initializer>= cudaStreamNonBlocking</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/launch/stream.h" line="22" column="5" bodyfile="src/muda/launch/stream.h" bodystart="23" bodyend="26"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classmuda_1_1_stream_1ac7e8ebdf8dcb36a4dc5d7513eafd1e7a" prot="private" static="no" mutable="no">
+        <type>cudaStream_t</type>
+        <definition>cudaStream_t muda::Stream::m_handle</definition>
+        <argsstring></argsstring>
+        <name>m_handle</name>
+        <qualifiedname>muda::Stream::m_handle</qualifiedname>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/launch/stream.h" line="19" column="18" bodyfile="src/muda/launch/stream.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1_stream_1ab762b20728c60b38c7d3166749aceda9" prot="private" static="no" mutable="no">
+        <type><ref refid="classmuda_1_1details_1_1_temp_buffer" kindref="compound">details::ByteTempBuffer</ref></type>
+        <definition>details::ByteTempBuffer muda::Stream::m_workspace</definition>
+        <argsstring></argsstring>
+        <name>m_workspace</name>
+        <qualifiedname>muda::Stream::m_workspace</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/launch/stream.h" line="84" column="29" bodyfile="src/muda/launch/stream.h" bodystart="84" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmuda_1_1_stream_1a8c2a31fa186416b644a34839d05724b7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>MUDA_NODISCARD</type>
+        <definition>MUDA_NODISCARD muda::Stream::Stream</definition>
+        <argsstring>(Flag f=Flag::eDefault)</argsstring>
+        <name>Stream</name>
+        <qualifiedname>muda::Stream::Stream</qualifiedname>
+        <param>
+          <type>Flag</type>
+          <declname>f</declname>
+          <defval>Flag::eDefault</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/launch/stream.h" line="28" column="20"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_stream_1a4cffc45a0ab362b9c287b2457052a0a5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>muda::Stream::~Stream</definition>
+        <argsstring>()</argsstring>
+        <name>~Stream</name>
+        <qualifiedname>muda::Stream::~Stream</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/launch/stream.h" line="29" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_stream_1a6ecc721af59e4ec8fef8f0aa9f365ced" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>muda::Stream::operator cudaStream_t</definition>
+        <argsstring>() const</argsstring>
+        <name>operator cudaStream_t</name>
+        <qualifiedname>muda::Stream::operator cudaStream_t</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/launch/stream.h" line="31" column="5" bodyfile="src/muda/launch/stream.h" bodystart="31" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_stream_1aa03cb6cddf50c796510d8d815fb4285d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>cudaStream_t</type>
+        <definition>cudaStream_t muda::Stream::view</definition>
+        <argsstring>() const</argsstring>
+        <name>view</name>
+        <qualifiedname>muda::Stream::view</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/launch/stream.h" line="32" column="18" bodyfile="src/muda/launch/stream.h" bodystart="32" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_stream_1a3b55c18c918c785cb83e42a14b3c0973" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>muda::Stream::Stream</definition>
+        <argsstring>(const Stream &amp;)=delete</argsstring>
+        <name>Stream</name>
+        <qualifiedname>muda::Stream::Stream</qualifiedname>
+        <param>
+          <type>const <ref refid="classmuda_1_1_stream" kindref="compound">Stream</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/launch/stream.h" line="35" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_stream_1a567b095dc7fa64a7451a62318d238c84" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classmuda_1_1_stream" kindref="compound">Stream</ref> &amp;</type>
+        <definition>Stream &amp; muda::Stream::operator=</definition>
+        <argsstring>(const Stream &amp;)=delete</argsstring>
+        <name>operator=</name>
+        <qualifiedname>muda::Stream::operator=</qualifiedname>
+        <param>
+          <type>const <ref refid="classmuda_1_1_stream" kindref="compound">Stream</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/launch/stream.h" line="36" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_stream_1a37e83880351c444fe3d8d1b5295b69f9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>muda::Stream::Stream</definition>
+        <argsstring>(Stream &amp;&amp;o) MUDA_NOEXCEPT</argsstring>
+        <name>Stream</name>
+        <qualifiedname>muda::Stream::Stream</qualifiedname>
+        <param>
+          <type><ref refid="classmuda_1_1_stream" kindref="compound">Stream</ref> &amp;&amp;</type>
+          <declname>o</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/launch/stream.h" line="39" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_stream_1a5a7d451d08abdbc3740568398da9adbc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classmuda_1_1_stream" kindref="compound">Stream</ref> &amp;</type>
+        <definition>Stream &amp; muda::Stream::operator=</definition>
+        <argsstring>(Stream &amp;&amp;o) MUDA_NOEXCEPT</argsstring>
+        <name>operator=</name>
+        <qualifiedname>muda::Stream::operator=</qualifiedname>
+        <param>
+          <type><ref refid="classmuda_1_1_stream" kindref="compound">Stream</ref> &amp;&amp;</type>
+          <declname>o</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/launch/stream.h" line="40" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_stream_1a7b19f1a1b64d8a3a858dbf5beb939c7b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void muda::Stream::wait</definition>
+        <argsstring>() const</argsstring>
+        <name>wait</name>
+        <qualifiedname>muda::Stream::wait</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/launch/stream.h" line="42" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_stream_1a483256c67d39c017167f081cdf0f2fcb" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void muda::Stream::begin_capture</definition>
+        <argsstring>(cudaStreamCaptureMode mode=cudaStreamCaptureModeThreadLocal) const</argsstring>
+        <name>begin_capture</name>
+        <qualifiedname>muda::Stream::begin_capture</qualifiedname>
+        <param>
+          <type>cudaStreamCaptureMode</type>
+          <declname>mode</declname>
+          <defval>cudaStreamCaptureModeThreadLocal</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/launch/stream.h" line="44" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_stream_1a6ad576c4a3bb38fed9b66c04ff9ca6a7" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void muda::Stream::end_capture</definition>
+        <argsstring>(cudaGraph_t *graph) const</argsstring>
+        <name>end_capture</name>
+        <qualifiedname>muda::Stream::end_capture</qualifiedname>
+        <param>
+          <type>cudaGraph_t *</type>
+          <declname>graph</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/launch/stream.h" line="45" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_stream_1addef0f6d99396012ba3b9e1131831583" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::byte *</type>
+        <definition>std::byte * muda::Stream::workspace</definition>
+        <argsstring>(size_t byte_size)</argsstring>
+        <name>workspace</name>
+        <qualifiedname>muda::Stream::workspace</qualifiedname>
+        <param>
+          <type>size_t</type>
+          <declname>byte_size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/launch/stream.h" line="77" column="15"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classmuda_1_1_stream_1a05758232f3bb2825ed98b15a53ffd6f1" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classmuda_1_1_stream" kindref="compound">Stream</ref> &amp;</type>
+        <definition>static Stream &amp; muda::Stream::Default</definition>
+        <argsstring>()</argsstring>
+        <name>Default</name>
+        <qualifiedname>muda::Stream::Default</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/launch/stream.h" line="47" column="19"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classmuda_1_1_stream_1ae558717d86db14e2ddddbce5b94350c5" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>muda::Stream::Stream</definition>
+        <argsstring>(nullptr_t)</argsstring>
+        <name>Stream</name>
+        <qualifiedname>muda::Stream::Stream</qualifiedname>
+        <param>
+          <type>nullptr_t</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/launch/stream.h" line="80" column="5" bodyfile="src/muda/launch/stream.h" bodystart="80" bodyend="83"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>RAII wrapper for cudaStream. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/muda/launch/stream.h" line="17" column="1" bodyfile="src/muda/launch/stream.h" bodystart="18" bodyend="85"/>
+    <listofallmembers>
+      <member refid="classmuda_1_1_stream_1a483256c67d39c017167f081cdf0f2fcb" prot="public" virt="non-virtual"><scope>muda::Stream</scope><name>begin_capture</name></member>
+      <member refid="classmuda_1_1_stream_1a05758232f3bb2825ed98b15a53ffd6f1" prot="public" virt="non-virtual"><scope>muda::Stream</scope><name>Default</name></member>
+      <member refid="classmuda_1_1_stream_1a6ad576c4a3bb38fed9b66c04ff9ca6a7" prot="public" virt="non-virtual"><scope>muda::Stream</scope><name>end_capture</name></member>
+      <member refid="classmuda_1_1_stream_1ac8fa61299e86eefd7a9990df5d1b5caf" prot="public" virt="non-virtual"><scope>muda::Stream</scope><name>Flag</name></member>
+      <member refid="classmuda_1_1_stream_1ac7e8ebdf8dcb36a4dc5d7513eafd1e7a" prot="private" virt="non-virtual"><scope>muda::Stream</scope><name>m_handle</name></member>
+      <member refid="classmuda_1_1_stream_1ab762b20728c60b38c7d3166749aceda9" prot="private" virt="non-virtual"><scope>muda::Stream</scope><name>m_workspace</name></member>
+      <member refid="classmuda_1_1_stream_1a6ecc721af59e4ec8fef8f0aa9f365ced" prot="public" virt="non-virtual"><scope>muda::Stream</scope><name>operator cudaStream_t</name></member>
+      <member refid="classmuda_1_1_stream_1a567b095dc7fa64a7451a62318d238c84" prot="public" virt="non-virtual"><scope>muda::Stream</scope><name>operator=</name></member>
+      <member refid="classmuda_1_1_stream_1a5a7d451d08abdbc3740568398da9adbc" prot="public" virt="non-virtual"><scope>muda::Stream</scope><name>operator=</name></member>
+      <member refid="classmuda_1_1_stream_1a8c2a31fa186416b644a34839d05724b7" prot="public" virt="non-virtual"><scope>muda::Stream</scope><name>Stream</name></member>
+      <member refid="classmuda_1_1_stream_1a3b55c18c918c785cb83e42a14b3c0973" prot="public" virt="non-virtual"><scope>muda::Stream</scope><name>Stream</name></member>
+      <member refid="classmuda_1_1_stream_1a37e83880351c444fe3d8d1b5295b69f9" prot="public" virt="non-virtual"><scope>muda::Stream</scope><name>Stream</name></member>
+      <member refid="classmuda_1_1_stream_1ae558717d86db14e2ddddbce5b94350c5" prot="private" virt="non-virtual"><scope>muda::Stream</scope><name>Stream</name></member>
+      <member refid="classmuda_1_1_stream_1aa03cb6cddf50c796510d8d815fb4285d" prot="public" virt="non-virtual"><scope>muda::Stream</scope><name>view</name></member>
+      <member refid="classmuda_1_1_stream_1a7b19f1a1b64d8a3a858dbf5beb939c7b" prot="public" virt="non-virtual"><scope>muda::Stream</scope><name>wait</name></member>
+      <member refid="classmuda_1_1_stream_1addef0f6d99396012ba3b9e1131831583" prot="public" virt="non-virtual"><scope>muda::Stream</scope><name>workspace</name></member>
+      <member refid="classmuda_1_1_stream_1a4cffc45a0ab362b9c287b2457052a0a5" prot="public" virt="non-virtual"><scope>muda::Stream</scope><name>~Stream</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

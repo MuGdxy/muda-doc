@@ -1,0 +1,69 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="namespacemuda_1_1details_1_1stream" kind="namespace" language="C++">
+    <compoundname>muda::details::stream</compoundname>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="stream__define_8h_1a0326eeced8b5b9d4d9088d11512809bd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>MUDA_INLINE MUDA_GENERIC cudaStream_t</type>
+        <definition>MUDA_INLINE MUDA_GENERIC cudaStream_t muda::details::stream::graph_tail_launch</definition>
+        <argsstring>()</argsstring>
+        <name>graph_tail_launch</name>
+        <qualifiedname>muda::details::stream::graph_tail_launch</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/launch/stream_define.h" line="26" column="39" bodyfile="src/muda/launch/stream_define.h" bodystart="26" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="stream__define_8h_1a724be720674d88597fc96c84e20c837f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>MUDA_INLINE MUDA_GENERIC cudaStream_t</type>
+        <definition>MUDA_INLINE MUDA_GENERIC cudaStream_t muda::details::stream::graph_fire_and_forget</definition>
+        <argsstring>()</argsstring>
+        <name>graph_fire_and_forget</name>
+        <qualifiedname>muda::details::stream::graph_fire_and_forget</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/launch/stream_define.h" line="30" column="39" bodyfile="src/muda/launch/stream_define.h" bodystart="30" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="function" id="stream__define_8h_1a1782af703d5f67e349e37730bdc712b6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>MUDA_INLINE MUDA_GENERIC cudaStream_t</type>
+        <definition>MUDA_INLINE MUDA_GENERIC cudaStream_t muda::details::stream::tail_launch</definition>
+        <argsstring>()</argsstring>
+        <name>tail_launch</name>
+        <qualifiedname>muda::details::stream::tail_launch</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/launch/stream_define.h" line="34" column="39" bodyfile="src/muda/launch/stream_define.h" bodystart="34" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="function" id="stream__define_8h_1a770b0b0e0d44b577c1a3d20d328bdb01" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>MUDA_INLINE MUDA_GENERIC cudaStream_t</type>
+        <definition>MUDA_INLINE MUDA_GENERIC cudaStream_t muda::details::stream::fire_and_forget</definition>
+        <argsstring>()</argsstring>
+        <name>fire_and_forget</name>
+        <qualifiedname>muda::details::stream::fire_and_forget</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/launch/stream_define.h" line="38" column="39" bodyfile="src/muda/launch/stream_define.h" bodystart="38" bodyend="41"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/muda/launch/stream_define.h" line="6" column="1"/>
+  </compounddef>
+</doxygen>

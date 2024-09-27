@@ -1,0 +1,110 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="common_8h" kind="file" language="C++">
+    <compoundname>common.h</compoundname>
+    <includes refid="muda__def_8h" local="no">muda/muda_def.h</includes>
+    <includedby refid="csr__matrix__view_8h" local="no">src/muda/ext/linear_system/csr_matrix_view.h</includedby>
+    <incdepgraph>
+      <node id="6">
+        <label>cuda_runtime.h</label>
+        <link refid="cuda__runtime_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>cuda_runtime_api.h</label>
+        <link refid="cuda__runtime__api_8h_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>src/muda/ext/linear_system/common.h</label>
+        <link refid="common_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>muda/muda_config.h</label>
+        <link refid="muda__config_8h_source"/>
+      </node>
+      <node id="2">
+        <label>muda/muda_def.h</label>
+        <link refid="muda__def_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>muda/tools/platform.h</label>
+        <link refid="platform_8h_source"/>
+      </node>
+      <node id="5">
+        <label>cuda.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="3">
+        <label>src/muda/ext/linear_system.h</label>
+        <link refid="linear__system_8h_source"/>
+      </node>
+      <node id="1">
+        <label>src/muda/ext/linear_system/common.h</label>
+        <link refid="common_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>src/muda/ext/linear_system/csr_matrix_view.h</label>
+        <link refid="csr__matrix__view_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>src/muda/ext/linear_system/device_csr_matrix.h</label>
+        <link refid="device__csr__matrix_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>src/muda/ext/linear_system/linear_system_context.h</label>
+        <link refid="linear__system__context_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>src/muda/ext/linear_system/matrix_format_converter.h</label>
+        <link refid="matrix__format__converter_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>src/muda/ext/linear_system/matrix_format_converter_impl.h</label>
+        <link refid="matrix__format__converter__impl_8h_source"/>
+      </node>
+    </invincdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;muda/muda_def.h&gt;</highlight></codeline>
+    </programlisting>
+    <location file="src/muda/ext/linear_system/common.h"/>
+  </compounddef>
+</doxygen>

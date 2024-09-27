@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="namespacemuda_1_1details_1_1field" kind="namespace" language="C++">
+    <compoundname>muda::details::field</compoundname>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="field__entry__viewer_8h_1ae26efac215a4cd477f35c266c1e990a6" prot="public" static="no">
+        <type>Eigen::Stride&lt; Eigen::Dynamic, Eigen::Dynamic &gt;</type>
+        <definition>using muda::details::field::MatStride = typedef Eigen::Stride&lt;Eigen::Dynamic, Eigen::Dynamic&gt;</definition>
+        <argsstring></argsstring>
+        <name>MatStride</name>
+        <qualifiedname>muda::details::field::MatStride</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/field/field_entry_viewer.h" line="14" column="5" bodyfile="src/muda/ext/field/field_entry_viewer.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="field__entry__viewer_8h_1a2042050d7195b1eba26ff80b096fd21f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+          <param>
+            <type>FieldEntryLayout</type>
+            <declname>Layout</declname>
+            <defname>Layout</defname>
+          </param>
+          <param>
+            <type>int</type>
+            <declname>M</declname>
+            <defname>M</defname>
+          </param>
+          <param>
+            <type>int</type>
+            <declname>N</declname>
+            <defname>N</defname>
+          </param>
+        </templateparamlist>
+        <type>MUDA_GENERIC MatStride</type>
+        <definition>MUDA_GENERIC MatStride muda::details::field::make_stride</definition>
+        <argsstring>(const FieldEntryCore &amp;core)</argsstring>
+        <name>make_stride</name>
+        <qualifiedname>muda::details::field::make_stride</qualifiedname>
+        <param>
+          <type>const <ref refid="classmuda_1_1_field_entry_core" kindref="compound">FieldEntryCore</ref> &amp;</type>
+          <declname>core</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/field/field_entry_viewer.h" line="16" column="28" bodyfile="src/muda/ext/field/field_entry_viewer.h" bodystart="16" bodyend="37"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/muda/ext/field/field_entry_viewer.h" line="12" column="1"/>
+  </compounddef>
+</doxygen>

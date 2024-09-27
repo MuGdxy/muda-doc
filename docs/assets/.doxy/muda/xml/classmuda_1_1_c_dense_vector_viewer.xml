@@ -1,0 +1,239 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classmuda_1_1_c_dense_vector_viewer" kind="class" language="C++" prot="public">
+    <compoundname>muda::CDenseVectorViewer</compoundname>
+    <basecompoundref refid="classmuda_1_1_dense_vector_viewer_base" prot="public" virt="non-virtual">muda::DenseVectorViewerBase&lt; true, T &gt;</basecompoundref>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="private-type">
+      <memberdef kind="typedef" id="classmuda_1_1_c_dense_vector_viewer_1ab194c2631a813fbab610bf829e7bec6f" prot="private" static="no">
+        <type><ref refid="classmuda_1_1_dense_vector_viewer_base" kindref="compound">DenseVectorViewerBase</ref>&lt; true, T &gt;</type>
+        <definition>using muda::CDenseVectorViewer&lt; T &gt;::Base =  DenseVectorViewerBase&lt;true, T&gt;</definition>
+        <argsstring></argsstring>
+        <name>Base</name>
+        <qualifiedname>muda::CDenseVectorViewer::Base</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/dense_vector_viewer.h" line="176" column="5" bodyfile="src/muda/ext/linear_system/dense_vector_viewer.h" bodystart="176" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classmuda_1_1_c_dense_vector_viewer_1a8b9645965f595f28c22c57c9c0b28619" prot="private" static="no">
+        <type>typename Base::MapVector</type>
+        <definition>using muda::CDenseVectorViewer&lt; T &gt;::MapVector =  typename Base::MapVector</definition>
+        <argsstring></argsstring>
+        <name>MapVector</name>
+        <qualifiedname>muda::CDenseVectorViewer::MapVector</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/dense_vector_viewer.h" line="177" column="5" bodyfile="src/muda/ext/linear_system/dense_vector_viewer.h" bodystart="177" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classmuda_1_1_c_dense_vector_viewer_1af4d89ba4de38a93cb40485b093dd8789" prot="private" static="no">
+        <type>typename Base::CMapVector</type>
+        <definition>using muda::CDenseVectorViewer&lt; T &gt;::CMapVector =  typename Base::CMapVector</definition>
+        <argsstring></argsstring>
+        <name>CMapVector</name>
+        <qualifiedname>muda::CDenseVectorViewer::CMapVector</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/dense_vector_viewer.h" line="178" column="5" bodyfile="src/muda/ext/linear_system/dense_vector_viewer.h" bodystart="178" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classmuda_1_1_c_dense_vector_viewer_1a02fce734ea7123347ca6f795a6237af6" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>muda::CDenseVectorViewer&lt; T &gt;::MUDA_VIEWER_COMMON_NAME</definition>
+        <argsstring>(CDenseVectorViewer)</argsstring>
+        <name>MUDA_VIEWER_COMMON_NAME</name>
+        <qualifiedname>muda::CDenseVectorViewer::MUDA_VIEWER_COMMON_NAME</qualifiedname>
+        <param>
+          <type><ref refid="classmuda_1_1_c_dense_vector_viewer" kindref="compound">CDenseVectorViewer</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/dense_vector_viewer.h" line="174" column="5"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmuda_1_1_c_dense_vector_viewer_1ab00d376dc7b8280e2d14562532fe37b0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>MUDA_GENERIC</type>
+        <definition>MUDA_GENERIC muda::CDenseVectorViewer&lt; T &gt;::CDenseVectorViewer</definition>
+        <argsstring>(const Base &amp;base)</argsstring>
+        <name>CDenseVectorViewer</name>
+        <qualifiedname>muda::CDenseVectorViewer::CDenseVectorViewer</qualifiedname>
+        <param>
+          <type>const <ref refid="classmuda_1_1_dense_vector_viewer_base" kindref="compound">Base</ref> &amp;</type>
+          <declname>base</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/dense_vector_viewer.h" line="183" column="18" bodyfile="src/muda/ext/linear_system/dense_vector_viewer.h" bodystart="183" bodyend="186"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_c_dense_vector_viewer_1a27d0dc9d1a1d56dde818323c41900ae2" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>MUDA_GENERIC <ref refid="classmuda_1_1_c_dense_vector_viewer" kindref="compound">CDenseVectorViewer</ref></type>
+        <definition>MUDA_GENERIC CDenseVectorViewer muda::CDenseVectorViewer&lt; T &gt;::segment</definition>
+        <argsstring>(int offset, int size) const</argsstring>
+        <name>segment</name>
+        <qualifiedname>muda::CDenseVectorViewer::segment</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>offset</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/dense_vector_viewer.h" line="188" column="37" bodyfile="src/muda/ext/linear_system/dense_vector_viewer.h" bodystart="188" bodyend="191"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_c_dense_vector_viewer_1a484076b2f45f9f4ad0b659db82770202" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>int</type>
+            <declname>N</declname>
+            <defname>N</defname>
+          </param>
+        </templateparamlist>
+        <type>MUDA_GENERIC auto</type>
+        <definition>MUDA_GENERIC auto muda::CDenseVectorViewer&lt; T &gt;::segment</definition>
+        <argsstring>(int offset) const</argsstring>
+        <name>segment</name>
+        <qualifiedname>muda::CDenseVectorViewer::segment</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>offset</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/dense_vector_viewer.h" line="194" column="23" bodyfile="src/muda/ext/linear_system/dense_vector_viewer.h" bodystart="194" bodyend="197"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>muda::DenseVectorViewerBase&lt; true, T &gt;</label>
+        <link refid="classmuda_1_1_dense_vector_viewer_base"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>muda::ViewerBase&lt; IsConst &gt;</label>
+        <link refid="classmuda_1_1_viewer_base"/>
+      </node>
+      <node id="1">
+        <label>muda::CDenseVectorViewer&lt; T &gt;</label>
+        <link refid="classmuda_1_1_c_dense_vector_viewer"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>muda::DenseVectorViewerBase&lt; true, T &gt;</label>
+        <link refid="classmuda_1_1_dense_vector_viewer_base"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>muda::ViewerBase&lt; IsConst &gt;</label>
+        <link refid="classmuda_1_1_viewer_base"/>
+      </node>
+      <node id="1">
+        <label>muda::CDenseVectorViewer&lt; T &gt;</label>
+        <link refid="classmuda_1_1_c_dense_vector_viewer"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="src/muda/ext/linear_system/dense_vector_viewer.h" line="172" column="1" bodyfile="src/muda/ext/linear_system/dense_vector_viewer.h" bodystart="173" bodyend="198"/>
+    <listofallmembers>
+      <member refid="classmuda_1_1_dense_vector_viewer_base_1a225f3d8f0280fa4e5485bc30c5a307e1" prot="public" virt="non-virtual"><scope>muda::CDenseVectorViewer</scope><name>as_const</name></member>
+      <member refid="classmuda_1_1_dense_vector_viewer_base_1aae9a43e75ea336964992857afa299dea" prot="public" virt="non-virtual"><scope>muda::CDenseVectorViewer</scope><name>as_eigen</name></member>
+      <member refid="classmuda_1_1_dense_vector_viewer_base_1aa7e23b9cc6ad44a54d94e7949d1280d1" prot="public" virt="non-virtual"><scope>muda::CDenseVectorViewer</scope><name>as_eigen</name></member>
+      <member refid="classmuda_1_1_c_dense_vector_viewer_1ab194c2631a813fbab610bf829e7bec6f" prot="private" virt="non-virtual"><scope>muda::CDenseVectorViewer</scope><name>Base</name></member>
+      <member refid="classmuda_1_1_dense_vector_viewer_base_1a445f4bc2481747062d2d28664f6669d9" prot="public" virt="non-virtual"><scope>muda::CDenseVectorViewer</scope><name>BufferView</name></member>
+      <member refid="classmuda_1_1_dense_vector_viewer_base_1acbce7359c397b1d8a1162ba5e779db2f" prot="public" virt="non-virtual"><scope>muda::CDenseVectorViewer</scope><name>CBufferView</name></member>
+      <member refid="classmuda_1_1_c_dense_vector_viewer_1ab00d376dc7b8280e2d14562532fe37b0" prot="public" virt="non-virtual"><scope>muda::CDenseVectorViewer</scope><name>CDenseVectorViewer</name></member>
+      <member refid="classmuda_1_1_dense_vector_viewer_base_1a6f8eea59dc5022bfcaa58d31172761fe" prot="protected" virt="non-virtual"><scope>muda::CDenseVectorViewer</scope><name>check_data</name></member>
+      <member refid="classmuda_1_1_dense_vector_viewer_base_1a5680c71ee9cbfcb691b815d34168d5d7" prot="protected" virt="non-virtual"><scope>muda::CDenseVectorViewer</scope><name>check_segment</name></member>
+      <member refid="classmuda_1_1_dense_vector_viewer_base_1a3aed0f70a8fe38520b77d5fb0d14c673" prot="protected" virt="non-virtual"><scope>muda::CDenseVectorViewer</scope><name>check_size_matching</name></member>
+      <member refid="classmuda_1_1_c_dense_vector_viewer_1af4d89ba4de38a93cb40485b093dd8789" prot="private" virt="non-virtual"><scope>muda::CDenseVectorViewer</scope><name>CMapVector</name></member>
+      <member refid="classmuda_1_1_dense_vector_viewer_base_1a0922491a4384ac255ab83fa03ba7177a" prot="public" virt="non-virtual"><scope>muda::CDenseVectorViewer</scope><name>ConstViewer</name></member>
+      <member refid="classmuda_1_1_viewer_base_1a1e3c7201751bec476d5f9b9c26be94b5" prot="public" virt="non-virtual"><scope>muda::CDenseVectorViewer</scope><name>copy_label</name></member>
+      <member refid="classmuda_1_1_dense_vector_viewer_base_1a1ca34af9db9c866aa9665a0bbad3f604" prot="public" virt="non-virtual"><scope>muda::CDenseVectorViewer</scope><name>DenseVectorViewerBase</name></member>
+      <member refid="classmuda_1_1_dense_vector_viewer_base_1ad7e820703b2f6ffb93faf20c9cb8e4f0" prot="protected" virt="non-virtual"><scope>muda::CDenseVectorViewer</scope><name>index</name></member>
+      <member refid="classmuda_1_1_viewer_base_1ae9e7348b91c4dc1f3fc0de8e63335576" prot="public" virt="non-virtual"><scope>muda::CDenseVectorViewer</scope><name>IsConst</name></member>
+      <member refid="classmuda_1_1_viewer_base_1adc31410f57cf34b15824f4f3fcb434a3" prot="public" virt="non-virtual"><scope>muda::CDenseVectorViewer</scope><name>IsNonConst</name></member>
+      <member refid="classmuda_1_1_viewer_base_1a35b42fb3c890f8343c551451bceab3f1" prot="public" virt="non-virtual"><scope>muda::CDenseVectorViewer</scope><name>kernel_file</name></member>
+      <member refid="classmuda_1_1_viewer_base_1a3247ca184afa57b2e00f8da9e080a2a1" prot="public" virt="non-virtual"><scope>muda::CDenseVectorViewer</scope><name>kernel_line</name></member>
+      <member refid="classmuda_1_1_viewer_base_1a9b65192d349fd93c05c8ccad4d4014d4" prot="public" virt="non-virtual"><scope>muda::CDenseVectorViewer</scope><name>kernel_name</name></member>
+      <member refid="classmuda_1_1_dense_vector_viewer_base_1a4fee40ce55c88e09dae5cab2a307987e" prot="protected" virt="non-virtual"><scope>muda::CDenseVectorViewer</scope><name>m_data</name></member>
+      <member refid="classmuda_1_1_dense_vector_viewer_base_1adbfc6fad926df0cf709fdd97602ac031" prot="protected" virt="non-virtual"><scope>muda::CDenseVectorViewer</scope><name>m_offset</name></member>
+      <member refid="classmuda_1_1_dense_vector_viewer_base_1abd15e3bdf6aa2abb6163df6d45ac0f7f" prot="protected" virt="non-virtual"><scope>muda::CDenseVectorViewer</scope><name>m_origin_size</name></member>
+      <member refid="classmuda_1_1_dense_vector_viewer_base_1a3d732d0a4ca79f5d5ba90f9f292963cc" prot="protected" virt="non-virtual"><scope>muda::CDenseVectorViewer</scope><name>m_size</name></member>
+      <member refid="classmuda_1_1_c_dense_vector_viewer_1a8b9645965f595f28c22c57c9c0b28619" prot="private" virt="non-virtual"><scope>muda::CDenseVectorViewer</scope><name>MapVector</name></member>
+      <member refid="classmuda_1_1_dense_vector_viewer_base_1aefb99b1ff5fac338e9ad4a85f2560ae1" prot="public" virt="non-virtual"><scope>muda::CDenseVectorViewer</scope><name>MapVectorT</name></member>
+      <member refid="classmuda_1_1_c_dense_vector_viewer_1a02fce734ea7123347ca6f795a6237af6" prot="private" virt="non-virtual"><scope>muda::CDenseVectorViewer</scope><name>MUDA_VIEWER_COMMON_NAME</name></member>
+      <member refid="classmuda_1_1_viewer_base_1a4cb1c578b4abbf1b113e9cf7a3d771d8" prot="public" virt="non-virtual"><scope>muda::CDenseVectorViewer</scope><name>name</name></member>
+      <member refid="classmuda_1_1_viewer_base_1a57bbb7a9a3e4cb77a0a05bdee3a3e5fd" prot="protected" virt="non-virtual"><scope>muda::CDenseVectorViewer</scope><name>name</name></member>
+      <member refid="classmuda_1_1_viewer_base_1a31d6dd944a28c6d428e5e79cd7c034a0" prot="protected" virt="non-virtual"><scope>muda::CDenseVectorViewer</scope><name>name</name></member>
+      <member refid="classmuda_1_1_viewer_base_1a9447a51a53c20567fcb38fcdc275d812" prot="protected" virt="non-virtual"><scope>muda::CDenseVectorViewer</scope><name>non_const_enable_t</name></member>
+      <member refid="classmuda_1_1_dense_vector_viewer_base_1aa5d4369b9ac786a055b530c7e920fdcf" prot="public" virt="non-virtual"><scope>muda::CDenseVectorViewer</scope><name>NonConstViewer</name></member>
+      <member refid="classmuda_1_1_dense_vector_viewer_base_1ae91cc67dc5987c7b5127b767e259c36c" prot="public" virt="non-virtual"><scope>muda::CDenseVectorViewer</scope><name>offset</name></member>
+      <member refid="classmuda_1_1_dense_vector_viewer_base_1a0b2b533dc457b5ca213eeab9735efa9f" prot="public" virt="non-virtual"><scope>muda::CDenseVectorViewer</scope><name>operator ConstViewer</name></member>
+      <member refid="classmuda_1_1_dense_vector_viewer_base_1a3a50362e450f77bf274481224efb890f" prot="public" virt="non-virtual"><scope>muda::CDenseVectorViewer</scope><name>operator Eigen::VectorBlock&lt; CMapVector &gt;</name></member>
+      <member refid="classmuda_1_1_dense_vector_viewer_base_1a5e964ec748aee40270c67bdda49d52e0" prot="public" virt="non-virtual"><scope>muda::CDenseVectorViewer</scope><name>operator Eigen::VectorBlock&lt; ThisMapVector &gt;</name></member>
+      <member refid="classmuda_1_1_dense_vector_viewer_base_1a5de94070c899753350f6304ff113bc8a" prot="public" virt="non-virtual"><scope>muda::CDenseVectorViewer</scope><name>operator()</name></member>
+      <member refid="classmuda_1_1_dense_vector_viewer_base_1a1e19d49f91a96ac4476d407a957add62" prot="public" virt="non-virtual"><scope>muda::CDenseVectorViewer</scope><name>operator()</name></member>
+      <member refid="classmuda_1_1_viewer_base_1a8ce13df13b4a82e63c7a6230ee1e0b7c" prot="public" virt="non-virtual"><scope>muda::CDenseVectorViewer</scope><name>operator=</name></member>
+      <member refid="classmuda_1_1_viewer_base_1ac73a737a8a64ff2026adcd7bc5f2738a" prot="public" virt="non-virtual"><scope>muda::CDenseVectorViewer</scope><name>operator=</name></member>
+      <member refid="classmuda_1_1_dense_vector_viewer_base_1a775ef9be0dc4d52b0b96f90f20d697d8" prot="public" virt="non-virtual"><scope>muda::CDenseVectorViewer</scope><name>origin_data</name></member>
+      <member refid="classmuda_1_1_dense_vector_viewer_base_1a2d1947de30bfe9e3b60e949e4ac6cac5" prot="public" virt="non-virtual"><scope>muda::CDenseVectorViewer</scope><name>origin_size</name></member>
+      <member refid="classmuda_1_1_c_dense_vector_viewer_1a27d0dc9d1a1d56dde818323c41900ae2" prot="public" virt="non-virtual"><scope>muda::CDenseVectorViewer</scope><name>segment</name></member>
+      <member refid="classmuda_1_1_c_dense_vector_viewer_1a484076b2f45f9f4ad0b659db82770202" prot="public" virt="non-virtual"><scope>muda::CDenseVectorViewer</scope><name>segment</name></member>
+      <member refid="classmuda_1_1_dense_vector_viewer_base_1af80559c8394fa6aaa130acd5269b7977" prot="public" virt="non-virtual" ambiguityscope="DenseVectorViewerBase&lt; true, T &gt;::"><scope>muda::CDenseVectorViewer</scope><name>segment</name></member>
+      <member refid="classmuda_1_1_dense_vector_viewer_base_1a0dfafde6e584e3497c3685ec7bdf2989" prot="public" virt="non-virtual" ambiguityscope="DenseVectorViewerBase&lt; true, T &gt;::"><scope>muda::CDenseVectorViewer</scope><name>segment</name></member>
+      <member refid="classmuda_1_1_dense_vector_viewer_base_1a2c5d5973026415b2c7fe7ec4173a2848" prot="public" virt="non-virtual"><scope>muda::CDenseVectorViewer</scope><name>size</name></member>
+      <member refid="classmuda_1_1_dense_vector_viewer_base_1a78d9fdd55b6529e30190dcae500e2752" prot="public" virt="non-virtual"><scope>muda::CDenseVectorViewer</scope><name>ThisBufferView</name></member>
+      <member refid="classmuda_1_1_dense_vector_viewer_base_1a8f1d80e8684d157b407166bb6d86b921" prot="public" virt="non-virtual"><scope>muda::CDenseVectorViewer</scope><name>ThisMapVector</name></member>
+      <member refid="classmuda_1_1_dense_vector_viewer_base_1a97ff159a3dd95d7000fdc92e275c51c6" prot="public" virt="non-virtual"><scope>muda::CDenseVectorViewer</scope><name>ThisViewer</name></member>
+      <member refid="classmuda_1_1_dense_vector_viewer_base_1abfc0689a8730979ca8a3f3b25b33070b" prot="public" virt="non-virtual"><scope>muda::CDenseVectorViewer</scope><name>VectorType</name></member>
+      <member refid="classmuda_1_1_viewer_base_1aab07b74590e3ae50b1352372f66080f8" prot="public" virt="non-virtual"><scope>muda::CDenseVectorViewer</scope><name>ViewerBase</name></member>
+      <member refid="classmuda_1_1_viewer_base_1aac0b5cbd86bfb6653c7dddeac2907428" prot="public" virt="non-virtual"><scope>muda::CDenseVectorViewer</scope><name>ViewerBase</name></member>
+      <member refid="classmuda_1_1_viewer_base_1a70b803f760ff21c327b454f7c9fc0ef3" prot="public" virt="non-virtual"><scope>muda::CDenseVectorViewer</scope><name>ViewerBase</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

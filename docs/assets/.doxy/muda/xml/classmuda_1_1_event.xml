@@ -1,0 +1,296 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classmuda_1_1_event" kind="class" language="C++" prot="public">
+    <compoundname>muda::Event</compoundname>
+    <includes refid="event_8h" local="no">event.h</includes>
+    <sectiondef kind="public-type">
+      <memberdef kind="enum" id="classmuda_1_1_event_1a7ca17adc9aaca909fe5746f2038ca616" prot="public" static="no" strong="yes">
+        <type>unsigned int</type>
+        <name>Bit</name>
+        <qualifiedname>muda::Event::Bit</qualifiedname>
+        <enumvalue id="classmuda_1_1_event_1a7ca17adc9aaca909fe5746f2038ca616aaf71f03861810014d736fcbae9d6050e" prot="public">
+          <name>eDefault</name>
+          <initializer>= cudaEventDefault</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para><ref refid="structmuda_1_1_default" kindref="compound">Default</ref> event flag </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classmuda_1_1_event_1a7ca17adc9aaca909fe5746f2038ca616a219ad5a29e618bfda2d02102489f93df" prot="public">
+          <name>eBlockingSync</name>
+          <initializer>= cudaEventBlockingSync</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para><ref refid="classmuda_1_1_event" kindref="compound">Event</ref> uses blocking synchronization </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classmuda_1_1_event_1a7ca17adc9aaca909fe5746f2038ca616aaed2a729f95357834a9d1a45b20a6c44" prot="public">
+          <name>eDisableTiming</name>
+          <initializer>= cudaEventDisableTiming</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para><ref refid="classmuda_1_1_event" kindref="compound">Event</ref> will not record timing data </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classmuda_1_1_event_1a7ca17adc9aaca909fe5746f2038ca616ae94ae7e2b22bcd95e013b2b9cd4ae1f3" prot="public">
+          <name>eInterprocess</name>
+          <initializer>= cudaEventInterprocess</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para><ref refid="classmuda_1_1_event" kindref="compound">Event</ref> is suitable for interprocess use. cudaEventDisableTiming must be set </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/launch/event.h" line="19" column="5" bodyfile="src/muda/launch/event.h" bodystart="20" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="enum" id="classmuda_1_1_event_1a10353d955722c45690bba5841eace3f1" prot="public" static="no" strong="yes">
+        <type></type>
+        <name>QueryResult</name>
+        <qualifiedname>muda::Event::QueryResult</qualifiedname>
+        <enumvalue id="classmuda_1_1_event_1a10353d955722c45690bba5841eace3f1aa3407aaa3c024bffb7f22b326dfbba1b" prot="public">
+          <name>eFinished</name>
+          <initializer>= cudaSuccess</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>The event has been recorded </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classmuda_1_1_event_1a10353d955722c45690bba5841eace3f1a263738e8a79018589c9e21d776e711ff" prot="public">
+          <name>eNotReady</name>
+          <initializer>= cudaErrorNotReady</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>The event has not been recorded yet </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/launch/event.h" line="27" column="5" bodyfile="src/muda/launch/event.h" bodystart="28" bodyend="31"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classmuda_1_1_event_1a6f8875c1e4cdc96cc183a8d69ae1b016" prot="private" static="no" mutable="no">
+        <type>cudaEvent_t</type>
+        <definition>cudaEvent_t muda::Event::m_handle</definition>
+        <argsstring></argsstring>
+        <name>m_handle</name>
+        <qualifiedname>muda::Event::m_handle</qualifiedname>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/launch/event.h" line="16" column="17" bodyfile="src/muda/launch/event.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmuda_1_1_event_1a3b782c9c1e2b3dd396ddcf0a7adea47b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>muda::Event::Event</definition>
+        <argsstring>(Flags&lt; Bit &gt; flag=Bit::eDisableTiming)</argsstring>
+        <name>Event</name>
+        <qualifiedname>muda::Event::Event</qualifiedname>
+        <param>
+          <type><ref refid="classmuda_1_1_flags" kindref="compound">Flags</ref>&lt; <ref refid="classmuda_1_1_event_1a7ca17adc9aaca909fe5746f2038ca616" kindref="member">Bit</ref> &gt;</type>
+          <declname>flag</declname>
+          <defval><ref refid="classmuda_1_1_event_1a7ca17adc9aaca909fe5746f2038ca616aaed2a729f95357834a9d1a45b20a6c44" kindref="member">Bit::eDisableTiming</ref></defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/launch/event.h" line="33" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_event_1a8a521d7e5c7bf6917d7ed85090029131" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>muda::Event::~Event</definition>
+        <argsstring>()</argsstring>
+        <name>~Event</name>
+        <qualifiedname>muda::Event::~Event</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/launch/event.h" line="34" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_event_1a445c58d02075564677f20f6306b80198" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classmuda_1_1_event_1a10353d955722c45690bba5841eace3f1" kindref="member">QueryResult</ref></type>
+        <definition>QueryResult muda::Event::query</definition>
+        <argsstring>() const</argsstring>
+        <name>query</name>
+        <qualifiedname>muda::Event::query</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/launch/event.h" line="36" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_event_1a1764e36d82b7cac71f8445c25ca29d5a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>muda::Event::operator cudaEvent_t</definition>
+        <argsstring>()</argsstring>
+        <name>operator cudaEvent_t</name>
+        <qualifiedname>muda::Event::operator cudaEvent_t</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/launch/event.h" line="40" column="5" bodyfile="src/muda/launch/event.h" bodystart="40" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_event_1a11babe3ccf7783db6e5a56edf0093812" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>cudaEvent_t</type>
+        <definition>cudaEvent_t muda::Event::viewer</definition>
+        <argsstring>() const</argsstring>
+        <name>viewer</name>
+        <qualifiedname>muda::Event::viewer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/launch/event.h" line="41" column="17" bodyfile="src/muda/launch/event.h" bodystart="41" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_event_1a0bd922c89981f1debaf5f6c2839c015b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>muda::Event::Event</definition>
+        <argsstring>(const Event &amp;)=delete</argsstring>
+        <name>Event</name>
+        <qualifiedname>muda::Event::Event</qualifiedname>
+        <param>
+          <type>const <ref refid="classmuda_1_1_event" kindref="compound">Event</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/launch/event.h" line="44" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_event_1a921cfb9b825520363484b2f38d28b375" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classmuda_1_1_event" kindref="compound">Event</ref> &amp;</type>
+        <definition>Event &amp; muda::Event::operator=</definition>
+        <argsstring>(const Event &amp;)=delete</argsstring>
+        <name>operator=</name>
+        <qualifiedname>muda::Event::operator=</qualifiedname>
+        <param>
+          <type>const <ref refid="classmuda_1_1_event" kindref="compound">Event</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/launch/event.h" line="45" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_event_1af2c3935183f1d65fa316fdaa95376806" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>muda::Event::Event</definition>
+        <argsstring>(Event &amp;&amp;o) MUDA_NOEXCEPT</argsstring>
+        <name>Event</name>
+        <qualifiedname>muda::Event::Event</qualifiedname>
+        <param>
+          <type><ref refid="classmuda_1_1_event" kindref="compound">Event</ref> &amp;&amp;</type>
+          <declname>o</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/launch/event.h" line="48" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_event_1a632b2a27040591684a616a48682f4ba0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classmuda_1_1_event" kindref="compound">Event</ref> &amp;</type>
+        <definition>Event &amp; muda::Event::operator=</definition>
+        <argsstring>(Event &amp;&amp;o) MUDA_NOEXCEPT</argsstring>
+        <name>operator=</name>
+        <qualifiedname>muda::Event::operator=</qualifiedname>
+        <param>
+          <type><ref refid="classmuda_1_1_event" kindref="compound">Event</ref> &amp;&amp;</type>
+          <declname>o</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/launch/event.h" line="50" column="11"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classmuda_1_1_event_1aba4c4b4ad865fb85d89ed054bef857ec" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>static float muda::Event::elapsed_time</definition>
+        <argsstring>(cudaEvent_t start, cudaEvent_t stop)</argsstring>
+        <name>elapsed_time</name>
+        <qualifiedname>muda::Event::elapsed_time</qualifiedname>
+        <param>
+          <type>cudaEvent_t</type>
+          <declname>start</declname>
+        </param>
+        <param>
+          <type>cudaEvent_t</type>
+          <declname>stop</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/launch/event.h" line="38" column="18"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>RAII wrapper for cudaEvent. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/muda/launch/event.h" line="14" column="1" bodyfile="src/muda/launch/event.h" bodystart="15" bodyend="51"/>
+    <listofallmembers>
+      <member refid="classmuda_1_1_event_1a7ca17adc9aaca909fe5746f2038ca616" prot="public" virt="non-virtual"><scope>muda::Event</scope><name>Bit</name></member>
+      <member refid="classmuda_1_1_event_1aba4c4b4ad865fb85d89ed054bef857ec" prot="public" virt="non-virtual"><scope>muda::Event</scope><name>elapsed_time</name></member>
+      <member refid="classmuda_1_1_event_1a3b782c9c1e2b3dd396ddcf0a7adea47b" prot="public" virt="non-virtual"><scope>muda::Event</scope><name>Event</name></member>
+      <member refid="classmuda_1_1_event_1a0bd922c89981f1debaf5f6c2839c015b" prot="public" virt="non-virtual"><scope>muda::Event</scope><name>Event</name></member>
+      <member refid="classmuda_1_1_event_1af2c3935183f1d65fa316fdaa95376806" prot="public" virt="non-virtual"><scope>muda::Event</scope><name>Event</name></member>
+      <member refid="classmuda_1_1_event_1a6f8875c1e4cdc96cc183a8d69ae1b016" prot="private" virt="non-virtual"><scope>muda::Event</scope><name>m_handle</name></member>
+      <member refid="classmuda_1_1_event_1a1764e36d82b7cac71f8445c25ca29d5a" prot="public" virt="non-virtual"><scope>muda::Event</scope><name>operator cudaEvent_t</name></member>
+      <member refid="classmuda_1_1_event_1a921cfb9b825520363484b2f38d28b375" prot="public" virt="non-virtual"><scope>muda::Event</scope><name>operator=</name></member>
+      <member refid="classmuda_1_1_event_1a632b2a27040591684a616a48682f4ba0" prot="public" virt="non-virtual"><scope>muda::Event</scope><name>operator=</name></member>
+      <member refid="classmuda_1_1_event_1a445c58d02075564677f20f6306b80198" prot="public" virt="non-virtual"><scope>muda::Event</scope><name>query</name></member>
+      <member refid="classmuda_1_1_event_1a10353d955722c45690bba5841eace3f1" prot="public" virt="non-virtual"><scope>muda::Event</scope><name>QueryResult</name></member>
+      <member refid="classmuda_1_1_event_1a11babe3ccf7783db6e5a56edf0093812" prot="public" virt="non-virtual"><scope>muda::Event</scope><name>viewer</name></member>
+      <member refid="classmuda_1_1_event_1a8a521d7e5c7bf6917d7ed85090029131" prot="public" virt="non-virtual"><scope>muda::Event</scope><name>~Event</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

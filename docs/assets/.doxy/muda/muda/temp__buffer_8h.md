@@ -1,0 +1,94 @@
+
+
+# File temp\_buffer.h
+
+
+
+[**FileList**](files.md) **>** [**muda**](dir_be047e8c00f93e2e88c2a417393a7f42.md) **>** [**tools**](dir_4d62fb1c1e2c9fb3fa1c4847a09b7b77.md) **>** [**temp\_buffer.h**](temp__buffer_8h.md)
+
+[Go to the source code of this file](temp__buffer_8h_source.md)
+
+
+
+* `#include <cuda_runtime.h>`
+* `#include <muda/check/check.h>`
+
+
+
+
+
+
+
+
+
+
+
+
+
+## Namespaces
+
+| Type | Name |
+| ---: | :--- |
+| namespace | [**muda**](namespacemuda.md) <br> |
+| namespace | [**details**](namespacemuda_1_1details.md) <br> |
+
+
+## Classes
+
+| Type | Name |
+| ---: | :--- |
+| class | [**TempBuffer**](classmuda_1_1details_1_1_temp_buffer.md) &lt;typename T&gt;<br> |
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+------------------------------
+The documentation for this class was generated from the following file `src/muda/tools/temp_buffer.h`
+

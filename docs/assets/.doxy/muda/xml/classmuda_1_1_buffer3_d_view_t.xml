@@ -1,0 +1,824 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classmuda_1_1_buffer3_d_view_t" kind="class" language="C++" prot="public">
+    <compoundname>muda::Buffer3DViewT</compoundname>
+    <basecompoundref refid="classmuda_1_1_view_base" prot="public" virt="non-virtual">muda::ViewBase&lt; IsConst &gt;</basecompoundref>
+    <templateparamlist>
+      <param>
+        <type>bool</type>
+        <declname>IsConst</declname>
+        <defname>IsConst</defname>
+      </param>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="private-type">
+      <memberdef kind="typedef" id="classmuda_1_1_buffer3_d_view_t_1a1a6658bc52ce8c8e48222c75b2c7e4c2" prot="private" static="no">
+        <type><ref refid="classmuda_1_1_view_base" kindref="compound">ViewBase</ref>&lt; IsConst &gt;</type>
+        <definition>using muda::Buffer3DViewT&lt; IsConst, T &gt;::Base =  ViewBase&lt;IsConst&gt;</definition>
+        <argsstring></argsstring>
+        <name>Base</name>
+        <qualifiedname>muda::Buffer3DViewT::Base</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/buffer_3d_view.h" line="16" column="5" bodyfile="src/muda/buffer/buffer_3d_view.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classmuda_1_1_buffer3_d_view_t_1ab1765dd23e95b746cf44f9293742febe" prot="private" static="no">
+        <templateparamlist>
+          <param>
+            <type>typename U</type>
+          </param>
+        </templateparamlist>
+        <type>typename Base::template auto_const_t&lt; U &gt;</type>
+        <definition>using muda::Buffer3DViewT&lt; IsConst, T &gt;::auto_const_t =  typename Base::template auto_const_t&lt;U&gt;</definition>
+        <argsstring></argsstring>
+        <name>auto_const_t</name>
+        <qualifiedname>muda::Buffer3DViewT::auto_const_t</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/buffer_3d_view.h" line="37" column="5" bodyfile="src/muda/buffer/buffer_3d_view.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classmuda_1_1_buffer3_d_view_t_1a00b1e1d731bd800e40f628c1b9304a5a" prot="public" static="no">
+        <type><ref refid="classmuda_1_1_buffer3_d_view_t" kindref="compound">Buffer3DViewT</ref>&lt; true, T &gt;</type>
+        <definition>using muda::Buffer3DViewT&lt; IsConst, T &gt;::ConstView =  Buffer3DViewT&lt;true, T&gt;</definition>
+        <argsstring></argsstring>
+        <name>ConstView</name>
+        <qualifiedname>muda::Buffer3DViewT::ConstView</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/buffer_3d_view.h" line="23" column="5" bodyfile="src/muda/buffer/buffer_3d_view.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classmuda_1_1_buffer3_d_view_t_1a3d90b771fd7b11603ccb2624090caaa5" prot="public" static="no">
+        <type><ref refid="classmuda_1_1_buffer3_d_view_t" kindref="compound">Buffer3DViewT</ref>&lt; false, T &gt;</type>
+        <definition>using muda::Buffer3DViewT&lt; IsConst, T &gt;::NonConstView =  Buffer3DViewT&lt;false, T&gt;</definition>
+        <argsstring></argsstring>
+        <name>NonConstView</name>
+        <qualifiedname>muda::Buffer3DViewT::NonConstView</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/buffer_3d_view.h" line="24" column="5" bodyfile="src/muda/buffer/buffer_3d_view.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classmuda_1_1_buffer3_d_view_t_1a344d62135636ae02942fefa1780ea1eb" prot="public" static="no">
+        <type><ref refid="classmuda_1_1_buffer3_d_view_t" kindref="compound">Buffer3DViewT</ref>&lt; IsConst, T &gt;</type>
+        <definition>using muda::Buffer3DViewT&lt; IsConst, T &gt;::ThisView =  Buffer3DViewT&lt;IsConst, T&gt;</definition>
+        <argsstring></argsstring>
+        <name>ThisView</name>
+        <qualifiedname>muda::Buffer3DViewT::ThisView</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/buffer_3d_view.h" line="25" column="5" bodyfile="src/muda/buffer/buffer_3d_view.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classmuda_1_1_buffer3_d_view_t_1a838a38a5a55ab54adfa1e96e6bc0fee2" prot="public" static="no">
+        <type><ref refid="classmuda_1_1_buffer3_d_view_t" kindref="compound">Buffer3DViewT</ref>&lt;!IsConst, T &gt;</type>
+        <definition>using muda::Buffer3DViewT&lt; IsConst, T &gt;::OtherView =  Buffer3DViewT&lt;!IsConst, T&gt;</definition>
+        <argsstring></argsstring>
+        <name>OtherView</name>
+        <qualifiedname>muda::Buffer3DViewT::OtherView</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/buffer_3d_view.h" line="26" column="5" bodyfile="src/muda/buffer/buffer_3d_view.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classmuda_1_1_buffer3_d_view_t_1a75c905c30152fe0c13ce8c85e52b7a55" prot="public" static="no">
+        <type><ref refid="classmuda_1_1_dense3_d_base" kindref="compound">CDense3D</ref>&lt; T &gt;</type>
+        <definition>using muda::Buffer3DViewT&lt; IsConst, T &gt;::CViewer =  CDense3D&lt;T&gt;</definition>
+        <argsstring></argsstring>
+        <name>CViewer</name>
+        <qualifiedname>muda::Buffer3DViewT::CViewer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/buffer_3d_view.h" line="28" column="5" bodyfile="src/muda/buffer/buffer_3d_view.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classmuda_1_1_buffer3_d_view_t_1a6c7e4182b77ab9d39b1ed6b2847d0647" prot="public" static="no">
+        <type><ref refid="classmuda_1_1_dense3_d_base" kindref="compound">Dense3D</ref>&lt; T &gt;</type>
+        <definition>using muda::Buffer3DViewT&lt; IsConst, T &gt;::Viewer =  Dense3D&lt;T&gt;</definition>
+        <argsstring></argsstring>
+        <name>Viewer</name>
+        <qualifiedname>muda::Buffer3DViewT::Viewer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/buffer_3d_view.h" line="29" column="5" bodyfile="src/muda/buffer/buffer_3d_view.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classmuda_1_1_buffer3_d_view_t_1a7a23b964221f64e089abeec35998bc5d" prot="public" static="no">
+        <type>std::conditional_t&lt; IsConst, <ref refid="classmuda_1_1_dense3_d_base" kindref="compound">CViewer</ref>, <ref refid="classmuda_1_1_dense3_d_base" kindref="compound">Viewer</ref> &gt;</type>
+        <definition>using muda::Buffer3DViewT&lt; IsConst, T &gt;::ThisViewer =  std::conditional_t&lt;IsConst, CViewer, Viewer&gt;</definition>
+        <argsstring></argsstring>
+        <name>ThisViewer</name>
+        <qualifiedname>muda::Buffer3DViewT::ThisViewer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/buffer_3d_view.h" line="30" column="5" bodyfile="src/muda/buffer/buffer_3d_view.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="friend">
+      <memberdef kind="friend" id="classmuda_1_1_buffer3_d_view_t_1a87eaec1f0cc3d4f02eb68edfafdb45bc" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>bool</type>
+            <declname>OtherIsConst</declname>
+            <defname>OtherIsConst</defname>
+          </param>
+          <param>
+            <type>typename U</type>
+          </param>
+        </templateparamlist>
+        <type>class</type>
+        <definition>friend class Buffer3DViewT</definition>
+        <argsstring></argsstring>
+        <name>Buffer3DViewT</name>
+        <qualifiedname>muda::Buffer3DViewT::Buffer3DViewT</qualifiedname>
+        <param>
+          <type><ref refid="classmuda_1_1_buffer3_d_view_t" kindref="compound">Buffer3DViewT</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/buffer_3d_view.h" line="19" column="18" bodyfile="src/muda/buffer/buffer_3d_view.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="classmuda_1_1_buffer3_d_view_t_1a3373c2e8cf6a6172637baf3c12d153ad" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class BufferLaunch</definition>
+        <argsstring></argsstring>
+        <name>BufferLaunch</name>
+        <qualifiedname>muda::Buffer3DViewT::BufferLaunch</qualifiedname>
+        <param>
+          <type><ref refid="classmuda_1_1_buffer_launch" kindref="compound">BufferLaunch</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/buffer_3d_view.h" line="33" column="18" bodyfile="src/muda/buffer/buffer_3d_view.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="classmuda_1_1_buffer3_d_view_t_1a0852785b9903802c18b00c889b3e08dc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class details::buffer::BufferInfoAccessor</definition>
+        <argsstring></argsstring>
+        <name>details::buffer::BufferInfoAccessor</name>
+        <qualifiedname>muda::Buffer3DViewT::BufferInfoAccessor</qualifiedname>
+        <param>
+          <type><ref refid="classmuda_1_1details_1_1buffer_1_1_buffer_info_accessor" kindref="compound">details::buffer::BufferInfoAccessor</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/buffer_3d_view.h" line="34" column="18" bodyfile="src/muda/buffer/buffer_3d_view.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classmuda_1_1_buffer3_d_view_t_1a1b3ca3b434ac4f4a1351cdeaa31e4271" prot="protected" static="no" mutable="no">
+        <type>auto_const_t&lt; T &gt; *</type>
+        <definition>auto_const_t&lt;T&gt;* muda::Buffer3DViewT&lt; IsConst, T &gt;::m_data</definition>
+        <argsstring></argsstring>
+        <name>m_data</name>
+        <qualifiedname>muda::Buffer3DViewT::m_data</qualifiedname>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/buffer_3d_view.h" line="40" column="18" bodyfile="src/muda/buffer/buffer_3d_view.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1_buffer3_d_view_t_1a1a208d6833fb128db8a7aaef582d69ca" prot="protected" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t muda::Buffer3DViewT&lt; IsConst, T &gt;::m_pitch_bytes</definition>
+        <argsstring></argsstring>
+        <name>m_pitch_bytes</name>
+        <qualifiedname>muda::Buffer3DViewT::m_pitch_bytes</qualifiedname>
+        <initializer>= ~0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/buffer_3d_view.h" line="41" column="22" bodyfile="src/muda/buffer/buffer_3d_view.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1_buffer3_d_view_t_1a2c9fcc9cb2f2526e8d4bd21f03d6adde" prot="protected" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t muda::Buffer3DViewT&lt; IsConst, T &gt;::m_pitch_bytes_area</definition>
+        <argsstring></argsstring>
+        <name>m_pitch_bytes_area</name>
+        <qualifiedname>muda::Buffer3DViewT::m_pitch_bytes_area</qualifiedname>
+        <initializer>= ~0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/buffer_3d_view.h" line="42" column="22" bodyfile="src/muda/buffer/buffer_3d_view.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1_buffer3_d_view_t_1ac4d07bd89d071b70522c7c79cdfae442" prot="protected" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t muda::Buffer3DViewT&lt; IsConst, T &gt;::m_origin_width</definition>
+        <argsstring></argsstring>
+        <name>m_origin_width</name>
+        <qualifiedname>muda::Buffer3DViewT::m_origin_width</qualifiedname>
+        <initializer>= ~0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/buffer_3d_view.h" line="43" column="22" bodyfile="src/muda/buffer/buffer_3d_view.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1_buffer3_d_view_t_1aa3f23a0baa7af0bad4ea076940b95878" prot="protected" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t muda::Buffer3DViewT&lt; IsConst, T &gt;::m_origin_height</definition>
+        <argsstring></argsstring>
+        <name>m_origin_height</name>
+        <qualifiedname>muda::Buffer3DViewT::m_origin_height</qualifiedname>
+        <initializer>= ~0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/buffer_3d_view.h" line="44" column="22" bodyfile="src/muda/buffer/buffer_3d_view.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1_buffer3_d_view_t_1a8bdd10b2ed9a2e7fe79fafe7486fbbdb" prot="protected" static="no" mutable="no">
+        <type><ref refid="classmuda_1_1_offset3_d" kindref="compound">Offset3D</ref></type>
+        <definition>Offset3D muda::Buffer3DViewT&lt; IsConst, T &gt;::m_offset</definition>
+        <argsstring></argsstring>
+        <name>m_offset</name>
+        <qualifiedname>muda::Buffer3DViewT::m_offset</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/buffer_3d_view.h" line="46" column="14" bodyfile="src/muda/buffer/buffer_3d_view.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1_buffer3_d_view_t_1ab1bbef5641d766e0736f99a36edcca68" prot="protected" static="no" mutable="no">
+        <type><ref refid="classmuda_1_1_extent3_d" kindref="compound">Extent3D</ref></type>
+        <definition>Extent3D muda::Buffer3DViewT&lt; IsConst, T &gt;::m_extent</definition>
+        <argsstring></argsstring>
+        <name>m_extent</name>
+        <qualifiedname>muda::Buffer3DViewT::m_extent</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/buffer_3d_view.h" line="47" column="14" bodyfile="src/muda/buffer/buffer_3d_view.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmuda_1_1_buffer3_d_view_t_1a6ff61a9a8d6cf2ea261cddd2e853f447" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>MUDA_GENERIC</type>
+        <definition>MUDA_GENERIC muda::Buffer3DViewT&lt; IsConst, T &gt;::Buffer3DViewT</definition>
+        <argsstring>() MUDA_NOEXCEPT=default</argsstring>
+        <name>Buffer3DViewT</name>
+        <qualifiedname>muda::Buffer3DViewT::Buffer3DViewT</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/buffer_3d_view.h" line="50" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_buffer3_d_view_t_1a4dc236dc1232add6d1adf61fedc7167f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>MUDA_GENERIC</type>
+        <definition>MUDA_GENERIC muda::Buffer3DViewT&lt; IsConst, T &gt;::Buffer3DViewT</definition>
+        <argsstring>(const Buffer3DViewT &amp;) MUDA_NOEXCEPT=default</argsstring>
+        <name>Buffer3DViewT</name>
+        <qualifiedname>muda::Buffer3DViewT::Buffer3DViewT</qualifiedname>
+        <param>
+          <type>const <ref refid="classmuda_1_1_buffer3_d_view_t" kindref="compound">Buffer3DViewT</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/buffer_3d_view.h" line="52" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_buffer3_d_view_t_1aedfc6ee0bc7a729233aac71ddbe8256d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>bool</type>
+            <declname>OtherIsConst</declname>
+            <defname>OtherIsConst</defname>
+          </param>
+        </templateparamlist>
+        <type>MUDA_GENERIC</type>
+        <definition>MUDA_GENERIC muda::Buffer3DViewT&lt; IsConst, T &gt;::Buffer3DViewT</definition>
+        <argsstring>(const Buffer3DViewT&lt; OtherIsConst, T &gt; &amp;other) MUDA_NOEXCEPT</argsstring>
+        <name>Buffer3DViewT</name>
+        <qualifiedname>muda::Buffer3DViewT::Buffer3DViewT</qualifiedname>
+        <param>
+          <type>const <ref refid="classmuda_1_1_buffer3_d_view_t" kindref="compound">Buffer3DViewT</ref>&lt; OtherIsConst, T &gt; &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/buffer_3d_view.h" line="55" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_buffer3_d_view_t_1a388b6178eec69e39c2a8f8e31997a899" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>MUDA_GENERIC</type>
+        <definition>MUDA_GENERIC muda::Buffer3DViewT&lt; IsConst, T &gt;::Buffer3DViewT</definition>
+        <argsstring>(auto_const_t&lt; T &gt; *data, size_t pitch_bytes, size_t pitch_bytes_area, size_t origin_width, size_t origin_height, const Offset3D &amp;offset, const Extent3D &amp;extent) MUDA_NOEXCEPT</argsstring>
+        <name>Buffer3DViewT</name>
+        <qualifiedname>muda::Buffer3DViewT::Buffer3DViewT</qualifiedname>
+        <param>
+          <type>auto_const_t&lt; T &gt; *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>pitch_bytes</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>pitch_bytes_area</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>origin_width</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>origin_height</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classmuda_1_1_offset3_d" kindref="compound">Offset3D</ref> &amp;</type>
+          <declname>offset</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classmuda_1_1_extent3_d" kindref="compound">Extent3D</ref> &amp;</type>
+          <declname>extent</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/buffer_3d_view.h" line="58" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_buffer3_d_view_t_1a266f4fb0fe6af80d08c827408826301e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>MUDA_GENERIC</type>
+        <definition>MUDA_GENERIC muda::Buffer3DViewT&lt; IsConst, T &gt;::Buffer3DViewT</definition>
+        <argsstring>(T *data, size_t pitch_bytes, size_t pitch_bytes_area, const Offset3D &amp;offset, const Extent3D &amp;extent) MUDA_NOEXCEPT</argsstring>
+        <name>Buffer3DViewT</name>
+        <qualifiedname>muda::Buffer3DViewT::Buffer3DViewT</qualifiedname>
+        <param>
+          <type>T *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>pitch_bytes</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>pitch_bytes_area</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classmuda_1_1_offset3_d" kindref="compound">Offset3D</ref> &amp;</type>
+          <declname>offset</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classmuda_1_1_extent3_d" kindref="compound">Extent3D</ref> &amp;</type>
+          <declname>extent</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/buffer_3d_view.h" line="66" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_buffer3_d_view_t_1a4963b12e1bbdf52d40e9aa9d611d01eb" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>MUDA_GENERIC <ref refid="classmuda_1_1_buffer3_d_view_t" kindref="compound">ConstView</ref></type>
+        <definition>MUDA_GENERIC ConstView muda::Buffer3DViewT&lt; IsConst, T &gt;::as_const</definition>
+        <argsstring>() const MUDA_NOEXCEPT</argsstring>
+        <name>as_const</name>
+        <qualifiedname>muda::Buffer3DViewT::as_const</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/buffer_3d_view.h" line="73" column="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_buffer3_d_view_t_1ad9678419732b9ac2f91bb69643ba7e13" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>MUDA_GENERIC auto_const_t&lt; T &gt; *</type>
+        <definition>MUDA_GENERIC auto_const_t&lt; T &gt; * muda::Buffer3DViewT&lt; IsConst, T &gt;::data</definition>
+        <argsstring>(size_t x, size_t y, size_t z) const MUDA_NOEXCEPT</argsstring>
+        <name>data</name>
+        <qualifiedname>muda::Buffer3DViewT::data</qualifiedname>
+        <param>
+          <type>size_t</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>z</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/buffer_3d_view.h" line="75" column="31"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_buffer3_d_view_t_1ae0b6376be839531d7033f8266e10294a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>MUDA_GENERIC auto_const_t&lt; T &gt; *</type>
+        <definition>MUDA_GENERIC auto_const_t&lt; T &gt; * muda::Buffer3DViewT&lt; IsConst, T &gt;::data</definition>
+        <argsstring>(size_t flatten_i) const MUDA_NOEXCEPT</argsstring>
+        <name>data</name>
+        <qualifiedname>muda::Buffer3DViewT::data</qualifiedname>
+        <param>
+          <type>size_t</type>
+          <declname>flatten_i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/buffer_3d_view.h" line="77" column="31"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_buffer3_d_view_t_1a57bfa62dd6bfa310829505e515c59b75" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>MUDA_GENERIC auto_const_t&lt; T &gt; *</type>
+        <definition>MUDA_GENERIC auto_const_t&lt; T &gt; * muda::Buffer3DViewT&lt; IsConst, T &gt;::origin_data</definition>
+        <argsstring>() const MUDA_NOEXCEPT</argsstring>
+        <name>origin_data</name>
+        <qualifiedname>muda::Buffer3DViewT::origin_data</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/buffer_3d_view.h" line="79" column="31"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_buffer3_d_view_t_1a133fc8cec134fd8ac34d79ef7cc88385" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>MUDA_GENERIC <ref refid="classmuda_1_1_buffer3_d_view_t" kindref="compound">ThisView</ref></type>
+        <definition>MUDA_GENERIC ThisView muda::Buffer3DViewT&lt; IsConst, T &gt;::subview</definition>
+        <argsstring>(Offset3D offset, Extent3D extent={}) const MUDA_NOEXCEPT</argsstring>
+        <name>subview</name>
+        <qualifiedname>muda::Buffer3DViewT::subview</qualifiedname>
+        <param>
+          <type><ref refid="classmuda_1_1_offset3_d" kindref="compound">Offset3D</ref></type>
+          <declname>offset</declname>
+        </param>
+        <param>
+          <type><ref refid="classmuda_1_1_extent3_d" kindref="compound">Extent3D</ref></type>
+          <declname>extent</declname>
+          <defval>{}</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/buffer_3d_view.h" line="81" column="27"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_buffer3_d_view_t_1acaf28cc2ee15f6ed56f47606ddfedc3e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>MUDA_GENERIC ThisViewer</type>
+        <definition>MUDA_GENERIC ThisViewer muda::Buffer3DViewT&lt; IsConst, T &gt;::viewer</definition>
+        <argsstring>() const MUDA_NOEXCEPT</argsstring>
+        <name>viewer</name>
+        <qualifiedname>muda::Buffer3DViewT::viewer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/buffer_3d_view.h" line="83" column="29"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_buffer3_d_view_t_1ae678b7a3a7259c17a4c19ed2220a8eac" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>MUDA_GENERIC <ref refid="classmuda_1_1_extent3_d" kindref="compound">Extent3D</ref></type>
+        <definition>MUDA_GENERIC Extent3D muda::Buffer3DViewT&lt; IsConst, T &gt;::extent</definition>
+        <argsstring>() const MUDA_NOEXCEPT</argsstring>
+        <name>extent</name>
+        <qualifiedname>muda::Buffer3DViewT::extent</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/buffer_3d_view.h" line="85" column="27"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_buffer3_d_view_t_1ae3a9088ce1c182a27ddec9ffb5f83630" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>MUDA_GENERIC <ref refid="classmuda_1_1_offset3_d" kindref="compound">Offset3D</ref></type>
+        <definition>MUDA_GENERIC Offset3D muda::Buffer3DViewT&lt; IsConst, T &gt;::offset</definition>
+        <argsstring>() const MUDA_NOEXCEPT</argsstring>
+        <name>offset</name>
+        <qualifiedname>muda::Buffer3DViewT::offset</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/buffer_3d_view.h" line="87" column="27"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_buffer3_d_view_t_1aed29226809d110313a375e28ac282999" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>MUDA_GENERIC size_t</type>
+        <definition>MUDA_GENERIC size_t muda::Buffer3DViewT&lt; IsConst, T &gt;::pitch_bytes</definition>
+        <argsstring>() const MUDA_NOEXCEPT</argsstring>
+        <name>pitch_bytes</name>
+        <qualifiedname>muda::Buffer3DViewT::pitch_bytes</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/buffer_3d_view.h" line="89" column="25"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_buffer3_d_view_t_1a5ba1c2455431f3254c5e83100d58408f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>MUDA_GENERIC size_t</type>
+        <definition>MUDA_GENERIC size_t muda::Buffer3DViewT&lt; IsConst, T &gt;::pitch_bytes_area</definition>
+        <argsstring>() const MUDA_NOEXCEPT</argsstring>
+        <name>pitch_bytes_area</name>
+        <qualifiedname>muda::Buffer3DViewT::pitch_bytes_area</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/buffer_3d_view.h" line="91" column="25"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_buffer3_d_view_t_1a0889ef53a298aa7af6616b7b9da58066" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>MUDA_GENERIC size_t</type>
+        <definition>MUDA_GENERIC size_t muda::Buffer3DViewT&lt; IsConst, T &gt;::total_size</definition>
+        <argsstring>() const MUDA_NOEXCEPT</argsstring>
+        <name>total_size</name>
+        <qualifiedname>muda::Buffer3DViewT::total_size</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/buffer_3d_view.h" line="93" column="25"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_buffer3_d_view_t_1afc03af0e622c47d5ab6b4c6a9ae8f60f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>MUDA_GENERIC <ref refid="classmuda_1_1_dense3_d_base" kindref="compound">CViewer</ref></type>
+        <definition>MUDA_GENERIC CViewer muda::Buffer3DViewT&lt; IsConst, T &gt;::cviewer</definition>
+        <argsstring>() const MUDA_NOEXCEPT</argsstring>
+        <name>cviewer</name>
+        <qualifiedname>muda::Buffer3DViewT::cviewer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/buffer_3d_view.h" line="95" column="26"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_buffer3_d_view_t_1a44d633047e0fbec5b87fcfe869bc2b0f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>MUDA_HOST void</type>
+        <definition>MUDA_HOST void muda::Buffer3DViewT&lt; IsConst, T &gt;::fill</definition>
+        <argsstring>(const T &amp;v) const MUDA_REQUIRES(!IsConst)</argsstring>
+        <name>fill</name>
+        <qualifiedname>muda::Buffer3DViewT::fill</qualifiedname>
+        <param>
+          <type>const T &amp;</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/buffer_3d_view.h" line="97" column="20"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_buffer3_d_view_t_1a2664f1f2b8bac1659f88f52169500432" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>MUDA_HOST void</type>
+        <definition>MUDA_HOST void muda::Buffer3DViewT&lt; IsConst, T &gt;::copy_from</definition>
+        <argsstring>(const Buffer3DViewT&lt; true, T &gt; &amp;other) const MUDA_REQUIRES(!IsConst)</argsstring>
+        <name>copy_from</name>
+        <qualifiedname>muda::Buffer3DViewT::copy_from</qualifiedname>
+        <param>
+          <type>const <ref refid="classmuda_1_1_buffer3_d_view_t" kindref="compound">Buffer3DViewT</ref>&lt; true, T &gt; &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/buffer_3d_view.h" line="99" column="20"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_buffer3_d_view_t_1aed9e4031af2d83da43f0a3a005ac77b4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>MUDA_HOST void</type>
+        <definition>MUDA_HOST void muda::Buffer3DViewT&lt; IsConst, T &gt;::copy_from</definition>
+        <argsstring>(const T *host) const MUDA_REQUIRES(!IsConst)</argsstring>
+        <name>copy_from</name>
+        <qualifiedname>muda::Buffer3DViewT::copy_from</qualifiedname>
+        <param>
+          <type>const T *</type>
+          <declname>host</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/buffer_3d_view.h" line="102" column="20"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_buffer3_d_view_t_1a7ee9420ed66a57b94406efd39de74bef" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>MUDA_HOST void</type>
+        <definition>MUDA_HOST void muda::Buffer3DViewT&lt; IsConst, T &gt;::copy_to</definition>
+        <argsstring>(T *host) const</argsstring>
+        <name>copy_to</name>
+        <qualifiedname>muda::Buffer3DViewT::copy_to</qualifiedname>
+        <param>
+          <type>T *</type>
+          <declname>host</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/buffer_3d_view.h" line="104" column="20"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classmuda_1_1_buffer3_d_view_t_1aa0ac5c2664c36feb4530bd2c126e5be2" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>MUDA_GENERIC cudaPitchedPtr</type>
+        <definition>MUDA_GENERIC cudaPitchedPtr muda::Buffer3DViewT&lt; IsConst, T &gt;::cuda_pitched_ptr</definition>
+        <argsstring>() const MUDA_NOEXCEPT</argsstring>
+        <name>cuda_pitched_ptr</name>
+        <qualifiedname>muda::Buffer3DViewT::cuda_pitched_ptr</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/buffer_3d_view.h" line="107" column="33"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>muda::ViewBase&lt; IsConst &gt;</label>
+        <link refid="classmuda_1_1_view_base"/>
+      </node>
+      <node id="1">
+        <label>muda::Buffer3DViewT&lt; IsConst, T &gt;</label>
+        <link refid="classmuda_1_1_buffer3_d_view_t"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>muda::ViewBase&lt; IsConst &gt;</label>
+        <link refid="classmuda_1_1_view_base"/>
+      </node>
+      <node id="1">
+        <label>muda::Buffer3DViewT&lt; IsConst, T &gt;</label>
+        <link refid="classmuda_1_1_buffer3_d_view_t"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>m_offset</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>m_extent</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>muda::Extent3D</label>
+        <link refid="classmuda_1_1_extent3_d"/>
+      </node>
+      <node id="3">
+        <label>muda::Offset3D</label>
+        <link refid="classmuda_1_1_offset3_d"/>
+      </node>
+    </collaborationgraph>
+    <location file="src/muda/buffer/buffer_3d_view.h" line="14" column="1" bodyfile="src/muda/buffer/buffer_3d_view.h" bodystart="15" bodyend="108"/>
+    <listofallmembers>
+      <member refid="classmuda_1_1_buffer3_d_view_t_1a4963b12e1bbdf52d40e9aa9d611d01eb" prot="public" virt="non-virtual"><scope>muda::Buffer3DViewT</scope><name>as_const</name></member>
+      <member refid="classmuda_1_1_buffer3_d_view_t_1ab1765dd23e95b746cf44f9293742febe" prot="private" virt="non-virtual"><scope>muda::Buffer3DViewT</scope><name>auto_const_t</name></member>
+      <member refid="classmuda_1_1_buffer3_d_view_t_1a1a6658bc52ce8c8e48222c75b2c7e4c2" prot="private" virt="non-virtual"><scope>muda::Buffer3DViewT</scope><name>Base</name></member>
+      <member refid="classmuda_1_1_buffer3_d_view_t_1a87eaec1f0cc3d4f02eb68edfafdb45bc" prot="private" virt="non-virtual"><scope>muda::Buffer3DViewT</scope><name>Buffer3DViewT</name></member>
+      <member refid="classmuda_1_1_buffer3_d_view_t_1a6ff61a9a8d6cf2ea261cddd2e853f447" prot="public" virt="non-virtual"><scope>muda::Buffer3DViewT</scope><name>Buffer3DViewT</name></member>
+      <member refid="classmuda_1_1_buffer3_d_view_t_1a4dc236dc1232add6d1adf61fedc7167f" prot="public" virt="non-virtual"><scope>muda::Buffer3DViewT</scope><name>Buffer3DViewT</name></member>
+      <member refid="classmuda_1_1_buffer3_d_view_t_1aedfc6ee0bc7a729233aac71ddbe8256d" prot="public" virt="non-virtual"><scope>muda::Buffer3DViewT</scope><name>Buffer3DViewT</name></member>
+      <member refid="classmuda_1_1_buffer3_d_view_t_1a388b6178eec69e39c2a8f8e31997a899" prot="public" virt="non-virtual"><scope>muda::Buffer3DViewT</scope><name>Buffer3DViewT</name></member>
+      <member refid="classmuda_1_1_buffer3_d_view_t_1a266f4fb0fe6af80d08c827408826301e" prot="public" virt="non-virtual"><scope>muda::Buffer3DViewT</scope><name>Buffer3DViewT</name></member>
+      <member refid="classmuda_1_1_buffer3_d_view_t_1a3373c2e8cf6a6172637baf3c12d153ad" prot="private" virt="non-virtual"><scope>muda::Buffer3DViewT</scope><name>BufferLaunch</name></member>
+      <member refid="classmuda_1_1_buffer3_d_view_t_1a00b1e1d731bd800e40f628c1b9304a5a" prot="public" virt="non-virtual"><scope>muda::Buffer3DViewT</scope><name>ConstView</name></member>
+      <member refid="classmuda_1_1_buffer3_d_view_t_1a2664f1f2b8bac1659f88f52169500432" prot="public" virt="non-virtual"><scope>muda::Buffer3DViewT</scope><name>copy_from</name></member>
+      <member refid="classmuda_1_1_buffer3_d_view_t_1aed9e4031af2d83da43f0a3a005ac77b4" prot="public" virt="non-virtual"><scope>muda::Buffer3DViewT</scope><name>copy_from</name></member>
+      <member refid="classmuda_1_1_buffer3_d_view_t_1a7ee9420ed66a57b94406efd39de74bef" prot="public" virt="non-virtual"><scope>muda::Buffer3DViewT</scope><name>copy_to</name></member>
+      <member refid="classmuda_1_1_buffer3_d_view_t_1aa0ac5c2664c36feb4530bd2c126e5be2" prot="private" virt="non-virtual"><scope>muda::Buffer3DViewT</scope><name>cuda_pitched_ptr</name></member>
+      <member refid="classmuda_1_1_buffer3_d_view_t_1a75c905c30152fe0c13ce8c85e52b7a55" prot="public" virt="non-virtual"><scope>muda::Buffer3DViewT</scope><name>CViewer</name></member>
+      <member refid="classmuda_1_1_buffer3_d_view_t_1afc03af0e622c47d5ab6b4c6a9ae8f60f" prot="public" virt="non-virtual"><scope>muda::Buffer3DViewT</scope><name>cviewer</name></member>
+      <member refid="classmuda_1_1_buffer3_d_view_t_1ad9678419732b9ac2f91bb69643ba7e13" prot="public" virt="non-virtual"><scope>muda::Buffer3DViewT</scope><name>data</name></member>
+      <member refid="classmuda_1_1_buffer3_d_view_t_1ae0b6376be839531d7033f8266e10294a" prot="public" virt="non-virtual"><scope>muda::Buffer3DViewT</scope><name>data</name></member>
+      <member refid="classmuda_1_1_buffer3_d_view_t_1a0852785b9903802c18b00c889b3e08dc" prot="public" virt="non-virtual"><scope>muda::Buffer3DViewT</scope><name>details::buffer::BufferInfoAccessor</name></member>
+      <member refid="classmuda_1_1_buffer3_d_view_t_1ae678b7a3a7259c17a4c19ed2220a8eac" prot="public" virt="non-virtual"><scope>muda::Buffer3DViewT</scope><name>extent</name></member>
+      <member refid="classmuda_1_1_buffer3_d_view_t_1a44d633047e0fbec5b87fcfe869bc2b0f" prot="public" virt="non-virtual"><scope>muda::Buffer3DViewT</scope><name>fill</name></member>
+      <member refid="classmuda_1_1_view_base_1a462988275a74be2325fcf57408700ce9" prot="public" virt="non-virtual"><scope>muda::Buffer3DViewT</scope><name>IsConst</name></member>
+      <member refid="classmuda_1_1_view_base_1ae40f0a1f86127bc4dfeae5e08027e1dc" prot="public" virt="non-virtual"><scope>muda::Buffer3DViewT</scope><name>IsNonConst</name></member>
+      <member refid="classmuda_1_1_buffer3_d_view_t_1a1b3ca3b434ac4f4a1351cdeaa31e4271" prot="protected" virt="non-virtual"><scope>muda::Buffer3DViewT</scope><name>m_data</name></member>
+      <member refid="classmuda_1_1_buffer3_d_view_t_1ab1bbef5641d766e0736f99a36edcca68" prot="protected" virt="non-virtual"><scope>muda::Buffer3DViewT</scope><name>m_extent</name></member>
+      <member refid="classmuda_1_1_buffer3_d_view_t_1a8bdd10b2ed9a2e7fe79fafe7486fbbdb" prot="protected" virt="non-virtual"><scope>muda::Buffer3DViewT</scope><name>m_offset</name></member>
+      <member refid="classmuda_1_1_buffer3_d_view_t_1aa3f23a0baa7af0bad4ea076940b95878" prot="protected" virt="non-virtual"><scope>muda::Buffer3DViewT</scope><name>m_origin_height</name></member>
+      <member refid="classmuda_1_1_buffer3_d_view_t_1ac4d07bd89d071b70522c7c79cdfae442" prot="protected" virt="non-virtual"><scope>muda::Buffer3DViewT</scope><name>m_origin_width</name></member>
+      <member refid="classmuda_1_1_buffer3_d_view_t_1a1a208d6833fb128db8a7aaef582d69ca" prot="protected" virt="non-virtual"><scope>muda::Buffer3DViewT</scope><name>m_pitch_bytes</name></member>
+      <member refid="classmuda_1_1_buffer3_d_view_t_1a2c9fcc9cb2f2526e8d4bd21f03d6adde" prot="protected" virt="non-virtual"><scope>muda::Buffer3DViewT</scope><name>m_pitch_bytes_area</name></member>
+      <member refid="classmuda_1_1_view_base_1a39d227092dd2b7baba8b7c74bf018f37" prot="public" virt="non-virtual"><scope>muda::Buffer3DViewT</scope><name>non_const_enable_t</name></member>
+      <member refid="classmuda_1_1_buffer3_d_view_t_1a3d90b771fd7b11603ccb2624090caaa5" prot="public" virt="non-virtual"><scope>muda::Buffer3DViewT</scope><name>NonConstView</name></member>
+      <member refid="classmuda_1_1_buffer3_d_view_t_1ae3a9088ce1c182a27ddec9ffb5f83630" prot="public" virt="non-virtual"><scope>muda::Buffer3DViewT</scope><name>offset</name></member>
+      <member refid="classmuda_1_1_buffer3_d_view_t_1a57bfa62dd6bfa310829505e515c59b75" prot="public" virt="non-virtual"><scope>muda::Buffer3DViewT</scope><name>origin_data</name></member>
+      <member refid="classmuda_1_1_buffer3_d_view_t_1a838a38a5a55ab54adfa1e96e6bc0fee2" prot="public" virt="non-virtual"><scope>muda::Buffer3DViewT</scope><name>OtherView</name></member>
+      <member refid="classmuda_1_1_buffer3_d_view_t_1aed29226809d110313a375e28ac282999" prot="public" virt="non-virtual"><scope>muda::Buffer3DViewT</scope><name>pitch_bytes</name></member>
+      <member refid="classmuda_1_1_buffer3_d_view_t_1a5ba1c2455431f3254c5e83100d58408f" prot="public" virt="non-virtual"><scope>muda::Buffer3DViewT</scope><name>pitch_bytes_area</name></member>
+      <member refid="classmuda_1_1_buffer3_d_view_t_1a133fc8cec134fd8ac34d79ef7cc88385" prot="public" virt="non-virtual"><scope>muda::Buffer3DViewT</scope><name>subview</name></member>
+      <member refid="classmuda_1_1_buffer3_d_view_t_1a344d62135636ae02942fefa1780ea1eb" prot="public" virt="non-virtual"><scope>muda::Buffer3DViewT</scope><name>ThisView</name></member>
+      <member refid="classmuda_1_1_buffer3_d_view_t_1a7a23b964221f64e089abeec35998bc5d" prot="public" virt="non-virtual"><scope>muda::Buffer3DViewT</scope><name>ThisViewer</name></member>
+      <member refid="classmuda_1_1_buffer3_d_view_t_1a0889ef53a298aa7af6616b7b9da58066" prot="public" virt="non-virtual"><scope>muda::Buffer3DViewT</scope><name>total_size</name></member>
+      <member refid="classmuda_1_1_buffer3_d_view_t_1a6c7e4182b77ab9d39b1ed6b2847d0647" prot="public" virt="non-virtual"><scope>muda::Buffer3DViewT</scope><name>Viewer</name></member>
+      <member refid="classmuda_1_1_buffer3_d_view_t_1acaf28cc2ee15f6ed56f47606ddfedc3e" prot="public" virt="non-virtual"><scope>muda::Buffer3DViewT</scope><name>viewer</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

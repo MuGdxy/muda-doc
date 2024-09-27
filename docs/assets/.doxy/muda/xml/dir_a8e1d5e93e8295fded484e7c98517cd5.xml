@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="dir_a8e1d5e93e8295fded484e7c98517cd5" kind="dir">
+    <compoundname>src/muda/buffer/reshape_nd</compoundname>
+    <innerfile refid="masked__compare_8h">masked_compare.h</innerfile>
+    <innerfile refid="masked__swap_8h">masked_swap.h</innerfile>
+    <innerfile refid="nd__reshaper_8h">nd_reshaper.h</innerfile>
+    <innerfile refid="reserve_8h">reserve.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/muda/buffer/reshape_nd/"/>
+  </compounddef>
+</doxygen>

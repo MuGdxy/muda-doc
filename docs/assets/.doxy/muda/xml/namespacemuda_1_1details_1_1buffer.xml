@@ -1,0 +1,921 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="namespacemuda_1_1details_1_1buffer" kind="namespace" language="C++">
+    <compoundname>muda::details::buffer</compoundname>
+    <innerclass refid="classmuda_1_1details_1_1buffer_1_1_buffer_info_accessor" prot="public">muda::details::buffer::BufferInfoAccessor</innerclass>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="kernel__assign_8h_1a82a72c9f1577eee967f0b6b786bbdfa6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>MUDA_HOST void</type>
+        <definition>MUDA_HOST void muda::details::buffer::kernel_assign</definition>
+        <argsstring>(cudaStream_t stream, VarView&lt; T &gt; dst, CVarView&lt; T &gt; src)</argsstring>
+        <name>kernel_assign</name>
+        <qualifiedname>muda::details::buffer::kernel_assign</qualifiedname>
+        <param>
+          <type>cudaStream_t</type>
+          <declname>stream</declname>
+        </param>
+        <param>
+          <type><ref refid="classmuda_1_1_var_view_t" kindref="compound">VarView</ref>&lt; T &gt;</type>
+          <declname>dst</declname>
+        </param>
+        <param>
+          <type><ref refid="classmuda_1_1_var_view_t" kindref="compound">CVarView</ref>&lt; T &gt;</type>
+          <declname>src</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/agent/kernel_assign.h" line="9" column="16" declfile="src/muda/buffer/agent/kernel_assign.h" declline="9" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="kernel__assign_8h_1ad5e3b40872d7300cf58e8c36d0379ce9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>MUDA_HOST void</type>
+        <definition>MUDA_HOST void muda::details::buffer::kernel_assign</definition>
+        <argsstring>(int grid_dim, int block_dim, cudaStream_t stream, BufferView&lt; T &gt; dst, CBufferView&lt; T &gt; src)</argsstring>
+        <name>kernel_assign</name>
+        <qualifiedname>muda::details::buffer::kernel_assign</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>grid_dim</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>block_dim</declname>
+        </param>
+        <param>
+          <type>cudaStream_t</type>
+          <declname>stream</declname>
+        </param>
+        <param>
+          <type><ref refid="classmuda_1_1_buffer_view_t" kindref="compound">BufferView</ref>&lt; T &gt;</type>
+          <declname>dst</declname>
+        </param>
+        <param>
+          <type><ref refid="classmuda_1_1_buffer_view_t" kindref="compound">CBufferView</ref>&lt; T &gt;</type>
+          <declname>src</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/agent/kernel_assign.h" line="13" column="16" declfile="src/muda/buffer/agent/kernel_assign.h" declline="13" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="kernel__assign_8h_1af96d9beee46b141042dce2a0693e77f4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>MUDA_HOST void</type>
+        <definition>MUDA_HOST void muda::details::buffer::kernel_assign</definition>
+        <argsstring>(int grid_dim, int block_dim, cudaStream_t stream, Buffer2DView&lt; T &gt; dst, CBuffer2DView&lt; T &gt; src)</argsstring>
+        <name>kernel_assign</name>
+        <qualifiedname>muda::details::buffer::kernel_assign</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>grid_dim</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>block_dim</declname>
+        </param>
+        <param>
+          <type>cudaStream_t</type>
+          <declname>stream</declname>
+        </param>
+        <param>
+          <type><ref refid="classmuda_1_1_buffer2_d_view_t" kindref="compound">Buffer2DView</ref>&lt; T &gt;</type>
+          <declname>dst</declname>
+        </param>
+        <param>
+          <type><ref refid="classmuda_1_1_buffer2_d_view_t" kindref="compound">CBuffer2DView</ref>&lt; T &gt;</type>
+          <declname>src</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/agent/kernel_assign.h" line="21" column="16" declfile="src/muda/buffer/agent/kernel_assign.h" declline="21" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="kernel__assign_8h_1a102b4ca1d2b772e82cac61569e53fa22" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>MUDA_HOST void</type>
+        <definition>MUDA_HOST void muda::details::buffer::kernel_assign</definition>
+        <argsstring>(int grid_dim, int block_dim, cudaStream_t stream, Buffer3DView&lt; T &gt; dst, CBuffer3DView&lt; T &gt; src)</argsstring>
+        <name>kernel_assign</name>
+        <qualifiedname>muda::details::buffer::kernel_assign</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>grid_dim</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>block_dim</declname>
+        </param>
+        <param>
+          <type>cudaStream_t</type>
+          <declname>stream</declname>
+        </param>
+        <param>
+          <type><ref refid="classmuda_1_1_buffer3_d_view_t" kindref="compound">Buffer3DView</ref>&lt; T &gt;</type>
+          <declname>dst</declname>
+        </param>
+        <param>
+          <type><ref refid="classmuda_1_1_buffer3_d_view_t" kindref="compound">CBuffer3DView</ref>&lt; T &gt;</type>
+          <declname>src</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/agent/kernel_assign.h" line="29" column="16" declfile="src/muda/buffer/agent/kernel_assign.h" declline="29" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="kernel__construct_8h_1a6fc69fdf32a9495777c677879b61cab3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>MUDA_HOST void</type>
+        <definition>MUDA_HOST void muda::details::buffer::kernel_construct</definition>
+        <argsstring>(cudaStream_t stream, VarView&lt; T &gt; view)</argsstring>
+        <name>kernel_construct</name>
+        <qualifiedname>muda::details::buffer::kernel_construct</qualifiedname>
+        <param>
+          <type>cudaStream_t</type>
+          <declname>stream</declname>
+        </param>
+        <param>
+          <type><ref refid="classmuda_1_1_var_view_t" kindref="compound">VarView</ref>&lt; T &gt;</type>
+          <declname>view</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/agent/kernel_construct.h" line="10" column="16" declfile="src/muda/buffer/agent/kernel_construct.h" declline="10" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="kernel__construct_8h_1acba2baaab3d45cc906c786c57be669f8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>MUDA_HOST void</type>
+        <definition>MUDA_HOST void muda::details::buffer::kernel_construct</definition>
+        <argsstring>(int grid_dim, int block_dim, cudaStream_t stream, BufferView&lt; T &gt; buffer_view)</argsstring>
+        <name>kernel_construct</name>
+        <qualifiedname>muda::details::buffer::kernel_construct</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>grid_dim</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>block_dim</declname>
+        </param>
+        <param>
+          <type>cudaStream_t</type>
+          <declname>stream</declname>
+        </param>
+        <param>
+          <type><ref refid="classmuda_1_1_buffer_view_t" kindref="compound">BufferView</ref>&lt; T &gt;</type>
+          <declname>buffer_view</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/agent/kernel_construct.h" line="14" column="16" declfile="src/muda/buffer/agent/kernel_construct.h" declline="14" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="kernel__construct_8h_1ae0e041ada3e3d36b507a9a624836947b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>MUDA_HOST void</type>
+        <definition>MUDA_HOST void muda::details::buffer::kernel_construct</definition>
+        <argsstring>(int grid_dim, int block_dim, cudaStream_t stream, Buffer2DView&lt; T &gt; buffer_view)</argsstring>
+        <name>kernel_construct</name>
+        <qualifiedname>muda::details::buffer::kernel_construct</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>grid_dim</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>block_dim</declname>
+        </param>
+        <param>
+          <type>cudaStream_t</type>
+          <declname>stream</declname>
+        </param>
+        <param>
+          <type><ref refid="classmuda_1_1_buffer2_d_view_t" kindref="compound">Buffer2DView</ref>&lt; T &gt;</type>
+          <declname>buffer_view</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/agent/kernel_construct.h" line="21" column="16" declfile="src/muda/buffer/agent/kernel_construct.h" declline="21" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="kernel__construct_8h_1a24e0c3a9b2642caab4cc36ddff475024" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>MUDA_HOST void</type>
+        <definition>MUDA_HOST void muda::details::buffer::kernel_construct</definition>
+        <argsstring>(int grid_dim, int block_dim, cudaStream_t stream, Buffer3DView&lt; T &gt; buffer_view)</argsstring>
+        <name>kernel_construct</name>
+        <qualifiedname>muda::details::buffer::kernel_construct</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>grid_dim</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>block_dim</declname>
+        </param>
+        <param>
+          <type>cudaStream_t</type>
+          <declname>stream</declname>
+        </param>
+        <param>
+          <type><ref refid="classmuda_1_1_buffer3_d_view_t" kindref="compound">Buffer3DView</ref>&lt; T &gt;</type>
+          <declname>buffer_view</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/agent/kernel_construct.h" line="28" column="16" declfile="src/muda/buffer/agent/kernel_construct.h" declline="28" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="kernel__copy__construct_8h_1afa14505673905a590aee91b24d304846" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>MUDA_HOST void</type>
+        <definition>MUDA_HOST void muda::details::buffer::kernel_copy_construct</definition>
+        <argsstring>(cudaStream_t stream, VarView&lt; T &gt; dst, CVarView&lt; T &gt; src)</argsstring>
+        <name>kernel_copy_construct</name>
+        <qualifiedname>muda::details::buffer::kernel_copy_construct</qualifiedname>
+        <param>
+          <type>cudaStream_t</type>
+          <declname>stream</declname>
+        </param>
+        <param>
+          <type><ref refid="classmuda_1_1_var_view_t" kindref="compound">VarView</ref>&lt; T &gt;</type>
+          <declname>dst</declname>
+        </param>
+        <param>
+          <type><ref refid="classmuda_1_1_var_view_t" kindref="compound">CVarView</ref>&lt; T &gt;</type>
+          <declname>src</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/agent/kernel_copy_construct.h" line="9" column="16" declfile="src/muda/buffer/agent/kernel_copy_construct.h" declline="9" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="kernel__copy__construct_8h_1aaedfb310c34a91e1faf4e7e8d8d80be9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>MUDA_HOST void</type>
+        <definition>MUDA_HOST void muda::details::buffer::kernel_copy_construct</definition>
+        <argsstring>(int grid_dim, int block_dim, cudaStream_t stream, BufferView&lt; T &gt; dst, CBufferView&lt; T &gt; src)</argsstring>
+        <name>kernel_copy_construct</name>
+        <qualifiedname>muda::details::buffer::kernel_copy_construct</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>grid_dim</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>block_dim</declname>
+        </param>
+        <param>
+          <type>cudaStream_t</type>
+          <declname>stream</declname>
+        </param>
+        <param>
+          <type><ref refid="classmuda_1_1_buffer_view_t" kindref="compound">BufferView</ref>&lt; T &gt;</type>
+          <declname>dst</declname>
+        </param>
+        <param>
+          <type><ref refid="classmuda_1_1_buffer_view_t" kindref="compound">CBufferView</ref>&lt; T &gt;</type>
+          <declname>src</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/agent/kernel_copy_construct.h" line="15" column="16" declfile="src/muda/buffer/agent/kernel_copy_construct.h" declline="15" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="kernel__copy__construct_8h_1ab57b7ac6b90ef96f9ae8fa00629783e0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>MUDA_HOST void</type>
+        <definition>MUDA_HOST void muda::details::buffer::kernel_copy_construct</definition>
+        <argsstring>(int grid_dim, int block_dim, cudaStream_t stream, Buffer2DView&lt; T &gt; dst, CBuffer2DView&lt; T &gt; src)</argsstring>
+        <name>kernel_copy_construct</name>
+        <qualifiedname>muda::details::buffer::kernel_copy_construct</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>grid_dim</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>block_dim</declname>
+        </param>
+        <param>
+          <type>cudaStream_t</type>
+          <declname>stream</declname>
+        </param>
+        <param>
+          <type><ref refid="classmuda_1_1_buffer2_d_view_t" kindref="compound">Buffer2DView</ref>&lt; T &gt;</type>
+          <declname>dst</declname>
+        </param>
+        <param>
+          <type><ref refid="classmuda_1_1_buffer2_d_view_t" kindref="compound">CBuffer2DView</ref>&lt; T &gt;</type>
+          <declname>src</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/agent/kernel_copy_construct.h" line="23" column="16" declfile="src/muda/buffer/agent/kernel_copy_construct.h" declline="23" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="kernel__copy__construct_8h_1aba3d7b23b80881494de44e0235116868" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>MUDA_HOST void</type>
+        <definition>MUDA_HOST void muda::details::buffer::kernel_copy_construct</definition>
+        <argsstring>(int grid_dim, int block_dim, cudaStream_t stream, Buffer3DView&lt; T &gt; dst, CBuffer3DView&lt; T &gt; src)</argsstring>
+        <name>kernel_copy_construct</name>
+        <qualifiedname>muda::details::buffer::kernel_copy_construct</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>grid_dim</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>block_dim</declname>
+        </param>
+        <param>
+          <type>cudaStream_t</type>
+          <declname>stream</declname>
+        </param>
+        <param>
+          <type><ref refid="classmuda_1_1_buffer3_d_view_t" kindref="compound">Buffer3DView</ref>&lt; T &gt;</type>
+          <declname>dst</declname>
+        </param>
+        <param>
+          <type><ref refid="classmuda_1_1_buffer3_d_view_t" kindref="compound">CBuffer3DView</ref>&lt; T &gt;</type>
+          <declname>src</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/agent/kernel_copy_construct.h" line="31" column="16" declfile="src/muda/buffer/agent/kernel_copy_construct.h" declline="31" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="kernel__destruct_8h_1a8e1253f85cb530ef70f0931fabad7c27" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>MUDA_HOST void</type>
+        <definition>MUDA_HOST void muda::details::buffer::kernel_destruct</definition>
+        <argsstring>(cudaStream_t stream, VarView&lt; T &gt; view)</argsstring>
+        <name>kernel_destruct</name>
+        <qualifiedname>muda::details::buffer::kernel_destruct</qualifiedname>
+        <param>
+          <type>cudaStream_t</type>
+          <declname>stream</declname>
+        </param>
+        <param>
+          <type><ref refid="classmuda_1_1_var_view_t" kindref="compound">VarView</ref>&lt; T &gt;</type>
+          <declname>view</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/agent/kernel_destruct.h" line="10" column="16" declfile="src/muda/buffer/agent/kernel_destruct.h" declline="10" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="kernel__destruct_8h_1a1819f849bc82aaece15a3910326cac70" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>MUDA_HOST void</type>
+        <definition>MUDA_HOST void muda::details::buffer::kernel_destruct</definition>
+        <argsstring>(int grid_dim, int block_dim, cudaStream_t stream, BufferView&lt; T &gt; buffer_view)</argsstring>
+        <name>kernel_destruct</name>
+        <qualifiedname>muda::details::buffer::kernel_destruct</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>grid_dim</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>block_dim</declname>
+        </param>
+        <param>
+          <type>cudaStream_t</type>
+          <declname>stream</declname>
+        </param>
+        <param>
+          <type><ref refid="classmuda_1_1_buffer_view_t" kindref="compound">BufferView</ref>&lt; T &gt;</type>
+          <declname>buffer_view</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/agent/kernel_destruct.h" line="14" column="16" declfile="src/muda/buffer/agent/kernel_destruct.h" declline="14" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="kernel__destruct_8h_1abed94d6508f7d9412a6c418dbd5f0f70" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>MUDA_HOST void</type>
+        <definition>MUDA_HOST void muda::details::buffer::kernel_destruct</definition>
+        <argsstring>(int grid_dim, int block_dim, cudaStream_t stream, Buffer2DView&lt; T &gt; buffer_view)</argsstring>
+        <name>kernel_destruct</name>
+        <qualifiedname>muda::details::buffer::kernel_destruct</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>grid_dim</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>block_dim</declname>
+        </param>
+        <param>
+          <type>cudaStream_t</type>
+          <declname>stream</declname>
+        </param>
+        <param>
+          <type><ref refid="classmuda_1_1_buffer2_d_view_t" kindref="compound">Buffer2DView</ref>&lt; T &gt;</type>
+          <declname>buffer_view</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/agent/kernel_destruct.h" line="18" column="16" declfile="src/muda/buffer/agent/kernel_destruct.h" declline="18" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="kernel__destruct_8h_1af16a4a794542406f09623c92582eb580" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>MUDA_HOST void</type>
+        <definition>MUDA_HOST void muda::details::buffer::kernel_destruct</definition>
+        <argsstring>(int grid_dim, int block_dim, cudaStream_t stream, Buffer3DView&lt; T &gt; buffer_view)</argsstring>
+        <name>kernel_destruct</name>
+        <qualifiedname>muda::details::buffer::kernel_destruct</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>grid_dim</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>block_dim</declname>
+        </param>
+        <param>
+          <type>cudaStream_t</type>
+          <declname>stream</declname>
+        </param>
+        <param>
+          <type><ref refid="classmuda_1_1_buffer3_d_view_t" kindref="compound">Buffer3DView</ref>&lt; T &gt;</type>
+          <declname>buffer_view</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/agent/kernel_destruct.h" line="25" column="16" declfile="src/muda/buffer/agent/kernel_destruct.h" declline="25" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="kernel__fill_8h_1adaa8ca0d247adce5dabfd0e57f16182f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>MUDA_HOST void</type>
+        <definition>MUDA_HOST void muda::details::buffer::kernel_fill</definition>
+        <argsstring>(cudaStream_t stream, VarView&lt; T &gt; dst, const T &amp;val)</argsstring>
+        <name>kernel_fill</name>
+        <qualifiedname>muda::details::buffer::kernel_fill</qualifiedname>
+        <param>
+          <type>cudaStream_t</type>
+          <declname>stream</declname>
+        </param>
+        <param>
+          <type><ref refid="classmuda_1_1_var_view_t" kindref="compound">VarView</ref>&lt; T &gt;</type>
+          <declname>dst</declname>
+        </param>
+        <param>
+          <type>const T &amp;</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/agent/kernel_fill.h" line="9" column="16" declfile="src/muda/buffer/agent/kernel_fill.h" declline="9" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="kernel__fill_8h_1af8e72bd5a953e4b3ff2f914b81c165c7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>MUDA_HOST void</type>
+        <definition>MUDA_HOST void muda::details::buffer::kernel_fill</definition>
+        <argsstring>(int grid_dim, int block_dim, cudaStream_t stream, BufferView&lt; T &gt; dst, const T &amp;val)</argsstring>
+        <name>kernel_fill</name>
+        <qualifiedname>muda::details::buffer::kernel_fill</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>grid_dim</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>block_dim</declname>
+        </param>
+        <param>
+          <type>cudaStream_t</type>
+          <declname>stream</declname>
+        </param>
+        <param>
+          <type><ref refid="classmuda_1_1_buffer_view_t" kindref="compound">BufferView</ref>&lt; T &gt;</type>
+          <declname>dst</declname>
+        </param>
+        <param>
+          <type>const T &amp;</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/agent/kernel_fill.h" line="13" column="16" declfile="src/muda/buffer/agent/kernel_fill.h" declline="13" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="kernel__fill_8h_1a5bd4ebe28819b712e03a47a4ae21dc94" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>MUDA_HOST void</type>
+        <definition>MUDA_HOST void muda::details::buffer::kernel_fill</definition>
+        <argsstring>(int grid_dim, int block_dim, cudaStream_t stream, Buffer2DView&lt; T &gt; dst, const T &amp;val)</argsstring>
+        <name>kernel_fill</name>
+        <qualifiedname>muda::details::buffer::kernel_fill</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>grid_dim</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>block_dim</declname>
+        </param>
+        <param>
+          <type>cudaStream_t</type>
+          <declname>stream</declname>
+        </param>
+        <param>
+          <type><ref refid="classmuda_1_1_buffer2_d_view_t" kindref="compound">Buffer2DView</ref>&lt; T &gt;</type>
+          <declname>dst</declname>
+        </param>
+        <param>
+          <type>const T &amp;</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/agent/kernel_fill.h" line="18" column="16" declfile="src/muda/buffer/agent/kernel_fill.h" declline="18" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="kernel__fill_8h_1afaca38468ed1db4f0b3419f2e96dff90" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>MUDA_HOST void</type>
+        <definition>MUDA_HOST void muda::details::buffer::kernel_fill</definition>
+        <argsstring>(int grid_dim, int block_dim, cudaStream_t stream, Buffer3DView&lt; T &gt; dst, const T &amp;val)</argsstring>
+        <name>kernel_fill</name>
+        <qualifiedname>muda::details::buffer::kernel_fill</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>grid_dim</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>block_dim</declname>
+        </param>
+        <param>
+          <type>cudaStream_t</type>
+          <declname>stream</declname>
+        </param>
+        <param>
+          <type><ref refid="classmuda_1_1_buffer3_d_view_t" kindref="compound">Buffer3DView</ref>&lt; T &gt;</type>
+          <declname>dst</declname>
+        </param>
+        <param>
+          <type>const T &amp;</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/agent/kernel_fill.h" line="26" column="16" declfile="src/muda/buffer/agent/kernel_fill.h" declline="26" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="masked__compare_8h_1ad6460f63b76cee3cdc3a92e7bdfb907d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>MUDA_INLINE bool</type>
+        <definition>MUDA_INLINE bool muda::details::buffer::less</definition>
+        <argsstring>(bool b, size_t l, size_t r) MUDA_NOEXCEPT</argsstring>
+        <name>less</name>
+        <qualifiedname>muda::details::buffer::less</qualifiedname>
+        <param>
+          <type>bool</type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>l</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>r</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/reshape_nd/masked_compare.h" line="7" column="18" bodyfile="src/muda/buffer/reshape_nd/masked_compare.h" bodystart="7" bodyend="10"/>
+      </memberdef>
+      <memberdef kind="function" id="masked__compare_8h_1a77b738144ef3d5b6f27897788db560b9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>size_t</type>
+            <declname>N</declname>
+            <defname>N</defname>
+          </param>
+        </templateparamlist>
+        <type>MUDA_INLINE bool</type>
+        <definition>MUDA_INLINE bool muda::details::buffer::less</definition>
+        <argsstring>(std::bitset&lt; N &gt; mask, const std::array&lt; size_t, N &gt; &amp;lhs, const std::array&lt; size_t, N &gt; &amp;rhs) MUDA_NOEXCEPT</argsstring>
+        <name>less</name>
+        <qualifiedname>muda::details::buffer::less</qualifiedname>
+        <param>
+          <type>std::bitset&lt; N &gt;</type>
+          <declname>mask</declname>
+        </param>
+        <param>
+          <type>const std::array&lt; size_t, N &gt; &amp;</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type>const std::array&lt; size_t, N &gt; &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/reshape_nd/masked_compare.h" line="13" column="18" bodyfile="src/muda/buffer/reshape_nd/masked_compare.h" bodystart="13" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="function" id="masked__swap_8h_1ae3cb2644095c44ec7a739032ddb37c47" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>MUDA_INLINE void</type>
+        <definition>MUDA_INLINE void muda::details::buffer::swap</definition>
+        <argsstring>(bool b, size_t &amp;l, size_t &amp;r) MUDA_NOEXCEPT</argsstring>
+        <name>swap</name>
+        <qualifiedname>muda::details::buffer::swap</qualifiedname>
+        <param>
+          <type>bool</type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type>size_t &amp;</type>
+          <declname>l</declname>
+        </param>
+        <param>
+          <type>size_t &amp;</type>
+          <declname>r</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/reshape_nd/masked_swap.h" line="7" column="18" bodyfile="src/muda/buffer/reshape_nd/masked_swap.h" bodystart="7" bodyend="15"/>
+      </memberdef>
+      <memberdef kind="function" id="masked__swap_8h_1a00c6a4e1abb65e8d8d247ad1a2fe8b91" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>size_t</type>
+            <declname>N</declname>
+            <defname>N</defname>
+          </param>
+        </templateparamlist>
+        <type>MUDA_INLINE void</type>
+        <definition>MUDA_INLINE void muda::details::buffer::swap</definition>
+        <argsstring>(std::bitset&lt; N &gt; mask, std::array&lt; size_t, N &gt; &amp;lhs, std::array&lt; size_t, N &gt; &amp;rhs) MUDA_NOEXCEPT</argsstring>
+        <name>swap</name>
+        <qualifiedname>muda::details::buffer::swap</qualifiedname>
+        <param>
+          <type>std::bitset&lt; N &gt;</type>
+          <declname>mask</declname>
+        </param>
+        <param>
+          <type>std::array&lt; size_t, N &gt; &amp;</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type>std::array&lt; size_t, N &gt; &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/reshape_nd/masked_swap.h" line="18" column="18" bodyfile="src/muda/buffer/reshape_nd/masked_swap.h" bodystart="18" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="function" id="reserve_8h_1adbdf1fce9021789fbdf11f2304ca7611" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>MUDA_INLINE MUDA_HOST <ref refid="classmuda_1_1_buffer_view_t" kindref="compound">BufferView</ref>&lt; T &gt;</type>
+        <definition>MUDA_INLINE MUDA_HOST BufferView&lt; T &gt; muda::details::buffer::reserve_1d</definition>
+        <argsstring>(cudaStream_t stream, size_t size)</argsstring>
+        <name>reserve_1d</name>
+        <qualifiedname>muda::details::buffer::reserve_1d</qualifiedname>
+        <param>
+          <type>cudaStream_t</type>
+          <declname>stream</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/reshape_nd/reserve.h" line="10" column="34" bodyfile="src/muda/buffer/reshape_nd/reserve.h" bodystart="10" bodyend="15"/>
+      </memberdef>
+      <memberdef kind="function" id="reserve_8h_1a208616abd84e6fa7c662a49cd0786262" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>MUDA_INLINE MUDA_HOST <ref refid="classmuda_1_1_buffer2_d_view_t" kindref="compound">Buffer2DView</ref>&lt; T &gt;</type>
+        <definition>MUDA_INLINE MUDA_HOST Buffer2DView&lt; T &gt; muda::details::buffer::reserve_2d</definition>
+        <argsstring>(cudaStream_t stream, Extent2D extent)</argsstring>
+        <name>reserve_2d</name>
+        <qualifiedname>muda::details::buffer::reserve_2d</qualifiedname>
+        <param>
+          <type>cudaStream_t</type>
+          <declname>stream</declname>
+        </param>
+        <param>
+          <type><ref refid="classmuda_1_1_extent2_d" kindref="compound">Extent2D</ref></type>
+          <declname>extent</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/reshape_nd/reserve.h" line="18" column="36" bodyfile="src/muda/buffer/reshape_nd/reserve.h" bodystart="18" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="function" id="reserve_8h_1ac89428d828438d47d11e5c2ff535c3f4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>MUDA_INLINE MUDA_HOST <ref refid="classmuda_1_1_buffer3_d_view_t" kindref="compound">Buffer3DView</ref>&lt; T &gt;</type>
+        <definition>MUDA_INLINE MUDA_HOST Buffer3DView&lt; T &gt; muda::details::buffer::reserve_3d</definition>
+        <argsstring>(cudaStream_t stream, Extent3D extent)</argsstring>
+        <name>reserve_3d</name>
+        <qualifiedname>muda::details::buffer::reserve_3d</qualifiedname>
+        <param>
+          <type>cudaStream_t</type>
+          <declname>stream</declname>
+        </param>
+        <param>
+          <type><ref refid="classmuda_1_1_extent3_d" kindref="compound">Extent3D</ref></type>
+          <declname>extent</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/reshape_nd/reserve.h" line="28" column="36" bodyfile="src/muda/buffer/reshape_nd/reserve.h" bodystart="28" bodyend="36"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/muda/buffer/agent/kernel_assign.h" line="5" column="1"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,680 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classmuda_1_1_device_buffer2_d" kind="class" language="C++" prot="public">
+    <compoundname>muda::DeviceBuffer2D</compoundname>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classmuda_1_1_device_buffer2_d_1a36d7780275d615cf2ca19d299c4af7fa" prot="public" static="no">
+        <type>T</type>
+        <definition>using muda::DeviceBuffer2D&lt; T &gt;::value_type =  T</definition>
+        <argsstring></argsstring>
+        <name>value_type</name>
+        <qualifiedname>muda::DeviceBuffer2D::value_type</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/device_buffer_2d.h" line="23" column="5" bodyfile="src/muda/buffer/device_buffer_2d.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="friend">
+      <memberdef kind="friend" id="classmuda_1_1_device_buffer2_d_1a3373c2e8cf6a6172637baf3c12d153ad" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class BufferLaunch</definition>
+        <argsstring></argsstring>
+        <name>BufferLaunch</name>
+        <qualifiedname>muda::DeviceBuffer2D::BufferLaunch</qualifiedname>
+        <param>
+          <type><ref refid="classmuda_1_1_buffer_launch" kindref="compound">BufferLaunch</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/device_buffer_2d.h" line="15" column="18" bodyfile="src/muda/buffer/device_buffer_2d.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="classmuda_1_1_device_buffer2_d_1a3da08685fa6b7d2236b99a33da67b81a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class NDReshaper</definition>
+        <argsstring></argsstring>
+        <name>NDReshaper</name>
+        <qualifiedname>muda::DeviceBuffer2D::NDReshaper</qualifiedname>
+        <param>
+          <type><ref refid="classmuda_1_1_n_d_reshaper" kindref="compound">NDReshaper</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/device_buffer_2d.h" line="16" column="18" bodyfile="src/muda/buffer/device_buffer_2d.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classmuda_1_1_device_buffer2_d_1ab557cd6a9e2f4344dac5cd786aa93bf3" prot="private" static="no" mutable="no">
+        <type>T *</type>
+        <definition>T* muda::DeviceBuffer2D&lt; T &gt;::m_data</definition>
+        <argsstring></argsstring>
+        <name>m_data</name>
+        <qualifiedname>muda::DeviceBuffer2D::m_data</qualifiedname>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/device_buffer_2d.h" line="17" column="13" bodyfile="src/muda/buffer/device_buffer_2d.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1_device_buffer2_d_1a854dd7214549c570c0d814feea5c9520" prot="private" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t muda::DeviceBuffer2D&lt; T &gt;::m_pitch_bytes</definition>
+        <argsstring></argsstring>
+        <name>m_pitch_bytes</name>
+        <qualifiedname>muda::DeviceBuffer2D::m_pitch_bytes</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/device_buffer_2d.h" line="18" column="14" bodyfile="src/muda/buffer/device_buffer_2d.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1_device_buffer2_d_1a2f05e923777129dbbee42f67d47cc8c2" prot="private" static="no" mutable="no">
+        <type><ref refid="classmuda_1_1_extent2_d" kindref="compound">Extent2D</ref></type>
+        <definition>Extent2D muda::DeviceBuffer2D&lt; T &gt;::m_extent</definition>
+        <argsstring></argsstring>
+        <name>m_extent</name>
+        <qualifiedname>muda::DeviceBuffer2D::m_extent</qualifiedname>
+        <initializer>= Extent2D::Zero()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/device_buffer_2d.h" line="19" column="14" bodyfile="src/muda/buffer/device_buffer_2d.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1_device_buffer2_d_1afb1cf828947f39ab630bf8fe5bc03aa2" prot="private" static="no" mutable="no">
+        <type><ref refid="classmuda_1_1_extent2_d" kindref="compound">Extent2D</ref></type>
+        <definition>Extent2D muda::DeviceBuffer2D&lt; T &gt;::m_capacity</definition>
+        <argsstring></argsstring>
+        <name>m_capacity</name>
+        <qualifiedname>muda::DeviceBuffer2D::m_capacity</qualifiedname>
+        <initializer>= Extent2D::Zero()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/device_buffer_2d.h" line="20" column="14" bodyfile="src/muda/buffer/device_buffer_2d.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmuda_1_1_device_buffer2_d_1a530c4afcf92263895c8e210ec2d6ddb8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>muda::DeviceBuffer2D&lt; T &gt;::DeviceBuffer2D</definition>
+        <argsstring>(const Extent2D &amp;n)</argsstring>
+        <name>DeviceBuffer2D</name>
+        <qualifiedname>muda::DeviceBuffer2D::DeviceBuffer2D</qualifiedname>
+        <param>
+          <type>const <ref refid="classmuda_1_1_extent2_d" kindref="compound">Extent2D</ref> &amp;</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/device_buffer_2d.h" line="25" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_device_buffer2_d_1acff80f61b7b161df29837f08340b6990" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>muda::DeviceBuffer2D&lt; T &gt;::DeviceBuffer2D</definition>
+        <argsstring>()</argsstring>
+        <name>DeviceBuffer2D</name>
+        <qualifiedname>muda::DeviceBuffer2D::DeviceBuffer2D</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/device_buffer_2d.h" line="26" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_device_buffer2_d_1a9427cda92b6b08fb706489794a4813b2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>muda::DeviceBuffer2D&lt; T &gt;::DeviceBuffer2D</definition>
+        <argsstring>(const DeviceBuffer2D&lt; T &gt; &amp;other)</argsstring>
+        <name>DeviceBuffer2D</name>
+        <qualifiedname>muda::DeviceBuffer2D::DeviceBuffer2D</qualifiedname>
+        <param>
+          <type>const <ref refid="classmuda_1_1_device_buffer2_d" kindref="compound">DeviceBuffer2D</ref>&lt; T &gt; &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/device_buffer_2d.h" line="28" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_device_buffer2_d_1a752b8ffab34f69bc22fe74013900246f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>muda::DeviceBuffer2D&lt; T &gt;::DeviceBuffer2D</definition>
+        <argsstring>(DeviceBuffer2D &amp;&amp;other) MUDA_NOEXCEPT</argsstring>
+        <name>DeviceBuffer2D</name>
+        <qualifiedname>muda::DeviceBuffer2D::DeviceBuffer2D</qualifiedname>
+        <param>
+          <type><ref refid="classmuda_1_1_device_buffer2_d" kindref="compound">DeviceBuffer2D</ref> &amp;&amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/device_buffer_2d.h" line="29" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_device_buffer2_d_1a0a5e50f4096a1816ea4f3a3e965494e0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classmuda_1_1_device_buffer2_d" kindref="compound">DeviceBuffer2D</ref> &amp;</type>
+        <definition>DeviceBuffer2D &amp; muda::DeviceBuffer2D&lt; T &gt;::operator=</definition>
+        <argsstring>(const DeviceBuffer2D&lt; T &gt; &amp;other)</argsstring>
+        <name>operator=</name>
+        <qualifiedname>muda::DeviceBuffer2D::operator=</qualifiedname>
+        <param>
+          <type>const <ref refid="classmuda_1_1_device_buffer2_d" kindref="compound">DeviceBuffer2D</ref>&lt; T &gt; &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/device_buffer_2d.h" line="30" column="20"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_device_buffer2_d_1a137c0dc6256e76293d88d4f5aafb8716" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classmuda_1_1_device_buffer2_d" kindref="compound">DeviceBuffer2D</ref> &amp;</type>
+        <definition>DeviceBuffer2D &amp; muda::DeviceBuffer2D&lt; T &gt;::operator=</definition>
+        <argsstring>(DeviceBuffer2D&lt; T &gt; &amp;&amp;other)</argsstring>
+        <name>operator=</name>
+        <qualifiedname>muda::DeviceBuffer2D::operator=</qualifiedname>
+        <param>
+          <type><ref refid="classmuda_1_1_device_buffer2_d" kindref="compound">DeviceBuffer2D</ref>&lt; T &gt; &amp;&amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/device_buffer_2d.h" line="31" column="20"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_device_buffer2_d_1a36c4b8b2eb8b64dc6e152f6a241ecfe0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>muda::DeviceBuffer2D&lt; T &gt;::DeviceBuffer2D</definition>
+        <argsstring>(CBuffer2DView&lt; T &gt; other)</argsstring>
+        <name>DeviceBuffer2D</name>
+        <qualifiedname>muda::DeviceBuffer2D::DeviceBuffer2D</qualifiedname>
+        <param>
+          <type><ref refid="classmuda_1_1_buffer2_d_view_t" kindref="compound">CBuffer2DView</ref>&lt; T &gt;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/device_buffer_2d.h" line="33" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_device_buffer2_d_1a69cd93d6471bb6e90157ba718d1ecd90" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classmuda_1_1_device_buffer2_d" kindref="compound">DeviceBuffer2D</ref> &amp;</type>
+        <definition>DeviceBuffer2D &amp; muda::DeviceBuffer2D&lt; T &gt;::operator=</definition>
+        <argsstring>(CBuffer2DView&lt; T &gt; other)</argsstring>
+        <name>operator=</name>
+        <qualifiedname>muda::DeviceBuffer2D::operator=</qualifiedname>
+        <param>
+          <type><ref refid="classmuda_1_1_buffer2_d_view_t" kindref="compound">CBuffer2DView</ref>&lt; T &gt;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/device_buffer_2d.h" line="34" column="20"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_device_buffer2_d_1a5c21ce6111647ad59eaa32aa2bb09f38" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void muda::DeviceBuffer2D&lt; T &gt;::copy_to</definition>
+        <argsstring>(std::vector&lt; T &gt; &amp;host) const</argsstring>
+        <name>copy_to</name>
+        <qualifiedname>muda::DeviceBuffer2D::copy_to</qualifiedname>
+        <param>
+          <type>std::vector&lt; T &gt; &amp;</type>
+          <declname>host</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/device_buffer_2d.h" line="36" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_device_buffer2_d_1abdc7384c00c214ad859ec09c566eb45d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void muda::DeviceBuffer2D&lt; T &gt;::copy_from</definition>
+        <argsstring>(const std::vector&lt; T &gt; &amp;host)</argsstring>
+        <name>copy_from</name>
+        <qualifiedname>muda::DeviceBuffer2D::copy_from</qualifiedname>
+        <param>
+          <type>const std::vector&lt; T &gt; &amp;</type>
+          <declname>host</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/device_buffer_2d.h" line="37" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_device_buffer2_d_1a8bf1bd2db3348efafc46803c780effdb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void muda::DeviceBuffer2D&lt; T &gt;::resize</definition>
+        <argsstring>(Extent2D new_extent)</argsstring>
+        <name>resize</name>
+        <qualifiedname>muda::DeviceBuffer2D::resize</qualifiedname>
+        <param>
+          <type><ref refid="classmuda_1_1_extent2_d" kindref="compound">Extent2D</ref></type>
+          <declname>new_extent</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/device_buffer_2d.h" line="39" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_device_buffer2_d_1ab4645804a5b6df502af44113d46e45ab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void muda::DeviceBuffer2D&lt; T &gt;::resize</definition>
+        <argsstring>(Extent2D new_extent, const T &amp;value)</argsstring>
+        <name>resize</name>
+        <qualifiedname>muda::DeviceBuffer2D::resize</qualifiedname>
+        <param>
+          <type><ref refid="classmuda_1_1_extent2_d" kindref="compound">Extent2D</ref></type>
+          <declname>new_extent</declname>
+        </param>
+        <param>
+          <type>const T &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/device_buffer_2d.h" line="40" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_device_buffer2_d_1aa5dfc2382d5a990798552fe3f52f86c1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void muda::DeviceBuffer2D&lt; T &gt;::reserve</definition>
+        <argsstring>(Extent2D new_capacity)</argsstring>
+        <name>reserve</name>
+        <qualifiedname>muda::DeviceBuffer2D::reserve</qualifiedname>
+        <param>
+          <type><ref refid="classmuda_1_1_extent2_d" kindref="compound">Extent2D</ref></type>
+          <declname>new_capacity</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/device_buffer_2d.h" line="41" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_device_buffer2_d_1accd7b3da23c474d2f81c75f4e3a432ce" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void muda::DeviceBuffer2D&lt; T &gt;::clear</definition>
+        <argsstring>()</argsstring>
+        <name>clear</name>
+        <qualifiedname>muda::DeviceBuffer2D::clear</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/device_buffer_2d.h" line="42" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_device_buffer2_d_1aef80315f5b8f9bbb9de59b602c0d1939" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void muda::DeviceBuffer2D&lt; T &gt;::shrink_to_fit</definition>
+        <argsstring>()</argsstring>
+        <name>shrink_to_fit</name>
+        <qualifiedname>muda::DeviceBuffer2D::shrink_to_fit</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/device_buffer_2d.h" line="43" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_device_buffer2_d_1a481c40f7fef627c993ba402500fadd46" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void muda::DeviceBuffer2D&lt; T &gt;::fill</definition>
+        <argsstring>(const T &amp;v)</argsstring>
+        <name>fill</name>
+        <qualifiedname>muda::DeviceBuffer2D::fill</qualifiedname>
+        <param>
+          <type>const T &amp;</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/device_buffer_2d.h" line="44" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_device_buffer2_d_1a4e77caa90dc9b69c9f687902bb168342" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classmuda_1_1_dense2_d_base" kindref="compound">Dense2D</ref>&lt; T &gt;</type>
+        <definition>Dense2D&lt; T &gt; muda::DeviceBuffer2D&lt; T &gt;::viewer</definition>
+        <argsstring>() MUDA_NOEXCEPT</argsstring>
+        <name>viewer</name>
+        <qualifiedname>muda::DeviceBuffer2D::viewer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/device_buffer_2d.h" line="46" column="14" bodyfile="src/muda/buffer/device_buffer_2d.h" bodystart="46" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_device_buffer2_d_1af26d986a6c2aac08d0a9dca72c9a0d99" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classmuda_1_1_dense2_d_base" kindref="compound">CDense2D</ref>&lt; T &gt;</type>
+        <definition>CDense2D&lt; T &gt; muda::DeviceBuffer2D&lt; T &gt;::cviewer</definition>
+        <argsstring>() const MUDA_NOEXCEPT</argsstring>
+        <name>cviewer</name>
+        <qualifiedname>muda::DeviceBuffer2D::cviewer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/device_buffer_2d.h" line="47" column="14" bodyfile="src/muda/buffer/device_buffer_2d.h" bodystart="47" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_device_buffer2_d_1a57eeb2facb742152c118e34472118bef" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classmuda_1_1_buffer2_d_view_t" kindref="compound">Buffer2DView</ref>&lt; T &gt;</type>
+        <definition>Buffer2DView&lt; T &gt; muda::DeviceBuffer2D&lt; T &gt;::view</definition>
+        <argsstring>(Offset2D offset, Extent2D extent={}) MUDA_NOEXCEPT</argsstring>
+        <name>view</name>
+        <qualifiedname>muda::DeviceBuffer2D::view</qualifiedname>
+        <param>
+          <type><ref refid="classmuda_1_1_offset2_d" kindref="compound">Offset2D</ref></type>
+          <declname>offset</declname>
+        </param>
+        <param>
+          <type><ref refid="classmuda_1_1_extent2_d" kindref="compound">Extent2D</ref></type>
+          <declname>extent</declname>
+          <defval>{}</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/device_buffer_2d.h" line="49" column="18" bodyfile="src/muda/buffer/device_buffer_2d.h" bodystart="49" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_device_buffer2_d_1a257bb08a14e5fd58cc275d803f8b4c0b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classmuda_1_1_buffer2_d_view_t" kindref="compound">Buffer2DView</ref>&lt; T &gt;</type>
+        <definition>Buffer2DView&lt; T &gt; muda::DeviceBuffer2D&lt; T &gt;::view</definition>
+        <argsstring>() MUDA_NOEXCEPT</argsstring>
+        <name>view</name>
+        <qualifiedname>muda::DeviceBuffer2D::view</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/device_buffer_2d.h" line="53" column="18" bodyfile="src/muda/buffer/device_buffer_2d.h" bodystart="53" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_device_buffer2_d_1a642774074eb26a2089be089c48823139" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>muda::DeviceBuffer2D&lt; T &gt;::operator Buffer2DView&lt; T &gt;</definition>
+        <argsstring>() MUDA_NOEXCEPT</argsstring>
+        <name>operator Buffer2DView&lt; T &gt;</name>
+        <qualifiedname>muda::DeviceBuffer2D::operator Buffer2DView&lt; T &gt;</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/device_buffer_2d.h" line="57" column="5" bodyfile="src/muda/buffer/device_buffer_2d.h" bodystart="57" bodyend="57"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_device_buffer2_d_1a2ab1fcc52dd4ea2e1797ba1fa30a8a9a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classmuda_1_1_buffer2_d_view_t" kindref="compound">CBuffer2DView</ref>&lt; T &gt;</type>
+        <definition>CBuffer2DView&lt; T &gt; muda::DeviceBuffer2D&lt; T &gt;::view</definition>
+        <argsstring>(Offset2D offset, Extent2D extent={}) const MUDA_NOEXCEPT</argsstring>
+        <name>view</name>
+        <qualifiedname>muda::DeviceBuffer2D::view</qualifiedname>
+        <param>
+          <type><ref refid="classmuda_1_1_offset2_d" kindref="compound">Offset2D</ref></type>
+          <declname>offset</declname>
+        </param>
+        <param>
+          <type><ref refid="classmuda_1_1_extent2_d" kindref="compound">Extent2D</ref></type>
+          <declname>extent</declname>
+          <defval>{}</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/device_buffer_2d.h" line="59" column="19" bodyfile="src/muda/buffer/device_buffer_2d.h" bodystart="59" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_device_buffer2_d_1a9c65e53ff485f9550bf2ef626b33cf0f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classmuda_1_1_buffer2_d_view_t" kindref="compound">CBuffer2DView</ref>&lt; T &gt;</type>
+        <definition>CBuffer2DView&lt; T &gt; muda::DeviceBuffer2D&lt; T &gt;::view</definition>
+        <argsstring>() const MUDA_NOEXCEPT</argsstring>
+        <name>view</name>
+        <qualifiedname>muda::DeviceBuffer2D::view</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/device_buffer_2d.h" line="64" column="19" bodyfile="src/muda/buffer/device_buffer_2d.h" bodystart="64" bodyend="67"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_device_buffer2_d_1a7122a0ac0895a3004073ce13142c2ea0" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>muda::DeviceBuffer2D&lt; T &gt;::operator CBuffer2DView&lt; T &gt;</definition>
+        <argsstring>() const MUDA_NOEXCEPT</argsstring>
+        <name>operator CBuffer2DView&lt; T &gt;</name>
+        <qualifiedname>muda::DeviceBuffer2D::operator CBuffer2DView&lt; T &gt;</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/device_buffer_2d.h" line="68" column="5" bodyfile="src/muda/buffer/device_buffer_2d.h" bodystart="68" bodyend="68"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_device_buffer2_d_1a71687cb783a8ad159e1e48fe65b6dc4a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>muda::DeviceBuffer2D&lt; T &gt;::~DeviceBuffer2D</definition>
+        <argsstring>()</argsstring>
+        <name>~DeviceBuffer2D</name>
+        <qualifiedname>muda::DeviceBuffer2D::~DeviceBuffer2D</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/device_buffer_2d.h" line="70" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_device_buffer2_d_1a5c9a9d7fae519944b0ceb8f7e7dffcab" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto muda::DeviceBuffer2D&lt; T &gt;::extent</definition>
+        <argsstring>() const MUDA_NOEXCEPT</argsstring>
+        <name>extent</name>
+        <qualifiedname>muda::DeviceBuffer2D::extent</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/device_buffer_2d.h" line="72" column="10" bodyfile="src/muda/buffer/device_buffer_2d.h" bodystart="72" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_device_buffer2_d_1a83c144564ede54ef24e3874ea0d42de4" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto muda::DeviceBuffer2D&lt; T &gt;::capacity</definition>
+        <argsstring>() const MUDA_NOEXCEPT</argsstring>
+        <name>capacity</name>
+        <qualifiedname>muda::DeviceBuffer2D::capacity</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/device_buffer_2d.h" line="73" column="10" bodyfile="src/muda/buffer/device_buffer_2d.h" bodystart="73" bodyend="73"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_device_buffer2_d_1a7aad1f255d32761ac2a060e3c4c4d2c6" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto muda::DeviceBuffer2D&lt; T &gt;::pitch_bytes</definition>
+        <argsstring>() const MUDA_NOEXCEPT</argsstring>
+        <name>pitch_bytes</name>
+        <qualifiedname>muda::DeviceBuffer2D::pitch_bytes</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/device_buffer_2d.h" line="74" column="10" bodyfile="src/muda/buffer/device_buffer_2d.h" bodystart="74" bodyend="74"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_device_buffer2_d_1a8b9f21bbe7fac596fbfd3697dd46efdf" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto muda::DeviceBuffer2D&lt; T &gt;::total_size</definition>
+        <argsstring>() const MUDA_NOEXCEPT</argsstring>
+        <name>total_size</name>
+        <qualifiedname>muda::DeviceBuffer2D::total_size</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/device_buffer_2d.h" line="75" column="10" bodyfile="src/muda/buffer/device_buffer_2d.h" bodystart="75" bodyend="78"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_device_buffer2_d_1a121e681261db55361e4621711992cd13" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>T *</type>
+        <definition>T * muda::DeviceBuffer2D&lt; T &gt;::data</definition>
+        <argsstring>() MUDA_NOEXCEPT</argsstring>
+        <name>data</name>
+        <qualifiedname>muda::DeviceBuffer2D::data</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/device_buffer_2d.h" line="79" column="13" bodyfile="src/muda/buffer/device_buffer_2d.h" bodystart="79" bodyend="79"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_device_buffer2_d_1acab416751c54c3f9d7ba279247d655cf" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const T *</type>
+        <definition>const T * muda::DeviceBuffer2D&lt; T &gt;::data</definition>
+        <argsstring>() const MUDA_NOEXCEPT</argsstring>
+        <name>data</name>
+        <qualifiedname>muda::DeviceBuffer2D::data</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/device_buffer_2d.h" line="80" column="13" bodyfile="src/muda/buffer/device_buffer_2d.h" bodystart="80" bodyend="80"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/muda/buffer/device_buffer_2d.h" line="12" column="1" bodyfile="src/muda/buffer/device_buffer_2d.h" bodystart="13" bodyend="81"/>
+    <listofallmembers>
+      <member refid="classmuda_1_1_device_buffer2_d_1a3373c2e8cf6a6172637baf3c12d153ad" prot="private" virt="non-virtual"><scope>muda::DeviceBuffer2D</scope><name>BufferLaunch</name></member>
+      <member refid="classmuda_1_1_device_buffer2_d_1a83c144564ede54ef24e3874ea0d42de4" prot="public" virt="non-virtual"><scope>muda::DeviceBuffer2D</scope><name>capacity</name></member>
+      <member refid="classmuda_1_1_device_buffer2_d_1accd7b3da23c474d2f81c75f4e3a432ce" prot="public" virt="non-virtual"><scope>muda::DeviceBuffer2D</scope><name>clear</name></member>
+      <member refid="classmuda_1_1_device_buffer2_d_1abdc7384c00c214ad859ec09c566eb45d" prot="public" virt="non-virtual"><scope>muda::DeviceBuffer2D</scope><name>copy_from</name></member>
+      <member refid="classmuda_1_1_device_buffer2_d_1a5c21ce6111647ad59eaa32aa2bb09f38" prot="public" virt="non-virtual"><scope>muda::DeviceBuffer2D</scope><name>copy_to</name></member>
+      <member refid="classmuda_1_1_device_buffer2_d_1af26d986a6c2aac08d0a9dca72c9a0d99" prot="public" virt="non-virtual"><scope>muda::DeviceBuffer2D</scope><name>cviewer</name></member>
+      <member refid="classmuda_1_1_device_buffer2_d_1a121e681261db55361e4621711992cd13" prot="public" virt="non-virtual"><scope>muda::DeviceBuffer2D</scope><name>data</name></member>
+      <member refid="classmuda_1_1_device_buffer2_d_1acab416751c54c3f9d7ba279247d655cf" prot="public" virt="non-virtual"><scope>muda::DeviceBuffer2D</scope><name>data</name></member>
+      <member refid="classmuda_1_1_device_buffer2_d_1a530c4afcf92263895c8e210ec2d6ddb8" prot="public" virt="non-virtual"><scope>muda::DeviceBuffer2D</scope><name>DeviceBuffer2D</name></member>
+      <member refid="classmuda_1_1_device_buffer2_d_1acff80f61b7b161df29837f08340b6990" prot="public" virt="non-virtual"><scope>muda::DeviceBuffer2D</scope><name>DeviceBuffer2D</name></member>
+      <member refid="classmuda_1_1_device_buffer2_d_1a9427cda92b6b08fb706489794a4813b2" prot="public" virt="non-virtual"><scope>muda::DeviceBuffer2D</scope><name>DeviceBuffer2D</name></member>
+      <member refid="classmuda_1_1_device_buffer2_d_1a752b8ffab34f69bc22fe74013900246f" prot="public" virt="non-virtual"><scope>muda::DeviceBuffer2D</scope><name>DeviceBuffer2D</name></member>
+      <member refid="classmuda_1_1_device_buffer2_d_1a36c4b8b2eb8b64dc6e152f6a241ecfe0" prot="public" virt="non-virtual"><scope>muda::DeviceBuffer2D</scope><name>DeviceBuffer2D</name></member>
+      <member refid="classmuda_1_1_device_buffer2_d_1a5c9a9d7fae519944b0ceb8f7e7dffcab" prot="public" virt="non-virtual"><scope>muda::DeviceBuffer2D</scope><name>extent</name></member>
+      <member refid="classmuda_1_1_device_buffer2_d_1a481c40f7fef627c993ba402500fadd46" prot="public" virt="non-virtual"><scope>muda::DeviceBuffer2D</scope><name>fill</name></member>
+      <member refid="classmuda_1_1_device_buffer2_d_1afb1cf828947f39ab630bf8fe5bc03aa2" prot="private" virt="non-virtual"><scope>muda::DeviceBuffer2D</scope><name>m_capacity</name></member>
+      <member refid="classmuda_1_1_device_buffer2_d_1ab557cd6a9e2f4344dac5cd786aa93bf3" prot="private" virt="non-virtual"><scope>muda::DeviceBuffer2D</scope><name>m_data</name></member>
+      <member refid="classmuda_1_1_device_buffer2_d_1a2f05e923777129dbbee42f67d47cc8c2" prot="private" virt="non-virtual"><scope>muda::DeviceBuffer2D</scope><name>m_extent</name></member>
+      <member refid="classmuda_1_1_device_buffer2_d_1a854dd7214549c570c0d814feea5c9520" prot="private" virt="non-virtual"><scope>muda::DeviceBuffer2D</scope><name>m_pitch_bytes</name></member>
+      <member refid="classmuda_1_1_device_buffer2_d_1a3da08685fa6b7d2236b99a33da67b81a" prot="private" virt="non-virtual"><scope>muda::DeviceBuffer2D</scope><name>NDReshaper</name></member>
+      <member refid="classmuda_1_1_device_buffer2_d_1a642774074eb26a2089be089c48823139" prot="public" virt="non-virtual"><scope>muda::DeviceBuffer2D</scope><name>operator Buffer2DView&lt; T &gt;</name></member>
+      <member refid="classmuda_1_1_device_buffer2_d_1a7122a0ac0895a3004073ce13142c2ea0" prot="public" virt="non-virtual"><scope>muda::DeviceBuffer2D</scope><name>operator CBuffer2DView&lt; T &gt;</name></member>
+      <member refid="classmuda_1_1_device_buffer2_d_1a0a5e50f4096a1816ea4f3a3e965494e0" prot="public" virt="non-virtual"><scope>muda::DeviceBuffer2D</scope><name>operator=</name></member>
+      <member refid="classmuda_1_1_device_buffer2_d_1a137c0dc6256e76293d88d4f5aafb8716" prot="public" virt="non-virtual"><scope>muda::DeviceBuffer2D</scope><name>operator=</name></member>
+      <member refid="classmuda_1_1_device_buffer2_d_1a69cd93d6471bb6e90157ba718d1ecd90" prot="public" virt="non-virtual"><scope>muda::DeviceBuffer2D</scope><name>operator=</name></member>
+      <member refid="classmuda_1_1_device_buffer2_d_1a7aad1f255d32761ac2a060e3c4c4d2c6" prot="public" virt="non-virtual"><scope>muda::DeviceBuffer2D</scope><name>pitch_bytes</name></member>
+      <member refid="classmuda_1_1_device_buffer2_d_1aa5dfc2382d5a990798552fe3f52f86c1" prot="public" virt="non-virtual"><scope>muda::DeviceBuffer2D</scope><name>reserve</name></member>
+      <member refid="classmuda_1_1_device_buffer2_d_1a8bf1bd2db3348efafc46803c780effdb" prot="public" virt="non-virtual"><scope>muda::DeviceBuffer2D</scope><name>resize</name></member>
+      <member refid="classmuda_1_1_device_buffer2_d_1ab4645804a5b6df502af44113d46e45ab" prot="public" virt="non-virtual"><scope>muda::DeviceBuffer2D</scope><name>resize</name></member>
+      <member refid="classmuda_1_1_device_buffer2_d_1aef80315f5b8f9bbb9de59b602c0d1939" prot="public" virt="non-virtual"><scope>muda::DeviceBuffer2D</scope><name>shrink_to_fit</name></member>
+      <member refid="classmuda_1_1_device_buffer2_d_1a8b9f21bbe7fac596fbfd3697dd46efdf" prot="public" virt="non-virtual"><scope>muda::DeviceBuffer2D</scope><name>total_size</name></member>
+      <member refid="classmuda_1_1_device_buffer2_d_1a36d7780275d615cf2ca19d299c4af7fa" prot="public" virt="non-virtual"><scope>muda::DeviceBuffer2D</scope><name>value_type</name></member>
+      <member refid="classmuda_1_1_device_buffer2_d_1a57eeb2facb742152c118e34472118bef" prot="public" virt="non-virtual"><scope>muda::DeviceBuffer2D</scope><name>view</name></member>
+      <member refid="classmuda_1_1_device_buffer2_d_1a257bb08a14e5fd58cc275d803f8b4c0b" prot="public" virt="non-virtual"><scope>muda::DeviceBuffer2D</scope><name>view</name></member>
+      <member refid="classmuda_1_1_device_buffer2_d_1a2ab1fcc52dd4ea2e1797ba1fa30a8a9a" prot="public" virt="non-virtual"><scope>muda::DeviceBuffer2D</scope><name>view</name></member>
+      <member refid="classmuda_1_1_device_buffer2_d_1a9c65e53ff485f9550bf2ef626b33cf0f" prot="public" virt="non-virtual"><scope>muda::DeviceBuffer2D</scope><name>view</name></member>
+      <member refid="classmuda_1_1_device_buffer2_d_1a4e77caa90dc9b69c9f687902bb168342" prot="public" virt="non-virtual"><scope>muda::DeviceBuffer2D</scope><name>viewer</name></member>
+      <member refid="classmuda_1_1_device_buffer2_d_1a71687cb783a8ad159e1e48fe65b6dc4a" prot="public" virt="non-virtual"><scope>muda::DeviceBuffer2D</scope><name>~DeviceBuffer2D</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

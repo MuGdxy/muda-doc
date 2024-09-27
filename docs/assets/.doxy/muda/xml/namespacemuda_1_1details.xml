@@ -1,0 +1,255 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="namespacemuda_1_1details" kind="namespace" language="C++">
+    <compoundname>muda::details</compoundname>
+    <innerclass refid="classmuda_1_1details_1_1_compute_graph_accessor" prot="public">muda::details::ComputeGraphAccessor</innerclass>
+    <innerclass refid="classmuda_1_1details_1_1_host_device_string_cache" prot="public">muda::details::HostDeviceStringCache</innerclass>
+    <innerclass refid="structmuda_1_1details_1_1_launch_callable" prot="public">muda::details::LaunchCallable</innerclass>
+    <innerclass refid="classmuda_1_1details_1_1_launch_info_cache" prot="public">muda::details::LaunchInfoCache</innerclass>
+    <innerclass refid="classmuda_1_1details_1_1_local_var_id" prot="public">muda::details::LocalVarId</innerclass>
+    <innerclass refid="classmuda_1_1details_1_1_local_var_info" prot="public">muda::details::LocalVarInfo</innerclass>
+    <innerclass refid="classmuda_1_1details_1_1_logger_meta_data" prot="public">muda::details::LoggerMetaData</innerclass>
+    <innerclass refid="classmuda_1_1details_1_1_logger_offset" prot="public">muda::details::LoggerOffset</innerclass>
+    <innerclass refid="classmuda_1_1details_1_1_matrix_format_converter" prot="public">muda::details::MatrixFormatConverter</innerclass>
+    <innerclass refid="classmuda_1_1details_1_1_matrix_format_converter_3_01_t_00_011_01_4" prot="public">muda::details::MatrixFormatConverter&lt; T, 1 &gt;</innerclass>
+    <innerclass refid="classmuda_1_1details_1_1_matrix_format_converter_base" prot="public">muda::details::MatrixFormatConverterBase</innerclass>
+    <innerclass refid="classmuda_1_1details_1_1_matrix_format_converter_type" prot="public">muda::details::MatrixFormatConverterType</innerclass>
+    <innerclass refid="classmuda_1_1details_1_1_parallel_for_callable" prot="public">muda::details::ParallelForCallable</innerclass>
+    <innerclass refid="structmuda_1_1details_1_1_so_a_copy_map" prot="public">muda::details::SoACopyMap</innerclass>
+    <innerclass refid="classmuda_1_1details_1_1_string_pointer" prot="public">muda::details::StringPointer</innerclass>
+    <innerclass refid="classmuda_1_1details_1_1_temp_buffer" prot="public">muda::details::TempBuffer</innerclass>
+    <innernamespace refid="namespacemuda_1_1details_1_1buffer">muda::details::buffer</innernamespace>
+    <innernamespace refid="namespacemuda_1_1details_1_1eigen">muda::details::eigen</innernamespace>
+    <innernamespace refid="namespacemuda_1_1details_1_1field">muda::details::field</innernamespace>
+    <innernamespace refid="namespacemuda_1_1details_1_1stream">muda::details::stream</innernamespace>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="vector_8h_1a1ec607d0848fb8326ea9919b8f9e7db2" prot="public" static="no">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+          <param>
+            <type>typename Alloc</type>
+          </param>
+        </templateparamlist>
+        <type>thrust::detail::vector_base&lt; T, Alloc &gt;</type>
+        <definition>using muda::details::vector_base = typedef thrust::detail::vector_base&lt;T, Alloc&gt;</definition>
+        <argsstring></argsstring>
+        <name>vector_base</name>
+        <qualifiedname>muda::details::vector_base</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/container/vector.h" line="18" column="5" bodyfile="src/muda/container/vector.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="temp__buffer_8h_1a675b63318367773842537656c3f499f7" prot="public" static="no">
+        <type><ref refid="classmuda_1_1details_1_1_temp_buffer" kindref="compound">TempBuffer</ref>&lt; std::byte &gt;</type>
+        <definition>using muda::details::ByteTempBuffer = typedef TempBuffer&lt;std::byte&gt;</definition>
+        <argsstring></argsstring>
+        <name>ByteTempBuffer</name>
+        <qualifiedname>muda::details::ByteTempBuffer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/tools/temp_buffer.h" line="130" column="1" bodyfile="src/muda/tools/temp_buffer.h" bodystart="130" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="host__call_8h_1a51e68c218b68debf2c1808703d4ad793" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename F</type>
+          </param>
+          <param>
+            <type>typename UserTag</type>
+          </param>
+        </templateparamlist>
+        <type>MUDA_HOST void CUDARTAPI</type>
+        <definition>MUDA_HOST void CUDARTAPI muda::details::generic_host_call</definition>
+        <argsstring>(void *userdata)</argsstring>
+        <name>generic_host_call</name>
+        <qualifiedname>muda::details::generic_host_call</qualifiedname>
+        <param>
+          <type>void *</type>
+          <declname>userdata</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/launch/host_call.h" line="9" column="30" bodyfile="src/muda/launch/host_call.h" bodystart="9" bodyend="13"/>
+      </memberdef>
+      <memberdef kind="function" id="host__call_8h_1a3c8b9ded16a96c49aabe48adc30f8480" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename F</type>
+          </param>
+          <param>
+            <type>typename UserTag</type>
+          </param>
+        </templateparamlist>
+        <type>MUDA_HOST void CUDARTAPI</type>
+        <definition>MUDA_HOST void CUDARTAPI muda::details::delete_function_object</definition>
+        <argsstring>(void *userdata)</argsstring>
+        <name>delete_function_object</name>
+        <qualifiedname>muda::details::delete_function_object</qualifiedname>
+        <param>
+          <type>void *</type>
+          <declname>userdata</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/launch/host_call.h" line="16" column="30" bodyfile="src/muda/launch/host_call.h" bodystart="16" bodyend="20"/>
+      </memberdef>
+      <memberdef kind="function" id="launch_2launch_8h_1a43fd1153b0f40a68fa1a603796e6e397" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename F</type>
+          </param>
+          <param>
+            <type>typename UserTag</type>
+            <defval>DefaultTag</defval>
+          </param>
+        </templateparamlist>
+        <type>MUDA_GLOBAL void</type>
+        <definition>MUDA_GLOBAL void muda::details::generic_kernel</definition>
+        <argsstring>(LaunchCallable&lt; F &gt; f)</argsstring>
+        <name>generic_kernel</name>
+        <qualifiedname>muda::details::generic_kernel</qualifiedname>
+        <param>
+          <type><ref refid="structmuda_1_1details_1_1_launch_callable" kindref="compound">LaunchCallable</ref>&lt; F &gt;</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/launch/launch.h" line="31" column="22" declfile="src/muda/launch/launch.h" declline="31" declcolumn="22"/>
+      </memberdef>
+      <memberdef kind="function" id="launch_2launch_8h_1a8134ac05de8f6f3aec918600b078441c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename F</type>
+          </param>
+          <param>
+            <type>typename UserTag</type>
+            <defval>DefaultTag</defval>
+          </param>
+        </templateparamlist>
+        <type>MUDA_GLOBAL void</type>
+        <definition>MUDA_GLOBAL void muda::details::generic_kernel_with_range</definition>
+        <argsstring>(LaunchCallable&lt; F &gt; f)</argsstring>
+        <name>generic_kernel_with_range</name>
+        <qualifiedname>muda::details::generic_kernel_with_range</qualifiedname>
+        <param>
+          <type><ref refid="structmuda_1_1details_1_1_launch_callable" kindref="compound">LaunchCallable</ref>&lt; F &gt;</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/launch/launch.h" line="34" column="22" declfile="src/muda/launch/launch.h" declline="34" declcolumn="22"/>
+      </memberdef>
+      <memberdef kind="function" id="launch__base_8h_1aadd5bf746afec406146cc61216bf677b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void muda::details::stream_error_callback</definition>
+        <argsstring>(cudaStream_t stream, cudaError error, void *userdata)</argsstring>
+        <name>stream_error_callback</name>
+        <qualifiedname>muda::details::stream_error_callback</qualifiedname>
+        <param>
+          <type>cudaStream_t</type>
+          <declname>stream</declname>
+        </param>
+        <param>
+          <type>cudaError</type>
+          <declname>error</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>userdata</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/launch/launch_base.h" line="27" column="17" bodyfile="src/muda/launch/launch_base.h" bodystart="27" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="function" id="parallel__for_8h_1a9be9287e9adecaa29efe56ef2197dc9e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename F</type>
+          </param>
+          <param>
+            <type>typename UserTag</type>
+          </param>
+        </templateparamlist>
+        <type>MUDA_GLOBAL void</type>
+        <definition>MUDA_GLOBAL void muda::details::parallel_for_kernel</definition>
+        <argsstring>(ParallelForCallable&lt; F &gt; f)</argsstring>
+        <name>parallel_for_kernel</name>
+        <qualifiedname>muda::details::parallel_for_kernel</qualifiedname>
+        <param>
+          <type><ref refid="classmuda_1_1details_1_1_parallel_for_callable" kindref="compound">ParallelForCallable</ref>&lt; F &gt;</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/launch/parallel_for.h" line="37" column="22" declfile="src/muda/launch/parallel_for.h" declline="37" declcolumn="22"/>
+      </memberdef>
+      <memberdef kind="function" id="parallel__for_8h_1a4ca6d0bded526003335b37695eb38cb1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename F</type>
+          </param>
+          <param>
+            <type>typename UserTag</type>
+          </param>
+        </templateparamlist>
+        <type>MUDA_GLOBAL void</type>
+        <definition>MUDA_GLOBAL void muda::details::grid_stride_loop_kernel</definition>
+        <argsstring>(ParallelForCallable&lt; F &gt; f)</argsstring>
+        <name>grid_stride_loop_kernel</name>
+        <qualifiedname>muda::details::grid_stride_loop_kernel</qualifiedname>
+        <param>
+          <type><ref refid="classmuda_1_1details_1_1_parallel_for_callable" kindref="compound">ParallelForCallable</ref>&lt; F &gt;</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/launch/parallel_for.h" line="40" column="22" declfile="src/muda/launch/parallel_for.h" declline="40" declcolumn="22"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/muda/buffer/agent/kernel_assign.h" line="5" column="1"/>
+  </compounddef>
+</doxygen>

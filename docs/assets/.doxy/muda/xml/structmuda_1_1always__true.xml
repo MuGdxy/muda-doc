@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structmuda_1_1always__true" kind="struct" language="C++" prot="public">
+    <compoundname>muda::always_true</compoundname>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="structmuda_1_1always__true_1abb8cebf3a59f9a178d054dc6d57f30a4" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr bool</type>
+        <definition>constexpr bool muda::always_true&lt; T &gt;::value</definition>
+        <argsstring></argsstring>
+        <name>value</name>
+        <qualifiedname>muda::always_true::value</qualifiedname>
+        <initializer>= true</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/type_traits/always.h" line="17" column="27" bodyfile="src/muda/type_traits/always.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/muda/type_traits/always.h" line="15" column="1" bodyfile="src/muda/type_traits/always.h" bodystart="16" bodyend="18"/>
+    <listofallmembers>
+      <member refid="structmuda_1_1always__true_1abb8cebf3a59f9a178d054dc6d57f30a4" prot="public" virt="non-virtual"><scope>muda::always_true</scope><name>value</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

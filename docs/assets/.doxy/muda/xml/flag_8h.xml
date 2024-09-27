@@ -1,0 +1,619 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="flag_8h" kind="file" language="C++">
+    <compoundname>flag.h</compoundname>
+    <includes local="no">type_traits</includes>
+    <includes refid="muda__def_8h" local="no">muda/muda_def.h</includes>
+    <includedby refid="event_8h" local="no">src/muda/launch/event.h</includedby>
+    <incdepgraph>
+      <node id="7">
+        <label>cuda_runtime.h</label>
+        <link refid="cuda__runtime_8h_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>cuda_runtime_api.h</label>
+        <link refid="cuda__runtime__api_8h_source"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>muda/muda_config.h</label>
+        <link refid="muda__config_8h_source"/>
+      </node>
+      <node id="3">
+        <label>muda/muda_def.h</label>
+        <link refid="muda__def_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>src/muda/tools/flag.h</label>
+        <link refid="flag_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>muda/tools/platform.h</label>
+        <link refid="platform_8h_source"/>
+      </node>
+      <node id="6">
+        <label>cuda.h</label>
+      </node>
+      <node id="2">
+        <label>type_traits</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="32">
+        <label>src/muda/buffer.h</label>
+        <link refid="buffer_8h_source"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="38">
+        <label>src/muda/buffer/buffer_launch.h</label>
+        <link refid="buffer__launch_8h_source"/>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>src/muda/buffer/graph_buffer_2d_view.h</label>
+        <link refid="graph__buffer__2d__view_8h_source"/>
+      </node>
+      <node id="30">
+        <label>src/muda/buffer/graph_buffer_3d_view.h</label>
+        <link refid="graph__buffer__3d__view_8h_source"/>
+      </node>
+      <node id="31">
+        <label>src/muda/buffer/graph_buffer_view.h</label>
+        <link refid="graph__buffer__view_8h_source"/>
+        <childnode refid="32" relation="include">
+        </childnode>
+      </node>
+      <node id="33">
+        <label>src/muda/buffer/graph_var_view.h</label>
+        <link refid="graph__var__view_8h_source"/>
+        <childnode refid="32" relation="include">
+        </childnode>
+      </node>
+      <node id="46">
+        <label>src/muda/buffer/reshape_nd/reserve.h</label>
+        <link refid="reserve_8h_source"/>
+      </node>
+      <node id="4">
+        <label>src/muda/compute_graph.h</label>
+        <link refid="compute__graph_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>src/muda/compute_graph/compute_graph.h</label>
+        <link refid="compute__graph_2compute__graph_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>src/muda/compute_graph/compute_graph_var.h</label>
+        <link refid="compute__graph__var_8h_source"/>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>src/muda/compute_graph/nodes/compute_graph_event_node.h</label>
+        <link refid="compute__graph__event__node_8h_source"/>
+      </node>
+      <node id="7">
+        <label>src/muda/compute_graph/nodes/compute_graph_memory_node.h</label>
+        <link refid="compute__graph__memory__node_8h_source"/>
+      </node>
+      <node id="11">
+        <label>src/muda/cub/cub.h</label>
+        <link refid="cub_8h_source"/>
+      </node>
+      <node id="10">
+        <label>src/muda/cub/cub_device.h</label>
+        <link refid="cub__device_8h_source"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>src/muda/cub/device/cub_wrapper.h</label>
+        <link refid="cub__wrapper_8h_source"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>src/muda/cub/device/device_adjacent_difference.h</label>
+        <link refid="device__adjacent__difference_8h_source"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>src/muda/cub/device/device_histogram.h</label>
+        <link refid="device__histogram_8h_source"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>src/muda/cub/device/device_merge_sort.h</label>
+        <link refid="device__merge__sort_8h_source"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>src/muda/cub/device/device_partition.h</label>
+        <link refid="device__partition_8h_source"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>src/muda/cub/device/device_radix_sort.h</label>
+        <link refid="device__radix__sort_8h_source"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>src/muda/cub/device/device_reduce.h</label>
+        <link refid="device__reduce_8h_source"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>src/muda/cub/device/device_run_length_encode.h</label>
+        <link refid="device__run__length__encode_8h_source"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>src/muda/cub/device/device_scan.h</label>
+        <link refid="device__scan_8h_source"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>src/muda/cub/device/device_segmented_radix_sort.h</label>
+        <link refid="device__segmented__radix__sort_8h_source"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>src/muda/cub/device/device_segmented_reduce.h</label>
+        <link refid="device__segmented__reduce_8h_source"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>src/muda/cub/device/device_segmented_sort.h</label>
+        <link refid="device__segmented__sort_8h_source"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>src/muda/cub/device/device_select.h</label>
+        <link refid="device__select_8h_source"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>src/muda/cub/device/device_spmv.h</label>
+        <link refid="device__spmv_8h_source"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="48">
+        <label>src/muda/ext/field/field_entry_launch.h</label>
+        <link refid="field__entry__launch_8h_source"/>
+      </node>
+      <node id="19">
+        <label>src/muda/ext/geo/lbvh.h</label>
+        <link refid="lbvh_8h_source"/>
+      </node>
+      <node id="17">
+        <label>src/muda/ext/geo/lbvh/bvh.h</label>
+        <link refid="bvh_8h_source"/>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>src/muda/ext/geo/lbvh/lbvh.h</label>
+        <link refid="lbvh_2lbvh_8h_source"/>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>src/muda/ext/geo/lbvh/query.h</label>
+        <link refid="query_8h_source"/>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="44">
+        <label>src/muda/ext/geo/spatial_hash.h</label>
+        <link refid="spatial__hash_8h_source"/>
+      </node>
+      <node id="43">
+        <label>src/muda/ext/geo/spatial_hash/sparse_spatial_hash.h</label>
+        <link refid="sparse__spatial__hash_8h_source"/>
+        <childnode refid="44" relation="include">
+        </childnode>
+      </node>
+      <node id="42">
+        <label>src/muda/ext/geo/spatial_hash/sparse_spatial_hash_impl.h</label>
+        <link refid="sparse__spatial__hash__impl_8h_source"/>
+        <childnode refid="43" relation="include">
+        </childnode>
+      </node>
+      <node id="35">
+        <label>src/muda/graph.h</label>
+        <link refid="graph_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="34">
+        <label>src/muda/graph/graph_graph_viewer.h</label>
+        <link refid="graph__graph__viewer_8h_source"/>
+        <childnode refid="35" relation="include">
+        </childnode>
+      </node>
+      <node id="39">
+        <label>src/muda/graph/graph_launch.h</label>
+        <link refid="graph__launch_8h_source"/>
+        <childnode refid="35" relation="include">
+        </childnode>
+      </node>
+      <node id="36">
+        <label>src/muda/launch.h</label>
+        <link refid="launch_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>src/muda/launch/event.h</label>
+        <link refid="event_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+      </node>
+      <node id="40">
+        <label>src/muda/launch/host_call.h</label>
+        <link refid="host__call_8h_source"/>
+        <childnode refid="36" relation="include">
+        </childnode>
+      </node>
+      <node id="41">
+        <label>src/muda/launch/launch.h</label>
+        <link refid="launch_2launch_8h"/>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+      </node>
+      <node id="37">
+        <label>src/muda/launch/launch_base.h</label>
+        <link refid="launch__base_8h_source"/>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+      </node>
+      <node id="45">
+        <label>src/muda/launch/memory.h</label>
+        <link refid="memory_8h_source"/>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+      </node>
+      <node id="47">
+        <label>src/muda/launch/parallel_for.h</label>
+        <link refid="parallel__for_8h"/>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>src/muda/muda.h</label>
+        <link refid="muda_8h_source"/>
+      </node>
+      <node id="1">
+        <label>src/muda/tools/flag.h</label>
+        <link refid="flag_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classmuda_1_1_flags" prot="public">muda::Flags</innerclass>
+    <innernamespace refid="namespacemuda">muda</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;type_traits&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;muda/muda_def.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">muda</highlight></codeline>
+<codeline lineno="6"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>BitType&gt;</highlight></codeline>
+<codeline lineno="8" refid="classmuda_1_1_flags" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classmuda_1_1_flags" kindref="compound">Flags</ref></highlight></codeline>
+<codeline lineno="9"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">bit_type<sp/><sp/>=<sp/>BitType;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">mask_type<sp/>=<sp/>typename<sp/>::std::underlying_type&lt;bit_type&gt;::type;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>constructors</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/>MUDA_GENERIC<sp/>MUDA_CONSTEXPR<sp/><ref refid="classmuda_1_1_flags" kindref="compound">Flags</ref>()<sp/>MUDA_NOEXCEPT<sp/>:<sp/>m_mask(0)<sp/>{}</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/>MUDA_GENERIC<sp/>MUDA_CONSTEXPR<sp/><ref refid="classmuda_1_1_flags" kindref="compound">Flags</ref>(BitType<sp/>bit)<sp/>MUDA_NOEXCEPT</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>m_mask(</highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="normal">mask_type</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(bit))</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>MUDA_GENERIC<sp/>MUDA_CONSTEXPR<sp/><ref refid="classmuda_1_1_flags" kindref="compound">Flags</ref>(<ref refid="classmuda_1_1_flags" kindref="compound">Flags&lt;BitType&gt;</ref><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">&amp;<sp/>rhs)<sp/>MUDA_NOEXCEPT<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>MUDA_GENERIC<sp/>MUDA_CONSTEXPR<sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="classmuda_1_1_flags" kindref="compound">Flags</ref>(mask_type<sp/>flags)<sp/>MUDA_NOEXCEPT<sp/>:<sp/>m_mask(flags)</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>relational<sp/>operators</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>auto<sp/>operator&lt;=&gt;(Flags&lt;BitType&gt;<sp/>const&amp;)<sp/>const<sp/>=<sp/>default;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>MUDA_GENERIC<sp/>MUDA_CONSTEXPR<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>operator&lt;(<ref refid="classmuda_1_1_flags" kindref="compound">Flags&lt;BitType&gt;</ref><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">&amp;<sp/>rhs)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>MUDA_NOEXCEPT</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_mask<sp/>&lt;<sp/>rhs.m_mask;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/>MUDA_GENERIC<sp/>MUDA_CONSTEXPR<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>operator&lt;=(<ref refid="classmuda_1_1_flags" kindref="compound">Flags&lt;BitType&gt;</ref><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">&amp;<sp/>rhs)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>MUDA_NOEXCEPT</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_mask<sp/>&lt;=<sp/>rhs.m_mask;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>MUDA_GENERIC<sp/>MUDA_CONSTEXPR<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>operator&gt;(<ref refid="classmuda_1_1_flags" kindref="compound">Flags&lt;BitType&gt;</ref><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">&amp;<sp/>rhs)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>MUDA_NOEXCEPT</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_mask<sp/>&gt;<sp/>rhs.m_mask;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>MUDA_GENERIC<sp/>MUDA_CONSTEXPR<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>operator&gt;=(<ref refid="classmuda_1_1_flags" kindref="compound">Flags&lt;BitType&gt;</ref><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">&amp;<sp/>rhs)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>MUDA_NOEXCEPT</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_mask<sp/>&gt;=<sp/>rhs.m_mask;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/>MUDA_GENERIC<sp/>MUDA_CONSTEXPR<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>operator==(<ref refid="classmuda_1_1_flags" kindref="compound">Flags&lt;BitType&gt;</ref><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">&amp;<sp/>rhs)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>MUDA_NOEXCEPT</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_mask<sp/>==<sp/>rhs.m_mask;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/>MUDA_GENERIC<sp/>MUDA_CONSTEXPR<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>operator!=(<ref refid="classmuda_1_1_flags" kindref="compound">Flags&lt;BitType&gt;</ref><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">&amp;<sp/>rhs)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>MUDA_NOEXCEPT</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_mask<sp/>!=<sp/>rhs.m_mask;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>logical<sp/>operator</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/>MUDA_GENERIC<sp/>MUDA_CONSTEXPR<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>operator!()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>MUDA_NOEXCEPT</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>!m_mask;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>bitwise<sp/>operators</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/>MUDA_GENERIC<sp/>MUDA_CONSTEXPR<sp/><ref refid="classmuda_1_1_flags" kindref="compound">Flags&lt;BitType&gt;</ref><sp/>operator&amp;(<ref refid="classmuda_1_1_flags" kindref="compound">Flags&lt;BitType&gt;</ref><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">&amp;<sp/>rhs)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>MUDA_NOEXCEPT</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classmuda_1_1_flags" kindref="compound">Flags&lt;BitType&gt;</ref>(m_mask<sp/>&amp;<sp/>rhs.m_mask);</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/>MUDA_GENERIC<sp/>MUDA_CONSTEXPR<sp/><ref refid="classmuda_1_1_flags" kindref="compound">Flags&lt;BitType&gt;</ref><sp/>operator|(<ref refid="classmuda_1_1_flags" kindref="compound">Flags&lt;BitType&gt;</ref><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">&amp;<sp/>rhs)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>MUDA_NOEXCEPT</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classmuda_1_1_flags" kindref="compound">Flags&lt;BitType&gt;</ref>(m_mask<sp/>|<sp/>rhs.m_mask);</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/>MUDA_GENERIC<sp/>MUDA_CONSTEXPR<sp/><ref refid="classmuda_1_1_flags" kindref="compound">Flags&lt;BitType&gt;</ref><sp/>operator^(<ref refid="classmuda_1_1_flags" kindref="compound">Flags&lt;BitType&gt;</ref><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">&amp;<sp/>rhs)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>MUDA_NOEXCEPT</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classmuda_1_1_flags" kindref="compound">Flags&lt;BitType&gt;</ref>(m_mask<sp/>^<sp/>rhs.m_mask);</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>assignment<sp/>operators</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/>MUDA_GENERIC<sp/>MUDA_CONSTEXPR<sp/><ref refid="classmuda_1_1_flags" kindref="compound">Flags&lt;BitType&gt;</ref>&amp;<sp/>operator=(<ref refid="classmuda_1_1_flags" kindref="compound">Flags&lt;BitType&gt;</ref><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">&amp;<sp/>rhs)<sp/>MUDA_NOEXCEPT<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/>MUDA_GENERIC<sp/>MUDA_CONSTEXPR<sp/><ref refid="classmuda_1_1_flags" kindref="compound">Flags&lt;BitType&gt;</ref>&amp;<sp/>operator|=(<ref refid="classmuda_1_1_flags" kindref="compound">Flags&lt;BitType&gt;</ref><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">&amp;<sp/>rhs)<sp/>MUDA_NOEXCEPT</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_mask<sp/>|=<sp/>rhs.m_mask;</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/>MUDA_GENERIC<sp/>MUDA_CONSTEXPR<sp/><ref refid="classmuda_1_1_flags" kindref="compound">Flags&lt;BitType&gt;</ref>&amp;<sp/>operator&amp;=(<ref refid="classmuda_1_1_flags" kindref="compound">Flags&lt;BitType&gt;</ref><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">&amp;<sp/>rhs)<sp/>MUDA_NOEXCEPT</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_mask<sp/>&amp;=<sp/>rhs.m_mask;</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/>MUDA_GENERIC<sp/>MUDA_CONSTEXPR<sp/><ref refid="classmuda_1_1_flags" kindref="compound">Flags&lt;BitType&gt;</ref>&amp;<sp/>operator^=(<ref refid="classmuda_1_1_flags" kindref="compound">Flags&lt;BitType&gt;</ref><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">&amp;<sp/>rhs)<sp/>MUDA_NOEXCEPT</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_mask<sp/>^=<sp/>rhs.m_mask;</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>cast<sp/>operators</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/>MUDA_GENERIC<sp/>MUDA_CONSTEXPR<sp/></highlight><highlight class="keyword">operator</highlight><highlight class="normal"><sp/>bool()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>MUDA_NOEXCEPT</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>!!m_mask;</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/>MUDA_GENERIC<sp/>MUDA_CONSTEXPR<sp/></highlight><highlight class="keyword">operator</highlight><highlight class="normal"><sp/>mask_type()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>MUDA_NOEXCEPT</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_mask;</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/>MUDA_GENERIC<sp/>MUDA_CONSTEXPR<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>has(BitType<sp/>bit)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>MUDA_NOEXCEPT</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(m_mask<sp/>&amp;<sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="normal">mask_type</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(bit))<sp/>==<sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="normal">mask_type</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(bit);</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/>mask_type<sp/>m_mask;</highlight></codeline>
+<codeline lineno="123"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="comment">//template<sp/>&lt;typename<sp/>BitType&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight><highlight class="comment">//MUDA_GENERIC<sp/>MUDA_CONSTEXPR<sp/>bool<sp/>operator&lt;(BitType<sp/>bit,<sp/>Flags&lt;BitType&gt;<sp/>const&amp;<sp/>flags)<sp/>MUDA_NOEXCEPT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight><highlight class="comment">//{</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>return<sp/>flags.operator&gt;(bit);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight><highlight class="comment">//}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight><highlight class="comment">//template<sp/>&lt;typename<sp/>BitType&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight><highlight class="comment">//MUDA_GENERIC<sp/>MUDA_CONSTEXPR<sp/>bool<sp/>operator&lt;=(BitType<sp/>bit,<sp/>Flags&lt;BitType&gt;<sp/>const&amp;<sp/>flags)<sp/>MUDA_NOEXCEPT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight><highlight class="comment">//{</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>return<sp/>flags.operator&gt;=(bit);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight><highlight class="comment">//}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight><highlight class="comment">//template<sp/>&lt;typename<sp/>BitType&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight><highlight class="comment">//MUDA_GENERIC<sp/>MUDA_CONSTEXPR<sp/>bool<sp/>operator&gt;(BitType<sp/>bit,<sp/>Flags&lt;BitType&gt;<sp/>const&amp;<sp/>flags)<sp/>MUDA_NOEXCEPT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight><highlight class="comment">//{</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>return<sp/>flags.operator&lt;(bit);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"></highlight><highlight class="comment">//}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight><highlight class="comment">//template<sp/>&lt;typename<sp/>BitType&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight><highlight class="comment">//MUDA_GENERIC<sp/>MUDA_CONSTEXPR<sp/>bool<sp/>operator&gt;=(BitType<sp/>bit,<sp/>Flags&lt;BitType&gt;<sp/>const&amp;<sp/>flags)<sp/>MUDA_NOEXCEPT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight><highlight class="comment">//{</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>return<sp/>flags.operator&lt;=(bit);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight><highlight class="comment">//}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight><highlight class="comment">//template<sp/>&lt;typename<sp/>BitType&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight><highlight class="comment">//MUDA_GENERIC<sp/>MUDA_CONSTEXPR<sp/>bool<sp/>operator==(BitType<sp/>bit,<sp/>Flags&lt;BitType&gt;<sp/>const&amp;<sp/>flags)<sp/>MUDA_NOEXCEPT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight><highlight class="comment">//{</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>return<sp/>flags.operator==(bit);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="154"><highlight class="normal"></highlight><highlight class="comment">//}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="156"><highlight class="normal"></highlight><highlight class="comment">//template<sp/>&lt;typename<sp/>BitType&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="157"><highlight class="normal"></highlight><highlight class="comment">//MUDA_GENERIC<sp/>MUDA_CONSTEXPR<sp/>bool<sp/>operator!=(BitType<sp/>bit,<sp/>Flags&lt;BitType&gt;<sp/>const&amp;<sp/>flags)<sp/>MUDA_NOEXCEPT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight><highlight class="comment">//{</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="159"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>return<sp/>flags.operator!=(bit);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="160"><highlight class="normal"></highlight><highlight class="comment">//}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="161"><highlight class="normal"></highlight></codeline>
+<codeline lineno="162"><highlight class="normal"></highlight></codeline>
+<codeline lineno="163"><highlight class="normal"></highlight><highlight class="comment">//<sp/>bitwise<sp/>operators</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>BitType&gt;</highlight></codeline>
+<codeline lineno="165"><highlight class="normal">MUDA_INLINE<sp/>MUDA_GENERIC<sp/>MUDA_CONSTEXPR<sp/><ref refid="classmuda_1_1_flags" kindref="compound">Flags&lt;BitType&gt;</ref><sp/>operator&amp;(BitType<sp/>bit,</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classmuda_1_1_flags" kindref="compound">Flags&lt;BitType&gt;</ref><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">&amp;<sp/>flags)<sp/>MUDA_NOEXCEPT</highlight></codeline>
+<codeline lineno="167"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>flags.operator&amp;(bit);</highlight></codeline>
+<codeline lineno="169"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"></highlight></codeline>
+<codeline lineno="171"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>BitType&gt;</highlight></codeline>
+<codeline lineno="172"><highlight class="normal">MUDA_INLINE<sp/>MUDA_GENERIC<sp/>MUDA_CONSTEXPR<sp/>Flags&lt;BitType&gt;<sp/>operator|(BitType<sp/>bit,</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Flags&lt;BitType&gt;<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">&amp;<sp/>flags)<sp/>MUDA_NOEXCEPT</highlight></codeline>
+<codeline lineno="174"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>flags.operator|(bit);</highlight></codeline>
+<codeline lineno="176"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"></highlight></codeline>
+<codeline lineno="178"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>BitType&gt;</highlight></codeline>
+<codeline lineno="179"><highlight class="normal">MUDA_INLINE<sp/>MUDA_GENERIC<sp/>MUDA_CONSTEXPR<sp/>Flags&lt;BitType&gt;<sp/>operator^(BitType<sp/>bit,</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Flags&lt;BitType&gt;<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">&amp;<sp/>flags)<sp/>MUDA_NOEXCEPT</highlight></codeline>
+<codeline lineno="181"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>flags.operator^(bit);</highlight></codeline>
+<codeline lineno="183"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"></highlight></codeline>
+<codeline lineno="186"><highlight class="comment">//template<sp/>&lt;typename<sp/>BitType,<sp/>typename<sp/>::std::enable_if&lt;is_flag_type&lt;BitType&gt;::isBitmask,<sp/>bool&gt;::type<sp/>=<sp/>true&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="187"><highlight class="normal"></highlight><highlight class="comment">//MUDA_INLINE<sp/>MUDA_GENERIC<sp/>MUDA_CONSTEXPR<sp/>Flags&lt;BitType&gt;<sp/>operator&amp;(BitType<sp/>lhs,<sp/>BitType<sp/>rhs)<sp/>MUDA_NOEXCEPT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="188"><highlight class="normal"></highlight><highlight class="comment">//{</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="189"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>return<sp/>Flags&lt;BitType&gt;(lhs)<sp/>&amp;<sp/>rhs;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="190"><highlight class="normal"></highlight><highlight class="comment">//}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="191"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="192"><highlight class="normal"></highlight><highlight class="comment">//template<sp/>&lt;typename<sp/>BitType,<sp/>typename<sp/>::std::enable_if&lt;is_flag_type&lt;BitType&gt;::isBitmask,<sp/>bool&gt;::type<sp/>=<sp/>true&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="193"><highlight class="normal"></highlight><highlight class="comment">//MUDA_INLINE<sp/>MUDA_GENERIC<sp/>MUDA_CONSTEXPR<sp/>Flags&lt;BitType&gt;<sp/>operator|(BitType<sp/>lhs,<sp/>BitType<sp/>rhs)<sp/>MUDA_NOEXCEPT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="194"><highlight class="normal"></highlight><highlight class="comment">//{</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="195"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>return<sp/>Flags&lt;BitType&gt;(lhs)<sp/>|<sp/>rhs;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="196"><highlight class="normal"></highlight><highlight class="comment">//}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="197"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="198"><highlight class="normal"></highlight><highlight class="comment">//template<sp/>&lt;typename<sp/>BitType,<sp/>typename<sp/>::std::enable_if&lt;is_flag_type&lt;BitType&gt;::isBitmask,<sp/>bool&gt;::type<sp/>=<sp/>true&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="199"><highlight class="normal"></highlight><highlight class="comment">//MUDA_INLINE<sp/>MUDA_GENERIC<sp/>MUDA_CONSTEXPR<sp/>Flags&lt;BitType&gt;<sp/>operator^(BitType<sp/>lhs,<sp/>BitType<sp/>rhs)<sp/>MUDA_NOEXCEPT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="200"><highlight class="normal"></highlight><highlight class="comment">//{</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="201"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>return<sp/>Flags&lt;BitType&gt;(lhs)<sp/>^<sp/>rhs;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="202"><highlight class="normal"></highlight><highlight class="comment">//}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="203"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="204"><highlight class="normal"></highlight><highlight class="comment">//template<sp/>&lt;typename<sp/>BitType,<sp/>typename<sp/>::std::enable_if&lt;is_flag_type&lt;BitType&gt;::isBitmask,<sp/>bool&gt;::type<sp/>=<sp/>true&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="205"><highlight class="normal"></highlight><highlight class="comment">//MUDA_INLINE<sp/>MUDA_GENERIC<sp/>MUDA_CONSTEXPR<sp/>Flags&lt;BitType&gt;<sp/>operator~(BitType<sp/>bit)<sp/>MUDA_NOEXCEPT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="206"><highlight class="normal"></highlight><highlight class="comment">//{</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="207"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>return<sp/>~(Flags&lt;BitType&gt;(bit));</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="208"><highlight class="normal"></highlight><highlight class="comment">//}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="209"><highlight class="normal">}<sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>muda</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="src/muda/tools/flag.h"/>
+  </compounddef>
+</doxygen>

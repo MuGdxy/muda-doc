@@ -1,0 +1,316 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classmuda_1_1_parallel_for_details" kind="class" language="C++" prot="public">
+    <compoundname>muda::ParallelForDetails</compoundname>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classmuda_1_1_parallel_for_details_1a4e76d00a49e9b11ae356fe83c8ac891f" prot="private" static="no" mutable="no">
+        <type>ParallelForType</type>
+        <definition>ParallelForType muda::ParallelForDetails::m_type</definition>
+        <argsstring></argsstring>
+        <name>m_type</name>
+        <qualifiedname>muda::ParallelForDetails::m_type</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/launch/parallel_for.h" line="97" column="21" bodyfile="src/muda/launch/parallel_for.h" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1_parallel_for_details_1a9cd9add5695acea7135703b49eec5ab5" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int muda::ParallelForDetails::m_total_num</definition>
+        <argsstring></argsstring>
+        <name>m_total_num</name>
+        <qualifiedname>muda::ParallelForDetails::m_total_num</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/launch/parallel_for.h" line="98" column="21" bodyfile="src/muda/launch/parallel_for.h" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1_parallel_for_details_1adfc139a6aac37cf6b07f1898d30bc471" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int muda::ParallelForDetails::m_total_batch</definition>
+        <argsstring></argsstring>
+        <name>m_total_batch</name>
+        <qualifiedname>muda::ParallelForDetails::m_total_batch</qualifiedname>
+        <initializer>= 1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/launch/parallel_for.h" line="99" column="21" bodyfile="src/muda/launch/parallel_for.h" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1_parallel_for_details_1ad057f38181980576ade46295cf1be8cd" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int muda::ParallelForDetails::m_batch_i</definition>
+        <argsstring></argsstring>
+        <name>m_batch_i</name>
+        <qualifiedname>muda::ParallelForDetails::m_batch_i</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/launch/parallel_for.h" line="100" column="21" bodyfile="src/muda/launch/parallel_for.h" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1_parallel_for_details_1a510f2f2139943c2d05679cb4c9493c28" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int muda::ParallelForDetails::m_active_num_in_block</definition>
+        <argsstring></argsstring>
+        <name>m_active_num_in_block</name>
+        <qualifiedname>muda::ParallelForDetails::m_active_num_in_block</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/launch/parallel_for.h" line="101" column="21" bodyfile="src/muda/launch/parallel_for.h" bodystart="101" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1_parallel_for_details_1a75c65e7e38a62ea5ac342480f0ae0ead" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int muda::ParallelForDetails::m_current_i</definition>
+        <argsstring></argsstring>
+        <name>m_current_i</name>
+        <qualifiedname>muda::ParallelForDetails::m_current_i</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/launch/parallel_for.h" line="102" column="21" bodyfile="src/muda/launch/parallel_for.h" bodystart="102" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmuda_1_1_parallel_for_details_1a23d208cb3f6587bfb0c260d12c7f2126" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>MUDA_NODISCARD MUDA_DEVICE int</type>
+        <definition>MUDA_NODISCARD MUDA_DEVICE int muda::ParallelForDetails::active_num_in_block</definition>
+        <argsstring>() const MUDA_NOEXCEPT</argsstring>
+        <name>active_num_in_block</name>
+        <qualifiedname>muda::ParallelForDetails::active_num_in_block</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/launch/parallel_for.h" line="52" column="37"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_parallel_for_details_1ad0bb2b0030e27668b987c4848161b525" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>MUDA_NODISCARD MUDA_DEVICE bool</type>
+        <definition>MUDA_NODISCARD MUDA_DEVICE bool muda::ParallelForDetails::is_final_block</definition>
+        <argsstring>() const MUDA_NOEXCEPT</argsstring>
+        <name>is_final_block</name>
+        <qualifiedname>muda::ParallelForDetails::is_final_block</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/launch/parallel_for.h" line="53" column="37"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_parallel_for_details_1a5d7628d6325b6ce227091ed646b39a59" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>MUDA_NODISCARD MUDA_DEVICE ParallelForType</type>
+        <definition>MUDA_NODISCARD MUDA_DEVICE ParallelForType muda::ParallelForDetails::parallel_for_type</definition>
+        <argsstring>() const MUDA_NOEXCEPT</argsstring>
+        <name>parallel_for_type</name>
+        <qualifiedname>muda::ParallelForDetails::parallel_for_type</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/launch/parallel_for.h" line="54" column="48" bodyfile="src/muda/launch/parallel_for.h" bodystart="54" bodyend="57"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_parallel_for_details_1a3276366f58abbd8b1603d88aff363192" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>MUDA_NODISCARD MUDA_DEVICE int</type>
+        <definition>MUDA_NODISCARD MUDA_DEVICE int muda::ParallelForDetails::total_num</definition>
+        <argsstring>() const MUDA_NOEXCEPT</argsstring>
+        <name>total_num</name>
+        <qualifiedname>muda::ParallelForDetails::total_num</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/launch/parallel_for.h" line="59" column="36" bodyfile="src/muda/launch/parallel_for.h" bodystart="59" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_parallel_for_details_1a3515582757a7b910d56d27b798e28d8e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>MUDA_NODISCARD MUDA_DEVICE</type>
+        <definition>MUDA_NODISCARD MUDA_DEVICE muda::ParallelForDetails::operator int</definition>
+        <argsstring>() const MUDA_NOEXCEPT</argsstring>
+        <name>operator int</name>
+        <qualifiedname>muda::ParallelForDetails::operator int</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/launch/parallel_for.h" line="63" column="32" bodyfile="src/muda/launch/parallel_for.h" bodystart="63" bodyend="66"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_parallel_for_details_1a318594e40fe05f6fe118567bc08fc8a6" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>MUDA_NODISCARD MUDA_DEVICE int</type>
+        <definition>MUDA_NODISCARD MUDA_DEVICE int muda::ParallelForDetails::i</definition>
+        <argsstring>() const MUDA_NOEXCEPT</argsstring>
+        <name>i</name>
+        <qualifiedname>muda::ParallelForDetails::i</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/launch/parallel_for.h" line="68" column="36" bodyfile="src/muda/launch/parallel_for.h" bodystart="68" bodyend="71"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_parallel_for_details_1a7a23e5e8d1b91cbbee013e0d032a9d50" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>MUDA_NODISCARD MUDA_DEVICE int</type>
+        <definition>MUDA_NODISCARD MUDA_DEVICE int muda::ParallelForDetails::batch_i</definition>
+        <argsstring>() const MUDA_NOEXCEPT</argsstring>
+        <name>batch_i</name>
+        <qualifiedname>muda::ParallelForDetails::batch_i</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/launch/parallel_for.h" line="73" column="36" bodyfile="src/muda/launch/parallel_for.h" bodystart="73" bodyend="76"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_parallel_for_details_1a68b9eec833aefa89c6be64278b5c82da" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>MUDA_NODISCARD MUDA_DEVICE int</type>
+        <definition>MUDA_NODISCARD MUDA_DEVICE int muda::ParallelForDetails::total_batch</definition>
+        <argsstring>() const MUDA_NOEXCEPT</argsstring>
+        <name>total_batch</name>
+        <qualifiedname>muda::ParallelForDetails::total_batch</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/launch/parallel_for.h" line="78" column="36" bodyfile="src/muda/launch/parallel_for.h" bodystart="78" bodyend="81"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="friend">
+      <memberdef kind="friend" id="classmuda_1_1_parallel_for_details_1a0f5e5a2c50162275c28ac66f7a4d8ee9" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename F</type>
+          </param>
+          <param>
+            <type>typename UserTag</type>
+          </param>
+        </templateparamlist>
+        <type>MUDA_GLOBAL void</type>
+        <definition>MUDA_GLOBAL void details::parallel_for_kernel</definition>
+        <argsstring>(ParallelForCallable&lt; F &gt; f)</argsstring>
+        <name>details::parallel_for_kernel</name>
+        <qualifiedname>muda::ParallelForDetails::parallel_for_kernel</qualifiedname>
+        <param>
+          <type>ParallelForCallable&lt; F &gt;</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/launch/parallel_for.h" line="85" column="29"/>
+      </memberdef>
+      <memberdef kind="friend" id="classmuda_1_1_parallel_for_details_1a7ec3f01c67e54e2afe1f86e165211fa7" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename F</type>
+          </param>
+          <param>
+            <type>typename UserTag</type>
+          </param>
+        </templateparamlist>
+        <type>MUDA_GLOBAL void</type>
+        <definition>MUDA_GLOBAL void details::grid_stride_loop_kernel</definition>
+        <argsstring>(ParallelForCallable&lt; F &gt; f)</argsstring>
+        <name>details::grid_stride_loop_kernel</name>
+        <qualifiedname>muda::ParallelForDetails::grid_stride_loop_kernel</qualifiedname>
+        <param>
+          <type>ParallelForCallable&lt; F &gt;</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/launch/parallel_for.h" line="88" column="29"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classmuda_1_1_parallel_for_details_1a429cdadd2453291d20722fef07a9c59a" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>MUDA_DEVICE</type>
+        <definition>MUDA_DEVICE muda::ParallelForDetails::ParallelForDetails</definition>
+        <argsstring>(ParallelForType type, int i, int total_num) MUDA_NOEXCEPT</argsstring>
+        <name>ParallelForDetails</name>
+        <qualifiedname>muda::ParallelForDetails::ParallelForDetails</qualifiedname>
+        <param>
+          <type>ParallelForType</type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>total_num</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/launch/parallel_for.h" line="90" column="17" bodyfile="src/muda/launch/parallel_for.h" bodystart="90" bodyend="95"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/muda/launch/parallel_for.h" line="49" column="1" bodyfile="src/muda/launch/parallel_for.h" bodystart="50" bodyend="103"/>
+    <listofallmembers>
+      <member refid="classmuda_1_1_parallel_for_details_1a23d208cb3f6587bfb0c260d12c7f2126" prot="public" virt="non-virtual"><scope>muda::ParallelForDetails</scope><name>active_num_in_block</name></member>
+      <member refid="classmuda_1_1_parallel_for_details_1a7a23e5e8d1b91cbbee013e0d032a9d50" prot="public" virt="non-virtual"><scope>muda::ParallelForDetails</scope><name>batch_i</name></member>
+      <member refid="classmuda_1_1_parallel_for_details_1a7ec3f01c67e54e2afe1f86e165211fa7" prot="private" virt="non-virtual"><scope>muda::ParallelForDetails</scope><name>details::grid_stride_loop_kernel</name></member>
+      <member refid="classmuda_1_1_parallel_for_details_1a0f5e5a2c50162275c28ac66f7a4d8ee9" prot="private" virt="non-virtual"><scope>muda::ParallelForDetails</scope><name>details::parallel_for_kernel</name></member>
+      <member refid="classmuda_1_1_parallel_for_details_1a318594e40fe05f6fe118567bc08fc8a6" prot="public" virt="non-virtual"><scope>muda::ParallelForDetails</scope><name>i</name></member>
+      <member refid="classmuda_1_1_parallel_for_details_1ad0bb2b0030e27668b987c4848161b525" prot="public" virt="non-virtual"><scope>muda::ParallelForDetails</scope><name>is_final_block</name></member>
+      <member refid="classmuda_1_1_parallel_for_details_1a510f2f2139943c2d05679cb4c9493c28" prot="private" virt="non-virtual"><scope>muda::ParallelForDetails</scope><name>m_active_num_in_block</name></member>
+      <member refid="classmuda_1_1_parallel_for_details_1ad057f38181980576ade46295cf1be8cd" prot="private" virt="non-virtual"><scope>muda::ParallelForDetails</scope><name>m_batch_i</name></member>
+      <member refid="classmuda_1_1_parallel_for_details_1a75c65e7e38a62ea5ac342480f0ae0ead" prot="private" virt="non-virtual"><scope>muda::ParallelForDetails</scope><name>m_current_i</name></member>
+      <member refid="classmuda_1_1_parallel_for_details_1adfc139a6aac37cf6b07f1898d30bc471" prot="private" virt="non-virtual"><scope>muda::ParallelForDetails</scope><name>m_total_batch</name></member>
+      <member refid="classmuda_1_1_parallel_for_details_1a9cd9add5695acea7135703b49eec5ab5" prot="private" virt="non-virtual"><scope>muda::ParallelForDetails</scope><name>m_total_num</name></member>
+      <member refid="classmuda_1_1_parallel_for_details_1a4e76d00a49e9b11ae356fe83c8ac891f" prot="private" virt="non-virtual"><scope>muda::ParallelForDetails</scope><name>m_type</name></member>
+      <member refid="classmuda_1_1_parallel_for_details_1a3515582757a7b910d56d27b798e28d8e" prot="public" virt="non-virtual"><scope>muda::ParallelForDetails</scope><name>operator int</name></member>
+      <member refid="classmuda_1_1_parallel_for_details_1a5d7628d6325b6ce227091ed646b39a59" prot="public" virt="non-virtual"><scope>muda::ParallelForDetails</scope><name>parallel_for_type</name></member>
+      <member refid="classmuda_1_1_parallel_for_details_1a429cdadd2453291d20722fef07a9c59a" prot="private" virt="non-virtual"><scope>muda::ParallelForDetails</scope><name>ParallelForDetails</name></member>
+      <member refid="classmuda_1_1_parallel_for_details_1a68b9eec833aefa89c6be64278b5c82da" prot="public" virt="non-virtual"><scope>muda::ParallelForDetails</scope><name>total_batch</name></member>
+      <member refid="classmuda_1_1_parallel_for_details_1a3276366f58abbd8b1603d88aff363192" prot="public" virt="non-virtual"><scope>muda::ParallelForDetails</scope><name>total_num</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

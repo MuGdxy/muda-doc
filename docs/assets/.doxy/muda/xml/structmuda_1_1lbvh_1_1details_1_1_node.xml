@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structmuda_1_1lbvh_1_1details_1_1_node" kind="struct" language="C++" prot="public">
+    <compoundname>muda::lbvh::details::Node</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structmuda_1_1lbvh_1_1details_1_1_node_1a81a42e683b95cde451d6be52de2aa4db" prot="public" static="no" mutable="no">
+        <type>std::uint32_t</type>
+        <definition>std::uint32_t muda::lbvh::details::Node::parent_idx</definition>
+        <argsstring></argsstring>
+        <name>parent_idx</name>
+        <qualifiedname>muda::lbvh::details::Node::parent_idx</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/lbvh/bvh_viewer.h" line="17" column="23" bodyfile="src/muda/ext/geo/lbvh/bvh_viewer.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmuda_1_1lbvh_1_1details_1_1_node_1a597011f3afdba0adf2599eb5767ef219" prot="public" static="no" mutable="no">
+        <type>std::uint32_t</type>
+        <definition>std::uint32_t muda::lbvh::details::Node::left_idx</definition>
+        <argsstring></argsstring>
+        <name>left_idx</name>
+        <qualifiedname>muda::lbvh::details::Node::left_idx</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/lbvh/bvh_viewer.h" line="18" column="23" bodyfile="src/muda/ext/geo/lbvh/bvh_viewer.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmuda_1_1lbvh_1_1details_1_1_node_1a49403b7504d83c7537c7073e46577aa2" prot="public" static="no" mutable="no">
+        <type>std::uint32_t</type>
+        <definition>std::uint32_t muda::lbvh::details::Node::right_idx</definition>
+        <argsstring></argsstring>
+        <name>right_idx</name>
+        <qualifiedname>muda::lbvh::details::Node::right_idx</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/lbvh/bvh_viewer.h" line="19" column="23" bodyfile="src/muda/ext/geo/lbvh/bvh_viewer.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmuda_1_1lbvh_1_1details_1_1_node_1a4ab7ed1e1bb7c3f8fe16cfaa26877c31" prot="public" static="no" mutable="no">
+        <type>std::uint32_t</type>
+        <definition>std::uint32_t muda::lbvh::details::Node::object_idx</definition>
+        <argsstring></argsstring>
+        <name>object_idx</name>
+        <qualifiedname>muda::lbvh::details::Node::object_idx</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/lbvh/bvh_viewer.h" line="20" column="23" bodyfile="src/muda/ext/geo/lbvh/bvh_viewer.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/muda/ext/geo/lbvh/bvh_viewer.h" line="15" column="5" bodyfile="src/muda/ext/geo/lbvh/bvh_viewer.h" bodystart="16" bodyend="21"/>
+    <listofallmembers>
+      <member refid="structmuda_1_1lbvh_1_1details_1_1_node_1a597011f3afdba0adf2599eb5767ef219" prot="public" virt="non-virtual"><scope>muda::lbvh::details::Node</scope><name>left_idx</name></member>
+      <member refid="structmuda_1_1lbvh_1_1details_1_1_node_1a4ab7ed1e1bb7c3f8fe16cfaa26877c31" prot="public" virt="non-virtual"><scope>muda::lbvh::details::Node</scope><name>object_idx</name></member>
+      <member refid="structmuda_1_1lbvh_1_1details_1_1_node_1a81a42e683b95cde451d6be52de2aa4db" prot="public" virt="non-virtual"><scope>muda::lbvh::details::Node</scope><name>parent_idx</name></member>
+      <member refid="structmuda_1_1lbvh_1_1details_1_1_node_1a49403b7504d83c7537c7073e46577aa2" prot="public" virt="non-virtual"><scope>muda::lbvh::details::Node</scope><name>right_idx</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

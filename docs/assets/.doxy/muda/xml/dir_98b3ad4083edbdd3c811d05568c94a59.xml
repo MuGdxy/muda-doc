@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="dir_98b3ad4083edbdd3c811d05568c94a59" kind="dir">
+    <compoundname>src/muda/mstl/tcb</compoundname>
+    <innerfile refid="span_8hpp">span.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/muda/mstl/tcb/"/>
+  </compounddef>
+</doxygen>

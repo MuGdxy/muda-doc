@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classmuda_1_1_field_build_options" kind="class" language="C++" prot="public">
+    <compoundname>muda::FieldBuildOptions</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classmuda_1_1_field_build_options_1a1c5273d6f6fac030dc4c88d3efb950bd" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t muda::FieldBuildOptions::min_alignment</definition>
+        <argsstring></argsstring>
+        <name>min_alignment</name>
+        <qualifiedname>muda::FieldBuildOptions::min_alignment</qualifiedname>
+        <initializer>= sizeof(int)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/field/field_build_options.h" line="8" column="14" bodyfile="src/muda/ext/field/field_build_options.h" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1_field_build_options_1aff23e92b3ffc507d1a974b6d8aa204a7" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t muda::FieldBuildOptions::max_alignment</definition>
+        <argsstring></argsstring>
+        <name>max_alignment</name>
+        <qualifiedname>muda::FieldBuildOptions::max_alignment</qualifiedname>
+        <initializer>= sizeof(std::max_align_t)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/field/field_build_options.h" line="9" column="14" bodyfile="src/muda/ext/field/field_build_options.h" bodystart="9" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/muda/ext/field/field_build_options.h" line="5" column="1" bodyfile="src/muda/ext/field/field_build_options.h" bodystart="6" bodyend="10"/>
+    <listofallmembers>
+      <member refid="classmuda_1_1_field_build_options_1aff23e92b3ffc507d1a974b6d8aa204a7" prot="public" virt="non-virtual"><scope>muda::FieldBuildOptions</scope><name>max_alignment</name></member>
+      <member refid="classmuda_1_1_field_build_options_1a1c5273d6f6fac030dc4c88d3efb950bd" prot="public" virt="non-virtual"><scope>muda::FieldBuildOptions</scope><name>min_alignment</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

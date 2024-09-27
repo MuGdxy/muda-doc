@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="dir_946c6946a1291bae853a7ff8b793a277" kind="dir">
+    <compoundname>src/muda/graph</compoundname>
+    <innerfile refid="event__node_8h">event_node.h</innerfile>
+    <innerfile refid="graph_2graph_8h">graph.h</innerfile>
+    <innerfile refid="graph__base_8h">graph_base.h</innerfile>
+    <innerfile refid="graph__exec_8h">graph_exec.h</innerfile>
+    <innerfile refid="graph__graph__viewer_8h">graph_graph_viewer.h</innerfile>
+    <innerfile refid="graph__instantiate__flag_8h">graph_instantiate_flag.h</innerfile>
+    <innerfile refid="graph__launch_8h">graph_launch.h</innerfile>
+    <innerfile refid="graph__viewer_8h">graph_viewer.h</innerfile>
+    <innerfile refid="host__node_8h">host_node.h</innerfile>
+    <innerfile refid="kernel__node_8h">kernel_node.h</innerfile>
+    <innerfile refid="memory__node_8h">memory_node.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/muda/graph/"/>
+  </compounddef>
+</doxygen>

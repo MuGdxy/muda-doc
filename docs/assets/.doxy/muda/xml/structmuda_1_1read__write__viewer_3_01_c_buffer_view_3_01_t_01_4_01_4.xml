@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structmuda_1_1read__write__viewer_3_01_c_buffer_view_3_01_t_01_4_01_4" kind="struct" language="C++" prot="public">
+    <compoundname>muda::read_write_viewer&lt; CBufferView&lt; T &gt; &gt;</compoundname>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="structmuda_1_1read__write__viewer_3_01_c_buffer_view_3_01_t_01_4_01_4_1a31a9adfc09e495b754b84863eb423f5c" prot="public" static="no">
+        <type><ref refid="classmuda_1_1_buffer_view_t" kindref="compound">BufferView</ref>&lt; T &gt;</type>
+        <definition>using muda::read_write_viewer&lt; CBufferView&lt; T &gt; &gt;::type =  BufferView&lt;T&gt;</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <qualifiedname>muda::read_write_viewer&lt; CBufferView&lt; T &gt; &gt;::type</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/buffer_view.h" line="120" column="5" bodyfile="src/muda/buffer/buffer_view.h" bodystart="120" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/muda/buffer/buffer_view.h" line="118" column="1" bodyfile="src/muda/buffer/buffer_view.h" bodystart="119" bodyend="121"/>
+    <listofallmembers>
+      <member refid="structmuda_1_1read__write__viewer_3_01_c_buffer_view_3_01_t_01_4_01_4_1a31a9adfc09e495b754b84863eb423f5c" prot="public" virt="non-virtual"><scope>muda::read_write_viewer&lt; CBufferView&lt; T &gt; &gt;</scope><name>type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

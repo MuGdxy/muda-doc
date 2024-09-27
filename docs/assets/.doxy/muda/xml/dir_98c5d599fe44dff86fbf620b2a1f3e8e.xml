@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="dir_98c5d599fe44dff86fbf620b2a1f3e8e" kind="dir">
+    <compoundname>src/muda/cub</compoundname>
+    <innerdir refid="dir_e7785ab0b6a4810de2e8c4f6e4ccf5c0">src/muda/cub/device</innerdir>
+    <innerfile refid="cub_8h">cub.h</innerfile>
+    <innerfile refid="cub__device_8h">cub_device.h</innerfile>
+    <innerfile refid="util__type_8h">util_type.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/muda/cub/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="namespacestd" kind="namespace" language="C++">
+    <compoundname>std</compoundname>
+    <innerclass refid="structstd_1_1hash_3_01muda_1_1_closure_id_01_4" prot="private">std::hash&lt; muda::ClosureId &gt;</innerclass>
+    <innerclass refid="structstd_1_1hash_3_01muda_1_1details_1_1_matrix_format_converter_type_01_4" prot="public">std::hash&lt; muda::details::MatrixFormatConverterType &gt;</innerclass>
+    <innerclass refid="structstd_1_1hash_3_01muda_1_1_id_with_type_3_01_t_01_4_01_4" prot="protected">std::hash&lt; muda::IdWithType&lt; T &gt; &gt;</innerclass>
+    <innerclass refid="classstd_1_1tuple__element_3_01_i_00_01_t_c_b___s_p_a_n___n_a_m_e_s_p_a_c_e___n_a_m_e_1_1span_3_93b789f899ee7baa4f7d754ce2758ef3" prot="private">std::tuple_element&lt; I, TCB_SPAN_NAMESPACE_NAME::span&lt; ElementType, Extent &gt; &gt;</innerclass>
+    <innerclass refid="classstd_1_1tuple__size_3_01_t_c_b___s_p_a_n___n_a_m_e_s_p_a_c_e___n_a_m_e_1_1span_3_01_element_type_00_01_extent_01_4_01_4" prot="private">std::tuple_size&lt; TCB_SPAN_NAMESPACE_NAME::span&lt; ElementType, Extent &gt; &gt;</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/muda/compute_graph/compute_graph_closure_id.h" line="11" column="1"/>
+  </compounddef>
+</doxygen>

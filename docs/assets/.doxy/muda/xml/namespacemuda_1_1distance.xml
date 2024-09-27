@@ -1,0 +1,1948 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="namespacemuda_1_1distance" kind="namespace" language="C++">
+    <compoundname>muda::distance</compoundname>
+    <sectiondef kind="enum">
+      <memberdef kind="enum" id="distance__type_8h_1ab0af2b84f6b2d3c33a1ae1438eccf748" prot="public" static="no" strong="yes">
+        <type>unsigned char</type>
+        <name>PointPointDistanceType</name>
+        <qualifiedname>muda::distance::PointPointDistanceType</qualifiedname>
+        <enumvalue id="distance__type_8h_1ab0af2b84f6b2d3c33a1ae1438eccf748a4baee84af7a92177c9064ddc2fc010ce" prot="public">
+          <name>PP</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/distance/distance_type.h" line="9" column="1" bodyfile="src/muda/ext/geo/distance/distance_type.h" bodystart="10" bodyend="12"/>
+      </memberdef>
+      <memberdef kind="enum" id="distance__type_8h_1a6b4e0872081aed6f1fc6a65e874875e6" prot="public" static="no" strong="yes">
+        <type>unsigned char</type>
+        <name>PointEdgeDistanceType</name>
+        <qualifiedname>muda::distance::PointEdgeDistanceType</qualifiedname>
+        <enumvalue id="distance__type_8h_1a6b4e0872081aed6f1fc6a65e874875e6a1a3d3353e8897141588edc02714dff6a" prot="public">
+          <name>PP_PE0</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="distance__type_8h_1a6b4e0872081aed6f1fc6a65e874875e6ad75d3efcdeb8f6913f5849c932587fc3" prot="public">
+          <name>PP_PE1</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="distance__type_8h_1a6b4e0872081aed6f1fc6a65e874875e6a3acf83834396fa1c878707132ead62b8" prot="public">
+          <name>PE</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/distance/distance_type.h" line="14" column="1" bodyfile="src/muda/ext/geo/distance/distance_type.h" bodystart="15" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="enum" id="distance__type_8h_1a6bc9f3797e1b0d5e845a7dbac2ec2b82" prot="public" static="no" strong="yes">
+        <type>unsigned char</type>
+        <name>PointTriangleDistanceType</name>
+        <qualifiedname>muda::distance::PointTriangleDistanceType</qualifiedname>
+        <enumvalue id="distance__type_8h_1a6bc9f3797e1b0d5e845a7dbac2ec2b82a8e126867cdd4b04f0d00246aea38da39" prot="public">
+          <name>PP_PT0</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="distance__type_8h_1a6bc9f3797e1b0d5e845a7dbac2ec2b82a180c9549744d8743a57e02d5b346de28" prot="public">
+          <name>PP_PT1</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="distance__type_8h_1a6bc9f3797e1b0d5e845a7dbac2ec2b82a5fdb931a94099de14d9f04266b44eadc" prot="public">
+          <name>PP_PT2</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="distance__type_8h_1a6bc9f3797e1b0d5e845a7dbac2ec2b82ad4bf28278d284cc1d55ed56500d19047" prot="public">
+          <name>PE_PT0T1</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="distance__type_8h_1a6bc9f3797e1b0d5e845a7dbac2ec2b82aaf7cd7a35a97adc385b2132723d8aa93" prot="public">
+          <name>PE_PT1T2</name>
+          <initializer>= 4</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="distance__type_8h_1a6bc9f3797e1b0d5e845a7dbac2ec2b82a1cacb284be36877ca26ec38a77c5b59a" prot="public">
+          <name>PE_PT2T0</name>
+          <initializer>= 5</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="distance__type_8h_1a6bc9f3797e1b0d5e845a7dbac2ec2b82a35357b9c8fe4d3273d0237ecc8ff2e75" prot="public">
+          <name>PT</name>
+          <initializer>= 6</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/distance/distance_type.h" line="21" column="1" bodyfile="src/muda/ext/geo/distance/distance_type.h" bodystart="22" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="enum" id="distance__type_8h_1a45294595645f9d6c50778c6e36b82c1d" prot="public" static="no" strong="yes">
+        <type>unsigned char</type>
+        <name>EdgeEdgeDistanceType</name>
+        <qualifiedname>muda::distance::EdgeEdgeDistanceType</qualifiedname>
+        <enumvalue id="distance__type_8h_1a45294595645f9d6c50778c6e36b82c1da2bbdeab5de3a693ecfe7b78a44f7f02f" prot="public">
+          <name>PP_Ea0Eb0</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="distance__type_8h_1a45294595645f9d6c50778c6e36b82c1daee0f969524b49433986f3374e54c1dc6" prot="public">
+          <name>PP_Ea0Eb1</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="distance__type_8h_1a45294595645f9d6c50778c6e36b82c1da36359f83b1d08a807e519db071c0d8ef" prot="public">
+          <name>PE_Ea0Eb0Eb1</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="distance__type_8h_1a45294595645f9d6c50778c6e36b82c1da6178fef494362e066ef785eafd75f4c4" prot="public">
+          <name>PP_Ea1Eb0</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="distance__type_8h_1a45294595645f9d6c50778c6e36b82c1da12b68249a005f170f694667ba88c99a3" prot="public">
+          <name>PP_Ea1Eb1</name>
+          <initializer>= 4</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="distance__type_8h_1a45294595645f9d6c50778c6e36b82c1daa688d9e36b863cd9d99c02e468e12ce4" prot="public">
+          <name>PE_Ea1Eb0Eb1</name>
+          <initializer>= 5</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="distance__type_8h_1a45294595645f9d6c50778c6e36b82c1da1080b39616c479619b3545807434065a" prot="public">
+          <name>PE_Eb0Ea0Ea1</name>
+          <initializer>= 6</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="distance__type_8h_1a45294595645f9d6c50778c6e36b82c1da546fab3e7d443209dbb0d691dc9b42aa" prot="public">
+          <name>PE_Eb1Ea0Ea1</name>
+          <initializer>= 7</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="distance__type_8h_1a45294595645f9d6c50778c6e36b82c1daa57b8491d1d8fc1014dd54bcf83b130a" prot="public">
+          <name>EE</name>
+          <initializer>= 8</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/distance/distance_type.h" line="32" column="1" bodyfile="src/muda/ext/geo/distance/distance_type.h" bodystart="33" bodyend="43"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="ccd_8h_1ae83cd3d4ba376d56ba8ee968d8c430ee" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+          <param>
+            <type>int</type>
+            <declname>dim</declname>
+            <defname>dim</defname>
+          </param>
+        </templateparamlist>
+        <type>MUDA_GENERIC bool</type>
+        <definition>MUDA_GENERIC bool muda::distance::point_edge_cd_broadphase</definition>
+        <argsstring>(const Eigen::Matrix&lt; T, dim, 1 &gt; &amp;x0, const Eigen::Matrix&lt; T, dim, 1 &gt; &amp;x1, const Eigen::Matrix&lt; T, dim, 1 &gt; &amp;x2, T dist)</argsstring>
+        <name>point_edge_cd_broadphase</name>
+        <qualifiedname>muda::distance::point_edge_cd_broadphase</qualifiedname>
+        <param>
+          <type>const Eigen::Matrix&lt; T, dim, 1 &gt; &amp;</type>
+          <declname>x0</declname>
+        </param>
+        <param>
+          <type>const Eigen::Matrix&lt; T, dim, 1 &gt; &amp;</type>
+          <declname>x1</declname>
+        </param>
+        <param>
+          <type>const Eigen::Matrix&lt; T, dim, 1 &gt; &amp;</type>
+          <declname>x2</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>dist</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/distance/ccd.h" line="11" column="19" declfile="src/muda/ext/geo/distance/ccd.h" declline="11" declcolumn="19"/>
+      </memberdef>
+      <memberdef kind="function" id="ccd_8h_1a03f76881614fc779c0474367a229b93c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>MUDA_GENERIC bool</type>
+        <definition>MUDA_GENERIC bool muda::distance::point_edge_ccd_broadphase</definition>
+        <argsstring>(const Eigen::Matrix&lt; T, 2, 1 &gt; &amp;p, const Eigen::Matrix&lt; T, 2, 1 &gt; &amp;e0, const Eigen::Matrix&lt; T, 2, 1 &gt; &amp;e1, const Eigen::Matrix&lt; T, 2, 1 &gt; &amp;dp, const Eigen::Matrix&lt; T, 2, 1 &gt; &amp;de0, const Eigen::Matrix&lt; T, 2, 1 &gt; &amp;de1, T dist)</argsstring>
+        <name>point_edge_ccd_broadphase</name>
+        <qualifiedname>muda::distance::point_edge_ccd_broadphase</qualifiedname>
+        <param>
+          <type>const Eigen::Matrix&lt; T, 2, 1 &gt; &amp;</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type>const Eigen::Matrix&lt; T, 2, 1 &gt; &amp;</type>
+          <declname>e0</declname>
+        </param>
+        <param>
+          <type>const Eigen::Matrix&lt; T, 2, 1 &gt; &amp;</type>
+          <declname>e1</declname>
+        </param>
+        <param>
+          <type>const Eigen::Matrix&lt; T, 2, 1 &gt; &amp;</type>
+          <declname>dp</declname>
+        </param>
+        <param>
+          <type>const Eigen::Matrix&lt; T, 2, 1 &gt; &amp;</type>
+          <declname>de0</declname>
+        </param>
+        <param>
+          <type>const Eigen::Matrix&lt; T, 2, 1 &gt; &amp;</type>
+          <declname>de1</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>dist</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/distance/ccd.h" line="17" column="19" declfile="src/muda/ext/geo/distance/ccd.h" declline="17" declcolumn="19"/>
+      </memberdef>
+      <memberdef kind="function" id="ccd_8h_1a3c05c19294bc4e6ccbcd46897fca9495" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>MUDA_GENERIC bool</type>
+        <definition>MUDA_GENERIC bool muda::distance::point_triangle_cd_broadphase</definition>
+        <argsstring>(const Eigen::Matrix&lt; T, 3, 1 &gt; &amp;p, const Eigen::Matrix&lt; T, 3, 1 &gt; &amp;t0, const Eigen::Matrix&lt; T, 3, 1 &gt; &amp;t1, const Eigen::Matrix&lt; T, 3, 1 &gt; &amp;t2, T dist)</argsstring>
+        <name>point_triangle_cd_broadphase</name>
+        <qualifiedname>muda::distance::point_triangle_cd_broadphase</qualifiedname>
+        <param>
+          <type>const Eigen::Matrix&lt; T, 3, 1 &gt; &amp;</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type>const Eigen::Matrix&lt; T, 3, 1 &gt; &amp;</type>
+          <declname>t0</declname>
+        </param>
+        <param>
+          <type>const Eigen::Matrix&lt; T, 3, 1 &gt; &amp;</type>
+          <declname>t1</declname>
+        </param>
+        <param>
+          <type>const Eigen::Matrix&lt; T, 3, 1 &gt; &amp;</type>
+          <declname>t2</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>dist</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/distance/ccd.h" line="26" column="19" declfile="src/muda/ext/geo/distance/ccd.h" declline="26" declcolumn="19"/>
+      </memberdef>
+      <memberdef kind="function" id="ccd_8h_1a0f59413343a5d00207f382b224b4856c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>MUDA_GENERIC bool</type>
+        <definition>MUDA_GENERIC bool muda::distance::edge_edge_cd_broadphase</definition>
+        <argsstring>(const Eigen::Matrix&lt; T, 3, 1 &gt; &amp;ea0, const Eigen::Matrix&lt; T, 3, 1 &gt; &amp;ea1, const Eigen::Matrix&lt; T, 3, 1 &gt; &amp;eb0, const Eigen::Matrix&lt; T, 3, 1 &gt; &amp;eb1, T dist)</argsstring>
+        <name>edge_edge_cd_broadphase</name>
+        <qualifiedname>muda::distance::edge_edge_cd_broadphase</qualifiedname>
+        <param>
+          <type>const Eigen::Matrix&lt; T, 3, 1 &gt; &amp;</type>
+          <declname>ea0</declname>
+        </param>
+        <param>
+          <type>const Eigen::Matrix&lt; T, 3, 1 &gt; &amp;</type>
+          <declname>ea1</declname>
+        </param>
+        <param>
+          <type>const Eigen::Matrix&lt; T, 3, 1 &gt; &amp;</type>
+          <declname>eb0</declname>
+        </param>
+        <param>
+          <type>const Eigen::Matrix&lt; T, 3, 1 &gt; &amp;</type>
+          <declname>eb1</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>dist</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/distance/ccd.h" line="32" column="19" declfile="src/muda/ext/geo/distance/ccd.h" declline="32" declcolumn="19"/>
+      </memberdef>
+      <memberdef kind="function" id="ccd_8h_1a8184a28d9f291abe356684a26e9f4146" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>MUDA_GENERIC bool</type>
+        <definition>MUDA_GENERIC bool muda::distance::point_triangle_ccd_broadphase</definition>
+        <argsstring>(const Eigen::Matrix&lt; T, 3, 1 &gt; &amp;p, const Eigen::Matrix&lt; T, 3, 1 &gt; &amp;t0, const Eigen::Matrix&lt; T, 3, 1 &gt; &amp;t1, const Eigen::Matrix&lt; T, 3, 1 &gt; &amp;t2, const Eigen::Matrix&lt; T, 3, 1 &gt; &amp;dp, const Eigen::Matrix&lt; T, 3, 1 &gt; &amp;dt0, const Eigen::Matrix&lt; T, 3, 1 &gt; &amp;dt1, const Eigen::Matrix&lt; T, 3, 1 &gt; &amp;dt2, T dist)</argsstring>
+        <name>point_triangle_ccd_broadphase</name>
+        <qualifiedname>muda::distance::point_triangle_ccd_broadphase</qualifiedname>
+        <param>
+          <type>const Eigen::Matrix&lt; T, 3, 1 &gt; &amp;</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type>const Eigen::Matrix&lt; T, 3, 1 &gt; &amp;</type>
+          <declname>t0</declname>
+        </param>
+        <param>
+          <type>const Eigen::Matrix&lt; T, 3, 1 &gt; &amp;</type>
+          <declname>t1</declname>
+        </param>
+        <param>
+          <type>const Eigen::Matrix&lt; T, 3, 1 &gt; &amp;</type>
+          <declname>t2</declname>
+        </param>
+        <param>
+          <type>const Eigen::Matrix&lt; T, 3, 1 &gt; &amp;</type>
+          <declname>dp</declname>
+        </param>
+        <param>
+          <type>const Eigen::Matrix&lt; T, 3, 1 &gt; &amp;</type>
+          <declname>dt0</declname>
+        </param>
+        <param>
+          <type>const Eigen::Matrix&lt; T, 3, 1 &gt; &amp;</type>
+          <declname>dt1</declname>
+        </param>
+        <param>
+          <type>const Eigen::Matrix&lt; T, 3, 1 &gt; &amp;</type>
+          <declname>dt2</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>dist</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/distance/ccd.h" line="39" column="19" declfile="src/muda/ext/geo/distance/ccd.h" declline="39" declcolumn="19"/>
+      </memberdef>
+      <memberdef kind="function" id="ccd_8h_1ae8d08fef2400443bff4857807c68dd28" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>MUDA_GENERIC bool</type>
+        <definition>MUDA_GENERIC bool muda::distance::edge_edge_ccd_broadphase</definition>
+        <argsstring>(const Eigen::Matrix&lt; T, 3, 1 &gt; &amp;ea0, const Eigen::Matrix&lt; T, 3, 1 &gt; &amp;ea1, const Eigen::Matrix&lt; T, 3, 1 &gt; &amp;eb0, const Eigen::Matrix&lt; T, 3, 1 &gt; &amp;eb1, const Eigen::Matrix&lt; T, 3, 1 &gt; &amp;dea0, const Eigen::Matrix&lt; T, 3, 1 &gt; &amp;dea1, const Eigen::Matrix&lt; T, 3, 1 &gt; &amp;deb0, const Eigen::Matrix&lt; T, 3, 1 &gt; &amp;deb1, T dist)</argsstring>
+        <name>edge_edge_ccd_broadphase</name>
+        <qualifiedname>muda::distance::edge_edge_ccd_broadphase</qualifiedname>
+        <param>
+          <type>const Eigen::Matrix&lt; T, 3, 1 &gt; &amp;</type>
+          <declname>ea0</declname>
+        </param>
+        <param>
+          <type>const Eigen::Matrix&lt; T, 3, 1 &gt; &amp;</type>
+          <declname>ea1</declname>
+        </param>
+        <param>
+          <type>const Eigen::Matrix&lt; T, 3, 1 &gt; &amp;</type>
+          <declname>eb0</declname>
+        </param>
+        <param>
+          <type>const Eigen::Matrix&lt; T, 3, 1 &gt; &amp;</type>
+          <declname>eb1</declname>
+        </param>
+        <param>
+          <type>const Eigen::Matrix&lt; T, 3, 1 &gt; &amp;</type>
+          <declname>dea0</declname>
+        </param>
+        <param>
+          <type>const Eigen::Matrix&lt; T, 3, 1 &gt; &amp;</type>
+          <declname>dea1</declname>
+        </param>
+        <param>
+          <type>const Eigen::Matrix&lt; T, 3, 1 &gt; &amp;</type>
+          <declname>deb0</declname>
+        </param>
+        <param>
+          <type>const Eigen::Matrix&lt; T, 3, 1 &gt; &amp;</type>
+          <declname>deb1</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>dist</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/distance/ccd.h" line="50" column="19" declfile="src/muda/ext/geo/distance/ccd.h" declline="50" declcolumn="19"/>
+      </memberdef>
+      <memberdef kind="function" id="ccd_8h_1a34b8dc2fbaf443d8116348dff1fd6734" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>MUDA_GENERIC bool</type>
+        <definition>MUDA_GENERIC bool muda::distance::point_edge_ccd_broadphase</definition>
+        <argsstring>(const Eigen::Matrix&lt; T, 3, 1 &gt; &amp;p, const Eigen::Matrix&lt; T, 3, 1 &gt; &amp;e0, const Eigen::Matrix&lt; T, 3, 1 &gt; &amp;e1, const Eigen::Matrix&lt; T, 3, 1 &gt; &amp;dp, const Eigen::Matrix&lt; T, 3, 1 &gt; &amp;de0, const Eigen::Matrix&lt; T, 3, 1 &gt; &amp;de1, T dist)</argsstring>
+        <name>point_edge_ccd_broadphase</name>
+        <qualifiedname>muda::distance::point_edge_ccd_broadphase</qualifiedname>
+        <param>
+          <type>const Eigen::Matrix&lt; T, 3, 1 &gt; &amp;</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type>const Eigen::Matrix&lt; T, 3, 1 &gt; &amp;</type>
+          <declname>e0</declname>
+        </param>
+        <param>
+          <type>const Eigen::Matrix&lt; T, 3, 1 &gt; &amp;</type>
+          <declname>e1</declname>
+        </param>
+        <param>
+          <type>const Eigen::Matrix&lt; T, 3, 1 &gt; &amp;</type>
+          <declname>dp</declname>
+        </param>
+        <param>
+          <type>const Eigen::Matrix&lt; T, 3, 1 &gt; &amp;</type>
+          <declname>de0</declname>
+        </param>
+        <param>
+          <type>const Eigen::Matrix&lt; T, 3, 1 &gt; &amp;</type>
+          <declname>de1</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>dist</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/distance/ccd.h" line="61" column="19" declfile="src/muda/ext/geo/distance/ccd.h" declline="61" declcolumn="19"/>
+      </memberdef>
+      <memberdef kind="function" id="ccd_8h_1add3b3d679c1e8107485466caefaccdac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>MUDA_GENERIC bool</type>
+        <definition>MUDA_GENERIC bool muda::distance::point_point_ccd_broadphase</definition>
+        <argsstring>(const Eigen::Matrix&lt; T, 3, 1 &gt; &amp;p0, const Eigen::Matrix&lt; T, 3, 1 &gt; &amp;p1, const Eigen::Matrix&lt; T, 3, 1 &gt; &amp;dp0, const Eigen::Matrix&lt; T, 3, 1 &gt; &amp;dp1, T dist)</argsstring>
+        <name>point_point_ccd_broadphase</name>
+        <qualifiedname>muda::distance::point_point_ccd_broadphase</qualifiedname>
+        <param>
+          <type>const Eigen::Matrix&lt; T, 3, 1 &gt; &amp;</type>
+          <declname>p0</declname>
+        </param>
+        <param>
+          <type>const Eigen::Matrix&lt; T, 3, 1 &gt; &amp;</type>
+          <declname>p1</declname>
+        </param>
+        <param>
+          <type>const Eigen::Matrix&lt; T, 3, 1 &gt; &amp;</type>
+          <declname>dp0</declname>
+        </param>
+        <param>
+          <type>const Eigen::Matrix&lt; T, 3, 1 &gt; &amp;</type>
+          <declname>dp1</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>dist</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/distance/ccd.h" line="69" column="19" declfile="src/muda/ext/geo/distance/ccd.h" declline="69" declcolumn="19"/>
+      </memberdef>
+      <memberdef kind="function" id="ccd_8h_1a17a5d83e895ec5848aa6fba0be56ba4c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>MUDA_GENERIC bool</type>
+        <definition>MUDA_GENERIC bool muda::distance::point_triangle_ccd</definition>
+        <argsstring>(Eigen::Matrix&lt; T, 3, 1 &gt; p, Eigen::Matrix&lt; T, 3, 1 &gt; t0, Eigen::Matrix&lt; T, 3, 1 &gt; t1, Eigen::Matrix&lt; T, 3, 1 &gt; t2, Eigen::Matrix&lt; T, 3, 1 &gt; dp, Eigen::Matrix&lt; T, 3, 1 &gt; dt0, Eigen::Matrix&lt; T, 3, 1 &gt; dt1, Eigen::Matrix&lt; T, 3, 1 &gt; dt2, T eta, T thickness, int max_iter, T &amp;toc)</argsstring>
+        <name>point_triangle_ccd</name>
+        <qualifiedname>muda::distance::point_triangle_ccd</qualifiedname>
+        <param>
+          <type>Eigen::Matrix&lt; T, 3, 1 &gt;</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type>Eigen::Matrix&lt; T, 3, 1 &gt;</type>
+          <declname>t0</declname>
+        </param>
+        <param>
+          <type>Eigen::Matrix&lt; T, 3, 1 &gt;</type>
+          <declname>t1</declname>
+        </param>
+        <param>
+          <type>Eigen::Matrix&lt; T, 3, 1 &gt;</type>
+          <declname>t2</declname>
+        </param>
+        <param>
+          <type>Eigen::Matrix&lt; T, 3, 1 &gt;</type>
+          <declname>dp</declname>
+        </param>
+        <param>
+          <type>Eigen::Matrix&lt; T, 3, 1 &gt;</type>
+          <declname>dt0</declname>
+        </param>
+        <param>
+          <type>Eigen::Matrix&lt; T, 3, 1 &gt;</type>
+          <declname>dt1</declname>
+        </param>
+        <param>
+          <type>Eigen::Matrix&lt; T, 3, 1 &gt;</type>
+          <declname>dt2</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>eta</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>thickness</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>max_iter</declname>
+        </param>
+        <param>
+          <type>T &amp;</type>
+          <declname>toc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/distance/ccd.h" line="76" column="19" declfile="src/muda/ext/geo/distance/ccd.h" declline="76" declcolumn="19"/>
+      </memberdef>
+      <memberdef kind="function" id="ccd_8h_1adeeccf4ad6136e69976ae320cb260754" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>MUDA_GENERIC bool</type>
+        <definition>MUDA_GENERIC bool muda::distance::edge_edge_ccd</definition>
+        <argsstring>(Eigen::Matrix&lt; T, 3, 1 &gt; ea0, Eigen::Matrix&lt; T, 3, 1 &gt; ea1, Eigen::Matrix&lt; T, 3, 1 &gt; eb0, Eigen::Matrix&lt; T, 3, 1 &gt; eb1, Eigen::Matrix&lt; T, 3, 1 &gt; dea0, Eigen::Matrix&lt; T, 3, 1 &gt; dea1, Eigen::Matrix&lt; T, 3, 1 &gt; deb0, Eigen::Matrix&lt; T, 3, 1 &gt; deb1, T eta, T thickness, int max_iter, T &amp;toc)</argsstring>
+        <name>edge_edge_ccd</name>
+        <qualifiedname>muda::distance::edge_edge_ccd</qualifiedname>
+        <param>
+          <type>Eigen::Matrix&lt; T, 3, 1 &gt;</type>
+          <declname>ea0</declname>
+        </param>
+        <param>
+          <type>Eigen::Matrix&lt; T, 3, 1 &gt;</type>
+          <declname>ea1</declname>
+        </param>
+        <param>
+          <type>Eigen::Matrix&lt; T, 3, 1 &gt;</type>
+          <declname>eb0</declname>
+        </param>
+        <param>
+          <type>Eigen::Matrix&lt; T, 3, 1 &gt;</type>
+          <declname>eb1</declname>
+        </param>
+        <param>
+          <type>Eigen::Matrix&lt; T, 3, 1 &gt;</type>
+          <declname>dea0</declname>
+        </param>
+        <param>
+          <type>Eigen::Matrix&lt; T, 3, 1 &gt;</type>
+          <declname>dea1</declname>
+        </param>
+        <param>
+          <type>Eigen::Matrix&lt; T, 3, 1 &gt;</type>
+          <declname>deb0</declname>
+        </param>
+        <param>
+          <type>Eigen::Matrix&lt; T, 3, 1 &gt;</type>
+          <declname>deb1</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>eta</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>thickness</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>max_iter</declname>
+        </param>
+        <param>
+          <type>T &amp;</type>
+          <declname>toc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/distance/ccd.h" line="90" column="19" declfile="src/muda/ext/geo/distance/ccd.h" declline="90" declcolumn="19"/>
+      </memberdef>
+      <memberdef kind="function" id="ccd_8h_1abe46948a299b64483ffc718395e71fb3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>MUDA_GENERIC bool</type>
+        <definition>MUDA_GENERIC bool muda::distance::point_edge_ccd</definition>
+        <argsstring>(const Eigen::Matrix&lt; T, 2, 1 &gt; &amp;x0, const Eigen::Matrix&lt; T, 2, 1 &gt; &amp;x1, const Eigen::Matrix&lt; T, 2, 1 &gt; &amp;x2, const Eigen::Matrix&lt; T, 2, 1 &gt; &amp;d0, const Eigen::Matrix&lt; T, 2, 1 &gt; &amp;d1, const Eigen::Matrix&lt; T, 2, 1 &gt; &amp;d2, T eta, T &amp;toc)</argsstring>
+        <name>point_edge_ccd</name>
+        <qualifiedname>muda::distance::point_edge_ccd</qualifiedname>
+        <param>
+          <type>const Eigen::Matrix&lt; T, 2, 1 &gt; &amp;</type>
+          <declname>x0</declname>
+        </param>
+        <param>
+          <type>const Eigen::Matrix&lt; T, 2, 1 &gt; &amp;</type>
+          <declname>x1</declname>
+        </param>
+        <param>
+          <type>const Eigen::Matrix&lt; T, 2, 1 &gt; &amp;</type>
+          <declname>x2</declname>
+        </param>
+        <param>
+          <type>const Eigen::Matrix&lt; T, 2, 1 &gt; &amp;</type>
+          <declname>d0</declname>
+        </param>
+        <param>
+          <type>const Eigen::Matrix&lt; T, 2, 1 &gt; &amp;</type>
+          <declname>d1</declname>
+        </param>
+        <param>
+          <type>const Eigen::Matrix&lt; T, 2, 1 &gt; &amp;</type>
+          <declname>d2</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>eta</declname>
+        </param>
+        <param>
+          <type>T &amp;</type>
+          <declname>toc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/distance/ccd.h" line="104" column="19" declfile="src/muda/ext/geo/distance/ccd.h" declline="104" declcolumn="19"/>
+      </memberdef>
+      <memberdef kind="function" id="ccd_8h_1a54ba38cc2a7448432d7b494da9bef3e6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>MUDA_GENERIC bool</type>
+        <definition>MUDA_GENERIC bool muda::distance::point_edge_ccd</definition>
+        <argsstring>(Eigen::Matrix&lt; T, 3, 1 &gt; p, Eigen::Matrix&lt; T, 3, 1 &gt; e0, Eigen::Matrix&lt; T, 3, 1 &gt; e1, Eigen::Matrix&lt; T, 3, 1 &gt; dp, Eigen::Matrix&lt; T, 3, 1 &gt; de0, Eigen::Matrix&lt; T, 3, 1 &gt; de1, T eta, T thickness, int max_iter, T &amp;toc)</argsstring>
+        <name>point_edge_ccd</name>
+        <qualifiedname>muda::distance::point_edge_ccd</qualifiedname>
+        <param>
+          <type>Eigen::Matrix&lt; T, 3, 1 &gt;</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type>Eigen::Matrix&lt; T, 3, 1 &gt;</type>
+          <declname>e0</declname>
+        </param>
+        <param>
+          <type>Eigen::Matrix&lt; T, 3, 1 &gt;</type>
+          <declname>e1</declname>
+        </param>
+        <param>
+          <type>Eigen::Matrix&lt; T, 3, 1 &gt;</type>
+          <declname>dp</declname>
+        </param>
+        <param>
+          <type>Eigen::Matrix&lt; T, 3, 1 &gt;</type>
+          <declname>de0</declname>
+        </param>
+        <param>
+          <type>Eigen::Matrix&lt; T, 3, 1 &gt;</type>
+          <declname>de1</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>eta</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>thickness</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>max_iter</declname>
+        </param>
+        <param>
+          <type>T &amp;</type>
+          <declname>toc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/distance/ccd.h" line="114" column="19" declfile="src/muda/ext/geo/distance/ccd.h" declline="114" declcolumn="19"/>
+      </memberdef>
+      <memberdef kind="function" id="ccd_8h_1a6d12f9030b1b153848d4880dff0171fb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>MUDA_GENERIC bool</type>
+        <definition>MUDA_GENERIC bool muda::distance::point_point_ccd</definition>
+        <argsstring>(Eigen::Matrix&lt; T, 3, 1 &gt; p0, Eigen::Matrix&lt; T, 3, 1 &gt; p1, Eigen::Matrix&lt; T, 3, 1 &gt; dp0, Eigen::Matrix&lt; T, 3, 1 &gt; dp1, T eta, T thickness, int max_iter, T &amp;toc)</argsstring>
+        <name>point_point_ccd</name>
+        <qualifiedname>muda::distance::point_point_ccd</qualifiedname>
+        <param>
+          <type>Eigen::Matrix&lt; T, 3, 1 &gt;</type>
+          <declname>p0</declname>
+        </param>
+        <param>
+          <type>Eigen::Matrix&lt; T, 3, 1 &gt;</type>
+          <declname>p1</declname>
+        </param>
+        <param>
+          <type>Eigen::Matrix&lt; T, 3, 1 &gt;</type>
+          <declname>dp0</declname>
+        </param>
+        <param>
+          <type>Eigen::Matrix&lt; T, 3, 1 &gt;</type>
+          <declname>dp1</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>eta</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>thickness</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>max_iter</declname>
+        </param>
+        <param>
+          <type>T &amp;</type>
+          <declname>toc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/distance/ccd.h" line="125" column="19" declfile="src/muda/ext/geo/distance/ccd.h" declline="125" declcolumn="19"/>
+      </memberdef>
+      <memberdef kind="function" id="distance__type_8h_1ab1445fb1e9aec428fe62961144962ada" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+          <param>
+            <type>int</type>
+            <declname>dim</declname>
+            <defname>dim</defname>
+          </param>
+        </templateparamlist>
+        <type>MUDA_GENERIC PointPointDistanceType</type>
+        <definition>MUDA_GENERIC PointPointDistanceType muda::distance::point_point_distance_type</definition>
+        <argsstring>(const Eigen::Vector&lt; T, dim &gt; &amp;p0, const Eigen::Vector&lt; T, dim &gt; &amp;p1)</argsstring>
+        <name>point_point_distance_type</name>
+        <qualifiedname>muda::distance::point_point_distance_type</qualifiedname>
+        <param>
+          <type>const Eigen::Vector&lt; T, dim &gt; &amp;</type>
+          <declname>p0</declname>
+        </param>
+        <param>
+          <type>const Eigen::Vector&lt; T, dim &gt; &amp;</type>
+          <declname>p1</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/distance/distance_type.h" line="47" column="37" declfile="src/muda/ext/geo/distance/distance_type.h" declline="47" declcolumn="37"/>
+      </memberdef>
+      <memberdef kind="function" id="distance__type_8h_1a83d7189e8afb9d52470524b6fd0137cf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+          <param>
+            <type>int</type>
+            <declname>dim</declname>
+            <defname>dim</defname>
+          </param>
+        </templateparamlist>
+        <type>MUDA_GENERIC PointEdgeDistanceType</type>
+        <definition>MUDA_GENERIC PointEdgeDistanceType muda::distance::point_edge_distance_type</definition>
+        <argsstring>(const Eigen::Vector&lt; T, dim &gt; &amp;p, const Eigen::Vector&lt; T, dim &gt; &amp;e0, const Eigen::Vector&lt; T, dim &gt; &amp;e1)</argsstring>
+        <name>point_edge_distance_type</name>
+        <qualifiedname>muda::distance::point_edge_distance_type</qualifiedname>
+        <param>
+          <type>const Eigen::Vector&lt; T, dim &gt; &amp;</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type>const Eigen::Vector&lt; T, dim &gt; &amp;</type>
+          <declname>e0</declname>
+        </param>
+        <param>
+          <type>const Eigen::Vector&lt; T, dim &gt; &amp;</type>
+          <declname>e1</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/distance/distance_type.h" line="52" column="1" declfile="src/muda/ext/geo/distance/distance_type.h" declline="52" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="distance__type_8h_1a7319175e33e1df37e597ec798c97e623" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+          <param>
+            <type>int</type>
+            <declname>dim</declname>
+            <defname>dim</defname>
+          </param>
+        </templateparamlist>
+        <type>MUDA_GENERIC PointEdgeDistanceType</type>
+        <definition>MUDA_GENERIC PointEdgeDistanceType muda::distance::point_edge_distance_type</definition>
+        <argsstring>(const Eigen::Vector&lt; T, dim &gt; &amp;p, const Eigen::Vector&lt; T, dim &gt; &amp;e0, const Eigen::Vector&lt; T, dim &gt; &amp;e1, T &amp;ratio)</argsstring>
+        <name>point_edge_distance_type</name>
+        <qualifiedname>muda::distance::point_edge_distance_type</qualifiedname>
+        <param>
+          <type>const Eigen::Vector&lt; T, dim &gt; &amp;</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type>const Eigen::Vector&lt; T, dim &gt; &amp;</type>
+          <declname>e0</declname>
+        </param>
+        <param>
+          <type>const Eigen::Vector&lt; T, dim &gt; &amp;</type>
+          <declname>e1</declname>
+        </param>
+        <param>
+          <type>T &amp;</type>
+          <declname>ratio</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/distance/distance_type.h" line="58" column="1" declfile="src/muda/ext/geo/distance/distance_type.h" declline="58" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="distance__type_8h_1ad3766595d820fe64cd5c9ebfdfd04c40" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type>MUDA_GENERIC PointTriangleDistanceType</type>
+        <definition>MUDA_GENERIC PointTriangleDistanceType muda::distance::point_triangle_distance_type</definition>
+        <argsstring>(const Eigen::Vector&lt; T, 3 &gt; &amp;p, const Eigen::Vector&lt; T, 3 &gt; &amp;t0, const Eigen::Vector&lt; T, 3 &gt; &amp;t1, const Eigen::Vector&lt; T, 3 &gt; &amp;t2)</argsstring>
+        <name>point_triangle_distance_type</name>
+        <qualifiedname>muda::distance::point_triangle_distance_type</qualifiedname>
+        <param>
+          <type>const Eigen::Vector&lt; T, 3 &gt; &amp;</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type>const Eigen::Vector&lt; T, 3 &gt; &amp;</type>
+          <declname>t0</declname>
+        </param>
+        <param>
+          <type>const Eigen::Vector&lt; T, 3 &gt; &amp;</type>
+          <declname>t1</declname>
+        </param>
+        <param>
+          <type>const Eigen::Vector&lt; T, 3 &gt; &amp;</type>
+          <declname>t2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/distance/distance_type.h" line="65" column="1" declfile="src/muda/ext/geo/distance/distance_type.h" declline="65" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="distance__type_8h_1ad99914860a5e9266e286ce998d6a2536" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type>MUDA_GENERIC EdgeEdgeDistanceType</type>
+        <definition>MUDA_GENERIC EdgeEdgeDistanceType muda::distance::edge_edge_distance_type</definition>
+        <argsstring>(const Eigen::Vector&lt; T, 3 &gt; &amp;ea0, const Eigen::Vector&lt; T, 3 &gt; &amp;ea1, const Eigen::Vector&lt; T, 3 &gt; &amp;eb0, const Eigen::Vector&lt; T, 3 &gt; &amp;eb1)</argsstring>
+        <name>edge_edge_distance_type</name>
+        <qualifiedname>muda::distance::edge_edge_distance_type</qualifiedname>
+        <param>
+          <type>const Eigen::Vector&lt; T, 3 &gt; &amp;</type>
+          <declname>ea0</declname>
+        </param>
+        <param>
+          <type>const Eigen::Vector&lt; T, 3 &gt; &amp;</type>
+          <declname>ea1</declname>
+        </param>
+        <param>
+          <type>const Eigen::Vector&lt; T, 3 &gt; &amp;</type>
+          <declname>eb0</declname>
+        </param>
+        <param>
+          <type>const Eigen::Vector&lt; T, 3 &gt; &amp;</type>
+          <declname>eb1</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/distance/distance_type.h" line="72" column="35" declfile="src/muda/ext/geo/distance/distance_type.h" declline="72" declcolumn="35"/>
+      </memberdef>
+      <memberdef kind="function" id="distance__unclassified_8h_1ac0ff67c32ad2a68b8b2458752f486c41" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type>MUDA_GENERIC void</type>
+        <definition>MUDA_GENERIC void muda::distance::point_point_distance_unclassified</definition>
+        <argsstring>(const Eigen::Vector&lt; T, 3 &gt; &amp;p0, const Eigen::Vector&lt; T, 3 &gt; &amp;p1, T &amp;dist2)</argsstring>
+        <name>point_point_distance_unclassified</name>
+        <qualifiedname>muda::distance::point_point_distance_unclassified</qualifiedname>
+        <param>
+          <type>const Eigen::Vector&lt; T, 3 &gt; &amp;</type>
+          <declname>p0</declname>
+        </param>
+        <param>
+          <type>const Eigen::Vector&lt; T, 3 &gt; &amp;</type>
+          <declname>p1</declname>
+        </param>
+        <param>
+          <type>T &amp;</type>
+          <declname>dist2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/distance/distance_unclassified.h" line="13" column="19" declfile="src/muda/ext/geo/distance/distance_unclassified.h" declline="13" declcolumn="19"/>
+      </memberdef>
+      <memberdef kind="function" id="distance__unclassified_8h_1a5f090454222cd0d30db3c6e00e0fbcb2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type>MUDA_GENERIC void</type>
+        <definition>MUDA_GENERIC void muda::distance::point_triangle_distance_unclassified</definition>
+        <argsstring>(const Eigen::Vector&lt; T, 3 &gt; &amp;p, const Eigen::Vector&lt; T, 3 &gt; &amp;t0, const Eigen::Vector&lt; T, 3 &gt; &amp;t1, const Eigen::Vector&lt; T, 3 &gt; &amp;t2, T &amp;dist2)</argsstring>
+        <name>point_triangle_distance_unclassified</name>
+        <qualifiedname>muda::distance::point_triangle_distance_unclassified</qualifiedname>
+        <param>
+          <type>const Eigen::Vector&lt; T, 3 &gt; &amp;</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type>const Eigen::Vector&lt; T, 3 &gt; &amp;</type>
+          <declname>t0</declname>
+        </param>
+        <param>
+          <type>const Eigen::Vector&lt; T, 3 &gt; &amp;</type>
+          <declname>t1</declname>
+        </param>
+        <param>
+          <type>const Eigen::Vector&lt; T, 3 &gt; &amp;</type>
+          <declname>t2</declname>
+        </param>
+        <param>
+          <type>T &amp;</type>
+          <declname>dist2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/distance/distance_unclassified.h" line="18" column="19" declfile="src/muda/ext/geo/distance/distance_unclassified.h" declline="18" declcolumn="19"/>
+      </memberdef>
+      <memberdef kind="function" id="distance__unclassified_8h_1acb9c7d210e71edcfc732e4aaa4e217b4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type>MUDA_GENERIC void</type>
+        <definition>MUDA_GENERIC void muda::distance::edge_edge_distance_unclassified</definition>
+        <argsstring>(const Eigen::Vector&lt; T, 3 &gt; &amp;ea0, const Eigen::Vector&lt; T, 3 &gt; &amp;ea1, const Eigen::Vector&lt; T, 3 &gt; &amp;eb0, const Eigen::Vector&lt; T, 3 &gt; &amp;eb1, T &amp;dist2)</argsstring>
+        <name>edge_edge_distance_unclassified</name>
+        <qualifiedname>muda::distance::edge_edge_distance_unclassified</qualifiedname>
+        <param>
+          <type>const Eigen::Vector&lt; T, 3 &gt; &amp;</type>
+          <declname>ea0</declname>
+        </param>
+        <param>
+          <type>const Eigen::Vector&lt; T, 3 &gt; &amp;</type>
+          <declname>ea1</declname>
+        </param>
+        <param>
+          <type>const Eigen::Vector&lt; T, 3 &gt; &amp;</type>
+          <declname>eb0</declname>
+        </param>
+        <param>
+          <type>const Eigen::Vector&lt; T, 3 &gt; &amp;</type>
+          <declname>eb1</declname>
+        </param>
+        <param>
+          <type>T &amp;</type>
+          <declname>dist2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/distance/distance_unclassified.h" line="25" column="19" declfile="src/muda/ext/geo/distance/distance_unclassified.h" declline="25" declcolumn="19"/>
+      </memberdef>
+      <memberdef kind="function" id="distance__unclassified_8h_1ac33f5a639ba067188fabe4c6cdca4501" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type>MUDA_GENERIC void</type>
+        <definition>MUDA_GENERIC void muda::distance::point_edge_distance_unclassified</definition>
+        <argsstring>(const Eigen::Vector&lt; T, 3 &gt; &amp;p, const Eigen::Vector&lt; T, 3 &gt; &amp;e0, const Eigen::Vector&lt; T, 3 &gt; &amp;e1, T &amp;dist2)</argsstring>
+        <name>point_edge_distance_unclassified</name>
+        <qualifiedname>muda::distance::point_edge_distance_unclassified</qualifiedname>
+        <param>
+          <type>const Eigen::Vector&lt; T, 3 &gt; &amp;</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type>const Eigen::Vector&lt; T, 3 &gt; &amp;</type>
+          <declname>e0</declname>
+        </param>
+        <param>
+          <type>const Eigen::Vector&lt; T, 3 &gt; &amp;</type>
+          <declname>e1</declname>
+        </param>
+        <param>
+          <type>T &amp;</type>
+          <declname>dist2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/distance/distance_unclassified.h" line="33" column="19" declfile="src/muda/ext/geo/distance/distance_unclassified.h" declline="33" declcolumn="19"/>
+      </memberdef>
+      <memberdef kind="function" id="edge__edge_8h_1aaaafe615ae5a6389a72ed01334462d33" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type>MUDA_GENERIC void</type>
+        <definition>MUDA_GENERIC void muda::distance::edge_edge_distance</definition>
+        <argsstring>(const Eigen::Vector&lt; T, 3 &gt; &amp;ea0, const Eigen::Vector&lt; T, 3 &gt; &amp;ea1, const Eigen::Vector&lt; T, 3 &gt; &amp;eb0, const Eigen::Vector&lt; T, 3 &gt; &amp;eb1, T &amp;dist2)</argsstring>
+        <name>edge_edge_distance</name>
+        <qualifiedname>muda::distance::edge_edge_distance</qualifiedname>
+        <param>
+          <type>const Eigen::Vector&lt; T, 3 &gt; &amp;</type>
+          <declname>ea0</declname>
+        </param>
+        <param>
+          <type>const Eigen::Vector&lt; T, 3 &gt; &amp;</type>
+          <declname>ea1</declname>
+        </param>
+        <param>
+          <type>const Eigen::Vector&lt; T, 3 &gt; &amp;</type>
+          <declname>eb0</declname>
+        </param>
+        <param>
+          <type>const Eigen::Vector&lt; T, 3 &gt; &amp;</type>
+          <declname>eb1</declname>
+        </param>
+        <param>
+          <type>T &amp;</type>
+          <declname>dist2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/distance/edge_edge.h" line="8" column="19" declfile="src/muda/ext/geo/distance/edge_edge.h" declline="8" declcolumn="19"/>
+      </memberdef>
+      <memberdef kind="function" id="edge__edge_8h_1aa646adc796fa561bec698246bab63948" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type>MUDA_GENERIC void</type>
+        <definition>MUDA_GENERIC void muda::distance::edge_edge_distance_gradient</definition>
+        <argsstring>(const Eigen::Vector&lt; T, 3 &gt; &amp;ea0, const Eigen::Vector&lt; T, 3 &gt; &amp;ea1, const Eigen::Vector&lt; T, 3 &gt; &amp;eb0, const Eigen::Vector&lt; T, 3 &gt; &amp;eb1, Eigen::Vector&lt; T, 12 &gt; &amp;grad)</argsstring>
+        <name>edge_edge_distance_gradient</name>
+        <qualifiedname>muda::distance::edge_edge_distance_gradient</qualifiedname>
+        <param>
+          <type>const Eigen::Vector&lt; T, 3 &gt; &amp;</type>
+          <declname>ea0</declname>
+        </param>
+        <param>
+          <type>const Eigen::Vector&lt; T, 3 &gt; &amp;</type>
+          <declname>ea1</declname>
+        </param>
+        <param>
+          <type>const Eigen::Vector&lt; T, 3 &gt; &amp;</type>
+          <declname>eb0</declname>
+        </param>
+        <param>
+          <type>const Eigen::Vector&lt; T, 3 &gt; &amp;</type>
+          <declname>eb1</declname>
+        </param>
+        <param>
+          <type>Eigen::Vector&lt; T, 12 &gt; &amp;</type>
+          <declname>grad</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/distance/edge_edge.h" line="15" column="19" declfile="src/muda/ext/geo/distance/edge_edge.h" declline="15" declcolumn="19"/>
+      </memberdef>
+      <memberdef kind="function" id="edge__edge_8h_1a81aa19ae70cafede3504dca06c288f4e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type>MUDA_GENERIC void</type>
+        <definition>MUDA_GENERIC void muda::distance::edge_edge_distance_hessian</definition>
+        <argsstring>(const Eigen::Vector&lt; T, 3 &gt; &amp;ea0, const Eigen::Vector&lt; T, 3 &gt; &amp;ea1, const Eigen::Vector&lt; T, 3 &gt; &amp;eb0, const Eigen::Vector&lt; T, 3 &gt; &amp;eb1, Eigen::Matrix&lt; T, 12, 12 &gt; &amp;Hessian)</argsstring>
+        <name>edge_edge_distance_hessian</name>
+        <qualifiedname>muda::distance::edge_edge_distance_hessian</qualifiedname>
+        <param>
+          <type>const Eigen::Vector&lt; T, 3 &gt; &amp;</type>
+          <declname>ea0</declname>
+        </param>
+        <param>
+          <type>const Eigen::Vector&lt; T, 3 &gt; &amp;</type>
+          <declname>ea1</declname>
+        </param>
+        <param>
+          <type>const Eigen::Vector&lt; T, 3 &gt; &amp;</type>
+          <declname>eb0</declname>
+        </param>
+        <param>
+          <type>const Eigen::Vector&lt; T, 3 &gt; &amp;</type>
+          <declname>eb1</declname>
+        </param>
+        <param>
+          <type>Eigen::Matrix&lt; T, 12, 12 &gt; &amp;</type>
+          <declname>Hessian</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/distance/edge_edge.h" line="22" column="19" declfile="src/muda/ext/geo/distance/edge_edge.h" declline="22" declcolumn="19"/>
+      </memberdef>
+      <memberdef kind="function" id="edge__edge__mollified_8h_1a0c39753bfb10b491fe32d8eb76a4dc45" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type>MUDA_GENERIC void</type>
+        <definition>MUDA_GENERIC void muda::distance::edge_edge_cross_norm2</definition>
+        <argsstring>(const Eigen::Vector&lt; T, 3 &gt; &amp;ea0, const Eigen::Vector&lt; T, 3 &gt; &amp;ea1, const Eigen::Vector&lt; T, 3 &gt; &amp;eb0, const Eigen::Vector&lt; T, 3 &gt; &amp;eb1, T &amp;result)</argsstring>
+        <name>edge_edge_cross_norm2</name>
+        <qualifiedname>muda::distance::edge_edge_cross_norm2</qualifiedname>
+        <param>
+          <type>const Eigen::Vector&lt; T, 3 &gt; &amp;</type>
+          <declname>ea0</declname>
+        </param>
+        <param>
+          <type>const Eigen::Vector&lt; T, 3 &gt; &amp;</type>
+          <declname>ea1</declname>
+        </param>
+        <param>
+          <type>const Eigen::Vector&lt; T, 3 &gt; &amp;</type>
+          <declname>eb0</declname>
+        </param>
+        <param>
+          <type>const Eigen::Vector&lt; T, 3 &gt; &amp;</type>
+          <declname>eb1</declname>
+        </param>
+        <param>
+          <type>T &amp;</type>
+          <declname>result</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/distance/edge_edge_mollified.h" line="8" column="19" declfile="src/muda/ext/geo/distance/edge_edge_mollified.h" declline="8" declcolumn="19"/>
+      </memberdef>
+      <memberdef kind="function" id="edge__edge__mollified_8h_1abe75c63cd35258cbccea5404a8afaa1b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type>MUDA_GENERIC void</type>
+        <definition>MUDA_GENERIC void muda::distance::edge_edge_cross_norm2_gradient</definition>
+        <argsstring>(const Eigen::Vector&lt; T, 3 &gt; &amp;ea0, const Eigen::Vector&lt; T, 3 &gt; &amp;ea1, const Eigen::Vector&lt; T, 3 &gt; &amp;eb0, const Eigen::Vector&lt; T, 3 &gt; &amp;eb1, Eigen::Vector&lt; T, 12 &gt; &amp;grad)</argsstring>
+        <name>edge_edge_cross_norm2_gradient</name>
+        <qualifiedname>muda::distance::edge_edge_cross_norm2_gradient</qualifiedname>
+        <param>
+          <type>const Eigen::Vector&lt; T, 3 &gt; &amp;</type>
+          <declname>ea0</declname>
+        </param>
+        <param>
+          <type>const Eigen::Vector&lt; T, 3 &gt; &amp;</type>
+          <declname>ea1</declname>
+        </param>
+        <param>
+          <type>const Eigen::Vector&lt; T, 3 &gt; &amp;</type>
+          <declname>eb0</declname>
+        </param>
+        <param>
+          <type>const Eigen::Vector&lt; T, 3 &gt; &amp;</type>
+          <declname>eb1</declname>
+        </param>
+        <param>
+          <type>Eigen::Vector&lt; T, 12 &gt; &amp;</type>
+          <declname>grad</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/distance/edge_edge_mollified.h" line="15" column="19" declfile="src/muda/ext/geo/distance/edge_edge_mollified.h" declline="15" declcolumn="19"/>
+      </memberdef>
+      <memberdef kind="function" id="edge__edge__mollified_8h_1a569037f86727d19f07aa3edb5023e0ae" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type>MUDA_GENERIC void</type>
+        <definition>MUDA_GENERIC void muda::distance::edge_edge_cross_norm2_hessian</definition>
+        <argsstring>(const Eigen::Vector&lt; T, 3 &gt; &amp;ea0, const Eigen::Vector&lt; T, 3 &gt; &amp;ea1, const Eigen::Vector&lt; T, 3 &gt; &amp;eb0, const Eigen::Vector&lt; T, 3 &gt; &amp;eb1, Eigen::Matrix&lt; T, 12, 12 &gt; &amp;Hessian)</argsstring>
+        <name>edge_edge_cross_norm2_hessian</name>
+        <qualifiedname>muda::distance::edge_edge_cross_norm2_hessian</qualifiedname>
+        <param>
+          <type>const Eigen::Vector&lt; T, 3 &gt; &amp;</type>
+          <declname>ea0</declname>
+        </param>
+        <param>
+          <type>const Eigen::Vector&lt; T, 3 &gt; &amp;</type>
+          <declname>ea1</declname>
+        </param>
+        <param>
+          <type>const Eigen::Vector&lt; T, 3 &gt; &amp;</type>
+          <declname>eb0</declname>
+        </param>
+        <param>
+          <type>const Eigen::Vector&lt; T, 3 &gt; &amp;</type>
+          <declname>eb1</declname>
+        </param>
+        <param>
+          <type>Eigen::Matrix&lt; T, 12, 12 &gt; &amp;</type>
+          <declname>Hessian</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/distance/edge_edge_mollified.h" line="22" column="19" declfile="src/muda/ext/geo/distance/edge_edge_mollified.h" declline="22" declcolumn="19"/>
+      </memberdef>
+      <memberdef kind="function" id="edge__edge__mollified_8h_1a536822030a5635d1ea6023c6dadc2e1d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type>MUDA_GENERIC void</type>
+        <definition>MUDA_GENERIC void muda::distance::edge_edge_mollifier</definition>
+        <argsstring>(const Eigen::Vector&lt; T, 3 &gt; &amp;ea0, const Eigen::Vector&lt; T, 3 &gt; &amp;ea1, const Eigen::Vector&lt; T, 3 &gt; &amp;eb0, const Eigen::Vector&lt; T, 3 &gt; &amp;eb1, T eps_x, T &amp;e)</argsstring>
+        <name>edge_edge_mollifier</name>
+        <qualifiedname>muda::distance::edge_edge_mollifier</qualifiedname>
+        <param>
+          <type>const Eigen::Vector&lt; T, 3 &gt; &amp;</type>
+          <declname>ea0</declname>
+        </param>
+        <param>
+          <type>const Eigen::Vector&lt; T, 3 &gt; &amp;</type>
+          <declname>ea1</declname>
+        </param>
+        <param>
+          <type>const Eigen::Vector&lt; T, 3 &gt; &amp;</type>
+          <declname>eb0</declname>
+        </param>
+        <param>
+          <type>const Eigen::Vector&lt; T, 3 &gt; &amp;</type>
+          <declname>eb1</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>eps_x</declname>
+        </param>
+        <param>
+          <type>T &amp;</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/distance/edge_edge_mollified.h" line="29" column="19" declfile="src/muda/ext/geo/distance/edge_edge_mollified.h" declline="29" declcolumn="19"/>
+      </memberdef>
+      <memberdef kind="function" id="edge__edge__mollified_8h_1adbaeaa9b2b0331d39a748efdf3f98ffe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type>MUDA_GENERIC void</type>
+        <definition>MUDA_GENERIC void muda::distance::edge_edge_mollifier_gradient</definition>
+        <argsstring>(const Eigen::Vector&lt; T, 3 &gt; &amp;ea0, const Eigen::Vector&lt; T, 3 &gt; &amp;ea1, const Eigen::Vector&lt; T, 3 &gt; &amp;eb0, const Eigen::Vector&lt; T, 3 &gt; &amp;eb1, T eps_x, Eigen::Vector&lt; T, 12 &gt; &amp;g)</argsstring>
+        <name>edge_edge_mollifier_gradient</name>
+        <qualifiedname>muda::distance::edge_edge_mollifier_gradient</qualifiedname>
+        <param>
+          <type>const Eigen::Vector&lt; T, 3 &gt; &amp;</type>
+          <declname>ea0</declname>
+        </param>
+        <param>
+          <type>const Eigen::Vector&lt; T, 3 &gt; &amp;</type>
+          <declname>ea1</declname>
+        </param>
+        <param>
+          <type>const Eigen::Vector&lt; T, 3 &gt; &amp;</type>
+          <declname>eb0</declname>
+        </param>
+        <param>
+          <type>const Eigen::Vector&lt; T, 3 &gt; &amp;</type>
+          <declname>eb1</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>eps_x</declname>
+        </param>
+        <param>
+          <type>Eigen::Vector&lt; T, 12 &gt; &amp;</type>
+          <declname>g</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/distance/edge_edge_mollified.h" line="37" column="19" declfile="src/muda/ext/geo/distance/edge_edge_mollified.h" declline="37" declcolumn="19"/>
+      </memberdef>
+      <memberdef kind="function" id="edge__edge__mollified_8h_1afae33f766411bd5d2fb15cdf67e8d4e5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type>MUDA_GENERIC void</type>
+        <definition>MUDA_GENERIC void muda::distance::edge_edge_mollifier_hessian</definition>
+        <argsstring>(const Eigen::Vector&lt; T, 3 &gt; &amp;ea0, const Eigen::Vector&lt; T, 3 &gt; &amp;ea1, const Eigen::Vector&lt; T, 3 &gt; &amp;eb0, const Eigen::Vector&lt; T, 3 &gt; &amp;eb1, T eps_x, Eigen::Matrix&lt; T, 12, 12 &gt; &amp;H)</argsstring>
+        <name>edge_edge_mollifier_hessian</name>
+        <qualifiedname>muda::distance::edge_edge_mollifier_hessian</qualifiedname>
+        <param>
+          <type>const Eigen::Vector&lt; T, 3 &gt; &amp;</type>
+          <declname>ea0</declname>
+        </param>
+        <param>
+          <type>const Eigen::Vector&lt; T, 3 &gt; &amp;</type>
+          <declname>ea1</declname>
+        </param>
+        <param>
+          <type>const Eigen::Vector&lt; T, 3 &gt; &amp;</type>
+          <declname>eb0</declname>
+        </param>
+        <param>
+          <type>const Eigen::Vector&lt; T, 3 &gt; &amp;</type>
+          <declname>eb1</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>eps_x</declname>
+        </param>
+        <param>
+          <type>Eigen::Matrix&lt; T, 12, 12 &gt; &amp;</type>
+          <declname>H</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/distance/edge_edge_mollified.h" line="45" column="19" declfile="src/muda/ext/geo/distance/edge_edge_mollified.h" declline="45" declcolumn="19"/>
+      </memberdef>
+      <memberdef kind="function" id="edge__edge__mollified_8h_1a8c478f7f37168ef0c0ba963df05c9fba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type>MUDA_GENERIC void</type>
+        <definition>MUDA_GENERIC void muda::distance::edge_edge_mollifier_threshold</definition>
+        <argsstring>(const Eigen::Vector&lt; T, 3 &gt; &amp;ea0_rest, const Eigen::Vector&lt; T, 3 &gt; &amp;ea1_rest, const Eigen::Vector&lt; T, 3 &gt; &amp;eb0_rest, const Eigen::Vector&lt; T, 3 &gt; &amp;eb1_rest, T &amp;eps_x)</argsstring>
+        <name>edge_edge_mollifier_threshold</name>
+        <qualifiedname>muda::distance::edge_edge_mollifier_threshold</qualifiedname>
+        <param>
+          <type>const Eigen::Vector&lt; T, 3 &gt; &amp;</type>
+          <declname>ea0_rest</declname>
+        </param>
+        <param>
+          <type>const Eigen::Vector&lt; T, 3 &gt; &amp;</type>
+          <declname>ea1_rest</declname>
+        </param>
+        <param>
+          <type>const Eigen::Vector&lt; T, 3 &gt; &amp;</type>
+          <declname>eb0_rest</declname>
+        </param>
+        <param>
+          <type>const Eigen::Vector&lt; T, 3 &gt; &amp;</type>
+          <declname>eb1_rest</declname>
+        </param>
+        <param>
+          <type>T &amp;</type>
+          <declname>eps_x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/distance/edge_edge_mollified.h" line="53" column="19" declfile="src/muda/ext/geo/distance/edge_edge_mollified.h" declline="53" declcolumn="19"/>
+      </memberdef>
+      <memberdef kind="function" id="point__edge_8h_1a50830531617cd5d1b2c2767878d9d040" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+          <param>
+            <type>int</type>
+            <declname>dim</declname>
+            <defname>dim</defname>
+          </param>
+        </templateparamlist>
+        <type>MUDA_GENERIC void</type>
+        <definition>MUDA_GENERIC void muda::distance::point_edge_distance</definition>
+        <argsstring>(const Eigen::Vector&lt; T, dim &gt; &amp;p, const Eigen::Vector&lt; T, dim &gt; &amp;e0, const Eigen::Vector&lt; T, dim &gt; &amp;e1, T &amp;dist2)</argsstring>
+        <name>point_edge_distance</name>
+        <qualifiedname>muda::distance::point_edge_distance</qualifiedname>
+        <param>
+          <type>const Eigen::Vector&lt; T, dim &gt; &amp;</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type>const Eigen::Vector&lt; T, dim &gt; &amp;</type>
+          <declname>e0</declname>
+        </param>
+        <param>
+          <type>const Eigen::Vector&lt; T, dim &gt; &amp;</type>
+          <declname>e1</declname>
+        </param>
+        <param>
+          <type>T &amp;</type>
+          <declname>dist2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/distance/point_edge.h" line="8" column="19" declfile="src/muda/ext/geo/distance/point_edge.h" declline="8" declcolumn="19"/>
+      </memberdef>
+      <memberdef kind="function" id="point__edge_8h_1ab14dfbc1a7c095bb241f9feee119ee69" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+          <param>
+            <type>int</type>
+            <declname>dim</declname>
+            <defname>dim</defname>
+          </param>
+        </templateparamlist>
+        <type>MUDA_GENERIC void</type>
+        <definition>MUDA_GENERIC void muda::distance::point_edge_distance_gradient</definition>
+        <argsstring>(const Eigen::Vector&lt; T, dim &gt; &amp;p, const Eigen::Vector&lt; T, dim &gt; &amp;e0, const Eigen::Vector&lt; T, dim &gt; &amp;e1, Eigen::Vector&lt; T, dim *3 &gt; &amp;grad)</argsstring>
+        <name>point_edge_distance_gradient</name>
+        <qualifiedname>muda::distance::point_edge_distance_gradient</qualifiedname>
+        <param>
+          <type>const Eigen::Vector&lt; T, dim &gt; &amp;</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type>const Eigen::Vector&lt; T, dim &gt; &amp;</type>
+          <declname>e0</declname>
+        </param>
+        <param>
+          <type>const Eigen::Vector&lt; T, dim &gt; &amp;</type>
+          <declname>e1</declname>
+        </param>
+        <param>
+          <type>Eigen::Vector&lt; T, dim *3 &gt; &amp;</type>
+          <declname>grad</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/distance/point_edge.h" line="14" column="19" declfile="src/muda/ext/geo/distance/point_edge.h" declline="14" declcolumn="19"/>
+      </memberdef>
+      <memberdef kind="function" id="point__edge_8h_1af80ef2281be648c04da060717059a174" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+          <param>
+            <type>int</type>
+            <declname>dim</declname>
+            <defname>dim</defname>
+          </param>
+        </templateparamlist>
+        <type>MUDA_GENERIC void</type>
+        <definition>MUDA_GENERIC void muda::distance::point_edge_distance_hessian</definition>
+        <argsstring>(const Eigen::Vector&lt; T, dim &gt; &amp;p, const Eigen::Vector&lt; T, dim &gt; &amp;e0, const Eigen::Vector&lt; T, dim &gt; &amp;e1, Eigen::Matrix&lt; T, dim *3, dim *3 &gt; &amp;Hessian)</argsstring>
+        <name>point_edge_distance_hessian</name>
+        <qualifiedname>muda::distance::point_edge_distance_hessian</qualifiedname>
+        <param>
+          <type>const Eigen::Vector&lt; T, dim &gt; &amp;</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type>const Eigen::Vector&lt; T, dim &gt; &amp;</type>
+          <declname>e0</declname>
+        </param>
+        <param>
+          <type>const Eigen::Vector&lt; T, dim &gt; &amp;</type>
+          <declname>e1</declname>
+        </param>
+        <param>
+          <type>Eigen::Matrix&lt; T, dim *3, dim *3 &gt; &amp;</type>
+          <declname>Hessian</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/distance/point_edge.h" line="20" column="19" declfile="src/muda/ext/geo/distance/point_edge.h" declline="20" declcolumn="19"/>
+      </memberdef>
+      <memberdef kind="function" id="point__point_8h_1a40880b11529994b039e0bfbb93dc0140" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+          <param>
+            <type>int</type>
+            <declname>dim</declname>
+            <defname>dim</defname>
+          </param>
+        </templateparamlist>
+        <type>MUDA_GENERIC void</type>
+        <definition>MUDA_GENERIC void muda::distance::point_point_distance</definition>
+        <argsstring>(const Eigen::Vector&lt; T, dim &gt; &amp;a, const Eigen::Vector&lt; T, dim &gt; &amp;b, T &amp;dist2)</argsstring>
+        <name>point_point_distance</name>
+        <qualifiedname>muda::distance::point_point_distance</qualifiedname>
+        <param>
+          <type>const Eigen::Vector&lt; T, dim &gt; &amp;</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>const Eigen::Vector&lt; T, dim &gt; &amp;</type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type>T &amp;</type>
+          <declname>dist2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/distance/point_point.h" line="8" column="19" declfile="src/muda/ext/geo/distance/point_point.h" declline="8" declcolumn="19"/>
+      </memberdef>
+      <memberdef kind="function" id="point__point_8h_1a9ee0cd1a9a3af120acf818a0f949670e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+          <param>
+            <type>int</type>
+            <declname>dim</declname>
+            <defname>dim</defname>
+          </param>
+        </templateparamlist>
+        <type>MUDA_GENERIC void</type>
+        <definition>MUDA_GENERIC void muda::distance::point_point_distance_gradient</definition>
+        <argsstring>(const Eigen::Vector&lt; T, dim &gt; &amp;a, const Eigen::Vector&lt; T, dim &gt; &amp;b, Eigen::Vector&lt; T, dim *2 &gt; &amp;grad)</argsstring>
+        <name>point_point_distance_gradient</name>
+        <qualifiedname>muda::distance::point_point_distance_gradient</qualifiedname>
+        <param>
+          <type>const Eigen::Vector&lt; T, dim &gt; &amp;</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>const Eigen::Vector&lt; T, dim &gt; &amp;</type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type>Eigen::Vector&lt; T, dim *2 &gt; &amp;</type>
+          <declname>grad</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/distance/point_point.h" line="13" column="19" declfile="src/muda/ext/geo/distance/point_point.h" declline="13" declcolumn="19"/>
+      </memberdef>
+      <memberdef kind="function" id="point__point_8h_1a2e56534aa5ba5d9594e6226b65b7f256" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+          <param>
+            <type>int</type>
+            <declname>dim</declname>
+            <defname>dim</defname>
+          </param>
+        </templateparamlist>
+        <type>MUDA_GENERIC void</type>
+        <definition>MUDA_GENERIC void muda::distance::point_point_distance_hessian</definition>
+        <argsstring>(const Eigen::Vector&lt; T, dim &gt; &amp;a, const Eigen::Vector&lt; T, dim &gt; &amp;b, Eigen::Matrix&lt; T, dim *2, dim *2 &gt; &amp;Hessian)</argsstring>
+        <name>point_point_distance_hessian</name>
+        <qualifiedname>muda::distance::point_point_distance_hessian</qualifiedname>
+        <param>
+          <type>const Eigen::Vector&lt; T, dim &gt; &amp;</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>const Eigen::Vector&lt; T, dim &gt; &amp;</type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type>Eigen::Matrix&lt; T, dim *2, dim *2 &gt; &amp;</type>
+          <declname>Hessian</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/distance/point_point.h" line="18" column="19" declfile="src/muda/ext/geo/distance/point_point.h" declline="18" declcolumn="19"/>
+      </memberdef>
+      <memberdef kind="function" id="point__triangle_8h_1a7812102d64047fdc7862976a7d385c54" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type>MUDA_GENERIC void</type>
+        <definition>MUDA_GENERIC void muda::distance::point_triangle_distance</definition>
+        <argsstring>(const Eigen::Vector&lt; T, 3 &gt; &amp;p, const Eigen::Vector&lt; T, 3 &gt; &amp;t0, const Eigen::Vector&lt; T, 3 &gt; &amp;t1, const Eigen::Vector&lt; T, 3 &gt; &amp;t2, T &amp;dist2)</argsstring>
+        <name>point_triangle_distance</name>
+        <qualifiedname>muda::distance::point_triangle_distance</qualifiedname>
+        <param>
+          <type>const Eigen::Vector&lt; T, 3 &gt; &amp;</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type>const Eigen::Vector&lt; T, 3 &gt; &amp;</type>
+          <declname>t0</declname>
+        </param>
+        <param>
+          <type>const Eigen::Vector&lt; T, 3 &gt; &amp;</type>
+          <declname>t1</declname>
+        </param>
+        <param>
+          <type>const Eigen::Vector&lt; T, 3 &gt; &amp;</type>
+          <declname>t2</declname>
+        </param>
+        <param>
+          <type>T &amp;</type>
+          <declname>dist2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/distance/point_triangle.h" line="8" column="19" declfile="src/muda/ext/geo/distance/point_triangle.h" declline="8" declcolumn="19"/>
+      </memberdef>
+      <memberdef kind="function" id="point__triangle_8h_1a5c2759013be2d5f0bfaf8ee5c20417ad" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type>MUDA_GENERIC void</type>
+        <definition>MUDA_GENERIC void muda::distance::point_triangle_distance_gradient</definition>
+        <argsstring>(const Eigen::Vector&lt; T, 3 &gt; &amp;p, const Eigen::Vector&lt; T, 3 &gt; &amp;t0, const Eigen::Vector&lt; T, 3 &gt; &amp;t1, const Eigen::Vector&lt; T, 3 &gt; &amp;t2, Eigen::Vector&lt; T, 12 &gt; &amp;grad)</argsstring>
+        <name>point_triangle_distance_gradient</name>
+        <qualifiedname>muda::distance::point_triangle_distance_gradient</qualifiedname>
+        <param>
+          <type>const Eigen::Vector&lt; T, 3 &gt; &amp;</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type>const Eigen::Vector&lt; T, 3 &gt; &amp;</type>
+          <declname>t0</declname>
+        </param>
+        <param>
+          <type>const Eigen::Vector&lt; T, 3 &gt; &amp;</type>
+          <declname>t1</declname>
+        </param>
+        <param>
+          <type>const Eigen::Vector&lt; T, 3 &gt; &amp;</type>
+          <declname>t2</declname>
+        </param>
+        <param>
+          <type>Eigen::Vector&lt; T, 12 &gt; &amp;</type>
+          <declname>grad</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/distance/point_triangle.h" line="15" column="19" declfile="src/muda/ext/geo/distance/point_triangle.h" declline="15" declcolumn="19"/>
+      </memberdef>
+      <memberdef kind="function" id="point__triangle_8h_1a5cdd66578731ace067e72185dfd69a93" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type>MUDA_GENERIC void</type>
+        <definition>MUDA_GENERIC void muda::distance::point_triangle_distance_hessian</definition>
+        <argsstring>(const Eigen::Vector&lt; T, 3 &gt; &amp;p, const Eigen::Vector&lt; T, 3 &gt; &amp;t0, const Eigen::Vector&lt; T, 3 &gt; &amp;t1, const Eigen::Vector&lt; T, 3 &gt; &amp;t2, Eigen::Matrix&lt; T, 12, 12 &gt; &amp;Hessian)</argsstring>
+        <name>point_triangle_distance_hessian</name>
+        <qualifiedname>muda::distance::point_triangle_distance_hessian</qualifiedname>
+        <param>
+          <type>const Eigen::Vector&lt; T, 3 &gt; &amp;</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type>const Eigen::Vector&lt; T, 3 &gt; &amp;</type>
+          <declname>t0</declname>
+        </param>
+        <param>
+          <type>const Eigen::Vector&lt; T, 3 &gt; &amp;</type>
+          <declname>t1</declname>
+        </param>
+        <param>
+          <type>const Eigen::Vector&lt; T, 3 &gt; &amp;</type>
+          <declname>t2</declname>
+        </param>
+        <param>
+          <type>Eigen::Matrix&lt; T, 12, 12 &gt; &amp;</type>
+          <declname>Hessian</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/distance/point_triangle.h" line="22" column="19" declfile="src/muda/ext/geo/distance/point_triangle.h" declline="22" declcolumn="19"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/muda/ext/geo/distance/ccd.h" line="8" column="1"/>
+  </compounddef>
+</doxygen>

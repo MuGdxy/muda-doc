@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structmuda_1_1force__trivially__destructible" kind="struct" language="C++" prot="public">
+    <compoundname>muda::force_trivially_destructible</compoundname>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="structmuda_1_1force__trivially__destructible_1afab64bb53405b0e84694a5be63cbe87d" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr bool</type>
+        <definition>constexpr bool muda::force_trivially_destructible&lt; T &gt;::value</definition>
+        <argsstring></argsstring>
+        <name>value</name>
+        <qualifiedname>muda::force_trivially_destructible::value</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/type_traits/type_label.h" line="27" column="27" bodyfile="src/muda/type_traits/type_label.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/muda/type_traits/type_label.h" line="25" column="1" bodyfile="src/muda/type_traits/type_label.h" bodystart="26" bodyend="28"/>
+    <listofallmembers>
+      <member refid="structmuda_1_1force__trivially__destructible_1afab64bb53405b0e84694a5be63cbe87d" prot="public" virt="non-virtual"><scope>muda::force_trivially_destructible</scope><name>value</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

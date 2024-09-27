@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classmuda_1_1spatial__hash_1_1_default_predication" kind="class" language="C++" prot="public">
+    <compoundname>muda::spatial_hash::DefaultPredication</compoundname>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmuda_1_1spatial__hash_1_1_default_predication_1a8c9b60a661a8814753eb72f9e8654e0a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>__device__ bool</type>
+        <definition>__device__ bool muda::spatial_hash::DefaultPredication::operator()</definition>
+        <argsstring>(int i, int j)</argsstring>
+        <name>operator()</name>
+        <qualifiedname>muda::spatial_hash::DefaultPredication::operator()</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>j</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/spatial_hash/sparse_spatial_hash.h" line="9" column="21" bodyfile="src/muda/ext/geo/spatial_hash/sparse_spatial_hash.h" bodystart="9" bodyend="9"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/muda/ext/geo/spatial_hash/sparse_spatial_hash.h" line="6" column="1" bodyfile="src/muda/ext/geo/spatial_hash/sparse_spatial_hash.h" bodystart="7" bodyend="10"/>
+    <listofallmembers>
+      <member refid="classmuda_1_1spatial__hash_1_1_default_predication_1a8c9b60a661a8814753eb72f9e8654e0a" prot="public" virt="non-virtual"><scope>muda::spatial_hash::DefaultPredication</scope><name>operator()</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

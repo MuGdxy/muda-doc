@@ -1,0 +1,317 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classmuda_1_1spatial__hash_1_1_spatial_partition_cell" kind="class" language="C++" prot="public">
+    <compoundname>muda::spatial_hash::SpatialPartitionCell</compoundname>
+    <includes refid="sparse__spatial__hash__impl_8h" local="no">sparse_spatial_hash_impl.h</includes>
+    <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classmuda_1_1spatial__hash_1_1_spatial_partition_cell_1a7597e906e57df64dde92163597477b8d" prot="public" static="no">
+        <type>Eigen::Vector3&lt; uint32_t &gt;</type>
+        <definition>using muda::spatial_hash::SpatialPartitionCell::Vector3u =  Eigen::Vector3&lt;uint32_t&gt;</definition>
+        <argsstring></argsstring>
+        <name>Vector3u</name>
+        <qualifiedname>muda::spatial_hash::SpatialPartitionCell::Vector3u</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/spatial_hash/sparse_spatial_hash_impl.h" line="18" column="5" bodyfile="src/muda/ext/geo/spatial_hash/sparse_spatial_hash_impl.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classmuda_1_1spatial__hash_1_1_spatial_partition_cell_1af5dca919b137e5d11aa4b9a56b890eef" prot="public" static="no">
+        <type>uint32_t</type>
+        <definition>using muda::spatial_hash::SpatialPartitionCell::U32 =  uint32_t</definition>
+        <argsstring></argsstring>
+        <name>U32</name>
+        <qualifiedname>muda::spatial_hash::SpatialPartitionCell::U32</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/spatial_hash/sparse_spatial_hash_impl.h" line="19" column="5" bodyfile="src/muda/ext/geo/spatial_hash/sparse_spatial_hash_impl.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classmuda_1_1spatial__hash_1_1_spatial_partition_cell_1af1935a96da691401e87cdc8bdc1d6dfe" prot="public" static="no" mutable="no">
+        <type>U32</type>
+        <definition>U32 muda::spatial_hash::SpatialPartitionCell::pass</definition>
+        <argsstring></argsstring>
+        <name>pass</name>
+        <qualifiedname>muda::spatial_hash::SpatialPartitionCell::pass</qualifiedname>
+        <bitfield> 3</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/spatial_hash/sparse_spatial_hash_impl.h" line="24" column="13" bodyfile="src/muda/ext/geo/spatial_hash/sparse_spatial_hash_impl.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1spatial__hash_1_1_spatial_partition_cell_1aebcecc6a46b99d6f9046ea78f383ba4d" prot="public" static="no" mutable="no">
+        <type>U32</type>
+        <definition>U32 muda::spatial_hash::SpatialPartitionCell::home</definition>
+        <argsstring></argsstring>
+        <name>home</name>
+        <qualifiedname>muda::spatial_hash::SpatialPartitionCell::home</qualifiedname>
+        <bitfield> 3</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/spatial_hash/sparse_spatial_hash_impl.h" line="25" column="13" bodyfile="src/muda/ext/geo/spatial_hash/sparse_spatial_hash_impl.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1spatial__hash_1_1_spatial_partition_cell_1a73cfe71038af0fe15d3ced51f878f1c2" prot="public" static="no" mutable="no">
+        <type>U32</type>
+        <definition>U32 muda::spatial_hash::SpatialPartitionCell::overlap</definition>
+        <argsstring></argsstring>
+        <name>overlap</name>
+        <qualifiedname>muda::spatial_hash::SpatialPartitionCell::overlap</qualifiedname>
+        <bitfield> 8</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/spatial_hash/sparse_spatial_hash_impl.h" line="26" column="13" bodyfile="src/muda/ext/geo/spatial_hash/sparse_spatial_hash_impl.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1spatial__hash_1_1_spatial_partition_cell_1a146e4a350566ecd87ce2dc436ac8d662" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="classmuda_1_1spatial__hash_1_1_spatial_partition_cell" kindref="compound">muda::spatial_hash::SpatialPartitionCell</ref></type>
+        <definition>struct muda::spatial_hash::SpatialPartitionCell muda::spatial_hash::SpatialPartitionCell::ctlbit</definition>
+        <argsstring></argsstring>
+        <name>ctlbit</name>
+        <qualifiedname>muda::spatial_hash::SpatialPartitionCell::ctlbit</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/spatial_hash/sparse_spatial_hash_impl.h" line="27" column="12"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1spatial__hash_1_1_spatial_partition_cell_1a4c24ae862ff5c4593c5d8dd9f63f813b" prot="public" static="no" mutable="no">
+        <type>U32</type>
+        <definition>U32 muda::spatial_hash::SpatialPartitionCell::cid</definition>
+        <argsstring></argsstring>
+        <name>cid</name>
+        <qualifiedname>muda::spatial_hash::SpatialPartitionCell::cid</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/spatial_hash/sparse_spatial_hash_impl.h" line="29" column="9" bodyfile="src/muda/ext/geo/spatial_hash/sparse_spatial_hash_impl.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1spatial__hash_1_1_spatial_partition_cell_1a275c1b306df11dec119f583ad1f9f488" prot="public" static="no" mutable="no">
+        <type>U32</type>
+        <definition>U32 muda::spatial_hash::SpatialPartitionCell::oid</definition>
+        <argsstring></argsstring>
+        <name>oid</name>
+        <qualifiedname>muda::spatial_hash::SpatialPartitionCell::oid</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/spatial_hash/sparse_spatial_hash_impl.h" line="30" column="9" bodyfile="src/muda/ext/geo/spatial_hash/sparse_spatial_hash_impl.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmuda_1_1spatial__hash_1_1_spatial_partition_cell_1a4ffa90ad01715d85c0e08ee85a195b4c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>MUDA_GENERIC</type>
+        <definition>MUDA_GENERIC muda::spatial_hash::SpatialPartitionCell::SpatialPartitionCell</definition>
+        <argsstring>()</argsstring>
+        <name>SpatialPartitionCell</name>
+        <qualifiedname>muda::spatial_hash::SpatialPartitionCell::SpatialPartitionCell</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/spatial_hash/sparse_spatial_hash_impl.h" line="33" column="18" bodyfile="src/muda/ext/geo/spatial_hash/sparse_spatial_hash_impl.h" bodystart="33" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1spatial__hash_1_1_spatial_partition_cell_1aa314a7714c417f29b014cff07ea37dc6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>MUDA_GENERIC</type>
+        <definition>MUDA_GENERIC muda::spatial_hash::SpatialPartitionCell::SpatialPartitionCell</definition>
+        <argsstring>(U32 cid, U32 oid)</argsstring>
+        <name>SpatialPartitionCell</name>
+        <qualifiedname>muda::spatial_hash::SpatialPartitionCell::SpatialPartitionCell</qualifiedname>
+        <param>
+          <type>U32</type>
+          <declname>cid</declname>
+        </param>
+        <param>
+          <type>U32</type>
+          <declname>oid</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/spatial_hash/sparse_spatial_hash_impl.h" line="43" column="18" bodyfile="src/muda/ext/geo/spatial_hash/sparse_spatial_hash_impl.h" bodystart="43" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1spatial__hash_1_1_spatial_partition_cell_1a5a04a6d4af572ba3e2c92c152b93c7c4" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>MUDA_GENERIC bool</type>
+        <definition>MUDA_GENERIC bool muda::spatial_hash::SpatialPartitionCell::is_phantom</definition>
+        <argsstring>() const</argsstring>
+        <name>is_phantom</name>
+        <qualifiedname>muda::spatial_hash::SpatialPartitionCell::is_phantom</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/spatial_hash/sparse_spatial_hash_impl.h" line="52" column="23" bodyfile="src/muda/ext/geo/spatial_hash/sparse_spatial_hash_impl.h" bodystart="52" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1spatial__hash_1_1_spatial_partition_cell_1aa191fb0c926f073eb07bde5e90773ed2" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>MUDA_GENERIC bool</type>
+        <definition>MUDA_GENERIC bool muda::spatial_hash::SpatialPartitionCell::is_home</definition>
+        <argsstring>() const</argsstring>
+        <name>is_home</name>
+        <qualifiedname>muda::spatial_hash::SpatialPartitionCell::is_home</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/spatial_hash/sparse_spatial_hash_impl.h" line="54" column="23" bodyfile="src/muda/ext/geo/spatial_hash/sparse_spatial_hash_impl.h" bodystart="54" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1spatial__hash_1_1_spatial_partition_cell_1a5490a984f51d55a86fe9c8b4dacbb513" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>MUDA_GENERIC void</type>
+        <definition>MUDA_GENERIC void muda::spatial_hash::SpatialPartitionCell::set_as_phantom</definition>
+        <argsstring>(const Vector3u &amp;home_ijk, const Vector3u &amp;cell_ijk)</argsstring>
+        <name>set_as_phantom</name>
+        <qualifiedname>muda::spatial_hash::SpatialPartitionCell::set_as_phantom</qualifiedname>
+        <param>
+          <type>const Vector3u &amp;</type>
+          <declname>home_ijk</declname>
+        </param>
+        <param>
+          <type>const Vector3u &amp;</type>
+          <declname>cell_ijk</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/spatial_hash/sparse_spatial_hash_impl.h" line="56" column="23" bodyfile="src/muda/ext/geo/spatial_hash/sparse_spatial_hash_impl.h" bodystart="56" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1spatial__hash_1_1_spatial_partition_cell_1a24f15ea82f15952fb17e9855ac1013d2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>MUDA_GENERIC void</type>
+        <definition>MUDA_GENERIC void muda::spatial_hash::SpatialPartitionCell::set_as_home</definition>
+        <argsstring>(const Vector3u &amp;ijk)</argsstring>
+        <name>set_as_home</name>
+        <qualifiedname>muda::spatial_hash::SpatialPartitionCell::set_as_home</qualifiedname>
+        <param>
+          <type>const Vector3u &amp;</type>
+          <declname>ijk</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/spatial_hash/sparse_spatial_hash_impl.h" line="62" column="23" bodyfile="src/muda/ext/geo/spatial_hash/sparse_spatial_hash_impl.h" bodystart="62" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1spatial__hash_1_1_spatial_partition_cell_1acacfddf7ad884c95998e59e6a0451d06" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>MUDA_GENERIC void</type>
+        <definition>MUDA_GENERIC void muda::spatial_hash::SpatialPartitionCell::set_overlap</definition>
+        <argsstring>(const Vector3u &amp;ijk)</argsstring>
+        <name>set_overlap</name>
+        <qualifiedname>muda::spatial_hash::SpatialPartitionCell::set_overlap</qualifiedname>
+        <param>
+          <type>const Vector3u &amp;</type>
+          <declname>ijk</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/spatial_hash/sparse_spatial_hash_impl.h" line="71" column="23" bodyfile="src/muda/ext/geo/spatial_hash/sparse_spatial_hash_impl.h" bodystart="71" bodyend="74"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classmuda_1_1spatial__hash_1_1_spatial_partition_cell_1a4c1852166cfcab9d690a403f9ebeaa13" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>MUDA_GENERIC U32</type>
+        <definition>static MUDA_GENERIC U32 muda::spatial_hash::SpatialPartitionCell::pass_type</definition>
+        <argsstring>(const Vector3u &amp;ijk)</argsstring>
+        <name>pass_type</name>
+        <qualifiedname>muda::spatial_hash::SpatialPartitionCell::pass_type</qualifiedname>
+        <param>
+          <type>const Vector3u &amp;</type>
+          <declname>ijk</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/spatial_hash/sparse_spatial_hash_impl.h" line="76" column="29" bodyfile="src/muda/ext/geo/spatial_hash/sparse_spatial_hash_impl.h" bodystart="76" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1spatial__hash_1_1_spatial_partition_cell_1a23c3ffc6374ecd72d51460b86741bae6" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>MUDA_GENERIC bool</type>
+        <definition>static MUDA_GENERIC bool muda::spatial_hash::SpatialPartitionCell::allow_ignore</definition>
+        <argsstring>(const SpatialPartitionCell &amp;l, const SpatialPartitionCell &amp;r)</argsstring>
+        <name>allow_ignore</name>
+        <qualifiedname>muda::spatial_hash::SpatialPartitionCell::allow_ignore</qualifiedname>
+        <param>
+          <type>const <ref refid="classmuda_1_1spatial__hash_1_1_spatial_partition_cell" kindref="compound">SpatialPartitionCell</ref> &amp;</type>
+          <declname>l</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classmuda_1_1spatial__hash_1_1_spatial_partition_cell" kindref="compound">SpatialPartitionCell</ref> &amp;</type>
+          <declname>r</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/spatial_hash/sparse_spatial_hash_impl.h" line="82" column="30" bodyfile="src/muda/ext/geo/spatial_hash/sparse_spatial_hash_impl.h" bodystart="82" bodyend="104"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>To represent a cell-object pair in the spatial hash 3D grid e.g. (cell_id,object_id) = (1024, 32) for the meaning: the 32th object overlap with the 1024th cell. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/muda/ext/geo/spatial_hash/sparse_spatial_hash_impl.h" line="15" column="1" bodyfile="src/muda/ext/geo/spatial_hash/sparse_spatial_hash_impl.h" bodystart="16" bodyend="105"/>
+    <listofallmembers>
+      <member refid="classmuda_1_1spatial__hash_1_1_spatial_partition_cell_1a23c3ffc6374ecd72d51460b86741bae6" prot="public" virt="non-virtual"><scope>muda::spatial_hash::SpatialPartitionCell</scope><name>allow_ignore</name></member>
+      <member refid="classmuda_1_1spatial__hash_1_1_spatial_partition_cell_1a4c24ae862ff5c4593c5d8dd9f63f813b" prot="public" virt="non-virtual"><scope>muda::spatial_hash::SpatialPartitionCell</scope><name>cid</name></member>
+      <member refid="classmuda_1_1spatial__hash_1_1_spatial_partition_cell_1a146e4a350566ecd87ce2dc436ac8d662" prot="public" virt="non-virtual"><scope>muda::spatial_hash::SpatialPartitionCell</scope><name>ctlbit</name></member>
+      <member refid="classmuda_1_1spatial__hash_1_1_spatial_partition_cell_1aebcecc6a46b99d6f9046ea78f383ba4d" prot="public" virt="non-virtual"><scope>muda::spatial_hash::SpatialPartitionCell</scope><name>home</name></member>
+      <member refid="classmuda_1_1spatial__hash_1_1_spatial_partition_cell_1aa191fb0c926f073eb07bde5e90773ed2" prot="public" virt="non-virtual"><scope>muda::spatial_hash::SpatialPartitionCell</scope><name>is_home</name></member>
+      <member refid="classmuda_1_1spatial__hash_1_1_spatial_partition_cell_1a5a04a6d4af572ba3e2c92c152b93c7c4" prot="public" virt="non-virtual"><scope>muda::spatial_hash::SpatialPartitionCell</scope><name>is_phantom</name></member>
+      <member refid="classmuda_1_1spatial__hash_1_1_spatial_partition_cell_1a275c1b306df11dec119f583ad1f9f488" prot="public" virt="non-virtual"><scope>muda::spatial_hash::SpatialPartitionCell</scope><name>oid</name></member>
+      <member refid="classmuda_1_1spatial__hash_1_1_spatial_partition_cell_1a73cfe71038af0fe15d3ced51f878f1c2" prot="public" virt="non-virtual"><scope>muda::spatial_hash::SpatialPartitionCell</scope><name>overlap</name></member>
+      <member refid="classmuda_1_1spatial__hash_1_1_spatial_partition_cell_1af1935a96da691401e87cdc8bdc1d6dfe" prot="public" virt="non-virtual"><scope>muda::spatial_hash::SpatialPartitionCell</scope><name>pass</name></member>
+      <member refid="classmuda_1_1spatial__hash_1_1_spatial_partition_cell_1a4c1852166cfcab9d690a403f9ebeaa13" prot="public" virt="non-virtual"><scope>muda::spatial_hash::SpatialPartitionCell</scope><name>pass_type</name></member>
+      <member refid="classmuda_1_1spatial__hash_1_1_spatial_partition_cell_1a24f15ea82f15952fb17e9855ac1013d2" prot="public" virt="non-virtual"><scope>muda::spatial_hash::SpatialPartitionCell</scope><name>set_as_home</name></member>
+      <member refid="classmuda_1_1spatial__hash_1_1_spatial_partition_cell_1a5490a984f51d55a86fe9c8b4dacbb513" prot="public" virt="non-virtual"><scope>muda::spatial_hash::SpatialPartitionCell</scope><name>set_as_phantom</name></member>
+      <member refid="classmuda_1_1spatial__hash_1_1_spatial_partition_cell_1acacfddf7ad884c95998e59e6a0451d06" prot="public" virt="non-virtual"><scope>muda::spatial_hash::SpatialPartitionCell</scope><name>set_overlap</name></member>
+      <member refid="classmuda_1_1spatial__hash_1_1_spatial_partition_cell_1a4ffa90ad01715d85c0e08ee85a195b4c" prot="public" virt="non-virtual"><scope>muda::spatial_hash::SpatialPartitionCell</scope><name>SpatialPartitionCell</name></member>
+      <member refid="classmuda_1_1spatial__hash_1_1_spatial_partition_cell_1aa314a7714c417f29b014cff07ea37dc6" prot="public" virt="non-virtual"><scope>muda::spatial_hash::SpatialPartitionCell</scope><name>SpatialPartitionCell</name></member>
+      <member refid="classmuda_1_1spatial__hash_1_1_spatial_partition_cell_1af5dca919b137e5d11aa4b9a56b890eef" prot="public" virt="non-virtual"><scope>muda::spatial_hash::SpatialPartitionCell</scope><name>U32</name></member>
+      <member refid="classmuda_1_1spatial__hash_1_1_spatial_partition_cell_1a7597e906e57df64dde92163597477b8d" prot="public" virt="non-virtual"><scope>muda::spatial_hash::SpatialPartitionCell</scope><name>Vector3u</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structmuda_1_1read__only__viewer_3_01lbvh_1_1_b_v_h_viewer_3_01_real_00_01_object_01_4_01_4" kind="struct" language="C++" prot="public">
+    <compoundname>muda::read_only_viewer&lt; lbvh::BVHViewer&lt; Real, Object &gt; &gt;</compoundname>
+    <templateparamlist>
+      <param>
+        <type>typename Real</type>
+      </param>
+      <param>
+        <type>typename Object</type>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="structmuda_1_1read__only__viewer_3_01lbvh_1_1_b_v_h_viewer_3_01_real_00_01_object_01_4_01_4_1aacfeb2e95bf7ff27ea1430082b3d1832" prot="public" static="no">
+        <type><ref refid="classmuda_1_1lbvh_1_1details_1_1_b_v_h_viewer_base" kindref="compound">lbvh::CBVHViewer</ref>&lt; Real, Object &gt;</type>
+        <definition>using muda::read_only_viewer&lt; lbvh::BVHViewer&lt; Real, Object &gt; &gt;::type =  lbvh::CBVHViewer&lt;Real, Object&gt;</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <qualifiedname>muda::read_only_viewer&lt; lbvh::BVHViewer&lt; Real, Object &gt; &gt;::type</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/lbvh/bvh_viewer.h" line="370" column="5" bodyfile="src/muda/ext/geo/lbvh/bvh_viewer.h" bodystart="370" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/muda/ext/geo/lbvh/bvh_viewer.h" line="368" column="1" bodyfile="src/muda/ext/geo/lbvh/bvh_viewer.h" bodystart="369" bodyend="371"/>
+    <listofallmembers>
+      <member refid="structmuda_1_1read__only__viewer_3_01lbvh_1_1_b_v_h_viewer_3_01_real_00_01_object_01_4_01_4_1aacfeb2e95bf7ff27ea1430082b3d1832" prot="public" virt="non-virtual"><scope>muda::read_only_viewer&lt; lbvh::BVHViewer&lt; Real, Object &gt; &gt;</scope><name>type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structmuda_1_1details_1_1_so_a_copy_map" kind="struct" language="C++" prot="public">
+    <compoundname>muda::details::SoACopyMap</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structmuda_1_1details_1_1_so_a_copy_map_1ab2ffb119fea37c29287a9a4583fb9518" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t muda::details::SoACopyMap::offset_in_base_struct</definition>
+        <argsstring></argsstring>
+        <name>offset_in_base_struct</name>
+        <qualifiedname>muda::details::SoACopyMap::offset_in_base_struct</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/field/sub_field/soa_sub_field.h" line="10" column="18" bodyfile="src/muda/ext/field/sub_field/soa_sub_field.h" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmuda_1_1details_1_1_so_a_copy_map_1a98ca3acb3d30fc1d5b8c52d7140eed87" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t muda::details::SoACopyMap::elem_byte_size</definition>
+        <argsstring></argsstring>
+        <name>elem_byte_size</name>
+        <qualifiedname>muda::details::SoACopyMap::elem_byte_size</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/field/sub_field/soa_sub_field.h" line="11" column="18" bodyfile="src/muda/ext/field/sub_field/soa_sub_field.h" bodystart="11" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/muda/ext/field/sub_field/soa_sub_field.h" line="8" column="5" bodyfile="src/muda/ext/field/sub_field/soa_sub_field.h" bodystart="9" bodyend="12"/>
+    <listofallmembers>
+      <member refid="structmuda_1_1details_1_1_so_a_copy_map_1a98ca3acb3d30fc1d5b8c52d7140eed87" prot="public" virt="non-virtual"><scope>muda::details::SoACopyMap</scope><name>elem_byte_size</name></member>
+      <member refid="structmuda_1_1details_1_1_so_a_copy_map_1ab2ffb119fea37c29287a9a4583fb9518" prot="public" virt="non-virtual"><scope>muda::details::SoACopyMap</scope><name>offset_in_base_struct</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

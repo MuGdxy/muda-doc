@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structmuda_1_1lbvh_1_1details_1_1_b_v_h_viewer_base_1_1_default_query_callback" kind="struct" language="C++" prot="public">
+    <compoundname>muda::lbvh::details::BVHViewerBase::DefaultQueryCallback</compoundname>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="structmuda_1_1lbvh_1_1details_1_1_b_v_h_viewer_base_1_1_default_query_callback_1a1b33c056fb9e49252246bda2c854e8c5" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>MUDA_GENERIC void</type>
+        <definition>MUDA_GENERIC void muda::lbvh::details::BVHViewerBase&lt; IsConst, Real, Object &gt;::DefaultQueryCallback::operator()</definition>
+        <argsstring>(uint32_t obj_idx) const noexcept</argsstring>
+        <name>operator()</name>
+        <qualifiedname>muda::lbvh::details::BVHViewerBase::DefaultQueryCallback::operator()</qualifiedname>
+        <param>
+          <type>uint32_t</type>
+          <declname>obj_idx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/lbvh/bvh_viewer.h" line="144" column="31" bodyfile="src/muda/ext/geo/lbvh/bvh_viewer.h" bodystart="144" bodyend="144"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/muda/ext/geo/lbvh/bvh_viewer.h" line="142" column="9" bodyfile="src/muda/ext/geo/lbvh/bvh_viewer.h" bodystart="143" bodyend="145"/>
+    <listofallmembers>
+      <member refid="structmuda_1_1lbvh_1_1details_1_1_b_v_h_viewer_base_1_1_default_query_callback_1a1b33c056fb9e49252246bda2c854e8c5" prot="public" virt="non-virtual"><scope>muda::lbvh::details::BVHViewerBase::DefaultQueryCallback</scope><name>operator()</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

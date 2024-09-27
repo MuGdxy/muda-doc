@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="dir_3ada5fb1291f7068cec99adbe813154e" kind="dir">
+    <compoundname>src/muda/check</compoundname>
+    <innerfile refid="check_8h">check.h</innerfile>
+    <innerfile refid="check__cublas_8h">check_cublas.h</innerfile>
+    <innerfile refid="check__cuda__errors_8h">check_cuda_errors.h</innerfile>
+    <innerfile refid="check__cusolver_8h">check_cusolver.h</innerfile>
+    <innerfile refid="check__cusparse_8h">check_cusparse.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/muda/check/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,702 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classmuda_1_1_sub_field_interface" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>muda::SubFieldInterface</compoundname>
+    <derivedcompoundref refid="classmuda_1_1_sub_field_impl_3_01_field_entry_layout_1_1_ao_s_01_4" prot="public" virt="non-virtual">muda::SubFieldImpl&lt; FieldEntryLayout::AoS &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classmuda_1_1_sub_field_impl_3_01_field_entry_layout_1_1_ao_so_a_01_4" prot="public" virt="non-virtual">muda::SubFieldImpl&lt; FieldEntryLayout::AoSoA &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classmuda_1_1_sub_field_impl_3_01_field_entry_layout_1_1_so_a_01_4" prot="public" virt="non-virtual">muda::SubFieldImpl&lt; FieldEntryLayout::SoA &gt;</derivedcompoundref>
+    <sectiondef kind="private-type">
+      <memberdef kind="typedef" id="classmuda_1_1_sub_field_interface_1a6791d52db6a9457f5cb2c5bbd63fa03f" prot="private" static="no">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>std::unique_ptr&lt; T &gt;</type>
+        <definition>using muda::SubFieldInterface::U =  std::unique_ptr&lt;T&gt;</definition>
+        <argsstring></argsstring>
+        <name>U</name>
+        <qualifiedname>muda::SubFieldInterface::U</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/field/sub_field_interface.h" line="17" column="5" bodyfile="src/muda/ext/field/sub_field_interface.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="friend">
+      <memberdef kind="friend" id="classmuda_1_1_sub_field_interface_1a7254b5de6e6918ac3991e168100e3202" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class SubField</definition>
+        <argsstring></argsstring>
+        <name>SubField</name>
+        <qualifiedname>muda::SubFieldInterface::SubField</qualifiedname>
+        <param>
+          <type><ref refid="classmuda_1_1_sub_field" kindref="compound">SubField</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/field/sub_field_interface.h" line="18" column="18" bodyfile="src/muda/ext/field/sub_field_interface.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="classmuda_1_1_sub_field_interface_1aaade25bdda6aa6fdde0ebf3ffd384dd2" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>FieldEntryLayout</type>
+            <declname>Layout</declname>
+            <defname>Layout</defname>
+          </param>
+        </templateparamlist>
+        <type>class</type>
+        <definition>friend class FieldBuilder</definition>
+        <argsstring></argsstring>
+        <name>FieldBuilder</name>
+        <qualifiedname>muda::SubFieldInterface::FieldBuilder</qualifiedname>
+        <param>
+          <type><ref refid="classmuda_1_1_field_builder" kindref="compound">FieldBuilder</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/field/sub_field_interface.h" line="20" column="18" bodyfile="src/muda/ext/field/sub_field_interface.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classmuda_1_1_sub_field_interface_1a66ec73c5eaa1650b4cceab38ba3b5a31" prot="protected" static="no" mutable="no">
+        <type><ref refid="classmuda_1_1_field" kindref="compound">Field</ref> &amp;</type>
+        <definition>Field&amp; muda::SubFieldInterface::m_field</definition>
+        <argsstring></argsstring>
+        <name>m_field</name>
+        <qualifiedname>muda::SubFieldInterface::m_field</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/field/sub_field_interface.h" line="23" column="44" bodyfile="src/muda/ext/field/sub_field_interface.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1_sub_field_interface_1a8bb6724cf590474b9782b6d2aeae753f" prot="protected" static="no" mutable="no">
+        <type>std::vector&lt; U&lt; <ref refid="classmuda_1_1_field_entry_base" kindref="compound">FieldEntryBase</ref> &gt; &gt;</type>
+        <definition>std::vector&lt;U&lt;FieldEntryBase&gt; &gt; muda::SubFieldInterface::m_entries</definition>
+        <argsstring></argsstring>
+        <name>m_entries</name>
+        <qualifiedname>muda::SubFieldInterface::m_entries</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/field/sub_field_interface.h" line="24" column="26" bodyfile="src/muda/ext/field/sub_field_interface.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1_sub_field_interface_1a4437b87f88c913c0e588faa6d4150abf" prot="protected" static="no" mutable="no">
+        <type><ref refid="classmuda_1_1_field_entry_layout_info" kindref="compound">FieldEntryLayoutInfo</ref></type>
+        <definition>FieldEntryLayoutInfo muda::SubFieldInterface::m_layout_info</definition>
+        <argsstring></argsstring>
+        <name>m_layout_info</name>
+        <qualifiedname>muda::SubFieldInterface::m_layout_info</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/field/sub_field_interface.h" line="25" column="45" bodyfile="src/muda/ext/field/sub_field_interface.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1_sub_field_interface_1a491f5d733068a4e339f79cb323407414" prot="protected" static="no" mutable="no">
+        <type><ref refid="classmuda_1_1_field_build_options" kindref="compound">FieldBuildOptions</ref></type>
+        <definition>FieldBuildOptions muda::SubFieldInterface::m_build_options</definition>
+        <argsstring></argsstring>
+        <name>m_build_options</name>
+        <qualifiedname>muda::SubFieldInterface::m_build_options</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/field/sub_field_interface.h" line="26" column="45" bodyfile="src/muda/ext/field/sub_field_interface.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1_sub_field_interface_1a6846633d41b84c1cdcc1edc4b763e75d" prot="protected" static="no" mutable="no">
+        <type>std::unordered_map&lt; std::string, size_t &gt;</type>
+        <definition>std::unordered_map&lt;std::string, size_t&gt; muda::SubFieldInterface::m_name_to_index</definition>
+        <argsstring></argsstring>
+        <name>m_name_to_index</name>
+        <qualifiedname>muda::SubFieldInterface::m_name_to_index</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/field/sub_field_interface.h" line="27" column="24" bodyfile="src/muda/ext/field/sub_field_interface.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1_sub_field_interface_1a7a9d72014be4ae40572049c9cb5c2dd6" prot="protected" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t muda::SubFieldInterface::m_num_elements</definition>
+        <argsstring></argsstring>
+        <name>m_num_elements</name>
+        <qualifiedname>muda::SubFieldInterface::m_num_elements</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/field/sub_field_interface.h" line="28" column="45" bodyfile="src/muda/ext/field/sub_field_interface.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1_sub_field_interface_1a9fd2884300ce3a19c6ac2d5713d447ba" prot="protected" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t muda::SubFieldInterface::m_struct_stride</definition>
+        <argsstring></argsstring>
+        <name>m_struct_stride</name>
+        <qualifiedname>muda::SubFieldInterface::m_struct_stride</qualifiedname>
+        <initializer>= ~0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/field/sub_field_interface.h" line="29" column="45" bodyfile="src/muda/ext/field/sub_field_interface.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1_sub_field_interface_1ae0e0f4716b83ed57665ac2a5bf096ac1" prot="protected" static="no" mutable="no">
+        <type>std::byte *</type>
+        <definition>std::byte* muda::SubFieldInterface::m_data_buffer</definition>
+        <argsstring></argsstring>
+        <name>m_data_buffer</name>
+        <qualifiedname>muda::SubFieldInterface::m_data_buffer</qualifiedname>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/field/sub_field_interface.h" line="30" column="44" bodyfile="src/muda/ext/field/sub_field_interface.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1_sub_field_interface_1aebbfb9b800ca342144d0514db9bbb5b8" prot="protected" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t muda::SubFieldInterface::m_data_buffer_size</definition>
+        <argsstring></argsstring>
+        <name>m_data_buffer_size</name>
+        <qualifiedname>muda::SubFieldInterface::m_data_buffer_size</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/field/sub_field_interface.h" line="31" column="45" bodyfile="src/muda/ext/field/sub_field_interface.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classmuda_1_1_sub_field_interface_1a5894b2e22a9e3d0e4f70ec8f699e2aee" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classmuda_1_1_field_entry_core" kindref="compound">FieldEntryCore</ref> &gt;</type>
+        <definition>std::vector&lt;FieldEntryCore&gt; muda::SubFieldInterface::m_new_cores</definition>
+        <argsstring></argsstring>
+        <name>m_new_cores</name>
+        <qualifiedname>muda::SubFieldInterface::m_new_cores</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/field/sub_field_interface.h" line="65" column="35" bodyfile="src/muda/ext/field/sub_field_interface.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1_sub_field_interface_1af21da2bc56912f53adbf4486f6530cf8" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classmuda_1_1_host_device_config" kindref="compound">HostDeviceConfig</ref>&lt; <ref refid="classmuda_1_1_field_entry_core" kindref="compound">FieldEntryCore</ref> &gt; &gt;</type>
+        <definition>std::vector&lt;HostDeviceConfig&lt;FieldEntryCore&gt; &gt; muda::SubFieldInterface::m_host_device_new_cores</definition>
+        <argsstring></argsstring>
+        <name>m_host_device_new_cores</name>
+        <qualifiedname>muda::SubFieldInterface::m_host_device_new_cores</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/field/sub_field_interface.h" line="66" column="17" bodyfile="src/muda/ext/field/sub_field_interface.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classmuda_1_1_sub_field_interface_1a5226ee97bd164420392b99259cda7e74" prot="protected" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void muda::SubFieldInterface::build_impl</definition>
+        <argsstring>()=0</argsstring>
+        <name>build_impl</name>
+        <qualifiedname>muda::SubFieldInterface::build_impl</qualifiedname>
+        <reimplementedby refid="classmuda_1_1_sub_field_impl_3_01_field_entry_layout_1_1_ao_s_01_4_1a818d3865250645e22f66a4b50b6fa133">build_impl</reimplementedby>
+        <reimplementedby refid="classmuda_1_1_sub_field_impl_3_01_field_entry_layout_1_1_ao_so_a_01_4_1aed44a58f476b4e4afe9bbc0e06e94830">build_impl</reimplementedby>
+        <reimplementedby refid="classmuda_1_1_sub_field_impl_3_01_field_entry_layout_1_1_so_a_01_4_1a7a60831f2b08c6daad99c3810d73a77d">build_impl</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/field/sub_field_interface.h" line="36" column="20"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_sub_field_interface_1acba932c31d0cc0fe82af06806b3f73c1" prot="protected" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>size_t</type>
+        <definition>virtual size_t muda::SubFieldInterface::require_total_buffer_byte_size</definition>
+        <argsstring>(size_t element_count)=0</argsstring>
+        <name>require_total_buffer_byte_size</name>
+        <qualifiedname>muda::SubFieldInterface::require_total_buffer_byte_size</qualifiedname>
+        <reimplementedby refid="classmuda_1_1_sub_field_impl_3_01_field_entry_layout_1_1_ao_s_01_4_1ac2e315b7909b3de2c0383d47f503058b">require_total_buffer_byte_size</reimplementedby>
+        <reimplementedby refid="classmuda_1_1_sub_field_impl_3_01_field_entry_layout_1_1_ao_so_a_01_4_1aff9443c4864ee0b6053f371894d2a6f8">require_total_buffer_byte_size</reimplementedby>
+        <reimplementedby refid="classmuda_1_1_sub_field_impl_3_01_field_entry_layout_1_1_so_a_01_4_1a59b2b8c1e060b71a7c4b1d08edf03228">require_total_buffer_byte_size</reimplementedby>
+        <param>
+          <type>size_t</type>
+          <declname>element_count</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/field/sub_field_interface.h" line="37" column="20"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_sub_field_interface_1addd016c746b1fb92f793706f7f1ab6c5" prot="protected" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void muda::SubFieldInterface::calculate_new_cores</definition>
+        <argsstring>(std::byte *byte_buffer, size_t total_bytes, size_t element_count, span&lt; FieldEntryCore &gt; new_cores)=0</argsstring>
+        <name>calculate_new_cores</name>
+        <qualifiedname>muda::SubFieldInterface::calculate_new_cores</qualifiedname>
+        <reimplementedby refid="classmuda_1_1_sub_field_impl_3_01_field_entry_layout_1_1_ao_s_01_4_1aa541c84f063940ae457ed2ddd6e34cfa">calculate_new_cores</reimplementedby>
+        <reimplementedby refid="classmuda_1_1_sub_field_impl_3_01_field_entry_layout_1_1_ao_so_a_01_4_1aa43a47b1de788f905286c60389dd50e0">calculate_new_cores</reimplementedby>
+        <reimplementedby refid="classmuda_1_1_sub_field_impl_3_01_field_entry_layout_1_1_so_a_01_4_1a6690f4d58ae3deed9b4cce805951bf6e">calculate_new_cores</reimplementedby>
+        <param>
+          <type>std::byte *</type>
+          <declname>byte_buffer</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>total_bytes</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>element_count</declname>
+        </param>
+        <param>
+          <type>span&lt; <ref refid="classmuda_1_1_field_entry_core" kindref="compound">FieldEntryCore</ref> &gt;</type>
+          <declname>new_cores</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/field/sub_field_interface.h" line="38" column="20"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_sub_field_interface_1afa40d8fc8420a840017c5d63b4f1a545" prot="protected" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool muda::SubFieldInterface::allow_inplace_shrink</definition>
+        <argsstring>() const</argsstring>
+        <name>allow_inplace_shrink</name>
+        <qualifiedname>muda::SubFieldInterface::allow_inplace_shrink</qualifiedname>
+        <reimplementedby refid="classmuda_1_1_sub_field_impl_3_01_field_entry_layout_1_1_so_a_01_4_1a0c4cd0687e75d692b202b4d5d829dc1c">allow_inplace_shrink</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/field/sub_field_interface.h" line="42" column="20" bodyfile="src/muda/ext/field/sub_field_interface.h" bodystart="42" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_sub_field_interface_1af0fb3944e567a659dd438eb01be46fc7" prot="protected" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classmuda_1_1_field_entry_layout_info" kindref="compound">FieldEntryLayoutInfo</ref> &amp;</type>
+        <definition>const FieldEntryLayoutInfo &amp; muda::SubFieldInterface::layout_info</definition>
+        <argsstring>() const</argsstring>
+        <name>layout_info</name>
+        <qualifiedname>muda::SubFieldInterface::layout_info</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/field/sub_field_interface.h" line="48" column="32" bodyfile="src/muda/ext/field/sub_field_interface.h" bodystart="48" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_sub_field_interface_1aa42279b1540fc6f005bccc9b5564e799" prot="protected" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classmuda_1_1_field_build_options" kindref="compound">FieldBuildOptions</ref> &amp;</type>
+        <definition>const FieldBuildOptions &amp; muda::SubFieldInterface::build_options</definition>
+        <argsstring>() const</argsstring>
+        <name>build_options</name>
+        <qualifiedname>muda::SubFieldInterface::build_options</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/field/sub_field_interface.h" line="49" column="29" bodyfile="src/muda/ext/field/sub_field_interface.h" bodystart="49" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_sub_field_interface_1a0afe964cdc136a92870a9fb83ae43465" prot="protected" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t muda::SubFieldInterface::num_elements</definition>
+        <argsstring>() const</argsstring>
+        <name>num_elements</name>
+        <qualifiedname>muda::SubFieldInterface::num_elements</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/field/sub_field_interface.h" line="50" column="30" bodyfile="src/muda/ext/field/sub_field_interface.h" bodystart="50" bodyend="50"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-static-func">
+      <memberdef kind="function" id="classmuda_1_1_sub_field_interface_1a7de1a3570a009d02f0730c63a8d6ddd9" prot="protected" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>static uint32_t muda::SubFieldInterface::round_up</definition>
+        <argsstring>(uint32_t total, uint32_t N)</argsstring>
+        <name>round_up</name>
+        <qualifiedname>muda::SubFieldInterface::round_up</qualifiedname>
+        <param>
+          <type>uint32_t</type>
+          <declname>total</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>N</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/field/sub_field_interface.h" line="51" column="21"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_sub_field_interface_1a3fc0dd3b99b8453a880f0d80db6d54b5" prot="protected" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>static uint32_t muda::SubFieldInterface::align</definition>
+        <argsstring>(uint32_t offset, uint32_t size, uint32_t min_alignment, uint32_t max_alignment)</argsstring>
+        <name>align</name>
+        <qualifiedname>muda::SubFieldInterface::align</qualifiedname>
+        <param>
+          <type>uint32_t</type>
+          <declname>offset</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>min_alignment</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>max_alignment</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/field/sub_field_interface.h" line="52" column="21"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmuda_1_1_sub_field_interface_1aa9fda9fe2f3dcbf68ecfd51e94d88de2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>muda::SubFieldInterface::SubFieldInterface</definition>
+        <argsstring>(Field &amp;field) MUDA_NOEXCEPT</argsstring>
+        <name>SubFieldInterface</name>
+        <qualifiedname>muda::SubFieldInterface::SubFieldInterface</qualifiedname>
+        <param>
+          <type><ref refid="classmuda_1_1_field" kindref="compound">Field</ref> &amp;</type>
+          <declname>field</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/field/sub_field_interface.h" line="54" column="5" bodyfile="src/muda/ext/field/sub_field_interface.h" bodystart="54" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_sub_field_interface_1a5d5145b2bcc2180d9caabfd5866370e7" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual muda::SubFieldInterface::~SubFieldInterface</definition>
+        <argsstring>()</argsstring>
+        <name>~SubFieldInterface</name>
+        <qualifiedname>muda::SubFieldInterface::~SubFieldInterface</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/field/sub_field_interface.h" line="55" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_sub_field_interface_1a31d590102a1eb395b09459bf72553e4d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>muda::SubFieldInterface::SubFieldInterface</definition>
+        <argsstring>(const SubFieldInterface &amp;)=delete</argsstring>
+        <name>SubFieldInterface</name>
+        <qualifiedname>muda::SubFieldInterface::SubFieldInterface</qualifiedname>
+        <param>
+          <type>const <ref refid="classmuda_1_1_sub_field_interface" kindref="compound">SubFieldInterface</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/field/sub_field_interface.h" line="58" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_sub_field_interface_1aa6add4bdad97ad9880aae28c27322774" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classmuda_1_1_sub_field_interface" kindref="compound">SubFieldInterface</ref> &amp;</type>
+        <definition>SubFieldInterface &amp; muda::SubFieldInterface::operator=</definition>
+        <argsstring>(const SubFieldInterface &amp;)=delete</argsstring>
+        <name>operator=</name>
+        <qualifiedname>muda::SubFieldInterface::operator=</qualifiedname>
+        <param>
+          <type>const <ref refid="classmuda_1_1_sub_field_interface" kindref="compound">SubFieldInterface</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/field/sub_field_interface.h" line="59" column="23"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_sub_field_interface_1a08aa21ec4d85eafb911f6b39f697891a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>muda::SubFieldInterface::SubFieldInterface</definition>
+        <argsstring>(SubFieldInterface &amp;&amp;)=delete</argsstring>
+        <name>SubFieldInterface</name>
+        <qualifiedname>muda::SubFieldInterface::SubFieldInterface</qualifiedname>
+        <param>
+          <type><ref refid="classmuda_1_1_sub_field_interface" kindref="compound">SubFieldInterface</ref> &amp;&amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/field/sub_field_interface.h" line="60" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_sub_field_interface_1a3edc4b6850c53a3094d1d0f4e225ff61" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classmuda_1_1_sub_field_interface" kindref="compound">SubFieldInterface</ref> &amp;</type>
+        <definition>SubFieldInterface &amp; muda::SubFieldInterface::operator=</definition>
+        <argsstring>(SubFieldInterface &amp;&amp;)=delete</argsstring>
+        <name>operator=</name>
+        <qualifiedname>muda::SubFieldInterface::operator=</qualifiedname>
+        <param>
+          <type><ref refid="classmuda_1_1_sub_field_interface" kindref="compound">SubFieldInterface</ref> &amp;&amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/field/sub_field_interface.h" line="61" column="23"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classmuda_1_1_sub_field_interface_1a8627b990dc15d903ce7db1562de0a8b5" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void muda::SubFieldInterface::aync_upload_cores</definition>
+        <argsstring>()</argsstring>
+        <name>aync_upload_cores</name>
+        <qualifiedname>muda::SubFieldInterface::aync_upload_cores</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/field/sub_field_interface.h" line="71" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_sub_field_interface_1a894fa9e8ab371eb3c4b486243f3571be" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void muda::SubFieldInterface::async_upload_temp_cores</definition>
+        <argsstring>()</argsstring>
+        <name>async_upload_temp_cores</name>
+        <qualifiedname>muda::SubFieldInterface::async_upload_temp_cores</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/field/sub_field_interface.h" line="72" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_sub_field_interface_1ac2c15f37a4aac6e2bcac7a5b0dbfb7b5" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename F</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void muda::SubFieldInterface::resize_data_buffer</definition>
+        <argsstring>(size_t size, F &amp;&amp;func)</argsstring>
+        <name>resize_data_buffer</name>
+        <qualifiedname>muda::SubFieldInterface::resize_data_buffer</qualifiedname>
+        <param>
+          <type>size_t</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>F &amp;&amp;</type>
+          <declname>func</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/field/sub_field_interface.h" line="74" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_sub_field_interface_1a39867642f72485fdc7cc8d08e765c554" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void muda::SubFieldInterface::resize</definition>
+        <argsstring>(size_t num_elements)</argsstring>
+        <name>resize</name>
+        <qualifiedname>muda::SubFieldInterface::resize</qualifiedname>
+        <param>
+          <type>size_t</type>
+          <declname>num_elements</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/field/sub_field_interface.h" line="79" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_sub_field_interface_1af630584da5bf99abdb2b90d97b14d82a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void muda::SubFieldInterface::build</definition>
+        <argsstring>()</argsstring>
+        <name>build</name>
+        <qualifiedname>muda::SubFieldInterface::build</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/field/sub_field_interface.h" line="80" column="10"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>muda::SubFieldImpl&lt; FieldEntryLayout::AoS &gt;</label>
+        <link refid="classmuda_1_1_sub_field_impl_3_01_field_entry_layout_1_1_ao_s_01_4"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>muda::SubFieldImpl&lt; FieldEntryLayout::AoSoA &gt;</label>
+        <link refid="classmuda_1_1_sub_field_impl_3_01_field_entry_layout_1_1_ao_so_a_01_4"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>muda::SubFieldImpl&lt; FieldEntryLayout::SoA &gt;</label>
+        <link refid="classmuda_1_1_sub_field_impl_3_01_field_entry_layout_1_1_so_a_01_4"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>muda::SubFieldInterface</label>
+        <link refid="classmuda_1_1_sub_field_interface"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>muda::Field</label>
+        <link refid="classmuda_1_1_field"/>
+      </node>
+      <node id="4">
+        <label>muda::FieldBuildOptions</label>
+        <link refid="classmuda_1_1_field_build_options"/>
+      </node>
+      <node id="3">
+        <label>muda::FieldEntryLayoutInfo</label>
+        <link refid="classmuda_1_1_field_entry_layout_info"/>
+      </node>
+      <node id="1">
+        <label>muda::SubFieldInterface</label>
+        <link refid="classmuda_1_1_sub_field_interface"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>m_field</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>m_layout_info</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>m_build_options</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="src/muda/ext/field/sub_field_interface.h" line="14" column="1" bodyfile="src/muda/ext/field/sub_field_interface.h" bodystart="15" bodyend="81"/>
+    <listofallmembers>
+      <member refid="classmuda_1_1_sub_field_interface_1a3fc0dd3b99b8453a880f0d80db6d54b5" prot="protected" virt="non-virtual"><scope>muda::SubFieldInterface</scope><name>align</name></member>
+      <member refid="classmuda_1_1_sub_field_interface_1afa40d8fc8420a840017c5d63b4f1a545" prot="protected" virt="virtual"><scope>muda::SubFieldInterface</scope><name>allow_inplace_shrink</name></member>
+      <member refid="classmuda_1_1_sub_field_interface_1a894fa9e8ab371eb3c4b486243f3571be" prot="private" virt="non-virtual"><scope>muda::SubFieldInterface</scope><name>async_upload_temp_cores</name></member>
+      <member refid="classmuda_1_1_sub_field_interface_1a8627b990dc15d903ce7db1562de0a8b5" prot="private" virt="non-virtual"><scope>muda::SubFieldInterface</scope><name>aync_upload_cores</name></member>
+      <member refid="classmuda_1_1_sub_field_interface_1af630584da5bf99abdb2b90d97b14d82a" prot="private" virt="non-virtual"><scope>muda::SubFieldInterface</scope><name>build</name></member>
+      <member refid="classmuda_1_1_sub_field_interface_1a5226ee97bd164420392b99259cda7e74" prot="protected" virt="pure-virtual"><scope>muda::SubFieldInterface</scope><name>build_impl</name></member>
+      <member refid="classmuda_1_1_sub_field_interface_1aa42279b1540fc6f005bccc9b5564e799" prot="protected" virt="non-virtual"><scope>muda::SubFieldInterface</scope><name>build_options</name></member>
+      <member refid="classmuda_1_1_sub_field_interface_1addd016c746b1fb92f793706f7f1ab6c5" prot="protected" virt="pure-virtual"><scope>muda::SubFieldInterface</scope><name>calculate_new_cores</name></member>
+      <member refid="classmuda_1_1_sub_field_interface_1aaade25bdda6aa6fdde0ebf3ffd384dd2" prot="private" virt="non-virtual"><scope>muda::SubFieldInterface</scope><name>FieldBuilder</name></member>
+      <member refid="classmuda_1_1_sub_field_interface_1af0fb3944e567a659dd438eb01be46fc7" prot="protected" virt="non-virtual"><scope>muda::SubFieldInterface</scope><name>layout_info</name></member>
+      <member refid="classmuda_1_1_sub_field_interface_1a491f5d733068a4e339f79cb323407414" prot="protected" virt="non-virtual"><scope>muda::SubFieldInterface</scope><name>m_build_options</name></member>
+      <member refid="classmuda_1_1_sub_field_interface_1ae0e0f4716b83ed57665ac2a5bf096ac1" prot="protected" virt="non-virtual"><scope>muda::SubFieldInterface</scope><name>m_data_buffer</name></member>
+      <member refid="classmuda_1_1_sub_field_interface_1aebbfb9b800ca342144d0514db9bbb5b8" prot="protected" virt="non-virtual"><scope>muda::SubFieldInterface</scope><name>m_data_buffer_size</name></member>
+      <member refid="classmuda_1_1_sub_field_interface_1a8bb6724cf590474b9782b6d2aeae753f" prot="protected" virt="non-virtual"><scope>muda::SubFieldInterface</scope><name>m_entries</name></member>
+      <member refid="classmuda_1_1_sub_field_interface_1a66ec73c5eaa1650b4cceab38ba3b5a31" prot="protected" virt="non-virtual"><scope>muda::SubFieldInterface</scope><name>m_field</name></member>
+      <member refid="classmuda_1_1_sub_field_interface_1af21da2bc56912f53adbf4486f6530cf8" prot="private" virt="non-virtual"><scope>muda::SubFieldInterface</scope><name>m_host_device_new_cores</name></member>
+      <member refid="classmuda_1_1_sub_field_interface_1a4437b87f88c913c0e588faa6d4150abf" prot="protected" virt="non-virtual"><scope>muda::SubFieldInterface</scope><name>m_layout_info</name></member>
+      <member refid="classmuda_1_1_sub_field_interface_1a6846633d41b84c1cdcc1edc4b763e75d" prot="protected" virt="non-virtual"><scope>muda::SubFieldInterface</scope><name>m_name_to_index</name></member>
+      <member refid="classmuda_1_1_sub_field_interface_1a5894b2e22a9e3d0e4f70ec8f699e2aee" prot="private" virt="non-virtual"><scope>muda::SubFieldInterface</scope><name>m_new_cores</name></member>
+      <member refid="classmuda_1_1_sub_field_interface_1a7a9d72014be4ae40572049c9cb5c2dd6" prot="protected" virt="non-virtual"><scope>muda::SubFieldInterface</scope><name>m_num_elements</name></member>
+      <member refid="classmuda_1_1_sub_field_interface_1a9fd2884300ce3a19c6ac2d5713d447ba" prot="protected" virt="non-virtual"><scope>muda::SubFieldInterface</scope><name>m_struct_stride</name></member>
+      <member refid="classmuda_1_1_sub_field_interface_1a0afe964cdc136a92870a9fb83ae43465" prot="protected" virt="non-virtual"><scope>muda::SubFieldInterface</scope><name>num_elements</name></member>
+      <member refid="classmuda_1_1_sub_field_interface_1aa6add4bdad97ad9880aae28c27322774" prot="public" virt="non-virtual"><scope>muda::SubFieldInterface</scope><name>operator=</name></member>
+      <member refid="classmuda_1_1_sub_field_interface_1a3edc4b6850c53a3094d1d0f4e225ff61" prot="public" virt="non-virtual"><scope>muda::SubFieldInterface</scope><name>operator=</name></member>
+      <member refid="classmuda_1_1_sub_field_interface_1acba932c31d0cc0fe82af06806b3f73c1" prot="protected" virt="pure-virtual"><scope>muda::SubFieldInterface</scope><name>require_total_buffer_byte_size</name></member>
+      <member refid="classmuda_1_1_sub_field_interface_1a39867642f72485fdc7cc8d08e765c554" prot="private" virt="non-virtual"><scope>muda::SubFieldInterface</scope><name>resize</name></member>
+      <member refid="classmuda_1_1_sub_field_interface_1ac2c15f37a4aac6e2bcac7a5b0dbfb7b5" prot="private" virt="non-virtual"><scope>muda::SubFieldInterface</scope><name>resize_data_buffer</name></member>
+      <member refid="classmuda_1_1_sub_field_interface_1a7de1a3570a009d02f0730c63a8d6ddd9" prot="protected" virt="non-virtual"><scope>muda::SubFieldInterface</scope><name>round_up</name></member>
+      <member refid="classmuda_1_1_sub_field_interface_1a7254b5de6e6918ac3991e168100e3202" prot="private" virt="non-virtual"><scope>muda::SubFieldInterface</scope><name>SubField</name></member>
+      <member refid="classmuda_1_1_sub_field_interface_1aa9fda9fe2f3dcbf68ecfd51e94d88de2" prot="public" virt="non-virtual"><scope>muda::SubFieldInterface</scope><name>SubFieldInterface</name></member>
+      <member refid="classmuda_1_1_sub_field_interface_1a31d590102a1eb395b09459bf72553e4d" prot="public" virt="non-virtual"><scope>muda::SubFieldInterface</scope><name>SubFieldInterface</name></member>
+      <member refid="classmuda_1_1_sub_field_interface_1a08aa21ec4d85eafb911f6b39f697891a" prot="public" virt="non-virtual"><scope>muda::SubFieldInterface</scope><name>SubFieldInterface</name></member>
+      <member refid="classmuda_1_1_sub_field_interface_1a6791d52db6a9457f5cb2c5bbd63fa03f" prot="private" virt="non-virtual"><scope>muda::SubFieldInterface</scope><name>U</name></member>
+      <member refid="classmuda_1_1_sub_field_interface_1a5d5145b2bcc2180d9caabfd5866370e7" prot="public" virt="virtual"><scope>muda::SubFieldInterface</scope><name>~SubFieldInterface</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

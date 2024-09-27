@@ -1,0 +1,134 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="namespacemuda_1_1spatial__hash" kind="namespace" language="C++">
+    <compoundname>muda::spatial_hash</compoundname>
+    <innerclass refid="classmuda_1_1spatial__hash_1_1_a_a_b_b" prot="public">muda::spatial_hash::AABB</innerclass>
+    <innerclass refid="classmuda_1_1spatial__hash_1_1_bounding_sphere" prot="public">muda::spatial_hash::BoundingSphere</innerclass>
+    <innerclass refid="classmuda_1_1spatial__hash_1_1_collision_pair" prot="public">muda::spatial_hash::CollisionPair</innerclass>
+    <innerclass refid="classmuda_1_1spatial__hash_1_1_default_predication" prot="public">muda::spatial_hash::DefaultPredication</innerclass>
+    <innerclass refid="classmuda_1_1spatial__hash_1_1_morton" prot="public">muda::spatial_hash::Morton</innerclass>
+    <innerclass refid="classmuda_1_1spatial__hash_1_1_morton_3_01uint32__t_01_4" prot="public">muda::spatial_hash::Morton&lt; uint32_t &gt;</innerclass>
+    <innerclass refid="classmuda_1_1spatial__hash_1_1_morton_3_01uint64__t_01_4" prot="public">muda::spatial_hash::Morton&lt; uint64_t &gt;</innerclass>
+    <innerclass refid="classmuda_1_1spatial__hash_1_1_sparse_spatial_hash" prot="public">muda::spatial_hash::SparseSpatialHash</innerclass>
+    <innerclass refid="classmuda_1_1spatial__hash_1_1_spatial_hash_table_info" prot="public">muda::spatial_hash::SpatialHashTableInfo</innerclass>
+    <innerclass refid="classmuda_1_1spatial__hash_1_1_spatial_partition_cell" prot="public">muda::spatial_hash::SpatialPartitionCell</innerclass>
+    <innernamespace refid="namespacemuda_1_1spatial__hash_1_1details">muda::spatial_hash::details</innernamespace>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="bounding__volume_8h_1ad86597e478e11e3622dbe40a3489188f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>MUDA_INLINE MUDA_GENERIC float</type>
+        <definition>MUDA_INLINE MUDA_GENERIC float muda::spatial_hash::squared_distance</definition>
+        <argsstring>(const Eigen::Vector3f &amp;p, AABB b)</argsstring>
+        <name>squared_distance</name>
+        <qualifiedname>muda::spatial_hash::squared_distance</qualifiedname>
+        <param>
+          <type>const Eigen::Vector3f &amp;</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type><ref refid="classmuda_1_1spatial__hash_1_1_a_a_b_b" kindref="compound">AABB</ref></type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/spatial_hash/bounding_volume.h" line="50" column="32" bodyfile="src/muda/ext/geo/spatial_hash/bounding_volume.h" bodystart="50" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="bounding__volume_8h_1a99ab95532a93916ec2d15a827b2389ac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>MUDA_INLINE MUDA_GENERIC float</type>
+        <definition>MUDA_INLINE MUDA_GENERIC float muda::spatial_hash::distance</definition>
+        <argsstring>(const Eigen::Vector3f &amp;p, AABB b)</argsstring>
+        <name>distance</name>
+        <qualifiedname>muda::spatial_hash::distance</qualifiedname>
+        <param>
+          <type>const Eigen::Vector3f &amp;</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type><ref refid="classmuda_1_1spatial__hash_1_1_a_a_b_b" kindref="compound">AABB</ref></type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/spatial_hash/bounding_volume.h" line="66" column="32" bodyfile="src/muda/ext/geo/spatial_hash/bounding_volume.h" bodystart="66" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="function" id="bounding__volume_8h_1a18b706df7d6fc46af0d9007844aad6e8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>MUDA_INLINE MUDA_GENERIC bool</type>
+        <definition>MUDA_INLINE MUDA_GENERIC bool muda::spatial_hash::intersect</definition>
+        <argsstring>(const BoundingSphere &amp;s, const AABB &amp;b)</argsstring>
+        <name>intersect</name>
+        <qualifiedname>muda::spatial_hash::intersect</qualifiedname>
+        <param>
+          <type>const <ref refid="classmuda_1_1spatial__hash_1_1_bounding_sphere" kindref="compound">BoundingSphere</ref> &amp;</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classmuda_1_1spatial__hash_1_1_a_a_b_b" kindref="compound">AABB</ref> &amp;</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/spatial_hash/bounding_volume.h" line="71" column="31" bodyfile="src/muda/ext/geo/spatial_hash/bounding_volume.h" bodystart="71" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="function" id="bounding__volume_8h_1a1b409e35c639dc21d0371314d5c08d0c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>MUDA_INLINE MUDA_GENERIC bool</type>
+        <definition>MUDA_INLINE MUDA_GENERIC bool muda::spatial_hash::intersect</definition>
+        <argsstring>(const BoundingSphere &amp;lhs, const BoundingSphere &amp;rhs)</argsstring>
+        <name>intersect</name>
+        <qualifiedname>muda::spatial_hash::intersect</qualifiedname>
+        <param>
+          <type>const <ref refid="classmuda_1_1spatial__hash_1_1_bounding_sphere" kindref="compound">BoundingSphere</ref> &amp;</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classmuda_1_1spatial__hash_1_1_bounding_sphere" kindref="compound">BoundingSphere</ref> &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/spatial_hash/bounding_volume.h" line="82" column="31" bodyfile="src/muda/ext/geo/spatial_hash/bounding_volume.h" bodystart="82" bodyend="86"/>
+      </memberdef>
+      <memberdef kind="function" id="bounding__volume_8h_1a5e25f231e02a038508aaee6a2f0ff6a2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>MUDA_INLINE MUDA_GENERIC bool</type>
+        <definition>MUDA_INLINE MUDA_GENERIC bool muda::spatial_hash::intersect</definition>
+        <argsstring>(const AABB &amp;l, const AABB &amp;r)</argsstring>
+        <name>intersect</name>
+        <qualifiedname>muda::spatial_hash::intersect</qualifiedname>
+        <param>
+          <type>const <ref refid="classmuda_1_1spatial__hash_1_1_a_a_b_b" kindref="compound">AABB</ref> &amp;</type>
+          <declname>l</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classmuda_1_1spatial__hash_1_1_a_a_b_b" kindref="compound">AABB</ref> &amp;</type>
+          <declname>r</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/spatial_hash/bounding_volume.h" line="88" column="31" bodyfile="src/muda/ext/geo/spatial_hash/bounding_volume.h" bodystart="88" bodyend="95"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/muda/ext/geo/spatial_hash/bounding_volume.h" line="6" column="1"/>
+  </compounddef>
+</doxygen>

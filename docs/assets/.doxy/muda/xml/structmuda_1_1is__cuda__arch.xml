@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structmuda_1_1is__cuda__arch" kind="struct" language="C++" prot="public">
+    <compoundname>muda::is_cuda_arch</compoundname>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="structmuda_1_1is__cuda__arch_1aeb6bc3bc0793a45ba00b04ab44d97aec" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr bool</type>
+        <definition>constexpr bool muda::is_cuda_arch::value</definition>
+        <argsstring></argsstring>
+        <name>value</name>
+        <qualifiedname>muda::is_cuda_arch::value</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/type_traits/cuda_arch.h" line="10" column="23" bodyfile="src/muda/type_traits/cuda_arch.h" bodystart="10" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/muda/type_traits/cuda_arch.h" line="5" column="1" bodyfile="src/muda/type_traits/cuda_arch.h" bodystart="6" bodyend="12"/>
+    <listofallmembers>
+      <member refid="structmuda_1_1is__cuda__arch_1aeb6bc3bc0793a45ba00b04ab44d97aec" prot="public" virt="non-virtual"><scope>muda::is_cuda_arch</scope><name>value</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

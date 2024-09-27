@@ -1,0 +1,80 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classmuda_1_1details_1_1_parallel_for_callable" kind="class" language="C++" prot="public">
+    <compoundname>muda::details::ParallelForCallable</compoundname>
+    <templateparamlist>
+      <param>
+        <type>typename F</type>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classmuda_1_1details_1_1_parallel_for_callable_1aabdc07ea2c4f8c047e66448bff06b7a5" prot="public" static="no" mutable="no">
+        <type>F</type>
+        <definition>F muda::details::ParallelForCallable&lt; F &gt;::callable</definition>
+        <argsstring></argsstring>
+        <name>callable</name>
+        <qualifiedname>muda::details::ParallelForCallable::callable</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/launch/parallel_for.h" line="25" column="13" bodyfile="src/muda/launch/parallel_for.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1details_1_1_parallel_for_callable_1a45c54d77440e35d71f3ebc5c1fe028e2" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int muda::details::ParallelForCallable&lt; F &gt;::count</definition>
+        <argsstring></argsstring>
+        <name>count</name>
+        <qualifiedname>muda::details::ParallelForCallable::count</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/launch/parallel_for.h" line="26" column="13" bodyfile="src/muda/launch/parallel_for.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmuda_1_1details_1_1_parallel_for_callable_1af137c3d957620c8eb658e592a6218cd1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename U</type>
+          </param>
+        </templateparamlist>
+        <type>MUDA_GENERIC</type>
+        <definition>MUDA_GENERIC muda::details::ParallelForCallable&lt; F &gt;::ParallelForCallable</definition>
+        <argsstring>(U &amp;&amp;callable, int count) MUDA_NOEXCEPT</argsstring>
+        <name>ParallelForCallable</name>
+        <qualifiedname>muda::details::ParallelForCallable::ParallelForCallable</qualifiedname>
+        <param>
+          <type>U &amp;&amp;</type>
+          <declname>callable</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>count</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/launch/parallel_for.h" line="28" column="22" bodyfile="src/muda/launch/parallel_for.h" bodystart="28" bodyend="32"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/muda/launch/parallel_for.h" line="22" column="5" bodyfile="src/muda/launch/parallel_for.h" bodystart="23" bodyend="34"/>
+    <listofallmembers>
+      <member refid="classmuda_1_1details_1_1_parallel_for_callable_1aabdc07ea2c4f8c047e66448bff06b7a5" prot="public" virt="non-virtual"><scope>muda::details::ParallelForCallable</scope><name>callable</name></member>
+      <member refid="classmuda_1_1details_1_1_parallel_for_callable_1a45c54d77440e35d71f3ebc5c1fe028e2" prot="public" virt="non-virtual"><scope>muda::details::ParallelForCallable</scope><name>count</name></member>
+      <member refid="classmuda_1_1details_1_1_parallel_for_callable_1af137c3d957620c8eb658e592a6218cd1" prot="public" virt="non-virtual"><scope>muda::details::ParallelForCallable</scope><name>ParallelForCallable</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

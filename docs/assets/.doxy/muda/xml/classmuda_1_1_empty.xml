@@ -1,0 +1,100 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classmuda_1_1_empty" kind="class" language="C++" prot="public">
+    <compoundname>muda::Empty</compoundname>
+    <basecompoundref refid="classmuda_1_1_launch_base" prot="public" virt="non-virtual">muda::LaunchBase&lt; Empty &gt;</basecompoundref>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmuda_1_1_empty_1ab1df2039c6958e45c97c104216a480de" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>muda::Empty::Empty</definition>
+        <argsstring>(::cudaStream_t stream=nullptr)</argsstring>
+        <name>Empty</name>
+        <qualifiedname>muda::Empty::Empty</qualifiedname>
+        <param>
+          <type>::cudaStream_t</type>
+          <declname>stream</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/launch/launch_base.h" line="169" column="5" bodyfile="src/muda/launch/launch_base.h" bodystart="169" bodyend="172"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>muda::LaunchBase&lt; Empty &gt;</label>
+        <link refid="classmuda_1_1_launch_base"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>muda::Empty</label>
+        <link refid="classmuda_1_1_empty"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>muda::LaunchCore</label>
+        <link refid="classmuda_1_1_launch_core"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>muda::LaunchBase&lt; Empty &gt;</label>
+        <link refid="classmuda_1_1_launch_base"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>muda::Empty</label>
+        <link refid="classmuda_1_1_empty"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>muda::LaunchCore</label>
+        <link refid="classmuda_1_1_launch_core"/>
+      </node>
+    </collaborationgraph>
+    <location file="src/muda/launch/launch_base.h" line="166" column="1" bodyfile="src/muda/launch/launch_base.h" bodystart="167" bodyend="173"/>
+    <listofallmembers>
+      <member refid="classmuda_1_1_launch_base_1aa8490139890f43555c1b7baa57378616" prot="public" virt="non-virtual"><scope>muda::Empty</scope><name>callback</name></member>
+      <member refid="classmuda_1_1_launch_base_1a8a59e9a27775e4e12ca19a6d590790f4" prot="public" virt="non-virtual"><scope>muda::Empty</scope><name>derived_type</name></member>
+      <member refid="classmuda_1_1_empty_1ab1df2039c6958e45c97c104216a480de" prot="public" virt="non-virtual"><scope>muda::Empty</scope><name>Empty</name></member>
+      <member refid="classmuda_1_1_launch_base_1aee4564eac54df98ab98085379370a2ec" prot="public" virt="non-virtual"><scope>muda::Empty</scope><name>file_line</name></member>
+      <member refid="classmuda_1_1_launch_core_1a38c542a99edea149552d82639e385ab5" prot="public" virt="non-virtual"><scope>muda::Empty</scope><name>init_stream</name></member>
+      <member refid="classmuda_1_1_launch_base_1ac412be72c054ac359678fff75857dd06" prot="public" virt="non-virtual"><scope>muda::Empty</scope><name>kernel_name</name></member>
+      <member refid="classmuda_1_1_launch_base_1ab73495b0bfa3a7a1864284aebceb51a8" prot="public" virt="non-virtual"><scope>muda::Empty</scope><name>LaunchBase</name></member>
+      <member refid="classmuda_1_1_launch_core_1a8503eff885f818a12319ca57dfd75011" prot="public" virt="non-virtual"><scope>muda::Empty</scope><name>LaunchCore</name></member>
+      <member refid="classmuda_1_1_launch_core_1a3b5544456087d57904981118c4cdcaf8" prot="protected" virt="non-virtual"><scope>muda::Empty</scope><name>m_stream</name></member>
+      <member refid="classmuda_1_1_launch_base_1a395b0a10fee3bf2c591f49a3119df1b8" prot="public" virt="non-virtual"><scope>muda::Empty</scope><name>next</name></member>
+      <member refid="classmuda_1_1_launch_base_1a841db3ede786d3312a6ca2de2139ad10" prot="public" virt="non-virtual"><scope>muda::Empty</scope><name>next</name></member>
+      <member refid="classmuda_1_1_launch_base_1a65538f7d445fa3cc56ab33e609fe566a" prot="protected" virt="non-virtual"><scope>muda::Empty</scope><name>pop_kernel_label</name></member>
+      <member refid="classmuda_1_1_launch_base_1ab6b75621024e7977edcdff26c04bcdc1" prot="public" virt="non-virtual"><scope>muda::Empty</scope><name>pop_range</name></member>
+      <member refid="classmuda_1_1_launch_base_1ad6dcaaf3ea0726809ebbdb10084c3183" prot="public" virt="non-virtual"><scope>muda::Empty</scope><name>push_range</name></member>
+      <member refid="classmuda_1_1_launch_base_1ad069d4ad6219f5a3b51e7c8d9e4d596f" prot="public" virt="non-virtual"><scope>muda::Empty</scope><name>record</name></member>
+      <member refid="classmuda_1_1_launch_base_1a12cf6b18c76787654460c1c043907547" prot="public" virt="non-virtual"><scope>muda::Empty</scope><name>record</name></member>
+      <member refid="classmuda_1_1_launch_base_1a77d57b9368424d70cd740af6eaf45a6f" prot="public" virt="non-virtual"><scope>muda::Empty</scope><name>record</name></member>
+      <member refid="classmuda_1_1_launch_core_1a8aeb9e37d421f835e0fcae124e3ce0de" prot="protected" virt="non-virtual"><scope>muda::Empty</scope><name>S</name></member>
+      <member refid="classmuda_1_1_launch_core_1ab78b991329337c97d2ac3e32e995a62f" prot="protected" virt="non-virtual"><scope>muda::Empty</scope><name>stream</name></member>
+      <member refid="classmuda_1_1_launch_base_1a88cbf9478fbeaa7434ece7f300dc1c0e" prot="public" virt="non-virtual"><scope>muda::Empty</scope><name>wait</name></member>
+      <member refid="classmuda_1_1_launch_base_1ab0fc5fbed4ec5f69a3b599af99900d98" prot="public" virt="non-virtual"><scope>muda::Empty</scope><name>wait</name></member>
+      <member refid="classmuda_1_1_launch_base_1acbf042e86efae1683e2ab08c95095da7" prot="public" virt="non-virtual"><scope>muda::Empty</scope><name>wait</name></member>
+      <member refid="classmuda_1_1_launch_base_1abe061bff24568f9c2fcf326a62843292" prot="public" virt="non-virtual"><scope>muda::Empty</scope><name>wait</name></member>
+      <member refid="classmuda_1_1_launch_core_1a58e970f699c546d37c70af9bb4d3a93c" prot="public" virt="non-virtual"><scope>muda::Empty</scope><name>wait_device</name></member>
+      <member refid="classmuda_1_1_launch_core_1a7b29e878817d4e42bc533edc0c89b645" prot="public" virt="non-virtual"><scope>muda::Empty</scope><name>wait_event</name></member>
+      <member refid="classmuda_1_1_launch_core_1a73d5d54a7b3b59dcf8eea792e796337b" prot="public" virt="non-virtual"><scope>muda::Empty</scope><name>wait_stream</name></member>
+      <member refid="classmuda_1_1_launch_base_1a59a525fea511ea1c90f5857be5d62d43" prot="public" virt="non-virtual"><scope>muda::Empty</scope><name>when</name></member>
+      <member refid="classmuda_1_1_launch_base_1a543548ac0516b2c10adba68d2ae7066b" prot="public" virt="non-virtual"><scope>muda::Empty</scope><name>~LaunchBase</name></member>
+      <member refid="classmuda_1_1_launch_core_1a5e4ae3435bce9d4ad706b5e347a3040f" prot="public" virt="non-virtual"><scope>muda::Empty</scope><name>~LaunchCore</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

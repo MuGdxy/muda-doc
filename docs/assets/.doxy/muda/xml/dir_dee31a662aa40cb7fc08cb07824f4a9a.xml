@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="dir_dee31a662aa40cb7fc08cb07824f4a9a" kind="dir">
+    <compoundname>src/muda/ext</compoundname>
+    <innerdir refid="dir_373cdbe7548ceaaa1c4b365fecb08d35">src/muda/ext/eigen</innerdir>
+    <innerdir refid="dir_67616bafb1e973d10aec465c6be4ad46">src/muda/ext/field</innerdir>
+    <innerdir refid="dir_e05e4ae50bce28830f3a7b1d7f2eeff2">src/muda/ext/geo</innerdir>
+    <innerdir refid="dir_6f09a74f7ee1db37d591c4a0fc2f2223">src/muda/ext/linear_system</innerdir>
+    <innerfile refid="eigen_8h">eigen.h</innerfile>
+    <innerfile refid="field_8h">field.h</innerfile>
+    <innerfile refid="linear__system_8h">linear_system.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/muda/ext/"/>
+  </compounddef>
+</doxygen>

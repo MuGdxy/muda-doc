@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classmuda_1_1_linear_system_solve_tolerance" kind="class" language="C++" prot="public">
+    <compoundname>muda::LinearSystemSolveTolerance</compoundname>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classmuda_1_1_linear_system_solve_tolerance_1af69cbe34f8318df992f22b9147845c50" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double muda::LinearSystemSolveTolerance::m_solve_sparse_error_threshold</definition>
+        <argsstring></argsstring>
+        <name>m_solve_sparse_error_threshold</name>
+        <qualifiedname>muda::LinearSystemSolveTolerance::m_solve_sparse_error_threshold</qualifiedname>
+        <initializer>= -1.0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/linear_system_solve_tolerance.h" line="8" column="12" bodyfile="src/muda/ext/linear_system/linear_system_solve_tolerance.h" bodystart="8" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmuda_1_1_linear_system_solve_tolerance_1af94c92a60382b420fca1ce6217605be7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void muda::LinearSystemSolveTolerance::solve_sparse_error_threshold</definition>
+        <argsstring>(double threshold)</argsstring>
+        <name>solve_sparse_error_threshold</name>
+        <qualifiedname>muda::LinearSystemSolveTolerance::solve_sparse_error_threshold</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>threshold</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/linear_system_solve_tolerance.h" line="11" column="10" bodyfile="src/muda/ext/linear_system/linear_system_solve_tolerance.h" bodystart="11" bodyend="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_linear_system_solve_tolerance_1ac555567b29c8d47066a815913dbe456c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>T</type>
+        <definition>T muda::LinearSystemSolveTolerance::solve_sparse_error_threshold</definition>
+        <argsstring>()</argsstring>
+        <name>solve_sparse_error_threshold</name>
+        <qualifiedname>muda::LinearSystemSolveTolerance::solve_sparse_error_threshold</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/linear_system_solve_tolerance.h" line="17" column="7" bodyfile="src/muda/ext/linear_system/linear_system_solve_tolerance.h" bodystart="17" bodyend="28"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/muda/ext/linear_system/linear_system_solve_tolerance.h" line="6" column="1" bodyfile="src/muda/ext/linear_system/linear_system_solve_tolerance.h" bodystart="7" bodyend="29"/>
+    <listofallmembers>
+      <member refid="classmuda_1_1_linear_system_solve_tolerance_1af69cbe34f8318df992f22b9147845c50" prot="private" virt="non-virtual"><scope>muda::LinearSystemSolveTolerance</scope><name>m_solve_sparse_error_threshold</name></member>
+      <member refid="classmuda_1_1_linear_system_solve_tolerance_1af94c92a60382b420fca1ce6217605be7" prot="public" virt="non-virtual"><scope>muda::LinearSystemSolveTolerance</scope><name>solve_sparse_error_threshold</name></member>
+      <member refid="classmuda_1_1_linear_system_solve_tolerance_1ac555567b29c8d47066a815913dbe456c" prot="public" virt="non-virtual"><scope>muda::LinearSystemSolveTolerance</scope><name>solve_sparse_error_threshold</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

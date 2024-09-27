@@ -1,0 +1,130 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classmuda_1_1_debug" kind="class" language="C++" prot="public">
+    <compoundname>muda::Debug</compoundname>
+    <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="classmuda_1_1_debug_1ad1495c72714bacb02953adf36d079e54" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>auto &amp;</type>
+        <definition>static auto &amp; muda::Debug::_is_debug_sync_all</definition>
+        <argsstring>()</argsstring>
+        <name>_is_debug_sync_all</name>
+        <qualifiedname>muda::Debug::_is_debug_sync_all</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/debug.h" line="10" column="17" bodyfile="src/muda/debug.h" bodystart="10" bodyend="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_debug_1a8cffce27239aa00e39eeff9f21be7f8f" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>auto &amp;</type>
+        <definition>static auto &amp; muda::Debug::_mutex</definition>
+        <argsstring>()</argsstring>
+        <name>_mutex</name>
+        <qualifiedname>muda::Debug::_mutex</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/debug.h" line="16" column="17" bodyfile="src/muda/debug.h" bodystart="16" bodyend="20"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_debug_1addd449c3818a1770e02edce2ebe00c0b" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>auto &amp;</type>
+        <definition>static auto &amp; muda::Debug::_sync_callback</definition>
+        <argsstring>()</argsstring>
+        <name>_sync_callback</name>
+        <qualifiedname>muda::Debug::_sync_callback</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/debug.h" line="22" column="17" bodyfile="src/muda/debug.h" bodystart="22" bodyend="26"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classmuda_1_1_debug_1a3c78c6a48efa814db7c77bfe38f49aa2" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool muda::Debug::debug_sync_all</definition>
+        <argsstring>(bool value)</argsstring>
+        <name>debug_sync_all</name>
+        <qualifiedname>muda::Debug::debug_sync_all</qualifiedname>
+        <param>
+          <type>bool</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/debug.h" line="29" column="17" bodyfile="src/muda/debug.h" bodystart="29" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_debug_1a631c753de77eb9f4ebc46bf592b50e50" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool muda::Debug::is_debug_sync_all</definition>
+        <argsstring>()</argsstring>
+        <name>is_debug_sync_all</name>
+        <qualifiedname>muda::Debug::is_debug_sync_all</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/debug.h" line="35" column="17" bodyfile="src/muda/debug.h" bodystart="35" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_debug_1ab7677ff63f4323586fcdf5ac7e20aa2b" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void muda::Debug::set_sync_callback</definition>
+        <argsstring>(std::function&lt; void()&gt; callback)</argsstring>
+        <name>set_sync_callback</name>
+        <qualifiedname>muda::Debug::set_sync_callback</qualifiedname>
+        <param>
+          <type>std::function&lt; void()&gt;</type>
+          <declname>callback</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/debug.h" line="37" column="17" bodyfile="src/muda/debug.h" bodystart="37" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_debug_1a779c893458f2c8ffe0a1c68b77164b15" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void muda::Debug::call_sync_callback</definition>
+        <argsstring>()</argsstring>
+        <name>call_sync_callback</name>
+        <qualifiedname>muda::Debug::call_sync_callback</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/debug.h" line="43" column="17" bodyfile="src/muda/debug.h" bodystart="43" bodyend="49"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/muda/debug.h" line="7" column="1" bodyfile="src/muda/debug.h" bodystart="8" bodyend="50"/>
+    <listofallmembers>
+      <member refid="classmuda_1_1_debug_1ad1495c72714bacb02953adf36d079e54" prot="private" virt="non-virtual"><scope>muda::Debug</scope><name>_is_debug_sync_all</name></member>
+      <member refid="classmuda_1_1_debug_1a8cffce27239aa00e39eeff9f21be7f8f" prot="private" virt="non-virtual"><scope>muda::Debug</scope><name>_mutex</name></member>
+      <member refid="classmuda_1_1_debug_1addd449c3818a1770e02edce2ebe00c0b" prot="private" virt="non-virtual"><scope>muda::Debug</scope><name>_sync_callback</name></member>
+      <member refid="classmuda_1_1_debug_1a779c893458f2c8ffe0a1c68b77164b15" prot="public" virt="non-virtual"><scope>muda::Debug</scope><name>call_sync_callback</name></member>
+      <member refid="classmuda_1_1_debug_1a3c78c6a48efa814db7c77bfe38f49aa2" prot="public" virt="non-virtual"><scope>muda::Debug</scope><name>debug_sync_all</name></member>
+      <member refid="classmuda_1_1_debug_1a631c753de77eb9f4ebc46bf592b50e50" prot="public" virt="non-virtual"><scope>muda::Debug</scope><name>is_debug_sync_all</name></member>
+      <member refid="classmuda_1_1_debug_1ab7677ff63f4323586fcdf5ac7e20aa2b" prot="public" virt="non-virtual"><scope>muda::Debug</scope><name>set_sync_callback</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

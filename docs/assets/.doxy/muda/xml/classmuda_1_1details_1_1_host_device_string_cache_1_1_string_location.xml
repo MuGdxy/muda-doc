@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classmuda_1_1details_1_1_host_device_string_cache_1_1_string_location" kind="class" language="C++" prot="private">
+    <compoundname>muda::details::HostDeviceStringCache::StringLocation</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classmuda_1_1details_1_1_host_device_string_cache_1_1_string_location_1a50ca82be44dc041d862b77ac5304b587" prot="public" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t muda::details::HostDeviceStringCache::StringLocation::buffer_index</definition>
+        <argsstring></argsstring>
+        <name>buffer_index</name>
+        <qualifiedname>muda::details::HostDeviceStringCache::StringLocation::buffer_index</qualifiedname>
+        <initializer>= ~0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/tools/host_device_string_cache.h" line="19" column="16" bodyfile="src/muda/tools/host_device_string_cache.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1details_1_1_host_device_string_cache_1_1_string_location_1af8d8bbeb065991cb07a7931faf056c31" prot="public" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t muda::details::HostDeviceStringCache::StringLocation::offset</definition>
+        <argsstring></argsstring>
+        <name>offset</name>
+        <qualifiedname>muda::details::HostDeviceStringCache::StringLocation::offset</qualifiedname>
+        <initializer>= ~0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/tools/host_device_string_cache.h" line="20" column="16" bodyfile="src/muda/tools/host_device_string_cache.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1details_1_1_host_device_string_cache_1_1_string_location_1ab4512cd3457609c1a5524b8d7b7eca20" prot="public" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t muda::details::HostDeviceStringCache::StringLocation::size</definition>
+        <argsstring></argsstring>
+        <name>size</name>
+        <qualifiedname>muda::details::HostDeviceStringCache::StringLocation::size</qualifiedname>
+        <initializer>= ~0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/tools/host_device_string_cache.h" line="21" column="16" bodyfile="src/muda/tools/host_device_string_cache.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/muda/tools/host_device_string_cache.h" line="16" column="5" bodyfile="src/muda/tools/host_device_string_cache.h" bodystart="17" bodyend="22"/>
+    <listofallmembers>
+      <member refid="classmuda_1_1details_1_1_host_device_string_cache_1_1_string_location_1a50ca82be44dc041d862b77ac5304b587" prot="public" virt="non-virtual"><scope>muda::details::HostDeviceStringCache::StringLocation</scope><name>buffer_index</name></member>
+      <member refid="classmuda_1_1details_1_1_host_device_string_cache_1_1_string_location_1af8d8bbeb065991cb07a7931faf056c31" prot="public" virt="non-virtual"><scope>muda::details::HostDeviceStringCache::StringLocation</scope><name>offset</name></member>
+      <member refid="classmuda_1_1details_1_1_host_device_string_cache_1_1_string_location_1ab4512cd3457609c1a5524b8d7b7eca20" prot="public" virt="non-virtual"><scope>muda::details::HostDeviceStringCache::StringLocation</scope><name>size</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

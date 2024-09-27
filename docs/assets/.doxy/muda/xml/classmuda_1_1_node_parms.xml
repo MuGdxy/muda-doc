@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classmuda_1_1_node_parms" kind="class" language="C++" prot="public">
+    <compoundname>muda::NodeParms</compoundname>
+    <derivedcompoundref refid="classmuda_1_1_host_node_parms" prot="public" virt="non-virtual">muda::HostNodeParms&lt; T &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classmuda_1_1_kernel_node_parms" prot="public" virt="non-virtual">muda::KernelNodeParms&lt; U &gt;</derivedcompoundref>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmuda_1_1_node_parms_1a1528e8fc362529051c7419ac8ae7b5f3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>muda::NodeParms::NodeParms</definition>
+        <argsstring>()=default</argsstring>
+        <name>NodeParms</name>
+        <qualifiedname>muda::NodeParms::NodeParms</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/graph/graph_base.h" line="22" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_node_parms_1a60ecdb5fb5673911a02d62e9202e2ad8" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual muda::NodeParms::~NodeParms</definition>
+        <argsstring>()=default</argsstring>
+        <name>~NodeParms</name>
+        <qualifiedname>muda::NodeParms::~NodeParms</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/graph/graph_base.h" line="23" column="13"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>muda::HostNodeParms&lt; T &gt;</label>
+        <link refid="classmuda_1_1_host_node_parms"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>muda::KernelNodeParms&lt; U &gt;</label>
+        <link refid="classmuda_1_1_kernel_node_parms"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>muda::NodeParms</label>
+        <link refid="classmuda_1_1_node_parms"/>
+      </node>
+    </inheritancegraph>
+    <location file="src/muda/graph/graph_base.h" line="19" column="1" bodyfile="src/muda/graph/graph_base.h" bodystart="20" bodyend="24"/>
+    <listofallmembers>
+      <member refid="classmuda_1_1_node_parms_1a1528e8fc362529051c7419ac8ae7b5f3" prot="public" virt="non-virtual"><scope>muda::NodeParms</scope><name>NodeParms</name></member>
+      <member refid="classmuda_1_1_node_parms_1a60ecdb5fb5673911a02d62e9202e2ad8" prot="public" virt="virtual"><scope>muda::NodeParms</scope><name>~NodeParms</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

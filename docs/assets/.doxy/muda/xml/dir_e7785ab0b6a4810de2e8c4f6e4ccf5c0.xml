@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="dir_e7785ab0b6a4810de2e8c4f6e4ccf5c0" kind="dir">
+    <compoundname>src/muda/cub/device</compoundname>
+    <innerfile refid="cub__wrapper_8h">cub_wrapper.h</innerfile>
+    <innerfile refid="device__adjacent__difference_8h">device_adjacent_difference.h</innerfile>
+    <innerfile refid="device__histogram_8h">device_histogram.h</innerfile>
+    <innerfile refid="device__merge__sort_8h">device_merge_sort.h</innerfile>
+    <innerfile refid="device__partition_8h">device_partition.h</innerfile>
+    <innerfile refid="device__radix__sort_8h">device_radix_sort.h</innerfile>
+    <innerfile refid="device__reduce_8h">device_reduce.h</innerfile>
+    <innerfile refid="device__run__length__encode_8h">device_run_length_encode.h</innerfile>
+    <innerfile refid="device__scan_8h">device_scan.h</innerfile>
+    <innerfile refid="device__segmented__radix__sort_8h">device_segmented_radix_sort.h</innerfile>
+    <innerfile refid="device__segmented__reduce_8h">device_segmented_reduce.h</innerfile>
+    <innerfile refid="device__segmented__sort_8h">device_segmented_sort.h</innerfile>
+    <innerfile refid="device__select_8h">device_select.h</innerfile>
+    <innerfile refid="device__spmv_8h">device_spmv.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/muda/cub/device/"/>
+  </compounddef>
+</doxygen>

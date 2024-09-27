@@ -1,0 +1,289 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classmuda_1_1_id_with_type" kind="class" language="C++" prot="public">
+    <compoundname>muda::IdWithType</compoundname>
+    <derivedcompoundref refid="classmuda_1_1_closure_id" prot="public" virt="non-virtual">muda::ClosureId</derivedcompoundref>
+    <derivedcompoundref refid="classmuda_1_1_node_id" prot="public" virt="non-virtual">muda::NodeId</derivedcompoundref>
+    <derivedcompoundref refid="classmuda_1_1_var_id" prot="public" virt="non-virtual">muda::VarId</derivedcompoundref>
+    <derivedcompoundref refid="classmuda_1_1details_1_1_local_var_id" prot="public" virt="non-virtual">muda::details::LocalVarId</derivedcompoundref>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+        <defval>uint64_t</defval>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classmuda_1_1_id_with_type_1ab09b6938990f4f58ab3c02ddc58a86bf" prot="public" static="no">
+        <type>T</type>
+        <definition>using muda::IdWithType&lt; T &gt;::value_type =  T</definition>
+        <argsstring></argsstring>
+        <name>value_type</name>
+        <qualifiedname>muda::IdWithType::value_type</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/tools/id_with_type.h" line="12" column="5" bodyfile="src/muda/tools/id_with_type.h" bodystart="12" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classmuda_1_1_id_with_type_1ae7d66d381fca823fae8b306cacdecc73" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr auto</type>
+        <definition>constexpr auto muda::IdWithType&lt; T &gt;::invalid_id</definition>
+        <argsstring></argsstring>
+        <name>invalid_id</name>
+        <qualifiedname>muda::IdWithType::invalid_id</qualifiedname>
+        <initializer>= std::numeric_limits&lt;value_type&gt;::max()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/tools/id_with_type.h" line="13" column="27" bodyfile="src/muda/tools/id_with_type.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classmuda_1_1_id_with_type_1ae0aa418b152beda5e1b8421c5b2a08a5" prot="protected" static="no" mutable="no">
+        <type>value_type</type>
+        <definition>value_type muda::IdWithType&lt; T &gt;::m_value</definition>
+        <argsstring></argsstring>
+        <name>m_value</name>
+        <qualifiedname>muda::IdWithType::m_value</qualifiedname>
+        <initializer>{invalid_id}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/tools/id_with_type.h" line="50" column="16" bodyfile="src/muda/tools/id_with_type.h" bodystart="50" bodyend="50"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmuda_1_1_id_with_type_1a9bed3e81e83d2cde25ba41bea647e62a" prot="public" static="no" const="no" explicit="yes" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>MUDA_GENERIC</type>
+        <definition>MUDA_GENERIC muda::IdWithType&lt; T &gt;::IdWithType</definition>
+        <argsstring>(value_type value) noexcept</argsstring>
+        <name>IdWithType</name>
+        <qualifiedname>muda::IdWithType::IdWithType</qualifiedname>
+        <param>
+          <type>value_type</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/tools/id_with_type.h" line="14" column="27" bodyfile="src/muda/tools/id_with_type.h" bodystart="14" bodyend="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_id_with_type_1acde1e1c925038c23c4545d26c73e6f04" prot="public" static="no" const="no" explicit="yes" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>MUDA_GENERIC</type>
+        <definition>MUDA_GENERIC muda::IdWithType&lt; T &gt;::IdWithType</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>IdWithType</name>
+        <qualifiedname>muda::IdWithType::IdWithType</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/tools/id_with_type.h" line="18" column="27" bodyfile="src/muda/tools/id_with_type.h" bodystart="18" bodyend="21"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_id_with_type_1a661ebfaae3d70900bf200790bb5e8450" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>MUDA_GENERIC value_type</type>
+        <definition>MUDA_GENERIC value_type muda::IdWithType&lt; T &gt;::value</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>value</name>
+        <qualifiedname>muda::IdWithType::value</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/tools/id_with_type.h" line="22" column="29" bodyfile="src/muda/tools/id_with_type.h" bodystart="22" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_id_with_type_1a8879efd4a60f85f8897cbf7cdf94f9d8" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>MUDA_GENERIC bool</type>
+        <definition>MUDA_GENERIC bool muda::IdWithType&lt; T &gt;::is_valid</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>is_valid</name>
+        <qualifiedname>muda::IdWithType::is_valid</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/tools/id_with_type.h" line="44" column="23" bodyfile="src/muda/tools/id_with_type.h" bodystart="44" bodyend="47"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="friend">
+      <memberdef kind="friend" id="classmuda_1_1_id_with_type_1ac9dc130ac356bf7b5370259930945ce3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream &amp; operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;os, const IdWithType &amp;id)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <qualifiedname>muda::IdWithType::operator&lt;&lt;</qualifiedname>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>os</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classmuda_1_1_id_with_type" kindref="compound">IdWithType</ref> &amp;</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/tools/id_with_type.h" line="23" column="12" bodyfile="src/muda/tools/id_with_type.h" bodystart="23" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="friend" id="classmuda_1_1_id_with_type_1acdb23d06e0654de4ce93278399209559" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>MUDA_GENERIC friend bool</type>
+        <definition>MUDA_GENERIC friend bool operator==</definition>
+        <argsstring>(const IdWithType &amp;lhs, const IdWithType &amp;rhs) noexcept</argsstring>
+        <name>operator==</name>
+        <qualifiedname>muda::IdWithType::operator==</qualifiedname>
+        <param>
+          <type>const <ref refid="classmuda_1_1_id_with_type" kindref="compound">IdWithType</ref> &amp;</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classmuda_1_1_id_with_type" kindref="compound">IdWithType</ref> &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/tools/id_with_type.h" line="28" column="30" bodyfile="src/muda/tools/id_with_type.h" bodystart="28" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="friend" id="classmuda_1_1_id_with_type_1aac1cddf4a769e1be9ecdc969045ae647" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>MUDA_GENERIC friend bool</type>
+        <definition>MUDA_GENERIC friend bool operator!=</definition>
+        <argsstring>(const IdWithType &amp;lhs, const IdWithType &amp;rhs) noexcept</argsstring>
+        <name>operator!=</name>
+        <qualifiedname>muda::IdWithType::operator!=</qualifiedname>
+        <param>
+          <type>const <ref refid="classmuda_1_1_id_with_type" kindref="compound">IdWithType</ref> &amp;</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classmuda_1_1_id_with_type" kindref="compound">IdWithType</ref> &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/tools/id_with_type.h" line="32" column="30" bodyfile="src/muda/tools/id_with_type.h" bodystart="32" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="friend" id="classmuda_1_1_id_with_type_1a47bff55cbc1bbad4e0d88430fcadec13" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>MUDA_GENERIC friend bool</type>
+        <definition>MUDA_GENERIC friend bool operator&lt;</definition>
+        <argsstring>(const IdWithType &amp;lhs, const IdWithType &amp;rhs) noexcept</argsstring>
+        <name>operator&lt;</name>
+        <qualifiedname>muda::IdWithType::operator&lt;</qualifiedname>
+        <param>
+          <type>const <ref refid="classmuda_1_1_id_with_type" kindref="compound">IdWithType</ref> &amp;</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classmuda_1_1_id_with_type" kindref="compound">IdWithType</ref> &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/tools/id_with_type.h" line="36" column="25" bodyfile="src/muda/tools/id_with_type.h" bodystart="36" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="friend" id="classmuda_1_1_id_with_type_1adccd314e67a20c2d364f6503bf125490" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>MUDA_GENERIC friend bool</type>
+        <definition>MUDA_GENERIC friend bool operator&gt;</definition>
+        <argsstring>(const IdWithType &amp;lhs, const IdWithType &amp;rhs) noexcept</argsstring>
+        <name>operator&gt;</name>
+        <qualifiedname>muda::IdWithType::operator&gt;</qualifiedname>
+        <param>
+          <type>const <ref refid="classmuda_1_1_id_with_type" kindref="compound">IdWithType</ref> &amp;</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classmuda_1_1_id_with_type" kindref="compound">IdWithType</ref> &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/tools/id_with_type.h" line="40" column="30" bodyfile="src/muda/tools/id_with_type.h" bodystart="40" bodyend="43"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>muda::ClosureId&lt; uint64_t &gt;</label>
+        <link refid="classmuda_1_1_closure_id"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>muda::IdWithType&lt; T &gt;</label>
+        <link refid="classmuda_1_1_id_with_type"/>
+      </node>
+      <node id="3">
+        <label>muda::NodeId&lt; uint64_t &gt;</label>
+        <link refid="classmuda_1_1_node_id"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>muda::VarId&lt; uint64_t &gt;</label>
+        <link refid="classmuda_1_1_var_id"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>muda::details::LocalVarId&lt; uint64_t &gt;</label>
+        <link refid="classmuda_1_1details_1_1_local_var_id"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="src/muda/tools/id_with_type.h" line="9" column="1" bodyfile="src/muda/tools/id_with_type.h" bodystart="10" bodyend="51"/>
+    <listofallmembers>
+      <member refid="classmuda_1_1_id_with_type_1a9bed3e81e83d2cde25ba41bea647e62a" prot="public" virt="non-virtual"><scope>muda::IdWithType</scope><name>IdWithType</name></member>
+      <member refid="classmuda_1_1_id_with_type_1acde1e1c925038c23c4545d26c73e6f04" prot="public" virt="non-virtual"><scope>muda::IdWithType</scope><name>IdWithType</name></member>
+      <member refid="classmuda_1_1_id_with_type_1ae7d66d381fca823fae8b306cacdecc73" prot="public" virt="non-virtual"><scope>muda::IdWithType</scope><name>invalid_id</name></member>
+      <member refid="classmuda_1_1_id_with_type_1a8879efd4a60f85f8897cbf7cdf94f9d8" prot="public" virt="non-virtual"><scope>muda::IdWithType</scope><name>is_valid</name></member>
+      <member refid="classmuda_1_1_id_with_type_1ae0aa418b152beda5e1b8421c5b2a08a5" prot="protected" virt="non-virtual"><scope>muda::IdWithType</scope><name>m_value</name></member>
+      <member refid="classmuda_1_1_id_with_type_1aac1cddf4a769e1be9ecdc969045ae647" prot="public" virt="non-virtual"><scope>muda::IdWithType</scope><name>operator!=</name></member>
+      <member refid="classmuda_1_1_id_with_type_1a47bff55cbc1bbad4e0d88430fcadec13" prot="public" virt="non-virtual"><scope>muda::IdWithType</scope><name>operator&lt;</name></member>
+      <member refid="classmuda_1_1_id_with_type_1ac9dc130ac356bf7b5370259930945ce3" prot="public" virt="non-virtual"><scope>muda::IdWithType</scope><name>operator&lt;&lt;</name></member>
+      <member refid="classmuda_1_1_id_with_type_1acdb23d06e0654de4ce93278399209559" prot="public" virt="non-virtual"><scope>muda::IdWithType</scope><name>operator==</name></member>
+      <member refid="classmuda_1_1_id_with_type_1adccd314e67a20c2d364f6503bf125490" prot="public" virt="non-virtual"><scope>muda::IdWithType</scope><name>operator&gt;</name></member>
+      <member refid="classmuda_1_1_id_with_type_1a661ebfaae3d70900bf200790bb5e8450" prot="public" virt="non-virtual"><scope>muda::IdWithType</scope><name>value</name></member>
+      <member refid="classmuda_1_1_id_with_type_1ab09b6938990f4f58ab3c02ddc58a86bf" prot="public" virt="non-virtual"><scope>muda::IdWithType</scope><name>value_type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

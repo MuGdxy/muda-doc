@@ -1,0 +1,728 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classmuda_1_1_buffer_view_t" kind="class" language="C++" prot="public">
+    <compoundname>muda::BufferViewT</compoundname>
+    <basecompoundref refid="classmuda_1_1_view_base" prot="public" virt="non-virtual">muda::ViewBase&lt; IsConst &gt;</basecompoundref>
+    <templateparamlist>
+      <param>
+        <type>bool</type>
+        <declname>IsConst</declname>
+        <defname>IsConst</defname>
+      </param>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="private-type">
+      <memberdef kind="typedef" id="classmuda_1_1_buffer_view_t_1ac89d478008ab684ac5b81fe2969b49a9" prot="private" static="no">
+        <type><ref refid="classmuda_1_1_view_base" kindref="compound">ViewBase</ref>&lt; IsConst &gt;</type>
+        <definition>using muda::BufferViewT&lt; IsConst, T &gt;::Base =  ViewBase&lt;IsConst&gt;</definition>
+        <argsstring></argsstring>
+        <name>Base</name>
+        <qualifiedname>muda::BufferViewT::Base</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/buffer_view.h" line="25" column="5" bodyfile="src/muda/buffer/buffer_view.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classmuda_1_1_buffer_view_t_1a502991dbcbb81ca72e52c916d3cbb852" prot="public" static="no">
+        <type><ref refid="classmuda_1_1_buffer_view_t" kindref="compound">BufferViewT</ref>&lt; true, T &gt;</type>
+        <definition>using muda::BufferViewT&lt; IsConst, T &gt;::ConstView =  BufferViewT&lt;true, T&gt;</definition>
+        <argsstring></argsstring>
+        <name>ConstView</name>
+        <qualifiedname>muda::BufferViewT::ConstView</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/buffer_view.h" line="32" column="5" bodyfile="src/muda/buffer/buffer_view.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classmuda_1_1_buffer_view_t_1a61316753a2995c508b57bb06a77ff880" prot="public" static="no">
+        <type><ref refid="classmuda_1_1_buffer_view_t" kindref="compound">BufferViewT</ref>&lt; IsConst, T &gt;</type>
+        <definition>using muda::BufferViewT&lt; IsConst, T &gt;::ThisView =  BufferViewT&lt;IsConst, T&gt;</definition>
+        <argsstring></argsstring>
+        <name>ThisView</name>
+        <qualifiedname>muda::BufferViewT::ThisView</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/buffer_view.h" line="33" column="5" bodyfile="src/muda/buffer/buffer_view.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classmuda_1_1_buffer_view_t_1a9bbc30385166cc8674f74e25c69cf229" prot="public" static="no">
+        <type><ref refid="classmuda_1_1_dense1_d_t" kindref="compound">CDense1D</ref>&lt; T &gt;</type>
+        <definition>using muda::BufferViewT&lt; IsConst, T &gt;::CViewer =  CDense1D&lt;T&gt;</definition>
+        <argsstring></argsstring>
+        <name>CViewer</name>
+        <qualifiedname>muda::BufferViewT::CViewer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/buffer_view.h" line="35" column="5" bodyfile="src/muda/buffer/buffer_view.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classmuda_1_1_buffer_view_t_1a6a5409c6fbc9e62e0017e6a0fd16f75d" prot="public" static="no">
+        <type><ref refid="classmuda_1_1_dense1_d_t" kindref="compound">Dense1D</ref>&lt; T &gt;</type>
+        <definition>using muda::BufferViewT&lt; IsConst, T &gt;::Viewer =  Dense1D&lt;T&gt;</definition>
+        <argsstring></argsstring>
+        <name>Viewer</name>
+        <qualifiedname>muda::BufferViewT::Viewer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/buffer_view.h" line="36" column="5" bodyfile="src/muda/buffer/buffer_view.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classmuda_1_1_buffer_view_t_1a7478b5935db3d3704ab7b5869bbe5ad9" prot="public" static="no">
+        <type>std::conditional_t&lt; IsConst, <ref refid="classmuda_1_1_dense1_d_t" kindref="compound">CViewer</ref>, <ref refid="classmuda_1_1_dense1_d_t" kindref="compound">Viewer</ref> &gt;</type>
+        <definition>using muda::BufferViewT&lt; IsConst, T &gt;::ThisViewer =  std::conditional_t&lt;IsConst, CViewer, Viewer&gt;</definition>
+        <argsstring></argsstring>
+        <name>ThisViewer</name>
+        <qualifiedname>muda::BufferViewT::ThisViewer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/buffer_view.h" line="37" column="5" bodyfile="src/muda/buffer/buffer_view.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classmuda_1_1_buffer_view_t_1ad6c8473e998c20e3719518502c2bdbe4" prot="public" static="no">
+        <templateparamlist>
+          <param>
+            <type>typename U</type>
+          </param>
+        </templateparamlist>
+        <type>typename Base::template auto_const_t&lt; U &gt;</type>
+        <definition>using muda::BufferViewT&lt; IsConst, T &gt;::auto_const_t =  typename Base::template auto_const_t&lt;U&gt;</definition>
+        <argsstring></argsstring>
+        <name>auto_const_t</name>
+        <qualifiedname>muda::BufferViewT::auto_const_t</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/buffer_view.h" line="40" column="5" bodyfile="src/muda/buffer/buffer_view.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classmuda_1_1_buffer_view_t_1a74725f1b9864a0b26b2dfbfa70bec441" prot="public" static="no">
+        <type>T</type>
+        <definition>using muda::BufferViewT&lt; IsConst, T &gt;::value_type =  T</definition>
+        <argsstring></argsstring>
+        <name>value_type</name>
+        <qualifiedname>muda::BufferViewT::value_type</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/buffer_view.h" line="94" column="5" bodyfile="src/muda/buffer/buffer_view.h" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classmuda_1_1_buffer_view_t_1a7dd9251c5fc2b087b644f9a4a5d6e54a" prot="public" static="no">
+        <type>T &amp;</type>
+        <definition>using muda::BufferViewT&lt; IsConst, T &gt;::reference =  T&amp;</definition>
+        <argsstring></argsstring>
+        <name>reference</name>
+        <qualifiedname>muda::BufferViewT::reference</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/buffer_view.h" line="95" column="5" bodyfile="src/muda/buffer/buffer_view.h" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classmuda_1_1_buffer_view_t_1abfa4faf1fe291dc1de3f1ce5376f3317" prot="public" static="no">
+        <type>T *</type>
+        <definition>using muda::BufferViewT&lt; IsConst, T &gt;::pointer =  T*</definition>
+        <argsstring></argsstring>
+        <name>pointer</name>
+        <qualifiedname>muda::BufferViewT::pointer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/buffer_view.h" line="96" column="5" bodyfile="src/muda/buffer/buffer_view.h" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classmuda_1_1_buffer_view_t_1a34ba9f4fa1b69fbbecd5f22670064387" prot="public" static="no">
+        <type>std::random_access_iterator_tag</type>
+        <definition>using muda::BufferViewT&lt; IsConst, T &gt;::iterator_category =  std::random_access_iterator_tag</definition>
+        <argsstring></argsstring>
+        <name>iterator_category</name>
+        <qualifiedname>muda::BufferViewT::iterator_category</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/buffer_view.h" line="97" column="5" bodyfile="src/muda/buffer/buffer_view.h" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classmuda_1_1_buffer_view_t_1a7fa3017d5f1a06e3f6da6762fd033d17" prot="public" static="no">
+        <type>size_t</type>
+        <definition>using muda::BufferViewT&lt; IsConst, T &gt;::difference_type =  size_t</definition>
+        <argsstring></argsstring>
+        <name>difference_type</name>
+        <qualifiedname>muda::BufferViewT::difference_type</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/buffer_view.h" line="98" column="5" bodyfile="src/muda/buffer/buffer_view.h" bodystart="98" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="friend">
+      <memberdef kind="friend" id="classmuda_1_1_buffer_view_t_1a486cdae62a52a9c18a4b3371f21c1a55" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>bool</type>
+            <declname>OtherIsConst</declname>
+            <defname>OtherIsConst</defname>
+          </param>
+          <param>
+            <type>typename U</type>
+          </param>
+        </templateparamlist>
+        <type>class</type>
+        <definition>friend class BufferViewT</definition>
+        <argsstring></argsstring>
+        <name>BufferViewT</name>
+        <qualifiedname>muda::BufferViewT::BufferViewT</qualifiedname>
+        <param>
+          <type><ref refid="classmuda_1_1_buffer_view_t" kindref="compound">BufferViewT</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/buffer_view.h" line="28" column="18" bodyfile="src/muda/buffer/buffer_view.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classmuda_1_1_buffer_view_t_1a2b84c485cb862f6cf3f2260bce4049fd" prot="protected" static="no" mutable="no">
+        <type>auto_const_t&lt; T &gt; *</type>
+        <definition>auto_const_t&lt;T&gt;* muda::BufferViewT&lt; IsConst, T &gt;::m_data</definition>
+        <argsstring></argsstring>
+        <name>m_data</name>
+        <qualifiedname>muda::BufferViewT::m_data</qualifiedname>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/buffer_view.h" line="43" column="18" bodyfile="src/muda/buffer/buffer_view.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1_buffer_view_t_1a3bdeba903d152226ff8500d1154e50bb" prot="protected" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t muda::BufferViewT&lt; IsConst, T &gt;::m_offset</definition>
+        <argsstring></argsstring>
+        <name>m_offset</name>
+        <qualifiedname>muda::BufferViewT::m_offset</qualifiedname>
+        <initializer>= ~0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/buffer_view.h" line="44" column="22" bodyfile="src/muda/buffer/buffer_view.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1_buffer_view_t_1a0eaa039a406272de933bf9ff07723ae1" prot="protected" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t muda::BufferViewT&lt; IsConst, T &gt;::m_size</definition>
+        <argsstring></argsstring>
+        <name>m_size</name>
+        <qualifiedname>muda::BufferViewT::m_size</qualifiedname>
+        <initializer>= ~0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/buffer_view.h" line="45" column="22" bodyfile="src/muda/buffer/buffer_view.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmuda_1_1_buffer_view_t_1a781a1468932b2f184d1473aeaea5f8bc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>MUDA_GENERIC</type>
+        <definition>MUDA_GENERIC muda::BufferViewT&lt; IsConst, T &gt;::BufferViewT</definition>
+        <argsstring>() MUDA_NOEXCEPT=default</argsstring>
+        <name>BufferViewT</name>
+        <qualifiedname>muda::BufferViewT::BufferViewT</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/buffer_view.h" line="48" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_buffer_view_t_1a86b4cff2190aede15de35538deb7f64a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>MUDA_GENERIC</type>
+        <definition>MUDA_GENERIC muda::BufferViewT&lt; IsConst, T &gt;::BufferViewT</definition>
+        <argsstring>(const BufferViewT &amp;other) MUDA_NOEXCEPT=default</argsstring>
+        <name>BufferViewT</name>
+        <qualifiedname>muda::BufferViewT::BufferViewT</qualifiedname>
+        <param>
+          <type>const <ref refid="classmuda_1_1_buffer_view_t" kindref="compound">BufferViewT</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/buffer_view.h" line="50" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_buffer_view_t_1a11fca7717eb9e07e243d0446ffa921e9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>MUDA_GENERIC</type>
+        <definition>MUDA_GENERIC muda::BufferViewT&lt; IsConst, T &gt;::BufferViewT</definition>
+        <argsstring>(auto_const_t&lt; T &gt; *data, size_t offset, size_t size) MUDA_NOEXCEPT</argsstring>
+        <name>BufferViewT</name>
+        <qualifiedname>muda::BufferViewT::BufferViewT</qualifiedname>
+        <param>
+          <type>auto_const_t&lt; T &gt; *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>offset</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/buffer_view.h" line="52" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_buffer_view_t_1aadbda42bdc3b8c16561d502f349d83da" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>MUDA_GENERIC</type>
+        <definition>MUDA_GENERIC muda::BufferViewT&lt; IsConst, T &gt;::BufferViewT</definition>
+        <argsstring>(auto_const_t&lt; T &gt; *data, size_t size) MUDA_NOEXCEPT</argsstring>
+        <name>BufferViewT</name>
+        <qualifiedname>muda::BufferViewT::BufferViewT</qualifiedname>
+        <param>
+          <type>auto_const_t&lt; T &gt; *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/buffer_view.h" line="54" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_buffer_view_t_1a5e89b3960859c174156fdc28421bcc1d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>bool</type>
+            <declname>OtherIsConst</declname>
+            <defname>OtherIsConst</defname>
+          </param>
+        </templateparamlist>
+        <type>MUDA_GENERIC</type>
+        <definition>MUDA_GENERIC muda::BufferViewT&lt; IsConst, T &gt;::BufferViewT</definition>
+        <argsstring>(const BufferViewT&lt; OtherIsConst, T &gt; &amp;other) MUDA_NOEXCEPT MUDA_REQUIRES(!OtherIsConst)</argsstring>
+        <name>BufferViewT</name>
+        <qualifiedname>muda::BufferViewT::BufferViewT</qualifiedname>
+        <param>
+          <type>const <ref refid="classmuda_1_1_buffer_view_t" kindref="compound">BufferViewT</ref>&lt; OtherIsConst, T &gt; &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/buffer_view.h" line="57" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_buffer_view_t_1a55c56f20af7296dc0267f4ccb289371e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>MUDA_GENERIC <ref refid="classmuda_1_1_buffer_view_t" kindref="compound">ConstView</ref></type>
+        <definition>MUDA_GENERIC ConstView muda::BufferViewT&lt; IsConst, T &gt;::as_const</definition>
+        <argsstring>() const MUDA_NOEXCEPT</argsstring>
+        <name>as_const</name>
+        <qualifiedname>muda::BufferViewT::as_const</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/buffer_view.h" line="60" column="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_buffer_view_t_1ab8eb0274f3e6152d893903d6ece28708" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>MUDA_GENERIC auto_const_t&lt; T &gt; *</type>
+        <definition>MUDA_GENERIC auto_const_t&lt; T &gt; * muda::BufferViewT&lt; IsConst, T &gt;::data</definition>
+        <argsstring>() const MUDA_NOEXCEPT</argsstring>
+        <name>data</name>
+        <qualifiedname>muda::BufferViewT::data</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/buffer_view.h" line="62" column="31"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_buffer_view_t_1ae937699b2d8260690fbd8b6ead6966a5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>MUDA_GENERIC auto_const_t&lt; T &gt; *</type>
+        <definition>MUDA_GENERIC auto_const_t&lt; T &gt; * muda::BufferViewT&lt; IsConst, T &gt;::data</definition>
+        <argsstring>(size_t i) const MUDA_NOEXCEPT</argsstring>
+        <name>data</name>
+        <qualifiedname>muda::BufferViewT::data</qualifiedname>
+        <param>
+          <type>size_t</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/buffer_view.h" line="64" column="31"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_buffer_view_t_1a1b22d65e01f1fc8499cecac49509fe73" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>MUDA_GENERIC auto_const_t&lt; T &gt; *</type>
+        <definition>MUDA_GENERIC auto_const_t&lt; T &gt; * muda::BufferViewT&lt; IsConst, T &gt;::origin_data</definition>
+        <argsstring>() const MUDA_NOEXCEPT</argsstring>
+        <name>origin_data</name>
+        <qualifiedname>muda::BufferViewT::origin_data</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/buffer_view.h" line="66" column="31"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_buffer_view_t_1a1ebadb553c8324b521331774b558f9cf" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>MUDA_GENERIC <ref refid="classmuda_1_1_buffer_view_t" kindref="compound">ThisView</ref></type>
+        <definition>MUDA_GENERIC ThisView muda::BufferViewT&lt; IsConst, T &gt;::subview</definition>
+        <argsstring>(size_t offset, size_t size=~0) const MUDA_NOEXCEPT</argsstring>
+        <name>subview</name>
+        <qualifiedname>muda::BufferViewT::subview</qualifiedname>
+        <param>
+          <type>size_t</type>
+          <declname>offset</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>size</declname>
+          <defval>~0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/buffer_view.h" line="68" column="27"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_buffer_view_t_1ae822d62eabfcc0c9babd1cbcd6bf425f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>MUDA_GENERIC ThisViewer</type>
+        <definition>MUDA_GENERIC ThisViewer muda::BufferViewT&lt; IsConst, T &gt;::viewer</definition>
+        <argsstring>() const MUDA_NOEXCEPT</argsstring>
+        <name>viewer</name>
+        <qualifiedname>muda::BufferViewT::viewer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/buffer_view.h" line="70" column="29"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_buffer_view_t_1ade8445d0aa38d78b41c2e4ec994008ad" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>MUDA_GENERIC <ref refid="classmuda_1_1_dense1_d_t" kindref="compound">CViewer</ref></type>
+        <definition>MUDA_GENERIC CViewer muda::BufferViewT&lt; IsConst, T &gt;::cviewer</definition>
+        <argsstring>() const MUDA_NOEXCEPT</argsstring>
+        <name>cviewer</name>
+        <qualifiedname>muda::BufferViewT::cviewer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/buffer_view.h" line="72" column="26"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_buffer_view_t_1ae47edb41acd7941189f8c1654ef761ad" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>MUDA_GENERIC size_t</type>
+        <definition>MUDA_GENERIC size_t muda::BufferViewT&lt; IsConst, T &gt;::size</definition>
+        <argsstring>() const MUDA_NOEXCEPT</argsstring>
+        <name>size</name>
+        <qualifiedname>muda::BufferViewT::size</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/buffer_view.h" line="74" column="25" bodyfile="src/muda/buffer/buffer_view.h" bodystart="74" bodyend="74"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_buffer_view_t_1a62f20e2cbe76ea9ac4523f466c7701ea" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>MUDA_GENERIC size_t</type>
+        <definition>MUDA_GENERIC size_t muda::BufferViewT&lt; IsConst, T &gt;::offset</definition>
+        <argsstring>() const MUDA_NOEXCEPT</argsstring>
+        <name>offset</name>
+        <qualifiedname>muda::BufferViewT::offset</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/buffer_view.h" line="76" column="25" bodyfile="src/muda/buffer/buffer_view.h" bodystart="76" bodyend="76"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_buffer_view_t_1a0285485fad292ee8f7b3ab81c4c26414" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>MUDA_GENERIC auto_const_t&lt; T &gt; &amp;</type>
+        <definition>MUDA_GENERIC auto_const_t&lt; T &gt; &amp; muda::BufferViewT&lt; IsConst, T &gt;::operator[]</definition>
+        <argsstring>(size_t i) const MUDA_NOEXCEPT</argsstring>
+        <name>operator[]</name>
+        <qualifiedname>muda::BufferViewT::operator[]</qualifiedname>
+        <param>
+          <type>size_t</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/buffer_view.h" line="78" column="31"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_buffer_view_t_1a1db0758926860f4a0dfa23e77cb34a36" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>MUDA_HOST void</type>
+        <definition>MUDA_HOST void muda::BufferViewT&lt; IsConst, T &gt;::copy_from</definition>
+        <argsstring>(const BufferViewT&lt; true, T &gt; &amp;other) const MUDA_REQUIRES(!IsConst)</argsstring>
+        <name>copy_from</name>
+        <qualifiedname>muda::BufferViewT::copy_from</qualifiedname>
+        <param>
+          <type>const <ref refid="classmuda_1_1_buffer_view_t" kindref="compound">BufferViewT</ref>&lt; true, T &gt; &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/buffer_view.h" line="80" column="20"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_buffer_view_t_1a1eef144c901ad4de50926056e4c485c6" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>MUDA_HOST void</type>
+        <definition>MUDA_HOST void muda::BufferViewT&lt; IsConst, T &gt;::fill</definition>
+        <argsstring>(const T &amp;value) const MUDA_REQUIRES(!IsConst)</argsstring>
+        <name>fill</name>
+        <qualifiedname>muda::BufferViewT::fill</qualifiedname>
+        <param>
+          <type>const T &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/buffer_view.h" line="83" column="20"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_buffer_view_t_1a783f1fe9e6c2843c1ddff8bf2d909a01" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>MUDA_HOST void</type>
+        <definition>MUDA_HOST void muda::BufferViewT&lt; IsConst, T &gt;::copy_from</definition>
+        <argsstring>(const T *host) const MUDA_REQUIRES(!IsConst)</argsstring>
+        <name>copy_from</name>
+        <qualifiedname>muda::BufferViewT::copy_from</qualifiedname>
+        <param>
+          <type>const T *</type>
+          <declname>host</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/buffer_view.h" line="85" column="20"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_buffer_view_t_1a900921ffcfc8cb5731f885ab829d578e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>MUDA_HOST void</type>
+        <definition>MUDA_HOST void muda::BufferViewT&lt; IsConst, T &gt;::copy_to</definition>
+        <argsstring>(T *host) const</argsstring>
+        <name>copy_to</name>
+        <qualifiedname>muda::BufferViewT::copy_to</qualifiedname>
+        <param>
+          <type>T *</type>
+          <declname>host</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/buffer_view.h" line="87" column="20"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_buffer_view_t_1a982d5e6053f71b738ef6196c9e64ef27" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>MUDA_GENERIC <ref refid="classmuda_1_1_buffer_view_t" kindref="compound">ThisView</ref></type>
+        <definition>MUDA_GENERIC ThisView muda::BufferViewT&lt; IsConst, T &gt;::operator+</definition>
+        <argsstring>(int i) const MUDA_NOEXCEPT</argsstring>
+        <name>operator+</name>
+        <qualifiedname>muda::BufferViewT::operator+</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/buffer_view.h" line="100" column="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_buffer_view_t_1ae920d1d936215ba0261b0cabe8eb4aef" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>MUDA_GENERIC reference</type>
+        <definition>MUDA_GENERIC reference muda::BufferViewT&lt; IsConst, T &gt;::operator*</definition>
+        <argsstring>() const MUDA_NOEXCEPT</argsstring>
+        <name>operator*</name>
+        <qualifiedname>muda::BufferViewT::operator*</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/buffer_view.h" line="101" column="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_buffer_view_t_1ad6df25cf1788f2355d47d2009a1fe7ca" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>MUDA_GENERIC auto_const_t&lt; T &gt; &amp;</type>
+        <definition>MUDA_GENERIC auto_const_t&lt; T &gt; &amp; muda::BufferViewT&lt; IsConst, T &gt;::operator[]</definition>
+        <argsstring>(int i) const MUDA_NOEXCEPT</argsstring>
+        <name>operator[]</name>
+        <qualifiedname>muda::BufferViewT::operator[]</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/buffer_view.h" line="102" column="31"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>muda::ViewBase&lt; IsConst &gt;</label>
+        <link refid="classmuda_1_1_view_base"/>
+      </node>
+      <node id="1">
+        <label>muda::BufferViewT&lt; IsConst, T &gt;</label>
+        <link refid="classmuda_1_1_buffer_view_t"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>muda::ViewBase&lt; IsConst &gt;</label>
+        <link refid="classmuda_1_1_view_base"/>
+      </node>
+      <node id="1">
+        <label>muda::BufferViewT&lt; IsConst, T &gt;</label>
+        <link refid="classmuda_1_1_buffer_view_t"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="src/muda/buffer/buffer_view.h" line="23" column="1" bodyfile="src/muda/buffer/buffer_view.h" bodystart="24" bodyend="103"/>
+    <listofallmembers>
+      <member refid="classmuda_1_1_buffer_view_t_1a55c56f20af7296dc0267f4ccb289371e" prot="public" virt="non-virtual"><scope>muda::BufferViewT</scope><name>as_const</name></member>
+      <member refid="classmuda_1_1_buffer_view_t_1ad6c8473e998c20e3719518502c2bdbe4" prot="public" virt="non-virtual"><scope>muda::BufferViewT</scope><name>auto_const_t</name></member>
+      <member refid="classmuda_1_1_buffer_view_t_1ac89d478008ab684ac5b81fe2969b49a9" prot="private" virt="non-virtual"><scope>muda::BufferViewT</scope><name>Base</name></member>
+      <member refid="classmuda_1_1_buffer_view_t_1a486cdae62a52a9c18a4b3371f21c1a55" prot="private" virt="non-virtual"><scope>muda::BufferViewT</scope><name>BufferViewT</name></member>
+      <member refid="classmuda_1_1_buffer_view_t_1a781a1468932b2f184d1473aeaea5f8bc" prot="public" virt="non-virtual"><scope>muda::BufferViewT</scope><name>BufferViewT</name></member>
+      <member refid="classmuda_1_1_buffer_view_t_1a86b4cff2190aede15de35538deb7f64a" prot="public" virt="non-virtual"><scope>muda::BufferViewT</scope><name>BufferViewT</name></member>
+      <member refid="classmuda_1_1_buffer_view_t_1a11fca7717eb9e07e243d0446ffa921e9" prot="public" virt="non-virtual"><scope>muda::BufferViewT</scope><name>BufferViewT</name></member>
+      <member refid="classmuda_1_1_buffer_view_t_1aadbda42bdc3b8c16561d502f349d83da" prot="public" virt="non-virtual"><scope>muda::BufferViewT</scope><name>BufferViewT</name></member>
+      <member refid="classmuda_1_1_buffer_view_t_1a5e89b3960859c174156fdc28421bcc1d" prot="public" virt="non-virtual"><scope>muda::BufferViewT</scope><name>BufferViewT</name></member>
+      <member refid="classmuda_1_1_buffer_view_t_1a502991dbcbb81ca72e52c916d3cbb852" prot="public" virt="non-virtual"><scope>muda::BufferViewT</scope><name>ConstView</name></member>
+      <member refid="classmuda_1_1_buffer_view_t_1a1db0758926860f4a0dfa23e77cb34a36" prot="public" virt="non-virtual"><scope>muda::BufferViewT</scope><name>copy_from</name></member>
+      <member refid="classmuda_1_1_buffer_view_t_1a783f1fe9e6c2843c1ddff8bf2d909a01" prot="public" virt="non-virtual"><scope>muda::BufferViewT</scope><name>copy_from</name></member>
+      <member refid="classmuda_1_1_buffer_view_t_1a900921ffcfc8cb5731f885ab829d578e" prot="public" virt="non-virtual"><scope>muda::BufferViewT</scope><name>copy_to</name></member>
+      <member refid="classmuda_1_1_buffer_view_t_1a9bbc30385166cc8674f74e25c69cf229" prot="public" virt="non-virtual"><scope>muda::BufferViewT</scope><name>CViewer</name></member>
+      <member refid="classmuda_1_1_buffer_view_t_1ade8445d0aa38d78b41c2e4ec994008ad" prot="public" virt="non-virtual"><scope>muda::BufferViewT</scope><name>cviewer</name></member>
+      <member refid="classmuda_1_1_buffer_view_t_1ab8eb0274f3e6152d893903d6ece28708" prot="public" virt="non-virtual"><scope>muda::BufferViewT</scope><name>data</name></member>
+      <member refid="classmuda_1_1_buffer_view_t_1ae937699b2d8260690fbd8b6ead6966a5" prot="public" virt="non-virtual"><scope>muda::BufferViewT</scope><name>data</name></member>
+      <member refid="classmuda_1_1_buffer_view_t_1a7fa3017d5f1a06e3f6da6762fd033d17" prot="public" virt="non-virtual"><scope>muda::BufferViewT</scope><name>difference_type</name></member>
+      <member refid="classmuda_1_1_buffer_view_t_1a1eef144c901ad4de50926056e4c485c6" prot="public" virt="non-virtual"><scope>muda::BufferViewT</scope><name>fill</name></member>
+      <member refid="classmuda_1_1_view_base_1a462988275a74be2325fcf57408700ce9" prot="public" virt="non-virtual"><scope>muda::BufferViewT</scope><name>IsConst</name></member>
+      <member refid="classmuda_1_1_view_base_1ae40f0a1f86127bc4dfeae5e08027e1dc" prot="public" virt="non-virtual"><scope>muda::BufferViewT</scope><name>IsNonConst</name></member>
+      <member refid="classmuda_1_1_buffer_view_t_1a34ba9f4fa1b69fbbecd5f22670064387" prot="public" virt="non-virtual"><scope>muda::BufferViewT</scope><name>iterator_category</name></member>
+      <member refid="classmuda_1_1_buffer_view_t_1a2b84c485cb862f6cf3f2260bce4049fd" prot="protected" virt="non-virtual"><scope>muda::BufferViewT</scope><name>m_data</name></member>
+      <member refid="classmuda_1_1_buffer_view_t_1a3bdeba903d152226ff8500d1154e50bb" prot="protected" virt="non-virtual"><scope>muda::BufferViewT</scope><name>m_offset</name></member>
+      <member refid="classmuda_1_1_buffer_view_t_1a0eaa039a406272de933bf9ff07723ae1" prot="protected" virt="non-virtual"><scope>muda::BufferViewT</scope><name>m_size</name></member>
+      <member refid="classmuda_1_1_view_base_1a39d227092dd2b7baba8b7c74bf018f37" prot="public" virt="non-virtual"><scope>muda::BufferViewT</scope><name>non_const_enable_t</name></member>
+      <member refid="classmuda_1_1_buffer_view_t_1a62f20e2cbe76ea9ac4523f466c7701ea" prot="public" virt="non-virtual"><scope>muda::BufferViewT</scope><name>offset</name></member>
+      <member refid="classmuda_1_1_buffer_view_t_1ae920d1d936215ba0261b0cabe8eb4aef" prot="public" virt="non-virtual"><scope>muda::BufferViewT</scope><name>operator*</name></member>
+      <member refid="classmuda_1_1_buffer_view_t_1a982d5e6053f71b738ef6196c9e64ef27" prot="public" virt="non-virtual"><scope>muda::BufferViewT</scope><name>operator+</name></member>
+      <member refid="classmuda_1_1_buffer_view_t_1a0285485fad292ee8f7b3ab81c4c26414" prot="public" virt="non-virtual"><scope>muda::BufferViewT</scope><name>operator[]</name></member>
+      <member refid="classmuda_1_1_buffer_view_t_1ad6df25cf1788f2355d47d2009a1fe7ca" prot="public" virt="non-virtual"><scope>muda::BufferViewT</scope><name>operator[]</name></member>
+      <member refid="classmuda_1_1_buffer_view_t_1a1b22d65e01f1fc8499cecac49509fe73" prot="public" virt="non-virtual"><scope>muda::BufferViewT</scope><name>origin_data</name></member>
+      <member refid="classmuda_1_1_buffer_view_t_1abfa4faf1fe291dc1de3f1ce5376f3317" prot="public" virt="non-virtual"><scope>muda::BufferViewT</scope><name>pointer</name></member>
+      <member refid="classmuda_1_1_buffer_view_t_1a7dd9251c5fc2b087b644f9a4a5d6e54a" prot="public" virt="non-virtual"><scope>muda::BufferViewT</scope><name>reference</name></member>
+      <member refid="classmuda_1_1_buffer_view_t_1ae47edb41acd7941189f8c1654ef761ad" prot="public" virt="non-virtual"><scope>muda::BufferViewT</scope><name>size</name></member>
+      <member refid="classmuda_1_1_buffer_view_t_1a1ebadb553c8324b521331774b558f9cf" prot="public" virt="non-virtual"><scope>muda::BufferViewT</scope><name>subview</name></member>
+      <member refid="classmuda_1_1_buffer_view_t_1a61316753a2995c508b57bb06a77ff880" prot="public" virt="non-virtual"><scope>muda::BufferViewT</scope><name>ThisView</name></member>
+      <member refid="classmuda_1_1_buffer_view_t_1a7478b5935db3d3704ab7b5869bbe5ad9" prot="public" virt="non-virtual"><scope>muda::BufferViewT</scope><name>ThisViewer</name></member>
+      <member refid="classmuda_1_1_buffer_view_t_1a74725f1b9864a0b26b2dfbfa70bec441" prot="public" virt="non-virtual"><scope>muda::BufferViewT</scope><name>value_type</name></member>
+      <member refid="classmuda_1_1_buffer_view_t_1a6a5409c6fbc9e62e0017e6a0fd16f75d" prot="public" virt="non-virtual"><scope>muda::BufferViewT</scope><name>Viewer</name></member>
+      <member refid="classmuda_1_1_buffer_view_t_1ae822d62eabfcc0c9babd1cbcd6bf425f" prot="public" virt="non-virtual"><scope>muda::BufferViewT</scope><name>viewer</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

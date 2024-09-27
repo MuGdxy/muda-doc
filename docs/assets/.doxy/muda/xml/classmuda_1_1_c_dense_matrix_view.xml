@@ -1,0 +1,140 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classmuda_1_1_c_dense_matrix_view" kind="class" language="C++" prot="public">
+    <compoundname>muda::CDenseMatrixView</compoundname>
+    <basecompoundref refid="classmuda_1_1_dense_matrix_view_base" prot="public" virt="non-virtual">muda::DenseMatrixViewBase&lt; true, Ty &gt;</basecompoundref>
+    <templateparamlist>
+      <param>
+        <type>typename Ty</type>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="private-type">
+      <memberdef kind="typedef" id="classmuda_1_1_c_dense_matrix_view_1a2432431d24948be55748374551c91173" prot="private" static="no">
+        <type><ref refid="classmuda_1_1_dense_matrix_view_base" kindref="compound">DenseMatrixViewBase</ref>&lt; true, Ty &gt;</type>
+        <definition>using muda::CDenseMatrixView&lt; Ty &gt;::Base =  DenseMatrixViewBase&lt;true, Ty&gt;</definition>
+        <argsstring></argsstring>
+        <name>Base</name>
+        <qualifiedname>muda::CDenseMatrixView::Base</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/dense_matrix_view.h" line="94" column="5" bodyfile="src/muda/ext/linear_system/dense_matrix_view.h" bodystart="94" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmuda_1_1_c_dense_matrix_view_1a08642c71a168d51d324d93f5e06fadcc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>muda::CDenseMatrixView&lt; Ty &gt;::CDenseMatrixView</definition>
+        <argsstring>(const Base &amp;base)</argsstring>
+        <name>CDenseMatrixView</name>
+        <qualifiedname>muda::CDenseMatrixView::CDenseMatrixView</qualifiedname>
+        <param>
+          <type>const <ref refid="classmuda_1_1_dense_matrix_view_base" kindref="compound">Base</ref> &amp;</type>
+          <declname>base</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/dense_matrix_view.h" line="98" column="5" bodyfile="src/muda/ext/linear_system/dense_matrix_view.h" bodystart="98" bodyend="101"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_c_dense_matrix_view_1a18d78915be9008fa8d0ca663c0037843" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classmuda_1_1_c_dense_matrix_view" kindref="compound">CDenseMatrixView</ref>&lt; Ty &gt;</type>
+        <definition>CDenseMatrixView&lt; Ty &gt; muda::CDenseMatrixView&lt; Ty &gt;::T</definition>
+        <argsstring>() const</argsstring>
+        <name>T</name>
+        <qualifiedname>muda::CDenseMatrixView::T</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/dense_matrix_view.h" line="103" column="22" bodyfile="src/muda/ext/linear_system/dense_matrix_view.h" bodystart="103" bodyend="103"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>muda::DenseMatrixViewBase&lt; true, Ty &gt;</label>
+        <link refid="classmuda_1_1_dense_matrix_view_base"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>muda::ViewBase&lt; IsConst &gt;</label>
+        <link refid="classmuda_1_1_view_base"/>
+      </node>
+      <node id="1">
+        <label>muda::CDenseMatrixView&lt; Ty &gt;</label>
+        <link refid="classmuda_1_1_c_dense_matrix_view"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>muda::DenseMatrixViewBase&lt; true, Ty &gt;</label>
+        <link refid="classmuda_1_1_dense_matrix_view_base"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>muda::ViewBase&lt; IsConst &gt;</label>
+        <link refid="classmuda_1_1_view_base"/>
+      </node>
+      <node id="1">
+        <label>muda::CDenseMatrixView&lt; Ty &gt;</label>
+        <link refid="classmuda_1_1_c_dense_matrix_view"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="src/muda/ext/linear_system/dense_matrix_view.h" line="92" column="1" bodyfile="src/muda/ext/linear_system/dense_matrix_view.h" bodystart="93" bodyend="104"/>
+    <listofallmembers>
+      <member refid="classmuda_1_1_dense_matrix_view_base_1af3e4edabecbdf39f75c0227a1ba62cc7" prot="public" virt="non-virtual"><scope>muda::CDenseMatrixView</scope><name>as_const</name></member>
+      <member refid="classmuda_1_1_c_dense_matrix_view_1a2432431d24948be55748374551c91173" prot="private" virt="non-virtual"><scope>muda::CDenseMatrixView</scope><name>Base</name></member>
+      <member refid="classmuda_1_1_dense_matrix_view_base_1a864f08e0a1f8c13f6effb270faf589dd" prot="public" virt="non-virtual"><scope>muda::CDenseMatrixView</scope><name>Buffer2DView</name></member>
+      <member refid="classmuda_1_1_dense_matrix_view_base_1adb536e89eca15659116b1cc3c63b84e7" prot="public" virt="non-virtual"><scope>muda::CDenseMatrixView</scope><name>buffer_view</name></member>
+      <member refid="classmuda_1_1_dense_matrix_view_base_1ab2998c82d4ea53eca47d1b149e43297a" prot="public" virt="non-virtual"><scope>muda::CDenseMatrixView</scope><name>buffer_view</name></member>
+      <member refid="classmuda_1_1_dense_matrix_view_base_1a8d8463b8522cbb18be1c347447b9e821" prot="public" virt="non-virtual"><scope>muda::CDenseMatrixView</scope><name>CBuffer2DView</name></member>
+      <member refid="classmuda_1_1_c_dense_matrix_view_1a08642c71a168d51d324d93f5e06fadcc" prot="public" virt="non-virtual"><scope>muda::CDenseMatrixView</scope><name>CDenseMatrixView</name></member>
+      <member refid="classmuda_1_1_dense_matrix_view_base_1a239b70182a33914183d977c0d01002af" prot="public" virt="non-virtual"><scope>muda::CDenseMatrixView</scope><name>col</name></member>
+      <member refid="classmuda_1_1_dense_matrix_view_base_1a93dcadefe288fa63eaaaad246c366488" prot="public" virt="non-virtual"><scope>muda::CDenseMatrixView</scope><name>ConstView</name></member>
+      <member refid="classmuda_1_1_dense_matrix_view_base_1ab50e39bedbcbae9cfd371f8db1d34163" prot="public" virt="non-virtual"><scope>muda::CDenseMatrixView</scope><name>CViewer</name></member>
+      <member refid="classmuda_1_1_dense_matrix_view_base_1affd66beeefde8a1f811bf380b7c92ad7" prot="public" virt="non-virtual"><scope>muda::CDenseMatrixView</scope><name>cviewer</name></member>
+      <member refid="classmuda_1_1_dense_matrix_view_base_1afcc41e3278d7c4747ac52ea9d8d55a25" prot="public" virt="non-virtual"><scope>muda::CDenseMatrixView</scope><name>data</name></member>
+      <member refid="classmuda_1_1_dense_matrix_view_base_1afd092d87722daf76756c8ebfdf18d6fc" prot="public" virt="non-virtual"><scope>muda::CDenseMatrixView</scope><name>data</name></member>
+      <member refid="classmuda_1_1_dense_matrix_view_base_1a98a8ea9995b384c0c8003b6cd5b8c08f" prot="public" virt="non-virtual"><scope>muda::CDenseMatrixView</scope><name>DenseMatrixViewBase</name></member>
+      <member refid="classmuda_1_1_dense_matrix_view_base_1a829963e62e3e1d64276b6e5b72601e30" prot="public" virt="non-virtual"><scope>muda::CDenseMatrixView</scope><name>is_sym</name></member>
+      <member refid="classmuda_1_1_dense_matrix_view_base_1ab254d7862e378330ad2a8fe95d3e5a0a" prot="public" virt="non-virtual"><scope>muda::CDenseMatrixView</scope><name>is_trans</name></member>
+      <member refid="classmuda_1_1_view_base_1a462988275a74be2325fcf57408700ce9" prot="public" virt="non-virtual"><scope>muda::CDenseMatrixView</scope><name>IsConst</name></member>
+      <member refid="classmuda_1_1_view_base_1ae40f0a1f86127bc4dfeae5e08027e1dc" prot="public" virt="non-virtual"><scope>muda::CDenseMatrixView</scope><name>IsNonConst</name></member>
+      <member refid="classmuda_1_1_dense_matrix_view_base_1a2cfab6f874d8d03ac24145d5ebe93e07" prot="public" virt="non-virtual"><scope>muda::CDenseMatrixView</scope><name>lda</name></member>
+      <member refid="classmuda_1_1_dense_matrix_view_base_1ad29f0b82b28383128f6a1474227a1b1e" prot="protected" virt="non-virtual"><scope>muda::CDenseMatrixView</scope><name>m_col</name></member>
+      <member refid="classmuda_1_1_dense_matrix_view_base_1aa82e0f643d63b0946b2b264722515ffc" prot="protected" virt="non-virtual"><scope>muda::CDenseMatrixView</scope><name>m_row</name></member>
+      <member refid="classmuda_1_1_dense_matrix_view_base_1a0712de18f3894d0fd37abe7af6ea2f01" prot="protected" virt="non-virtual"><scope>muda::CDenseMatrixView</scope><name>m_sym</name></member>
+      <member refid="classmuda_1_1_dense_matrix_view_base_1a01c53ac399d3a281a54287931f495b3a" prot="protected" virt="non-virtual"><scope>muda::CDenseMatrixView</scope><name>m_trans</name></member>
+      <member refid="classmuda_1_1_dense_matrix_view_base_1a9feeedf88b743bc87345cbcde9b6578e" prot="protected" virt="non-virtual"><scope>muda::CDenseMatrixView</scope><name>m_view</name></member>
+      <member refid="classmuda_1_1_view_base_1a39d227092dd2b7baba8b7c74bf018f37" prot="public" virt="non-virtual"><scope>muda::CDenseMatrixView</scope><name>non_const_enable_t</name></member>
+      <member refid="classmuda_1_1_dense_matrix_view_base_1a55d17c9f2511eb5e38625473d337bc3d" prot="public" virt="non-virtual"><scope>muda::CDenseMatrixView</scope><name>NonConstView</name></member>
+      <member refid="classmuda_1_1_dense_matrix_view_base_1a51b782fdf230111d59df7279362c345e" prot="public" virt="non-virtual"><scope>muda::CDenseMatrixView</scope><name>operator ConstView</name></member>
+      <member refid="classmuda_1_1_dense_matrix_view_base_1a16c322e8896c33255a8c8b1b79d1d7a3" prot="public" virt="non-virtual"><scope>muda::CDenseMatrixView</scope><name>row</name></member>
+      <member refid="classmuda_1_1_c_dense_matrix_view_1a18d78915be9008fa8d0ca663c0037843" prot="public" virt="non-virtual"><scope>muda::CDenseMatrixView</scope><name>T</name></member>
+      <member refid="classmuda_1_1_dense_matrix_view_base_1abdb5a4d7dca929ad50b4f22bbd409572" prot="public" virt="non-virtual" ambiguityscope="DenseMatrixViewBase&lt; true, Ty &gt;::"><scope>muda::CDenseMatrixView</scope><name>T</name></member>
+      <member refid="classmuda_1_1_dense_matrix_view_base_1aeab8c3a0d60c09be6ce6f1c4a04f3a89" prot="public" virt="non-virtual"><scope>muda::CDenseMatrixView</scope><name>ThisBuffer2DView</name></member>
+      <member refid="classmuda_1_1_dense_matrix_view_base_1ae84008c0fc324abd06cd51a0069e03cb" prot="public" virt="non-virtual"><scope>muda::CDenseMatrixView</scope><name>ThisView</name></member>
+      <member refid="classmuda_1_1_dense_matrix_view_base_1a9b46a404dd8d747f9cdd10898a0ab39b" prot="public" virt="non-virtual"><scope>muda::CDenseMatrixView</scope><name>ThisViewer</name></member>
+      <member refid="classmuda_1_1_dense_matrix_view_base_1a2d439505073e8beac6722217abdf6d11" prot="public" virt="non-virtual"><scope>muda::CDenseMatrixView</scope><name>Viewer</name></member>
+      <member refid="classmuda_1_1_dense_matrix_view_base_1ab3756858a2bf45e6970028b6c618f890" prot="public" virt="non-virtual"><scope>muda::CDenseMatrixView</scope><name>viewer</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

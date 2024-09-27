@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classmuda_1_1_compute_graph_dependency" kind="class" language="C++" prot="public">
+    <compoundname>muda::ComputeGraphDependency</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classmuda_1_1_compute_graph_dependency_1a485de65670ac6fec015e90dede120585" prot="public" static="no" mutable="no">
+        <type><ref refid="classmuda_1_1_closure_id" kindref="compound">ClosureId</ref></type>
+        <definition>ClosureId muda::ComputeGraphDependency::from</definition>
+        <argsstring></argsstring>
+        <name>from</name>
+        <qualifiedname>muda::ComputeGraphDependency::from</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/compute_graph/compute_graph_dependency.h" line="8" column="15" bodyfile="src/muda/compute_graph/compute_graph_dependency.h" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1_compute_graph_dependency_1a458185197f791e2381473ea4fc4c874a" prot="public" static="no" mutable="no">
+        <type><ref refid="classmuda_1_1_closure_id" kindref="compound">ClosureId</ref></type>
+        <definition>ClosureId muda::ComputeGraphDependency::to</definition>
+        <argsstring></argsstring>
+        <name>to</name>
+        <qualifiedname>muda::ComputeGraphDependency::to</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/compute_graph/compute_graph_dependency.h" line="9" column="15" bodyfile="src/muda/compute_graph/compute_graph_dependency.h" bodystart="9" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="3">
+        <label>U64IdWithType</label>
+        <link refid="classmuda_1_1_id_with_type"/>
+      </node>
+      <node id="2">
+        <label>muda::ClosureId</label>
+        <link refid="classmuda_1_1_closure_id"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>muda::ComputeGraphDependency</label>
+        <link refid="classmuda_1_1_compute_graph_dependency"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>from</edgelabel>
+          <edgelabel>to</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="src/muda/compute_graph/compute_graph_dependency.h" line="5" column="1" bodyfile="src/muda/compute_graph/compute_graph_dependency.h" bodystart="6" bodyend="10"/>
+    <listofallmembers>
+      <member refid="classmuda_1_1_compute_graph_dependency_1a485de65670ac6fec015e90dede120585" prot="public" virt="non-virtual"><scope>muda::ComputeGraphDependency</scope><name>from</name></member>
+      <member refid="classmuda_1_1_compute_graph_dependency_1a458185197f791e2381473ea4fc4c874a" prot="public" virt="non-virtual"><scope>muda::ComputeGraphDependency</scope><name>to</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

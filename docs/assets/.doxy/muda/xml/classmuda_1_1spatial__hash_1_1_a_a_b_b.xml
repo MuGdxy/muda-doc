@@ -1,0 +1,140 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classmuda_1_1spatial__hash_1_1_a_a_b_b" kind="class" language="C++" prot="public">
+    <compoundname>muda::spatial_hash::AABB</compoundname>
+    <sectiondef kind="private-type">
+      <memberdef kind="typedef" id="classmuda_1_1spatial__hash_1_1_a_a_b_b_1ae259621ab428bfb325f132d32d857044" prot="private" static="no">
+        <type>Eigen::Vector3f</type>
+        <definition>using muda::spatial_hash::AABB::Vector3 =  Eigen::Vector3f</definition>
+        <argsstring></argsstring>
+        <name>Vector3</name>
+        <qualifiedname>muda::spatial_hash::AABB::Vector3</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/spatial_hash/bounding_volume.h" line="27" column="5" bodyfile="src/muda/ext/geo/spatial_hash/bounding_volume.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classmuda_1_1spatial__hash_1_1_a_a_b_b_1a3baf679db10606b02e1c061d7ddb761c" prot="public" static="no" mutable="no">
+        <type>Vector3</type>
+        <definition>Vector3 muda::spatial_hash::AABB::max</definition>
+        <argsstring></argsstring>
+        <name>max</name>
+        <qualifiedname>muda::spatial_hash::AABB::max</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/spatial_hash/bounding_volume.h" line="30" column="13" bodyfile="src/muda/ext/geo/spatial_hash/bounding_volume.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1spatial__hash_1_1_a_a_b_b_1a05daaa81cce3d2abfaf6aff66321a449" prot="public" static="no" mutable="no">
+        <type>Vector3</type>
+        <definition>Vector3 muda::spatial_hash::AABB::min</definition>
+        <argsstring></argsstring>
+        <name>min</name>
+        <qualifiedname>muda::spatial_hash::AABB::min</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/spatial_hash/bounding_volume.h" line="31" column="13" bodyfile="src/muda/ext/geo/spatial_hash/bounding_volume.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmuda_1_1spatial__hash_1_1_a_a_b_b_1a982de93bcb71d1347cfd3f896a134f25" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>MUDA_GENERIC</type>
+        <definition>MUDA_GENERIC muda::spatial_hash::AABB::AABB</definition>
+        <argsstring>(const Vector3 &amp;min, const Vector3 &amp;max)</argsstring>
+        <name>AABB</name>
+        <qualifiedname>muda::spatial_hash::AABB::AABB</qualifiedname>
+        <param>
+          <type>const Vector3 &amp;</type>
+          <declname>min</declname>
+        </param>
+        <param>
+          <type>const Vector3 &amp;</type>
+          <declname>max</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/spatial_hash/bounding_volume.h" line="33" column="18" bodyfile="src/muda/ext/geo/spatial_hash/bounding_volume.h" bodystart="33" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1spatial__hash_1_1_a_a_b_b_1afb6b60365a4563d0d53dd4229615b331" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>MUDA_GENERIC</type>
+        <definition>MUDA_GENERIC muda::spatial_hash::AABB::AABB</definition>
+        <argsstring>(const AABB &amp;l, const AABB &amp;r)</argsstring>
+        <name>AABB</name>
+        <qualifiedname>muda::spatial_hash::AABB::AABB</qualifiedname>
+        <param>
+          <type>const <ref refid="classmuda_1_1spatial__hash_1_1_a_a_b_b" kindref="compound">AABB</ref> &amp;</type>
+          <declname>l</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classmuda_1_1spatial__hash_1_1_a_a_b_b" kindref="compound">AABB</ref> &amp;</type>
+          <declname>r</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/spatial_hash/bounding_volume.h" line="39" column="18" bodyfile="src/muda/ext/geo/spatial_hash/bounding_volume.h" bodystart="39" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1spatial__hash_1_1_a_a_b_b_1a8c21e73b918f0d9c331881ba43ec7261" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>MUDA_GENERIC Vector3</type>
+        <definition>MUDA_GENERIC Vector3 muda::spatial_hash::AABB::center</definition>
+        <argsstring>() const</argsstring>
+        <name>center</name>
+        <qualifiedname>muda::spatial_hash::AABB::center</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/spatial_hash/bounding_volume.h" line="45" column="26" bodyfile="src/muda/ext/geo/spatial_hash/bounding_volume.h" bodystart="45" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1spatial__hash_1_1_a_a_b_b_1a471ecb38d0495f75c4ce49e47583d1a1" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>MUDA_GENERIC float</type>
+        <definition>MUDA_GENERIC float muda::spatial_hash::AABB::radius</definition>
+        <argsstring>() const</argsstring>
+        <name>radius</name>
+        <qualifiedname>muda::spatial_hash::AABB::radius</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/spatial_hash/bounding_volume.h" line="47" column="24" bodyfile="src/muda/ext/geo/spatial_hash/bounding_volume.h" bodystart="47" bodyend="47"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/muda/ext/geo/spatial_hash/bounding_volume.h" line="25" column="1" bodyfile="src/muda/ext/geo/spatial_hash/bounding_volume.h" bodystart="26" bodyend="48"/>
+    <listofallmembers>
+      <member refid="classmuda_1_1spatial__hash_1_1_a_a_b_b_1a982de93bcb71d1347cfd3f896a134f25" prot="public" virt="non-virtual"><scope>muda::spatial_hash::AABB</scope><name>AABB</name></member>
+      <member refid="classmuda_1_1spatial__hash_1_1_a_a_b_b_1afb6b60365a4563d0d53dd4229615b331" prot="public" virt="non-virtual"><scope>muda::spatial_hash::AABB</scope><name>AABB</name></member>
+      <member refid="classmuda_1_1spatial__hash_1_1_a_a_b_b_1a8c21e73b918f0d9c331881ba43ec7261" prot="public" virt="non-virtual"><scope>muda::spatial_hash::AABB</scope><name>center</name></member>
+      <member refid="classmuda_1_1spatial__hash_1_1_a_a_b_b_1a3baf679db10606b02e1c061d7ddb761c" prot="public" virt="non-virtual"><scope>muda::spatial_hash::AABB</scope><name>max</name></member>
+      <member refid="classmuda_1_1spatial__hash_1_1_a_a_b_b_1a05daaa81cce3d2abfaf6aff66321a449" prot="public" virt="non-virtual"><scope>muda::spatial_hash::AABB</scope><name>min</name></member>
+      <member refid="classmuda_1_1spatial__hash_1_1_a_a_b_b_1a471ecb38d0495f75c4ce49e47583d1a1" prot="public" virt="non-virtual"><scope>muda::spatial_hash::AABB</scope><name>radius</name></member>
+      <member refid="classmuda_1_1spatial__hash_1_1_a_a_b_b_1ae259621ab428bfb325f132d32d857044" prot="private" virt="non-virtual"><scope>muda::spatial_hash::AABB</scope><name>Vector3</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

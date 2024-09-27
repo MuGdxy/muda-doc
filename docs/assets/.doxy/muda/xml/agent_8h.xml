@@ -1,0 +1,112 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="agent_8h" kind="file" language="C++">
+    <compoundname>agent.h</compoundname>
+    <includes refid="kernel__assign_8h" local="no">muda/buffer/agent/kernel_assign.h</includes>
+    <includes refid="kernel__construct_8h" local="no">muda/buffer/agent/kernel_construct.h</includes>
+    <includes refid="kernel__copy__construct_8h" local="no">muda/buffer/agent/kernel_copy_construct.h</includes>
+    <includes refid="kernel__destruct_8h" local="no">muda/buffer/agent/kernel_destruct.h</includes>
+    <includes refid="kernel__fill_8h" local="no">muda/buffer/agent/kernel_fill.h</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>src/muda/buffer/agent.h</label>
+        <link refid="agent_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>muda/buffer/agent/kernel_assign.h</label>
+        <link refid="kernel__assign_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>muda/buffer/agent/kernel_construct.h</label>
+        <link refid="kernel__construct_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>muda/buffer/agent/kernel_copy_construct.h</label>
+        <link refid="kernel__copy__construct_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>muda/buffer/agent/kernel_destruct.h</label>
+        <link refid="kernel__destruct_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>muda/buffer/agent/kernel_fill.h</label>
+        <link refid="kernel__fill_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>muda/buffer/buffer_fwd.h</label>
+        <link refid="buffer__fwd_8h_source"/>
+      </node>
+      <node id="3">
+        <label>cuda.h</label>
+      </node>
+      <node id="5">
+        <label>details/kernel_assign.inl</label>
+      </node>
+      <node id="7">
+        <label>details/kernel_construct.inl</label>
+      </node>
+      <node id="9">
+        <label>details/kernel_copy_construct.inl</label>
+      </node>
+      <node id="11">
+        <label>details/kernel_destruct.inl</label>
+      </node>
+      <node id="13">
+        <label>details/kernel_fill.inl</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;muda/buffer/agent/kernel_assign.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;muda/buffer/agent/kernel_construct.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;muda/buffer/agent/kernel_copy_construct.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;muda/buffer/agent/kernel_destruct.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;muda/buffer/agent/kernel_fill.h&gt;</highlight></codeline>
+    </programlisting>
+    <location file="src/muda/buffer/agent.h"/>
+  </compounddef>
+</doxygen>

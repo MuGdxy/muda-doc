@@ -1,0 +1,135 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classmuda_1_1_field_entry_layout_info" kind="class" language="C++" prot="public">
+    <compoundname>muda::FieldEntryLayoutInfo</compoundname>
+    <sectiondef kind="private-type">
+      <memberdef kind="typedef" id="classmuda_1_1_field_entry_layout_info_1addc2dd09c85d08cfacb54b15ec800d56" prot="private" static="no">
+        <type>FieldEntryLayout</type>
+        <definition>using muda::FieldEntryLayoutInfo::Layout =  FieldEntryLayout</definition>
+        <argsstring></argsstring>
+        <name>Layout</name>
+        <qualifiedname>muda::FieldEntryLayoutInfo::Layout</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/field/field_entry_layout.h" line="25" column="5" bodyfile="src/muda/ext/field/field_entry_layout.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classmuda_1_1_field_entry_layout_info_1a33773a75337a564f2c8dfeac80a233d7" prot="private" static="no" mutable="no">
+        <type>Layout</type>
+        <definition>Layout muda::FieldEntryLayoutInfo::m_layout</definition>
+        <argsstring></argsstring>
+        <name>m_layout</name>
+        <qualifiedname>muda::FieldEntryLayoutInfo::m_layout</qualifiedname>
+        <initializer>= Layout::AoSoA</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/field/field_entry_layout.h" line="49" column="14" bodyfile="src/muda/ext/field/field_entry_layout.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1_field_entry_layout_info_1aa0b3266ce5384e4182facf93c8c52d08" prot="private" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t muda::FieldEntryLayoutInfo::m_innermost_array_size</definition>
+        <argsstring></argsstring>
+        <name>m_innermost_array_size</name>
+        <qualifiedname>muda::FieldEntryLayoutInfo::m_innermost_array_size</qualifiedname>
+        <initializer>= 32</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/field/field_entry_layout.h" line="50" column="14" bodyfile="src/muda/ext/field/field_entry_layout.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmuda_1_1_field_entry_layout_info_1a4b9aa8cea0dac41c687cc37b18f59eab" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>MUDA_GENERIC auto</type>
+        <definition>MUDA_GENERIC auto muda::FieldEntryLayoutInfo::layout</definition>
+        <argsstring>() const MUDA_NOEXCEPT</argsstring>
+        <name>layout</name>
+        <qualifiedname>muda::FieldEntryLayoutInfo::layout</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/field/field_entry_layout.h" line="28" column="23" bodyfile="src/muda/ext/field/field_entry_layout.h" bodystart="28" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_field_entry_layout_info_1a8452bad44fe6e549d991861e7e019063" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>MUDA_GENERIC auto</type>
+        <definition>MUDA_GENERIC auto muda::FieldEntryLayoutInfo::innermost_array_size</definition>
+        <argsstring>() const MUDA_NOEXCEPT</argsstring>
+        <name>innermost_array_size</name>
+        <qualifiedname>muda::FieldEntryLayoutInfo::innermost_array_size</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/field/field_entry_layout.h" line="29" column="23" bodyfile="src/muda/ext/field/field_entry_layout.h" bodystart="29" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_field_entry_layout_info_1ab4d0418702fd1def2adf60f366e850f0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>MUDA_GENERIC</type>
+        <definition>MUDA_GENERIC muda::FieldEntryLayoutInfo::FieldEntryLayoutInfo</definition>
+        <argsstring>(Layout layout, uint32_t innermost_array_size=32) MUDA_NOEXCEPT</argsstring>
+        <name>FieldEntryLayoutInfo</name>
+        <qualifiedname>muda::FieldEntryLayoutInfo::FieldEntryLayoutInfo</qualifiedname>
+        <param>
+          <type>Layout</type>
+          <declname>layout</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>innermost_array_size</declname>
+          <defval>32</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/field/field_entry_layout.h" line="34" column="18" bodyfile="src/muda/ext/field/field_entry_layout.h" bodystart="34" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_field_entry_layout_info_1afcd7bd27901a5b8bd126f9a664f9a1e0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>MUDA_GENERIC</type>
+        <definition>MUDA_GENERIC muda::FieldEntryLayoutInfo::FieldEntryLayoutInfo</definition>
+        <argsstring>() MUDA_NOEXCEPT</argsstring>
+        <name>FieldEntryLayoutInfo</name>
+        <qualifiedname>muda::FieldEntryLayoutInfo::FieldEntryLayoutInfo</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/field/field_entry_layout.h" line="46" column="18" bodyfile="src/muda/ext/field/field_entry_layout.h" bodystart="46" bodyend="46"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/muda/ext/field/field_entry_layout.h" line="23" column="1" bodyfile="src/muda/ext/field/field_entry_layout.h" bodystart="24" bodyend="51"/>
+    <listofallmembers>
+      <member refid="classmuda_1_1_field_entry_layout_info_1ab4d0418702fd1def2adf60f366e850f0" prot="public" virt="non-virtual"><scope>muda::FieldEntryLayoutInfo</scope><name>FieldEntryLayoutInfo</name></member>
+      <member refid="classmuda_1_1_field_entry_layout_info_1afcd7bd27901a5b8bd126f9a664f9a1e0" prot="public" virt="non-virtual"><scope>muda::FieldEntryLayoutInfo</scope><name>FieldEntryLayoutInfo</name></member>
+      <member refid="classmuda_1_1_field_entry_layout_info_1a8452bad44fe6e549d991861e7e019063" prot="public" virt="non-virtual"><scope>muda::FieldEntryLayoutInfo</scope><name>innermost_array_size</name></member>
+      <member refid="classmuda_1_1_field_entry_layout_info_1addc2dd09c85d08cfacb54b15ec800d56" prot="private" virt="non-virtual"><scope>muda::FieldEntryLayoutInfo</scope><name>Layout</name></member>
+      <member refid="classmuda_1_1_field_entry_layout_info_1a4b9aa8cea0dac41c687cc37b18f59eab" prot="public" virt="non-virtual"><scope>muda::FieldEntryLayoutInfo</scope><name>layout</name></member>
+      <member refid="classmuda_1_1_field_entry_layout_info_1aa0b3266ce5384e4182facf93c8c52d08" prot="private" virt="non-virtual"><scope>muda::FieldEntryLayoutInfo</scope><name>m_innermost_array_size</name></member>
+      <member refid="classmuda_1_1_field_entry_layout_info_1a33773a75337a564f2c8dfeac80a233d7" prot="private" virt="non-virtual"><scope>muda::FieldEntryLayoutInfo</scope><name>m_layout</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

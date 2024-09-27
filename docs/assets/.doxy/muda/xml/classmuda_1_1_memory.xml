@@ -1,0 +1,792 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classmuda_1_1_memory" kind="class" language="C++" prot="public">
+    <compoundname>muda::Memory</compoundname>
+    <basecompoundref refid="classmuda_1_1_launch_base" prot="public" virt="non-virtual">muda::LaunchBase&lt; Memory &gt;</basecompoundref>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmuda_1_1_memory_1ad08fcbf46ed53865df30be135934f370" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>MUDA_HOST</type>
+        <definition>MUDA_HOST muda::Memory::Memory</definition>
+        <argsstring>(cudaStream_t stream=nullptr)</argsstring>
+        <name>Memory</name>
+        <qualifiedname>muda::Memory::Memory</qualifiedname>
+        <param>
+          <type>cudaStream_t</type>
+          <declname>stream</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/launch/memory.h" line="10" column="15" bodyfile="src/muda/launch/memory.h" bodystart="10" bodyend="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_memory_1aa158d35c7a7dccbf09e384a0ef2b18a1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>MUDA_HOST <ref refid="classmuda_1_1_memory" kindref="compound">Memory</ref> &amp;</type>
+        <definition>MUDA_HOST Memory &amp; muda::Memory::alloc_1d</definition>
+        <argsstring>(T **ptr, size_t byte_size, bool async=DEFAULT_ASYNC_ALLOC_FREE)</argsstring>
+        <name>alloc_1d</name>
+        <qualifiedname>muda::Memory::alloc_1d</qualifiedname>
+        <param>
+          <type>T **</type>
+          <declname>ptr</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>byte_size</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>async</declname>
+          <defval>DEFAULT_ASYNC_ALLOC_FREE</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/launch/memory.h" line="15" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_memory_1a45a43ca3886549aa3075c6cad1041fef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>MUDA_HOST <ref refid="classmuda_1_1_memory" kindref="compound">Memory</ref> &amp;</type>
+        <definition>MUDA_HOST Memory &amp; muda::Memory::alloc</definition>
+        <argsstring>(T **ptr, size_t byte_size, bool async=DEFAULT_ASYNC_ALLOC_FREE)</argsstring>
+        <name>alloc</name>
+        <qualifiedname>muda::Memory::alloc</qualifiedname>
+        <param>
+          <type>T **</type>
+          <declname>ptr</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>byte_size</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>async</declname>
+          <defval>DEFAULT_ASYNC_ALLOC_FREE</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/launch/memory.h" line="17" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_memory_1aafd7fbf2431c3a106e3d1c5d9f60ab63" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>MUDA_HOST <ref refid="classmuda_1_1_memory" kindref="compound">Memory</ref> &amp;</type>
+        <definition>MUDA_HOST Memory &amp; muda::Memory::free</definition>
+        <argsstring>(void *ptr, bool async=DEFAULT_ASYNC_ALLOC_FREE)</argsstring>
+        <name>free</name>
+        <qualifiedname>muda::Memory::free</qualifiedname>
+        <param>
+          <type>void *</type>
+          <declname>ptr</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>async</declname>
+          <defval>DEFAULT_ASYNC_ALLOC_FREE</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/launch/memory.h" line="18" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_memory_1abcbc8dd39f3b17e82c634805b5475528" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>MUDA_HOST <ref refid="classmuda_1_1_memory" kindref="compound">Memory</ref> &amp;</type>
+        <definition>MUDA_HOST Memory &amp; muda::Memory::copy</definition>
+        <argsstring>(void *dst, const void *src, size_t byte_size, cudaMemcpyKind kind)</argsstring>
+        <name>copy</name>
+        <qualifiedname>muda::Memory::copy</qualifiedname>
+        <param>
+          <type>void *</type>
+          <declname>dst</declname>
+        </param>
+        <param>
+          <type>const void *</type>
+          <declname>src</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>byte_size</declname>
+        </param>
+        <param>
+          <type>cudaMemcpyKind</type>
+          <declname>kind</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/launch/memory.h" line="19" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_memory_1a3cc801f0a6ed2285a530e8b0f3463c7b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>MUDA_HOST <ref refid="classmuda_1_1_memory" kindref="compound">Memory</ref> &amp;</type>
+        <definition>MUDA_HOST Memory &amp; muda::Memory::transfer</definition>
+        <argsstring>(void *dst, const void *src, size_t byte_size)</argsstring>
+        <name>transfer</name>
+        <qualifiedname>muda::Memory::transfer</qualifiedname>
+        <param>
+          <type>void *</type>
+          <declname>dst</declname>
+        </param>
+        <param>
+          <type>const void *</type>
+          <declname>src</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>byte_size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/launch/memory.h" line="20" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_memory_1a11cfc0b03906aea26e37d84df5c5a337" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>MUDA_HOST <ref refid="classmuda_1_1_memory" kindref="compound">Memory</ref> &amp;</type>
+        <definition>MUDA_HOST Memory &amp; muda::Memory::download</definition>
+        <argsstring>(void *dst, const void *src, size_t byte_size)</argsstring>
+        <name>download</name>
+        <qualifiedname>muda::Memory::download</qualifiedname>
+        <param>
+          <type>void *</type>
+          <declname>dst</declname>
+        </param>
+        <param>
+          <type>const void *</type>
+          <declname>src</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>byte_size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/launch/memory.h" line="21" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_memory_1ae7f24650e25b7d617ef56bb86137028c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>MUDA_HOST <ref refid="classmuda_1_1_memory" kindref="compound">Memory</ref> &amp;</type>
+        <definition>MUDA_HOST Memory &amp; muda::Memory::upload</definition>
+        <argsstring>(void *dst, const void *src, size_t byte_size)</argsstring>
+        <name>upload</name>
+        <qualifiedname>muda::Memory::upload</qualifiedname>
+        <param>
+          <type>void *</type>
+          <declname>dst</declname>
+        </param>
+        <param>
+          <type>const void *</type>
+          <declname>src</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>byte_size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/launch/memory.h" line="22" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_memory_1a74dba4a53be8e8416ec2dc2d47665e17" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>MUDA_HOST <ref refid="classmuda_1_1_memory" kindref="compound">Memory</ref> &amp;</type>
+        <definition>MUDA_HOST Memory &amp; muda::Memory::set</definition>
+        <argsstring>(void *data, size_t byte_size, char value=0)</argsstring>
+        <name>set</name>
+        <qualifiedname>muda::Memory::set</qualifiedname>
+        <param>
+          <type>void *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>byte_size</declname>
+        </param>
+        <param>
+          <type>char</type>
+          <declname>value</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/launch/memory.h" line="23" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_memory_1ac5736cf56a7395564006975f4951a80d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>MUDA_HOST <ref refid="classmuda_1_1_memory" kindref="compound">Memory</ref> &amp;</type>
+        <definition>MUDA_HOST Memory &amp; muda::Memory::alloc_2d</definition>
+        <argsstring>(T **ptr, size_t *pitch, size_t width_bytes, size_t height, bool async=DEFAULT_ASYNC_ALLOC_FREE)</argsstring>
+        <name>alloc_2d</name>
+        <qualifiedname>muda::Memory::alloc_2d</qualifiedname>
+        <param>
+          <type>T **</type>
+          <declname>ptr</declname>
+        </param>
+        <param>
+          <type>size_t *</type>
+          <declname>pitch</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>width_bytes</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>height</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>async</declname>
+          <defval>DEFAULT_ASYNC_ALLOC_FREE</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/launch/memory.h" line="27" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_memory_1a471f502a6a2c730c565c519f5b5ab4ba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>MUDA_HOST <ref refid="classmuda_1_1_memory" kindref="compound">Memory</ref> &amp;</type>
+        <definition>MUDA_HOST Memory &amp; muda::Memory::alloc</definition>
+        <argsstring>(T **ptr, size_t *pitch, size_t width_bytes, size_t height, bool async=DEFAULT_ASYNC_ALLOC_FREE)</argsstring>
+        <name>alloc</name>
+        <qualifiedname>muda::Memory::alloc</qualifiedname>
+        <param>
+          <type>T **</type>
+          <declname>ptr</declname>
+        </param>
+        <param>
+          <type>size_t *</type>
+          <declname>pitch</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>width_bytes</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>height</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>async</declname>
+          <defval>DEFAULT_ASYNC_ALLOC_FREE</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/launch/memory.h" line="33" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_memory_1a6619446dee7d5caad44df5f1191510e7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>MUDA_HOST <ref refid="classmuda_1_1_memory" kindref="compound">Memory</ref> &amp;</type>
+        <definition>MUDA_HOST Memory &amp; muda::Memory::copy</definition>
+        <argsstring>(void *dst, size_t dst_pitch, const void *src, size_t src_pitch, size_t width_bytes, size_t height, cudaMemcpyKind kind)</argsstring>
+        <name>copy</name>
+        <qualifiedname>muda::Memory::copy</qualifiedname>
+        <param>
+          <type>void *</type>
+          <declname>dst</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>dst_pitch</declname>
+        </param>
+        <param>
+          <type>const void *</type>
+          <declname>src</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>src_pitch</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>width_bytes</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>height</declname>
+        </param>
+        <param>
+          <type>cudaMemcpyKind</type>
+          <declname>kind</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/launch/memory.h" line="38" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_memory_1a8bd9d7673e2231162f40b8852eb560e8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>MUDA_HOST <ref refid="classmuda_1_1_memory" kindref="compound">Memory</ref> &amp;</type>
+        <definition>MUDA_HOST Memory &amp; muda::Memory::transfer</definition>
+        <argsstring>(void *dst, size_t dst_pitch, const void *src, size_t src_pitch, size_t width_bytes, size_t height)</argsstring>
+        <name>transfer</name>
+        <qualifiedname>muda::Memory::transfer</qualifiedname>
+        <param>
+          <type>void *</type>
+          <declname>dst</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>dst_pitch</declname>
+        </param>
+        <param>
+          <type>const void *</type>
+          <declname>src</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>src_pitch</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>width_bytes</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>height</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/launch/memory.h" line="45" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_memory_1aa4bf8ca3e93e8e7aa3d31c114cac699e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>MUDA_HOST <ref refid="classmuda_1_1_memory" kindref="compound">Memory</ref> &amp;</type>
+        <definition>MUDA_HOST Memory &amp; muda::Memory::download</definition>
+        <argsstring>(void *dst, size_t dst_pitch, const void *src, size_t src_pitch, size_t width_bytes, size_t height)</argsstring>
+        <name>download</name>
+        <qualifiedname>muda::Memory::download</qualifiedname>
+        <param>
+          <type>void *</type>
+          <declname>dst</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>dst_pitch</declname>
+        </param>
+        <param>
+          <type>const void *</type>
+          <declname>src</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>src_pitch</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>width_bytes</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>height</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/launch/memory.h" line="51" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_memory_1afd4dc46a82c0157fdd9447b74db60aef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>MUDA_HOST <ref refid="classmuda_1_1_memory" kindref="compound">Memory</ref> &amp;</type>
+        <definition>MUDA_HOST Memory &amp; muda::Memory::upload</definition>
+        <argsstring>(void *dst, size_t dst_pitch, const void *src, size_t src_pitch, size_t width_bytes, size_t height)</argsstring>
+        <name>upload</name>
+        <qualifiedname>muda::Memory::upload</qualifiedname>
+        <param>
+          <type>void *</type>
+          <declname>dst</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>dst_pitch</declname>
+        </param>
+        <param>
+          <type>const void *</type>
+          <declname>src</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>src_pitch</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>width_bytes</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>height</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/launch/memory.h" line="57" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_memory_1ad7a65fabe4724561d03d60d0b6fb25b9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>MUDA_HOST <ref refid="classmuda_1_1_memory" kindref="compound">Memory</ref> &amp;</type>
+        <definition>MUDA_HOST Memory &amp; muda::Memory::set</definition>
+        <argsstring>(void *data, size_t pitch, size_t width_bytes, size_t height, char value=0)</argsstring>
+        <name>set</name>
+        <qualifiedname>muda::Memory::set</qualifiedname>
+        <param>
+          <type>void *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>pitch</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>width_bytes</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>height</declname>
+        </param>
+        <param>
+          <type>char</type>
+          <declname>value</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/launch/memory.h" line="63" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_memory_1a479a4700e0e138e04a3992dfa35893c6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>MUDA_HOST <ref refid="classmuda_1_1_memory" kindref="compound">Memory</ref> &amp;</type>
+        <definition>MUDA_HOST Memory &amp; muda::Memory::alloc_3d</definition>
+        <argsstring>(cudaPitchedPtr *pitched_ptr, const cudaExtent &amp;extent, bool async=DEFAULT_ASYNC_ALLOC_FREE)</argsstring>
+        <name>alloc_3d</name>
+        <qualifiedname>muda::Memory::alloc_3d</qualifiedname>
+        <param>
+          <type>cudaPitchedPtr *</type>
+          <declname>pitched_ptr</declname>
+        </param>
+        <param>
+          <type>const cudaExtent &amp;</type>
+          <declname>extent</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>async</declname>
+          <defval>DEFAULT_ASYNC_ALLOC_FREE</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/launch/memory.h" line="66" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_memory_1a6e9cd513a1bd070b09fe8046583e6da6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>MUDA_HOST <ref refid="classmuda_1_1_memory" kindref="compound">Memory</ref> &amp;</type>
+        <definition>MUDA_HOST Memory &amp; muda::Memory::alloc</definition>
+        <argsstring>(cudaPitchedPtr *pitched_ptr, const cudaExtent &amp;extent, bool async=DEFAULT_ASYNC_ALLOC_FREE)</argsstring>
+        <name>alloc</name>
+        <qualifiedname>muda::Memory::alloc</qualifiedname>
+        <param>
+          <type>cudaPitchedPtr *</type>
+          <declname>pitched_ptr</declname>
+        </param>
+        <param>
+          <type>const cudaExtent &amp;</type>
+          <declname>extent</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>async</declname>
+          <defval>DEFAULT_ASYNC_ALLOC_FREE</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/launch/memory.h" line="69" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_memory_1a7875d236e6580bf468dc8158170ddb3a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>MUDA_HOST <ref refid="classmuda_1_1_memory" kindref="compound">Memory</ref> &amp;</type>
+        <definition>MUDA_HOST Memory &amp; muda::Memory::free</definition>
+        <argsstring>(cudaPitchedPtr pitched_ptr, bool async=DEFAULT_ASYNC_ALLOC_FREE)</argsstring>
+        <name>free</name>
+        <qualifiedname>muda::Memory::free</qualifiedname>
+        <param>
+          <type>cudaPitchedPtr</type>
+          <declname>pitched_ptr</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>async</declname>
+          <defval>DEFAULT_ASYNC_ALLOC_FREE</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/launch/memory.h" line="72" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_memory_1a4f90f72d33172cae7c426a9091837d3f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>MUDA_HOST <ref refid="classmuda_1_1_memory" kindref="compound">Memory</ref> &amp;</type>
+        <definition>MUDA_HOST Memory &amp; muda::Memory::copy</definition>
+        <argsstring>(const cudaMemcpy3DParms &amp;parms)</argsstring>
+        <name>copy</name>
+        <qualifiedname>muda::Memory::copy</qualifiedname>
+        <param>
+          <type>const cudaMemcpy3DParms &amp;</type>
+          <declname>parms</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/launch/memory.h" line="73" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_memory_1afc09a461961af72ece7569b8c91d5336" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>MUDA_HOST <ref refid="classmuda_1_1_memory" kindref="compound">Memory</ref> &amp;</type>
+        <definition>MUDA_HOST Memory &amp; muda::Memory::transfer</definition>
+        <argsstring>(cudaMemcpy3DParms parms)</argsstring>
+        <name>transfer</name>
+        <qualifiedname>muda::Memory::transfer</qualifiedname>
+        <param>
+          <type>cudaMemcpy3DParms</type>
+          <declname>parms</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/launch/memory.h" line="74" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_memory_1a2fa7f9710927aedf71f17c7b9eacb4e4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>MUDA_HOST <ref refid="classmuda_1_1_memory" kindref="compound">Memory</ref> &amp;</type>
+        <definition>MUDA_HOST Memory &amp; muda::Memory::download</definition>
+        <argsstring>(cudaMemcpy3DParms parms)</argsstring>
+        <name>download</name>
+        <qualifiedname>muda::Memory::download</qualifiedname>
+        <param>
+          <type>cudaMemcpy3DParms</type>
+          <declname>parms</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/launch/memory.h" line="75" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_memory_1ac6e42cfa574414e891eba4ca088f7556" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>MUDA_HOST <ref refid="classmuda_1_1_memory" kindref="compound">Memory</ref> &amp;</type>
+        <definition>MUDA_HOST Memory &amp; muda::Memory::upload</definition>
+        <argsstring>(cudaMemcpy3DParms parms)</argsstring>
+        <name>upload</name>
+        <qualifiedname>muda::Memory::upload</qualifiedname>
+        <param>
+          <type>cudaMemcpy3DParms</type>
+          <declname>parms</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/launch/memory.h" line="76" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_memory_1af6c92a25add67d767160f03d4e5da593" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>MUDA_HOST <ref refid="classmuda_1_1_memory" kindref="compound">Memory</ref> &amp;</type>
+        <definition>MUDA_HOST Memory &amp; muda::Memory::set</definition>
+        <argsstring>(cudaPitchedPtr pitched_ptr, cudaExtent extent, char value=0)</argsstring>
+        <name>set</name>
+        <qualifiedname>muda::Memory::set</qualifiedname>
+        <param>
+          <type>cudaPitchedPtr</type>
+          <declname>pitched_ptr</declname>
+        </param>
+        <param>
+          <type>cudaExtent</type>
+          <declname>extent</declname>
+        </param>
+        <param>
+          <type>char</type>
+          <declname>value</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/launch/memory.h" line="77" column="22"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>muda::LaunchBase&lt; Memory &gt;</label>
+        <link refid="classmuda_1_1_launch_base"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>muda::LaunchCore</label>
+        <link refid="classmuda_1_1_launch_core"/>
+      </node>
+      <node id="1">
+        <label>muda::Memory</label>
+        <link refid="classmuda_1_1_memory"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>muda::LaunchBase&lt; Memory &gt;</label>
+        <link refid="classmuda_1_1_launch_base"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>muda::LaunchCore</label>
+        <link refid="classmuda_1_1_launch_core"/>
+      </node>
+      <node id="1">
+        <label>muda::Memory</label>
+        <link refid="classmuda_1_1_memory"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="src/muda/launch/memory.h" line="7" column="1" bodyfile="src/muda/launch/memory.h" bodystart="8" bodyend="78"/>
+    <listofallmembers>
+      <member refid="classmuda_1_1_memory_1a45a43ca3886549aa3075c6cad1041fef" prot="public" virt="non-virtual"><scope>muda::Memory</scope><name>alloc</name></member>
+      <member refid="classmuda_1_1_memory_1a471f502a6a2c730c565c519f5b5ab4ba" prot="public" virt="non-virtual"><scope>muda::Memory</scope><name>alloc</name></member>
+      <member refid="classmuda_1_1_memory_1a6e9cd513a1bd070b09fe8046583e6da6" prot="public" virt="non-virtual"><scope>muda::Memory</scope><name>alloc</name></member>
+      <member refid="classmuda_1_1_memory_1aa158d35c7a7dccbf09e384a0ef2b18a1" prot="public" virt="non-virtual"><scope>muda::Memory</scope><name>alloc_1d</name></member>
+      <member refid="classmuda_1_1_memory_1ac5736cf56a7395564006975f4951a80d" prot="public" virt="non-virtual"><scope>muda::Memory</scope><name>alloc_2d</name></member>
+      <member refid="classmuda_1_1_memory_1a479a4700e0e138e04a3992dfa35893c6" prot="public" virt="non-virtual"><scope>muda::Memory</scope><name>alloc_3d</name></member>
+      <member refid="classmuda_1_1_launch_base_1aa8490139890f43555c1b7baa57378616" prot="public" virt="non-virtual"><scope>muda::Memory</scope><name>callback</name></member>
+      <member refid="classmuda_1_1_memory_1abcbc8dd39f3b17e82c634805b5475528" prot="public" virt="non-virtual"><scope>muda::Memory</scope><name>copy</name></member>
+      <member refid="classmuda_1_1_memory_1a6619446dee7d5caad44df5f1191510e7" prot="public" virt="non-virtual"><scope>muda::Memory</scope><name>copy</name></member>
+      <member refid="classmuda_1_1_memory_1a4f90f72d33172cae7c426a9091837d3f" prot="public" virt="non-virtual"><scope>muda::Memory</scope><name>copy</name></member>
+      <member refid="classmuda_1_1_launch_base_1a8a59e9a27775e4e12ca19a6d590790f4" prot="public" virt="non-virtual"><scope>muda::Memory</scope><name>derived_type</name></member>
+      <member refid="classmuda_1_1_memory_1a11cfc0b03906aea26e37d84df5c5a337" prot="public" virt="non-virtual"><scope>muda::Memory</scope><name>download</name></member>
+      <member refid="classmuda_1_1_memory_1aa4bf8ca3e93e8e7aa3d31c114cac699e" prot="public" virt="non-virtual"><scope>muda::Memory</scope><name>download</name></member>
+      <member refid="classmuda_1_1_memory_1a2fa7f9710927aedf71f17c7b9eacb4e4" prot="public" virt="non-virtual"><scope>muda::Memory</scope><name>download</name></member>
+      <member refid="classmuda_1_1_launch_base_1aee4564eac54df98ab98085379370a2ec" prot="public" virt="non-virtual"><scope>muda::Memory</scope><name>file_line</name></member>
+      <member refid="classmuda_1_1_memory_1aafd7fbf2431c3a106e3d1c5d9f60ab63" prot="public" virt="non-virtual"><scope>muda::Memory</scope><name>free</name></member>
+      <member refid="classmuda_1_1_memory_1a7875d236e6580bf468dc8158170ddb3a" prot="public" virt="non-virtual"><scope>muda::Memory</scope><name>free</name></member>
+      <member refid="classmuda_1_1_launch_core_1a38c542a99edea149552d82639e385ab5" prot="public" virt="non-virtual"><scope>muda::Memory</scope><name>init_stream</name></member>
+      <member refid="classmuda_1_1_launch_base_1ac412be72c054ac359678fff75857dd06" prot="public" virt="non-virtual"><scope>muda::Memory</scope><name>kernel_name</name></member>
+      <member refid="classmuda_1_1_launch_base_1ab73495b0bfa3a7a1864284aebceb51a8" prot="public" virt="non-virtual"><scope>muda::Memory</scope><name>LaunchBase</name></member>
+      <member refid="classmuda_1_1_launch_core_1a8503eff885f818a12319ca57dfd75011" prot="public" virt="non-virtual"><scope>muda::Memory</scope><name>LaunchCore</name></member>
+      <member refid="classmuda_1_1_launch_core_1a3b5544456087d57904981118c4cdcaf8" prot="protected" virt="non-virtual"><scope>muda::Memory</scope><name>m_stream</name></member>
+      <member refid="classmuda_1_1_memory_1ad08fcbf46ed53865df30be135934f370" prot="public" virt="non-virtual"><scope>muda::Memory</scope><name>Memory</name></member>
+      <member refid="classmuda_1_1_launch_base_1a395b0a10fee3bf2c591f49a3119df1b8" prot="public" virt="non-virtual"><scope>muda::Memory</scope><name>next</name></member>
+      <member refid="classmuda_1_1_launch_base_1a841db3ede786d3312a6ca2de2139ad10" prot="public" virt="non-virtual"><scope>muda::Memory</scope><name>next</name></member>
+      <member refid="classmuda_1_1_launch_base_1a65538f7d445fa3cc56ab33e609fe566a" prot="protected" virt="non-virtual"><scope>muda::Memory</scope><name>pop_kernel_label</name></member>
+      <member refid="classmuda_1_1_launch_base_1ab6b75621024e7977edcdff26c04bcdc1" prot="public" virt="non-virtual"><scope>muda::Memory</scope><name>pop_range</name></member>
+      <member refid="classmuda_1_1_launch_base_1ad6dcaaf3ea0726809ebbdb10084c3183" prot="public" virt="non-virtual"><scope>muda::Memory</scope><name>push_range</name></member>
+      <member refid="classmuda_1_1_launch_base_1ad069d4ad6219f5a3b51e7c8d9e4d596f" prot="public" virt="non-virtual"><scope>muda::Memory</scope><name>record</name></member>
+      <member refid="classmuda_1_1_launch_base_1a12cf6b18c76787654460c1c043907547" prot="public" virt="non-virtual"><scope>muda::Memory</scope><name>record</name></member>
+      <member refid="classmuda_1_1_launch_base_1a77d57b9368424d70cd740af6eaf45a6f" prot="public" virt="non-virtual"><scope>muda::Memory</scope><name>record</name></member>
+      <member refid="classmuda_1_1_launch_core_1a8aeb9e37d421f835e0fcae124e3ce0de" prot="protected" virt="non-virtual"><scope>muda::Memory</scope><name>S</name></member>
+      <member refid="classmuda_1_1_memory_1a74dba4a53be8e8416ec2dc2d47665e17" prot="public" virt="non-virtual"><scope>muda::Memory</scope><name>set</name></member>
+      <member refid="classmuda_1_1_memory_1ad7a65fabe4724561d03d60d0b6fb25b9" prot="public" virt="non-virtual"><scope>muda::Memory</scope><name>set</name></member>
+      <member refid="classmuda_1_1_memory_1af6c92a25add67d767160f03d4e5da593" prot="public" virt="non-virtual"><scope>muda::Memory</scope><name>set</name></member>
+      <member refid="classmuda_1_1_launch_core_1ab78b991329337c97d2ac3e32e995a62f" prot="protected" virt="non-virtual"><scope>muda::Memory</scope><name>stream</name></member>
+      <member refid="classmuda_1_1_memory_1a3cc801f0a6ed2285a530e8b0f3463c7b" prot="public" virt="non-virtual"><scope>muda::Memory</scope><name>transfer</name></member>
+      <member refid="classmuda_1_1_memory_1a8bd9d7673e2231162f40b8852eb560e8" prot="public" virt="non-virtual"><scope>muda::Memory</scope><name>transfer</name></member>
+      <member refid="classmuda_1_1_memory_1afc09a461961af72ece7569b8c91d5336" prot="public" virt="non-virtual"><scope>muda::Memory</scope><name>transfer</name></member>
+      <member refid="classmuda_1_1_memory_1ae7f24650e25b7d617ef56bb86137028c" prot="public" virt="non-virtual"><scope>muda::Memory</scope><name>upload</name></member>
+      <member refid="classmuda_1_1_memory_1afd4dc46a82c0157fdd9447b74db60aef" prot="public" virt="non-virtual"><scope>muda::Memory</scope><name>upload</name></member>
+      <member refid="classmuda_1_1_memory_1ac6e42cfa574414e891eba4ca088f7556" prot="public" virt="non-virtual"><scope>muda::Memory</scope><name>upload</name></member>
+      <member refid="classmuda_1_1_launch_base_1a88cbf9478fbeaa7434ece7f300dc1c0e" prot="public" virt="non-virtual"><scope>muda::Memory</scope><name>wait</name></member>
+      <member refid="classmuda_1_1_launch_base_1ab0fc5fbed4ec5f69a3b599af99900d98" prot="public" virt="non-virtual"><scope>muda::Memory</scope><name>wait</name></member>
+      <member refid="classmuda_1_1_launch_base_1acbf042e86efae1683e2ab08c95095da7" prot="public" virt="non-virtual"><scope>muda::Memory</scope><name>wait</name></member>
+      <member refid="classmuda_1_1_launch_base_1abe061bff24568f9c2fcf326a62843292" prot="public" virt="non-virtual"><scope>muda::Memory</scope><name>wait</name></member>
+      <member refid="classmuda_1_1_launch_core_1a58e970f699c546d37c70af9bb4d3a93c" prot="public" virt="non-virtual"><scope>muda::Memory</scope><name>wait_device</name></member>
+      <member refid="classmuda_1_1_launch_core_1a7b29e878817d4e42bc533edc0c89b645" prot="public" virt="non-virtual"><scope>muda::Memory</scope><name>wait_event</name></member>
+      <member refid="classmuda_1_1_launch_core_1a73d5d54a7b3b59dcf8eea792e796337b" prot="public" virt="non-virtual"><scope>muda::Memory</scope><name>wait_stream</name></member>
+      <member refid="classmuda_1_1_launch_base_1a59a525fea511ea1c90f5857be5d62d43" prot="public" virt="non-virtual"><scope>muda::Memory</scope><name>when</name></member>
+      <member refid="classmuda_1_1_launch_base_1a543548ac0516b2c10adba68d2ae7066b" prot="public" virt="non-virtual"><scope>muda::Memory</scope><name>~LaunchBase</name></member>
+      <member refid="classmuda_1_1_launch_core_1a5e4ae3435bce9d4ad706b5e347a3040f" prot="public" virt="non-virtual"><scope>muda::Memory</scope><name>~LaunchCore</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,1470 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.24">
+    
+    
+      
+        <title>Class muda::Launch - Muda Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.6543a935.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/doxide.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="red" data-md-color-accent="red">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#class-mudalaunch" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Muda Documentation" class="md-header__button md-logo" aria-label="Muda Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Muda Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Class muda::Launch
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="red" data-md-color-accent="red"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="red" data-md-color-accent="red"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Muda Documentation" class="md-nav__button md-logo" aria-label="Muda Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    Muda Documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tutorial/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Tutorial
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    API Documentation
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            API Documentation
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../links/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Links
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Classes
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Classes
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../classes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Index
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hierarchy/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Hierarchy
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../class_members/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Members
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../class_member_functions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Member Functions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../class_member_variables/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Member Variables
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../class_member_typedefs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Member Typedefs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../class_member_enums/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Member Enumerations
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Namespaces
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Namespaces
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../namespaces/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Index
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../namespace_members/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Member
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../namespace_member_functions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Member Functions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../namespace_member_variables/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Member Variables
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../namespace_member_typedefs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Member Typedefs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../namespace_member_enums/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Member Enumerations
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../functions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Functions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../variables/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Variables
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../macros/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Macros
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../files/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Files
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#public-types" class="md-nav__link">
+    <span class="md-ellipsis">
+      Public Types
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#public-types-inherited-from-mudalaunchbase" class="md-nav__link">
+    <span class="md-ellipsis">
+      Public Types inherited from muda::LaunchBase
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#public-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Public Functions
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#public-functions-inherited-from-mudalaunchbase" class="md-nav__link">
+    <span class="md-ellipsis">
+      Public Functions inherited from muda::LaunchBase
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#public-functions-inherited-from-mudalaunchcore" class="md-nav__link">
+    <span class="md-ellipsis">
+      Public Functions inherited from muda::LaunchCore
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#public-static-functions-inherited-from-mudalaunchcore" class="md-nav__link">
+    <span class="md-ellipsis">
+      Public Static Functions inherited from muda::LaunchCore
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#protected-types-inherited-from-mudalaunchcore" class="md-nav__link">
+    <span class="md-ellipsis">
+      Protected Types inherited from muda::LaunchCore
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#protected-attributes-inherited-from-mudalaunchcore" class="md-nav__link">
+    <span class="md-ellipsis">
+      Protected Attributes inherited from muda::LaunchCore
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#protected-functions-inherited-from-mudalaunchbase" class="md-nav__link">
+    <span class="md-ellipsis">
+      Protected Functions inherited from muda::LaunchBase
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#protected-functions-inherited-from-mudalaunchcore" class="md-nav__link">
+    <span class="md-ellipsis">
+      Protected Functions inherited from muda::LaunchCore
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="class-mudalaunch">Class muda::Launch</h1>
+<p><a href="../annotated/"><strong>ClassList</strong></a> <strong>&gt;</strong> <a href="../namespacemuda/"><strong>muda</strong></a> <strong>&gt;</strong> <a href="./"><strong>Launch</strong></a></p>
+<p><strong>A wrapper of raw cuda kernel launch in muda style</strong> <em>, removing the</em><code>&lt;&lt;&lt;&gt;&gt;&gt;</code> <em>usage, for better intellisense support.</em><a href="#detailed-description">More...</a></p>
+<ul>
+<li><code>#include &lt;launch.h&gt;</code></li>
+</ul>
+<p>Inherits the following classes: <a href="../classmuda_1_1_launch_base/">muda::LaunchBase</a></p>
+<h2 id="public-types">Public Types</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Type</th>
+<th style="text-align: left;">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">typedef <a href="../classmuda_1_1_kernel_node_parms/"><strong>KernelNodeParms</strong></a>&lt; <a href="../structmuda_1_1details_1_1_launch_callable/"><strong>details::LaunchCallable</strong></a>&lt; raw_type_t&lt; F &gt; &gt; &gt;</td>
+<td style="text-align: left;"><a href="#typedef-nodeparms"><strong>NodeParms</strong></a>  <br></td>
+</tr>
+</tbody>
+</table>
+<h2 id="public-types-inherited-from-mudalaunchbase">Public Types inherited from muda::LaunchBase</h2>
+<p>See <a href="../classmuda_1_1_launch_base/">muda::LaunchBase</a></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Type</th>
+<th style="text-align: left;">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">typedef T</td>
+<td style="text-align: left;"><a href="../classmuda_1_1_launch_base/#typedef-derived_type"><strong>derived_type</strong></a>  <br></td>
+</tr>
+</tbody>
+</table>
+<h2 id="public-functions">Public Functions</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Type</th>
+<th style="text-align: left;">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">MUDA_HOST</td>
+<td style="text-align: left;"><a href="#function-launch-13"><strong>Launch</strong></a> (dim3 gridDim, dim3 blockDim, size_t sharedMemSize=0, cudaStream_t stream=nullptr) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">MUDA_HOST</td>
+<td style="text-align: left;"><a href="#function-launch-23"><strong>Launch</strong></a> (int gridDim=1, int blockDim=1, size_t sharedMemSize=0, cudaStream_t stream=nullptr) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">MUDA_HOST</td>
+<td style="text-align: left;"><a href="#function-launch-33"><strong>Launch</strong></a> (dim3 blockDim, size_t sharedMemSize=0, cudaStream_t stream=nullptr) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">MUDA_HOST <a href="./"><strong>Launch</strong></a> &amp;</td>
+<td style="text-align: left;"><a href="#function-apply-14"><strong>apply</strong></a> (F &amp;&amp; f) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">MUDA_HOST <a href="./"><strong>Launch</strong></a> &amp;</td>
+<td style="text-align: left;"><a href="#function-apply-24"><strong>apply</strong></a> (F &amp;&amp; f, <a href="../structmuda_1_1_tag/"><strong>Tag</strong></a>&lt; UserTag &gt;) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">MUDA_HOST <a href="./"><strong>Launch</strong></a> &amp;</td>
+<td style="text-align: left;"><a href="#function-apply-34"><strong>apply</strong></a> (const dim3 &amp; active_dim, F &amp;&amp; f) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">MUDA_HOST <a href="./"><strong>Launch</strong></a> &amp;</td>
+<td style="text-align: left;"><a href="#function-apply-44"><strong>apply</strong></a> (const dim3 &amp; active_dim, F &amp;&amp; f, <a href="../structmuda_1_1_tag/"><strong>Tag</strong></a>&lt; UserTag &gt;) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">MUDA_HOST MUDA_NODISCARD auto</td>
+<td style="text-align: left;"><a href="#function-as_node_parms-14"><strong>as_node_parms</strong></a> (F &amp;&amp; f) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">MUDA_HOST MUDA_NODISCARD auto</td>
+<td style="text-align: left;"><a href="#function-as_node_parms-24"><strong>as_node_parms</strong></a> (F &amp;&amp; f, <a href="../structmuda_1_1_tag/"><strong>Tag</strong></a>&lt; UserTag &gt;) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">MUDA_HOST MUDA_NODISCARD auto</td>
+<td style="text-align: left;"><a href="#function-as_node_parms-34"><strong>as_node_parms</strong></a> (const dim3 &amp; active_dim, F &amp;&amp; f) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">MUDA_HOST MUDA_NODISCARD auto</td>
+<td style="text-align: left;"><a href="#function-as_node_parms-44"><strong>as_node_parms</strong></a> (const dim3 &amp; active_dim, F &amp;&amp; f, <a href="../structmuda_1_1_tag/"><strong>Tag</strong></a>&lt; UserTag &gt;) <br></td>
+</tr>
+</tbody>
+</table>
+<h2 id="public-functions-inherited-from-mudalaunchbase">Public Functions inherited from muda::LaunchBase</h2>
+<p>See <a href="../classmuda_1_1_launch_base/">muda::LaunchBase</a></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Type</th>
+<th style="text-align: left;">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">MUDA_GENERIC</td>
+<td style="text-align: left;"><a href="../classmuda_1_1_launch_base/#function-launchbase-22"><strong>LaunchBase</strong></a> (::cudaStream_t stream) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">T &amp;</td>
+<td style="text-align: left;"><a href="../classmuda_1_1_launch_base/#function-callback"><strong>callback</strong></a> (const std::function&lt; void(::cudaStream_t, ::cudaError)&gt; &amp; callback) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">T &amp;</td>
+<td style="text-align: left;"><a href="../classmuda_1_1_launch_base/#function-file_line"><strong>file_line</strong></a> (std::string_view file, int line) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">T &amp;</td>
+<td style="text-align: left;"><a href="../classmuda_1_1_launch_base/#function-kernel_name"><strong>kernel_name</strong></a> (std::string_view name) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">Next</td>
+<td style="text-align: left;"><a href="../classmuda_1_1_launch_base/#function-next-12"><strong>next</strong></a> (Next n) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">Next</td>
+<td style="text-align: left;"><a href="../classmuda_1_1_launch_base/#function-next-22"><strong>next</strong></a> (Args &amp;&amp;... args) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">T &amp;</td>
+<td style="text-align: left;"><a href="../classmuda_1_1_launch_base/#function-pop_range"><strong>pop_range</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">T &amp;</td>
+<td style="text-align: left;"><a href="../classmuda_1_1_launch_base/#function-push_range"><strong>push_range</strong></a> (const std::string &amp; name) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">T &amp;</td>
+<td style="text-align: left;"><a href="../classmuda_1_1_launch_base/#function-record-13"><strong>record</strong></a> (cudaEvent_t e, int flag=cudaEventRecordDefault) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">T &amp;</td>
+<td style="text-align: left;"><a href="../classmuda_1_1_launch_base/#function-record-23"><strong>record</strong></a> (<a href="../classmuda_1_1_compute_graph_var/"><strong>ComputeGraphVar</strong></a>&lt; cudaEvent_t &gt; &amp; e, const std::vector&lt; <a href="../classmuda_1_1_compute_graph_var_base/"><strong>ComputeGraphVarBase</strong></a> * &gt; &amp; vars) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">T &amp;</td>
+<td style="text-align: left;"><a href="../classmuda_1_1_launch_base/#function-record-33"><strong>record</strong></a> (<a href="../classmuda_1_1_compute_graph_var/"><strong>ComputeGraphVar</strong></a>&lt; cudaEvent_t &gt; &amp; e, <a href="../classmuda_1_1_compute_graph_var/"><strong>ComputeGraphVar</strong></a>&lt; ViewT &gt; &amp;... vars) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">T &amp;</td>
+<td style="text-align: left;"><a href="../classmuda_1_1_launch_base/#function-wait-14"><strong>wait</strong></a> (cudaEvent_t e, int flag=cudaEventWaitDefault) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">T &amp;</td>
+<td style="text-align: left;"><a href="../classmuda_1_1_launch_base/#function-wait-24"><strong>wait</strong></a> (const <a href="../classmuda_1_1_compute_graph_var/"><strong>ComputeGraphVar</strong></a>&lt; cudaEvent_t &gt; &amp; e, const std::vector&lt; <a href="../classmuda_1_1_compute_graph_var_base/"><strong>ComputeGraphVarBase</strong></a> * &gt; &amp; vars) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">T &amp;</td>
+<td style="text-align: left;"><a href="../classmuda_1_1_launch_base/#function-wait-34"><strong>wait</strong></a> (const <a href="../classmuda_1_1_compute_graph_var/"><strong>ComputeGraphVar</strong></a>&lt; cudaEvent_t &gt; &amp; e, <a href="../classmuda_1_1_compute_graph_var/"><strong>ComputeGraphVar</strong></a>&lt; ViewT &gt; &amp;... vars) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">T &amp;</td>
+<td style="text-align: left;"><a href="../classmuda_1_1_launch_base/#function-wait-44"><strong>wait</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">T &amp;</td>
+<td style="text-align: left;"><a href="../classmuda_1_1_launch_base/#function-when"><strong>when</strong></a> (cudaEvent_t e, int flag=cudaEventWaitDefault) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"></td>
+<td style="text-align: left;"><a href="../classmuda_1_1_launch_base/#function-launchbase"><strong>~LaunchBase</strong></a> () <br></td>
+</tr>
+</tbody>
+</table>
+<h2 id="public-functions-inherited-from-mudalaunchcore">Public Functions inherited from muda::LaunchCore</h2>
+<p>See <a href="../classmuda_1_1_launch_core/">muda::LaunchCore</a></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Type</th>
+<th style="text-align: left;">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">MUDA_GENERIC</td>
+<td style="text-align: left;"><a href="../classmuda_1_1_launch_core/#function-launchcore"><strong>LaunchCore</strong></a> (::cudaStream_t stream) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">void</td>
+<td style="text-align: left;"><a href="../classmuda_1_1_launch_core/#function-callback"><strong>callback</strong></a> (const std::function&lt; void(::cudaStream_t, ::cudaError)&gt; &amp; callback) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">void</td>
+<td style="text-align: left;"><a href="../classmuda_1_1_launch_core/#function-init_stream"><strong>init_stream</strong></a> (::cudaStream_t s) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">void</td>
+<td style="text-align: left;"><a href="../classmuda_1_1_launch_core/#function-pop_range"><strong>pop_range</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">void</td>
+<td style="text-align: left;"><a href="../classmuda_1_1_launch_core/#function-push_range"><strong>push_range</strong></a> (const std::string &amp; name) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">void</td>
+<td style="text-align: left;"><a href="../classmuda_1_1_launch_core/#function-record-13"><strong>record</strong></a> (cudaEvent_t e, int flag=cudaEventRecordDefault) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">void</td>
+<td style="text-align: left;"><a href="../classmuda_1_1_launch_core/#function-record-23"><strong>record</strong></a> (<a href="../classmuda_1_1_compute_graph_var/"><strong>ComputeGraphVar</strong></a>&lt; cudaEvent_t &gt; &amp; e, const std::vector&lt; <a href="../classmuda_1_1_compute_graph_var_base/"><strong>ComputeGraphVarBase</strong></a> * &gt; &amp; vars) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">void</td>
+<td style="text-align: left;"><a href="../classmuda_1_1_launch_core/#function-record-33"><strong>record</strong></a> (<a href="../classmuda_1_1_compute_graph_var/"><strong>ComputeGraphVar</strong></a>&lt; cudaEvent_t &gt; &amp; e, <a href="../classmuda_1_1_compute_graph_var/"><strong>ComputeGraphVar</strong></a>&lt; ViewT &gt; &amp;... vars) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">void</td>
+<td style="text-align: left;"><a href="../classmuda_1_1_launch_core/#function-wait-14"><strong>wait</strong></a> (cudaEvent_t e, int flag=cudaEventWaitDefault) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">void</td>
+<td style="text-align: left;"><a href="../classmuda_1_1_launch_core/#function-wait-24"><strong>wait</strong></a> (const <a href="../classmuda_1_1_compute_graph_var/"><strong>ComputeGraphVar</strong></a>&lt; cudaEvent_t &gt; &amp; e, const std::vector&lt; <a href="../classmuda_1_1_compute_graph_var_base/"><strong>ComputeGraphVarBase</strong></a> * &gt; &amp; vars) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">void</td>
+<td style="text-align: left;"><a href="../classmuda_1_1_launch_core/#function-wait-34"><strong>wait</strong></a> (const <a href="../classmuda_1_1_compute_graph_var/"><strong>ComputeGraphVar</strong></a>&lt; cudaEvent_t &gt; &amp; e, <a href="../classmuda_1_1_compute_graph_var/"><strong>ComputeGraphVar</strong></a>&lt; ViewT &gt; &amp;... vars) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">void</td>
+<td style="text-align: left;"><a href="../classmuda_1_1_launch_core/#function-wait-44"><strong>wait</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">void</td>
+<td style="text-align: left;"><a href="../classmuda_1_1_launch_core/#function-when"><strong>when</strong></a> (cudaEvent_t e, int flag=cudaEventWaitDefault) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"></td>
+<td style="text-align: left;"><a href="../classmuda_1_1_launch_core/#function-launchcore"><strong>~LaunchCore</strong></a> () <br></td>
+</tr>
+</tbody>
+</table>
+<h2 id="public-static-functions-inherited-from-mudalaunchcore">Public Static Functions inherited from muda::LaunchCore</h2>
+<p>See <a href="../classmuda_1_1_launch_core/">muda::LaunchCore</a></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Type</th>
+<th style="text-align: left;">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">void</td>
+<td style="text-align: left;"><a href="../classmuda_1_1_launch_core/#function-file_line"><strong>file_line</strong></a> (std::string_view file, int line) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">void</td>
+<td style="text-align: left;"><a href="../classmuda_1_1_launch_core/#function-kernel_name"><strong>kernel_name</strong></a> (std::string_view name) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">void</td>
+<td style="text-align: left;"><a href="../classmuda_1_1_launch_core/#function-wait_device"><strong>wait_device</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">void</td>
+<td style="text-align: left;"><a href="../classmuda_1_1_launch_core/#function-wait_event"><strong>wait_event</strong></a> (cudaEvent_t event) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">void</td>
+<td style="text-align: left;"><a href="../classmuda_1_1_launch_core/#function-wait_stream"><strong>wait_stream</strong></a> (::cudaStream_t stream) <br></td>
+</tr>
+</tbody>
+</table>
+<h2 id="protected-types-inherited-from-mudalaunchcore">Protected Types inherited from muda::LaunchCore</h2>
+<p>See <a href="../classmuda_1_1_launch_core/">muda::LaunchCore</a></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Type</th>
+<th style="text-align: left;">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">typedef std::shared_ptr&lt; T &gt;</td>
+<td style="text-align: left;"><a href="../classmuda_1_1_launch_core/#typedef-s"><strong>S</strong></a>  <br></td>
+</tr>
+</tbody>
+</table>
+<h2 id="protected-attributes-inherited-from-mudalaunchcore">Protected Attributes inherited from muda::LaunchCore</h2>
+<p>See <a href="../classmuda_1_1_launch_core/">muda::LaunchCore</a></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Type</th>
+<th style="text-align: left;">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">::cudaStream_t</td>
+<td style="text-align: left;"><a href="../classmuda_1_1_launch_core/#variable-m_stream"><strong>m_stream</strong></a>  <br></td>
+</tr>
+</tbody>
+</table>
+<h2 id="protected-functions-inherited-from-mudalaunchbase">Protected Functions inherited from muda::LaunchBase</h2>
+<p>See <a href="../classmuda_1_1_launch_base/">muda::LaunchBase</a></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Type</th>
+<th style="text-align: left;">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">T &amp;</td>
+<td style="text-align: left;"><a href="../classmuda_1_1_launch_base/#function-pop_kernel_label"><strong>pop_kernel_label</strong></a> () <br></td>
+</tr>
+</tbody>
+</table>
+<h2 id="protected-functions-inherited-from-mudalaunchcore">Protected Functions inherited from muda::LaunchCore</h2>
+<p>See <a href="../classmuda_1_1_launch_core/">muda::LaunchCore</a></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Type</th>
+<th style="text-align: left;">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">MUDA_HOST void</td>
+<td style="text-align: left;"><a href="../classmuda_1_1_launch_core/#function-pop_kernel_label"><strong>pop_kernel_label</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">MUDA_GENERIC::cudaStream_t</td>
+<td style="text-align: left;"><a href="../classmuda_1_1_launch_core/#function-stream"><strong>stream</strong></a> () const<br></td>
+</tr>
+</tbody>
+</table>
+<h1 id="detailed-description">Detailed Description</h1>
+<p>A raw cuda kernel define and launch: 
+<div class="language-C++ highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">__global__</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="n">cuda_kernel</span><span class="p">()</span><span class="w"> </span><span class="p">{}</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="kt">int</span><span class="w"> </span><span class="n">main</span><span class="p">()</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="p">{</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="w">    </span><span class="n">cuda_kernel</span><span class="o">&lt;&lt;&lt;</span><span class="mi">4</span><span class="p">,</span><span class="mi">64</span><span class="o">&gt;&gt;&gt;</span><span class="p">();</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="p">}</span>
+</span></code></pre></div></p>
+<p>The muda style kernel launch: 
+<div class="language-C++ highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="c1">// muda kernel launch</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="n">Launch</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span><span class="mi">64</span><span class="p">)</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="w">    </span><span class="p">.</span><span class="n">kernel_name</span><span class="p">(</span><span class="s">&quot;kernel_name&quot;</span><span class="p">)</span><span class="w"> </span><span class="c1">// optional</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="w">    </span><span class="p">.</span><span class="n">apply</span><span class="p">([]</span><span class="n">__device__</span><span class="p">(){});</span><span class="w"> </span><span class="c1">// kernel body</span>
+</span></code></pre></div></p>
+<p>A more complicated but more convincing example, to show why using muda style kernel launch is better than raw cuda kernel launch. 
+<div class="language-C++ highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="n">DeviceBuffer3D</span><span class="o">&lt;</span><span class="kt">float</span><span class="o">&gt;</span><span class="w"> </span><span class="n">volume</span><span class="p">{</span><span class="mi">10</span><span class="p">,</span><span class="mi">10</span><span class="p">,</span><span class="mi">10</span><span class="p">};</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="n">Launch</span><span class="p">(</span><span class="n">dim3</span><span class="p">{</span><span class="mi">8</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">8</span><span class="p">})</span><span class="w"> </span><span class="c1">// blockDim</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="w">    </span><span class="p">.</span><span class="n">kernel_name</span><span class="p">(</span><span class="s">&quot;write_volume&quot;</span><span class="p">)</span><span class="w"> </span><span class="c1">// optional, for better debug info</span>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="w">    </span><span class="p">.</span><span class="n">apply</span><span class="p">(</span><span class="n">volume</span><span class="p">.</span><span class="n">extent</span><span class="p">(),</span><span class="w"> </span>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="w">        </span><span class="p">[</span>
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="w">            </span><span class="n">volume</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">volume</span><span class="p">.</span><span class="n">viewer</span><span class="p">().</span><span class="n">name</span><span class="p">(</span><span class="s">&quot;volume&quot;</span><span class="p">)</span><span class="w"> </span><span class="c1">// name is optional, for better debug info</span>
+</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="w">        </span><span class="p">]</span><span class="w"> </span><span class="n">__device__</span><span class="p">(</span><span class="n">int3</span><span class="w"> </span><span class="n">xyz</span><span class="p">)</span><span class="w"> </span><span class="k">mutable</span>
+</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="w">        </span><span class="p">{</span>
+</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="w">            </span><span class="n">volume</span><span class="p">(</span><span class="n">xyz</span><span class="p">)</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">1.0f</span><span class="p">;</span>
+</span><span id="__span-2-10"><a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a><span class="w">        </span><span class="p">});</span>
+</span></code></pre></div></p>
+<p><strong>See also:</strong> <a href="../device__buffer__3d_8h/"><strong>device_buffer_3d.h</strong></a> <a href="../parallel__for_8h/"><strong>parallel_for.h</strong></a> </p>
+<h2 id="public-types-documentation">Public Types Documentation</h2>
+<h3 id="typedef-nodeparms">typedef NodeParms</h3>
+<div class="language-C++ highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="k">using</span><span class="w"> </span><span class="n">muda</span><span class="o">::</span><span class="n">Launch</span><span class="o">::</span><span class="n">NodeParms</span><span class="w"> </span><span class="o">=</span><span class="w">  </span><span class="n">KernelNodeParms</span><span class="o">&lt;</span><span class="n">details</span><span class="o">::</span><span class="n">LaunchCallable</span><span class="o">&lt;</span><span class="n">raw_type_t</span><span class="o">&lt;</span><span class="n">F</span><span class="o">&gt;</span><span class="w"> </span><span class="o">&gt;&gt;</span><span class="p">;</span>
+</span></code></pre></div>
+<hr>
+<h2 id="public-functions-documentation">Public Functions Documentation</h2>
+<h3 id="function-launch-13">function Launch [1/3]</h3>
+<div class="language-C++ highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="kr">inline</span><span class="w"> </span><span class="n">MUDA_HOST</span><span class="w"> </span><span class="n">muda</span><span class="o">::</span><span class="n">Launch</span><span class="o">::</span><span class="n">Launch</span><span class="w"> </span><span class="p">(</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="w">    </span><span class="n">dim3</span><span class="w"> </span><span class="n">gridDim</span><span class="p">,</span>
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="w">    </span><span class="n">dim3</span><span class="w"> </span><span class="n">blockDim</span><span class="p">,</span>
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="w">    </span><span class="kt">size_t</span><span class="w"> </span><span class="n">sharedMemSize</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span>
+</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="w">    </span><span class="n">cudaStream_t</span><span class="w"> </span><span class="n">stream</span><span class="o">=</span><span class="k">nullptr</span>
+</span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="p">)</span><span class="w"> </span>
+</span></code></pre></div>
+<hr>
+
+<h3 id="function-launch-23">function Launch [2/3]</h3>
+<div class="language-C++ highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="kr">inline</span><span class="w"> </span><span class="n">MUDA_HOST</span><span class="w"> </span><span class="n">muda</span><span class="o">::</span><span class="n">Launch</span><span class="o">::</span><span class="n">Launch</span><span class="w"> </span><span class="p">(</span>
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">gridDim</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">blockDim</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
+</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="w">    </span><span class="kt">size_t</span><span class="w"> </span><span class="n">sharedMemSize</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span>
+</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="w">    </span><span class="n">cudaStream_t</span><span class="w"> </span><span class="n">stream</span><span class="o">=</span><span class="k">nullptr</span>
+</span><span id="__span-5-6"><a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a><span class="p">)</span><span class="w"> </span>
+</span></code></pre></div>
+<hr>
+
+<h3 id="function-launch-33">function Launch [3/3]</h3>
+<div class="language-C++ highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="kr">inline</span><span class="w"> </span><span class="n">MUDA_HOST</span><span class="w"> </span><span class="n">muda</span><span class="o">::</span><span class="n">Launch</span><span class="o">::</span><span class="n">Launch</span><span class="w"> </span><span class="p">(</span>
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="w">    </span><span class="n">dim3</span><span class="w"> </span><span class="n">blockDim</span><span class="p">,</span>
+</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="w">    </span><span class="kt">size_t</span><span class="w"> </span><span class="n">sharedMemSize</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span>
+</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="w">    </span><span class="n">cudaStream_t</span><span class="w"> </span><span class="n">stream</span><span class="o">=</span><span class="k">nullptr</span>
+</span><span id="__span-6-5"><a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a><span class="p">)</span><span class="w"> </span>
+</span></code></pre></div>
+<hr>
+
+<h3 id="function-apply-14">function apply [1/4]</h3>
+<div class="language-C++ highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="k">template</span><span class="o">&lt;</span><span class="k">typename</span><span class="w"> </span><span class="nc">F</span><span class="p">,</span><span class="w"> </span><span class="k">typename</span><span class="w"> </span><span class="nc">UserTag</span><span class="o">&gt;</span>
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="n">MUDA_HOST</span><span class="w"> </span><span class="n">Launch</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">muda</span><span class="o">::</span><span class="n">Launch</span><span class="o">::</span><span class="n">apply</span><span class="w"> </span><span class="p">(</span>
+</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="w">    </span><span class="n">F</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="n">f</span>
+</span><span id="__span-7-4"><a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="p">)</span><span class="w"> </span>
+</span></code></pre></div>
+<hr>
+
+<h3 id="function-apply-24">function apply [2/4]</h3>
+<div class="language-C++ highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="k">template</span><span class="o">&lt;</span><span class="k">typename</span><span class="w"> </span><span class="nc">F</span><span class="p">,</span><span class="w"> </span><span class="k">typename</span><span class="w"> </span><span class="nc">UserTag</span><span class="o">&gt;</span>
+</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="n">MUDA_HOST</span><span class="w"> </span><span class="n">Launch</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">muda</span><span class="o">::</span><span class="n">Launch</span><span class="o">::</span><span class="n">apply</span><span class="w"> </span><span class="p">(</span>
+</span><span id="__span-8-3"><a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a><span class="w">    </span><span class="n">F</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="n">f</span><span class="p">,</span>
+</span><span id="__span-8-4"><a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a><span class="w">    </span><span class="n">Tag</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">UserTag</span><span class="w"> </span><span class="o">&gt;</span>
+</span><span id="__span-8-5"><a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a><span class="p">)</span><span class="w"> </span>
+</span></code></pre></div>
+<hr>
+
+<h3 id="function-apply-34">function apply [3/4]</h3>
+<div class="language-C++ highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="k">template</span><span class="o">&lt;</span><span class="k">typename</span><span class="w"> </span><span class="nc">F</span><span class="p">,</span><span class="w"> </span><span class="k">typename</span><span class="w"> </span><span class="nc">UserTag</span><span class="o">&gt;</span>
+</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="n">MUDA_HOST</span><span class="w"> </span><span class="n">Launch</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">muda</span><span class="o">::</span><span class="n">Launch</span><span class="o">::</span><span class="n">apply</span><span class="w"> </span><span class="p">(</span>
+</span><span id="__span-9-3"><a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a><span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="n">dim3</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">active_dim</span><span class="p">,</span>
+</span><span id="__span-9-4"><a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a><span class="w">    </span><span class="n">F</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="n">f</span>
+</span><span id="__span-9-5"><a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a><span class="p">)</span><span class="w"> </span>
+</span></code></pre></div>
+<hr>
+
+<h3 id="function-apply-44">function apply [4/4]</h3>
+<div class="language-C++ highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="k">template</span><span class="o">&lt;</span><span class="k">typename</span><span class="w"> </span><span class="nc">F</span><span class="p">,</span><span class="w"> </span><span class="k">typename</span><span class="w"> </span><span class="nc">UserTag</span><span class="o">&gt;</span>
+</span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a><span class="n">MUDA_HOST</span><span class="w"> </span><span class="n">Launch</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">muda</span><span class="o">::</span><span class="n">Launch</span><span class="o">::</span><span class="n">apply</span><span class="w"> </span><span class="p">(</span>
+</span><span id="__span-10-3"><a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a><span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="n">dim3</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">active_dim</span><span class="p">,</span>
+</span><span id="__span-10-4"><a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a><span class="w">    </span><span class="n">F</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="n">f</span><span class="p">,</span>
+</span><span id="__span-10-5"><a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a><span class="w">    </span><span class="n">Tag</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">UserTag</span><span class="w"> </span><span class="o">&gt;</span>
+</span><span id="__span-10-6"><a id="__codelineno-10-6" name="__codelineno-10-6" href="#__codelineno-10-6"></a><span class="p">)</span><span class="w"> </span>
+</span></code></pre></div>
+<hr>
+
+<h3 id="function-as_node_parms-14">function as_node_parms [1/4]</h3>
+<div class="language-C++ highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="k">template</span><span class="o">&lt;</span><span class="k">typename</span><span class="w"> </span><span class="nc">F</span><span class="p">,</span><span class="w"> </span><span class="k">typename</span><span class="w"> </span><span class="nc">UserTag</span><span class="o">&gt;</span>
+</span><span id="__span-11-2"><a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a><span class="n">MUDA_HOST</span><span class="w"> </span><span class="n">MUDA_NODISCARD</span><span class="w"> </span><span class="k">auto</span><span class="w"> </span><span class="n">muda</span><span class="o">::</span><span class="n">Launch</span><span class="o">::</span><span class="n">as_node_parms</span><span class="w"> </span><span class="p">(</span>
+</span><span id="__span-11-3"><a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a><span class="w">    </span><span class="n">F</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="n">f</span>
+</span><span id="__span-11-4"><a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a><span class="p">)</span><span class="w"> </span>
+</span></code></pre></div>
+<hr>
+
+<h3 id="function-as_node_parms-24">function as_node_parms [2/4]</h3>
+<div class="language-C++ highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="k">template</span><span class="o">&lt;</span><span class="k">typename</span><span class="w"> </span><span class="nc">F</span><span class="p">,</span><span class="w"> </span><span class="k">typename</span><span class="w"> </span><span class="nc">UserTag</span><span class="o">&gt;</span>
+</span><span id="__span-12-2"><a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a><span class="n">MUDA_HOST</span><span class="w"> </span><span class="n">MUDA_NODISCARD</span><span class="w"> </span><span class="k">auto</span><span class="w"> </span><span class="n">muda</span><span class="o">::</span><span class="n">Launch</span><span class="o">::</span><span class="n">as_node_parms</span><span class="w"> </span><span class="p">(</span>
+</span><span id="__span-12-3"><a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a><span class="w">    </span><span class="n">F</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="n">f</span><span class="p">,</span>
+</span><span id="__span-12-4"><a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a><span class="w">    </span><span class="n">Tag</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">UserTag</span><span class="w"> </span><span class="o">&gt;</span>
+</span><span id="__span-12-5"><a id="__codelineno-12-5" name="__codelineno-12-5" href="#__codelineno-12-5"></a><span class="p">)</span><span class="w"> </span>
+</span></code></pre></div>
+<hr>
+
+<h3 id="function-as_node_parms-34">function as_node_parms [3/4]</h3>
+<div class="language-C++ highlight"><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="k">template</span><span class="o">&lt;</span><span class="k">typename</span><span class="w"> </span><span class="nc">F</span><span class="p">,</span><span class="w"> </span><span class="k">typename</span><span class="w"> </span><span class="nc">UserTag</span><span class="o">&gt;</span>
+</span><span id="__span-13-2"><a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a><span class="n">MUDA_HOST</span><span class="w"> </span><span class="n">MUDA_NODISCARD</span><span class="w"> </span><span class="k">auto</span><span class="w"> </span><span class="n">muda</span><span class="o">::</span><span class="n">Launch</span><span class="o">::</span><span class="n">as_node_parms</span><span class="w"> </span><span class="p">(</span>
+</span><span id="__span-13-3"><a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a><span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="n">dim3</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">active_dim</span><span class="p">,</span>
+</span><span id="__span-13-4"><a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a><span class="w">    </span><span class="n">F</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="n">f</span>
+</span><span id="__span-13-5"><a id="__codelineno-13-5" name="__codelineno-13-5" href="#__codelineno-13-5"></a><span class="p">)</span><span class="w"> </span>
+</span></code></pre></div>
+<hr>
+
+<h3 id="function-as_node_parms-44">function as_node_parms [4/4]</h3>
+<div class="language-C++ highlight"><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="k">template</span><span class="o">&lt;</span><span class="k">typename</span><span class="w"> </span><span class="nc">F</span><span class="p">,</span><span class="w"> </span><span class="k">typename</span><span class="w"> </span><span class="nc">UserTag</span><span class="o">&gt;</span>
+</span><span id="__span-14-2"><a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a><span class="n">MUDA_HOST</span><span class="w"> </span><span class="n">MUDA_NODISCARD</span><span class="w"> </span><span class="k">auto</span><span class="w"> </span><span class="n">muda</span><span class="o">::</span><span class="n">Launch</span><span class="o">::</span><span class="n">as_node_parms</span><span class="w"> </span><span class="p">(</span>
+</span><span id="__span-14-3"><a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a><span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="n">dim3</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">active_dim</span><span class="p">,</span>
+</span><span id="__span-14-4"><a id="__codelineno-14-4" name="__codelineno-14-4" href="#__codelineno-14-4"></a><span class="w">    </span><span class="n">F</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="n">f</span><span class="p">,</span>
+</span><span id="__span-14-5"><a id="__codelineno-14-5" name="__codelineno-14-5" href="#__codelineno-14-5"></a><span class="w">    </span><span class="n">Tag</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">UserTag</span><span class="w"> </span><span class="o">&gt;</span>
+</span><span id="__span-14-6"><a id="__codelineno-14-6" name="__codelineno-14-6" href="#__codelineno-14-6"></a><span class="p">)</span><span class="w"> </span>
+</span></code></pre></div>
+<hr>
+
+<hr />
+<p>The documentation for this class was generated from the following file <code>src/muda/launch/launch.h</code></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var tab,labels=set.querySelector(".tabbed-labels");for(tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://doxide.org" target="_blank" rel="noopener">
+      Doxide
+    </a>
+    and
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.indexes", "content.tabs.link", "content.code.copy", "content.code.select", "content.code.annotate"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.081f42fc.min.js"></script>
+      
+        <script src="../../javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

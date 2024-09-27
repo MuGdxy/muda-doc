@@ -1,0 +1,171 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classmuda_1_1_extent3_d" kind="class" language="C++" prot="public">
+    <compoundname>muda::Extent3D</compoundname>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classmuda_1_1_extent3_d_1ab219075c2eb141124561c86b597b78b2" prot="private" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t muda::Extent3D::m_extent[3]</definition>
+        <argsstring>[3]</argsstring>
+        <name>m_extent</name>
+        <qualifiedname>muda::Extent3D::m_extent</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/tools/extent.h" line="41" column="12" bodyfile="src/muda/tools/extent.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmuda_1_1_extent3_d_1a8c0b1d19d14f7d021d5c79828f1312a0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>MUDA_GENERIC</type>
+        <definition>MUDA_GENERIC muda::Extent3D::Extent3D</definition>
+        <argsstring>() MUDA_NOEXCEPT</argsstring>
+        <name>Extent3D</name>
+        <qualifiedname>muda::Extent3D::Extent3D</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/tools/extent.h" line="44" column="18" bodyfile="src/muda/tools/extent.h" bodystart="44" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_extent3_d_1abcecc9ff9fc7093d4861d84e2e1a0371" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>MUDA_GENERIC</type>
+        <definition>MUDA_GENERIC muda::Extent3D::Extent3D</definition>
+        <argsstring>(size_t depth, size_t height, size_t width) MUDA_NOEXCEPT</argsstring>
+        <name>Extent3D</name>
+        <qualifiedname>muda::Extent3D::Extent3D</qualifiedname>
+        <param>
+          <type>size_t</type>
+          <declname>depth</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>height</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>width</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/tools/extent.h" line="45" column="18" bodyfile="src/muda/tools/extent.h" bodystart="45" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_extent3_d_1aaf801ed35e79ef8d3ba785ed5540cd00" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>MUDA_GENERIC size_t</type>
+        <definition>MUDA_GENERIC size_t muda::Extent3D::depth</definition>
+        <argsstring>() const MUDA_NOEXCEPT</argsstring>
+        <name>depth</name>
+        <qualifiedname>muda::Extent3D::depth</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/tools/extent.h" line="50" column="25" bodyfile="src/muda/tools/extent.h" bodystart="50" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_extent3_d_1a9f7153690a5caeca000a53cc035b4b42" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>MUDA_GENERIC size_t</type>
+        <definition>MUDA_GENERIC size_t muda::Extent3D::height</definition>
+        <argsstring>() const MUDA_NOEXCEPT</argsstring>
+        <name>height</name>
+        <qualifiedname>muda::Extent3D::height</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/tools/extent.h" line="51" column="25" bodyfile="src/muda/tools/extent.h" bodystart="51" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_extent3_d_1acee27843b9065cc12360f81c12dd227b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>MUDA_GENERIC size_t</type>
+        <definition>MUDA_GENERIC size_t muda::Extent3D::width</definition>
+        <argsstring>() const MUDA_NOEXCEPT</argsstring>
+        <name>width</name>
+        <qualifiedname>muda::Extent3D::width</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/tools/extent.h" line="52" column="25" bodyfile="src/muda/tools/extent.h" bodystart="52" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_extent3_d_1ad907ab8aebc175f2335506810848dd3a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>MUDA_GENERIC cudaExtent</type>
+        <definition>MUDA_GENERIC cudaExtent muda::Extent3D::cuda_extent</definition>
+        <argsstring>() const MUDA_NOEXCEPT</argsstring>
+        <name>cuda_extent</name>
+        <qualifiedname>muda::Extent3D::cuda_extent</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/tools/extent.h" line="55" column="29" bodyfile="src/muda/tools/extent.h" bodystart="55" bodyend="58"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_extent3_d_1a628b4fa2c5076e6f39d2ccc6df38d080" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>MUDA_GENERIC bool</type>
+        <definition>MUDA_GENERIC bool muda::Extent3D::valid</definition>
+        <argsstring>() const</argsstring>
+        <name>valid</name>
+        <qualifiedname>muda::Extent3D::valid</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/tools/extent.h" line="60" column="23" bodyfile="src/muda/tools/extent.h" bodystart="60" bodyend="63"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classmuda_1_1_extent3_d_1a29fe66e441170884ee01a8c1a2180fcc" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>MUDA_GENERIC <ref refid="classmuda_1_1_extent3_d" kindref="compound">Extent3D</ref></type>
+        <definition>static MUDA_GENERIC Extent3D muda::Extent3D::Zero</definition>
+        <argsstring>() MUDA_NOEXCEPT</argsstring>
+        <name>Zero</name>
+        <qualifiedname>muda::Extent3D::Zero</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/tools/extent.h" line="65" column="34" bodyfile="src/muda/tools/extent.h" bodystart="65" bodyend="68"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/muda/tools/extent.h" line="39" column="1" bodyfile="src/muda/tools/extent.h" bodystart="40" bodyend="69"/>
+    <listofallmembers>
+      <member refid="classmuda_1_1_extent3_d_1ad907ab8aebc175f2335506810848dd3a" prot="public" virt="non-virtual"><scope>muda::Extent3D</scope><name>cuda_extent</name></member>
+      <member refid="classmuda_1_1_extent3_d_1aaf801ed35e79ef8d3ba785ed5540cd00" prot="public" virt="non-virtual"><scope>muda::Extent3D</scope><name>depth</name></member>
+      <member refid="classmuda_1_1_extent3_d_1a8c0b1d19d14f7d021d5c79828f1312a0" prot="public" virt="non-virtual"><scope>muda::Extent3D</scope><name>Extent3D</name></member>
+      <member refid="classmuda_1_1_extent3_d_1abcecc9ff9fc7093d4861d84e2e1a0371" prot="public" virt="non-virtual"><scope>muda::Extent3D</scope><name>Extent3D</name></member>
+      <member refid="classmuda_1_1_extent3_d_1a9f7153690a5caeca000a53cc035b4b42" prot="public" virt="non-virtual"><scope>muda::Extent3D</scope><name>height</name></member>
+      <member refid="classmuda_1_1_extent3_d_1ab219075c2eb141124561c86b597b78b2" prot="private" virt="non-virtual"><scope>muda::Extent3D</scope><name>m_extent</name></member>
+      <member refid="classmuda_1_1_extent3_d_1a628b4fa2c5076e6f39d2ccc6df38d080" prot="public" virt="non-virtual"><scope>muda::Extent3D</scope><name>valid</name></member>
+      <member refid="classmuda_1_1_extent3_d_1acee27843b9065cc12360f81c12dd227b" prot="public" virt="non-virtual"><scope>muda::Extent3D</scope><name>width</name></member>
+      <member refid="classmuda_1_1_extent3_d_1a29fe66e441170884ee01a8c1a2180fcc" prot="public" virt="non-virtual"><scope>muda::Extent3D</scope><name>Zero</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

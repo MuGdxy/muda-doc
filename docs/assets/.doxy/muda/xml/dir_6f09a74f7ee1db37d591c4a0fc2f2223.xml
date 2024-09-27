@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="dir_6f09a74f7ee1db37d591c4a0fc2f2223" kind="dir">
+    <compoundname>src/muda/ext/linear_system</compoundname>
+    <innerdir refid="dir_409feac54749c96b1f5e03ed3e08c376">src/muda/ext/linear_system/type_mapper</innerdir>
+    <innerfile refid="bcoo__matrix__view_8h">bcoo_matrix_view.h</innerfile>
+    <innerfile refid="bcoo__matrix__viewer_8h">bcoo_matrix_viewer.h</innerfile>
+    <innerfile refid="bcoo__vector__view_8h">bcoo_vector_view.h</innerfile>
+    <innerfile refid="bcoo__vector__viewer_8h">bcoo_vector_viewer.h</innerfile>
+    <innerfile refid="bsr__matrix__view_8h">bsr_matrix_view.h</innerfile>
+    <innerfile refid="common_8h">common.h</innerfile>
+    <innerfile refid="csr__matrix__view_8h">csr_matrix_view.h</innerfile>
+    <innerfile refid="dense__matrix__view_8h">dense_matrix_view.h</innerfile>
+    <innerfile refid="dense__matrix__viewer_8h">dense_matrix_viewer.h</innerfile>
+    <innerfile refid="dense__vector__view_8h">dense_vector_view.h</innerfile>
+    <innerfile refid="dense__vector__viewer_8h">dense_vector_viewer.h</innerfile>
+    <innerfile refid="device__bcoo__matrix_8h">device_bcoo_matrix.h</innerfile>
+    <innerfile refid="device__bcoo__vector_8h">device_bcoo_vector.h</innerfile>
+    <innerfile refid="device__bsr__matrix_8h">device_bsr_matrix.h</innerfile>
+    <innerfile refid="device__csr__matrix_8h">device_csr_matrix.h</innerfile>
+    <innerfile refid="device__dense__matrix_8h">device_dense_matrix.h</innerfile>
+    <innerfile refid="device__dense__vector_8h">device_dense_vector.h</innerfile>
+    <innerfile refid="device__doublet__vector_8h">device_doublet_vector.h</innerfile>
+    <innerfile refid="device__triplet__matrix_8h">device_triplet_matrix.h</innerfile>
+    <innerfile refid="doublet__vector__view_8h">doublet_vector_view.h</innerfile>
+    <innerfile refid="doublet__vector__viewer_8h">doublet_vector_viewer.h</innerfile>
+    <innerfile refid="linear__system__context_8h">linear_system_context.h</innerfile>
+    <innerfile refid="linear__system__handles_8h">linear_system_handles.h</innerfile>
+    <innerfile refid="linear__system__solve__reorder_8h">linear_system_solve_reorder.h</innerfile>
+    <innerfile refid="linear__system__solve__tolerance_8h">linear_system_solve_tolerance.h</innerfile>
+    <innerfile refid="matrix__format__converter_8h">matrix_format_converter.h</innerfile>
+    <innerfile refid="matrix__format__converter__impl_8h">matrix_format_converter_impl.h</innerfile>
+    <innerfile refid="triplet__matrix__view_8h">triplet_matrix_view.h</innerfile>
+    <innerfile refid="triplet__matrix__viewer_8h">triplet_matrix_viewer.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/muda/ext/linear_system/"/>
+  </compounddef>
+</doxygen>

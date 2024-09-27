@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="dir_f585754cebe27fbe41288242344b0f7f" kind="dir">
+    <compoundname>src/muda/ext/geo/lbvh</compoundname>
+    <innerfile refid="aabb_8h">aabb.h</innerfile>
+    <innerfile refid="bvh_8h">bvh.h</innerfile>
+    <innerfile refid="bvh__viewer_8h">bvh_viewer.h</innerfile>
+    <innerfile refid="lbvh_2lbvh_8h">lbvh.h</innerfile>
+    <innerfile refid="morton__code_8h">morton_code.h</innerfile>
+    <innerfile refid="predicator_8h">predicator.h</innerfile>
+    <innerfile refid="query_8h">query.h</innerfile>
+    <innerfile refid="utility_8h">utility.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/muda/ext/geo/lbvh/"/>
+  </compounddef>
+</doxygen>

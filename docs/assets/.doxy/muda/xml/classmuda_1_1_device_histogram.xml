@@ -1,0 +1,1171 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classmuda_1_1_device_histogram" kind="class" language="C++" prot="public">
+    <compoundname>muda::DeviceHistogram</compoundname>
+    <basecompoundref refid="classmuda_1_1_cub_wrapper" prot="public" virt="non-virtual">muda::CubWrapper&lt; DeviceHistogram &gt;</basecompoundref>
+    <sectiondef kind="private-type">
+      <memberdef kind="typedef" id="classmuda_1_1_device_histogram_1a6db7b8aa1d10671cfbd696fe2dda07ea" prot="private" static="no">
+        <type><ref refid="classmuda_1_1_cub_wrapper" kindref="compound">CubWrapper</ref>&lt; <ref refid="classmuda_1_1_device_histogram" kindref="compound">DeviceHistogram</ref> &gt;</type>
+        <definition>using muda::DeviceHistogram::Base =  CubWrapper&lt;DeviceHistogram&gt;</definition>
+        <argsstring></argsstring>
+        <name>Base</name>
+        <qualifiedname>muda::DeviceHistogram::Base</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/cub/device/device_histogram.h" line="14" column="5" bodyfile="src/muda/cub/device/device_histogram.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmuda_1_1_device_histogram_1a6e91dab0554823a7150de481f3d45f56" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename SampleIteratorT</type>
+          </param>
+          <param>
+            <type>typename CounterT</type>
+          </param>
+          <param>
+            <type>typename LevelT</type>
+          </param>
+          <param>
+            <type>typename OffsetT</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classmuda_1_1_device_histogram" kindref="compound">DeviceHistogram</ref> &amp;</type>
+        <definition>DeviceHistogram &amp; muda::DeviceHistogram::HistogramEven</definition>
+        <argsstring>(SampleIteratorT d_samples, CounterT *d_histogram, int num_levels, LevelT lower_level, LevelT upper_level, OffsetT num_samples)</argsstring>
+        <name>HistogramEven</name>
+        <qualifiedname>muda::DeviceHistogram::HistogramEven</qualifiedname>
+        <param>
+          <type>SampleIteratorT</type>
+          <declname>d_samples</declname>
+        </param>
+        <param>
+          <type>CounterT *</type>
+          <declname>d_histogram</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>num_levels</declname>
+        </param>
+        <param>
+          <type>LevelT</type>
+          <declname>lower_level</declname>
+        </param>
+        <param>
+          <type>LevelT</type>
+          <declname>upper_level</declname>
+        </param>
+        <param>
+          <type>OffsetT</type>
+          <declname>num_samples</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/cub/device/device_histogram.h" line="23" column="21" bodyfile="src/muda/cub/device/device_histogram.h" bodystart="23" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_device_histogram_1abd4834048dc0b785e34e577c27322ee1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename SampleIteratorT</type>
+          </param>
+          <param>
+            <type>typename CounterT</type>
+          </param>
+          <param>
+            <type>typename LevelT</type>
+          </param>
+          <param>
+            <type>typename OffsetT</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classmuda_1_1_device_histogram" kindref="compound">DeviceHistogram</ref> &amp;</type>
+        <definition>DeviceHistogram &amp; muda::DeviceHistogram::HistogramEven</definition>
+        <argsstring>(SampleIteratorT d_samples, CounterT *d_histogram, int num_levels, LevelT lower_level, LevelT upper_level, OffsetT num_row_samples, OffsetT num_rows, size_t row_stride_bytes)</argsstring>
+        <name>HistogramEven</name>
+        <qualifiedname>muda::DeviceHistogram::HistogramEven</qualifiedname>
+        <param>
+          <type>SampleIteratorT</type>
+          <declname>d_samples</declname>
+        </param>
+        <param>
+          <type>CounterT *</type>
+          <declname>d_histogram</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>num_levels</declname>
+        </param>
+        <param>
+          <type>LevelT</type>
+          <declname>lower_level</declname>
+        </param>
+        <param>
+          <type>LevelT</type>
+          <declname>upper_level</declname>
+        </param>
+        <param>
+          <type>OffsetT</type>
+          <declname>num_row_samples</declname>
+        </param>
+        <param>
+          <type>OffsetT</type>
+          <declname>num_rows</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>row_stride_bytes</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/cub/device/device_histogram.h" line="44" column="21" bodyfile="src/muda/cub/device/device_histogram.h" bodystart="44" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_device_histogram_1ae08a10052b61c8f94e01921440c991d2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>int</type>
+            <declname>NUM_CHANNELS</declname>
+            <defname>NUM_CHANNELS</defname>
+          </param>
+          <param>
+            <type>int</type>
+            <declname>NUM_ACTIVE_CHANNELS</declname>
+            <defname>NUM_ACTIVE_CHANNELS</defname>
+          </param>
+          <param>
+            <type>typename SampleIteratorT</type>
+          </param>
+          <param>
+            <type>typename CounterT</type>
+          </param>
+          <param>
+            <type>typename LevelT</type>
+          </param>
+          <param>
+            <type>typename OffsetT</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classmuda_1_1_device_histogram" kindref="compound">DeviceHistogram</ref> &amp;</type>
+        <definition>DeviceHistogram &amp; muda::DeviceHistogram::MultiHistogramEven</definition>
+        <argsstring>(SampleIteratorT d_samples, CounterT *d_histogram[NUM_ACTIVE_CHANNELS], int num_levels[NUM_ACTIVE_CHANNELS], LevelT lower_level[NUM_ACTIVE_CHANNELS], LevelT upper_level[NUM_ACTIVE_CHANNELS], OffsetT num_pixels)</argsstring>
+        <name>MultiHistogramEven</name>
+        <qualifiedname>muda::DeviceHistogram::MultiHistogramEven</qualifiedname>
+        <param>
+          <type>SampleIteratorT</type>
+          <declname>d_samples</declname>
+        </param>
+        <param>
+          <type>CounterT *</type>
+          <declname>d_histogram</declname>
+          <array>[NUM_ACTIVE_CHANNELS]</array>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>num_levels</declname>
+          <array>[NUM_ACTIVE_CHANNELS]</array>
+        </param>
+        <param>
+          <type>LevelT</type>
+          <declname>lower_level</declname>
+          <array>[NUM_ACTIVE_CHANNELS]</array>
+        </param>
+        <param>
+          <type>LevelT</type>
+          <declname>upper_level</declname>
+          <array>[NUM_ACTIVE_CHANNELS]</array>
+        </param>
+        <param>
+          <type>OffsetT</type>
+          <declname>num_pixels</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/cub/device/device_histogram.h" line="69" column="21" bodyfile="src/muda/cub/device/device_histogram.h" bodystart="69" bodyend="86"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_device_histogram_1ae092247d193a2c4b4cee650948d5d08b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>int</type>
+            <declname>NUM_CHANNELS</declname>
+            <defname>NUM_CHANNELS</defname>
+          </param>
+          <param>
+            <type>int</type>
+            <declname>NUM_ACTIVE_CHANNELS</declname>
+            <defname>NUM_ACTIVE_CHANNELS</defname>
+          </param>
+          <param>
+            <type>typename SampleIteratorT</type>
+          </param>
+          <param>
+            <type>typename CounterT</type>
+          </param>
+          <param>
+            <type>typename LevelT</type>
+          </param>
+          <param>
+            <type>typename OffsetT</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classmuda_1_1_device_histogram" kindref="compound">DeviceHistogram</ref> &amp;</type>
+        <definition>DeviceHistogram &amp; muda::DeviceHistogram::MultiHistogramEven</definition>
+        <argsstring>(SampleIteratorT d_samples, CounterT *d_histogram[NUM_ACTIVE_CHANNELS], int num_levels[NUM_ACTIVE_CHANNELS], LevelT lower_level[NUM_ACTIVE_CHANNELS], LevelT upper_level[NUM_ACTIVE_CHANNELS], OffsetT num_row_pixels, OffsetT num_rows, size_t row_stride_bytes)</argsstring>
+        <name>MultiHistogramEven</name>
+        <qualifiedname>muda::DeviceHistogram::MultiHistogramEven</qualifiedname>
+        <param>
+          <type>SampleIteratorT</type>
+          <declname>d_samples</declname>
+        </param>
+        <param>
+          <type>CounterT *</type>
+          <declname>d_histogram</declname>
+          <array>[NUM_ACTIVE_CHANNELS]</array>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>num_levels</declname>
+          <array>[NUM_ACTIVE_CHANNELS]</array>
+        </param>
+        <param>
+          <type>LevelT</type>
+          <declname>lower_level</declname>
+          <array>[NUM_ACTIVE_CHANNELS]</array>
+        </param>
+        <param>
+          <type>LevelT</type>
+          <declname>upper_level</declname>
+          <array>[NUM_ACTIVE_CHANNELS]</array>
+        </param>
+        <param>
+          <type>OffsetT</type>
+          <declname>num_row_pixels</declname>
+        </param>
+        <param>
+          <type>OffsetT</type>
+          <declname>num_rows</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>row_stride_bytes</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/cub/device/device_histogram.h" line="90" column="21" bodyfile="src/muda/cub/device/device_histogram.h" bodystart="90" bodyend="112"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_device_histogram_1a7f70388fcc6e066709482cc9ebdd60a1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename SampleIteratorT</type>
+          </param>
+          <param>
+            <type>typename CounterT</type>
+          </param>
+          <param>
+            <type>typename LevelT</type>
+          </param>
+          <param>
+            <type>typename OffsetT</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classmuda_1_1_device_histogram" kindref="compound">DeviceHistogram</ref> &amp;</type>
+        <definition>DeviceHistogram &amp; muda::DeviceHistogram::HistogramRange</definition>
+        <argsstring>(SampleIteratorT d_samples, CounterT *d_histogram, int num_levels, LevelT *d_levels, OffsetT num_samples)</argsstring>
+        <name>HistogramRange</name>
+        <qualifiedname>muda::DeviceHistogram::HistogramRange</qualifiedname>
+        <param>
+          <type>SampleIteratorT</type>
+          <declname>d_samples</declname>
+        </param>
+        <param>
+          <type>CounterT *</type>
+          <declname>d_histogram</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>num_levels</declname>
+        </param>
+        <param>
+          <type>LevelT *</type>
+          <declname>d_levels</declname>
+        </param>
+        <param>
+          <type>OffsetT</type>
+          <declname>num_samples</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/cub/device/device_histogram.h" line="116" column="21" bodyfile="src/muda/cub/device/device_histogram.h" bodystart="116" bodyend="124"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_device_histogram_1a20d9b59a62dbd8c402cd8f1d4b37740b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename SampleIteratorT</type>
+          </param>
+          <param>
+            <type>typename CounterT</type>
+          </param>
+          <param>
+            <type>typename LevelT</type>
+          </param>
+          <param>
+            <type>typename OffsetT</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classmuda_1_1_device_histogram" kindref="compound">DeviceHistogram</ref> &amp;</type>
+        <definition>DeviceHistogram &amp; muda::DeviceHistogram::HistogramRange</definition>
+        <argsstring>(SampleIteratorT d_samples, CounterT *d_histogram, int num_levels, LevelT *d_levels, OffsetT num_row_samples, OffsetT num_rows, size_t row_stride_bytes)</argsstring>
+        <name>HistogramRange</name>
+        <qualifiedname>muda::DeviceHistogram::HistogramRange</qualifiedname>
+        <param>
+          <type>SampleIteratorT</type>
+          <declname>d_samples</declname>
+        </param>
+        <param>
+          <type>CounterT *</type>
+          <declname>d_histogram</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>num_levels</declname>
+        </param>
+        <param>
+          <type>LevelT *</type>
+          <declname>d_levels</declname>
+        </param>
+        <param>
+          <type>OffsetT</type>
+          <declname>num_row_samples</declname>
+        </param>
+        <param>
+          <type>OffsetT</type>
+          <declname>num_rows</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>row_stride_bytes</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/cub/device/device_histogram.h" line="128" column="21" bodyfile="src/muda/cub/device/device_histogram.h" bodystart="128" bodyend="147"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_device_histogram_1a7596cf1bf8f0c654d227d8339381a9da" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>int</type>
+            <declname>NUM_CHANNELS</declname>
+            <defname>NUM_CHANNELS</defname>
+          </param>
+          <param>
+            <type>int</type>
+            <declname>NUM_ACTIVE_CHANNELS</declname>
+            <defname>NUM_ACTIVE_CHANNELS</defname>
+          </param>
+          <param>
+            <type>typename SampleIteratorT</type>
+          </param>
+          <param>
+            <type>typename CounterT</type>
+          </param>
+          <param>
+            <type>typename LevelT</type>
+          </param>
+          <param>
+            <type>typename OffsetT</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classmuda_1_1_device_histogram" kindref="compound">DeviceHistogram</ref> &amp;</type>
+        <definition>DeviceHistogram &amp; muda::DeviceHistogram::MultiHistogramRange</definition>
+        <argsstring>(SampleIteratorT d_samples, CounterT *d_histogram[NUM_ACTIVE_CHANNELS], int num_levels[NUM_ACTIVE_CHANNELS], LevelT *d_levels[NUM_ACTIVE_CHANNELS], OffsetT num_pixels)</argsstring>
+        <name>MultiHistogramRange</name>
+        <qualifiedname>muda::DeviceHistogram::MultiHistogramRange</qualifiedname>
+        <param>
+          <type>SampleIteratorT</type>
+          <declname>d_samples</declname>
+        </param>
+        <param>
+          <type>CounterT *</type>
+          <declname>d_histogram</declname>
+          <array>[NUM_ACTIVE_CHANNELS]</array>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>num_levels</declname>
+          <array>[NUM_ACTIVE_CHANNELS]</array>
+        </param>
+        <param>
+          <type>LevelT *</type>
+          <declname>d_levels</declname>
+          <array>[NUM_ACTIVE_CHANNELS]</array>
+        </param>
+        <param>
+          <type>OffsetT</type>
+          <declname>num_pixels</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/cub/device/device_histogram.h" line="151" column="21" bodyfile="src/muda/cub/device/device_histogram.h" bodystart="151" bodyend="159"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_device_histogram_1a45bb48ff8fe1f9189b0c0c23c6151854" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>int</type>
+            <declname>NUM_CHANNELS</declname>
+            <defname>NUM_CHANNELS</defname>
+          </param>
+          <param>
+            <type>int</type>
+            <declname>NUM_ACTIVE_CHANNELS</declname>
+            <defname>NUM_ACTIVE_CHANNELS</defname>
+          </param>
+          <param>
+            <type>typename SampleIteratorT</type>
+          </param>
+          <param>
+            <type>typename CounterT</type>
+          </param>
+          <param>
+            <type>typename LevelT</type>
+          </param>
+          <param>
+            <type>typename OffsetT</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classmuda_1_1_device_histogram" kindref="compound">DeviceHistogram</ref> &amp;</type>
+        <definition>DeviceHistogram &amp; muda::DeviceHistogram::MultiHistogramRange</definition>
+        <argsstring>(SampleIteratorT d_samples, CounterT *d_histogram[NUM_ACTIVE_CHANNELS], int num_levels[NUM_ACTIVE_CHANNELS], LevelT *d_levels[NUM_ACTIVE_CHANNELS], OffsetT num_row_pixels, OffsetT num_rows, size_t row_stride_bytes)</argsstring>
+        <name>MultiHistogramRange</name>
+        <qualifiedname>muda::DeviceHistogram::MultiHistogramRange</qualifiedname>
+        <param>
+          <type>SampleIteratorT</type>
+          <declname>d_samples</declname>
+        </param>
+        <param>
+          <type>CounterT *</type>
+          <declname>d_histogram</declname>
+          <array>[NUM_ACTIVE_CHANNELS]</array>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>num_levels</declname>
+          <array>[NUM_ACTIVE_CHANNELS]</array>
+        </param>
+        <param>
+          <type>LevelT *</type>
+          <declname>d_levels</declname>
+          <array>[NUM_ACTIVE_CHANNELS]</array>
+        </param>
+        <param>
+          <type>OffsetT</type>
+          <declname>num_row_pixels</declname>
+        </param>
+        <param>
+          <type>OffsetT</type>
+          <declname>num_rows</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>row_stride_bytes</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/cub/device/device_histogram.h" line="163" column="21" bodyfile="src/muda/cub/device/device_histogram.h" bodystart="163" bodyend="183"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_device_histogram_1ae5fe39f8a0f77499d2e000a87a7060da" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename SampleIteratorT</type>
+          </param>
+          <param>
+            <type>typename CounterT</type>
+          </param>
+          <param>
+            <type>typename LevelT</type>
+          </param>
+          <param>
+            <type>typename OffsetT</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classmuda_1_1_device_histogram" kindref="compound">DeviceHistogram</ref> &amp;</type>
+        <definition>DeviceHistogram &amp; muda::DeviceHistogram::HistogramEven</definition>
+        <argsstring>(void *d_temp_storage, size_t &amp;temp_storage_bytes, SampleIteratorT d_samples, CounterT *d_histogram, int num_levels, LevelT lower_level, LevelT upper_level, OffsetT num_samples)</argsstring>
+        <name>HistogramEven</name>
+        <qualifiedname>muda::DeviceHistogram::HistogramEven</qualifiedname>
+        <param>
+          <type>void *</type>
+          <declname>d_temp_storage</declname>
+        </param>
+        <param>
+          <type>size_t &amp;</type>
+          <declname>temp_storage_bytes</declname>
+        </param>
+        <param>
+          <type>SampleIteratorT</type>
+          <declname>d_samples</declname>
+        </param>
+        <param>
+          <type>CounterT *</type>
+          <declname>d_histogram</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>num_levels</declname>
+        </param>
+        <param>
+          <type>LevelT</type>
+          <declname>lower_level</declname>
+        </param>
+        <param>
+          <type>LevelT</type>
+          <declname>upper_level</declname>
+        </param>
+        <param>
+          <type>OffsetT</type>
+          <declname>num_samples</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/cub/device/device_histogram.h" line="189" column="21" bodyfile="src/muda/cub/device/device_histogram.h" bodystart="189" bodyend="200"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_device_histogram_1a5bff912cb8c4fc2a83f479c96368ee90" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename SampleIteratorT</type>
+          </param>
+          <param>
+            <type>typename CounterT</type>
+          </param>
+          <param>
+            <type>typename LevelT</type>
+          </param>
+          <param>
+            <type>typename OffsetT</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classmuda_1_1_device_histogram" kindref="compound">DeviceHistogram</ref> &amp;</type>
+        <definition>DeviceHistogram &amp; muda::DeviceHistogram::HistogramEven</definition>
+        <argsstring>(void *d_temp_storage, size_t &amp;temp_storage_bytes, SampleIteratorT d_samples, CounterT *d_histogram, int num_levels, LevelT lower_level, LevelT upper_level, OffsetT num_row_samples, OffsetT num_rows, size_t row_stride_bytes)</argsstring>
+        <name>HistogramEven</name>
+        <qualifiedname>muda::DeviceHistogram::HistogramEven</qualifiedname>
+        <param>
+          <type>void *</type>
+          <declname>d_temp_storage</declname>
+        </param>
+        <param>
+          <type>size_t &amp;</type>
+          <declname>temp_storage_bytes</declname>
+        </param>
+        <param>
+          <type>SampleIteratorT</type>
+          <declname>d_samples</declname>
+        </param>
+        <param>
+          <type>CounterT *</type>
+          <declname>d_histogram</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>num_levels</declname>
+        </param>
+        <param>
+          <type>LevelT</type>
+          <declname>lower_level</declname>
+        </param>
+        <param>
+          <type>LevelT</type>
+          <declname>upper_level</declname>
+        </param>
+        <param>
+          <type>OffsetT</type>
+          <declname>num_row_samples</declname>
+        </param>
+        <param>
+          <type>OffsetT</type>
+          <declname>num_rows</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>row_stride_bytes</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/cub/device/device_histogram.h" line="204" column="21" bodyfile="src/muda/cub/device/device_histogram.h" bodystart="204" bodyend="228"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_device_histogram_1ad1084356392e03b09b289627dc0661d0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>int</type>
+            <declname>NUM_CHANNELS</declname>
+            <defname>NUM_CHANNELS</defname>
+          </param>
+          <param>
+            <type>int</type>
+            <declname>NUM_ACTIVE_CHANNELS</declname>
+            <defname>NUM_ACTIVE_CHANNELS</defname>
+          </param>
+          <param>
+            <type>typename SampleIteratorT</type>
+          </param>
+          <param>
+            <type>typename CounterT</type>
+          </param>
+          <param>
+            <type>typename LevelT</type>
+          </param>
+          <param>
+            <type>typename OffsetT</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classmuda_1_1_device_histogram" kindref="compound">DeviceHistogram</ref> &amp;</type>
+        <definition>DeviceHistogram &amp; muda::DeviceHistogram::MultiHistogramEven</definition>
+        <argsstring>(void *d_temp_storage, size_t &amp;temp_storage_bytes, SampleIteratorT d_samples, CounterT *d_histogram[NUM_ACTIVE_CHANNELS], int num_levels[NUM_ACTIVE_CHANNELS], LevelT lower_level[NUM_ACTIVE_CHANNELS], LevelT upper_level[NUM_ACTIVE_CHANNELS], OffsetT num_pixels)</argsstring>
+        <name>MultiHistogramEven</name>
+        <qualifiedname>muda::DeviceHistogram::MultiHistogramEven</qualifiedname>
+        <param>
+          <type>void *</type>
+          <declname>d_temp_storage</declname>
+        </param>
+        <param>
+          <type>size_t &amp;</type>
+          <declname>temp_storage_bytes</declname>
+        </param>
+        <param>
+          <type>SampleIteratorT</type>
+          <declname>d_samples</declname>
+        </param>
+        <param>
+          <type>CounterT *</type>
+          <declname>d_histogram</declname>
+          <array>[NUM_ACTIVE_CHANNELS]</array>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>num_levels</declname>
+          <array>[NUM_ACTIVE_CHANNELS]</array>
+        </param>
+        <param>
+          <type>LevelT</type>
+          <declname>lower_level</declname>
+          <array>[NUM_ACTIVE_CHANNELS]</array>
+        </param>
+        <param>
+          <type>LevelT</type>
+          <declname>upper_level</declname>
+          <array>[NUM_ACTIVE_CHANNELS]</array>
+        </param>
+        <param>
+          <type>OffsetT</type>
+          <declname>num_pixels</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/cub/device/device_histogram.h" line="232" column="21" bodyfile="src/muda/cub/device/device_histogram.h" bodystart="232" bodyend="243"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_device_histogram_1adc9352e5015a93a6a5ff91ef8074de0a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>int</type>
+            <declname>NUM_CHANNELS</declname>
+            <defname>NUM_CHANNELS</defname>
+          </param>
+          <param>
+            <type>int</type>
+            <declname>NUM_ACTIVE_CHANNELS</declname>
+            <defname>NUM_ACTIVE_CHANNELS</defname>
+          </param>
+          <param>
+            <type>typename SampleIteratorT</type>
+          </param>
+          <param>
+            <type>typename CounterT</type>
+          </param>
+          <param>
+            <type>typename LevelT</type>
+          </param>
+          <param>
+            <type>typename OffsetT</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classmuda_1_1_device_histogram" kindref="compound">DeviceHistogram</ref> &amp;</type>
+        <definition>DeviceHistogram &amp; muda::DeviceHistogram::MultiHistogramEven</definition>
+        <argsstring>(void *d_temp_storage, size_t &amp;temp_storage_bytes, SampleIteratorT d_samples, CounterT *d_histogram[NUM_ACTIVE_CHANNELS], int num_levels[NUM_ACTIVE_CHANNELS], LevelT lower_level[NUM_ACTIVE_CHANNELS], LevelT upper_level[NUM_ACTIVE_CHANNELS], OffsetT num_row_pixels, OffsetT num_rows, size_t row_stride_bytes)</argsstring>
+        <name>MultiHistogramEven</name>
+        <qualifiedname>muda::DeviceHistogram::MultiHistogramEven</qualifiedname>
+        <param>
+          <type>void *</type>
+          <declname>d_temp_storage</declname>
+        </param>
+        <param>
+          <type>size_t &amp;</type>
+          <declname>temp_storage_bytes</declname>
+        </param>
+        <param>
+          <type>SampleIteratorT</type>
+          <declname>d_samples</declname>
+        </param>
+        <param>
+          <type>CounterT *</type>
+          <declname>d_histogram</declname>
+          <array>[NUM_ACTIVE_CHANNELS]</array>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>num_levels</declname>
+          <array>[NUM_ACTIVE_CHANNELS]</array>
+        </param>
+        <param>
+          <type>LevelT</type>
+          <declname>lower_level</declname>
+          <array>[NUM_ACTIVE_CHANNELS]</array>
+        </param>
+        <param>
+          <type>LevelT</type>
+          <declname>upper_level</declname>
+          <array>[NUM_ACTIVE_CHANNELS]</array>
+        </param>
+        <param>
+          <type>OffsetT</type>
+          <declname>num_row_pixels</declname>
+        </param>
+        <param>
+          <type>OffsetT</type>
+          <declname>num_rows</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>row_stride_bytes</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/cub/device/device_histogram.h" line="247" column="21" bodyfile="src/muda/cub/device/device_histogram.h" bodystart="247" bodyend="271"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_device_histogram_1a18a6f82423dd2698957b5354103ebdb4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename SampleIteratorT</type>
+          </param>
+          <param>
+            <type>typename CounterT</type>
+          </param>
+          <param>
+            <type>typename LevelT</type>
+          </param>
+          <param>
+            <type>typename OffsetT</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classmuda_1_1_device_histogram" kindref="compound">DeviceHistogram</ref> &amp;</type>
+        <definition>DeviceHistogram &amp; muda::DeviceHistogram::HistogramRange</definition>
+        <argsstring>(void *d_temp_storage, size_t &amp;temp_storage_bytes, SampleIteratorT d_samples, CounterT *d_histogram, int num_levels, LevelT *d_levels, OffsetT num_samples)</argsstring>
+        <name>HistogramRange</name>
+        <qualifiedname>muda::DeviceHistogram::HistogramRange</qualifiedname>
+        <param>
+          <type>void *</type>
+          <declname>d_temp_storage</declname>
+        </param>
+        <param>
+          <type>size_t &amp;</type>
+          <declname>temp_storage_bytes</declname>
+        </param>
+        <param>
+          <type>SampleIteratorT</type>
+          <declname>d_samples</declname>
+        </param>
+        <param>
+          <type>CounterT *</type>
+          <declname>d_histogram</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>num_levels</declname>
+        </param>
+        <param>
+          <type>LevelT *</type>
+          <declname>d_levels</declname>
+        </param>
+        <param>
+          <type>OffsetT</type>
+          <declname>num_samples</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/cub/device/device_histogram.h" line="275" column="21" bodyfile="src/muda/cub/device/device_histogram.h" bodystart="275" bodyend="285"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_device_histogram_1a757192d5f18453b889f45930ce55b9fe" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename SampleIteratorT</type>
+          </param>
+          <param>
+            <type>typename CounterT</type>
+          </param>
+          <param>
+            <type>typename LevelT</type>
+          </param>
+          <param>
+            <type>typename OffsetT</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classmuda_1_1_device_histogram" kindref="compound">DeviceHistogram</ref> &amp;</type>
+        <definition>DeviceHistogram &amp; muda::DeviceHistogram::HistogramRange</definition>
+        <argsstring>(void *d_temp_storage, size_t &amp;temp_storage_bytes, SampleIteratorT d_samples, CounterT *d_histogram, int num_levels, LevelT *d_levels, OffsetT num_row_samples, OffsetT num_rows, size_t row_stride_bytes)</argsstring>
+        <name>HistogramRange</name>
+        <qualifiedname>muda::DeviceHistogram::HistogramRange</qualifiedname>
+        <param>
+          <type>void *</type>
+          <declname>d_temp_storage</declname>
+        </param>
+        <param>
+          <type>size_t &amp;</type>
+          <declname>temp_storage_bytes</declname>
+        </param>
+        <param>
+          <type>SampleIteratorT</type>
+          <declname>d_samples</declname>
+        </param>
+        <param>
+          <type>CounterT *</type>
+          <declname>d_histogram</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>num_levels</declname>
+        </param>
+        <param>
+          <type>LevelT *</type>
+          <declname>d_levels</declname>
+        </param>
+        <param>
+          <type>OffsetT</type>
+          <declname>num_row_samples</declname>
+        </param>
+        <param>
+          <type>OffsetT</type>
+          <declname>num_rows</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>row_stride_bytes</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/cub/device/device_histogram.h" line="289" column="21" bodyfile="src/muda/cub/device/device_histogram.h" bodystart="289" bodyend="311"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_device_histogram_1a155515e59764679a123a7d9e8d88fa75" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>int</type>
+            <declname>NUM_CHANNELS</declname>
+            <defname>NUM_CHANNELS</defname>
+          </param>
+          <param>
+            <type>int</type>
+            <declname>NUM_ACTIVE_CHANNELS</declname>
+            <defname>NUM_ACTIVE_CHANNELS</defname>
+          </param>
+          <param>
+            <type>typename SampleIteratorT</type>
+          </param>
+          <param>
+            <type>typename CounterT</type>
+          </param>
+          <param>
+            <type>typename LevelT</type>
+          </param>
+          <param>
+            <type>typename OffsetT</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classmuda_1_1_device_histogram" kindref="compound">DeviceHistogram</ref> &amp;</type>
+        <definition>DeviceHistogram &amp; muda::DeviceHistogram::MultiHistogramRange</definition>
+        <argsstring>(void *d_temp_storage, size_t &amp;temp_storage_bytes, SampleIteratorT d_samples, CounterT *d_histogram[NUM_ACTIVE_CHANNELS], int num_levels[NUM_ACTIVE_CHANNELS], LevelT *d_levels[NUM_ACTIVE_CHANNELS], OffsetT num_pixels)</argsstring>
+        <name>MultiHistogramRange</name>
+        <qualifiedname>muda::DeviceHistogram::MultiHistogramRange</qualifiedname>
+        <param>
+          <type>void *</type>
+          <declname>d_temp_storage</declname>
+        </param>
+        <param>
+          <type>size_t &amp;</type>
+          <declname>temp_storage_bytes</declname>
+        </param>
+        <param>
+          <type>SampleIteratorT</type>
+          <declname>d_samples</declname>
+        </param>
+        <param>
+          <type>CounterT *</type>
+          <declname>d_histogram</declname>
+          <array>[NUM_ACTIVE_CHANNELS]</array>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>num_levels</declname>
+          <array>[NUM_ACTIVE_CHANNELS]</array>
+        </param>
+        <param>
+          <type>LevelT *</type>
+          <declname>d_levels</declname>
+          <array>[NUM_ACTIVE_CHANNELS]</array>
+        </param>
+        <param>
+          <type>OffsetT</type>
+          <declname>num_pixels</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/cub/device/device_histogram.h" line="315" column="21" bodyfile="src/muda/cub/device/device_histogram.h" bodystart="315" bodyend="325"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_device_histogram_1a100f9bc92cca1d7163e5115d0bcfe5cf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>int</type>
+            <declname>NUM_CHANNELS</declname>
+            <defname>NUM_CHANNELS</defname>
+          </param>
+          <param>
+            <type>int</type>
+            <declname>NUM_ACTIVE_CHANNELS</declname>
+            <defname>NUM_ACTIVE_CHANNELS</defname>
+          </param>
+          <param>
+            <type>typename SampleIteratorT</type>
+          </param>
+          <param>
+            <type>typename CounterT</type>
+          </param>
+          <param>
+            <type>typename LevelT</type>
+          </param>
+          <param>
+            <type>typename OffsetT</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classmuda_1_1_device_histogram" kindref="compound">DeviceHistogram</ref> &amp;</type>
+        <definition>DeviceHistogram &amp; muda::DeviceHistogram::MultiHistogramRange</definition>
+        <argsstring>(void *d_temp_storage, size_t &amp;temp_storage_bytes, SampleIteratorT d_samples, CounterT *d_histogram[NUM_ACTIVE_CHANNELS], int num_levels[NUM_ACTIVE_CHANNELS], LevelT *d_levels[NUM_ACTIVE_CHANNELS], OffsetT num_row_pixels, OffsetT num_rows, size_t row_stride_bytes)</argsstring>
+        <name>MultiHistogramRange</name>
+        <qualifiedname>muda::DeviceHistogram::MultiHistogramRange</qualifiedname>
+        <param>
+          <type>void *</type>
+          <declname>d_temp_storage</declname>
+        </param>
+        <param>
+          <type>size_t &amp;</type>
+          <declname>temp_storage_bytes</declname>
+        </param>
+        <param>
+          <type>SampleIteratorT</type>
+          <declname>d_samples</declname>
+        </param>
+        <param>
+          <type>CounterT *</type>
+          <declname>d_histogram</declname>
+          <array>[NUM_ACTIVE_CHANNELS]</array>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>num_levels</declname>
+          <array>[NUM_ACTIVE_CHANNELS]</array>
+        </param>
+        <param>
+          <type>LevelT *</type>
+          <declname>d_levels</declname>
+          <array>[NUM_ACTIVE_CHANNELS]</array>
+        </param>
+        <param>
+          <type>OffsetT</type>
+          <declname>num_row_pixels</declname>
+        </param>
+        <param>
+          <type>OffsetT</type>
+          <declname>num_rows</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>row_stride_bytes</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/cub/device/device_histogram.h" line="329" column="21" bodyfile="src/muda/cub/device/device_histogram.h" bodystart="329" bodyend="351"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>muda::CubWrapper&lt; DeviceHistogram &gt;</label>
+        <link refid="classmuda_1_1_cub_wrapper"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>muda::DeviceHistogram</label>
+        <link refid="classmuda_1_1_device_histogram"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>muda::LaunchBase&lt; T &gt;</label>
+        <link refid="classmuda_1_1_launch_base"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>muda::LaunchCore</label>
+        <link refid="classmuda_1_1_launch_core"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>muda::CubWrapper&lt; DeviceHistogram &gt;</label>
+        <link refid="classmuda_1_1_cub_wrapper"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>m_muda_stream</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>muda::DeviceHistogram</label>
+        <link refid="classmuda_1_1_device_histogram"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>muda::LaunchBase&lt; T &gt;</label>
+        <link refid="classmuda_1_1_launch_base"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>muda::LaunchCore</label>
+        <link refid="classmuda_1_1_launch_core"/>
+      </node>
+      <node id="5">
+        <label>muda::Stream</label>
+        <link refid="classmuda_1_1_stream"/>
+      </node>
+    </collaborationgraph>
+    <location file="src/muda/cub/device/device_histogram.h" line="12" column="1" bodyfile="src/muda/cub/device/device_histogram.h" bodystart="13" bodyend="352"/>
+    <listofallmembers>
+      <member refid="classmuda_1_1_device_histogram_1a6db7b8aa1d10671cfbd696fe2dda07ea" prot="private" virt="non-virtual"><scope>muda::DeviceHistogram</scope><name>Base</name></member>
+      <member refid="classmuda_1_1_launch_base_1aa8490139890f43555c1b7baa57378616" prot="public" virt="non-virtual"><scope>muda::DeviceHistogram</scope><name>callback</name></member>
+      <member refid="classmuda_1_1_cub_wrapper_1a846ad2ff72dccee396a542f1ec0b4aeb" prot="public" virt="non-virtual"><scope>muda::DeviceHistogram</scope><name>CubWrapper</name></member>
+      <member refid="classmuda_1_1_launch_base_1a8a59e9a27775e4e12ca19a6d590790f4" prot="public" virt="non-virtual"><scope>muda::DeviceHistogram</scope><name>derived_type</name></member>
+      <member refid="classmuda_1_1_launch_base_1aee4564eac54df98ab98085379370a2ec" prot="public" virt="non-virtual"><scope>muda::DeviceHistogram</scope><name>file_line</name></member>
+      <member refid="classmuda_1_1_device_histogram_1a6e91dab0554823a7150de481f3d45f56" prot="public" virt="non-virtual"><scope>muda::DeviceHistogram</scope><name>HistogramEven</name></member>
+      <member refid="classmuda_1_1_device_histogram_1abd4834048dc0b785e34e577c27322ee1" prot="public" virt="non-virtual"><scope>muda::DeviceHistogram</scope><name>HistogramEven</name></member>
+      <member refid="classmuda_1_1_device_histogram_1ae5fe39f8a0f77499d2e000a87a7060da" prot="public" virt="non-virtual"><scope>muda::DeviceHistogram</scope><name>HistogramEven</name></member>
+      <member refid="classmuda_1_1_device_histogram_1a5bff912cb8c4fc2a83f479c96368ee90" prot="public" virt="non-virtual"><scope>muda::DeviceHistogram</scope><name>HistogramEven</name></member>
+      <member refid="classmuda_1_1_device_histogram_1a7f70388fcc6e066709482cc9ebdd60a1" prot="public" virt="non-virtual"><scope>muda::DeviceHistogram</scope><name>HistogramRange</name></member>
+      <member refid="classmuda_1_1_device_histogram_1a20d9b59a62dbd8c402cd8f1d4b37740b" prot="public" virt="non-virtual"><scope>muda::DeviceHistogram</scope><name>HistogramRange</name></member>
+      <member refid="classmuda_1_1_device_histogram_1a18a6f82423dd2698957b5354103ebdb4" prot="public" virt="non-virtual"><scope>muda::DeviceHistogram</scope><name>HistogramRange</name></member>
+      <member refid="classmuda_1_1_device_histogram_1a757192d5f18453b889f45930ce55b9fe" prot="public" virt="non-virtual"><scope>muda::DeviceHistogram</scope><name>HistogramRange</name></member>
+      <member refid="classmuda_1_1_launch_core_1a38c542a99edea149552d82639e385ab5" prot="public" virt="non-virtual"><scope>muda::DeviceHistogram</scope><name>init_stream</name></member>
+      <member refid="classmuda_1_1_cub_wrapper_1a71f741726d4ab894c196264043bd2922" prot="public" virt="non-virtual"><scope>muda::DeviceHistogram</scope><name>kernel_name</name></member>
+      <member refid="classmuda_1_1_launch_base_1ab73495b0bfa3a7a1864284aebceb51a8" prot="public" virt="non-virtual"><scope>muda::DeviceHistogram</scope><name>LaunchBase</name></member>
+      <member refid="classmuda_1_1_launch_core_1a8503eff885f818a12319ca57dfd75011" prot="public" virt="non-virtual"><scope>muda::DeviceHistogram</scope><name>LaunchCore</name></member>
+      <member refid="classmuda_1_1_cub_wrapper_1a5e0f31303ea2f56ba4cfe04fb2ca7738" prot="public" virt="non-virtual"><scope>muda::DeviceHistogram</scope><name>m_muda_stream</name></member>
+      <member refid="classmuda_1_1_launch_core_1a3b5544456087d57904981118c4cdcaf8" prot="protected" virt="non-virtual"><scope>muda::DeviceHistogram</scope><name>m_stream</name></member>
+      <member refid="classmuda_1_1_device_histogram_1ae08a10052b61c8f94e01921440c991d2" prot="public" virt="non-virtual"><scope>muda::DeviceHistogram</scope><name>MultiHistogramEven</name></member>
+      <member refid="classmuda_1_1_device_histogram_1ae092247d193a2c4b4cee650948d5d08b" prot="public" virt="non-virtual"><scope>muda::DeviceHistogram</scope><name>MultiHistogramEven</name></member>
+      <member refid="classmuda_1_1_device_histogram_1ad1084356392e03b09b289627dc0661d0" prot="public" virt="non-virtual"><scope>muda::DeviceHistogram</scope><name>MultiHistogramEven</name></member>
+      <member refid="classmuda_1_1_device_histogram_1adc9352e5015a93a6a5ff91ef8074de0a" prot="public" virt="non-virtual"><scope>muda::DeviceHistogram</scope><name>MultiHistogramEven</name></member>
+      <member refid="classmuda_1_1_device_histogram_1a7596cf1bf8f0c654d227d8339381a9da" prot="public" virt="non-virtual"><scope>muda::DeviceHistogram</scope><name>MultiHistogramRange</name></member>
+      <member refid="classmuda_1_1_device_histogram_1a45bb48ff8fe1f9189b0c0c23c6151854" prot="public" virt="non-virtual"><scope>muda::DeviceHistogram</scope><name>MultiHistogramRange</name></member>
+      <member refid="classmuda_1_1_device_histogram_1a155515e59764679a123a7d9e8d88fa75" prot="public" virt="non-virtual"><scope>muda::DeviceHistogram</scope><name>MultiHistogramRange</name></member>
+      <member refid="classmuda_1_1_device_histogram_1a100f9bc92cca1d7163e5115d0bcfe5cf" prot="public" virt="non-virtual"><scope>muda::DeviceHistogram</scope><name>MultiHistogramRange</name></member>
+      <member refid="classmuda_1_1_launch_base_1a395b0a10fee3bf2c591f49a3119df1b8" prot="public" virt="non-virtual"><scope>muda::DeviceHistogram</scope><name>next</name></member>
+      <member refid="classmuda_1_1_launch_base_1a841db3ede786d3312a6ca2de2139ad10" prot="public" virt="non-virtual"><scope>muda::DeviceHistogram</scope><name>next</name></member>
+      <member refid="classmuda_1_1_launch_base_1a65538f7d445fa3cc56ab33e609fe566a" prot="protected" virt="non-virtual"><scope>muda::DeviceHistogram</scope><name>pop_kernel_label</name></member>
+      <member refid="classmuda_1_1_launch_base_1ab6b75621024e7977edcdff26c04bcdc1" prot="public" virt="non-virtual"><scope>muda::DeviceHistogram</scope><name>pop_range</name></member>
+      <member refid="classmuda_1_1_cub_wrapper_1af1007ebfdee88f21fd67283499730991" prot="protected" virt="non-virtual"><scope>muda::DeviceHistogram</scope><name>prepare_buffer</name></member>
+      <member refid="classmuda_1_1_launch_base_1ad6dcaaf3ea0726809ebbdb10084c3183" prot="public" virt="non-virtual"><scope>muda::DeviceHistogram</scope><name>push_range</name></member>
+      <member refid="classmuda_1_1_launch_base_1ad069d4ad6219f5a3b51e7c8d9e4d596f" prot="public" virt="non-virtual"><scope>muda::DeviceHistogram</scope><name>record</name></member>
+      <member refid="classmuda_1_1_launch_base_1a12cf6b18c76787654460c1c043907547" prot="public" virt="non-virtual"><scope>muda::DeviceHistogram</scope><name>record</name></member>
+      <member refid="classmuda_1_1_launch_base_1a77d57b9368424d70cd740af6eaf45a6f" prot="public" virt="non-virtual"><scope>muda::DeviceHistogram</scope><name>record</name></member>
+      <member refid="classmuda_1_1_launch_core_1a8aeb9e37d421f835e0fcae124e3ce0de" prot="protected" virt="non-virtual"><scope>muda::DeviceHistogram</scope><name>S</name></member>
+      <member refid="classmuda_1_1_launch_core_1ab78b991329337c97d2ac3e32e995a62f" prot="protected" virt="non-virtual"><scope>muda::DeviceHistogram</scope><name>stream</name></member>
+      <member refid="classmuda_1_1_launch_base_1a88cbf9478fbeaa7434ece7f300dc1c0e" prot="public" virt="non-virtual"><scope>muda::DeviceHistogram</scope><name>wait</name></member>
+      <member refid="classmuda_1_1_launch_base_1ab0fc5fbed4ec5f69a3b599af99900d98" prot="public" virt="non-virtual"><scope>muda::DeviceHistogram</scope><name>wait</name></member>
+      <member refid="classmuda_1_1_launch_base_1acbf042e86efae1683e2ab08c95095da7" prot="public" virt="non-virtual"><scope>muda::DeviceHistogram</scope><name>wait</name></member>
+      <member refid="classmuda_1_1_launch_base_1abe061bff24568f9c2fcf326a62843292" prot="public" virt="non-virtual"><scope>muda::DeviceHistogram</scope><name>wait</name></member>
+      <member refid="classmuda_1_1_launch_core_1a58e970f699c546d37c70af9bb4d3a93c" prot="public" virt="non-virtual"><scope>muda::DeviceHistogram</scope><name>wait_device</name></member>
+      <member refid="classmuda_1_1_launch_core_1a7b29e878817d4e42bc533edc0c89b645" prot="public" virt="non-virtual"><scope>muda::DeviceHistogram</scope><name>wait_event</name></member>
+      <member refid="classmuda_1_1_launch_core_1a73d5d54a7b3b59dcf8eea792e796337b" prot="public" virt="non-virtual"><scope>muda::DeviceHistogram</scope><name>wait_stream</name></member>
+      <member refid="classmuda_1_1_launch_base_1a59a525fea511ea1c90f5857be5d62d43" prot="public" virt="non-virtual"><scope>muda::DeviceHistogram</scope><name>when</name></member>
+      <member refid="classmuda_1_1_launch_base_1a543548ac0516b2c10adba68d2ae7066b" prot="public" virt="non-virtual"><scope>muda::DeviceHistogram</scope><name>~LaunchBase</name></member>
+      <member refid="classmuda_1_1_launch_core_1a5e4ae3435bce9d4ad706b5e347a3040f" prot="public" virt="non-virtual"><scope>muda::DeviceHistogram</scope><name>~LaunchCore</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

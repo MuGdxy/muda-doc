@@ -1,0 +1,651 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classmuda_1_1_matrix_format_converter" kind="class" language="C++" prot="public">
+    <compoundname>muda::MatrixFormatConverter</compoundname>
+    <sectiondef kind="private-type">
+      <memberdef kind="typedef" id="classmuda_1_1_matrix_format_converter_1ab85a0b1ed41d31be7df3b20407cac88e" prot="private" static="no">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>std::unique_ptr&lt; T &gt;</type>
+        <definition>using muda::MatrixFormatConverter::U =  std::unique_ptr&lt;T&gt;</definition>
+        <argsstring></argsstring>
+        <name>U</name>
+        <qualifiedname>muda::MatrixFormatConverter::U</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/matrix_format_converter.h" line="50" column="5" bodyfile="src/muda/ext/linear_system/matrix_format_converter.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classmuda_1_1_matrix_format_converter_1ac1a6a53f7cde2d20e0eed64060d5edba" prot="private" static="no">
+        <type>std::pair&lt; cudaDataType_t, int &gt;</type>
+        <definition>using muda::MatrixFormatConverter::TypeN =  std::pair&lt;cudaDataType_t, int&gt;</definition>
+        <argsstring></argsstring>
+        <name>TypeN</name>
+        <qualifiedname>muda::MatrixFormatConverter::TypeN</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/matrix_format_converter.h" line="52" column="5" bodyfile="src/muda/ext/linear_system/matrix_format_converter.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classmuda_1_1_matrix_format_converter_1a16c13aeeb2bb21bde8c0ded76c3a5cbf" prot="private" static="no" mutable="no">
+        <type><ref refid="classmuda_1_1_linear_system_handles" kindref="compound">LinearSystemHandles</ref> &amp;</type>
+        <definition>LinearSystemHandles&amp; muda::MatrixFormatConverter::m_handles</definition>
+        <argsstring></argsstring>
+        <name>m_handles</name>
+        <qualifiedname>muda::MatrixFormatConverter::m_handles</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/matrix_format_converter.h" line="51" column="25" bodyfile="src/muda/ext/linear_system/matrix_format_converter.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1_matrix_format_converter_1a63ab87dd0ba5c28468e5df508bcbf1ce" prot="private" static="no" mutable="no">
+        <type>std::unordered_map&lt; <ref refid="classmuda_1_1details_1_1_matrix_format_converter_type" kindref="compound">details::MatrixFormatConverterType</ref>, U&lt; <ref refid="classmuda_1_1details_1_1_matrix_format_converter_base" kindref="compound">details::MatrixFormatConverterBase</ref> &gt; &gt;</type>
+        <definition>std::unordered_map&lt;details::MatrixFormatConverterType, U&lt;details::MatrixFormatConverterBase&gt; &gt; muda::MatrixFormatConverter::m_impls</definition>
+        <argsstring></argsstring>
+        <name>m_impls</name>
+        <qualifiedname>muda::MatrixFormatConverter::m_impls</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/matrix_format_converter.h" line="53" column="24" bodyfile="src/muda/ext/linear_system/matrix_format_converter.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1_matrix_format_converter_1acce717e8255ebf193b5ccc6bbfa2e7f3" prot="private" static="no" mutable="no">
+        <type><ref refid="classmuda_1_1details_1_1_matrix_format_converter_base" kindref="compound">details::MatrixFormatConverterBase</ref> *</type>
+        <definition>details::MatrixFormatConverterBase* muda::MatrixFormatConverter::current</definition>
+        <argsstring></argsstring>
+        <name>current</name>
+        <qualifiedname>muda::MatrixFormatConverter::current</qualifiedname>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/matrix_format_converter.h" line="54" column="40" bodyfile="src/muda/ext/linear_system/matrix_format_converter.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classmuda_1_1_matrix_format_converter_1a75a378de90afc933d6a2b844b0c3c713" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+          <param>
+            <type>int</type>
+            <declname>N</declname>
+            <defname>N</defname>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classmuda_1_1details_1_1_matrix_format_converter" kindref="compound">details::MatrixFormatConverter</ref>&lt; T, N &gt; &amp;</type>
+        <definition>details::MatrixFormatConverter&lt; T, N &gt; &amp; muda::MatrixFormatConverter::impl</definition>
+        <argsstring>()</argsstring>
+        <name>impl</name>
+        <qualifiedname>muda::MatrixFormatConverter::impl</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/matrix_format_converter.h" line="56" column="36"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmuda_1_1_matrix_format_converter_1a33be3ce70f70cec60a1f2c55bad08476" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>muda::MatrixFormatConverter::MatrixFormatConverter</definition>
+        <argsstring>(LinearSystemHandles &amp;handles)</argsstring>
+        <name>MatrixFormatConverter</name>
+        <qualifiedname>muda::MatrixFormatConverter::MatrixFormatConverter</qualifiedname>
+        <param>
+          <type><ref refid="classmuda_1_1_linear_system_handles" kindref="compound">LinearSystemHandles</ref> &amp;</type>
+          <declname>handles</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/matrix_format_converter.h" line="59" column="5" bodyfile="src/muda/ext/linear_system/matrix_format_converter.h" bodystart="59" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_matrix_format_converter_1acafd5e9bd89ad530959c4a076fe0cb43" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>muda::MatrixFormatConverter::~MatrixFormatConverter</definition>
+        <argsstring>()</argsstring>
+        <name>~MatrixFormatConverter</name>
+        <qualifiedname>muda::MatrixFormatConverter::~MatrixFormatConverter</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/matrix_format_converter.h" line="63" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_matrix_format_converter_1a8c4b0df7cabd9a3cfcc10431aabbc2d5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+          <param>
+            <type>int</type>
+            <declname>N</declname>
+            <defname>N</defname>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void muda::MatrixFormatConverter::convert</definition>
+        <argsstring>(const DeviceTripletMatrix&lt; T, N &gt; &amp;from, DeviceBCOOMatrix&lt; T, N &gt; &amp;to)</argsstring>
+        <name>convert</name>
+        <qualifiedname>muda::MatrixFormatConverter::convert</qualifiedname>
+        <param>
+          <type>const <ref refid="classmuda_1_1_device_triplet_matrix" kindref="compound">DeviceTripletMatrix</ref>&lt; T, N &gt; &amp;</type>
+          <declname>from</declname>
+        </param>
+        <param>
+          <type><ref refid="classmuda_1_1_device_b_c_o_o_matrix" kindref="compound">DeviceBCOOMatrix</ref>&lt; T, N &gt; &amp;</type>
+          <declname>to</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/matrix_format_converter.h" line="67" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_matrix_format_converter_1a9ec4215ecd63c6a47be3a73010006169" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+          <param>
+            <type>int</type>
+            <declname>N</declname>
+            <defname>N</defname>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void muda::MatrixFormatConverter::convert</definition>
+        <argsstring>(const DeviceBCOOMatrix&lt; T, N &gt; &amp;from, DeviceDenseMatrix&lt; T &gt; &amp;to, bool clear_dense_matrix=true)</argsstring>
+        <name>convert</name>
+        <qualifiedname>muda::MatrixFormatConverter::convert</qualifiedname>
+        <param>
+          <type>const <ref refid="classmuda_1_1_device_b_c_o_o_matrix" kindref="compound">DeviceBCOOMatrix</ref>&lt; T, N &gt; &amp;</type>
+          <declname>from</declname>
+        </param>
+        <param>
+          <type><ref refid="classmuda_1_1_device_dense_matrix" kindref="compound">DeviceDenseMatrix</ref>&lt; T &gt; &amp;</type>
+          <declname>to</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>clear_dense_matrix</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/matrix_format_converter.h" line="71" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_matrix_format_converter_1ae1edfe03f87a42be8fccc4c76aa1667d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+          <param>
+            <type>int</type>
+            <declname>N</declname>
+            <defname>N</defname>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void muda::MatrixFormatConverter::convert</definition>
+        <argsstring>(const DeviceBCOOMatrix&lt; T, N &gt; &amp;from, DeviceCOOMatrix&lt; T &gt; &amp;to)</argsstring>
+        <name>convert</name>
+        <qualifiedname>muda::MatrixFormatConverter::convert</qualifiedname>
+        <param>
+          <type>const <ref refid="classmuda_1_1_device_b_c_o_o_matrix" kindref="compound">DeviceBCOOMatrix</ref>&lt; T, N &gt; &amp;</type>
+          <declname>from</declname>
+        </param>
+        <param>
+          <type><ref refid="classmuda_1_1_device_b_c_o_o_matrix" kindref="compound">DeviceCOOMatrix</ref>&lt; T &gt; &amp;</type>
+          <declname>to</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/matrix_format_converter.h" line="77" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_matrix_format_converter_1ad8fff4692b0c88f4dd061f2c89c78eaf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+          <param>
+            <type>int</type>
+            <declname>N</declname>
+            <defname>N</defname>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void muda::MatrixFormatConverter::convert</definition>
+        <argsstring>(const DeviceBCOOMatrix&lt; T, N &gt; &amp;from, DeviceBSRMatrix&lt; T, N &gt; &amp;to)</argsstring>
+        <name>convert</name>
+        <qualifiedname>muda::MatrixFormatConverter::convert</qualifiedname>
+        <param>
+          <type>const <ref refid="classmuda_1_1_device_b_c_o_o_matrix" kindref="compound">DeviceBCOOMatrix</ref>&lt; T, N &gt; &amp;</type>
+          <declname>from</declname>
+        </param>
+        <param>
+          <type><ref refid="classmuda_1_1_device_b_s_r_matrix" kindref="compound">DeviceBSRMatrix</ref>&lt; T, N &gt; &amp;</type>
+          <declname>to</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/matrix_format_converter.h" line="81" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_matrix_format_converter_1a7725251e77d1b6cdbf858e550567841d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+          <param>
+            <type>int</type>
+            <declname>N</declname>
+            <defname>N</defname>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void muda::MatrixFormatConverter::convert</definition>
+        <argsstring>(const DeviceDoubletVector&lt; T, N &gt; &amp;from, DeviceBCOOVector&lt; T, N &gt; &amp;to)</argsstring>
+        <name>convert</name>
+        <qualifiedname>muda::MatrixFormatConverter::convert</qualifiedname>
+        <param>
+          <type>const <ref refid="classmuda_1_1_device_doublet_vector" kindref="compound">DeviceDoubletVector</ref>&lt; T, N &gt; &amp;</type>
+          <declname>from</declname>
+        </param>
+        <param>
+          <type><ref refid="classmuda_1_1_device_b_c_o_o_vector" kindref="compound">DeviceBCOOVector</ref>&lt; T, N &gt; &amp;</type>
+          <declname>to</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/matrix_format_converter.h" line="85" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_matrix_format_converter_1af1a1508e8e4838ad2ac7136e2a05f507" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+          <param>
+            <type>int</type>
+            <declname>N</declname>
+            <defname>N</defname>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void muda::MatrixFormatConverter::convert</definition>
+        <argsstring>(const DeviceBCOOVector&lt; T, N &gt; &amp;from, DeviceDenseVector&lt; T &gt; &amp;to, bool clear_dense_vector=true)</argsstring>
+        <name>convert</name>
+        <qualifiedname>muda::MatrixFormatConverter::convert</qualifiedname>
+        <param>
+          <type>const <ref refid="classmuda_1_1_device_b_c_o_o_vector" kindref="compound">DeviceBCOOVector</ref>&lt; T, N &gt; &amp;</type>
+          <declname>from</declname>
+        </param>
+        <param>
+          <type><ref refid="classmuda_1_1_device_dense_vector" kindref="compound">DeviceDenseVector</ref>&lt; T &gt; &amp;</type>
+          <declname>to</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>clear_dense_vector</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/matrix_format_converter.h" line="89" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_matrix_format_converter_1a4e0fb86f22919fdf04bfc9fc295b5b65" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+          <param>
+            <type>int</type>
+            <declname>N</declname>
+            <defname>N</defname>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void muda::MatrixFormatConverter::convert</definition>
+        <argsstring>(const DeviceDoubletVector&lt; T, N &gt; &amp;from, DeviceDenseVector&lt; T &gt; &amp;to, bool clear_dense_vector=true)</argsstring>
+        <name>convert</name>
+        <qualifiedname>muda::MatrixFormatConverter::convert</qualifiedname>
+        <param>
+          <type>const <ref refid="classmuda_1_1_device_doublet_vector" kindref="compound">DeviceDoubletVector</ref>&lt; T, N &gt; &amp;</type>
+          <declname>from</declname>
+        </param>
+        <param>
+          <type><ref refid="classmuda_1_1_device_dense_vector" kindref="compound">DeviceDenseVector</ref>&lt; T &gt; &amp;</type>
+          <declname>to</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>clear_dense_vector</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/matrix_format_converter.h" line="95" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_matrix_format_converter_1a83766692c42863419f73ef77058085cc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+          <param>
+            <type>int</type>
+            <declname>N</declname>
+            <defname>N</defname>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void muda::MatrixFormatConverter::convert</definition>
+        <argsstring>(const DeviceBSRMatrix&lt; T, N &gt; &amp;from, DeviceCSRMatrix&lt; T &gt; &amp;to)</argsstring>
+        <name>convert</name>
+        <qualifiedname>muda::MatrixFormatConverter::convert</qualifiedname>
+        <param>
+          <type>const <ref refid="classmuda_1_1_device_b_s_r_matrix" kindref="compound">DeviceBSRMatrix</ref>&lt; T, N &gt; &amp;</type>
+          <declname>from</declname>
+        </param>
+        <param>
+          <type><ref refid="classmuda_1_1_device_c_s_r_matrix" kindref="compound">DeviceCSRMatrix</ref>&lt; T &gt; &amp;</type>
+          <declname>to</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/matrix_format_converter.h" line="101" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_matrix_format_converter_1ac677c78650a7435986a5f12f1006660c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void muda::MatrixFormatConverter::convert</definition>
+        <argsstring>(const DeviceTripletMatrix&lt; T, 1 &gt; &amp;from, DeviceCOOMatrix&lt; T &gt; &amp;to)</argsstring>
+        <name>convert</name>
+        <qualifiedname>muda::MatrixFormatConverter::convert</qualifiedname>
+        <param>
+          <type>const <ref refid="classmuda_1_1_device_triplet_matrix" kindref="compound">DeviceTripletMatrix</ref>&lt; T, 1 &gt; &amp;</type>
+          <declname>from</declname>
+        </param>
+        <param>
+          <type><ref refid="classmuda_1_1_device_b_c_o_o_matrix" kindref="compound">DeviceCOOMatrix</ref>&lt; T &gt; &amp;</type>
+          <declname>to</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/matrix_format_converter.h" line="105" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_matrix_format_converter_1ab92c3a163dc006cfa7011f9078b81b53" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void muda::MatrixFormatConverter::convert</definition>
+        <argsstring>(const DeviceCOOMatrix&lt; T &gt; &amp;from, DeviceDenseMatrix&lt; T &gt; &amp;to, bool clear_dense_matrix=true)</argsstring>
+        <name>convert</name>
+        <qualifiedname>muda::MatrixFormatConverter::convert</qualifiedname>
+        <param>
+          <type>const <ref refid="classmuda_1_1_device_b_c_o_o_matrix" kindref="compound">DeviceCOOMatrix</ref>&lt; T &gt; &amp;</type>
+          <declname>from</declname>
+        </param>
+        <param>
+          <type><ref refid="classmuda_1_1_device_dense_matrix" kindref="compound">DeviceDenseMatrix</ref>&lt; T &gt; &amp;</type>
+          <declname>to</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>clear_dense_matrix</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/matrix_format_converter.h" line="109" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_matrix_format_converter_1aff4ed88774cf4f6612ea4d08f7677a55" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void muda::MatrixFormatConverter::convert</definition>
+        <argsstring>(const DeviceCOOMatrix&lt; T &gt; &amp;from, DeviceCSRMatrix&lt; T &gt; &amp;to)</argsstring>
+        <name>convert</name>
+        <qualifiedname>muda::MatrixFormatConverter::convert</qualifiedname>
+        <param>
+          <type>const <ref refid="classmuda_1_1_device_b_c_o_o_matrix" kindref="compound">DeviceCOOMatrix</ref>&lt; T &gt; &amp;</type>
+          <declname>from</declname>
+        </param>
+        <param>
+          <type><ref refid="classmuda_1_1_device_c_s_r_matrix" kindref="compound">DeviceCSRMatrix</ref>&lt; T &gt; &amp;</type>
+          <declname>to</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/matrix_format_converter.h" line="115" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_matrix_format_converter_1a1ae8b6472185ac0c8210416dd34e7f5d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void muda::MatrixFormatConverter::convert</definition>
+        <argsstring>(DeviceCOOMatrix&lt; T &gt; &amp;&amp;from, DeviceCSRMatrix&lt; T &gt; &amp;to)</argsstring>
+        <name>convert</name>
+        <qualifiedname>muda::MatrixFormatConverter::convert</qualifiedname>
+        <param>
+          <type><ref refid="classmuda_1_1_device_b_c_o_o_matrix" kindref="compound">DeviceCOOMatrix</ref>&lt; T &gt; &amp;&amp;</type>
+          <declname>from</declname>
+        </param>
+        <param>
+          <type><ref refid="classmuda_1_1_device_c_s_r_matrix" kindref="compound">DeviceCSRMatrix</ref>&lt; T &gt; &amp;</type>
+          <declname>to</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/matrix_format_converter.h" line="117" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_matrix_format_converter_1af5baaf248cbd41d084e389d8d4dbb6a1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void muda::MatrixFormatConverter::convert</definition>
+        <argsstring>(const DeviceDoubletVector&lt; T, 1 &gt; &amp;from, DeviceCOOVector&lt; T &gt; &amp;to)</argsstring>
+        <name>convert</name>
+        <qualifiedname>muda::MatrixFormatConverter::convert</qualifiedname>
+        <param>
+          <type>const <ref refid="classmuda_1_1_device_doublet_vector" kindref="compound">DeviceDoubletVector</ref>&lt; T, 1 &gt; &amp;</type>
+          <declname>from</declname>
+        </param>
+        <param>
+          <type><ref refid="classmuda_1_1_device_b_c_o_o_vector_3_01_t_00_011_01_4" kindref="compound">DeviceCOOVector</ref>&lt; T &gt; &amp;</type>
+          <declname>to</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/matrix_format_converter.h" line="121" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_matrix_format_converter_1aa141b98f502b7902390cf28b3171e5d1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void muda::MatrixFormatConverter::convert</definition>
+        <argsstring>(const DeviceCOOVector&lt; T &gt; &amp;from, DeviceDenseVector&lt; T &gt; &amp;to, bool clear_dense_vector=true)</argsstring>
+        <name>convert</name>
+        <qualifiedname>muda::MatrixFormatConverter::convert</qualifiedname>
+        <param>
+          <type>const <ref refid="classmuda_1_1_device_b_c_o_o_vector_3_01_t_00_011_01_4" kindref="compound">DeviceCOOVector</ref>&lt; T &gt; &amp;</type>
+          <declname>from</declname>
+        </param>
+        <param>
+          <type><ref refid="classmuda_1_1_device_dense_vector" kindref="compound">DeviceDenseVector</ref>&lt; T &gt; &amp;</type>
+          <declname>to</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>clear_dense_vector</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/matrix_format_converter.h" line="125" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_matrix_format_converter_1add481a0f15431e34d131a51c4b1c6ea7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void muda::MatrixFormatConverter::convert</definition>
+        <argsstring>(const DeviceDoubletVector&lt; T, 1 &gt; &amp;from, DeviceDenseVector&lt; T &gt; &amp;to, bool clear_dense_vector=true)</argsstring>
+        <name>convert</name>
+        <qualifiedname>muda::MatrixFormatConverter::convert</qualifiedname>
+        <param>
+          <type>const <ref refid="classmuda_1_1_device_doublet_vector" kindref="compound">DeviceDoubletVector</ref>&lt; T, 1 &gt; &amp;</type>
+          <declname>from</declname>
+        </param>
+        <param>
+          <type><ref refid="classmuda_1_1_device_dense_vector" kindref="compound">DeviceDenseVector</ref>&lt; T &gt; &amp;</type>
+          <declname>to</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>clear_dense_vector</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/matrix_format_converter.h" line="131" column="10"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/muda/ext/linear_system/matrix_format_converter.h" line="47" column="1" bodyfile="src/muda/ext/linear_system/matrix_format_converter.h" bodystart="48" bodyend="134"/>
+    <listofallmembers>
+      <member refid="classmuda_1_1_matrix_format_converter_1a8c4b0df7cabd9a3cfcc10431aabbc2d5" prot="public" virt="non-virtual"><scope>muda::MatrixFormatConverter</scope><name>convert</name></member>
+      <member refid="classmuda_1_1_matrix_format_converter_1a9ec4215ecd63c6a47be3a73010006169" prot="public" virt="non-virtual"><scope>muda::MatrixFormatConverter</scope><name>convert</name></member>
+      <member refid="classmuda_1_1_matrix_format_converter_1ae1edfe03f87a42be8fccc4c76aa1667d" prot="public" virt="non-virtual"><scope>muda::MatrixFormatConverter</scope><name>convert</name></member>
+      <member refid="classmuda_1_1_matrix_format_converter_1ad8fff4692b0c88f4dd061f2c89c78eaf" prot="public" virt="non-virtual"><scope>muda::MatrixFormatConverter</scope><name>convert</name></member>
+      <member refid="classmuda_1_1_matrix_format_converter_1a7725251e77d1b6cdbf858e550567841d" prot="public" virt="non-virtual"><scope>muda::MatrixFormatConverter</scope><name>convert</name></member>
+      <member refid="classmuda_1_1_matrix_format_converter_1af1a1508e8e4838ad2ac7136e2a05f507" prot="public" virt="non-virtual"><scope>muda::MatrixFormatConverter</scope><name>convert</name></member>
+      <member refid="classmuda_1_1_matrix_format_converter_1a4e0fb86f22919fdf04bfc9fc295b5b65" prot="public" virt="non-virtual"><scope>muda::MatrixFormatConverter</scope><name>convert</name></member>
+      <member refid="classmuda_1_1_matrix_format_converter_1a83766692c42863419f73ef77058085cc" prot="public" virt="non-virtual"><scope>muda::MatrixFormatConverter</scope><name>convert</name></member>
+      <member refid="classmuda_1_1_matrix_format_converter_1ac677c78650a7435986a5f12f1006660c" prot="public" virt="non-virtual"><scope>muda::MatrixFormatConverter</scope><name>convert</name></member>
+      <member refid="classmuda_1_1_matrix_format_converter_1ab92c3a163dc006cfa7011f9078b81b53" prot="public" virt="non-virtual"><scope>muda::MatrixFormatConverter</scope><name>convert</name></member>
+      <member refid="classmuda_1_1_matrix_format_converter_1aff4ed88774cf4f6612ea4d08f7677a55" prot="public" virt="non-virtual"><scope>muda::MatrixFormatConverter</scope><name>convert</name></member>
+      <member refid="classmuda_1_1_matrix_format_converter_1a1ae8b6472185ac0c8210416dd34e7f5d" prot="public" virt="non-virtual"><scope>muda::MatrixFormatConverter</scope><name>convert</name></member>
+      <member refid="classmuda_1_1_matrix_format_converter_1af5baaf248cbd41d084e389d8d4dbb6a1" prot="public" virt="non-virtual"><scope>muda::MatrixFormatConverter</scope><name>convert</name></member>
+      <member refid="classmuda_1_1_matrix_format_converter_1aa141b98f502b7902390cf28b3171e5d1" prot="public" virt="non-virtual"><scope>muda::MatrixFormatConverter</scope><name>convert</name></member>
+      <member refid="classmuda_1_1_matrix_format_converter_1add481a0f15431e34d131a51c4b1c6ea7" prot="public" virt="non-virtual"><scope>muda::MatrixFormatConverter</scope><name>convert</name></member>
+      <member refid="classmuda_1_1_matrix_format_converter_1acce717e8255ebf193b5ccc6bbfa2e7f3" prot="private" virt="non-virtual"><scope>muda::MatrixFormatConverter</scope><name>current</name></member>
+      <member refid="classmuda_1_1_matrix_format_converter_1a75a378de90afc933d6a2b844b0c3c713" prot="private" virt="non-virtual"><scope>muda::MatrixFormatConverter</scope><name>impl</name></member>
+      <member refid="classmuda_1_1_matrix_format_converter_1a16c13aeeb2bb21bde8c0ded76c3a5cbf" prot="private" virt="non-virtual"><scope>muda::MatrixFormatConverter</scope><name>m_handles</name></member>
+      <member refid="classmuda_1_1_matrix_format_converter_1a63ab87dd0ba5c28468e5df508bcbf1ce" prot="private" virt="non-virtual"><scope>muda::MatrixFormatConverter</scope><name>m_impls</name></member>
+      <member refid="classmuda_1_1_matrix_format_converter_1a33be3ce70f70cec60a1f2c55bad08476" prot="public" virt="non-virtual"><scope>muda::MatrixFormatConverter</scope><name>MatrixFormatConverter</name></member>
+      <member refid="classmuda_1_1_matrix_format_converter_1ac1a6a53f7cde2d20e0eed64060d5edba" prot="private" virt="non-virtual"><scope>muda::MatrixFormatConverter</scope><name>TypeN</name></member>
+      <member refid="classmuda_1_1_matrix_format_converter_1ab85a0b1ed41d31be7df3b20407cac88e" prot="private" virt="non-virtual"><scope>muda::MatrixFormatConverter</scope><name>U</name></member>
+      <member refid="classmuda_1_1_matrix_format_converter_1acafd5e9bd89ad530959c4a076fe0cb43" prot="public" virt="non-virtual"><scope>muda::MatrixFormatConverter</scope><name>~MatrixFormatConverter</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

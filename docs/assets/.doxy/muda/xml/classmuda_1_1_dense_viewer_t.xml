@@ -1,0 +1,423 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classmuda_1_1_dense_viewer_t" kind="class" language="C++" prot="public">
+    <compoundname>muda::DenseViewerT</compoundname>
+    <basecompoundref refid="classmuda_1_1_viewer_base" prot="public" virt="non-virtual">muda::ViewerBase&lt; IsConst &gt;</basecompoundref>
+    <templateparamlist>
+      <param>
+        <type>bool</type>
+        <declname>IsConst</declname>
+        <defname>IsConst</defname>
+      </param>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="private-type">
+      <memberdef kind="typedef" id="classmuda_1_1_dense_viewer_t_1aff2270d65a4c46857a02e36386bd1f4f" prot="private" static="no">
+        <type><ref refid="classmuda_1_1_viewer_base" kindref="compound">ViewerBase</ref>&lt; IsConst &gt;</type>
+        <definition>using muda::DenseViewerT&lt; IsConst, T &gt;::Base =  ViewerBase&lt;IsConst&gt;</definition>
+        <argsstring></argsstring>
+        <name>Base</name>
+        <qualifiedname>muda::DenseViewerT::Base</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/viewer/dense/dense_0d.h" line="9" column="5" bodyfile="src/muda/viewer/dense/dense_0d.h" bodystart="9" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classmuda_1_1_dense_viewer_t_1ad05105a7746f286097d148927ec62a29" prot="public" static="no">
+        <type><ref refid="classmuda_1_1_dense_viewer_t" kindref="compound">DenseViewerT</ref>&lt; true, T &gt;</type>
+        <definition>using muda::DenseViewerT&lt; IsConst, T &gt;::ConstViewer =  DenseViewerT&lt;true, T&gt;</definition>
+        <argsstring></argsstring>
+        <name>ConstViewer</name>
+        <qualifiedname>muda::DenseViewerT::ConstViewer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/viewer/dense/dense_0d.h" line="17" column="5" bodyfile="src/muda/viewer/dense/dense_0d.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classmuda_1_1_dense_viewer_t_1abb65f421a59fbcc03cde38f41484b0de" prot="public" static="no">
+        <type><ref refid="classmuda_1_1_dense_viewer_t" kindref="compound">DenseViewerT</ref>&lt; false, T &gt;</type>
+        <definition>using muda::DenseViewerT&lt; IsConst, T &gt;::NonConstViewer =  DenseViewerT&lt;false, T&gt;</definition>
+        <argsstring></argsstring>
+        <name>NonConstViewer</name>
+        <qualifiedname>muda::DenseViewerT::NonConstViewer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/viewer/dense/dense_0d.h" line="18" column="5" bodyfile="src/muda/viewer/dense/dense_0d.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classmuda_1_1_dense_viewer_t_1a51a4ea02c69870ae2d53286ab7c3bb8f" prot="public" static="no">
+        <type><ref refid="classmuda_1_1_dense_viewer_t" kindref="compound">DenseViewerT</ref>&lt; IsConst, T &gt;</type>
+        <definition>using muda::DenseViewerT&lt; IsConst, T &gt;::ThisViewer =  DenseViewerT&lt;IsConst, T&gt;</definition>
+        <argsstring></argsstring>
+        <name>ThisViewer</name>
+        <qualifiedname>muda::DenseViewerT::ThisViewer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/viewer/dense/dense_0d.h" line="19" column="5" bodyfile="src/muda/viewer/dense/dense_0d.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classmuda_1_1_dense_viewer_t_1a74b8fbb52ca87f1a294583503a1cff73" prot="public" static="no">
+        <type>T</type>
+        <definition>using muda::DenseViewerT&lt; IsConst, T &gt;::value_type =  T</definition>
+        <argsstring></argsstring>
+        <name>value_type</name>
+        <qualifiedname>muda::DenseViewerT::value_type</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/viewer/dense/dense_0d.h" line="28" column="5" bodyfile="src/muda/viewer/dense/dense_0d.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-type">
+      <memberdef kind="typedef" id="classmuda_1_1_dense_viewer_t_1abf60394eef238072d533bb77bad5a0f7" prot="protected" static="no">
+        <templateparamlist>
+          <param>
+            <type>typename U</type>
+          </param>
+        </templateparamlist>
+        <type>typename Base::template auto_const_t&lt; U &gt;</type>
+        <definition>using muda::DenseViewerT&lt; IsConst, T &gt;::auto_const_t =  typename Base::template auto_const_t&lt;U&gt;</definition>
+        <argsstring></argsstring>
+        <name>auto_const_t</name>
+        <qualifiedname>muda::DenseViewerT::auto_const_t</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/viewer/dense/dense_0d.h" line="23" column="5" bodyfile="src/muda/viewer/dense/dense_0d.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="friend">
+      <memberdef kind="friend" id="classmuda_1_1_dense_viewer_t_1a8d7ae544af60bcb1cdd56fc06401e16f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>bool</type>
+            <declname>OtherIsConst</declname>
+            <defname>OtherIsConst</defname>
+          </param>
+          <param>
+            <type>typename U</type>
+          </param>
+        </templateparamlist>
+        <type>class</type>
+        <definition>friend class DenseViewerT</definition>
+        <argsstring></argsstring>
+        <name>DenseViewerT</name>
+        <qualifiedname>muda::DenseViewerT::DenseViewerT</qualifiedname>
+        <param>
+          <type><ref refid="classmuda_1_1_dense_viewer_t" kindref="compound">DenseViewerT</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/viewer/dense/dense_0d.h" line="12" column="18" bodyfile="src/muda/viewer/dense/dense_0d.h" bodystart="12" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classmuda_1_1_dense_viewer_t_1a1f8a0e254e39a2ebbd8440a9054345fd" prot="protected" static="no" mutable="no">
+        <type>auto_const_t&lt; T &gt; *</type>
+        <definition>auto_const_t&lt;T&gt;* muda::DenseViewerT&lt; IsConst, T &gt;::m_data</definition>
+        <argsstring></argsstring>
+        <name>m_data</name>
+        <qualifiedname>muda::DenseViewerT::m_data</qualifiedname>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/viewer/dense/dense_0d.h" line="25" column="18" bodyfile="src/muda/viewer/dense/dense_0d.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classmuda_1_1_dense_viewer_t_1ad438bfa87ef3ee1f300f95fd875c45c7" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>muda::DenseViewerT&lt; IsConst, T &gt;::MUDA_VIEWER_COMMON_NAME</definition>
+        <argsstring>(DenseViewerT)</argsstring>
+        <name>MUDA_VIEWER_COMMON_NAME</name>
+        <qualifiedname>muda::DenseViewerT::MUDA_VIEWER_COMMON_NAME</qualifiedname>
+        <param>
+          <type><ref refid="classmuda_1_1_dense_viewer_t" kindref="compound">DenseViewerT</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/viewer/dense/dense_0d.h" line="14" column="5"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmuda_1_1_dense_viewer_t_1adf3eb7eac9ff76dc1dd587a48a84425d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>MUDA_GENERIC</type>
+        <definition>MUDA_GENERIC muda::DenseViewerT&lt; IsConst, T &gt;::DenseViewerT</definition>
+        <argsstring>() MUDA_NOEXCEPT=default</argsstring>
+        <name>DenseViewerT</name>
+        <qualifiedname>muda::DenseViewerT::DenseViewerT</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/viewer/dense/dense_0d.h" line="30" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_dense_viewer_t_1a2e4927fa3ea57d5ae6b404bafc897464" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type>MUDA_GENERIC</type>
+        <definition>MUDA_GENERIC muda::DenseViewerT&lt; IsConst, T &gt;::DenseViewerT</definition>
+        <argsstring>(auto_const_t&lt; T &gt; *p) MUDA_NOEXCEPT</argsstring>
+        <name>DenseViewerT</name>
+        <qualifiedname>muda::DenseViewerT::DenseViewerT</qualifiedname>
+        <param>
+          <type>auto_const_t&lt; T &gt; *</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/viewer/dense/dense_0d.h" line="32" column="27" bodyfile="src/muda/viewer/dense/dense_0d.h" bodystart="32" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_dense_viewer_t_1a68d7d79c96b66f4d0a1467efa8f70f61" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>MUDA_GENERIC</type>
+        <definition>MUDA_GENERIC muda::DenseViewerT&lt; IsConst, T &gt;::DenseViewerT</definition>
+        <argsstring>(const ThisViewer &amp;) MUDA_NOEXCEPT=default</argsstring>
+        <name>DenseViewerT</name>
+        <qualifiedname>muda::DenseViewerT::DenseViewerT</qualifiedname>
+        <param>
+          <type>const <ref refid="classmuda_1_1_dense_viewer_t" kindref="compound">ThisViewer</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/viewer/dense/dense_0d.h" line="36" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_dense_viewer_t_1aa74dbf5a2763953543610f91fe7bdb7a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>bool</type>
+            <declname>OtherIsConst</declname>
+            <defname>OtherIsConst</defname>
+          </param>
+        </templateparamlist>
+        <type>MUDA_GENERIC</type>
+        <definition>MUDA_GENERIC muda::DenseViewerT&lt; IsConst, T &gt;::DenseViewerT</definition>
+        <argsstring>(const DenseViewerT&lt; OtherIsConst, T &gt; &amp;other) MUDA_NOEXCEPT</argsstring>
+        <name>DenseViewerT</name>
+        <qualifiedname>muda::DenseViewerT::DenseViewerT</qualifiedname>
+        <param>
+          <type>const <ref refid="classmuda_1_1_dense_viewer_t" kindref="compound">DenseViewerT</ref>&lt; OtherIsConst, T &gt; &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/viewer/dense/dense_0d.h" line="39" column="18" bodyfile="src/muda/viewer/dense/dense_0d.h" bodystart="39" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_dense_viewer_t_1ae0d208f0b3980ecc164e39503dd8ffb4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>MUDA_GENERIC <ref refid="classmuda_1_1_dense_viewer_t" kindref="compound">ThisViewer</ref> &amp;</type>
+        <definition>MUDA_GENERIC ThisViewer &amp; muda::DenseViewerT&lt; IsConst, T &gt;::operator=</definition>
+        <argsstring>(const T &amp;v) MUDA_NOEXCEPT MUDA_REQUIRES(!IsConst)</argsstring>
+        <name>operator=</name>
+        <qualifiedname>muda::DenseViewerT::operator=</qualifiedname>
+        <param>
+          <type>const T &amp;</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/viewer/dense/dense_0d.h" line="44" column="29" bodyfile="src/muda/viewer/dense/dense_0d.h" bodystart="44" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_dense_viewer_t_1a48c4583164b133434995f8b9e5bcfd43" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>MUDA_GENERIC auto</type>
+        <definition>MUDA_GENERIC auto muda::DenseViewerT&lt; IsConst, T &gt;::as_const</definition>
+        <argsstring>() const MUDA_NOEXCEPT</argsstring>
+        <name>as_const</name>
+        <qualifiedname>muda::DenseViewerT::as_const</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/viewer/dense/dense_0d.h" line="52" column="23" bodyfile="src/muda/viewer/dense/dense_0d.h" bodystart="52" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_dense_viewer_t_1a753f893baa3caceac7efb73310698819" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>MUDA_GENERIC auto_const_t&lt; T &gt; &amp;</type>
+        <definition>MUDA_GENERIC auto_const_t&lt; T &gt; &amp; muda::DenseViewerT&lt; IsConst, T &gt;::operator*</definition>
+        <argsstring>() const MUDA_NOEXCEPT</argsstring>
+        <name>operator*</name>
+        <qualifiedname>muda::DenseViewerT::operator*</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/viewer/dense/dense_0d.h" line="57" column="31" bodyfile="src/muda/viewer/dense/dense_0d.h" bodystart="57" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_dense_viewer_t_1a924dcb533d87caed08042fa23cba48dc" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>MUDA_GENERIC auto_const_t&lt; T &gt; *</type>
+        <definition>MUDA_GENERIC auto_const_t&lt; T &gt; * muda::DenseViewerT&lt; IsConst, T &gt;::operator-&gt;</definition>
+        <argsstring>() const MUDA_NOEXCEPT</argsstring>
+        <name>operator-&gt;</name>
+        <qualifiedname>muda::DenseViewerT::operator-&gt;</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/viewer/dense/dense_0d.h" line="63" column="31" bodyfile="src/muda/viewer/dense/dense_0d.h" bodystart="63" bodyend="67"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_dense_viewer_t_1aebedf7de5994472ca79be61b9ef38f5f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>MUDA_GENERIC auto_const_t&lt; T &gt; *</type>
+        <definition>MUDA_GENERIC auto_const_t&lt; T &gt; * muda::DenseViewerT&lt; IsConst, T &gt;::data</definition>
+        <argsstring>() const MUDA_NOEXCEPT</argsstring>
+        <name>data</name>
+        <qualifiedname>muda::DenseViewerT::data</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/viewer/dense/dense_0d.h" line="69" column="31" bodyfile="src/muda/viewer/dense/dense_0d.h" bodystart="69" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_dense_viewer_t_1a76877a6dbabd5c2d78a998f401385e81" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>MUDA_GENERIC</type>
+        <definition>MUDA_GENERIC muda::DenseViewerT&lt; IsConst, T &gt;::operator auto_const_t&lt; T &gt; &amp;</definition>
+        <argsstring>() const MUDA_NOEXCEPT</argsstring>
+        <name>operator auto_const_t&lt; T &gt; &amp;</name>
+        <qualifiedname>muda::DenseViewerT::operator auto_const_t&lt; T &gt; &amp;</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/viewer/dense/dense_0d.h" line="71" column="18" bodyfile="src/muda/viewer/dense/dense_0d.h" bodystart="71" bodyend="75"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classmuda_1_1_dense_viewer_t_1a11aac43685b98f064055f52d2eafd8e5" prot="protected" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>MUDA_INLINE MUDA_GENERIC void</type>
+        <definition>MUDA_INLINE MUDA_GENERIC void muda::DenseViewerT&lt; IsConst, T &gt;::check</definition>
+        <argsstring>() const MUDA_NOEXCEPT</argsstring>
+        <name>check</name>
+        <qualifiedname>muda::DenseViewerT::check</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/viewer/dense/dense_0d.h" line="78" column="35" bodyfile="src/muda/viewer/dense/dense_0d.h" bodystart="78" bodyend="89"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>muda::ViewerBase&lt; IsConst &gt;</label>
+        <link refid="classmuda_1_1_viewer_base"/>
+      </node>
+      <node id="1">
+        <label>muda::DenseViewerT&lt; IsConst, T &gt;</label>
+        <link refid="classmuda_1_1_dense_viewer_t"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>muda::ViewerBase&lt; IsConst &gt;</label>
+        <link refid="classmuda_1_1_viewer_base"/>
+      </node>
+      <node id="1">
+        <label>muda::DenseViewerT&lt; IsConst, T &gt;</label>
+        <link refid="classmuda_1_1_dense_viewer_t"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="src/muda/viewer/dense/dense_0d.h" line="7" column="1" bodyfile="src/muda/viewer/dense/dense_0d.h" bodystart="8" bodyend="90"/>
+    <listofallmembers>
+      <member refid="classmuda_1_1_dense_viewer_t_1a48c4583164b133434995f8b9e5bcfd43" prot="public" virt="non-virtual"><scope>muda::DenseViewerT</scope><name>as_const</name></member>
+      <member refid="classmuda_1_1_dense_viewer_t_1abf60394eef238072d533bb77bad5a0f7" prot="protected" virt="non-virtual"><scope>muda::DenseViewerT</scope><name>auto_const_t</name></member>
+      <member refid="classmuda_1_1_dense_viewer_t_1aff2270d65a4c46857a02e36386bd1f4f" prot="private" virt="non-virtual"><scope>muda::DenseViewerT</scope><name>Base</name></member>
+      <member refid="classmuda_1_1_dense_viewer_t_1a11aac43685b98f064055f52d2eafd8e5" prot="protected" virt="non-virtual"><scope>muda::DenseViewerT</scope><name>check</name></member>
+      <member refid="classmuda_1_1_dense_viewer_t_1ad05105a7746f286097d148927ec62a29" prot="public" virt="non-virtual"><scope>muda::DenseViewerT</scope><name>ConstViewer</name></member>
+      <member refid="classmuda_1_1_viewer_base_1a1e3c7201751bec476d5f9b9c26be94b5" prot="public" virt="non-virtual"><scope>muda::DenseViewerT</scope><name>copy_label</name></member>
+      <member refid="classmuda_1_1_dense_viewer_t_1aebedf7de5994472ca79be61b9ef38f5f" prot="public" virt="non-virtual"><scope>muda::DenseViewerT</scope><name>data</name></member>
+      <member refid="classmuda_1_1_dense_viewer_t_1a8d7ae544af60bcb1cdd56fc06401e16f" prot="private" virt="non-virtual"><scope>muda::DenseViewerT</scope><name>DenseViewerT</name></member>
+      <member refid="classmuda_1_1_dense_viewer_t_1adf3eb7eac9ff76dc1dd587a48a84425d" prot="public" virt="non-virtual"><scope>muda::DenseViewerT</scope><name>DenseViewerT</name></member>
+      <member refid="classmuda_1_1_dense_viewer_t_1a2e4927fa3ea57d5ae6b404bafc897464" prot="public" virt="non-virtual"><scope>muda::DenseViewerT</scope><name>DenseViewerT</name></member>
+      <member refid="classmuda_1_1_dense_viewer_t_1a68d7d79c96b66f4d0a1467efa8f70f61" prot="public" virt="non-virtual"><scope>muda::DenseViewerT</scope><name>DenseViewerT</name></member>
+      <member refid="classmuda_1_1_dense_viewer_t_1aa74dbf5a2763953543610f91fe7bdb7a" prot="public" virt="non-virtual"><scope>muda::DenseViewerT</scope><name>DenseViewerT</name></member>
+      <member refid="classmuda_1_1_viewer_base_1ae9e7348b91c4dc1f3fc0de8e63335576" prot="public" virt="non-virtual"><scope>muda::DenseViewerT</scope><name>IsConst</name></member>
+      <member refid="classmuda_1_1_viewer_base_1adc31410f57cf34b15824f4f3fcb434a3" prot="public" virt="non-virtual"><scope>muda::DenseViewerT</scope><name>IsNonConst</name></member>
+      <member refid="classmuda_1_1_viewer_base_1a35b42fb3c890f8343c551451bceab3f1" prot="public" virt="non-virtual"><scope>muda::DenseViewerT</scope><name>kernel_file</name></member>
+      <member refid="classmuda_1_1_viewer_base_1a3247ca184afa57b2e00f8da9e080a2a1" prot="public" virt="non-virtual"><scope>muda::DenseViewerT</scope><name>kernel_line</name></member>
+      <member refid="classmuda_1_1_viewer_base_1a9b65192d349fd93c05c8ccad4d4014d4" prot="public" virt="non-virtual"><scope>muda::DenseViewerT</scope><name>kernel_name</name></member>
+      <member refid="classmuda_1_1_dense_viewer_t_1a1f8a0e254e39a2ebbd8440a9054345fd" prot="protected" virt="non-virtual"><scope>muda::DenseViewerT</scope><name>m_data</name></member>
+      <member refid="classmuda_1_1_dense_viewer_t_1ad438bfa87ef3ee1f300f95fd875c45c7" prot="private" virt="non-virtual"><scope>muda::DenseViewerT</scope><name>MUDA_VIEWER_COMMON_NAME</name></member>
+      <member refid="classmuda_1_1_viewer_base_1a4cb1c578b4abbf1b113e9cf7a3d771d8" prot="public" virt="non-virtual"><scope>muda::DenseViewerT</scope><name>name</name></member>
+      <member refid="classmuda_1_1_viewer_base_1a57bbb7a9a3e4cb77a0a05bdee3a3e5fd" prot="protected" virt="non-virtual"><scope>muda::DenseViewerT</scope><name>name</name></member>
+      <member refid="classmuda_1_1_viewer_base_1a31d6dd944a28c6d428e5e79cd7c034a0" prot="protected" virt="non-virtual"><scope>muda::DenseViewerT</scope><name>name</name></member>
+      <member refid="classmuda_1_1_viewer_base_1a9447a51a53c20567fcb38fcdc275d812" prot="protected" virt="non-virtual"><scope>muda::DenseViewerT</scope><name>non_const_enable_t</name></member>
+      <member refid="classmuda_1_1_dense_viewer_t_1abb65f421a59fbcc03cde38f41484b0de" prot="public" virt="non-virtual"><scope>muda::DenseViewerT</scope><name>NonConstViewer</name></member>
+      <member refid="classmuda_1_1_dense_viewer_t_1a76877a6dbabd5c2d78a998f401385e81" prot="public" virt="non-virtual"><scope>muda::DenseViewerT</scope><name>operator auto_const_t&lt; T &gt; &amp;</name></member>
+      <member refid="classmuda_1_1_dense_viewer_t_1a753f893baa3caceac7efb73310698819" prot="public" virt="non-virtual"><scope>muda::DenseViewerT</scope><name>operator*</name></member>
+      <member refid="classmuda_1_1_dense_viewer_t_1a924dcb533d87caed08042fa23cba48dc" prot="public" virt="non-virtual"><scope>muda::DenseViewerT</scope><name>operator-&gt;</name></member>
+      <member refid="classmuda_1_1_dense_viewer_t_1ae0d208f0b3980ecc164e39503dd8ffb4" prot="public" virt="non-virtual"><scope>muda::DenseViewerT</scope><name>operator=</name></member>
+      <member refid="classmuda_1_1_viewer_base_1a8ce13df13b4a82e63c7a6230ee1e0b7c" prot="public" virt="non-virtual" ambiguityscope="ViewerBase&lt; IsConst &gt;::"><scope>muda::DenseViewerT</scope><name>operator=</name></member>
+      <member refid="classmuda_1_1_viewer_base_1ac73a737a8a64ff2026adcd7bc5f2738a" prot="public" virt="non-virtual" ambiguityscope="ViewerBase&lt; IsConst &gt;::"><scope>muda::DenseViewerT</scope><name>operator=</name></member>
+      <member refid="classmuda_1_1_dense_viewer_t_1a51a4ea02c69870ae2d53286ab7c3bb8f" prot="public" virt="non-virtual"><scope>muda::DenseViewerT</scope><name>ThisViewer</name></member>
+      <member refid="classmuda_1_1_dense_viewer_t_1a74b8fbb52ca87f1a294583503a1cff73" prot="public" virt="non-virtual"><scope>muda::DenseViewerT</scope><name>value_type</name></member>
+      <member refid="classmuda_1_1_viewer_base_1aab07b74590e3ae50b1352372f66080f8" prot="public" virt="non-virtual"><scope>muda::DenseViewerT</scope><name>ViewerBase</name></member>
+      <member refid="classmuda_1_1_viewer_base_1aac0b5cbd86bfb6653c7dddeac2907428" prot="public" virt="non-virtual"><scope>muda::DenseViewerT</scope><name>ViewerBase</name></member>
+      <member refid="classmuda_1_1_viewer_base_1a70b803f760ff21c327b454f7c9fc0ef3" prot="public" virt="non-virtual"><scope>muda::DenseViewerT</scope><name>ViewerBase</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

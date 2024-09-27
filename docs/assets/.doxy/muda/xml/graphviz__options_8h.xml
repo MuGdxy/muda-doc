@@ -1,0 +1,330 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="graphviz__options_8h" kind="file" language="C++">
+    <compoundname>graphviz_options.h</compoundname>
+    <includes local="no">string</includes>
+    <includedby refid="compute__graph_2compute__graph_8h" local="no">src/muda/compute_graph/compute_graph.h</includedby>
+    <includedby refid="compute__graph__closure_8h" local="no">src/muda/compute_graph/compute_graph_closure.h</includedby>
+    <includedby refid="compute__graph__var_8h" local="no">src/muda/compute_graph/compute_graph_var.h</includedby>
+    <includedby refid="compute__graph__var__manager_8h" local="no">src/muda/compute_graph/compute_graph_var_manager.h</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>src/muda/compute_graph/graphviz_options.h</label>
+        <link refid="graphviz__options_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>string</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="32">
+        <label>src/muda/buffer.h</label>
+        <link refid="buffer_8h_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>src/muda/buffer/graph_buffer_2d_view.h</label>
+        <link refid="graph__buffer__2d__view_8h_source"/>
+      </node>
+      <node id="30">
+        <label>src/muda/buffer/graph_buffer_3d_view.h</label>
+        <link refid="graph__buffer__3d__view_8h_source"/>
+      </node>
+      <node id="31">
+        <label>src/muda/buffer/graph_buffer_view.h</label>
+        <link refid="graph__buffer__view_8h_source"/>
+        <childnode refid="32" relation="include">
+        </childnode>
+      </node>
+      <node id="33">
+        <label>src/muda/buffer/graph_var_view.h</label>
+        <link refid="graph__var__view_8h_source"/>
+        <childnode refid="32" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>src/muda/compute_graph.h</label>
+        <link refid="compute__graph_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>src/muda/compute_graph/compute_graph.h</label>
+        <link refid="compute__graph_2compute__graph_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>src/muda/compute_graph/compute_graph_closure.h</label>
+        <link refid="compute__graph__closure_8h_source"/>
+      </node>
+      <node id="28">
+        <label>src/muda/compute_graph/compute_graph_var.h</label>
+        <link refid="compute__graph__var_8h_source"/>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+      </node>
+      <node id="36">
+        <label>src/muda/compute_graph/compute_graph_var_manager.h</label>
+        <link refid="compute__graph__var__manager_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>src/muda/compute_graph/graphviz_options.h</label>
+        <link refid="graphviz__options_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>src/muda/compute_graph/nodes/compute_graph_event_node.h</label>
+        <link refid="compute__graph__event__node_8h_source"/>
+      </node>
+      <node id="6">
+        <label>src/muda/compute_graph/nodes/compute_graph_memory_node.h</label>
+        <link refid="compute__graph__memory__node_8h_source"/>
+      </node>
+      <node id="10">
+        <label>src/muda/cub/cub.h</label>
+        <link refid="cub_8h_source"/>
+      </node>
+      <node id="9">
+        <label>src/muda/cub/cub_device.h</label>
+        <link refid="cub__device_8h_source"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>src/muda/cub/device/cub_wrapper.h</label>
+        <link refid="cub__wrapper_8h_source"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>src/muda/cub/device/device_adjacent_difference.h</label>
+        <link refid="device__adjacent__difference_8h_source"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>src/muda/cub/device/device_histogram.h</label>
+        <link refid="device__histogram_8h_source"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>src/muda/cub/device/device_merge_sort.h</label>
+        <link refid="device__merge__sort_8h_source"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>src/muda/cub/device/device_partition.h</label>
+        <link refid="device__partition_8h_source"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>src/muda/cub/device/device_radix_sort.h</label>
+        <link refid="device__radix__sort_8h_source"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>src/muda/cub/device/device_reduce.h</label>
+        <link refid="device__reduce_8h_source"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>src/muda/cub/device/device_run_length_encode.h</label>
+        <link refid="device__run__length__encode_8h_source"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>src/muda/cub/device/device_scan.h</label>
+        <link refid="device__scan_8h_source"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>src/muda/cub/device/device_segmented_radix_sort.h</label>
+        <link refid="device__segmented__radix__sort_8h_source"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>src/muda/cub/device/device_segmented_reduce.h</label>
+        <link refid="device__segmented__reduce_8h_source"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>src/muda/cub/device/device_segmented_sort.h</label>
+        <link refid="device__segmented__sort_8h_source"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>src/muda/cub/device/device_select.h</label>
+        <link refid="device__select_8h_source"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>src/muda/cub/device/device_spmv.h</label>
+        <link refid="device__spmv_8h_source"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>src/muda/ext/geo/lbvh.h</label>
+        <link refid="lbvh_8h_source"/>
+      </node>
+      <node id="16">
+        <label>src/muda/ext/geo/lbvh/bvh.h</label>
+        <link refid="bvh_8h_source"/>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>src/muda/ext/geo/lbvh/lbvh.h</label>
+        <link refid="lbvh_2lbvh_8h_source"/>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>src/muda/ext/geo/lbvh/query.h</label>
+        <link refid="query_8h_source"/>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="35">
+        <label>src/muda/graph.h</label>
+        <link refid="graph_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="34">
+        <label>src/muda/graph/graph_graph_viewer.h</label>
+        <link refid="graph__graph__viewer_8h_source"/>
+        <childnode refid="35" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>src/muda/muda.h</label>
+        <link refid="muda_8h_source"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classmuda_1_1_compute_graph_graphviz_options" prot="public">muda::ComputeGraphGraphvizOptions</innerclass>
+    <innernamespace refid="namespacemuda">muda</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">muda</highlight></codeline>
+<codeline lineno="4"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="5" refid="classmuda_1_1_compute_graph_graphviz_options" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classmuda_1_1_compute_graph_graphviz_options" kindref="compound">ComputeGraphGraphvizOptions</ref></highlight></codeline>
+<codeline lineno="6"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>show_vars<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>show_nodes<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>as_subgraph<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>show_all_graph_nodes_in_a_closure<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/>graph_id<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>styles</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/>node_style<sp/>=</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>R</highlight><highlight class="stringliteral">&quot;(shape=&quot;egg&quot;,<sp/>color=&quot;#82B366&quot;,<sp/>style=&quot;filled&quot;,<sp/>fillcolor=&quot;#D5E8D4&quot;,)&quot;;</highlight></codeline>
+<codeline lineno="17"><highlight class="stringliteral"></highlight></codeline>
+<codeline lineno="18"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>std::string<sp/>all_nodes_closure_style<sp/>=</highlight></codeline>
+<codeline lineno="19"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>R</highlight><highlight class="stringliteral">&quot;(shape=&quot;Mrecord&quot;,<sp/>color=&quot;#82B366&quot;,<sp/>style=&quot;filled&quot;,<sp/>fillcolor=&quot;#D5E8D4&quot;,)&quot;;</highlight></codeline>
+<codeline lineno="20"><highlight class="stringliteral"></highlight></codeline>
+<codeline lineno="21"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>std::string<sp/>var_style<sp/>=</highlight></codeline>
+<codeline lineno="22"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>R</highlight><highlight class="stringliteral">&quot;(shape=&quot;rectangle&quot;,<sp/>color=&quot;#F08705&quot;,<sp/>style=&quot;filled,rounded&quot;,<sp/>fillcolor=&quot;#F5AF58&quot;,)&quot;;</highlight></codeline>
+<codeline lineno="23"><highlight class="stringliteral"></highlight></codeline>
+<codeline lineno="24"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>std::string<sp/>read_write_style<sp/>=<sp/>R</highlight><highlight class="stringliteral">&quot;(color=&quot;#F08E81&quot;,<sp/>arrowhead<sp/>=<sp/>diamond,)&quot;;</highlight></codeline>
+<codeline lineno="25"><highlight class="stringliteral"></highlight></codeline>
+<codeline lineno="26"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>std::string<sp/>read_style<sp/>=<sp/>R</highlight><highlight class="stringliteral">&quot;(color=&quot;#64BBE2&quot;,<sp/>arrowhead<sp/>=<sp/>dot,<sp/>)&quot;;</highlight></codeline>
+<codeline lineno="27"><highlight class="stringliteral"></highlight></codeline>
+<codeline lineno="28"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>std::string<sp/>arc_style<sp/>=<sp/>R</highlight><highlight class="stringliteral">&quot;(color=&quot;#82B366&quot;,<sp/>)&quot;;</highlight></codeline>
+<codeline lineno="29"><highlight class="stringliteral"></highlight></codeline>
+<codeline lineno="30"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>std::string<sp/>event_style<sp/>=</highlight></codeline>
+<codeline lineno="31"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>R</highlight><highlight class="stringliteral">&quot;(shape=&quot;rectangle&quot;,<sp/>color=&quot;#8E44AD&quot;,<sp/>style=&quot;filled,rounded&quot;,<sp/>fillcolor=&quot;#BB8FCE&quot;,)&quot;;</highlight></codeline>
+<codeline lineno="32"><highlight class="stringliteral"></highlight></codeline>
+<codeline lineno="33"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>std::string<sp/>graph_viewer_style<sp/>=</highlight></codeline>
+<codeline lineno="34"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>R</highlight><highlight class="stringliteral">&quot;(shape=&quot;rectangle&quot;,<sp/>color=&quot;#82B366&quot;,<sp/>style=&quot;filled,rounded&quot;,<sp/>fillcolor=&quot;#D5E8D4&quot;,)&quot;;</highlight></codeline>
+<codeline lineno="35"><highlight class="stringliteral"></highlight></codeline>
+<codeline lineno="36"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>std::string<sp/>cluster_style<sp/>=</highlight></codeline>
+<codeline lineno="37"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>R</highlight><highlight class="stringliteral">&quot;(fontcolor=&quot;#82B366&quot;<sp/>fontsize=18;<sp/>color<sp/>=<sp/>&quot;#82B366&quot;;<sp/>style<sp/>=<sp/>&quot;dashed&quot;;)&quot;;</highlight></codeline>
+<codeline lineno="38"><highlight class="stringliteral"></highlight></codeline>
+<codeline lineno="39"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>std::string<sp/>cluster_var_style<sp/>=<sp/>R</highlight><highlight class="stringliteral">&quot;(color=&quot;#F08705&quot;;<sp/>style=&quot;dashed&quot;;)&quot;;</highlight></codeline>
+<codeline lineno="40"><highlight class="stringliteral"></highlight></codeline>
+<codeline lineno="41"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>std::string<sp/>graph_font<sp/>=<sp/>R</highlight><highlight class="stringliteral">&quot;(graph<sp/>[fontname<sp/>=<sp/>&quot;helvetica&quot;];</highlight></codeline>
+<codeline lineno="42"><highlight class="stringliteral">node<sp/>[fontname<sp/>=<sp/>&quot;helvetica&quot;];</highlight></codeline>
+<codeline lineno="43"><highlight class="stringliteral">edge<sp/>[fontname<sp/>=<sp/>&quot;helvetica&quot;];)&quot;;</highlight></codeline>
+<codeline lineno="44"><highlight class="stringliteral">};</highlight></codeline>
+<codeline lineno="45"><highlight class="stringliteral">}<sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>muda</highlight></codeline>
+    </programlisting>
+    <location file="src/muda/compute_graph/graphviz_options.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,80 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structmuda_1_1details_1_1_launch_callable" kind="struct" language="C++" prot="public">
+    <compoundname>muda::details::LaunchCallable</compoundname>
+    <templateparamlist>
+      <param>
+        <type>typename F</type>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structmuda_1_1details_1_1_launch_callable_1a9ad5e5884f3cbbb8399ea58f8501b181" prot="public" static="no" mutable="no">
+        <type>F</type>
+        <definition>F muda::details::LaunchCallable&lt; F &gt;::callable</definition>
+        <argsstring></argsstring>
+        <name>callable</name>
+        <qualifiedname>muda::details::LaunchCallable::callable</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/launch/launch.h" line="20" column="14" bodyfile="src/muda/launch/launch.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmuda_1_1details_1_1_launch_callable_1a915ca8da220958ae4d9cdcdb49d22437" prot="public" static="no" mutable="no">
+        <type>dim3</type>
+        <definition>dim3 muda::details::LaunchCallable&lt; F &gt;::dim</definition>
+        <argsstring></argsstring>
+        <name>dim</name>
+        <qualifiedname>muda::details::LaunchCallable::dim</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/launch/launch.h" line="21" column="14" bodyfile="src/muda/launch/launch.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="structmuda_1_1details_1_1_launch_callable_1a6badc4fae51f1d3a66919f1bd80d7fa7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename U</type>
+          </param>
+        </templateparamlist>
+        <type></type>
+        <definition>muda::details::LaunchCallable&lt; F &gt;::LaunchCallable</definition>
+        <argsstring>(U &amp;&amp;f, const dim3 &amp;d)</argsstring>
+        <name>LaunchCallable</name>
+        <qualifiedname>muda::details::LaunchCallable::LaunchCallable</qualifiedname>
+        <param>
+          <type>U &amp;&amp;</type>
+          <declname>f</declname>
+        </param>
+        <param>
+          <type>const dim3 &amp;</type>
+          <declname>d</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/launch/launch.h" line="23" column="9" bodyfile="src/muda/launch/launch.h" bodystart="23" bodyend="27"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/muda/launch/launch.h" line="18" column="5" bodyfile="src/muda/launch/launch.h" bodystart="19" bodyend="28"/>
+    <listofallmembers>
+      <member refid="structmuda_1_1details_1_1_launch_callable_1a9ad5e5884f3cbbb8399ea58f8501b181" prot="public" virt="non-virtual"><scope>muda::details::LaunchCallable</scope><name>callable</name></member>
+      <member refid="structmuda_1_1details_1_1_launch_callable_1a915ca8da220958ae4d9cdcdb49d22437" prot="public" virt="non-virtual"><scope>muda::details::LaunchCallable</scope><name>dim</name></member>
+      <member refid="structmuda_1_1details_1_1_launch_callable_1a6badc4fae51f1d3a66919f1bd80d7fa7" prot="public" virt="non-virtual"><scope>muda::details::LaunchCallable</scope><name>LaunchCallable</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

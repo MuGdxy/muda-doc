@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="dir_abdf540317f100377c0fed488fb71651" kind="dir">
+    <compoundname>src/muda/container</compoundname>
+    <innerfile refid="var_8h">var.h</innerfile>
+    <innerfile refid="vector_8h">vector.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/muda/container/"/>
+  </compounddef>
+</doxygen>

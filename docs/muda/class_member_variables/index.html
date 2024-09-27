@@ -1,0 +1,1786 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../class_member_functions/">
+      
+      
+        <link rel="next" href="../class_member_typedefs/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.24">
+    
+    
+      
+        <title>Member Variables - Muda Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.6543a935.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/doxide.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="red" data-md-color-accent="red">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#class-member-variables" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Muda Documentation" class="md-header__button md-logo" aria-label="Muda Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Muda Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Member Variables
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="red" data-md-color-accent="red"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="red" data-md-color-accent="red"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Muda Documentation" class="md-nav__button md-logo" aria-label="Muda Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    Muda Documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tutorial/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Tutorial
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    API Documentation
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            API Documentation
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../links/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Links
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Classes
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Classes
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../classes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Index
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hierarchy/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Hierarchy
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../class_members/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Members
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../class_member_functions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Member Functions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Member Variables
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Member Variables
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#a" class="md-nav__link">
+    <span class="md-ellipsis">
+      a
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#b" class="md-nav__link">
+    <span class="md-ellipsis">
+      b
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#c" class="md-nav__link">
+    <span class="md-ellipsis">
+      c
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#d" class="md-nav__link">
+    <span class="md-ellipsis">
+      d
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#e" class="md-nav__link">
+    <span class="md-ellipsis">
+      e
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#f" class="md-nav__link">
+    <span class="md-ellipsis">
+      f
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#g" class="md-nav__link">
+    <span class="md-ellipsis">
+      g
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#h" class="md-nav__link">
+    <span class="md-ellipsis">
+      h
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#i" class="md-nav__link">
+    <span class="md-ellipsis">
+      i
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#k" class="md-nav__link">
+    <span class="md-ellipsis">
+      k
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#l" class="md-nav__link">
+    <span class="md-ellipsis">
+      l
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#m" class="md-nav__link">
+    <span class="md-ellipsis">
+      m
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#n" class="md-nav__link">
+    <span class="md-ellipsis">
+      n
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#o" class="md-nav__link">
+    <span class="md-ellipsis">
+      o
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#p" class="md-nav__link">
+    <span class="md-ellipsis">
+      p
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#r" class="md-nav__link">
+    <span class="md-ellipsis">
+      r
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#s" class="md-nav__link">
+    <span class="md-ellipsis">
+      s
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#t" class="md-nav__link">
+    <span class="md-ellipsis">
+      t
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#u" class="md-nav__link">
+    <span class="md-ellipsis">
+      u
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v" class="md-nav__link">
+    <span class="md-ellipsis">
+      v
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#w" class="md-nav__link">
+    <span class="md-ellipsis">
+      w
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_" class="md-nav__link">
+    <span class="md-ellipsis">
+      _
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../class_member_typedefs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Member Typedefs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../class_member_enums/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Member Enumerations
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Namespaces
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Namespaces
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../namespaces/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Index
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../namespace_members/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Member
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../namespace_member_functions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Member Functions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../namespace_member_variables/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Member Variables
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../namespace_member_typedefs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Member Typedefs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../namespace_member_enums/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Member Enumerations
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../functions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Functions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../variables/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Variables
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../macros/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Macros
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../files/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Files
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#a" class="md-nav__link">
+    <span class="md-ellipsis">
+      a
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#b" class="md-nav__link">
+    <span class="md-ellipsis">
+      b
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#c" class="md-nav__link">
+    <span class="md-ellipsis">
+      c
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#d" class="md-nav__link">
+    <span class="md-ellipsis">
+      d
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#e" class="md-nav__link">
+    <span class="md-ellipsis">
+      e
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#f" class="md-nav__link">
+    <span class="md-ellipsis">
+      f
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#g" class="md-nav__link">
+    <span class="md-ellipsis">
+      g
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#h" class="md-nav__link">
+    <span class="md-ellipsis">
+      h
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#i" class="md-nav__link">
+    <span class="md-ellipsis">
+      i
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#k" class="md-nav__link">
+    <span class="md-ellipsis">
+      k
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#l" class="md-nav__link">
+    <span class="md-ellipsis">
+      l
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#m" class="md-nav__link">
+    <span class="md-ellipsis">
+      m
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#n" class="md-nav__link">
+    <span class="md-ellipsis">
+      n
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#o" class="md-nav__link">
+    <span class="md-ellipsis">
+      o
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#p" class="md-nav__link">
+    <span class="md-ellipsis">
+      p
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#r" class="md-nav__link">
+    <span class="md-ellipsis">
+      r
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#s" class="md-nav__link">
+    <span class="md-ellipsis">
+      s
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#t" class="md-nav__link">
+    <span class="md-ellipsis">
+      t
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#u" class="md-nav__link">
+    <span class="md-ellipsis">
+      u
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v" class="md-nav__link">
+    <span class="md-ellipsis">
+      v
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#w" class="md-nav__link">
+    <span class="md-ellipsis">
+      w
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_" class="md-nav__link">
+    <span class="md-ellipsis">
+      _
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="class-member-variables">Class Member Variables</h1>
+<h2 id="a">a</h2>
+<ul>
+<li><strong>all_nodes_closure_style</strong> (<a href="../classmuda_1_1_compute_graph_graphviz_options/"><strong>muda::ComputeGraphGraphvizOptions</strong></a>)</li>
+<li><strong>arc_style</strong> (<a href="../classmuda_1_1_compute_graph_graphviz_options/"><strong>muda::ComputeGraphGraphvizOptions</strong></a>)</li>
+<li><strong>as_subgraph</strong> (<a href="../classmuda_1_1_compute_graph_graphviz_options/"><strong>muda::ComputeGraphGraphvizOptions</strong></a>)</li>
+<li><strong>allCoords</strong> (<a href="../classmuda_1_1spatial__hash_1_1details_1_1_sparse_spatial_hash_impl/"><strong>muda::spatial_hash::details::SparseSpatialHashImpl</strong></a>)</li>
+<li><strong>allRadius</strong> (<a href="../classmuda_1_1spatial__hash_1_1details_1_1_sparse_spatial_hash_impl/"><strong>muda::spatial_hash::details::SparseSpatialHashImpl</strong></a>)</li>
+</ul>
+<h2 id="b">b</h2>
+<ul>
+<li><strong>begin</strong> (<a href="../classmuda_1_1_c_matrix_map_info/"><strong>muda::CMatrixMapInfo</strong></a>, <a href="../classmuda_1_1_matrix_map_info/"><strong>muda::MatrixMapInfo</strong></a>)</li>
+<li><strong>buffer_byte_size_base</strong> (<a href="../classmuda_1_1_linear_system_context_create_info/"><strong>muda::LinearSystemContextCreateInfo</strong></a>)</li>
+<li><strong>block_col_index</strong> (<a href="../structmuda_1_1_triplet_matrix_viewer_base_1_1_c_triplet/"><strong>muda::TripletMatrixViewerBase::CTriplet</strong></a>)</li>
+<li><strong>block_row_index</strong> (<a href="../structmuda_1_1_triplet_matrix_viewer_base_1_1_c_triplet/"><strong>muda::TripletMatrixViewerBase::CTriplet</strong></a>)</li>
+<li><strong>block_value</strong> (<a href="../structmuda_1_1_triplet_matrix_viewer_base_1_1_c_triplet/"><strong>muda::TripletMatrixViewerBase::CTriplet</strong></a>)</li>
+<li><strong>buffer_offset</strong> (<a href="../classmuda_1_1details_1_1_logger_offset/"><strong>muda::details::LoggerOffset</strong></a>)</li>
+<li><strong>blocks_sorted</strong> (<a href="../classmuda_1_1details_1_1_matrix_format_converter/"><strong>muda::details::MatrixFormatConverter</strong></a>)</li>
+<li><strong>buffer_index</strong> (<a href="../classmuda_1_1details_1_1_host_device_string_cache_1_1_string_location/"><strong>muda::details::HostDeviceStringCache::StringLocation</strong></a>)</li>
+</ul>
+<h2 id="c">c</h2>
+<ul>
+<li><strong>cluster_style</strong> (<a href="../classmuda_1_1_compute_graph_graphviz_options/"><strong>muda::ComputeGraphGraphvizOptions</strong></a>)</li>
+<li><strong>cluster_var_style</strong> (<a href="../classmuda_1_1_compute_graph_graphviz_options/"><strong>muda::ComputeGraphGraphvizOptions</strong></a>)</li>
+<li><strong>current</strong> (<a href="../classmuda_1_1_matrix_format_converter/"><strong>muda::MatrixFormatConverter</strong></a>)</li>
+<li><strong>col_index</strong> (<a href="../structmuda_1_1_triplet_matrix_viewer_base_3_01_is_const_00_01_t_00_011_01_4_1_1_c_triplet/"><strong>muda::TripletMatrixViewerBase&lt; IsConst, T, 1 &gt;::CTriplet</strong></a>)</li>
+<li><strong>callable</strong> (<a href="../structmuda_1_1details_1_1_launch_callable/"><strong>muda::details::LaunchCallable</strong></a>, <a href="../classmuda_1_1details_1_1_parallel_for_callable/"><strong>muda::details::ParallelForCallable</strong></a>)</li>
+<li><strong>col_tmp</strong> (<a href="../classmuda_1_1details_1_1_matrix_format_converter/"><strong>muda::details::MatrixFormatConverter</strong></a>, <a href="../classmuda_1_1details_1_1_matrix_format_converter_3_01_t_00_011_01_4/"><strong>muda::details::MatrixFormatConverter&lt; T, 1 &gt;</strong></a>)</li>
+<li><strong>count</strong> (<a href="../classmuda_1_1details_1_1_matrix_format_converter/"><strong>muda::details::MatrixFormatConverter</strong></a>, <a href="../classmuda_1_1details_1_1_matrix_format_converter_3_01_t_00_011_01_4/"><strong>muda::details::MatrixFormatConverter&lt; T, 1 &gt;</strong></a>, <a href="../classmuda_1_1details_1_1_parallel_for_callable/"><strong>muda::details::ParallelForCallable</strong></a>)</li>
+<li><strong>cell_size</strong> (<a href="../classmuda_1_1spatial__hash_1_1_spatial_hash_table_info/"><strong>muda::spatial_hash::SpatialHashTableInfo</strong></a>)</li>
+<li><strong>coord_min</strong> (<a href="../classmuda_1_1spatial__hash_1_1_spatial_hash_table_info/"><strong>muda::spatial_hash::SpatialHashTableInfo</strong></a>)</li>
+<li><strong>cid</strong> (<a href="../classmuda_1_1spatial__hash_1_1_spatial_partition_cell/"><strong>muda::spatial_hash::SpatialPartitionCell</strong></a>)</li>
+<li><strong>ctlbit</strong> (<a href="../classmuda_1_1spatial__hash_1_1_spatial_partition_cell/"><strong>muda::spatial_hash::SpatialPartitionCell</strong></a>)</li>
+<li><strong>cellArrayKey</strong> (<a href="../classmuda_1_1spatial__hash_1_1details_1_1_sparse_spatial_hash_impl/"><strong>muda::spatial_hash::details::SparseSpatialHashImpl</strong></a>)</li>
+<li><strong>cellArrayKeySorted</strong> (<a href="../classmuda_1_1spatial__hash_1_1details_1_1_sparse_spatial_hash_impl/"><strong>muda::spatial_hash::details::SparseSpatialHashImpl</strong></a>)</li>
+<li><strong>cellArrayValue</strong> (<a href="../classmuda_1_1spatial__hash_1_1details_1_1_sparse_spatial_hash_impl/"><strong>muda::spatial_hash::details::SparseSpatialHashImpl</strong></a>)</li>
+<li><strong>cellArrayValueSorted</strong> (<a href="../classmuda_1_1spatial__hash_1_1details_1_1_sparse_spatial_hash_impl/"><strong>muda::spatial_hash::details::SparseSpatialHashImpl</strong></a>)</li>
+<li><strong>cellCount</strong> (<a href="../classmuda_1_1spatial__hash_1_1details_1_1_sparse_spatial_hash_impl/"><strong>muda::spatial_hash::details::SparseSpatialHashImpl</strong></a>)</li>
+<li><strong>cellToCollisionPairUpperBound</strong> (<a href="../classmuda_1_1spatial__hash_1_1details_1_1_sparse_spatial_hash_impl/"><strong>muda::spatial_hash::details::SparseSpatialHashImpl</strong></a>)</li>
+<li><strong>cellToCollisionPairUpperBoundPrefixSum</strong> (<a href="../classmuda_1_1spatial__hash_1_1details_1_1_sparse_spatial_hash_impl/"><strong>muda::spatial_hash::details::SparseSpatialHashImpl</strong></a>)</li>
+<li><strong>collisionPairBuffer</strong> (<a href="../classmuda_1_1spatial__hash_1_1details_1_1_sparse_spatial_hash_impl/"><strong>muda::spatial_hash::details::SparseSpatialHashImpl</strong></a>)</li>
+<li><strong>collisionPairCount</strong> (<a href="../classmuda_1_1spatial__hash_1_1details_1_1_sparse_spatial_hash_impl/"><strong>muda::spatial_hash::details::SparseSpatialHashImpl</strong></a>)</li>
+<li><strong>collisionPairPrefixSum</strong> (<a href="../classmuda_1_1spatial__hash_1_1details_1_1_sparse_spatial_hash_impl/"><strong>muda::spatial_hash::details::SparseSpatialHashImpl</strong></a>)</li>
+<li><strong>closure_ids</strong> (<a href="../classmuda_1_1_compute_graph_var_base_1_1_related_closure_info/"><strong>muda::ComputeGraphVarBase::RelatedClosureInfo</strong></a>)</li>
+</ul>
+<h2 id="d">d</h2>
+<ul>
+<li><strong>DEFAULT_BUFFER_SIZE</strong> (<a href="../classmuda_1_1_logger/"><strong>muda::Logger</strong></a>)</li>
+<li><strong>DEFAULT_META_SIZE</strong> (<a href="../classmuda_1_1_logger/"><strong>muda::Logger</strong></a>)</li>
+<li><strong>data</strong> (<a href="../classmuda_1_1_logger_meta_data/"><strong>muda::LoggerMetaData</strong></a>)</li>
+<li><strong>dim</strong> (<a href="../structmuda_1_1details_1_1_launch_callable/"><strong>muda::details::LaunchCallable</strong></a>)</li>
+<li><strong>data_type</strong> (<a href="../classmuda_1_1details_1_1_matrix_format_converter_type/"><strong>muda::details::MatrixFormatConverterType</strong></a>)</li>
+<li><strong>device_string</strong> (<a href="../classmuda_1_1details_1_1_string_pointer/"><strong>muda::details::StringPointer</strong></a>)</li>
+</ul>
+<h2 id="e">e</h2>
+<ul>
+<li><strong>extent</strong> (<a href="../class_t_c_b___s_p_a_n___n_a_m_e_s_p_a_c_e___n_a_m_e_1_1span/"><strong>TCB_SPAN_NAMESPACE_NAME::span</strong></a>)</li>
+<li><strong>event_style</strong> (<a href="../classmuda_1_1_compute_graph_graphviz_options/"><strong>muda::ComputeGraphGraphvizOptions</strong></a>)</li>
+<li><strong>elem_byte_size</strong> (<a href="../classmuda_1_1_field_entry_base_data/"><strong>muda::FieldEntryBaseData</strong></a>, <a href="../structmuda_1_1details_1_1_so_a_copy_map/"><strong>muda::details::SoACopyMap</strong></a>)</li>
+<li><strong>elem_count</strong> (<a href="../classmuda_1_1_field_entry_base_data/"><strong>muda::FieldEntryBaseData</strong></a>)</li>
+<li><strong>elem_count_based_stride</strong> (<a href="../classmuda_1_1_field_entry_base_data/"><strong>muda::FieldEntryBaseData</strong></a>)</li>
+<li><strong>exceeded</strong> (<a href="../classmuda_1_1details_1_1_logger_meta_data/"><strong>muda::details::LoggerMetaData</strong></a>)</li>
+<li><strong>exceed_buffer</strong> (<a href="../classmuda_1_1details_1_1_logger_offset/"><strong>muda::details::LoggerOffset</strong></a>)</li>
+<li><strong>exceed_meta_data</strong> (<a href="../classmuda_1_1details_1_1_logger_offset/"><strong>muda::details::LoggerOffset</strong></a>)</li>
+<li><strong>empty_level</strong> (<a href="../classmuda_1_1spatial__hash_1_1details_1_1_sparse_spatial_hash_impl/"><strong>muda::spatial_hash::details::SparseSpatialHashImpl</strong></a>)</li>
+</ul>
+<h2 id="f">f</h2>
+<ul>
+<li><strong>from</strong> (<a href="../classmuda_1_1_compute_graph_dependency/"><strong>muda::ComputeGraphDependency</strong></a>)</li>
+<li><strong>FieldEntryBaseData</strong> (<a href="../classmuda_1_1_field_entry_base_data/"><strong>muda::FieldEntryBaseData</strong></a>)</li>
+<li><strong>fmt_arg</strong> (<a href="../classmuda_1_1_logger_meta_data/"><strong>muda::LoggerMetaData</strong></a>, <a href="../classmuda_1_1details_1_1_logger_meta_data/"><strong>muda::details::LoggerMetaData</strong></a>)</li>
+</ul>
+<h2 id="g">g</h2>
+<ul>
+<li><strong>graph_font</strong> (<a href="../classmuda_1_1_compute_graph_graphviz_options/"><strong>muda::ComputeGraphGraphvizOptions</strong></a>)</li>
+<li><strong>graph_id</strong> (<a href="../classmuda_1_1_compute_graph_graphviz_options/"><strong>muda::ComputeGraphGraphvizOptions</strong></a>)</li>
+<li><strong>graph_viewer_style</strong> (<a href="../classmuda_1_1_compute_graph_graphviz_options/"><strong>muda::ComputeGraphGraphvizOptions</strong></a>)</li>
+<li><strong>graph</strong> (<a href="../classmuda_1_1_compute_graph_var_base_1_1_related_closure_info/"><strong>muda::ComputeGraphVarBase::RelatedClosureInfo</strong></a>)</li>
+</ul>
+<h2 id="h">h</h2>
+<ul>
+<li><strong>hostData</strong> (<a href="../classmuda_1_1_host_node_parms/"><strong>muda::HostNodeParms</strong></a>)</li>
+<li><strong>host_string</strong> (<a href="../classmuda_1_1details_1_1_string_pointer/"><strong>muda::details::StringPointer</strong></a>)</li>
+<li><strong>home</strong> (<a href="../classmuda_1_1spatial__hash_1_1_spatial_partition_cell/"><strong>muda::spatial_hash::SpatialPartitionCell</strong></a>)</li>
+<li><strong>h_spatialHashConfig</strong> (<a href="../classmuda_1_1spatial__hash_1_1details_1_1_sparse_spatial_hash_impl/"><strong>muda::spatial_hash::details::SparseSpatialHashImpl</strong></a>)</li>
+</ul>
+<h2 id="i">i</h2>
+<ul>
+<li><strong>inner_stride</strong> (<a href="../classmuda_1_1_c_matrix_map_info/"><strong>muda::CMatrixMapInfo</strong></a>, <a href="../classmuda_1_1_matrix_map_info/"><strong>muda::MatrixMapInfo</strong></a>)</li>
+<li><strong>index</strong> (<a href="../structmuda_1_1_doublet_vector_viewer_base_1_1_c_doublet/"><strong>muda::DoubletVectorViewerBase::CDoublet</strong></a>, <a href="../structmuda_1_1_doublet_vector_viewer_base_3_01_is_const_00_01_t_00_011_01_4_1_1_c_doublet/"><strong>muda::DoubletVectorViewerBase&lt; IsConst, T, 1 &gt;::CDoublet</strong></a>)</li>
+<li><strong>invalid_id</strong> (<a href="../classmuda_1_1_id_with_type/"><strong>muda::IdWithType</strong></a>)</li>
+<li><strong>id</strong> (<a href="../classmuda_1_1_logger_meta_data/"><strong>muda::LoggerMetaData</strong></a>, <a href="../classmuda_1_1details_1_1_local_var_info/"><strong>muda::details::LocalVarInfo</strong></a>, <a href="../classmuda_1_1details_1_1_logger_meta_data/"><strong>muda::details::LoggerMetaData</strong></a>, <a href="../classmuda_1_1spatial__hash_1_1_collision_pair/"><strong>muda::spatial_hash::CollisionPair</strong></a>)</li>
+<li><strong>IsConst</strong> (<a href="../classmuda_1_1_view_base/"><strong>muda::ViewBase</strong></a>, <a href="../classmuda_1_1_viewer_base/"><strong>muda::ViewerBase</strong></a>)</li>
+<li><strong>IsNonConst</strong> (<a href="../classmuda_1_1_view_base/"><strong>muda::ViewBase</strong></a>, <a href="../classmuda_1_1_viewer_base/"><strong>muda::ViewerBase</strong></a>)</li>
+<li><strong>ij_hash</strong> (<a href="../classmuda_1_1details_1_1_matrix_format_converter/"><strong>muda::details::MatrixFormatConverter</strong></a>, <a href="../classmuda_1_1details_1_1_matrix_format_converter_3_01_t_00_011_01_4/"><strong>muda::details::MatrixFormatConverter&lt; T, 1 &gt;</strong></a>)</li>
+<li><strong>ij_hash_input</strong> (<a href="../classmuda_1_1details_1_1_matrix_format_converter/"><strong>muda::details::MatrixFormatConverter</strong></a>, <a href="../classmuda_1_1details_1_1_matrix_format_converter_3_01_t_00_011_01_4/"><strong>muda::details::MatrixFormatConverter&lt; T, 1 &gt;</strong></a>)</li>
+<li><strong>ij_pairs</strong> (<a href="../classmuda_1_1details_1_1_matrix_format_converter/"><strong>muda::details::MatrixFormatConverter</strong></a>, <a href="../classmuda_1_1details_1_1_matrix_format_converter_3_01_t_00_011_01_4/"><strong>muda::details::MatrixFormatConverter&lt; T, 1 &gt;</strong></a>)</li>
+</ul>
+<h2 id="k">k</h2>
+<ul>
+<li><strong>kernelParmData</strong> (<a href="../classmuda_1_1_kernel_node_parms/"><strong>muda::KernelNodeParms</strong></a>)</li>
+</ul>
+<h2 id="l">l</h2>
+<ul>
+<li><strong>layout_info</strong> (<a href="../classmuda_1_1_field_entry_base_data/"><strong>muda::FieldEntryBaseData</strong></a>)</li>
+<li><strong>log_id</strong> (<a href="../classmuda_1_1details_1_1_logger_offset/"><strong>muda::details::LoggerOffset</strong></a>)</li>
+<li><strong>length</strong> (<a href="../classmuda_1_1details_1_1_string_pointer/"><strong>muda::details::StringPointer</strong></a>)</li>
+<li><strong>lower</strong> (<a href="../structmuda_1_1lbvh_1_1_a_a_b_b/"><strong>muda::lbvh::AABB</strong></a>)</li>
+<li><strong>left_idx</strong> (<a href="../structmuda_1_1lbvh_1_1details_1_1_node/"><strong>muda::lbvh::details::Node</strong></a>)</li>
+<li><strong>level</strong> (<a href="../classmuda_1_1spatial__hash_1_1_bounding_sphere/"><strong>muda::spatial_hash::BoundingSphere</strong></a>, <a href="../classmuda_1_1spatial__hash_1_1details_1_1_sparse_spatial_hash_impl/"><strong>muda::spatial_hash::details::SparseSpatialHashImpl</strong></a>)</li>
+</ul>
+<h2 id="m">m</h2>
+<ul>
+<li><strong>m_block_col_indices</strong> (<a href="../classmuda_1_1_b_s_r_matrix_view_base/"><strong>muda::BSRMatrixViewBase</strong></a>, <a href="../classmuda_1_1_device_b_s_r_matrix/"><strong>muda::DeviceBSRMatrix</strong></a>, <a href="../classmuda_1_1_device_triplet_matrix/"><strong>muda::DeviceTripletMatrix</strong></a>, <a href="../classmuda_1_1_triplet_matrix_view_base/"><strong>muda::TripletMatrixViewBase</strong></a>, <a href="../classmuda_1_1_triplet_matrix_viewer_base/"><strong>muda::TripletMatrixViewerBase</strong></a>)</li>
+<li><strong>m_block_row_offsets</strong> (<a href="../classmuda_1_1_b_s_r_matrix_view_base/"><strong>muda::BSRMatrixViewBase</strong></a>, <a href="../classmuda_1_1_device_b_s_r_matrix/"><strong>muda::DeviceBSRMatrix</strong></a>)</li>
+<li><strong>m_block_values</strong> (<a href="../classmuda_1_1_b_s_r_matrix_view_base/"><strong>muda::BSRMatrixViewBase</strong></a>, <a href="../classmuda_1_1_device_b_s_r_matrix/"><strong>muda::DeviceBSRMatrix</strong></a>, <a href="../classmuda_1_1_device_triplet_matrix/"><strong>muda::DeviceTripletMatrix</strong></a>, <a href="../classmuda_1_1_triplet_matrix_view_base/"><strong>muda::TripletMatrixViewBase</strong></a>, <a href="../classmuda_1_1_triplet_matrix_viewer_base/"><strong>muda::TripletMatrixViewerBase</strong></a>)</li>
+<li><strong>m_col</strong> (<a href="../classmuda_1_1_b_s_r_matrix_view_base/"><strong>muda::BSRMatrixViewBase</strong></a>, <a href="../classmuda_1_1_c_s_r_matrix_view_base/"><strong>muda::CSRMatrixViewBase</strong></a>, <a href="../classmuda_1_1_dense_matrix_view_base/"><strong>muda::DenseMatrixViewBase</strong></a>, <a href="../classmuda_1_1_device_b_s_r_matrix/"><strong>muda::DeviceBSRMatrix</strong></a>, <a href="../classmuda_1_1_device_c_s_r_matrix/"><strong>muda::DeviceCSRMatrix</strong></a>, <a href="../classmuda_1_1_device_dense_matrix/"><strong>muda::DeviceDenseMatrix</strong></a>)</li>
+<li><strong>m_descr</strong> (<a href="../classmuda_1_1_b_s_r_matrix_view_base/"><strong>muda::BSRMatrixViewBase</strong></a>, <a href="../classmuda_1_1_c_o_o_matrix_view_base/"><strong>muda::COOMatrixViewBase</strong></a>, <a href="../classmuda_1_1_c_o_o_vector_view_base/"><strong>muda::COOVectorViewBase</strong></a>, <a href="../classmuda_1_1_c_s_r_matrix_view_base/"><strong>muda::CSRMatrixViewBase</strong></a>, <a href="../classmuda_1_1_dense_vector_view_base/"><strong>muda::DenseVectorViewBase</strong></a>, <a href="../classmuda_1_1_device_b_c_o_o_matrix_3_01_ty_00_011_01_4/"><strong>muda::DeviceBCOOMatrix&lt; Ty, 1 &gt;</strong></a>, <a href="../classmuda_1_1_device_b_c_o_o_vector_3_01_t_00_011_01_4/"><strong>muda::DeviceBCOOVector&lt; T, 1 &gt;</strong></a>, <a href="../classmuda_1_1_device_b_s_r_matrix/"><strong>muda::DeviceBSRMatrix</strong></a>, <a href="../classmuda_1_1_device_c_s_r_matrix/"><strong>muda::DeviceCSRMatrix</strong></a>, <a href="../classmuda_1_1_device_dense_vector/"><strong>muda::DeviceDenseVector</strong></a>)</li>
+<li><strong>m_legacy_descr</strong> (<a href="../classmuda_1_1_b_s_r_matrix_view_base/"><strong>muda::BSRMatrixViewBase</strong></a>, <a href="../classmuda_1_1_c_o_o_matrix_view_base/"><strong>muda::COOMatrixViewBase</strong></a>, <a href="../classmuda_1_1_c_s_r_matrix_view_base/"><strong>muda::CSRMatrixViewBase</strong></a>, <a href="../classmuda_1_1_device_b_c_o_o_matrix_3_01_ty_00_011_01_4/"><strong>muda::DeviceBCOOMatrix&lt; Ty, 1 &gt;</strong></a>, <a href="../classmuda_1_1_device_b_s_r_matrix/"><strong>muda::DeviceBSRMatrix</strong></a>, <a href="../classmuda_1_1_device_c_s_r_matrix/"><strong>muda::DeviceCSRMatrix</strong></a>)</li>
+<li><strong>m_non_zeros</strong> (<a href="../classmuda_1_1_b_s_r_matrix_view_base/"><strong>muda::BSRMatrixViewBase</strong></a>)</li>
+<li><strong>m_row</strong> (<a href="../classmuda_1_1_b_s_r_matrix_view_base/"><strong>muda::BSRMatrixViewBase</strong></a>, <a href="../classmuda_1_1_c_s_r_matrix_view_base/"><strong>muda::CSRMatrixViewBase</strong></a>, <a href="../classmuda_1_1_dense_matrix_view_base/"><strong>muda::DenseMatrixViewBase</strong></a>, <a href="../classmuda_1_1_device_b_s_r_matrix/"><strong>muda::DeviceBSRMatrix</strong></a>, <a href="../classmuda_1_1_device_c_s_r_matrix/"><strong>muda::DeviceCSRMatrix</strong></a>, <a href="../classmuda_1_1_device_dense_matrix/"><strong>muda::DeviceDenseMatrix</strong></a>)</li>
+<li><strong>m_trans</strong> (<a href="../classmuda_1_1_b_s_r_matrix_view_base/"><strong>muda::BSRMatrixViewBase</strong></a>, <a href="../classmuda_1_1_c_o_o_matrix_view_base/"><strong>muda::COOMatrixViewBase</strong></a>, <a href="../classmuda_1_1_c_s_r_matrix_view_base/"><strong>muda::CSRMatrixViewBase</strong></a>, <a href="../classmuda_1_1_dense_matrix_view_base/"><strong>muda::DenseMatrixViewBase</strong></a>)</li>
+<li><strong>m_data</strong> (<a href="../classmuda_1_1_buffer2_d_view_t/"><strong>muda::Buffer2DViewT</strong></a>, <a href="../classmuda_1_1_buffer3_d_view_t/"><strong>muda::Buffer3DViewT</strong></a>, <a href="../classmuda_1_1_buffer_view_t/"><strong>muda::BufferViewT</strong></a>, <a href="../classmuda_1_1_dense1_d_t/"><strong>muda::Dense1DT</strong></a>, <a href="../classmuda_1_1_dense2_d_base/"><strong>muda::Dense2DBase</strong></a>, <a href="../classmuda_1_1_dense3_d_base/"><strong>muda::Dense3DBase</strong></a>, <a href="../classmuda_1_1_dense_vector_view_base/"><strong>muda::DenseVectorViewBase</strong></a>, <a href="../classmuda_1_1_dense_vector_viewer_base/"><strong>muda::DenseVectorViewerBase</strong></a>, <a href="../classmuda_1_1_dense_viewer_t/"><strong>muda::DenseViewerT</strong></a>, <a href="../classmuda_1_1_device_buffer/"><strong>muda::DeviceBuffer</strong></a>, <a href="../classmuda_1_1_device_buffer2_d/"><strong>muda::DeviceBuffer2D</strong></a>, <a href="../classmuda_1_1_device_buffer3_d/"><strong>muda::DeviceBuffer3D</strong></a>, <a href="../classmuda_1_1_device_dense_matrix/"><strong>muda::DeviceDenseMatrix</strong></a>, <a href="../classmuda_1_1_device_dense_vector/"><strong>muda::DeviceDenseVector</strong></a>, <a href="../classmuda_1_1_device_var/"><strong>muda::DeviceVar</strong></a>, <a href="../classmuda_1_1_var_view_t/"><strong>muda::VarViewT</strong></a>, <a href="../classmuda_1_1details_1_1_temp_buffer/"><strong>muda::details::TempBuffer</strong></a>)</li>
+<li><strong>m_extent</strong> (<a href="../classmuda_1_1_buffer2_d_view_t/"><strong>muda::Buffer2DViewT</strong></a>, <a href="../classmuda_1_1_buffer3_d_view_t/"><strong>muda::Buffer3DViewT</strong></a>, <a href="../classmuda_1_1_device_buffer2_d/"><strong>muda::DeviceBuffer2D</strong></a>, <a href="../classmuda_1_1_device_buffer3_d/"><strong>muda::DeviceBuffer3D</strong></a>, <a href="../classmuda_1_1_extent2_d/"><strong>muda::Extent2D</strong></a>, <a href="../classmuda_1_1_extent3_d/"><strong>muda::Extent3D</strong></a>)</li>
+<li><strong>m_offset</strong> (<a href="../classmuda_1_1_buffer2_d_view_t/"><strong>muda::Buffer2DViewT</strong></a>, <a href="../classmuda_1_1_buffer3_d_view_t/"><strong>muda::Buffer3DViewT</strong></a>, <a href="../classmuda_1_1_buffer_view_t/"><strong>muda::BufferViewT</strong></a>, <a href="../classmuda_1_1_dense2_d_base/"><strong>muda::Dense2DBase</strong></a>, <a href="../classmuda_1_1_dense3_d_base/"><strong>muda::Dense3DBase</strong></a>, <a href="../classmuda_1_1_dense_vector_view_base/"><strong>muda::DenseVectorViewBase</strong></a>, <a href="../classmuda_1_1_dense_vector_viewer_base/"><strong>muda::DenseVectorViewerBase</strong></a>, <a href="../classmuda_1_1_field_entry_view_core/"><strong>muda::FieldEntryViewCore</strong></a>, <a href="../classmuda_1_1_field_entry_viewer_core/"><strong>muda::FieldEntryViewerCore</strong></a>, <a href="../classmuda_1_1_logger/"><strong>muda::Logger</strong></a>, <a href="../classmuda_1_1_logger_viewer/"><strong>muda::LoggerViewer</strong></a>, <a href="../classmuda_1_1_offset2_d/"><strong>muda::Offset2D</strong></a>, <a href="../classmuda_1_1_offset3_d/"><strong>muda::Offset3D</strong></a>)</li>
+<li><strong>m_origin_height</strong> (<a href="../classmuda_1_1_buffer2_d_view_t/"><strong>muda::Buffer2DViewT</strong></a>, <a href="../classmuda_1_1_buffer3_d_view_t/"><strong>muda::Buffer3DViewT</strong></a>)</li>
+<li><strong>m_origin_width</strong> (<a href="../classmuda_1_1_buffer2_d_view_t/"><strong>muda::Buffer2DViewT</strong></a>, <a href="../classmuda_1_1_buffer3_d_view_t/"><strong>muda::Buffer3DViewT</strong></a>)</li>
+<li><strong>m_pitch_bytes</strong> (<a href="../classmuda_1_1_buffer2_d_view_t/"><strong>muda::Buffer2DViewT</strong></a>, <a href="../classmuda_1_1_buffer3_d_view_t/"><strong>muda::Buffer3DViewT</strong></a>, <a href="../classmuda_1_1_dense2_d_base/"><strong>muda::Dense2DBase</strong></a>, <a href="../classmuda_1_1_dense3_d_base/"><strong>muda::Dense3DBase</strong></a>, <a href="../classmuda_1_1_device_buffer2_d/"><strong>muda::DeviceBuffer2D</strong></a>, <a href="../classmuda_1_1_device_buffer3_d/"><strong>muda::DeviceBuffer3D</strong></a>)</li>
+<li><strong>m_pitch_bytes_area</strong> (<a href="../classmuda_1_1_buffer3_d_view_t/"><strong>muda::Buffer3DViewT</strong></a>, <a href="../classmuda_1_1_dense3_d_base/"><strong>muda::Dense3DBase</strong></a>, <a href="../classmuda_1_1_device_buffer3_d/"><strong>muda::DeviceBuffer3D</strong></a>)</li>
+<li><strong>m_block_dim</strong> (<a href="../classmuda_1_1_buffer_launch/"><strong>muda::BufferLaunch</strong></a>, <a href="../classmuda_1_1_kernel/"><strong>muda::Kernel</strong></a>, <a href="../classmuda_1_1_launch/"><strong>muda::Launch</strong></a>, <a href="../classmuda_1_1_parallel_for/"><strong>muda::ParallelFor</strong></a>)</li>
+<li><strong>m_grid_dim</strong> (<a href="../classmuda_1_1_buffer_launch/"><strong>muda::BufferLaunch</strong></a>, <a href="../classmuda_1_1_kernel/"><strong>muda::Kernel</strong></a>, <a href="../classmuda_1_1_launch/"><strong>muda::Launch</strong></a>, <a href="../classmuda_1_1_parallel_for/"><strong>muda::ParallelFor</strong></a>)</li>
+<li><strong>m_size</strong> (<a href="../classmuda_1_1_buffer_view_t/"><strong>muda::BufferViewT</strong></a>, <a href="../classmuda_1_1_c_o_o_vector_view_base/"><strong>muda::COOVectorViewBase</strong></a>, <a href="../classmuda_1_1_dense_vector_view_base/"><strong>muda::DenseVectorViewBase</strong></a>, <a href="../classmuda_1_1_dense_vector_viewer_base/"><strong>muda::DenseVectorViewerBase</strong></a>, <a href="../classmuda_1_1_device_buffer/"><strong>muda::DeviceBuffer</strong></a>, <a href="../classmuda_1_1_device_doublet_vector_3_01_t_00_011_01_4/"><strong>muda::DeviceDoubletVector&lt; T, 1 &gt;</strong></a>, <a href="../classmuda_1_1_field_entry_view_core/"><strong>muda::FieldEntryViewCore</strong></a>, <a href="../classmuda_1_1_field_entry_viewer_core/"><strong>muda::FieldEntryViewerCore</strong></a>, <a href="../classmuda_1_1details_1_1_temp_buffer/"><strong>muda::details::TempBuffer</strong></a>)</li>
+<li><strong>m_col_indices</strong> (<a href="../classmuda_1_1_c_o_o_matrix_view_base/"><strong>muda::COOMatrixViewBase</strong></a>, <a href="../classmuda_1_1_c_s_r_matrix_view_base/"><strong>muda::CSRMatrixViewBase</strong></a>, <a href="../classmuda_1_1_device_c_s_r_matrix/"><strong>muda::DeviceCSRMatrix</strong></a>, <a href="../classmuda_1_1_device_triplet_matrix_3_01_t_00_011_01_4/"><strong>muda::DeviceTripletMatrix&lt; T, 1 &gt;</strong></a>, <a href="../classmuda_1_1_triplet_matrix_view_base_3_01_is_const_00_01_ty_00_011_01_4/"><strong>muda::TripletMatrixViewBase&lt; IsConst, Ty, 1 &gt;</strong></a>, <a href="../classmuda_1_1_triplet_matrix_viewer_base_3_01_is_const_00_01_t_00_011_01_4/"><strong>muda::TripletMatrixViewerBase&lt; IsConst, T, 1 &gt;</strong></a>)</li>
+<li><strong>m_cols</strong> (<a href="../classmuda_1_1_c_o_o_matrix_view_base/"><strong>muda::COOMatrixViewBase</strong></a>, <a href="../classmuda_1_1_device_triplet_matrix_3_01_t_00_011_01_4/"><strong>muda::DeviceTripletMatrix&lt; T, 1 &gt;</strong></a>)</li>
+<li><strong>m_row_indices</strong> (<a href="../classmuda_1_1_c_o_o_matrix_view_base/"><strong>muda::COOMatrixViewBase</strong></a>, <a href="../classmuda_1_1_device_triplet_matrix_3_01_t_00_011_01_4/"><strong>muda::DeviceTripletMatrix&lt; T, 1 &gt;</strong></a>, <a href="../classmuda_1_1_triplet_matrix_view_base_3_01_is_const_00_01_ty_00_011_01_4/"><strong>muda::TripletMatrixViewBase&lt; IsConst, Ty, 1 &gt;</strong></a>, <a href="../classmuda_1_1_triplet_matrix_viewer_base_3_01_is_const_00_01_t_00_011_01_4/"><strong>muda::TripletMatrixViewerBase&lt; IsConst, T, 1 &gt;</strong></a>)</li>
+<li><strong>m_rows</strong> (<a href="../classmuda_1_1_c_o_o_matrix_view_base/"><strong>muda::COOMatrixViewBase</strong></a>, <a href="../classmuda_1_1_device_triplet_matrix_3_01_t_00_011_01_4/"><strong>muda::DeviceTripletMatrix&lt; T, 1 &gt;</strong></a>)</li>
+<li><strong>m_submatrix_extent</strong> (<a href="../classmuda_1_1_c_o_o_matrix_view_base/"><strong>muda::COOMatrixViewBase</strong></a>, <a href="../classmuda_1_1_triplet_matrix_view_base/"><strong>muda::TripletMatrixViewBase</strong></a>, <a href="../classmuda_1_1_triplet_matrix_view_base_3_01_is_const_00_01_ty_00_011_01_4/"><strong>muda::TripletMatrixViewBase&lt; IsConst, Ty, 1 &gt;</strong></a>, <a href="../classmuda_1_1_triplet_matrix_viewer_base/"><strong>muda::TripletMatrixViewerBase</strong></a>, <a href="../classmuda_1_1_triplet_matrix_viewer_base_3_01_is_const_00_01_t_00_011_01_4/"><strong>muda::TripletMatrixViewerBase&lt; IsConst, T, 1 &gt;</strong></a>)</li>
+<li><strong>m_submatrix_offset</strong> (<a href="../classmuda_1_1_c_o_o_matrix_view_base/"><strong>muda::COOMatrixViewBase</strong></a>, <a href="../classmuda_1_1_triplet_matrix_view_base/"><strong>muda::TripletMatrixViewBase</strong></a>, <a href="../classmuda_1_1_triplet_matrix_view_base_3_01_is_const_00_01_ty_00_011_01_4/"><strong>muda::TripletMatrixViewBase&lt; IsConst, Ty, 1 &gt;</strong></a>, <a href="../classmuda_1_1_triplet_matrix_viewer_base/"><strong>muda::TripletMatrixViewerBase</strong></a>, <a href="../classmuda_1_1_triplet_matrix_viewer_base_3_01_is_const_00_01_t_00_011_01_4/"><strong>muda::TripletMatrixViewerBase&lt; IsConst, T, 1 &gt;</strong></a>)</li>
+<li><strong>m_total_triplet_count</strong> (<a href="../classmuda_1_1_c_o_o_matrix_view_base/"><strong>muda::COOMatrixViewBase</strong></a>, <a href="../classmuda_1_1_triplet_matrix_view_base/"><strong>muda::TripletMatrixViewBase</strong></a>, <a href="../classmuda_1_1_triplet_matrix_view_base_3_01_is_const_00_01_ty_00_011_01_4/"><strong>muda::TripletMatrixViewBase&lt; IsConst, Ty, 1 &gt;</strong></a>, <a href="../classmuda_1_1_triplet_matrix_viewer_base/"><strong>muda::TripletMatrixViewerBase</strong></a>, <a href="../classmuda_1_1_triplet_matrix_viewer_base_3_01_is_const_00_01_t_00_011_01_4/"><strong>muda::TripletMatrixViewerBase&lt; IsConst, T, 1 &gt;</strong></a>)</li>
+<li><strong>m_triplet_count</strong> (<a href="../classmuda_1_1_c_o_o_matrix_view_base/"><strong>muda::COOMatrixViewBase</strong></a>, <a href="../classmuda_1_1_triplet_matrix_view_base/"><strong>muda::TripletMatrixViewBase</strong></a>, <a href="../classmuda_1_1_triplet_matrix_view_base_3_01_is_const_00_01_ty_00_011_01_4/"><strong>muda::TripletMatrixViewBase&lt; IsConst, Ty, 1 &gt;</strong></a>, <a href="../classmuda_1_1_triplet_matrix_viewer_base/"><strong>muda::TripletMatrixViewerBase</strong></a>, <a href="../classmuda_1_1_triplet_matrix_viewer_base_3_01_is_const_00_01_t_00_011_01_4/"><strong>muda::TripletMatrixViewerBase&lt; IsConst, T, 1 &gt;</strong></a>)</li>
+<li><strong>m_triplet_index_offset</strong> (<a href="../classmuda_1_1_c_o_o_matrix_view_base/"><strong>muda::COOMatrixViewBase</strong></a>, <a href="../classmuda_1_1_triplet_matrix_view_base/"><strong>muda::TripletMatrixViewBase</strong></a>, <a href="../classmuda_1_1_triplet_matrix_view_base_3_01_is_const_00_01_ty_00_011_01_4/"><strong>muda::TripletMatrixViewBase&lt; IsConst, Ty, 1 &gt;</strong></a>, <a href="../classmuda_1_1_triplet_matrix_viewer_base/"><strong>muda::TripletMatrixViewerBase</strong></a>, <a href="../classmuda_1_1_triplet_matrix_viewer_base_3_01_is_const_00_01_t_00_011_01_4/"><strong>muda::TripletMatrixViewerBase&lt; IsConst, T, 1 &gt;</strong></a>)</li>
+<li><strong>m_values</strong> (<a href="../classmuda_1_1_c_o_o_matrix_view_base/"><strong>muda::COOMatrixViewBase</strong></a>, <a href="../classmuda_1_1_c_o_o_vector_view_base/"><strong>muda::COOVectorViewBase</strong></a>, <a href="../classmuda_1_1_c_s_r_matrix_view_base/"><strong>muda::CSRMatrixViewBase</strong></a>, <a href="../classmuda_1_1_device_c_s_r_matrix/"><strong>muda::DeviceCSRMatrix</strong></a>, <a href="../classmuda_1_1_device_doublet_vector_3_01_t_00_011_01_4/"><strong>muda::DeviceDoubletVector&lt; T, 1 &gt;</strong></a>, <a href="../classmuda_1_1_device_triplet_matrix_3_01_t_00_011_01_4/"><strong>muda::DeviceTripletMatrix&lt; T, 1 &gt;</strong></a>, <a href="../classmuda_1_1_doublet_vector_view_base_3_01_is_const_00_01_t_00_011_01_4/"><strong>muda::DoubletVectorViewBase&lt; IsConst, T, 1 &gt;</strong></a>, <a href="../classmuda_1_1_doublet_vector_viewer_base_3_01_is_const_00_01_t_00_011_01_4/"><strong>muda::DoubletVectorViewerBase&lt; IsConst, T, 1 &gt;</strong></a>, <a href="../classmuda_1_1_triplet_matrix_view_base_3_01_is_const_00_01_ty_00_011_01_4/"><strong>muda::TripletMatrixViewBase&lt; IsConst, Ty, 1 &gt;</strong></a>, <a href="../classmuda_1_1_triplet_matrix_viewer_base_3_01_is_const_00_01_t_00_011_01_4/"><strong>muda::TripletMatrixViewerBase&lt; IsConst, T, 1 &gt;</strong></a>)</li>
+<li><strong>m_doublet_count</strong> (<a href="../classmuda_1_1_c_o_o_vector_view_base/"><strong>muda::COOVectorViewBase</strong></a>, <a href="../classmuda_1_1_doublet_vector_view_base/"><strong>muda::DoubletVectorViewBase</strong></a>, <a href="../classmuda_1_1_doublet_vector_view_base_3_01_is_const_00_01_t_00_011_01_4/"><strong>muda::DoubletVectorViewBase&lt; IsConst, T, 1 &gt;</strong></a>, <a href="../classmuda_1_1_doublet_vector_viewer_base/"><strong>muda::DoubletVectorViewerBase</strong></a>, <a href="../classmuda_1_1_doublet_vector_viewer_base_3_01_is_const_00_01_t_00_011_01_4/"><strong>muda::DoubletVectorViewerBase&lt; IsConst, T, 1 &gt;</strong></a>)</li>
+<li><strong>m_doublet_index_offset</strong> (<a href="../classmuda_1_1_c_o_o_vector_view_base/"><strong>muda::COOVectorViewBase</strong></a>, <a href="../classmuda_1_1_doublet_vector_view_base/"><strong>muda::DoubletVectorViewBase</strong></a>, <a href="../classmuda_1_1_doublet_vector_view_base_3_01_is_const_00_01_t_00_011_01_4/"><strong>muda::DoubletVectorViewBase&lt; IsConst, T, 1 &gt;</strong></a>, <a href="../classmuda_1_1_doublet_vector_viewer_base/"><strong>muda::DoubletVectorViewerBase</strong></a>, <a href="../classmuda_1_1_doublet_vector_viewer_base_3_01_is_const_00_01_t_00_011_01_4/"><strong>muda::DoubletVectorViewerBase&lt; IsConst, T, 1 &gt;</strong></a>)</li>
+<li><strong>m_indices</strong> (<a href="../classmuda_1_1_c_o_o_vector_view_base/"><strong>muda::COOVectorViewBase</strong></a>, <a href="../classmuda_1_1_device_doublet_vector_3_01_t_00_011_01_4/"><strong>muda::DeviceDoubletVector&lt; T, 1 &gt;</strong></a>, <a href="../classmuda_1_1_doublet_vector_view_base_3_01_is_const_00_01_t_00_011_01_4/"><strong>muda::DoubletVectorViewBase&lt; IsConst, T, 1 &gt;</strong></a>, <a href="../classmuda_1_1_doublet_vector_viewer_base_3_01_is_const_00_01_t_00_011_01_4/"><strong>muda::DoubletVectorViewerBase&lt; IsConst, T, 1 &gt;</strong></a>, <a href="../classmuda_1_1lbvh_1_1_b_v_h/"><strong>muda::lbvh::BVH</strong></a>)</li>
+<li><strong>m_total_doublet_count</strong> (<a href="../classmuda_1_1_c_o_o_vector_view_base/"><strong>muda::COOVectorViewBase</strong></a>, <a href="../classmuda_1_1_doublet_vector_view_base/"><strong>muda::DoubletVectorViewBase</strong></a>, <a href="../classmuda_1_1_doublet_vector_view_base_3_01_is_const_00_01_t_00_011_01_4/"><strong>muda::DoubletVectorViewBase&lt; IsConst, T, 1 &gt;</strong></a>, <a href="../classmuda_1_1_doublet_vector_viewer_base/"><strong>muda::DoubletVectorViewerBase</strong></a>, <a href="../classmuda_1_1_doublet_vector_viewer_base_3_01_is_const_00_01_t_00_011_01_4/"><strong>muda::DoubletVectorViewerBase&lt; IsConst, T, 1 &gt;</strong></a>)</li>
+<li><strong>m_non_zero</strong> (<a href="../classmuda_1_1_c_s_r_matrix_view_base/"><strong>muda::CSRMatrixViewBase</strong></a>)</li>
+<li><strong>m_row_offsets</strong> (<a href="../classmuda_1_1_c_s_r_matrix_view_base/"><strong>muda::CSRMatrixViewBase</strong></a>, <a href="../classmuda_1_1_device_c_s_r_matrix/"><strong>muda::DeviceCSRMatrix</strong></a>)</li>
+<li><strong>m_access_graph_index</strong> (<a href="../classmuda_1_1_compute_graph/"><strong>muda::ComputeGraph</strong></a>, <a href="../classmuda_1_1_compute_graph_closure/"><strong>muda::ComputeGraphClosure</strong></a>)</li>
+<li><strong>m_allow_access_graph</strong> (<a href="../classmuda_1_1_compute_graph/"><strong>muda::ComputeGraph</strong></a>)</li>
+<li><strong>m_allow_node_adding</strong> (<a href="../classmuda_1_1_compute_graph/"><strong>muda::ComputeGraph</strong></a>)</li>
+<li><strong>m_closure_need_update</strong> (<a href="../classmuda_1_1_compute_graph/"><strong>muda::ComputeGraph</strong></a>)</li>
+<li><strong>m_closures</strong> (<a href="../classmuda_1_1_compute_graph/"><strong>muda::ComputeGraph</strong></a>)</li>
+<li><strong>m_current_closure_id</strong> (<a href="../classmuda_1_1_compute_graph/"><strong>muda::ComputeGraph</strong></a>)</li>
+<li><strong>m_current_graph_phase</strong> (<a href="../classmuda_1_1_compute_graph/"><strong>muda::ComputeGraph</strong></a>)</li>
+<li><strong>m_current_node_id</strong> (<a href="../classmuda_1_1_compute_graph/"><strong>muda::ComputeGraph</strong></a>)</li>
+<li><strong>m_current_single_stream</strong> (<a href="../classmuda_1_1_compute_graph/"><strong>muda::ComputeGraph</strong></a>)</li>
+<li><strong>m_deps</strong> (<a href="../classmuda_1_1_compute_graph/"><strong>muda::ComputeGraph</strong></a>)</li>
+<li><strong>m_event</strong> (<a href="../classmuda_1_1_compute_graph/"><strong>muda::ComputeGraph</strong></a>)</li>
+<li><strong>m_event_result</strong> (<a href="../classmuda_1_1_compute_graph/"><strong>muda::ComputeGraph</strong></a>)</li>
+<li><strong>m_flags</strong> (<a href="../classmuda_1_1_compute_graph/"><strong>muda::ComputeGraph</strong></a>, <a href="../classmuda_1_1_graph_exec/"><strong>muda::GraphExec</strong></a>, <a href="../classmuda_1_1_graph_viewer/"><strong>muda::GraphViewer</strong></a>)</li>
+<li><strong>m_global_to_local_var_id</strong> (<a href="../classmuda_1_1_compute_graph/"><strong>muda::ComputeGraph</strong></a>)</li>
+<li><strong>m_graph</strong> (<a href="../classmuda_1_1_compute_graph/"><strong>muda::ComputeGraph</strong></a>, <a href="../classmuda_1_1_compute_graph_closure/"><strong>muda::ComputeGraphClosure</strong></a>, <a href="../classmuda_1_1_graph_viewer/"><strong>muda::GraphViewer</strong></a>)</li>
+<li><strong>m_graph_exec</strong> (<a href="../classmuda_1_1_compute_graph/"><strong>muda::ComputeGraph</strong></a>)</li>
+<li><strong>m_graph_nodes</strong> (<a href="../classmuda_1_1_compute_graph/"><strong>muda::ComputeGraph</strong></a>, <a href="../classmuda_1_1_compute_graph_closure/"><strong>muda::ComputeGraphClosure</strong></a>)</li>
+<li><strong>m_is_capturing</strong> (<a href="../classmuda_1_1_compute_graph/"><strong>muda::ComputeGraph</strong></a>)</li>
+<li><strong>m_is_in_capture_func</strong> (<a href="../classmuda_1_1_compute_graph/"><strong>muda::ComputeGraph</strong></a>)</li>
+<li><strong>m_is_topo_built</strong> (<a href="../classmuda_1_1_compute_graph/"><strong>muda::ComputeGraph</strong></a>)</li>
+<li><strong>m_name</strong> (<a href="../classmuda_1_1_compute_graph/"><strong>muda::ComputeGraph</strong></a>, <a href="../classmuda_1_1_compute_graph_closure/"><strong>muda::ComputeGraphClosure</strong></a>, <a href="../classmuda_1_1_compute_graph_node_base/"><strong>muda::ComputeGraphNodeBase</strong></a>, <a href="../classmuda_1_1_compute_graph_var_base/"><strong>muda::ComputeGraphVarBase</strong></a>, <a href="../classmuda_1_1_field_builder_1_1_entry_proxy/"><strong>muda::FieldBuilder::EntryProxy</strong></a>, <a href="../classmuda_1_1_field_entry_base/"><strong>muda::FieldEntryBase</strong></a>, <a href="../classmuda_1_1_field_entry_core/"><strong>muda::FieldEntryCore</strong></a>, <a href="../classmuda_1_1_sub_field/"><strong>muda::SubField</strong></a>)</li>
+<li><strong>m_need_update</strong> (<a href="../classmuda_1_1_compute_graph/"><strong>muda::ComputeGraph</strong></a>)</li>
+<li><strong>m_nodes</strong> (<a href="../classmuda_1_1_compute_graph/"><strong>muda::ComputeGraph</strong></a>, <a href="../classmuda_1_1lbvh_1_1_b_v_h/"><strong>muda::lbvh::BVH</strong></a>, <a href="../classmuda_1_1lbvh_1_1details_1_1_b_v_h_viewer_base/"><strong>muda::lbvh::details::BVHViewerBase</strong></a>)</li>
+<li><strong>m_related_vars</strong> (<a href="../classmuda_1_1_compute_graph/"><strong>muda::ComputeGraph</strong></a>)</li>
+<li><strong>m_sub_graphs</strong> (<a href="../classmuda_1_1_compute_graph/"><strong>muda::ComputeGraph</strong></a>)</li>
+<li><strong>m_var_manager</strong> (<a href="../classmuda_1_1_compute_graph/"><strong>muda::ComputeGraph</strong></a>, <a href="../classmuda_1_1_compute_graph_var_base/"><strong>muda::ComputeGraphVarBase</strong></a>)</li>
+<li><strong>m_cg</strong> (<a href="../classmuda_1_1_compute_graph_1_1_add_node_proxy/"><strong>muda::ComputeGraph::AddNodeProxy</strong></a>, <a href="../classmuda_1_1_compute_graph_1_1_graph_phase_guard/"><strong>muda::ComputeGraph::GraphPhaseGuard</strong></a>, <a href="../classmuda_1_1details_1_1_compute_graph_accessor/"><strong>muda::details::ComputeGraphAccessor</strong></a>)</li>
+<li><strong>m_node_name</strong> (<a href="../classmuda_1_1_compute_graph_1_1_add_node_proxy/"><strong>muda::ComputeGraph::AddNodeProxy</strong></a>)</li>
+<li><strong>m_current_graph</strong> (<a href="../classmuda_1_1_compute_graph_builder/"><strong>muda::ComputeGraphBuilder</strong></a>)</li>
+<li><strong>m_sub_graph</strong> (<a href="../classmuda_1_1_compute_graph_capture_node/"><strong>muda::ComputeGraphCaptureNode</strong></a>)</li>
+<li><strong>m_closure</strong> (<a href="../classmuda_1_1_compute_graph_closure/"><strong>muda::ComputeGraphClosure</strong></a>)</li>
+<li><strong>m_clousure_id</strong> (<a href="../classmuda_1_1_compute_graph_closure/"><strong>muda::ComputeGraphClosure</strong></a>)</li>
+<li><strong>m_deps_begin</strong> (<a href="../classmuda_1_1_compute_graph_closure/"><strong>muda::ComputeGraphClosure</strong></a>)</li>
+<li><strong>m_deps_count</strong> (<a href="../classmuda_1_1_compute_graph_closure/"><strong>muda::ComputeGraphClosure</strong></a>)</li>
+<li><strong>m_type</strong> (<a href="../classmuda_1_1_compute_graph_closure/"><strong>muda::ComputeGraphClosure</strong></a>, <a href="../classmuda_1_1_compute_graph_node_base/"><strong>muda::ComputeGraphNodeBase</strong></a>, <a href="../classmuda_1_1_parallel_for_details/"><strong>muda::ParallelForDetails</strong></a>)</li>
+<li><strong>m_var_usages</strong> (<a href="../classmuda_1_1_compute_graph_closure/"><strong>muda::ComputeGraphClosure</strong></a>)</li>
+<li><strong>m_node</strong> (<a href="../classmuda_1_1_compute_graph_node/"><strong>muda::ComputeGraphNode</strong></a>)</li>
+<li><strong>m_access_index</strong> (<a href="../classmuda_1_1_compute_graph_node_base/"><strong>muda::ComputeGraphNodeBase</strong></a>)</li>
+<li><strong>m_cuda_node</strong> (<a href="../classmuda_1_1_compute_graph_node_base/"><strong>muda::ComputeGraphNodeBase</strong></a>)</li>
+<li><strong>m_node_id</strong> (<a href="../classmuda_1_1_compute_graph_node_base/"><strong>muda::ComputeGraphNodeBase</strong></a>)</li>
+<li><strong>m_value</strong> (<a href="../classmuda_1_1_compute_graph_var/"><strong>muda::ComputeGraphVar</strong></a>, <a href="../classmuda_1_1_compute_graph_var_3_01_buffer2_d_view_3_01_t_01_4_01_4/"><strong>muda::ComputeGraphVar&lt; Buffer2DView&lt; T &gt; &gt;</strong></a>, <a href="../classmuda_1_1_compute_graph_var_3_01_buffer3_d_view_3_01_t_01_4_01_4/"><strong>muda::ComputeGraphVar&lt; Buffer3DView&lt; T &gt; &gt;</strong></a>, <a href="../classmuda_1_1_compute_graph_var_3_01_buffer_view_3_01_t_01_4_01_4/"><strong>muda::ComputeGraphVar&lt; BufferView&lt; T &gt; &gt;</strong></a>, <a href="../classmuda_1_1_compute_graph_var_3_01_graph_viewer_01_4/"><strong>muda::ComputeGraphVar&lt; GraphViewer &gt;</strong></a>, <a href="../classmuda_1_1_compute_graph_var_3_01_var_view_3_01_t_01_4_01_4/"><strong>muda::ComputeGraphVar&lt; VarView&lt; T &gt; &gt;</strong></a>, <a href="../classmuda_1_1_id_with_type/"><strong>muda::IdWithType</strong></a>)</li>
+<li><strong>m_closure_ids</strong> (<a href="../classmuda_1_1_compute_graph_var_base/"><strong>muda::ComputeGraphVarBase</strong></a>)</li>
+<li><strong>m_is_valid</strong> (<a href="../classmuda_1_1_compute_graph_var_base/"><strong>muda::ComputeGraphVarBase</strong></a>)</li>
+<li><strong>m_related_closure_infos</strong> (<a href="../classmuda_1_1_compute_graph_var_base/"><strong>muda::ComputeGraphVarBase</strong></a>)</li>
+<li><strong>m_var_id</strong> (<a href="../classmuda_1_1_compute_graph_var_base/"><strong>muda::ComputeGraphVarBase</strong></a>)</li>
+<li><strong>m_graphs</strong> (<a href="../classmuda_1_1_compute_graph_var_manager/"><strong>muda::ComputeGraphVarManager</strong></a>)</li>
+<li><strong>m_vars</strong> (<a href="../classmuda_1_1_compute_graph_var_manager/"><strong>muda::ComputeGraphVarManager</strong></a>)</li>
+<li><strong>m_vars_map</strong> (<a href="../classmuda_1_1_compute_graph_var_manager/"><strong>muda::ComputeGraphVarManager</strong></a>)</li>
+<li><strong>m_muda_stream</strong> (<a href="../classmuda_1_1_cub_wrapper/"><strong>muda::CubWrapper</strong></a>)</li>
+<li><strong>m_dim</strong> (<a href="../classmuda_1_1_dense1_d_t/"><strong>muda::Dense1DT</strong></a>, <a href="../classmuda_1_1_dense2_d_base/"><strong>muda::Dense2DBase</strong></a>, <a href="../classmuda_1_1_dense3_d_base/"><strong>muda::Dense3DBase</strong></a>)</li>
+<li><strong>m_sym</strong> (<a href="../classmuda_1_1_dense_matrix_view_base/"><strong>muda::DenseMatrixViewBase</strong></a>, <a href="../classmuda_1_1_device_dense_matrix/"><strong>muda::DeviceDenseMatrix</strong></a>)</li>
+<li><strong>m_view</strong> (<a href="../classmuda_1_1_dense_matrix_view_base/"><strong>muda::DenseMatrixViewBase</strong></a>, <a href="../classmuda_1_1_dense_matrix_viewer_base/"><strong>muda::DenseMatrixViewerBase</strong></a>)</li>
+<li><strong>m_col_offset</strong> (<a href="../classmuda_1_1_dense_matrix_viewer_base/"><strong>muda::DenseMatrixViewerBase</strong></a>)</li>
+<li><strong>m_col_size</strong> (<a href="../classmuda_1_1_dense_matrix_viewer_base/"><strong>muda::DenseMatrixViewerBase</strong></a>)</li>
+<li><strong>m_row_offset</strong> (<a href="../classmuda_1_1_dense_matrix_viewer_base/"><strong>muda::DenseMatrixViewerBase</strong></a>)</li>
+<li><strong>m_row_size</strong> (<a href="../classmuda_1_1_dense_matrix_viewer_base/"><strong>muda::DenseMatrixViewerBase</strong></a>)</li>
+<li><strong>m_inc</strong> (<a href="../classmuda_1_1_dense_vector_view_base/"><strong>muda::DenseVectorViewBase</strong></a>)</li>
+<li><strong>m_origin_size</strong> (<a href="../classmuda_1_1_dense_vector_view_base/"><strong>muda::DenseVectorViewBase</strong></a>, <a href="../classmuda_1_1_dense_vector_viewer_base/"><strong>muda::DenseVectorViewerBase</strong></a>)</li>
+<li><strong>m_capacity</strong> (<a href="../classmuda_1_1_device_buffer/"><strong>muda::DeviceBuffer</strong></a>, <a href="../classmuda_1_1_device_buffer2_d/"><strong>muda::DeviceBuffer2D</strong></a>, <a href="../classmuda_1_1_device_buffer3_d/"><strong>muda::DeviceBuffer3D</strong></a>, <a href="../classmuda_1_1details_1_1_temp_buffer/"><strong>muda::details::TempBuffer</strong></a>)</li>
+<li><strong>m_segment_count</strong> (<a href="../classmuda_1_1_device_doublet_vector/"><strong>muda::DeviceDoubletVector</strong></a>)</li>
+<li><strong>m_segment_indices</strong> (<a href="../classmuda_1_1_device_doublet_vector/"><strong>muda::DeviceDoubletVector</strong></a>, <a href="../classmuda_1_1_doublet_vector_view_base/"><strong>muda::DoubletVectorViewBase</strong></a>, <a href="../classmuda_1_1_doublet_vector_viewer_base/"><strong>muda::DoubletVectorViewerBase</strong></a>)</li>
+<li><strong>m_segment_values</strong> (<a href="../classmuda_1_1_device_doublet_vector/"><strong>muda::DeviceDoubletVector</strong></a>, <a href="../classmuda_1_1_doublet_vector_view_base/"><strong>muda::DoubletVectorViewBase</strong></a>, <a href="../classmuda_1_1_doublet_vector_viewer_base/"><strong>muda::DoubletVectorViewerBase</strong></a>)</li>
+<li><strong>m_block_cols</strong> (<a href="../classmuda_1_1_device_triplet_matrix/"><strong>muda::DeviceTripletMatrix</strong></a>)</li>
+<li><strong>m_block_row_indices</strong> (<a href="../classmuda_1_1_device_triplet_matrix/"><strong>muda::DeviceTripletMatrix</strong></a>, <a href="../classmuda_1_1_triplet_matrix_view_base/"><strong>muda::TripletMatrixViewBase</strong></a>, <a href="../classmuda_1_1_triplet_matrix_viewer_base/"><strong>muda::TripletMatrixViewerBase</strong></a>)</li>
+<li><strong>m_block_rows</strong> (<a href="../classmuda_1_1_device_triplet_matrix/"><strong>muda::DeviceTripletMatrix</strong></a>)</li>
+<li><strong>m_subvector_extent</strong> (<a href="../classmuda_1_1_doublet_vector_view_base/"><strong>muda::DoubletVectorViewBase</strong></a>, <a href="../classmuda_1_1_doublet_vector_view_base_3_01_is_const_00_01_t_00_011_01_4/"><strong>muda::DoubletVectorViewBase&lt; IsConst, T, 1 &gt;</strong></a>, <a href="../classmuda_1_1_doublet_vector_viewer_base/"><strong>muda::DoubletVectorViewerBase</strong></a>, <a href="../classmuda_1_1_doublet_vector_viewer_base_3_01_is_const_00_01_t_00_011_01_4/"><strong>muda::DoubletVectorViewerBase&lt; IsConst, T, 1 &gt;</strong></a>)</li>
+<li><strong>m_subvector_offset</strong> (<a href="../classmuda_1_1_doublet_vector_view_base/"><strong>muda::DoubletVectorViewBase</strong></a>, <a href="../classmuda_1_1_doublet_vector_view_base_3_01_is_const_00_01_t_00_011_01_4/"><strong>muda::DoubletVectorViewBase&lt; IsConst, T, 1 &gt;</strong></a>, <a href="../classmuda_1_1_doublet_vector_viewer_base/"><strong>muda::DoubletVectorViewerBase</strong></a>, <a href="../classmuda_1_1_doublet_vector_viewer_base_3_01_is_const_00_01_t_00_011_01_4/"><strong>muda::DoubletVectorViewerBase&lt; IsConst, T, 1 &gt;</strong></a>)</li>
+<li><strong>m_total_segment_count</strong> (<a href="../classmuda_1_1_doublet_vector_view_base/"><strong>muda::DoubletVectorViewBase</strong></a>, <a href="../classmuda_1_1_doublet_vector_viewer_base/"><strong>muda::DoubletVectorViewerBase</strong></a>)</li>
+<li><strong>m_total_count</strong> (<a href="../classmuda_1_1_doublet_vector_view_base_3_01_is_const_00_01_t_00_011_01_4/"><strong>muda::DoubletVectorViewBase&lt; IsConst, T, 1 &gt;</strong></a>, <a href="../classmuda_1_1_doublet_vector_viewer_base_3_01_is_const_00_01_t_00_011_01_4/"><strong>muda::DoubletVectorViewerBase&lt; IsConst, T, 1 &gt;</strong></a>)</li>
+<li><strong>m_index</strong> (<a href="../classmuda_1_1_doublet_vector_viewer_1_1_proxy/"><strong>muda::DoubletVectorViewer::Proxy</strong></a>, <a href="../classmuda_1_1_doublet_vector_viewer_3_01_t_00_011_01_4_1_1_proxy/"><strong>muda::DoubletVectorViewer&lt; T, 1 &gt;::Proxy</strong></a>, <a href="../classmuda_1_1_triplet_matrix_viewer_1_1_proxy/"><strong>muda::TripletMatrixViewer::Proxy</strong></a>, <a href="../classmuda_1_1_triplet_matrix_viewer_3_01_t_00_011_01_4_1_1_proxy/"><strong>muda::TripletMatrixViewer&lt; T, 1 &gt;::Proxy</strong></a>)</li>
+<li><strong>m_viewer</strong> (<a href="../classmuda_1_1_doublet_vector_viewer_1_1_proxy/"><strong>muda::DoubletVectorViewer::Proxy</strong></a>, <a href="../classmuda_1_1_doublet_vector_viewer_3_01_t_00_011_01_4_1_1_proxy/"><strong>muda::DoubletVectorViewer&lt; T, 1 &gt;::Proxy</strong></a>, <a href="../classmuda_1_1_log_proxy/"><strong>muda::LogProxy</strong></a>, <a href="../classmuda_1_1_logger/"><strong>muda::Logger</strong></a>, <a href="../classmuda_1_1_triplet_matrix_viewer_1_1_proxy/"><strong>muda::TripletMatrixViewer::Proxy</strong></a>, <a href="../classmuda_1_1_triplet_matrix_viewer_3_01_t_00_011_01_4_1_1_proxy/"><strong>muda::TripletMatrixViewer&lt; T, 1 &gt;::Proxy</strong></a>)</li>
+<li><strong>m_handle</strong> (<a href="../classmuda_1_1_event/"><strong>muda::Event</strong></a>, <a href="../classmuda_1_1_graph/"><strong>muda::Graph</strong></a>, <a href="../classmuda_1_1_graph_exec/"><strong>muda::GraphExec</strong></a>, <a href="../classmuda_1_1_graph_node/"><strong>muda::GraphNode</strong></a>, <a href="../classmuda_1_1_stream/"><strong>muda::Stream</strong></a>)</li>
+<li><strong>m_name_to_index</strong> (<a href="../classmuda_1_1_field/"><strong>muda::Field</strong></a>, <a href="../classmuda_1_1_sub_field_interface/"><strong>muda::SubFieldInterface</strong></a>)</li>
+<li><strong>m_string_cache</strong> (<a href="../classmuda_1_1_field/"><strong>muda::Field</strong></a>)</li>
+<li><strong>m_sub_fields</strong> (<a href="../classmuda_1_1_field/"><strong>muda::Field</strong></a>)</li>
+<li><strong>max_alignment</strong> (<a href="../classmuda_1_1_field_build_options/"><strong>muda::FieldBuildOptions</strong></a>)</li>
+<li><strong>min_alignment</strong> (<a href="../classmuda_1_1_field_build_options/"><strong>muda::FieldBuildOptions</strong></a>)</li>
+<li><strong>m_is_built</strong> (<a href="../classmuda_1_1_field_builder/"><strong>muda::FieldBuilder</strong></a>, <a href="../classmuda_1_1_sub_field/"><strong>muda::SubField</strong></a>)</li>
+<li><strong>m_layout</strong> (<a href="../classmuda_1_1_field_builder/"><strong>muda::FieldBuilder</strong></a>, <a href="../classmuda_1_1_field_entry_layout_info/"><strong>muda::FieldEntryLayoutInfo</strong></a>)</li>
+<li><strong>m_options</strong> (<a href="../classmuda_1_1_field_builder/"><strong>muda::FieldBuilder</strong></a>)</li>
+<li><strong>m_single_entry</strong> (<a href="../classmuda_1_1_field_builder/"><strong>muda::FieldBuilder</strong></a>)</li>
+<li><strong>m_subfield</strong> (<a href="../classmuda_1_1_field_builder/"><strong>muda::FieldBuilder</strong></a>)</li>
+<li><strong>m_builder</strong> (<a href="../classmuda_1_1_field_builder_1_1_entry_proxy/"><strong>muda::FieldBuilder::EntryProxy</strong></a>)</li>
+<li><strong>m_workpace</strong> (<a href="../classmuda_1_1_field_entry/"><strong>muda::FieldEntry</strong></a>)</li>
+<li><strong>m_core</strong> (<a href="../classmuda_1_1_field_entry_base/"><strong>muda::FieldEntryBase</strong></a>, <a href="../classmuda_1_1_field_entry_view_core/"><strong>muda::FieldEntryViewCore</strong></a>, <a href="../classmuda_1_1_field_entry_viewer_core/"><strong>muda::FieldEntryViewerCore</strong></a>)</li>
+<li><strong>m_field</strong> (<a href="../classmuda_1_1_field_entry_base/"><strong>muda::FieldEntryBase</strong></a>, <a href="../classmuda_1_1_sub_field/"><strong>muda::SubField</strong></a>, <a href="../classmuda_1_1_sub_field_interface/"><strong>muda::SubFieldInterface</strong></a>)</li>
+<li><strong>m_host_device_core</strong> (<a href="../classmuda_1_1_field_entry_base/"><strong>muda::FieldEntryBase</strong></a>)</li>
+<li><strong>m_buffer</strong> (<a href="../classmuda_1_1_field_entry_core/"><strong>muda::FieldEntryCore</strong></a>, <a href="../classmuda_1_1_logger/"><strong>muda::Logger</strong></a>, <a href="../classmuda_1_1_logger_data_container/"><strong>muda::LoggerDataContainer</strong></a>, <a href="../classmuda_1_1_logger_viewer/"><strong>muda::LoggerViewer</strong></a>)</li>
+<li><strong>m_info</strong> (<a href="../classmuda_1_1_field_entry_core/"><strong>muda::FieldEntryCore</strong></a>)</li>
+<li><strong>m_innermost_array_size</strong> (<a href="../classmuda_1_1_field_entry_layout_info/"><strong>muda::FieldEntryLayoutInfo</strong></a>)</li>
+<li><strong>m_stride</strong> (<a href="../classmuda_1_1_field_entry_view_core/"><strong>muda::FieldEntryViewCore</strong></a>, <a href="../classmuda_1_1_field_entry_viewer_core/"><strong>muda::FieldEntryViewerCore</strong></a>)</li>
+<li><strong>m_mask</strong> (<a href="../classmuda_1_1_flags/"><strong>muda::Flags</strong></a>)</li>
+<li><strong>m_cached</strong> (<a href="../classmuda_1_1_graph/"><strong>muda::Graph</strong></a>, <a href="../classmuda_1_1_graph_exec/"><strong>muda::GraphExec</strong></a>)</li>
+<li><strong>m_device_data</strong> (<a href="../classmuda_1_1_host_device_config/"><strong>muda::HostDeviceConfig</strong></a>, <a href="../classmuda_1_1_host_device_config_view/"><strong>muda::HostDeviceConfigView</strong></a>)</li>
+<li><strong>m_host_data</strong> (<a href="../classmuda_1_1_host_device_config/"><strong>muda::HostDeviceConfig</strong></a>, <a href="../classmuda_1_1_host_device_config_view/"><strong>muda::HostDeviceConfigView</strong></a>)</li>
+<li><strong>m_parms</strong> (<a href="../classmuda_1_1_host_node_parms/"><strong>muda::HostNodeParms</strong></a>, <a href="../classmuda_1_1_kernel_node_parms/"><strong>muda::KernelNodeParms</strong></a>)</li>
+<li><strong>m_kernel</strong> (<a href="../classmuda_1_1_kernel/"><strong>muda::Kernel</strong></a>)</li>
+<li><strong>m_shared_memory_size</strong> (<a href="../classmuda_1_1_kernel/"><strong>muda::Kernel</strong></a>)</li>
+<li><strong>m_stream</strong> (<a href="../classmuda_1_1_kernel/"><strong>muda::Kernel</strong></a>, <a href="../classmuda_1_1_launch_core/"><strong>muda::LaunchCore</strong></a>, <a href="../classmuda_1_1_linear_system_handles/"><strong>muda::LinearSystemHandles</strong></a>, <a href="../classmuda_1_1spatial__hash_1_1details_1_1_sparse_spatial_hash_impl/"><strong>muda::spatial_hash::details::SparseSpatialHashImpl</strong></a>)</li>
+<li><strong>m_args</strong> (<a href="../classmuda_1_1_kernel_node_parms/"><strong>muda::KernelNodeParms</strong></a>)</li>
+<li><strong>m_shared_mem_size</strong> (<a href="../classmuda_1_1_launch/"><strong>muda::Launch</strong></a>, <a href="../classmuda_1_1_parallel_for/"><strong>muda::ParallelFor</strong></a>)</li>
+<li><strong>m_buffers</strong> (<a href="../classmuda_1_1_linear_system_context/"><strong>muda::LinearSystemContext</strong></a>)</li>
+<li><strong>m_converter</strong> (<a href="../classmuda_1_1_linear_system_context/"><strong>muda::LinearSystemContext</strong></a>)</li>
+<li><strong>m_create_info</strong> (<a href="../classmuda_1_1_linear_system_context/"><strong>muda::LinearSystemContext</strong></a>)</li>
+<li><strong>m_current_label</strong> (<a href="../classmuda_1_1_linear_system_context/"><strong>muda::LinearSystemContext</strong></a>)</li>
+<li><strong>m_handles</strong> (<a href="../classmuda_1_1_linear_system_context/"><strong>muda::LinearSystemContext</strong></a>, <a href="../classmuda_1_1_matrix_format_converter/"><strong>muda::MatrixFormatConverter</strong></a>, <a href="../classmuda_1_1details_1_1_matrix_format_converter_base/"><strong>muda::details::MatrixFormatConverterBase</strong></a>)</li>
+<li><strong>m_host_buffers</strong> (<a href="../classmuda_1_1_linear_system_context/"><strong>muda::LinearSystemContext</strong></a>)</li>
+<li><strong>m_reorder</strong> (<a href="../classmuda_1_1_linear_system_context/"><strong>muda::LinearSystemContext</strong></a>)</li>
+<li><strong>m_scalar_buffer</strong> (<a href="../classmuda_1_1_linear_system_context/"><strong>muda::LinearSystemContext</strong></a>)</li>
+<li><strong>m_sync_callbacks</strong> (<a href="../classmuda_1_1_linear_system_context/"><strong>muda::LinearSystemContext</strong></a>)</li>
+<li><strong>m_tolerance</strong> (<a href="../classmuda_1_1_linear_system_context/"><strong>muda::LinearSystemContext</strong></a>)</li>
+<li><strong>m_cublas</strong> (<a href="../classmuda_1_1_linear_system_handles/"><strong>muda::LinearSystemHandles</strong></a>)</li>
+<li><strong>m_cusolver_dn</strong> (<a href="../classmuda_1_1_linear_system_handles/"><strong>muda::LinearSystemHandles</strong></a>)</li>
+<li><strong>m_cusolver_sp</strong> (<a href="../classmuda_1_1_linear_system_handles/"><strong>muda::LinearSystemHandles</strong></a>)</li>
+<li><strong>m_cusparse</strong> (<a href="../classmuda_1_1_linear_system_handles/"><strong>muda::LinearSystemHandles</strong></a>)</li>
+<li><strong>m_pointer_mode_device</strong> (<a href="../classmuda_1_1_linear_system_handles/"><strong>muda::LinearSystemHandles</strong></a>)</li>
+<li><strong>m_reserve_ratio</strong> (<a href="../classmuda_1_1_linear_system_handles/"><strong>muda::LinearSystemHandles</strong></a>)</li>
+<li><strong>m_reorder_method</strong> (<a href="../classmuda_1_1_linear_system_solve_reorder/"><strong>muda::LinearSystemSolveReorder</strong></a>)</li>
+<li><strong>m_solve_sparse_error_threshold</strong> (<a href="../classmuda_1_1_linear_system_solve_tolerance/"><strong>muda::LinearSystemSolveTolerance</strong></a>)</li>
+<li><strong>m_log_id</strong> (<a href="../classmuda_1_1_log_proxy/"><strong>muda::LogProxy</strong></a>)</li>
+<li><strong>m_h_buffer</strong> (<a href="../classmuda_1_1_logger/"><strong>muda::Logger</strong></a>)</li>
+<li><strong>m_h_meta_data</strong> (<a href="../classmuda_1_1_logger/"><strong>muda::Logger</strong></a>)</li>
+<li><strong>m_h_offset</strong> (<a href="../classmuda_1_1_logger/"><strong>muda::Logger</strong></a>)</li>
+<li><strong>m_log_viewer_ptr</strong> (<a href="../classmuda_1_1_logger/"><strong>muda::Logger</strong></a>)</li>
+<li><strong>m_meta_data</strong> (<a href="../classmuda_1_1_logger/"><strong>muda::Logger</strong></a>, <a href="../classmuda_1_1_logger_data_container/"><strong>muda::LoggerDataContainer</strong></a>, <a href="../classmuda_1_1_logger_viewer/"><strong>muda::LoggerViewer</strong></a>)</li>
+<li><strong>m_meta_data_id</strong> (<a href="../classmuda_1_1_logger/"><strong>muda::Logger</strong></a>, <a href="../classmuda_1_1_logger_viewer/"><strong>muda::LoggerViewer</strong></a>)</li>
+<li><strong>m_sorted_meta_data</strong> (<a href="../classmuda_1_1_logger/"><strong>muda::Logger</strong></a>)</li>
+<li><strong>m_sorted_meta_data_id</strong> (<a href="../classmuda_1_1_logger/"><strong>muda::Logger</strong></a>)</li>
+<li><strong>m_buffer_size</strong> (<a href="../classmuda_1_1_logger_viewer/"><strong>muda::LoggerViewer</strong></a>, <a href="../classmuda_1_1details_1_1_host_device_string_cache/"><strong>muda::details::HostDeviceStringCache</strong></a>)</li>
+<li><strong>m_meta_data_id_size</strong> (<a href="../classmuda_1_1_logger_viewer/"><strong>muda::LoggerViewer</strong></a>)</li>
+<li><strong>m_meta_data_size</strong> (<a href="../classmuda_1_1_logger_viewer/"><strong>muda::LoggerViewer</strong></a>)</li>
+<li><strong>m_impls</strong> (<a href="../classmuda_1_1_matrix_format_converter/"><strong>muda::MatrixFormatConverter</strong></a>)</li>
+<li><strong>m_active_num_in_block</strong> (<a href="../classmuda_1_1_parallel_for_details/"><strong>muda::ParallelForDetails</strong></a>)</li>
+<li><strong>m_batch_i</strong> (<a href="../classmuda_1_1_parallel_for_details/"><strong>muda::ParallelForDetails</strong></a>)</li>
+<li><strong>m_current_i</strong> (<a href="../classmuda_1_1_parallel_for_details/"><strong>muda::ParallelForDetails</strong></a>)</li>
+<li><strong>m_total_batch</strong> (<a href="../classmuda_1_1_parallel_for_details/"><strong>muda::ParallelForDetails</strong></a>)</li>
+<li><strong>m_total_num</strong> (<a href="../classmuda_1_1_parallel_for_details/"><strong>muda::ParallelForDetails</strong></a>)</li>
+<li><strong>m_workspace</strong> (<a href="../classmuda_1_1_stream/"><strong>muda::Stream</strong></a>)</li>
+<li><strong>m_interface</strong> (<a href="../classmuda_1_1_sub_field/"><strong>muda::SubField</strong></a>)</li>
+<li><strong>m_base_struct_stride</strong> (<a href="../classmuda_1_1_sub_field_impl_3_01_field_entry_layout_1_1_so_a_01_4/"><strong>muda::SubFieldImpl&lt; FieldEntryLayout::SoA &gt;</strong></a>)</li>
+<li><strong>m_copy_map_buffer</strong> (<a href="../classmuda_1_1_sub_field_impl_3_01_field_entry_layout_1_1_so_a_01_4/"><strong>muda::SubFieldImpl&lt; FieldEntryLayout::SoA &gt;</strong></a>)</li>
+<li><strong>m_h_copy_map_buffer</strong> (<a href="../classmuda_1_1_sub_field_impl_3_01_field_entry_layout_1_1_so_a_01_4/"><strong>muda::SubFieldImpl&lt; FieldEntryLayout::SoA &gt;</strong></a>)</li>
+<li><strong>m_build_options</strong> (<a href="../classmuda_1_1_sub_field_interface/"><strong>muda::SubFieldInterface</strong></a>)</li>
+<li><strong>m_data_buffer</strong> (<a href="../classmuda_1_1_sub_field_interface/"><strong>muda::SubFieldInterface</strong></a>)</li>
+<li><strong>m_data_buffer_size</strong> (<a href="../classmuda_1_1_sub_field_interface/"><strong>muda::SubFieldInterface</strong></a>)</li>
+<li><strong>m_entries</strong> (<a href="../classmuda_1_1_sub_field_interface/"><strong>muda::SubFieldInterface</strong></a>)</li>
+<li><strong>m_host_device_new_cores</strong> (<a href="../classmuda_1_1_sub_field_interface/"><strong>muda::SubFieldInterface</strong></a>)</li>
+<li><strong>m_layout_info</strong> (<a href="../classmuda_1_1_sub_field_interface/"><strong>muda::SubFieldInterface</strong></a>)</li>
+<li><strong>m_new_cores</strong> (<a href="../classmuda_1_1_sub_field_interface/"><strong>muda::SubFieldInterface</strong></a>)</li>
+<li><strong>m_num_elements</strong> (<a href="../classmuda_1_1_sub_field_interface/"><strong>muda::SubFieldInterface</strong></a>)</li>
+<li><strong>m_struct_stride</strong> (<a href="../classmuda_1_1_sub_field_interface/"><strong>muda::SubFieldInterface</strong></a>)</li>
+<li><strong>m_total_block_cols</strong> (<a href="../classmuda_1_1_triplet_matrix_view_base/"><strong>muda::TripletMatrixViewBase</strong></a>, <a href="../classmuda_1_1_triplet_matrix_viewer_base/"><strong>muda::TripletMatrixViewerBase</strong></a>)</li>
+<li><strong>m_total_block_rows</strong> (<a href="../classmuda_1_1_triplet_matrix_view_base/"><strong>muda::TripletMatrixViewBase</strong></a>, <a href="../classmuda_1_1_triplet_matrix_viewer_base/"><strong>muda::TripletMatrixViewerBase</strong></a>)</li>
+<li><strong>m_total_cols</strong> (<a href="../classmuda_1_1_triplet_matrix_view_base_3_01_is_const_00_01_ty_00_011_01_4/"><strong>muda::TripletMatrixViewBase&lt; IsConst, Ty, 1 &gt;</strong></a>, <a href="../classmuda_1_1_triplet_matrix_viewer_base_3_01_is_const_00_01_t_00_011_01_4/"><strong>muda::TripletMatrixViewerBase&lt; IsConst, T, 1 &gt;</strong></a>)</li>
+<li><strong>m_total_rows</strong> (<a href="../classmuda_1_1_triplet_matrix_view_base_3_01_is_const_00_01_ty_00_011_01_4/"><strong>muda::TripletMatrixViewBase&lt; IsConst, Ty, 1 &gt;</strong></a>, <a href="../classmuda_1_1_triplet_matrix_viewer_base_3_01_is_const_00_01_t_00_011_01_4/"><strong>muda::TripletMatrixViewerBase&lt; IsConst, T, 1 &gt;</strong></a>)</li>
+<li><strong>m_dummy</strong> (<a href="../classmuda_1_1_viewer_base/"><strong>muda::ViewerBase</strong></a>)</li>
+<li><strong>m_error</strong> (<a href="../classmuda_1_1cuda__error/"><strong>muda::cuda_error</strong></a>)</li>
+<li><strong>m_error_string</strong> (<a href="../classmuda_1_1cuda__error/"><strong>muda::cuda_error</strong></a>)</li>
+<li><strong>m_file</strong> (<a href="../classmuda_1_1cuda__error/"><strong>muda::cuda_error</strong></a>)</li>
+<li><strong>m_func</strong> (<a href="../classmuda_1_1cuda__error/"><strong>muda::cuda_error</strong></a>)</li>
+<li><strong>m_line</strong> (<a href="../classmuda_1_1cuda__error/"><strong>muda::cuda_error</strong></a>)</li>
+<li><strong>m_current_buffer_offset</strong> (<a href="../classmuda_1_1details_1_1_host_device_string_cache/"><strong>muda::details::HostDeviceStringCache</strong></a>)</li>
+<li><strong>m_device_string_buffers</strong> (<a href="../classmuda_1_1details_1_1_host_device_string_cache/"><strong>muda::details::HostDeviceStringCache</strong></a>)</li>
+<li><strong>m_empty_string_pointer</strong> (<a href="../classmuda_1_1details_1_1_host_device_string_cache/"><strong>muda::details::HostDeviceStringCache</strong></a>)</li>
+<li><strong>m_host_string_buffers</strong> (<a href="../classmuda_1_1details_1_1_host_device_string_cache/"><strong>muda::details::HostDeviceStringCache</strong></a>)</li>
+<li><strong>m_string_map</strong> (<a href="../classmuda_1_1details_1_1_host_device_string_cache/"><strong>muda::details::HostDeviceStringCache</strong></a>)</li>
+<li><strong>m_capture_name_string_cache</strong> (<a href="../classmuda_1_1details_1_1_launch_info_cache/"><strong>muda::details::LaunchInfoCache</strong></a>)</li>
+<li><strong>m_current_capture_name</strong> (<a href="../classmuda_1_1details_1_1_launch_info_cache/"><strong>muda::details::LaunchInfoCache</strong></a>)</li>
+<li><strong>m_current_kernel_file</strong> (<a href="../classmuda_1_1details_1_1_launch_info_cache/"><strong>muda::details::LaunchInfoCache</strong></a>)</li>
+<li><strong>m_current_kernel_line</strong> (<a href="../classmuda_1_1details_1_1_launch_info_cache/"><strong>muda::details::LaunchInfoCache</strong></a>)</li>
+<li><strong>m_current_kernel_name</strong> (<a href="../classmuda_1_1details_1_1_launch_info_cache/"><strong>muda::details::LaunchInfoCache</strong></a>)</li>
+<li><strong>m_kernel_file_string_cache</strong> (<a href="../classmuda_1_1details_1_1_launch_info_cache/"><strong>muda::details::LaunchInfoCache</strong></a>)</li>
+<li><strong>m_kernel_name_string_cache</strong> (<a href="../classmuda_1_1details_1_1_launch_info_cache/"><strong>muda::details::LaunchInfoCache</strong></a>)</li>
+<li><strong>m_view_name_string_cache</strong> (<a href="../classmuda_1_1details_1_1_launch_info_cache/"><strong>muda::details::LaunchInfoCache</strong></a>)</li>
+<li><strong>meta_data_offset</strong> (<a href="../classmuda_1_1details_1_1_logger_offset/"><strong>muda::details::LoggerOffset</strong></a>)</li>
+<li><strong>m_N</strong> (<a href="../classmuda_1_1details_1_1_matrix_format_converter_base/"><strong>muda::details::MatrixFormatConverterBase</strong></a>)</li>
+<li><strong>m_data_type</strong> (<a href="../classmuda_1_1details_1_1_matrix_format_converter_base/"><strong>muda::details::MatrixFormatConverterBase</strong></a>)</li>
+<li><strong>m_what</strong> (<a href="../classmuda_1_1exception/"><strong>muda::exception</strong></a>)</li>
+<li><strong>m_aabbs</strong> (<a href="../classmuda_1_1lbvh_1_1_b_v_h/"><strong>muda::lbvh::BVH</strong></a>, <a href="../classmuda_1_1lbvh_1_1details_1_1_b_v_h_viewer_base/"><strong>muda::lbvh::details::BVHViewerBase</strong></a>)</li>
+<li><strong>m_flag_container</strong> (<a href="../classmuda_1_1lbvh_1_1_b_v_h/"><strong>muda::lbvh::BVH</strong></a>)</li>
+<li><strong>m_h_aabbs</strong> (<a href="../classmuda_1_1lbvh_1_1_b_v_h/"><strong>muda::lbvh::BVH</strong></a>)</li>
+<li><strong>m_h_nodes</strong> (<a href="../classmuda_1_1lbvh_1_1_b_v_h/"><strong>muda::lbvh::BVH</strong></a>)</li>
+<li><strong>m_h_objects</strong> (<a href="../classmuda_1_1lbvh_1_1_b_v_h/"><strong>muda::lbvh::BVH</strong></a>)</li>
+<li><strong>m_host_dirty</strong> (<a href="../classmuda_1_1lbvh_1_1_b_v_h/"><strong>muda::lbvh::BVH</strong></a>)</li>
+<li><strong>m_morton</strong> (<a href="../classmuda_1_1lbvh_1_1_b_v_h/"><strong>muda::lbvh::BVH</strong></a>)</li>
+<li><strong>m_morton64</strong> (<a href="../classmuda_1_1lbvh_1_1_b_v_h/"><strong>muda::lbvh::BVH</strong></a>)</li>
+<li><strong>m_objects</strong> (<a href="../classmuda_1_1lbvh_1_1_b_v_h/"><strong>muda::lbvh::BVH</strong></a>, <a href="../classmuda_1_1lbvh_1_1details_1_1_b_v_h_viewer_base/"><strong>muda::lbvh::details::BVHViewerBase</strong></a>)</li>
+<li><strong>m_num_nodes</strong> (<a href="../classmuda_1_1lbvh_1_1details_1_1_b_v_h_viewer_base/"><strong>muda::lbvh::details::BVHViewerBase</strong></a>)</li>
+<li><strong>m_num_objects</strong> (<a href="../classmuda_1_1lbvh_1_1details_1_1_b_v_h_viewer_base/"><strong>muda::lbvh::details::BVHViewerBase</strong></a>)</li>
+<li><strong>max</strong> (<a href="../classmuda_1_1spatial__hash_1_1_a_a_b_b/"><strong>muda::spatial_hash::AABB</strong></a>)</li>
+<li><strong>min</strong> (<a href="../classmuda_1_1spatial__hash_1_1_a_a_b_b/"><strong>muda::spatial_hash::AABB</strong></a>)</li>
+<li><strong>m_impl</strong> (<a href="../classmuda_1_1spatial__hash_1_1_sparse_spatial_hash/"><strong>muda::spatial_hash::SparseSpatialHash</strong></a>)</li>
+<li><strong>maxRadius</strong> (<a href="../classmuda_1_1spatial__hash_1_1details_1_1_sparse_spatial_hash_impl/"><strong>muda::spatial_hash::details::SparseSpatialHashImpl</strong></a>)</li>
+<li><strong>minCoord</strong> (<a href="../classmuda_1_1spatial__hash_1_1details_1_1_sparse_spatial_hash_impl/"><strong>muda::spatial_hash::details::SparseSpatialHashImpl</strong></a>)</li>
+</ul>
+<h2 id="n">n</h2>
+<ul>
+<li><strong>node_style</strong> (<a href="../classmuda_1_1_compute_graph_graphviz_options/"><strong>muda::ComputeGraphGraphvizOptions</strong></a>)</li>
+<li><strong>need_pop</strong> (<a href="../classmuda_1_1_profile/"><strong>muda::Profile</strong></a>)</li>
+<li><strong>N</strong> (<a href="../classmuda_1_1details_1_1_matrix_format_converter_type/"><strong>muda::details::MatrixFormatConverterType</strong></a>)</li>
+</ul>
+<h2 id="o">o</h2>
+<ul>
+<li><strong>outer_stride</strong> (<a href="../classmuda_1_1_c_matrix_map_info/"><strong>muda::CMatrixMapInfo</strong></a>, <a href="../classmuda_1_1_matrix_map_info/"><strong>muda::MatrixMapInfo</strong></a>)</li>
+<li><strong>offset_in_base_struct</strong> (<a href="../classmuda_1_1_field_entry_base_data/"><strong>muda::FieldEntryBaseData</strong></a>, <a href="../structmuda_1_1details_1_1_so_a_copy_map/"><strong>muda::details::SoACopyMap</strong></a>)</li>
+<li><strong>offset_in_struct</strong> (<a href="../classmuda_1_1_field_entry_base_data/"><strong>muda::FieldEntryBaseData</strong></a>)</li>
+<li><strong>offset</strong> (<a href="../classmuda_1_1details_1_1_logger_meta_data/"><strong>muda::details::LoggerMetaData</strong></a>, <a href="../classmuda_1_1details_1_1_host_device_string_cache_1_1_string_location/"><strong>muda::details::HostDeviceStringCache::StringLocation</strong></a>)</li>
+<li><strong>offsets</strong> (<a href="../classmuda_1_1details_1_1_matrix_format_converter/"><strong>muda::details::MatrixFormatConverter</strong></a>, <a href="../classmuda_1_1details_1_1_matrix_format_converter_3_01_t_00_011_01_4/"><strong>muda::details::MatrixFormatConverter&lt; T, 1 &gt;</strong></a>)</li>
+<li><strong>object_idx</strong> (<a href="../structmuda_1_1lbvh_1_1details_1_1_node/"><strong>muda::lbvh::details::Node</strong></a>)</li>
+<li><strong>o</strong> (<a href="../classmuda_1_1spatial__hash_1_1_bounding_sphere/"><strong>muda::spatial_hash::BoundingSphere</strong></a>)</li>
+<li><strong>oid</strong> (<a href="../classmuda_1_1spatial__hash_1_1_spatial_partition_cell/"><strong>muda::spatial_hash::SpatialPartitionCell</strong></a>)</li>
+<li><strong>overlap</strong> (<a href="../classmuda_1_1spatial__hash_1_1_spatial_partition_cell/"><strong>muda::spatial_hash::SpatialPartitionCell</strong></a>)</li>
+<li><strong>objCountInCell</strong> (<a href="../classmuda_1_1spatial__hash_1_1details_1_1_sparse_spatial_hash_impl/"><strong>muda::spatial_hash::details::SparseSpatialHashImpl</strong></a>)</li>
+<li><strong>objCountInCellPrefixSum</strong> (<a href="../classmuda_1_1spatial__hash_1_1details_1_1_sparse_spatial_hash_impl/"><strong>muda::spatial_hash::details::SparseSpatialHashImpl</strong></a>)</li>
+</ul>
+<h2 id="p">p</h2>
+<ul>
+<li><strong>ptr</strong> (<a href="../struct_t_c_b___s_p_a_n___n_a_m_e_s_p_a_c_e___n_a_m_e_1_1detail_1_1span__storage/"><strong>TCB_SPAN_NAMESPACE_NAME::detail::span_storage</strong></a>, <a href="../struct_t_c_b___s_p_a_n___n_a_m_e_s_p_a_c_e___n_a_m_e_1_1detail_1_1span__storage_3_01_e_00_01dynamic__extent_01_4/"><strong>TCB_SPAN_NAMESPACE_NAME::detail::span_storage&lt; E, dynamic_extent &gt;</strong></a>)</li>
+<li><strong>parent_idx</strong> (<a href="../structmuda_1_1lbvh_1_1details_1_1_node/"><strong>muda::lbvh::details::Node</strong></a>)</li>
+<li><strong>pass</strong> (<a href="../classmuda_1_1spatial__hash_1_1_spatial_partition_cell/"><strong>muda::spatial_hash::SpatialPartitionCell</strong></a>)</li>
+<li><strong>pairCount</strong> (<a href="../classmuda_1_1spatial__hash_1_1details_1_1_sparse_spatial_hash_impl/"><strong>muda::spatial_hash::details::SparseSpatialHashImpl</strong></a>)</li>
+<li><strong>pairListOffset</strong> (<a href="../classmuda_1_1spatial__hash_1_1details_1_1_sparse_spatial_hash_impl/"><strong>muda::spatial_hash::details::SparseSpatialHashImpl</strong></a>)</li>
+<li><strong>potentialCollisionPairIdToCellIndex</strong> (<a href="../classmuda_1_1spatial__hash_1_1details_1_1_sparse_spatial_hash_impl/"><strong>muda::spatial_hash::details::SparseSpatialHashImpl</strong></a>)</li>
+<li><strong>potentialCollisionPairIdToCellIndexBuffer</strong> (<a href="../classmuda_1_1spatial__hash_1_1details_1_1_sparse_spatial_hash_impl/"><strong>muda::spatial_hash::details::SparseSpatialHashImpl</strong></a>)</li>
+</ul>
+<h2 id="r">r</h2>
+<ul>
+<li><strong>read_style</strong> (<a href="../classmuda_1_1_compute_graph_graphviz_options/"><strong>muda::ComputeGraphGraphvizOptions</strong></a>)</li>
+<li><strong>read_write_style</strong> (<a href="../classmuda_1_1_compute_graph_graphviz_options/"><strong>muda::ComputeGraphGraphvizOptions</strong></a>)</li>
+<li><strong>row_index</strong> (<a href="../structmuda_1_1_triplet_matrix_viewer_base_3_01_is_const_00_01_t_00_011_01_4_1_1_c_triplet/"><strong>muda::TripletMatrixViewerBase&lt; IsConst, T, 1 &gt;::CTriplet</strong></a>)</li>
+<li><strong>row_tmp</strong> (<a href="../classmuda_1_1details_1_1_matrix_format_converter/"><strong>muda::details::MatrixFormatConverter</strong></a>, <a href="../classmuda_1_1details_1_1_matrix_format_converter_3_01_t_00_011_01_4/"><strong>muda::details::MatrixFormatConverter&lt; T, 1 &gt;</strong></a>)</li>
+<li><strong>right_idx</strong> (<a href="../structmuda_1_1lbvh_1_1details_1_1_node/"><strong>muda::lbvh::details::Node</strong></a>)</li>
+<li><strong>r</strong> (<a href="../classmuda_1_1spatial__hash_1_1_bounding_sphere/"><strong>muda::spatial_hash::BoundingSphere</strong></a>)</li>
+</ul>
+<h2 id="s">s</h2>
+<ul>
+<li><strong>size</strong> (<a href="../struct_t_c_b___s_p_a_n___n_a_m_e_s_p_a_c_e___n_a_m_e_1_1detail_1_1span__storage/"><strong>TCB_SPAN_NAMESPACE_NAME::detail::span_storage</strong></a>, <a href="../struct_t_c_b___s_p_a_n___n_a_m_e_s_p_a_c_e___n_a_m_e_1_1detail_1_1span__storage_3_01_e_00_01dynamic__extent_01_4/"><strong>TCB_SPAN_NAMESPACE_NAME::detail::span_storage&lt; E, dynamic_extent &gt;</strong></a>, <a href="../classmuda_1_1details_1_1_logger_meta_data/"><strong>muda::details::LoggerMetaData</strong></a>, <a href="../classmuda_1_1details_1_1_host_device_string_cache_1_1_string_location/"><strong>muda::details::HostDeviceStringCache::StringLocation</strong></a>)</li>
+<li><strong>storage_</strong> (<a href="../class_t_c_b___s_p_a_n___n_a_m_e_s_p_a_c_e___n_a_m_e_1_1span/"><strong>TCB_SPAN_NAMESPACE_NAME::span</strong></a>)</li>
+<li><strong>show_all_graph_nodes_in_a_closure</strong> (<a href="../classmuda_1_1_compute_graph_graphviz_options/"><strong>muda::ComputeGraphGraphvizOptions</strong></a>)</li>
+<li><strong>show_nodes</strong> (<a href="../classmuda_1_1_compute_graph_graphviz_options/"><strong>muda::ComputeGraphGraphvizOptions</strong></a>)</li>
+<li><strong>show_vars</strong> (<a href="../classmuda_1_1_compute_graph_graphviz_options/"><strong>muda::ComputeGraphGraphvizOptions</strong></a>)</li>
+<li><strong>segment_value</strong> (<a href="../structmuda_1_1_doublet_vector_viewer_base_1_1_c_doublet/"><strong>muda::DoubletVectorViewerBase::CDoublet</strong></a>)</li>
+<li><strong>shape</strong> (<a href="../classmuda_1_1_field_entry_base_data/"><strong>muda::FieldEntryBaseData</strong></a>)</li>
+<li><strong>struct_stride</strong> (<a href="../classmuda_1_1_field_entry_base_data/"><strong>muda::FieldEntryBaseData</strong></a>)</li>
+<li><strong>SPMV_ALG_DEFAULT</strong> (<a href="../classmuda_1_1_linear_system_algorithm/"><strong>muda::LinearSystemAlgorithm</strong></a>)</li>
+<li><strong>stream</strong> (<a href="../classmuda_1_1_linear_system_context_create_info/"><strong>muda::LinearSystemContextCreateInfo</strong></a>)</li>
+<li><strong>sort_index</strong> (<a href="../classmuda_1_1details_1_1_matrix_format_converter/"><strong>muda::details::MatrixFormatConverter</strong></a>, <a href="../classmuda_1_1details_1_1_matrix_format_converter_3_01_t_00_011_01_4/"><strong>muda::details::MatrixFormatConverter&lt; T, 1 &gt;</strong></a>)</li>
+<li><strong>sort_index_input</strong> (<a href="../classmuda_1_1details_1_1_matrix_format_converter/"><strong>muda::details::MatrixFormatConverter</strong></a>, <a href="../classmuda_1_1details_1_1_matrix_format_converter_3_01_t_00_011_01_4/"><strong>muda::details::MatrixFormatConverter&lt; T, 1 &gt;</strong></a>)</li>
+<li><strong>sort_index_tmp</strong> (<a href="../classmuda_1_1details_1_1_matrix_format_converter/"><strong>muda::details::MatrixFormatConverter</strong></a>, <a href="../classmuda_1_1details_1_1_matrix_format_converter_3_01_t_00_011_01_4/"><strong>muda::details::MatrixFormatConverter&lt; T, 1 &gt;</strong></a>)</li>
+<li><strong>spatialHashConfig</strong> (<a href="../classmuda_1_1spatial__hash_1_1details_1_1_sparse_spatial_hash_impl/"><strong>muda::spatial_hash::details::SparseSpatialHashImpl</strong></a>)</li>
+<li><strong>spheres</strong> (<a href="../classmuda_1_1spatial__hash_1_1details_1_1_sparse_spatial_hash_impl/"><strong>muda::spatial_hash::details::SparseSpatialHashImpl</strong></a>)</li>
+<li><strong>sum</strong> (<a href="../classmuda_1_1spatial__hash_1_1details_1_1_sparse_spatial_hash_impl/"><strong>muda::spatial_hash::details::SparseSpatialHashImpl</strong></a>)</li>
+</ul>
+<h2 id="t">t</h2>
+<ul>
+<li><strong>to</strong> (<a href="../classmuda_1_1_compute_graph_dependency/"><strong>muda::ComputeGraphDependency</strong></a>)</li>
+<li><strong>type</strong> (<a href="../classmuda_1_1_field_entry_base_data/"><strong>muda::FieldEntryBaseData</strong></a>, <a href="../classmuda_1_1_logger_meta_data/"><strong>muda::LoggerMetaData</strong></a>, <a href="../classmuda_1_1details_1_1_logger_meta_data/"><strong>muda::details::LoggerMetaData</strong></a>)</li>
+<li><strong>temp_bcoo_matrix</strong> (<a href="../classmuda_1_1details_1_1_matrix_format_converter/"><strong>muda::details::MatrixFormatConverter</strong></a>)</li>
+<li><strong>temp_bcoo_vector</strong> (<a href="../classmuda_1_1details_1_1_matrix_format_converter/"><strong>muda::details::MatrixFormatConverter</strong></a>)</li>
+<li><strong>temp_segments</strong> (<a href="../classmuda_1_1details_1_1_matrix_format_converter/"><strong>muda::details::MatrixFormatConverter</strong></a>)</li>
+<li><strong>temp_coo_matrix</strong> (<a href="../classmuda_1_1details_1_1_matrix_format_converter_3_01_t_00_011_01_4/"><strong>muda::details::MatrixFormatConverter&lt; T, 1 &gt;</strong></a>)</li>
+<li><strong>temp_coo_vector</strong> (<a href="../classmuda_1_1details_1_1_matrix_format_converter_3_01_t_00_011_01_4/"><strong>muda::details::MatrixFormatConverter&lt; T, 1 &gt;</strong></a>)</li>
+<li><strong>temp_values</strong> (<a href="../classmuda_1_1details_1_1_matrix_format_converter_3_01_t_00_011_01_4/"><strong>muda::details::MatrixFormatConverter&lt; T, 1 &gt;</strong></a>)</li>
+<li><strong>target</strong> (<a href="../structmuda_1_1lbvh_1_1query__nearest/"><strong>muda::lbvh::query_nearest</strong></a>, <a href="../structmuda_1_1lbvh_1_1query__overlap/"><strong>muda::lbvh::query_overlap</strong></a>)</li>
+</ul>
+<h2 id="u">u</h2>
+<ul>
+<li><strong>unique_blocks</strong> (<a href="../classmuda_1_1details_1_1_matrix_format_converter/"><strong>muda::details::MatrixFormatConverter</strong></a>)</li>
+<li><strong>unique_counts</strong> (<a href="../classmuda_1_1details_1_1_matrix_format_converter/"><strong>muda::details::MatrixFormatConverter</strong></a>, <a href="../classmuda_1_1details_1_1_matrix_format_converter_3_01_t_00_011_01_4/"><strong>muda::details::MatrixFormatConverter&lt; T, 1 &gt;</strong></a>)</li>
+<li><strong>unique_ij_pairs</strong> (<a href="../classmuda_1_1details_1_1_matrix_format_converter/"><strong>muda::details::MatrixFormatConverter</strong></a>, <a href="../classmuda_1_1details_1_1_matrix_format_converter_3_01_t_00_011_01_4/"><strong>muda::details::MatrixFormatConverter&lt; T, 1 &gt;</strong></a>)</li>
+<li><strong>unique_indices</strong> (<a href="../classmuda_1_1details_1_1_matrix_format_converter/"><strong>muda::details::MatrixFormatConverter</strong></a>, <a href="../classmuda_1_1details_1_1_matrix_format_converter_3_01_t_00_011_01_4/"><strong>muda::details::MatrixFormatConverter&lt; T, 1 &gt;</strong></a>)</li>
+<li><strong>unique_segments</strong> (<a href="../classmuda_1_1details_1_1_matrix_format_converter/"><strong>muda::details::MatrixFormatConverter</strong></a>)</li>
+<li><strong>unique_values</strong> (<a href="../classmuda_1_1details_1_1_matrix_format_converter/"><strong>muda::details::MatrixFormatConverter</strong></a>, <a href="../classmuda_1_1details_1_1_matrix_format_converter_3_01_t_00_011_01_4/"><strong>muda::details::MatrixFormatConverter&lt; T, 1 &gt;</strong></a>)</li>
+<li><strong>upper</strong> (<a href="../structmuda_1_1lbvh_1_1_a_a_b_b/"><strong>muda::lbvh::AABB</strong></a>)</li>
+<li><strong>uniqueKey</strong> (<a href="../classmuda_1_1spatial__hash_1_1details_1_1_sparse_spatial_hash_impl/"><strong>muda::spatial_hash::details::SparseSpatialHashImpl</strong></a>)</li>
+<li><strong>uniqueKeyCount</strong> (<a href="../classmuda_1_1spatial__hash_1_1details_1_1_sparse_spatial_hash_impl/"><strong>muda::spatial_hash::details::SparseSpatialHashImpl</strong></a>)</li>
+</ul>
+<h2 id="v">v</h2>
+<ul>
+<li><strong>value</strong> (<a href="../struct_t_c_b___s_p_a_n___n_a_m_e_s_p_a_c_e___n_a_m_e_1_1detail_1_1is__container/"><strong>TCB_SPAN_NAMESPACE_NAME::detail::is_container</strong></a>, <a href="../structmuda_1_1_doublet_vector_viewer_base_3_01_is_const_00_01_t_00_011_01_4_1_1_c_doublet/"><strong>muda::DoubletVectorViewerBase&lt; IsConst, T, 1 &gt;::CDoublet</strong></a>, <a href="../structmuda_1_1_triplet_matrix_viewer_base_3_01_is_const_00_01_t_00_011_01_4_1_1_c_triplet/"><strong>muda::TripletMatrixViewerBase&lt; IsConst, T, 1 &gt;::CTriplet</strong></a>, <a href="../structmuda_1_1always__false/"><strong>muda::always_false</strong></a>, <a href="../structmuda_1_1always__true/"><strong>muda::always_true</strong></a>, <a href="../structmuda_1_1force__trivial/"><strong>muda::force_trivial</strong></a>, <a href="../structmuda_1_1force__trivially__constructible/"><strong>muda::force_trivially_constructible</strong></a>, <a href="../structmuda_1_1force__trivially__copy__assignable/"><strong>muda::force_trivially_copy_assignable</strong></a>, <a href="../structmuda_1_1force__trivially__copy__constructible/"><strong>muda::force_trivially_copy_constructible</strong></a>, <a href="../structmuda_1_1force__trivially__destructible/"><strong>muda::force_trivially_destructible</strong></a>, <a href="../structmuda_1_1is__cuda__arch/"><strong>muda::is_cuda_arch</strong></a>)</li>
+<li><strong>var_style</strong> (<a href="../classmuda_1_1_compute_graph_graphviz_options/"><strong>muda::ComputeGraphGraphvizOptions</strong></a>)</li>
+<li><strong>var</strong> (<a href="../classmuda_1_1details_1_1_local_var_info/"><strong>muda::details::LocalVarInfo</strong></a>)</li>
+<li><strong>values_sorted</strong> (<a href="../classmuda_1_1details_1_1_matrix_format_converter_3_01_t_00_011_01_4/"><strong>muda::details::MatrixFormatConverter&lt; T, 1 &gt;</strong></a>)</li>
+<li><strong>validCellCount</strong> (<a href="../classmuda_1_1spatial__hash_1_1details_1_1_sparse_spatial_hash_impl/"><strong>muda::spatial_hash::details::SparseSpatialHashImpl</strong></a>)</li>
+<li><strong>validCollisionPairCount</strong> (<a href="../classmuda_1_1spatial__hash_1_1details_1_1_sparse_spatial_hash_impl/"><strong>muda::spatial_hash::details::SparseSpatialHashImpl</strong></a>)</li>
+</ul>
+<h2 id="w">w</h2>
+<ul>
+<li><strong>whole</strong> (<a href="../structmuda_1_1lbvh_1_1_default_morton_code_calculator/"><strong>muda::lbvh::DefaultMortonCodeCalculator</strong></a>)</li>
+</ul>
+<h2 id="_">_</h2>
+<ul>
+<li><strong>_dummy</strong> (<a href="../classmuda_1_1_view_base/"><strong>muda::ViewBase</strong></a>)</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var tab,labels=set.querySelector(".tabbed-labels");for(tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://doxide.org" target="_blank" rel="noopener">
+      Doxide
+    </a>
+    and
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.indexes", "content.tabs.link", "content.code.copy", "content.code.select", "content.code.annotate"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.081f42fc.min.js"></script>
+      
+        <script src="../../javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

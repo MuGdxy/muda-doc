@@ -1,0 +1,407 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classmuda_1_1_log_proxy" kind="class" language="C++" prot="public">
+    <compoundname>muda::LogProxy</compoundname>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classmuda_1_1_log_proxy_1afde13232006bfc90741598d240c2f9f4" prot="private" static="no" mutable="no">
+        <type><ref refid="classmuda_1_1_logger_viewer" kindref="compound">LoggerViewer</ref> *</type>
+        <definition>LoggerViewer* muda::LogProxy::m_viewer</definition>
+        <argsstring></argsstring>
+        <name>m_viewer</name>
+        <qualifiedname>muda::LogProxy::m_viewer</qualifiedname>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/logger/logger_viewer.h" line="12" column="18" bodyfile="src/muda/logger/logger_viewer.h" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1_log_proxy_1ac553779f46bf815217cdf96636d58bf3" prot="private" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t muda::LogProxy::m_log_id</definition>
+        <argsstring></argsstring>
+        <name>m_log_id</name>
+        <qualifiedname>muda::LogProxy::m_log_id</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/logger/logger_viewer.h" line="13" column="19" bodyfile="src/muda/logger/logger_viewer.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmuda_1_1_log_proxy_1aae0e755b1f244f3ffcdb303f9ae02250" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>MUDA_DEVICE</type>
+        <definition>MUDA_DEVICE muda::LogProxy::LogProxy</definition>
+        <argsstring>()=default</argsstring>
+        <name>LogProxy</name>
+        <qualifiedname>muda::LogProxy::LogProxy</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/logger/logger_viewer.h" line="16" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_log_proxy_1a9fc4a9263bc64f796cba562858756cd1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>MUDA_DEVICE</type>
+        <definition>MUDA_DEVICE muda::LogProxy::LogProxy</definition>
+        <argsstring>(LoggerViewer &amp;viewer)</argsstring>
+        <name>LogProxy</name>
+        <qualifiedname>muda::LogProxy::LogProxy</qualifiedname>
+        <param>
+          <type><ref refid="classmuda_1_1_logger_viewer" kindref="compound">LoggerViewer</ref> &amp;</type>
+          <declname>viewer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/logger/logger_viewer.h" line="17" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_log_proxy_1a737757ac4fcee9809894f1fca4aa93f5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>MUDA_DEVICE</type>
+        <definition>MUDA_DEVICE muda::LogProxy::LogProxy</definition>
+        <argsstring>(const LogProxy &amp;other)</argsstring>
+        <name>LogProxy</name>
+        <qualifiedname>muda::LogProxy::LogProxy</qualifiedname>
+        <param>
+          <type>const <ref refid="classmuda_1_1_log_proxy" kindref="compound">LogProxy</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/logger/logger_viewer.h" line="19" column="17" bodyfile="src/muda/logger/logger_viewer.h" bodystart="19" bodyend="23"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_log_proxy_1a882ee8043c06bfc3a8ba5291d9c57f22" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>bool</type>
+            <declname>IsFmt</declname>
+            <defname>IsFmt</defname>
+          </param>
+        </templateparamlist>
+        <type>MUDA_DEVICE <ref refid="classmuda_1_1_log_proxy" kindref="compound">LogProxy</ref> &amp;</type>
+        <definition>MUDA_DEVICE LogProxy &amp; muda::LogProxy::push_string</definition>
+        <argsstring>(const char *str)</argsstring>
+        <name>push_string</name>
+        <qualifiedname>muda::LogProxy::push_string</qualifiedname>
+        <param>
+          <type>const char *</type>
+          <declname>str</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/logger/logger_viewer.h" line="26" column="26"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_log_proxy_1a7960a732856ca2f8a009abe85ca7a31b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>MUDA_DEVICE <ref refid="classmuda_1_1_log_proxy" kindref="compound">LogProxy</ref> &amp;</type>
+        <definition>MUDA_DEVICE LogProxy &amp; muda::LogProxy::operator&lt;&lt;</definition>
+        <argsstring>(const char *str)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <qualifiedname>muda::LogProxy::operator&lt;&lt;</qualifiedname>
+        <param>
+          <type>const char *</type>
+          <declname>str</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/logger/logger_viewer.h" line="28" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_log_proxy_1a8aac8250000fbe8b2d3e4d7558b07a31" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>muda::LogProxy::PROXY_OPERATOR</definition>
+        <argsstring>(Int8, int8_t)</argsstring>
+        <name>PROXY_OPERATOR</name>
+        <qualifiedname>muda::LogProxy::PROXY_OPERATOR</qualifiedname>
+        <param>
+          <type>Int8</type>
+        </param>
+        <param>
+          <type>int8_t</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/logger/logger_viewer.h" line="41" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_log_proxy_1ad6d3ee5420537ba45085fbdc2d9dea0d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>muda::LogProxy::PROXY_OPERATOR</definition>
+        <argsstring>(Int16, int16_t)</argsstring>
+        <name>PROXY_OPERATOR</name>
+        <qualifiedname>muda::LogProxy::PROXY_OPERATOR</qualifiedname>
+        <param>
+          <type>Int16</type>
+        </param>
+        <param>
+          <type>int16_t</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/logger/logger_viewer.h" line="42" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_log_proxy_1adf01053bbc34fb3ccba8c0e1c3908e38" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>muda::LogProxy::PROXY_OPERATOR</definition>
+        <argsstring>(Int32, int32_t)</argsstring>
+        <name>PROXY_OPERATOR</name>
+        <qualifiedname>muda::LogProxy::PROXY_OPERATOR</qualifiedname>
+        <param>
+          <type>Int32</type>
+        </param>
+        <param>
+          <type>int32_t</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/logger/logger_viewer.h" line="43" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_log_proxy_1af59bdf1eef63c1fa0e9d38be424d4fd5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>muda::LogProxy::PROXY_OPERATOR</definition>
+        <argsstring>(Int64, int64_t)</argsstring>
+        <name>PROXY_OPERATOR</name>
+        <qualifiedname>muda::LogProxy::PROXY_OPERATOR</qualifiedname>
+        <param>
+          <type>Int64</type>
+        </param>
+        <param>
+          <type>int64_t</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/logger/logger_viewer.h" line="44" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_log_proxy_1a1d0ec410c076524c647ed5e6cf77e2b8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>muda::LogProxy::PROXY_OPERATOR</definition>
+        <argsstring>(UInt8, uint8_t)</argsstring>
+        <name>PROXY_OPERATOR</name>
+        <qualifiedname>muda::LogProxy::PROXY_OPERATOR</qualifiedname>
+        <param>
+          <type>UInt8</type>
+        </param>
+        <param>
+          <type>uint8_t</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/logger/logger_viewer.h" line="47" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_log_proxy_1ad88d07d352a8c9f3c0d6618721b31186" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>muda::LogProxy::PROXY_OPERATOR</definition>
+        <argsstring>(UInt16, uint16_t)</argsstring>
+        <name>PROXY_OPERATOR</name>
+        <qualifiedname>muda::LogProxy::PROXY_OPERATOR</qualifiedname>
+        <param>
+          <type>UInt16</type>
+        </param>
+        <param>
+          <type>uint16_t</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/logger/logger_viewer.h" line="48" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_log_proxy_1a11455fbfc0af577313138bcb4688107e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>muda::LogProxy::PROXY_OPERATOR</definition>
+        <argsstring>(UInt32, uint32_t)</argsstring>
+        <name>PROXY_OPERATOR</name>
+        <qualifiedname>muda::LogProxy::PROXY_OPERATOR</qualifiedname>
+        <param>
+          <type>UInt32</type>
+        </param>
+        <param>
+          <type>uint32_t</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/logger/logger_viewer.h" line="49" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_log_proxy_1a6da618ba0e4d4ebc232fd7b561e8d647" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>muda::LogProxy::PROXY_OPERATOR</definition>
+        <argsstring>(UInt64, uint64_t)</argsstring>
+        <name>PROXY_OPERATOR</name>
+        <qualifiedname>muda::LogProxy::PROXY_OPERATOR</qualifiedname>
+        <param>
+          <type>UInt64</type>
+        </param>
+        <param>
+          <type>uint64_t</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/logger/logger_viewer.h" line="50" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_log_proxy_1adcc54fc959cc028623ed4ff1385d4eac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>muda::LogProxy::PROXY_OPERATOR</definition>
+        <argsstring>(Float, float)</argsstring>
+        <name>PROXY_OPERATOR</name>
+        <qualifiedname>muda::LogProxy::PROXY_OPERATOR</qualifiedname>
+        <param>
+          <type>Float</type>
+        </param>
+        <param>
+          <type>float</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/logger/logger_viewer.h" line="52" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_log_proxy_1a2c1c3fdf4209fde2d0fe1211a9ec0eb9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>muda::LogProxy::PROXY_OPERATOR</definition>
+        <argsstring>(Double, double)</argsstring>
+        <name>PROXY_OPERATOR</name>
+        <qualifiedname>muda::LogProxy::PROXY_OPERATOR</qualifiedname>
+        <param>
+          <type>Double</type>
+        </param>
+        <param>
+          <type>double</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/logger/logger_viewer.h" line="53" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_log_proxy_1a9f057d4442af238d674b0ec1eae9650d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>MUDA_DEVICE void</type>
+        <definition>MUDA_DEVICE void muda::LogProxy::push_fmt_arg</definition>
+        <argsstring>(const T &amp;obj, LoggerFmtArg fmt_arg_func)</argsstring>
+        <name>push_fmt_arg</name>
+        <qualifiedname>muda::LogProxy::push_fmt_arg</qualifiedname>
+        <param>
+          <type>const T &amp;</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>LoggerFmtArg</type>
+          <declname>fmt_arg_func</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/logger/logger_viewer.h" line="66" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_log_proxy_1ae743b4791b46878df02f299858781f46" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>MUDA_DEVICE bool</type>
+        <definition>MUDA_DEVICE bool muda::LogProxy::push_data</definition>
+        <argsstring>(const details::LoggerMetaData &amp;meta, const void *data)</argsstring>
+        <name>push_data</name>
+        <qualifiedname>muda::LogProxy::push_data</qualifiedname>
+        <param>
+          <type>const <ref refid="classmuda_1_1details_1_1_logger_meta_data" kindref="compound">details::LoggerMetaData</ref> &amp;</type>
+          <declname>meta</declname>
+        </param>
+        <param>
+          <type>const void *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/logger/logger_viewer.h" line="68" column="22"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/muda/logger/logger_viewer.h" line="10" column="1" bodyfile="src/muda/logger/logger_viewer.h" bodystart="11" bodyend="69"/>
+    <listofallmembers>
+      <member refid="classmuda_1_1_log_proxy_1aae0e755b1f244f3ffcdb303f9ae02250" prot="public" virt="non-virtual"><scope>muda::LogProxy</scope><name>LogProxy</name></member>
+      <member refid="classmuda_1_1_log_proxy_1a9fc4a9263bc64f796cba562858756cd1" prot="public" virt="non-virtual"><scope>muda::LogProxy</scope><name>LogProxy</name></member>
+      <member refid="classmuda_1_1_log_proxy_1a737757ac4fcee9809894f1fca4aa93f5" prot="public" virt="non-virtual"><scope>muda::LogProxy</scope><name>LogProxy</name></member>
+      <member refid="classmuda_1_1_log_proxy_1ac553779f46bf815217cdf96636d58bf3" prot="private" virt="non-virtual"><scope>muda::LogProxy</scope><name>m_log_id</name></member>
+      <member refid="classmuda_1_1_log_proxy_1afde13232006bfc90741598d240c2f9f4" prot="private" virt="non-virtual"><scope>muda::LogProxy</scope><name>m_viewer</name></member>
+      <member refid="classmuda_1_1_log_proxy_1a7960a732856ca2f8a009abe85ca7a31b" prot="public" virt="non-virtual"><scope>muda::LogProxy</scope><name>operator&lt;&lt;</name></member>
+      <member refid="classmuda_1_1_log_proxy_1a8aac8250000fbe8b2d3e4d7558b07a31" prot="public" virt="non-virtual"><scope>muda::LogProxy</scope><name>PROXY_OPERATOR</name></member>
+      <member refid="classmuda_1_1_log_proxy_1ad6d3ee5420537ba45085fbdc2d9dea0d" prot="public" virt="non-virtual"><scope>muda::LogProxy</scope><name>PROXY_OPERATOR</name></member>
+      <member refid="classmuda_1_1_log_proxy_1adf01053bbc34fb3ccba8c0e1c3908e38" prot="public" virt="non-virtual"><scope>muda::LogProxy</scope><name>PROXY_OPERATOR</name></member>
+      <member refid="classmuda_1_1_log_proxy_1af59bdf1eef63c1fa0e9d38be424d4fd5" prot="public" virt="non-virtual"><scope>muda::LogProxy</scope><name>PROXY_OPERATOR</name></member>
+      <member refid="classmuda_1_1_log_proxy_1a1d0ec410c076524c647ed5e6cf77e2b8" prot="public" virt="non-virtual"><scope>muda::LogProxy</scope><name>PROXY_OPERATOR</name></member>
+      <member refid="classmuda_1_1_log_proxy_1ad88d07d352a8c9f3c0d6618721b31186" prot="public" virt="non-virtual"><scope>muda::LogProxy</scope><name>PROXY_OPERATOR</name></member>
+      <member refid="classmuda_1_1_log_proxy_1a11455fbfc0af577313138bcb4688107e" prot="public" virt="non-virtual"><scope>muda::LogProxy</scope><name>PROXY_OPERATOR</name></member>
+      <member refid="classmuda_1_1_log_proxy_1a6da618ba0e4d4ebc232fd7b561e8d647" prot="public" virt="non-virtual"><scope>muda::LogProxy</scope><name>PROXY_OPERATOR</name></member>
+      <member refid="classmuda_1_1_log_proxy_1adcc54fc959cc028623ed4ff1385d4eac" prot="public" virt="non-virtual"><scope>muda::LogProxy</scope><name>PROXY_OPERATOR</name></member>
+      <member refid="classmuda_1_1_log_proxy_1a2c1c3fdf4209fde2d0fe1211a9ec0eb9" prot="public" virt="non-virtual"><scope>muda::LogProxy</scope><name>PROXY_OPERATOR</name></member>
+      <member refid="classmuda_1_1_log_proxy_1ae743b4791b46878df02f299858781f46" prot="public" virt="non-virtual"><scope>muda::LogProxy</scope><name>push_data</name></member>
+      <member refid="classmuda_1_1_log_proxy_1a9f057d4442af238d674b0ec1eae9650d" prot="public" virt="non-virtual"><scope>muda::LogProxy</scope><name>push_fmt_arg</name></member>
+      <member refid="classmuda_1_1_log_proxy_1a882ee8043c06bfc3a8ba5291d9c57f22" prot="public" virt="non-virtual"><scope>muda::LogProxy</scope><name>push_string</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classmuda_1_1_compute_graph_1_1_graph_phase_guard" kind="class" language="C++" prot="public">
+    <compoundname>muda::ComputeGraph::GraphPhaseGuard</compoundname>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classmuda_1_1_compute_graph_1_1_graph_phase_guard_1ad20c6d4eef121be695e53cb990ae45b0" prot="private" static="no" mutable="no">
+        <type><ref refid="classmuda_1_1_compute_graph" kindref="compound">ComputeGraph</ref> &amp;</type>
+        <definition>ComputeGraph&amp; muda::ComputeGraph::GraphPhaseGuard::m_cg</definition>
+        <argsstring></argsstring>
+        <name>m_cg</name>
+        <qualifiedname>muda::ComputeGraph::GraphPhaseGuard::m_cg</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/compute_graph/compute_graph.h" line="54" column="22" bodyfile="src/muda/compute_graph/compute_graph.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmuda_1_1_compute_graph_1_1_graph_phase_guard_1ab3ecc4bacdb4089f19e10d17e7a0e0d3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>muda::ComputeGraph::GraphPhaseGuard::GraphPhaseGuard</definition>
+        <argsstring>(ComputeGraph &amp;cg, ComputeGraphPhase phase)</argsstring>
+        <name>GraphPhaseGuard</name>
+        <qualifiedname>muda::ComputeGraph::GraphPhaseGuard::GraphPhaseGuard</qualifiedname>
+        <param>
+          <type><ref refid="classmuda_1_1_compute_graph" kindref="compound">ComputeGraph</ref> &amp;</type>
+          <declname>cg</declname>
+        </param>
+        <param>
+          <type>ComputeGraphPhase</type>
+          <declname>phase</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/compute_graph/compute_graph.h" line="57" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_compute_graph_1_1_graph_phase_guard_1a881bc359f266d77155451030bbb18266" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>muda::ComputeGraph::GraphPhaseGuard::~GraphPhaseGuard</definition>
+        <argsstring>()</argsstring>
+        <name>~GraphPhaseGuard</name>
+        <qualifiedname>muda::ComputeGraph::GraphPhaseGuard::~GraphPhaseGuard</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/compute_graph/compute_graph.h" line="58" column="9"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/muda/compute_graph/compute_graph.h" line="52" column="5" bodyfile="src/muda/compute_graph/compute_graph.h" bodystart="53" bodyend="59"/>
+    <listofallmembers>
+      <member refid="classmuda_1_1_compute_graph_1_1_graph_phase_guard_1ab3ecc4bacdb4089f19e10d17e7a0e0d3" prot="public" virt="non-virtual"><scope>muda::ComputeGraph::GraphPhaseGuard</scope><name>GraphPhaseGuard</name></member>
+      <member refid="classmuda_1_1_compute_graph_1_1_graph_phase_guard_1ad20c6d4eef121be695e53cb990ae45b0" prot="private" virt="non-virtual"><scope>muda::ComputeGraph::GraphPhaseGuard</scope><name>m_cg</name></member>
+      <member refid="classmuda_1_1_compute_graph_1_1_graph_phase_guard_1a881bc359f266d77155451030bbb18266" prot="public" virt="non-virtual"><scope>muda::ComputeGraph::GraphPhaseGuard</scope><name>~GraphPhaseGuard</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

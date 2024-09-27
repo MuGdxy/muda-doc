@@ -1,0 +1,89 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structmuda_1_1_triplet_matrix_viewer_base_1_1_c_triplet" kind="struct" language="C++" prot="public">
+    <compoundname>muda::TripletMatrixViewerBase::CTriplet</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structmuda_1_1_triplet_matrix_viewer_base_1_1_c_triplet_1a8c3c466d93493dd83bc42b3b83964038" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int muda::TripletMatrixViewerBase&lt; IsConst, T, N &gt;::CTriplet::block_row_index</definition>
+        <argsstring></argsstring>
+        <name>block_row_index</name>
+        <qualifiedname>muda::TripletMatrixViewerBase::CTriplet::block_row_index</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/triplet_matrix_viewer.h" line="36" column="28" bodyfile="src/muda/ext/linear_system/triplet_matrix_viewer.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmuda_1_1_triplet_matrix_viewer_base_1_1_c_triplet_1aeba28ca9d5911d6ab1561794a323acbe" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int muda::TripletMatrixViewerBase&lt; IsConst, T, N &gt;::CTriplet::block_col_index</definition>
+        <argsstring></argsstring>
+        <name>block_col_index</name>
+        <qualifiedname>muda::TripletMatrixViewerBase::CTriplet::block_col_index</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/triplet_matrix_viewer.h" line="37" column="28" bodyfile="src/muda/ext/linear_system/triplet_matrix_viewer.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmuda_1_1_triplet_matrix_viewer_base_1_1_c_triplet_1aba482a9a0d8a386912497c217e7c2b23" prot="public" static="no" mutable="no">
+        <type>const BlockMatrix &amp;</type>
+        <definition>const BlockMatrix&amp; muda::TripletMatrixViewerBase&lt; IsConst, T, N &gt;::CTriplet::block_value</definition>
+        <argsstring></argsstring>
+        <name>block_value</name>
+        <qualifiedname>muda::TripletMatrixViewerBase::CTriplet::block_value</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/triplet_matrix_viewer.h" line="38" column="27" bodyfile="src/muda/ext/linear_system/triplet_matrix_viewer.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="structmuda_1_1_triplet_matrix_viewer_base_1_1_c_triplet_1acd2d1aed7c30d7c1b91bd063d5d3cbd8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>MUDA_GENERIC</type>
+        <definition>MUDA_GENERIC muda::TripletMatrixViewerBase&lt; IsConst, T, N &gt;::CTriplet::CTriplet</definition>
+        <argsstring>(int row_index, int col_index, const BlockMatrix &amp;block)</argsstring>
+        <name>CTriplet</name>
+        <qualifiedname>muda::TripletMatrixViewerBase::CTriplet::CTriplet</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>row_index</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>col_index</declname>
+        </param>
+        <param>
+          <type>const BlockMatrix &amp;</type>
+          <declname>block</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/triplet_matrix_viewer.h" line="30" column="22" bodyfile="src/muda/ext/linear_system/triplet_matrix_viewer.h" bodystart="30" bodyend="35"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/muda/ext/linear_system/triplet_matrix_viewer.h" line="28" column="5" bodyfile="src/muda/ext/linear_system/triplet_matrix_viewer.h" bodystart="29" bodyend="39"/>
+    <listofallmembers>
+      <member refid="structmuda_1_1_triplet_matrix_viewer_base_1_1_c_triplet_1aeba28ca9d5911d6ab1561794a323acbe" prot="public" virt="non-virtual"><scope>muda::TripletMatrixViewerBase::CTriplet</scope><name>block_col_index</name></member>
+      <member refid="structmuda_1_1_triplet_matrix_viewer_base_1_1_c_triplet_1a8c3c466d93493dd83bc42b3b83964038" prot="public" virt="non-virtual"><scope>muda::TripletMatrixViewerBase::CTriplet</scope><name>block_row_index</name></member>
+      <member refid="structmuda_1_1_triplet_matrix_viewer_base_1_1_c_triplet_1aba482a9a0d8a386912497c217e7c2b23" prot="public" virt="non-virtual"><scope>muda::TripletMatrixViewerBase::CTriplet</scope><name>block_value</name></member>
+      <member refid="structmuda_1_1_triplet_matrix_viewer_base_1_1_c_triplet_1acd2d1aed7c30d7c1b91bd063d5d3cbd8" prot="public" virt="non-virtual"><scope>muda::TripletMatrixViewerBase::CTriplet</scope><name>CTriplet</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

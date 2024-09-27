@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classmuda_1_1details_1_1_matrix_format_converter_type" kind="class" language="C++" prot="public">
+    <compoundname>muda::details::MatrixFormatConverterType</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classmuda_1_1details_1_1_matrix_format_converter_type_1a46195064db996ea5a5b4ed0a7e60df0f" prot="public" static="no" mutable="no">
+        <type>cudaDataType_t</type>
+        <definition>cudaDataType_t muda::details::MatrixFormatConverterType::data_type</definition>
+        <argsstring></argsstring>
+        <name>data_type</name>
+        <qualifiedname>muda::details::MatrixFormatConverterType::data_type</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/matrix_format_converter.h" line="21" column="20" bodyfile="src/muda/ext/linear_system/matrix_format_converter.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1details_1_1_matrix_format_converter_type_1a9adfb9b850baee3f9dad80a77ea2ac8b" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int muda::details::MatrixFormatConverterType::N</definition>
+        <argsstring></argsstring>
+        <name>N</name>
+        <qualifiedname>muda::details::MatrixFormatConverterType::N</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/matrix_format_converter.h" line="22" column="20" bodyfile="src/muda/ext/linear_system/matrix_format_converter.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmuda_1_1details_1_1_matrix_format_converter_type_1a4626e60a5dc34a2797a720486b4b417c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool friend</type>
+        <definition>bool friend muda::details::MatrixFormatConverterType::operator==</definition>
+        <argsstring>(const MatrixFormatConverterType &amp;lhs, const MatrixFormatConverterType &amp;rhs)</argsstring>
+        <name>operator==</name>
+        <qualifiedname>muda::details::MatrixFormatConverterType::operator==</qualifiedname>
+        <param>
+          <type>const <ref refid="classmuda_1_1details_1_1_matrix_format_converter_type" kindref="compound">MatrixFormatConverterType</ref> &amp;</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classmuda_1_1details_1_1_matrix_format_converter_type" kindref="compound">MatrixFormatConverterType</ref> &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/matrix_format_converter.h" line="23" column="20" bodyfile="src/muda/ext/linear_system/matrix_format_converter.h" bodystart="23" bodyend="27"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/muda/ext/linear_system/matrix_format_converter.h" line="18" column="1" bodyfile="src/muda/ext/linear_system/matrix_format_converter.h" bodystart="19" bodyend="28"/>
+    <listofallmembers>
+      <member refid="classmuda_1_1details_1_1_matrix_format_converter_type_1a46195064db996ea5a5b4ed0a7e60df0f" prot="public" virt="non-virtual"><scope>muda::details::MatrixFormatConverterType</scope><name>data_type</name></member>
+      <member refid="classmuda_1_1details_1_1_matrix_format_converter_type_1a9adfb9b850baee3f9dad80a77ea2ac8b" prot="public" virt="non-virtual"><scope>muda::details::MatrixFormatConverterType</scope><name>N</name></member>
+      <member refid="classmuda_1_1details_1_1_matrix_format_converter_type_1a4626e60a5dc34a2797a720486b4b417c" prot="public" virt="non-virtual"><scope>muda::details::MatrixFormatConverterType</scope><name>operator==</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

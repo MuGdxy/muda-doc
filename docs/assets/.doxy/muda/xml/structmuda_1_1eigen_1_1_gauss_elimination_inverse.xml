@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structmuda_1_1eigen_1_1_gauss_elimination_inverse" kind="struct" language="C++" prot="public">
+    <compoundname>muda::eigen::GaussEliminationInverse</compoundname>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="structmuda_1_1eigen_1_1_gauss_elimination_inverse_1aaaaea8dc31666fe03e77e2b86906664d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+          <param>
+            <type>int</type>
+            <declname>N</declname>
+            <defname>N</defname>
+          </param>
+        </templateparamlist>
+        <type>MUDA_INLINE MUDA_GENERIC Eigen::Matrix&lt; T, N, N &gt;</type>
+        <definition>MUDA_INLINE MUDA_GENERIC Eigen::Matrix&lt; T, N, N &gt; muda::eigen::GaussEliminationInverse::operator()</definition>
+        <argsstring>(const Eigen::Matrix&lt; T, N, N &gt; &amp;input)</argsstring>
+        <name>operator()</name>
+        <qualifiedname>muda::eigen::GaussEliminationInverse::operator()</qualifiedname>
+        <param>
+          <type>const Eigen::Matrix&lt; T, N, N &gt; &amp;</type>
+          <declname>input</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/eigen/inverse/gauss_elimination.h" line="10" column="44" bodyfile="src/muda/ext/eigen/inverse/gauss_elimination.h" bodystart="10" bodyend="87"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/muda/ext/eigen/inverse/gauss_elimination.h" line="7" column="1" bodyfile="src/muda/ext/eigen/inverse/gauss_elimination.h" bodystart="8" bodyend="88"/>
+    <listofallmembers>
+      <member refid="structmuda_1_1eigen_1_1_gauss_elimination_inverse_1aaaaea8dc31666fe03e77e2b86906664d" prot="public" virt="non-virtual"><scope>muda::eigen::GaussEliminationInverse</scope><name>operator()</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

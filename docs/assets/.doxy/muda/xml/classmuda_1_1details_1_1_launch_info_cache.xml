@@ -1,0 +1,324 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classmuda_1_1details_1_1_launch_info_cache" kind="class" language="C++" prot="public">
+    <compoundname>muda::details::LaunchInfoCache</compoundname>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classmuda_1_1details_1_1_launch_info_cache_1a6b8f0b7c648259aa2bf7055b7ce9357b" prot="private" static="no" mutable="no">
+        <type><ref refid="classmuda_1_1details_1_1_host_device_string_cache" kindref="compound">HostDeviceStringCache</ref></type>
+        <definition>HostDeviceStringCache muda::details::LaunchInfoCache::m_view_name_string_cache</definition>
+        <argsstring></argsstring>
+        <name>m_view_name_string_cache</name>
+        <qualifiedname>muda::details::LaunchInfoCache::m_view_name_string_cache</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/tools/launch_info_cache.h" line="8" column="27" bodyfile="src/muda/tools/launch_info_cache.h" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1details_1_1_launch_info_cache_1aa85f1276b66fe4b857240ce2a390e935" prot="private" static="no" mutable="no">
+        <type><ref refid="classmuda_1_1details_1_1_host_device_string_cache" kindref="compound">HostDeviceStringCache</ref></type>
+        <definition>HostDeviceStringCache muda::details::LaunchInfoCache::m_kernel_name_string_cache</definition>
+        <argsstring></argsstring>
+        <name>m_kernel_name_string_cache</name>
+        <qualifiedname>muda::details::LaunchInfoCache::m_kernel_name_string_cache</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/tools/launch_info_cache.h" line="9" column="27" bodyfile="src/muda/tools/launch_info_cache.h" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1details_1_1_launch_info_cache_1a59054f3e930811b64ecc3084d09cd671" prot="private" static="no" mutable="no">
+        <type><ref refid="classmuda_1_1details_1_1_host_device_string_cache" kindref="compound">HostDeviceStringCache</ref></type>
+        <definition>HostDeviceStringCache muda::details::LaunchInfoCache::m_kernel_file_string_cache</definition>
+        <argsstring></argsstring>
+        <name>m_kernel_file_string_cache</name>
+        <qualifiedname>muda::details::LaunchInfoCache::m_kernel_file_string_cache</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/tools/launch_info_cache.h" line="10" column="27" bodyfile="src/muda/tools/launch_info_cache.h" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1details_1_1_launch_info_cache_1a4b5fe20e7f27695a495c70470b24b323" prot="private" static="no" mutable="no">
+        <type><ref refid="classmuda_1_1details_1_1_host_device_string_cache" kindref="compound">HostDeviceStringCache</ref></type>
+        <definition>HostDeviceStringCache muda::details::LaunchInfoCache::m_capture_name_string_cache</definition>
+        <argsstring></argsstring>
+        <name>m_capture_name_string_cache</name>
+        <qualifiedname>muda::details::LaunchInfoCache::m_capture_name_string_cache</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/tools/launch_info_cache.h" line="11" column="27" bodyfile="src/muda/tools/launch_info_cache.h" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1details_1_1_launch_info_cache_1a355aca7c472dd77daf037cfb50af2c0a" prot="private" static="no" mutable="no">
+        <type><ref refid="classmuda_1_1details_1_1_string_pointer" kindref="compound">StringPointer</ref></type>
+        <definition>StringPointer muda::details::LaunchInfoCache::m_current_kernel_name</definition>
+        <argsstring></argsstring>
+        <name>m_current_kernel_name</name>
+        <qualifiedname>muda::details::LaunchInfoCache::m_current_kernel_name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/tools/launch_info_cache.h" line="13" column="19" bodyfile="src/muda/tools/launch_info_cache.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1details_1_1_launch_info_cache_1af28a67c1543a626b1c7116268a191de7" prot="private" static="no" mutable="no">
+        <type><ref refid="classmuda_1_1details_1_1_string_pointer" kindref="compound">StringPointer</ref></type>
+        <definition>StringPointer muda::details::LaunchInfoCache::m_current_capture_name</definition>
+        <argsstring></argsstring>
+        <name>m_current_capture_name</name>
+        <qualifiedname>muda::details::LaunchInfoCache::m_current_capture_name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/tools/launch_info_cache.h" line="14" column="19" bodyfile="src/muda/tools/launch_info_cache.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1details_1_1_launch_info_cache_1a49f4e54a70a3541e65cf478b6cb65033" prot="private" static="no" mutable="no">
+        <type><ref refid="classmuda_1_1details_1_1_string_pointer" kindref="compound">StringPointer</ref></type>
+        <definition>StringPointer muda::details::LaunchInfoCache::m_current_kernel_file</definition>
+        <argsstring></argsstring>
+        <name>m_current_kernel_file</name>
+        <qualifiedname>muda::details::LaunchInfoCache::m_current_kernel_file</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/tools/launch_info_cache.h" line="15" column="19" bodyfile="src/muda/tools/launch_info_cache.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1details_1_1_launch_info_cache_1a6f77a704285043006d77ffc6a3a8bdc3" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int muda::details::LaunchInfoCache::m_current_kernel_line</definition>
+        <argsstring></argsstring>
+        <name>m_current_kernel_line</name>
+        <qualifiedname>muda::details::LaunchInfoCache::m_current_kernel_line</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/tools/launch_info_cache.h" line="16" column="19" bodyfile="src/muda/tools/launch_info_cache.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classmuda_1_1details_1_1_launch_info_cache_1acecacd236dde07114682bdf95d1785d1" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>muda::details::LaunchInfoCache::LaunchInfoCache</definition>
+        <argsstring>() MUDA_NOEXCEPT</argsstring>
+        <name>LaunchInfoCache</name>
+        <qualifiedname>muda::details::LaunchInfoCache::LaunchInfoCache</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/tools/launch_info_cache.h" line="19" column="5" bodyfile="src/muda/tools/launch_info_cache.h" bodystart="19" bodyend="25"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classmuda_1_1details_1_1_launch_info_cache_1ac1c9e4afb3f0aa0fe68551bc6beb7855" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>auto</type>
+        <definition>static auto muda::details::LaunchInfoCache::view_name</definition>
+        <argsstring>(std::string_view name) MUDA_NOEXCEPT</argsstring>
+        <name>view_name</name>
+        <qualifiedname>muda::details::LaunchInfoCache::view_name</qualifiedname>
+        <param>
+          <type>std::string_view</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/tools/launch_info_cache.h" line="28" column="17" bodyfile="src/muda/tools/launch_info_cache.h" bodystart="28" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1details_1_1_launch_info_cache_1aad4f06200c5e308ac7b8c18544d7f7b0" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>auto</type>
+        <definition>static auto muda::details::LaunchInfoCache::current_kernel_name</definition>
+        <argsstring>(std::string_view name) MUDA_NOEXCEPT</argsstring>
+        <name>current_kernel_name</name>
+        <qualifiedname>muda::details::LaunchInfoCache::current_kernel_name</qualifiedname>
+        <param>
+          <type>std::string_view</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/tools/launch_info_cache.h" line="33" column="17" bodyfile="src/muda/tools/launch_info_cache.h" bodystart="33" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1details_1_1_launch_info_cache_1ae00b5a429e0e95028f3cd16ba336a9e1" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>auto</type>
+        <definition>static auto muda::details::LaunchInfoCache::current_kernel_name</definition>
+        <argsstring>() MUDA_NOEXCEPT</argsstring>
+        <name>current_kernel_name</name>
+        <qualifiedname>muda::details::LaunchInfoCache::current_kernel_name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/tools/launch_info_cache.h" line="40" column="17" bodyfile="src/muda/tools/launch_info_cache.h" bodystart="40" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1details_1_1_launch_info_cache_1a6247d4a9ba980bf4a5801468acfbc8bf" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>auto</type>
+        <definition>static auto muda::details::LaunchInfoCache::current_capture_name</definition>
+        <argsstring>(std::string_view name) MUDA_NOEXCEPT</argsstring>
+        <name>current_capture_name</name>
+        <qualifiedname>muda::details::LaunchInfoCache::current_capture_name</qualifiedname>
+        <param>
+          <type>std::string_view</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/tools/launch_info_cache.h" line="45" column="17" bodyfile="src/muda/tools/launch_info_cache.h" bodystart="45" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1details_1_1_launch_info_cache_1a97b07bb0fbb9f0ef491c72c20ed51f5c" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>auto</type>
+        <definition>static auto muda::details::LaunchInfoCache::current_capture_name</definition>
+        <argsstring>() MUDA_NOEXCEPT</argsstring>
+        <name>current_capture_name</name>
+        <qualifiedname>muda::details::LaunchInfoCache::current_capture_name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/tools/launch_info_cache.h" line="52" column="17" bodyfile="src/muda/tools/launch_info_cache.h" bodystart="52" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1details_1_1_launch_info_cache_1a36fbb6f977315a85e244d686eebee281" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>auto</type>
+        <definition>static auto muda::details::LaunchInfoCache::current_kernel_file</definition>
+        <argsstring>(std::string_view name) MUDA_NOEXCEPT</argsstring>
+        <name>current_kernel_file</name>
+        <qualifiedname>muda::details::LaunchInfoCache::current_kernel_file</qualifiedname>
+        <param>
+          <type>std::string_view</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/tools/launch_info_cache.h" line="57" column="17" bodyfile="src/muda/tools/launch_info_cache.h" bodystart="57" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1details_1_1_launch_info_cache_1ab6431cabe6fd860f645575931471dda2" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>auto</type>
+        <definition>static auto muda::details::LaunchInfoCache::current_kernel_file</definition>
+        <argsstring>() MUDA_NOEXCEPT</argsstring>
+        <name>current_kernel_file</name>
+        <qualifiedname>muda::details::LaunchInfoCache::current_kernel_file</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/tools/launch_info_cache.h" line="64" column="17" bodyfile="src/muda/tools/launch_info_cache.h" bodystart="64" bodyend="67"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1details_1_1_launch_info_cache_1a65b795bb74d0a01bdcdb6212e6fa7a2b" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>auto</type>
+        <definition>static auto muda::details::LaunchInfoCache::current_kernel_line</definition>
+        <argsstring>(int line) MUDA_NOEXCEPT</argsstring>
+        <name>current_kernel_line</name>
+        <qualifiedname>muda::details::LaunchInfoCache::current_kernel_line</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>line</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/tools/launch_info_cache.h" line="69" column="17" bodyfile="src/muda/tools/launch_info_cache.h" bodystart="69" bodyend="73"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1details_1_1_launch_info_cache_1a2c989f83935e19acf62506bff83fda37" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>auto</type>
+        <definition>static auto muda::details::LaunchInfoCache::current_kernel_line</definition>
+        <argsstring>() MUDA_NOEXCEPT</argsstring>
+        <name>current_kernel_line</name>
+        <qualifiedname>muda::details::LaunchInfoCache::current_kernel_line</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/tools/launch_info_cache.h" line="75" column="17" bodyfile="src/muda/tools/launch_info_cache.h" bodystart="75" bodyend="78"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1details_1_1_launch_info_cache_1af2f922fe68912bde7df24ad0c902df57" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classmuda_1_1details_1_1_launch_info_cache" kindref="compound">LaunchInfoCache</ref> &amp;</type>
+        <definition>static LaunchInfoCache &amp; muda::details::LaunchInfoCache::instance</definition>
+        <argsstring>() MUDA_NOEXCEPT</argsstring>
+        <name>instance</name>
+        <qualifiedname>muda::details::LaunchInfoCache::instance</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/tools/launch_info_cache.h" line="80" column="28" bodyfile="src/muda/tools/launch_info_cache.h" bodystart="80" bodyend="84"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/muda/tools/launch_info_cache.h" line="5" column="1" bodyfile="src/muda/tools/launch_info_cache.h" bodystart="6" bodyend="85"/>
+    <listofallmembers>
+      <member refid="classmuda_1_1details_1_1_launch_info_cache_1a6247d4a9ba980bf4a5801468acfbc8bf" prot="public" virt="non-virtual"><scope>muda::details::LaunchInfoCache</scope><name>current_capture_name</name></member>
+      <member refid="classmuda_1_1details_1_1_launch_info_cache_1a97b07bb0fbb9f0ef491c72c20ed51f5c" prot="public" virt="non-virtual"><scope>muda::details::LaunchInfoCache</scope><name>current_capture_name</name></member>
+      <member refid="classmuda_1_1details_1_1_launch_info_cache_1a36fbb6f977315a85e244d686eebee281" prot="public" virt="non-virtual"><scope>muda::details::LaunchInfoCache</scope><name>current_kernel_file</name></member>
+      <member refid="classmuda_1_1details_1_1_launch_info_cache_1ab6431cabe6fd860f645575931471dda2" prot="public" virt="non-virtual"><scope>muda::details::LaunchInfoCache</scope><name>current_kernel_file</name></member>
+      <member refid="classmuda_1_1details_1_1_launch_info_cache_1a65b795bb74d0a01bdcdb6212e6fa7a2b" prot="public" virt="non-virtual"><scope>muda::details::LaunchInfoCache</scope><name>current_kernel_line</name></member>
+      <member refid="classmuda_1_1details_1_1_launch_info_cache_1a2c989f83935e19acf62506bff83fda37" prot="public" virt="non-virtual"><scope>muda::details::LaunchInfoCache</scope><name>current_kernel_line</name></member>
+      <member refid="classmuda_1_1details_1_1_launch_info_cache_1aad4f06200c5e308ac7b8c18544d7f7b0" prot="public" virt="non-virtual"><scope>muda::details::LaunchInfoCache</scope><name>current_kernel_name</name></member>
+      <member refid="classmuda_1_1details_1_1_launch_info_cache_1ae00b5a429e0e95028f3cd16ba336a9e1" prot="public" virt="non-virtual"><scope>muda::details::LaunchInfoCache</scope><name>current_kernel_name</name></member>
+      <member refid="classmuda_1_1details_1_1_launch_info_cache_1af2f922fe68912bde7df24ad0c902df57" prot="public" virt="non-virtual"><scope>muda::details::LaunchInfoCache</scope><name>instance</name></member>
+      <member refid="classmuda_1_1details_1_1_launch_info_cache_1acecacd236dde07114682bdf95d1785d1" prot="private" virt="non-virtual"><scope>muda::details::LaunchInfoCache</scope><name>LaunchInfoCache</name></member>
+      <member refid="classmuda_1_1details_1_1_launch_info_cache_1a4b5fe20e7f27695a495c70470b24b323" prot="private" virt="non-virtual"><scope>muda::details::LaunchInfoCache</scope><name>m_capture_name_string_cache</name></member>
+      <member refid="classmuda_1_1details_1_1_launch_info_cache_1af28a67c1543a626b1c7116268a191de7" prot="private" virt="non-virtual"><scope>muda::details::LaunchInfoCache</scope><name>m_current_capture_name</name></member>
+      <member refid="classmuda_1_1details_1_1_launch_info_cache_1a49f4e54a70a3541e65cf478b6cb65033" prot="private" virt="non-virtual"><scope>muda::details::LaunchInfoCache</scope><name>m_current_kernel_file</name></member>
+      <member refid="classmuda_1_1details_1_1_launch_info_cache_1a6f77a704285043006d77ffc6a3a8bdc3" prot="private" virt="non-virtual"><scope>muda::details::LaunchInfoCache</scope><name>m_current_kernel_line</name></member>
+      <member refid="classmuda_1_1details_1_1_launch_info_cache_1a355aca7c472dd77daf037cfb50af2c0a" prot="private" virt="non-virtual"><scope>muda::details::LaunchInfoCache</scope><name>m_current_kernel_name</name></member>
+      <member refid="classmuda_1_1details_1_1_launch_info_cache_1a59054f3e930811b64ecc3084d09cd671" prot="private" virt="non-virtual"><scope>muda::details::LaunchInfoCache</scope><name>m_kernel_file_string_cache</name></member>
+      <member refid="classmuda_1_1details_1_1_launch_info_cache_1aa85f1276b66fe4b857240ce2a390e935" prot="private" virt="non-virtual"><scope>muda::details::LaunchInfoCache</scope><name>m_kernel_name_string_cache</name></member>
+      <member refid="classmuda_1_1details_1_1_launch_info_cache_1a6b8f0b7c648259aa2bf7055b7ce9357b" prot="private" virt="non-virtual"><scope>muda::details::LaunchInfoCache</scope><name>m_view_name_string_cache</name></member>
+      <member refid="classmuda_1_1details_1_1_launch_info_cache_1ac1c9e4afb3f0aa0fe68551bc6beb7855" prot="public" virt="non-virtual"><scope>muda::details::LaunchInfoCache</scope><name>view_name</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

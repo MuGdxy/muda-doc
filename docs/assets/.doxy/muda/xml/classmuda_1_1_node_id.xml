@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classmuda_1_1_node_id" kind="class" language="C++" prot="public">
+    <compoundname>muda::NodeId</compoundname>
+    <basecompoundref refid="classmuda_1_1_id_with_type" prot="public" virt="non-virtual">muda::IdWithType&lt; uint64_t &gt;</basecompoundref>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>U64IdWithType</label>
+        <link refid="classmuda_1_1_id_with_type"/>
+      </node>
+      <node id="1">
+        <label>muda::NodeId</label>
+        <link refid="classmuda_1_1_node_id"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>U64IdWithType</label>
+        <link refid="classmuda_1_1_id_with_type"/>
+      </node>
+      <node id="1">
+        <label>muda::NodeId</label>
+        <link refid="classmuda_1_1_node_id"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="src/muda/compute_graph/compute_graph_node_id.h" line="5" column="1" bodyfile="src/muda/compute_graph/compute_graph_node_id.h" bodystart="6" bodyend="8"/>
+    <listofallmembers>
+      <member refid="classmuda_1_1_id_with_type_1a9bed3e81e83d2cde25ba41bea647e62a" prot="public" virt="non-virtual"><scope>muda::NodeId</scope><name>IdWithType</name></member>
+      <member refid="classmuda_1_1_id_with_type_1acde1e1c925038c23c4545d26c73e6f04" prot="public" virt="non-virtual"><scope>muda::NodeId</scope><name>IdWithType</name></member>
+      <member refid="classmuda_1_1_id_with_type_1ae7d66d381fca823fae8b306cacdecc73" prot="public" virt="non-virtual"><scope>muda::NodeId</scope><name>invalid_id</name></member>
+      <member refid="classmuda_1_1_id_with_type_1a8879efd4a60f85f8897cbf7cdf94f9d8" prot="public" virt="non-virtual"><scope>muda::NodeId</scope><name>is_valid</name></member>
+      <member refid="classmuda_1_1_id_with_type_1ae0aa418b152beda5e1b8421c5b2a08a5" prot="protected" virt="non-virtual"><scope>muda::NodeId</scope><name>m_value</name></member>
+      <member refid="classmuda_1_1_id_with_type_1a661ebfaae3d70900bf200790bb5e8450" prot="public" virt="non-virtual"><scope>muda::NodeId</scope><name>value</name></member>
+      <member refid="classmuda_1_1_id_with_type_1ab09b6938990f4f58ab3c02ddc58a86bf" prot="public" virt="non-virtual"><scope>muda::NodeId</scope><name>value_type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

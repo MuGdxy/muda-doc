@@ -1,0 +1,1753 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classmuda_1_1_buffer_launch" kind="class" language="C++" prot="public">
+    <compoundname>muda::BufferLaunch</compoundname>
+    <basecompoundref refid="classmuda_1_1_launch_base" prot="public" virt="non-virtual">muda::LaunchBase&lt; BufferLaunch &gt;</basecompoundref>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classmuda_1_1_buffer_launch_1ae595bd5094f78c92650853ccb24189cb" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int muda::BufferLaunch::m_grid_dim</definition>
+        <argsstring></argsstring>
+        <name>m_grid_dim</name>
+        <qualifiedname>muda::BufferLaunch::m_grid_dim</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/buffer_launch.h" line="14" column="9" bodyfile="src/muda/buffer/buffer_launch.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1_buffer_launch_1a1d3ba68185644f200798fcff61012589" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int muda::BufferLaunch::m_block_dim</definition>
+        <argsstring></argsstring>
+        <name>m_block_dim</name>
+        <qualifiedname>muda::BufferLaunch::m_block_dim</qualifiedname>
+        <initializer>= -1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/buffer_launch.h" line="15" column="9" bodyfile="src/muda/buffer/buffer_launch.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmuda_1_1_buffer_launch_1ad04006a54ad2e59acbfbbd3168633434" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>MUDA_HOST</type>
+        <definition>MUDA_HOST muda::BufferLaunch::BufferLaunch</definition>
+        <argsstring>(cudaStream_t s=nullptr) MUDA_NOEXCEPT</argsstring>
+        <name>BufferLaunch</name>
+        <qualifiedname>muda::BufferLaunch::BufferLaunch</qualifiedname>
+        <param>
+          <type>cudaStream_t</type>
+          <declname>s</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/buffer_launch.h" line="19" column="15" bodyfile="src/muda/buffer/buffer_launch.h" bodystart="19" bodyend="21"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_buffer_launch_1a8f038f02ee2e1c642200a492baaa78d5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>MUDA_HOST</type>
+        <definition>MUDA_HOST muda::BufferLaunch::BufferLaunch</definition>
+        <argsstring>(int block_dim, cudaStream_t s=nullptr) MUDA_NOEXCEPT</argsstring>
+        <name>BufferLaunch</name>
+        <qualifiedname>muda::BufferLaunch::BufferLaunch</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>block_dim</declname>
+        </param>
+        <param>
+          <type>cudaStream_t</type>
+          <declname>s</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/buffer_launch.h" line="23" column="15" bodyfile="src/muda/buffer/buffer_launch.h" bodystart="23" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_buffer_launch_1a765cfd472d2f2e357a0a34c5981bb37b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>MUDA_HOST</type>
+        <definition>MUDA_HOST muda::BufferLaunch::BufferLaunch</definition>
+        <argsstring>(int grid_dim, int block_dim, cudaStream_t s=nullptr) MUDA_NOEXCEPT</argsstring>
+        <name>BufferLaunch</name>
+        <qualifiedname>muda::BufferLaunch::BufferLaunch</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>grid_dim</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>block_dim</declname>
+        </param>
+        <param>
+          <type>cudaStream_t</type>
+          <declname>s</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/buffer_launch.h" line="29" column="15" bodyfile="src/muda/buffer/buffer_launch.h" bodystart="29" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_buffer_launch_1ab4b67622dc726031c142645ce7bde7fb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>MUDA_HOST <ref refid="classmuda_1_1_buffer_launch" kindref="compound">BufferLaunch</ref> &amp;</type>
+        <definition>MUDA_HOST BufferLaunch &amp; muda::BufferLaunch::resize</definition>
+        <argsstring>(DeviceBuffer&lt; T &gt; &amp;buffer, size_t size)</argsstring>
+        <name>resize</name>
+        <qualifiedname>muda::BufferLaunch::resize</qualifiedname>
+        <param>
+          <type><ref refid="classmuda_1_1_device_buffer" kindref="compound">DeviceBuffer</ref>&lt; T &gt; &amp;</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/buffer_launch.h" line="46" column="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_buffer_launch_1a09aea1ce0139fac608b7e12ee8bb554d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>MUDA_HOST <ref refid="classmuda_1_1_buffer_launch" kindref="compound">BufferLaunch</ref> &amp;</type>
+        <definition>MUDA_HOST BufferLaunch &amp; muda::BufferLaunch::resize</definition>
+        <argsstring>(DeviceBuffer2D&lt; T &gt; &amp;buffer, Extent2D extent)</argsstring>
+        <name>resize</name>
+        <qualifiedname>muda::BufferLaunch::resize</qualifiedname>
+        <param>
+          <type><ref refid="classmuda_1_1_device_buffer2_d" kindref="compound">DeviceBuffer2D</ref>&lt; T &gt; &amp;</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type><ref refid="classmuda_1_1_extent2_d" kindref="compound">Extent2D</ref></type>
+          <declname>extent</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/buffer_launch.h" line="48" column="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_buffer_launch_1afecca4bdda73293c4eeae593c2e304c3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>MUDA_HOST <ref refid="classmuda_1_1_buffer_launch" kindref="compound">BufferLaunch</ref> &amp;</type>
+        <definition>MUDA_HOST BufferLaunch &amp; muda::BufferLaunch::resize</definition>
+        <argsstring>(DeviceBuffer3D&lt; T &gt; &amp;buffer, Extent3D extent)</argsstring>
+        <name>resize</name>
+        <qualifiedname>muda::BufferLaunch::resize</qualifiedname>
+        <param>
+          <type><ref refid="classmuda_1_1_device_buffer3_d" kindref="compound">DeviceBuffer3D</ref>&lt; T &gt; &amp;</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type><ref refid="classmuda_1_1_extent3_d" kindref="compound">Extent3D</ref></type>
+          <declname>extent</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/buffer_launch.h" line="50" column="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_buffer_launch_1a530aae77cd37cbfea270e442224f37e3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>MUDA_HOST <ref refid="classmuda_1_1_buffer_launch" kindref="compound">BufferLaunch</ref> &amp;</type>
+        <definition>MUDA_HOST BufferLaunch &amp; muda::BufferLaunch::reserve</definition>
+        <argsstring>(DeviceBuffer&lt; T &gt; &amp;buffer, size_t capacity)</argsstring>
+        <name>reserve</name>
+        <qualifiedname>muda::BufferLaunch::reserve</qualifiedname>
+        <param>
+          <type><ref refid="classmuda_1_1_device_buffer" kindref="compound">DeviceBuffer</ref>&lt; T &gt; &amp;</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>capacity</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/buffer_launch.h" line="53" column="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_buffer_launch_1a89e40c959e958c2a4f39b18b8c5745b6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>MUDA_HOST <ref refid="classmuda_1_1_buffer_launch" kindref="compound">BufferLaunch</ref> &amp;</type>
+        <definition>MUDA_HOST BufferLaunch &amp; muda::BufferLaunch::reserve</definition>
+        <argsstring>(DeviceBuffer2D&lt; T &gt; &amp;buffer, Extent2D capacity)</argsstring>
+        <name>reserve</name>
+        <qualifiedname>muda::BufferLaunch::reserve</qualifiedname>
+        <param>
+          <type><ref refid="classmuda_1_1_device_buffer2_d" kindref="compound">DeviceBuffer2D</ref>&lt; T &gt; &amp;</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type><ref refid="classmuda_1_1_extent2_d" kindref="compound">Extent2D</ref></type>
+          <declname>capacity</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/buffer_launch.h" line="55" column="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_buffer_launch_1a4b33aa4e93787875e2114c421d94aa7f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>MUDA_HOST <ref refid="classmuda_1_1_buffer_launch" kindref="compound">BufferLaunch</ref> &amp;</type>
+        <definition>MUDA_HOST BufferLaunch &amp; muda::BufferLaunch::reserve</definition>
+        <argsstring>(DeviceBuffer3D&lt; T &gt; &amp;buffer, Extent3D capacity)</argsstring>
+        <name>reserve</name>
+        <qualifiedname>muda::BufferLaunch::reserve</qualifiedname>
+        <param>
+          <type><ref refid="classmuda_1_1_device_buffer3_d" kindref="compound">DeviceBuffer3D</ref>&lt; T &gt; &amp;</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type><ref refid="classmuda_1_1_extent3_d" kindref="compound">Extent3D</ref></type>
+          <declname>capacity</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/buffer_launch.h" line="57" column="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_buffer_launch_1af7f3d90cfc269d17528a1f3e1bc2f68b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>MUDA_HOST <ref refid="classmuda_1_1_buffer_launch" kindref="compound">BufferLaunch</ref> &amp;</type>
+        <definition>MUDA_HOST BufferLaunch &amp; muda::BufferLaunch::resize</definition>
+        <argsstring>(DeviceBuffer&lt; T &gt; &amp;buffer, size_t size, const T &amp;val)</argsstring>
+        <name>resize</name>
+        <qualifiedname>muda::BufferLaunch::resize</qualifiedname>
+        <param>
+          <type><ref refid="classmuda_1_1_device_buffer" kindref="compound">DeviceBuffer</ref>&lt; T &gt; &amp;</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>const T &amp;</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/buffer_launch.h" line="61" column="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_buffer_launch_1abbfa63531e4c5e0ef1068bc33604c310" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>MUDA_HOST <ref refid="classmuda_1_1_buffer_launch" kindref="compound">BufferLaunch</ref> &amp;</type>
+        <definition>MUDA_HOST BufferLaunch &amp; muda::BufferLaunch::resize</definition>
+        <argsstring>(DeviceBuffer2D&lt; T &gt; &amp;buffer, Extent2D extent, const T &amp;val)</argsstring>
+        <name>resize</name>
+        <qualifiedname>muda::BufferLaunch::resize</qualifiedname>
+        <param>
+          <type><ref refid="classmuda_1_1_device_buffer2_d" kindref="compound">DeviceBuffer2D</ref>&lt; T &gt; &amp;</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type><ref refid="classmuda_1_1_extent2_d" kindref="compound">Extent2D</ref></type>
+          <declname>extent</declname>
+        </param>
+        <param>
+          <type>const T &amp;</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/buffer_launch.h" line="63" column="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_buffer_launch_1aa91d05e99c373aaa0a2039a9bc4e5355" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>MUDA_HOST <ref refid="classmuda_1_1_buffer_launch" kindref="compound">BufferLaunch</ref> &amp;</type>
+        <definition>MUDA_HOST BufferLaunch &amp; muda::BufferLaunch::resize</definition>
+        <argsstring>(DeviceBuffer3D&lt; T &gt; &amp;buffer, Extent3D extent, const T &amp;val)</argsstring>
+        <name>resize</name>
+        <qualifiedname>muda::BufferLaunch::resize</qualifiedname>
+        <param>
+          <type><ref refid="classmuda_1_1_device_buffer3_d" kindref="compound">DeviceBuffer3D</ref>&lt; T &gt; &amp;</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type><ref refid="classmuda_1_1_extent3_d" kindref="compound">Extent3D</ref></type>
+          <declname>extent</declname>
+        </param>
+        <param>
+          <type>const T &amp;</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/buffer_launch.h" line="65" column="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_buffer_launch_1a695f45a8a51e856e16edef9d39a039e8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>MUDA_HOST <ref refid="classmuda_1_1_buffer_launch" kindref="compound">BufferLaunch</ref> &amp;</type>
+        <definition>MUDA_HOST BufferLaunch &amp; muda::BufferLaunch::clear</definition>
+        <argsstring>(DeviceBuffer&lt; T &gt; &amp;buffer)</argsstring>
+        <name>clear</name>
+        <qualifiedname>muda::BufferLaunch::clear</qualifiedname>
+        <param>
+          <type><ref refid="classmuda_1_1_device_buffer" kindref="compound">DeviceBuffer</ref>&lt; T &gt; &amp;</type>
+          <declname>buffer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/buffer_launch.h" line="69" column="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_buffer_launch_1aaec099a29fe91f66f04cacf382bee614" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>MUDA_HOST <ref refid="classmuda_1_1_buffer_launch" kindref="compound">BufferLaunch</ref> &amp;</type>
+        <definition>MUDA_HOST BufferLaunch &amp; muda::BufferLaunch::clear</definition>
+        <argsstring>(DeviceBuffer2D&lt; T &gt; &amp;buffer)</argsstring>
+        <name>clear</name>
+        <qualifiedname>muda::BufferLaunch::clear</qualifiedname>
+        <param>
+          <type><ref refid="classmuda_1_1_device_buffer2_d" kindref="compound">DeviceBuffer2D</ref>&lt; T &gt; &amp;</type>
+          <declname>buffer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/buffer_launch.h" line="71" column="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_buffer_launch_1aa276139b8683abd39077dc8a2589c316" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>MUDA_HOST <ref refid="classmuda_1_1_buffer_launch" kindref="compound">BufferLaunch</ref> &amp;</type>
+        <definition>MUDA_HOST BufferLaunch &amp; muda::BufferLaunch::clear</definition>
+        <argsstring>(DeviceBuffer3D&lt; T &gt; &amp;buffer)</argsstring>
+        <name>clear</name>
+        <qualifiedname>muda::BufferLaunch::clear</qualifiedname>
+        <param>
+          <type><ref refid="classmuda_1_1_device_buffer3_d" kindref="compound">DeviceBuffer3D</ref>&lt; T &gt; &amp;</type>
+          <declname>buffer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/buffer_launch.h" line="73" column="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_buffer_launch_1a9b90aff8aa94d01638a9dc1a82224416" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>MUDA_HOST <ref refid="classmuda_1_1_buffer_launch" kindref="compound">BufferLaunch</ref> &amp;</type>
+        <definition>MUDA_HOST BufferLaunch &amp; muda::BufferLaunch::alloc</definition>
+        <argsstring>(DeviceBuffer&lt; T &gt; &amp;buffer, size_t n)</argsstring>
+        <name>alloc</name>
+        <qualifiedname>muda::BufferLaunch::alloc</qualifiedname>
+        <param>
+          <type><ref refid="classmuda_1_1_device_buffer" kindref="compound">DeviceBuffer</ref>&lt; T &gt; &amp;</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/buffer_launch.h" line="77" column="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_buffer_launch_1afc810451dcde7d014ac7ab4d077aba47" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>MUDA_HOST <ref refid="classmuda_1_1_buffer_launch" kindref="compound">BufferLaunch</ref> &amp;</type>
+        <definition>MUDA_HOST BufferLaunch &amp; muda::BufferLaunch::alloc</definition>
+        <argsstring>(DeviceBuffer2D&lt; T &gt; &amp;buffer, Extent2D extent)</argsstring>
+        <name>alloc</name>
+        <qualifiedname>muda::BufferLaunch::alloc</qualifiedname>
+        <param>
+          <type><ref refid="classmuda_1_1_device_buffer2_d" kindref="compound">DeviceBuffer2D</ref>&lt; T &gt; &amp;</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type><ref refid="classmuda_1_1_extent2_d" kindref="compound">Extent2D</ref></type>
+          <declname>extent</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/buffer_launch.h" line="79" column="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_buffer_launch_1a47d45aca71449d794f86f1cbbd149cf4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>MUDA_HOST <ref refid="classmuda_1_1_buffer_launch" kindref="compound">BufferLaunch</ref> &amp;</type>
+        <definition>MUDA_HOST BufferLaunch &amp; muda::BufferLaunch::alloc</definition>
+        <argsstring>(DeviceBuffer3D&lt; T &gt; &amp;buffer, Extent3D extent)</argsstring>
+        <name>alloc</name>
+        <qualifiedname>muda::BufferLaunch::alloc</qualifiedname>
+        <param>
+          <type><ref refid="classmuda_1_1_device_buffer3_d" kindref="compound">DeviceBuffer3D</ref>&lt; T &gt; &amp;</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type><ref refid="classmuda_1_1_extent3_d" kindref="compound">Extent3D</ref></type>
+          <declname>extent</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/buffer_launch.h" line="81" column="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_buffer_launch_1adc17a87b6f733c3010ca2c1656dd276d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>MUDA_HOST <ref refid="classmuda_1_1_buffer_launch" kindref="compound">BufferLaunch</ref> &amp;</type>
+        <definition>MUDA_HOST BufferLaunch &amp; muda::BufferLaunch::free</definition>
+        <argsstring>(DeviceBuffer&lt; T &gt; &amp;buffer)</argsstring>
+        <name>free</name>
+        <qualifiedname>muda::BufferLaunch::free</qualifiedname>
+        <param>
+          <type><ref refid="classmuda_1_1_device_buffer" kindref="compound">DeviceBuffer</ref>&lt; T &gt; &amp;</type>
+          <declname>buffer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/buffer_launch.h" line="85" column="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_buffer_launch_1a513fd664b9c5cef9d791251c68c72cdf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>MUDA_HOST <ref refid="classmuda_1_1_buffer_launch" kindref="compound">BufferLaunch</ref> &amp;</type>
+        <definition>MUDA_HOST BufferLaunch &amp; muda::BufferLaunch::free</definition>
+        <argsstring>(DeviceBuffer2D&lt; T &gt; &amp;buffer)</argsstring>
+        <name>free</name>
+        <qualifiedname>muda::BufferLaunch::free</qualifiedname>
+        <param>
+          <type><ref refid="classmuda_1_1_device_buffer2_d" kindref="compound">DeviceBuffer2D</ref>&lt; T &gt; &amp;</type>
+          <declname>buffer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/buffer_launch.h" line="87" column="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_buffer_launch_1aa4cd6a604ae8986edd0afe6afb0ec966" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>MUDA_HOST <ref refid="classmuda_1_1_buffer_launch" kindref="compound">BufferLaunch</ref> &amp;</type>
+        <definition>MUDA_HOST BufferLaunch &amp; muda::BufferLaunch::free</definition>
+        <argsstring>(DeviceBuffer3D&lt; T &gt; &amp;buffer)</argsstring>
+        <name>free</name>
+        <qualifiedname>muda::BufferLaunch::free</qualifiedname>
+        <param>
+          <type><ref refid="classmuda_1_1_device_buffer3_d" kindref="compound">DeviceBuffer3D</ref>&lt; T &gt; &amp;</type>
+          <declname>buffer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/buffer_launch.h" line="89" column="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_buffer_launch_1a293d5f986e6c92d507c701971fbe3912" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>MUDA_HOST <ref refid="classmuda_1_1_buffer_launch" kindref="compound">BufferLaunch</ref> &amp;</type>
+        <definition>MUDA_HOST BufferLaunch &amp; muda::BufferLaunch::shrink_to_fit</definition>
+        <argsstring>(DeviceBuffer&lt; T &gt; &amp;buffer)</argsstring>
+        <name>shrink_to_fit</name>
+        <qualifiedname>muda::BufferLaunch::shrink_to_fit</qualifiedname>
+        <param>
+          <type><ref refid="classmuda_1_1_device_buffer" kindref="compound">DeviceBuffer</ref>&lt; T &gt; &amp;</type>
+          <declname>buffer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/buffer_launch.h" line="93" column="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_buffer_launch_1acd54b0374cd7db6502817b61cb0a0257" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>MUDA_HOST <ref refid="classmuda_1_1_buffer_launch" kindref="compound">BufferLaunch</ref> &amp;</type>
+        <definition>MUDA_HOST BufferLaunch &amp; muda::BufferLaunch::shrink_to_fit</definition>
+        <argsstring>(DeviceBuffer2D&lt; T &gt; &amp;buffer)</argsstring>
+        <name>shrink_to_fit</name>
+        <qualifiedname>muda::BufferLaunch::shrink_to_fit</qualifiedname>
+        <param>
+          <type><ref refid="classmuda_1_1_device_buffer2_d" kindref="compound">DeviceBuffer2D</ref>&lt; T &gt; &amp;</type>
+          <declname>buffer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/buffer_launch.h" line="95" column="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_buffer_launch_1a494caa606b25b723d30da37a67587831" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>MUDA_HOST <ref refid="classmuda_1_1_buffer_launch" kindref="compound">BufferLaunch</ref> &amp;</type>
+        <definition>MUDA_HOST BufferLaunch &amp; muda::BufferLaunch::shrink_to_fit</definition>
+        <argsstring>(DeviceBuffer3D&lt; T &gt; &amp;buffer)</argsstring>
+        <name>shrink_to_fit</name>
+        <qualifiedname>muda::BufferLaunch::shrink_to_fit</qualifiedname>
+        <param>
+          <type><ref refid="classmuda_1_1_device_buffer3_d" kindref="compound">DeviceBuffer3D</ref>&lt; T &gt; &amp;</type>
+          <declname>buffer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/buffer_launch.h" line="97" column="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_buffer_launch_1a3e1c6126b0238415126da8ef8665c734" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>MUDA_HOST <ref refid="classmuda_1_1_buffer_launch" kindref="compound">BufferLaunch</ref> &amp;</type>
+        <definition>MUDA_HOST BufferLaunch &amp; muda::BufferLaunch::copy</definition>
+        <argsstring>(VarView&lt; T &gt; dst, CVarView&lt; T &gt; src)</argsstring>
+        <name>copy</name>
+        <qualifiedname>muda::BufferLaunch::copy</qualifiedname>
+        <param>
+          <type><ref refid="classmuda_1_1_var_view_t" kindref="compound">VarView</ref>&lt; T &gt;</type>
+          <declname>dst</declname>
+        </param>
+        <param>
+          <type><ref refid="classmuda_1_1_var_view_t" kindref="compound">CVarView</ref>&lt; T &gt;</type>
+          <declname>src</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/buffer_launch.h" line="105" column="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_buffer_launch_1a773a61cb17cdd588b0e4230bf874ef69" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>MUDA_HOST <ref refid="classmuda_1_1_buffer_launch" kindref="compound">BufferLaunch</ref> &amp;</type>
+        <definition>MUDA_HOST BufferLaunch &amp; muda::BufferLaunch::copy</definition>
+        <argsstring>(BufferView&lt; T &gt; dst, CBufferView&lt; T &gt; src)</argsstring>
+        <name>copy</name>
+        <qualifiedname>muda::BufferLaunch::copy</qualifiedname>
+        <param>
+          <type><ref refid="classmuda_1_1_buffer_view_t" kindref="compound">BufferView</ref>&lt; T &gt;</type>
+          <declname>dst</declname>
+        </param>
+        <param>
+          <type><ref refid="classmuda_1_1_buffer_view_t" kindref="compound">CBufferView</ref>&lt; T &gt;</type>
+          <declname>src</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/buffer_launch.h" line="107" column="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_buffer_launch_1a49fea347a08e81bc05d426b5ace73014" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>MUDA_HOST <ref refid="classmuda_1_1_buffer_launch" kindref="compound">BufferLaunch</ref> &amp;</type>
+        <definition>MUDA_HOST BufferLaunch &amp; muda::BufferLaunch::copy</definition>
+        <argsstring>(Buffer2DView&lt; T &gt; dst, CBuffer2DView&lt; T &gt; src)</argsstring>
+        <name>copy</name>
+        <qualifiedname>muda::BufferLaunch::copy</qualifiedname>
+        <param>
+          <type><ref refid="classmuda_1_1_buffer2_d_view_t" kindref="compound">Buffer2DView</ref>&lt; T &gt;</type>
+          <declname>dst</declname>
+        </param>
+        <param>
+          <type><ref refid="classmuda_1_1_buffer2_d_view_t" kindref="compound">CBuffer2DView</ref>&lt; T &gt;</type>
+          <declname>src</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/buffer_launch.h" line="109" column="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_buffer_launch_1a409a069c6f23fc3c618935f57a754617" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>MUDA_HOST <ref refid="classmuda_1_1_buffer_launch" kindref="compound">BufferLaunch</ref> &amp;</type>
+        <definition>MUDA_HOST BufferLaunch &amp; muda::BufferLaunch::copy</definition>
+        <argsstring>(Buffer3DView&lt; T &gt; dst, CBuffer3DView&lt; T &gt; src)</argsstring>
+        <name>copy</name>
+        <qualifiedname>muda::BufferLaunch::copy</qualifiedname>
+        <param>
+          <type><ref refid="classmuda_1_1_buffer3_d_view_t" kindref="compound">Buffer3DView</ref>&lt; T &gt;</type>
+          <declname>dst</declname>
+        </param>
+        <param>
+          <type><ref refid="classmuda_1_1_buffer3_d_view_t" kindref="compound">CBuffer3DView</ref>&lt; T &gt;</type>
+          <declname>src</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/buffer_launch.h" line="111" column="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_buffer_launch_1a6430dae68aec4a71e4bcc4c856082923" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>MUDA_HOST <ref refid="classmuda_1_1_buffer_launch" kindref="compound">BufferLaunch</ref> &amp;</type>
+        <definition>MUDA_HOST BufferLaunch &amp; muda::BufferLaunch::copy</definition>
+        <argsstring>(ComputeGraphVar&lt; VarView&lt; T &gt; &gt; &amp;dst, const ComputeGraphVar&lt; VarView&lt; T &gt; &gt; &amp;src)</argsstring>
+        <name>copy</name>
+        <qualifiedname>muda::BufferLaunch::copy</qualifiedname>
+        <param>
+          <type><ref refid="classmuda_1_1_compute_graph_var" kindref="compound">ComputeGraphVar</ref>&lt; <ref refid="classmuda_1_1_var_view_t" kindref="compound">VarView</ref>&lt; T &gt; &gt; &amp;</type>
+          <declname>dst</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classmuda_1_1_compute_graph_var" kindref="compound">ComputeGraphVar</ref>&lt; <ref refid="classmuda_1_1_var_view_t" kindref="compound">VarView</ref>&lt; T &gt; &gt; &amp;</type>
+          <declname>src</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/buffer_launch.h" line="114" column="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_buffer_launch_1a14c89ab483c76b57ee6d315f1a840981" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>MUDA_HOST <ref refid="classmuda_1_1_buffer_launch" kindref="compound">BufferLaunch</ref> &amp;</type>
+        <definition>MUDA_HOST BufferLaunch &amp; muda::BufferLaunch::copy</definition>
+        <argsstring>(ComputeGraphVar&lt; BufferView&lt; T &gt; &gt; &amp;dst, const ComputeGraphVar&lt; BufferView&lt; T &gt; &gt; &amp;src)</argsstring>
+        <name>copy</name>
+        <qualifiedname>muda::BufferLaunch::copy</qualifiedname>
+        <param>
+          <type><ref refid="classmuda_1_1_compute_graph_var" kindref="compound">ComputeGraphVar</ref>&lt; <ref refid="classmuda_1_1_buffer_view_t" kindref="compound">BufferView</ref>&lt; T &gt; &gt; &amp;</type>
+          <declname>dst</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classmuda_1_1_compute_graph_var" kindref="compound">ComputeGraphVar</ref>&lt; <ref refid="classmuda_1_1_buffer_view_t" kindref="compound">BufferView</ref>&lt; T &gt; &gt; &amp;</type>
+          <declname>src</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/buffer_launch.h" line="117" column="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_buffer_launch_1a06332c2a3fa7f9a6953f4fb1acf3e3e3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>MUDA_HOST <ref refid="classmuda_1_1_buffer_launch" kindref="compound">BufferLaunch</ref> &amp;</type>
+        <definition>MUDA_HOST BufferLaunch &amp; muda::BufferLaunch::copy</definition>
+        <argsstring>(ComputeGraphVar&lt; Buffer2DView&lt; T &gt; &gt; &amp;dst, const ComputeGraphVar&lt; Buffer2DView&lt; T &gt; &gt; &amp;src)</argsstring>
+        <name>copy</name>
+        <qualifiedname>muda::BufferLaunch::copy</qualifiedname>
+        <param>
+          <type><ref refid="classmuda_1_1_compute_graph_var" kindref="compound">ComputeGraphVar</ref>&lt; <ref refid="classmuda_1_1_buffer2_d_view_t" kindref="compound">Buffer2DView</ref>&lt; T &gt; &gt; &amp;</type>
+          <declname>dst</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classmuda_1_1_compute_graph_var" kindref="compound">ComputeGraphVar</ref>&lt; <ref refid="classmuda_1_1_buffer2_d_view_t" kindref="compound">Buffer2DView</ref>&lt; T &gt; &gt; &amp;</type>
+          <declname>src</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/buffer_launch.h" line="120" column="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_buffer_launch_1a2a2e7d1b4734faf5a4b2abd6df0788fc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>MUDA_HOST <ref refid="classmuda_1_1_buffer_launch" kindref="compound">BufferLaunch</ref> &amp;</type>
+        <definition>MUDA_HOST BufferLaunch &amp; muda::BufferLaunch::copy</definition>
+        <argsstring>(ComputeGraphVar&lt; Buffer3DView&lt; T &gt; &gt; &amp;dst, const ComputeGraphVar&lt; Buffer3DView&lt; T &gt; &gt; &amp;src)</argsstring>
+        <name>copy</name>
+        <qualifiedname>muda::BufferLaunch::copy</qualifiedname>
+        <param>
+          <type><ref refid="classmuda_1_1_compute_graph_var" kindref="compound">ComputeGraphVar</ref>&lt; <ref refid="classmuda_1_1_buffer3_d_view_t" kindref="compound">Buffer3DView</ref>&lt; T &gt; &gt; &amp;</type>
+          <declname>dst</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classmuda_1_1_compute_graph_var" kindref="compound">ComputeGraphVar</ref>&lt; <ref refid="classmuda_1_1_buffer3_d_view_t" kindref="compound">Buffer3DView</ref>&lt; T &gt; &gt; &amp;</type>
+          <declname>src</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/buffer_launch.h" line="123" column="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_buffer_launch_1a5b58240d6a3e8b19cec44ef79b418d44" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>MUDA_HOST <ref refid="classmuda_1_1_buffer_launch" kindref="compound">BufferLaunch</ref> &amp;</type>
+        <definition>MUDA_HOST BufferLaunch &amp; muda::BufferLaunch::copy</definition>
+        <argsstring>(T *dst, CVarView&lt; T &gt; src)</argsstring>
+        <name>copy</name>
+        <qualifiedname>muda::BufferLaunch::copy</qualifiedname>
+        <param>
+          <type>T *</type>
+          <declname>dst</declname>
+        </param>
+        <param>
+          <type><ref refid="classmuda_1_1_var_view_t" kindref="compound">CVarView</ref>&lt; T &gt;</type>
+          <declname>src</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/buffer_launch.h" line="132" column="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_buffer_launch_1a5df04109d3365696eca2a13b8d3d46ef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>MUDA_HOST <ref refid="classmuda_1_1_buffer_launch" kindref="compound">BufferLaunch</ref> &amp;</type>
+        <definition>MUDA_HOST BufferLaunch &amp; muda::BufferLaunch::copy</definition>
+        <argsstring>(T *dst, CBufferView&lt; T &gt; src)</argsstring>
+        <name>copy</name>
+        <qualifiedname>muda::BufferLaunch::copy</qualifiedname>
+        <param>
+          <type>T *</type>
+          <declname>dst</declname>
+        </param>
+        <param>
+          <type><ref refid="classmuda_1_1_buffer_view_t" kindref="compound">CBufferView</ref>&lt; T &gt;</type>
+          <declname>src</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/buffer_launch.h" line="134" column="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_buffer_launch_1a74232bd1cfb460448fc39d351300b766" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>MUDA_HOST <ref refid="classmuda_1_1_buffer_launch" kindref="compound">BufferLaunch</ref> &amp;</type>
+        <definition>MUDA_HOST BufferLaunch &amp; muda::BufferLaunch::copy</definition>
+        <argsstring>(T *dst, CBuffer2DView&lt; T &gt; src)</argsstring>
+        <name>copy</name>
+        <qualifiedname>muda::BufferLaunch::copy</qualifiedname>
+        <param>
+          <type>T *</type>
+          <declname>dst</declname>
+        </param>
+        <param>
+          <type><ref refid="classmuda_1_1_buffer2_d_view_t" kindref="compound">CBuffer2DView</ref>&lt; T &gt;</type>
+          <declname>src</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/buffer_launch.h" line="136" column="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_buffer_launch_1a9f5c42fd274c1dcd6286a5ce69da32df" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>MUDA_HOST <ref refid="classmuda_1_1_buffer_launch" kindref="compound">BufferLaunch</ref> &amp;</type>
+        <definition>MUDA_HOST BufferLaunch &amp; muda::BufferLaunch::copy</definition>
+        <argsstring>(T *dst, CBuffer3DView&lt; T &gt; src)</argsstring>
+        <name>copy</name>
+        <qualifiedname>muda::BufferLaunch::copy</qualifiedname>
+        <param>
+          <type>T *</type>
+          <declname>dst</declname>
+        </param>
+        <param>
+          <type><ref refid="classmuda_1_1_buffer3_d_view_t" kindref="compound">CBuffer3DView</ref>&lt; T &gt;</type>
+          <declname>src</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/buffer_launch.h" line="138" column="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_buffer_launch_1a341617fcdddab214345a9b624caa0ce8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>MUDA_HOST <ref refid="classmuda_1_1_buffer_launch" kindref="compound">BufferLaunch</ref> &amp;</type>
+        <definition>MUDA_HOST BufferLaunch &amp; muda::BufferLaunch::copy</definition>
+        <argsstring>(ComputeGraphVar&lt; T * &gt; &amp;dst, const ComputeGraphVar&lt; BufferView&lt; T &gt; &gt; &amp;src)</argsstring>
+        <name>copy</name>
+        <qualifiedname>muda::BufferLaunch::copy</qualifiedname>
+        <param>
+          <type><ref refid="classmuda_1_1_compute_graph_var" kindref="compound">ComputeGraphVar</ref>&lt; T * &gt; &amp;</type>
+          <declname>dst</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classmuda_1_1_compute_graph_var" kindref="compound">ComputeGraphVar</ref>&lt; <ref refid="classmuda_1_1_buffer_view_t" kindref="compound">BufferView</ref>&lt; T &gt; &gt; &amp;</type>
+          <declname>src</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/buffer_launch.h" line="141" column="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_buffer_launch_1ada2f488090474bd8e3ef2b48b45fd3e5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>MUDA_HOST <ref refid="classmuda_1_1_buffer_launch" kindref="compound">BufferLaunch</ref> &amp;</type>
+        <definition>MUDA_HOST BufferLaunch &amp; muda::BufferLaunch::copy</definition>
+        <argsstring>(ComputeGraphVar&lt; T * &gt; &amp;dst, const ComputeGraphVar&lt; Buffer2DView&lt; T &gt; &gt; &amp;src)</argsstring>
+        <name>copy</name>
+        <qualifiedname>muda::BufferLaunch::copy</qualifiedname>
+        <param>
+          <type><ref refid="classmuda_1_1_compute_graph_var" kindref="compound">ComputeGraphVar</ref>&lt; T * &gt; &amp;</type>
+          <declname>dst</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classmuda_1_1_compute_graph_var" kindref="compound">ComputeGraphVar</ref>&lt; <ref refid="classmuda_1_1_buffer2_d_view_t" kindref="compound">Buffer2DView</ref>&lt; T &gt; &gt; &amp;</type>
+          <declname>src</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/buffer_launch.h" line="144" column="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_buffer_launch_1a3cb84f561223f9a5697cd2f1a1043b09" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>MUDA_HOST <ref refid="classmuda_1_1_buffer_launch" kindref="compound">BufferLaunch</ref> &amp;</type>
+        <definition>MUDA_HOST BufferLaunch &amp; muda::BufferLaunch::copy</definition>
+        <argsstring>(ComputeGraphVar&lt; T * &gt; &amp;dst, const ComputeGraphVar&lt; VarView&lt; T &gt; &gt; &amp;src)</argsstring>
+        <name>copy</name>
+        <qualifiedname>muda::BufferLaunch::copy</qualifiedname>
+        <param>
+          <type><ref refid="classmuda_1_1_compute_graph_var" kindref="compound">ComputeGraphVar</ref>&lt; T * &gt; &amp;</type>
+          <declname>dst</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classmuda_1_1_compute_graph_var" kindref="compound">ComputeGraphVar</ref>&lt; <ref refid="classmuda_1_1_var_view_t" kindref="compound">VarView</ref>&lt; T &gt; &gt; &amp;</type>
+          <declname>src</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/buffer_launch.h" line="147" column="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_buffer_launch_1aebda7c89781fb9d8329445b21dd35e47" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>MUDA_HOST <ref refid="classmuda_1_1_buffer_launch" kindref="compound">BufferLaunch</ref> &amp;</type>
+        <definition>MUDA_HOST BufferLaunch &amp; muda::BufferLaunch::copy</definition>
+        <argsstring>(ComputeGraphVar&lt; T * &gt; &amp;dst, const ComputeGraphVar&lt; Buffer3DView&lt; T &gt; &gt; &amp;src)</argsstring>
+        <name>copy</name>
+        <qualifiedname>muda::BufferLaunch::copy</qualifiedname>
+        <param>
+          <type><ref refid="classmuda_1_1_compute_graph_var" kindref="compound">ComputeGraphVar</ref>&lt; T * &gt; &amp;</type>
+          <declname>dst</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classmuda_1_1_compute_graph_var" kindref="compound">ComputeGraphVar</ref>&lt; <ref refid="classmuda_1_1_buffer3_d_view_t" kindref="compound">Buffer3DView</ref>&lt; T &gt; &gt; &amp;</type>
+          <declname>src</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/buffer_launch.h" line="150" column="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_buffer_launch_1a3f8ebab35f502fcfb0ac4ee3efeb6e21" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>MUDA_HOST <ref refid="classmuda_1_1_buffer_launch" kindref="compound">BufferLaunch</ref> &amp;</type>
+        <definition>MUDA_HOST BufferLaunch &amp; muda::BufferLaunch::copy</definition>
+        <argsstring>(VarView&lt; T &gt; dst, const T *src)</argsstring>
+        <name>copy</name>
+        <qualifiedname>muda::BufferLaunch::copy</qualifiedname>
+        <param>
+          <type><ref refid="classmuda_1_1_var_view_t" kindref="compound">VarView</ref>&lt; T &gt;</type>
+          <declname>dst</declname>
+        </param>
+        <param>
+          <type>const T *</type>
+          <declname>src</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/buffer_launch.h" line="159" column="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_buffer_launch_1a4f0f21c14575571b5dbcf84cd859e031" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>MUDA_HOST <ref refid="classmuda_1_1_buffer_launch" kindref="compound">BufferLaunch</ref> &amp;</type>
+        <definition>MUDA_HOST BufferLaunch &amp; muda::BufferLaunch::copy</definition>
+        <argsstring>(BufferView&lt; T &gt; dst, const T *src)</argsstring>
+        <name>copy</name>
+        <qualifiedname>muda::BufferLaunch::copy</qualifiedname>
+        <param>
+          <type><ref refid="classmuda_1_1_buffer_view_t" kindref="compound">BufferView</ref>&lt; T &gt;</type>
+          <declname>dst</declname>
+        </param>
+        <param>
+          <type>const T *</type>
+          <declname>src</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/buffer_launch.h" line="161" column="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_buffer_launch_1a3ca02723ded14869bdf2c3a27923e0dc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>MUDA_HOST <ref refid="classmuda_1_1_buffer_launch" kindref="compound">BufferLaunch</ref> &amp;</type>
+        <definition>MUDA_HOST BufferLaunch &amp; muda::BufferLaunch::copy</definition>
+        <argsstring>(Buffer2DView&lt; T &gt; dst, const T *src)</argsstring>
+        <name>copy</name>
+        <qualifiedname>muda::BufferLaunch::copy</qualifiedname>
+        <param>
+          <type><ref refid="classmuda_1_1_buffer2_d_view_t" kindref="compound">Buffer2DView</ref>&lt; T &gt;</type>
+          <declname>dst</declname>
+        </param>
+        <param>
+          <type>const T *</type>
+          <declname>src</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/buffer_launch.h" line="163" column="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_buffer_launch_1a7ede4b5e1b5f7bfe0c12e3c7234192ec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>MUDA_HOST <ref refid="classmuda_1_1_buffer_launch" kindref="compound">BufferLaunch</ref> &amp;</type>
+        <definition>MUDA_HOST BufferLaunch &amp; muda::BufferLaunch::copy</definition>
+        <argsstring>(Buffer3DView&lt; T &gt; dst, const T *src)</argsstring>
+        <name>copy</name>
+        <qualifiedname>muda::BufferLaunch::copy</qualifiedname>
+        <param>
+          <type><ref refid="classmuda_1_1_buffer3_d_view_t" kindref="compound">Buffer3DView</ref>&lt; T &gt;</type>
+          <declname>dst</declname>
+        </param>
+        <param>
+          <type>const T *</type>
+          <declname>src</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/buffer_launch.h" line="165" column="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_buffer_launch_1a4bb0e1b9cc4996b605a9d276702a6da0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>MUDA_HOST <ref refid="classmuda_1_1_buffer_launch" kindref="compound">BufferLaunch</ref> &amp;</type>
+        <definition>MUDA_HOST BufferLaunch &amp; muda::BufferLaunch::copy</definition>
+        <argsstring>(ComputeGraphVar&lt; BufferView&lt; T &gt; &gt; &amp;dst, const ComputeGraphVar&lt; T * &gt; &amp;src)</argsstring>
+        <name>copy</name>
+        <qualifiedname>muda::BufferLaunch::copy</qualifiedname>
+        <param>
+          <type><ref refid="classmuda_1_1_compute_graph_var" kindref="compound">ComputeGraphVar</ref>&lt; <ref refid="classmuda_1_1_buffer_view_t" kindref="compound">BufferView</ref>&lt; T &gt; &gt; &amp;</type>
+          <declname>dst</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classmuda_1_1_compute_graph_var" kindref="compound">ComputeGraphVar</ref>&lt; T * &gt; &amp;</type>
+          <declname>src</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/buffer_launch.h" line="168" column="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_buffer_launch_1ad8f5545d7d7d8b60fdc8c32c0dbefb1a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>MUDA_HOST <ref refid="classmuda_1_1_buffer_launch" kindref="compound">BufferLaunch</ref> &amp;</type>
+        <definition>MUDA_HOST BufferLaunch &amp; muda::BufferLaunch::copy</definition>
+        <argsstring>(ComputeGraphVar&lt; Buffer2DView&lt; T &gt; &gt; &amp;dst, const ComputeGraphVar&lt; T * &gt; &amp;src)</argsstring>
+        <name>copy</name>
+        <qualifiedname>muda::BufferLaunch::copy</qualifiedname>
+        <param>
+          <type><ref refid="classmuda_1_1_compute_graph_var" kindref="compound">ComputeGraphVar</ref>&lt; <ref refid="classmuda_1_1_buffer2_d_view_t" kindref="compound">Buffer2DView</ref>&lt; T &gt; &gt; &amp;</type>
+          <declname>dst</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classmuda_1_1_compute_graph_var" kindref="compound">ComputeGraphVar</ref>&lt; T * &gt; &amp;</type>
+          <declname>src</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/buffer_launch.h" line="171" column="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_buffer_launch_1a47ef6e7b8f6c25275242daaec52f1e7f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>MUDA_HOST <ref refid="classmuda_1_1_buffer_launch" kindref="compound">BufferLaunch</ref> &amp;</type>
+        <definition>MUDA_HOST BufferLaunch &amp; muda::BufferLaunch::copy</definition>
+        <argsstring>(ComputeGraphVar&lt; VarView&lt; T &gt; &gt; &amp;dst, const ComputeGraphVar&lt; T * &gt; &amp;src)</argsstring>
+        <name>copy</name>
+        <qualifiedname>muda::BufferLaunch::copy</qualifiedname>
+        <param>
+          <type><ref refid="classmuda_1_1_compute_graph_var" kindref="compound">ComputeGraphVar</ref>&lt; <ref refid="classmuda_1_1_var_view_t" kindref="compound">VarView</ref>&lt; T &gt; &gt; &amp;</type>
+          <declname>dst</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classmuda_1_1_compute_graph_var" kindref="compound">ComputeGraphVar</ref>&lt; T * &gt; &amp;</type>
+          <declname>src</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/buffer_launch.h" line="174" column="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_buffer_launch_1afe006d9249329f49fc2d0cd4306a87c0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>MUDA_HOST <ref refid="classmuda_1_1_buffer_launch" kindref="compound">BufferLaunch</ref> &amp;</type>
+        <definition>MUDA_HOST BufferLaunch &amp; muda::BufferLaunch::copy</definition>
+        <argsstring>(ComputeGraphVar&lt; Buffer3DView&lt; T &gt; &gt; &amp;dst, const ComputeGraphVar&lt; T * &gt; &amp;src)</argsstring>
+        <name>copy</name>
+        <qualifiedname>muda::BufferLaunch::copy</qualifiedname>
+        <param>
+          <type><ref refid="classmuda_1_1_compute_graph_var" kindref="compound">ComputeGraphVar</ref>&lt; <ref refid="classmuda_1_1_buffer3_d_view_t" kindref="compound">Buffer3DView</ref>&lt; T &gt; &gt; &amp;</type>
+          <declname>dst</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classmuda_1_1_compute_graph_var" kindref="compound">ComputeGraphVar</ref>&lt; T * &gt; &amp;</type>
+          <declname>src</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/buffer_launch.h" line="177" column="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_buffer_launch_1afd175ca12898070729f9c8ac6c3face3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>MUDA_HOST <ref refid="classmuda_1_1_buffer_launch" kindref="compound">BufferLaunch</ref> &amp;</type>
+        <definition>MUDA_HOST BufferLaunch &amp; muda::BufferLaunch::fill</definition>
+        <argsstring>(VarView&lt; T &gt; buffer, const T &amp;val)</argsstring>
+        <name>fill</name>
+        <qualifiedname>muda::BufferLaunch::fill</qualifiedname>
+        <param>
+          <type><ref refid="classmuda_1_1_var_view_t" kindref="compound">VarView</ref>&lt; T &gt;</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>const T &amp;</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/buffer_launch.h" line="186" column="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_buffer_launch_1a68873741b945355eb6c33ef5270d5406" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>MUDA_HOST <ref refid="classmuda_1_1_buffer_launch" kindref="compound">BufferLaunch</ref> &amp;</type>
+        <definition>MUDA_HOST BufferLaunch &amp; muda::BufferLaunch::fill</definition>
+        <argsstring>(BufferView&lt; T &gt; buffer, const T &amp;val)</argsstring>
+        <name>fill</name>
+        <qualifiedname>muda::BufferLaunch::fill</qualifiedname>
+        <param>
+          <type><ref refid="classmuda_1_1_buffer_view_t" kindref="compound">BufferView</ref>&lt; T &gt;</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>const T &amp;</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/buffer_launch.h" line="188" column="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_buffer_launch_1a45d214a385cc8305443059ddd3153e4e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>MUDA_HOST <ref refid="classmuda_1_1_buffer_launch" kindref="compound">BufferLaunch</ref> &amp;</type>
+        <definition>MUDA_HOST BufferLaunch &amp; muda::BufferLaunch::fill</definition>
+        <argsstring>(Buffer2DView&lt; T &gt; buffer, const T &amp;val)</argsstring>
+        <name>fill</name>
+        <qualifiedname>muda::BufferLaunch::fill</qualifiedname>
+        <param>
+          <type><ref refid="classmuda_1_1_buffer2_d_view_t" kindref="compound">Buffer2DView</ref>&lt; T &gt;</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>const T &amp;</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/buffer_launch.h" line="190" column="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_buffer_launch_1a18bf2f59cfaef40bc3ffd9fb613e9bb3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>MUDA_HOST <ref refid="classmuda_1_1_buffer_launch" kindref="compound">BufferLaunch</ref> &amp;</type>
+        <definition>MUDA_HOST BufferLaunch &amp; muda::BufferLaunch::fill</definition>
+        <argsstring>(Buffer3DView&lt; T &gt; buffer, const T &amp;val)</argsstring>
+        <name>fill</name>
+        <qualifiedname>muda::BufferLaunch::fill</qualifiedname>
+        <param>
+          <type><ref refid="classmuda_1_1_buffer3_d_view_t" kindref="compound">Buffer3DView</ref>&lt; T &gt;</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>const T &amp;</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/buffer_launch.h" line="192" column="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_buffer_launch_1a7d4e30989326770e36cc358ca22f976c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>MUDA_HOST <ref refid="classmuda_1_1_buffer_launch" kindref="compound">BufferLaunch</ref> &amp;</type>
+        <definition>MUDA_HOST BufferLaunch &amp; muda::BufferLaunch::fill</definition>
+        <argsstring>(ComputeGraphVar&lt; VarView&lt; T &gt; &gt; &amp;buffer, const ComputeGraphVar&lt; T &gt; &amp;val)</argsstring>
+        <name>fill</name>
+        <qualifiedname>muda::BufferLaunch::fill</qualifiedname>
+        <param>
+          <type><ref refid="classmuda_1_1_compute_graph_var" kindref="compound">ComputeGraphVar</ref>&lt; <ref refid="classmuda_1_1_var_view_t" kindref="compound">VarView</ref>&lt; T &gt; &gt; &amp;</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classmuda_1_1_compute_graph_var" kindref="compound">ComputeGraphVar</ref>&lt; T &gt; &amp;</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/buffer_launch.h" line="195" column="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_buffer_launch_1a8d1e0d085beae10ca68d0a4c6c747def" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>MUDA_HOST <ref refid="classmuda_1_1_buffer_launch" kindref="compound">BufferLaunch</ref> &amp;</type>
+        <definition>MUDA_HOST BufferLaunch &amp; muda::BufferLaunch::fill</definition>
+        <argsstring>(ComputeGraphVar&lt; BufferView&lt; T &gt; &gt; &amp;buffer, const ComputeGraphVar&lt; T &gt; &amp;val)</argsstring>
+        <name>fill</name>
+        <qualifiedname>muda::BufferLaunch::fill</qualifiedname>
+        <param>
+          <type><ref refid="classmuda_1_1_compute_graph_var" kindref="compound">ComputeGraphVar</ref>&lt; <ref refid="classmuda_1_1_buffer_view_t" kindref="compound">BufferView</ref>&lt; T &gt; &gt; &amp;</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classmuda_1_1_compute_graph_var" kindref="compound">ComputeGraphVar</ref>&lt; T &gt; &amp;</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/buffer_launch.h" line="198" column="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_buffer_launch_1a45dff0d2ccb82ffc63aedc0e6bd18c6f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>MUDA_HOST <ref refid="classmuda_1_1_buffer_launch" kindref="compound">BufferLaunch</ref> &amp;</type>
+        <definition>MUDA_HOST BufferLaunch &amp; muda::BufferLaunch::fill</definition>
+        <argsstring>(ComputeGraphVar&lt; Buffer2DView&lt; T &gt; &gt; &amp;buffer, const ComputeGraphVar&lt; T &gt; &amp;val)</argsstring>
+        <name>fill</name>
+        <qualifiedname>muda::BufferLaunch::fill</qualifiedname>
+        <param>
+          <type><ref refid="classmuda_1_1_compute_graph_var" kindref="compound">ComputeGraphVar</ref>&lt; <ref refid="classmuda_1_1_buffer2_d_view_t" kindref="compound">Buffer2DView</ref>&lt; T &gt; &gt; &amp;</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classmuda_1_1_compute_graph_var" kindref="compound">ComputeGraphVar</ref>&lt; T &gt; &amp;</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/buffer_launch.h" line="201" column="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_buffer_launch_1af7879ef339d831f917e2cc9a20191822" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>MUDA_HOST <ref refid="classmuda_1_1_buffer_launch" kindref="compound">BufferLaunch</ref> &amp;</type>
+        <definition>MUDA_HOST BufferLaunch &amp; muda::BufferLaunch::fill</definition>
+        <argsstring>(ComputeGraphVar&lt; Buffer3DView&lt; T &gt; &gt; &amp;buffer, const ComputeGraphVar&lt; T &gt; &amp;val)</argsstring>
+        <name>fill</name>
+        <qualifiedname>muda::BufferLaunch::fill</qualifiedname>
+        <param>
+          <type><ref refid="classmuda_1_1_compute_graph_var" kindref="compound">ComputeGraphVar</ref>&lt; <ref refid="classmuda_1_1_buffer3_d_view_t" kindref="compound">Buffer3DView</ref>&lt; T &gt; &gt; &amp;</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classmuda_1_1_compute_graph_var" kindref="compound">ComputeGraphVar</ref>&lt; T &gt; &amp;</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/buffer_launch.h" line="204" column="28"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classmuda_1_1_buffer_launch_1a46d482d8f2dd45b711ff1fc07a4fd60b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+          <param>
+            <type>typename FConstruct</type>
+          </param>
+        </templateparamlist>
+        <type>MUDA_HOST <ref refid="classmuda_1_1_buffer_launch" kindref="compound">BufferLaunch</ref> &amp;</type>
+        <definition>MUDA_HOST BufferLaunch &amp; muda::BufferLaunch::resize</definition>
+        <argsstring>(DeviceBuffer&lt; T &gt; &amp;buffer, size_t new_size, FConstruct &amp;&amp;fct)</argsstring>
+        <name>resize</name>
+        <qualifiedname>muda::BufferLaunch::resize</qualifiedname>
+        <param>
+          <type><ref refid="classmuda_1_1_device_buffer" kindref="compound">DeviceBuffer</ref>&lt; T &gt; &amp;</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>new_size</declname>
+        </param>
+        <param>
+          <type>FConstruct &amp;&amp;</type>
+          <declname>fct</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/buffer_launch.h" line="209" column="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_buffer_launch_1aa530c09116e3454ff22ebfee7e2193c8" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+          <param>
+            <type>typename FConstruct</type>
+          </param>
+        </templateparamlist>
+        <type>MUDA_HOST <ref refid="classmuda_1_1_buffer_launch" kindref="compound">BufferLaunch</ref> &amp;</type>
+        <definition>MUDA_HOST BufferLaunch &amp; muda::BufferLaunch::resize</definition>
+        <argsstring>(DeviceBuffer2D&lt; T &gt; &amp;buffer, Extent2D new_extent, FConstruct &amp;&amp;fct)</argsstring>
+        <name>resize</name>
+        <qualifiedname>muda::BufferLaunch::resize</qualifiedname>
+        <param>
+          <type><ref refid="classmuda_1_1_device_buffer2_d" kindref="compound">DeviceBuffer2D</ref>&lt; T &gt; &amp;</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type><ref refid="classmuda_1_1_extent2_d" kindref="compound">Extent2D</ref></type>
+          <declname>new_extent</declname>
+        </param>
+        <param>
+          <type>FConstruct &amp;&amp;</type>
+          <declname>fct</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/buffer_launch.h" line="212" column="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_buffer_launch_1a3f3147ceafb8ab419b79405b731c4cff" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+          <param>
+            <type>typename FConstruct</type>
+          </param>
+        </templateparamlist>
+        <type>MUDA_HOST <ref refid="classmuda_1_1_buffer_launch" kindref="compound">BufferLaunch</ref> &amp;</type>
+        <definition>MUDA_HOST BufferLaunch &amp; muda::BufferLaunch::resize</definition>
+        <argsstring>(DeviceBuffer3D&lt; T &gt; &amp;buffer, Extent3D new_extent, FConstruct &amp;&amp;fct)</argsstring>
+        <name>resize</name>
+        <qualifiedname>muda::BufferLaunch::resize</qualifiedname>
+        <param>
+          <type><ref refid="classmuda_1_1_device_buffer3_d" kindref="compound">DeviceBuffer3D</ref>&lt; T &gt; &amp;</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type><ref refid="classmuda_1_1_extent3_d" kindref="compound">Extent3D</ref></type>
+          <declname>new_extent</declname>
+        </param>
+        <param>
+          <type>FConstruct &amp;&amp;</type>
+          <declname>fct</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/buffer_launch.h" line="215" column="28"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>muda::LaunchBase&lt; BufferLaunch &gt;</label>
+        <link refid="classmuda_1_1_launch_base"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>muda::BufferLaunch</label>
+        <link refid="classmuda_1_1_buffer_launch"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>muda::LaunchCore</label>
+        <link refid="classmuda_1_1_launch_core"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>muda::LaunchBase&lt; BufferLaunch &gt;</label>
+        <link refid="classmuda_1_1_launch_base"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>muda::BufferLaunch</label>
+        <link refid="classmuda_1_1_buffer_launch"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>muda::LaunchCore</label>
+        <link refid="classmuda_1_1_launch_core"/>
+      </node>
+    </collaborationgraph>
+    <location file="src/muda/buffer/buffer_launch.h" line="12" column="1" bodyfile="src/muda/buffer/buffer_launch.h" bodystart="13" bodyend="216"/>
+    <listofallmembers>
+      <member refid="classmuda_1_1_buffer_launch_1a9b90aff8aa94d01638a9dc1a82224416" prot="public" virt="non-virtual"><scope>muda::BufferLaunch</scope><name>alloc</name></member>
+      <member refid="classmuda_1_1_buffer_launch_1afc810451dcde7d014ac7ab4d077aba47" prot="public" virt="non-virtual"><scope>muda::BufferLaunch</scope><name>alloc</name></member>
+      <member refid="classmuda_1_1_buffer_launch_1a47d45aca71449d794f86f1cbbd149cf4" prot="public" virt="non-virtual"><scope>muda::BufferLaunch</scope><name>alloc</name></member>
+      <member refid="classmuda_1_1_buffer_launch_1ad04006a54ad2e59acbfbbd3168633434" prot="public" virt="non-virtual"><scope>muda::BufferLaunch</scope><name>BufferLaunch</name></member>
+      <member refid="classmuda_1_1_buffer_launch_1a8f038f02ee2e1c642200a492baaa78d5" prot="public" virt="non-virtual"><scope>muda::BufferLaunch</scope><name>BufferLaunch</name></member>
+      <member refid="classmuda_1_1_buffer_launch_1a765cfd472d2f2e357a0a34c5981bb37b" prot="public" virt="non-virtual"><scope>muda::BufferLaunch</scope><name>BufferLaunch</name></member>
+      <member refid="classmuda_1_1_launch_base_1aa8490139890f43555c1b7baa57378616" prot="public" virt="non-virtual"><scope>muda::BufferLaunch</scope><name>callback</name></member>
+      <member refid="classmuda_1_1_buffer_launch_1a695f45a8a51e856e16edef9d39a039e8" prot="public" virt="non-virtual"><scope>muda::BufferLaunch</scope><name>clear</name></member>
+      <member refid="classmuda_1_1_buffer_launch_1aaec099a29fe91f66f04cacf382bee614" prot="public" virt="non-virtual"><scope>muda::BufferLaunch</scope><name>clear</name></member>
+      <member refid="classmuda_1_1_buffer_launch_1aa276139b8683abd39077dc8a2589c316" prot="public" virt="non-virtual"><scope>muda::BufferLaunch</scope><name>clear</name></member>
+      <member refid="classmuda_1_1_buffer_launch_1a3e1c6126b0238415126da8ef8665c734" prot="public" virt="non-virtual"><scope>muda::BufferLaunch</scope><name>copy</name></member>
+      <member refid="classmuda_1_1_buffer_launch_1a773a61cb17cdd588b0e4230bf874ef69" prot="public" virt="non-virtual"><scope>muda::BufferLaunch</scope><name>copy</name></member>
+      <member refid="classmuda_1_1_buffer_launch_1a49fea347a08e81bc05d426b5ace73014" prot="public" virt="non-virtual"><scope>muda::BufferLaunch</scope><name>copy</name></member>
+      <member refid="classmuda_1_1_buffer_launch_1a409a069c6f23fc3c618935f57a754617" prot="public" virt="non-virtual"><scope>muda::BufferLaunch</scope><name>copy</name></member>
+      <member refid="classmuda_1_1_buffer_launch_1a6430dae68aec4a71e4bcc4c856082923" prot="public" virt="non-virtual"><scope>muda::BufferLaunch</scope><name>copy</name></member>
+      <member refid="classmuda_1_1_buffer_launch_1a14c89ab483c76b57ee6d315f1a840981" prot="public" virt="non-virtual"><scope>muda::BufferLaunch</scope><name>copy</name></member>
+      <member refid="classmuda_1_1_buffer_launch_1a06332c2a3fa7f9a6953f4fb1acf3e3e3" prot="public" virt="non-virtual"><scope>muda::BufferLaunch</scope><name>copy</name></member>
+      <member refid="classmuda_1_1_buffer_launch_1a2a2e7d1b4734faf5a4b2abd6df0788fc" prot="public" virt="non-virtual"><scope>muda::BufferLaunch</scope><name>copy</name></member>
+      <member refid="classmuda_1_1_buffer_launch_1a5b58240d6a3e8b19cec44ef79b418d44" prot="public" virt="non-virtual"><scope>muda::BufferLaunch</scope><name>copy</name></member>
+      <member refid="classmuda_1_1_buffer_launch_1a5df04109d3365696eca2a13b8d3d46ef" prot="public" virt="non-virtual"><scope>muda::BufferLaunch</scope><name>copy</name></member>
+      <member refid="classmuda_1_1_buffer_launch_1a74232bd1cfb460448fc39d351300b766" prot="public" virt="non-virtual"><scope>muda::BufferLaunch</scope><name>copy</name></member>
+      <member refid="classmuda_1_1_buffer_launch_1a9f5c42fd274c1dcd6286a5ce69da32df" prot="public" virt="non-virtual"><scope>muda::BufferLaunch</scope><name>copy</name></member>
+      <member refid="classmuda_1_1_buffer_launch_1a341617fcdddab214345a9b624caa0ce8" prot="public" virt="non-virtual"><scope>muda::BufferLaunch</scope><name>copy</name></member>
+      <member refid="classmuda_1_1_buffer_launch_1ada2f488090474bd8e3ef2b48b45fd3e5" prot="public" virt="non-virtual"><scope>muda::BufferLaunch</scope><name>copy</name></member>
+      <member refid="classmuda_1_1_buffer_launch_1a3cb84f561223f9a5697cd2f1a1043b09" prot="public" virt="non-virtual"><scope>muda::BufferLaunch</scope><name>copy</name></member>
+      <member refid="classmuda_1_1_buffer_launch_1aebda7c89781fb9d8329445b21dd35e47" prot="public" virt="non-virtual"><scope>muda::BufferLaunch</scope><name>copy</name></member>
+      <member refid="classmuda_1_1_buffer_launch_1a3f8ebab35f502fcfb0ac4ee3efeb6e21" prot="public" virt="non-virtual"><scope>muda::BufferLaunch</scope><name>copy</name></member>
+      <member refid="classmuda_1_1_buffer_launch_1a4f0f21c14575571b5dbcf84cd859e031" prot="public" virt="non-virtual"><scope>muda::BufferLaunch</scope><name>copy</name></member>
+      <member refid="classmuda_1_1_buffer_launch_1a3ca02723ded14869bdf2c3a27923e0dc" prot="public" virt="non-virtual"><scope>muda::BufferLaunch</scope><name>copy</name></member>
+      <member refid="classmuda_1_1_buffer_launch_1a7ede4b5e1b5f7bfe0c12e3c7234192ec" prot="public" virt="non-virtual"><scope>muda::BufferLaunch</scope><name>copy</name></member>
+      <member refid="classmuda_1_1_buffer_launch_1a4bb0e1b9cc4996b605a9d276702a6da0" prot="public" virt="non-virtual"><scope>muda::BufferLaunch</scope><name>copy</name></member>
+      <member refid="classmuda_1_1_buffer_launch_1ad8f5545d7d7d8b60fdc8c32c0dbefb1a" prot="public" virt="non-virtual"><scope>muda::BufferLaunch</scope><name>copy</name></member>
+      <member refid="classmuda_1_1_buffer_launch_1a47ef6e7b8f6c25275242daaec52f1e7f" prot="public" virt="non-virtual"><scope>muda::BufferLaunch</scope><name>copy</name></member>
+      <member refid="classmuda_1_1_buffer_launch_1afe006d9249329f49fc2d0cd4306a87c0" prot="public" virt="non-virtual"><scope>muda::BufferLaunch</scope><name>copy</name></member>
+      <member refid="classmuda_1_1_launch_base_1a8a59e9a27775e4e12ca19a6d590790f4" prot="public" virt="non-virtual"><scope>muda::BufferLaunch</scope><name>derived_type</name></member>
+      <member refid="classmuda_1_1_launch_base_1aee4564eac54df98ab98085379370a2ec" prot="public" virt="non-virtual"><scope>muda::BufferLaunch</scope><name>file_line</name></member>
+      <member refid="classmuda_1_1_buffer_launch_1afd175ca12898070729f9c8ac6c3face3" prot="public" virt="non-virtual"><scope>muda::BufferLaunch</scope><name>fill</name></member>
+      <member refid="classmuda_1_1_buffer_launch_1a68873741b945355eb6c33ef5270d5406" prot="public" virt="non-virtual"><scope>muda::BufferLaunch</scope><name>fill</name></member>
+      <member refid="classmuda_1_1_buffer_launch_1a45d214a385cc8305443059ddd3153e4e" prot="public" virt="non-virtual"><scope>muda::BufferLaunch</scope><name>fill</name></member>
+      <member refid="classmuda_1_1_buffer_launch_1a18bf2f59cfaef40bc3ffd9fb613e9bb3" prot="public" virt="non-virtual"><scope>muda::BufferLaunch</scope><name>fill</name></member>
+      <member refid="classmuda_1_1_buffer_launch_1a7d4e30989326770e36cc358ca22f976c" prot="public" virt="non-virtual"><scope>muda::BufferLaunch</scope><name>fill</name></member>
+      <member refid="classmuda_1_1_buffer_launch_1a8d1e0d085beae10ca68d0a4c6c747def" prot="public" virt="non-virtual"><scope>muda::BufferLaunch</scope><name>fill</name></member>
+      <member refid="classmuda_1_1_buffer_launch_1a45dff0d2ccb82ffc63aedc0e6bd18c6f" prot="public" virt="non-virtual"><scope>muda::BufferLaunch</scope><name>fill</name></member>
+      <member refid="classmuda_1_1_buffer_launch_1af7879ef339d831f917e2cc9a20191822" prot="public" virt="non-virtual"><scope>muda::BufferLaunch</scope><name>fill</name></member>
+      <member refid="classmuda_1_1_buffer_launch_1adc17a87b6f733c3010ca2c1656dd276d" prot="public" virt="non-virtual"><scope>muda::BufferLaunch</scope><name>free</name></member>
+      <member refid="classmuda_1_1_buffer_launch_1a513fd664b9c5cef9d791251c68c72cdf" prot="public" virt="non-virtual"><scope>muda::BufferLaunch</scope><name>free</name></member>
+      <member refid="classmuda_1_1_buffer_launch_1aa4cd6a604ae8986edd0afe6afb0ec966" prot="public" virt="non-virtual"><scope>muda::BufferLaunch</scope><name>free</name></member>
+      <member refid="classmuda_1_1_launch_core_1a38c542a99edea149552d82639e385ab5" prot="public" virt="non-virtual"><scope>muda::BufferLaunch</scope><name>init_stream</name></member>
+      <member refid="classmuda_1_1_launch_base_1ac412be72c054ac359678fff75857dd06" prot="public" virt="non-virtual"><scope>muda::BufferLaunch</scope><name>kernel_name</name></member>
+      <member refid="classmuda_1_1_launch_base_1ab73495b0bfa3a7a1864284aebceb51a8" prot="public" virt="non-virtual"><scope>muda::BufferLaunch</scope><name>LaunchBase</name></member>
+      <member refid="classmuda_1_1_launch_core_1a8503eff885f818a12319ca57dfd75011" prot="public" virt="non-virtual"><scope>muda::BufferLaunch</scope><name>LaunchCore</name></member>
+      <member refid="classmuda_1_1_buffer_launch_1a1d3ba68185644f200798fcff61012589" prot="private" virt="non-virtual"><scope>muda::BufferLaunch</scope><name>m_block_dim</name></member>
+      <member refid="classmuda_1_1_buffer_launch_1ae595bd5094f78c92650853ccb24189cb" prot="private" virt="non-virtual"><scope>muda::BufferLaunch</scope><name>m_grid_dim</name></member>
+      <member refid="classmuda_1_1_launch_core_1a3b5544456087d57904981118c4cdcaf8" prot="protected" virt="non-virtual"><scope>muda::BufferLaunch</scope><name>m_stream</name></member>
+      <member refid="classmuda_1_1_launch_base_1a395b0a10fee3bf2c591f49a3119df1b8" prot="public" virt="non-virtual"><scope>muda::BufferLaunch</scope><name>next</name></member>
+      <member refid="classmuda_1_1_launch_base_1a841db3ede786d3312a6ca2de2139ad10" prot="public" virt="non-virtual"><scope>muda::BufferLaunch</scope><name>next</name></member>
+      <member refid="classmuda_1_1_launch_base_1a65538f7d445fa3cc56ab33e609fe566a" prot="protected" virt="non-virtual"><scope>muda::BufferLaunch</scope><name>pop_kernel_label</name></member>
+      <member refid="classmuda_1_1_launch_base_1ab6b75621024e7977edcdff26c04bcdc1" prot="public" virt="non-virtual"><scope>muda::BufferLaunch</scope><name>pop_range</name></member>
+      <member refid="classmuda_1_1_launch_base_1ad6dcaaf3ea0726809ebbdb10084c3183" prot="public" virt="non-virtual"><scope>muda::BufferLaunch</scope><name>push_range</name></member>
+      <member refid="classmuda_1_1_launch_base_1ad069d4ad6219f5a3b51e7c8d9e4d596f" prot="public" virt="non-virtual"><scope>muda::BufferLaunch</scope><name>record</name></member>
+      <member refid="classmuda_1_1_launch_base_1a12cf6b18c76787654460c1c043907547" prot="public" virt="non-virtual"><scope>muda::BufferLaunch</scope><name>record</name></member>
+      <member refid="classmuda_1_1_launch_base_1a77d57b9368424d70cd740af6eaf45a6f" prot="public" virt="non-virtual"><scope>muda::BufferLaunch</scope><name>record</name></member>
+      <member refid="classmuda_1_1_buffer_launch_1a530aae77cd37cbfea270e442224f37e3" prot="public" virt="non-virtual"><scope>muda::BufferLaunch</scope><name>reserve</name></member>
+      <member refid="classmuda_1_1_buffer_launch_1a89e40c959e958c2a4f39b18b8c5745b6" prot="public" virt="non-virtual"><scope>muda::BufferLaunch</scope><name>reserve</name></member>
+      <member refid="classmuda_1_1_buffer_launch_1a4b33aa4e93787875e2114c421d94aa7f" prot="public" virt="non-virtual"><scope>muda::BufferLaunch</scope><name>reserve</name></member>
+      <member refid="classmuda_1_1_buffer_launch_1ab4b67622dc726031c142645ce7bde7fb" prot="public" virt="non-virtual"><scope>muda::BufferLaunch</scope><name>resize</name></member>
+      <member refid="classmuda_1_1_buffer_launch_1a09aea1ce0139fac608b7e12ee8bb554d" prot="public" virt="non-virtual"><scope>muda::BufferLaunch</scope><name>resize</name></member>
+      <member refid="classmuda_1_1_buffer_launch_1afecca4bdda73293c4eeae593c2e304c3" prot="public" virt="non-virtual"><scope>muda::BufferLaunch</scope><name>resize</name></member>
+      <member refid="classmuda_1_1_buffer_launch_1af7f3d90cfc269d17528a1f3e1bc2f68b" prot="public" virt="non-virtual"><scope>muda::BufferLaunch</scope><name>resize</name></member>
+      <member refid="classmuda_1_1_buffer_launch_1abbfa63531e4c5e0ef1068bc33604c310" prot="public" virt="non-virtual"><scope>muda::BufferLaunch</scope><name>resize</name></member>
+      <member refid="classmuda_1_1_buffer_launch_1aa91d05e99c373aaa0a2039a9bc4e5355" prot="public" virt="non-virtual"><scope>muda::BufferLaunch</scope><name>resize</name></member>
+      <member refid="classmuda_1_1_buffer_launch_1a46d482d8f2dd45b711ff1fc07a4fd60b" prot="private" virt="non-virtual"><scope>muda::BufferLaunch</scope><name>resize</name></member>
+      <member refid="classmuda_1_1_buffer_launch_1aa530c09116e3454ff22ebfee7e2193c8" prot="private" virt="non-virtual"><scope>muda::BufferLaunch</scope><name>resize</name></member>
+      <member refid="classmuda_1_1_buffer_launch_1a3f3147ceafb8ab419b79405b731c4cff" prot="private" virt="non-virtual"><scope>muda::BufferLaunch</scope><name>resize</name></member>
+      <member refid="classmuda_1_1_launch_core_1a8aeb9e37d421f835e0fcae124e3ce0de" prot="protected" virt="non-virtual"><scope>muda::BufferLaunch</scope><name>S</name></member>
+      <member refid="classmuda_1_1_buffer_launch_1a293d5f986e6c92d507c701971fbe3912" prot="public" virt="non-virtual"><scope>muda::BufferLaunch</scope><name>shrink_to_fit</name></member>
+      <member refid="classmuda_1_1_buffer_launch_1acd54b0374cd7db6502817b61cb0a0257" prot="public" virt="non-virtual"><scope>muda::BufferLaunch</scope><name>shrink_to_fit</name></member>
+      <member refid="classmuda_1_1_buffer_launch_1a494caa606b25b723d30da37a67587831" prot="public" virt="non-virtual"><scope>muda::BufferLaunch</scope><name>shrink_to_fit</name></member>
+      <member refid="classmuda_1_1_launch_core_1ab78b991329337c97d2ac3e32e995a62f" prot="protected" virt="non-virtual"><scope>muda::BufferLaunch</scope><name>stream</name></member>
+      <member refid="classmuda_1_1_launch_base_1a88cbf9478fbeaa7434ece7f300dc1c0e" prot="public" virt="non-virtual"><scope>muda::BufferLaunch</scope><name>wait</name></member>
+      <member refid="classmuda_1_1_launch_base_1ab0fc5fbed4ec5f69a3b599af99900d98" prot="public" virt="non-virtual"><scope>muda::BufferLaunch</scope><name>wait</name></member>
+      <member refid="classmuda_1_1_launch_base_1acbf042e86efae1683e2ab08c95095da7" prot="public" virt="non-virtual"><scope>muda::BufferLaunch</scope><name>wait</name></member>
+      <member refid="classmuda_1_1_launch_base_1abe061bff24568f9c2fcf326a62843292" prot="public" virt="non-virtual"><scope>muda::BufferLaunch</scope><name>wait</name></member>
+      <member refid="classmuda_1_1_launch_core_1a58e970f699c546d37c70af9bb4d3a93c" prot="public" virt="non-virtual"><scope>muda::BufferLaunch</scope><name>wait_device</name></member>
+      <member refid="classmuda_1_1_launch_core_1a7b29e878817d4e42bc533edc0c89b645" prot="public" virt="non-virtual"><scope>muda::BufferLaunch</scope><name>wait_event</name></member>
+      <member refid="classmuda_1_1_launch_core_1a73d5d54a7b3b59dcf8eea792e796337b" prot="public" virt="non-virtual"><scope>muda::BufferLaunch</scope><name>wait_stream</name></member>
+      <member refid="classmuda_1_1_launch_base_1a59a525fea511ea1c90f5857be5d62d43" prot="public" virt="non-virtual"><scope>muda::BufferLaunch</scope><name>when</name></member>
+      <member refid="classmuda_1_1_launch_base_1a543548ac0516b2c10adba68d2ae7066b" prot="public" virt="non-virtual"><scope>muda::BufferLaunch</scope><name>~LaunchBase</name></member>
+      <member refid="classmuda_1_1_launch_core_1a5e4ae3435bce9d4ad706b5e347a3040f" prot="public" virt="non-virtual"><scope>muda::BufferLaunch</scope><name>~LaunchCore</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

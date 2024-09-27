@@ -1,0 +1,947 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classmuda_1_1_device_radix_sort" kind="class" language="C++" prot="public">
+    <compoundname>muda::DeviceRadixSort</compoundname>
+    <basecompoundref refid="classmuda_1_1_cub_wrapper" prot="public" virt="non-virtual">muda::CubWrapper&lt; DeviceRadixSort &gt;</basecompoundref>
+    <sectiondef kind="private-type">
+      <memberdef kind="typedef" id="classmuda_1_1_device_radix_sort_1a948a8237c20421b53f19b07f9d6e016b" prot="private" static="no">
+        <type><ref refid="classmuda_1_1_cub_wrapper" kindref="compound">CubWrapper</ref>&lt; <ref refid="classmuda_1_1_device_radix_sort" kindref="compound">DeviceRadixSort</ref> &gt;</type>
+        <definition>using muda::DeviceRadixSort::Base =  CubWrapper&lt;DeviceRadixSort&gt;</definition>
+        <argsstring></argsstring>
+        <name>Base</name>
+        <qualifiedname>muda::DeviceRadixSort::Base</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/cub/device/device_radix_sort.h" line="19" column="5" bodyfile="src/muda/cub/device/device_radix_sort.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmuda_1_1_device_radix_sort_1a8f22734260c3db26a4d37e379f1888be" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename KeyT</type>
+          </param>
+          <param>
+            <type>typename ValueT</type>
+          </param>
+          <param>
+            <type>typename NumItemsT</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classmuda_1_1_device_radix_sort" kindref="compound">DeviceRadixSort</ref> &amp;</type>
+        <definition>DeviceRadixSort &amp; muda::DeviceRadixSort::SortPairs</definition>
+        <argsstring>(const KeyT *d_keys_in, KeyT *d_keys_out, const ValueT *d_values_in, ValueT *d_values_out, NumItemsT num_items, int begin_bit=0, int end_bit=sizeof(KeyT) *8)</argsstring>
+        <name>SortPairs</name>
+        <qualifiedname>muda::DeviceRadixSort::SortPairs</qualifiedname>
+        <param>
+          <type>const KeyT *</type>
+          <declname>d_keys_in</declname>
+        </param>
+        <param>
+          <type>KeyT *</type>
+          <declname>d_keys_out</declname>
+        </param>
+        <param>
+          <type>const ValueT *</type>
+          <declname>d_values_in</declname>
+        </param>
+        <param>
+          <type>ValueT *</type>
+          <declname>d_values_out</declname>
+        </param>
+        <param>
+          <type>NumItemsT</type>
+          <declname>num_items</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>begin_bit</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>end_bit</declname>
+          <defval>sizeof(KeyT) *8</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/cub/device/device_radix_sort.h" line="25" column="21" bodyfile="src/muda/cub/device/device_radix_sort.h" bodystart="25" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_device_radix_sort_1a1b0e5fba497a5e23b1c0f21af7e15461" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename KeyT</type>
+          </param>
+          <param>
+            <type>typename ValueT</type>
+          </param>
+          <param>
+            <type>typename NumItemsT</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classmuda_1_1_device_radix_sort" kindref="compound">DeviceRadixSort</ref> &amp;</type>
+        <definition>DeviceRadixSort &amp; muda::DeviceRadixSort::SortPairs</definition>
+        <argsstring>(DeviceVector&lt; std::byte &gt; &amp;external_buffer, cub::DoubleBuffer&lt; KeyT &gt; &amp;d_keys, cub::DoubleBuffer&lt; ValueT &gt; &amp;d_values, NumItemsT num_items, int begin_bit=0, int end_bit=sizeof(KeyT) *8)</argsstring>
+        <name>SortPairs</name>
+        <qualifiedname>muda::DeviceRadixSort::SortPairs</qualifiedname>
+        <param>
+          <type><ref refid="classmuda_1_1_device_vector" kindref="compound">DeviceVector</ref>&lt; std::byte &gt; &amp;</type>
+          <declname>external_buffer</declname>
+        </param>
+        <param>
+          <type>cub::DoubleBuffer&lt; KeyT &gt; &amp;</type>
+          <declname>d_keys</declname>
+        </param>
+        <param>
+          <type>cub::DoubleBuffer&lt; ValueT &gt; &amp;</type>
+          <declname>d_values</declname>
+        </param>
+        <param>
+          <type>NumItemsT</type>
+          <declname>num_items</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>begin_bit</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>end_bit</declname>
+          <defval>sizeof(KeyT) *8</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/cub/device/device_radix_sort.h" line="46" column="21" bodyfile="src/muda/cub/device/device_radix_sort.h" bodystart="46" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_device_radix_sort_1a5322993baac5900105b6f02e010db5dd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename KeyT</type>
+          </param>
+          <param>
+            <type>typename ValueT</type>
+          </param>
+          <param>
+            <type>typename NumItemsT</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classmuda_1_1_device_radix_sort" kindref="compound">DeviceRadixSort</ref> &amp;</type>
+        <definition>DeviceRadixSort &amp; muda::DeviceRadixSort::SortPairsDescending</definition>
+        <argsstring>(const KeyT *d_keys_in, KeyT *d_keys_out, const ValueT *d_values_in, ValueT *d_values_out, NumItemsT num_items, int begin_bit=0, int end_bit=sizeof(KeyT) *8)</argsstring>
+        <name>SortPairsDescending</name>
+        <qualifiedname>muda::DeviceRadixSort::SortPairsDescending</qualifiedname>
+        <param>
+          <type>const KeyT *</type>
+          <declname>d_keys_in</declname>
+        </param>
+        <param>
+          <type>KeyT *</type>
+          <declname>d_keys_out</declname>
+        </param>
+        <param>
+          <type>const ValueT *</type>
+          <declname>d_values_in</declname>
+        </param>
+        <param>
+          <type>ValueT *</type>
+          <declname>d_values_out</declname>
+        </param>
+        <param>
+          <type>NumItemsT</type>
+          <declname>num_items</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>begin_bit</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>end_bit</declname>
+          <defval>sizeof(KeyT) *8</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/cub/device/device_radix_sort.h" line="58" column="21" bodyfile="src/muda/cub/device/device_radix_sort.h" bodystart="58" bodyend="68"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_device_radix_sort_1a5c970cfd8a08366866127c8c59dec500" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename KeyT</type>
+          </param>
+          <param>
+            <type>typename ValueT</type>
+          </param>
+          <param>
+            <type>typename NumItemsT</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classmuda_1_1_device_radix_sort" kindref="compound">DeviceRadixSort</ref> &amp;</type>
+        <definition>DeviceRadixSort &amp; muda::DeviceRadixSort::SortPairsDescending</definition>
+        <argsstring>(cub::DoubleBuffer&lt; KeyT &gt; &amp;d_keys, cub::DoubleBuffer&lt; ValueT &gt; &amp;d_values, NumItemsT num_items, int begin_bit=0, int end_bit=sizeof(KeyT) *8)</argsstring>
+        <name>SortPairsDescending</name>
+        <qualifiedname>muda::DeviceRadixSort::SortPairsDescending</qualifiedname>
+        <param>
+          <type>cub::DoubleBuffer&lt; KeyT &gt; &amp;</type>
+          <declname>d_keys</declname>
+        </param>
+        <param>
+          <type>cub::DoubleBuffer&lt; ValueT &gt; &amp;</type>
+          <declname>d_values</declname>
+        </param>
+        <param>
+          <type>NumItemsT</type>
+          <declname>num_items</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>begin_bit</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>end_bit</declname>
+          <defval>sizeof(KeyT) *8</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/cub/device/device_radix_sort.h" line="71" column="21" bodyfile="src/muda/cub/device/device_radix_sort.h" bodystart="71" bodyend="79"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_device_radix_sort_1a38e7cfa6e3d579dbc006657bc907a074" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename KeyT</type>
+          </param>
+          <param>
+            <type>typename NumItemsT</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classmuda_1_1_device_radix_sort" kindref="compound">DeviceRadixSort</ref> &amp;</type>
+        <definition>DeviceRadixSort &amp; muda::DeviceRadixSort::SortKeys</definition>
+        <argsstring>(const KeyT *d_keys_in, KeyT *d_keys_out, NumItemsT num_items, int begin_bit=0, int end_bit=sizeof(KeyT) *8)</argsstring>
+        <name>SortKeys</name>
+        <qualifiedname>muda::DeviceRadixSort::SortKeys</qualifiedname>
+        <param>
+          <type>const KeyT *</type>
+          <declname>d_keys_in</declname>
+        </param>
+        <param>
+          <type>KeyT *</type>
+          <declname>d_keys_out</declname>
+        </param>
+        <param>
+          <type>NumItemsT</type>
+          <declname>num_items</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>begin_bit</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>end_bit</declname>
+          <defval>sizeof(KeyT) *8</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/cub/device/device_radix_sort.h" line="82" column="21" bodyfile="src/muda/cub/device/device_radix_sort.h" bodystart="82" bodyend="90"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_device_radix_sort_1a5e42dc0a017b61d3392087d4c8cde140" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename KeyT</type>
+          </param>
+          <param>
+            <type>typename NumItemsT</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classmuda_1_1_device_radix_sort" kindref="compound">DeviceRadixSort</ref> &amp;</type>
+        <definition>DeviceRadixSort &amp; muda::DeviceRadixSort::SortKeys</definition>
+        <argsstring>(cub::DoubleBuffer&lt; KeyT &gt; &amp;d_keys, NumItemsT num_items, int begin_bit=0, int end_bit=sizeof(KeyT) *8)</argsstring>
+        <name>SortKeys</name>
+        <qualifiedname>muda::DeviceRadixSort::SortKeys</qualifiedname>
+        <param>
+          <type>cub::DoubleBuffer&lt; KeyT &gt; &amp;</type>
+          <declname>d_keys</declname>
+        </param>
+        <param>
+          <type>NumItemsT</type>
+          <declname>num_items</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>begin_bit</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>end_bit</declname>
+          <defval>sizeof(KeyT) *8</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/cub/device/device_radix_sort.h" line="93" column="21" bodyfile="src/muda/cub/device/device_radix_sort.h" bodystart="93" bodyend="100"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_device_radix_sort_1ab2bdc3f0472d0a65602b28b85b2abcb5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename KeyT</type>
+          </param>
+          <param>
+            <type>typename NumItemsT</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classmuda_1_1_device_radix_sort" kindref="compound">DeviceRadixSort</ref> &amp;</type>
+        <definition>DeviceRadixSort &amp; muda::DeviceRadixSort::SortKeysDescending</definition>
+        <argsstring>(const KeyT *d_keys_in, KeyT *d_keys_out, NumItemsT num_items, int begin_bit=0, int end_bit=sizeof(KeyT) *8)</argsstring>
+        <name>SortKeysDescending</name>
+        <qualifiedname>muda::DeviceRadixSort::SortKeysDescending</qualifiedname>
+        <param>
+          <type>const KeyT *</type>
+          <declname>d_keys_in</declname>
+        </param>
+        <param>
+          <type>KeyT *</type>
+          <declname>d_keys_out</declname>
+        </param>
+        <param>
+          <type>NumItemsT</type>
+          <declname>num_items</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>begin_bit</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>end_bit</declname>
+          <defval>sizeof(KeyT) *8</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/cub/device/device_radix_sort.h" line="103" column="21" bodyfile="src/muda/cub/device/device_radix_sort.h" bodystart="103" bodyend="111"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_device_radix_sort_1a42e7bc4277aca36884f14c5f2e330c35" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename KeyT</type>
+          </param>
+          <param>
+            <type>typename NumItemsT</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classmuda_1_1_device_radix_sort" kindref="compound">DeviceRadixSort</ref> &amp;</type>
+        <definition>DeviceRadixSort &amp; muda::DeviceRadixSort::SortKeysDescending</definition>
+        <argsstring>(cub::DoubleBuffer&lt; KeyT &gt; &amp;d_keys, NumItemsT num_items, int begin_bit=0, int end_bit=sizeof(KeyT) *8)</argsstring>
+        <name>SortKeysDescending</name>
+        <qualifiedname>muda::DeviceRadixSort::SortKeysDescending</qualifiedname>
+        <param>
+          <type>cub::DoubleBuffer&lt; KeyT &gt; &amp;</type>
+          <declname>d_keys</declname>
+        </param>
+        <param>
+          <type>NumItemsT</type>
+          <declname>num_items</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>begin_bit</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>end_bit</declname>
+          <defval>sizeof(KeyT) *8</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/cub/device/device_radix_sort.h" line="114" column="21" bodyfile="src/muda/cub/device/device_radix_sort.h" bodystart="114" bodyend="121"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_device_radix_sort_1ae6ae1aa437ce095a6f78e7906773e273" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename KeyT</type>
+          </param>
+          <param>
+            <type>typename ValueT</type>
+          </param>
+          <param>
+            <type>typename NumItemsT</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classmuda_1_1_device_radix_sort" kindref="compound">DeviceRadixSort</ref> &amp;</type>
+        <definition>DeviceRadixSort &amp; muda::DeviceRadixSort::SortPairs</definition>
+        <argsstring>(void *d_temp_storage, size_t &amp;temp_storage_bytes, const KeyT *d_keys_in, KeyT *d_keys_out, const ValueT *d_values_in, ValueT *d_values_out, NumItemsT num_items, int begin_bit=0, int end_bit=sizeof(KeyT) *8)</argsstring>
+        <name>SortPairs</name>
+        <qualifiedname>muda::DeviceRadixSort::SortPairs</qualifiedname>
+        <param>
+          <type>void *</type>
+          <declname>d_temp_storage</declname>
+        </param>
+        <param>
+          <type>size_t &amp;</type>
+          <declname>temp_storage_bytes</declname>
+        </param>
+        <param>
+          <type>const KeyT *</type>
+          <declname>d_keys_in</declname>
+        </param>
+        <param>
+          <type>KeyT *</type>
+          <declname>d_keys_out</declname>
+        </param>
+        <param>
+          <type>const ValueT *</type>
+          <declname>d_values_in</declname>
+        </param>
+        <param>
+          <type>ValueT *</type>
+          <declname>d_values_out</declname>
+        </param>
+        <param>
+          <type>NumItemsT</type>
+          <declname>num_items</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>begin_bit</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>end_bit</declname>
+          <defval>sizeof(KeyT) *8</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/cub/device/device_radix_sort.h" line="126" column="21" bodyfile="src/muda/cub/device/device_radix_sort.h" bodystart="126" bodyend="138"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_device_radix_sort_1a8a44a587670fc452243dded66f3a3402" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename KeyT</type>
+          </param>
+          <param>
+            <type>typename ValueT</type>
+          </param>
+          <param>
+            <type>typename NumItemsT</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classmuda_1_1_device_radix_sort" kindref="compound">DeviceRadixSort</ref> &amp;</type>
+        <definition>DeviceRadixSort &amp; muda::DeviceRadixSort::SortPairs</definition>
+        <argsstring>(void *d_temp_storage, size_t &amp;temp_storage_bytes, cub::DoubleBuffer&lt; KeyT &gt; &amp;d_keys, cub::DoubleBuffer&lt; ValueT &gt; &amp;d_values, NumItemsT num_items, int begin_bit=0, int end_bit=sizeof(KeyT) *8)</argsstring>
+        <name>SortPairs</name>
+        <qualifiedname>muda::DeviceRadixSort::SortPairs</qualifiedname>
+        <param>
+          <type>void *</type>
+          <declname>d_temp_storage</declname>
+        </param>
+        <param>
+          <type>size_t &amp;</type>
+          <declname>temp_storage_bytes</declname>
+        </param>
+        <param>
+          <type>cub::DoubleBuffer&lt; KeyT &gt; &amp;</type>
+          <declname>d_keys</declname>
+        </param>
+        <param>
+          <type>cub::DoubleBuffer&lt; ValueT &gt; &amp;</type>
+          <declname>d_values</declname>
+        </param>
+        <param>
+          <type>NumItemsT</type>
+          <declname>num_items</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>begin_bit</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>end_bit</declname>
+          <defval>sizeof(KeyT) *8</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/cub/device/device_radix_sort.h" line="141" column="21" bodyfile="src/muda/cub/device/device_radix_sort.h" bodystart="141" bodyend="151"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_device_radix_sort_1a11647c354248a12f62785d5fc7a8a772" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename KeyT</type>
+          </param>
+          <param>
+            <type>typename ValueT</type>
+          </param>
+          <param>
+            <type>typename NumItemsT</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classmuda_1_1_device_radix_sort" kindref="compound">DeviceRadixSort</ref> &amp;</type>
+        <definition>DeviceRadixSort &amp; muda::DeviceRadixSort::SortPairsDescending</definition>
+        <argsstring>(void *d_temp_storage, size_t &amp;temp_storage_bytes, const KeyT *d_keys_in, KeyT *d_keys_out, const ValueT *d_values_in, ValueT *d_values_out, NumItemsT num_items, int begin_bit=0, int end_bit=sizeof(KeyT) *8)</argsstring>
+        <name>SortPairsDescending</name>
+        <qualifiedname>muda::DeviceRadixSort::SortPairsDescending</qualifiedname>
+        <param>
+          <type>void *</type>
+          <declname>d_temp_storage</declname>
+        </param>
+        <param>
+          <type>size_t &amp;</type>
+          <declname>temp_storage_bytes</declname>
+        </param>
+        <param>
+          <type>const KeyT *</type>
+          <declname>d_keys_in</declname>
+        </param>
+        <param>
+          <type>KeyT *</type>
+          <declname>d_keys_out</declname>
+        </param>
+        <param>
+          <type>const ValueT *</type>
+          <declname>d_values_in</declname>
+        </param>
+        <param>
+          <type>ValueT *</type>
+          <declname>d_values_out</declname>
+        </param>
+        <param>
+          <type>NumItemsT</type>
+          <declname>num_items</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>begin_bit</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>end_bit</declname>
+          <defval>sizeof(KeyT) *8</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/cub/device/device_radix_sort.h" line="154" column="21" bodyfile="src/muda/cub/device/device_radix_sort.h" bodystart="154" bodyend="166"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_device_radix_sort_1a8cc8c57d372d67ef8bf3bb89030bbd77" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename KeyT</type>
+          </param>
+          <param>
+            <type>typename ValueT</type>
+          </param>
+          <param>
+            <type>typename NumItemsT</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classmuda_1_1_device_radix_sort" kindref="compound">DeviceRadixSort</ref> &amp;</type>
+        <definition>DeviceRadixSort &amp; muda::DeviceRadixSort::SortPairsDescending</definition>
+        <argsstring>(void *d_temp_storage, size_t &amp;temp_storage_bytes, cub::DoubleBuffer&lt; KeyT &gt; &amp;d_keys, cub::DoubleBuffer&lt; ValueT &gt; &amp;d_values, NumItemsT num_items, int begin_bit=0, int end_bit=sizeof(KeyT) *8)</argsstring>
+        <name>SortPairsDescending</name>
+        <qualifiedname>muda::DeviceRadixSort::SortPairsDescending</qualifiedname>
+        <param>
+          <type>void *</type>
+          <declname>d_temp_storage</declname>
+        </param>
+        <param>
+          <type>size_t &amp;</type>
+          <declname>temp_storage_bytes</declname>
+        </param>
+        <param>
+          <type>cub::DoubleBuffer&lt; KeyT &gt; &amp;</type>
+          <declname>d_keys</declname>
+        </param>
+        <param>
+          <type>cub::DoubleBuffer&lt; ValueT &gt; &amp;</type>
+          <declname>d_values</declname>
+        </param>
+        <param>
+          <type>NumItemsT</type>
+          <declname>num_items</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>begin_bit</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>end_bit</declname>
+          <defval>sizeof(KeyT) *8</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/cub/device/device_radix_sort.h" line="169" column="21" bodyfile="src/muda/cub/device/device_radix_sort.h" bodystart="169" bodyend="179"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_device_radix_sort_1ad7b51f3f162f21beb421bdf37a3f4af2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename KeyT</type>
+          </param>
+          <param>
+            <type>typename NumItemsT</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classmuda_1_1_device_radix_sort" kindref="compound">DeviceRadixSort</ref> &amp;</type>
+        <definition>DeviceRadixSort &amp; muda::DeviceRadixSort::SortKeys</definition>
+        <argsstring>(void *d_temp_storage, size_t &amp;temp_storage_bytes, const KeyT *d_keys_in, KeyT *d_keys_out, NumItemsT num_items, int begin_bit=0, int end_bit=sizeof(KeyT) *8)</argsstring>
+        <name>SortKeys</name>
+        <qualifiedname>muda::DeviceRadixSort::SortKeys</qualifiedname>
+        <param>
+          <type>void *</type>
+          <declname>d_temp_storage</declname>
+        </param>
+        <param>
+          <type>size_t &amp;</type>
+          <declname>temp_storage_bytes</declname>
+        </param>
+        <param>
+          <type>const KeyT *</type>
+          <declname>d_keys_in</declname>
+        </param>
+        <param>
+          <type>KeyT *</type>
+          <declname>d_keys_out</declname>
+        </param>
+        <param>
+          <type>NumItemsT</type>
+          <declname>num_items</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>begin_bit</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>end_bit</declname>
+          <defval>sizeof(KeyT) *8</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/cub/device/device_radix_sort.h" line="182" column="21" bodyfile="src/muda/cub/device/device_radix_sort.h" bodystart="182" bodyend="192"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_device_radix_sort_1ac74c077ade6b80d7f512d5d95b72edb4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename KeyT</type>
+          </param>
+          <param>
+            <type>typename NumItemsT</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classmuda_1_1_device_radix_sort" kindref="compound">DeviceRadixSort</ref> &amp;</type>
+        <definition>DeviceRadixSort &amp; muda::DeviceRadixSort::SortKeys</definition>
+        <argsstring>(void *d_temp_storage, size_t &amp;temp_storage_bytes, cub::DoubleBuffer&lt; KeyT &gt; &amp;d_keys, NumItemsT num_items, int begin_bit=0, int end_bit=sizeof(KeyT) *8)</argsstring>
+        <name>SortKeys</name>
+        <qualifiedname>muda::DeviceRadixSort::SortKeys</qualifiedname>
+        <param>
+          <type>void *</type>
+          <declname>d_temp_storage</declname>
+        </param>
+        <param>
+          <type>size_t &amp;</type>
+          <declname>temp_storage_bytes</declname>
+        </param>
+        <param>
+          <type>cub::DoubleBuffer&lt; KeyT &gt; &amp;</type>
+          <declname>d_keys</declname>
+        </param>
+        <param>
+          <type>NumItemsT</type>
+          <declname>num_items</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>begin_bit</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>end_bit</declname>
+          <defval>sizeof(KeyT) *8</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/cub/device/device_radix_sort.h" line="195" column="21" bodyfile="src/muda/cub/device/device_radix_sort.h" bodystart="195" bodyend="204"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_device_radix_sort_1a98ab3d8c2b0d0523ff45579fd44a52fa" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename KeyT</type>
+          </param>
+          <param>
+            <type>typename NumItemsT</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classmuda_1_1_device_radix_sort" kindref="compound">DeviceRadixSort</ref> &amp;</type>
+        <definition>DeviceRadixSort &amp; muda::DeviceRadixSort::SortKeysDescending</definition>
+        <argsstring>(void *d_temp_storage, size_t &amp;temp_storage_bytes, const KeyT *d_keys_in, KeyT *d_keys_out, NumItemsT num_items, int begin_bit=0, int end_bit=sizeof(KeyT) *8)</argsstring>
+        <name>SortKeysDescending</name>
+        <qualifiedname>muda::DeviceRadixSort::SortKeysDescending</qualifiedname>
+        <param>
+          <type>void *</type>
+          <declname>d_temp_storage</declname>
+        </param>
+        <param>
+          <type>size_t &amp;</type>
+          <declname>temp_storage_bytes</declname>
+        </param>
+        <param>
+          <type>const KeyT *</type>
+          <declname>d_keys_in</declname>
+        </param>
+        <param>
+          <type>KeyT *</type>
+          <declname>d_keys_out</declname>
+        </param>
+        <param>
+          <type>NumItemsT</type>
+          <declname>num_items</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>begin_bit</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>end_bit</declname>
+          <defval>sizeof(KeyT) *8</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/cub/device/device_radix_sort.h" line="207" column="21" bodyfile="src/muda/cub/device/device_radix_sort.h" bodystart="207" bodyend="217"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_device_radix_sort_1a500db00cbfb1afb17645d8d034486bf2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename KeyT</type>
+          </param>
+          <param>
+            <type>typename NumItemsT</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classmuda_1_1_device_radix_sort" kindref="compound">DeviceRadixSort</ref> &amp;</type>
+        <definition>DeviceRadixSort &amp; muda::DeviceRadixSort::SortKeysDescending</definition>
+        <argsstring>(void *d_temp_storage, size_t &amp;temp_storage_bytes, cub::DoubleBuffer&lt; KeyT &gt; &amp;d_keys, NumItemsT num_items, int begin_bit=0, int end_bit=sizeof(KeyT) *8)</argsstring>
+        <name>SortKeysDescending</name>
+        <qualifiedname>muda::DeviceRadixSort::SortKeysDescending</qualifiedname>
+        <param>
+          <type>void *</type>
+          <declname>d_temp_storage</declname>
+        </param>
+        <param>
+          <type>size_t &amp;</type>
+          <declname>temp_storage_bytes</declname>
+        </param>
+        <param>
+          <type>cub::DoubleBuffer&lt; KeyT &gt; &amp;</type>
+          <declname>d_keys</declname>
+        </param>
+        <param>
+          <type>NumItemsT</type>
+          <declname>num_items</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>begin_bit</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>end_bit</declname>
+          <defval>sizeof(KeyT) *8</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/cub/device/device_radix_sort.h" line="220" column="21" bodyfile="src/muda/cub/device/device_radix_sort.h" bodystart="220" bodyend="229"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>muda::CubWrapper&lt; DeviceRadixSort &gt;</label>
+        <link refid="classmuda_1_1_cub_wrapper"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>muda::DeviceRadixSort</label>
+        <link refid="classmuda_1_1_device_radix_sort"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>muda::LaunchBase&lt; T &gt;</label>
+        <link refid="classmuda_1_1_launch_base"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>muda::LaunchCore</label>
+        <link refid="classmuda_1_1_launch_core"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>muda::CubWrapper&lt; DeviceRadixSort &gt;</label>
+        <link refid="classmuda_1_1_cub_wrapper"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>m_muda_stream</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>muda::DeviceRadixSort</label>
+        <link refid="classmuda_1_1_device_radix_sort"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>muda::LaunchBase&lt; T &gt;</label>
+        <link refid="classmuda_1_1_launch_base"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>muda::LaunchCore</label>
+        <link refid="classmuda_1_1_launch_core"/>
+      </node>
+      <node id="5">
+        <label>muda::Stream</label>
+        <link refid="classmuda_1_1_stream"/>
+      </node>
+    </collaborationgraph>
+    <location file="src/muda/cub/device/device_radix_sort.h" line="17" column="1" bodyfile="src/muda/cub/device/device_radix_sort.h" bodystart="18" bodyend="230"/>
+    <listofallmembers>
+      <member refid="classmuda_1_1_device_radix_sort_1a948a8237c20421b53f19b07f9d6e016b" prot="private" virt="non-virtual"><scope>muda::DeviceRadixSort</scope><name>Base</name></member>
+      <member refid="classmuda_1_1_launch_base_1aa8490139890f43555c1b7baa57378616" prot="public" virt="non-virtual"><scope>muda::DeviceRadixSort</scope><name>callback</name></member>
+      <member refid="classmuda_1_1_cub_wrapper_1a846ad2ff72dccee396a542f1ec0b4aeb" prot="public" virt="non-virtual"><scope>muda::DeviceRadixSort</scope><name>CubWrapper</name></member>
+      <member refid="classmuda_1_1_launch_base_1a8a59e9a27775e4e12ca19a6d590790f4" prot="public" virt="non-virtual"><scope>muda::DeviceRadixSort</scope><name>derived_type</name></member>
+      <member refid="classmuda_1_1_launch_base_1aee4564eac54df98ab98085379370a2ec" prot="public" virt="non-virtual"><scope>muda::DeviceRadixSort</scope><name>file_line</name></member>
+      <member refid="classmuda_1_1_launch_core_1a38c542a99edea149552d82639e385ab5" prot="public" virt="non-virtual"><scope>muda::DeviceRadixSort</scope><name>init_stream</name></member>
+      <member refid="classmuda_1_1_cub_wrapper_1a71f741726d4ab894c196264043bd2922" prot="public" virt="non-virtual"><scope>muda::DeviceRadixSort</scope><name>kernel_name</name></member>
+      <member refid="classmuda_1_1_launch_base_1ab73495b0bfa3a7a1864284aebceb51a8" prot="public" virt="non-virtual"><scope>muda::DeviceRadixSort</scope><name>LaunchBase</name></member>
+      <member refid="classmuda_1_1_launch_core_1a8503eff885f818a12319ca57dfd75011" prot="public" virt="non-virtual"><scope>muda::DeviceRadixSort</scope><name>LaunchCore</name></member>
+      <member refid="classmuda_1_1_cub_wrapper_1a5e0f31303ea2f56ba4cfe04fb2ca7738" prot="public" virt="non-virtual"><scope>muda::DeviceRadixSort</scope><name>m_muda_stream</name></member>
+      <member refid="classmuda_1_1_launch_core_1a3b5544456087d57904981118c4cdcaf8" prot="protected" virt="non-virtual"><scope>muda::DeviceRadixSort</scope><name>m_stream</name></member>
+      <member refid="classmuda_1_1_launch_base_1a395b0a10fee3bf2c591f49a3119df1b8" prot="public" virt="non-virtual"><scope>muda::DeviceRadixSort</scope><name>next</name></member>
+      <member refid="classmuda_1_1_launch_base_1a841db3ede786d3312a6ca2de2139ad10" prot="public" virt="non-virtual"><scope>muda::DeviceRadixSort</scope><name>next</name></member>
+      <member refid="classmuda_1_1_launch_base_1a65538f7d445fa3cc56ab33e609fe566a" prot="protected" virt="non-virtual"><scope>muda::DeviceRadixSort</scope><name>pop_kernel_label</name></member>
+      <member refid="classmuda_1_1_launch_base_1ab6b75621024e7977edcdff26c04bcdc1" prot="public" virt="non-virtual"><scope>muda::DeviceRadixSort</scope><name>pop_range</name></member>
+      <member refid="classmuda_1_1_cub_wrapper_1af1007ebfdee88f21fd67283499730991" prot="protected" virt="non-virtual"><scope>muda::DeviceRadixSort</scope><name>prepare_buffer</name></member>
+      <member refid="classmuda_1_1_launch_base_1ad6dcaaf3ea0726809ebbdb10084c3183" prot="public" virt="non-virtual"><scope>muda::DeviceRadixSort</scope><name>push_range</name></member>
+      <member refid="classmuda_1_1_launch_base_1ad069d4ad6219f5a3b51e7c8d9e4d596f" prot="public" virt="non-virtual"><scope>muda::DeviceRadixSort</scope><name>record</name></member>
+      <member refid="classmuda_1_1_launch_base_1a12cf6b18c76787654460c1c043907547" prot="public" virt="non-virtual"><scope>muda::DeviceRadixSort</scope><name>record</name></member>
+      <member refid="classmuda_1_1_launch_base_1a77d57b9368424d70cd740af6eaf45a6f" prot="public" virt="non-virtual"><scope>muda::DeviceRadixSort</scope><name>record</name></member>
+      <member refid="classmuda_1_1_launch_core_1a8aeb9e37d421f835e0fcae124e3ce0de" prot="protected" virt="non-virtual"><scope>muda::DeviceRadixSort</scope><name>S</name></member>
+      <member refid="classmuda_1_1_device_radix_sort_1a38e7cfa6e3d579dbc006657bc907a074" prot="public" virt="non-virtual"><scope>muda::DeviceRadixSort</scope><name>SortKeys</name></member>
+      <member refid="classmuda_1_1_device_radix_sort_1a5e42dc0a017b61d3392087d4c8cde140" prot="public" virt="non-virtual"><scope>muda::DeviceRadixSort</scope><name>SortKeys</name></member>
+      <member refid="classmuda_1_1_device_radix_sort_1ad7b51f3f162f21beb421bdf37a3f4af2" prot="public" virt="non-virtual"><scope>muda::DeviceRadixSort</scope><name>SortKeys</name></member>
+      <member refid="classmuda_1_1_device_radix_sort_1ac74c077ade6b80d7f512d5d95b72edb4" prot="public" virt="non-virtual"><scope>muda::DeviceRadixSort</scope><name>SortKeys</name></member>
+      <member refid="classmuda_1_1_device_radix_sort_1ab2bdc3f0472d0a65602b28b85b2abcb5" prot="public" virt="non-virtual"><scope>muda::DeviceRadixSort</scope><name>SortKeysDescending</name></member>
+      <member refid="classmuda_1_1_device_radix_sort_1a42e7bc4277aca36884f14c5f2e330c35" prot="public" virt="non-virtual"><scope>muda::DeviceRadixSort</scope><name>SortKeysDescending</name></member>
+      <member refid="classmuda_1_1_device_radix_sort_1a98ab3d8c2b0d0523ff45579fd44a52fa" prot="public" virt="non-virtual"><scope>muda::DeviceRadixSort</scope><name>SortKeysDescending</name></member>
+      <member refid="classmuda_1_1_device_radix_sort_1a500db00cbfb1afb17645d8d034486bf2" prot="public" virt="non-virtual"><scope>muda::DeviceRadixSort</scope><name>SortKeysDescending</name></member>
+      <member refid="classmuda_1_1_device_radix_sort_1a8f22734260c3db26a4d37e379f1888be" prot="public" virt="non-virtual"><scope>muda::DeviceRadixSort</scope><name>SortPairs</name></member>
+      <member refid="classmuda_1_1_device_radix_sort_1a1b0e5fba497a5e23b1c0f21af7e15461" prot="public" virt="non-virtual"><scope>muda::DeviceRadixSort</scope><name>SortPairs</name></member>
+      <member refid="classmuda_1_1_device_radix_sort_1ae6ae1aa437ce095a6f78e7906773e273" prot="public" virt="non-virtual"><scope>muda::DeviceRadixSort</scope><name>SortPairs</name></member>
+      <member refid="classmuda_1_1_device_radix_sort_1a8a44a587670fc452243dded66f3a3402" prot="public" virt="non-virtual"><scope>muda::DeviceRadixSort</scope><name>SortPairs</name></member>
+      <member refid="classmuda_1_1_device_radix_sort_1a5322993baac5900105b6f02e010db5dd" prot="public" virt="non-virtual"><scope>muda::DeviceRadixSort</scope><name>SortPairsDescending</name></member>
+      <member refid="classmuda_1_1_device_radix_sort_1a5c970cfd8a08366866127c8c59dec500" prot="public" virt="non-virtual"><scope>muda::DeviceRadixSort</scope><name>SortPairsDescending</name></member>
+      <member refid="classmuda_1_1_device_radix_sort_1a11647c354248a12f62785d5fc7a8a772" prot="public" virt="non-virtual"><scope>muda::DeviceRadixSort</scope><name>SortPairsDescending</name></member>
+      <member refid="classmuda_1_1_device_radix_sort_1a8cc8c57d372d67ef8bf3bb89030bbd77" prot="public" virt="non-virtual"><scope>muda::DeviceRadixSort</scope><name>SortPairsDescending</name></member>
+      <member refid="classmuda_1_1_launch_core_1ab78b991329337c97d2ac3e32e995a62f" prot="protected" virt="non-virtual"><scope>muda::DeviceRadixSort</scope><name>stream</name></member>
+      <member refid="classmuda_1_1_launch_base_1a88cbf9478fbeaa7434ece7f300dc1c0e" prot="public" virt="non-virtual"><scope>muda::DeviceRadixSort</scope><name>wait</name></member>
+      <member refid="classmuda_1_1_launch_base_1ab0fc5fbed4ec5f69a3b599af99900d98" prot="public" virt="non-virtual"><scope>muda::DeviceRadixSort</scope><name>wait</name></member>
+      <member refid="classmuda_1_1_launch_base_1acbf042e86efae1683e2ab08c95095da7" prot="public" virt="non-virtual"><scope>muda::DeviceRadixSort</scope><name>wait</name></member>
+      <member refid="classmuda_1_1_launch_base_1abe061bff24568f9c2fcf326a62843292" prot="public" virt="non-virtual"><scope>muda::DeviceRadixSort</scope><name>wait</name></member>
+      <member refid="classmuda_1_1_launch_core_1a58e970f699c546d37c70af9bb4d3a93c" prot="public" virt="non-virtual"><scope>muda::DeviceRadixSort</scope><name>wait_device</name></member>
+      <member refid="classmuda_1_1_launch_core_1a7b29e878817d4e42bc533edc0c89b645" prot="public" virt="non-virtual"><scope>muda::DeviceRadixSort</scope><name>wait_event</name></member>
+      <member refid="classmuda_1_1_launch_core_1a73d5d54a7b3b59dcf8eea792e796337b" prot="public" virt="non-virtual"><scope>muda::DeviceRadixSort</scope><name>wait_stream</name></member>
+      <member refid="classmuda_1_1_launch_base_1a59a525fea511ea1c90f5857be5d62d43" prot="public" virt="non-virtual"><scope>muda::DeviceRadixSort</scope><name>when</name></member>
+      <member refid="classmuda_1_1_launch_base_1a543548ac0516b2c10adba68d2ae7066b" prot="public" virt="non-virtual"><scope>muda::DeviceRadixSort</scope><name>~LaunchBase</name></member>
+      <member refid="classmuda_1_1_launch_core_1a5e4ae3435bce9d4ad706b5e347a3040f" prot="public" virt="non-virtual"><scope>muda::DeviceRadixSort</scope><name>~LaunchCore</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

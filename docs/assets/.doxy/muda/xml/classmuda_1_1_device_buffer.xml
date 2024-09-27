@@ -1,0 +1,693 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classmuda_1_1_device_buffer" kind="class" language="C++" prot="public">
+    <compoundname>muda::DeviceBuffer</compoundname>
+    <includes refid="device__buffer_8h" local="no">device_buffer.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classmuda_1_1_device_buffer_1af92000ac723dfe7f5cb683ddf5c4578f" prot="public" static="no">
+        <type>T</type>
+        <definition>using muda::DeviceBuffer&lt; T &gt;::value_type =  T</definition>
+        <argsstring></argsstring>
+        <name>value_type</name>
+        <qualifiedname>muda::DeviceBuffer::value_type</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/device_buffer.h" line="56" column="5" bodyfile="src/muda/buffer/device_buffer.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="friend">
+      <memberdef kind="friend" id="classmuda_1_1_device_buffer_1a3373c2e8cf6a6172637baf3c12d153ad" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class BufferLaunch</definition>
+        <argsstring></argsstring>
+        <name>BufferLaunch</name>
+        <qualifiedname>muda::DeviceBuffer::BufferLaunch</qualifiedname>
+        <param>
+          <type><ref refid="classmuda_1_1_buffer_launch" kindref="compound">BufferLaunch</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/device_buffer.h" line="48" column="18" bodyfile="src/muda/buffer/device_buffer.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="classmuda_1_1_device_buffer_1a3da08685fa6b7d2236b99a33da67b81a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class NDReshaper</definition>
+        <argsstring></argsstring>
+        <name>NDReshaper</name>
+        <qualifiedname>muda::DeviceBuffer::NDReshaper</qualifiedname>
+        <param>
+          <type><ref refid="classmuda_1_1_n_d_reshaper" kindref="compound">NDReshaper</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/device_buffer.h" line="49" column="18" bodyfile="src/muda/buffer/device_buffer.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classmuda_1_1_device_buffer_1a383a697f282249cd516ea851b2e754e8" prot="private" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t muda::DeviceBuffer&lt; T &gt;::m_size</definition>
+        <argsstring></argsstring>
+        <name>m_size</name>
+        <qualifiedname>muda::DeviceBuffer::m_size</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/device_buffer.h" line="51" column="12" bodyfile="src/muda/buffer/device_buffer.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1_device_buffer_1a99ef038fa98758c454b4a16319510676" prot="private" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t muda::DeviceBuffer&lt; T &gt;::m_capacity</definition>
+        <argsstring></argsstring>
+        <name>m_capacity</name>
+        <qualifiedname>muda::DeviceBuffer::m_capacity</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/device_buffer.h" line="52" column="12" bodyfile="src/muda/buffer/device_buffer.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1_device_buffer_1a5320d1ea1f012d032629273d7cb389cf" prot="private" static="no" mutable="no">
+        <type>T *</type>
+        <definition>T* muda::DeviceBuffer&lt; T &gt;::m_data</definition>
+        <argsstring></argsstring>
+        <name>m_data</name>
+        <qualifiedname>muda::DeviceBuffer::m_data</qualifiedname>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/device_buffer.h" line="53" column="11" bodyfile="src/muda/buffer/device_buffer.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmuda_1_1_device_buffer_1aa05ea08190c86675db76d5ff9c6b67cb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>muda::DeviceBuffer&lt; T &gt;::DeviceBuffer</definition>
+        <argsstring>(size_t n)</argsstring>
+        <name>DeviceBuffer</name>
+        <qualifiedname>muda::DeviceBuffer::DeviceBuffer</qualifiedname>
+        <param>
+          <type>size_t</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/device_buffer.h" line="58" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_device_buffer_1a0fb033bf20e9af9cf9efa2c86b4e2407" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>muda::DeviceBuffer&lt; T &gt;::DeviceBuffer</definition>
+        <argsstring>()</argsstring>
+        <name>DeviceBuffer</name>
+        <qualifiedname>muda::DeviceBuffer::DeviceBuffer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/device_buffer.h" line="59" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_device_buffer_1a31388859c69720fe3481c813e72363f0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>muda::DeviceBuffer&lt; T &gt;::DeviceBuffer</definition>
+        <argsstring>(const DeviceBuffer&lt; T &gt; &amp;other)</argsstring>
+        <name>DeviceBuffer</name>
+        <qualifiedname>muda::DeviceBuffer::DeviceBuffer</qualifiedname>
+        <param>
+          <type>const <ref refid="classmuda_1_1_device_buffer" kindref="compound">DeviceBuffer</ref>&lt; T &gt; &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/device_buffer.h" line="61" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_device_buffer_1a90fb07d39c24eb8d75eb8d19801f9b09" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>muda::DeviceBuffer&lt; T &gt;::DeviceBuffer</definition>
+        <argsstring>(DeviceBuffer &amp;&amp;other) MUDA_NOEXCEPT</argsstring>
+        <name>DeviceBuffer</name>
+        <qualifiedname>muda::DeviceBuffer::DeviceBuffer</qualifiedname>
+        <param>
+          <type><ref refid="classmuda_1_1_device_buffer" kindref="compound">DeviceBuffer</ref> &amp;&amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/device_buffer.h" line="62" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_device_buffer_1a70567ae9b8f53bf426ae3a3a5f4efe2a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classmuda_1_1_device_buffer" kindref="compound">DeviceBuffer</ref> &amp;</type>
+        <definition>DeviceBuffer &amp; muda::DeviceBuffer&lt; T &gt;::operator=</definition>
+        <argsstring>(const DeviceBuffer&lt; T &gt; &amp;other)</argsstring>
+        <name>operator=</name>
+        <qualifiedname>muda::DeviceBuffer::operator=</qualifiedname>
+        <param>
+          <type>const <ref refid="classmuda_1_1_device_buffer" kindref="compound">DeviceBuffer</ref>&lt; T &gt; &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/device_buffer.h" line="63" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_device_buffer_1a98faa44e9bd89047f661ff5b444b6d8a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classmuda_1_1_device_buffer" kindref="compound">DeviceBuffer</ref> &amp;</type>
+        <definition>DeviceBuffer &amp; muda::DeviceBuffer&lt; T &gt;::operator=</definition>
+        <argsstring>(DeviceBuffer&lt; T &gt; &amp;&amp;other)</argsstring>
+        <name>operator=</name>
+        <qualifiedname>muda::DeviceBuffer::operator=</qualifiedname>
+        <param>
+          <type><ref refid="classmuda_1_1_device_buffer" kindref="compound">DeviceBuffer</ref>&lt; T &gt; &amp;&amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/device_buffer.h" line="64" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_device_buffer_1ad6a3110b74f2ca833deba3248095bbb9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>muda::DeviceBuffer&lt; T &gt;::DeviceBuffer</definition>
+        <argsstring>(CBufferView&lt; T &gt; other)</argsstring>
+        <name>DeviceBuffer</name>
+        <qualifiedname>muda::DeviceBuffer::DeviceBuffer</qualifiedname>
+        <param>
+          <type><ref refid="classmuda_1_1_buffer_view_t" kindref="compound">CBufferView</ref>&lt; T &gt;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/device_buffer.h" line="66" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_device_buffer_1af9484fa7cf9837bf87ab4fa480660077" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>muda::DeviceBuffer&lt; T &gt;::DeviceBuffer</definition>
+        <argsstring>(const std::vector&lt; T &gt; &amp;host)</argsstring>
+        <name>DeviceBuffer</name>
+        <qualifiedname>muda::DeviceBuffer::DeviceBuffer</qualifiedname>
+        <param>
+          <type>const std::vector&lt; T &gt; &amp;</type>
+          <declname>host</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/device_buffer.h" line="67" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_device_buffer_1abebc06420c099bf0945db56b5e471b38" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classmuda_1_1_device_buffer" kindref="compound">DeviceBuffer</ref> &amp;</type>
+        <definition>DeviceBuffer &amp; muda::DeviceBuffer&lt; T &gt;::operator=</definition>
+        <argsstring>(CBufferView&lt; T &gt; other)</argsstring>
+        <name>operator=</name>
+        <qualifiedname>muda::DeviceBuffer::operator=</qualifiedname>
+        <param>
+          <type><ref refid="classmuda_1_1_buffer_view_t" kindref="compound">CBufferView</ref>&lt; T &gt;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/device_buffer.h" line="68" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_device_buffer_1a3de11c5efc49e6a914ba15c4253875b1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classmuda_1_1_device_buffer" kindref="compound">DeviceBuffer</ref> &amp;</type>
+        <definition>DeviceBuffer &amp; muda::DeviceBuffer&lt; T &gt;::operator=</definition>
+        <argsstring>(const std::vector&lt; T &gt; &amp;other)</argsstring>
+        <name>operator=</name>
+        <qualifiedname>muda::DeviceBuffer::operator=</qualifiedname>
+        <param>
+          <type>const std::vector&lt; T &gt; &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/device_buffer.h" line="69" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_device_buffer_1a60f0f6bd3ed6a8ad47f4d86ce232e8d1" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void muda::DeviceBuffer&lt; T &gt;::copy_to</definition>
+        <argsstring>(std::vector&lt; T &gt; &amp;host) const</argsstring>
+        <name>copy_to</name>
+        <qualifiedname>muda::DeviceBuffer::copy_to</qualifiedname>
+        <param>
+          <type>std::vector&lt; T &gt; &amp;</type>
+          <declname>host</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/device_buffer.h" line="71" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_device_buffer_1ac822dd8b3bedf67854276f8bb999675e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void muda::DeviceBuffer&lt; T &gt;::copy_from</definition>
+        <argsstring>(const std::vector&lt; T &gt; &amp;host)</argsstring>
+        <name>copy_from</name>
+        <qualifiedname>muda::DeviceBuffer::copy_from</qualifiedname>
+        <param>
+          <type>const std::vector&lt; T &gt; &amp;</type>
+          <declname>host</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/device_buffer.h" line="72" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_device_buffer_1a23b71bc892514a009be09c56d7d25a9b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void muda::DeviceBuffer&lt; T &gt;::resize</definition>
+        <argsstring>(size_t new_size)</argsstring>
+        <name>resize</name>
+        <qualifiedname>muda::DeviceBuffer::resize</qualifiedname>
+        <param>
+          <type>size_t</type>
+          <declname>new_size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/device_buffer.h" line="74" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_device_buffer_1a226452f2f1d0233010d976e704780812" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void muda::DeviceBuffer&lt; T &gt;::resize</definition>
+        <argsstring>(size_t new_size, const T &amp;value)</argsstring>
+        <name>resize</name>
+        <qualifiedname>muda::DeviceBuffer::resize</qualifiedname>
+        <param>
+          <type>size_t</type>
+          <declname>new_size</declname>
+        </param>
+        <param>
+          <type>const T &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/device_buffer.h" line="75" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_device_buffer_1ad55ebdfa76fdd3acc6434067abe91d12" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void muda::DeviceBuffer&lt; T &gt;::reserve</definition>
+        <argsstring>(size_t new_capacity)</argsstring>
+        <name>reserve</name>
+        <qualifiedname>muda::DeviceBuffer::reserve</qualifiedname>
+        <param>
+          <type>size_t</type>
+          <declname>new_capacity</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/device_buffer.h" line="76" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_device_buffer_1a31575550e651a98c52d3ba42541eff0f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void muda::DeviceBuffer&lt; T &gt;::clear</definition>
+        <argsstring>()</argsstring>
+        <name>clear</name>
+        <qualifiedname>muda::DeviceBuffer::clear</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/device_buffer.h" line="77" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_device_buffer_1a0dd5c3eaf2bf815519e74ae4d40f71c0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void muda::DeviceBuffer&lt; T &gt;::shrink_to_fit</definition>
+        <argsstring>()</argsstring>
+        <name>shrink_to_fit</name>
+        <qualifiedname>muda::DeviceBuffer::shrink_to_fit</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/device_buffer.h" line="78" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_device_buffer_1ae7835514be02257bfd51d5c838e53242" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void muda::DeviceBuffer&lt; T &gt;::fill</definition>
+        <argsstring>(const T &amp;v)</argsstring>
+        <name>fill</name>
+        <qualifiedname>muda::DeviceBuffer::fill</qualifiedname>
+        <param>
+          <type>const T &amp;</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/device_buffer.h" line="79" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_device_buffer_1aaf933b6a6ac476e61a37c815a05b6b40" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classmuda_1_1_dense1_d_t" kindref="compound">Dense1D</ref>&lt; T &gt;</type>
+        <definition>Dense1D&lt; T &gt; muda::DeviceBuffer&lt; T &gt;::viewer</definition>
+        <argsstring>() MUDA_NOEXCEPT</argsstring>
+        <name>viewer</name>
+        <qualifiedname>muda::DeviceBuffer::viewer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/device_buffer.h" line="81" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_device_buffer_1a9cf05f0f5f623c1b969c6b0099e134cb" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classmuda_1_1_dense1_d_t" kindref="compound">CDense1D</ref>&lt; T &gt;</type>
+        <definition>CDense1D&lt; T &gt; muda::DeviceBuffer&lt; T &gt;::cviewer</definition>
+        <argsstring>() const MUDA_NOEXCEPT</argsstring>
+        <name>cviewer</name>
+        <qualifiedname>muda::DeviceBuffer::cviewer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/device_buffer.h" line="82" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_device_buffer_1a124c783c55676b39833a1e524aa7ca42" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classmuda_1_1_buffer_view_t" kindref="compound">BufferView</ref>&lt; T &gt;</type>
+        <definition>BufferView&lt; T &gt; muda::DeviceBuffer&lt; T &gt;::view</definition>
+        <argsstring>(size_t offset, size_t size=~0) MUDA_NOEXCEPT</argsstring>
+        <name>view</name>
+        <qualifiedname>muda::DeviceBuffer::view</qualifiedname>
+        <param>
+          <type>size_t</type>
+          <declname>offset</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>size</declname>
+          <defval>~0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/device_buffer.h" line="84" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_device_buffer_1a7997b615b8a7a2d15051455017871a32" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classmuda_1_1_buffer_view_t" kindref="compound">BufferView</ref>&lt; T &gt;</type>
+        <definition>BufferView&lt; T &gt; muda::DeviceBuffer&lt; T &gt;::view</definition>
+        <argsstring>() MUDA_NOEXCEPT</argsstring>
+        <name>view</name>
+        <qualifiedname>muda::DeviceBuffer::view</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/device_buffer.h" line="85" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_device_buffer_1ad546beadc2c1d3133548563dd25c949e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classmuda_1_1_buffer_view_t" kindref="compound">CBufferView</ref>&lt; T &gt;</type>
+        <definition>CBufferView&lt; T &gt; muda::DeviceBuffer&lt; T &gt;::view</definition>
+        <argsstring>(size_t offset, size_t size=~0) const MUDA_NOEXCEPT</argsstring>
+        <name>view</name>
+        <qualifiedname>muda::DeviceBuffer::view</qualifiedname>
+        <param>
+          <type>size_t</type>
+          <declname>offset</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>size</declname>
+          <defval>~0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/device_buffer.h" line="86" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_device_buffer_1a28f1e24400eedf2004e938f8bc5dea37" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classmuda_1_1_buffer_view_t" kindref="compound">CBufferView</ref>&lt; T &gt;</type>
+        <definition>CBufferView&lt; T &gt; muda::DeviceBuffer&lt; T &gt;::view</definition>
+        <argsstring>() const MUDA_NOEXCEPT</argsstring>
+        <name>view</name>
+        <qualifiedname>muda::DeviceBuffer::view</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/device_buffer.h" line="87" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_device_buffer_1a93595459802bc2ea7e85773a082de567" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>muda::DeviceBuffer&lt; T &gt;::operator BufferView&lt; T &gt;</definition>
+        <argsstring>() MUDA_NOEXCEPT</argsstring>
+        <name>operator BufferView&lt; T &gt;</name>
+        <qualifiedname>muda::DeviceBuffer::operator BufferView&lt; T &gt;</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/device_buffer.h" line="88" column="5" bodyfile="src/muda/buffer/device_buffer.h" bodystart="88" bodyend="88"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_device_buffer_1abdf3dc9fa7e69ce9f0339b03b9a97788" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>muda::DeviceBuffer&lt; T &gt;::operator CBufferView&lt; T &gt;</definition>
+        <argsstring>() const MUDA_NOEXCEPT</argsstring>
+        <name>operator CBufferView&lt; T &gt;</name>
+        <qualifiedname>muda::DeviceBuffer::operator CBufferView&lt; T &gt;</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/device_buffer.h" line="89" column="5" bodyfile="src/muda/buffer/device_buffer.h" bodystart="89" bodyend="89"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_device_buffer_1a15e20fd678a689d9193badc05bcd0e4f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>muda::DeviceBuffer&lt; T &gt;::~DeviceBuffer</definition>
+        <argsstring>()</argsstring>
+        <name>~DeviceBuffer</name>
+        <qualifiedname>muda::DeviceBuffer::~DeviceBuffer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/device_buffer.h" line="91" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_device_buffer_1a9fce5b840b223a56599070ff475daa86" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto muda::DeviceBuffer&lt; T &gt;::size</definition>
+        <argsstring>() const MUDA_NOEXCEPT</argsstring>
+        <name>size</name>
+        <qualifiedname>muda::DeviceBuffer::size</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/device_buffer.h" line="93" column="14" bodyfile="src/muda/buffer/device_buffer.h" bodystart="93" bodyend="93"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_device_buffer_1a449f3dedc80503654d486a4d14d8a85d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto muda::DeviceBuffer&lt; T &gt;::capacity</definition>
+        <argsstring>() const MUDA_NOEXCEPT</argsstring>
+        <name>capacity</name>
+        <qualifiedname>muda::DeviceBuffer::capacity</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/device_buffer.h" line="94" column="14" bodyfile="src/muda/buffer/device_buffer.h" bodystart="94" bodyend="94"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_device_buffer_1a4333e675ddfbed32dd3d91b1a57e5903" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>T *</type>
+        <definition>T * muda::DeviceBuffer&lt; T &gt;::data</definition>
+        <argsstring>() MUDA_NOEXCEPT</argsstring>
+        <name>data</name>
+        <qualifiedname>muda::DeviceBuffer::data</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/device_buffer.h" line="95" column="13" bodyfile="src/muda/buffer/device_buffer.h" bodystart="95" bodyend="95"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_device_buffer_1a5b9fb4508e1919e0f0460976d0b217c9" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const T *</type>
+        <definition>const T * muda::DeviceBuffer&lt; T &gt;::data</definition>
+        <argsstring>() const MUDA_NOEXCEPT</argsstring>
+        <name>data</name>
+        <qualifiedname>muda::DeviceBuffer::data</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/device_buffer.h" line="96" column="13" bodyfile="src/muda/buffer/device_buffer.h" bodystart="96" bodyend="96"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>A <computeroutput>std::vector</computeroutput> like wrapper of cuda device memory, allows user to: </para>
+    </briefdescription>
+    <detaileddescription>
+<para><itemizedlist>
+<listitem><para>resize </para>
+</listitem>
+<listitem><para>reserve </para>
+</listitem>
+<listitem><para>clear </para>
+</listitem>
+<listitem><para>fill </para>
+</listitem>
+<listitem><para>shrink_to_fit </para>
+</listitem>
+<listitem><para>make view or subview from it </para>
+</listitem>
+<listitem><para>make a safe viewer from it</para>
+</listitem>
+</itemizedlist>
+<simplesect kind="see"><para></para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <location file="src/muda/buffer/device_buffer.h" line="31" column="1" bodyfile="src/muda/buffer/device_buffer.h" bodystart="46" bodyend="97"/>
+    <listofallmembers>
+      <member refid="classmuda_1_1_device_buffer_1a3373c2e8cf6a6172637baf3c12d153ad" prot="private" virt="non-virtual"><scope>muda::DeviceBuffer</scope><name>BufferLaunch</name></member>
+      <member refid="classmuda_1_1_device_buffer_1a449f3dedc80503654d486a4d14d8a85d" prot="public" virt="non-virtual"><scope>muda::DeviceBuffer</scope><name>capacity</name></member>
+      <member refid="classmuda_1_1_device_buffer_1a31575550e651a98c52d3ba42541eff0f" prot="public" virt="non-virtual"><scope>muda::DeviceBuffer</scope><name>clear</name></member>
+      <member refid="classmuda_1_1_device_buffer_1ac822dd8b3bedf67854276f8bb999675e" prot="public" virt="non-virtual"><scope>muda::DeviceBuffer</scope><name>copy_from</name></member>
+      <member refid="classmuda_1_1_device_buffer_1a60f0f6bd3ed6a8ad47f4d86ce232e8d1" prot="public" virt="non-virtual"><scope>muda::DeviceBuffer</scope><name>copy_to</name></member>
+      <member refid="classmuda_1_1_device_buffer_1a9cf05f0f5f623c1b969c6b0099e134cb" prot="public" virt="non-virtual"><scope>muda::DeviceBuffer</scope><name>cviewer</name></member>
+      <member refid="classmuda_1_1_device_buffer_1a4333e675ddfbed32dd3d91b1a57e5903" prot="public" virt="non-virtual"><scope>muda::DeviceBuffer</scope><name>data</name></member>
+      <member refid="classmuda_1_1_device_buffer_1a5b9fb4508e1919e0f0460976d0b217c9" prot="public" virt="non-virtual"><scope>muda::DeviceBuffer</scope><name>data</name></member>
+      <member refid="classmuda_1_1_device_buffer_1aa05ea08190c86675db76d5ff9c6b67cb" prot="public" virt="non-virtual"><scope>muda::DeviceBuffer</scope><name>DeviceBuffer</name></member>
+      <member refid="classmuda_1_1_device_buffer_1a0fb033bf20e9af9cf9efa2c86b4e2407" prot="public" virt="non-virtual"><scope>muda::DeviceBuffer</scope><name>DeviceBuffer</name></member>
+      <member refid="classmuda_1_1_device_buffer_1a31388859c69720fe3481c813e72363f0" prot="public" virt="non-virtual"><scope>muda::DeviceBuffer</scope><name>DeviceBuffer</name></member>
+      <member refid="classmuda_1_1_device_buffer_1a90fb07d39c24eb8d75eb8d19801f9b09" prot="public" virt="non-virtual"><scope>muda::DeviceBuffer</scope><name>DeviceBuffer</name></member>
+      <member refid="classmuda_1_1_device_buffer_1ad6a3110b74f2ca833deba3248095bbb9" prot="public" virt="non-virtual"><scope>muda::DeviceBuffer</scope><name>DeviceBuffer</name></member>
+      <member refid="classmuda_1_1_device_buffer_1af9484fa7cf9837bf87ab4fa480660077" prot="public" virt="non-virtual"><scope>muda::DeviceBuffer</scope><name>DeviceBuffer</name></member>
+      <member refid="classmuda_1_1_device_buffer_1ae7835514be02257bfd51d5c838e53242" prot="public" virt="non-virtual"><scope>muda::DeviceBuffer</scope><name>fill</name></member>
+      <member refid="classmuda_1_1_device_buffer_1a99ef038fa98758c454b4a16319510676" prot="private" virt="non-virtual"><scope>muda::DeviceBuffer</scope><name>m_capacity</name></member>
+      <member refid="classmuda_1_1_device_buffer_1a5320d1ea1f012d032629273d7cb389cf" prot="private" virt="non-virtual"><scope>muda::DeviceBuffer</scope><name>m_data</name></member>
+      <member refid="classmuda_1_1_device_buffer_1a383a697f282249cd516ea851b2e754e8" prot="private" virt="non-virtual"><scope>muda::DeviceBuffer</scope><name>m_size</name></member>
+      <member refid="classmuda_1_1_device_buffer_1a3da08685fa6b7d2236b99a33da67b81a" prot="private" virt="non-virtual"><scope>muda::DeviceBuffer</scope><name>NDReshaper</name></member>
+      <member refid="classmuda_1_1_device_buffer_1a93595459802bc2ea7e85773a082de567" prot="public" virt="non-virtual"><scope>muda::DeviceBuffer</scope><name>operator BufferView&lt; T &gt;</name></member>
+      <member refid="classmuda_1_1_device_buffer_1abdf3dc9fa7e69ce9f0339b03b9a97788" prot="public" virt="non-virtual"><scope>muda::DeviceBuffer</scope><name>operator CBufferView&lt; T &gt;</name></member>
+      <member refid="classmuda_1_1_device_buffer_1a70567ae9b8f53bf426ae3a3a5f4efe2a" prot="public" virt="non-virtual"><scope>muda::DeviceBuffer</scope><name>operator=</name></member>
+      <member refid="classmuda_1_1_device_buffer_1a98faa44e9bd89047f661ff5b444b6d8a" prot="public" virt="non-virtual"><scope>muda::DeviceBuffer</scope><name>operator=</name></member>
+      <member refid="classmuda_1_1_device_buffer_1abebc06420c099bf0945db56b5e471b38" prot="public" virt="non-virtual"><scope>muda::DeviceBuffer</scope><name>operator=</name></member>
+      <member refid="classmuda_1_1_device_buffer_1a3de11c5efc49e6a914ba15c4253875b1" prot="public" virt="non-virtual"><scope>muda::DeviceBuffer</scope><name>operator=</name></member>
+      <member refid="classmuda_1_1_device_buffer_1ad55ebdfa76fdd3acc6434067abe91d12" prot="public" virt="non-virtual"><scope>muda::DeviceBuffer</scope><name>reserve</name></member>
+      <member refid="classmuda_1_1_device_buffer_1a23b71bc892514a009be09c56d7d25a9b" prot="public" virt="non-virtual"><scope>muda::DeviceBuffer</scope><name>resize</name></member>
+      <member refid="classmuda_1_1_device_buffer_1a226452f2f1d0233010d976e704780812" prot="public" virt="non-virtual"><scope>muda::DeviceBuffer</scope><name>resize</name></member>
+      <member refid="classmuda_1_1_device_buffer_1a0dd5c3eaf2bf815519e74ae4d40f71c0" prot="public" virt="non-virtual"><scope>muda::DeviceBuffer</scope><name>shrink_to_fit</name></member>
+      <member refid="classmuda_1_1_device_buffer_1a9fce5b840b223a56599070ff475daa86" prot="public" virt="non-virtual"><scope>muda::DeviceBuffer</scope><name>size</name></member>
+      <member refid="classmuda_1_1_device_buffer_1af92000ac723dfe7f5cb683ddf5c4578f" prot="public" virt="non-virtual"><scope>muda::DeviceBuffer</scope><name>value_type</name></member>
+      <member refid="classmuda_1_1_device_buffer_1a124c783c55676b39833a1e524aa7ca42" prot="public" virt="non-virtual"><scope>muda::DeviceBuffer</scope><name>view</name></member>
+      <member refid="classmuda_1_1_device_buffer_1a7997b615b8a7a2d15051455017871a32" prot="public" virt="non-virtual"><scope>muda::DeviceBuffer</scope><name>view</name></member>
+      <member refid="classmuda_1_1_device_buffer_1ad546beadc2c1d3133548563dd25c949e" prot="public" virt="non-virtual"><scope>muda::DeviceBuffer</scope><name>view</name></member>
+      <member refid="classmuda_1_1_device_buffer_1a28f1e24400eedf2004e938f8bc5dea37" prot="public" virt="non-virtual"><scope>muda::DeviceBuffer</scope><name>view</name></member>
+      <member refid="classmuda_1_1_device_buffer_1aaf933b6a6ac476e61a37c815a05b6b40" prot="public" virt="non-virtual"><scope>muda::DeviceBuffer</scope><name>viewer</name></member>
+      <member refid="classmuda_1_1_device_buffer_1a15e20fd678a689d9193badc05bcd0e4f" prot="public" virt="non-virtual"><scope>muda::DeviceBuffer</scope><name>~DeviceBuffer</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

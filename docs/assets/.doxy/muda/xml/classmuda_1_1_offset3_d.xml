@@ -1,0 +1,156 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classmuda_1_1_offset3_d" kind="class" language="C++" prot="public">
+    <compoundname>muda::Offset3D</compoundname>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classmuda_1_1_offset3_d_1a23fd56e12a0ffa0f7311d67a13d4bbd2" prot="private" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t muda::Offset3D::m_offset[3]</definition>
+        <argsstring>[3]</argsstring>
+        <name>m_offset</name>
+        <qualifiedname>muda::Offset3D::m_offset</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/tools/extent.h" line="104" column="12" bodyfile="src/muda/tools/extent.h" bodystart="104" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmuda_1_1_offset3_d_1ac4f6e3ac58fab9bde7f94ed57b9fdbe3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>MUDA_GENERIC</type>
+        <definition>MUDA_GENERIC muda::Offset3D::Offset3D</definition>
+        <argsstring>() MUDA_NOEXCEPT</argsstring>
+        <name>Offset3D</name>
+        <qualifiedname>muda::Offset3D::Offset3D</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/tools/extent.h" line="107" column="18" bodyfile="src/muda/tools/extent.h" bodystart="107" bodyend="107"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_offset3_d_1aec24d617438a202625c5d80747dc5116" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>MUDA_GENERIC</type>
+        <definition>MUDA_GENERIC muda::Offset3D::Offset3D</definition>
+        <argsstring>(size_t offset_in_depth, size_t offset_in_height, size_t offset_in_width) MUDA_NOEXCEPT</argsstring>
+        <name>Offset3D</name>
+        <qualifiedname>muda::Offset3D::Offset3D</qualifiedname>
+        <param>
+          <type>size_t</type>
+          <declname>offset_in_depth</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>offset_in_height</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>offset_in_width</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/tools/extent.h" line="114" column="18" bodyfile="src/muda/tools/extent.h" bodystart="114" bodyend="117"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_offset3_d_1a290c06f497b86fc6845faa79a3948f6a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>MUDA_GENERIC size_t</type>
+        <definition>MUDA_GENERIC size_t muda::Offset3D::offset_in_depth</definition>
+        <argsstring>() const MUDA_NOEXCEPT</argsstring>
+        <name>offset_in_depth</name>
+        <qualifiedname>muda::Offset3D::offset_in_depth</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/tools/extent.h" line="119" column="25" bodyfile="src/muda/tools/extent.h" bodystart="119" bodyend="122"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_offset3_d_1ad5c8b5cc8daa716d47e40b709f4d7a97" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>MUDA_GENERIC size_t</type>
+        <definition>MUDA_GENERIC size_t muda::Offset3D::offset_in_height</definition>
+        <argsstring>() const MUDA_NOEXCEPT</argsstring>
+        <name>offset_in_height</name>
+        <qualifiedname>muda::Offset3D::offset_in_height</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/tools/extent.h" line="124" column="25" bodyfile="src/muda/tools/extent.h" bodystart="124" bodyend="127"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_offset3_d_1a38448c043b295c5db2a7e587d609cb18" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>MUDA_GENERIC size_t</type>
+        <definition>MUDA_GENERIC size_t muda::Offset3D::offset_in_width</definition>
+        <argsstring>() const MUDA_NOEXCEPT</argsstring>
+        <name>offset_in_width</name>
+        <qualifiedname>muda::Offset3D::offset_in_width</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/tools/extent.h" line="129" column="25" bodyfile="src/muda/tools/extent.h" bodystart="129" bodyend="132"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_offset3_d_1a246381b7d7c1079751a21e8296e39b0e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>MUDA_GENERIC cudaPos</type>
+        <definition>MUDA_GENERIC cudaPos muda::Offset3D::cuda_pos</definition>
+        <argsstring>() const MUDA_NOEXCEPT</argsstring>
+        <name>cuda_pos</name>
+        <qualifiedname>muda::Offset3D::cuda_pos</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/tools/extent.h" line="135" column="26" bodyfile="src/muda/tools/extent.h" bodystart="135" bodyend="138"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classmuda_1_1_offset3_d_1a967bdae0059efe81a1caf8c00de3858f" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>MUDA_GENERIC <ref refid="classmuda_1_1_offset3_d" kindref="compound">Offset3D</ref></type>
+        <definition>static MUDA_GENERIC Offset3D muda::Offset3D::Zero</definition>
+        <argsstring>() MUDA_NOEXCEPT</argsstring>
+        <name>Zero</name>
+        <qualifiedname>muda::Offset3D::Zero</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/tools/extent.h" line="109" column="34" bodyfile="src/muda/tools/extent.h" bodystart="109" bodyend="112"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/muda/tools/extent.h" line="102" column="1" bodyfile="src/muda/tools/extent.h" bodystart="103" bodyend="139"/>
+    <listofallmembers>
+      <member refid="classmuda_1_1_offset3_d_1a246381b7d7c1079751a21e8296e39b0e" prot="public" virt="non-virtual"><scope>muda::Offset3D</scope><name>cuda_pos</name></member>
+      <member refid="classmuda_1_1_offset3_d_1a23fd56e12a0ffa0f7311d67a13d4bbd2" prot="private" virt="non-virtual"><scope>muda::Offset3D</scope><name>m_offset</name></member>
+      <member refid="classmuda_1_1_offset3_d_1ac4f6e3ac58fab9bde7f94ed57b9fdbe3" prot="public" virt="non-virtual"><scope>muda::Offset3D</scope><name>Offset3D</name></member>
+      <member refid="classmuda_1_1_offset3_d_1aec24d617438a202625c5d80747dc5116" prot="public" virt="non-virtual"><scope>muda::Offset3D</scope><name>Offset3D</name></member>
+      <member refid="classmuda_1_1_offset3_d_1a290c06f497b86fc6845faa79a3948f6a" prot="public" virt="non-virtual"><scope>muda::Offset3D</scope><name>offset_in_depth</name></member>
+      <member refid="classmuda_1_1_offset3_d_1ad5c8b5cc8daa716d47e40b709f4d7a97" prot="public" virt="non-virtual"><scope>muda::Offset3D</scope><name>offset_in_height</name></member>
+      <member refid="classmuda_1_1_offset3_d_1a38448c043b295c5db2a7e587d609cb18" prot="public" virt="non-virtual"><scope>muda::Offset3D</scope><name>offset_in_width</name></member>
+      <member refid="classmuda_1_1_offset3_d_1a967bdae0059efe81a1caf8c00de3858f" prot="public" virt="non-virtual"><scope>muda::Offset3D</scope><name>Zero</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

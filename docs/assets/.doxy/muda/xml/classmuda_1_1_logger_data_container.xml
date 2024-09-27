@@ -1,0 +1,82 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classmuda_1_1_logger_data_container" kind="class" language="C++" prot="public">
+    <compoundname>muda::LoggerDataContainer</compoundname>
+    <sectiondef kind="friend">
+      <memberdef kind="friend" id="classmuda_1_1_logger_data_container_1aff02b76416d2846736b7ecd798921a0a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class Logger</definition>
+        <argsstring></argsstring>
+        <name>Logger</name>
+        <qualifiedname>muda::LoggerDataContainer::Logger</qualifiedname>
+        <param>
+          <type><ref refid="classmuda_1_1_logger" kindref="compound">Logger</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/logger/logger.h" line="30" column="18" bodyfile="src/muda/logger/logger.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classmuda_1_1_logger_data_container_1a5518d5a74bd8b66af405222c6fbf9ea0" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classmuda_1_1_logger_meta_data" kindref="compound">LoggerMetaData</ref> &gt;</type>
+        <definition>std::vector&lt;LoggerMetaData&gt; muda::LoggerDataContainer::m_meta_data</definition>
+        <argsstring></argsstring>
+        <name>m_meta_data</name>
+        <qualifiedname>muda::LoggerDataContainer::m_meta_data</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/logger/logger.h" line="31" column="17" bodyfile="src/muda/logger/logger.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1_logger_data_container_1a717591b1457684452aea02df8531219b" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; char &gt;</type>
+        <definition>std::vector&lt;char&gt; muda::LoggerDataContainer::m_buffer</definition>
+        <argsstring></argsstring>
+        <name>m_buffer</name>
+        <qualifiedname>muda::LoggerDataContainer::m_buffer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/logger/logger.h" line="32" column="27" bodyfile="src/muda/logger/logger.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmuda_1_1_logger_data_container_1adf71c828d8e07fa464e2b02128e38e70" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>span&lt; <ref refid="classmuda_1_1_logger_meta_data" kindref="compound">LoggerMetaData</ref> &gt;</type>
+        <definition>span&lt; LoggerMetaData &gt; muda::LoggerDataContainer::meta_data</definition>
+        <argsstring>()</argsstring>
+        <name>meta_data</name>
+        <qualifiedname>muda::LoggerDataContainer::meta_data</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/logger/logger.h" line="27" column="10" bodyfile="src/muda/logger/logger.h" bodystart="27" bodyend="27"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/muda/logger/logger.h" line="24" column="1" bodyfile="src/muda/logger/logger.h" bodystart="25" bodyend="33"/>
+    <listofallmembers>
+      <member refid="classmuda_1_1_logger_data_container_1aff02b76416d2846736b7ecd798921a0a" prot="private" virt="non-virtual"><scope>muda::LoggerDataContainer</scope><name>Logger</name></member>
+      <member refid="classmuda_1_1_logger_data_container_1a717591b1457684452aea02df8531219b" prot="private" virt="non-virtual"><scope>muda::LoggerDataContainer</scope><name>m_buffer</name></member>
+      <member refid="classmuda_1_1_logger_data_container_1a5518d5a74bd8b66af405222c6fbf9ea0" prot="private" virt="non-virtual"><scope>muda::LoggerDataContainer</scope><name>m_meta_data</name></member>
+      <member refid="classmuda_1_1_logger_data_container_1adf71c828d8e07fa464e2b02128e38e70" prot="public" virt="non-virtual"><scope>muda::LoggerDataContainer</scope><name>meta_data</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

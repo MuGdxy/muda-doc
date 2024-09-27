@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="namespacemuda_1_1spatial__hash_1_1details" kind="namespace" language="C++">
+    <compoundname>muda::spatial_hash::details</compoundname>
+    <innerclass refid="classmuda_1_1spatial__hash_1_1details_1_1_sparse_spatial_hash_impl" prot="public">muda::spatial_hash::details::SparseSpatialHashImpl</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/muda/ext/geo/spatial_hash/sparse_spatial_hash_impl.h" line="165" column="1"/>
+  </compounddef>
+</doxygen>

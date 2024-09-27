@@ -1,0 +1,215 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="predicator_8h" kind="file" language="C++">
+    <compoundname>predicator.h</compoundname>
+    <includes refid="aabb_8h" local="no">muda/ext/geo/lbvh/aabb.h</includes>
+    <includedby refid="bvh__viewer_8h" local="no">src/muda/ext/geo/lbvh/bvh_viewer.h</includedby>
+    <includedby refid="lbvh_2lbvh_8h" local="no">src/muda/ext/geo/lbvh/lbvh.h</includedby>
+    <includedby refid="query_8h" local="no">src/muda/ext/geo/lbvh/query.h</includedby>
+    <incdepgraph>
+      <node id="8">
+        <label>cuda_runtime.h</label>
+        <link refid="cuda__runtime_8h_source"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>cuda_runtime_api.h</label>
+        <link refid="cuda__runtime__api_8h_source"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>muda/ext/geo/lbvh/aabb.h</label>
+        <link refid="aabb_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>src/muda/ext/geo/lbvh/predicator.h</label>
+        <link refid="predicator_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>muda/ext/geo/lbvh/utility.h</label>
+        <link refid="utility_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>muda/muda_config.h</label>
+        <link refid="muda__config_8h_source"/>
+      </node>
+      <node id="4">
+        <label>muda/muda_def.h</label>
+        <link refid="muda__def_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>muda/tools/platform.h</label>
+        <link refid="platform_8h_source"/>
+      </node>
+      <node id="13">
+        <label>cmath</label>
+      </node>
+      <node id="7">
+        <label>cuda.h</label>
+      </node>
+      <node id="11">
+        <label>math_constants.h</label>
+      </node>
+      <node id="12">
+        <label>thrust/swap.h</label>
+      </node>
+      <node id="10">
+        <label>vector_types.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="5">
+        <label>src/muda/ext/geo/lbvh.h</label>
+        <link refid="lbvh_8h_source"/>
+      </node>
+      <node id="3">
+        <label>src/muda/ext/geo/lbvh/bvh.h</label>
+        <link refid="bvh_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>src/muda/ext/geo/lbvh/bvh_viewer.h</label>
+        <link refid="bvh__viewer_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>src/muda/ext/geo/lbvh/lbvh.h</label>
+        <link refid="lbvh_2lbvh_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>src/muda/ext/geo/lbvh/predicator.h</label>
+        <link refid="predicator_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>src/muda/ext/geo/lbvh/query.h</label>
+        <link refid="query_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structmuda_1_1lbvh_1_1query__overlap" prot="public">muda::lbvh::query_overlap</innerclass>
+    <innerclass refid="structmuda_1_1lbvh_1_1query__nearest" prot="public">muda::lbvh::query_nearest</innerclass>
+    <innernamespace refid="namespacemuda">muda</innernamespace>
+    <innernamespace refid="namespacemuda_1_1lbvh">muda::lbvh</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;muda/ext/geo/lbvh/aabb.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">muda::lbvh</highlight></codeline>
+<codeline lineno="5"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Real&gt;</highlight></codeline>
+<codeline lineno="7" refid="structmuda_1_1lbvh_1_1query__overlap" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structmuda_1_1lbvh_1_1query__overlap" kindref="compound">query_overlap</ref></highlight></codeline>
+<codeline lineno="8"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/>MUDA_GENERIC<sp/><ref refid="structmuda_1_1lbvh_1_1query__overlap" kindref="compound">query_overlap</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structmuda_1_1lbvh_1_1_a_a_b_b" kindref="compound">AABB&lt;Real&gt;</ref>&amp;<sp/>tgt)</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>target(tgt)</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structmuda_1_1lbvh_1_1query__overlap" kindref="compound">query_overlap</ref>()<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structmuda_1_1lbvh_1_1query__overlap" kindref="compound">~query_overlap</ref>()<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structmuda_1_1lbvh_1_1query__overlap" kindref="compound">query_overlap</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structmuda_1_1lbvh_1_1query__overlap" kindref="compound">query_overlap</ref>&amp;)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structmuda_1_1lbvh_1_1query__overlap" kindref="compound">query_overlap</ref>(<ref refid="structmuda_1_1lbvh_1_1query__overlap" kindref="compound">query_overlap</ref>&amp;&amp;)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structmuda_1_1lbvh_1_1query__overlap" kindref="compound">query_overlap</ref>&amp;<sp/>operator=(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structmuda_1_1lbvh_1_1query__overlap" kindref="compound">query_overlap</ref>&amp;)<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structmuda_1_1lbvh_1_1query__overlap" kindref="compound">query_overlap</ref>&amp;<sp/>operator=(<ref refid="structmuda_1_1lbvh_1_1query__overlap" kindref="compound">query_overlap</ref>&amp;&amp;)<sp/><sp/><sp/><sp/><sp/><sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>MUDA_GENERIC<sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>operator()(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structmuda_1_1lbvh_1_1_a_a_b_b" kindref="compound">AABB&lt;Real&gt;</ref>&amp;<sp/>box)<sp/></highlight><highlight class="keyword">noexcept</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>intersects(box,<sp/>target);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structmuda_1_1lbvh_1_1_a_a_b_b" kindref="compound">AABB&lt;Real&gt;</ref><sp/>target;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Real&gt;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal">MUDA_GENERIC<sp/><ref refid="structmuda_1_1lbvh_1_1query__overlap" kindref="compound">query_overlap&lt;Real&gt;</ref><sp/>overlaps(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structmuda_1_1lbvh_1_1_a_a_b_b" kindref="compound">AABB&lt;Real&gt;</ref>&amp;<sp/>region)<sp/></highlight><highlight class="keyword">noexcept</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="structmuda_1_1lbvh_1_1query__overlap" kindref="compound">query_overlap&lt;Real&gt;</ref>(region);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Real&gt;</highlight></codeline>
+<codeline lineno="36" refid="structmuda_1_1lbvh_1_1query__nearest" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structmuda_1_1lbvh_1_1query__nearest" kindref="compound">query_nearest</ref></highlight></codeline>
+<codeline lineno="37"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>float4/double4</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">vector_type<sp/>=<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/><ref refid="structmuda_1_1lbvh_1_1vector__of" kindref="compound">vector_of&lt;Real&gt;::type</ref>;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>MUDA_GENERIC<sp/><ref refid="structmuda_1_1lbvh_1_1query__nearest" kindref="compound">query_nearest</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>vector_type&amp;<sp/>tgt)</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>target(tgt)</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structmuda_1_1lbvh_1_1query__nearest" kindref="compound">query_nearest</ref>()<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structmuda_1_1lbvh_1_1query__nearest" kindref="compound">~query_nearest</ref>()<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structmuda_1_1lbvh_1_1query__nearest" kindref="compound">query_nearest</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structmuda_1_1lbvh_1_1query__nearest" kindref="compound">query_nearest</ref>&amp;)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structmuda_1_1lbvh_1_1query__nearest" kindref="compound">query_nearest</ref>(<ref refid="structmuda_1_1lbvh_1_1query__nearest" kindref="compound">query_nearest</ref>&amp;&amp;)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structmuda_1_1lbvh_1_1query__nearest" kindref="compound">query_nearest</ref>&amp;<sp/>operator=(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structmuda_1_1lbvh_1_1query__nearest" kindref="compound">query_nearest</ref>&amp;)<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structmuda_1_1lbvh_1_1query__nearest" kindref="compound">query_nearest</ref>&amp;<sp/>operator=(<ref refid="structmuda_1_1lbvh_1_1query__nearest" kindref="compound">query_nearest</ref>&amp;&amp;)<sp/><sp/><sp/><sp/><sp/><sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/>vector_type<sp/>target;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal">MUDA_GENERIC<sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="structmuda_1_1lbvh_1_1query__nearest" kindref="compound">query_nearest&lt;float&gt;</ref><sp/>nearest(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>float4&amp;<sp/>point)<sp/></highlight><highlight class="keyword">noexcept</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="structmuda_1_1lbvh_1_1query__nearest" kindref="compound">query_nearest&lt;float&gt;</ref>(point);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="60"><highlight class="normal">MUDA_GENERIC<sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>query_nearest&lt;float&gt;<sp/>nearest(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>float3&amp;<sp/>point)<sp/></highlight><highlight class="keyword">noexcept</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>query_nearest&lt;float&gt;(make_float4(point.x,<sp/>point.y,<sp/>point.z,<sp/>0.0f));</highlight></codeline>
+<codeline lineno="63"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="64"><highlight class="normal">MUDA_GENERIC<sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>query_nearest&lt;double&gt;<sp/>nearest(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>double4&amp;<sp/>point)<sp/></highlight><highlight class="keyword">noexcept</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>query_nearest&lt;double&gt;(point);</highlight></codeline>
+<codeline lineno="67"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="68"><highlight class="normal">MUDA_GENERIC<sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>query_nearest&lt;double&gt;<sp/>nearest(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>double3&amp;<sp/>point)<sp/></highlight><highlight class="keyword">noexcept</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>query_nearest&lt;double&gt;(make_double4(point.x,<sp/>point.y,<sp/>point.z,<sp/>0.0));</highlight></codeline>
+<codeline lineno="71"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal">}<sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>muda::lbvh</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="src/muda/ext/geo/lbvh/predicator.h"/>
+  </compounddef>
+</doxygen>

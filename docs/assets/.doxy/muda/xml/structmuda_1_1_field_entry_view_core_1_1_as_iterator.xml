@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structmuda_1_1_field_entry_view_core_1_1_as_iterator" kind="struct" language="C++" prot="protected">
+    <compoundname>muda::FieldEntryViewCore::AsIterator</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/muda/ext/field/field_entry_view.h" line="58" column="5" bodyfile="src/muda/ext/field/field_entry_view.h" bodystart="59" bodyend="60"/>
+    <listofallmembers>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

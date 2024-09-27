@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classmuda_1_1_kernel_label" kind="class" language="C++" prot="public">
+    <compoundname>muda::KernelLabel</compoundname>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmuda_1_1_kernel_label_1af7e2907141abba83b6fe9fab31d0ce2c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>muda::KernelLabel::KernelLabel</definition>
+        <argsstring>(std::string_view name, std::string_view file=&quot;&quot;, int line=-1)</argsstring>
+        <name>KernelLabel</name>
+        <qualifiedname>muda::KernelLabel::KernelLabel</qualifiedname>
+        <param>
+          <type>std::string_view</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>std::string_view</type>
+          <declname>file</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>line</declname>
+          <defval>-1</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/launch/kernel_label.h" line="9" column="5" bodyfile="src/muda/launch/kernel_label.h" bodystart="9" bodyend="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_kernel_label_1ad0c5a5158809372009e3bfedee3e4f2d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>muda::KernelLabel::~KernelLabel</definition>
+        <argsstring>()</argsstring>
+        <name>~KernelLabel</name>
+        <qualifiedname>muda::KernelLabel::~KernelLabel</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/launch/kernel_label.h" line="19" column="5" bodyfile="src/muda/launch/kernel_label.h" bodystart="19" bodyend="27"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/muda/launch/kernel_label.h" line="6" column="1" bodyfile="src/muda/launch/kernel_label.h" bodystart="7" bodyend="28"/>
+    <listofallmembers>
+      <member refid="classmuda_1_1_kernel_label_1af7e2907141abba83b6fe9fab31d0ce2c" prot="public" virt="non-virtual"><scope>muda::KernelLabel</scope><name>KernelLabel</name></member>
+      <member refid="classmuda_1_1_kernel_label_1ad0c5a5158809372009e3bfedee3e4f2d" prot="public" virt="non-virtual"><scope>muda::KernelLabel</scope><name>~KernelLabel</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

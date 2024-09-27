@@ -1,0 +1,1646 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="namespacemuda_1_1eigen" kind="namespace" language="C++">
+    <compoundname>muda::eigen</compoundname>
+    <innerclass refid="structmuda_1_1eigen_1_1_analytical_inverse" prot="public">muda::eigen::AnalyticalInverse</innerclass>
+    <innerclass refid="structmuda_1_1eigen_1_1_gauss_elimination_inverse" prot="public">muda::eigen::GaussEliminationInverse</innerclass>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="as__eigen_8h_1a346f99e9a632a6a6b2a36b12a6bdaedd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>MUDA_INLINE MUDA_GENERIC Eigen::Map&lt; Eigen::Matrix&lt; float, 2, 1 &gt; &gt;</type>
+        <definition>MUDA_INLINE MUDA_GENERIC Eigen::Map&lt; Eigen::Matrix&lt; float, 2, 1 &gt; &gt; muda::eigen::as_eigen</definition>
+        <argsstring>(float2 &amp;val)</argsstring>
+        <name>as_eigen</name>
+        <qualifiedname>muda::eigen::as_eigen</qualifiedname>
+        <param>
+          <type>float2 &amp;</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/eigen/as_eigen.h" line="8" column="41" bodyfile="src/muda/ext/eigen/as_eigen.h" bodystart="8" bodyend="11"/>
+      </memberdef>
+      <memberdef kind="function" id="as__eigen_8h_1a22e5a21797932fddbc54a4b78b2e3a4c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>MUDA_INLINE MUDA_GENERIC Eigen::Map&lt; const Eigen::Matrix&lt; float, 2, 1 &gt; &gt;</type>
+        <definition>MUDA_INLINE MUDA_GENERIC Eigen::Map&lt; const Eigen::Matrix&lt; float, 2, 1 &gt; &gt; muda::eigen::as_eigen</definition>
+        <argsstring>(const float2 &amp;val)</argsstring>
+        <name>as_eigen</name>
+        <qualifiedname>muda::eigen::as_eigen</qualifiedname>
+        <param>
+          <type>const float2 &amp;</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/eigen/as_eigen.h" line="12" column="41" bodyfile="src/muda/ext/eigen/as_eigen.h" bodystart="12" bodyend="16"/>
+      </memberdef>
+      <memberdef kind="function" id="as__eigen_8h_1afb1b4526c9cc14283294a1101909c0dc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>MUDA_INLINE MUDA_GENERIC Eigen::Map&lt; Eigen::Matrix&lt; float, 3, 1 &gt; &gt;</type>
+        <definition>MUDA_INLINE MUDA_GENERIC Eigen::Map&lt; Eigen::Matrix&lt; float, 3, 1 &gt; &gt; muda::eigen::as_eigen</definition>
+        <argsstring>(float3 &amp;val)</argsstring>
+        <name>as_eigen</name>
+        <qualifiedname>muda::eigen::as_eigen</qualifiedname>
+        <param>
+          <type>float3 &amp;</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/eigen/as_eigen.h" line="18" column="41" bodyfile="src/muda/ext/eigen/as_eigen.h" bodystart="18" bodyend="21"/>
+      </memberdef>
+      <memberdef kind="function" id="as__eigen_8h_1aae98983882bf3f431d0e9100749f7b23" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>MUDA_INLINE MUDA_GENERIC Eigen::Map&lt; const Eigen::Matrix&lt; float, 3, 1 &gt; &gt;</type>
+        <definition>MUDA_INLINE MUDA_GENERIC Eigen::Map&lt; const Eigen::Matrix&lt; float, 3, 1 &gt; &gt; muda::eigen::as_eigen</definition>
+        <argsstring>(const float3 &amp;val)</argsstring>
+        <name>as_eigen</name>
+        <qualifiedname>muda::eigen::as_eigen</qualifiedname>
+        <param>
+          <type>const float3 &amp;</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/eigen/as_eigen.h" line="22" column="41" bodyfile="src/muda/ext/eigen/as_eigen.h" bodystart="22" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="as__eigen_8h_1a227d70c172693ae4c53388bf0a8dde68" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>MUDA_INLINE MUDA_GENERIC Eigen::Map&lt; Eigen::Matrix&lt; float, 4, 1 &gt; &gt;</type>
+        <definition>MUDA_INLINE MUDA_GENERIC Eigen::Map&lt; Eigen::Matrix&lt; float, 4, 1 &gt; &gt; muda::eigen::as_eigen</definition>
+        <argsstring>(float4 &amp;val)</argsstring>
+        <name>as_eigen</name>
+        <qualifiedname>muda::eigen::as_eigen</qualifiedname>
+        <param>
+          <type>float4 &amp;</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/eigen/as_eigen.h" line="28" column="41" bodyfile="src/muda/ext/eigen/as_eigen.h" bodystart="28" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="as__eigen_8h_1ab27fbfd4016bb2f375da805017ca7822" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>MUDA_INLINE MUDA_GENERIC Eigen::Map&lt; const Eigen::Matrix&lt; float, 4, 1 &gt; &gt;</type>
+        <definition>MUDA_INLINE MUDA_GENERIC Eigen::Map&lt; const Eigen::Matrix&lt; float, 4, 1 &gt; &gt; muda::eigen::as_eigen</definition>
+        <argsstring>(const float4 &amp;val)</argsstring>
+        <name>as_eigen</name>
+        <qualifiedname>muda::eigen::as_eigen</qualifiedname>
+        <param>
+          <type>const float4 &amp;</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/eigen/as_eigen.h" line="33" column="41" bodyfile="src/muda/ext/eigen/as_eigen.h" bodystart="33" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="function" id="as__eigen_8h_1aa6b016714af98a8566f38f343434cf35" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>MUDA_INLINE MUDA_GENERIC Eigen::Map&lt; Eigen::Matrix&lt; double, 2, 1 &gt; &gt;</type>
+        <definition>MUDA_INLINE MUDA_GENERIC Eigen::Map&lt; Eigen::Matrix&lt; double, 2, 1 &gt; &gt; muda::eigen::as_eigen</definition>
+        <argsstring>(double2 &amp;val)</argsstring>
+        <name>as_eigen</name>
+        <qualifiedname>muda::eigen::as_eigen</qualifiedname>
+        <param>
+          <type>double2 &amp;</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/eigen/as_eigen.h" line="39" column="41" bodyfile="src/muda/ext/eigen/as_eigen.h" bodystart="39" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="as__eigen_8h_1a68e562a7571c959c3ae1b38e3a0cf7a8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>MUDA_INLINE MUDA_GENERIC Eigen::Map&lt; const Eigen::Matrix&lt; double, 2, 1 &gt; &gt;</type>
+        <definition>MUDA_INLINE MUDA_GENERIC Eigen::Map&lt; const Eigen::Matrix&lt; double, 2, 1 &gt; &gt; muda::eigen::as_eigen</definition>
+        <argsstring>(const double2 &amp;val)</argsstring>
+        <name>as_eigen</name>
+        <qualifiedname>muda::eigen::as_eigen</qualifiedname>
+        <param>
+          <type>const double2 &amp;</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/eigen/as_eigen.h" line="43" column="41" bodyfile="src/muda/ext/eigen/as_eigen.h" bodystart="43" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="as__eigen_8h_1a2d5eaaf2be4670413a030e792f54bf4d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>MUDA_INLINE MUDA_GENERIC Eigen::Map&lt; Eigen::Matrix&lt; double, 3, 1 &gt; &gt;</type>
+        <definition>MUDA_INLINE MUDA_GENERIC Eigen::Map&lt; Eigen::Matrix&lt; double, 3, 1 &gt; &gt; muda::eigen::as_eigen</definition>
+        <argsstring>(double3 &amp;val)</argsstring>
+        <name>as_eigen</name>
+        <qualifiedname>muda::eigen::as_eigen</qualifiedname>
+        <param>
+          <type>double3 &amp;</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/eigen/as_eigen.h" line="49" column="41" bodyfile="src/muda/ext/eigen/as_eigen.h" bodystart="49" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="function" id="as__eigen_8h_1a6eca1b8e3eb96a2791ce083b16e4792d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>MUDA_INLINE MUDA_GENERIC Eigen::Map&lt; const Eigen::Matrix&lt; double, 3, 1 &gt; &gt;</type>
+        <definition>MUDA_INLINE MUDA_GENERIC Eigen::Map&lt; const Eigen::Matrix&lt; double, 3, 1 &gt; &gt; muda::eigen::as_eigen</definition>
+        <argsstring>(const double3 &amp;val)</argsstring>
+        <name>as_eigen</name>
+        <qualifiedname>muda::eigen::as_eigen</qualifiedname>
+        <param>
+          <type>const double3 &amp;</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/eigen/as_eigen.h" line="53" column="41" bodyfile="src/muda/ext/eigen/as_eigen.h" bodystart="53" bodyend="57"/>
+      </memberdef>
+      <memberdef kind="function" id="as__eigen_8h_1ab53f278651198396ee5f977b66242e1d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>MUDA_INLINE MUDA_GENERIC Eigen::Map&lt; Eigen::Matrix&lt; double, 4, 1 &gt; &gt;</type>
+        <definition>MUDA_INLINE MUDA_GENERIC Eigen::Map&lt; Eigen::Matrix&lt; double, 4, 1 &gt; &gt; muda::eigen::as_eigen</definition>
+        <argsstring>(double4 &amp;val)</argsstring>
+        <name>as_eigen</name>
+        <qualifiedname>muda::eigen::as_eigen</qualifiedname>
+        <param>
+          <type>double4 &amp;</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/eigen/as_eigen.h" line="59" column="41" bodyfile="src/muda/ext/eigen/as_eigen.h" bodystart="59" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="function" id="as__eigen_8h_1a86d0c7865a85380013272f53952f46e0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>MUDA_INLINE MUDA_GENERIC Eigen::Map&lt; const Eigen::Matrix&lt; double, 4, 1 &gt; &gt;</type>
+        <definition>MUDA_INLINE MUDA_GENERIC Eigen::Map&lt; const Eigen::Matrix&lt; double, 4, 1 &gt; &gt; muda::eigen::as_eigen</definition>
+        <argsstring>(const double4 &amp;val)</argsstring>
+        <name>as_eigen</name>
+        <qualifiedname>muda::eigen::as_eigen</qualifiedname>
+        <param>
+          <type>const double4 &amp;</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/eigen/as_eigen.h" line="63" column="41" bodyfile="src/muda/ext/eigen/as_eigen.h" bodystart="63" bodyend="67"/>
+      </memberdef>
+      <memberdef kind="function" id="as__eigen_8h_1ae390acd5e9e458c7fa593625f0cf7574" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>MUDA_INLINE MUDA_GENERIC Eigen::Map&lt; Eigen::Matrix&lt; int, 2, 1 &gt; &gt;</type>
+        <definition>MUDA_INLINE MUDA_GENERIC Eigen::Map&lt; Eigen::Matrix&lt; int, 2, 1 &gt; &gt; muda::eigen::as_eigen</definition>
+        <argsstring>(int2 &amp;val)</argsstring>
+        <name>as_eigen</name>
+        <qualifiedname>muda::eigen::as_eigen</qualifiedname>
+        <param>
+          <type>int2 &amp;</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/eigen/as_eigen.h" line="69" column="41" bodyfile="src/muda/ext/eigen/as_eigen.h" bodystart="69" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="function" id="as__eigen_8h_1a78c618f6aad0a9f3a737500c3a263bc4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>MUDA_INLINE MUDA_GENERIC Eigen::Map&lt; const Eigen::Matrix&lt; int, 2, 1 &gt; &gt;</type>
+        <definition>MUDA_INLINE MUDA_GENERIC Eigen::Map&lt; const Eigen::Matrix&lt; int, 2, 1 &gt; &gt; muda::eigen::as_eigen</definition>
+        <argsstring>(const int2 &amp;val)</argsstring>
+        <name>as_eigen</name>
+        <qualifiedname>muda::eigen::as_eigen</qualifiedname>
+        <param>
+          <type>const int2 &amp;</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/eigen/as_eigen.h" line="73" column="41" bodyfile="src/muda/ext/eigen/as_eigen.h" bodystart="73" bodyend="77"/>
+      </memberdef>
+      <memberdef kind="function" id="as__eigen_8h_1afb8ab611317b7e9d24a168f041998498" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>MUDA_INLINE MUDA_GENERIC Eigen::Map&lt; Eigen::Matrix&lt; int, 3, 1 &gt; &gt;</type>
+        <definition>MUDA_INLINE MUDA_GENERIC Eigen::Map&lt; Eigen::Matrix&lt; int, 3, 1 &gt; &gt; muda::eigen::as_eigen</definition>
+        <argsstring>(int3 &amp;val)</argsstring>
+        <name>as_eigen</name>
+        <qualifiedname>muda::eigen::as_eigen</qualifiedname>
+        <param>
+          <type>int3 &amp;</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/eigen/as_eigen.h" line="79" column="41" bodyfile="src/muda/ext/eigen/as_eigen.h" bodystart="79" bodyend="82"/>
+      </memberdef>
+      <memberdef kind="function" id="as__eigen_8h_1a1cac354fb5155fb047b561ddf70ba73d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>MUDA_INLINE MUDA_GENERIC Eigen::Map&lt; const Eigen::Matrix&lt; int, 3, 1 &gt; &gt;</type>
+        <definition>MUDA_INLINE MUDA_GENERIC Eigen::Map&lt; const Eigen::Matrix&lt; int, 3, 1 &gt; &gt; muda::eigen::as_eigen</definition>
+        <argsstring>(const int3 &amp;val)</argsstring>
+        <name>as_eigen</name>
+        <qualifiedname>muda::eigen::as_eigen</qualifiedname>
+        <param>
+          <type>const int3 &amp;</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/eigen/as_eigen.h" line="83" column="41" bodyfile="src/muda/ext/eigen/as_eigen.h" bodystart="83" bodyend="87"/>
+      </memberdef>
+      <memberdef kind="function" id="as__eigen_8h_1abc857cd22db3b2903106e5a8cebc32ad" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>MUDA_INLINE MUDA_GENERIC Eigen::Map&lt; Eigen::Matrix&lt; int, 4, 1 &gt; &gt;</type>
+        <definition>MUDA_INLINE MUDA_GENERIC Eigen::Map&lt; Eigen::Matrix&lt; int, 4, 1 &gt; &gt; muda::eigen::as_eigen</definition>
+        <argsstring>(int4 &amp;val)</argsstring>
+        <name>as_eigen</name>
+        <qualifiedname>muda::eigen::as_eigen</qualifiedname>
+        <param>
+          <type>int4 &amp;</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/eigen/as_eigen.h" line="89" column="41" bodyfile="src/muda/ext/eigen/as_eigen.h" bodystart="89" bodyend="92"/>
+      </memberdef>
+      <memberdef kind="function" id="as__eigen_8h_1a93c0a03541f622c517b519dd9b6de12e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>MUDA_INLINE MUDA_GENERIC Eigen::Map&lt; const Eigen::Matrix&lt; int, 4, 1 &gt; &gt;</type>
+        <definition>MUDA_INLINE MUDA_GENERIC Eigen::Map&lt; const Eigen::Matrix&lt; int, 4, 1 &gt; &gt; muda::eigen::as_eigen</definition>
+        <argsstring>(const int4 &amp;val)</argsstring>
+        <name>as_eigen</name>
+        <qualifiedname>muda::eigen::as_eigen</qualifiedname>
+        <param>
+          <type>const int4 &amp;</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/eigen/as_eigen.h" line="93" column="41" bodyfile="src/muda/ext/eigen/as_eigen.h" bodystart="93" bodyend="97"/>
+      </memberdef>
+      <memberdef kind="function" id="as__eigen_8h_1a25374c3821226d0ec7bc58c203957359" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>MUDA_INLINE MUDA_GENERIC Eigen::Map&lt; Eigen::Matrix&lt; unsigned int, 2, 1 &gt; &gt;</type>
+        <definition>MUDA_INLINE MUDA_GENERIC Eigen::Map&lt; Eigen::Matrix&lt; unsigned int, 2, 1 &gt; &gt; muda::eigen::as_eigen</definition>
+        <argsstring>(uint2 &amp;val)</argsstring>
+        <name>as_eigen</name>
+        <qualifiedname>muda::eigen::as_eigen</qualifiedname>
+        <param>
+          <type>uint2 &amp;</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/eigen/as_eigen.h" line="99" column="41" bodyfile="src/muda/ext/eigen/as_eigen.h" bodystart="99" bodyend="103"/>
+      </memberdef>
+      <memberdef kind="function" id="as__eigen_8h_1a0ef69725979acdb1bf4e240e77257f02" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>MUDA_INLINE MUDA_GENERIC Eigen::Map&lt; const Eigen::Matrix&lt; unsigned int, 2, 1 &gt; &gt;</type>
+        <definition>MUDA_INLINE MUDA_GENERIC Eigen::Map&lt; const Eigen::Matrix&lt; unsigned int, 2, 1 &gt; &gt; muda::eigen::as_eigen</definition>
+        <argsstring>(const uint2 &amp;val)</argsstring>
+        <name>as_eigen</name>
+        <qualifiedname>muda::eigen::as_eigen</qualifiedname>
+        <param>
+          <type>const uint2 &amp;</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/eigen/as_eigen.h" line="104" column="41" bodyfile="src/muda/ext/eigen/as_eigen.h" bodystart="104" bodyend="108"/>
+      </memberdef>
+      <memberdef kind="function" id="as__eigen_8h_1a80b5adc0b9d0cda35812eaad8d3214d8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>MUDA_INLINE MUDA_GENERIC Eigen::Map&lt; Eigen::Matrix&lt; unsigned int, 3, 1 &gt; &gt;</type>
+        <definition>MUDA_INLINE MUDA_GENERIC Eigen::Map&lt; Eigen::Matrix&lt; unsigned int, 3, 1 &gt; &gt; muda::eigen::as_eigen</definition>
+        <argsstring>(uint3 &amp;val)</argsstring>
+        <name>as_eigen</name>
+        <qualifiedname>muda::eigen::as_eigen</qualifiedname>
+        <param>
+          <type>uint3 &amp;</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/eigen/as_eigen.h" line="110" column="41" bodyfile="src/muda/ext/eigen/as_eigen.h" bodystart="110" bodyend="114"/>
+      </memberdef>
+      <memberdef kind="function" id="as__eigen_8h_1abcff9f58e548ba76b023107a37414652" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>MUDA_INLINE MUDA_GENERIC Eigen::Map&lt; const Eigen::Matrix&lt; unsigned int, 3, 1 &gt; &gt;</type>
+        <definition>MUDA_INLINE MUDA_GENERIC Eigen::Map&lt; const Eigen::Matrix&lt; unsigned int, 3, 1 &gt; &gt; muda::eigen::as_eigen</definition>
+        <argsstring>(const uint3 &amp;val)</argsstring>
+        <name>as_eigen</name>
+        <qualifiedname>muda::eigen::as_eigen</qualifiedname>
+        <param>
+          <type>const uint3 &amp;</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/eigen/as_eigen.h" line="115" column="41" bodyfile="src/muda/ext/eigen/as_eigen.h" bodystart="115" bodyend="119"/>
+      </memberdef>
+      <memberdef kind="function" id="as__eigen_8h_1abeb66b398ff68f0b5d6cd064ee37f7cc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>MUDA_INLINE MUDA_GENERIC Eigen::Map&lt; Eigen::Matrix&lt; unsigned int, 4, 1 &gt; &gt;</type>
+        <definition>MUDA_INLINE MUDA_GENERIC Eigen::Map&lt; Eigen::Matrix&lt; unsigned int, 4, 1 &gt; &gt; muda::eigen::as_eigen</definition>
+        <argsstring>(uint4 &amp;val)</argsstring>
+        <name>as_eigen</name>
+        <qualifiedname>muda::eigen::as_eigen</qualifiedname>
+        <param>
+          <type>uint4 &amp;</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/eigen/as_eigen.h" line="121" column="41" bodyfile="src/muda/ext/eigen/as_eigen.h" bodystart="121" bodyend="125"/>
+      </memberdef>
+      <memberdef kind="function" id="as__eigen_8h_1a94969d9593c69a87072e275195f1c3a1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>MUDA_INLINE MUDA_GENERIC Eigen::Map&lt; const Eigen::Matrix&lt; unsigned int, 4, 1 &gt; &gt;</type>
+        <definition>MUDA_INLINE MUDA_GENERIC Eigen::Map&lt; const Eigen::Matrix&lt; unsigned int, 4, 1 &gt; &gt; muda::eigen::as_eigen</definition>
+        <argsstring>(const uint4 &amp;val)</argsstring>
+        <name>as_eigen</name>
+        <qualifiedname>muda::eigen::as_eigen</qualifiedname>
+        <param>
+          <type>const uint4 &amp;</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/eigen/as_eigen.h" line="126" column="41" bodyfile="src/muda/ext/eigen/as_eigen.h" bodystart="126" bodyend="130"/>
+      </memberdef>
+      <memberdef kind="function" id="as__eigen_8h_1a19b5b17e08f4bbeef774face46c51975" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>MUDA_INLINE MUDA_GENERIC Eigen::Map&lt; Eigen::Matrix&lt; short, 2, 1 &gt; &gt;</type>
+        <definition>MUDA_INLINE MUDA_GENERIC Eigen::Map&lt; Eigen::Matrix&lt; short, 2, 1 &gt; &gt; muda::eigen::as_eigen</definition>
+        <argsstring>(short2 &amp;val)</argsstring>
+        <name>as_eigen</name>
+        <qualifiedname>muda::eigen::as_eigen</qualifiedname>
+        <param>
+          <type>short2 &amp;</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/eigen/as_eigen.h" line="132" column="41" bodyfile="src/muda/ext/eigen/as_eigen.h" bodystart="132" bodyend="135"/>
+      </memberdef>
+      <memberdef kind="function" id="as__eigen_8h_1a1d5c2eb1dde09b36ea4d8f21ad182880" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>MUDA_INLINE MUDA_GENERIC Eigen::Map&lt; const Eigen::Matrix&lt; short, 2, 1 &gt; &gt;</type>
+        <definition>MUDA_INLINE MUDA_GENERIC Eigen::Map&lt; const Eigen::Matrix&lt; short, 2, 1 &gt; &gt; muda::eigen::as_eigen</definition>
+        <argsstring>(const short2 &amp;val)</argsstring>
+        <name>as_eigen</name>
+        <qualifiedname>muda::eigen::as_eigen</qualifiedname>
+        <param>
+          <type>const short2 &amp;</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/eigen/as_eigen.h" line="136" column="41" bodyfile="src/muda/ext/eigen/as_eigen.h" bodystart="136" bodyend="140"/>
+      </memberdef>
+      <memberdef kind="function" id="as__eigen_8h_1adfdb3734517eeb443657e9f8899ab608" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>MUDA_INLINE MUDA_GENERIC Eigen::Map&lt; Eigen::Matrix&lt; short, 3, 1 &gt; &gt;</type>
+        <definition>MUDA_INLINE MUDA_GENERIC Eigen::Map&lt; Eigen::Matrix&lt; short, 3, 1 &gt; &gt; muda::eigen::as_eigen</definition>
+        <argsstring>(short3 &amp;val)</argsstring>
+        <name>as_eigen</name>
+        <qualifiedname>muda::eigen::as_eigen</qualifiedname>
+        <param>
+          <type>short3 &amp;</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/eigen/as_eigen.h" line="142" column="41" bodyfile="src/muda/ext/eigen/as_eigen.h" bodystart="142" bodyend="145"/>
+      </memberdef>
+      <memberdef kind="function" id="as__eigen_8h_1a0cea620de4f59f60b540841d55dcbba4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>MUDA_INLINE MUDA_GENERIC Eigen::Map&lt; const Eigen::Matrix&lt; short, 3, 1 &gt; &gt;</type>
+        <definition>MUDA_INLINE MUDA_GENERIC Eigen::Map&lt; const Eigen::Matrix&lt; short, 3, 1 &gt; &gt; muda::eigen::as_eigen</definition>
+        <argsstring>(const short3 &amp;val)</argsstring>
+        <name>as_eigen</name>
+        <qualifiedname>muda::eigen::as_eigen</qualifiedname>
+        <param>
+          <type>const short3 &amp;</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/eigen/as_eigen.h" line="146" column="41" bodyfile="src/muda/ext/eigen/as_eigen.h" bodystart="146" bodyend="150"/>
+      </memberdef>
+      <memberdef kind="function" id="as__eigen_8h_1a994dcdb8ab80be891be95dd3b497380a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>MUDA_INLINE MUDA_GENERIC Eigen::Map&lt; Eigen::Matrix&lt; short, 4, 1 &gt; &gt;</type>
+        <definition>MUDA_INLINE MUDA_GENERIC Eigen::Map&lt; Eigen::Matrix&lt; short, 4, 1 &gt; &gt; muda::eigen::as_eigen</definition>
+        <argsstring>(short4 &amp;val)</argsstring>
+        <name>as_eigen</name>
+        <qualifiedname>muda::eigen::as_eigen</qualifiedname>
+        <param>
+          <type>short4 &amp;</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/eigen/as_eigen.h" line="152" column="41" bodyfile="src/muda/ext/eigen/as_eigen.h" bodystart="152" bodyend="155"/>
+      </memberdef>
+      <memberdef kind="function" id="as__eigen_8h_1a9d5ac966f0e4e3471fa41073af605798" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>MUDA_INLINE MUDA_GENERIC Eigen::Map&lt; const Eigen::Matrix&lt; short, 4, 1 &gt; &gt;</type>
+        <definition>MUDA_INLINE MUDA_GENERIC Eigen::Map&lt; const Eigen::Matrix&lt; short, 4, 1 &gt; &gt; muda::eigen::as_eigen</definition>
+        <argsstring>(const short4 &amp;val)</argsstring>
+        <name>as_eigen</name>
+        <qualifiedname>muda::eigen::as_eigen</qualifiedname>
+        <param>
+          <type>const short4 &amp;</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/eigen/as_eigen.h" line="156" column="41" bodyfile="src/muda/ext/eigen/as_eigen.h" bodystart="156" bodyend="160"/>
+      </memberdef>
+      <memberdef kind="function" id="as__eigen_8h_1ad7ba7ee0cfddba6a936fd2ac6123f6fb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>MUDA_INLINE MUDA_GENERIC Eigen::Map&lt; Eigen::Matrix&lt; unsigned short, 2, 1 &gt; &gt;</type>
+        <definition>MUDA_INLINE MUDA_GENERIC Eigen::Map&lt; Eigen::Matrix&lt; unsigned short, 2, 1 &gt; &gt; muda::eigen::as_eigen</definition>
+        <argsstring>(ushort2 &amp;val)</argsstring>
+        <name>as_eigen</name>
+        <qualifiedname>muda::eigen::as_eigen</qualifiedname>
+        <param>
+          <type>ushort2 &amp;</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/eigen/as_eigen.h" line="162" column="41" bodyfile="src/muda/ext/eigen/as_eigen.h" bodystart="162" bodyend="166"/>
+      </memberdef>
+      <memberdef kind="function" id="as__eigen_8h_1a968fb96a6b3f67d15e85d690c21f229c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>MUDA_INLINE MUDA_GENERIC Eigen::Map&lt; const Eigen::Matrix&lt; unsigned short, 2, 1 &gt; &gt;</type>
+        <definition>MUDA_INLINE MUDA_GENERIC Eigen::Map&lt; const Eigen::Matrix&lt; unsigned short, 2, 1 &gt; &gt; muda::eigen::as_eigen</definition>
+        <argsstring>(const ushort2 &amp;val)</argsstring>
+        <name>as_eigen</name>
+        <qualifiedname>muda::eigen::as_eigen</qualifiedname>
+        <param>
+          <type>const ushort2 &amp;</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/eigen/as_eigen.h" line="167" column="41" bodyfile="src/muda/ext/eigen/as_eigen.h" bodystart="167" bodyend="171"/>
+      </memberdef>
+      <memberdef kind="function" id="as__eigen_8h_1a7d2908660982690aa99afc8213e6ba81" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>MUDA_INLINE MUDA_GENERIC Eigen::Map&lt; Eigen::Matrix&lt; unsigned short, 3, 1 &gt; &gt;</type>
+        <definition>MUDA_INLINE MUDA_GENERIC Eigen::Map&lt; Eigen::Matrix&lt; unsigned short, 3, 1 &gt; &gt; muda::eigen::as_eigen</definition>
+        <argsstring>(ushort3 &amp;val)</argsstring>
+        <name>as_eigen</name>
+        <qualifiedname>muda::eigen::as_eigen</qualifiedname>
+        <param>
+          <type>ushort3 &amp;</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/eigen/as_eigen.h" line="173" column="41" bodyfile="src/muda/ext/eigen/as_eigen.h" bodystart="173" bodyend="177"/>
+      </memberdef>
+      <memberdef kind="function" id="as__eigen_8h_1a609339ab6b6c3312eafa4577762fb42f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>MUDA_INLINE MUDA_GENERIC Eigen::Map&lt; const Eigen::Matrix&lt; unsigned short, 3, 1 &gt; &gt;</type>
+        <definition>MUDA_INLINE MUDA_GENERIC Eigen::Map&lt; const Eigen::Matrix&lt; unsigned short, 3, 1 &gt; &gt; muda::eigen::as_eigen</definition>
+        <argsstring>(const ushort3 &amp;val)</argsstring>
+        <name>as_eigen</name>
+        <qualifiedname>muda::eigen::as_eigen</qualifiedname>
+        <param>
+          <type>const ushort3 &amp;</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/eigen/as_eigen.h" line="178" column="41" bodyfile="src/muda/ext/eigen/as_eigen.h" bodystart="178" bodyend="182"/>
+      </memberdef>
+      <memberdef kind="function" id="as__eigen_8h_1af16f7e638902a83aa4330fe6387c813f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>MUDA_INLINE MUDA_GENERIC Eigen::Map&lt; Eigen::Matrix&lt; unsigned short, 4, 1 &gt; &gt;</type>
+        <definition>MUDA_INLINE MUDA_GENERIC Eigen::Map&lt; Eigen::Matrix&lt; unsigned short, 4, 1 &gt; &gt; muda::eigen::as_eigen</definition>
+        <argsstring>(ushort4 &amp;val)</argsstring>
+        <name>as_eigen</name>
+        <qualifiedname>muda::eigen::as_eigen</qualifiedname>
+        <param>
+          <type>ushort4 &amp;</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/eigen/as_eigen.h" line="184" column="41" bodyfile="src/muda/ext/eigen/as_eigen.h" bodystart="184" bodyend="188"/>
+      </memberdef>
+      <memberdef kind="function" id="as__eigen_8h_1ad1a953c44e64aa13db711f214077b274" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>MUDA_INLINE MUDA_GENERIC Eigen::Map&lt; const Eigen::Matrix&lt; unsigned short, 4, 1 &gt; &gt;</type>
+        <definition>MUDA_INLINE MUDA_GENERIC Eigen::Map&lt; const Eigen::Matrix&lt; unsigned short, 4, 1 &gt; &gt; muda::eigen::as_eigen</definition>
+        <argsstring>(const ushort4 &amp;val)</argsstring>
+        <name>as_eigen</name>
+        <qualifiedname>muda::eigen::as_eigen</qualifiedname>
+        <param>
+          <type>const ushort4 &amp;</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/eigen/as_eigen.h" line="189" column="41" bodyfile="src/muda/ext/eigen/as_eigen.h" bodystart="189" bodyend="193"/>
+      </memberdef>
+      <memberdef kind="function" id="as__eigen_8h_1a8ee47dd5033b22decf7095f3966a0d78" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>MUDA_INLINE MUDA_GENERIC Eigen::Map&lt; Eigen::Matrix&lt; char, 2, 1 &gt; &gt;</type>
+        <definition>MUDA_INLINE MUDA_GENERIC Eigen::Map&lt; Eigen::Matrix&lt; char, 2, 1 &gt; &gt; muda::eigen::as_eigen</definition>
+        <argsstring>(char2 &amp;val)</argsstring>
+        <name>as_eigen</name>
+        <qualifiedname>muda::eigen::as_eigen</qualifiedname>
+        <param>
+          <type>char2 &amp;</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/eigen/as_eigen.h" line="195" column="41" bodyfile="src/muda/ext/eigen/as_eigen.h" bodystart="195" bodyend="198"/>
+      </memberdef>
+      <memberdef kind="function" id="as__eigen_8h_1a334baac08426199a4c72a4bbe349fe59" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>MUDA_INLINE MUDA_GENERIC Eigen::Map&lt; const Eigen::Matrix&lt; char, 2, 1 &gt; &gt;</type>
+        <definition>MUDA_INLINE MUDA_GENERIC Eigen::Map&lt; const Eigen::Matrix&lt; char, 2, 1 &gt; &gt; muda::eigen::as_eigen</definition>
+        <argsstring>(const char2 &amp;val)</argsstring>
+        <name>as_eigen</name>
+        <qualifiedname>muda::eigen::as_eigen</qualifiedname>
+        <param>
+          <type>const char2 &amp;</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/eigen/as_eigen.h" line="199" column="41" bodyfile="src/muda/ext/eigen/as_eigen.h" bodystart="199" bodyend="203"/>
+      </memberdef>
+      <memberdef kind="function" id="as__eigen_8h_1ab7dd802326b299c8c8fa9c4a101b447d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>MUDA_INLINE MUDA_GENERIC Eigen::Map&lt; Eigen::Matrix&lt; char, 3, 1 &gt; &gt;</type>
+        <definition>MUDA_INLINE MUDA_GENERIC Eigen::Map&lt; Eigen::Matrix&lt; char, 3, 1 &gt; &gt; muda::eigen::as_eigen</definition>
+        <argsstring>(char3 &amp;val)</argsstring>
+        <name>as_eigen</name>
+        <qualifiedname>muda::eigen::as_eigen</qualifiedname>
+        <param>
+          <type>char3 &amp;</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/eigen/as_eigen.h" line="205" column="41" bodyfile="src/muda/ext/eigen/as_eigen.h" bodystart="205" bodyend="208"/>
+      </memberdef>
+      <memberdef kind="function" id="as__eigen_8h_1af2363762ffd2ae78547bdffcb668b355" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>MUDA_INLINE MUDA_GENERIC Eigen::Map&lt; const Eigen::Matrix&lt; char, 3, 1 &gt; &gt;</type>
+        <definition>MUDA_INLINE MUDA_GENERIC Eigen::Map&lt; const Eigen::Matrix&lt; char, 3, 1 &gt; &gt; muda::eigen::as_eigen</definition>
+        <argsstring>(const char3 &amp;val)</argsstring>
+        <name>as_eigen</name>
+        <qualifiedname>muda::eigen::as_eigen</qualifiedname>
+        <param>
+          <type>const char3 &amp;</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/eigen/as_eigen.h" line="209" column="41" bodyfile="src/muda/ext/eigen/as_eigen.h" bodystart="209" bodyend="213"/>
+      </memberdef>
+      <memberdef kind="function" id="as__eigen_8h_1ae8cf3dc468b923224ea1ee5e48361feb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>MUDA_INLINE MUDA_GENERIC Eigen::Map&lt; Eigen::Matrix&lt; char, 4, 1 &gt; &gt;</type>
+        <definition>MUDA_INLINE MUDA_GENERIC Eigen::Map&lt; Eigen::Matrix&lt; char, 4, 1 &gt; &gt; muda::eigen::as_eigen</definition>
+        <argsstring>(char4 &amp;val)</argsstring>
+        <name>as_eigen</name>
+        <qualifiedname>muda::eigen::as_eigen</qualifiedname>
+        <param>
+          <type>char4 &amp;</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/eigen/as_eigen.h" line="215" column="41" bodyfile="src/muda/ext/eigen/as_eigen.h" bodystart="215" bodyend="218"/>
+      </memberdef>
+      <memberdef kind="function" id="as__eigen_8h_1ace99a4872753f8cae141bdd19d6ed411" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>MUDA_INLINE MUDA_GENERIC Eigen::Map&lt; const Eigen::Matrix&lt; char, 4, 1 &gt; &gt;</type>
+        <definition>MUDA_INLINE MUDA_GENERIC Eigen::Map&lt; const Eigen::Matrix&lt; char, 4, 1 &gt; &gt; muda::eigen::as_eigen</definition>
+        <argsstring>(const char4 &amp;val)</argsstring>
+        <name>as_eigen</name>
+        <qualifiedname>muda::eigen::as_eigen</qualifiedname>
+        <param>
+          <type>const char4 &amp;</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/eigen/as_eigen.h" line="219" column="41" bodyfile="src/muda/ext/eigen/as_eigen.h" bodystart="219" bodyend="223"/>
+      </memberdef>
+      <memberdef kind="function" id="as__eigen_8h_1a7c15c189984b07c334e304e707d5c5b7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>MUDA_INLINE MUDA_GENERIC Eigen::Map&lt; Eigen::Matrix&lt; unsigned char, 2, 1 &gt; &gt;</type>
+        <definition>MUDA_INLINE MUDA_GENERIC Eigen::Map&lt; Eigen::Matrix&lt; unsigned char, 2, 1 &gt; &gt; muda::eigen::as_eigen</definition>
+        <argsstring>(uchar2 &amp;val)</argsstring>
+        <name>as_eigen</name>
+        <qualifiedname>muda::eigen::as_eigen</qualifiedname>
+        <param>
+          <type>uchar2 &amp;</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/eigen/as_eigen.h" line="225" column="41" bodyfile="src/muda/ext/eigen/as_eigen.h" bodystart="225" bodyend="229"/>
+      </memberdef>
+      <memberdef kind="function" id="as__eigen_8h_1ab3d78ee25e0bca1152df4f94e3d99805" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>MUDA_INLINE MUDA_GENERIC Eigen::Map&lt; const Eigen::Matrix&lt; unsigned char, 2, 1 &gt; &gt;</type>
+        <definition>MUDA_INLINE MUDA_GENERIC Eigen::Map&lt; const Eigen::Matrix&lt; unsigned char, 2, 1 &gt; &gt; muda::eigen::as_eigen</definition>
+        <argsstring>(const uchar2 &amp;val)</argsstring>
+        <name>as_eigen</name>
+        <qualifiedname>muda::eigen::as_eigen</qualifiedname>
+        <param>
+          <type>const uchar2 &amp;</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/eigen/as_eigen.h" line="230" column="41" bodyfile="src/muda/ext/eigen/as_eigen.h" bodystart="230" bodyend="234"/>
+      </memberdef>
+      <memberdef kind="function" id="as__eigen_8h_1a088cd3fa52bfa730621aa90e064d1559" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>MUDA_INLINE MUDA_GENERIC Eigen::Map&lt; Eigen::Matrix&lt; unsigned char, 3, 1 &gt; &gt;</type>
+        <definition>MUDA_INLINE MUDA_GENERIC Eigen::Map&lt; Eigen::Matrix&lt; unsigned char, 3, 1 &gt; &gt; muda::eigen::as_eigen</definition>
+        <argsstring>(uchar3 &amp;val)</argsstring>
+        <name>as_eigen</name>
+        <qualifiedname>muda::eigen::as_eigen</qualifiedname>
+        <param>
+          <type>uchar3 &amp;</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/eigen/as_eigen.h" line="236" column="41" bodyfile="src/muda/ext/eigen/as_eigen.h" bodystart="236" bodyend="240"/>
+      </memberdef>
+      <memberdef kind="function" id="as__eigen_8h_1a72fcb0065b8aaaedb49f9664a1b11d3a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>MUDA_INLINE MUDA_GENERIC Eigen::Map&lt; const Eigen::Matrix&lt; unsigned char, 3, 1 &gt; &gt;</type>
+        <definition>MUDA_INLINE MUDA_GENERIC Eigen::Map&lt; const Eigen::Matrix&lt; unsigned char, 3, 1 &gt; &gt; muda::eigen::as_eigen</definition>
+        <argsstring>(const uchar3 &amp;val)</argsstring>
+        <name>as_eigen</name>
+        <qualifiedname>muda::eigen::as_eigen</qualifiedname>
+        <param>
+          <type>const uchar3 &amp;</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/eigen/as_eigen.h" line="241" column="41" bodyfile="src/muda/ext/eigen/as_eigen.h" bodystart="241" bodyend="245"/>
+      </memberdef>
+      <memberdef kind="function" id="as__eigen_8h_1ac06b6297564cd6facd18871f8f19d0c4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>MUDA_INLINE MUDA_GENERIC Eigen::Map&lt; Eigen::Matrix&lt; unsigned char, 4, 1 &gt; &gt;</type>
+        <definition>MUDA_INLINE MUDA_GENERIC Eigen::Map&lt; Eigen::Matrix&lt; unsigned char, 4, 1 &gt; &gt; muda::eigen::as_eigen</definition>
+        <argsstring>(uchar4 &amp;val)</argsstring>
+        <name>as_eigen</name>
+        <qualifiedname>muda::eigen::as_eigen</qualifiedname>
+        <param>
+          <type>uchar4 &amp;</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/eigen/as_eigen.h" line="247" column="41" bodyfile="src/muda/ext/eigen/as_eigen.h" bodystart="247" bodyend="251"/>
+      </memberdef>
+      <memberdef kind="function" id="as__eigen_8h_1a8d633d6423cb1a59c9572d73054cdcf5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>MUDA_INLINE MUDA_GENERIC Eigen::Map&lt; const Eigen::Matrix&lt; unsigned char, 4, 1 &gt; &gt;</type>
+        <definition>MUDA_INLINE MUDA_GENERIC Eigen::Map&lt; const Eigen::Matrix&lt; unsigned char, 4, 1 &gt; &gt; muda::eigen::as_eigen</definition>
+        <argsstring>(const uchar4 &amp;val)</argsstring>
+        <name>as_eigen</name>
+        <qualifiedname>muda::eigen::as_eigen</qualifiedname>
+        <param>
+          <type>const uchar4 &amp;</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/eigen/as_eigen.h" line="252" column="41" bodyfile="src/muda/ext/eigen/as_eigen.h" bodystart="252" bodyend="256"/>
+      </memberdef>
+      <memberdef kind="function" id="as__eigen_8h_1ae52d47d1be1638388d6f757efdb92a5c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>MUDA_INLINE MUDA_GENERIC Eigen::Map&lt; Eigen::Matrix&lt; long int, 2, 1 &gt; &gt;</type>
+        <definition>MUDA_INLINE MUDA_GENERIC Eigen::Map&lt; Eigen::Matrix&lt; long int, 2, 1 &gt; &gt; muda::eigen::as_eigen</definition>
+        <argsstring>(long2 &amp;val)</argsstring>
+        <name>as_eigen</name>
+        <qualifiedname>muda::eigen::as_eigen</qualifiedname>
+        <param>
+          <type>long2 &amp;</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/eigen/as_eigen.h" line="258" column="41" bodyfile="src/muda/ext/eigen/as_eigen.h" bodystart="258" bodyend="261"/>
+      </memberdef>
+      <memberdef kind="function" id="as__eigen_8h_1a938ca287e506b3fb683df3c008844629" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>MUDA_INLINE MUDA_GENERIC Eigen::Map&lt; const Eigen::Matrix&lt; long int, 2, 1 &gt; &gt;</type>
+        <definition>MUDA_INLINE MUDA_GENERIC Eigen::Map&lt; const Eigen::Matrix&lt; long int, 2, 1 &gt; &gt; muda::eigen::as_eigen</definition>
+        <argsstring>(const long2 &amp;val)</argsstring>
+        <name>as_eigen</name>
+        <qualifiedname>muda::eigen::as_eigen</qualifiedname>
+        <param>
+          <type>const long2 &amp;</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/eigen/as_eigen.h" line="262" column="41" bodyfile="src/muda/ext/eigen/as_eigen.h" bodystart="262" bodyend="266"/>
+      </memberdef>
+      <memberdef kind="function" id="as__eigen_8h_1a364f42f36fdf06095d9887fab11b9602" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>MUDA_INLINE MUDA_GENERIC Eigen::Map&lt; Eigen::Matrix&lt; long int, 3, 1 &gt; &gt;</type>
+        <definition>MUDA_INLINE MUDA_GENERIC Eigen::Map&lt; Eigen::Matrix&lt; long int, 3, 1 &gt; &gt; muda::eigen::as_eigen</definition>
+        <argsstring>(long3 &amp;val)</argsstring>
+        <name>as_eigen</name>
+        <qualifiedname>muda::eigen::as_eigen</qualifiedname>
+        <param>
+          <type>long3 &amp;</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/eigen/as_eigen.h" line="268" column="41" bodyfile="src/muda/ext/eigen/as_eigen.h" bodystart="268" bodyend="271"/>
+      </memberdef>
+      <memberdef kind="function" id="as__eigen_8h_1ab23dd5003c0e5a93ae01ceca1f72782c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>MUDA_INLINE MUDA_GENERIC Eigen::Map&lt; const Eigen::Matrix&lt; long int, 3, 1 &gt; &gt;</type>
+        <definition>MUDA_INLINE MUDA_GENERIC Eigen::Map&lt; const Eigen::Matrix&lt; long int, 3, 1 &gt; &gt; muda::eigen::as_eigen</definition>
+        <argsstring>(const long3 &amp;val)</argsstring>
+        <name>as_eigen</name>
+        <qualifiedname>muda::eigen::as_eigen</qualifiedname>
+        <param>
+          <type>const long3 &amp;</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/eigen/as_eigen.h" line="272" column="41" bodyfile="src/muda/ext/eigen/as_eigen.h" bodystart="272" bodyend="276"/>
+      </memberdef>
+      <memberdef kind="function" id="as__eigen_8h_1a4a8bb15715c72646349c941dc56e7c0d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>MUDA_INLINE MUDA_GENERIC Eigen::Map&lt; Eigen::Matrix&lt; long int, 4, 1 &gt; &gt;</type>
+        <definition>MUDA_INLINE MUDA_GENERIC Eigen::Map&lt; Eigen::Matrix&lt; long int, 4, 1 &gt; &gt; muda::eigen::as_eigen</definition>
+        <argsstring>(long4 &amp;val)</argsstring>
+        <name>as_eigen</name>
+        <qualifiedname>muda::eigen::as_eigen</qualifiedname>
+        <param>
+          <type>long4 &amp;</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/eigen/as_eigen.h" line="278" column="41" bodyfile="src/muda/ext/eigen/as_eigen.h" bodystart="278" bodyend="281"/>
+      </memberdef>
+      <memberdef kind="function" id="as__eigen_8h_1a37d1cf1b002a065608778c34c1bd8664" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>MUDA_INLINE MUDA_GENERIC Eigen::Map&lt; const Eigen::Matrix&lt; long int, 4, 1 &gt; &gt;</type>
+        <definition>MUDA_INLINE MUDA_GENERIC Eigen::Map&lt; const Eigen::Matrix&lt; long int, 4, 1 &gt; &gt; muda::eigen::as_eigen</definition>
+        <argsstring>(const long4 &amp;val)</argsstring>
+        <name>as_eigen</name>
+        <qualifiedname>muda::eigen::as_eigen</qualifiedname>
+        <param>
+          <type>const long4 &amp;</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/eigen/as_eigen.h" line="282" column="41" bodyfile="src/muda/ext/eigen/as_eigen.h" bodystart="282" bodyend="286"/>
+      </memberdef>
+      <memberdef kind="function" id="as__eigen_8h_1a1f0e37f6ad866f6fdad84ed659a7e782" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>MUDA_INLINE MUDA_GENERIC Eigen::Map&lt; Eigen::Matrix&lt; unsigned long int, 2, 1 &gt; &gt;</type>
+        <definition>MUDA_INLINE MUDA_GENERIC Eigen::Map&lt; Eigen::Matrix&lt; unsigned long int, 2, 1 &gt; &gt; muda::eigen::as_eigen</definition>
+        <argsstring>(ulong2 &amp;val)</argsstring>
+        <name>as_eigen</name>
+        <qualifiedname>muda::eigen::as_eigen</qualifiedname>
+        <param>
+          <type>ulong2 &amp;</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/eigen/as_eigen.h" line="288" column="41" bodyfile="src/muda/ext/eigen/as_eigen.h" bodystart="288" bodyend="292"/>
+      </memberdef>
+      <memberdef kind="function" id="as__eigen_8h_1ab15b5aedf8876e4faeb11115ad02aaa4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>MUDA_INLINE MUDA_GENERIC Eigen::Map&lt; const Eigen::Matrix&lt; unsigned long int, 2, 1 &gt; &gt;</type>
+        <definition>MUDA_INLINE MUDA_GENERIC Eigen::Map&lt; const Eigen::Matrix&lt; unsigned long int, 2, 1 &gt; &gt; muda::eigen::as_eigen</definition>
+        <argsstring>(const ulong2 &amp;val)</argsstring>
+        <name>as_eigen</name>
+        <qualifiedname>muda::eigen::as_eigen</qualifiedname>
+        <param>
+          <type>const ulong2 &amp;</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/eigen/as_eigen.h" line="293" column="41" bodyfile="src/muda/ext/eigen/as_eigen.h" bodystart="293" bodyend="297"/>
+      </memberdef>
+      <memberdef kind="function" id="as__eigen_8h_1aae4de20188ea23325aea8b350af33bf2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>MUDA_INLINE MUDA_GENERIC Eigen::Map&lt; Eigen::Matrix&lt; unsigned long int, 3, 1 &gt; &gt;</type>
+        <definition>MUDA_INLINE MUDA_GENERIC Eigen::Map&lt; Eigen::Matrix&lt; unsigned long int, 3, 1 &gt; &gt; muda::eigen::as_eigen</definition>
+        <argsstring>(ulong3 &amp;val)</argsstring>
+        <name>as_eigen</name>
+        <qualifiedname>muda::eigen::as_eigen</qualifiedname>
+        <param>
+          <type>ulong3 &amp;</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/eigen/as_eigen.h" line="299" column="41" bodyfile="src/muda/ext/eigen/as_eigen.h" bodystart="299" bodyend="303"/>
+      </memberdef>
+      <memberdef kind="function" id="as__eigen_8h_1a97e83a46f66cff59561daf86cba9f49a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>MUDA_INLINE MUDA_GENERIC Eigen::Map&lt; const Eigen::Matrix&lt; unsigned long int, 3, 1 &gt; &gt;</type>
+        <definition>MUDA_INLINE MUDA_GENERIC Eigen::Map&lt; const Eigen::Matrix&lt; unsigned long int, 3, 1 &gt; &gt; muda::eigen::as_eigen</definition>
+        <argsstring>(const ulong3 &amp;val)</argsstring>
+        <name>as_eigen</name>
+        <qualifiedname>muda::eigen::as_eigen</qualifiedname>
+        <param>
+          <type>const ulong3 &amp;</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/eigen/as_eigen.h" line="304" column="41" bodyfile="src/muda/ext/eigen/as_eigen.h" bodystart="304" bodyend="308"/>
+      </memberdef>
+      <memberdef kind="function" id="as__eigen_8h_1a75af7f246a33fa3b2c0ab93f77dd92ac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>MUDA_INLINE MUDA_GENERIC Eigen::Map&lt; Eigen::Matrix&lt; unsigned long int, 4, 1 &gt; &gt;</type>
+        <definition>MUDA_INLINE MUDA_GENERIC Eigen::Map&lt; Eigen::Matrix&lt; unsigned long int, 4, 1 &gt; &gt; muda::eigen::as_eigen</definition>
+        <argsstring>(ulong4 &amp;val)</argsstring>
+        <name>as_eigen</name>
+        <qualifiedname>muda::eigen::as_eigen</qualifiedname>
+        <param>
+          <type>ulong4 &amp;</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/eigen/as_eigen.h" line="310" column="41" bodyfile="src/muda/ext/eigen/as_eigen.h" bodystart="310" bodyend="314"/>
+      </memberdef>
+      <memberdef kind="function" id="as__eigen_8h_1a4ffa68616c39a818c74e2e72b4048885" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>MUDA_INLINE MUDA_GENERIC Eigen::Map&lt; const Eigen::Matrix&lt; unsigned long int, 4, 1 &gt; &gt;</type>
+        <definition>MUDA_INLINE MUDA_GENERIC Eigen::Map&lt; const Eigen::Matrix&lt; unsigned long int, 4, 1 &gt; &gt; muda::eigen::as_eigen</definition>
+        <argsstring>(const ulong4 &amp;val)</argsstring>
+        <name>as_eigen</name>
+        <qualifiedname>muda::eigen::as_eigen</qualifiedname>
+        <param>
+          <type>const ulong4 &amp;</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/eigen/as_eigen.h" line="315" column="41" bodyfile="src/muda/ext/eigen/as_eigen.h" bodystart="315" bodyend="319"/>
+      </memberdef>
+      <memberdef kind="function" id="as__eigen_8h_1a349a4b44e715ab03473911ea7506844b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>MUDA_INLINE MUDA_GENERIC Eigen::Map&lt; Eigen::Matrix&lt; long long int, 2, 1 &gt; &gt;</type>
+        <definition>MUDA_INLINE MUDA_GENERIC Eigen::Map&lt; Eigen::Matrix&lt; long long int, 2, 1 &gt; &gt; muda::eigen::as_eigen</definition>
+        <argsstring>(longlong2 &amp;val)</argsstring>
+        <name>as_eigen</name>
+        <qualifiedname>muda::eigen::as_eigen</qualifiedname>
+        <param>
+          <type>longlong2 &amp;</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/eigen/as_eigen.h" line="321" column="41" bodyfile="src/muda/ext/eigen/as_eigen.h" bodystart="321" bodyend="325"/>
+      </memberdef>
+      <memberdef kind="function" id="as__eigen_8h_1ad0a250a9483276bb0d685f940e936437" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>MUDA_INLINE MUDA_GENERIC Eigen::Map&lt; const Eigen::Matrix&lt; long long int, 2, 1 &gt; &gt;</type>
+        <definition>MUDA_INLINE MUDA_GENERIC Eigen::Map&lt; const Eigen::Matrix&lt; long long int, 2, 1 &gt; &gt; muda::eigen::as_eigen</definition>
+        <argsstring>(const longlong2 &amp;val)</argsstring>
+        <name>as_eigen</name>
+        <qualifiedname>muda::eigen::as_eigen</qualifiedname>
+        <param>
+          <type>const longlong2 &amp;</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/eigen/as_eigen.h" line="326" column="41" bodyfile="src/muda/ext/eigen/as_eigen.h" bodystart="326" bodyend="330"/>
+      </memberdef>
+      <memberdef kind="function" id="as__eigen_8h_1a6900ab2e96c1718a1a9a1bc75ffdb2cc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>MUDA_INLINE MUDA_GENERIC Eigen::Map&lt; Eigen::Matrix&lt; long long int, 3, 1 &gt; &gt;</type>
+        <definition>MUDA_INLINE MUDA_GENERIC Eigen::Map&lt; Eigen::Matrix&lt; long long int, 3, 1 &gt; &gt; muda::eigen::as_eigen</definition>
+        <argsstring>(longlong3 &amp;val)</argsstring>
+        <name>as_eigen</name>
+        <qualifiedname>muda::eigen::as_eigen</qualifiedname>
+        <param>
+          <type>longlong3 &amp;</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/eigen/as_eigen.h" line="332" column="41" bodyfile="src/muda/ext/eigen/as_eigen.h" bodystart="332" bodyend="336"/>
+      </memberdef>
+      <memberdef kind="function" id="as__eigen_8h_1aa9414fb3ad048a30f9bc417c55273687" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>MUDA_INLINE MUDA_GENERIC Eigen::Map&lt; const Eigen::Matrix&lt; long long int, 3, 1 &gt; &gt;</type>
+        <definition>MUDA_INLINE MUDA_GENERIC Eigen::Map&lt; const Eigen::Matrix&lt; long long int, 3, 1 &gt; &gt; muda::eigen::as_eigen</definition>
+        <argsstring>(const longlong3 &amp;val)</argsstring>
+        <name>as_eigen</name>
+        <qualifiedname>muda::eigen::as_eigen</qualifiedname>
+        <param>
+          <type>const longlong3 &amp;</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/eigen/as_eigen.h" line="337" column="41" bodyfile="src/muda/ext/eigen/as_eigen.h" bodystart="337" bodyend="341"/>
+      </memberdef>
+      <memberdef kind="function" id="as__eigen_8h_1a15e00807ecca8543ee797861e87f5b09" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>MUDA_INLINE MUDA_GENERIC Eigen::Map&lt; Eigen::Matrix&lt; long long int, 4, 1 &gt; &gt;</type>
+        <definition>MUDA_INLINE MUDA_GENERIC Eigen::Map&lt; Eigen::Matrix&lt; long long int, 4, 1 &gt; &gt; muda::eigen::as_eigen</definition>
+        <argsstring>(longlong4 &amp;val)</argsstring>
+        <name>as_eigen</name>
+        <qualifiedname>muda::eigen::as_eigen</qualifiedname>
+        <param>
+          <type>longlong4 &amp;</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/eigen/as_eigen.h" line="343" column="41" bodyfile="src/muda/ext/eigen/as_eigen.h" bodystart="343" bodyend="347"/>
+      </memberdef>
+      <memberdef kind="function" id="as__eigen_8h_1a012fc009b5e86078c9a07730c8d260e9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>MUDA_INLINE MUDA_GENERIC Eigen::Map&lt; const Eigen::Matrix&lt; long long int, 4, 1 &gt; &gt;</type>
+        <definition>MUDA_INLINE MUDA_GENERIC Eigen::Map&lt; const Eigen::Matrix&lt; long long int, 4, 1 &gt; &gt; muda::eigen::as_eigen</definition>
+        <argsstring>(const longlong4 &amp;val)</argsstring>
+        <name>as_eigen</name>
+        <qualifiedname>muda::eigen::as_eigen</qualifiedname>
+        <param>
+          <type>const longlong4 &amp;</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/eigen/as_eigen.h" line="348" column="41" bodyfile="src/muda/ext/eigen/as_eigen.h" bodystart="348" bodyend="352"/>
+      </memberdef>
+      <memberdef kind="function" id="as__eigen_8h_1a4f073990243995c91ea73ad4d2717197" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>MUDA_INLINE MUDA_GENERIC Eigen::Map&lt; Eigen::Matrix&lt; unsigned long long int, 2, 1 &gt; &gt;</type>
+        <definition>MUDA_INLINE MUDA_GENERIC Eigen::Map&lt; Eigen::Matrix&lt; unsigned long long int, 2, 1 &gt; &gt; muda::eigen::as_eigen</definition>
+        <argsstring>(ulonglong2 &amp;val)</argsstring>
+        <name>as_eigen</name>
+        <qualifiedname>muda::eigen::as_eigen</qualifiedname>
+        <param>
+          <type>ulonglong2 &amp;</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/eigen/as_eigen.h" line="354" column="41" bodyfile="src/muda/ext/eigen/as_eigen.h" bodystart="354" bodyend="358"/>
+      </memberdef>
+      <memberdef kind="function" id="as__eigen_8h_1af166d50b32216ea95361632f28397f57" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>MUDA_INLINE MUDA_GENERIC Eigen::Map&lt; const Eigen::Matrix&lt; unsigned long long int, 2, 1 &gt; &gt;</type>
+        <definition>MUDA_INLINE MUDA_GENERIC Eigen::Map&lt; const Eigen::Matrix&lt; unsigned long long int, 2, 1 &gt; &gt; muda::eigen::as_eigen</definition>
+        <argsstring>(const ulonglong2 &amp;val)</argsstring>
+        <name>as_eigen</name>
+        <qualifiedname>muda::eigen::as_eigen</qualifiedname>
+        <param>
+          <type>const ulonglong2 &amp;</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/eigen/as_eigen.h" line="359" column="41" bodyfile="src/muda/ext/eigen/as_eigen.h" bodystart="359" bodyend="364"/>
+      </memberdef>
+      <memberdef kind="function" id="as__eigen_8h_1a87fac48719ab930bdf847f4290e1dc21" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>MUDA_INLINE MUDA_GENERIC Eigen::Map&lt; Eigen::Matrix&lt; unsigned long long int, 3, 1 &gt; &gt;</type>
+        <definition>MUDA_INLINE MUDA_GENERIC Eigen::Map&lt; Eigen::Matrix&lt; unsigned long long int, 3, 1 &gt; &gt; muda::eigen::as_eigen</definition>
+        <argsstring>(ulonglong3 &amp;val)</argsstring>
+        <name>as_eigen</name>
+        <qualifiedname>muda::eigen::as_eigen</qualifiedname>
+        <param>
+          <type>ulonglong3 &amp;</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/eigen/as_eigen.h" line="366" column="41" bodyfile="src/muda/ext/eigen/as_eigen.h" bodystart="366" bodyend="370"/>
+      </memberdef>
+      <memberdef kind="function" id="as__eigen_8h_1a74889516143241f0f7aef8d939f34a75" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>MUDA_INLINE MUDA_GENERIC Eigen::Map&lt; const Eigen::Matrix&lt; unsigned long long int, 3, 1 &gt; &gt;</type>
+        <definition>MUDA_INLINE MUDA_GENERIC Eigen::Map&lt; const Eigen::Matrix&lt; unsigned long long int, 3, 1 &gt; &gt; muda::eigen::as_eigen</definition>
+        <argsstring>(const ulonglong3 &amp;val)</argsstring>
+        <name>as_eigen</name>
+        <qualifiedname>muda::eigen::as_eigen</qualifiedname>
+        <param>
+          <type>const ulonglong3 &amp;</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/eigen/as_eigen.h" line="371" column="41" bodyfile="src/muda/ext/eigen/as_eigen.h" bodystart="371" bodyend="376"/>
+      </memberdef>
+      <memberdef kind="function" id="as__eigen_8h_1a5cb0acf35055bc19b726074e63797ac6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>MUDA_INLINE MUDA_GENERIC Eigen::Map&lt; Eigen::Matrix&lt; unsigned long long int, 4, 1 &gt; &gt;</type>
+        <definition>MUDA_INLINE MUDA_GENERIC Eigen::Map&lt; Eigen::Matrix&lt; unsigned long long int, 4, 1 &gt; &gt; muda::eigen::as_eigen</definition>
+        <argsstring>(ulonglong4 &amp;val)</argsstring>
+        <name>as_eigen</name>
+        <qualifiedname>muda::eigen::as_eigen</qualifiedname>
+        <param>
+          <type>ulonglong4 &amp;</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/eigen/as_eigen.h" line="378" column="41" bodyfile="src/muda/ext/eigen/as_eigen.h" bodystart="378" bodyend="382"/>
+      </memberdef>
+      <memberdef kind="function" id="as__eigen_8h_1abff8990feeaced2b25b2a38dbc871201" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>MUDA_INLINE MUDA_GENERIC Eigen::Map&lt; const Eigen::Matrix&lt; unsigned long long int, 4, 1 &gt; &gt;</type>
+        <definition>MUDA_INLINE MUDA_GENERIC Eigen::Map&lt; const Eigen::Matrix&lt; unsigned long long int, 4, 1 &gt; &gt; muda::eigen::as_eigen</definition>
+        <argsstring>(const ulonglong4 &amp;val)</argsstring>
+        <name>as_eigen</name>
+        <qualifiedname>muda::eigen::as_eigen</qualifiedname>
+        <param>
+          <type>const ulonglong4 &amp;</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/eigen/as_eigen.h" line="383" column="41" bodyfile="src/muda/ext/eigen/as_eigen.h" bodystart="383" bodyend="388"/>
+      </memberdef>
+      <memberdef kind="function" id="ext_2eigen_2atomic_8h_1ac09e447f72562302530416b379afef35" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+          <param>
+            <type>int</type>
+            <declname>M</declname>
+            <defname>M</defname>
+          </param>
+          <param>
+            <type>int</type>
+            <declname>N</declname>
+            <defname>N</defname>
+          </param>
+        </templateparamlist>
+        <type>MUDA_GENERIC Eigen::Matrix&lt; T, M, N &gt;</type>
+        <definition>MUDA_GENERIC Eigen::Matrix&lt; T, M, N &gt; muda::eigen::atomic_add</definition>
+        <argsstring>(Eigen::Matrix&lt; T, M, N &gt; &amp;dst, const Eigen::Matrix&lt; T, M, N &gt; &amp;src)</argsstring>
+        <name>atomic_add</name>
+        <qualifiedname>muda::eigen::atomic_add</qualifiedname>
+        <param>
+          <type>Eigen::Matrix&lt; T, M, N &gt; &amp;</type>
+          <declname>dst</declname>
+        </param>
+        <param>
+          <type>const Eigen::Matrix&lt; T, M, N &gt; &amp;</type>
+          <declname>src</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/eigen/atomic.h" line="8" column="28" bodyfile="src/muda/ext/eigen/atomic.h" bodystart="8" bodyend="21"/>
+      </memberdef>
+      <memberdef kind="function" id="ext_2eigen_2atomic_8h_1ae5784222dd9c627adbe2eb71f3f5af97" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+          <param>
+            <type>int</type>
+            <declname>M</declname>
+            <defname>M</defname>
+          </param>
+          <param>
+            <type>int</type>
+            <declname>N</declname>
+            <defname>N</defname>
+          </param>
+        </templateparamlist>
+        <type>MUDA_GENERIC Eigen::Matrix&lt; T, M, N &gt;</type>
+        <definition>MUDA_GENERIC Eigen::Matrix&lt; T, M, N &gt; muda::eigen::atomic_add</definition>
+        <argsstring>(Eigen::Map&lt; Eigen::Matrix&lt; T, M, N &gt; &gt; &amp;dst, const Eigen::Matrix&lt; T, M, N &gt; &amp;src)</argsstring>
+        <name>atomic_add</name>
+        <qualifiedname>muda::eigen::atomic_add</qualifiedname>
+        <param>
+          <type>Eigen::Map&lt; Eigen::Matrix&lt; T, M, N &gt; &gt; &amp;</type>
+          <declname>dst</declname>
+        </param>
+        <param>
+          <type>const Eigen::Matrix&lt; T, M, N &gt; &amp;</type>
+          <declname>src</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/eigen/atomic.h" line="24" column="28" bodyfile="src/muda/ext/eigen/atomic.h" bodystart="24" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="evd_8h_1a903a005a2203de2714a98e638130c82e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+          <param>
+            <type>int</type>
+            <declname>N</declname>
+            <defname>N</defname>
+          </param>
+        </templateparamlist>
+        <type>MUDA_GENERIC void</type>
+        <definition>MUDA_GENERIC void muda::eigen::evd</definition>
+        <argsstring>(const Eigen::Matrix&lt; T, N, N &gt; &amp;M, Eigen::Vector&lt; T, N &gt; &amp;eigen_values, Eigen::Matrix&lt; T, N, N &gt; &amp;eigen_vectors)</argsstring>
+        <name>evd</name>
+        <qualifiedname>muda::eigen::evd</qualifiedname>
+        <param>
+          <type>const Eigen::Matrix&lt; T, N, N &gt; &amp;</type>
+          <declname>M</declname>
+        </param>
+        <param>
+          <type>Eigen::Vector&lt; T, N &gt; &amp;</type>
+          <declname>eigen_values</declname>
+        </param>
+        <param>
+          <type>Eigen::Matrix&lt; T, N, N &gt; &amp;</type>
+          <declname>eigen_vectors</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/eigen/evd.h" line="10" column="23" bodyfile="src/muda/ext/eigen/evd.h" bodystart="10" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="function" id="inverse_8h_1a2a670274b015bc82a0998345cbf44b97" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+          <param>
+            <type>int</type>
+            <declname>N</declname>
+            <defname>N</defname>
+          </param>
+          <param>
+            <type>typename InverseAlgorithm</type>
+            <defval><ref refid="structmuda_1_1eigen_1_1_gauss_elimination_inverse" kindref="compound">muda::eigen::GaussEliminationInverse</ref></defval>
+          </param>
+        </templateparamlist>
+        <type>MUDA_INLINE MUDA_GENERIC Eigen::Matrix&lt; T, N, N &gt;</type>
+        <definition>MUDA_INLINE MUDA_GENERIC Eigen::Matrix&lt; T, N, N &gt; muda::eigen::inverse</definition>
+        <argsstring>(const Eigen::Matrix&lt; T, N, N &gt; &amp;m)</argsstring>
+        <name>inverse</name>
+        <qualifiedname>muda::eigen::inverse</qualifiedname>
+        <param>
+          <type>const Eigen::Matrix&lt; T, N, N &gt; &amp;</type>
+          <declname>m</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/eigen/inverse.h" line="9" column="40" bodyfile="src/muda/ext/eigen/inverse.h" bodystart="9" bodyend="12"/>
+      </memberdef>
+      <memberdef kind="function" id="inverse_8h_1a1658cc8de3e7a826e4bca0c428c5dada" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+          <param>
+            <type>typename InverseAlgorithm</type>
+            <defval><ref refid="structmuda_1_1eigen_1_1_analytical_inverse" kindref="compound">muda::eigen::AnalyticalInverse</ref></defval>
+          </param>
+        </templateparamlist>
+        <type>MUDA_INLINE MUDA_GENERIC Eigen::Matrix&lt; T, 2, 2 &gt;</type>
+        <definition>MUDA_INLINE MUDA_GENERIC Eigen::Matrix&lt; T, 2, 2 &gt; muda::eigen::inverse</definition>
+        <argsstring>(const Eigen::Matrix&lt; T, 2, 2 &gt; &amp;m)</argsstring>
+        <name>inverse</name>
+        <qualifiedname>muda::eigen::inverse</qualifiedname>
+        <param>
+          <type>const Eigen::Matrix&lt; T, 2, 2 &gt; &amp;</type>
+          <declname>m</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/eigen/inverse.h" line="15" column="40" bodyfile="src/muda/ext/eigen/inverse.h" bodystart="15" bodyend="18"/>
+      </memberdef>
+      <memberdef kind="function" id="inverse_8h_1aca4907aa325a0a82154d13744a26d3c6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+          <param>
+            <type>typename InverseAlgorithm</type>
+            <defval><ref refid="structmuda_1_1eigen_1_1_analytical_inverse" kindref="compound">muda::eigen::AnalyticalInverse</ref></defval>
+          </param>
+        </templateparamlist>
+        <type>MUDA_INLINE MUDA_GENERIC Eigen::Matrix&lt; T, 3, 3 &gt;</type>
+        <definition>MUDA_INLINE MUDA_GENERIC Eigen::Matrix&lt; T, 3, 3 &gt; muda::eigen::inverse</definition>
+        <argsstring>(const Eigen::Matrix&lt; T, 3, 3 &gt; &amp;m)</argsstring>
+        <name>inverse</name>
+        <qualifiedname>muda::eigen::inverse</qualifiedname>
+        <param>
+          <type>const Eigen::Matrix&lt; T, 3, 3 &gt; &amp;</type>
+          <declname>m</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/eigen/inverse.h" line="21" column="40" bodyfile="src/muda/ext/eigen/inverse.h" bodystart="21" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="function" id="inverse_8h_1a3a42a7f74982e95b9973252ff9e2cda6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+          <param>
+            <type>typename InverseAlgorithm</type>
+            <defval><ref refid="structmuda_1_1eigen_1_1_analytical_inverse" kindref="compound">muda::eigen::AnalyticalInverse</ref></defval>
+          </param>
+        </templateparamlist>
+        <type>MUDA_INLINE MUDA_GENERIC Eigen::Matrix&lt; T, 4, 4 &gt;</type>
+        <definition>MUDA_INLINE MUDA_GENERIC Eigen::Matrix&lt; T, 4, 4 &gt; muda::eigen::inverse</definition>
+        <argsstring>(const Eigen::Matrix&lt; T, 4, 4 &gt; &amp;m)</argsstring>
+        <name>inverse</name>
+        <qualifiedname>muda::eigen::inverse</qualifiedname>
+        <param>
+          <type>const Eigen::Matrix&lt; T, 4, 4 &gt; &amp;</type>
+          <declname>m</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/eigen/inverse.h" line="27" column="40" bodyfile="src/muda/ext/eigen/inverse.h" bodystart="27" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="function" id="svd_8h_1a42cf4d8a91ad11e79847dc75850554b3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>MUDA_GENERIC void</type>
+        <definition>MUDA_GENERIC void muda::eigen::svd</definition>
+        <argsstring>(const Eigen::Matrix&lt; float, 3, 3 &gt; &amp;F, Eigen::Matrix&lt; float, 3, 3 &gt; &amp;U, Eigen::Vector3&lt; float &gt; &amp;Sigma, Eigen::Matrix&lt; float, 3, 3 &gt; &amp;V)</argsstring>
+        <name>svd</name>
+        <qualifiedname>muda::eigen::svd</qualifiedname>
+        <param>
+          <type>const Eigen::Matrix&lt; float, 3, 3 &gt; &amp;</type>
+          <declname>F</declname>
+        </param>
+        <param>
+          <type>Eigen::Matrix&lt; float, 3, 3 &gt; &amp;</type>
+          <declname>U</declname>
+        </param>
+        <param>
+          <type>Eigen::Vector3&lt; float &gt; &amp;</type>
+          <declname>Sigma</declname>
+        </param>
+        <param>
+          <type>Eigen::Matrix&lt; float, 3, 3 &gt; &amp;</type>
+          <declname>V</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/eigen/svd.h" line="10" column="23" declfile="src/muda/ext/eigen/svd.h" declline="10" declcolumn="23"/>
+      </memberdef>
+      <memberdef kind="function" id="svd_8h_1a2e2cb20c36246b74643225bc3a27fd4f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>MUDA_GENERIC void</type>
+        <definition>MUDA_GENERIC void muda::eigen::pd</definition>
+        <argsstring>(const Eigen::Matrix&lt; float, 3, 3 &gt; &amp;F, Eigen::Matrix&lt; float, 3, 3 &gt; &amp;R, Eigen::Matrix&lt; float, 3, 3 &gt; &amp;S)</argsstring>
+        <name>pd</name>
+        <qualifiedname>muda::eigen::pd</qualifiedname>
+        <param>
+          <type>const Eigen::Matrix&lt; float, 3, 3 &gt; &amp;</type>
+          <declname>F</declname>
+        </param>
+        <param>
+          <type>Eigen::Matrix&lt; float, 3, 3 &gt; &amp;</type>
+          <declname>R</declname>
+        </param>
+        <param>
+          <type>Eigen::Matrix&lt; float, 3, 3 &gt; &amp;</type>
+          <declname>S</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/eigen/svd.h" line="15" column="23" declfile="src/muda/ext/eigen/svd.h" declline="15" declcolumn="23"/>
+      </memberdef>
+      <memberdef kind="function" id="svd_8h_1abadaa788ac050fdee1336691837c636f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>MUDA_GENERIC void</type>
+        <definition>MUDA_GENERIC void muda::eigen::svd</definition>
+        <argsstring>(const Eigen::Matrix&lt; double, 3, 3 &gt; &amp;F, Eigen::Matrix&lt; double, 3, 3 &gt; &amp;U, Eigen::Vector3&lt; double &gt; &amp;Sigma, Eigen::Matrix&lt; double, 3, 3 &gt; &amp;V)</argsstring>
+        <name>svd</name>
+        <qualifiedname>muda::eigen::svd</qualifiedname>
+        <param>
+          <type>const Eigen::Matrix&lt; double, 3, 3 &gt; &amp;</type>
+          <declname>F</declname>
+        </param>
+        <param>
+          <type>Eigen::Matrix&lt; double, 3, 3 &gt; &amp;</type>
+          <declname>U</declname>
+        </param>
+        <param>
+          <type>Eigen::Vector3&lt; double &gt; &amp;</type>
+          <declname>Sigma</declname>
+        </param>
+        <param>
+          <type>Eigen::Matrix&lt; double, 3, 3 &gt; &amp;</type>
+          <declname>V</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/eigen/svd.h" line="19" column="23" declfile="src/muda/ext/eigen/svd.h" declline="19" declcolumn="23"/>
+      </memberdef>
+      <memberdef kind="function" id="svd_8h_1a6f716aec8f362cc97e11020a6299ac40" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>MUDA_GENERIC void</type>
+        <definition>MUDA_GENERIC void muda::eigen::pd</definition>
+        <argsstring>(const Eigen::Matrix&lt; double, 3, 3 &gt; &amp;F, Eigen::Matrix&lt; double, 3, 3 &gt; &amp;R, Eigen::Matrix&lt; double, 3, 3 &gt; &amp;S)</argsstring>
+        <name>pd</name>
+        <qualifiedname>muda::eigen::pd</qualifiedname>
+        <param>
+          <type>const Eigen::Matrix&lt; double, 3, 3 &gt; &amp;</type>
+          <declname>F</declname>
+        </param>
+        <param>
+          <type>Eigen::Matrix&lt; double, 3, 3 &gt; &amp;</type>
+          <declname>R</declname>
+        </param>
+        <param>
+          <type>Eigen::Matrix&lt; double, 3, 3 &gt; &amp;</type>
+          <declname>S</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/eigen/svd.h" line="24" column="23" declfile="src/muda/ext/eigen/svd.h" declline="24" declcolumn="23"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/muda/ext/eigen/as_eigen.h" line="6" column="1"/>
+  </compounddef>
+</doxygen>

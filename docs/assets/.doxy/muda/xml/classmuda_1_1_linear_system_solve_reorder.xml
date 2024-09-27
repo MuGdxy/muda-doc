@@ -1,0 +1,82 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classmuda_1_1_linear_system_solve_reorder" kind="class" language="C++" prot="public">
+    <compoundname>muda::LinearSystemSolveReorder</compoundname>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classmuda_1_1_linear_system_solve_reorder_1a5fe6e2abec63c5c11b5d6df79f862540" prot="private" static="no" mutable="no">
+        <type>LinearSystemReorderMethod</type>
+        <definition>LinearSystemReorderMethod muda::LinearSystemSolveReorder::m_reorder_method</definition>
+        <argsstring></argsstring>
+        <name>m_reorder_method</name>
+        <qualifiedname>muda::LinearSystemSolveReorder::m_reorder_method</qualifiedname>
+        <initializer>= LinearSystemReorderMethod::None</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/linear_system_solve_reorder.h" line="12" column="31" bodyfile="src/muda/ext/linear_system/linear_system_solve_reorder.h" bodystart="12" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmuda_1_1_linear_system_solve_reorder_1a2d842f2f87bf05019e340c54b1b07740" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>LinearSystemReorderMethod</type>
+        <definition>LinearSystemReorderMethod muda::LinearSystemSolveReorder::reorder_method</definition>
+        <argsstring>() const</argsstring>
+        <name>reorder_method</name>
+        <qualifiedname>muda::LinearSystemSolveReorder::reorder_method</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/linear_system_solve_reorder.h" line="15" column="31" bodyfile="src/muda/ext/linear_system/linear_system_solve_reorder.h" bodystart="15" bodyend="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_linear_system_solve_reorder_1a4c2fdd627103b04b5c44a8535629970e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void muda::LinearSystemSolveReorder::reoder_method</definition>
+        <argsstring>(LinearSystemReorderMethod method)</argsstring>
+        <name>reoder_method</name>
+        <qualifiedname>muda::LinearSystemSolveReorder::reoder_method</qualifiedname>
+        <param>
+          <type>LinearSystemReorderMethod</type>
+          <declname>method</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/linear_system_solve_reorder.h" line="19" column="10" bodyfile="src/muda/ext/linear_system/linear_system_solve_reorder.h" bodystart="19" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_linear_system_solve_reorder_1a904b6d094fdfd82010d53ff4a16ca0fa" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int muda::LinearSystemSolveReorder::reorder_method_int</definition>
+        <argsstring>() const</argsstring>
+        <name>reorder_method_int</name>
+        <qualifiedname>muda::LinearSystemSolveReorder::reorder_method_int</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/linear_system_solve_reorder.h" line="23" column="9" bodyfile="src/muda/ext/linear_system/linear_system_solve_reorder.h" bodystart="23" bodyend="26"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/muda/ext/linear_system/linear_system_solve_reorder.h" line="10" column="1" bodyfile="src/muda/ext/linear_system/linear_system_solve_reorder.h" bodystart="11" bodyend="27"/>
+    <listofallmembers>
+      <member refid="classmuda_1_1_linear_system_solve_reorder_1a5fe6e2abec63c5c11b5d6df79f862540" prot="private" virt="non-virtual"><scope>muda::LinearSystemSolveReorder</scope><name>m_reorder_method</name></member>
+      <member refid="classmuda_1_1_linear_system_solve_reorder_1a4c2fdd627103b04b5c44a8535629970e" prot="public" virt="non-virtual"><scope>muda::LinearSystemSolveReorder</scope><name>reoder_method</name></member>
+      <member refid="classmuda_1_1_linear_system_solve_reorder_1a2d842f2f87bf05019e340c54b1b07740" prot="public" virt="non-virtual"><scope>muda::LinearSystemSolveReorder</scope><name>reorder_method</name></member>
+      <member refid="classmuda_1_1_linear_system_solve_reorder_1a904b6d094fdfd82010d53ff4a16ca0fa" prot="public" virt="non-virtual"><scope>muda::LinearSystemSolveReorder</scope><name>reorder_method_int</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

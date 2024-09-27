@@ -1,0 +1,89 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classmuda_1_1_compute_graph_1_1_add_node_proxy" kind="class" language="C++" prot="public">
+    <compoundname>muda::ComputeGraph::AddNodeProxy</compoundname>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classmuda_1_1_compute_graph_1_1_add_node_proxy_1a63b93b39343e298f1f396d3446f6530e" prot="private" static="no" mutable="no">
+        <type><ref refid="classmuda_1_1_compute_graph" kindref="compound">ComputeGraph</ref> &amp;</type>
+        <definition>ComputeGraph&amp; muda::ComputeGraph::AddNodeProxy::m_cg</definition>
+        <argsstring></argsstring>
+        <name>m_cg</name>
+        <qualifiedname>muda::ComputeGraph::AddNodeProxy::m_cg</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/compute_graph/compute_graph.h" line="42" column="22" bodyfile="src/muda/compute_graph/compute_graph.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1_compute_graph_1_1_add_node_proxy_1ad070e84639636bc9761f4228642de7d5" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string muda::ComputeGraph::AddNodeProxy::m_node_name</definition>
+        <argsstring></argsstring>
+        <name>m_node_name</name>
+        <qualifiedname>muda::ComputeGraph::AddNodeProxy::m_node_name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/compute_graph/compute_graph.h" line="43" column="23" bodyfile="src/muda/compute_graph/compute_graph.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmuda_1_1_compute_graph_1_1_add_node_proxy_1a97b3cd48f30a349c1c27606dc1712e55" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>muda::ComputeGraph::AddNodeProxy::AddNodeProxy</definition>
+        <argsstring>(ComputeGraph &amp;cg, std::string_view node_name)</argsstring>
+        <name>AddNodeProxy</name>
+        <qualifiedname>muda::ComputeGraph::AddNodeProxy::AddNodeProxy</qualifiedname>
+        <param>
+          <type><ref refid="classmuda_1_1_compute_graph" kindref="compound">ComputeGraph</ref> &amp;</type>
+          <declname>cg</declname>
+        </param>
+        <param>
+          <type>std::string_view</type>
+          <declname>node_name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/compute_graph/compute_graph.h" line="46" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_compute_graph_1_1_add_node_proxy_1a306f3827a2b186a62359519c8a419849" prot="public" static="no" const="no" explicit="no" inline="no" refqual="rvalue" virt="non-virtual">
+        <type><ref refid="classmuda_1_1_compute_graph" kindref="compound">ComputeGraph</ref> &amp;</type>
+        <definition>ComputeGraph &amp; muda::ComputeGraph::AddNodeProxy::operator&lt;&lt;</definition>
+        <argsstring>(std::function&lt; void()&gt; &amp;&amp;f) &amp;&amp;</argsstring>
+        <name>operator&lt;&lt;</name>
+        <qualifiedname>muda::ComputeGraph::AddNodeProxy::operator&lt;&lt;</qualifiedname>
+        <param>
+          <type>std::function&lt; void()&gt; &amp;&amp;</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/compute_graph/compute_graph.h" line="47" column="9"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/muda/compute_graph/compute_graph.h" line="40" column="5" bodyfile="src/muda/compute_graph/compute_graph.h" bodystart="41" bodyend="48"/>
+    <listofallmembers>
+      <member refid="classmuda_1_1_compute_graph_1_1_add_node_proxy_1a97b3cd48f30a349c1c27606dc1712e55" prot="public" virt="non-virtual"><scope>muda::ComputeGraph::AddNodeProxy</scope><name>AddNodeProxy</name></member>
+      <member refid="classmuda_1_1_compute_graph_1_1_add_node_proxy_1a63b93b39343e298f1f396d3446f6530e" prot="private" virt="non-virtual"><scope>muda::ComputeGraph::AddNodeProxy</scope><name>m_cg</name></member>
+      <member refid="classmuda_1_1_compute_graph_1_1_add_node_proxy_1ad070e84639636bc9761f4228642de7d5" prot="private" virt="non-virtual"><scope>muda::ComputeGraph::AddNodeProxy</scope><name>m_node_name</name></member>
+      <member refid="classmuda_1_1_compute_graph_1_1_add_node_proxy_1a306f3827a2b186a62359519c8a419849" prot="public" virt="non-virtual"><scope>muda::ComputeGraph::AddNodeProxy</scope><name>operator&lt;&lt;</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

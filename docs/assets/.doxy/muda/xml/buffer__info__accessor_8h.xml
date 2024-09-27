@@ -1,0 +1,181 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="buffer__info__accessor_8h" kind="file" language="C++">
+    <compoundname>buffer_info_accessor.h</compoundname>
+    <includes local="no">utility</includes>
+    <includedby refid="buffer__2d__view_8h" local="no">src/muda/buffer/buffer_2d_view.h</includedby>
+    <includedby refid="buffer__3d__view_8h" local="no">src/muda/buffer/buffer_3d_view.h</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>src/muda/buffer/buffer_info_accessor.h</label>
+        <link refid="buffer__info__accessor_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>utility</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>src/muda/buffer/buffer_2d_view.h</label>
+        <link refid="buffer__2d__view_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>src/muda/buffer/buffer_3d_view.h</label>
+        <link refid="buffer__3d__view_8h_source"/>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>src/muda/buffer/buffer_info_accessor.h</label>
+        <link refid="buffer__info__accessor_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>src/muda/buffer/device_buffer_2d.h</label>
+        <link refid="device__buffer__2d_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>src/muda/buffer/device_buffer_3d.h</label>
+        <link refid="device__buffer__3d_8h"/>
+      </node>
+      <node id="9">
+        <label>src/muda/buffer/graph_buffer_2d_view.h</label>
+        <link refid="graph__buffer__2d__view_8h_source"/>
+      </node>
+      <node id="18">
+        <label>src/muda/buffer/graph_buffer_3d_view.h</label>
+        <link refid="graph__buffer__3d__view_8h_source"/>
+      </node>
+      <node id="10">
+        <label>src/muda/buffer/reshape_nd/reserve.h</label>
+        <link refid="reserve_8h_source"/>
+      </node>
+      <node id="5">
+        <label>src/muda/ext/linear_system.h</label>
+        <link refid="linear__system_8h_source"/>
+      </node>
+      <node id="11">
+        <label>src/muda/ext/linear_system/dense_matrix_view.h</label>
+        <link refid="dense__matrix__view_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>src/muda/ext/linear_system/dense_matrix_viewer.h</label>
+        <link refid="dense__matrix__viewer_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>src/muda/ext/linear_system/dense_vector_view.h</label>
+        <link refid="dense__vector__view_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>src/muda/ext/linear_system/dense_vector_viewer.h</label>
+        <link refid="dense__vector__viewer_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>src/muda/ext/linear_system/device_dense_matrix.h</label>
+        <link refid="device__dense__matrix_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>src/muda/ext/linear_system/device_dense_vector.h</label>
+        <link refid="device__dense__vector_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>src/muda/ext/linear_system/linear_system_context.h</label>
+        <link refid="linear__system__context_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>src/muda/ext/linear_system/matrix_format_converter.h</label>
+        <link refid="matrix__format__converter_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>src/muda/ext/linear_system/matrix_format_converter_impl.h</label>
+        <link refid="matrix__format__converter__impl_8h_source"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classmuda_1_1details_1_1buffer_1_1_buffer_info_accessor" prot="public">muda::details::buffer::BufferInfoAccessor</innerclass>
+    <innernamespace refid="namespacemuda">muda</innernamespace>
+    <innernamespace refid="namespacemuda_1_1details">muda::details</innernamespace>
+    <innernamespace refid="namespacemuda_1_1details_1_1buffer">muda::details::buffer</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;utility&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">muda::details::buffer</highlight></codeline>
+<codeline lineno="4"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="5" refid="classmuda_1_1details_1_1buffer_1_1_buffer_info_accessor" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classmuda_1_1details_1_1buffer_1_1_buffer_info_accessor" kindref="compound">BufferInfoAccessor</ref></highlight></codeline>
+<codeline lineno="6"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>BufferView&gt;</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>cuda_pitched_ptr(<ref refid="classmuda_1_1_buffer_view_t" kindref="compound">BufferView</ref>&amp;&amp;<sp/>b)</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>std::forward&lt;BufferView&gt;(b).cuda_pitched_ptr();</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="13"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="14"><highlight class="normal">}<sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>muda::details::buffer</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="src/muda/buffer/buffer_info_accessor.h"/>
+  </compounddef>
+</doxygen>

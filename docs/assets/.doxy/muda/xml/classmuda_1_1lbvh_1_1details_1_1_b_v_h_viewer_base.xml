@@ -1,0 +1,565 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classmuda_1_1lbvh_1_1details_1_1_b_v_h_viewer_base" kind="class" language="C++" prot="public">
+    <compoundname>muda::lbvh::details::BVHViewerBase</compoundname>
+    <basecompoundref refid="classmuda_1_1_viewer_base" prot="private" virt="non-virtual">muda::ViewerBase&lt; IsConst &gt;</basecompoundref>
+    <innerclass refid="structmuda_1_1lbvh_1_1details_1_1_b_v_h_viewer_base_1_1_default_query_callback" prot="public">muda::lbvh::details::BVHViewerBase::DefaultQueryCallback</innerclass>
+    <templateparamlist>
+      <param>
+        <type>bool</type>
+        <declname>IsConst</declname>
+        <defname>IsConst</defname>
+      </param>
+      <param>
+        <type>typename Real</type>
+      </param>
+      <param>
+        <type>typename Object</type>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="private-type">
+      <memberdef kind="typedef" id="classmuda_1_1lbvh_1_1details_1_1_b_v_h_viewer_base_1a9fc2b9c91a033d575741c88960b4bf73" prot="private" static="no">
+        <type><ref refid="classmuda_1_1_viewer_base" kindref="compound">muda::ViewerBase</ref>&lt; IsConst &gt;</type>
+        <definition>using muda::lbvh::details::BVHViewerBase&lt; IsConst, Real, Object &gt;::Base =  muda::ViewerBase&lt;IsConst&gt;</definition>
+        <argsstring></argsstring>
+        <name>Base</name>
+        <qualifiedname>muda::lbvh::details::BVHViewerBase::Base</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/lbvh/bvh_viewer.h" line="123" column="9" bodyfile="src/muda/ext/geo/lbvh/bvh_viewer.h" bodystart="123" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classmuda_1_1lbvh_1_1details_1_1_b_v_h_viewer_base_1a905e392f2d9e910dee6def341111cd02" prot="private" static="no">
+        <templateparamlist>
+          <param>
+            <type>typename U</type>
+          </param>
+        </templateparamlist>
+        <type>typename Base::template auto_const_t&lt; U &gt;</type>
+        <definition>using muda::lbvh::details::BVHViewerBase&lt; IsConst, Real, Object &gt;::auto_const_t =  typename Base::template auto_const_t&lt;U&gt;</definition>
+        <argsstring></argsstring>
+        <name>auto_const_t</name>
+        <qualifiedname>muda::lbvh::details::BVHViewerBase::auto_const_t</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/lbvh/bvh_viewer.h" line="125" column="9" bodyfile="src/muda/ext/geo/lbvh/bvh_viewer.h" bodystart="125" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classmuda_1_1lbvh_1_1details_1_1_b_v_h_viewer_base_1adc2dc5943e439e97ebdafd74de51ab07" prot="public" static="no">
+        <type>Real</type>
+        <definition>using muda::lbvh::details::BVHViewerBase&lt; IsConst, Real, Object &gt;::real_type =  Real</definition>
+        <argsstring></argsstring>
+        <name>real_type</name>
+        <qualifiedname>muda::lbvh::details::BVHViewerBase::real_type</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/lbvh/bvh_viewer.h" line="131" column="9" bodyfile="src/muda/ext/geo/lbvh/bvh_viewer.h" bodystart="131" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classmuda_1_1lbvh_1_1details_1_1_b_v_h_viewer_base_1ab1e5fe952c6d6fba31d73d7b5ee7e6c5" prot="public" static="no">
+        <type><ref refid="structmuda_1_1lbvh_1_1_a_a_b_b" kindref="compound">AABB</ref>&lt; real_type &gt;</type>
+        <definition>using muda::lbvh::details::BVHViewerBase&lt; IsConst, Real, Object &gt;::aabb_type =  AABB&lt;real_type&gt;</definition>
+        <argsstring></argsstring>
+        <name>aabb_type</name>
+        <qualifiedname>muda::lbvh::details::BVHViewerBase::aabb_type</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/lbvh/bvh_viewer.h" line="132" column="9" bodyfile="src/muda/ext/geo/lbvh/bvh_viewer.h" bodystart="132" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classmuda_1_1lbvh_1_1details_1_1_b_v_h_viewer_base_1a0ecc57a93cb6b97a2aadbe101cbce05a" prot="public" static="no">
+        <type><ref refid="structmuda_1_1lbvh_1_1details_1_1_node" kindref="compound">details::Node</ref></type>
+        <definition>using muda::lbvh::details::BVHViewerBase&lt; IsConst, Real, Object &gt;::node_type =  details::Node</definition>
+        <argsstring></argsstring>
+        <name>node_type</name>
+        <qualifiedname>muda::lbvh::details::BVHViewerBase::node_type</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/lbvh/bvh_viewer.h" line="133" column="9" bodyfile="src/muda/ext/geo/lbvh/bvh_viewer.h" bodystart="133" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classmuda_1_1lbvh_1_1details_1_1_b_v_h_viewer_base_1a64e504c1608058977aa06bc55dc0d8f9" prot="public" static="no">
+        <type>std::uint32_t</type>
+        <definition>using muda::lbvh::details::BVHViewerBase&lt; IsConst, Real, Object &gt;::index_type =  std::uint32_t</definition>
+        <argsstring></argsstring>
+        <name>index_type</name>
+        <qualifiedname>muda::lbvh::details::BVHViewerBase::index_type</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/lbvh/bvh_viewer.h" line="134" column="9" bodyfile="src/muda/ext/geo/lbvh/bvh_viewer.h" bodystart="134" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classmuda_1_1lbvh_1_1details_1_1_b_v_h_viewer_base_1a38d52155a5139b937699c0b85750aaff" prot="public" static="no">
+        <type>Object</type>
+        <definition>using muda::lbvh::details::BVHViewerBase&lt; IsConst, Real, Object &gt;::object_type =  Object</definition>
+        <argsstring></argsstring>
+        <name>object_type</name>
+        <qualifiedname>muda::lbvh::details::BVHViewerBase::object_type</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/lbvh/bvh_viewer.h" line="135" column="9" bodyfile="src/muda/ext/geo/lbvh/bvh_viewer.h" bodystart="135" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classmuda_1_1lbvh_1_1details_1_1_b_v_h_viewer_base_1a17101429de1cfcc85cd777ab39014078" prot="public" static="no">
+        <type><ref refid="classmuda_1_1lbvh_1_1details_1_1_b_v_h_viewer_base" kindref="compound">BVHViewerBase</ref>&lt; true, real_type, object_type &gt;</type>
+        <definition>using muda::lbvh::details::BVHViewerBase&lt; IsConst, Real, Object &gt;::ConstViewer =  BVHViewerBase&lt;true, real_type, object_type&gt;</definition>
+        <argsstring></argsstring>
+        <name>ConstViewer</name>
+        <qualifiedname>muda::lbvh::details::BVHViewerBase::ConstViewer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/lbvh/bvh_viewer.h" line="138" column="9" bodyfile="src/muda/ext/geo/lbvh/bvh_viewer.h" bodystart="138" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classmuda_1_1lbvh_1_1details_1_1_b_v_h_viewer_base_1a55e6f4d67af1522aac72b1b3e8a0fb36" prot="public" static="no">
+        <type><ref refid="classmuda_1_1lbvh_1_1details_1_1_b_v_h_viewer_base" kindref="compound">BVHViewerBase</ref>&lt; false, real_type, object_type &gt;</type>
+        <definition>using muda::lbvh::details::BVHViewerBase&lt; IsConst, Real, Object &gt;::NonConstViewer =  BVHViewerBase&lt;false, real_type, object_type&gt;</definition>
+        <argsstring></argsstring>
+        <name>NonConstViewer</name>
+        <qualifiedname>muda::lbvh::details::BVHViewerBase::NonConstViewer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/lbvh/bvh_viewer.h" line="139" column="9" bodyfile="src/muda/ext/geo/lbvh/bvh_viewer.h" bodystart="139" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classmuda_1_1lbvh_1_1details_1_1_b_v_h_viewer_base_1a8c4d35110aa995ee1c29da2cb590a253" prot="public" static="no">
+        <type><ref refid="classmuda_1_1lbvh_1_1details_1_1_b_v_h_viewer_base" kindref="compound">BVHViewerBase</ref>&lt; IsConst, real_type, object_type &gt;</type>
+        <definition>using muda::lbvh::details::BVHViewerBase&lt; IsConst, Real, Object &gt;::ThisViewer =  BVHViewerBase&lt;IsConst, real_type, object_type&gt;</definition>
+        <argsstring></argsstring>
+        <name>ThisViewer</name>
+        <qualifiedname>muda::lbvh::details::BVHViewerBase::ThisViewer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/lbvh/bvh_viewer.h" line="140" column="9" bodyfile="src/muda/ext/geo/lbvh/bvh_viewer.h" bodystart="140" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="friend">
+      <memberdef kind="friend" id="classmuda_1_1lbvh_1_1details_1_1_b_v_h_viewer_base_1a480383937c9e206a505fa7cea58b606d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Real_</type>
+          </param>
+          <param>
+            <type>typename Object_</type>
+          </param>
+          <param>
+            <type>typename AABBGetter</type>
+          </param>
+          <param>
+            <type>typename MortonCodeCalculator</type>
+          </param>
+        </templateparamlist>
+        <type>class</type>
+        <definition>friend class BVH</definition>
+        <argsstring></argsstring>
+        <name>BVH</name>
+        <qualifiedname>muda::lbvh::details::BVHViewerBase::BVH</qualifiedname>
+        <param>
+          <type><ref refid="classmuda_1_1lbvh_1_1_b_v_h" kindref="compound">BVH</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/lbvh/bvh_viewer.h" line="128" column="22" bodyfile="src/muda/ext/geo/lbvh/bvh_viewer.h" bodystart="128" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classmuda_1_1lbvh_1_1details_1_1_b_v_h_viewer_base_1a9f291378dedb1ae8c63cad6a2455ac5c" prot="private" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t muda::lbvh::details::BVHViewerBase&lt; IsConst, Real, Object &gt;::m_num_nodes</definition>
+        <argsstring></argsstring>
+        <name>m_num_nodes</name>
+        <qualifiedname>muda::lbvh::details::BVHViewerBase::m_num_nodes</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/lbvh/bvh_viewer.h" line="340" column="18" bodyfile="src/muda/ext/geo/lbvh/bvh_viewer.h" bodystart="340" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1lbvh_1_1details_1_1_b_v_h_viewer_base_1a7b40897a243150fe989d404b5a35e480" prot="private" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t muda::lbvh::details::BVHViewerBase&lt; IsConst, Real, Object &gt;::m_num_objects</definition>
+        <argsstring></argsstring>
+        <name>m_num_objects</name>
+        <qualifiedname>muda::lbvh::details::BVHViewerBase::m_num_objects</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/lbvh/bvh_viewer.h" line="341" column="18" bodyfile="src/muda/ext/geo/lbvh/bvh_viewer.h" bodystart="341" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1lbvh_1_1details_1_1_b_v_h_viewer_base_1a167b67e03d53d54f8f39c203fef0ee6c" prot="private" static="no" mutable="no">
+        <type>auto_const_t&lt; <ref refid="structmuda_1_1lbvh_1_1details_1_1_node" kindref="compound">node_type</ref> &gt; *</type>
+        <definition>auto_const_t&lt;node_type&gt;* muda::lbvh::details::BVHViewerBase&lt; IsConst, Real, Object &gt;::m_nodes</definition>
+        <argsstring></argsstring>
+        <name>m_nodes</name>
+        <qualifiedname>muda::lbvh::details::BVHViewerBase::m_nodes</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/lbvh/bvh_viewer.h" line="343" column="24" bodyfile="src/muda/ext/geo/lbvh/bvh_viewer.h" bodystart="343" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1lbvh_1_1details_1_1_b_v_h_viewer_base_1ad5dd1ecc232f308e8b7d49bd5f8b7883" prot="private" static="no" mutable="no">
+        <type>auto_const_t&lt; <ref refid="structmuda_1_1lbvh_1_1_a_a_b_b" kindref="compound">aabb_type</ref> &gt; *</type>
+        <definition>auto_const_t&lt;aabb_type&gt;* muda::lbvh::details::BVHViewerBase&lt; IsConst, Real, Object &gt;::m_aabbs</definition>
+        <argsstring></argsstring>
+        <name>m_aabbs</name>
+        <qualifiedname>muda::lbvh::details::BVHViewerBase::m_aabbs</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/lbvh/bvh_viewer.h" line="344" column="24" bodyfile="src/muda/ext/geo/lbvh/bvh_viewer.h" bodystart="344" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1lbvh_1_1details_1_1_b_v_h_viewer_base_1a9da97ea04139f6acd6fad25b33112f25" prot="private" static="no" mutable="no">
+        <type>auto_const_t&lt; object_type &gt; *</type>
+        <definition>auto_const_t&lt;object_type&gt;* muda::lbvh::details::BVHViewerBase&lt; IsConst, Real, Object &gt;::m_objects</definition>
+        <argsstring></argsstring>
+        <name>m_objects</name>
+        <qualifiedname>muda::lbvh::details::BVHViewerBase::m_objects</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/lbvh/bvh_viewer.h" line="345" column="22" bodyfile="src/muda/ext/geo/lbvh/bvh_viewer.h" bodystart="345" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classmuda_1_1lbvh_1_1details_1_1_b_v_h_viewer_base_1af37156c61472554e38630eb964ce6a05" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>muda::lbvh::details::BVHViewerBase&lt; IsConst, Real, Object &gt;::MUDA_VIEWER_COMMON_NAME</definition>
+        <argsstring>(BVHViewerBase)</argsstring>
+        <name>MUDA_VIEWER_COMMON_NAME</name>
+        <qualifiedname>muda::lbvh::details::BVHViewerBase::MUDA_VIEWER_COMMON_NAME</qualifiedname>
+        <param>
+          <type><ref refid="classmuda_1_1lbvh_1_1details_1_1_b_v_h_viewer_base" kindref="compound">BVHViewerBase</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/lbvh/bvh_viewer.h" line="121" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1lbvh_1_1details_1_1_b_v_h_viewer_base_1ad6c16d32024eb8e984d88ffba27ddcc7" prot="private" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>MUDA_INLINE MUDA_GENERIC void</type>
+        <definition>MUDA_INLINE MUDA_GENERIC void muda::lbvh::details::BVHViewerBase&lt; IsConst, Real, Object &gt;::check_index</definition>
+        <argsstring>(const uint32_t idx) const noexcept</argsstring>
+        <name>check_index</name>
+        <qualifiedname>muda::lbvh::details::BVHViewerBase::check_index</qualifiedname>
+        <param>
+          <type>const uint32_t</type>
+          <declname>idx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/lbvh/bvh_viewer.h" line="347" column="39" bodyfile="src/muda/ext/geo/lbvh/bvh_viewer.h" bodystart="347" bodyend="355"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmuda_1_1lbvh_1_1details_1_1_b_v_h_viewer_base_1a7070331b8f2de0268a47d9b24af61e73" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>MUDA_GENERIC</type>
+        <definition>MUDA_GENERIC muda::lbvh::details::BVHViewerBase&lt; IsConst, Real, Object &gt;::BVHViewerBase</definition>
+        <argsstring>(const uint32_t num_nodes, const uint32_t num_objects, auto_const_t&lt; node_type &gt; *nodes, auto_const_t&lt; aabb_type &gt; *aabbs, auto_const_t&lt; object_type &gt; *objects)</argsstring>
+        <name>BVHViewerBase</name>
+        <qualifiedname>muda::lbvh::details::BVHViewerBase::BVHViewerBase</qualifiedname>
+        <param>
+          <type>const uint32_t</type>
+          <declname>num_nodes</declname>
+        </param>
+        <param>
+          <type>const uint32_t</type>
+          <declname>num_objects</declname>
+        </param>
+        <param>
+          <type>auto_const_t&lt; <ref refid="structmuda_1_1lbvh_1_1details_1_1_node" kindref="compound">node_type</ref> &gt; *</type>
+          <declname>nodes</declname>
+        </param>
+        <param>
+          <type>auto_const_t&lt; <ref refid="structmuda_1_1lbvh_1_1_a_a_b_b" kindref="compound">aabb_type</ref> &gt; *</type>
+          <declname>aabbs</declname>
+        </param>
+        <param>
+          <type>auto_const_t&lt; object_type &gt; *</type>
+          <declname>objects</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/lbvh/bvh_viewer.h" line="147" column="22" bodyfile="src/muda/ext/geo/lbvh/bvh_viewer.h" bodystart="147" bodyend="168"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1lbvh_1_1details_1_1_b_v_h_viewer_base_1a848c3a2a1065a78926df7f71aaabccbd" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>MUDA_GENERIC auto</type>
+        <definition>MUDA_GENERIC auto muda::lbvh::details::BVHViewerBase&lt; IsConst, Real, Object &gt;::as_const</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>as_const</name>
+        <qualifiedname>muda::lbvh::details::BVHViewerBase::as_const</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/lbvh/bvh_viewer.h" line="170" column="27" bodyfile="src/muda/ext/geo/lbvh/bvh_viewer.h" bodystart="170" bodyend="173"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1lbvh_1_1details_1_1_b_v_h_viewer_base_1af6ffa4c4fde1b2ed6a6aacfe934d2405" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>MUDA_GENERIC</type>
+        <definition>MUDA_GENERIC muda::lbvh::details::BVHViewerBase&lt; IsConst, Real, Object &gt;::operator ConstViewer</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>operator ConstViewer</name>
+        <qualifiedname>muda::lbvh::details::BVHViewerBase::operator ConstViewer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/lbvh/bvh_viewer.h" line="175" column="22" bodyfile="src/muda/ext/geo/lbvh/bvh_viewer.h" bodystart="175" bodyend="178"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1lbvh_1_1details_1_1_b_v_h_viewer_base_1aad92b307f1e45e6bb921d0a6881d5341" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>MUDA_GENERIC auto</type>
+        <definition>MUDA_GENERIC auto muda::lbvh::details::BVHViewerBase&lt; IsConst, Real, Object &gt;::num_nodes</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>num_nodes</name>
+        <qualifiedname>muda::lbvh::details::BVHViewerBase::num_nodes</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/lbvh/bvh_viewer.h" line="180" column="27" bodyfile="src/muda/ext/geo/lbvh/bvh_viewer.h" bodystart="180" bodyend="180"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1lbvh_1_1details_1_1_b_v_h_viewer_base_1a220dc57c7154fd7c6ecd2c408a14e259" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>MUDA_GENERIC auto</type>
+        <definition>MUDA_GENERIC auto muda::lbvh::details::BVHViewerBase&lt; IsConst, Real, Object &gt;::num_objects</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>num_objects</name>
+        <qualifiedname>muda::lbvh::details::BVHViewerBase::num_objects</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/lbvh/bvh_viewer.h" line="181" column="27" bodyfile="src/muda/ext/geo/lbvh/bvh_viewer.h" bodystart="181" bodyend="181"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1lbvh_1_1details_1_1_b_v_h_viewer_base_1a9e0b2daa981e0079b282e9f35fa049e6" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename F</type>
+          </param>
+          <param>
+            <type>uint32_t</type>
+            <declname>StackNum</declname>
+            <defname>StackNum</defname>
+            <defval>64</defval>
+          </param>
+        </templateparamlist>
+        <type>MUDA_GENERIC uint32_t</type>
+        <definition>MUDA_GENERIC uint32_t muda::lbvh::details::BVHViewerBase&lt; IsConst, Real, Object &gt;::query</definition>
+        <argsstring>(const query_overlap&lt; real_type &gt; &amp;q, F callback=DefaultQueryCallback{}) const noexcept</argsstring>
+        <name>query</name>
+        <qualifiedname>muda::lbvh::details::BVHViewerBase::query</qualifiedname>
+        <param>
+          <type>const <ref refid="structmuda_1_1lbvh_1_1query__overlap" kindref="compound">query_overlap</ref>&lt; real_type &gt; &amp;</type>
+          <declname>q</declname>
+        </param>
+        <param>
+          <type>F</type>
+          <declname>callback</declname>
+          <defval><ref refid="structmuda_1_1lbvh_1_1details_1_1_b_v_h_viewer_base_1_1_default_query_callback" kindref="compound">DefaultQueryCallback</ref>{}</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/lbvh/bvh_viewer.h" line="188" column="31" bodyfile="src/muda/ext/geo/lbvh/bvh_viewer.h" bodystart="188" bodyend="241"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1lbvh_1_1details_1_1_b_v_h_viewer_base_1aadfefe509a63dd7be029577edcec8689" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename FDistanceCalculator</type>
+          </param>
+          <param>
+            <type>uint32_t</type>
+            <declname>StackNum</declname>
+            <defname>StackNum</defname>
+            <defval>64</defval>
+          </param>
+        </templateparamlist>
+        <type>MUDA_GENERIC thrust::pair&lt; uint32_t, real_type &gt;</type>
+        <definition>MUDA_GENERIC thrust::pair&lt; uint32_t, real_type &gt; muda::lbvh::details::BVHViewerBase&lt; IsConst, Real, Object &gt;::query</definition>
+        <argsstring>(const query_nearest&lt; real_type &gt; &amp;q, FDistanceCalculator calc_dist) const noexcept</argsstring>
+        <name>query</name>
+        <qualifiedname>muda::lbvh::details::BVHViewerBase::query</qualifiedname>
+        <param>
+          <type>const <ref refid="structmuda_1_1lbvh_1_1query__nearest" kindref="compound">query_nearest</ref>&lt; real_type &gt; &amp;</type>
+          <declname>q</declname>
+        </param>
+        <param>
+          <type>FDistanceCalculator</type>
+          <declname>calc_dist</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/lbvh/bvh_viewer.h" line="250" column="35" bodyfile="src/muda/ext/geo/lbvh/bvh_viewer.h" bodystart="250" bodyend="325"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1lbvh_1_1details_1_1_b_v_h_viewer_base_1a70336d2fa1317cbf302d9a10b60887ea" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>MUDA_GENERIC auto_const_t&lt; object_type &gt; &amp;</type>
+        <definition>MUDA_GENERIC auto_const_t&lt; object_type &gt; &amp; muda::lbvh::details::BVHViewerBase&lt; IsConst, Real, Object &gt;::object</definition>
+        <argsstring>(const uint32_t idx) noexcept</argsstring>
+        <name>object</name>
+        <qualifiedname>muda::lbvh::details::BVHViewerBase::object</qualifiedname>
+        <param>
+          <type>const uint32_t</type>
+          <declname>idx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/lbvh/bvh_viewer.h" line="327" column="35" bodyfile="src/muda/ext/geo/lbvh/bvh_viewer.h" bodystart="327" bodyend="331"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1lbvh_1_1details_1_1_b_v_h_viewer_base_1acf2580dcd94844b958652e62334f4d06" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>MUDA_GENERIC const object_type &amp;</type>
+        <definition>MUDA_GENERIC const object_type &amp; muda::lbvh::details::BVHViewerBase&lt; IsConst, Real, Object &gt;::object</definition>
+        <argsstring>(const uint32_t idx) const noexcept</argsstring>
+        <name>object</name>
+        <qualifiedname>muda::lbvh::details::BVHViewerBase::object</qualifiedname>
+        <param>
+          <type>const uint32_t</type>
+          <declname>idx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/lbvh/bvh_viewer.h" line="333" column="40" bodyfile="src/muda/ext/geo/lbvh/bvh_viewer.h" bodystart="333" bodyend="337"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>muda::ViewerBase&lt; IsConst &gt;</label>
+        <link refid="classmuda_1_1_viewer_base"/>
+      </node>
+      <node id="1">
+        <label>muda::lbvh::details::BVHViewerBase&lt; IsConst, Real, Object &gt;</label>
+        <link refid="classmuda_1_1lbvh_1_1details_1_1_b_v_h_viewer_base"/>
+        <childnode refid="2" relation="private-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>muda::ViewerBase&lt; IsConst &gt;</label>
+        <link refid="classmuda_1_1_viewer_base"/>
+      </node>
+      <node id="1">
+        <label>muda::lbvh::details::BVHViewerBase&lt; IsConst, Real, Object &gt;</label>
+        <link refid="classmuda_1_1lbvh_1_1details_1_1_b_v_h_viewer_base"/>
+        <childnode refid="2" relation="private-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="src/muda/ext/geo/lbvh/bvh_viewer.h" line="119" column="5" bodyfile="src/muda/ext/geo/lbvh/bvh_viewer.h" bodystart="120" bodyend="356"/>
+    <listofallmembers>
+      <member refid="classmuda_1_1lbvh_1_1details_1_1_b_v_h_viewer_base_1ab1e5fe952c6d6fba31d73d7b5ee7e6c5" prot="public" virt="non-virtual"><scope>muda::lbvh::details::BVHViewerBase</scope><name>aabb_type</name></member>
+      <member refid="classmuda_1_1lbvh_1_1details_1_1_b_v_h_viewer_base_1a848c3a2a1065a78926df7f71aaabccbd" prot="public" virt="non-virtual"><scope>muda::lbvh::details::BVHViewerBase</scope><name>as_const</name></member>
+      <member refid="classmuda_1_1lbvh_1_1details_1_1_b_v_h_viewer_base_1a905e392f2d9e910dee6def341111cd02" prot="private" virt="non-virtual"><scope>muda::lbvh::details::BVHViewerBase</scope><name>auto_const_t</name></member>
+      <member refid="classmuda_1_1lbvh_1_1details_1_1_b_v_h_viewer_base_1a9fc2b9c91a033d575741c88960b4bf73" prot="private" virt="non-virtual"><scope>muda::lbvh::details::BVHViewerBase</scope><name>Base</name></member>
+      <member refid="classmuda_1_1lbvh_1_1details_1_1_b_v_h_viewer_base_1a480383937c9e206a505fa7cea58b606d" prot="private" virt="non-virtual"><scope>muda::lbvh::details::BVHViewerBase</scope><name>BVH</name></member>
+      <member refid="classmuda_1_1lbvh_1_1details_1_1_b_v_h_viewer_base_1a7070331b8f2de0268a47d9b24af61e73" prot="public" virt="non-virtual"><scope>muda::lbvh::details::BVHViewerBase</scope><name>BVHViewerBase</name></member>
+      <member refid="classmuda_1_1lbvh_1_1details_1_1_b_v_h_viewer_base_1ad6c16d32024eb8e984d88ffba27ddcc7" prot="private" virt="non-virtual"><scope>muda::lbvh::details::BVHViewerBase</scope><name>check_index</name></member>
+      <member refid="classmuda_1_1lbvh_1_1details_1_1_b_v_h_viewer_base_1a17101429de1cfcc85cd777ab39014078" prot="public" virt="non-virtual"><scope>muda::lbvh::details::BVHViewerBase</scope><name>ConstViewer</name></member>
+      <member refid="classmuda_1_1lbvh_1_1details_1_1_b_v_h_viewer_base_1a64e504c1608058977aa06bc55dc0d8f9" prot="public" virt="non-virtual"><scope>muda::lbvh::details::BVHViewerBase</scope><name>index_type</name></member>
+      <member refid="classmuda_1_1lbvh_1_1details_1_1_b_v_h_viewer_base_1ad5dd1ecc232f308e8b7d49bd5f8b7883" prot="private" virt="non-virtual"><scope>muda::lbvh::details::BVHViewerBase</scope><name>m_aabbs</name></member>
+      <member refid="classmuda_1_1lbvh_1_1details_1_1_b_v_h_viewer_base_1a167b67e03d53d54f8f39c203fef0ee6c" prot="private" virt="non-virtual"><scope>muda::lbvh::details::BVHViewerBase</scope><name>m_nodes</name></member>
+      <member refid="classmuda_1_1lbvh_1_1details_1_1_b_v_h_viewer_base_1a9f291378dedb1ae8c63cad6a2455ac5c" prot="private" virt="non-virtual"><scope>muda::lbvh::details::BVHViewerBase</scope><name>m_num_nodes</name></member>
+      <member refid="classmuda_1_1lbvh_1_1details_1_1_b_v_h_viewer_base_1a7b40897a243150fe989d404b5a35e480" prot="private" virt="non-virtual"><scope>muda::lbvh::details::BVHViewerBase</scope><name>m_num_objects</name></member>
+      <member refid="classmuda_1_1lbvh_1_1details_1_1_b_v_h_viewer_base_1a9da97ea04139f6acd6fad25b33112f25" prot="private" virt="non-virtual"><scope>muda::lbvh::details::BVHViewerBase</scope><name>m_objects</name></member>
+      <member refid="classmuda_1_1lbvh_1_1details_1_1_b_v_h_viewer_base_1af37156c61472554e38630eb964ce6a05" prot="private" virt="non-virtual"><scope>muda::lbvh::details::BVHViewerBase</scope><name>MUDA_VIEWER_COMMON_NAME</name></member>
+      <member refid="classmuda_1_1lbvh_1_1details_1_1_b_v_h_viewer_base_1a0ecc57a93cb6b97a2aadbe101cbce05a" prot="public" virt="non-virtual"><scope>muda::lbvh::details::BVHViewerBase</scope><name>node_type</name></member>
+      <member refid="classmuda_1_1lbvh_1_1details_1_1_b_v_h_viewer_base_1a55e6f4d67af1522aac72b1b3e8a0fb36" prot="public" virt="non-virtual"><scope>muda::lbvh::details::BVHViewerBase</scope><name>NonConstViewer</name></member>
+      <member refid="classmuda_1_1lbvh_1_1details_1_1_b_v_h_viewer_base_1aad92b307f1e45e6bb921d0a6881d5341" prot="public" virt="non-virtual"><scope>muda::lbvh::details::BVHViewerBase</scope><name>num_nodes</name></member>
+      <member refid="classmuda_1_1lbvh_1_1details_1_1_b_v_h_viewer_base_1a220dc57c7154fd7c6ecd2c408a14e259" prot="public" virt="non-virtual"><scope>muda::lbvh::details::BVHViewerBase</scope><name>num_objects</name></member>
+      <member refid="classmuda_1_1lbvh_1_1details_1_1_b_v_h_viewer_base_1a70336d2fa1317cbf302d9a10b60887ea" prot="public" virt="non-virtual"><scope>muda::lbvh::details::BVHViewerBase</scope><name>object</name></member>
+      <member refid="classmuda_1_1lbvh_1_1details_1_1_b_v_h_viewer_base_1acf2580dcd94844b958652e62334f4d06" prot="public" virt="non-virtual"><scope>muda::lbvh::details::BVHViewerBase</scope><name>object</name></member>
+      <member refid="classmuda_1_1lbvh_1_1details_1_1_b_v_h_viewer_base_1a38d52155a5139b937699c0b85750aaff" prot="public" virt="non-virtual"><scope>muda::lbvh::details::BVHViewerBase</scope><name>object_type</name></member>
+      <member refid="classmuda_1_1lbvh_1_1details_1_1_b_v_h_viewer_base_1af6ffa4c4fde1b2ed6a6aacfe934d2405" prot="public" virt="non-virtual"><scope>muda::lbvh::details::BVHViewerBase</scope><name>operator ConstViewer</name></member>
+      <member refid="classmuda_1_1lbvh_1_1details_1_1_b_v_h_viewer_base_1a9e0b2daa981e0079b282e9f35fa049e6" prot="public" virt="non-virtual"><scope>muda::lbvh::details::BVHViewerBase</scope><name>query</name></member>
+      <member refid="classmuda_1_1lbvh_1_1details_1_1_b_v_h_viewer_base_1aadfefe509a63dd7be029577edcec8689" prot="public" virt="non-virtual"><scope>muda::lbvh::details::BVHViewerBase</scope><name>query</name></member>
+      <member refid="classmuda_1_1lbvh_1_1details_1_1_b_v_h_viewer_base_1adc2dc5943e439e97ebdafd74de51ab07" prot="public" virt="non-virtual"><scope>muda::lbvh::details::BVHViewerBase</scope><name>real_type</name></member>
+      <member refid="classmuda_1_1lbvh_1_1details_1_1_b_v_h_viewer_base_1a8c4d35110aa995ee1c29da2cb590a253" prot="public" virt="non-virtual"><scope>muda::lbvh::details::BVHViewerBase</scope><name>ThisViewer</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

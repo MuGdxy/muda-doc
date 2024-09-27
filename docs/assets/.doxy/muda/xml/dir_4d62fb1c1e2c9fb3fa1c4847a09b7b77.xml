@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="dir_4d62fb1c1e2c9fb3fa1c4847a09b7b77" kind="dir">
+    <compoundname>src/muda/tools</compoundname>
+    <innerfile refid="cuda__vec__utils_8h">cuda_vec_utils.h</innerfile>
+    <innerfile refid="debug__break_8h">debug_break.h</innerfile>
+    <innerfile refid="debug__log_8h">debug_log.h</innerfile>
+    <innerfile refid="extent_8h">extent.h</innerfile>
+    <innerfile refid="filesystem_8h">filesystem.h</innerfile>
+    <innerfile refid="flag_8h">flag.h</innerfile>
+    <innerfile refid="fuzzy_8h">fuzzy.h</innerfile>
+    <innerfile refid="host__device__config_8h">host_device_config.h</innerfile>
+    <innerfile refid="host__device__string__cache_8h">host_device_string_cache.h</innerfile>
+    <innerfile refid="id__with__type_8h">id_with_type.h</innerfile>
+    <innerfile refid="launch__info__cache_8h">launch_info_cache.h</innerfile>
+    <innerfile refid="platform_8h">platform.h</innerfile>
+    <innerfile refid="string__pointer_8h">string_pointer.h</innerfile>
+    <innerfile refid="temp__buffer_8h">temp_buffer.h</innerfile>
+    <innerfile refid="version_8h">version.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/muda/tools/"/>
+  </compounddef>
+</doxygen>

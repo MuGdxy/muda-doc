@@ -1,0 +1,200 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classmuda_1_1_compute_graph_capture_node" kind="class" language="C++" prot="public">
+    <compoundname>muda::ComputeGraphCaptureNode</compoundname>
+    <basecompoundref refid="classmuda_1_1_compute_graph_node_base" prot="public" virt="non-virtual">muda::ComputeGraphNodeBase</basecompoundref>
+    <sectiondef kind="friend">
+      <memberdef kind="friend" id="classmuda_1_1_compute_graph_capture_node_1ab23709c145a1c448654edf5f911bafe9" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class ComputeGraph</definition>
+        <argsstring></argsstring>
+        <name>ComputeGraph</name>
+        <qualifiedname>muda::ComputeGraphCaptureNode::ComputeGraph</qualifiedname>
+        <param>
+          <type><ref refid="classmuda_1_1_compute_graph" kindref="compound">ComputeGraph</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/compute_graph/nodes/compute_graph_catpure_node.h" line="10" column="18" bodyfile="src/muda/compute_graph/nodes/compute_graph_catpure_node.h" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="classmuda_1_1_compute_graph_capture_node_1ac70fef384dd042f2bd784368c9e394de" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class details::ComputeGraphAccessor</definition>
+        <argsstring></argsstring>
+        <name>details::ComputeGraphAccessor</name>
+        <qualifiedname>muda::ComputeGraphCaptureNode::ComputeGraphAccessor</qualifiedname>
+        <param>
+          <type><ref refid="classmuda_1_1details_1_1_compute_graph_accessor" kindref="compound">details::ComputeGraphAccessor</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/compute_graph/nodes/compute_graph_catpure_node.h" line="11" column="18" bodyfile="src/muda/compute_graph/nodes/compute_graph_catpure_node.h" bodystart="11" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classmuda_1_1_compute_graph_capture_node_1a2b3fadc96fca87bb71ab298895977f66" prot="protected" static="no" mutable="no">
+        <type>cudaGraph_t</type>
+        <definition>cudaGraph_t muda::ComputeGraphCaptureNode::m_sub_graph</definition>
+        <argsstring></argsstring>
+        <name>m_sub_graph</name>
+        <qualifiedname>muda::ComputeGraphCaptureNode::m_sub_graph</qualifiedname>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/compute_graph/nodes/compute_graph_catpure_node.h" line="37" column="17" bodyfile="src/muda/compute_graph/nodes/compute_graph_catpure_node.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classmuda_1_1_compute_graph_capture_node_1a6771b3c6e7a48a9dc227864d5634f716" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>muda::ComputeGraphCaptureNode::ComputeGraphCaptureNode</definition>
+        <argsstring>(NodeId node_id, uint64_t access_index)</argsstring>
+        <name>ComputeGraphCaptureNode</name>
+        <qualifiedname>muda::ComputeGraphCaptureNode::ComputeGraphCaptureNode</qualifiedname>
+        <param>
+          <type><ref refid="classmuda_1_1_node_id" kindref="compound">NodeId</ref></type>
+          <declname>node_id</declname>
+        </param>
+        <param>
+          <type>uint64_t</type>
+          <declname>access_index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/compute_graph/nodes/compute_graph_catpure_node.h" line="12" column="5" bodyfile="src/muda/compute_graph/nodes/compute_graph_catpure_node.h" bodystart="12" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_compute_graph_capture_node_1a2a9bdc9b76a2d1edf614beca81d7acd3" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual muda::ComputeGraphCaptureNode::~ComputeGraphCaptureNode</definition>
+        <argsstring>() override</argsstring>
+        <name>~ComputeGraphCaptureNode</name>
+        <qualifiedname>muda::ComputeGraphCaptureNode::~ComputeGraphCaptureNode</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/compute_graph/nodes/compute_graph_catpure_node.h" line="26" column="13" bodyfile="src/muda/compute_graph/nodes/compute_graph_catpure_node.h" bodystart="26" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_compute_graph_capture_node_1ad8c10af9fdddd9e63c8fdc68e1ccffca" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void muda::ComputeGraphCaptureNode::set_node</definition>
+        <argsstring>(cudaGraphNode_t node)</argsstring>
+        <name>set_node</name>
+        <qualifiedname>muda::ComputeGraphCaptureNode::set_node</qualifiedname>
+        <param>
+          <type>cudaGraphNode_t</type>
+          <declname>node</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/compute_graph/nodes/compute_graph_catpure_node.h" line="28" column="10" bodyfile="src/muda/compute_graph/nodes/compute_graph_catpure_node.h" bodystart="28" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_compute_graph_capture_node_1a7fa7de91dfac77c0d40b1f9a6d6a4e62" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void muda::ComputeGraphCaptureNode::update_sub_graph</definition>
+        <argsstring>(cudaGraph_t sub_graph)</argsstring>
+        <name>update_sub_graph</name>
+        <qualifiedname>muda::ComputeGraphCaptureNode::update_sub_graph</qualifiedname>
+        <param>
+          <type>cudaGraph_t</type>
+          <declname>sub_graph</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/compute_graph/nodes/compute_graph_catpure_node.h" line="30" column="10" bodyfile="src/muda/compute_graph/nodes/compute_graph_catpure_node.h" bodystart="30" bodyend="35"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>muda::ComputeGraphCaptureNode</label>
+        <link refid="classmuda_1_1_compute_graph_capture_node"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>muda::ComputeGraphNodeBase</label>
+        <link refid="classmuda_1_1_compute_graph_node_base"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="4">
+        <label>U64IdWithType</label>
+        <link refid="classmuda_1_1_id_with_type"/>
+      </node>
+      <node id="1">
+        <label>muda::ComputeGraphCaptureNode</label>
+        <link refid="classmuda_1_1_compute_graph_capture_node"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>muda::ComputeGraphNodeBase</label>
+        <link refid="classmuda_1_1_compute_graph_node_base"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>m_node_id</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>muda::NodeId</label>
+        <link refid="classmuda_1_1_node_id"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="src/muda/compute_graph/nodes/compute_graph_catpure_node.h" line="7" column="1" bodyfile="src/muda/compute_graph/nodes/compute_graph_catpure_node.h" bodystart="8" bodyend="38"/>
+    <listofallmembers>
+      <member refid="classmuda_1_1_compute_graph_node_base_1a0793d97feeaedc18fac9d8f1657022ec" prot="public" virt="non-virtual"><scope>muda::ComputeGraphCaptureNode</scope><name>access_index</name></member>
+      <member refid="classmuda_1_1_compute_graph_capture_node_1ab23709c145a1c448654edf5f911bafe9" prot="protected" virt="non-virtual"><scope>muda::ComputeGraphCaptureNode</scope><name>ComputeGraph</name></member>
+      <member refid="classmuda_1_1_compute_graph_capture_node_1a6771b3c6e7a48a9dc227864d5634f716" prot="protected" virt="non-virtual"><scope>muda::ComputeGraphCaptureNode</scope><name>ComputeGraphCaptureNode</name></member>
+      <member refid="classmuda_1_1_compute_graph_node_base_1aa196bab0889bc58303476d1ba695cf66" prot="protected" virt="non-virtual"><scope>muda::ComputeGraphCaptureNode</scope><name>ComputeGraphNodeBase</name></member>
+      <member refid="classmuda_1_1_compute_graph_capture_node_1ac70fef384dd042f2bd784368c9e394de" prot="public" virt="non-virtual"><scope>muda::ComputeGraphCaptureNode</scope><name>details::ComputeGraphAccessor</name></member>
+      <member refid="classmuda_1_1_compute_graph_node_base_1a974369d6c4b9726620fb7fdbc0a69895" prot="protected" virt="non-virtual"><scope>muda::ComputeGraphCaptureNode</scope><name>handle</name></member>
+      <member refid="classmuda_1_1_compute_graph_node_base_1ab265be48e9b79b43552bfff3a3273aaf" prot="protected" virt="non-virtual"><scope>muda::ComputeGraphCaptureNode</scope><name>is_valid</name></member>
+      <member refid="classmuda_1_1_compute_graph_node_base_1a883944825f4e648ee3174a4d2797f852" prot="protected" virt="non-virtual"><scope>muda::ComputeGraphCaptureNode</scope><name>m_access_index</name></member>
+      <member refid="classmuda_1_1_compute_graph_node_base_1add6ad2f05933e74154113828344856d9" prot="protected" virt="non-virtual"><scope>muda::ComputeGraphCaptureNode</scope><name>m_cuda_node</name></member>
+      <member refid="classmuda_1_1_compute_graph_node_base_1a7248523924db237526ebedc6307a2e05" prot="protected" virt="non-virtual"><scope>muda::ComputeGraphCaptureNode</scope><name>m_name</name></member>
+      <member refid="classmuda_1_1_compute_graph_node_base_1a0f1c76e764801d5f24e0ea06b0cd039b" prot="protected" virt="non-virtual"><scope>muda::ComputeGraphCaptureNode</scope><name>m_node_id</name></member>
+      <member refid="classmuda_1_1_compute_graph_capture_node_1a2b3fadc96fca87bb71ab298895977f66" prot="protected" virt="non-virtual"><scope>muda::ComputeGraphCaptureNode</scope><name>m_sub_graph</name></member>
+      <member refid="classmuda_1_1_compute_graph_node_base_1aac6910e48d4d6d5d469b11547d995038" prot="protected" virt="non-virtual"><scope>muda::ComputeGraphCaptureNode</scope><name>m_type</name></member>
+      <member refid="classmuda_1_1_compute_graph_node_base_1a36f3477ca603eb95627c94a4bce50b91" prot="public" virt="non-virtual"><scope>muda::ComputeGraphCaptureNode</scope><name>name</name></member>
+      <member refid="classmuda_1_1_compute_graph_node_base_1abd2e2bb722fd06d0c663168f55c67afe" prot="public" virt="non-virtual"><scope>muda::ComputeGraphCaptureNode</scope><name>node_id</name></member>
+      <member refid="classmuda_1_1_compute_graph_node_base_1a8cf400318901b00a603e49f6311ca97f" prot="protected" virt="non-virtual"><scope>muda::ComputeGraphCaptureNode</scope><name>S</name></member>
+      <member refid="classmuda_1_1_compute_graph_node_base_1a99cbd97427fe2871f55063badb9f2a9c" prot="protected" virt="non-virtual"><scope>muda::ComputeGraphCaptureNode</scope><name>set_handle</name></member>
+      <member refid="classmuda_1_1_compute_graph_capture_node_1ad8c10af9fdddd9e63c8fdc68e1ccffca" prot="protected" virt="non-virtual"><scope>muda::ComputeGraphCaptureNode</scope><name>set_node</name></member>
+      <member refid="classmuda_1_1_compute_graph_node_base_1abd04506915cbe5ead504048a0406d8f6" prot="public" virt="non-virtual"><scope>muda::ComputeGraphCaptureNode</scope><name>type</name></member>
+      <member refid="classmuda_1_1_compute_graph_capture_node_1a7fa7de91dfac77c0d40b1f9a6d6a4e62" prot="protected" virt="non-virtual"><scope>muda::ComputeGraphCaptureNode</scope><name>update_sub_graph</name></member>
+      <member refid="classmuda_1_1_compute_graph_capture_node_1a2a9bdc9b76a2d1edf614beca81d7acd3" prot="protected" virt="virtual"><scope>muda::ComputeGraphCaptureNode</scope><name>~ComputeGraphCaptureNode</name></member>
+      <member refid="classmuda_1_1_compute_graph_node_base_1a1ba236389c87e837e36f131adf01de0a" prot="public" virt="virtual"><scope>muda::ComputeGraphCaptureNode</scope><name>~ComputeGraphNodeBase</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

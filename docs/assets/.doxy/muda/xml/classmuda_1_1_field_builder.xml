@@ -1,0 +1,263 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classmuda_1_1_field_builder" kind="class" language="C++" prot="public">
+    <compoundname>muda::FieldBuilder</compoundname>
+    <innerclass refid="classmuda_1_1_field_builder_1_1_entry_proxy" prot="public">muda::FieldBuilder::EntryProxy</innerclass>
+    <templateparamlist>
+      <param>
+        <type>FieldEntryLayout</type>
+        <declname>Layout</declname>
+        <defname>Layout</defname>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="friend">
+      <memberdef kind="friend" id="classmuda_1_1_field_builder_1a7254b5de6e6918ac3991e168100e3202" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class SubField</definition>
+        <argsstring></argsstring>
+        <name>SubField</name>
+        <qualifiedname>muda::FieldBuilder::SubField</qualifiedname>
+        <param>
+          <type><ref refid="classmuda_1_1_sub_field" kindref="compound">SubField</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/field/field_builder.h" line="54" column="18" bodyfile="src/muda/ext/field/field_builder.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classmuda_1_1_field_builder_1aab87a97e39f7c2dce1bd9758162082ad" prot="private" static="no" mutable="no">
+        <type><ref refid="classmuda_1_1_sub_field" kindref="compound">SubField</ref> &amp;</type>
+        <definition>SubField&amp; muda::FieldBuilder&lt; Layout &gt;::m_subfield</definition>
+        <argsstring></argsstring>
+        <name>m_subfield</name>
+        <qualifiedname>muda::FieldBuilder::m_subfield</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/field/field_builder.h" line="56" column="25" bodyfile="src/muda/ext/field/field_builder.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1_field_builder_1ae3487e90c077e9572af63a64caf5b944" prot="private" static="no" mutable="no">
+        <type><ref refid="classmuda_1_1_field_entry_layout_info" kindref="compound">FieldEntryLayoutInfo</ref></type>
+        <definition>FieldEntryLayoutInfo muda::FieldBuilder&lt; Layout &gt;::m_layout</definition>
+        <argsstring></argsstring>
+        <name>m_layout</name>
+        <qualifiedname>muda::FieldBuilder::m_layout</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/field/field_builder.h" line="57" column="26" bodyfile="src/muda/ext/field/field_builder.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1_field_builder_1a4e16de651b86110546e6f34fa1c58137" prot="private" static="no" mutable="no">
+        <type><ref refid="classmuda_1_1_field_build_options" kindref="compound">FieldBuildOptions</ref></type>
+        <definition>FieldBuildOptions muda::FieldBuilder&lt; Layout &gt;::m_options</definition>
+        <argsstring></argsstring>
+        <name>m_options</name>
+        <qualifiedname>muda::FieldBuilder::m_options</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/field/field_builder.h" line="58" column="26" bodyfile="src/muda/ext/field/field_builder.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1_field_builder_1acda84149575040f0737d615f70800097" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool muda::FieldBuilder&lt; Layout &gt;::m_single_entry</definition>
+        <argsstring></argsstring>
+        <name>m_single_entry</name>
+        <qualifiedname>muda::FieldBuilder::m_single_entry</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/field/field_builder.h" line="59" column="26" bodyfile="src/muda/ext/field/field_builder.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1_field_builder_1a3534d287bc129997d5533fbb1c05b68d" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool muda::FieldBuilder&lt; Layout &gt;::m_is_built</definition>
+        <argsstring></argsstring>
+        <name>m_is_built</name>
+        <qualifiedname>muda::FieldBuilder::m_is_built</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/field/field_builder.h" line="60" column="26" bodyfile="src/muda/ext/field/field_builder.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classmuda_1_1_field_builder_1a04b0f276733a643896a17bcaa613885b" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>muda::FieldBuilder&lt; Layout &gt;::FieldBuilder</definition>
+        <argsstring>(SubField &amp;subfield, FieldEntryLayoutInfo layout, const FieldBuildOptions &amp;options)</argsstring>
+        <name>FieldBuilder</name>
+        <qualifiedname>muda::FieldBuilder::FieldBuilder</qualifiedname>
+        <param>
+          <type><ref refid="classmuda_1_1_sub_field" kindref="compound">SubField</ref> &amp;</type>
+          <declname>subfield</declname>
+        </param>
+        <param>
+          <type><ref refid="classmuda_1_1_field_entry_layout_info" kindref="compound">FieldEntryLayoutInfo</ref></type>
+          <declname>layout</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classmuda_1_1_field_build_options" kindref="compound">FieldBuildOptions</ref> &amp;</type>
+          <declname>options</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/field/field_builder.h" line="62" column="5" bodyfile="src/muda/ext/field/field_builder.h" bodystart="62" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_field_builder_1a79ad1acb6ef7554827ffea44545b2f71" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+          <param>
+            <type>int</type>
+            <declname>M</declname>
+            <defname>M</defname>
+          </param>
+          <param>
+            <type>int</type>
+            <declname>N</declname>
+            <defname>N</defname>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classmuda_1_1_field_entry" kindref="compound">FieldEntry</ref>&lt; T, Layout, M, N &gt; &amp;</type>
+        <definition>FieldEntry&lt; T, Layout, M, N &gt; &amp; muda::FieldBuilder&lt; Layout &gt;::create_entry</definition>
+        <argsstring>(std::string_view name, FieldEntryType type)</argsstring>
+        <name>create_entry</name>
+        <qualifiedname>muda::FieldBuilder::create_entry</qualifiedname>
+        <param>
+          <type>std::string_view</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>FieldEntryType</type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/field/field_builder.h" line="72" column="16"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmuda_1_1_field_builder_1ad072463325a9e8b759485e29199f6388" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classmuda_1_1_field_builder_1_1_entry_proxy" kindref="compound">EntryProxy</ref></type>
+        <definition>EntryProxy muda::FieldBuilder&lt; Layout &gt;::entry</definition>
+        <argsstring>(std::string_view name)</argsstring>
+        <name>entry</name>
+        <qualifiedname>muda::FieldBuilder::entry</qualifiedname>
+        <param>
+          <type>std::string_view</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/field/field_builder.h" line="75" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_field_builder_1a69274b54f484d464a17011735dfeef18" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classmuda_1_1_field_builder_1_1_entry_proxy" kindref="compound">EntryProxy</ref></type>
+        <definition>EntryProxy muda::FieldBuilder&lt; Layout &gt;::entry</definition>
+        <argsstring>()</argsstring>
+        <name>entry</name>
+        <qualifiedname>muda::FieldBuilder::entry</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/field/field_builder.h" line="76" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_field_builder_1a47fa5424773f0f69cab24d3323438008" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void muda::FieldBuilder&lt; Layout &gt;::build</definition>
+        <argsstring>()</argsstring>
+        <name>build</name>
+        <qualifiedname>muda::FieldBuilder::build</qualifiedname>
+        <briefdescription>
+<para>Finish building the field. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>options</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/field/field_builder.h" line="81" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_field_builder_1ad2d52ff682fe70a93b178beb18f09776" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>muda::FieldBuilder&lt; Layout &gt;::~FieldBuilder</definition>
+        <argsstring>()</argsstring>
+        <name>~FieldBuilder</name>
+        <qualifiedname>muda::FieldBuilder::~FieldBuilder</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/field/field_builder.h" line="83" column="5"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/muda/ext/field/field_builder.h" line="14" column="1" bodyfile="src/muda/ext/field/field_builder.h" bodystart="15" bodyend="84"/>
+    <listofallmembers>
+      <member refid="classmuda_1_1_field_builder_1a47fa5424773f0f69cab24d3323438008" prot="public" virt="non-virtual"><scope>muda::FieldBuilder</scope><name>build</name></member>
+      <member refid="classmuda_1_1_field_builder_1a79ad1acb6ef7554827ffea44545b2f71" prot="private" virt="non-virtual"><scope>muda::FieldBuilder</scope><name>create_entry</name></member>
+      <member refid="classmuda_1_1_field_builder_1ad072463325a9e8b759485e29199f6388" prot="public" virt="non-virtual"><scope>muda::FieldBuilder</scope><name>entry</name></member>
+      <member refid="classmuda_1_1_field_builder_1a69274b54f484d464a17011735dfeef18" prot="public" virt="non-virtual"><scope>muda::FieldBuilder</scope><name>entry</name></member>
+      <member refid="classmuda_1_1_field_builder_1a04b0f276733a643896a17bcaa613885b" prot="private" virt="non-virtual"><scope>muda::FieldBuilder</scope><name>FieldBuilder</name></member>
+      <member refid="classmuda_1_1_field_builder_1a3534d287bc129997d5533fbb1c05b68d" prot="private" virt="non-virtual"><scope>muda::FieldBuilder</scope><name>m_is_built</name></member>
+      <member refid="classmuda_1_1_field_builder_1ae3487e90c077e9572af63a64caf5b944" prot="private" virt="non-virtual"><scope>muda::FieldBuilder</scope><name>m_layout</name></member>
+      <member refid="classmuda_1_1_field_builder_1a4e16de651b86110546e6f34fa1c58137" prot="private" virt="non-virtual"><scope>muda::FieldBuilder</scope><name>m_options</name></member>
+      <member refid="classmuda_1_1_field_builder_1acda84149575040f0737d615f70800097" prot="private" virt="non-virtual"><scope>muda::FieldBuilder</scope><name>m_single_entry</name></member>
+      <member refid="classmuda_1_1_field_builder_1aab87a97e39f7c2dce1bd9758162082ad" prot="private" virt="non-virtual"><scope>muda::FieldBuilder</scope><name>m_subfield</name></member>
+      <member refid="classmuda_1_1_field_builder_1a7254b5de6e6918ac3991e168100e3202" prot="private" virt="non-virtual"><scope>muda::FieldBuilder</scope><name>SubField</name></member>
+      <member refid="classmuda_1_1_field_builder_1ad2d52ff682fe70a93b178beb18f09776" prot="public" virt="non-virtual"><scope>muda::FieldBuilder</scope><name>~FieldBuilder</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

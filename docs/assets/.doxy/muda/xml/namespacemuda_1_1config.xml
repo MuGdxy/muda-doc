@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="namespacemuda_1_1config" kind="namespace" language="C++">
+    <compoundname>muda::config</compoundname>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="muda__config_8h_1a69c96bb1550f442d5bddcf4fc421e0fd" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>constexpr bool</type>
+        <definition>constexpr bool muda::config::on</definition>
+        <argsstring>(bool cond=false)</argsstring>
+        <name>on</name>
+        <qualifiedname>muda::config::on</qualifiedname>
+        <param>
+          <type>bool</type>
+          <declname>cond</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/muda_config.h" line="15" column="20" bodyfile="src/muda/muda_config.h" bodystart="15" bodyend="18"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/muda/muda_config.h" line="13" column="1"/>
+  </compounddef>
+</doxygen>

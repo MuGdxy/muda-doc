@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classmuda_1_1_compute_graph_var_base_1_1_related_closure_info" kind="class" language="C++" prot="private">
+    <compoundname>muda::ComputeGraphVarBase::RelatedClosureInfo</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classmuda_1_1_compute_graph_var_base_1_1_related_closure_info_1a7293c7bb7f1e59908a30487179a300fb" prot="public" static="no" mutable="no">
+        <type><ref refid="classmuda_1_1_compute_graph" kindref="compound">ComputeGraph</ref> *</type>
+        <definition>ComputeGraph* muda::ComputeGraphVarBase::RelatedClosureInfo::graph</definition>
+        <argsstring></argsstring>
+        <name>graph</name>
+        <qualifiedname>muda::ComputeGraphVarBase::RelatedClosureInfo::graph</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/compute_graph/compute_graph_var.h" line="81" column="28" bodyfile="src/muda/compute_graph/compute_graph_var.h" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1_compute_graph_var_base_1_1_related_closure_info_1a35c7b83ae6ad03cc59bf510bf3f3cd3a" prot="public" static="no" mutable="no">
+        <type>std::set&lt; <ref refid="classmuda_1_1_closure_id" kindref="compound">ClosureId</ref> &gt;</type>
+        <definition>std::set&lt;ClosureId&gt; muda::ComputeGraphVarBase::RelatedClosureInfo::closure_ids</definition>
+        <argsstring></argsstring>
+        <name>closure_ids</name>
+        <qualifiedname>muda::ComputeGraphVarBase::RelatedClosureInfo::closure_ids</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/compute_graph/compute_graph_var.h" line="82" column="18" bodyfile="src/muda/compute_graph/compute_graph_var.h" bodystart="82" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>muda::ComputeGraph</label>
+        <link refid="classmuda_1_1_compute_graph"/>
+      </node>
+      <node id="1">
+        <label>muda::ComputeGraphVarBase::RelatedClosureInfo</label>
+        <childnode refid="2" relation="usage">
+          <edgelabel>graph</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="src/muda/compute_graph/compute_graph_var.h" line="78" column="5" bodyfile="src/muda/compute_graph/compute_graph_var.h" bodystart="79" bodyend="83"/>
+    <listofallmembers>
+      <member refid="classmuda_1_1_compute_graph_var_base_1_1_related_closure_info_1a35c7b83ae6ad03cc59bf510bf3f3cd3a" prot="public" virt="non-virtual"><scope>muda::ComputeGraphVarBase::RelatedClosureInfo</scope><name>closure_ids</name></member>
+      <member refid="classmuda_1_1_compute_graph_var_base_1_1_related_closure_info_1a7293c7bb7f1e59908a30487179a300fb" prot="public" virt="non-virtual"><scope>muda::ComputeGraphVarBase::RelatedClosureInfo</scope><name>graph</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

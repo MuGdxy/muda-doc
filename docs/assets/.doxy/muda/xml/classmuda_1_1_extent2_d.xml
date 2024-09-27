@@ -1,0 +1,152 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classmuda_1_1_extent2_d" kind="class" language="C++" prot="public">
+    <compoundname>muda::Extent2D</compoundname>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classmuda_1_1_extent2_d_1a9af2f1951d37ef81f00640b8fd2bd2e6" prot="private" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t muda::Extent2D::m_extent[2]</definition>
+        <argsstring>[2]</argsstring>
+        <name>m_extent</name>
+        <qualifiedname>muda::Extent2D::m_extent</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/tools/extent.h" line="11" column="12" bodyfile="src/muda/tools/extent.h" bodystart="11" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmuda_1_1_extent2_d_1ab9d7831fde1498475d2b7c24136f4cd9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>MUDA_GENERIC</type>
+        <definition>MUDA_GENERIC muda::Extent2D::Extent2D</definition>
+        <argsstring>() MUDA_NOEXCEPT</argsstring>
+        <name>Extent2D</name>
+        <qualifiedname>muda::Extent2D::Extent2D</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/tools/extent.h" line="14" column="18" bodyfile="src/muda/tools/extent.h" bodystart="14" bodyend="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_extent2_d_1a55f15e0aad02f44d29273c0c67476966" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>MUDA_GENERIC</type>
+        <definition>MUDA_GENERIC muda::Extent2D::Extent2D</definition>
+        <argsstring>(size_t height, size_t width) MUDA_NOEXCEPT</argsstring>
+        <name>Extent2D</name>
+        <qualifiedname>muda::Extent2D::Extent2D</qualifiedname>
+        <param>
+          <type>size_t</type>
+          <declname>height</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>width</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/tools/extent.h" line="16" column="18" bodyfile="src/muda/tools/extent.h" bodystart="16" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_extent2_d_1ae3d54335194b521062ae72a747f0e4e0" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>MUDA_GENERIC size_t</type>
+        <definition>MUDA_GENERIC size_t muda::Extent2D::height</definition>
+        <argsstring>() const MUDA_NOEXCEPT</argsstring>
+        <name>height</name>
+        <qualifiedname>muda::Extent2D::height</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/tools/extent.h" line="21" column="25" bodyfile="src/muda/tools/extent.h" bodystart="21" bodyend="21"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_extent2_d_1abd9bfbf382a785128894e5417dcbcf2b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>MUDA_GENERIC size_t</type>
+        <definition>MUDA_GENERIC size_t muda::Extent2D::width</definition>
+        <argsstring>() const MUDA_NOEXCEPT</argsstring>
+        <name>width</name>
+        <qualifiedname>muda::Extent2D::width</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/tools/extent.h" line="22" column="25" bodyfile="src/muda/tools/extent.h" bodystart="22" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_extent2_d_1a1f756e9433e0fa9dfa5b1b83d0941f61" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>MUDA_GENERIC cudaExtent</type>
+        <definition>MUDA_GENERIC cudaExtent muda::Extent2D::cuda_extent</definition>
+        <argsstring>() const MUDA_NOEXCEPT</argsstring>
+        <name>cuda_extent</name>
+        <qualifiedname>muda::Extent2D::cuda_extent</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/tools/extent.h" line="25" column="29" bodyfile="src/muda/tools/extent.h" bodystart="25" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_extent2_d_1a53d4f36e3fef01e7093b9a4ec59e6846" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>MUDA_GENERIC bool</type>
+        <definition>MUDA_GENERIC bool muda::Extent2D::valid</definition>
+        <argsstring>() const</argsstring>
+        <name>valid</name>
+        <qualifiedname>muda::Extent2D::valid</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/tools/extent.h" line="30" column="23" bodyfile="src/muda/tools/extent.h" bodystart="30" bodyend="33"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classmuda_1_1_extent2_d_1a55dbbc699dce5e7503fdae748d52b6e3" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>MUDA_GENERIC <ref refid="classmuda_1_1_extent2_d" kindref="compound">Extent2D</ref></type>
+        <definition>static MUDA_GENERIC Extent2D muda::Extent2D::Zero</definition>
+        <argsstring>() MUDA_NOEXCEPT</argsstring>
+        <name>Zero</name>
+        <qualifiedname>muda::Extent2D::Zero</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/tools/extent.h" line="35" column="34" bodyfile="src/muda/tools/extent.h" bodystart="35" bodyend="35"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/muda/tools/extent.h" line="9" column="1" bodyfile="src/muda/tools/extent.h" bodystart="10" bodyend="36"/>
+    <listofallmembers>
+      <member refid="classmuda_1_1_extent2_d_1a1f756e9433e0fa9dfa5b1b83d0941f61" prot="public" virt="non-virtual"><scope>muda::Extent2D</scope><name>cuda_extent</name></member>
+      <member refid="classmuda_1_1_extent2_d_1ab9d7831fde1498475d2b7c24136f4cd9" prot="public" virt="non-virtual"><scope>muda::Extent2D</scope><name>Extent2D</name></member>
+      <member refid="classmuda_1_1_extent2_d_1a55f15e0aad02f44d29273c0c67476966" prot="public" virt="non-virtual"><scope>muda::Extent2D</scope><name>Extent2D</name></member>
+      <member refid="classmuda_1_1_extent2_d_1ae3d54335194b521062ae72a747f0e4e0" prot="public" virt="non-virtual"><scope>muda::Extent2D</scope><name>height</name></member>
+      <member refid="classmuda_1_1_extent2_d_1a9af2f1951d37ef81f00640b8fd2bd2e6" prot="private" virt="non-virtual"><scope>muda::Extent2D</scope><name>m_extent</name></member>
+      <member refid="classmuda_1_1_extent2_d_1a53d4f36e3fef01e7093b9a4ec59e6846" prot="public" virt="non-virtual"><scope>muda::Extent2D</scope><name>valid</name></member>
+      <member refid="classmuda_1_1_extent2_d_1abd9bfbf382a785128894e5417dcbcf2b" prot="public" virt="non-virtual"><scope>muda::Extent2D</scope><name>width</name></member>
+      <member refid="classmuda_1_1_extent2_d_1a55dbbc699dce5e7503fdae748d52b6e3" prot="public" virt="non-virtual"><scope>muda::Extent2D</scope><name>Zero</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

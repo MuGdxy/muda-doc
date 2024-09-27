@@ -1,0 +1,95 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classmuda_1_1details_1_1_logger_offset" kind="class" language="C++" prot="public">
+    <compoundname>muda::details::LoggerOffset</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classmuda_1_1details_1_1_logger_offset_1a99ed7b6515aa21b436ac685a18c68a71" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t muda::details::LoggerOffset::log_id</definition>
+        <argsstring></argsstring>
+        <name>log_id</name>
+        <qualifiedname>muda::details::LoggerOffset::log_id</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/logger/logger_basic_data.h" line="52" column="18" bodyfile="src/muda/logger/logger_basic_data.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1details_1_1_logger_offset_1ad32768a354c24ee15d99bc10e06edc01" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t muda::details::LoggerOffset::meta_data_offset</definition>
+        <argsstring></argsstring>
+        <name>meta_data_offset</name>
+        <qualifiedname>muda::details::LoggerOffset::meta_data_offset</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/logger/logger_basic_data.h" line="53" column="18" bodyfile="src/muda/logger/logger_basic_data.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1details_1_1_logger_offset_1a67c93a68db691891f1efb0837dff3679" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t muda::details::LoggerOffset::exceed_meta_data</definition>
+        <argsstring></argsstring>
+        <name>exceed_meta_data</name>
+        <qualifiedname>muda::details::LoggerOffset::exceed_meta_data</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/logger/logger_basic_data.h" line="54" column="18" bodyfile="src/muda/logger/logger_basic_data.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1details_1_1_logger_offset_1a24b097275e1632491f98f398f6c6ef55" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t muda::details::LoggerOffset::buffer_offset</definition>
+        <argsstring></argsstring>
+        <name>buffer_offset</name>
+        <qualifiedname>muda::details::LoggerOffset::buffer_offset</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/logger/logger_basic_data.h" line="55" column="18" bodyfile="src/muda/logger/logger_basic_data.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1details_1_1_logger_offset_1ab834b061d1a07049f798c3f7bccd71b9" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t muda::details::LoggerOffset::exceed_buffer</definition>
+        <argsstring></argsstring>
+        <name>exceed_buffer</name>
+        <qualifiedname>muda::details::LoggerOffset::exceed_buffer</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/logger/logger_basic_data.h" line="56" column="18" bodyfile="src/muda/logger/logger_basic_data.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/muda/logger/logger_basic_data.h" line="49" column="5" bodyfile="src/muda/logger/logger_basic_data.h" bodystart="50" bodyend="57"/>
+    <listofallmembers>
+      <member refid="classmuda_1_1details_1_1_logger_offset_1a24b097275e1632491f98f398f6c6ef55" prot="public" virt="non-virtual"><scope>muda::details::LoggerOffset</scope><name>buffer_offset</name></member>
+      <member refid="classmuda_1_1details_1_1_logger_offset_1ab834b061d1a07049f798c3f7bccd71b9" prot="public" virt="non-virtual"><scope>muda::details::LoggerOffset</scope><name>exceed_buffer</name></member>
+      <member refid="classmuda_1_1details_1_1_logger_offset_1a67c93a68db691891f1efb0837dff3679" prot="public" virt="non-virtual"><scope>muda::details::LoggerOffset</scope><name>exceed_meta_data</name></member>
+      <member refid="classmuda_1_1details_1_1_logger_offset_1a99ed7b6515aa21b436ac685a18c68a71" prot="public" virt="non-virtual"><scope>muda::details::LoggerOffset</scope><name>log_id</name></member>
+      <member refid="classmuda_1_1details_1_1_logger_offset_1ad32768a354c24ee15d99bc10e06edc01" prot="public" virt="non-virtual"><scope>muda::details::LoggerOffset</scope><name>meta_data_offset</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

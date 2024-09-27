@@ -1,0 +1,115 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="stream__define_8h" kind="file" language="C++">
+    <compoundname>stream_define.h</compoundname>
+    <includes local="no">cuda.h</includes>
+    <includes local="no">cinttypes</includes>
+    <includes refid="version_8h" local="no">muda/tools/version.h</includes>
+    <includes local="no">cuda_device_runtime_api.h</includes>
+    <includedby refid="kernel_8h" local="no">src/muda/launch/kernel.h</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>src/muda/launch/stream_define.h</label>
+        <link refid="stream__define_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>muda/tools/version.h</label>
+        <link refid="version_8h_source"/>
+      </node>
+      <node id="3">
+        <label>cinttypes</label>
+      </node>
+      <node id="2">
+        <label>cuda.h</label>
+      </node>
+      <node id="5">
+        <label>cuda_device_runtime_api.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="3">
+        <label>src/muda/launch.h</label>
+        <link refid="launch_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>src/muda/launch/kernel.h</label>
+        <link refid="kernel_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>src/muda/launch/stream_define.h</label>
+        <link refid="stream__define_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>src/muda/muda.h</label>
+        <link refid="muda_8h_source"/>
+      </node>
+    </invincdepgraph>
+    <innernamespace refid="namespacemuda">muda</innernamespace>
+    <innernamespace refid="namespacemuda_1_1details">muda::details</innernamespace>
+    <innernamespace refid="namespacemuda_1_1details_1_1stream">muda::details::stream</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cuda.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cinttypes&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;muda/tools/version.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cuda_device_runtime_api.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">muda::details::stream</highlight></codeline>
+<codeline lineno="7"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>MUDA_GENERIC_STREAM_MODEL</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal">MUDA_INLINE<sp/>MUDA_GENERIC<sp/>cudaStream_t<sp/>tail_launch()</highlight></codeline>
+<codeline lineno="10"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>cudaStreamTailLaunch;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="13"><highlight class="normal">MUDA_INLINE<sp/>MUDA_GENERIC<sp/>cudaStream_t<sp/>fire_and_forget()</highlight></codeline>
+<codeline lineno="14"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>cudaStreamFireAndForget;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="17"><highlight class="normal">MUDA_INLINE<sp/>MUDA_GENERIC<sp/>cudaStream_t<sp/>graph_tail_launch()</highlight></codeline>
+<codeline lineno="18"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>cudaStreamGraphTailLaunch;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="21"><highlight class="normal">MUDA_INLINE<sp/>MUDA_GENERIC<sp/>cudaStream_t<sp/>graph_fire_and_forget()</highlight></codeline>
+<codeline lineno="22"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>cudaStreamGraphFireAndForget;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal">MUDA_INLINE<sp/>MUDA_GENERIC<sp/>cudaStream_t<sp/>graph_tail_launch()</highlight></codeline>
+<codeline lineno="27"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">reinterpret_cast&lt;</highlight><highlight class="normal">cudaStream_t</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(0x0100000000000000);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="30"><highlight class="normal">MUDA_INLINE<sp/>MUDA_GENERIC<sp/>cudaStream_t<sp/>graph_fire_and_forget()</highlight></codeline>
+<codeline lineno="31"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">reinterpret_cast&lt;</highlight><highlight class="normal">cudaStream_t</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(0x0200000000000000);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="34"><highlight class="normal">MUDA_INLINE<sp/>MUDA_GENERIC<sp/>cudaStream_t<sp/>tail_launch()</highlight></codeline>
+<codeline lineno="35"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">reinterpret_cast&lt;</highlight><highlight class="normal">cudaStream_t</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(0x3);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="38"><highlight class="normal">MUDA_INLINE<sp/>MUDA_GENERIC<sp/>cudaStream_t<sp/>fire_and_forget()</highlight></codeline>
+<codeline lineno="39"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">reinterpret_cast&lt;</highlight><highlight class="normal">cudaStream_t</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(0x4);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal">}<sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>muda::details::stream</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="src/muda/launch/stream_define.h"/>
+  </compounddef>
+</doxygen>

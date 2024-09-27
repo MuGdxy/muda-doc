@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="dir_440d6ef7395341c98b5d944289d06a83" kind="dir">
+    <compoundname>src/muda/launch</compoundname>
+    <innerfile refid="event_8h">event.h</innerfile>
+    <innerfile refid="host__call_8h">host_call.h</innerfile>
+    <innerfile refid="kernel_8h">kernel.h</innerfile>
+    <innerfile refid="kernel__label_8h">kernel_label.h</innerfile>
+    <innerfile refid="kernel__tag_8h">kernel_tag.h</innerfile>
+    <innerfile refid="launch_2launch_8h">launch.h</innerfile>
+    <innerfile refid="launch__base_8h">launch_base.h</innerfile>
+    <innerfile refid="memory_8h">memory.h</innerfile>
+    <innerfile refid="parallel__for_8h">parallel_for.h</innerfile>
+    <innerfile refid="stream_8h">stream.h</innerfile>
+    <innerfile refid="stream__define_8h">stream_define.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/muda/launch/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,840 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classmuda_1_1_launch_core" kind="class" language="C++" prot="public">
+    <compoundname>muda::LaunchCore</compoundname>
+    <derivedcompoundref refid="classmuda_1_1_launch_base" prot="public" virt="non-virtual">muda::LaunchBase&lt; BufferLaunch &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classmuda_1_1_launch_base" prot="public" virt="non-virtual">muda::LaunchBase&lt; Derive &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classmuda_1_1_launch_base" prot="public" virt="non-virtual">muda::LaunchBase&lt; DeviceHistogram &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classmuda_1_1_launch_base" prot="public" virt="non-virtual">muda::LaunchBase&lt; DeviceMergeSort &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classmuda_1_1_launch_base" prot="public" virt="non-virtual">muda::LaunchBase&lt; DevicePartition &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classmuda_1_1_launch_base" prot="public" virt="non-virtual">muda::LaunchBase&lt; DeviceRadixSort &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classmuda_1_1_launch_base" prot="public" virt="non-virtual">muda::LaunchBase&lt; DeviceReduce &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classmuda_1_1_launch_base" prot="public" virt="non-virtual">muda::LaunchBase&lt; DeviceRunLengthEncode &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classmuda_1_1_launch_base" prot="public" virt="non-virtual">muda::LaunchBase&lt; DeviceScan &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classmuda_1_1_launch_base" prot="public" virt="non-virtual">muda::LaunchBase&lt; DeviceSegmentedRadixSort &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classmuda_1_1_launch_base" prot="public" virt="non-virtual">muda::LaunchBase&lt; DeviceSegmentedReduce &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classmuda_1_1_launch_base" prot="public" virt="non-virtual">muda::LaunchBase&lt; DeviceSegmentedSort &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classmuda_1_1_launch_base" prot="public" virt="non-virtual">muda::LaunchBase&lt; DeviceSelect &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classmuda_1_1_launch_base" prot="public" virt="non-virtual">muda::LaunchBase&lt; DeviceSpmv &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classmuda_1_1_launch_base" prot="public" virt="non-virtual">muda::LaunchBase&lt; Empty &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classmuda_1_1_launch_base" prot="public" virt="non-virtual">muda::LaunchBase&lt; FieldEntryLaunch &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classmuda_1_1_launch_base" prot="public" virt="non-virtual">muda::LaunchBase&lt; GraphLaunch &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classmuda_1_1_launch_base" prot="public" virt="non-virtual">muda::LaunchBase&lt; HostCall &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classmuda_1_1_launch_base" prot="public" virt="non-virtual">muda::LaunchBase&lt; Launch &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classmuda_1_1_launch_base" prot="public" virt="non-virtual">muda::LaunchBase&lt; Memory &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classmuda_1_1_launch_base" prot="public" virt="non-virtual">muda::LaunchBase&lt; ParallelFor &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classmuda_1_1_launch_base" prot="public" virt="non-virtual">muda::LaunchBase&lt; T &gt;</derivedcompoundref>
+    <sectiondef kind="protected-type">
+      <memberdef kind="typedef" id="classmuda_1_1_launch_core_1a8aeb9e37d421f835e0fcae124e3ce0de" prot="protected" static="no">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>std::shared_ptr&lt; T &gt;</type>
+        <definition>using muda::LaunchCore::S =  std::shared_ptr&lt;T&gt;</definition>
+        <argsstring></argsstring>
+        <name>S</name>
+        <qualifiedname>muda::LaunchCore::S</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/launch/launch_base.h" line="45" column="5" bodyfile="src/muda/launch/launch_base.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classmuda_1_1_launch_core_1a3b5544456087d57904981118c4cdcaf8" prot="protected" static="no" mutable="no">
+        <type>::cudaStream_t</type>
+        <definition>::cudaStream_t muda::LaunchCore::m_stream</definition>
+        <argsstring></argsstring>
+        <name>m_stream</name>
+        <qualifiedname>muda::LaunchCore::m_stream</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/launch/launch_base.h" line="48" column="20" bodyfile="src/muda/launch/launch_base.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classmuda_1_1_launch_core_1ab78b991329337c97d2ac3e32e995a62f" prot="protected" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>MUDA_GENERIC::cudaStream_t</type>
+        <definition>MUDA_GENERIC::cudaStream_t muda::LaunchCore::stream</definition>
+        <argsstring>() const</argsstring>
+        <name>stream</name>
+        <qualifiedname>muda::LaunchCore::stream</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/launch/launch_base.h" line="46" column="33" bodyfile="src/muda/launch/launch_base.h" bodystart="46" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_launch_core_1a69a5dfc8c3f8a8e4bfec94a19e5d0d5d" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>MUDA_HOST void</type>
+        <definition>MUDA_HOST void muda::LaunchCore::pop_kernel_label</definition>
+        <argsstring>()</argsstring>
+        <name>pop_kernel_label</name>
+        <qualifiedname>muda::LaunchCore::pop_kernel_label</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/launch/launch_base.h" line="49" column="20"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classmuda_1_1_launch_core_1a258e147cb102f081abf4937daf851e10" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void muda::LaunchCore::kernel_name</definition>
+        <argsstring>(std::string_view name)</argsstring>
+        <name>kernel_name</name>
+        <qualifiedname>muda::LaunchCore::kernel_name</qualifiedname>
+        <param>
+          <type>std::string_view</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/launch/launch_base.h" line="52" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_launch_core_1a04a0e62050d09f8ff1a448899776d53f" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void muda::LaunchCore::file_line</definition>
+        <argsstring>(std::string_view file, int line)</argsstring>
+        <name>file_line</name>
+        <qualifiedname>muda::LaunchCore::file_line</qualifiedname>
+        <param>
+          <type>std::string_view</type>
+          <declname>file</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>line</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/launch/launch_base.h" line="53" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_launch_core_1a7b29e878817d4e42bc533edc0c89b645" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void muda::LaunchCore::wait_event</definition>
+        <argsstring>(cudaEvent_t event)</argsstring>
+        <name>wait_event</name>
+        <qualifiedname>muda::LaunchCore::wait_event</qualifiedname>
+        <param>
+          <type>cudaEvent_t</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/launch/launch_base.h" line="77" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_launch_core_1a73d5d54a7b3b59dcf8eea792e796337b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void muda::LaunchCore::wait_stream</definition>
+        <argsstring>(::cudaStream_t stream)</argsstring>
+        <name>wait_stream</name>
+        <qualifiedname>muda::LaunchCore::wait_stream</qualifiedname>
+        <param>
+          <type>::cudaStream_t</type>
+          <declname>stream</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/launch/launch_base.h" line="78" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_launch_core_1a58e970f699c546d37c70af9bb4d3a93c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void muda::LaunchCore::wait_device</definition>
+        <argsstring>()</argsstring>
+        <name>wait_device</name>
+        <qualifiedname>muda::LaunchCore::wait_device</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/launch/launch_base.h" line="79" column="17"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmuda_1_1_launch_core_1a8503eff885f818a12319ca57dfd75011" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>MUDA_GENERIC</type>
+        <definition>MUDA_GENERIC muda::LaunchCore::LaunchCore</definition>
+        <argsstring>(::cudaStream_t stream) MUDA_NOEXCEPT</argsstring>
+        <name>LaunchCore</name>
+        <qualifiedname>muda::LaunchCore::LaunchCore</qualifiedname>
+        <param>
+          <type>::cudaStream_t</type>
+          <declname>stream</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/launch/launch_base.h" line="55" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_launch_core_1a38c542a99edea149552d82639e385ab5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void muda::LaunchCore::init_stream</definition>
+        <argsstring>(::cudaStream_t s)</argsstring>
+        <name>init_stream</name>
+        <qualifiedname>muda::LaunchCore::init_stream</qualifiedname>
+        <param>
+          <type>::cudaStream_t</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/launch/launch_base.h" line="57" column="10" bodyfile="src/muda/launch/launch_base.h" bodystart="57" bodyend="57"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_launch_core_1a5ff2a138d60f79dddf645b4da604ca9f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void muda::LaunchCore::push_range</definition>
+        <argsstring>(const std::string &amp;name)</argsstring>
+        <name>push_range</name>
+        <qualifiedname>muda::LaunchCore::push_range</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/launch/launch_base.h" line="59" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_launch_core_1aa53bc976fbc8a1f3339452adcdaaef40" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void muda::LaunchCore::pop_range</definition>
+        <argsstring>()</argsstring>
+        <name>pop_range</name>
+        <qualifiedname>muda::LaunchCore::pop_range</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/launch/launch_base.h" line="60" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_launch_core_1a0aa7e823c55780ff22e4698400c03a1b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void muda::LaunchCore::record</definition>
+        <argsstring>(cudaEvent_t e, int flag=cudaEventRecordDefault)</argsstring>
+        <name>record</name>
+        <qualifiedname>muda::LaunchCore::record</qualifiedname>
+        <param>
+          <type>cudaEvent_t</type>
+          <declname>e</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>flag</declname>
+          <defval>cudaEventRecordDefault</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/launch/launch_base.h" line="62" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_launch_core_1a925fc22c5b69ec9a39f8ddd2737477bb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void muda::LaunchCore::record</definition>
+        <argsstring>(ComputeGraphVar&lt; cudaEvent_t &gt; &amp;e, const std::vector&lt; ComputeGraphVarBase * &gt; &amp;vars)</argsstring>
+        <name>record</name>
+        <qualifiedname>muda::LaunchCore::record</qualifiedname>
+        <param>
+          <type><ref refid="classmuda_1_1_compute_graph_var" kindref="compound">ComputeGraphVar</ref>&lt; cudaEvent_t &gt; &amp;</type>
+          <declname>e</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; <ref refid="classmuda_1_1_compute_graph_var_base" kindref="compound">ComputeGraphVarBase</ref> * &gt; &amp;</type>
+          <declname>vars</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/launch/launch_base.h" line="63" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_launch_core_1a6913a96f81122fda9b1799008dce1919" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename...</type>
+            <declname>ViewT</declname>
+            <defname>ViewT</defname>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void muda::LaunchCore::record</definition>
+        <argsstring>(ComputeGraphVar&lt; cudaEvent_t &gt; &amp;e, ComputeGraphVar&lt; ViewT &gt; &amp;... vars)</argsstring>
+        <name>record</name>
+        <qualifiedname>muda::LaunchCore::record</qualifiedname>
+        <param>
+          <type><ref refid="classmuda_1_1_compute_graph_var" kindref="compound">ComputeGraphVar</ref>&lt; cudaEvent_t &gt; &amp;</type>
+          <declname>e</declname>
+        </param>
+        <param>
+          <type><ref refid="classmuda_1_1_compute_graph_var" kindref="compound">ComputeGraphVar</ref>&lt; ViewT &gt; &amp;...</type>
+          <declname>vars</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/launch/launch_base.h" line="66" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_launch_core_1aad46b6d64ac00b0b9a4c7ca83a5b18d2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void muda::LaunchCore::when</definition>
+        <argsstring>(cudaEvent_t e, int flag=cudaEventWaitDefault)</argsstring>
+        <name>when</name>
+        <qualifiedname>muda::LaunchCore::when</qualifiedname>
+        <param>
+          <type>cudaEvent_t</type>
+          <declname>e</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>flag</declname>
+          <defval>cudaEventWaitDefault</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/launch/launch_base.h" line="67" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_launch_core_1a68e568f7f7187b69331c8ddff66e20e7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void muda::LaunchCore::wait</definition>
+        <argsstring>(cudaEvent_t e, int flag=cudaEventWaitDefault)</argsstring>
+        <name>wait</name>
+        <qualifiedname>muda::LaunchCore::wait</qualifiedname>
+        <param>
+          <type>cudaEvent_t</type>
+          <declname>e</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>flag</declname>
+          <defval>cudaEventWaitDefault</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/launch/launch_base.h" line="69" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_launch_core_1ab855efc95833fde4b6bf796101ae6d03" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void muda::LaunchCore::wait</definition>
+        <argsstring>(const ComputeGraphVar&lt; cudaEvent_t &gt; &amp;e, const std::vector&lt; ComputeGraphVarBase * &gt; &amp;vars)</argsstring>
+        <name>wait</name>
+        <qualifiedname>muda::LaunchCore::wait</qualifiedname>
+        <param>
+          <type>const <ref refid="classmuda_1_1_compute_graph_var" kindref="compound">ComputeGraphVar</ref>&lt; cudaEvent_t &gt; &amp;</type>
+          <declname>e</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; <ref refid="classmuda_1_1_compute_graph_var_base" kindref="compound">ComputeGraphVarBase</ref> * &gt; &amp;</type>
+          <declname>vars</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/launch/launch_base.h" line="70" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_launch_core_1aba4f1e2f8b31d1988b9b11d7c94d5b55" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename...</type>
+            <declname>ViewT</declname>
+            <defname>ViewT</defname>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void muda::LaunchCore::wait</definition>
+        <argsstring>(const ComputeGraphVar&lt; cudaEvent_t &gt; &amp;e, ComputeGraphVar&lt; ViewT &gt; &amp;... vars)</argsstring>
+        <name>wait</name>
+        <qualifiedname>muda::LaunchCore::wait</qualifiedname>
+        <param>
+          <type>const <ref refid="classmuda_1_1_compute_graph_var" kindref="compound">ComputeGraphVar</ref>&lt; cudaEvent_t &gt; &amp;</type>
+          <declname>e</declname>
+        </param>
+        <param>
+          <type><ref refid="classmuda_1_1_compute_graph_var" kindref="compound">ComputeGraphVar</ref>&lt; ViewT &gt; &amp;...</type>
+          <declname>vars</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/launch/launch_base.h" line="73" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_launch_core_1a75b822d8da9e2c270e7f8b54df937267" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void muda::LaunchCore::wait</definition>
+        <argsstring>()</argsstring>
+        <name>wait</name>
+        <qualifiedname>muda::LaunchCore::wait</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/launch/launch_base.h" line="74" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_launch_core_1a9aaae3b7df662ddde5571dafb1e74885" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void muda::LaunchCore::callback</definition>
+        <argsstring>(const std::function&lt; void(::cudaStream_t, ::cudaError)&gt; &amp;callback)</argsstring>
+        <name>callback</name>
+        <qualifiedname>muda::LaunchCore::callback</qualifiedname>
+        <param>
+          <type>const std::function&lt; void(::cudaStream_t, ::cudaError)&gt; &amp;</type>
+          <declname>callback</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/launch/launch_base.h" line="75" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_launch_core_1a5e4ae3435bce9d4ad706b5e347a3040f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>muda::LaunchCore::~LaunchCore</definition>
+        <argsstring>() MUDA_NOEXCEPT</argsstring>
+        <name>~LaunchCore</name>
+        <qualifiedname>muda::LaunchCore::~LaunchCore</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/launch/launch_base.h" line="81" column="5"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="33">
+        <label>muda::CubWrapper&lt; DeviceHistogram &gt;</label>
+        <link refid="classmuda_1_1_cub_wrapper"/>
+        <childnode refid="32" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="35">
+        <label>muda::CubWrapper&lt; DeviceMergeSort &gt;</label>
+        <link refid="classmuda_1_1_cub_wrapper"/>
+        <childnode refid="32" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="37">
+        <label>muda::CubWrapper&lt; DevicePartition &gt;</label>
+        <link refid="classmuda_1_1_cub_wrapper"/>
+        <childnode refid="32" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="39">
+        <label>muda::CubWrapper&lt; DeviceRadixSort &gt;</label>
+        <link refid="classmuda_1_1_cub_wrapper"/>
+        <childnode refid="32" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="41">
+        <label>muda::CubWrapper&lt; DeviceReduce &gt;</label>
+        <link refid="classmuda_1_1_cub_wrapper"/>
+        <childnode refid="32" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="43">
+        <label>muda::CubWrapper&lt; DeviceRunLengthEncode &gt;</label>
+        <link refid="classmuda_1_1_cub_wrapper"/>
+        <childnode refid="32" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="45">
+        <label>muda::CubWrapper&lt; DeviceScan &gt;</label>
+        <link refid="classmuda_1_1_cub_wrapper"/>
+        <childnode refid="32" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="47">
+        <label>muda::CubWrapper&lt; DeviceSegmentedRadixSort &gt;</label>
+        <link refid="classmuda_1_1_cub_wrapper"/>
+        <childnode refid="32" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="49">
+        <label>muda::CubWrapper&lt; DeviceSegmentedReduce &gt;</label>
+        <link refid="classmuda_1_1_cub_wrapper"/>
+        <childnode refid="32" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="51">
+        <label>muda::CubWrapper&lt; DeviceSegmentedSort &gt;</label>
+        <link refid="classmuda_1_1_cub_wrapper"/>
+        <childnode refid="32" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="53">
+        <label>muda::CubWrapper&lt; DeviceSelect &gt;</label>
+        <link refid="classmuda_1_1_cub_wrapper"/>
+        <childnode refid="32" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="55">
+        <label>muda::CubWrapper&lt; DeviceSpmv &gt;</label>
+        <link refid="classmuda_1_1_cub_wrapper"/>
+        <childnode refid="32" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>muda::LaunchBase&lt; BufferLaunch &gt;</label>
+        <link refid="classmuda_1_1_launch_base"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>muda::LaunchBase&lt; Derive &gt;</label>
+        <link refid="classmuda_1_1_launch_base"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>muda::LaunchBase&lt; DeviceHistogram &gt;</label>
+        <link refid="classmuda_1_1_launch_base"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>muda::LaunchBase&lt; DeviceMergeSort &gt;</label>
+        <link refid="classmuda_1_1_launch_base"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>muda::LaunchBase&lt; DevicePartition &gt;</label>
+        <link refid="classmuda_1_1_launch_base"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>muda::LaunchBase&lt; DeviceRadixSort &gt;</label>
+        <link refid="classmuda_1_1_launch_base"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>muda::LaunchBase&lt; DeviceReduce &gt;</label>
+        <link refid="classmuda_1_1_launch_base"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>muda::LaunchBase&lt; DeviceRunLengthEncode &gt;</label>
+        <link refid="classmuda_1_1_launch_base"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>muda::LaunchBase&lt; DeviceScan &gt;</label>
+        <link refid="classmuda_1_1_launch_base"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>muda::LaunchBase&lt; DeviceSegmentedRadixSort &gt;</label>
+        <link refid="classmuda_1_1_launch_base"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>muda::LaunchBase&lt; DeviceSegmentedReduce &gt;</label>
+        <link refid="classmuda_1_1_launch_base"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>muda::LaunchBase&lt; DeviceSegmentedSort &gt;</label>
+        <link refid="classmuda_1_1_launch_base"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>muda::LaunchBase&lt; DeviceSelect &gt;</label>
+        <link refid="classmuda_1_1_launch_base"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>muda::LaunchBase&lt; DeviceSpmv &gt;</label>
+        <link refid="classmuda_1_1_launch_base"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>muda::LaunchBase&lt; Empty &gt;</label>
+        <link refid="classmuda_1_1_launch_base"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>muda::LaunchBase&lt; FieldEntryLaunch &gt;</label>
+        <link refid="classmuda_1_1_launch_base"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>muda::LaunchBase&lt; GraphLaunch &gt;</label>
+        <link refid="classmuda_1_1_launch_base"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>muda::LaunchBase&lt; HostCall &gt;</label>
+        <link refid="classmuda_1_1_launch_base"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>muda::LaunchBase&lt; Launch &gt;</label>
+        <link refid="classmuda_1_1_launch_base"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>muda::LaunchBase&lt; Memory &gt;</label>
+        <link refid="classmuda_1_1_launch_base"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>muda::LaunchBase&lt; ParallelFor &gt;</label>
+        <link refid="classmuda_1_1_launch_base"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>muda::BufferLaunch</label>
+        <link refid="classmuda_1_1_buffer_launch"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>muda::CubWrapper&lt; Derive &gt;</label>
+        <link refid="classmuda_1_1_cub_wrapper"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="34">
+        <label>muda::DeviceHistogram</label>
+        <link refid="classmuda_1_1_device_histogram"/>
+        <childnode refid="33" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="36">
+        <label>muda::DeviceMergeSort</label>
+        <link refid="classmuda_1_1_device_merge_sort"/>
+        <childnode refid="35" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="38">
+        <label>muda::DevicePartition</label>
+        <link refid="classmuda_1_1_device_partition"/>
+        <childnode refid="37" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="40">
+        <label>muda::DeviceRadixSort</label>
+        <link refid="classmuda_1_1_device_radix_sort"/>
+        <childnode refid="39" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="42">
+        <label>muda::DeviceReduce</label>
+        <link refid="classmuda_1_1_device_reduce"/>
+        <childnode refid="41" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="44">
+        <label>muda::DeviceRunLengthEncode</label>
+        <link refid="classmuda_1_1_device_run_length_encode"/>
+        <childnode refid="43" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="46">
+        <label>muda::DeviceScan</label>
+        <link refid="classmuda_1_1_device_scan"/>
+        <childnode refid="45" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="48">
+        <label>muda::DeviceSegmentedRadixSort</label>
+        <link refid="classmuda_1_1_device_segmented_radix_sort"/>
+        <childnode refid="47" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="50">
+        <label>muda::DeviceSegmentedReduce</label>
+        <link refid="classmuda_1_1_device_segmented_reduce"/>
+        <childnode refid="49" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="52">
+        <label>muda::DeviceSegmentedSort</label>
+        <link refid="classmuda_1_1_device_segmented_sort"/>
+        <childnode refid="51" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="54">
+        <label>muda::DeviceSelect</label>
+        <link refid="classmuda_1_1_device_select"/>
+        <childnode refid="53" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="56">
+        <label>muda::DeviceSpmv</label>
+        <link refid="classmuda_1_1_device_spmv"/>
+        <childnode refid="55" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>muda::Empty</label>
+        <link refid="classmuda_1_1_empty"/>
+        <childnode refid="18" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>muda::FieldEntryLaunch</label>
+        <link refid="classmuda_1_1_field_entry_launch"/>
+        <childnode refid="20" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>muda::GraphLaunch</label>
+        <link refid="classmuda_1_1_graph_launch"/>
+        <childnode refid="22" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>muda::HostCall</label>
+        <link refid="classmuda_1_1_host_call"/>
+        <childnode refid="24" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>muda::Launch</label>
+        <link refid="classmuda_1_1_launch"/>
+        <childnode refid="26" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>muda::LaunchBase&lt; T &gt;</label>
+        <link refid="classmuda_1_1_launch_base"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>muda::LaunchCore</label>
+        <link refid="classmuda_1_1_launch_core"/>
+      </node>
+      <node id="29">
+        <label>muda::Memory</label>
+        <link refid="classmuda_1_1_memory"/>
+        <childnode refid="28" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>muda::ParallelFor</label>
+        <link refid="classmuda_1_1_parallel_for"/>
+        <childnode refid="30" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="src/muda/launch/launch_base.h" line="41" column="1" bodyfile="src/muda/launch/launch_base.h" bodystart="42" bodyend="82"/>
+    <listofallmembers>
+      <member refid="classmuda_1_1_launch_core_1a9aaae3b7df662ddde5571dafb1e74885" prot="public" virt="non-virtual"><scope>muda::LaunchCore</scope><name>callback</name></member>
+      <member refid="classmuda_1_1_launch_core_1a04a0e62050d09f8ff1a448899776d53f" prot="public" virt="non-virtual"><scope>muda::LaunchCore</scope><name>file_line</name></member>
+      <member refid="classmuda_1_1_launch_core_1a38c542a99edea149552d82639e385ab5" prot="public" virt="non-virtual"><scope>muda::LaunchCore</scope><name>init_stream</name></member>
+      <member refid="classmuda_1_1_launch_core_1a258e147cb102f081abf4937daf851e10" prot="public" virt="non-virtual"><scope>muda::LaunchCore</scope><name>kernel_name</name></member>
+      <member refid="classmuda_1_1_launch_core_1a8503eff885f818a12319ca57dfd75011" prot="public" virt="non-virtual"><scope>muda::LaunchCore</scope><name>LaunchCore</name></member>
+      <member refid="classmuda_1_1_launch_core_1a3b5544456087d57904981118c4cdcaf8" prot="protected" virt="non-virtual"><scope>muda::LaunchCore</scope><name>m_stream</name></member>
+      <member refid="classmuda_1_1_launch_core_1a69a5dfc8c3f8a8e4bfec94a19e5d0d5d" prot="protected" virt="non-virtual"><scope>muda::LaunchCore</scope><name>pop_kernel_label</name></member>
+      <member refid="classmuda_1_1_launch_core_1aa53bc976fbc8a1f3339452adcdaaef40" prot="public" virt="non-virtual"><scope>muda::LaunchCore</scope><name>pop_range</name></member>
+      <member refid="classmuda_1_1_launch_core_1a5ff2a138d60f79dddf645b4da604ca9f" prot="public" virt="non-virtual"><scope>muda::LaunchCore</scope><name>push_range</name></member>
+      <member refid="classmuda_1_1_launch_core_1a0aa7e823c55780ff22e4698400c03a1b" prot="public" virt="non-virtual"><scope>muda::LaunchCore</scope><name>record</name></member>
+      <member refid="classmuda_1_1_launch_core_1a925fc22c5b69ec9a39f8ddd2737477bb" prot="public" virt="non-virtual"><scope>muda::LaunchCore</scope><name>record</name></member>
+      <member refid="classmuda_1_1_launch_core_1a6913a96f81122fda9b1799008dce1919" prot="public" virt="non-virtual"><scope>muda::LaunchCore</scope><name>record</name></member>
+      <member refid="classmuda_1_1_launch_core_1a8aeb9e37d421f835e0fcae124e3ce0de" prot="protected" virt="non-virtual"><scope>muda::LaunchCore</scope><name>S</name></member>
+      <member refid="classmuda_1_1_launch_core_1ab78b991329337c97d2ac3e32e995a62f" prot="protected" virt="non-virtual"><scope>muda::LaunchCore</scope><name>stream</name></member>
+      <member refid="classmuda_1_1_launch_core_1a68e568f7f7187b69331c8ddff66e20e7" prot="public" virt="non-virtual"><scope>muda::LaunchCore</scope><name>wait</name></member>
+      <member refid="classmuda_1_1_launch_core_1ab855efc95833fde4b6bf796101ae6d03" prot="public" virt="non-virtual"><scope>muda::LaunchCore</scope><name>wait</name></member>
+      <member refid="classmuda_1_1_launch_core_1aba4f1e2f8b31d1988b9b11d7c94d5b55" prot="public" virt="non-virtual"><scope>muda::LaunchCore</scope><name>wait</name></member>
+      <member refid="classmuda_1_1_launch_core_1a75b822d8da9e2c270e7f8b54df937267" prot="public" virt="non-virtual"><scope>muda::LaunchCore</scope><name>wait</name></member>
+      <member refid="classmuda_1_1_launch_core_1a58e970f699c546d37c70af9bb4d3a93c" prot="public" virt="non-virtual"><scope>muda::LaunchCore</scope><name>wait_device</name></member>
+      <member refid="classmuda_1_1_launch_core_1a7b29e878817d4e42bc533edc0c89b645" prot="public" virt="non-virtual"><scope>muda::LaunchCore</scope><name>wait_event</name></member>
+      <member refid="classmuda_1_1_launch_core_1a73d5d54a7b3b59dcf8eea792e796337b" prot="public" virt="non-virtual"><scope>muda::LaunchCore</scope><name>wait_stream</name></member>
+      <member refid="classmuda_1_1_launch_core_1aad46b6d64ac00b0b9a4c7ca83a5b18d2" prot="public" virt="non-virtual"><scope>muda::LaunchCore</scope><name>when</name></member>
+      <member refid="classmuda_1_1_launch_core_1a5e4ae3435bce9d4ad706b5e347a3040f" prot="public" virt="non-virtual"><scope>muda::LaunchCore</scope><name>~LaunchCore</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

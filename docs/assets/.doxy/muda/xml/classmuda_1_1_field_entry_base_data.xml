@@ -1,0 +1,183 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classmuda_1_1_field_entry_base_data" kind="class" language="C++" prot="public">
+    <compoundname>muda::FieldEntryBaseData</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classmuda_1_1_field_entry_base_data_1aa1c8f550f86415e84e92849d1e4cfbe8" prot="public" static="no" mutable="no">
+        <type><ref refid="classmuda_1_1_field_entry_layout_info" kindref="compound">FieldEntryLayoutInfo</ref></type>
+        <definition>FieldEntryLayoutInfo muda::FieldEntryBaseData::layout_info</definition>
+        <argsstring></argsstring>
+        <name>layout_info</name>
+        <qualifiedname>muda::FieldEntryBaseData::layout_info</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/field/field_entry_base_data.h" line="10" column="26" bodyfile="src/muda/ext/field/field_entry_base_data.h" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1_field_entry_base_data_1a86c2a7b9202a40e5c32dc5a3c6662881" prot="public" static="no" mutable="no">
+        <type>FieldEntryType</type>
+        <definition>FieldEntryType muda::FieldEntryBaseData::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <qualifiedname>muda::FieldEntryBaseData::type</qualifiedname>
+        <initializer>= FieldEntryType::None</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/field/field_entry_base_data.h" line="11" column="26" bodyfile="src/muda/ext/field/field_entry_base_data.h" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1_field_entry_base_data_1ab4ebcfcb3d79cc4cfc350acf2f9c7a5e" prot="public" static="no" mutable="no">
+        <type>uint2</type>
+        <definition>uint2 muda::FieldEntryBaseData::shape</definition>
+        <argsstring></argsstring>
+        <name>shape</name>
+        <qualifiedname>muda::FieldEntryBaseData::shape</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/field/field_entry_base_data.h" line="12" column="26" bodyfile="src/muda/ext/field/field_entry_base_data.h" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1_field_entry_base_data_1a4c0b045adc6a76ca2df555f9855eb5dc" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t muda::FieldEntryBaseData::elem_byte_size</definition>
+        <argsstring></argsstring>
+        <name>elem_byte_size</name>
+        <qualifiedname>muda::FieldEntryBaseData::elem_byte_size</qualifiedname>
+        <initializer>= ~0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/field/field_entry_base_data.h" line="13" column="26" bodyfile="src/muda/ext/field/field_entry_base_data.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1_field_entry_base_data_1a26ed6f06b9f1b5fb8b2ed84fb65eb821" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t muda::FieldEntryBaseData::elem_count</definition>
+        <argsstring></argsstring>
+        <name>elem_count</name>
+        <qualifiedname>muda::FieldEntryBaseData::elem_count</qualifiedname>
+        <initializer>= ~0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/field/field_entry_base_data.h" line="15" column="14" bodyfile="src/muda/ext/field/field_entry_base_data.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1_field_entry_base_data_1a0a4c8e20b323c6a570d16a5db30abdcb" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t muda::FieldEntryBaseData::offset_in_struct</definition>
+        <argsstring></argsstring>
+        <name>offset_in_struct</name>
+        <qualifiedname>muda::FieldEntryBaseData::offset_in_struct</qualifiedname>
+        <initializer>= ~0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/field/field_entry_base_data.h" line="16" column="14" bodyfile="src/muda/ext/field/field_entry_base_data.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1_field_entry_base_data_1a19acf5b66f5f192f73a7964b26ffb629" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t muda::FieldEntryBaseData::offset_in_base_struct</definition>
+        <argsstring></argsstring>
+        <name>offset_in_base_struct</name>
+        <qualifiedname>muda::FieldEntryBaseData::offset_in_base_struct</qualifiedname>
+        <initializer>= ~0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/field/field_entry_base_data.h" line="19" column="14" bodyfile="src/muda/ext/field/field_entry_base_data.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1_field_entry_base_data_1a26e52258853ad6c85ac9458474806314" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t muda::FieldEntryBaseData::struct_stride</definition>
+        <argsstring></argsstring>
+        <name>struct_stride</name>
+        <qualifiedname>muda::FieldEntryBaseData::struct_stride</qualifiedname>
+        <initializer>= ~0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/field/field_entry_base_data.h" line="23" column="18" bodyfile="src/muda/ext/field/field_entry_base_data.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1_field_entry_base_data_1a1ba5e9509999593f0cb492f6c7d16f2a" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t muda::FieldEntryBaseData::elem_count_based_stride</definition>
+        <argsstring></argsstring>
+        <name>elem_count_based_stride</name>
+        <qualifiedname>muda::FieldEntryBaseData::elem_count_based_stride</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/field/field_entry_base_data.h" line="25" column="18" bodyfile="src/muda/ext/field/field_entry_base_data.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1_field_entry_base_data_1ad74a2849b796bcaabcd9a5b9270b4d03" prot="public" static="no" mutable="no">
+        <type>union <ref refid="classmuda_1_1_field_entry_base_data" kindref="compound">muda::FieldEntryBaseData</ref></type>
+        <definition>union muda::FieldEntryBaseData muda::FieldEntryBaseData</definition>
+        <argsstring></argsstring>
+        <name></name>
+        <qualifiedname>muda::FieldEntryBaseData</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/field/field_entry_base_data.h" line="26" column="5"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>muda::FieldEntryBaseData</label>
+        <link refid="classmuda_1_1_field_entry_base_data"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>layout_info</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>muda::FieldEntryLayoutInfo</label>
+        <link refid="classmuda_1_1_field_entry_layout_info"/>
+      </node>
+    </collaborationgraph>
+    <location file="src/muda/ext/field/field_entry_base_data.h" line="6" column="1" bodyfile="src/muda/ext/field/field_entry_base_data.h" bodystart="7" bodyend="27"/>
+    <listofallmembers>
+      <member refid="classmuda_1_1_field_entry_base_data_1a4c0b045adc6a76ca2df555f9855eb5dc" prot="public" virt="non-virtual"><scope>muda::FieldEntryBaseData</scope><name>elem_byte_size</name></member>
+      <member refid="classmuda_1_1_field_entry_base_data_1a26ed6f06b9f1b5fb8b2ed84fb65eb821" prot="public" virt="non-virtual"><scope>muda::FieldEntryBaseData</scope><name>elem_count</name></member>
+      <member refid="classmuda_1_1_field_entry_base_data_1a1ba5e9509999593f0cb492f6c7d16f2a" prot="public" virt="non-virtual"><scope>muda::FieldEntryBaseData</scope><name>elem_count_based_stride</name></member>
+      <member refid="classmuda_1_1_field_entry_base_data_1aa1c8f550f86415e84e92849d1e4cfbe8" prot="public" virt="non-virtual"><scope>muda::FieldEntryBaseData</scope><name>layout_info</name></member>
+      <member refid="classmuda_1_1_field_entry_base_data_1a19acf5b66f5f192f73a7964b26ffb629" prot="public" virt="non-virtual"><scope>muda::FieldEntryBaseData</scope><name>offset_in_base_struct</name></member>
+      <member refid="classmuda_1_1_field_entry_base_data_1a0a4c8e20b323c6a570d16a5db30abdcb" prot="public" virt="non-virtual"><scope>muda::FieldEntryBaseData</scope><name>offset_in_struct</name></member>
+      <member refid="classmuda_1_1_field_entry_base_data_1ab4ebcfcb3d79cc4cfc350acf2f9c7a5e" prot="public" virt="non-virtual"><scope>muda::FieldEntryBaseData</scope><name>shape</name></member>
+      <member refid="classmuda_1_1_field_entry_base_data_1a26e52258853ad6c85ac9458474806314" prot="public" virt="non-virtual"><scope>muda::FieldEntryBaseData</scope><name>struct_stride</name></member>
+      <member refid="classmuda_1_1_field_entry_base_data_1a86c2a7b9202a40e5c32dc5a3c6662881" prot="public" virt="non-virtual"><scope>muda::FieldEntryBaseData</scope><name>type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

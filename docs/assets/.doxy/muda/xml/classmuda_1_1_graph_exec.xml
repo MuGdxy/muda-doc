@@ -1,0 +1,453 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classmuda_1_1_graph_exec" kind="class" language="C++" prot="public">
+    <compoundname>muda::GraphExec</compoundname>
+    <sectiondef kind="private-type">
+      <memberdef kind="typedef" id="classmuda_1_1_graph_exec_1aa8e4fc551c9e8dcc39163082edf8e718" prot="private" static="no">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>std::shared_ptr&lt; T &gt;</type>
+        <definition>using muda::GraphExec::S =  std::shared_ptr&lt;T&gt;</definition>
+        <argsstring></argsstring>
+        <name>S</name>
+        <qualifiedname>muda::GraphExec::S</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/graph/graph_exec.h" line="13" column="5" bodyfile="src/muda/graph/graph_exec.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classmuda_1_1_graph_exec_1ad46e0ff0eb6ee79f9e798ceddf525cb0" prot="private" static="no">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>std::unique_ptr&lt; T &gt;</type>
+        <definition>using muda::GraphExec::U =  std::unique_ptr&lt;T&gt;</definition>
+        <argsstring></argsstring>
+        <name>U</name>
+        <qualifiedname>muda::GraphExec::U</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/graph/graph_exec.h" line="15" column="5" bodyfile="src/muda/graph/graph_exec.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classmuda_1_1_graph_exec_1ac294e87de5b1802f9dd716c609329d92" prot="private" static="no" mutable="no">
+        <type>cudaGraphExec_t</type>
+        <definition>cudaGraphExec_t muda::GraphExec::m_handle</definition>
+        <argsstring></argsstring>
+        <name>m_handle</name>
+        <qualifiedname>muda::GraphExec::m_handle</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/graph/graph_exec.h" line="16" column="36" bodyfile="src/muda/graph/graph_exec.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1_graph_exec_1a47eea33140dab22c34ce55cec2da4c19" prot="private" static="no" mutable="no">
+        <type><ref refid="classmuda_1_1_flags" kindref="compound">Flags</ref>&lt; GraphInstantiateFlagBit &gt;</type>
+        <definition>Flags&lt;GraphInstantiateFlagBit&gt; muda::GraphExec::m_flags</definition>
+        <argsstring></argsstring>
+        <name>m_flags</name>
+        <qualifiedname>muda::GraphExec::m_flags</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/graph/graph_exec.h" line="17" column="11" bodyfile="src/muda/graph/graph_exec.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1_graph_exec_1a8900c273a1ce9b246e65a4661355520d" prot="private" static="no" mutable="no">
+        <type>std::list&lt; S&lt; <ref refid="classmuda_1_1_node_parms" kindref="compound">NodeParms</ref> &gt; &gt;</type>
+        <definition>std::list&lt;S&lt;NodeParms&gt; &gt; muda::GraphExec::m_cached</definition>
+        <argsstring></argsstring>
+        <name>m_cached</name>
+        <qualifiedname>muda::GraphExec::m_cached</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/graph/graph_exec.h" line="59" column="15" bodyfile="src/muda/graph/graph_exec.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="friend">
+      <memberdef kind="friend" id="classmuda_1_1_graph_exec_1afab89afd724f1b07b1aaad6bdc61c47a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class Graph</definition>
+        <argsstring></argsstring>
+        <name>Graph</name>
+        <qualifiedname>muda::GraphExec::Graph</qualifiedname>
+        <param>
+          <type><ref refid="classmuda_1_1_graph" kindref="compound">Graph</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/graph/graph_exec.h" line="20" column="18" bodyfile="src/muda/graph/graph_exec.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmuda_1_1_graph_exec_1abec95f7fa9e7b3a4e534f3e1c4444393" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>muda::GraphExec::GraphExec</definition>
+        <argsstring>()</argsstring>
+        <name>GraphExec</name>
+        <qualifiedname>muda::GraphExec::GraphExec</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/graph/graph_exec.h" line="22" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_graph_exec_1a5b83ea75a7b1fb35c697cdb686a9efd8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>muda::GraphExec::GraphExec</definition>
+        <argsstring>(const GraphExec &amp;)=delete</argsstring>
+        <name>GraphExec</name>
+        <qualifiedname>muda::GraphExec::GraphExec</qualifiedname>
+        <param>
+          <type>const <ref refid="classmuda_1_1_graph_exec" kindref="compound">GraphExec</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/graph/graph_exec.h" line="25" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_graph_exec_1a225f4e8ca455a6b39e55f0b56dc8347a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classmuda_1_1_graph_exec" kindref="compound">GraphExec</ref> &amp;</type>
+        <definition>GraphExec &amp; muda::GraphExec::operator=</definition>
+        <argsstring>(const GraphExec &amp;)=delete</argsstring>
+        <name>operator=</name>
+        <qualifiedname>muda::GraphExec::operator=</qualifiedname>
+        <param>
+          <type>const <ref refid="classmuda_1_1_graph_exec" kindref="compound">GraphExec</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/graph/graph_exec.h" line="26" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_graph_exec_1a78065889f8d0a314807268170ed0221a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>muda::GraphExec::GraphExec</definition>
+        <argsstring>(GraphExec &amp;&amp;other)</argsstring>
+        <name>GraphExec</name>
+        <qualifiedname>muda::GraphExec::GraphExec</qualifiedname>
+        <param>
+          <type><ref refid="classmuda_1_1_graph_exec" kindref="compound">GraphExec</ref> &amp;&amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/graph/graph_exec.h" line="29" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_graph_exec_1a92c9cf692ee9a268e8280e99f2a2058d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classmuda_1_1_graph_exec" kindref="compound">GraphExec</ref> &amp;</type>
+        <definition>GraphExec &amp; muda::GraphExec::operator=</definition>
+        <argsstring>(GraphExec &amp;&amp;other)</argsstring>
+        <name>operator=</name>
+        <qualifiedname>muda::GraphExec::operator=</qualifiedname>
+        <param>
+          <type><ref refid="classmuda_1_1_graph_exec" kindref="compound">GraphExec</ref> &amp;&amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/graph/graph_exec.h" line="30" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_graph_exec_1ab04c1257c31eadf02023368c32c587a2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void muda::GraphExec::upload</definition>
+        <argsstring>(cudaStream_t stream=nullptr)</argsstring>
+        <name>upload</name>
+        <qualifiedname>muda::GraphExec::upload</qualifiedname>
+        <param>
+          <type>cudaStream_t</type>
+          <declname>stream</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/graph/graph_exec.h" line="32" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_graph_exec_1a5f056f286f7ee921c943e9b4c417c4ae" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void muda::GraphExec::launch</definition>
+        <argsstring>(cudaStream_t stream=nullptr)</argsstring>
+        <name>launch</name>
+        <qualifiedname>muda::GraphExec::launch</qualifiedname>
+        <param>
+          <type>cudaStream_t</type>
+          <declname>stream</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/graph/graph_exec.h" line="34" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_graph_exec_1adb49d232166b5896f967568bcbbc22e7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void muda::GraphExec::set_kernel_node_parms</definition>
+        <argsstring>(S&lt; KernelNode &gt; node, const S&lt; KernelNodeParms&lt; T &gt; &gt; &amp;new_parms)</argsstring>
+        <name>set_kernel_node_parms</name>
+        <qualifiedname>muda::GraphExec::set_kernel_node_parms</qualifiedname>
+        <param>
+          <type>S&lt; <ref refid="classmuda_1_1_kernel_node" kindref="compound">KernelNode</ref> &gt;</type>
+          <declname>node</declname>
+        </param>
+        <param>
+          <type>const S&lt; <ref refid="classmuda_1_1_kernel_node_parms" kindref="compound">KernelNodeParms</ref>&lt; T &gt; &gt; &amp;</type>
+          <declname>new_parms</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/graph/graph_exec.h" line="37" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_graph_exec_1a8a5c29287b783c9ebc28db318023472d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void muda::GraphExec::set_memcpy_node_parms</definition>
+        <argsstring>(S&lt; MemcpyNode &gt; node, void *dst, const void *src, size_t size_bytes, cudaMemcpyKind kind)</argsstring>
+        <name>set_memcpy_node_parms</name>
+        <qualifiedname>muda::GraphExec::set_memcpy_node_parms</qualifiedname>
+        <param>
+          <type>S&lt; <ref refid="classmuda_1_1_memcpy_node" kindref="compound">MemcpyNode</ref> &gt;</type>
+          <declname>node</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>dst</declname>
+        </param>
+        <param>
+          <type>const void *</type>
+          <declname>src</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>size_bytes</declname>
+        </param>
+        <param>
+          <type>cudaMemcpyKind</type>
+          <declname>kind</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/graph/graph_exec.h" line="40" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_graph_exec_1a821890c41dc2a23e7b848cda498b0ba7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void muda::GraphExec::set_memcpy_node_parms</definition>
+        <argsstring>(S&lt; MemcpyNode &gt; node, const cudaMemcpy3DParms &amp;parms)</argsstring>
+        <name>set_memcpy_node_parms</name>
+        <qualifiedname>muda::GraphExec::set_memcpy_node_parms</qualifiedname>
+        <param>
+          <type>S&lt; <ref refid="classmuda_1_1_memcpy_node" kindref="compound">MemcpyNode</ref> &gt;</type>
+          <declname>node</declname>
+        </param>
+        <param>
+          <type>const cudaMemcpy3DParms &amp;</type>
+          <declname>parms</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/graph/graph_exec.h" line="45" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_graph_exec_1aabb7f29606af1e82303d259221b096ff" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void muda::GraphExec::set_memset_node_parms</definition>
+        <argsstring>(S&lt; MemsetNode &gt; node, const cudaMemsetParams &amp;parms)</argsstring>
+        <name>set_memset_node_parms</name>
+        <qualifiedname>muda::GraphExec::set_memset_node_parms</qualifiedname>
+        <param>
+          <type>S&lt; <ref refid="classmuda_1_1_memset_node" kindref="compound">MemsetNode</ref> &gt;</type>
+          <declname>node</declname>
+        </param>
+        <param>
+          <type>const cudaMemsetParams &amp;</type>
+          <declname>parms</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/graph/graph_exec.h" line="46" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_graph_exec_1a04e76b043b86cfa96c8f1b67de9242ad" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void muda::GraphExec::set_event_record_node_parms</definition>
+        <argsstring>(S&lt; EventRecordNode &gt; node, cudaEvent_t event)</argsstring>
+        <name>set_event_record_node_parms</name>
+        <qualifiedname>muda::GraphExec::set_event_record_node_parms</qualifiedname>
+        <param>
+          <type>S&lt; <ref refid="classmuda_1_1_event_record_node" kindref="compound">EventRecordNode</ref> &gt;</type>
+          <declname>node</declname>
+        </param>
+        <param>
+          <type>cudaEvent_t</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/graph/graph_exec.h" line="49" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_graph_exec_1ad2ef08f9e13420d033a025ca07070662" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void muda::GraphExec::set_event_wait_node_parms</definition>
+        <argsstring>(S&lt; EventWaitNode &gt; node, cudaEvent_t event)</argsstring>
+        <name>set_event_wait_node_parms</name>
+        <qualifiedname>muda::GraphExec::set_event_wait_node_parms</qualifiedname>
+        <param>
+          <type>S&lt; <ref refid="classmuda_1_1_event_wait_node" kindref="compound">EventWaitNode</ref> &gt;</type>
+          <declname>node</declname>
+        </param>
+        <param>
+          <type>cudaEvent_t</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/graph/graph_exec.h" line="50" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_graph_exec_1ad79837922a1dfddc0da569add7980df9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>muda::GraphExec::~GraphExec</definition>
+        <argsstring>()</argsstring>
+        <name>~GraphExec</name>
+        <qualifiedname>muda::GraphExec::~GraphExec</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/graph/graph_exec.h" line="52" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_graph_exec_1a40a8b6f2e7cd7b71097c764f58272a41" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>cudaGraphExec_t</type>
+        <definition>cudaGraphExec_t muda::GraphExec::handle</definition>
+        <argsstring>() const</argsstring>
+        <name>handle</name>
+        <qualifiedname>muda::GraphExec::handle</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/graph/graph_exec.h" line="54" column="21" bodyfile="src/muda/graph/graph_exec.h" bodystart="54" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_graph_exec_1af32e689fa5d01e8a4ff612760a2f854b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classmuda_1_1_graph_viewer" kindref="compound">GraphViewer</ref></type>
+        <definition>GraphViewer muda::GraphExec::viewer</definition>
+        <argsstring>() const</argsstring>
+        <name>viewer</name>
+        <qualifiedname>muda::GraphExec::viewer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/graph/graph_exec.h" line="56" column="17"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/muda/graph/graph_exec.h" line="10" column="1" bodyfile="src/muda/graph/graph_exec.h" bodystart="11" bodyend="60"/>
+    <listofallmembers>
+      <member refid="classmuda_1_1_graph_exec_1afab89afd724f1b07b1aaad6bdc61c47a" prot="public" virt="non-virtual"><scope>muda::GraphExec</scope><name>Graph</name></member>
+      <member refid="classmuda_1_1_graph_exec_1abec95f7fa9e7b3a4e534f3e1c4444393" prot="public" virt="non-virtual"><scope>muda::GraphExec</scope><name>GraphExec</name></member>
+      <member refid="classmuda_1_1_graph_exec_1a5b83ea75a7b1fb35c697cdb686a9efd8" prot="public" virt="non-virtual"><scope>muda::GraphExec</scope><name>GraphExec</name></member>
+      <member refid="classmuda_1_1_graph_exec_1a78065889f8d0a314807268170ed0221a" prot="public" virt="non-virtual"><scope>muda::GraphExec</scope><name>GraphExec</name></member>
+      <member refid="classmuda_1_1_graph_exec_1a40a8b6f2e7cd7b71097c764f58272a41" prot="public" virt="non-virtual"><scope>muda::GraphExec</scope><name>handle</name></member>
+      <member refid="classmuda_1_1_graph_exec_1a5f056f286f7ee921c943e9b4c417c4ae" prot="public" virt="non-virtual"><scope>muda::GraphExec</scope><name>launch</name></member>
+      <member refid="classmuda_1_1_graph_exec_1a8900c273a1ce9b246e65a4661355520d" prot="private" virt="non-virtual"><scope>muda::GraphExec</scope><name>m_cached</name></member>
+      <member refid="classmuda_1_1_graph_exec_1a47eea33140dab22c34ce55cec2da4c19" prot="private" virt="non-virtual"><scope>muda::GraphExec</scope><name>m_flags</name></member>
+      <member refid="classmuda_1_1_graph_exec_1ac294e87de5b1802f9dd716c609329d92" prot="private" virt="non-virtual"><scope>muda::GraphExec</scope><name>m_handle</name></member>
+      <member refid="classmuda_1_1_graph_exec_1a225f4e8ca455a6b39e55f0b56dc8347a" prot="public" virt="non-virtual"><scope>muda::GraphExec</scope><name>operator=</name></member>
+      <member refid="classmuda_1_1_graph_exec_1a92c9cf692ee9a268e8280e99f2a2058d" prot="public" virt="non-virtual"><scope>muda::GraphExec</scope><name>operator=</name></member>
+      <member refid="classmuda_1_1_graph_exec_1aa8e4fc551c9e8dcc39163082edf8e718" prot="private" virt="non-virtual"><scope>muda::GraphExec</scope><name>S</name></member>
+      <member refid="classmuda_1_1_graph_exec_1a04e76b043b86cfa96c8f1b67de9242ad" prot="public" virt="non-virtual"><scope>muda::GraphExec</scope><name>set_event_record_node_parms</name></member>
+      <member refid="classmuda_1_1_graph_exec_1ad2ef08f9e13420d033a025ca07070662" prot="public" virt="non-virtual"><scope>muda::GraphExec</scope><name>set_event_wait_node_parms</name></member>
+      <member refid="classmuda_1_1_graph_exec_1adb49d232166b5896f967568bcbbc22e7" prot="public" virt="non-virtual"><scope>muda::GraphExec</scope><name>set_kernel_node_parms</name></member>
+      <member refid="classmuda_1_1_graph_exec_1a8a5c29287b783c9ebc28db318023472d" prot="public" virt="non-virtual"><scope>muda::GraphExec</scope><name>set_memcpy_node_parms</name></member>
+      <member refid="classmuda_1_1_graph_exec_1a821890c41dc2a23e7b848cda498b0ba7" prot="public" virt="non-virtual"><scope>muda::GraphExec</scope><name>set_memcpy_node_parms</name></member>
+      <member refid="classmuda_1_1_graph_exec_1aabb7f29606af1e82303d259221b096ff" prot="public" virt="non-virtual"><scope>muda::GraphExec</scope><name>set_memset_node_parms</name></member>
+      <member refid="classmuda_1_1_graph_exec_1ad46e0ff0eb6ee79f9e798ceddf525cb0" prot="private" virt="non-virtual"><scope>muda::GraphExec</scope><name>U</name></member>
+      <member refid="classmuda_1_1_graph_exec_1ab04c1257c31eadf02023368c32c587a2" prot="public" virt="non-virtual"><scope>muda::GraphExec</scope><name>upload</name></member>
+      <member refid="classmuda_1_1_graph_exec_1af32e689fa5d01e8a4ff612760a2f854b" prot="public" virt="non-virtual"><scope>muda::GraphExec</scope><name>viewer</name></member>
+      <member refid="classmuda_1_1_graph_exec_1ad79837922a1dfddc0da569add7980df9" prot="public" virt="non-virtual"><scope>muda::GraphExec</scope><name>~GraphExec</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

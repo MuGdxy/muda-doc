@@ -1,0 +1,188 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structmuda_1_1lbvh_1_1query__nearest" kind="struct" language="C++" prot="public">
+    <compoundname>muda::lbvh::query_nearest</compoundname>
+    <templateparamlist>
+      <param>
+        <type>typename Real</type>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="structmuda_1_1lbvh_1_1query__nearest_1adbb7ee4a6a8ca4cc100d15d97b289943" prot="public" static="no">
+        <type>typename <ref refid="structmuda_1_1lbvh_1_1vector__of" kindref="compound">vector_of</ref>&lt; Real &gt;::type</type>
+        <definition>using muda::lbvh::query_nearest&lt; Real &gt;::vector_type =  typename vector_of&lt;Real&gt;::type</definition>
+        <argsstring></argsstring>
+        <name>vector_type</name>
+        <qualifiedname>muda::lbvh::query_nearest::vector_type</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/lbvh/predicator.h" line="39" column="5" bodyfile="src/muda/ext/geo/lbvh/predicator.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structmuda_1_1lbvh_1_1query__nearest_1a6250cb6d0ecff99dbf9163739260ede9" prot="public" static="no" mutable="no">
+        <type>vector_type</type>
+        <definition>vector_type muda::lbvh::query_nearest&lt; Real &gt;::target</definition>
+        <argsstring></argsstring>
+        <name>target</name>
+        <qualifiedname>muda::lbvh::query_nearest::target</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/lbvh/predicator.h" line="53" column="17" bodyfile="src/muda/ext/geo/lbvh/predicator.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="structmuda_1_1lbvh_1_1query__nearest_1a49b3a5734e6f9ecd9148ceafcc8af7e3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>MUDA_GENERIC</type>
+        <definition>MUDA_GENERIC muda::lbvh::query_nearest&lt; Real &gt;::query_nearest</definition>
+        <argsstring>(const vector_type &amp;tgt)</argsstring>
+        <name>query_nearest</name>
+        <qualifiedname>muda::lbvh::query_nearest::query_nearest</qualifiedname>
+        <param>
+          <type>const vector_type &amp;</type>
+          <declname>tgt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/lbvh/predicator.h" line="41" column="18" bodyfile="src/muda/ext/geo/lbvh/predicator.h" bodystart="41" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="structmuda_1_1lbvh_1_1query__nearest_1a1cfef0c50e31b264ac2c396dc8a113c8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>muda::lbvh::query_nearest&lt; Real &gt;::query_nearest</definition>
+        <argsstring>()=default</argsstring>
+        <name>query_nearest</name>
+        <qualifiedname>muda::lbvh::query_nearest::query_nearest</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/lbvh/predicator.h" line="46" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="structmuda_1_1lbvh_1_1query__nearest_1a92657dbc85a222cab678bc08dc146960" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>muda::lbvh::query_nearest&lt; Real &gt;::~query_nearest</definition>
+        <argsstring>()=default</argsstring>
+        <name>~query_nearest</name>
+        <qualifiedname>muda::lbvh::query_nearest::~query_nearest</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/lbvh/predicator.h" line="47" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="structmuda_1_1lbvh_1_1query__nearest_1a2142d997446ce1bb6cc24a2b50a014bd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>muda::lbvh::query_nearest&lt; Real &gt;::query_nearest</definition>
+        <argsstring>(const query_nearest &amp;)=default</argsstring>
+        <name>query_nearest</name>
+        <qualifiedname>muda::lbvh::query_nearest::query_nearest</qualifiedname>
+        <param>
+          <type>const <ref refid="structmuda_1_1lbvh_1_1query__nearest" kindref="compound">query_nearest</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/lbvh/predicator.h" line="48" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="structmuda_1_1lbvh_1_1query__nearest_1a3447c7af9492ccc85ebdcde725516ee9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>muda::lbvh::query_nearest&lt; Real &gt;::query_nearest</definition>
+        <argsstring>(query_nearest &amp;&amp;)=default</argsstring>
+        <name>query_nearest</name>
+        <qualifiedname>muda::lbvh::query_nearest::query_nearest</qualifiedname>
+        <param>
+          <type><ref refid="structmuda_1_1lbvh_1_1query__nearest" kindref="compound">query_nearest</ref> &amp;&amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/lbvh/predicator.h" line="49" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="structmuda_1_1lbvh_1_1query__nearest_1abf19b104aed157490a766846bf778317" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structmuda_1_1lbvh_1_1query__nearest" kindref="compound">query_nearest</ref> &amp;</type>
+        <definition>query_nearest &amp; muda::lbvh::query_nearest&lt; Real &gt;::operator=</definition>
+        <argsstring>(const query_nearest &amp;)=default</argsstring>
+        <name>operator=</name>
+        <qualifiedname>muda::lbvh::query_nearest::operator=</qualifiedname>
+        <param>
+          <type>const <ref refid="structmuda_1_1lbvh_1_1query__nearest" kindref="compound">query_nearest</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/lbvh/predicator.h" line="50" column="19"/>
+      </memberdef>
+      <memberdef kind="function" id="structmuda_1_1lbvh_1_1query__nearest_1aa54e5cb7ab3baf6e14ee1a244131282f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structmuda_1_1lbvh_1_1query__nearest" kindref="compound">query_nearest</ref> &amp;</type>
+        <definition>query_nearest &amp; muda::lbvh::query_nearest&lt; Real &gt;::operator=</definition>
+        <argsstring>(query_nearest &amp;&amp;)=default</argsstring>
+        <name>operator=</name>
+        <qualifiedname>muda::lbvh::query_nearest::operator=</qualifiedname>
+        <param>
+          <type><ref refid="structmuda_1_1lbvh_1_1query__nearest" kindref="compound">query_nearest</ref> &amp;&amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/lbvh/predicator.h" line="51" column="19"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>muda::lbvh::query_nearest&lt; Real &gt;</label>
+        <link refid="structmuda_1_1lbvh_1_1query__nearest"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>target</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>muda::lbvh::vector_of&lt; Real &gt;</label>
+        <link refid="structmuda_1_1lbvh_1_1vector__of"/>
+      </node>
+    </collaborationgraph>
+    <location file="src/muda/ext/geo/lbvh/predicator.h" line="36" column="1" bodyfile="src/muda/ext/geo/lbvh/predicator.h" bodystart="37" bodyend="54"/>
+    <listofallmembers>
+      <member refid="structmuda_1_1lbvh_1_1query__nearest_1abf19b104aed157490a766846bf778317" prot="public" virt="non-virtual"><scope>muda::lbvh::query_nearest</scope><name>operator=</name></member>
+      <member refid="structmuda_1_1lbvh_1_1query__nearest_1aa54e5cb7ab3baf6e14ee1a244131282f" prot="public" virt="non-virtual"><scope>muda::lbvh::query_nearest</scope><name>operator=</name></member>
+      <member refid="structmuda_1_1lbvh_1_1query__nearest_1a49b3a5734e6f9ecd9148ceafcc8af7e3" prot="public" virt="non-virtual"><scope>muda::lbvh::query_nearest</scope><name>query_nearest</name></member>
+      <member refid="structmuda_1_1lbvh_1_1query__nearest_1a1cfef0c50e31b264ac2c396dc8a113c8" prot="public" virt="non-virtual"><scope>muda::lbvh::query_nearest</scope><name>query_nearest</name></member>
+      <member refid="structmuda_1_1lbvh_1_1query__nearest_1a2142d997446ce1bb6cc24a2b50a014bd" prot="public" virt="non-virtual"><scope>muda::lbvh::query_nearest</scope><name>query_nearest</name></member>
+      <member refid="structmuda_1_1lbvh_1_1query__nearest_1a3447c7af9492ccc85ebdcde725516ee9" prot="public" virt="non-virtual"><scope>muda::lbvh::query_nearest</scope><name>query_nearest</name></member>
+      <member refid="structmuda_1_1lbvh_1_1query__nearest_1a6250cb6d0ecff99dbf9163739260ede9" prot="public" virt="non-virtual"><scope>muda::lbvh::query_nearest</scope><name>target</name></member>
+      <member refid="structmuda_1_1lbvh_1_1query__nearest_1adbb7ee4a6a8ca4cc100d15d97b289943" prot="public" virt="non-virtual"><scope>muda::lbvh::query_nearest</scope><name>vector_type</name></member>
+      <member refid="structmuda_1_1lbvh_1_1query__nearest_1a92657dbc85a222cab678bc08dc146960" prot="public" virt="non-virtual"><scope>muda::lbvh::query_nearest</scope><name>~query_nearest</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

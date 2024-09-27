@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="dir_58b30d2a266b6e98a9cbea81c385691b" kind="dir">
+    <compoundname>src/muda/ext/geo/spatial_hash</compoundname>
+    <innerfile refid="bounding__volume_8h">bounding_volume.h</innerfile>
+    <innerfile refid="collision__pair_8h">collision_pair.h</innerfile>
+    <innerfile refid="morton__hash_8h">morton_hash.h</innerfile>
+    <innerfile refid="sparse__spatial__hash_8h">sparse_spatial_hash.h</innerfile>
+    <innerfile refid="sparse__spatial__hash__impl_8h">sparse_spatial_hash_impl.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/muda/ext/geo/spatial_hash/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="dir_373cdbe7548ceaaa1c4b365fecb08d35" kind="dir">
+    <compoundname>src/muda/ext/eigen</compoundname>
+    <innerdir refid="dir_c61bd2e796e3edc48398972f7a794fc0">src/muda/ext/eigen/inverse</innerdir>
+    <innerdir refid="dir_5674bb1d8d1f74c09df62e988fd37b50">src/muda/ext/eigen/svd</innerdir>
+    <innerfile refid="as__eigen_8h">as_eigen.h</innerfile>
+    <innerfile refid="ext_2eigen_2atomic_8h">atomic.h</innerfile>
+    <innerfile refid="eigen__core__cxx20_8h">eigen_core_cxx20.h</innerfile>
+    <innerfile refid="eigen__cxx20_8h">eigen_cxx20.h</innerfile>
+    <innerfile refid="eigen__dense__cxx20_8h">eigen_dense_cxx20.h</innerfile>
+    <innerfile refid="evd_8h">evd.h</innerfile>
+    <innerfile refid="inverse_8h">inverse.h</innerfile>
+    <innerfile refid="log__proxy_8h">log_proxy.h</innerfile>
+    <innerfile refid="svd_8h">svd.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/muda/ext/eigen/"/>
+  </compounddef>
+</doxygen>

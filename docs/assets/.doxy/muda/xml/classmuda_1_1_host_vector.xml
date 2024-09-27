@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classmuda_1_1_host_vector" kind="class" language="C++" prot="public">
+    <compoundname>muda::HostVector</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">thrust::host_vector&lt; T, std::allocator&lt; T &gt; &gt;</basecompoundref>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>muda::HostVector&lt; T &gt;</label>
+        <link refid="classmuda_1_1_host_vector"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>thrust::host_vector&lt; T, std::allocator&lt; T &gt; &gt;</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>muda::HostVector&lt; T &gt;</label>
+        <link refid="classmuda_1_1_host_vector"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>thrust::host_vector&lt; T, std::allocator&lt; T &gt; &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="src/muda/container/vector.h" line="68" column="1" bodyfile="src/muda/container/vector.h" bodystart="69" bodyend="73"/>
+    <listofallmembers>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

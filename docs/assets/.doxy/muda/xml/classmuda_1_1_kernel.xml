@@ -1,0 +1,361 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classmuda_1_1_kernel" kind="class" language="C++" prot="public">
+    <compoundname>muda::Kernel</compoundname>
+    <templateparamlist>
+      <param>
+        <type>typename F</type>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classmuda_1_1_kernel_1ac1415c2a908a5e0fde55a8ed4ec5820b" prot="private" static="no" mutable="no">
+        <type>dim3</type>
+        <definition>dim3 muda::Kernel&lt; F &gt;::m_grid_dim</definition>
+        <argsstring></argsstring>
+        <name>m_grid_dim</name>
+        <qualifiedname>muda::Kernel::m_grid_dim</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/launch/kernel.h" line="12" column="18" bodyfile="src/muda/launch/kernel.h" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1_kernel_1af25b6891b5aa1363e5b9d48107646338" prot="private" static="no" mutable="no">
+        <type>dim3</type>
+        <definition>dim3 muda::Kernel&lt; F &gt;::m_block_dim</definition>
+        <argsstring></argsstring>
+        <name>m_block_dim</name>
+        <qualifiedname>muda::Kernel::m_block_dim</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/launch/kernel.h" line="13" column="18" bodyfile="src/muda/launch/kernel.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1_kernel_1aae21bee30ae3faf41b4e4123bbd65209" prot="private" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t muda::Kernel&lt; F &gt;::m_shared_memory_size</definition>
+        <argsstring></argsstring>
+        <name>m_shared_memory_size</name>
+        <qualifiedname>muda::Kernel::m_shared_memory_size</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/launch/kernel.h" line="14" column="18" bodyfile="src/muda/launch/kernel.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1_kernel_1a7ff22b566d05942ced184f8bb0b4c71b" prot="private" static="no" mutable="no">
+        <type>cudaStream_t</type>
+        <definition>cudaStream_t muda::Kernel&lt; F &gt;::m_stream</definition>
+        <argsstring></argsstring>
+        <name>m_stream</name>
+        <qualifiedname>muda::Kernel::m_stream</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/launch/kernel.h" line="15" column="18" bodyfile="src/muda/launch/kernel.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1_kernel_1afb031d121eb0b3c8ff7eb7320a96bfaa" prot="private" static="no" mutable="no">
+        <type>F</type>
+        <definition>F muda::Kernel&lt; F &gt;::m_kernel</definition>
+        <argsstring></argsstring>
+        <name>m_kernel</name>
+        <qualifiedname>muda::Kernel::m_kernel</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/launch/kernel.h" line="16" column="18" bodyfile="src/muda/launch/kernel.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmuda_1_1_kernel_1a0dde598dac4b34aacc3c36dfed1a67b8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>MUDA_GENERIC</type>
+        <definition>MUDA_GENERIC muda::Kernel&lt; F &gt;::Kernel</definition>
+        <argsstring>(dim3 grid_dim, dim3 m_block_dim, size_t shared_memory_size, cudaStream_t stream, F f)</argsstring>
+        <name>Kernel</name>
+        <qualifiedname>muda::Kernel::Kernel</qualifiedname>
+        <param>
+          <type>dim3</type>
+          <declname>grid_dim</declname>
+        </param>
+        <param>
+          <type>dim3</type>
+          <declname>m_block_dim</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>shared_memory_size</declname>
+        </param>
+        <param>
+          <type>cudaStream_t</type>
+          <declname>stream</declname>
+        </param>
+        <param>
+          <type>F</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/launch/kernel.h" line="19" column="18" bodyfile="src/muda/launch/kernel.h" bodystart="19" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_kernel_1a1b9084455ddec712fa777720960ece08" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>MUDA_GENERIC</type>
+        <definition>MUDA_GENERIC muda::Kernel&lt; F &gt;::Kernel</definition>
+        <argsstring>(F f)</argsstring>
+        <name>Kernel</name>
+        <qualifiedname>muda::Kernel::Kernel</qualifiedname>
+        <param>
+          <type>F</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/launch/kernel.h" line="34" column="18" bodyfile="src/muda/launch/kernel.h" bodystart="34" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_kernel_1ab44e91249c3a03f0b5573dc2f7436b69" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>MUDA_GENERIC</type>
+        <definition>MUDA_GENERIC muda::Kernel&lt; F &gt;::Kernel</definition>
+        <argsstring>(dim3 grid_dim, dim3 m_block_dim, F f)</argsstring>
+        <name>Kernel</name>
+        <qualifiedname>muda::Kernel::Kernel</qualifiedname>
+        <param>
+          <type>dim3</type>
+          <declname>grid_dim</declname>
+        </param>
+        <param>
+          <type>dim3</type>
+          <declname>m_block_dim</declname>
+        </param>
+        <param>
+          <type>F</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/launch/kernel.h" line="39" column="18" bodyfile="src/muda/launch/kernel.h" bodystart="39" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_kernel_1ad427510fe80900dad39d2e6d79541fd2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>MUDA_GENERIC</type>
+        <definition>MUDA_GENERIC muda::Kernel&lt; F &gt;::Kernel</definition>
+        <argsstring>(dim3 grid_dim, dim3 m_block_dim, size_t shared_memory_size, F f)</argsstring>
+        <name>Kernel</name>
+        <qualifiedname>muda::Kernel::Kernel</qualifiedname>
+        <param>
+          <type>dim3</type>
+          <declname>grid_dim</declname>
+        </param>
+        <param>
+          <type>dim3</type>
+          <declname>m_block_dim</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>shared_memory_size</declname>
+        </param>
+        <param>
+          <type>F</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/launch/kernel.h" line="44" column="18" bodyfile="src/muda/launch/kernel.h" bodystart="44" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_kernel_1a2697b7708834190c64cf487e2f5e4961" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>MUDA_GENERIC</type>
+        <definition>MUDA_GENERIC muda::Kernel&lt; F &gt;::Kernel</definition>
+        <argsstring>(dim3 grid_dim, dim3 m_block_dim, cudaStream_t stream, F f)</argsstring>
+        <name>Kernel</name>
+        <qualifiedname>muda::Kernel::Kernel</qualifiedname>
+        <param>
+          <type>dim3</type>
+          <declname>grid_dim</declname>
+        </param>
+        <param>
+          <type>dim3</type>
+          <declname>m_block_dim</declname>
+        </param>
+        <param>
+          <type>cudaStream_t</type>
+          <declname>stream</declname>
+        </param>
+        <param>
+          <type>F</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/launch/kernel.h" line="49" column="18" bodyfile="src/muda/launch/kernel.h" bodystart="49" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_kernel_1adf282736bd75786db43f3be2384453ed" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>MUDA_GENERIC</type>
+        <definition>MUDA_GENERIC muda::Kernel&lt; F &gt;::Kernel</definition>
+        <argsstring>(cudaStream_t stream, F f)</argsstring>
+        <name>Kernel</name>
+        <qualifiedname>muda::Kernel::Kernel</qualifiedname>
+        <param>
+          <type>cudaStream_t</type>
+          <declname>stream</declname>
+        </param>
+        <param>
+          <type>F</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/launch/kernel.h" line="54" column="18" bodyfile="src/muda/launch/kernel.h" bodystart="54" bodyend="57"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_kernel_1a7bd4ad856fd8dd6c43e0a8f57aeab1aa" prot="public" static="no" const="no" explicit="no" inline="yes" refqual="rvalue" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename...</type>
+            <declname>Args</declname>
+            <defname>Args</defname>
+          </param>
+        </templateparamlist>
+        <type>MUDA_GENERIC void</type>
+        <definition>MUDA_GENERIC void muda::Kernel&lt; F &gt;::operator()</definition>
+        <argsstring>(Args &amp;&amp;... args) &amp;&amp;</argsstring>
+        <name>operator()</name>
+        <qualifiedname>muda::Kernel::operator()</qualifiedname>
+        <param>
+          <type>Args &amp;&amp;...</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/launch/kernel.h" line="60" column="23" bodyfile="src/muda/launch/kernel.h" bodystart="60" bodyend="85"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_kernel_1af8f87afed36dd8bd90b30edc352ba3a3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>MUDA_GENERIC</type>
+        <definition>MUDA_GENERIC muda::Kernel&lt; F &gt;::Kernel</definition>
+        <argsstring>(const Kernel &amp;)=delete</argsstring>
+        <name>Kernel</name>
+        <qualifiedname>muda::Kernel::Kernel</qualifiedname>
+        <param>
+          <type>const <ref refid="classmuda_1_1_kernel" kindref="compound">Kernel</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/launch/kernel.h" line="88" column="26"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_kernel_1a0dd7ffa0217e5217cbec5664c1d38a0e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>MUDA_GENERIC <ref refid="classmuda_1_1_kernel" kindref="compound">Kernel</ref> &amp;</type>
+        <definition>MUDA_GENERIC Kernel &amp; muda::Kernel&lt; F &gt;::operator=</definition>
+        <argsstring>(const Kernel &amp;)=delete</argsstring>
+        <name>operator=</name>
+        <qualifiedname>muda::Kernel::operator=</qualifiedname>
+        <param>
+          <type>const <ref refid="classmuda_1_1_kernel" kindref="compound">Kernel</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/launch/kernel.h" line="89" column="25"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_kernel_1ad1b49dcb44b7e94bb9a5cf5137cb19bb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>MUDA_GENERIC</type>
+        <definition>MUDA_GENERIC muda::Kernel&lt; F &gt;::Kernel</definition>
+        <argsstring>(Kernel &amp;&amp;)=delete</argsstring>
+        <name>Kernel</name>
+        <qualifiedname>muda::Kernel::Kernel</qualifiedname>
+        <param>
+          <type><ref refid="classmuda_1_1_kernel" kindref="compound">Kernel</ref> &amp;&amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/launch/kernel.h" line="90" column="26"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_kernel_1ac9b1fb6a634338b4617560d7c959dad6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>MUDA_GENERIC <ref refid="classmuda_1_1_kernel" kindref="compound">Kernel</ref> &amp;</type>
+        <definition>MUDA_GENERIC Kernel &amp; muda::Kernel&lt; F &gt;::operator=</definition>
+        <argsstring>(Kernel &amp;&amp;)=delete</argsstring>
+        <name>operator=</name>
+        <qualifiedname>muda::Kernel::operator=</qualifiedname>
+        <param>
+          <type><ref refid="classmuda_1_1_kernel" kindref="compound">Kernel</ref> &amp;&amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/launch/kernel.h" line="91" column="25"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/muda/launch/kernel.h" line="10" column="1" bodyfile="src/muda/launch/kernel.h" bodystart="11" bodyend="92"/>
+    <listofallmembers>
+      <member refid="classmuda_1_1_kernel_1a0dde598dac4b34aacc3c36dfed1a67b8" prot="public" virt="non-virtual"><scope>muda::Kernel</scope><name>Kernel</name></member>
+      <member refid="classmuda_1_1_kernel_1a1b9084455ddec712fa777720960ece08" prot="public" virt="non-virtual"><scope>muda::Kernel</scope><name>Kernel</name></member>
+      <member refid="classmuda_1_1_kernel_1ab44e91249c3a03f0b5573dc2f7436b69" prot="public" virt="non-virtual"><scope>muda::Kernel</scope><name>Kernel</name></member>
+      <member refid="classmuda_1_1_kernel_1ad427510fe80900dad39d2e6d79541fd2" prot="public" virt="non-virtual"><scope>muda::Kernel</scope><name>Kernel</name></member>
+      <member refid="classmuda_1_1_kernel_1a2697b7708834190c64cf487e2f5e4961" prot="public" virt="non-virtual"><scope>muda::Kernel</scope><name>Kernel</name></member>
+      <member refid="classmuda_1_1_kernel_1adf282736bd75786db43f3be2384453ed" prot="public" virt="non-virtual"><scope>muda::Kernel</scope><name>Kernel</name></member>
+      <member refid="classmuda_1_1_kernel_1af8f87afed36dd8bd90b30edc352ba3a3" prot="public" virt="non-virtual"><scope>muda::Kernel</scope><name>Kernel</name></member>
+      <member refid="classmuda_1_1_kernel_1ad1b49dcb44b7e94bb9a5cf5137cb19bb" prot="public" virt="non-virtual"><scope>muda::Kernel</scope><name>Kernel</name></member>
+      <member refid="classmuda_1_1_kernel_1af25b6891b5aa1363e5b9d48107646338" prot="private" virt="non-virtual"><scope>muda::Kernel</scope><name>m_block_dim</name></member>
+      <member refid="classmuda_1_1_kernel_1ac1415c2a908a5e0fde55a8ed4ec5820b" prot="private" virt="non-virtual"><scope>muda::Kernel</scope><name>m_grid_dim</name></member>
+      <member refid="classmuda_1_1_kernel_1afb031d121eb0b3c8ff7eb7320a96bfaa" prot="private" virt="non-virtual"><scope>muda::Kernel</scope><name>m_kernel</name></member>
+      <member refid="classmuda_1_1_kernel_1aae21bee30ae3faf41b4e4123bbd65209" prot="private" virt="non-virtual"><scope>muda::Kernel</scope><name>m_shared_memory_size</name></member>
+      <member refid="classmuda_1_1_kernel_1a7ff22b566d05942ced184f8bb0b4c71b" prot="private" virt="non-virtual"><scope>muda::Kernel</scope><name>m_stream</name></member>
+      <member refid="classmuda_1_1_kernel_1a7bd4ad856fd8dd6c43e0a8f57aeab1aa" prot="public" virt="non-virtual"><scope>muda::Kernel</scope><name>operator()</name></member>
+      <member refid="classmuda_1_1_kernel_1a0dd7ffa0217e5217cbec5664c1d38a0e" prot="public" virt="non-virtual"><scope>muda::Kernel</scope><name>operator=</name></member>
+      <member refid="classmuda_1_1_kernel_1ac9b1fb6a634338b4617560d7c959dad6" prot="public" virt="non-virtual"><scope>muda::Kernel</scope><name>operator=</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

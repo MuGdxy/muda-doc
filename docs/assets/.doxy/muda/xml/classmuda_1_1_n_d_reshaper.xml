@@ -1,0 +1,384 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classmuda_1_1_n_d_reshaper" kind="class" language="C++" prot="public">
+    <compoundname>muda::NDReshaper</compoundname>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classmuda_1_1_n_d_reshaper_1a69233fc0be4bf15918b34a69b4ca659e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+          <param>
+            <type>typename FConstruct</type>
+          </param>
+        </templateparamlist>
+        <type>MUDA_HOST void</type>
+        <definition>static MUDA_HOST void muda::NDReshaper::resize</definition>
+        <argsstring>(int grid_dim, int block_dim, cudaStream_t stream, DeviceBuffer&lt; T &gt; &amp;buffer, size_t new_size, FConstruct &amp;&amp;fct)</argsstring>
+        <name>resize</name>
+        <qualifiedname>muda::NDReshaper::resize</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>grid_dim</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>block_dim</declname>
+        </param>
+        <param>
+          <type>cudaStream_t</type>
+          <declname>stream</declname>
+        </param>
+        <param>
+          <type><ref refid="classmuda_1_1_device_buffer" kindref="compound">DeviceBuffer</ref>&lt; T &gt; &amp;</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>new_size</declname>
+        </param>
+        <param>
+          <type>FConstruct &amp;&amp;</type>
+          <declname>fct</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/reshape_nd/nd_reshaper.h" line="19" column="27"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_n_d_reshaper_1ad275508215b846ed743f9cb23fed0762" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>MUDA_HOST void</type>
+        <definition>static MUDA_HOST void muda::NDReshaper::shrink_to_fit</definition>
+        <argsstring>(int grid_dim, int block_dim, cudaStream_t stream, DeviceBuffer&lt; T &gt; &amp;buffer)</argsstring>
+        <name>shrink_to_fit</name>
+        <qualifiedname>muda::NDReshaper::shrink_to_fit</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>grid_dim</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>block_dim</declname>
+        </param>
+        <param>
+          <type>cudaStream_t</type>
+          <declname>stream</declname>
+        </param>
+        <param>
+          <type><ref refid="classmuda_1_1_device_buffer" kindref="compound">DeviceBuffer</ref>&lt; T &gt; &amp;</type>
+          <declname>buffer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/reshape_nd/nd_reshaper.h" line="27" column="27"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_n_d_reshaper_1a290d0dac118e4a881862f3ade9c7486d" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>MUDA_HOST void</type>
+        <definition>static MUDA_HOST void muda::NDReshaper::reserve</definition>
+        <argsstring>(int grid_dim, int block_dim, cudaStream_t stream, DeviceBuffer&lt; T &gt; &amp;buffer, size_t new_capacity)</argsstring>
+        <name>reserve</name>
+        <qualifiedname>muda::NDReshaper::reserve</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>grid_dim</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>block_dim</declname>
+        </param>
+        <param>
+          <type>cudaStream_t</type>
+          <declname>stream</declname>
+        </param>
+        <param>
+          <type><ref refid="classmuda_1_1_device_buffer" kindref="compound">DeviceBuffer</ref>&lt; T &gt; &amp;</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>new_capacity</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/reshape_nd/nd_reshaper.h" line="33" column="27"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_n_d_reshaper_1aa77bb940bddfa62a82e829587e7f9b61" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+          <param>
+            <type>typename FConstruct</type>
+          </param>
+        </templateparamlist>
+        <type>MUDA_HOST void</type>
+        <definition>static MUDA_HOST void muda::NDReshaper::resize</definition>
+        <argsstring>(int grid_dim, int block_dim, cudaStream_t stream, DeviceBuffer2D&lt; T &gt; &amp;buffer, Extent2D new_extent, FConstruct &amp;&amp;fct)</argsstring>
+        <name>resize</name>
+        <qualifiedname>muda::NDReshaper::resize</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>grid_dim</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>block_dim</declname>
+        </param>
+        <param>
+          <type>cudaStream_t</type>
+          <declname>stream</declname>
+        </param>
+        <param>
+          <type><ref refid="classmuda_1_1_device_buffer2_d" kindref="compound">DeviceBuffer2D</ref>&lt; T &gt; &amp;</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type><ref refid="classmuda_1_1_extent2_d" kindref="compound">Extent2D</ref></type>
+          <declname>new_extent</declname>
+        </param>
+        <param>
+          <type>FConstruct &amp;&amp;</type>
+          <declname>fct</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/reshape_nd/nd_reshaper.h" line="43" column="27"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_n_d_reshaper_1accb90a6081fd113d8af8895fbb2dc7a5" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>MUDA_HOST void</type>
+        <definition>static MUDA_HOST void muda::NDReshaper::shrink_to_fit</definition>
+        <argsstring>(int grid_dim, int block_dim, cudaStream_t stream, DeviceBuffer2D&lt; T &gt; &amp;buffer)</argsstring>
+        <name>shrink_to_fit</name>
+        <qualifiedname>muda::NDReshaper::shrink_to_fit</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>grid_dim</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>block_dim</declname>
+        </param>
+        <param>
+          <type>cudaStream_t</type>
+          <declname>stream</declname>
+        </param>
+        <param>
+          <type><ref refid="classmuda_1_1_device_buffer2_d" kindref="compound">DeviceBuffer2D</ref>&lt; T &gt; &amp;</type>
+          <declname>buffer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/reshape_nd/nd_reshaper.h" line="51" column="27"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_n_d_reshaper_1ad4c9685b1963a74a4319861e19cbd2c8" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>MUDA_HOST void</type>
+        <definition>static MUDA_HOST void muda::NDReshaper::reserve</definition>
+        <argsstring>(int grid_dim, int block_dim, cudaStream_t stream, DeviceBuffer2D&lt; T &gt; &amp;buffer, Extent2D new_capacity)</argsstring>
+        <name>reserve</name>
+        <qualifiedname>muda::NDReshaper::reserve</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>grid_dim</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>block_dim</declname>
+        </param>
+        <param>
+          <type>cudaStream_t</type>
+          <declname>stream</declname>
+        </param>
+        <param>
+          <type><ref refid="classmuda_1_1_device_buffer2_d" kindref="compound">DeviceBuffer2D</ref>&lt; T &gt; &amp;</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type><ref refid="classmuda_1_1_extent2_d" kindref="compound">Extent2D</ref></type>
+          <declname>new_capacity</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/reshape_nd/nd_reshaper.h" line="57" column="27"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_n_d_reshaper_1a04b2bcab57c7379b41ebe88f7d36d235" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+          <param>
+            <type>typename FConstruct</type>
+          </param>
+        </templateparamlist>
+        <type>MUDA_HOST void</type>
+        <definition>static MUDA_HOST void muda::NDReshaper::resize</definition>
+        <argsstring>(int grid_dim, int block_dim, cudaStream_t stream, DeviceBuffer3D&lt; T &gt; &amp;buffer, Extent3D new_extent, FConstruct &amp;&amp;fct)</argsstring>
+        <name>resize</name>
+        <qualifiedname>muda::NDReshaper::resize</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>grid_dim</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>block_dim</declname>
+        </param>
+        <param>
+          <type>cudaStream_t</type>
+          <declname>stream</declname>
+        </param>
+        <param>
+          <type><ref refid="classmuda_1_1_device_buffer3_d" kindref="compound">DeviceBuffer3D</ref>&lt; T &gt; &amp;</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type><ref refid="classmuda_1_1_extent3_d" kindref="compound">Extent3D</ref></type>
+          <declname>new_extent</declname>
+        </param>
+        <param>
+          <type>FConstruct &amp;&amp;</type>
+          <declname>fct</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/reshape_nd/nd_reshaper.h" line="64" column="27"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_n_d_reshaper_1a8620ef3f4e3acc35d87b38da0044c607" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>MUDA_HOST void</type>
+        <definition>static MUDA_HOST void muda::NDReshaper::shrink_to_fit</definition>
+        <argsstring>(int grid_dim, int block_dim, cudaStream_t stream, DeviceBuffer3D&lt; T &gt; &amp;buffer)</argsstring>
+        <name>shrink_to_fit</name>
+        <qualifiedname>muda::NDReshaper::shrink_to_fit</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>grid_dim</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>block_dim</declname>
+        </param>
+        <param>
+          <type>cudaStream_t</type>
+          <declname>stream</declname>
+        </param>
+        <param>
+          <type><ref refid="classmuda_1_1_device_buffer3_d" kindref="compound">DeviceBuffer3D</ref>&lt; T &gt; &amp;</type>
+          <declname>buffer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/reshape_nd/nd_reshaper.h" line="72" column="27"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_n_d_reshaper_1a67a4f7255c178b7087d6c6abeb6d0f34" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>MUDA_HOST void</type>
+        <definition>static MUDA_HOST void muda::NDReshaper::reserve</definition>
+        <argsstring>(int grid_dim, int block_dim, cudaStream_t stream, DeviceBuffer3D&lt; T &gt; &amp;buffer, Extent3D new_capacity)</argsstring>
+        <name>reserve</name>
+        <qualifiedname>muda::NDReshaper::reserve</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>grid_dim</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>block_dim</declname>
+        </param>
+        <param>
+          <type>cudaStream_t</type>
+          <declname>stream</declname>
+        </param>
+        <param>
+          <type><ref refid="classmuda_1_1_device_buffer3_d" kindref="compound">DeviceBuffer3D</ref>&lt; T &gt; &amp;</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type><ref refid="classmuda_1_1_extent3_d" kindref="compound">Extent3D</ref></type>
+          <declname>new_capacity</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/buffer/reshape_nd/nd_reshaper.h" line="78" column="27"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/muda/buffer/reshape_nd/nd_reshaper.h" line="15" column="1" bodyfile="src/muda/buffer/reshape_nd/nd_reshaper.h" bodystart="16" bodyend="83"/>
+    <listofallmembers>
+      <member refid="classmuda_1_1_n_d_reshaper_1a290d0dac118e4a881862f3ade9c7486d" prot="public" virt="non-virtual"><scope>muda::NDReshaper</scope><name>reserve</name></member>
+      <member refid="classmuda_1_1_n_d_reshaper_1ad4c9685b1963a74a4319861e19cbd2c8" prot="public" virt="non-virtual"><scope>muda::NDReshaper</scope><name>reserve</name></member>
+      <member refid="classmuda_1_1_n_d_reshaper_1a67a4f7255c178b7087d6c6abeb6d0f34" prot="public" virt="non-virtual"><scope>muda::NDReshaper</scope><name>reserve</name></member>
+      <member refid="classmuda_1_1_n_d_reshaper_1a69233fc0be4bf15918b34a69b4ca659e" prot="public" virt="non-virtual"><scope>muda::NDReshaper</scope><name>resize</name></member>
+      <member refid="classmuda_1_1_n_d_reshaper_1aa77bb940bddfa62a82e829587e7f9b61" prot="public" virt="non-virtual"><scope>muda::NDReshaper</scope><name>resize</name></member>
+      <member refid="classmuda_1_1_n_d_reshaper_1a04b2bcab57c7379b41ebe88f7d36d235" prot="public" virt="non-virtual"><scope>muda::NDReshaper</scope><name>resize</name></member>
+      <member refid="classmuda_1_1_n_d_reshaper_1ad275508215b846ed743f9cb23fed0762" prot="public" virt="non-virtual"><scope>muda::NDReshaper</scope><name>shrink_to_fit</name></member>
+      <member refid="classmuda_1_1_n_d_reshaper_1accb90a6081fd113d8af8895fbb2dc7a5" prot="public" virt="non-virtual"><scope>muda::NDReshaper</scope><name>shrink_to_fit</name></member>
+      <member refid="classmuda_1_1_n_d_reshaper_1a8620ef3f4e3acc35d87b38da0044c607" prot="public" virt="non-virtual"><scope>muda::NDReshaper</scope><name>shrink_to_fit</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

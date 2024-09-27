@@ -1,0 +1,637 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classmuda_1_1_launch" kind="class" language="C++" prot="public">
+    <compoundname>muda::Launch</compoundname>
+    <basecompoundref refid="classmuda_1_1_launch_base" prot="public" virt="non-virtual">muda::LaunchBase&lt; Launch &gt;</basecompoundref>
+    <includes refid="launch_2launch_8h" local="no">launch.h</includes>
+    <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classmuda_1_1_launch_1a524f054371f65aaa5fdfde64c90b3a5f" prot="public" static="no">
+        <templateparamlist>
+          <param>
+            <type>typename F</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classmuda_1_1_kernel_node_parms" kindref="compound">KernelNodeParms</ref>&lt; <ref refid="structmuda_1_1details_1_1_launch_callable" kindref="compound">details::LaunchCallable</ref>&lt; raw_type_t&lt; F &gt; &gt; &gt;</type>
+        <definition>using muda::Launch::NodeParms =  KernelNodeParms&lt;details::LaunchCallable&lt;raw_type_t&lt;F&gt; &gt;&gt;</definition>
+        <argsstring></argsstring>
+        <name>NodeParms</name>
+        <qualifiedname>muda::Launch::NodeParms</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/launch/launch.h" line="93" column="5" bodyfile="src/muda/launch/launch.h" bodystart="93" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classmuda_1_1_launch_1a5f3a683d50475dc381d7b24b8f6f9655" prot="private" static="no" mutable="no">
+        <type>dim3</type>
+        <definition>dim3 muda::Launch::m_grid_dim</definition>
+        <argsstring></argsstring>
+        <name>m_grid_dim</name>
+        <qualifiedname>muda::Launch::m_grid_dim</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/launch/launch.h" line="87" column="12" bodyfile="src/muda/launch/launch.h" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1_launch_1a61281ebeea7d7c6cc223e03361cbe3b9" prot="private" static="no" mutable="no">
+        <type>dim3</type>
+        <definition>dim3 muda::Launch::m_block_dim</definition>
+        <argsstring></argsstring>
+        <name>m_block_dim</name>
+        <qualifiedname>muda::Launch::m_block_dim</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/launch/launch.h" line="88" column="12" bodyfile="src/muda/launch/launch.h" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1_launch_1a211a49ec4606734b07d707c45e1e9620" prot="private" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t muda::Launch::m_shared_mem_size</definition>
+        <argsstring></argsstring>
+        <name>m_shared_mem_size</name>
+        <qualifiedname>muda::Launch::m_shared_mem_size</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/launch/launch.h" line="89" column="12" bodyfile="src/muda/launch/launch.h" bodystart="89" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmuda_1_1_launch_1a72579e1e2c5b8aeb4d83495482848e77" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>MUDA_HOST</type>
+        <definition>MUDA_HOST muda::Launch::Launch</definition>
+        <argsstring>(dim3 gridDim, dim3 blockDim, size_t sharedMemSize=0, cudaStream_t stream=nullptr) MUDA_NOEXCEPT</argsstring>
+        <name>Launch</name>
+        <qualifiedname>muda::Launch::Launch</qualifiedname>
+        <param>
+          <type>dim3</type>
+          <declname>gridDim</declname>
+        </param>
+        <param>
+          <type>dim3</type>
+          <declname>blockDim</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>sharedMemSize</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>cudaStream_t</type>
+          <declname>stream</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/launch/launch.h" line="95" column="15" bodyfile="src/muda/launch/launch.h" bodystart="95" bodyend="101"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_launch_1aa675153814f062403ff97e6e56e87c6a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>MUDA_HOST</type>
+        <definition>MUDA_HOST muda::Launch::Launch</definition>
+        <argsstring>(int gridDim=1, int blockDim=1, size_t sharedMemSize=0, cudaStream_t stream=nullptr) MUDA_NOEXCEPT</argsstring>
+        <name>Launch</name>
+        <qualifiedname>muda::Launch::Launch</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>gridDim</declname>
+          <defval>1</defval>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>blockDim</declname>
+          <defval>1</defval>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>sharedMemSize</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>cudaStream_t</type>
+          <declname>stream</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/launch/launch.h" line="103" column="15" bodyfile="src/muda/launch/launch.h" bodystart="103" bodyend="112"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_launch_1a2b76292060ce7ae0df273993c57cb83e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>MUDA_HOST</type>
+        <definition>MUDA_HOST muda::Launch::Launch</definition>
+        <argsstring>(dim3 blockDim, size_t sharedMemSize=0, cudaStream_t stream=nullptr) MUDA_NOEXCEPT</argsstring>
+        <name>Launch</name>
+        <qualifiedname>muda::Launch::Launch</qualifiedname>
+        <param>
+          <type>dim3</type>
+          <declname>blockDim</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>sharedMemSize</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>cudaStream_t</type>
+          <declname>stream</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/launch/launch.h" line="114" column="15" bodyfile="src/muda/launch/launch.h" bodystart="114" bodyend="120"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_launch_1aeb9e5bddbba9639695eb036d687da87f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename F</type>
+          </param>
+          <param>
+            <type>typename UserTag</type>
+            <defval><ref refid="structmuda_1_1_default" kindref="compound">Default</ref></defval>
+          </param>
+        </templateparamlist>
+        <type>MUDA_HOST <ref refid="classmuda_1_1_launch" kindref="compound">Launch</ref> &amp;</type>
+        <definition>MUDA_HOST Launch &amp; muda::Launch::apply</definition>
+        <argsstring>(F &amp;&amp;f)</argsstring>
+        <name>apply</name>
+        <qualifiedname>muda::Launch::apply</qualifiedname>
+        <param>
+          <type>F &amp;&amp;</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/launch/launch.h" line="123" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_launch_1aa73d47ad2d7fdeb1377b5ec484ead769" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename F</type>
+          </param>
+          <param>
+            <type>typename UserTag</type>
+            <defval><ref refid="structmuda_1_1_default" kindref="compound">Default</ref></defval>
+          </param>
+        </templateparamlist>
+        <type>MUDA_HOST <ref refid="classmuda_1_1_launch" kindref="compound">Launch</ref> &amp;</type>
+        <definition>MUDA_HOST Launch &amp; muda::Launch::apply</definition>
+        <argsstring>(F &amp;&amp;f, Tag&lt; UserTag &gt;)</argsstring>
+        <name>apply</name>
+        <qualifiedname>muda::Launch::apply</qualifiedname>
+        <param>
+          <type>F &amp;&amp;</type>
+          <declname>f</declname>
+        </param>
+        <param>
+          <type><ref refid="structmuda_1_1_tag" kindref="compound">Tag</ref>&lt; UserTag &gt;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/launch/launch.h" line="125" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_launch_1a387ee1b9f104368b49b0f34842330af4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename F</type>
+          </param>
+          <param>
+            <type>typename UserTag</type>
+            <defval><ref refid="structmuda_1_1_default" kindref="compound">Default</ref></defval>
+          </param>
+        </templateparamlist>
+        <type>MUDA_HOST <ref refid="classmuda_1_1_launch" kindref="compound">Launch</ref> &amp;</type>
+        <definition>MUDA_HOST Launch &amp; muda::Launch::apply</definition>
+        <argsstring>(const dim3 &amp;active_dim, F &amp;&amp;f)</argsstring>
+        <name>apply</name>
+        <qualifiedname>muda::Launch::apply</qualifiedname>
+        <param>
+          <type>const dim3 &amp;</type>
+          <declname>active_dim</declname>
+        </param>
+        <param>
+          <type>F &amp;&amp;</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/launch/launch.h" line="128" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_launch_1ace33c1b1389b13540865b0703b6f3e89" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename F</type>
+          </param>
+          <param>
+            <type>typename UserTag</type>
+            <defval><ref refid="structmuda_1_1_default" kindref="compound">Default</ref></defval>
+          </param>
+        </templateparamlist>
+        <type>MUDA_HOST <ref refid="classmuda_1_1_launch" kindref="compound">Launch</ref> &amp;</type>
+        <definition>MUDA_HOST Launch &amp; muda::Launch::apply</definition>
+        <argsstring>(const dim3 &amp;active_dim, F &amp;&amp;f, Tag&lt; UserTag &gt;)</argsstring>
+        <name>apply</name>
+        <qualifiedname>muda::Launch::apply</qualifiedname>
+        <param>
+          <type>const dim3 &amp;</type>
+          <declname>active_dim</declname>
+        </param>
+        <param>
+          <type>F &amp;&amp;</type>
+          <declname>f</declname>
+        </param>
+        <param>
+          <type><ref refid="structmuda_1_1_tag" kindref="compound">Tag</ref>&lt; UserTag &gt;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/launch/launch.h" line="131" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_launch_1a9744b37c38df389838ce8a5f34a0d7a6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename F</type>
+          </param>
+          <param>
+            <type>typename UserTag</type>
+            <defval><ref refid="structmuda_1_1_default" kindref="compound">Default</ref></defval>
+          </param>
+        </templateparamlist>
+        <type>MUDA_HOST MUDA_NODISCARD auto</type>
+        <definition>MUDA_HOST MUDA_NODISCARD auto muda::Launch::as_node_parms</definition>
+        <argsstring>(F &amp;&amp;f) -&gt; S&lt; NodeParms&lt; F &gt; &gt;</argsstring>
+        <name>as_node_parms</name>
+        <qualifiedname>muda::Launch::as_node_parms</qualifiedname>
+        <param>
+          <type>F &amp;&amp;</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/launch/launch.h" line="134" column="35"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_launch_1af84d8ece1442d87c5de1aa55dc25f1ef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename F</type>
+          </param>
+          <param>
+            <type>typename UserTag</type>
+            <defval><ref refid="structmuda_1_1_default" kindref="compound">Default</ref></defval>
+          </param>
+        </templateparamlist>
+        <type>MUDA_HOST MUDA_NODISCARD auto</type>
+        <definition>MUDA_HOST MUDA_NODISCARD auto muda::Launch::as_node_parms</definition>
+        <argsstring>(F &amp;&amp;f, Tag&lt; UserTag &gt;) -&gt; S&lt; NodeParms&lt; F &gt; &gt;</argsstring>
+        <name>as_node_parms</name>
+        <qualifiedname>muda::Launch::as_node_parms</qualifiedname>
+        <param>
+          <type>F &amp;&amp;</type>
+          <declname>f</declname>
+        </param>
+        <param>
+          <type><ref refid="structmuda_1_1_tag" kindref="compound">Tag</ref>&lt; UserTag &gt;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/launch/launch.h" line="137" column="35"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_launch_1a3e606cf3de1669ba746a04d0a2e95388" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename F</type>
+          </param>
+          <param>
+            <type>typename UserTag</type>
+            <defval><ref refid="structmuda_1_1_default" kindref="compound">Default</ref></defval>
+          </param>
+        </templateparamlist>
+        <type>MUDA_HOST MUDA_NODISCARD auto</type>
+        <definition>MUDA_HOST MUDA_NODISCARD auto muda::Launch::as_node_parms</definition>
+        <argsstring>(const dim3 &amp;active_dim, F &amp;&amp;f) -&gt; S&lt; NodeParms&lt; F &gt; &gt;</argsstring>
+        <name>as_node_parms</name>
+        <qualifiedname>muda::Launch::as_node_parms</qualifiedname>
+        <param>
+          <type>const dim3 &amp;</type>
+          <declname>active_dim</declname>
+        </param>
+        <param>
+          <type>F &amp;&amp;</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/launch/launch.h" line="141" column="35"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_launch_1a829f17cbeee1eb662438d29a5999b4f3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename F</type>
+          </param>
+          <param>
+            <type>typename UserTag</type>
+            <defval><ref refid="structmuda_1_1_default" kindref="compound">Default</ref></defval>
+          </param>
+        </templateparamlist>
+        <type>MUDA_HOST MUDA_NODISCARD auto</type>
+        <definition>MUDA_HOST MUDA_NODISCARD auto muda::Launch::as_node_parms</definition>
+        <argsstring>(const dim3 &amp;active_dim, F &amp;&amp;f, Tag&lt; UserTag &gt;) -&gt; S&lt; NodeParms&lt; F &gt; &gt;</argsstring>
+        <name>as_node_parms</name>
+        <qualifiedname>muda::Launch::as_node_parms</qualifiedname>
+        <param>
+          <type>const dim3 &amp;</type>
+          <declname>active_dim</declname>
+        </param>
+        <param>
+          <type>F &amp;&amp;</type>
+          <declname>f</declname>
+        </param>
+        <param>
+          <type><ref refid="structmuda_1_1_tag" kindref="compound">Tag</ref>&lt; UserTag &gt;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/launch/launch.h" line="145" column="35"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classmuda_1_1_launch_1ab40f48c3471dd2b871213f31def274cc" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename F</type>
+          </param>
+          <param>
+            <type>typename UserTag</type>
+            <defval><ref refid="structmuda_1_1_default" kindref="compound">Default</ref></defval>
+          </param>
+        </templateparamlist>
+        <type>MUDA_HOST void</type>
+        <definition>MUDA_HOST void muda::Launch::invoke</definition>
+        <argsstring>(F &amp;&amp;f)</argsstring>
+        <name>invoke</name>
+        <qualifiedname>muda::Launch::invoke</qualifiedname>
+        <param>
+          <type>F &amp;&amp;</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/launch/launch.h" line="151" column="20"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_launch_1ac3ed8610ba8762efde8e28d5dae59ab3" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename F</type>
+          </param>
+          <param>
+            <type>typename UserTag</type>
+            <defval><ref refid="structmuda_1_1_default" kindref="compound">Default</ref></defval>
+          </param>
+        </templateparamlist>
+        <type>MUDA_HOST void</type>
+        <definition>MUDA_HOST void muda::Launch::invoke</definition>
+        <argsstring>(const dim3 &amp;active_dim, F &amp;&amp;f)</argsstring>
+        <name>invoke</name>
+        <qualifiedname>muda::Launch::invoke</qualifiedname>
+        <param>
+          <type>const dim3 &amp;</type>
+          <declname>active_dim</declname>
+        </param>
+        <param>
+          <type>F &amp;&amp;</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/launch/launch.h" line="154" column="20"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_launch_1a2656106b4a462e999243b16ba591a5ab" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>MUDA_GENERIC dim3</type>
+        <definition>MUDA_GENERIC dim3 muda::Launch::calculate_grid_dim</definition>
+        <argsstring>(const dim3 &amp;active_dim) const MUDA_NOEXCEPT</argsstring>
+        <name>calculate_grid_dim</name>
+        <qualifiedname>muda::Launch::calculate_grid_dim</qualifiedname>
+        <param>
+          <type>const dim3 &amp;</type>
+          <declname>active_dim</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/launch/launch.h" line="156" column="23"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_launch_1a0d69065b9a1e264f74da8f361f69fe19" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>MUDA_GENERIC void</type>
+        <definition>MUDA_GENERIC void muda::Launch::check_input_with_range</definition>
+        <argsstring>() const MUDA_NOEXCEPT</argsstring>
+        <name>check_input_with_range</name>
+        <qualifiedname>muda::Launch::check_input_with_range</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/launch/launch.h" line="158" column="23"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_launch_1a204a9f300dfd5a49120830407123a6e1" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>MUDA_GENERIC void</type>
+        <definition>MUDA_GENERIC void muda::Launch::check_input</definition>
+        <argsstring>() const MUDA_NOEXCEPT</argsstring>
+        <name>check_input</name>
+        <qualifiedname>muda::Launch::check_input</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/launch/launch.h" line="160" column="23"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para><bold>A wrapper of raw cuda kernel launch in muda style</bold>, removing the <computeroutput>&lt;&lt;&lt;&gt;&gt;&gt;</computeroutput> usage, for better intellisense support. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>A raw cuda kernel define and launch: <programlisting filename=".cpp"><codeline><highlight class="normal">__global__<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>cuda_kernel()<sp/>{}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>main()</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>cuda_kernel&lt;&lt;&lt;4,64&gt;&gt;&gt;();</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting></para>
+<para>The muda style kernel launch: <programlisting filename=".cpp"><codeline><highlight class="comment">//<sp/>muda<sp/>kernel<sp/>launch</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">Launch(4,64)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>.kernel_name(</highlight><highlight class="stringliteral">&quot;kernel_name&quot;</highlight><highlight class="normal">)<sp/></highlight><highlight class="comment">//<sp/>optional</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>.apply([]__device__(){});<sp/></highlight><highlight class="comment">//<sp/>kernel<sp/>body</highlight></codeline>
+</programlisting></para>
+<para>A more complicated but more convincing example, to show why using muda style kernel launch is better than raw cuda kernel launch. <programlisting filename=".cpp"><codeline><highlight class="normal">DeviceBuffer3D&lt;float&gt;<sp/>volume{10,10,10};</highlight></codeline>
+<codeline><highlight class="normal">Launch(dim3{8,8,8})<sp/></highlight><highlight class="comment">//<sp/>blockDim</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>.kernel_name(</highlight><highlight class="stringliteral">&quot;write_volume&quot;</highlight><highlight class="normal">)<sp/></highlight><highlight class="comment">//<sp/>optional,<sp/>for<sp/>better<sp/>debug<sp/>info</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>.apply(volume.extent(),<sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>volume<sp/>=<sp/>volume.viewer().name(</highlight><highlight class="stringliteral">&quot;volume&quot;</highlight><highlight class="normal">)<sp/></highlight><highlight class="comment">//<sp/>name<sp/>is<sp/>optional,<sp/>for<sp/>better<sp/>debug<sp/>info</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>]<sp/>__device__(int3<sp/>xyz)<sp/></highlight><highlight class="keyword">mutable</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>volume(xyz)<sp/>=<sp/>1.0f;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>});</highlight></codeline>
+</programlisting></para>
+<para><simplesect kind="see"><para><ref refid="device__buffer__3d_8h" kindref="compound">device_buffer_3d.h</ref> <ref refid="parallel__for_8h" kindref="compound">parallel_for.h</ref> </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>muda::LaunchBase&lt; Launch &gt;</label>
+        <link refid="classmuda_1_1_launch_base"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>muda::Launch</label>
+        <link refid="classmuda_1_1_launch"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>muda::LaunchCore</label>
+        <link refid="classmuda_1_1_launch_core"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>muda::LaunchBase&lt; Launch &gt;</label>
+        <link refid="classmuda_1_1_launch_base"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>muda::Launch</label>
+        <link refid="classmuda_1_1_launch"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>muda::LaunchCore</label>
+        <link refid="classmuda_1_1_launch_core"/>
+      </node>
+    </collaborationgraph>
+    <location file="src/muda/launch/launch.h" line="85" column="1" bodyfile="src/muda/launch/launch.h" bodystart="86" bodyend="161"/>
+    <listofallmembers>
+      <member refid="classmuda_1_1_launch_1aeb9e5bddbba9639695eb036d687da87f" prot="public" virt="non-virtual"><scope>muda::Launch</scope><name>apply</name></member>
+      <member refid="classmuda_1_1_launch_1aa73d47ad2d7fdeb1377b5ec484ead769" prot="public" virt="non-virtual"><scope>muda::Launch</scope><name>apply</name></member>
+      <member refid="classmuda_1_1_launch_1a387ee1b9f104368b49b0f34842330af4" prot="public" virt="non-virtual"><scope>muda::Launch</scope><name>apply</name></member>
+      <member refid="classmuda_1_1_launch_1ace33c1b1389b13540865b0703b6f3e89" prot="public" virt="non-virtual"><scope>muda::Launch</scope><name>apply</name></member>
+      <member refid="classmuda_1_1_launch_1a9744b37c38df389838ce8a5f34a0d7a6" prot="public" virt="non-virtual"><scope>muda::Launch</scope><name>as_node_parms</name></member>
+      <member refid="classmuda_1_1_launch_1af84d8ece1442d87c5de1aa55dc25f1ef" prot="public" virt="non-virtual"><scope>muda::Launch</scope><name>as_node_parms</name></member>
+      <member refid="classmuda_1_1_launch_1a3e606cf3de1669ba746a04d0a2e95388" prot="public" virt="non-virtual"><scope>muda::Launch</scope><name>as_node_parms</name></member>
+      <member refid="classmuda_1_1_launch_1a829f17cbeee1eb662438d29a5999b4f3" prot="public" virt="non-virtual"><scope>muda::Launch</scope><name>as_node_parms</name></member>
+      <member refid="classmuda_1_1_launch_1a2656106b4a462e999243b16ba591a5ab" prot="private" virt="non-virtual"><scope>muda::Launch</scope><name>calculate_grid_dim</name></member>
+      <member refid="classmuda_1_1_launch_base_1aa8490139890f43555c1b7baa57378616" prot="public" virt="non-virtual"><scope>muda::Launch</scope><name>callback</name></member>
+      <member refid="classmuda_1_1_launch_1a204a9f300dfd5a49120830407123a6e1" prot="private" virt="non-virtual"><scope>muda::Launch</scope><name>check_input</name></member>
+      <member refid="classmuda_1_1_launch_1a0d69065b9a1e264f74da8f361f69fe19" prot="private" virt="non-virtual"><scope>muda::Launch</scope><name>check_input_with_range</name></member>
+      <member refid="classmuda_1_1_launch_base_1a8a59e9a27775e4e12ca19a6d590790f4" prot="public" virt="non-virtual"><scope>muda::Launch</scope><name>derived_type</name></member>
+      <member refid="classmuda_1_1_launch_base_1aee4564eac54df98ab98085379370a2ec" prot="public" virt="non-virtual"><scope>muda::Launch</scope><name>file_line</name></member>
+      <member refid="classmuda_1_1_launch_core_1a38c542a99edea149552d82639e385ab5" prot="public" virt="non-virtual"><scope>muda::Launch</scope><name>init_stream</name></member>
+      <member refid="classmuda_1_1_launch_1ab40f48c3471dd2b871213f31def274cc" prot="private" virt="non-virtual"><scope>muda::Launch</scope><name>invoke</name></member>
+      <member refid="classmuda_1_1_launch_1ac3ed8610ba8762efde8e28d5dae59ab3" prot="private" virt="non-virtual"><scope>muda::Launch</scope><name>invoke</name></member>
+      <member refid="classmuda_1_1_launch_base_1ac412be72c054ac359678fff75857dd06" prot="public" virt="non-virtual"><scope>muda::Launch</scope><name>kernel_name</name></member>
+      <member refid="classmuda_1_1_launch_1a72579e1e2c5b8aeb4d83495482848e77" prot="public" virt="non-virtual"><scope>muda::Launch</scope><name>Launch</name></member>
+      <member refid="classmuda_1_1_launch_1aa675153814f062403ff97e6e56e87c6a" prot="public" virt="non-virtual"><scope>muda::Launch</scope><name>Launch</name></member>
+      <member refid="classmuda_1_1_launch_1a2b76292060ce7ae0df273993c57cb83e" prot="public" virt="non-virtual"><scope>muda::Launch</scope><name>Launch</name></member>
+      <member refid="classmuda_1_1_launch_base_1ab73495b0bfa3a7a1864284aebceb51a8" prot="public" virt="non-virtual"><scope>muda::Launch</scope><name>LaunchBase</name></member>
+      <member refid="classmuda_1_1_launch_core_1a8503eff885f818a12319ca57dfd75011" prot="public" virt="non-virtual"><scope>muda::Launch</scope><name>LaunchCore</name></member>
+      <member refid="classmuda_1_1_launch_1a61281ebeea7d7c6cc223e03361cbe3b9" prot="private" virt="non-virtual"><scope>muda::Launch</scope><name>m_block_dim</name></member>
+      <member refid="classmuda_1_1_launch_1a5f3a683d50475dc381d7b24b8f6f9655" prot="private" virt="non-virtual"><scope>muda::Launch</scope><name>m_grid_dim</name></member>
+      <member refid="classmuda_1_1_launch_1a211a49ec4606734b07d707c45e1e9620" prot="private" virt="non-virtual"><scope>muda::Launch</scope><name>m_shared_mem_size</name></member>
+      <member refid="classmuda_1_1_launch_core_1a3b5544456087d57904981118c4cdcaf8" prot="protected" virt="non-virtual"><scope>muda::Launch</scope><name>m_stream</name></member>
+      <member refid="classmuda_1_1_launch_base_1a395b0a10fee3bf2c591f49a3119df1b8" prot="public" virt="non-virtual"><scope>muda::Launch</scope><name>next</name></member>
+      <member refid="classmuda_1_1_launch_base_1a841db3ede786d3312a6ca2de2139ad10" prot="public" virt="non-virtual"><scope>muda::Launch</scope><name>next</name></member>
+      <member refid="classmuda_1_1_launch_1a524f054371f65aaa5fdfde64c90b3a5f" prot="public" virt="non-virtual"><scope>muda::Launch</scope><name>NodeParms</name></member>
+      <member refid="classmuda_1_1_launch_base_1a65538f7d445fa3cc56ab33e609fe566a" prot="protected" virt="non-virtual"><scope>muda::Launch</scope><name>pop_kernel_label</name></member>
+      <member refid="classmuda_1_1_launch_base_1ab6b75621024e7977edcdff26c04bcdc1" prot="public" virt="non-virtual"><scope>muda::Launch</scope><name>pop_range</name></member>
+      <member refid="classmuda_1_1_launch_base_1ad6dcaaf3ea0726809ebbdb10084c3183" prot="public" virt="non-virtual"><scope>muda::Launch</scope><name>push_range</name></member>
+      <member refid="classmuda_1_1_launch_base_1ad069d4ad6219f5a3b51e7c8d9e4d596f" prot="public" virt="non-virtual"><scope>muda::Launch</scope><name>record</name></member>
+      <member refid="classmuda_1_1_launch_base_1a12cf6b18c76787654460c1c043907547" prot="public" virt="non-virtual"><scope>muda::Launch</scope><name>record</name></member>
+      <member refid="classmuda_1_1_launch_base_1a77d57b9368424d70cd740af6eaf45a6f" prot="public" virt="non-virtual"><scope>muda::Launch</scope><name>record</name></member>
+      <member refid="classmuda_1_1_launch_core_1a8aeb9e37d421f835e0fcae124e3ce0de" prot="protected" virt="non-virtual"><scope>muda::Launch</scope><name>S</name></member>
+      <member refid="classmuda_1_1_launch_core_1ab78b991329337c97d2ac3e32e995a62f" prot="protected" virt="non-virtual"><scope>muda::Launch</scope><name>stream</name></member>
+      <member refid="classmuda_1_1_launch_base_1a88cbf9478fbeaa7434ece7f300dc1c0e" prot="public" virt="non-virtual"><scope>muda::Launch</scope><name>wait</name></member>
+      <member refid="classmuda_1_1_launch_base_1ab0fc5fbed4ec5f69a3b599af99900d98" prot="public" virt="non-virtual"><scope>muda::Launch</scope><name>wait</name></member>
+      <member refid="classmuda_1_1_launch_base_1acbf042e86efae1683e2ab08c95095da7" prot="public" virt="non-virtual"><scope>muda::Launch</scope><name>wait</name></member>
+      <member refid="classmuda_1_1_launch_base_1abe061bff24568f9c2fcf326a62843292" prot="public" virt="non-virtual"><scope>muda::Launch</scope><name>wait</name></member>
+      <member refid="classmuda_1_1_launch_core_1a58e970f699c546d37c70af9bb4d3a93c" prot="public" virt="non-virtual"><scope>muda::Launch</scope><name>wait_device</name></member>
+      <member refid="classmuda_1_1_launch_core_1a7b29e878817d4e42bc533edc0c89b645" prot="public" virt="non-virtual"><scope>muda::Launch</scope><name>wait_event</name></member>
+      <member refid="classmuda_1_1_launch_core_1a73d5d54a7b3b59dcf8eea792e796337b" prot="public" virt="non-virtual"><scope>muda::Launch</scope><name>wait_stream</name></member>
+      <member refid="classmuda_1_1_launch_base_1a59a525fea511ea1c90f5857be5d62d43" prot="public" virt="non-virtual"><scope>muda::Launch</scope><name>when</name></member>
+      <member refid="classmuda_1_1_launch_base_1a543548ac0516b2c10adba68d2ae7066b" prot="public" virt="non-virtual"><scope>muda::Launch</scope><name>~LaunchBase</name></member>
+      <member refid="classmuda_1_1_launch_core_1a5e4ae3435bce9d4ad706b5e347a3040f" prot="public" virt="non-virtual"><scope>muda::Launch</scope><name>~LaunchCore</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

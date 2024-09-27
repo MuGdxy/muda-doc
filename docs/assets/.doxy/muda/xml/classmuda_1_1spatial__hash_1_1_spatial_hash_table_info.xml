@@ -1,0 +1,265 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classmuda_1_1spatial__hash_1_1_spatial_hash_table_info" kind="class" language="C++" prot="public">
+    <compoundname>muda::spatial_hash::SpatialHashTableInfo</compoundname>
+    <templateparamlist>
+      <param>
+        <type>typename Hash</type>
+        <defval><ref refid="classmuda_1_1spatial__hash_1_1_morton" kindref="compound">Morton</ref>&lt;uint32_t&gt;</defval>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="private-type">
+      <memberdef kind="typedef" id="classmuda_1_1spatial__hash_1_1_spatial_hash_table_info_1a14d1d9c455deea5c476cececa8230d4e" prot="private" static="no">
+        <type>float</type>
+        <definition>using muda::spatial_hash::SpatialHashTableInfo&lt; Hash &gt;::Float =  float</definition>
+        <argsstring></argsstring>
+        <name>Float</name>
+        <qualifiedname>muda::spatial_hash::SpatialHashTableInfo::Float</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/spatial_hash/sparse_spatial_hash_impl.h" line="110" column="5" bodyfile="src/muda/ext/geo/spatial_hash/sparse_spatial_hash_impl.h" bodystart="110" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classmuda_1_1spatial__hash_1_1_spatial_hash_table_info_1a1d8f88d7e335ed36b0c0fb9b6234f637" prot="private" static="no">
+        <type>Eigen::Vector&lt; Float, 3 &gt;</type>
+        <definition>using muda::spatial_hash::SpatialHashTableInfo&lt; Hash &gt;::Vector3 =  Eigen::Vector&lt;Float, 3&gt;</definition>
+        <argsstring></argsstring>
+        <name>Vector3</name>
+        <qualifiedname>muda::spatial_hash::SpatialHashTableInfo::Vector3</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/spatial_hash/sparse_spatial_hash_impl.h" line="111" column="5" bodyfile="src/muda/ext/geo/spatial_hash/sparse_spatial_hash_impl.h" bodystart="111" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classmuda_1_1spatial__hash_1_1_spatial_hash_table_info_1ab7a6b1c1340672c7d5e91a7fecc872fc" prot="private" static="no">
+        <type>Eigen::Vector&lt; int, 3 &gt;</type>
+        <definition>using muda::spatial_hash::SpatialHashTableInfo&lt; Hash &gt;::Vector3i =  Eigen::Vector&lt;int, 3&gt;</definition>
+        <argsstring></argsstring>
+        <name>Vector3i</name>
+        <qualifiedname>muda::spatial_hash::SpatialHashTableInfo::Vector3i</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/spatial_hash/sparse_spatial_hash_impl.h" line="112" column="5" bodyfile="src/muda/ext/geo/spatial_hash/sparse_spatial_hash_impl.h" bodystart="112" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classmuda_1_1spatial__hash_1_1_spatial_hash_table_info_1ab8255f4c946a5f88b34fd9a4e6d4e0a3" prot="private" static="no">
+        <type>Eigen::Vector&lt; uint32_t, 3 &gt;</type>
+        <definition>using muda::spatial_hash::SpatialHashTableInfo&lt; Hash &gt;::Vector3u =  Eigen::Vector&lt;uint32_t, 3&gt;</definition>
+        <argsstring></argsstring>
+        <name>Vector3u</name>
+        <qualifiedname>muda::spatial_hash::SpatialHashTableInfo::Vector3u</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/spatial_hash/sparse_spatial_hash_impl.h" line="113" column="5" bodyfile="src/muda/ext/geo/spatial_hash/sparse_spatial_hash_impl.h" bodystart="113" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classmuda_1_1spatial__hash_1_1_spatial_hash_table_info_1a76a89a5b8a3dbd4b2a7b2ab1f1994492" prot="private" static="no">
+        <type>uint32_t</type>
+        <definition>using muda::spatial_hash::SpatialHashTableInfo&lt; Hash &gt;::U32 =  uint32_t</definition>
+        <argsstring></argsstring>
+        <name>U32</name>
+        <qualifiedname>muda::spatial_hash::SpatialHashTableInfo::U32</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/spatial_hash/sparse_spatial_hash_impl.h" line="114" column="5" bodyfile="src/muda/ext/geo/spatial_hash/sparse_spatial_hash_impl.h" bodystart="114" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classmuda_1_1spatial__hash_1_1_spatial_hash_table_info_1a06431365ff5e28e666a3be3239f9a99e" prot="public" static="no" mutable="no">
+        <type>Float</type>
+        <definition>Float muda::spatial_hash::SpatialHashTableInfo&lt; Hash &gt;::cell_size</definition>
+        <argsstring></argsstring>
+        <name>cell_size</name>
+        <qualifiedname>muda::spatial_hash::SpatialHashTableInfo::cell_size</qualifiedname>
+        <initializer>= 0.0f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/spatial_hash/sparse_spatial_hash_impl.h" line="117" column="13" bodyfile="src/muda/ext/geo/spatial_hash/sparse_spatial_hash_impl.h" bodystart="117" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1spatial__hash_1_1_spatial_hash_table_info_1a0ca582083ecc0a619220ef09cd718c83" prot="public" static="no" mutable="no">
+        <type>Vector3</type>
+        <definition>Vector3 muda::spatial_hash::SpatialHashTableInfo&lt; Hash &gt;::coord_min</definition>
+        <argsstring></argsstring>
+        <name>coord_min</name>
+        <qualifiedname>muda::spatial_hash::SpatialHashTableInfo::coord_min</qualifiedname>
+        <initializer>= Vector3::Zero()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/spatial_hash/sparse_spatial_hash_impl.h" line="118" column="13" bodyfile="src/muda/ext/geo/spatial_hash/sparse_spatial_hash_impl.h" bodystart="118" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmuda_1_1spatial__hash_1_1_spatial_hash_table_info_1aaa73232d4e1e82503febec7cd9f51f7b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>MUDA_GENERIC</type>
+        <definition>MUDA_GENERIC muda::spatial_hash::SpatialHashTableInfo&lt; Hash &gt;::SpatialHashTableInfo</definition>
+        <argsstring>()=default</argsstring>
+        <name>SpatialHashTableInfo</name>
+        <qualifiedname>muda::spatial_hash::SpatialHashTableInfo::SpatialHashTableInfo</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/spatial_hash/sparse_spatial_hash_impl.h" line="120" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1spatial__hash_1_1_spatial_hash_table_info_1a823ae53d10f026fa6ad55408dbc35b7c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>MUDA_GENERIC</type>
+        <definition>MUDA_GENERIC muda::spatial_hash::SpatialHashTableInfo&lt; Hash &gt;::SpatialHashTableInfo</definition>
+        <argsstring>(Float cell_size, const Vector3 &amp;coord_min)</argsstring>
+        <name>SpatialHashTableInfo</name>
+        <qualifiedname>muda::spatial_hash::SpatialHashTableInfo::SpatialHashTableInfo</qualifiedname>
+        <param>
+          <type>Float</type>
+          <declname>cell_size</declname>
+        </param>
+        <param>
+          <type>const Vector3 &amp;</type>
+          <declname>coord_min</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/spatial_hash/sparse_spatial_hash_impl.h" line="122" column="18" bodyfile="src/muda/ext/geo/spatial_hash/sparse_spatial_hash_impl.h" bodystart="122" bodyend="126"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1spatial__hash_1_1_spatial_hash_table_info_1a49ce26796dab8d8ab555732e5cb662c8" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>MUDA_GENERIC U32</type>
+        <definition>MUDA_GENERIC U32 muda::spatial_hash::SpatialHashTableInfo&lt; Hash &gt;::hash_cell</definition>
+        <argsstring>(const Vector3 &amp;xyz) const</argsstring>
+        <name>hash_cell</name>
+        <qualifiedname>muda::spatial_hash::SpatialHashTableInfo::hash_cell</qualifiedname>
+        <param>
+          <type>const Vector3 &amp;</type>
+          <declname>xyz</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/spatial_hash/sparse_spatial_hash_impl.h" line="128" column="22" bodyfile="src/muda/ext/geo/spatial_hash/sparse_spatial_hash_impl.h" bodystart="128" bodyend="131"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1spatial__hash_1_1_spatial_hash_table_info_1a6924cab3ab526442923bb44d3f48302c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>MUDA_GENERIC U32</type>
+        <definition>MUDA_GENERIC U32 muda::spatial_hash::SpatialHashTableInfo&lt; Hash &gt;::hash_cell</definition>
+        <argsstring>(const Vector3u &amp;ijk) const</argsstring>
+        <name>hash_cell</name>
+        <qualifiedname>muda::spatial_hash::SpatialHashTableInfo::hash_cell</qualifiedname>
+        <param>
+          <type>const Vector3u &amp;</type>
+          <declname>ijk</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/spatial_hash/sparse_spatial_hash_impl.h" line="133" column="22" bodyfile="src/muda/ext/geo/spatial_hash/sparse_spatial_hash_impl.h" bodystart="133" bodyend="136"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1spatial__hash_1_1_spatial_hash_table_info_1a3c2edbb52c65d2648c1de122ec92f74b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>MUDA_GENERIC Vector3u</type>
+        <definition>MUDA_GENERIC Vector3u muda::spatial_hash::SpatialHashTableInfo&lt; Hash &gt;::cell</definition>
+        <argsstring>(const Vector3 &amp;xyz) const</argsstring>
+        <name>cell</name>
+        <qualifiedname>muda::spatial_hash::SpatialHashTableInfo::cell</qualifiedname>
+        <param>
+          <type>const Vector3 &amp;</type>
+          <declname>xyz</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/spatial_hash/sparse_spatial_hash_impl.h" line="138" column="27" bodyfile="src/muda/ext/geo/spatial_hash/sparse_spatial_hash_impl.h" bodystart="138" bodyend="145"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1spatial__hash_1_1_spatial_hash_table_info_1a78084a7a30a1b360f39d139d4bebdd84" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>MUDA_GENERIC Vector3</type>
+        <definition>MUDA_GENERIC Vector3 muda::spatial_hash::SpatialHashTableInfo&lt; Hash &gt;::coord</definition>
+        <argsstring>(const Vector3u &amp;ijk) const</argsstring>
+        <name>coord</name>
+        <qualifiedname>muda::spatial_hash::SpatialHashTableInfo::coord</qualifiedname>
+        <param>
+          <type>const Vector3u &amp;</type>
+          <declname>ijk</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/spatial_hash/sparse_spatial_hash_impl.h" line="146" column="26" bodyfile="src/muda/ext/geo/spatial_hash/sparse_spatial_hash_impl.h" bodystart="146" bodyend="153"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1spatial__hash_1_1_spatial_hash_table_info_1a9392596fb4e4932f906c071f919c348c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>MUDA_GENERIC Vector3</type>
+        <definition>MUDA_GENERIC Vector3 muda::spatial_hash::SpatialHashTableInfo&lt; Hash &gt;::cell_center_coord</definition>
+        <argsstring>(const Vector3u &amp;ijk) const</argsstring>
+        <name>cell_center_coord</name>
+        <qualifiedname>muda::spatial_hash::SpatialHashTableInfo::cell_center_coord</qualifiedname>
+        <param>
+          <type>const Vector3u &amp;</type>
+          <declname>ijk</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/spatial_hash/sparse_spatial_hash_impl.h" line="155" column="26" bodyfile="src/muda/ext/geo/spatial_hash/sparse_spatial_hash_impl.h" bodystart="155" bodyend="162"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/muda/ext/geo/spatial_hash/sparse_spatial_hash_impl.h" line="108" column="1" bodyfile="src/muda/ext/geo/spatial_hash/sparse_spatial_hash_impl.h" bodystart="109" bodyend="163"/>
+    <listofallmembers>
+      <member refid="classmuda_1_1spatial__hash_1_1_spatial_hash_table_info_1a3c2edbb52c65d2648c1de122ec92f74b" prot="public" virt="non-virtual"><scope>muda::spatial_hash::SpatialHashTableInfo</scope><name>cell</name></member>
+      <member refid="classmuda_1_1spatial__hash_1_1_spatial_hash_table_info_1a9392596fb4e4932f906c071f919c348c" prot="public" virt="non-virtual"><scope>muda::spatial_hash::SpatialHashTableInfo</scope><name>cell_center_coord</name></member>
+      <member refid="classmuda_1_1spatial__hash_1_1_spatial_hash_table_info_1a06431365ff5e28e666a3be3239f9a99e" prot="public" virt="non-virtual"><scope>muda::spatial_hash::SpatialHashTableInfo</scope><name>cell_size</name></member>
+      <member refid="classmuda_1_1spatial__hash_1_1_spatial_hash_table_info_1a78084a7a30a1b360f39d139d4bebdd84" prot="public" virt="non-virtual"><scope>muda::spatial_hash::SpatialHashTableInfo</scope><name>coord</name></member>
+      <member refid="classmuda_1_1spatial__hash_1_1_spatial_hash_table_info_1a0ca582083ecc0a619220ef09cd718c83" prot="public" virt="non-virtual"><scope>muda::spatial_hash::SpatialHashTableInfo</scope><name>coord_min</name></member>
+      <member refid="classmuda_1_1spatial__hash_1_1_spatial_hash_table_info_1a14d1d9c455deea5c476cececa8230d4e" prot="private" virt="non-virtual"><scope>muda::spatial_hash::SpatialHashTableInfo</scope><name>Float</name></member>
+      <member refid="classmuda_1_1spatial__hash_1_1_spatial_hash_table_info_1a49ce26796dab8d8ab555732e5cb662c8" prot="public" virt="non-virtual"><scope>muda::spatial_hash::SpatialHashTableInfo</scope><name>hash_cell</name></member>
+      <member refid="classmuda_1_1spatial__hash_1_1_spatial_hash_table_info_1a6924cab3ab526442923bb44d3f48302c" prot="public" virt="non-virtual"><scope>muda::spatial_hash::SpatialHashTableInfo</scope><name>hash_cell</name></member>
+      <member refid="classmuda_1_1spatial__hash_1_1_spatial_hash_table_info_1aaa73232d4e1e82503febec7cd9f51f7b" prot="public" virt="non-virtual"><scope>muda::spatial_hash::SpatialHashTableInfo</scope><name>SpatialHashTableInfo</name></member>
+      <member refid="classmuda_1_1spatial__hash_1_1_spatial_hash_table_info_1a823ae53d10f026fa6ad55408dbc35b7c" prot="public" virt="non-virtual"><scope>muda::spatial_hash::SpatialHashTableInfo</scope><name>SpatialHashTableInfo</name></member>
+      <member refid="classmuda_1_1spatial__hash_1_1_spatial_hash_table_info_1a76a89a5b8a3dbd4b2a7b2ab1f1994492" prot="private" virt="non-virtual"><scope>muda::spatial_hash::SpatialHashTableInfo</scope><name>U32</name></member>
+      <member refid="classmuda_1_1spatial__hash_1_1_spatial_hash_table_info_1a1d8f88d7e335ed36b0c0fb9b6234f637" prot="private" virt="non-virtual"><scope>muda::spatial_hash::SpatialHashTableInfo</scope><name>Vector3</name></member>
+      <member refid="classmuda_1_1spatial__hash_1_1_spatial_hash_table_info_1ab7a6b1c1340672c7d5e91a7fecc872fc" prot="private" virt="non-virtual"><scope>muda::spatial_hash::SpatialHashTableInfo</scope><name>Vector3i</name></member>
+      <member refid="classmuda_1_1spatial__hash_1_1_spatial_hash_table_info_1ab8255f4c946a5f88b34fd9a4e6d4e0a3" prot="private" virt="non-virtual"><scope>muda::spatial_hash::SpatialHashTableInfo</scope><name>Vector3u</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,503 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classmuda_1_1_compute_graph_closure" kind="class" language="C++" prot="public">
+    <compoundname>muda::ComputeGraphClosure</compoundname>
+    <sectiondef kind="protected-type">
+      <memberdef kind="typedef" id="classmuda_1_1_compute_graph_closure_1a5d07e656d4eeb1dd9355db99ebdbc605" prot="protected" static="no">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>std::shared_ptr&lt; T &gt;</type>
+        <definition>using muda::ComputeGraphClosure::S =  std::shared_ptr&lt;T&gt;</definition>
+        <argsstring></argsstring>
+        <name>S</name>
+        <qualifiedname>muda::ComputeGraphClosure::S</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/compute_graph/compute_graph_closure.h" line="33" column="5" bodyfile="src/muda/compute_graph/compute_graph_closure.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="friend">
+      <memberdef kind="friend" id="classmuda_1_1_compute_graph_closure_1ac70fef384dd042f2bd784368c9e394de" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class details::ComputeGraphAccessor</definition>
+        <argsstring></argsstring>
+        <name>details::ComputeGraphAccessor</name>
+        <qualifiedname>muda::ComputeGraphClosure::ComputeGraphAccessor</qualifiedname>
+        <param>
+          <type><ref refid="classmuda_1_1details_1_1_compute_graph_accessor" kindref="compound">details::ComputeGraphAccessor</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/compute_graph/compute_graph_closure.h" line="16" column="18" bodyfile="src/muda/compute_graph/compute_graph_closure.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="classmuda_1_1_compute_graph_closure_1ab23709c145a1c448654edf5f911bafe9" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class ComputeGraph</definition>
+        <argsstring></argsstring>
+        <name>ComputeGraph</name>
+        <qualifiedname>muda::ComputeGraphClosure::ComputeGraph</qualifiedname>
+        <param>
+          <type><ref refid="classmuda_1_1_compute_graph" kindref="compound">ComputeGraph</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/compute_graph/compute_graph_closure.h" line="35" column="18" bodyfile="src/muda/compute_graph/compute_graph_closure.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="classmuda_1_1_compute_graph_closure_1a5a1c3d0e37baf788c6750f6075dcfeb7" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class ComputeGraphVarBase</definition>
+        <argsstring></argsstring>
+        <name>ComputeGraphVarBase</name>
+        <qualifiedname>muda::ComputeGraphClosure::ComputeGraphVarBase</qualifiedname>
+        <param>
+          <type><ref refid="classmuda_1_1_compute_graph_var_base" kindref="compound">ComputeGraphVarBase</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/compute_graph/compute_graph_closure.h" line="36" column="18" bodyfile="src/muda/compute_graph/compute_graph_closure.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classmuda_1_1_compute_graph_closure_1a0a972dc682bceea4df0c7ff925cbf1f2" prot="protected" static="no" mutable="no">
+        <type>std::function&lt; void()&gt;</type>
+        <definition>std::function&lt;void()&gt; muda::ComputeGraphClosure::m_closure</definition>
+        <argsstring></argsstring>
+        <name>m_closure</name>
+        <qualifiedname>muda::ComputeGraphClosure::m_closure</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/compute_graph/compute_graph_closure.h" line="48" column="35" bodyfile="src/muda/compute_graph/compute_graph_closure.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1_compute_graph_closure_1ad06fde37c973e05d4f0fb4dd24da88a9" prot="protected" static="no" mutable="no">
+        <type>std::map&lt; <ref refid="classmuda_1_1_var_id" kindref="compound">VarId</ref>, ComputeGraphVarUsage &gt;</type>
+        <definition>std::map&lt;VarId, ComputeGraphVarUsage&gt; muda::ComputeGraphClosure::m_var_usages</definition>
+        <argsstring></argsstring>
+        <name>m_var_usages</name>
+        <qualifiedname>muda::ComputeGraphClosure::m_var_usages</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/compute_graph/compute_graph_closure.h" line="49" column="14" bodyfile="src/muda/compute_graph/compute_graph_closure.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1_compute_graph_closure_1a5da0c3d1eb5ef97af07a38007ffae363" prot="protected" static="no" mutable="no">
+        <type><ref refid="classmuda_1_1_closure_id" kindref="compound">ClosureId</ref></type>
+        <definition>ClosureId muda::ComputeGraphClosure::m_clousure_id</definition>
+        <argsstring></argsstring>
+        <name>m_clousure_id</name>
+        <qualifiedname>muda::ComputeGraphClosure::m_clousure_id</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/compute_graph/compute_graph_closure.h" line="50" column="43" bodyfile="src/muda/compute_graph/compute_graph_closure.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1_compute_graph_closure_1ab72f29674c59a9acbdced86ea0c1d35e" prot="protected" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t muda::ComputeGraphClosure::m_access_graph_index</definition>
+        <argsstring></argsstring>
+        <name>m_access_graph_index</name>
+        <qualifiedname>muda::ComputeGraphClosure::m_access_graph_index</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/compute_graph/compute_graph_closure.h" line="51" column="43" bodyfile="src/muda/compute_graph/compute_graph_closure.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1_compute_graph_closure_1af64bd0ac686097f547f73275cb72d9a7" prot="protected" static="no" mutable="no">
+        <type><ref refid="classmuda_1_1_compute_graph" kindref="compound">ComputeGraph</ref> *</type>
+        <definition>ComputeGraph* muda::ComputeGraphClosure::m_graph</definition>
+        <argsstring></argsstring>
+        <name>m_graph</name>
+        <qualifiedname>muda::ComputeGraphClosure::m_graph</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/compute_graph/compute_graph_closure.h" line="52" column="42" bodyfile="src/muda/compute_graph/compute_graph_closure.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1_compute_graph_closure_1addaa6e076a61a40826f116a28ba95b07" prot="protected" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string muda::ComputeGraphClosure::m_name</definition>
+        <argsstring></argsstring>
+        <name>m_name</name>
+        <qualifiedname>muda::ComputeGraphClosure::m_name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/compute_graph/compute_graph_closure.h" line="53" column="43" bodyfile="src/muda/compute_graph/compute_graph_closure.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1_compute_graph_closure_1a8ebe59705ba562e70db16e2703e3ff66" prot="protected" static="no" mutable="no">
+        <type>ComputeGraphNodeType</type>
+        <definition>ComputeGraphNodeType muda::ComputeGraphClosure::m_type</definition>
+        <argsstring></argsstring>
+        <name>m_type</name>
+        <qualifiedname>muda::ComputeGraphClosure::m_type</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/compute_graph/compute_graph_closure.h" line="54" column="43" bodyfile="src/muda/compute_graph/compute_graph_closure.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1_compute_graph_closure_1a630b6475a6c67003fd2fe0144497e1f4" prot="protected" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t muda::ComputeGraphClosure::m_deps_begin</definition>
+        <argsstring></argsstring>
+        <name>m_deps_begin</name>
+        <qualifiedname>muda::ComputeGraphClosure::m_deps_begin</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/compute_graph/compute_graph_closure.h" line="55" column="43" bodyfile="src/muda/compute_graph/compute_graph_closure.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1_compute_graph_closure_1a7377e1357e6685ebfd4cfb41bae645df" prot="protected" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t muda::ComputeGraphClosure::m_deps_count</definition>
+        <argsstring></argsstring>
+        <name>m_deps_count</name>
+        <qualifiedname>muda::ComputeGraphClosure::m_deps_count</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/compute_graph/compute_graph_closure.h" line="56" column="43" bodyfile="src/muda/compute_graph/compute_graph_closure.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1_compute_graph_closure_1aabfff502a0edfc435a1ed8280e9a653f" prot="protected" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classmuda_1_1_compute_graph_node_base" kindref="compound">ComputeGraphNodeBase</ref> * &gt;</type>
+        <definition>std::vector&lt;ComputeGraphNodeBase*&gt; muda::ComputeGraphClosure::m_graph_nodes</definition>
+        <argsstring></argsstring>
+        <name>m_graph_nodes</name>
+        <qualifiedname>muda::ComputeGraphClosure::m_graph_nodes</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/compute_graph/compute_graph_closure.h" line="60" column="17" bodyfile="src/muda/compute_graph/compute_graph_closure.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmuda_1_1_compute_graph_closure_1a73749105d2c34029d4ce072e2778c71a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto muda::ComputeGraphClosure::clousure_id</definition>
+        <argsstring>() const</argsstring>
+        <name>clousure_id</name>
+        <qualifiedname>muda::ComputeGraphClosure::clousure_id</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/compute_graph/compute_graph_closure.h" line="19" column="17" bodyfile="src/muda/compute_graph/compute_graph_closure.h" bodystart="19" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_compute_graph_closure_1afb274dd5a63e98a180e8ec5f5bb795fe" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto muda::ComputeGraphClosure::type</definition>
+        <argsstring>() const</argsstring>
+        <name>type</name>
+        <qualifiedname>muda::ComputeGraphClosure::type</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/compute_graph/compute_graph_closure.h" line="20" column="17" bodyfile="src/muda/compute_graph/compute_graph_closure.h" bodystart="20" bodyend="20"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_compute_graph_closure_1a76ec9d699a17017275c4d7522e3b04d2" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto muda::ComputeGraphClosure::name</definition>
+        <argsstring>() const</argsstring>
+        <name>name</name>
+        <qualifiedname>muda::ComputeGraphClosure::name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/compute_graph/compute_graph_closure.h" line="21" column="17" bodyfile="src/muda/compute_graph/compute_graph_closure.h" bodystart="21" bodyend="21"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_compute_graph_closure_1a78f84e319bd91863d3360f3fae357f21" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const auto &amp;</type>
+        <definition>const auto &amp; muda::ComputeGraphClosure::var_usages</definition>
+        <argsstring>() const</argsstring>
+        <name>var_usages</name>
+        <qualifiedname>muda::ComputeGraphClosure::var_usages</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/compute_graph/compute_graph_closure.h" line="22" column="16" bodyfile="src/muda/compute_graph/compute_graph_closure.h" bodystart="22" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_compute_graph_closure_1ab21538115ac812b2992b3c34a03aabcf" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>span&lt; const <ref refid="classmuda_1_1_compute_graph_dependency" kindref="compound">ComputeGraphDependency</ref> &gt;</type>
+        <definition>span&lt; const ComputeGraphDependency &gt; muda::ComputeGraphClosure::deps</definition>
+        <argsstring>() const</argsstring>
+        <name>deps</name>
+        <qualifiedname>muda::ComputeGraphClosure::deps</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/compute_graph/compute_graph_closure.h" line="23" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_compute_graph_closure_1a46bfa1c07aeaab57dc8a7bc8c7d3c546" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void muda::ComputeGraphClosure::graphviz_id</definition>
+        <argsstring>(std::ostream &amp;o, const ComputeGraphGraphvizOptions &amp;options) const</argsstring>
+        <name>graphviz_id</name>
+        <qualifiedname>muda::ComputeGraphClosure::graphviz_id</qualifiedname>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>o</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classmuda_1_1_compute_graph_graphviz_options" kindref="compound">ComputeGraphGraphvizOptions</ref> &amp;</type>
+          <declname>options</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/compute_graph/compute_graph_closure.h" line="25" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_compute_graph_closure_1a087d1b0c51e87a3b963575ee10c7847a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void muda::ComputeGraphClosure::graphviz_def</definition>
+        <argsstring>(std::ostream &amp;o, const ComputeGraphGraphvizOptions &amp;options) const</argsstring>
+        <name>graphviz_def</name>
+        <qualifiedname>muda::ComputeGraphClosure::graphviz_def</qualifiedname>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>o</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classmuda_1_1_compute_graph_graphviz_options" kindref="compound">ComputeGraphGraphvizOptions</ref> &amp;</type>
+          <declname>options</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/compute_graph/compute_graph_closure.h" line="26" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_compute_graph_closure_1ab0bd8d24e4de9a5142f352dcb1658ef8" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void muda::ComputeGraphClosure::graphviz_var_usages</definition>
+        <argsstring>(std::ostream &amp;o, const ComputeGraphGraphvizOptions &amp;options) const</argsstring>
+        <name>graphviz_var_usages</name>
+        <qualifiedname>muda::ComputeGraphClosure::graphviz_var_usages</qualifiedname>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>o</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classmuda_1_1_compute_graph_graphviz_options" kindref="compound">ComputeGraphGraphvizOptions</ref> &amp;</type>
+          <declname>options</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/compute_graph/compute_graph_closure.h" line="27" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_compute_graph_closure_1a9a9b9f1862cb8340e3eb0041f2da5afc" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual muda::ComputeGraphClosure::~ComputeGraphClosure</definition>
+        <argsstring>()=default</argsstring>
+        <name>~ComputeGraphClosure</name>
+        <qualifiedname>muda::ComputeGraphClosure::~ComputeGraphClosure</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/compute_graph/compute_graph_closure.h" line="29" column="13"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classmuda_1_1_compute_graph_closure_1af342431806e1577a95b761a84bda3e8c" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>muda::ComputeGraphClosure::ComputeGraphClosure</definition>
+        <argsstring>(ComputeGraph *graph, ClosureId clousure_id, std::string_view name, const std::function&lt; void()&gt; f)</argsstring>
+        <name>ComputeGraphClosure</name>
+        <qualifiedname>muda::ComputeGraphClosure::ComputeGraphClosure</qualifiedname>
+        <param>
+          <type><ref refid="classmuda_1_1_compute_graph" kindref="compound">ComputeGraph</ref> *</type>
+          <declname>graph</declname>
+        </param>
+        <param>
+          <type><ref refid="classmuda_1_1_closure_id" kindref="compound">ClosureId</ref></type>
+          <declname>clousure_id</declname>
+        </param>
+        <param>
+          <type>std::string_view</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>const std::function&lt; void()&gt;</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/compute_graph/compute_graph_closure.h" line="37" column="5" bodyfile="src/muda/compute_graph/compute_graph_closure.h" bodystart="37" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_compute_graph_closure_1ad223049fef035fe9505ff3c9a169bd9b" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void muda::ComputeGraphClosure::operator()</definition>
+        <argsstring>()</argsstring>
+        <name>operator()</name>
+        <qualifiedname>muda::ComputeGraphClosure::operator()</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/compute_graph/compute_graph_closure.h" line="58" column="10" bodyfile="src/muda/compute_graph/compute_graph_closure.h" bodystart="58" bodyend="58"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_compute_graph_closure_1a664c4a39b07ca8b1c79b4781e7510aab" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void muda::ComputeGraphClosure::set_deps_range</definition>
+        <argsstring>(size_t begin, size_t count)</argsstring>
+        <name>set_deps_range</name>
+        <qualifiedname>muda::ComputeGraphClosure::set_deps_range</qualifiedname>
+        <param>
+          <type>size_t</type>
+          <declname>begin</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>count</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/compute_graph/compute_graph_closure.h" line="61" column="10"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="3">
+        <label>U64IdWithType</label>
+        <link refid="classmuda_1_1_id_with_type"/>
+      </node>
+      <node id="2">
+        <label>muda::ClosureId</label>
+        <link refid="classmuda_1_1_closure_id"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>muda::ComputeGraph</label>
+        <link refid="classmuda_1_1_compute_graph"/>
+      </node>
+      <node id="1">
+        <label>muda::ComputeGraphClosure</label>
+        <link refid="classmuda_1_1_compute_graph_closure"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>m_clousure_id</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>m_graph</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="src/muda/compute_graph/compute_graph_closure.h" line="14" column="1" bodyfile="src/muda/compute_graph/compute_graph_closure.h" bodystart="15" bodyend="62"/>
+    <listofallmembers>
+      <member refid="classmuda_1_1_compute_graph_closure_1a73749105d2c34029d4ce072e2778c71a" prot="public" virt="non-virtual"><scope>muda::ComputeGraphClosure</scope><name>clousure_id</name></member>
+      <member refid="classmuda_1_1_compute_graph_closure_1ab23709c145a1c448654edf5f911bafe9" prot="protected" virt="non-virtual"><scope>muda::ComputeGraphClosure</scope><name>ComputeGraph</name></member>
+      <member refid="classmuda_1_1_compute_graph_closure_1af342431806e1577a95b761a84bda3e8c" prot="protected" virt="non-virtual"><scope>muda::ComputeGraphClosure</scope><name>ComputeGraphClosure</name></member>
+      <member refid="classmuda_1_1_compute_graph_closure_1a5a1c3d0e37baf788c6750f6075dcfeb7" prot="protected" virt="non-virtual"><scope>muda::ComputeGraphClosure</scope><name>ComputeGraphVarBase</name></member>
+      <member refid="classmuda_1_1_compute_graph_closure_1ab21538115ac812b2992b3c34a03aabcf" prot="public" virt="non-virtual"><scope>muda::ComputeGraphClosure</scope><name>deps</name></member>
+      <member refid="classmuda_1_1_compute_graph_closure_1ac70fef384dd042f2bd784368c9e394de" prot="public" virt="non-virtual"><scope>muda::ComputeGraphClosure</scope><name>details::ComputeGraphAccessor</name></member>
+      <member refid="classmuda_1_1_compute_graph_closure_1a087d1b0c51e87a3b963575ee10c7847a" prot="public" virt="virtual"><scope>muda::ComputeGraphClosure</scope><name>graphviz_def</name></member>
+      <member refid="classmuda_1_1_compute_graph_closure_1a46bfa1c07aeaab57dc8a7bc8c7d3c546" prot="public" virt="virtual"><scope>muda::ComputeGraphClosure</scope><name>graphviz_id</name></member>
+      <member refid="classmuda_1_1_compute_graph_closure_1ab0bd8d24e4de9a5142f352dcb1658ef8" prot="public" virt="virtual"><scope>muda::ComputeGraphClosure</scope><name>graphviz_var_usages</name></member>
+      <member refid="classmuda_1_1_compute_graph_closure_1ab72f29674c59a9acbdced86ea0c1d35e" prot="protected" virt="non-virtual"><scope>muda::ComputeGraphClosure</scope><name>m_access_graph_index</name></member>
+      <member refid="classmuda_1_1_compute_graph_closure_1a0a972dc682bceea4df0c7ff925cbf1f2" prot="protected" virt="non-virtual"><scope>muda::ComputeGraphClosure</scope><name>m_closure</name></member>
+      <member refid="classmuda_1_1_compute_graph_closure_1a5da0c3d1eb5ef97af07a38007ffae363" prot="protected" virt="non-virtual"><scope>muda::ComputeGraphClosure</scope><name>m_clousure_id</name></member>
+      <member refid="classmuda_1_1_compute_graph_closure_1a630b6475a6c67003fd2fe0144497e1f4" prot="protected" virt="non-virtual"><scope>muda::ComputeGraphClosure</scope><name>m_deps_begin</name></member>
+      <member refid="classmuda_1_1_compute_graph_closure_1a7377e1357e6685ebfd4cfb41bae645df" prot="protected" virt="non-virtual"><scope>muda::ComputeGraphClosure</scope><name>m_deps_count</name></member>
+      <member refid="classmuda_1_1_compute_graph_closure_1af64bd0ac686097f547f73275cb72d9a7" prot="protected" virt="non-virtual"><scope>muda::ComputeGraphClosure</scope><name>m_graph</name></member>
+      <member refid="classmuda_1_1_compute_graph_closure_1aabfff502a0edfc435a1ed8280e9a653f" prot="protected" virt="non-virtual"><scope>muda::ComputeGraphClosure</scope><name>m_graph_nodes</name></member>
+      <member refid="classmuda_1_1_compute_graph_closure_1addaa6e076a61a40826f116a28ba95b07" prot="protected" virt="non-virtual"><scope>muda::ComputeGraphClosure</scope><name>m_name</name></member>
+      <member refid="classmuda_1_1_compute_graph_closure_1a8ebe59705ba562e70db16e2703e3ff66" prot="protected" virt="non-virtual"><scope>muda::ComputeGraphClosure</scope><name>m_type</name></member>
+      <member refid="classmuda_1_1_compute_graph_closure_1ad06fde37c973e05d4f0fb4dd24da88a9" prot="protected" virt="non-virtual"><scope>muda::ComputeGraphClosure</scope><name>m_var_usages</name></member>
+      <member refid="classmuda_1_1_compute_graph_closure_1a76ec9d699a17017275c4d7522e3b04d2" prot="public" virt="non-virtual"><scope>muda::ComputeGraphClosure</scope><name>name</name></member>
+      <member refid="classmuda_1_1_compute_graph_closure_1ad223049fef035fe9505ff3c9a169bd9b" prot="protected" virt="non-virtual"><scope>muda::ComputeGraphClosure</scope><name>operator()</name></member>
+      <member refid="classmuda_1_1_compute_graph_closure_1a5d07e656d4eeb1dd9355db99ebdbc605" prot="protected" virt="non-virtual"><scope>muda::ComputeGraphClosure</scope><name>S</name></member>
+      <member refid="classmuda_1_1_compute_graph_closure_1a664c4a39b07ca8b1c79b4781e7510aab" prot="protected" virt="non-virtual"><scope>muda::ComputeGraphClosure</scope><name>set_deps_range</name></member>
+      <member refid="classmuda_1_1_compute_graph_closure_1afb274dd5a63e98a180e8ec5f5bb795fe" prot="public" virt="non-virtual"><scope>muda::ComputeGraphClosure</scope><name>type</name></member>
+      <member refid="classmuda_1_1_compute_graph_closure_1a78f84e319bd91863d3360f3fae357f21" prot="public" virt="non-virtual"><scope>muda::ComputeGraphClosure</scope><name>var_usages</name></member>
+      <member refid="classmuda_1_1_compute_graph_closure_1a9a9b9f1862cb8340e3eb0041f2da5afc" prot="public" virt="virtual"><scope>muda::ComputeGraphClosure</scope><name>~ComputeGraphClosure</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

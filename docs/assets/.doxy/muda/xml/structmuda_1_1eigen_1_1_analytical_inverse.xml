@@ -1,0 +1,173 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structmuda_1_1eigen_1_1_analytical_inverse" kind="struct" language="C++" prot="public">
+    <compoundname>muda::eigen::AnalyticalInverse</compoundname>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="structmuda_1_1eigen_1_1_analytical_inverse_1af080e10370b19b7ee8e8b1352272589b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>MUDA_INLINE MUDA_GENERIC Eigen::Matrix&lt; T, 2, 2 &gt;</type>
+        <definition>MUDA_INLINE MUDA_GENERIC Eigen::Matrix&lt; T, 2, 2 &gt; muda::eigen::AnalyticalInverse::operator()</definition>
+        <argsstring>(const Eigen::Matrix&lt; T, 2, 2 &gt; &amp;m)</argsstring>
+        <name>operator()</name>
+        <qualifiedname>muda::eigen::AnalyticalInverse::operator()</qualifiedname>
+        <param>
+          <type>const Eigen::Matrix&lt; T, 2, 2 &gt; &amp;</type>
+          <declname>m</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/eigen/inverse/analytic_inverse.h" line="10" column="44" bodyfile="src/muda/ext/eigen/inverse/analytic_inverse.h" bodystart="10" bodyend="15"/>
+      </memberdef>
+      <memberdef kind="function" id="structmuda_1_1eigen_1_1_analytical_inverse_1ae4865bf3c24c24cbf08469015363b096" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>MUDA_INLINE MUDA_GENERIC Eigen::Matrix&lt; T, 3, 3 &gt;</type>
+        <definition>MUDA_INLINE MUDA_GENERIC Eigen::Matrix&lt; T, 3, 3 &gt; muda::eigen::AnalyticalInverse::operator()</definition>
+        <argsstring>(const Eigen::Matrix&lt; T, 3, 3 &gt; &amp;m)</argsstring>
+        <name>operator()</name>
+        <qualifiedname>muda::eigen::AnalyticalInverse::operator()</qualifiedname>
+        <param>
+          <type>const Eigen::Matrix&lt; T, 3, 3 &gt; &amp;</type>
+          <declname>m</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/eigen/inverse/analytic_inverse.h" line="18" column="44" bodyfile="src/muda/ext/eigen/inverse/analytic_inverse.h" bodystart="18" bodyend="23"/>
+      </memberdef>
+      <memberdef kind="function" id="structmuda_1_1eigen_1_1_analytical_inverse_1aff9b8e0f80f893cfd0058042cc5e5f63" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>MUDA_INLINE MUDA_GENERIC Eigen::Matrix&lt; T, 4, 4 &gt;</type>
+        <definition>MUDA_INLINE MUDA_GENERIC Eigen::Matrix&lt; T, 4, 4 &gt; muda::eigen::AnalyticalInverse::operator()</definition>
+        <argsstring>(const Eigen::Matrix&lt; T, 4, 4 &gt; &amp;m)</argsstring>
+        <name>operator()</name>
+        <qualifiedname>muda::eigen::AnalyticalInverse::operator()</qualifiedname>
+        <param>
+          <type>const Eigen::Matrix&lt; T, 4, 4 &gt; &amp;</type>
+          <declname>m</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/eigen/inverse/analytic_inverse.h" line="26" column="44" bodyfile="src/muda/ext/eigen/inverse/analytic_inverse.h" bodystart="26" bodyend="31"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="structmuda_1_1eigen_1_1_analytical_inverse_1a2e58ce1e67c401aab9fe5cf266665b62" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>MUDA_INLINE MUDA_GENERIC void</type>
+        <definition>MUDA_INLINE MUDA_GENERIC void muda::eigen::AnalyticalInverse::invert2x2</definition>
+        <argsstring>(const T *src, T *dst)</argsstring>
+        <name>invert2x2</name>
+        <qualifiedname>muda::eigen::AnalyticalInverse::invert2x2</qualifiedname>
+        <param>
+          <type>const T *</type>
+          <declname>src</declname>
+        </param>
+        <param>
+          <type>T *</type>
+          <declname>dst</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/eigen/inverse/analytic_inverse.h" line="35" column="35" bodyfile="src/muda/ext/eigen/inverse/analytic_inverse.h" bodystart="35" bodyend="58"/>
+      </memberdef>
+      <memberdef kind="function" id="structmuda_1_1eigen_1_1_analytical_inverse_1a4654c0429c0300d44aca0a01646fe6f0" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>MUDA_INLINE MUDA_GENERIC void</type>
+        <definition>MUDA_INLINE MUDA_GENERIC void muda::eigen::AnalyticalInverse::invert3x3</definition>
+        <argsstring>(const T *src, T *dst)</argsstring>
+        <name>invert3x3</name>
+        <qualifiedname>muda::eigen::AnalyticalInverse::invert3x3</qualifiedname>
+        <param>
+          <type>const T *</type>
+          <declname>src</declname>
+        </param>
+        <param>
+          <type>T *</type>
+          <declname>dst</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/eigen/inverse/analytic_inverse.h" line="61" column="35" bodyfile="src/muda/ext/eigen/inverse/analytic_inverse.h" bodystart="61" bodyend="94"/>
+      </memberdef>
+      <memberdef kind="function" id="structmuda_1_1eigen_1_1_analytical_inverse_1a633b2b7e279a845984e083357a82ea49" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>MUDA_INLINE MUDA_GENERIC void</type>
+        <definition>MUDA_INLINE MUDA_GENERIC void muda::eigen::AnalyticalInverse::invert4x4</definition>
+        <argsstring>(const T *src, T *dst)</argsstring>
+        <name>invert4x4</name>
+        <qualifiedname>muda::eigen::AnalyticalInverse::invert4x4</qualifiedname>
+        <param>
+          <type>const T *</type>
+          <declname>src</declname>
+        </param>
+        <param>
+          <type>T *</type>
+          <declname>dst</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/eigen/inverse/analytic_inverse.h" line="97" column="35" bodyfile="src/muda/ext/eigen/inverse/analytic_inverse.h" bodystart="97" bodyend="191"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/muda/ext/eigen/inverse/analytic_inverse.h" line="7" column="1" bodyfile="src/muda/ext/eigen/inverse/analytic_inverse.h" bodystart="8" bodyend="192"/>
+    <listofallmembers>
+      <member refid="structmuda_1_1eigen_1_1_analytical_inverse_1a2e58ce1e67c401aab9fe5cf266665b62" prot="private" virt="non-virtual"><scope>muda::eigen::AnalyticalInverse</scope><name>invert2x2</name></member>
+      <member refid="structmuda_1_1eigen_1_1_analytical_inverse_1a4654c0429c0300d44aca0a01646fe6f0" prot="private" virt="non-virtual"><scope>muda::eigen::AnalyticalInverse</scope><name>invert3x3</name></member>
+      <member refid="structmuda_1_1eigen_1_1_analytical_inverse_1a633b2b7e279a845984e083357a82ea49" prot="private" virt="non-virtual"><scope>muda::eigen::AnalyticalInverse</scope><name>invert4x4</name></member>
+      <member refid="structmuda_1_1eigen_1_1_analytical_inverse_1af080e10370b19b7ee8e8b1352272589b" prot="public" virt="non-virtual"><scope>muda::eigen::AnalyticalInverse</scope><name>operator()</name></member>
+      <member refid="structmuda_1_1eigen_1_1_analytical_inverse_1ae4865bf3c24c24cbf08469015363b096" prot="public" virt="non-virtual"><scope>muda::eigen::AnalyticalInverse</scope><name>operator()</name></member>
+      <member refid="structmuda_1_1eigen_1_1_analytical_inverse_1aff9b8e0f80f893cfd0058042cc5e5f63" prot="public" virt="non-virtual"><scope>muda::eigen::AnalyticalInverse</scope><name>operator()</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

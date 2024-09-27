@@ -1,0 +1,411 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classmuda_1_1details_1_1_temp_buffer" kind="class" language="C++" prot="public">
+    <compoundname>muda::details::TempBuffer</compoundname>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classmuda_1_1details_1_1_temp_buffer_1a3a7d4359862e8fc43618b0560102fc36" prot="private" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t muda::details::TempBuffer&lt; T &gt;::m_size</definition>
+        <argsstring></argsstring>
+        <name>m_size</name>
+        <qualifiedname>muda::details::TempBuffer::m_size</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/tools/temp_buffer.h" line="125" column="12" bodyfile="src/muda/tools/temp_buffer.h" bodystart="125" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1details_1_1_temp_buffer_1a3dc3be7df946d1661978f259d5f81ad7" prot="private" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t muda::details::TempBuffer&lt; T &gt;::m_capacity</definition>
+        <argsstring></argsstring>
+        <name>m_capacity</name>
+        <qualifiedname>muda::details::TempBuffer::m_capacity</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/tools/temp_buffer.h" line="126" column="12" bodyfile="src/muda/tools/temp_buffer.h" bodystart="126" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1details_1_1_temp_buffer_1a28f141afb50d22f919d4d2036ebe1800" prot="private" static="no" mutable="no">
+        <type>T *</type>
+        <definition>T* muda::details::TempBuffer&lt; T &gt;::m_data</definition>
+        <argsstring></argsstring>
+        <name>m_data</name>
+        <qualifiedname>muda::details::TempBuffer::m_data</qualifiedname>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/tools/temp_buffer.h" line="127" column="11" bodyfile="src/muda/tools/temp_buffer.h" bodystart="127" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmuda_1_1details_1_1_temp_buffer_1ab9c37bfce4c8f30d97c105d87740c7af" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>muda::details::TempBuffer&lt; T &gt;::TempBuffer</definition>
+        <argsstring>()</argsstring>
+        <name>TempBuffer</name>
+        <qualifiedname>muda::details::TempBuffer::TempBuffer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/tools/temp_buffer.h" line="10" column="5" bodyfile="src/muda/tools/temp_buffer.h" bodystart="10" bodyend="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1details_1_1_temp_buffer_1a798862b78b2aca2be092563ee198652a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>muda::details::TempBuffer&lt; T &gt;::TempBuffer</definition>
+        <argsstring>(size_t size)</argsstring>
+        <name>TempBuffer</name>
+        <qualifiedname>muda::details::TempBuffer::TempBuffer</qualifiedname>
+        <param>
+          <type>size_t</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/tools/temp_buffer.h" line="12" column="5" bodyfile="src/muda/tools/temp_buffer.h" bodystart="12" bodyend="12"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1details_1_1_temp_buffer_1a1bc00eac0f4848436cd97d4fd68b5c0c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>muda::details::TempBuffer&lt; T &gt;::~TempBuffer</definition>
+        <argsstring>()</argsstring>
+        <name>~TempBuffer</name>
+        <qualifiedname>muda::details::TempBuffer::~TempBuffer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/tools/temp_buffer.h" line="14" column="5" bodyfile="src/muda/tools/temp_buffer.h" bodystart="14" bodyend="21"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1details_1_1_temp_buffer_1a5069b08b66cc01352de2619fb24a22b4" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type></type>
+        <definition>muda::details::TempBuffer&lt; T &gt;::TempBuffer</definition>
+        <argsstring>(TempBuffer &amp;&amp;other) noexcept</argsstring>
+        <name>TempBuffer</name>
+        <qualifiedname>muda::details::TempBuffer::TempBuffer</qualifiedname>
+        <param>
+          <type><ref refid="classmuda_1_1details_1_1_temp_buffer" kindref="compound">TempBuffer</ref> &amp;&amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/tools/temp_buffer.h" line="23" column="5" bodyfile="src/muda/tools/temp_buffer.h" bodystart="23" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1details_1_1_temp_buffer_1a2a726a9e47c65746aa4ebcd7fc73943e" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type><ref refid="classmuda_1_1details_1_1_temp_buffer" kindref="compound">TempBuffer</ref> &amp;</type>
+        <definition>TempBuffer &amp; muda::details::TempBuffer&lt; T &gt;::operator=</definition>
+        <argsstring>(TempBuffer &amp;&amp;other) noexcept</argsstring>
+        <name>operator=</name>
+        <qualifiedname>muda::details::TempBuffer::operator=</qualifiedname>
+        <param>
+          <type><ref refid="classmuda_1_1details_1_1_temp_buffer" kindref="compound">TempBuffer</ref> &amp;&amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/tools/temp_buffer.h" line="33" column="16" bodyfile="src/muda/tools/temp_buffer.h" bodystart="33" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1details_1_1_temp_buffer_1a49e822bc779a909e16a5f3542906c2dd" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type></type>
+        <definition>muda::details::TempBuffer&lt; T &gt;::TempBuffer</definition>
+        <argsstring>(const TempBuffer &amp;) noexcept</argsstring>
+        <name>TempBuffer</name>
+        <qualifiedname>muda::details::TempBuffer::TempBuffer</qualifiedname>
+        <param>
+          <type>const <ref refid="classmuda_1_1details_1_1_temp_buffer" kindref="compound">TempBuffer</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/tools/temp_buffer.h" line="49" column="5" bodyfile="src/muda/tools/temp_buffer.h" bodystart="49" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1details_1_1_temp_buffer_1a3241f047958dd63b81dd4d8c383a117b" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type><ref refid="classmuda_1_1details_1_1_temp_buffer" kindref="compound">TempBuffer</ref> &amp;</type>
+        <definition>TempBuffer &amp; muda::details::TempBuffer&lt; T &gt;::operator=</definition>
+        <argsstring>(const TempBuffer &amp;) noexcept</argsstring>
+        <name>operator=</name>
+        <qualifiedname>muda::details::TempBuffer::operator=</qualifiedname>
+        <param>
+          <type>const <ref refid="classmuda_1_1details_1_1_temp_buffer" kindref="compound">TempBuffer</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/tools/temp_buffer.h" line="51" column="16" bodyfile="src/muda/tools/temp_buffer.h" bodystart="51" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1details_1_1_temp_buffer_1ad90d658db6417470f799f4a57e67d79d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void muda::details::TempBuffer&lt; T &gt;::copy_to</definition>
+        <argsstring>(std::vector&lt; T &gt; &amp;vec, cudaStream_t stream=nullptr) const</argsstring>
+        <name>copy_to</name>
+        <qualifiedname>muda::details::TempBuffer::copy_to</qualifiedname>
+        <param>
+          <type>std::vector&lt; T &gt; &amp;</type>
+          <declname>vec</declname>
+        </param>
+        <param>
+          <type>cudaStream_t</type>
+          <declname>stream</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/tools/temp_buffer.h" line="53" column="10" bodyfile="src/muda/tools/temp_buffer.h" bodystart="53" bodyend="58"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1details_1_1_temp_buffer_1a2e0266312d27e152b08e1cc2b352c825" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void muda::details::TempBuffer&lt; T &gt;::copy_from</definition>
+        <argsstring>(TempBuffer&lt; T &gt; &amp;other, cudaStream_t stream=nullptr)</argsstring>
+        <name>copy_from</name>
+        <qualifiedname>muda::details::TempBuffer::copy_from</qualifiedname>
+        <param>
+          <type><ref refid="classmuda_1_1details_1_1_temp_buffer" kindref="compound">TempBuffer</ref>&lt; T &gt; &amp;</type>
+          <declname>other</declname>
+        </param>
+        <param>
+          <type>cudaStream_t</type>
+          <declname>stream</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/tools/temp_buffer.h" line="60" column="10" bodyfile="src/muda/tools/temp_buffer.h" bodystart="60" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1details_1_1_temp_buffer_1adeff55a9f534c00d4eb6dc4abd62b2b8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void muda::details::TempBuffer&lt; T &gt;::copy_from</definition>
+        <argsstring>(const std::vector&lt; T &gt; &amp;vec, cudaStream_t stream=nullptr)</argsstring>
+        <name>copy_from</name>
+        <qualifiedname>muda::details::TempBuffer::copy_from</qualifiedname>
+        <param>
+          <type>const std::vector&lt; T &gt; &amp;</type>
+          <declname>vec</declname>
+        </param>
+        <param>
+          <type>cudaStream_t</type>
+          <declname>stream</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/tools/temp_buffer.h" line="67" column="10" bodyfile="src/muda/tools/temp_buffer.h" bodystart="67" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1details_1_1_temp_buffer_1a17dc8f7f7b6a45bb48378f767bed6d69" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>muda::details::TempBuffer&lt; T &gt;::TempBuffer</definition>
+        <argsstring>(const std::vector&lt; T &gt; &amp;vec)</argsstring>
+        <name>TempBuffer</name>
+        <qualifiedname>muda::details::TempBuffer::TempBuffer</qualifiedname>
+        <param>
+          <type>const std::vector&lt; T &gt; &amp;</type>
+          <declname>vec</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/tools/temp_buffer.h" line="74" column="5" bodyfile="src/muda/tools/temp_buffer.h" bodystart="74" bodyend="74"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1details_1_1_temp_buffer_1a2424d37176a07b03b2a7e4fc86c4ddc1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classmuda_1_1details_1_1_temp_buffer" kindref="compound">TempBuffer</ref> &amp;</type>
+        <definition>TempBuffer &amp; muda::details::TempBuffer&lt; T &gt;::operator=</definition>
+        <argsstring>(const std::vector&lt; T &gt; &amp;vec)</argsstring>
+        <name>operator=</name>
+        <qualifiedname>muda::details::TempBuffer::operator=</qualifiedname>
+        <param>
+          <type>const std::vector&lt; T &gt; &amp;</type>
+          <declname>vec</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/tools/temp_buffer.h" line="76" column="16" bodyfile="src/muda/tools/temp_buffer.h" bodystart="76" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1details_1_1_temp_buffer_1a9644c07518e82be9694188fc2c685926" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void muda::details::TempBuffer&lt; T &gt;::reserve</definition>
+        <argsstring>(size_t new_cap, cudaStream_t stream=nullptr)</argsstring>
+        <name>reserve</name>
+        <qualifiedname>muda::details::TempBuffer::reserve</qualifiedname>
+        <param>
+          <type>size_t</type>
+          <declname>new_cap</declname>
+        </param>
+        <param>
+          <type>cudaStream_t</type>
+          <declname>stream</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/tools/temp_buffer.h" line="82" column="10" bodyfile="src/muda/tools/temp_buffer.h" bodystart="82" bodyend="96"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1details_1_1_temp_buffer_1a7ac8c55d9297d1efa4cd5ba494a88014" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void muda::details::TempBuffer&lt; T &gt;::resize</definition>
+        <argsstring>(size_t size, cudaStream_t stream=nullptr)</argsstring>
+        <name>resize</name>
+        <qualifiedname>muda::details::TempBuffer::resize</qualifiedname>
+        <param>
+          <type>size_t</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>cudaStream_t</type>
+          <declname>stream</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/tools/temp_buffer.h" line="98" column="10" bodyfile="src/muda/tools/temp_buffer.h" bodystart="98" bodyend="107"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1details_1_1_temp_buffer_1a0767af77696abe0ab60cd75a2a64cdbf" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void muda::details::TempBuffer&lt; T &gt;::free</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>free</name>
+        <qualifiedname>muda::details::TempBuffer::free</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/tools/temp_buffer.h" line="109" column="10" bodyfile="src/muda/tools/temp_buffer.h" bodystart="109" bodyend="118"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1details_1_1_temp_buffer_1ac4ffa8c6850d53b6ebef2ae641f449cd" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto muda::details::TempBuffer&lt; T &gt;::size</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>size</name>
+        <qualifiedname>muda::details::TempBuffer::size</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/tools/temp_buffer.h" line="120" column="10" bodyfile="src/muda/tools/temp_buffer.h" bodystart="120" bodyend="120"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1details_1_1_temp_buffer_1a3df12fc2a238000477d48ab15ff5c562" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto muda::details::TempBuffer&lt; T &gt;::data</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>data</name>
+        <qualifiedname>muda::details::TempBuffer::data</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/tools/temp_buffer.h" line="121" column="10" bodyfile="src/muda/tools/temp_buffer.h" bodystart="121" bodyend="121"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1details_1_1_temp_buffer_1afb9cc4d7a3d3fd71725125ead1b08900" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto muda::details::TempBuffer&lt; T &gt;::capacity</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>capacity</name>
+        <qualifiedname>muda::details::TempBuffer::capacity</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/tools/temp_buffer.h" line="122" column="10" bodyfile="src/muda/tools/temp_buffer.h" bodystart="122" bodyend="122"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/muda/tools/temp_buffer.h" line="7" column="1" bodyfile="src/muda/tools/temp_buffer.h" bodystart="8" bodyend="128"/>
+    <listofallmembers>
+      <member refid="classmuda_1_1details_1_1_temp_buffer_1afb9cc4d7a3d3fd71725125ead1b08900" prot="public" virt="non-virtual"><scope>muda::details::TempBuffer</scope><name>capacity</name></member>
+      <member refid="classmuda_1_1details_1_1_temp_buffer_1a2e0266312d27e152b08e1cc2b352c825" prot="public" virt="non-virtual"><scope>muda::details::TempBuffer</scope><name>copy_from</name></member>
+      <member refid="classmuda_1_1details_1_1_temp_buffer_1adeff55a9f534c00d4eb6dc4abd62b2b8" prot="public" virt="non-virtual"><scope>muda::details::TempBuffer</scope><name>copy_from</name></member>
+      <member refid="classmuda_1_1details_1_1_temp_buffer_1ad90d658db6417470f799f4a57e67d79d" prot="public" virt="non-virtual"><scope>muda::details::TempBuffer</scope><name>copy_to</name></member>
+      <member refid="classmuda_1_1details_1_1_temp_buffer_1a3df12fc2a238000477d48ab15ff5c562" prot="public" virt="non-virtual"><scope>muda::details::TempBuffer</scope><name>data</name></member>
+      <member refid="classmuda_1_1details_1_1_temp_buffer_1a0767af77696abe0ab60cd75a2a64cdbf" prot="public" virt="non-virtual"><scope>muda::details::TempBuffer</scope><name>free</name></member>
+      <member refid="classmuda_1_1details_1_1_temp_buffer_1a3dc3be7df946d1661978f259d5f81ad7" prot="private" virt="non-virtual"><scope>muda::details::TempBuffer</scope><name>m_capacity</name></member>
+      <member refid="classmuda_1_1details_1_1_temp_buffer_1a28f141afb50d22f919d4d2036ebe1800" prot="private" virt="non-virtual"><scope>muda::details::TempBuffer</scope><name>m_data</name></member>
+      <member refid="classmuda_1_1details_1_1_temp_buffer_1a3a7d4359862e8fc43618b0560102fc36" prot="private" virt="non-virtual"><scope>muda::details::TempBuffer</scope><name>m_size</name></member>
+      <member refid="classmuda_1_1details_1_1_temp_buffer_1a2a726a9e47c65746aa4ebcd7fc73943e" prot="public" virt="non-virtual"><scope>muda::details::TempBuffer</scope><name>operator=</name></member>
+      <member refid="classmuda_1_1details_1_1_temp_buffer_1a3241f047958dd63b81dd4d8c383a117b" prot="public" virt="non-virtual"><scope>muda::details::TempBuffer</scope><name>operator=</name></member>
+      <member refid="classmuda_1_1details_1_1_temp_buffer_1a2424d37176a07b03b2a7e4fc86c4ddc1" prot="public" virt="non-virtual"><scope>muda::details::TempBuffer</scope><name>operator=</name></member>
+      <member refid="classmuda_1_1details_1_1_temp_buffer_1a9644c07518e82be9694188fc2c685926" prot="public" virt="non-virtual"><scope>muda::details::TempBuffer</scope><name>reserve</name></member>
+      <member refid="classmuda_1_1details_1_1_temp_buffer_1a7ac8c55d9297d1efa4cd5ba494a88014" prot="public" virt="non-virtual"><scope>muda::details::TempBuffer</scope><name>resize</name></member>
+      <member refid="classmuda_1_1details_1_1_temp_buffer_1ac4ffa8c6850d53b6ebef2ae641f449cd" prot="public" virt="non-virtual"><scope>muda::details::TempBuffer</scope><name>size</name></member>
+      <member refid="classmuda_1_1details_1_1_temp_buffer_1ab9c37bfce4c8f30d97c105d87740c7af" prot="public" virt="non-virtual"><scope>muda::details::TempBuffer</scope><name>TempBuffer</name></member>
+      <member refid="classmuda_1_1details_1_1_temp_buffer_1a798862b78b2aca2be092563ee198652a" prot="public" virt="non-virtual"><scope>muda::details::TempBuffer</scope><name>TempBuffer</name></member>
+      <member refid="classmuda_1_1details_1_1_temp_buffer_1a5069b08b66cc01352de2619fb24a22b4" prot="public" virt="non-virtual"><scope>muda::details::TempBuffer</scope><name>TempBuffer</name></member>
+      <member refid="classmuda_1_1details_1_1_temp_buffer_1a49e822bc779a909e16a5f3542906c2dd" prot="public" virt="non-virtual"><scope>muda::details::TempBuffer</scope><name>TempBuffer</name></member>
+      <member refid="classmuda_1_1details_1_1_temp_buffer_1a17dc8f7f7b6a45bb48378f767bed6d69" prot="public" virt="non-virtual"><scope>muda::details::TempBuffer</scope><name>TempBuffer</name></member>
+      <member refid="classmuda_1_1details_1_1_temp_buffer_1a1bc00eac0f4848436cd97d4fd68b5c0c" prot="public" virt="non-virtual"><scope>muda::details::TempBuffer</scope><name>~TempBuffer</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

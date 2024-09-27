@@ -1,0 +1,826 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classmuda_1_1_device_segmented_reduce" kind="class" language="C++" prot="public">
+    <compoundname>muda::DeviceSegmentedReduce</compoundname>
+    <basecompoundref refid="classmuda_1_1_cub_wrapper" prot="public" virt="non-virtual">muda::CubWrapper&lt; DeviceSegmentedReduce &gt;</basecompoundref>
+    <sectiondef kind="private-type">
+      <memberdef kind="typedef" id="classmuda_1_1_device_segmented_reduce_1af7355e38b06579eddf56b1746e305697" prot="private" static="no">
+        <type><ref refid="classmuda_1_1_cub_wrapper" kindref="compound">CubWrapper</ref>&lt; <ref refid="classmuda_1_1_device_segmented_reduce" kindref="compound">DeviceSegmentedReduce</ref> &gt;</type>
+        <definition>using muda::DeviceSegmentedReduce::Base =  CubWrapper&lt;DeviceSegmentedReduce&gt;</definition>
+        <argsstring></argsstring>
+        <name>Base</name>
+        <qualifiedname>muda::DeviceSegmentedReduce::Base</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/cub/device/device_segmented_reduce.h" line="13" column="5" bodyfile="src/muda/cub/device/device_segmented_reduce.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmuda_1_1_device_segmented_reduce_1ad8ddc6fe291435667749852dc5d5d92e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename InputIteratorT</type>
+          </param>
+          <param>
+            <type>typename OutputIteratorT</type>
+          </param>
+          <param>
+            <type>typename BeginOffsetIteratorT</type>
+          </param>
+          <param>
+            <type>typename EndOffsetIteratorT</type>
+          </param>
+          <param>
+            <type>typename ReductionOp</type>
+          </param>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classmuda_1_1_device_segmented_reduce" kindref="compound">DeviceSegmentedReduce</ref> &amp;</type>
+        <definition>DeviceSegmentedReduce &amp; muda::DeviceSegmentedReduce::Reduce</definition>
+        <argsstring>(InputIteratorT d_in, OutputIteratorT d_out, int num_segments, BeginOffsetIteratorT d_begin_offsets, EndOffsetIteratorT d_end_offsets, ReductionOp reduction_op, T initial_value)</argsstring>
+        <name>Reduce</name>
+        <qualifiedname>muda::DeviceSegmentedReduce::Reduce</qualifiedname>
+        <param>
+          <type>InputIteratorT</type>
+          <declname>d_in</declname>
+        </param>
+        <param>
+          <type>OutputIteratorT</type>
+          <declname>d_out</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>num_segments</declname>
+        </param>
+        <param>
+          <type>BeginOffsetIteratorT</type>
+          <declname>d_begin_offsets</declname>
+        </param>
+        <param>
+          <type>EndOffsetIteratorT</type>
+          <declname>d_end_offsets</declname>
+        </param>
+        <param>
+          <type>ReductionOp</type>
+          <declname>reduction_op</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>initial_value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/cub/device/device_segmented_reduce.h" line="19" column="27" bodyfile="src/muda/cub/device/device_segmented_reduce.h" bodystart="19" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_device_segmented_reduce_1afbb9179e4ef989edd680a362be89b551" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename InputIteratorT</type>
+          </param>
+          <param>
+            <type>typename OutputIteratorT</type>
+          </param>
+          <param>
+            <type>typename BeginOffsetIteratorT</type>
+          </param>
+          <param>
+            <type>typename EndOffsetIteratorT</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classmuda_1_1_device_segmented_reduce" kindref="compound">DeviceSegmentedReduce</ref> &amp;</type>
+        <definition>DeviceSegmentedReduce &amp; muda::DeviceSegmentedReduce::Sum</definition>
+        <argsstring>(InputIteratorT d_in, OutputIteratorT d_out, int num_segments, BeginOffsetIteratorT d_begin_offsets, EndOffsetIteratorT d_end_offsets)</argsstring>
+        <name>Sum</name>
+        <qualifiedname>muda::DeviceSegmentedReduce::Sum</qualifiedname>
+        <param>
+          <type>InputIteratorT</type>
+          <declname>d_in</declname>
+        </param>
+        <param>
+          <type>OutputIteratorT</type>
+          <declname>d_out</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>num_segments</declname>
+        </param>
+        <param>
+          <type>BeginOffsetIteratorT</type>
+          <declname>d_begin_offsets</declname>
+        </param>
+        <param>
+          <type>EndOffsetIteratorT</type>
+          <declname>d_end_offsets</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/cub/device/device_segmented_reduce.h" line="43" column="27" bodyfile="src/muda/cub/device/device_segmented_reduce.h" bodystart="43" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_device_segmented_reduce_1a7cfe3b88c7090df029e8ea09a942385b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename InputIteratorT</type>
+          </param>
+          <param>
+            <type>typename OutputIteratorT</type>
+          </param>
+          <param>
+            <type>typename BeginOffsetIteratorT</type>
+          </param>
+          <param>
+            <type>typename EndOffsetIteratorT</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classmuda_1_1_device_segmented_reduce" kindref="compound">DeviceSegmentedReduce</ref> &amp;</type>
+        <definition>DeviceSegmentedReduce &amp; muda::DeviceSegmentedReduce::Min</definition>
+        <argsstring>(InputIteratorT d_in, OutputIteratorT d_out, int num_segments, BeginOffsetIteratorT d_begin_offsets, EndOffsetIteratorT d_end_offsets)</argsstring>
+        <name>Min</name>
+        <qualifiedname>muda::DeviceSegmentedReduce::Min</qualifiedname>
+        <param>
+          <type>InputIteratorT</type>
+          <declname>d_in</declname>
+        </param>
+        <param>
+          <type>OutputIteratorT</type>
+          <declname>d_out</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>num_segments</declname>
+        </param>
+        <param>
+          <type>BeginOffsetIteratorT</type>
+          <declname>d_begin_offsets</declname>
+        </param>
+        <param>
+          <type>EndOffsetIteratorT</type>
+          <declname>d_end_offsets</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/cub/device/device_segmented_reduce.h" line="54" column="27" bodyfile="src/muda/cub/device/device_segmented_reduce.h" bodystart="54" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_device_segmented_reduce_1a3ac6555b19334e55a0c165006ba20cbe" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename InputIteratorT</type>
+          </param>
+          <param>
+            <type>typename OutputIteratorT</type>
+          </param>
+          <param>
+            <type>typename BeginOffsetIteratorT</type>
+          </param>
+          <param>
+            <type>typename EndOffsetIteratorT</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classmuda_1_1_device_segmented_reduce" kindref="compound">DeviceSegmentedReduce</ref> &amp;</type>
+        <definition>DeviceSegmentedReduce &amp; muda::DeviceSegmentedReduce::ArgMin</definition>
+        <argsstring>(InputIteratorT d_in, OutputIteratorT d_out, int num_segments, BeginOffsetIteratorT d_begin_offsets, EndOffsetIteratorT d_end_offsets)</argsstring>
+        <name>ArgMin</name>
+        <qualifiedname>muda::DeviceSegmentedReduce::ArgMin</qualifiedname>
+        <param>
+          <type>InputIteratorT</type>
+          <declname>d_in</declname>
+        </param>
+        <param>
+          <type>OutputIteratorT</type>
+          <declname>d_out</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>num_segments</declname>
+        </param>
+        <param>
+          <type>BeginOffsetIteratorT</type>
+          <declname>d_begin_offsets</declname>
+        </param>
+        <param>
+          <type>EndOffsetIteratorT</type>
+          <declname>d_end_offsets</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/cub/device/device_segmented_reduce.h" line="65" column="27" bodyfile="src/muda/cub/device/device_segmented_reduce.h" bodystart="65" bodyend="73"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_device_segmented_reduce_1a8c4aa0081eb58401700e774777389b52" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename InputIteratorT</type>
+          </param>
+          <param>
+            <type>typename OutputIteratorT</type>
+          </param>
+          <param>
+            <type>typename BeginOffsetIteratorT</type>
+          </param>
+          <param>
+            <type>typename EndOffsetIteratorT</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classmuda_1_1_device_segmented_reduce" kindref="compound">DeviceSegmentedReduce</ref> &amp;</type>
+        <definition>DeviceSegmentedReduce &amp; muda::DeviceSegmentedReduce::Max</definition>
+        <argsstring>(InputIteratorT d_in, OutputIteratorT d_out, int num_segments, BeginOffsetIteratorT d_begin_offsets, EndOffsetIteratorT d_end_offsets)</argsstring>
+        <name>Max</name>
+        <qualifiedname>muda::DeviceSegmentedReduce::Max</qualifiedname>
+        <param>
+          <type>InputIteratorT</type>
+          <declname>d_in</declname>
+        </param>
+        <param>
+          <type>OutputIteratorT</type>
+          <declname>d_out</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>num_segments</declname>
+        </param>
+        <param>
+          <type>BeginOffsetIteratorT</type>
+          <declname>d_begin_offsets</declname>
+        </param>
+        <param>
+          <type>EndOffsetIteratorT</type>
+          <declname>d_end_offsets</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/cub/device/device_segmented_reduce.h" line="76" column="27" bodyfile="src/muda/cub/device/device_segmented_reduce.h" bodystart="76" bodyend="84"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_device_segmented_reduce_1a1c5c942cefd76af5c72592ddec2437c1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename InputIteratorT</type>
+          </param>
+          <param>
+            <type>typename OutputIteratorT</type>
+          </param>
+          <param>
+            <type>typename BeginOffsetIteratorT</type>
+          </param>
+          <param>
+            <type>typename EndOffsetIteratorT</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classmuda_1_1_device_segmented_reduce" kindref="compound">DeviceSegmentedReduce</ref> &amp;</type>
+        <definition>DeviceSegmentedReduce &amp; muda::DeviceSegmentedReduce::ArgMax</definition>
+        <argsstring>(InputIteratorT d_in, OutputIteratorT d_out, int num_segments, BeginOffsetIteratorT d_begin_offsets, EndOffsetIteratorT d_end_offsets)</argsstring>
+        <name>ArgMax</name>
+        <qualifiedname>muda::DeviceSegmentedReduce::ArgMax</qualifiedname>
+        <param>
+          <type>InputIteratorT</type>
+          <declname>d_in</declname>
+        </param>
+        <param>
+          <type>OutputIteratorT</type>
+          <declname>d_out</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>num_segments</declname>
+        </param>
+        <param>
+          <type>BeginOffsetIteratorT</type>
+          <declname>d_begin_offsets</declname>
+        </param>
+        <param>
+          <type>EndOffsetIteratorT</type>
+          <declname>d_end_offsets</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/cub/device/device_segmented_reduce.h" line="87" column="27" bodyfile="src/muda/cub/device/device_segmented_reduce.h" bodystart="87" bodyend="95"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_device_segmented_reduce_1a22833109eeab6ec519c8163898dcbd6c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename InputIteratorT</type>
+          </param>
+          <param>
+            <type>typename OutputIteratorT</type>
+          </param>
+          <param>
+            <type>typename BeginOffsetIteratorT</type>
+          </param>
+          <param>
+            <type>typename EndOffsetIteratorT</type>
+          </param>
+          <param>
+            <type>typename ReductionOp</type>
+          </param>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classmuda_1_1_device_segmented_reduce" kindref="compound">DeviceSegmentedReduce</ref> &amp;</type>
+        <definition>DeviceSegmentedReduce &amp; muda::DeviceSegmentedReduce::Reduce</definition>
+        <argsstring>(void *d_temp_storage, size_t &amp;temp_storage_bytes, InputIteratorT d_in, OutputIteratorT d_out, int num_segments, BeginOffsetIteratorT d_begin_offsets, EndOffsetIteratorT d_end_offsets, ReductionOp reduction_op, T initial_value)</argsstring>
+        <name>Reduce</name>
+        <qualifiedname>muda::DeviceSegmentedReduce::Reduce</qualifiedname>
+        <param>
+          <type>void *</type>
+          <declname>d_temp_storage</declname>
+        </param>
+        <param>
+          <type>size_t &amp;</type>
+          <declname>temp_storage_bytes</declname>
+        </param>
+        <param>
+          <type>InputIteratorT</type>
+          <declname>d_in</declname>
+        </param>
+        <param>
+          <type>OutputIteratorT</type>
+          <declname>d_out</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>num_segments</declname>
+        </param>
+        <param>
+          <type>BeginOffsetIteratorT</type>
+          <declname>d_begin_offsets</declname>
+        </param>
+        <param>
+          <type>EndOffsetIteratorT</type>
+          <declname>d_end_offsets</declname>
+        </param>
+        <param>
+          <type>ReductionOp</type>
+          <declname>reduction_op</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>initial_value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/cub/device/device_segmented_reduce.h" line="100" column="27" bodyfile="src/muda/cub/device/device_segmented_reduce.h" bodystart="100" bodyend="122"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_device_segmented_reduce_1a992fb73e9e7ddeba64da1afe2b851411" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename InputIteratorT</type>
+          </param>
+          <param>
+            <type>typename OutputIteratorT</type>
+          </param>
+          <param>
+            <type>typename BeginOffsetIteratorT</type>
+          </param>
+          <param>
+            <type>typename EndOffsetIteratorT</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classmuda_1_1_device_segmented_reduce" kindref="compound">DeviceSegmentedReduce</ref> &amp;</type>
+        <definition>DeviceSegmentedReduce &amp; muda::DeviceSegmentedReduce::Sum</definition>
+        <argsstring>(void *d_temp_storage, size_t &amp;temp_storage_bytes, InputIteratorT d_in, OutputIteratorT d_out, int num_segments, BeginOffsetIteratorT d_begin_offsets, EndOffsetIteratorT d_end_offsets)</argsstring>
+        <name>Sum</name>
+        <qualifiedname>muda::DeviceSegmentedReduce::Sum</qualifiedname>
+        <param>
+          <type>void *</type>
+          <declname>d_temp_storage</declname>
+        </param>
+        <param>
+          <type>size_t &amp;</type>
+          <declname>temp_storage_bytes</declname>
+        </param>
+        <param>
+          <type>InputIteratorT</type>
+          <declname>d_in</declname>
+        </param>
+        <param>
+          <type>OutputIteratorT</type>
+          <declname>d_out</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>num_segments</declname>
+        </param>
+        <param>
+          <type>BeginOffsetIteratorT</type>
+          <declname>d_begin_offsets</declname>
+        </param>
+        <param>
+          <type>EndOffsetIteratorT</type>
+          <declname>d_end_offsets</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/cub/device/device_segmented_reduce.h" line="125" column="27" bodyfile="src/muda/cub/device/device_segmented_reduce.h" bodystart="125" bodyend="135"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_device_segmented_reduce_1a922ddae907503a91646a836744704d5a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename InputIteratorT</type>
+          </param>
+          <param>
+            <type>typename OutputIteratorT</type>
+          </param>
+          <param>
+            <type>typename BeginOffsetIteratorT</type>
+          </param>
+          <param>
+            <type>typename EndOffsetIteratorT</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classmuda_1_1_device_segmented_reduce" kindref="compound">DeviceSegmentedReduce</ref> &amp;</type>
+        <definition>DeviceSegmentedReduce &amp; muda::DeviceSegmentedReduce::Min</definition>
+        <argsstring>(void *d_temp_storage, size_t &amp;temp_storage_bytes, InputIteratorT d_in, OutputIteratorT d_out, int num_segments, BeginOffsetIteratorT d_begin_offsets, EndOffsetIteratorT d_end_offsets)</argsstring>
+        <name>Min</name>
+        <qualifiedname>muda::DeviceSegmentedReduce::Min</qualifiedname>
+        <param>
+          <type>void *</type>
+          <declname>d_temp_storage</declname>
+        </param>
+        <param>
+          <type>size_t &amp;</type>
+          <declname>temp_storage_bytes</declname>
+        </param>
+        <param>
+          <type>InputIteratorT</type>
+          <declname>d_in</declname>
+        </param>
+        <param>
+          <type>OutputIteratorT</type>
+          <declname>d_out</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>num_segments</declname>
+        </param>
+        <param>
+          <type>BeginOffsetIteratorT</type>
+          <declname>d_begin_offsets</declname>
+        </param>
+        <param>
+          <type>EndOffsetIteratorT</type>
+          <declname>d_end_offsets</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/cub/device/device_segmented_reduce.h" line="138" column="27" bodyfile="src/muda/cub/device/device_segmented_reduce.h" bodystart="138" bodyend="148"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_device_segmented_reduce_1a6e608b3a2b343bc89594c65104b7548e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename InputIteratorT</type>
+          </param>
+          <param>
+            <type>typename OutputIteratorT</type>
+          </param>
+          <param>
+            <type>typename BeginOffsetIteratorT</type>
+          </param>
+          <param>
+            <type>typename EndOffsetIteratorT</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classmuda_1_1_device_segmented_reduce" kindref="compound">DeviceSegmentedReduce</ref> &amp;</type>
+        <definition>DeviceSegmentedReduce &amp; muda::DeviceSegmentedReduce::ArgMin</definition>
+        <argsstring>(void *d_temp_storage, size_t &amp;temp_storage_bytes, InputIteratorT d_in, OutputIteratorT d_out, int num_segments, BeginOffsetIteratorT d_begin_offsets, EndOffsetIteratorT d_end_offsets)</argsstring>
+        <name>ArgMin</name>
+        <qualifiedname>muda::DeviceSegmentedReduce::ArgMin</qualifiedname>
+        <param>
+          <type>void *</type>
+          <declname>d_temp_storage</declname>
+        </param>
+        <param>
+          <type>size_t &amp;</type>
+          <declname>temp_storage_bytes</declname>
+        </param>
+        <param>
+          <type>InputIteratorT</type>
+          <declname>d_in</declname>
+        </param>
+        <param>
+          <type>OutputIteratorT</type>
+          <declname>d_out</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>num_segments</declname>
+        </param>
+        <param>
+          <type>BeginOffsetIteratorT</type>
+          <declname>d_begin_offsets</declname>
+        </param>
+        <param>
+          <type>EndOffsetIteratorT</type>
+          <declname>d_end_offsets</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/cub/device/device_segmented_reduce.h" line="151" column="27" bodyfile="src/muda/cub/device/device_segmented_reduce.h" bodystart="151" bodyend="161"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_device_segmented_reduce_1a64019053527636b10730ea3c36795764" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename InputIteratorT</type>
+          </param>
+          <param>
+            <type>typename OutputIteratorT</type>
+          </param>
+          <param>
+            <type>typename BeginOffsetIteratorT</type>
+          </param>
+          <param>
+            <type>typename EndOffsetIteratorT</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classmuda_1_1_device_segmented_reduce" kindref="compound">DeviceSegmentedReduce</ref> &amp;</type>
+        <definition>DeviceSegmentedReduce &amp; muda::DeviceSegmentedReduce::Max</definition>
+        <argsstring>(void *d_temp_storage, size_t &amp;temp_storage_bytes, InputIteratorT d_in, OutputIteratorT d_out, int num_segments, BeginOffsetIteratorT d_begin_offsets, EndOffsetIteratorT d_end_offsets)</argsstring>
+        <name>Max</name>
+        <qualifiedname>muda::DeviceSegmentedReduce::Max</qualifiedname>
+        <param>
+          <type>void *</type>
+          <declname>d_temp_storage</declname>
+        </param>
+        <param>
+          <type>size_t &amp;</type>
+          <declname>temp_storage_bytes</declname>
+        </param>
+        <param>
+          <type>InputIteratorT</type>
+          <declname>d_in</declname>
+        </param>
+        <param>
+          <type>OutputIteratorT</type>
+          <declname>d_out</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>num_segments</declname>
+        </param>
+        <param>
+          <type>BeginOffsetIteratorT</type>
+          <declname>d_begin_offsets</declname>
+        </param>
+        <param>
+          <type>EndOffsetIteratorT</type>
+          <declname>d_end_offsets</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/cub/device/device_segmented_reduce.h" line="164" column="27" bodyfile="src/muda/cub/device/device_segmented_reduce.h" bodystart="164" bodyend="174"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_device_segmented_reduce_1a3d2794c45bd339f46a2e6286abc8a17c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename InputIteratorT</type>
+          </param>
+          <param>
+            <type>typename OutputIteratorT</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classmuda_1_1_device_segmented_reduce" kindref="compound">DeviceSegmentedReduce</ref> &amp;</type>
+        <definition>DeviceSegmentedReduce &amp; muda::DeviceSegmentedReduce::ArgMax</definition>
+        <argsstring>(void *d_temp_storage, size_t &amp;temp_storage_bytes, InputIteratorT d_in, OutputIteratorT d_out, int num_items)</argsstring>
+        <name>ArgMax</name>
+        <qualifiedname>muda::DeviceSegmentedReduce::ArgMax</qualifiedname>
+        <param>
+          <type>void *</type>
+          <declname>d_temp_storage</declname>
+        </param>
+        <param>
+          <type>size_t &amp;</type>
+          <declname>temp_storage_bytes</declname>
+        </param>
+        <param>
+          <type>InputIteratorT</type>
+          <declname>d_in</declname>
+        </param>
+        <param>
+          <type>OutputIteratorT</type>
+          <declname>d_out</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>num_items</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/cub/device/device_segmented_reduce.h" line="178" column="27" bodyfile="src/muda/cub/device/device_segmented_reduce.h" bodystart="178" bodyend="186"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_device_segmented_reduce_1a13231e319f86adda07dbcfaee78684bf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename InputIteratorT</type>
+          </param>
+          <param>
+            <type>typename OutputIteratorT</type>
+          </param>
+          <param>
+            <type>typename BeginOffsetIteratorT</type>
+          </param>
+          <param>
+            <type>typename EndOffsetIteratorT</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classmuda_1_1_device_segmented_reduce" kindref="compound">DeviceSegmentedReduce</ref> &amp;</type>
+        <definition>DeviceSegmentedReduce &amp; muda::DeviceSegmentedReduce::ArgMax</definition>
+        <argsstring>(void *d_temp_storage, size_t &amp;temp_storage_bytes, InputIteratorT d_in, OutputIteratorT d_out, int num_segments, BeginOffsetIteratorT d_begin_offsets, EndOffsetIteratorT d_end_offsets)</argsstring>
+        <name>ArgMax</name>
+        <qualifiedname>muda::DeviceSegmentedReduce::ArgMax</qualifiedname>
+        <param>
+          <type>void *</type>
+          <declname>d_temp_storage</declname>
+        </param>
+        <param>
+          <type>size_t &amp;</type>
+          <declname>temp_storage_bytes</declname>
+        </param>
+        <param>
+          <type>InputIteratorT</type>
+          <declname>d_in</declname>
+        </param>
+        <param>
+          <type>OutputIteratorT</type>
+          <declname>d_out</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>num_segments</declname>
+        </param>
+        <param>
+          <type>BeginOffsetIteratorT</type>
+          <declname>d_begin_offsets</declname>
+        </param>
+        <param>
+          <type>EndOffsetIteratorT</type>
+          <declname>d_end_offsets</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/cub/device/device_segmented_reduce.h" line="189" column="27" bodyfile="src/muda/cub/device/device_segmented_reduce.h" bodystart="189" bodyend="199"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>muda::CubWrapper&lt; DeviceSegmentedReduce &gt;</label>
+        <link refid="classmuda_1_1_cub_wrapper"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>muda::DeviceSegmentedReduce</label>
+        <link refid="classmuda_1_1_device_segmented_reduce"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>muda::LaunchBase&lt; T &gt;</label>
+        <link refid="classmuda_1_1_launch_base"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>muda::LaunchCore</label>
+        <link refid="classmuda_1_1_launch_core"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>muda::CubWrapper&lt; DeviceSegmentedReduce &gt;</label>
+        <link refid="classmuda_1_1_cub_wrapper"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>m_muda_stream</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>muda::DeviceSegmentedReduce</label>
+        <link refid="classmuda_1_1_device_segmented_reduce"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>muda::LaunchBase&lt; T &gt;</label>
+        <link refid="classmuda_1_1_launch_base"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>muda::LaunchCore</label>
+        <link refid="classmuda_1_1_launch_core"/>
+      </node>
+      <node id="5">
+        <label>muda::Stream</label>
+        <link refid="classmuda_1_1_stream"/>
+      </node>
+    </collaborationgraph>
+    <location file="src/muda/cub/device/device_segmented_reduce.h" line="11" column="1" bodyfile="src/muda/cub/device/device_segmented_reduce.h" bodystart="12" bodyend="200"/>
+    <listofallmembers>
+      <member refid="classmuda_1_1_device_segmented_reduce_1a1c5c942cefd76af5c72592ddec2437c1" prot="public" virt="non-virtual"><scope>muda::DeviceSegmentedReduce</scope><name>ArgMax</name></member>
+      <member refid="classmuda_1_1_device_segmented_reduce_1a3d2794c45bd339f46a2e6286abc8a17c" prot="public" virt="non-virtual"><scope>muda::DeviceSegmentedReduce</scope><name>ArgMax</name></member>
+      <member refid="classmuda_1_1_device_segmented_reduce_1a13231e319f86adda07dbcfaee78684bf" prot="public" virt="non-virtual"><scope>muda::DeviceSegmentedReduce</scope><name>ArgMax</name></member>
+      <member refid="classmuda_1_1_device_segmented_reduce_1a3ac6555b19334e55a0c165006ba20cbe" prot="public" virt="non-virtual"><scope>muda::DeviceSegmentedReduce</scope><name>ArgMin</name></member>
+      <member refid="classmuda_1_1_device_segmented_reduce_1a6e608b3a2b343bc89594c65104b7548e" prot="public" virt="non-virtual"><scope>muda::DeviceSegmentedReduce</scope><name>ArgMin</name></member>
+      <member refid="classmuda_1_1_device_segmented_reduce_1af7355e38b06579eddf56b1746e305697" prot="private" virt="non-virtual"><scope>muda::DeviceSegmentedReduce</scope><name>Base</name></member>
+      <member refid="classmuda_1_1_launch_base_1aa8490139890f43555c1b7baa57378616" prot="public" virt="non-virtual"><scope>muda::DeviceSegmentedReduce</scope><name>callback</name></member>
+      <member refid="classmuda_1_1_cub_wrapper_1a846ad2ff72dccee396a542f1ec0b4aeb" prot="public" virt="non-virtual"><scope>muda::DeviceSegmentedReduce</scope><name>CubWrapper</name></member>
+      <member refid="classmuda_1_1_launch_base_1a8a59e9a27775e4e12ca19a6d590790f4" prot="public" virt="non-virtual"><scope>muda::DeviceSegmentedReduce</scope><name>derived_type</name></member>
+      <member refid="classmuda_1_1_launch_base_1aee4564eac54df98ab98085379370a2ec" prot="public" virt="non-virtual"><scope>muda::DeviceSegmentedReduce</scope><name>file_line</name></member>
+      <member refid="classmuda_1_1_launch_core_1a38c542a99edea149552d82639e385ab5" prot="public" virt="non-virtual"><scope>muda::DeviceSegmentedReduce</scope><name>init_stream</name></member>
+      <member refid="classmuda_1_1_cub_wrapper_1a71f741726d4ab894c196264043bd2922" prot="public" virt="non-virtual"><scope>muda::DeviceSegmentedReduce</scope><name>kernel_name</name></member>
+      <member refid="classmuda_1_1_launch_base_1ab73495b0bfa3a7a1864284aebceb51a8" prot="public" virt="non-virtual"><scope>muda::DeviceSegmentedReduce</scope><name>LaunchBase</name></member>
+      <member refid="classmuda_1_1_launch_core_1a8503eff885f818a12319ca57dfd75011" prot="public" virt="non-virtual"><scope>muda::DeviceSegmentedReduce</scope><name>LaunchCore</name></member>
+      <member refid="classmuda_1_1_cub_wrapper_1a5e0f31303ea2f56ba4cfe04fb2ca7738" prot="public" virt="non-virtual"><scope>muda::DeviceSegmentedReduce</scope><name>m_muda_stream</name></member>
+      <member refid="classmuda_1_1_launch_core_1a3b5544456087d57904981118c4cdcaf8" prot="protected" virt="non-virtual"><scope>muda::DeviceSegmentedReduce</scope><name>m_stream</name></member>
+      <member refid="classmuda_1_1_device_segmented_reduce_1a8c4aa0081eb58401700e774777389b52" prot="public" virt="non-virtual"><scope>muda::DeviceSegmentedReduce</scope><name>Max</name></member>
+      <member refid="classmuda_1_1_device_segmented_reduce_1a64019053527636b10730ea3c36795764" prot="public" virt="non-virtual"><scope>muda::DeviceSegmentedReduce</scope><name>Max</name></member>
+      <member refid="classmuda_1_1_device_segmented_reduce_1a7cfe3b88c7090df029e8ea09a942385b" prot="public" virt="non-virtual"><scope>muda::DeviceSegmentedReduce</scope><name>Min</name></member>
+      <member refid="classmuda_1_1_device_segmented_reduce_1a922ddae907503a91646a836744704d5a" prot="public" virt="non-virtual"><scope>muda::DeviceSegmentedReduce</scope><name>Min</name></member>
+      <member refid="classmuda_1_1_launch_base_1a395b0a10fee3bf2c591f49a3119df1b8" prot="public" virt="non-virtual"><scope>muda::DeviceSegmentedReduce</scope><name>next</name></member>
+      <member refid="classmuda_1_1_launch_base_1a841db3ede786d3312a6ca2de2139ad10" prot="public" virt="non-virtual"><scope>muda::DeviceSegmentedReduce</scope><name>next</name></member>
+      <member refid="classmuda_1_1_launch_base_1a65538f7d445fa3cc56ab33e609fe566a" prot="protected" virt="non-virtual"><scope>muda::DeviceSegmentedReduce</scope><name>pop_kernel_label</name></member>
+      <member refid="classmuda_1_1_launch_base_1ab6b75621024e7977edcdff26c04bcdc1" prot="public" virt="non-virtual"><scope>muda::DeviceSegmentedReduce</scope><name>pop_range</name></member>
+      <member refid="classmuda_1_1_cub_wrapper_1af1007ebfdee88f21fd67283499730991" prot="protected" virt="non-virtual"><scope>muda::DeviceSegmentedReduce</scope><name>prepare_buffer</name></member>
+      <member refid="classmuda_1_1_launch_base_1ad6dcaaf3ea0726809ebbdb10084c3183" prot="public" virt="non-virtual"><scope>muda::DeviceSegmentedReduce</scope><name>push_range</name></member>
+      <member refid="classmuda_1_1_launch_base_1ad069d4ad6219f5a3b51e7c8d9e4d596f" prot="public" virt="non-virtual"><scope>muda::DeviceSegmentedReduce</scope><name>record</name></member>
+      <member refid="classmuda_1_1_launch_base_1a12cf6b18c76787654460c1c043907547" prot="public" virt="non-virtual"><scope>muda::DeviceSegmentedReduce</scope><name>record</name></member>
+      <member refid="classmuda_1_1_launch_base_1a77d57b9368424d70cd740af6eaf45a6f" prot="public" virt="non-virtual"><scope>muda::DeviceSegmentedReduce</scope><name>record</name></member>
+      <member refid="classmuda_1_1_device_segmented_reduce_1ad8ddc6fe291435667749852dc5d5d92e" prot="public" virt="non-virtual"><scope>muda::DeviceSegmentedReduce</scope><name>Reduce</name></member>
+      <member refid="classmuda_1_1_device_segmented_reduce_1a22833109eeab6ec519c8163898dcbd6c" prot="public" virt="non-virtual"><scope>muda::DeviceSegmentedReduce</scope><name>Reduce</name></member>
+      <member refid="classmuda_1_1_launch_core_1a8aeb9e37d421f835e0fcae124e3ce0de" prot="protected" virt="non-virtual"><scope>muda::DeviceSegmentedReduce</scope><name>S</name></member>
+      <member refid="classmuda_1_1_launch_core_1ab78b991329337c97d2ac3e32e995a62f" prot="protected" virt="non-virtual"><scope>muda::DeviceSegmentedReduce</scope><name>stream</name></member>
+      <member refid="classmuda_1_1_device_segmented_reduce_1afbb9179e4ef989edd680a362be89b551" prot="public" virt="non-virtual"><scope>muda::DeviceSegmentedReduce</scope><name>Sum</name></member>
+      <member refid="classmuda_1_1_device_segmented_reduce_1a992fb73e9e7ddeba64da1afe2b851411" prot="public" virt="non-virtual"><scope>muda::DeviceSegmentedReduce</scope><name>Sum</name></member>
+      <member refid="classmuda_1_1_launch_base_1a88cbf9478fbeaa7434ece7f300dc1c0e" prot="public" virt="non-virtual"><scope>muda::DeviceSegmentedReduce</scope><name>wait</name></member>
+      <member refid="classmuda_1_1_launch_base_1ab0fc5fbed4ec5f69a3b599af99900d98" prot="public" virt="non-virtual"><scope>muda::DeviceSegmentedReduce</scope><name>wait</name></member>
+      <member refid="classmuda_1_1_launch_base_1acbf042e86efae1683e2ab08c95095da7" prot="public" virt="non-virtual"><scope>muda::DeviceSegmentedReduce</scope><name>wait</name></member>
+      <member refid="classmuda_1_1_launch_base_1abe061bff24568f9c2fcf326a62843292" prot="public" virt="non-virtual"><scope>muda::DeviceSegmentedReduce</scope><name>wait</name></member>
+      <member refid="classmuda_1_1_launch_core_1a58e970f699c546d37c70af9bb4d3a93c" prot="public" virt="non-virtual"><scope>muda::DeviceSegmentedReduce</scope><name>wait_device</name></member>
+      <member refid="classmuda_1_1_launch_core_1a7b29e878817d4e42bc533edc0c89b645" prot="public" virt="non-virtual"><scope>muda::DeviceSegmentedReduce</scope><name>wait_event</name></member>
+      <member refid="classmuda_1_1_launch_core_1a73d5d54a7b3b59dcf8eea792e796337b" prot="public" virt="non-virtual"><scope>muda::DeviceSegmentedReduce</scope><name>wait_stream</name></member>
+      <member refid="classmuda_1_1_launch_base_1a59a525fea511ea1c90f5857be5d62d43" prot="public" virt="non-virtual"><scope>muda::DeviceSegmentedReduce</scope><name>when</name></member>
+      <member refid="classmuda_1_1_launch_base_1a543548ac0516b2c10adba68d2ae7066b" prot="public" virt="non-virtual"><scope>muda::DeviceSegmentedReduce</scope><name>~LaunchBase</name></member>
+      <member refid="classmuda_1_1_launch_core_1a5e4ae3435bce9d4ad706b5e347a3040f" prot="public" virt="non-virtual"><scope>muda::DeviceSegmentedReduce</scope><name>~LaunchCore</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

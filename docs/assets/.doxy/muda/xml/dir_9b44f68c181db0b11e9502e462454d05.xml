@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="dir_9b44f68c181db0b11e9502e462454d05" kind="dir">
+    <compoundname>src/muda/buffer</compoundname>
+    <innerdir refid="dir_b105d52dbe330929a6f21338e69b1ba4">src/muda/buffer/agent</innerdir>
+    <innerdir refid="dir_a8e1d5e93e8295fded484e7c98517cd5">src/muda/buffer/reshape_nd</innerdir>
+    <innerfile refid="agent_8h">agent.h</innerfile>
+    <innerfile refid="buffer__2d__view_8h">buffer_2d_view.h</innerfile>
+    <innerfile refid="buffer__3d__view_8h">buffer_3d_view.h</innerfile>
+    <innerfile refid="buffer__fwd_8h">buffer_fwd.h</innerfile>
+    <innerfile refid="buffer__info__accessor_8h">buffer_info_accessor.h</innerfile>
+    <innerfile refid="buffer__launch_8h">buffer_launch.h</innerfile>
+    <innerfile refid="buffer__view_8h">buffer_view.h</innerfile>
+    <innerfile refid="device__buffer_8h">device_buffer.h</innerfile>
+    <innerfile refid="device__buffer__2d_8h">device_buffer_2d.h</innerfile>
+    <innerfile refid="device__buffer__3d_8h">device_buffer_3d.h</innerfile>
+    <innerfile refid="device__var_8h">device_var.h</innerfile>
+    <innerfile refid="graph__buffer__2d__view_8h">graph_buffer_2d_view.h</innerfile>
+    <innerfile refid="graph__buffer__3d__view_8h">graph_buffer_3d_view.h</innerfile>
+    <innerfile refid="graph__buffer__view_8h">graph_buffer_view.h</innerfile>
+    <innerfile refid="graph__var__view_8h">graph_var_view.h</innerfile>
+    <innerfile refid="var__view_8h">var_view.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/muda/buffer/"/>
+  </compounddef>
+</doxygen>

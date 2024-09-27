@@ -1,0 +1,204 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structmuda_1_1lbvh_1_1_default_morton_code_calculator" kind="struct" language="C++" prot="public">
+    <compoundname>muda::lbvh::DefaultMortonCodeCalculator</compoundname>
+    <templateparamlist>
+      <param>
+        <type>typename Real</type>
+      </param>
+      <param>
+        <type>typename Object</type>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structmuda_1_1lbvh_1_1_default_morton_code_calculator_1ac52855e6cdea57b31ba7239b79280f16" prot="public" static="no" mutable="no">
+        <type><ref refid="structmuda_1_1lbvh_1_1_a_a_b_b" kindref="compound">AABB</ref>&lt; Real &gt;</type>
+        <definition>AABB&lt;Real&gt; muda::lbvh::DefaultMortonCodeCalculator&lt; Real, Object &gt;::whole</definition>
+        <argsstring></argsstring>
+        <name>whole</name>
+        <qualifiedname>muda::lbvh::DefaultMortonCodeCalculator::whole</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/lbvh/bvh.h" line="85" column="10" bodyfile="src/muda/ext/geo/lbvh/bvh.h" bodystart="85" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="structmuda_1_1lbvh_1_1_default_morton_code_calculator_1a9f6c583be9f2b9502c96237357aa20b8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>muda::lbvh::DefaultMortonCodeCalculator&lt; Real, Object &gt;::DefaultMortonCodeCalculator</definition>
+        <argsstring>(AABB&lt; Real &gt; w)</argsstring>
+        <name>DefaultMortonCodeCalculator</name>
+        <qualifiedname>muda::lbvh::DefaultMortonCodeCalculator::DefaultMortonCodeCalculator</qualifiedname>
+        <param>
+          <type><ref refid="structmuda_1_1lbvh_1_1_a_a_b_b" kindref="compound">AABB</ref>&lt; Real &gt;</type>
+          <declname>w</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/lbvh/bvh.h" line="63" column="5" bodyfile="src/muda/ext/geo/lbvh/bvh.h" bodystart="63" bodyend="66"/>
+      </memberdef>
+      <memberdef kind="function" id="structmuda_1_1lbvh_1_1_default_morton_code_calculator_1a1bdc01ab69c7675cbe18dc19ee2c6f70" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>muda::lbvh::DefaultMortonCodeCalculator&lt; Real, Object &gt;::DefaultMortonCodeCalculator</definition>
+        <argsstring>()=default</argsstring>
+        <name>DefaultMortonCodeCalculator</name>
+        <qualifiedname>muda::lbvh::DefaultMortonCodeCalculator::DefaultMortonCodeCalculator</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/lbvh/bvh.h" line="67" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="structmuda_1_1lbvh_1_1_default_morton_code_calculator_1aebd753b8e71ab4c98af367b529a97e53" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>muda::lbvh::DefaultMortonCodeCalculator&lt; Real, Object &gt;::~DefaultMortonCodeCalculator</definition>
+        <argsstring>()=default</argsstring>
+        <name>~DefaultMortonCodeCalculator</name>
+        <qualifiedname>muda::lbvh::DefaultMortonCodeCalculator::~DefaultMortonCodeCalculator</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/lbvh/bvh.h" line="68" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="structmuda_1_1lbvh_1_1_default_morton_code_calculator_1af43704b6314a3897db1edc9ecf484dc8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>muda::lbvh::DefaultMortonCodeCalculator&lt; Real, Object &gt;::DefaultMortonCodeCalculator</definition>
+        <argsstring>(DefaultMortonCodeCalculator const &amp;)=default</argsstring>
+        <name>DefaultMortonCodeCalculator</name>
+        <qualifiedname>muda::lbvh::DefaultMortonCodeCalculator::DefaultMortonCodeCalculator</qualifiedname>
+        <param>
+          <type><ref refid="structmuda_1_1lbvh_1_1_default_morton_code_calculator" kindref="compound">DefaultMortonCodeCalculator</ref> const &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/lbvh/bvh.h" line="69" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="structmuda_1_1lbvh_1_1_default_morton_code_calculator_1ad73675529a03a1b8f2d9c28bdd698208" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>muda::lbvh::DefaultMortonCodeCalculator&lt; Real, Object &gt;::DefaultMortonCodeCalculator</definition>
+        <argsstring>(DefaultMortonCodeCalculator &amp;&amp;)=default</argsstring>
+        <name>DefaultMortonCodeCalculator</name>
+        <qualifiedname>muda::lbvh::DefaultMortonCodeCalculator::DefaultMortonCodeCalculator</qualifiedname>
+        <param>
+          <type><ref refid="structmuda_1_1lbvh_1_1_default_morton_code_calculator" kindref="compound">DefaultMortonCodeCalculator</ref> &amp;&amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/lbvh/bvh.h" line="70" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="structmuda_1_1lbvh_1_1_default_morton_code_calculator_1ada823da01d9dd5e2adcbd0b6e58d0239" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structmuda_1_1lbvh_1_1_default_morton_code_calculator" kindref="compound">DefaultMortonCodeCalculator</ref> &amp;</type>
+        <definition>DefaultMortonCodeCalculator &amp; muda::lbvh::DefaultMortonCodeCalculator&lt; Real, Object &gt;::operator=</definition>
+        <argsstring>(DefaultMortonCodeCalculator const &amp;)=default</argsstring>
+        <name>operator=</name>
+        <qualifiedname>muda::lbvh::DefaultMortonCodeCalculator::operator=</qualifiedname>
+        <param>
+          <type><ref refid="structmuda_1_1lbvh_1_1_default_morton_code_calculator" kindref="compound">DefaultMortonCodeCalculator</ref> const &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/lbvh/bvh.h" line="71" column="33"/>
+      </memberdef>
+      <memberdef kind="function" id="structmuda_1_1lbvh_1_1_default_morton_code_calculator_1ad2f3a81935be6ea58442108e7b123a03" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structmuda_1_1lbvh_1_1_default_morton_code_calculator" kindref="compound">DefaultMortonCodeCalculator</ref> &amp;</type>
+        <definition>DefaultMortonCodeCalculator &amp; muda::lbvh::DefaultMortonCodeCalculator&lt; Real, Object &gt;::operator=</definition>
+        <argsstring>(DefaultMortonCodeCalculator &amp;&amp;)=default</argsstring>
+        <name>operator=</name>
+        <qualifiedname>muda::lbvh::DefaultMortonCodeCalculator::operator=</qualifiedname>
+        <param>
+          <type><ref refid="structmuda_1_1lbvh_1_1_default_morton_code_calculator" kindref="compound">DefaultMortonCodeCalculator</ref> &amp;&amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/lbvh/bvh.h" line="72" column="33"/>
+      </memberdef>
+      <memberdef kind="function" id="structmuda_1_1lbvh_1_1_default_morton_code_calculator_1abbe49c1475e7f29ee19a7eda5144439b" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>__device__ __host__ uint32_t</type>
+        <definition>__device__ __host__ uint32_t muda::lbvh::DefaultMortonCodeCalculator&lt; Real, Object &gt;::operator()</definition>
+        <argsstring>(const Object &amp;, const AABB&lt; Real &gt; &amp;box) noexcept</argsstring>
+        <name>operator()</name>
+        <qualifiedname>muda::lbvh::DefaultMortonCodeCalculator::operator()</qualifiedname>
+        <param>
+          <type>const Object &amp;</type>
+        </param>
+        <param>
+          <type>const <ref refid="structmuda_1_1lbvh_1_1_a_a_b_b" kindref="compound">AABB</ref>&lt; Real &gt; &amp;</type>
+          <declname>box</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/geo/lbvh/bvh.h" line="74" column="41" bodyfile="src/muda/ext/geo/lbvh/bvh.h" bodystart="74" bodyend="84"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>muda::lbvh::AABB&lt; Real &gt;</label>
+        <link refid="structmuda_1_1lbvh_1_1_a_a_b_b"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>lower</edgelabel>
+          <edgelabel>upper</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>muda::lbvh::DefaultMortonCodeCalculator&lt; Real, Object &gt;</label>
+        <link refid="structmuda_1_1lbvh_1_1_default_morton_code_calculator"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>whole</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>muda::lbvh::vector_of&lt; Real &gt;</label>
+        <link refid="structmuda_1_1lbvh_1_1vector__of"/>
+      </node>
+    </collaborationgraph>
+    <location file="src/muda/ext/geo/lbvh/bvh.h" line="61" column="1" bodyfile="src/muda/ext/geo/lbvh/bvh.h" bodystart="62" bodyend="86"/>
+    <listofallmembers>
+      <member refid="structmuda_1_1lbvh_1_1_default_morton_code_calculator_1a9f6c583be9f2b9502c96237357aa20b8" prot="public" virt="non-virtual"><scope>muda::lbvh::DefaultMortonCodeCalculator</scope><name>DefaultMortonCodeCalculator</name></member>
+      <member refid="structmuda_1_1lbvh_1_1_default_morton_code_calculator_1a1bdc01ab69c7675cbe18dc19ee2c6f70" prot="public" virt="non-virtual"><scope>muda::lbvh::DefaultMortonCodeCalculator</scope><name>DefaultMortonCodeCalculator</name></member>
+      <member refid="structmuda_1_1lbvh_1_1_default_morton_code_calculator_1af43704b6314a3897db1edc9ecf484dc8" prot="public" virt="non-virtual"><scope>muda::lbvh::DefaultMortonCodeCalculator</scope><name>DefaultMortonCodeCalculator</name></member>
+      <member refid="structmuda_1_1lbvh_1_1_default_morton_code_calculator_1ad73675529a03a1b8f2d9c28bdd698208" prot="public" virt="non-virtual"><scope>muda::lbvh::DefaultMortonCodeCalculator</scope><name>DefaultMortonCodeCalculator</name></member>
+      <member refid="structmuda_1_1lbvh_1_1_default_morton_code_calculator_1abbe49c1475e7f29ee19a7eda5144439b" prot="public" virt="non-virtual"><scope>muda::lbvh::DefaultMortonCodeCalculator</scope><name>operator()</name></member>
+      <member refid="structmuda_1_1lbvh_1_1_default_morton_code_calculator_1ada823da01d9dd5e2adcbd0b6e58d0239" prot="public" virt="non-virtual"><scope>muda::lbvh::DefaultMortonCodeCalculator</scope><name>operator=</name></member>
+      <member refid="structmuda_1_1lbvh_1_1_default_morton_code_calculator_1ad2f3a81935be6ea58442108e7b123a03" prot="public" virt="non-virtual"><scope>muda::lbvh::DefaultMortonCodeCalculator</scope><name>operator=</name></member>
+      <member refid="structmuda_1_1lbvh_1_1_default_morton_code_calculator_1ac52855e6cdea57b31ba7239b79280f16" prot="public" virt="non-virtual"><scope>muda::lbvh::DefaultMortonCodeCalculator</scope><name>whole</name></member>
+      <member refid="structmuda_1_1lbvh_1_1_default_morton_code_calculator_1aebd753b8e71ab4c98af367b529a97e53" prot="public" virt="non-virtual"><scope>muda::lbvh::DefaultMortonCodeCalculator</scope><name>~DefaultMortonCodeCalculator</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

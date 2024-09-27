@@ -1,0 +1,232 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classmuda_1_1_graph_viewer" kind="class" language="C++" prot="public">
+    <compoundname>muda::GraphViewer</compoundname>
+    <basecompoundref refid="classmuda_1_1_viewer_base" prot="public" virt="non-virtual">muda::ViewerBase&lt; true &gt;</basecompoundref>
+    <sectiondef kind="friend">
+      <memberdef kind="friend" id="classmuda_1_1_graph_viewer_1ab23709c145a1c448654edf5f911bafe9" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class ComputeGraph</definition>
+        <argsstring></argsstring>
+        <name>ComputeGraph</name>
+        <qualifiedname>muda::GraphViewer::ComputeGraph</qualifiedname>
+        <param>
+          <type><ref refid="classmuda_1_1_compute_graph" kindref="compound">ComputeGraph</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/graph/graph_viewer.h" line="23" column="18" bodyfile="src/muda/graph/graph_viewer.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classmuda_1_1_graph_viewer_1a5000c15e1655cea05bfa05142af8b05f" prot="private" static="no" mutable="no">
+        <type>cudaGraphExec_t</type>
+        <definition>cudaGraphExec_t muda::GraphViewer::m_graph</definition>
+        <argsstring></argsstring>
+        <name>m_graph</name>
+        <qualifiedname>muda::GraphViewer::m_graph</qualifiedname>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/graph/graph_viewer.h" line="24" column="36" bodyfile="src/muda/graph/graph_viewer.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1_graph_viewer_1a06b488759eaeef27f12f156afc0f9b7d" prot="private" static="no" mutable="no">
+        <type><ref refid="classmuda_1_1_flags" kindref="compound">Flags</ref>&lt; GraphInstantiateFlagBit &gt;</type>
+        <definition>Flags&lt;GraphInstantiateFlagBit&gt; muda::GraphViewer::m_flags</definition>
+        <argsstring></argsstring>
+        <name>m_flags</name>
+        <qualifiedname>muda::GraphViewer::m_flags</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/graph/graph_viewer.h" line="25" column="11" bodyfile="src/muda/graph/graph_viewer.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classmuda_1_1_graph_viewer_1a4a9a284d9dd98476afcaafe51be6088a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>muda::GraphViewer::MUDA_VIEWER_COMMON_NAME</definition>
+        <argsstring>(GraphViewer)</argsstring>
+        <name>MUDA_VIEWER_COMMON_NAME</name>
+        <qualifiedname>muda::GraphViewer::MUDA_VIEWER_COMMON_NAME</qualifiedname>
+        <param>
+          <type><ref refid="classmuda_1_1_graph_viewer" kindref="compound">GraphViewer</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/graph/graph_viewer.h" line="9" column="5"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmuda_1_1_graph_viewer_1afaa2144e8bc893a3cf77abd9af383b93" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>MUDA_GENERIC</type>
+        <definition>MUDA_GENERIC muda::GraphViewer::GraphViewer</definition>
+        <argsstring>()=default</argsstring>
+        <name>GraphViewer</name>
+        <qualifiedname>muda::GraphViewer::GraphViewer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/graph/graph_viewer.h" line="12" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_graph_viewer_1a182e1418d7f2f704b819e8335b9a604d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>MUDA_GENERIC</type>
+        <definition>MUDA_GENERIC muda::GraphViewer::GraphViewer</definition>
+        <argsstring>(cudaGraphExec_t graph, Flags&lt; GraphInstantiateFlagBit &gt; flags)</argsstring>
+        <name>GraphViewer</name>
+        <qualifiedname>muda::GraphViewer::GraphViewer</qualifiedname>
+        <param>
+          <type>cudaGraphExec_t</type>
+          <declname>graph</declname>
+        </param>
+        <param>
+          <type><ref refid="classmuda_1_1_flags" kindref="compound">Flags</ref>&lt; GraphInstantiateFlagBit &gt;</type>
+          <declname>flags</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/graph/graph_viewer.h" line="13" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_graph_viewer_1a6a01d1c075253e64c852c5967c8455d9" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>MUDA_GENERIC void</type>
+        <definition>MUDA_GENERIC void muda::GraphViewer::launch</definition>
+        <argsstring>(cudaStream_t stream=nullptr) const</argsstring>
+        <name>launch</name>
+        <qualifiedname>muda::GraphViewer::launch</qualifiedname>
+        <param>
+          <type>cudaStream_t</type>
+          <declname>stream</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/graph/graph_viewer.h" line="15" column="23"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_graph_viewer_1a1c22f2198127c4c41122993187ea66ca" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>MUDA_DEVICE void</type>
+        <definition>MUDA_DEVICE void muda::GraphViewer::tail_launch</definition>
+        <argsstring>() const</argsstring>
+        <name>tail_launch</name>
+        <qualifiedname>muda::GraphViewer::tail_launch</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/graph/graph_viewer.h" line="17" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_graph_viewer_1a4e971bd123a1d1a59705bc6c7f6ace37" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>MUDA_DEVICE void</type>
+        <definition>MUDA_DEVICE void muda::GraphViewer::fire_and_forget</definition>
+        <argsstring>() const</argsstring>
+        <name>fire_and_forget</name>
+        <qualifiedname>muda::GraphViewer::fire_and_forget</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/graph/graph_viewer.h" line="18" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_graph_viewer_1a73834f8053ede9fe987684d7f91218d8" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>MUDA_GENERIC auto</type>
+        <definition>MUDA_GENERIC auto muda::GraphViewer::handle</definition>
+        <argsstring>() const</argsstring>
+        <name>handle</name>
+        <qualifiedname>muda::GraphViewer::handle</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/graph/graph_viewer.h" line="20" column="23" bodyfile="src/muda/graph/graph_viewer.h" bodystart="20" bodyend="20"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>muda::ViewerBase&lt; true &gt;</label>
+        <link refid="classmuda_1_1_viewer_base"/>
+      </node>
+      <node id="1">
+        <label>muda::GraphViewer</label>
+        <link refid="classmuda_1_1_graph_viewer"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>muda::ViewerBase&lt; true &gt;</label>
+        <link refid="classmuda_1_1_viewer_base"/>
+      </node>
+      <node id="1">
+        <label>muda::GraphViewer</label>
+        <link refid="classmuda_1_1_graph_viewer"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="src/muda/graph/graph_viewer.h" line="7" column="1" bodyfile="src/muda/graph/graph_viewer.h" bodystart="8" bodyend="26"/>
+    <listofallmembers>
+      <member refid="classmuda_1_1_viewer_base_1aa1a759a33c97b1e72b78848aeb96eb37" prot="protected" virt="non-virtual"><scope>muda::GraphViewer</scope><name>auto_const_t</name></member>
+      <member refid="classmuda_1_1_graph_viewer_1ab23709c145a1c448654edf5f911bafe9" prot="private" virt="non-virtual"><scope>muda::GraphViewer</scope><name>ComputeGraph</name></member>
+      <member refid="classmuda_1_1_viewer_base_1a1e3c7201751bec476d5f9b9c26be94b5" prot="public" virt="non-virtual"><scope>muda::GraphViewer</scope><name>copy_label</name></member>
+      <member refid="classmuda_1_1_graph_viewer_1a4e971bd123a1d1a59705bc6c7f6ace37" prot="public" virt="non-virtual"><scope>muda::GraphViewer</scope><name>fire_and_forget</name></member>
+      <member refid="classmuda_1_1_graph_viewer_1afaa2144e8bc893a3cf77abd9af383b93" prot="public" virt="non-virtual"><scope>muda::GraphViewer</scope><name>GraphViewer</name></member>
+      <member refid="classmuda_1_1_graph_viewer_1a182e1418d7f2f704b819e8335b9a604d" prot="public" virt="non-virtual"><scope>muda::GraphViewer</scope><name>GraphViewer</name></member>
+      <member refid="classmuda_1_1_graph_viewer_1a73834f8053ede9fe987684d7f91218d8" prot="public" virt="non-virtual"><scope>muda::GraphViewer</scope><name>handle</name></member>
+      <member refid="classmuda_1_1_viewer_base_1ae9e7348b91c4dc1f3fc0de8e63335576" prot="public" virt="non-virtual"><scope>muda::GraphViewer</scope><name>IsConst</name></member>
+      <member refid="classmuda_1_1_viewer_base_1adc31410f57cf34b15824f4f3fcb434a3" prot="public" virt="non-virtual"><scope>muda::GraphViewer</scope><name>IsNonConst</name></member>
+      <member refid="classmuda_1_1_viewer_base_1a35b42fb3c890f8343c551451bceab3f1" prot="public" virt="non-virtual"><scope>muda::GraphViewer</scope><name>kernel_file</name></member>
+      <member refid="classmuda_1_1_viewer_base_1a3247ca184afa57b2e00f8da9e080a2a1" prot="public" virt="non-virtual"><scope>muda::GraphViewer</scope><name>kernel_line</name></member>
+      <member refid="classmuda_1_1_viewer_base_1a9b65192d349fd93c05c8ccad4d4014d4" prot="public" virt="non-virtual"><scope>muda::GraphViewer</scope><name>kernel_name</name></member>
+      <member refid="classmuda_1_1_graph_viewer_1a6a01d1c075253e64c852c5967c8455d9" prot="public" virt="non-virtual"><scope>muda::GraphViewer</scope><name>launch</name></member>
+      <member refid="classmuda_1_1_graph_viewer_1a06b488759eaeef27f12f156afc0f9b7d" prot="private" virt="non-virtual"><scope>muda::GraphViewer</scope><name>m_flags</name></member>
+      <member refid="classmuda_1_1_graph_viewer_1a5000c15e1655cea05bfa05142af8b05f" prot="private" virt="non-virtual"><scope>muda::GraphViewer</scope><name>m_graph</name></member>
+      <member refid="classmuda_1_1_graph_viewer_1a4a9a284d9dd98476afcaafe51be6088a" prot="private" virt="non-virtual"><scope>muda::GraphViewer</scope><name>MUDA_VIEWER_COMMON_NAME</name></member>
+      <member refid="classmuda_1_1_viewer_base_1a4cb1c578b4abbf1b113e9cf7a3d771d8" prot="public" virt="non-virtual"><scope>muda::GraphViewer</scope><name>name</name></member>
+      <member refid="classmuda_1_1_viewer_base_1a57bbb7a9a3e4cb77a0a05bdee3a3e5fd" prot="protected" virt="non-virtual"><scope>muda::GraphViewer</scope><name>name</name></member>
+      <member refid="classmuda_1_1_viewer_base_1a31d6dd944a28c6d428e5e79cd7c034a0" prot="protected" virt="non-virtual"><scope>muda::GraphViewer</scope><name>name</name></member>
+      <member refid="classmuda_1_1_viewer_base_1a9447a51a53c20567fcb38fcdc275d812" prot="protected" virt="non-virtual"><scope>muda::GraphViewer</scope><name>non_const_enable_t</name></member>
+      <member refid="classmuda_1_1_viewer_base_1a8ce13df13b4a82e63c7a6230ee1e0b7c" prot="public" virt="non-virtual"><scope>muda::GraphViewer</scope><name>operator=</name></member>
+      <member refid="classmuda_1_1_viewer_base_1ac73a737a8a64ff2026adcd7bc5f2738a" prot="public" virt="non-virtual"><scope>muda::GraphViewer</scope><name>operator=</name></member>
+      <member refid="classmuda_1_1_graph_viewer_1a1c22f2198127c4c41122993187ea66ca" prot="public" virt="non-virtual"><scope>muda::GraphViewer</scope><name>tail_launch</name></member>
+      <member refid="classmuda_1_1_viewer_base_1aab07b74590e3ae50b1352372f66080f8" prot="public" virt="non-virtual"><scope>muda::GraphViewer</scope><name>ViewerBase</name></member>
+      <member refid="classmuda_1_1_viewer_base_1aac0b5cbd86bfb6653c7dddeac2907428" prot="public" virt="non-virtual"><scope>muda::GraphViewer</scope><name>ViewerBase</name></member>
+      <member refid="classmuda_1_1_viewer_base_1a70b803f760ff21c327b454f7c9fc0ef3" prot="public" virt="non-virtual"><scope>muda::GraphViewer</scope><name>ViewerBase</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

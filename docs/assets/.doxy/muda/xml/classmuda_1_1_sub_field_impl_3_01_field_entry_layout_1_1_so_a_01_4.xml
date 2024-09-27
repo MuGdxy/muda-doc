@@ -1,0 +1,304 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classmuda_1_1_sub_field_impl_3_01_field_entry_layout_1_1_so_a_01_4" kind="class" language="C++" prot="public">
+    <compoundname>muda::SubFieldImpl&lt; FieldEntryLayout::SoA &gt;</compoundname>
+    <basecompoundref refid="classmuda_1_1_sub_field_interface" prot="public" virt="non-virtual">muda::SubFieldInterface</basecompoundref>
+    <templateparamlist>
+    </templateparamlist>
+    <sectiondef kind="friend">
+      <memberdef kind="friend" id="classmuda_1_1_sub_field_impl_3_01_field_entry_layout_1_1_so_a_01_4_1a7254b5de6e6918ac3991e168100e3202" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class SubField</definition>
+        <argsstring></argsstring>
+        <name>SubField</name>
+        <qualifiedname>muda::SubFieldImpl&lt; FieldEntryLayout::SoA &gt;::SubField</qualifiedname>
+        <param>
+          <type><ref refid="classmuda_1_1_sub_field" kindref="compound">SubField</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/field/sub_field/soa_sub_field.h" line="19" column="18" bodyfile="src/muda/ext/field/sub_field/soa_sub_field.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classmuda_1_1_sub_field_impl_3_01_field_entry_layout_1_1_so_a_01_4_1ad4d1e3d6adc0956913de4e8d1e908984" prot="private" static="no" mutable="no">
+        <type><ref refid="classmuda_1_1_device_buffer" kindref="compound">DeviceBuffer</ref>&lt; <ref refid="structmuda_1_1details_1_1_so_a_copy_map" kindref="compound">details::SoACopyMap</ref> &gt;</type>
+        <definition>DeviceBuffer&lt;details::SoACopyMap&gt; muda::SubFieldImpl&lt; FieldEntryLayout::SoA &gt;::m_copy_map_buffer</definition>
+        <argsstring></argsstring>
+        <name>m_copy_map_buffer</name>
+        <qualifiedname>muda::SubFieldImpl&lt; FieldEntryLayout::SoA &gt;::m_copy_map_buffer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/field/sub_field/soa_sub_field.h" line="21" column="18" bodyfile="src/muda/ext/field/sub_field/soa_sub_field.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1_sub_field_impl_3_01_field_entry_layout_1_1_so_a_01_4_1ad92a02bfa1cfec4b19f527314f5aeee5" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="structmuda_1_1details_1_1_so_a_copy_map" kindref="compound">details::SoACopyMap</ref> &gt;</type>
+        <definition>std::vector&lt;details::SoACopyMap&gt; muda::SubFieldImpl&lt; FieldEntryLayout::SoA &gt;::m_h_copy_map_buffer</definition>
+        <argsstring></argsstring>
+        <name>m_h_copy_map_buffer</name>
+        <qualifiedname>muda::SubFieldImpl&lt; FieldEntryLayout::SoA &gt;::m_h_copy_map_buffer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/field/sub_field/soa_sub_field.h" line="22" column="18" bodyfile="src/muda/ext/field/sub_field/soa_sub_field.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1_sub_field_impl_3_01_field_entry_layout_1_1_so_a_01_4_1aad7e26d68c247546d22f80dd02419a96" prot="private" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t muda::SubFieldImpl&lt; FieldEntryLayout::SoA &gt;::m_base_struct_stride</definition>
+        <argsstring></argsstring>
+        <name>m_base_struct_stride</name>
+        <qualifiedname>muda::SubFieldImpl&lt; FieldEntryLayout::SoA &gt;::m_base_struct_stride</qualifiedname>
+        <initializer>= ~0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/field/sub_field/soa_sub_field.h" line="23" column="39" bodyfile="src/muda/ext/field/sub_field/soa_sub_field.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classmuda_1_1_sub_field_impl_3_01_field_entry_layout_1_1_so_a_01_4_1a7a60831f2b08c6daad99c3810d73a77d" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void muda::SubFieldImpl&lt; FieldEntryLayout::SoA &gt;::build_impl</definition>
+        <argsstring>() override</argsstring>
+        <name>build_impl</name>
+        <qualifiedname>muda::SubFieldImpl&lt; FieldEntryLayout::SoA &gt;::build_impl</qualifiedname>
+        <reimplements refid="classmuda_1_1_sub_field_interface_1a5226ee97bd164420392b99259cda7e74">build_impl</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/field/sub_field/soa_sub_field.h" line="26" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_sub_field_impl_3_01_field_entry_layout_1_1_so_a_01_4_1a59b2b8c1e060b71a7c4b1d08edf03228" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>size_t</type>
+        <definition>virtual size_t muda::SubFieldImpl&lt; FieldEntryLayout::SoA &gt;::require_total_buffer_byte_size</definition>
+        <argsstring>(size_t element_count) override</argsstring>
+        <name>require_total_buffer_byte_size</name>
+        <qualifiedname>muda::SubFieldImpl&lt; FieldEntryLayout::SoA &gt;::require_total_buffer_byte_size</qualifiedname>
+        <reimplements refid="classmuda_1_1_sub_field_interface_1acba932c31d0cc0fe82af06806b3f73c1">require_total_buffer_byte_size</reimplements>
+        <param>
+          <type>size_t</type>
+          <declname>element_count</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/field/sub_field/soa_sub_field.h" line="27" column="20"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_sub_field_impl_3_01_field_entry_layout_1_1_so_a_01_4_1a6690f4d58ae3deed9b4cce805951bf6e" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void muda::SubFieldImpl&lt; FieldEntryLayout::SoA &gt;::calculate_new_cores</definition>
+        <argsstring>(std::byte *byte_buffer, size_t total_bytes, size_t element_count, span&lt; FieldEntryCore &gt; new_cores) override</argsstring>
+        <name>calculate_new_cores</name>
+        <qualifiedname>muda::SubFieldImpl&lt; FieldEntryLayout::SoA &gt;::calculate_new_cores</qualifiedname>
+        <reimplements refid="classmuda_1_1_sub_field_interface_1addd016c746b1fb92f793706f7f1ab6c5">calculate_new_cores</reimplements>
+        <param>
+          <type>std::byte *</type>
+          <declname>byte_buffer</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>total_bytes</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>element_count</declname>
+        </param>
+        <param>
+          <type>span&lt; <ref refid="classmuda_1_1_field_entry_core" kindref="compound">FieldEntryCore</ref> &gt;</type>
+          <declname>new_cores</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/field/sub_field/soa_sub_field.h" line="28" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_sub_field_impl_3_01_field_entry_layout_1_1_so_a_01_4_1a0c4cd0687e75d692b202b4d5d829dc1c" prot="protected" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool muda::SubFieldImpl&lt; FieldEntryLayout::SoA &gt;::allow_inplace_shrink</definition>
+        <argsstring>() const</argsstring>
+        <name>allow_inplace_shrink</name>
+        <qualifiedname>muda::SubFieldImpl&lt; FieldEntryLayout::SoA &gt;::allow_inplace_shrink</qualifiedname>
+        <reimplements refid="classmuda_1_1_sub_field_interface_1afa40d8fc8420a840017c5d63b4f1a545">allow_inplace_shrink</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/field/sub_field/soa_sub_field.h" line="32" column="18" bodyfile="src/muda/ext/field/sub_field/soa_sub_field.h" bodystart="32" bodyend="32"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmuda_1_1_sub_field_impl_3_01_field_entry_layout_1_1_so_a_01_4_1a529cf32ffab22b4a38e57c70c48f641f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual muda::SubFieldImpl&lt; FieldEntryLayout::SoA &gt;::~SubFieldImpl</definition>
+        <argsstring>() override=default</argsstring>
+        <name>~SubFieldImpl</name>
+        <qualifiedname>muda::SubFieldImpl&lt; FieldEntryLayout::SoA &gt;::~SubFieldImpl</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/field/sub_field/soa_sub_field.h" line="36" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_sub_field_impl_3_01_field_entry_layout_1_1_so_a_01_4_1aa9fda9fe2f3dcbf68ecfd51e94d88de2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>muda::SubFieldInterface::SubFieldInterface</definition>
+        <argsstring>(Field &amp;field) MUDA_NOEXCEPT</argsstring>
+        <name>SubFieldInterface</name>
+        <qualifiedname>muda::SubFieldImpl&lt; FieldEntryLayout::SoA &gt;::SubFieldInterface</qualifiedname>
+        <param>
+          <type><ref refid="classmuda_1_1_field" kindref="compound">Field</ref> &amp;</type>
+          <declname>field</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/field/sub_field/soa_sub_field.h" line="35" column="5" bodyfile="src/muda/ext/field/sub_field_interface.h" bodystart="54" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_sub_field_impl_3_01_field_entry_layout_1_1_so_a_01_4_1a31d590102a1eb395b09459bf72553e4d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>muda::SubFieldInterface::SubFieldInterface</definition>
+        <argsstring>(const SubFieldInterface &amp;)=delete</argsstring>
+        <name>SubFieldInterface</name>
+        <qualifiedname>muda::SubFieldImpl&lt; FieldEntryLayout::SoA &gt;::SubFieldInterface</qualifiedname>
+        <param>
+          <type>const <ref refid="classmuda_1_1_sub_field_interface" kindref="compound">SubFieldInterface</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/field/sub_field/soa_sub_field.h" line="35" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_sub_field_impl_3_01_field_entry_layout_1_1_so_a_01_4_1a08aa21ec4d85eafb911f6b39f697891a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>muda::SubFieldInterface::SubFieldInterface</definition>
+        <argsstring>(SubFieldInterface &amp;&amp;)=delete</argsstring>
+        <name>SubFieldInterface</name>
+        <qualifiedname>muda::SubFieldImpl&lt; FieldEntryLayout::SoA &gt;::SubFieldInterface</qualifiedname>
+        <param>
+          <type><ref refid="classmuda_1_1_sub_field_interface" kindref="compound">SubFieldInterface</ref> &amp;&amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/field/sub_field/soa_sub_field.h" line="35" column="5"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>muda::SubFieldImpl&lt; FieldEntryLayout::SoA &gt;</label>
+        <link refid="classmuda_1_1_sub_field_impl_3_01_field_entry_layout_1_1_so_a_01_4"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>muda::SubFieldInterface</label>
+        <link refid="classmuda_1_1_sub_field_interface"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>muda::Field</label>
+        <link refid="classmuda_1_1_field"/>
+      </node>
+      <node id="5">
+        <label>muda::FieldBuildOptions</label>
+        <link refid="classmuda_1_1_field_build_options"/>
+      </node>
+      <node id="4">
+        <label>muda::FieldEntryLayoutInfo</label>
+        <link refid="classmuda_1_1_field_entry_layout_info"/>
+      </node>
+      <node id="1">
+        <label>muda::SubFieldImpl&lt; FieldEntryLayout::SoA &gt;</label>
+        <link refid="classmuda_1_1_sub_field_impl_3_01_field_entry_layout_1_1_so_a_01_4"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>muda::SubFieldInterface</label>
+        <link refid="classmuda_1_1_sub_field_interface"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>m_field</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>m_layout_info</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>m_build_options</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="src/muda/ext/field/sub_field/soa_sub_field.h" line="17" column="1" bodyfile="src/muda/ext/field/sub_field/soa_sub_field.h" bodystart="18" bodyend="37"/>
+    <listofallmembers>
+      <member refid="classmuda_1_1_sub_field_interface_1a3fc0dd3b99b8453a880f0d80db6d54b5" prot="protected" virt="non-virtual"><scope>muda::SubFieldImpl&lt; FieldEntryLayout::SoA &gt;</scope><name>align</name></member>
+      <member refid="classmuda_1_1_sub_field_impl_3_01_field_entry_layout_1_1_so_a_01_4_1a0c4cd0687e75d692b202b4d5d829dc1c" prot="protected" virt="virtual"><scope>muda::SubFieldImpl&lt; FieldEntryLayout::SoA &gt;</scope><name>allow_inplace_shrink</name></member>
+      <member refid="classmuda_1_1_sub_field_impl_3_01_field_entry_layout_1_1_so_a_01_4_1a7a60831f2b08c6daad99c3810d73a77d" prot="protected" virt="virtual"><scope>muda::SubFieldImpl&lt; FieldEntryLayout::SoA &gt;</scope><name>build_impl</name></member>
+      <member refid="classmuda_1_1_sub_field_interface_1aa42279b1540fc6f005bccc9b5564e799" prot="protected" virt="non-virtual"><scope>muda::SubFieldImpl&lt; FieldEntryLayout::SoA &gt;</scope><name>build_options</name></member>
+      <member refid="classmuda_1_1_sub_field_impl_3_01_field_entry_layout_1_1_so_a_01_4_1a6690f4d58ae3deed9b4cce805951bf6e" prot="protected" virt="virtual"><scope>muda::SubFieldImpl&lt; FieldEntryLayout::SoA &gt;</scope><name>calculate_new_cores</name></member>
+      <member refid="classmuda_1_1_sub_field_interface_1af0fb3944e567a659dd438eb01be46fc7" prot="protected" virt="non-virtual"><scope>muda::SubFieldImpl&lt; FieldEntryLayout::SoA &gt;</scope><name>layout_info</name></member>
+      <member refid="classmuda_1_1_sub_field_impl_3_01_field_entry_layout_1_1_so_a_01_4_1aad7e26d68c247546d22f80dd02419a96" prot="private" virt="non-virtual"><scope>muda::SubFieldImpl&lt; FieldEntryLayout::SoA &gt;</scope><name>m_base_struct_stride</name></member>
+      <member refid="classmuda_1_1_sub_field_interface_1a491f5d733068a4e339f79cb323407414" prot="protected" virt="non-virtual"><scope>muda::SubFieldImpl&lt; FieldEntryLayout::SoA &gt;</scope><name>m_build_options</name></member>
+      <member refid="classmuda_1_1_sub_field_impl_3_01_field_entry_layout_1_1_so_a_01_4_1ad4d1e3d6adc0956913de4e8d1e908984" prot="private" virt="non-virtual"><scope>muda::SubFieldImpl&lt; FieldEntryLayout::SoA &gt;</scope><name>m_copy_map_buffer</name></member>
+      <member refid="classmuda_1_1_sub_field_interface_1ae0e0f4716b83ed57665ac2a5bf096ac1" prot="protected" virt="non-virtual"><scope>muda::SubFieldImpl&lt; FieldEntryLayout::SoA &gt;</scope><name>m_data_buffer</name></member>
+      <member refid="classmuda_1_1_sub_field_interface_1aebbfb9b800ca342144d0514db9bbb5b8" prot="protected" virt="non-virtual"><scope>muda::SubFieldImpl&lt; FieldEntryLayout::SoA &gt;</scope><name>m_data_buffer_size</name></member>
+      <member refid="classmuda_1_1_sub_field_interface_1a8bb6724cf590474b9782b6d2aeae753f" prot="protected" virt="non-virtual"><scope>muda::SubFieldImpl&lt; FieldEntryLayout::SoA &gt;</scope><name>m_entries</name></member>
+      <member refid="classmuda_1_1_sub_field_interface_1a66ec73c5eaa1650b4cceab38ba3b5a31" prot="protected" virt="non-virtual"><scope>muda::SubFieldImpl&lt; FieldEntryLayout::SoA &gt;</scope><name>m_field</name></member>
+      <member refid="classmuda_1_1_sub_field_impl_3_01_field_entry_layout_1_1_so_a_01_4_1ad92a02bfa1cfec4b19f527314f5aeee5" prot="private" virt="non-virtual"><scope>muda::SubFieldImpl&lt; FieldEntryLayout::SoA &gt;</scope><name>m_h_copy_map_buffer</name></member>
+      <member refid="classmuda_1_1_sub_field_interface_1a4437b87f88c913c0e588faa6d4150abf" prot="protected" virt="non-virtual"><scope>muda::SubFieldImpl&lt; FieldEntryLayout::SoA &gt;</scope><name>m_layout_info</name></member>
+      <member refid="classmuda_1_1_sub_field_interface_1a6846633d41b84c1cdcc1edc4b763e75d" prot="protected" virt="non-virtual"><scope>muda::SubFieldImpl&lt; FieldEntryLayout::SoA &gt;</scope><name>m_name_to_index</name></member>
+      <member refid="classmuda_1_1_sub_field_interface_1a7a9d72014be4ae40572049c9cb5c2dd6" prot="protected" virt="non-virtual"><scope>muda::SubFieldImpl&lt; FieldEntryLayout::SoA &gt;</scope><name>m_num_elements</name></member>
+      <member refid="classmuda_1_1_sub_field_interface_1a9fd2884300ce3a19c6ac2d5713d447ba" prot="protected" virt="non-virtual"><scope>muda::SubFieldImpl&lt; FieldEntryLayout::SoA &gt;</scope><name>m_struct_stride</name></member>
+      <member refid="classmuda_1_1_sub_field_interface_1a0afe964cdc136a92870a9fb83ae43465" prot="protected" virt="non-virtual"><scope>muda::SubFieldImpl&lt; FieldEntryLayout::SoA &gt;</scope><name>num_elements</name></member>
+      <member refid="classmuda_1_1_sub_field_interface_1aa6add4bdad97ad9880aae28c27322774" prot="public" virt="non-virtual"><scope>muda::SubFieldImpl&lt; FieldEntryLayout::SoA &gt;</scope><name>operator=</name></member>
+      <member refid="classmuda_1_1_sub_field_interface_1a3edc4b6850c53a3094d1d0f4e225ff61" prot="public" virt="non-virtual"><scope>muda::SubFieldImpl&lt; FieldEntryLayout::SoA &gt;</scope><name>operator=</name></member>
+      <member refid="classmuda_1_1_sub_field_impl_3_01_field_entry_layout_1_1_so_a_01_4_1a59b2b8c1e060b71a7c4b1d08edf03228" prot="protected" virt="virtual"><scope>muda::SubFieldImpl&lt; FieldEntryLayout::SoA &gt;</scope><name>require_total_buffer_byte_size</name></member>
+      <member refid="classmuda_1_1_sub_field_interface_1a7de1a3570a009d02f0730c63a8d6ddd9" prot="protected" virt="non-virtual"><scope>muda::SubFieldImpl&lt; FieldEntryLayout::SoA &gt;</scope><name>round_up</name></member>
+      <member refid="classmuda_1_1_sub_field_impl_3_01_field_entry_layout_1_1_so_a_01_4_1a7254b5de6e6918ac3991e168100e3202" prot="private" virt="non-virtual"><scope>muda::SubFieldImpl&lt; FieldEntryLayout::SoA &gt;</scope><name>SubField</name></member>
+      <member refid="classmuda_1_1_sub_field_impl_3_01_field_entry_layout_1_1_so_a_01_4_1aa9fda9fe2f3dcbf68ecfd51e94d88de2" prot="public" virt="non-virtual"><scope>muda::SubFieldImpl&lt; FieldEntryLayout::SoA &gt;</scope><name>SubFieldInterface</name></member>
+      <member refid="classmuda_1_1_sub_field_impl_3_01_field_entry_layout_1_1_so_a_01_4_1a31d590102a1eb395b09459bf72553e4d" prot="public" virt="non-virtual"><scope>muda::SubFieldImpl&lt; FieldEntryLayout::SoA &gt;</scope><name>SubFieldInterface</name></member>
+      <member refid="classmuda_1_1_sub_field_impl_3_01_field_entry_layout_1_1_so_a_01_4_1a08aa21ec4d85eafb911f6b39f697891a" prot="public" virt="non-virtual"><scope>muda::SubFieldImpl&lt; FieldEntryLayout::SoA &gt;</scope><name>SubFieldInterface</name></member>
+      <member refid="classmuda_1_1_sub_field_impl_3_01_field_entry_layout_1_1_so_a_01_4_1a529cf32ffab22b4a38e57c70c48f641f" prot="public" virt="virtual"><scope>muda::SubFieldImpl&lt; FieldEntryLayout::SoA &gt;</scope><name>~SubFieldImpl</name></member>
+      <member refid="classmuda_1_1_sub_field_interface_1a5d5145b2bcc2180d9caabfd5866370e7" prot="public" virt="virtual"><scope>muda::SubFieldImpl&lt; FieldEntryLayout::SoA &gt;</scope><name>~SubFieldInterface</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

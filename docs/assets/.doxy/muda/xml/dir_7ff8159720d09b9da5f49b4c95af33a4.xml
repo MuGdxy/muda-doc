@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="dir_7ff8159720d09b9da5f49b4c95af33a4" kind="dir">
+    <compoundname>src/muda/compute_graph/nodes</compoundname>
+    <innerfile refid="compute__graph__catpure__node_8h">compute_graph_catpure_node.h</innerfile>
+    <innerfile refid="compute__graph__event__node_8h">compute_graph_event_node.h</innerfile>
+    <innerfile refid="compute__graph__kernel__node_8h">compute_graph_kernel_node.h</innerfile>
+    <innerfile refid="compute__graph__memory__node_8h">compute_graph_memory_node.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/muda/compute_graph/nodes/"/>
+  </compounddef>
+</doxygen>

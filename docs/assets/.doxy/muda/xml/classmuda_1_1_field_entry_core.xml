@@ -1,0 +1,808 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classmuda_1_1_field_entry_core" kind="class" language="C++" prot="public">
+    <compoundname>muda::FieldEntryCore</compoundname>
+    <sectiondef kind="friend">
+      <memberdef kind="friend" id="classmuda_1_1_field_entry_core_1a0415bd594baec68c7972f37b6d6d3986" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class FieldEntryBase</definition>
+        <argsstring></argsstring>
+        <name>FieldEntryBase</name>
+        <qualifiedname>muda::FieldEntryCore::FieldEntryBase</qualifiedname>
+        <param>
+          <type><ref refid="classmuda_1_1_field_entry_base" kindref="compound">FieldEntryBase</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/field/field_entry_core.h" line="16" column="18" bodyfile="src/muda/ext/field/field_entry_core.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="classmuda_1_1_field_entry_core_1a8b5089d3b516ceeeff5f29c78a0c58dd" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>FieldEntryLayout</type>
+            <declname>layout</declname>
+            <defname>layout</defname>
+          </param>
+        </templateparamlist>
+        <type>class</type>
+        <definition>friend class SubFieldImpl</definition>
+        <argsstring></argsstring>
+        <name>SubFieldImpl</name>
+        <qualifiedname>muda::FieldEntryCore::SubFieldImpl</qualifiedname>
+        <param>
+          <type><ref refid="classmuda_1_1_sub_field_impl" kindref="compound">SubFieldImpl</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/field/field_entry_core.h" line="18" column="18" bodyfile="src/muda/ext/field/field_entry_core.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="classmuda_1_1_field_entry_core_1ad3e9d9903b52ffaf4880e7e3199669c4" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class SubFieldInterface</definition>
+        <argsstring></argsstring>
+        <name>SubFieldInterface</name>
+        <qualifiedname>muda::FieldEntryCore::SubFieldInterface</qualifiedname>
+        <param>
+          <type><ref refid="classmuda_1_1_sub_field_interface" kindref="compound">SubFieldInterface</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/field/field_entry_core.h" line="19" column="18" bodyfile="src/muda/ext/field/field_entry_core.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classmuda_1_1_field_entry_core_1a6729893190fbba0b3ec4812101bac362" prot="private" static="no" mutable="yes">
+        <type>std::byte *</type>
+        <definition>std::byte* muda::FieldEntryCore::m_buffer</definition>
+        <argsstring></argsstring>
+        <name>m_buffer</name>
+        <qualifiedname>muda::FieldEntryCore::m_buffer</qualifiedname>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/field/field_entry_core.h" line="93" column="27" bodyfile="src/muda/ext/field/field_entry_core.h" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1_field_entry_core_1ae17a23682db4a3a27466cf109f0785cf" prot="private" static="no" mutable="no">
+        <type><ref refid="classmuda_1_1details_1_1_string_pointer" kindref="compound">details::StringPointer</ref></type>
+        <definition>details::StringPointer muda::FieldEntryCore::m_name</definition>
+        <argsstring></argsstring>
+        <name>m_name</name>
+        <qualifiedname>muda::FieldEntryCore::m_name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/field/field_entry_core.h" line="94" column="28" bodyfile="src/muda/ext/field/field_entry_core.h" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1_field_entry_core_1ae3df9c9fb02486365741247a70b1e671" prot="private" static="no" mutable="no">
+        <type><ref refid="classmuda_1_1_field_entry_base_data" kindref="compound">FieldEntryBaseData</ref></type>
+        <definition>FieldEntryBaseData muda::FieldEntryCore::m_info</definition>
+        <argsstring></argsstring>
+        <name>m_info</name>
+        <qualifiedname>muda::FieldEntryCore::m_info</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/field/field_entry_core.h" line="95" column="28" bodyfile="src/muda/ext/field/field_entry_core.h" bodystart="95" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmuda_1_1_field_entry_core_1a842806b82ef1c90517fb6ad136ab9366" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>MUDA_GENERIC</type>
+        <definition>MUDA_GENERIC muda::FieldEntryCore::FieldEntryCore</definition>
+        <argsstring>()</argsstring>
+        <name>FieldEntryCore</name>
+        <qualifiedname>muda::FieldEntryCore::FieldEntryCore</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/field/field_entry_core.h" line="22" column="18" bodyfile="src/muda/ext/field/field_entry_core.h" bodystart="22" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_field_entry_core_1aa975003dce8d3aa69ae6a4f572329e4b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>MUDA_GENERIC</type>
+        <definition>MUDA_GENERIC muda::FieldEntryCore::FieldEntryCore</definition>
+        <argsstring>(std::byte *buffer, const FieldEntryBaseData &amp;info, details::StringPointer name)</argsstring>
+        <name>FieldEntryCore</name>
+        <qualifiedname>muda::FieldEntryCore::FieldEntryCore</qualifiedname>
+        <param>
+          <type>std::byte *</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classmuda_1_1_field_entry_base_data" kindref="compound">FieldEntryBaseData</ref> &amp;</type>
+          <declname>info</declname>
+        </param>
+        <param>
+          <type><ref refid="classmuda_1_1details_1_1_string_pointer" kindref="compound">details::StringPointer</ref></type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/field/field_entry_core.h" line="24" column="18" bodyfile="src/muda/ext/field/field_entry_core.h" bodystart="24" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_field_entry_core_1ae6cfbc2bc50326f06d1d04f680932a0d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>MUDA_GENERIC</type>
+        <definition>MUDA_GENERIC muda::FieldEntryCore::FieldEntryCore</definition>
+        <argsstring>(const FieldEntryCore &amp;rhs)=default</argsstring>
+        <name>FieldEntryCore</name>
+        <qualifiedname>muda::FieldEntryCore::FieldEntryCore</qualifiedname>
+        <param>
+          <type>const <ref refid="classmuda_1_1_field_entry_core" kindref="compound">FieldEntryCore</ref> &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/field/field_entry_core.h" line="33" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_field_entry_core_1a1aad5431459b7e2fb02b101006614656" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>MUDA_GENERIC T &amp;</type>
+        <definition>MUDA_GENERIC T &amp; muda::FieldEntryCore::cast</definition>
+        <argsstring>(std::byte *data)</argsstring>
+        <name>cast</name>
+        <qualifiedname>muda::FieldEntryCore::cast</qualifiedname>
+        <param>
+          <type>std::byte *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/field/field_entry_core.h" line="36" column="20"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_field_entry_core_1aa1d40da70e869abd04ad6691ab18973b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>MUDA_GENERIC const T &amp;</type>
+        <definition>MUDA_GENERIC const T &amp; muda::FieldEntryCore::cast</definition>
+        <argsstring>(const std::byte *data) const</argsstring>
+        <name>cast</name>
+        <qualifiedname>muda::FieldEntryCore::cast</qualifiedname>
+        <param>
+          <type>const std::byte *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/field/field_entry_core.h" line="38" column="26"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_field_entry_core_1a2f931b1fe38ccd13b176c772d519147f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>MUDA_GENERIC uint32_t</type>
+        <definition>MUDA_GENERIC uint32_t muda::FieldEntryCore::aosoa_inner_index</definition>
+        <argsstring>(int i) const</argsstring>
+        <name>aosoa_inner_index</name>
+        <qualifiedname>muda::FieldEntryCore::aosoa_inner_index</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/field/field_entry_core.h" line="41" column="27"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_field_entry_core_1a336914df9de7927276d876ae029a4067" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>MUDA_GENERIC std::byte *</type>
+        <definition>MUDA_GENERIC std::byte * muda::FieldEntryCore::aosoa_struct_begin</definition>
+        <argsstring>(int i) const</argsstring>
+        <name>aosoa_struct_begin</name>
+        <qualifiedname>muda::FieldEntryCore::aosoa_struct_begin</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/field/field_entry_core.h" line="42" column="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_field_entry_core_1a584f9884aca3e4c471e7d3b2de889a94" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>MUDA_GENERIC std::byte *</type>
+        <definition>MUDA_GENERIC std::byte * muda::FieldEntryCore::aosoa_elem_addr</definition>
+        <argsstring>(int i) const</argsstring>
+        <name>aosoa_elem_addr</name>
+        <qualifiedname>muda::FieldEntryCore::aosoa_elem_addr</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/field/field_entry_core.h" line="43" column="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_field_entry_core_1a5f437b288596015ce549be81e5ced43e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>MUDA_GENERIC std::byte *</type>
+        <definition>MUDA_GENERIC std::byte * muda::FieldEntryCore::aosoa_elem_addr</definition>
+        <argsstring>(int i, int j) const</argsstring>
+        <name>aosoa_elem_addr</name>
+        <qualifiedname>muda::FieldEntryCore::aosoa_elem_addr</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>j</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/field/field_entry_core.h" line="44" column="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_field_entry_core_1aeab378e2efe3b6f2caae3aa560a7cb7a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>MUDA_GENERIC std::byte *</type>
+        <definition>MUDA_GENERIC std::byte * muda::FieldEntryCore::aosoa_elem_addr</definition>
+        <argsstring>(int i, int row_index, int col_index) const</argsstring>
+        <name>aosoa_elem_addr</name>
+        <qualifiedname>muda::FieldEntryCore::aosoa_elem_addr</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>row_index</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>col_index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/field/field_entry_core.h" line="45" column="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_field_entry_core_1a0536f83cc951f9e533267d9f7b5ab27b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>MUDA_GENERIC std::byte *</type>
+        <definition>MUDA_GENERIC std::byte * muda::FieldEntryCore::soa_elem_addr</definition>
+        <argsstring>(int i) const</argsstring>
+        <name>soa_elem_addr</name>
+        <qualifiedname>muda::FieldEntryCore::soa_elem_addr</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/field/field_entry_core.h" line="48" column="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_field_entry_core_1abc4472f052e5103aecbb36d743cc4c3a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>MUDA_GENERIC std::byte *</type>
+        <definition>MUDA_GENERIC std::byte * muda::FieldEntryCore::soa_elem_addr</definition>
+        <argsstring>(int i, int j) const</argsstring>
+        <name>soa_elem_addr</name>
+        <qualifiedname>muda::FieldEntryCore::soa_elem_addr</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>j</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/field/field_entry_core.h" line="49" column="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_field_entry_core_1aaf4c6be9014576bc99e66ae022b20f41" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>MUDA_GENERIC std::byte *</type>
+        <definition>MUDA_GENERIC std::byte * muda::FieldEntryCore::soa_elem_addr</definition>
+        <argsstring>(int i, int row_index, int col_index) const</argsstring>
+        <name>soa_elem_addr</name>
+        <qualifiedname>muda::FieldEntryCore::soa_elem_addr</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>row_index</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>col_index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/field/field_entry_core.h" line="50" column="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_field_entry_core_1adb9ddabcc2d0538f14d636d0a8d2a61f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>MUDA_GENERIC std::byte *</type>
+        <definition>MUDA_GENERIC std::byte * muda::FieldEntryCore::aos_struct_begin</definition>
+        <argsstring>(int i) const</argsstring>
+        <name>aos_struct_begin</name>
+        <qualifiedname>muda::FieldEntryCore::aos_struct_begin</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/field/field_entry_core.h" line="53" column="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_field_entry_core_1a0d7f6c1c8b6834718c35c5af1e04bcca" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>MUDA_GENERIC std::byte *</type>
+        <definition>MUDA_GENERIC std::byte * muda::FieldEntryCore::aos_elem_addr</definition>
+        <argsstring>(int i) const</argsstring>
+        <name>aos_elem_addr</name>
+        <qualifiedname>muda::FieldEntryCore::aos_elem_addr</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/field/field_entry_core.h" line="54" column="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_field_entry_core_1a44533d6a3cc9b04b2426bc13947fb640" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>MUDA_GENERIC std::byte *</type>
+        <definition>MUDA_GENERIC std::byte * muda::FieldEntryCore::aos_elem_addr</definition>
+        <argsstring>(int i, int j) const</argsstring>
+        <name>aos_elem_addr</name>
+        <qualifiedname>muda::FieldEntryCore::aos_elem_addr</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>j</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/field/field_entry_core.h" line="55" column="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_field_entry_core_1af623cdd6be4ec4f71ec1a856050d2679" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>MUDA_GENERIC std::byte *</type>
+        <definition>MUDA_GENERIC std::byte * muda::FieldEntryCore::aos_elem_addr</definition>
+        <argsstring>(int i, int row_index, int col_index) const</argsstring>
+        <name>aos_elem_addr</name>
+        <qualifiedname>muda::FieldEntryCore::aos_elem_addr</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>row_index</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>col_index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/field/field_entry_core.h" line="56" column="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_field_entry_core_1afa48038033009656b0d1b41d9af34ef9" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>FieldEntryLayout</type>
+            <declname>Layout</declname>
+            <defname>Layout</defname>
+          </param>
+        </templateparamlist>
+        <type>MUDA_GENERIC std::byte *</type>
+        <definition>MUDA_GENERIC std::byte * muda::FieldEntryCore::elem_addr</definition>
+        <argsstring>(int i) const</argsstring>
+        <name>elem_addr</name>
+        <qualifiedname>muda::FieldEntryCore::elem_addr</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/field/field_entry_core.h" line="60" column="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_field_entry_core_1ae7cecaba6905f5b49173b59fe166d8de" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+          <param>
+            <type>FieldEntryLayout</type>
+            <declname>Layout</declname>
+            <defname>Layout</defname>
+          </param>
+        </templateparamlist>
+        <type>MUDA_GENERIC T *</type>
+        <definition>MUDA_GENERIC T * muda::FieldEntryCore::data</definition>
+        <argsstring>(int i) const</argsstring>
+        <name>data</name>
+        <qualifiedname>muda::FieldEntryCore::data</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/field/field_entry_core.h" line="62" column="20" bodyfile="src/muda/ext/field/field_entry_core.h" bodystart="62" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_field_entry_core_1a2918679dbd2ff76e985c497dc52694b2" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>FieldEntryLayout</type>
+            <declname>Layout</declname>
+            <defname>Layout</defname>
+          </param>
+        </templateparamlist>
+        <type>MUDA_GENERIC std::byte *</type>
+        <definition>MUDA_GENERIC std::byte * muda::FieldEntryCore::elem_addr</definition>
+        <argsstring>(int i, int j) const</argsstring>
+        <name>elem_addr</name>
+        <qualifiedname>muda::FieldEntryCore::elem_addr</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>j</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/field/field_entry_core.h" line="68" column="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_field_entry_core_1a1097d8239e34f0232a4c1b9a3da5d3ad" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+          <param>
+            <type>FieldEntryLayout</type>
+            <declname>Layout</declname>
+            <defname>Layout</defname>
+          </param>
+        </templateparamlist>
+        <type>MUDA_GENERIC T *</type>
+        <definition>MUDA_GENERIC T * muda::FieldEntryCore::data</definition>
+        <argsstring>(int i, int j) const</argsstring>
+        <name>data</name>
+        <qualifiedname>muda::FieldEntryCore::data</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>j</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/field/field_entry_core.h" line="70" column="20" bodyfile="src/muda/ext/field/field_entry_core.h" bodystart="70" bodyend="73"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_field_entry_core_1aa716e8aa200d5048349d53a8ceb90dbb" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>FieldEntryLayout</type>
+            <declname>Layout</declname>
+            <defname>Layout</defname>
+          </param>
+        </templateparamlist>
+        <type>MUDA_GENERIC std::byte *</type>
+        <definition>MUDA_GENERIC std::byte * muda::FieldEntryCore::elem_addr</definition>
+        <argsstring>(int i, int row_index, int col_index) const</argsstring>
+        <name>elem_addr</name>
+        <qualifiedname>muda::FieldEntryCore::elem_addr</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>row_index</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>col_index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/field/field_entry_core.h" line="76" column="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_field_entry_core_1a407d058672e7b5cd455e413af4ff3891" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+          <param>
+            <type>FieldEntryLayout</type>
+            <declname>Layout</declname>
+            <defname>Layout</defname>
+          </param>
+        </templateparamlist>
+        <type>MUDA_GENERIC T *</type>
+        <definition>MUDA_GENERIC T * muda::FieldEntryCore::data</definition>
+        <argsstring>(int i, int row_index, int col_index) const</argsstring>
+        <name>data</name>
+        <qualifiedname>muda::FieldEntryCore::data</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>row_index</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>col_index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/field/field_entry_core.h" line="78" column="20" bodyfile="src/muda/ext/field/field_entry_core.h" bodystart="78" bodyend="81"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_field_entry_core_1a695eac45ae49f1d7fe84dbca94c4f96d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>MUDA_GENERIC auto</type>
+        <definition>MUDA_GENERIC auto muda::FieldEntryCore::layout_info</definition>
+        <argsstring>() const</argsstring>
+        <name>layout_info</name>
+        <qualifiedname>muda::FieldEntryCore::layout_info</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/field/field_entry_core.h" line="83" column="23" bodyfile="src/muda/ext/field/field_entry_core.h" bodystart="83" bodyend="83"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_field_entry_core_1a5a76da7aaf7d4e8dc730efdc1475d8a2" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>MUDA_GENERIC auto</type>
+        <definition>MUDA_GENERIC auto muda::FieldEntryCore::layout</definition>
+        <argsstring>() const</argsstring>
+        <name>layout</name>
+        <qualifiedname>muda::FieldEntryCore::layout</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/field/field_entry_core.h" line="84" column="23" bodyfile="src/muda/ext/field/field_entry_core.h" bodystart="84" bodyend="84"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_field_entry_core_1a6382c1071faff8366413ba5fc1e3b29e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>MUDA_GENERIC auto</type>
+        <definition>MUDA_GENERIC auto muda::FieldEntryCore::count</definition>
+        <argsstring>() const</argsstring>
+        <name>count</name>
+        <qualifiedname>muda::FieldEntryCore::count</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/field/field_entry_core.h" line="85" column="23" bodyfile="src/muda/ext/field/field_entry_core.h" bodystart="85" bodyend="85"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_field_entry_core_1a885d2caf89b9b525039c4d19840acaeb" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>MUDA_GENERIC auto</type>
+        <definition>MUDA_GENERIC auto muda::FieldEntryCore::elem_byte_size</definition>
+        <argsstring>() const</argsstring>
+        <name>elem_byte_size</name>
+        <qualifiedname>muda::FieldEntryCore::elem_byte_size</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/field/field_entry_core.h" line="86" column="23" bodyfile="src/muda/ext/field/field_entry_core.h" bodystart="86" bodyend="86"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_field_entry_core_1a1ab342053e2051bbf84e54e7d547cb96" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>MUDA_GENERIC auto</type>
+        <definition>MUDA_GENERIC auto muda::FieldEntryCore::shape</definition>
+        <argsstring>() const</argsstring>
+        <name>shape</name>
+        <qualifiedname>muda::FieldEntryCore::shape</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/field/field_entry_core.h" line="87" column="23" bodyfile="src/muda/ext/field/field_entry_core.h" bodystart="87" bodyend="87"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_field_entry_core_1a38cbce1eba5f393014758ed83a1f3240" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>MUDA_GENERIC auto</type>
+        <definition>MUDA_GENERIC auto muda::FieldEntryCore::struct_stride</definition>
+        <argsstring>() const</argsstring>
+        <name>struct_stride</name>
+        <qualifiedname>muda::FieldEntryCore::struct_stride</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/field/field_entry_core.h" line="88" column="23" bodyfile="src/muda/ext/field/field_entry_core.h" bodystart="88" bodyend="88"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_field_entry_core_1a9659b88a800fe9897b60b8a27916aed0" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>MUDA_GENERIC auto</type>
+        <definition>MUDA_GENERIC auto muda::FieldEntryCore::name</definition>
+        <argsstring>() const</argsstring>
+        <name>name</name>
+        <qualifiedname>muda::FieldEntryCore::name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/field/field_entry_core.h" line="89" column="23" bodyfile="src/muda/ext/field/field_entry_core.h" bodystart="89" bodyend="89"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_field_entry_core_1afa5811bc48ad854bfd36f8d52cd3071b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>MUDA_GENERIC auto</type>
+        <definition>MUDA_GENERIC auto muda::FieldEntryCore::name_string_pointer</definition>
+        <argsstring>() const</argsstring>
+        <name>name_string_pointer</name>
+        <qualifiedname>muda::FieldEntryCore::name_string_pointer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/field/field_entry_core.h" line="90" column="23" bodyfile="src/muda/ext/field/field_entry_core.h" bodystart="90" bodyend="90"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/muda/ext/field/field_entry_core.h" line="14" column="1" bodyfile="src/muda/ext/field/field_entry_core.h" bodystart="15" bodyend="96"/>
+    <listofallmembers>
+      <member refid="classmuda_1_1_field_entry_core_1a0d7f6c1c8b6834718c35c5af1e04bcca" prot="public" virt="non-virtual"><scope>muda::FieldEntryCore</scope><name>aos_elem_addr</name></member>
+      <member refid="classmuda_1_1_field_entry_core_1a44533d6a3cc9b04b2426bc13947fb640" prot="public" virt="non-virtual"><scope>muda::FieldEntryCore</scope><name>aos_elem_addr</name></member>
+      <member refid="classmuda_1_1_field_entry_core_1af623cdd6be4ec4f71ec1a856050d2679" prot="public" virt="non-virtual"><scope>muda::FieldEntryCore</scope><name>aos_elem_addr</name></member>
+      <member refid="classmuda_1_1_field_entry_core_1adb9ddabcc2d0538f14d636d0a8d2a61f" prot="public" virt="non-virtual"><scope>muda::FieldEntryCore</scope><name>aos_struct_begin</name></member>
+      <member refid="classmuda_1_1_field_entry_core_1a584f9884aca3e4c471e7d3b2de889a94" prot="public" virt="non-virtual"><scope>muda::FieldEntryCore</scope><name>aosoa_elem_addr</name></member>
+      <member refid="classmuda_1_1_field_entry_core_1a5f437b288596015ce549be81e5ced43e" prot="public" virt="non-virtual"><scope>muda::FieldEntryCore</scope><name>aosoa_elem_addr</name></member>
+      <member refid="classmuda_1_1_field_entry_core_1aeab378e2efe3b6f2caae3aa560a7cb7a" prot="public" virt="non-virtual"><scope>muda::FieldEntryCore</scope><name>aosoa_elem_addr</name></member>
+      <member refid="classmuda_1_1_field_entry_core_1a2f931b1fe38ccd13b176c772d519147f" prot="public" virt="non-virtual"><scope>muda::FieldEntryCore</scope><name>aosoa_inner_index</name></member>
+      <member refid="classmuda_1_1_field_entry_core_1a336914df9de7927276d876ae029a4067" prot="public" virt="non-virtual"><scope>muda::FieldEntryCore</scope><name>aosoa_struct_begin</name></member>
+      <member refid="classmuda_1_1_field_entry_core_1a1aad5431459b7e2fb02b101006614656" prot="public" virt="non-virtual"><scope>muda::FieldEntryCore</scope><name>cast</name></member>
+      <member refid="classmuda_1_1_field_entry_core_1aa1d40da70e869abd04ad6691ab18973b" prot="public" virt="non-virtual"><scope>muda::FieldEntryCore</scope><name>cast</name></member>
+      <member refid="classmuda_1_1_field_entry_core_1a6382c1071faff8366413ba5fc1e3b29e" prot="public" virt="non-virtual"><scope>muda::FieldEntryCore</scope><name>count</name></member>
+      <member refid="classmuda_1_1_field_entry_core_1ae7cecaba6905f5b49173b59fe166d8de" prot="public" virt="non-virtual"><scope>muda::FieldEntryCore</scope><name>data</name></member>
+      <member refid="classmuda_1_1_field_entry_core_1a1097d8239e34f0232a4c1b9a3da5d3ad" prot="public" virt="non-virtual"><scope>muda::FieldEntryCore</scope><name>data</name></member>
+      <member refid="classmuda_1_1_field_entry_core_1a407d058672e7b5cd455e413af4ff3891" prot="public" virt="non-virtual"><scope>muda::FieldEntryCore</scope><name>data</name></member>
+      <member refid="classmuda_1_1_field_entry_core_1afa48038033009656b0d1b41d9af34ef9" prot="public" virt="non-virtual"><scope>muda::FieldEntryCore</scope><name>elem_addr</name></member>
+      <member refid="classmuda_1_1_field_entry_core_1a2918679dbd2ff76e985c497dc52694b2" prot="public" virt="non-virtual"><scope>muda::FieldEntryCore</scope><name>elem_addr</name></member>
+      <member refid="classmuda_1_1_field_entry_core_1aa716e8aa200d5048349d53a8ceb90dbb" prot="public" virt="non-virtual"><scope>muda::FieldEntryCore</scope><name>elem_addr</name></member>
+      <member refid="classmuda_1_1_field_entry_core_1a885d2caf89b9b525039c4d19840acaeb" prot="public" virt="non-virtual"><scope>muda::FieldEntryCore</scope><name>elem_byte_size</name></member>
+      <member refid="classmuda_1_1_field_entry_core_1a0415bd594baec68c7972f37b6d6d3986" prot="private" virt="non-virtual"><scope>muda::FieldEntryCore</scope><name>FieldEntryBase</name></member>
+      <member refid="classmuda_1_1_field_entry_core_1a842806b82ef1c90517fb6ad136ab9366" prot="public" virt="non-virtual"><scope>muda::FieldEntryCore</scope><name>FieldEntryCore</name></member>
+      <member refid="classmuda_1_1_field_entry_core_1aa975003dce8d3aa69ae6a4f572329e4b" prot="public" virt="non-virtual"><scope>muda::FieldEntryCore</scope><name>FieldEntryCore</name></member>
+      <member refid="classmuda_1_1_field_entry_core_1ae6cfbc2bc50326f06d1d04f680932a0d" prot="public" virt="non-virtual"><scope>muda::FieldEntryCore</scope><name>FieldEntryCore</name></member>
+      <member refid="classmuda_1_1_field_entry_core_1a5a76da7aaf7d4e8dc730efdc1475d8a2" prot="public" virt="non-virtual"><scope>muda::FieldEntryCore</scope><name>layout</name></member>
+      <member refid="classmuda_1_1_field_entry_core_1a695eac45ae49f1d7fe84dbca94c4f96d" prot="public" virt="non-virtual"><scope>muda::FieldEntryCore</scope><name>layout_info</name></member>
+      <member refid="classmuda_1_1_field_entry_core_1a6729893190fbba0b3ec4812101bac362" prot="private" virt="non-virtual"><scope>muda::FieldEntryCore</scope><name>m_buffer</name></member>
+      <member refid="classmuda_1_1_field_entry_core_1ae3df9c9fb02486365741247a70b1e671" prot="private" virt="non-virtual"><scope>muda::FieldEntryCore</scope><name>m_info</name></member>
+      <member refid="classmuda_1_1_field_entry_core_1ae17a23682db4a3a27466cf109f0785cf" prot="private" virt="non-virtual"><scope>muda::FieldEntryCore</scope><name>m_name</name></member>
+      <member refid="classmuda_1_1_field_entry_core_1a9659b88a800fe9897b60b8a27916aed0" prot="public" virt="non-virtual"><scope>muda::FieldEntryCore</scope><name>name</name></member>
+      <member refid="classmuda_1_1_field_entry_core_1afa5811bc48ad854bfd36f8d52cd3071b" prot="public" virt="non-virtual"><scope>muda::FieldEntryCore</scope><name>name_string_pointer</name></member>
+      <member refid="classmuda_1_1_field_entry_core_1a1ab342053e2051bbf84e54e7d547cb96" prot="public" virt="non-virtual"><scope>muda::FieldEntryCore</scope><name>shape</name></member>
+      <member refid="classmuda_1_1_field_entry_core_1a0536f83cc951f9e533267d9f7b5ab27b" prot="public" virt="non-virtual"><scope>muda::FieldEntryCore</scope><name>soa_elem_addr</name></member>
+      <member refid="classmuda_1_1_field_entry_core_1abc4472f052e5103aecbb36d743cc4c3a" prot="public" virt="non-virtual"><scope>muda::FieldEntryCore</scope><name>soa_elem_addr</name></member>
+      <member refid="classmuda_1_1_field_entry_core_1aaf4c6be9014576bc99e66ae022b20f41" prot="public" virt="non-virtual"><scope>muda::FieldEntryCore</scope><name>soa_elem_addr</name></member>
+      <member refid="classmuda_1_1_field_entry_core_1a38cbce1eba5f393014758ed83a1f3240" prot="public" virt="non-virtual"><scope>muda::FieldEntryCore</scope><name>struct_stride</name></member>
+      <member refid="classmuda_1_1_field_entry_core_1a8b5089d3b516ceeeff5f29c78a0c58dd" prot="private" virt="non-virtual"><scope>muda::FieldEntryCore</scope><name>SubFieldImpl</name></member>
+      <member refid="classmuda_1_1_field_entry_core_1ad3e9d9903b52ffaf4880e7e3199669c4" prot="private" virt="non-virtual"><scope>muda::FieldEntryCore</scope><name>SubFieldInterface</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

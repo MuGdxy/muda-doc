@@ -1,0 +1,487 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classmuda_1_1_device_dense_vector" kind="class" language="C++" prot="public">
+    <compoundname>muda::DeviceDenseVector</compoundname>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classmuda_1_1_device_dense_vector_1abd7fba08623fc68857bb1e98dcf62ccf" prot="private" static="no" mutable="no">
+        <type><ref refid="classmuda_1_1_device_buffer" kindref="compound">muda::DeviceBuffer</ref>&lt; T &gt;</type>
+        <definition>muda::DeviceBuffer&lt;T&gt; muda::DeviceDenseVector&lt; T &gt;::m_data</definition>
+        <argsstring></argsstring>
+        <name>m_data</name>
+        <qualifiedname>muda::DeviceDenseVector::m_data</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/device_dense_vector.h" line="20" column="24" bodyfile="src/muda/ext/linear_system/device_dense_vector.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1_device_dense_vector_1a0761bc5845e4a5c3ec900b482ecd0e91" prot="private" static="no" mutable="no">
+        <type>cusparseDnVecDescr_t</type>
+        <definition>cusparseDnVecDescr_t muda::DeviceDenseVector&lt; T &gt;::m_descr</definition>
+        <argsstring></argsstring>
+        <name>m_descr</name>
+        <qualifiedname>muda::DeviceDenseVector::m_descr</qualifiedname>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/device_dense_vector.h" line="21" column="27" bodyfile="src/muda/ext/linear_system/device_dense_vector.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmuda_1_1_device_dense_vector_1ac20646386993c46542e1ee6fab4af90e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>muda::DeviceDenseVector&lt; T &gt;::DeviceDenseVector</definition>
+        <argsstring>()=default</argsstring>
+        <name>DeviceDenseVector</name>
+        <qualifiedname>muda::DeviceDenseVector::DeviceDenseVector</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/device_dense_vector.h" line="24" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_device_dense_vector_1aa3a4e086557831c492bbe992885e097e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>muda::DeviceDenseVector&lt; T &gt;::DeviceDenseVector</definition>
+        <argsstring>(size_t size)</argsstring>
+        <name>DeviceDenseVector</name>
+        <qualifiedname>muda::DeviceDenseVector::DeviceDenseVector</qualifiedname>
+        <param>
+          <type>size_t</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/device_dense_vector.h" line="25" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_device_dense_vector_1a89ddf98587d3185698e14f45fbe5c0e8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>muda::DeviceDenseVector&lt; T &gt;::~DeviceDenseVector</definition>
+        <argsstring>()</argsstring>
+        <name>~DeviceDenseVector</name>
+        <qualifiedname>muda::DeviceDenseVector::~DeviceDenseVector</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/device_dense_vector.h" line="26" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_device_dense_vector_1a250ba81bef35fe2bb0e5c2db5abb70dd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>muda::DeviceDenseVector&lt; T &gt;::DeviceDenseVector</definition>
+        <argsstring>(const DeviceDenseVector &amp;)</argsstring>
+        <name>DeviceDenseVector</name>
+        <qualifiedname>muda::DeviceDenseVector::DeviceDenseVector</qualifiedname>
+        <param>
+          <type>const <ref refid="classmuda_1_1_device_dense_vector" kindref="compound">DeviceDenseVector</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/device_dense_vector.h" line="28" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_device_dense_vector_1ad73997584b43ae0a3f24ccfcf2cd5a13" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>muda::DeviceDenseVector&lt; T &gt;::DeviceDenseVector</definition>
+        <argsstring>(DeviceDenseVector &amp;&amp;)</argsstring>
+        <name>DeviceDenseVector</name>
+        <qualifiedname>muda::DeviceDenseVector::DeviceDenseVector</qualifiedname>
+        <param>
+          <type><ref refid="classmuda_1_1_device_dense_vector" kindref="compound">DeviceDenseVector</ref> &amp;&amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/device_dense_vector.h" line="29" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_device_dense_vector_1a7311f43f57f19b33a6aa5e38a3b71611" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classmuda_1_1_device_dense_vector" kindref="compound">DeviceDenseVector</ref> &amp;</type>
+        <definition>DeviceDenseVector &amp; muda::DeviceDenseVector&lt; T &gt;::operator=</definition>
+        <argsstring>(const DeviceDenseVector &amp;)</argsstring>
+        <name>operator=</name>
+        <qualifiedname>muda::DeviceDenseVector::operator=</qualifiedname>
+        <param>
+          <type>const <ref refid="classmuda_1_1_device_dense_vector" kindref="compound">DeviceDenseVector</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/device_dense_vector.h" line="30" column="23"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_device_dense_vector_1aa98871211475aff6da7e7e8bdc93d69b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classmuda_1_1_device_dense_vector" kindref="compound">DeviceDenseVector</ref> &amp;</type>
+        <definition>DeviceDenseVector &amp; muda::DeviceDenseVector&lt; T &gt;::operator=</definition>
+        <argsstring>(DeviceDenseVector &amp;&amp;)</argsstring>
+        <name>operator=</name>
+        <qualifiedname>muda::DeviceDenseVector::operator=</qualifiedname>
+        <param>
+          <type><ref refid="classmuda_1_1_device_dense_vector" kindref="compound">DeviceDenseVector</ref> &amp;&amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/device_dense_vector.h" line="31" column="23"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_device_dense_vector_1aecff5e1c76041eaf28231601c101d268" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void muda::DeviceDenseVector&lt; T &gt;::reserve</definition>
+        <argsstring>(size_t size)</argsstring>
+        <name>reserve</name>
+        <qualifiedname>muda::DeviceDenseVector::reserve</qualifiedname>
+        <param>
+          <type>size_t</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/device_dense_vector.h" line="33" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_device_dense_vector_1a75e293ad603fa942d96b6cb92b629377" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void muda::DeviceDenseVector&lt; T &gt;::resize</definition>
+        <argsstring>(size_t size)</argsstring>
+        <name>resize</name>
+        <qualifiedname>muda::DeviceDenseVector::resize</qualifiedname>
+        <param>
+          <type>size_t</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/device_dense_vector.h" line="34" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_device_dense_vector_1a302fa0df0bf160ab20db2d0384c8a1d2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void muda::DeviceDenseVector&lt; T &gt;::fill</definition>
+        <argsstring>(T value)</argsstring>
+        <name>fill</name>
+        <qualifiedname>muda::DeviceDenseVector::fill</qualifiedname>
+        <param>
+          <type>T</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/device_dense_vector.h" line="35" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_device_dense_vector_1a8ffb6e5afa9e3ca478083ae579a8180d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void muda::DeviceDenseVector&lt; T &gt;::copy_to</definition>
+        <argsstring>(Eigen::VectorX&lt; T &gt; &amp;vec) const</argsstring>
+        <name>copy_to</name>
+        <qualifiedname>muda::DeviceDenseVector::copy_to</qualifiedname>
+        <param>
+          <type>Eigen::VectorX&lt; T &gt; &amp;</type>
+          <declname>vec</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/device_dense_vector.h" line="36" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_device_dense_vector_1ae170f0a1de4281322ef6893bb0615bb8" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void muda::DeviceDenseVector&lt; T &gt;::copy_to</definition>
+        <argsstring>(std::vector&lt; T &gt; &amp;vec) const</argsstring>
+        <name>copy_to</name>
+        <qualifiedname>muda::DeviceDenseVector::copy_to</qualifiedname>
+        <param>
+          <type>std::vector&lt; T &gt; &amp;</type>
+          <declname>vec</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/device_dense_vector.h" line="37" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_device_dense_vector_1a6dd491c08b3f092075220fa431bc1ee3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>muda::DeviceDenseVector&lt; T &gt;::DeviceDenseVector</definition>
+        <argsstring>(const Eigen::VectorX&lt; T &gt; &amp;vec)</argsstring>
+        <name>DeviceDenseVector</name>
+        <qualifiedname>muda::DeviceDenseVector::DeviceDenseVector</qualifiedname>
+        <param>
+          <type>const Eigen::VectorX&lt; T &gt; &amp;</type>
+          <declname>vec</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/device_dense_vector.h" line="39" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_device_dense_vector_1a47b6a3e54d43e7fa35ce1dbf4244afa8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classmuda_1_1_device_dense_vector" kindref="compound">DeviceDenseVector</ref> &amp;</type>
+        <definition>DeviceDenseVector &amp; muda::DeviceDenseVector&lt; T &gt;::operator=</definition>
+        <argsstring>(const Eigen::VectorX&lt; T &gt; &amp;vec)</argsstring>
+        <name>operator=</name>
+        <qualifiedname>muda::DeviceDenseVector::operator=</qualifiedname>
+        <param>
+          <type>const Eigen::VectorX&lt; T &gt; &amp;</type>
+          <declname>vec</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/device_dense_vector.h" line="40" column="23"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_device_dense_vector_1af1376bffa4178c64de627847edd40bc8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classmuda_1_1_dense_vector_viewer" kindref="compound">DenseVectorViewer</ref>&lt; T &gt;</type>
+        <definition>DenseVectorViewer&lt; T &gt; muda::DeviceDenseVector&lt; T &gt;::viewer</definition>
+        <argsstring>()</argsstring>
+        <name>viewer</name>
+        <qualifiedname>muda::DeviceDenseVector::viewer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/device_dense_vector.h" line="42" column="24" bodyfile="src/muda/ext/linear_system/device_dense_vector.h" bodystart="42" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_device_dense_vector_1a79743552e95fa357c1f3f00df7d3f4ec" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classmuda_1_1_c_dense_vector_viewer" kindref="compound">CDenseVectorViewer</ref>&lt; T &gt;</type>
+        <definition>CDenseVectorViewer&lt; T &gt; muda::DeviceDenseVector&lt; T &gt;::viewer</definition>
+        <argsstring>() const</argsstring>
+        <name>viewer</name>
+        <qualifiedname>muda::DeviceDenseVector::viewer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/device_dense_vector.h" line="43" column="24" bodyfile="src/muda/ext/linear_system/device_dense_vector.h" bodystart="43" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_device_dense_vector_1ad595057ae487e8f994c7d688e3db8e7b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto muda::DeviceDenseVector&lt; T &gt;::capacity</definition>
+        <argsstring>() const</argsstring>
+        <name>capacity</name>
+        <qualifiedname>muda::DeviceDenseVector::capacity</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/device_dense_vector.h" line="45" column="10" bodyfile="src/muda/ext/linear_system/device_dense_vector.h" bodystart="45" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_device_dense_vector_1a3538feb619dec0f1121024c0b196f437" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto muda::DeviceDenseVector&lt; T &gt;::size</definition>
+        <argsstring>() const</argsstring>
+        <name>size</name>
+        <qualifiedname>muda::DeviceDenseVector::size</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/device_dense_vector.h" line="46" column="10" bodyfile="src/muda/ext/linear_system/device_dense_vector.h" bodystart="46" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_device_dense_vector_1a509fb0a2ea81de8d970afc37fab26967" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto muda::DeviceDenseVector&lt; T &gt;::buffer_view</definition>
+        <argsstring>() const</argsstring>
+        <name>buffer_view</name>
+        <qualifiedname>muda::DeviceDenseVector::buffer_view</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/device_dense_vector.h" line="47" column="10" bodyfile="src/muda/ext/linear_system/device_dense_vector.h" bodystart="47" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_device_dense_vector_1ac46f59b28189cc1e8ca6cbd540228461" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto muda::DeviceDenseVector&lt; T &gt;::buffer_view</definition>
+        <argsstring>()</argsstring>
+        <name>buffer_view</name>
+        <qualifiedname>muda::DeviceDenseVector::buffer_view</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/device_dense_vector.h" line="48" column="10" bodyfile="src/muda/ext/linear_system/device_dense_vector.h" bodystart="48" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_device_dense_vector_1af6275969393bc2a1462d311badc436e4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classmuda_1_1_dense_vector_view_base" kindref="compound">CDenseVectorView</ref>&lt; T &gt;</type>
+        <definition>CDenseVectorView&lt; T &gt; muda::DeviceDenseVector&lt; T &gt;::view</definition>
+        <argsstring>() const</argsstring>
+        <name>view</name>
+        <qualifiedname>muda::DeviceDenseVector::view</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/device_dense_vector.h" line="50" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_device_dense_vector_1a0140e0b5eec08db012bf911b00d2c49a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classmuda_1_1_dense_vector_view_base" kindref="compound">DenseVectorView</ref>&lt; T &gt;</type>
+        <definition>DenseVectorView&lt; T &gt; muda::DeviceDenseVector&lt; T &gt;::view</definition>
+        <argsstring>()</argsstring>
+        <name>view</name>
+        <qualifiedname>muda::DeviceDenseVector::view</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/device_dense_vector.h" line="51" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_device_dense_vector_1a0c30d24e50209941b9d6a14ace1ca5b1" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classmuda_1_1_dense_vector_view_base" kindref="compound">CDenseVectorView</ref>&lt; T &gt;</type>
+        <definition>CDenseVectorView&lt; T &gt; muda::DeviceDenseVector&lt; T &gt;::cview</definition>
+        <argsstring>() const</argsstring>
+        <name>cview</name>
+        <qualifiedname>muda::DeviceDenseVector::cview</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/device_dense_vector.h" line="52" column="22" bodyfile="src/muda/ext/linear_system/device_dense_vector.h" bodystart="52" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_device_dense_vector_1acceb0c1eba639b79b5665235e10da908" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>muda::DeviceDenseVector&lt; T &gt;::operator CDenseVectorView&lt; T &gt;</definition>
+        <argsstring>() const</argsstring>
+        <name>operator CDenseVectorView&lt; T &gt;</name>
+        <qualifiedname>muda::DeviceDenseVector::operator CDenseVectorView&lt; T &gt;</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/device_dense_vector.h" line="54" column="5" bodyfile="src/muda/ext/linear_system/device_dense_vector.h" bodystart="54" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_device_dense_vector_1abd1c60ea874fc0fd02effa1880fe84eb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>muda::DeviceDenseVector&lt; T &gt;::operator DenseVectorView&lt; T &gt;</definition>
+        <argsstring>()</argsstring>
+        <name>operator DenseVectorView&lt; T &gt;</name>
+        <qualifiedname>muda::DeviceDenseVector::operator DenseVectorView&lt; T &gt;</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/device_dense_vector.h" line="55" column="5" bodyfile="src/muda/ext/linear_system/device_dense_vector.h" bodystart="55" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_device_dense_vector_1a3edf2184456c4fddcdb8c574ff1310e9" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>cusparseDnVecDescr_t</type>
+        <definition>cusparseDnVecDescr_t muda::DeviceDenseVector&lt; T &gt;::descr</definition>
+        <argsstring>() const</argsstring>
+        <name>descr</name>
+        <qualifiedname>muda::DeviceDenseVector::descr</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/device_dense_vector.h" line="57" column="26" bodyfile="src/muda/ext/linear_system/device_dense_vector.h" bodystart="57" bodyend="57"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/muda/ext/linear_system/device_dense_vector.h" line="15" column="1" bodyfile="src/muda/ext/linear_system/device_dense_vector.h" bodystart="16" bodyend="58"/>
+    <listofallmembers>
+      <member refid="classmuda_1_1_device_dense_vector_1a509fb0a2ea81de8d970afc37fab26967" prot="public" virt="non-virtual"><scope>muda::DeviceDenseVector</scope><name>buffer_view</name></member>
+      <member refid="classmuda_1_1_device_dense_vector_1ac46f59b28189cc1e8ca6cbd540228461" prot="public" virt="non-virtual"><scope>muda::DeviceDenseVector</scope><name>buffer_view</name></member>
+      <member refid="classmuda_1_1_device_dense_vector_1ad595057ae487e8f994c7d688e3db8e7b" prot="public" virt="non-virtual"><scope>muda::DeviceDenseVector</scope><name>capacity</name></member>
+      <member refid="classmuda_1_1_device_dense_vector_1a8ffb6e5afa9e3ca478083ae579a8180d" prot="public" virt="non-virtual"><scope>muda::DeviceDenseVector</scope><name>copy_to</name></member>
+      <member refid="classmuda_1_1_device_dense_vector_1ae170f0a1de4281322ef6893bb0615bb8" prot="public" virt="non-virtual"><scope>muda::DeviceDenseVector</scope><name>copy_to</name></member>
+      <member refid="classmuda_1_1_device_dense_vector_1a0c30d24e50209941b9d6a14ace1ca5b1" prot="public" virt="non-virtual"><scope>muda::DeviceDenseVector</scope><name>cview</name></member>
+      <member refid="classmuda_1_1_device_dense_vector_1a3edf2184456c4fddcdb8c574ff1310e9" prot="public" virt="non-virtual"><scope>muda::DeviceDenseVector</scope><name>descr</name></member>
+      <member refid="classmuda_1_1_device_dense_vector_1ac20646386993c46542e1ee6fab4af90e" prot="public" virt="non-virtual"><scope>muda::DeviceDenseVector</scope><name>DeviceDenseVector</name></member>
+      <member refid="classmuda_1_1_device_dense_vector_1aa3a4e086557831c492bbe992885e097e" prot="public" virt="non-virtual"><scope>muda::DeviceDenseVector</scope><name>DeviceDenseVector</name></member>
+      <member refid="classmuda_1_1_device_dense_vector_1a250ba81bef35fe2bb0e5c2db5abb70dd" prot="public" virt="non-virtual"><scope>muda::DeviceDenseVector</scope><name>DeviceDenseVector</name></member>
+      <member refid="classmuda_1_1_device_dense_vector_1ad73997584b43ae0a3f24ccfcf2cd5a13" prot="public" virt="non-virtual"><scope>muda::DeviceDenseVector</scope><name>DeviceDenseVector</name></member>
+      <member refid="classmuda_1_1_device_dense_vector_1a6dd491c08b3f092075220fa431bc1ee3" prot="public" virt="non-virtual"><scope>muda::DeviceDenseVector</scope><name>DeviceDenseVector</name></member>
+      <member refid="classmuda_1_1_device_dense_vector_1a302fa0df0bf160ab20db2d0384c8a1d2" prot="public" virt="non-virtual"><scope>muda::DeviceDenseVector</scope><name>fill</name></member>
+      <member refid="classmuda_1_1_device_dense_vector_1abd7fba08623fc68857bb1e98dcf62ccf" prot="private" virt="non-virtual"><scope>muda::DeviceDenseVector</scope><name>m_data</name></member>
+      <member refid="classmuda_1_1_device_dense_vector_1a0761bc5845e4a5c3ec900b482ecd0e91" prot="private" virt="non-virtual"><scope>muda::DeviceDenseVector</scope><name>m_descr</name></member>
+      <member refid="classmuda_1_1_device_dense_vector_1acceb0c1eba639b79b5665235e10da908" prot="public" virt="non-virtual"><scope>muda::DeviceDenseVector</scope><name>operator CDenseVectorView&lt; T &gt;</name></member>
+      <member refid="classmuda_1_1_device_dense_vector_1abd1c60ea874fc0fd02effa1880fe84eb" prot="public" virt="non-virtual"><scope>muda::DeviceDenseVector</scope><name>operator DenseVectorView&lt; T &gt;</name></member>
+      <member refid="classmuda_1_1_device_dense_vector_1a7311f43f57f19b33a6aa5e38a3b71611" prot="public" virt="non-virtual"><scope>muda::DeviceDenseVector</scope><name>operator=</name></member>
+      <member refid="classmuda_1_1_device_dense_vector_1aa98871211475aff6da7e7e8bdc93d69b" prot="public" virt="non-virtual"><scope>muda::DeviceDenseVector</scope><name>operator=</name></member>
+      <member refid="classmuda_1_1_device_dense_vector_1a47b6a3e54d43e7fa35ce1dbf4244afa8" prot="public" virt="non-virtual"><scope>muda::DeviceDenseVector</scope><name>operator=</name></member>
+      <member refid="classmuda_1_1_device_dense_vector_1aecff5e1c76041eaf28231601c101d268" prot="public" virt="non-virtual"><scope>muda::DeviceDenseVector</scope><name>reserve</name></member>
+      <member refid="classmuda_1_1_device_dense_vector_1a75e293ad603fa942d96b6cb92b629377" prot="public" virt="non-virtual"><scope>muda::DeviceDenseVector</scope><name>resize</name></member>
+      <member refid="classmuda_1_1_device_dense_vector_1a3538feb619dec0f1121024c0b196f437" prot="public" virt="non-virtual"><scope>muda::DeviceDenseVector</scope><name>size</name></member>
+      <member refid="classmuda_1_1_device_dense_vector_1af6275969393bc2a1462d311badc436e4" prot="public" virt="non-virtual"><scope>muda::DeviceDenseVector</scope><name>view</name></member>
+      <member refid="classmuda_1_1_device_dense_vector_1a0140e0b5eec08db012bf911b00d2c49a" prot="public" virt="non-virtual"><scope>muda::DeviceDenseVector</scope><name>view</name></member>
+      <member refid="classmuda_1_1_device_dense_vector_1af1376bffa4178c64de627847edd40bc8" prot="public" virt="non-virtual"><scope>muda::DeviceDenseVector</scope><name>viewer</name></member>
+      <member refid="classmuda_1_1_device_dense_vector_1a79743552e95fa357c1f3f00df7d3f4ec" prot="public" virt="non-virtual"><scope>muda::DeviceDenseVector</scope><name>viewer</name></member>
+      <member refid="classmuda_1_1_device_dense_vector_1a89ddf98587d3185698e14f45fbe5c0e8" prot="public" virt="non-virtual"><scope>muda::DeviceDenseVector</scope><name>~DeviceDenseVector</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

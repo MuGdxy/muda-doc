@@ -1,0 +1,279 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classmuda_1_1_compute_graph_graphviz_options" kind="class" language="C++" prot="public">
+    <compoundname>muda::ComputeGraphGraphvizOptions</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classmuda_1_1_compute_graph_graphviz_options_1aa97f2c0d9247196e5a4d9db26e111ee8" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool muda::ComputeGraphGraphvizOptions::show_vars</definition>
+        <argsstring></argsstring>
+        <name>show_vars</name>
+        <qualifiedname>muda::ComputeGraphGraphvizOptions::show_vars</qualifiedname>
+        <initializer>= true</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/compute_graph/graphviz_options.h" line="8" column="10" bodyfile="src/muda/compute_graph/graphviz_options.h" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1_compute_graph_graphviz_options_1ac924f59b6c279e6e933c84ea2583477d" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool muda::ComputeGraphGraphvizOptions::show_nodes</definition>
+        <argsstring></argsstring>
+        <name>show_nodes</name>
+        <qualifiedname>muda::ComputeGraphGraphvizOptions::show_nodes</qualifiedname>
+        <initializer>= true</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/compute_graph/graphviz_options.h" line="9" column="10" bodyfile="src/muda/compute_graph/graphviz_options.h" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1_compute_graph_graphviz_options_1a9eb7e05c40d14dc91bca9545f09131d7" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool muda::ComputeGraphGraphvizOptions::as_subgraph</definition>
+        <argsstring></argsstring>
+        <name>as_subgraph</name>
+        <qualifiedname>muda::ComputeGraphGraphvizOptions::as_subgraph</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/compute_graph/graphviz_options.h" line="10" column="10" bodyfile="src/muda/compute_graph/graphviz_options.h" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1_compute_graph_graphviz_options_1aab14a618e5f49a5d54aefbd7bb29dc6e" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool muda::ComputeGraphGraphvizOptions::show_all_graph_nodes_in_a_closure</definition>
+        <argsstring></argsstring>
+        <name>show_all_graph_nodes_in_a_closure</name>
+        <qualifiedname>muda::ComputeGraphGraphvizOptions::show_all_graph_nodes_in_a_closure</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/compute_graph/graphviz_options.h" line="11" column="10" bodyfile="src/muda/compute_graph/graphviz_options.h" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1_compute_graph_graphviz_options_1ae9b46b24fb48f5309889fc1efee39521" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int muda::ComputeGraphGraphvizOptions::graph_id</definition>
+        <argsstring></argsstring>
+        <name>graph_id</name>
+        <qualifiedname>muda::ComputeGraphGraphvizOptions::graph_id</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/compute_graph/graphviz_options.h" line="12" column="10" bodyfile="src/muda/compute_graph/graphviz_options.h" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1_compute_graph_graphviz_options_1a27c4c7bb1e4da045c8b740ec353f3c75" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string muda::ComputeGraphGraphvizOptions::node_style</definition>
+        <argsstring></argsstring>
+        <name>node_style</name>
+        <qualifiedname>muda::ComputeGraphGraphvizOptions::node_style</qualifiedname>
+        <initializer>=
+        R&quot;(shape=&quot;egg&quot;, color=&quot;#82B366&quot;, style=&quot;filled&quot;, fillcolor=&quot;#D5E8D4&quot;,)&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/compute_graph/graphviz_options.h" line="15" column="17" bodyfile="src/muda/compute_graph/graphviz_options.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1_compute_graph_graphviz_options_1ae194728bf3489627d57c0daa0300c3bb" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string muda::ComputeGraphGraphvizOptions::all_nodes_closure_style</definition>
+        <argsstring></argsstring>
+        <name>all_nodes_closure_style</name>
+        <qualifiedname>muda::ComputeGraphGraphvizOptions::all_nodes_closure_style</qualifiedname>
+        <initializer>=
+        R&quot;(shape=&quot;Mrecord&quot;, color=&quot;#82B366&quot;, style=&quot;filled&quot;, fillcolor=&quot;#D5E8D4&quot;,)&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/compute_graph/graphviz_options.h" line="18" column="17" bodyfile="src/muda/compute_graph/graphviz_options.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1_compute_graph_graphviz_options_1a1eca71b725a8a37e0fa7f09b65405c9f" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string muda::ComputeGraphGraphvizOptions::var_style</definition>
+        <argsstring></argsstring>
+        <name>var_style</name>
+        <qualifiedname>muda::ComputeGraphGraphvizOptions::var_style</qualifiedname>
+        <initializer>=
+        R&quot;(shape=&quot;rectangle&quot;, color=&quot;#F08705&quot;, style=&quot;filled,rounded&quot;, fillcolor=&quot;#F5AF58&quot;,)&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/compute_graph/graphviz_options.h" line="21" column="17" bodyfile="src/muda/compute_graph/graphviz_options.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1_compute_graph_graphviz_options_1acd6be60d4cd97822b75121e2fcf36819" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string muda::ComputeGraphGraphvizOptions::read_write_style</definition>
+        <argsstring></argsstring>
+        <name>read_write_style</name>
+        <qualifiedname>muda::ComputeGraphGraphvizOptions::read_write_style</qualifiedname>
+        <initializer>= R&quot;(color=&quot;#F08E81&quot;, arrowhead = diamond,)&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/compute_graph/graphviz_options.h" line="24" column="17" bodyfile="src/muda/compute_graph/graphviz_options.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1_compute_graph_graphviz_options_1a59651c5f74d54614ad63e1e262f6f30e" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string muda::ComputeGraphGraphvizOptions::read_style</definition>
+        <argsstring></argsstring>
+        <name>read_style</name>
+        <qualifiedname>muda::ComputeGraphGraphvizOptions::read_style</qualifiedname>
+        <initializer>= R&quot;(color=&quot;#64BBE2&quot;, arrowhead = dot, )&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/compute_graph/graphviz_options.h" line="26" column="17" bodyfile="src/muda/compute_graph/graphviz_options.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1_compute_graph_graphviz_options_1a3a8f899bef9c5408d3bdb41a59d5ee6d" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string muda::ComputeGraphGraphvizOptions::arc_style</definition>
+        <argsstring></argsstring>
+        <name>arc_style</name>
+        <qualifiedname>muda::ComputeGraphGraphvizOptions::arc_style</qualifiedname>
+        <initializer>= R&quot;(color=&quot;#82B366&quot;, )&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/compute_graph/graphviz_options.h" line="28" column="17" bodyfile="src/muda/compute_graph/graphviz_options.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1_compute_graph_graphviz_options_1aba36361fb641091c309049a1be8bc93a" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string muda::ComputeGraphGraphvizOptions::event_style</definition>
+        <argsstring></argsstring>
+        <name>event_style</name>
+        <qualifiedname>muda::ComputeGraphGraphvizOptions::event_style</qualifiedname>
+        <initializer>=
+        R&quot;(shape=&quot;rectangle&quot;, color=&quot;#8E44AD&quot;, style=&quot;filled,rounded&quot;, fillcolor=&quot;#BB8FCE&quot;,)&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/compute_graph/graphviz_options.h" line="30" column="17" bodyfile="src/muda/compute_graph/graphviz_options.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1_compute_graph_graphviz_options_1a233012cbeb260d85acb83b917f4dc3e8" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string muda::ComputeGraphGraphvizOptions::graph_viewer_style</definition>
+        <argsstring></argsstring>
+        <name>graph_viewer_style</name>
+        <qualifiedname>muda::ComputeGraphGraphvizOptions::graph_viewer_style</qualifiedname>
+        <initializer>=
+        R&quot;(shape=&quot;rectangle&quot;, color=&quot;#82B366&quot;, style=&quot;filled,rounded&quot;, fillcolor=&quot;#D5E8D4&quot;,)&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/compute_graph/graphviz_options.h" line="33" column="17" bodyfile="src/muda/compute_graph/graphviz_options.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1_compute_graph_graphviz_options_1a59bc296f2216c0a073910927fe9ffee8" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string muda::ComputeGraphGraphvizOptions::cluster_style</definition>
+        <argsstring></argsstring>
+        <name>cluster_style</name>
+        <qualifiedname>muda::ComputeGraphGraphvizOptions::cluster_style</qualifiedname>
+        <initializer>=
+        R&quot;(fontcolor=&quot;#82B366&quot; fontsize=18; color = &quot;#82B366&quot;; style = &quot;dashed&quot;;)&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/compute_graph/graphviz_options.h" line="36" column="17" bodyfile="src/muda/compute_graph/graphviz_options.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1_compute_graph_graphviz_options_1a0878bc9bb2e99c010ad224cdf5e9df50" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string muda::ComputeGraphGraphvizOptions::cluster_var_style</definition>
+        <argsstring></argsstring>
+        <name>cluster_var_style</name>
+        <qualifiedname>muda::ComputeGraphGraphvizOptions::cluster_var_style</qualifiedname>
+        <initializer>= R&quot;(color=&quot;#F08705&quot;; style=&quot;dashed&quot;;)&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/compute_graph/graphviz_options.h" line="39" column="17" bodyfile="src/muda/compute_graph/graphviz_options.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1_compute_graph_graphviz_options_1aa7e4e3b548187a196557dce94c5e5925" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string muda::ComputeGraphGraphvizOptions::graph_font</definition>
+        <argsstring></argsstring>
+        <name>graph_font</name>
+        <qualifiedname>muda::ComputeGraphGraphvizOptions::graph_font</qualifiedname>
+        <initializer>= R&quot;(graph [fontname = &quot;helvetica&quot;];
+node [fontname = &quot;helvetica&quot;];
+edge [fontname = &quot;helvetica&quot;];)&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/compute_graph/graphviz_options.h" line="41" column="17" bodyfile="src/muda/compute_graph/graphviz_options.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/muda/compute_graph/graphviz_options.h" line="5" column="1" bodyfile="src/muda/compute_graph/graphviz_options.h" bodystart="6" bodyend="44"/>
+    <listofallmembers>
+      <member refid="classmuda_1_1_compute_graph_graphviz_options_1ae194728bf3489627d57c0daa0300c3bb" prot="public" virt="non-virtual"><scope>muda::ComputeGraphGraphvizOptions</scope><name>all_nodes_closure_style</name></member>
+      <member refid="classmuda_1_1_compute_graph_graphviz_options_1a3a8f899bef9c5408d3bdb41a59d5ee6d" prot="public" virt="non-virtual"><scope>muda::ComputeGraphGraphvizOptions</scope><name>arc_style</name></member>
+      <member refid="classmuda_1_1_compute_graph_graphviz_options_1a9eb7e05c40d14dc91bca9545f09131d7" prot="public" virt="non-virtual"><scope>muda::ComputeGraphGraphvizOptions</scope><name>as_subgraph</name></member>
+      <member refid="classmuda_1_1_compute_graph_graphviz_options_1a59bc296f2216c0a073910927fe9ffee8" prot="public" virt="non-virtual"><scope>muda::ComputeGraphGraphvizOptions</scope><name>cluster_style</name></member>
+      <member refid="classmuda_1_1_compute_graph_graphviz_options_1a0878bc9bb2e99c010ad224cdf5e9df50" prot="public" virt="non-virtual"><scope>muda::ComputeGraphGraphvizOptions</scope><name>cluster_var_style</name></member>
+      <member refid="classmuda_1_1_compute_graph_graphviz_options_1aba36361fb641091c309049a1be8bc93a" prot="public" virt="non-virtual"><scope>muda::ComputeGraphGraphvizOptions</scope><name>event_style</name></member>
+      <member refid="classmuda_1_1_compute_graph_graphviz_options_1aa7e4e3b548187a196557dce94c5e5925" prot="public" virt="non-virtual"><scope>muda::ComputeGraphGraphvizOptions</scope><name>graph_font</name></member>
+      <member refid="classmuda_1_1_compute_graph_graphviz_options_1ae9b46b24fb48f5309889fc1efee39521" prot="public" virt="non-virtual"><scope>muda::ComputeGraphGraphvizOptions</scope><name>graph_id</name></member>
+      <member refid="classmuda_1_1_compute_graph_graphviz_options_1a233012cbeb260d85acb83b917f4dc3e8" prot="public" virt="non-virtual"><scope>muda::ComputeGraphGraphvizOptions</scope><name>graph_viewer_style</name></member>
+      <member refid="classmuda_1_1_compute_graph_graphviz_options_1a27c4c7bb1e4da045c8b740ec353f3c75" prot="public" virt="non-virtual"><scope>muda::ComputeGraphGraphvizOptions</scope><name>node_style</name></member>
+      <member refid="classmuda_1_1_compute_graph_graphviz_options_1a59651c5f74d54614ad63e1e262f6f30e" prot="public" virt="non-virtual"><scope>muda::ComputeGraphGraphvizOptions</scope><name>read_style</name></member>
+      <member refid="classmuda_1_1_compute_graph_graphviz_options_1acd6be60d4cd97822b75121e2fcf36819" prot="public" virt="non-virtual"><scope>muda::ComputeGraphGraphvizOptions</scope><name>read_write_style</name></member>
+      <member refid="classmuda_1_1_compute_graph_graphviz_options_1aab14a618e5f49a5d54aefbd7bb29dc6e" prot="public" virt="non-virtual"><scope>muda::ComputeGraphGraphvizOptions</scope><name>show_all_graph_nodes_in_a_closure</name></member>
+      <member refid="classmuda_1_1_compute_graph_graphviz_options_1ac924f59b6c279e6e933c84ea2583477d" prot="public" virt="non-virtual"><scope>muda::ComputeGraphGraphvizOptions</scope><name>show_nodes</name></member>
+      <member refid="classmuda_1_1_compute_graph_graphviz_options_1aa97f2c0d9247196e5a4d9db26e111ee8" prot="public" virt="non-virtual"><scope>muda::ComputeGraphGraphvizOptions</scope><name>show_vars</name></member>
+      <member refid="classmuda_1_1_compute_graph_graphviz_options_1a1eca71b725a8a37e0fa7f09b65405c9f" prot="public" virt="non-virtual"><scope>muda::ComputeGraphGraphvizOptions</scope><name>var_style</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
