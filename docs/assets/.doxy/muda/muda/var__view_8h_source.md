@@ -80,13 +80,13 @@ using CVarView = VarViewT<true, T>;
 
 // viewer traits
 template <typename T>
-struct read_only_viewer<VarView<T>>
+struct read_only_view<VarView<T>>
 {
     using type = CVarView<T>;
 };
 
 template <typename T>
-struct read_write_viewer<CVarView<T>>
+struct read_write_view<CVarView<T>>
 {
     using type = VarView<T>;
 };

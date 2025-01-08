@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.1" xml:lang="en-US">
   <compounddef id="memory__node_8h" kind="file" language="C++">
     <compoundname>memory_node.h</compoundname>
     <includes refid="graph__base_8h" local="no">muda/graph/graph_base.h</includes>
@@ -265,7 +265,7 @@
         <label>src/muda/compute_graph/compute_graph_accessor.h</label>
         <link refid="compute__graph__accessor_8h_source"/>
       </node>
-      <node id="29">
+      <node id="30">
         <label>src/muda/compute_graph/nodes/compute_graph_catpure_node.h</label>
         <link refid="compute__graph__catpure__node_8h_source"/>
       </node>
@@ -273,7 +273,7 @@
         <label>src/muda/compute_graph/nodes/compute_graph_event_node.h</label>
         <link refid="compute__graph__event__node_8h_source"/>
       </node>
-      <node id="30">
+      <node id="31">
         <label>src/muda/compute_graph/nodes/compute_graph_kernel_node.h</label>
         <link refid="compute__graph__kernel__node_8h_source"/>
       </node>
@@ -300,13 +300,11 @@
         </childnode>
         <childnode refid="14" relation="include">
         </childnode>
-        <childnode refid="15" relation="include">
-        </childnode>
         <childnode refid="16" relation="include">
         </childnode>
         <childnode refid="17" relation="include">
         </childnode>
-        <childnode refid="22" relation="include">
+        <childnode refid="18" relation="include">
         </childnode>
         <childnode refid="23" relation="include">
         </childnode>
@@ -319,6 +317,8 @@
         <childnode refid="27" relation="include">
         </childnode>
         <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
         </childnode>
       </node>
       <node id="10">
@@ -338,94 +338,110 @@
         <link refid="device__merge__sort_8h_source"/>
         <childnode refid="11" relation="include">
         </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
       </node>
-      <node id="15">
+      <node id="16">
         <label>src/muda/cub/device/device_partition.h</label>
         <link refid="device__partition_8h_source"/>
         <childnode refid="11" relation="include">
         </childnode>
       </node>
-      <node id="16">
+      <node id="17">
         <label>src/muda/cub/device/device_radix_sort.h</label>
         <link refid="device__radix__sort_8h_source"/>
         <childnode refid="11" relation="include">
         </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
       </node>
-      <node id="17">
+      <node id="18">
         <label>src/muda/cub/device/device_reduce.h</label>
         <link refid="device__reduce_8h_source"/>
         <childnode refid="11" relation="include">
         </childnode>
-        <childnode refid="18" relation="include">
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
         </childnode>
       </node>
-      <node id="22">
+      <node id="23">
         <label>src/muda/cub/device/device_run_length_encode.h</label>
         <link refid="device__run__length__encode_8h_source"/>
         <childnode refid="11" relation="include">
         </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
       </node>
-      <node id="23">
+      <node id="24">
         <label>src/muda/cub/device/device_scan.h</label>
         <link refid="device__scan_8h_source"/>
         <childnode refid="11" relation="include">
         </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
       </node>
-      <node id="24">
+      <node id="25">
         <label>src/muda/cub/device/device_segmented_radix_sort.h</label>
         <link refid="device__segmented__radix__sort_8h_source"/>
         <childnode refid="11" relation="include">
         </childnode>
       </node>
-      <node id="25">
+      <node id="26">
         <label>src/muda/cub/device/device_segmented_reduce.h</label>
         <link refid="device__segmented__reduce_8h_source"/>
         <childnode refid="11" relation="include">
         </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
       </node>
-      <node id="26">
+      <node id="27">
         <label>src/muda/cub/device/device_segmented_sort.h</label>
         <link refid="device__segmented__sort_8h_source"/>
         <childnode refid="11" relation="include">
         </childnode>
       </node>
-      <node id="27">
+      <node id="28">
         <label>src/muda/cub/device/device_select.h</label>
         <link refid="device__select_8h_source"/>
         <childnode refid="11" relation="include">
         </childnode>
       </node>
-      <node id="28">
+      <node id="29">
         <label>src/muda/cub/device/device_spmv.h</label>
         <link refid="device__spmv_8h_source"/>
         <childnode refid="11" relation="include">
         </childnode>
       </node>
-      <node id="20">
+      <node id="21">
         <label>src/muda/ext/geo/lbvh.h</label>
         <link refid="lbvh_8h_source"/>
       </node>
-      <node id="18">
+      <node id="19">
         <label>src/muda/ext/geo/lbvh/bvh.h</label>
         <link refid="bvh_8h_source"/>
-        <childnode refid="19" relation="include">
+        <childnode refid="20" relation="include">
         </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>src/muda/ext/geo/lbvh/lbvh.h</label>
+        <link refid="lbvh_2lbvh_8h_source"/>
         <childnode refid="21" relation="include">
         </childnode>
       </node>
-      <node id="19">
-        <label>src/muda/ext/geo/lbvh/lbvh.h</label>
-        <link refid="lbvh_2lbvh_8h_source"/>
+      <node id="22">
+        <label>src/muda/ext/geo/lbvh/query.h</label>
+        <link refid="query_8h_source"/>
         <childnode refid="20" relation="include">
         </childnode>
       </node>
-      <node id="21">
-        <label>src/muda/ext/geo/lbvh/query.h</label>
-        <link refid="query_8h_source"/>
-        <childnode refid="19" relation="include">
-        </childnode>
+      <node id="15">
+        <label>src/muda/ext/linear_system/matrix_format_converter_impl.h</label>
+        <link refid="matrix__format__converter__impl_8h_source"/>
       </node>
-      <node id="31">
+      <node id="32">
         <label>src/muda/graph.h</label>
         <link refid="graph_8h_source"/>
         <childnode refid="7" relation="include">
@@ -436,18 +452,18 @@
         <link refid="graph_2graph_8h_source"/>
         <childnode refid="5" relation="include">
         </childnode>
-        <childnode refid="29" relation="include">
+        <childnode refid="30" relation="include">
         </childnode>
         <childnode refid="8" relation="include">
         </childnode>
-        <childnode refid="30" relation="include">
+        <childnode refid="31" relation="include">
         </childnode>
         <childnode refid="3" relation="include">
         </childnode>
-        <childnode refid="31" relation="include">
+        <childnode refid="32" relation="include">
         </childnode>
       </node>
-      <node id="32">
+      <node id="33">
         <label>src/muda/graph/graph_exec.h</label>
         <link refid="graph__exec_8h_source"/>
         <childnode refid="4" relation="include">
@@ -462,7 +478,7 @@
         </childnode>
         <childnode refid="4" relation="include">
         </childnode>
-        <childnode refid="32" relation="include">
+        <childnode refid="33" relation="include">
         </childnode>
       </node>
       <node id="7">
@@ -484,7 +500,7 @@
 <codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">muda</highlight></codeline>
 <codeline lineno="5"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>MUDA_WITH_GRAPH_MEMORY_ALLOC_FREE</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">MemAllocNode<sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>GraphNode</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">MemAllocNode<sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classmuda_1_1_graph_node" kindref="compound">GraphNode</ref></highlight></codeline>
 <codeline lineno="8"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>m_dptr;</highlight></codeline>
 <codeline lineno="10"><highlight class="normal"></highlight></codeline>
@@ -494,7 +510,7 @@
 <codeline lineno="14"><highlight class="normal">};</highlight></codeline>
 <codeline lineno="15"><highlight class="normal"></highlight></codeline>
 <codeline lineno="16"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
-<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">MemAllocNodeParms<sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>NodeParms</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">MemAllocNodeParms<sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classmuda_1_1_node_parms" kindref="compound">NodeParms</ref></highlight></codeline>
 <codeline lineno="18"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>cudaMemAllocNodeParams<sp/>m_parms;</highlight></codeline>
 <codeline lineno="20"><highlight class="normal"></highlight></codeline>
@@ -518,7 +534,7 @@
 <codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>cudaMemAllocNodeParams*<sp/>getRaw()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>&amp;m_parms;<sp/>}</highlight></codeline>
 <codeline lineno="39"><highlight class="normal">};</highlight></codeline>
 <codeline lineno="40"><highlight class="normal"></highlight></codeline>
-<codeline lineno="41"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">MemFreeNode<sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>GraphNode</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">MemFreeNode<sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classmuda_1_1_graph_node" kindref="compound">GraphNode</ref></highlight></codeline>
 <codeline lineno="42"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="43"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">this_type<sp/>=<sp/>MemFreeNode;</highlight></codeline>
@@ -526,20 +542,20 @@
 <codeline lineno="46"><highlight class="normal">};</highlight></codeline>
 <codeline lineno="47"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="48"><highlight class="normal"></highlight></codeline>
-<codeline lineno="49" refid="classmuda_1_1_memcpy_node" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classmuda_1_1_memcpy_node" kindref="compound">MemcpyNode</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classmuda_1_1_graph_node" kindref="compound">GraphNode</ref></highlight></codeline>
+<codeline lineno="49" refid="classmuda_1_1_memcpy_node" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classmuda_1_1_memcpy_node" kindref="compound">MemcpyNode</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>GraphNode</highlight></codeline>
 <codeline lineno="50"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="51"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="classmuda_1_1_memcpy_node" kindref="compound">this_type</ref><sp/>=<sp/><ref refid="classmuda_1_1_memcpy_node" kindref="compound">MemcpyNode</ref>;</highlight></codeline>
-<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classmuda_1_1_graph" kindref="compound">Graph</ref>;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">this_type<sp/>=<sp/><ref refid="classmuda_1_1_memcpy_node" kindref="compound">MemcpyNode</ref>;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">Graph;</highlight></codeline>
 <codeline lineno="54"><highlight class="normal">};</highlight></codeline>
 <codeline lineno="55"><highlight class="normal"></highlight></codeline>
-<codeline lineno="56" refid="classmuda_1_1_memset_node" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classmuda_1_1_memset_node" kindref="compound">MemsetNode</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classmuda_1_1_graph_node" kindref="compound">GraphNode</ref></highlight></codeline>
+<codeline lineno="56" refid="classmuda_1_1_memset_node" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classmuda_1_1_memset_node" kindref="compound">MemsetNode</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>GraphNode</highlight></codeline>
 <codeline lineno="57"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="58"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="classmuda_1_1_memset_node" kindref="compound">this_type</ref><sp/>=<sp/><ref refid="classmuda_1_1_memset_node" kindref="compound">MemsetNode</ref>;</highlight></codeline>
-<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classmuda_1_1_graph" kindref="compound">Graph</ref>;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">this_type<sp/>=<sp/><ref refid="classmuda_1_1_memset_node" kindref="compound">MemsetNode</ref>;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">Graph;</highlight></codeline>
 <codeline lineno="61"><highlight class="normal">};</highlight></codeline>
-<codeline lineno="62"><highlight class="normal">}<sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>muda</highlight></codeline>
+<codeline lineno="62"><highlight class="normal">}<sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>muda</highlight><highlight class="normal"></highlight></codeline>
     </programlisting>
     <location file="src/muda/graph/memory_node.h"/>
   </compounddef>

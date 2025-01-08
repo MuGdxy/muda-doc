@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.1" xml:lang="en-US">
   <compounddef id="classmuda_1_1_device_dense_matrix" kind="class" language="C++" prot="public">
     <compoundname>muda::DeviceDenseMatrix</compoundname>
     <templateparamlist>
@@ -366,7 +366,7 @@
         <location file="src/muda/ext/linear_system/device_dense_matrix.h" line="47" column="23"/>
       </memberdef>
       <memberdef kind="function" id="classmuda_1_1_device_dense_matrix_1a370cff4d54f564b0054604332646022a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type><ref refid="classmuda_1_1_dense_matrix_viewer" kindref="compound">DenseMatrixViewer</ref>&lt; Ty &gt;</type>
+        <type><ref refid="classmuda_1_1_dense_matrix_viewer_t" kindref="compound">DenseMatrixViewer</ref>&lt; Ty &gt;</type>
         <definition>DenseMatrixViewer&lt; Ty &gt; muda::DeviceDenseMatrix&lt; Ty &gt;::viewer</definition>
         <argsstring>()</argsstring>
         <name>viewer</name>
@@ -380,7 +380,7 @@
         <location file="src/muda/ext/linear_system/device_dense_matrix.h" line="49" column="24" bodyfile="src/muda/ext/linear_system/device_dense_matrix.h" bodystart="49" bodyend="49"/>
       </memberdef>
       <memberdef kind="function" id="classmuda_1_1_device_dense_matrix_1a5ec018bb60f32d723b7657a96ae23342" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
-        <type><ref refid="classmuda_1_1_c_dense_matrix_viewer" kindref="compound">CDenseMatrixViewer</ref>&lt; Ty &gt;</type>
+        <type><ref refid="classmuda_1_1_dense_matrix_viewer_t" kindref="compound">CDenseMatrixViewer</ref>&lt; Ty &gt;</type>
         <definition>CDenseMatrixViewer&lt; Ty &gt; muda::DeviceDenseMatrix&lt; Ty &gt;::cviewer</definition>
         <argsstring>() const</argsstring>
         <name>cviewer</name>
@@ -422,7 +422,7 @@
         <location file="src/muda/ext/linear_system/device_dense_matrix.h" line="53" column="10" bodyfile="src/muda/ext/linear_system/device_dense_matrix.h" bodystart="53" bodyend="53"/>
       </memberdef>
       <memberdef kind="function" id="classmuda_1_1_device_dense_matrix_1aee4bb4b169845c6a7ee322019f66718c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="classmuda_1_1_dense_matrix_view" kindref="compound">DenseMatrixView</ref>&lt; Ty &gt;</type>
+        <type><ref refid="classmuda_1_1_dense_matrix_view_t" kindref="compound">DenseMatrixView</ref>&lt; Ty &gt;</type>
         <definition>DenseMatrixView&lt; Ty &gt; muda::DeviceDenseMatrix&lt; Ty &gt;::T</definition>
         <argsstring>()</argsstring>
         <name>T</name>
@@ -436,7 +436,7 @@
         <location file="src/muda/ext/linear_system/device_dense_matrix.h" line="55" column="22"/>
       </memberdef>
       <memberdef kind="function" id="classmuda_1_1_device_dense_matrix_1a3e9ea5aa37d170407317142c7cdd22a5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="classmuda_1_1_c_dense_matrix_view" kindref="compound">CDenseMatrixView</ref>&lt; Ty &gt;</type>
+        <type><ref refid="classmuda_1_1_dense_matrix_view_t" kindref="compound">CDenseMatrixView</ref>&lt; Ty &gt;</type>
         <definition>CDenseMatrixView&lt; Ty &gt; muda::DeviceDenseMatrix&lt; Ty &gt;::T</definition>
         <argsstring>() const</argsstring>
         <name>T</name>
@@ -450,7 +450,7 @@
         <location file="src/muda/ext/linear_system/device_dense_matrix.h" line="56" column="22"/>
       </memberdef>
       <memberdef kind="function" id="classmuda_1_1_device_dense_matrix_1a2e20956de1c7400dec11df0523f1a7a0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="classmuda_1_1_dense_matrix_view" kindref="compound">DenseMatrixView</ref>&lt; Ty &gt;</type>
+        <type><ref refid="classmuda_1_1_dense_matrix_view_t" kindref="compound">DenseMatrixView</ref>&lt; Ty &gt;</type>
         <definition>DenseMatrixView&lt; Ty &gt; muda::DeviceDenseMatrix&lt; Ty &gt;::view</definition>
         <argsstring>()</argsstring>
         <name>view</name>
@@ -464,7 +464,7 @@
         <location file="src/muda/ext/linear_system/device_dense_matrix.h" line="58" column="22"/>
       </memberdef>
       <memberdef kind="function" id="classmuda_1_1_device_dense_matrix_1a54beebaff2593d65a3bad287362da353" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="classmuda_1_1_c_dense_matrix_view" kindref="compound">CDenseMatrixView</ref>&lt; Ty &gt;</type>
+        <type><ref refid="classmuda_1_1_dense_matrix_view_t" kindref="compound">CDenseMatrixView</ref>&lt; Ty &gt;</type>
         <definition>CDenseMatrixView&lt; Ty &gt; muda::DeviceDenseMatrix&lt; Ty &gt;::view</definition>
         <argsstring>() const</argsstring>
         <name>view</name>
@@ -478,7 +478,7 @@
         <location file="src/muda/ext/linear_system/device_dense_matrix.h" line="59" column="22"/>
       </memberdef>
       <memberdef kind="function" id="classmuda_1_1_device_dense_matrix_1a1e34e57d7e4caeced9bf91c6dffd4191" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
-        <type><ref refid="classmuda_1_1_c_dense_matrix_view" kindref="compound">CDenseMatrixView</ref>&lt; Ty &gt;</type>
+        <type><ref refid="classmuda_1_1_dense_matrix_view_t" kindref="compound">CDenseMatrixView</ref>&lt; Ty &gt;</type>
         <definition>CDenseMatrixView&lt; Ty &gt; muda::DeviceDenseMatrix&lt; Ty &gt;::cview</definition>
         <argsstring>() const</argsstring>
         <name>cview</name>

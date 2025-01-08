@@ -38,8 +38,8 @@
 | Type | Name |
 | ---: | :--- |
 | class | [**COOVectorViewBase**](classmuda_1_1_c_o_o_vector_view_base.md) &lt;IsConst, typename T&gt;<br> |
-| struct | [**read\_only\_viewer&lt; COOVectorView&lt; T &gt; &gt;**](structmuda_1_1read__only__viewer_3_01_c_o_o_vector_view_3_01_t_01_4_01_4.md) &lt;typename T&gt;<br> |
-| struct | [**read\_write\_viewer&lt; CCOOVectorView&lt; T &gt; &gt;**](structmuda_1_1read__write__viewer_3_01_c_c_o_o_vector_view_3_01_t_01_4_01_4.md) &lt;typename T&gt;<br> |
+| struct | [**read\_only\_view**](structmuda_1_1read__only__view.md) &lt;typename T&gt;<br> |
+| struct | [**read\_write\_view**](structmuda_1_1read__write__view.md) &lt;typename T&gt;<br> |
 
 
 

@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.1" xml:lang="en-US">
   <compounddef id="classmuda_1_1details_1_1_compute_graph_accessor" kind="class" language="C++" prot="public">
     <compoundname>muda::details::ComputeGraphAccessor</compoundname>
     <sectiondef kind="private-type">
@@ -270,9 +270,9 @@
         <location file="src/muda/compute_graph/compute_graph_accessor.h" line="39" column="14"/>
       </memberdef>
       <memberdef kind="function" id="classmuda_1_1details_1_1_compute_graph_accessor_1a765b321a850cc4e2e8954b47c9d2836e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type>auto</type>
-        <definition>auto muda::details::ComputeGraphAccessor::current_closure</definition>
-        <argsstring>() const -&gt; const std::pair&lt; std::string, ComputeGraphClosure * &gt; &amp;</argsstring>
+        <type>const std::pair&lt; std::string, <ref refid="classmuda_1_1_compute_graph_closure" kindref="compound">ComputeGraphClosure</ref> * &gt; &amp;</type>
+        <definition>const std::pair&lt; std::string, ComputeGraphClosure * &gt; &amp; muda::details::ComputeGraphAccessor::current_closure</definition>
+        <argsstring>() const</argsstring>
         <name>current_closure</name>
         <qualifiedname>muda::details::ComputeGraphAccessor::current_closure</qualifiedname>
         <briefdescription>
@@ -284,9 +284,9 @@
         <location file="src/muda/compute_graph/compute_graph_accessor.h" line="46" column="14"/>
       </memberdef>
       <memberdef kind="function" id="classmuda_1_1details_1_1_compute_graph_accessor_1ab8d59ec97ae5cd0c07a567185a38d3ca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>auto</type>
-        <definition>auto muda::details::ComputeGraphAccessor::current_closure</definition>
-        <argsstring>() -&gt; std::pair&lt; std::string, ComputeGraphClosure * &gt; &amp;</argsstring>
+        <type>std::pair&lt; std::string, <ref refid="classmuda_1_1_compute_graph_closure" kindref="compound">ComputeGraphClosure</ref> * &gt; &amp;</type>
+        <definition>std::pair&lt; std::string, ComputeGraphClosure * &gt; &amp; muda::details::ComputeGraphAccessor::current_closure</definition>
+        <argsstring>()</argsstring>
         <name>current_closure</name>
         <qualifiedname>muda::details::ComputeGraphAccessor::current_closure</qualifiedname>
         <briefdescription>

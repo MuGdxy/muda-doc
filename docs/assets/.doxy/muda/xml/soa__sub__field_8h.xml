@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.1" xml:lang="en-US">
   <compounddef id="soa__sub__field_8h" kind="file" language="C++">
     <compoundname>soa_sub_field.h</compoundname>
     <includes refid="sub__field__interface_8h" local="no">muda/ext/field/sub_field_interface.h</includes>
@@ -208,7 +208,7 @@
       </node>
     </incdepgraph>
     <innerclass refid="structmuda_1_1details_1_1_so_a_copy_map" prot="public">muda::details::SoACopyMap</innerclass>
-    <innerclass refid="classmuda_1_1_sub_field_impl_3_01_field_entry_layout_1_1_so_a_01_4" prot="public">muda::SubFieldImpl&lt; FieldEntryLayout::SoA &gt;</innerclass>
+    <innerclass refid="classmuda_1_1_sub_field_impl" prot="public">muda::SubFieldImpl&lt; FieldEntryLayout::SoA &gt;</innerclass>
     <innernamespace refid="namespacemuda">muda</innernamespace>
     <innernamespace refid="namespacemuda_1_1details">muda::details</innernamespace>
     <briefdescription>
@@ -232,9 +232,9 @@
 <codeline lineno="14"><highlight class="normal"></highlight></codeline>
 <codeline lineno="15"><highlight class="normal"></highlight></codeline>
 <codeline lineno="16"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;&gt;</highlight></codeline>
-<codeline lineno="17" refid="classmuda_1_1_sub_field_impl_3_01_field_entry_layout_1_1_so_a_01_4" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classmuda_1_1_sub_field_impl" kindref="compound">SubFieldImpl</ref>&lt;FieldEntryLayout::SoA&gt;<sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classmuda_1_1_sub_field_interface" kindref="compound">SubFieldInterface</ref></highlight></codeline>
+<codeline lineno="17" refid="classmuda_1_1_sub_field_impl" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classmuda_1_1_sub_field_impl" kindref="compound">SubFieldImpl</ref>&lt;FieldEntryLayout::SoA&gt;<sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>SubFieldInterface</highlight></codeline>
 <codeline lineno="18"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classmuda_1_1_sub_field" kindref="compound">SubField</ref>;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">SubField;</highlight></codeline>
 <codeline lineno="20"><highlight class="normal"></highlight></codeline>
 <codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classmuda_1_1_device_buffer" kindref="compound">DeviceBuffer&lt;details::SoACopyMap&gt;</ref><sp/>m_copy_map_buffer;</highlight></codeline>
 <codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;details::SoACopyMap&gt;<sp/><sp/>m_h_copy_map_buffer;</highlight></codeline>
@@ -255,7 +255,7 @@
 <codeline lineno="37"><highlight class="normal">};</highlight></codeline>
 <codeline lineno="38"><highlight class="normal">}<sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>muda</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="39"><highlight class="normal"></highlight></codeline>
-<codeline lineno="40"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;details/soa_sub_field.inl&quot;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;details/soa_sub_field.inl&quot;</highlight><highlight class="normal"></highlight></codeline>
     </programlisting>
     <location file="src/muda/ext/field/sub_field/soa_sub_field.h"/>
   </compounddef>

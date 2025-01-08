@@ -43,7 +43,7 @@ See [muda::DeviceDoubletVector](classmuda_1_1_device_doublet_vector.md)
 
 | Type | Name |
 | ---: | :--- |
-| typedef Eigen::Vector&lt; T, N &gt; | [**SegmentVector**](classmuda_1_1_device_doublet_vector.md#typedef-segmentvector)  <br> |
+| typedef std::conditional\_t&lt; N==1, T, Eigen::Vector&lt; T, N &gt; &gt; | [**ValueT**](classmuda_1_1_device_doublet_vector.md#typedef-valuet)  <br> |
 
 
 
@@ -56,6 +56,13 @@ See [muda::DeviceDoubletVector](classmuda_1_1_device_doublet_vector.md)
 
 
 
+## Public Static Attributes inherited from muda::DeviceDoubletVector
+
+See [muda::DeviceDoubletVector](classmuda_1_1_device_doublet_vector.md)
+
+| Type | Name |
+| ---: | :--- |
+|  bool | [**IsSegmentVector**](classmuda_1_1_device_doublet_vector.md#variable-issegmentvector)   = = (N &gt; 1)<br> |
 
 
 
@@ -89,7 +96,7 @@ See [muda::DeviceDoubletVector](classmuda_1_1_device_doublet_vector.md)
 |   | [**DeviceBCOOVector**](#function-devicebcoovector-13) () = default<br> |
 |   | [**DeviceBCOOVector**](#function-devicebcoovector-23) (const [**DeviceBCOOVector**](classmuda_1_1_device_b_c_o_o_vector.md) &) = default<br> |
 |   | [**DeviceBCOOVector**](#function-devicebcoovector-33) ([**DeviceBCOOVector**](classmuda_1_1_device_b_c_o_o_vector.md) &&) = default<br> |
-|  auto | [**non\_zero\_segments**](#function-non_zero_segments) () const<br> |
+|  auto | [**non\_zeros**](#function-non_zeros) () const<br> |
 |  [**DeviceBCOOVector**](classmuda_1_1_device_b_c_o_o_vector.md) & | [**operator=**](#function-operator) (const [**DeviceBCOOVector**](classmuda_1_1_device_b_c_o_o_vector.md) &) = default<br> |
 |  [**DeviceBCOOVector**](classmuda_1_1_device_b_c_o_o_vector.md) & | [**operator=**](#function-operator_1) ([**DeviceBCOOVector**](classmuda_1_1_device_b_c_o_o_vector.md) &&) = default<br> |
 |   | [**~DeviceBCOOVector**](#function-devicebcoovector) () = default<br> |
@@ -103,17 +110,19 @@ See [muda::DeviceDoubletVector](classmuda_1_1_device_doublet_vector.md)
 | ---: | :--- |
 |   | [**DeviceDoubletVector**](classmuda_1_1_device_doublet_vector.md#function-devicedoubletvector) () = default<br> |
 |  void | [**clear**](classmuda_1_1_device_doublet_vector.md#function-clear) () <br> |
+|  auto | [**count**](classmuda_1_1_device_doublet_vector.md#function-count) () const<br> |
+|  auto | [**cview**](classmuda_1_1_device_doublet_vector.md#function-cview) () const<br> |
+|  auto | [**cviewer**](classmuda_1_1_device_doublet_vector.md#function-cviewer) () const<br> |
 |  auto | [**doublet\_capacity**](classmuda_1_1_device_doublet_vector.md#function-doublet_capacity) () const<br> |
 |  auto | [**doublet\_count**](classmuda_1_1_device_doublet_vector.md#function-doublet_count) () const<br> |
+|  auto | [**indices**](classmuda_1_1_device_doublet_vector.md#function-indices-12) () <br> |
+|  auto | [**indices**](classmuda_1_1_device_doublet_vector.md#function-indices-22) () const<br> |
 |  void | [**reserve\_doublets**](classmuda_1_1_device_doublet_vector.md#function-reserve_doublets) (size\_t nonzero\_count) <br> |
 |  void | [**reshape**](classmuda_1_1_device_doublet_vector.md#function-reshape) (int num\_segment) <br> |
 |  void | [**resize**](classmuda_1_1_device_doublet_vector.md#function-resize) (int num\_segment, size\_t nonzero\_count) <br> |
 |  void | [**resize\_doublets**](classmuda_1_1_device_doublet_vector.md#function-resize_doublets) (size\_t nonzero\_count) <br> |
-|  auto | [**segment\_count**](classmuda_1_1_device_doublet_vector.md#function-segment_count) () const<br> |
-|  auto | [**segment\_indices**](classmuda_1_1_device_doublet_vector.md#function-segment_indices-12) () <br> |
-|  auto | [**segment\_indices**](classmuda_1_1_device_doublet_vector.md#function-segment_indices-22) () const<br> |
-|  auto | [**segment\_values**](classmuda_1_1_device_doublet_vector.md#function-segment_values-12) () <br> |
-|  auto | [**segment\_values**](classmuda_1_1_device_doublet_vector.md#function-segment_values-22) () const<br> |
+|  auto | [**values**](classmuda_1_1_device_doublet_vector.md#function-values-12) () <br> |
+|  auto | [**values**](classmuda_1_1_device_doublet_vector.md#function-values-22) () const<br> |
 |  auto | [**view**](classmuda_1_1_device_doublet_vector.md#function-view-12) () <br> |
 |  auto | [**view**](classmuda_1_1_device_doublet_vector.md#function-view-22) () const<br> |
 |  auto | [**viewer**](classmuda_1_1_device_doublet_vector.md#function-viewer-12) () <br> |
@@ -141,9 +150,9 @@ See [muda::DeviceDoubletVector](classmuda_1_1_device_doublet_vector.md)
 
 | Type | Name |
 | ---: | :--- |
-|  int | [**m\_segment\_count**](classmuda_1_1_device_doublet_vector.md#variable-m_segment_count)   = = 0<br> |
-|  [**muda::DeviceBuffer**](classmuda_1_1_device_buffer.md)&lt; int &gt; | [**m\_segment\_indices**](classmuda_1_1_device_doublet_vector.md#variable-m_segment_indices)  <br> |
-|  [**muda::DeviceBuffer**](classmuda_1_1_device_buffer.md)&lt; SegmentVector &gt; | [**m\_segment\_values**](classmuda_1_1_device_doublet_vector.md#variable-m_segment_values)  <br> |
+|  int | [**m\_count**](classmuda_1_1_device_doublet_vector.md#variable-m_count)   = = 0<br> |
+|  [**muda::DeviceBuffer**](classmuda_1_1_device_buffer.md)&lt; int &gt; | [**m\_indices**](classmuda_1_1_device_doublet_vector.md#variable-m_indices)  <br> |
+|  [**muda::DeviceBuffer**](classmuda_1_1_device_buffer.md)&lt; ValueT &gt; | [**m\_values**](classmuda_1_1_device_doublet_vector.md#variable-m_values)  <br> |
 
 
 
@@ -245,10 +254,10 @@ muda::DeviceBCOOVector::DeviceBCOOVector (
 
 
 
-### function non\_zero\_segments 
+### function non\_zeros 
 
 ```C++
-inline auto muda::DeviceBCOOVector::non_zero_segments () const
+inline auto muda::DeviceBCOOVector::non_zeros () const
 ```
 
 

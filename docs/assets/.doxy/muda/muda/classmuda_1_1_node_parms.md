@@ -15,7 +15,7 @@
 
 
 
-Inherited by the following classes: [muda::HostNodeParms](classmuda_1_1_host_node_parms.md),  [muda::KernelNodeParms](classmuda_1_1_kernel_node_parms.md)
+Inherited by the following classes: [muda::KernelNodeParms](classmuda_1_1_kernel_node_parms.md),  [muda::KernelNodeParms](classmuda_1_1_kernel_node_parms.md),  [muda::HostNodeParms](classmuda_1_1_host_node_parms.md),  [muda::KernelNodeParms](classmuda_1_1_kernel_node_parms.md)
 
 
 

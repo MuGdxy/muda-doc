@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.1" xml:lang="en-US">
   <compounddef id="classmuda_1_1lbvh_1_1_b_v_h" kind="class" language="C++" prot="public">
     <compoundname>muda::lbvh::BVH</compoundname>
     <templateparamlist>
@@ -14,7 +14,6 @@
       </param>
       <param>
         <type>typename MortonCodeCalculator</type>
-        <defval><ref refid="structmuda_1_1lbvh_1_1_default_morton_code_calculator" kindref="compound">DefaultMortonCodeCalculator</ref>&lt;Real, Object&gt;</defval>
       </param>
     </templateparamlist>
     <sectiondef kind="public-type">
@@ -551,7 +550,7 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="src/muda/ext/geo/lbvh/bvh.h" line="89" column="1" bodyfile="src/muda/ext/geo/lbvh/bvh.h" bodystart="90" bodyend="368"/>
+    <location file="src/muda/ext/geo/lbvh/bvh.h" line="89" column="1" bodyfile="src/muda/ext/geo/lbvh/bvh_viewer.h" bodystart="11" bodyend="-1"/>
     <listofallmembers>
       <member refid="classmuda_1_1lbvh_1_1_b_v_h_1acc37d11048d2654f6bd39b72471e53e5" prot="public" virt="non-virtual"><scope>muda::lbvh::BVH</scope><name>aabb_getter_type</name></member>
       <member refid="classmuda_1_1lbvh_1_1_b_v_h_1ae8a655c51d8ed5ae5265d38cac2e7d19" prot="public" virt="non-virtual"><scope>muda::lbvh::BVH</scope><name>aabb_type</name></member>

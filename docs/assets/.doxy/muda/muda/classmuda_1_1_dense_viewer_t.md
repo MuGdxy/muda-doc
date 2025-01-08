@@ -58,8 +58,8 @@ See [muda::ViewerBase](classmuda_1_1_viewer_base.md)
 
 | Type | Name |
 | ---: | :--- |
-|  constexpr bool | [**IsConst**](classmuda_1_1_viewer_base.md#variable-isconst)   = = IsConst\_<br> |
-|  constexpr bool | [**IsNonConst**](classmuda_1_1_viewer_base.md#variable-isnonconst)   = = !IsConst\_<br> |
+|  bool | [**IsConst**](classmuda_1_1_viewer_base.md#variable-isconst)   = = IsConst\_<br> |
+|  bool | [**IsNonConst**](classmuda_1_1_viewer_base.md#variable-isnonconst)   = = !IsConst\_<br> |
 
 
 
@@ -92,7 +92,7 @@ See [muda::ViewerBase](classmuda_1_1_viewer_base.md)
 | ---: | :--- |
 |  MUDA\_GENERIC | [**DenseViewerT**](#function-denseviewert-25) () <br> |
 |  MUDA\_GENERIC | [**DenseViewerT**](#function-denseviewert-35) (auto\_const\_t&lt; T &gt; \* p) <br> |
-|  MUDA\_GENERIC | [**DenseViewerT**](#function-denseviewert-45) (const [**ThisViewer**](classmuda_1_1_dense_viewer_t.md) &) <br> |
+|  MUDA\_GENERIC | [**DenseViewerT**](#function-denseviewert-45) (const [**DenseViewerT**](classmuda_1_1_dense_viewer_t.md) &) <br> |
 |  MUDA\_GENERIC | [**DenseViewerT**](#function-denseviewert-55) (const [**DenseViewerT**](classmuda_1_1_dense_viewer_t.md)&lt; OtherIsConst, T &gt; & other) <br> |
 |  MUDA\_GENERIC auto | [**as\_const**](#function-as_const) () const<br> |
 |  MUDA\_GENERIC auto\_const\_t&lt; T &gt; \* | [**data**](#function-data) () const<br> |
@@ -294,7 +294,7 @@ inline explicit MUDA_GENERIC muda::DenseViewerT::DenseViewerT (
 
 ```C++
 MUDA_GENERIC muda::DenseViewerT::DenseViewerT (
-    const ThisViewer &
+    const DenseViewerT &
 ) 
 ```
 

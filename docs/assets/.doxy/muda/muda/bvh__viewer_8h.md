@@ -44,8 +44,8 @@
 | class | [**BVHViewerBase**](classmuda_1_1lbvh_1_1details_1_1_b_v_h_viewer_base.md) &lt;IsConst, typename Real, typename Object&gt;<br> |
 | struct | [**DefaultQueryCallback**](structmuda_1_1lbvh_1_1details_1_1_b_v_h_viewer_base_1_1_default_query_callback.md) <br> |
 | struct | [**Node**](structmuda_1_1lbvh_1_1details_1_1_node.md) <br> |
-| struct | [**read\_only\_viewer&lt; lbvh::BVHViewer&lt; Real, Object &gt; &gt;**](structmuda_1_1read__only__viewer_3_01lbvh_1_1_b_v_h_viewer_3_01_real_00_01_object_01_4_01_4.md) &lt;typename Real, typename Object&gt;<br> |
-| struct | [**read\_write\_viewer&lt; lbvh::CBVHViewer&lt; Real, Object &gt; &gt;**](structmuda_1_1read__write__viewer_3_01lbvh_1_1_c_b_v_h_viewer_3_01_real_00_01_object_01_4_01_4.md) &lt;typename Real, typename Object&gt;<br> |
+| struct | [**read\_only\_view**](structmuda_1_1read__only__view.md) &lt;typename T&gt;<br> |
+| struct | [**read\_write\_view**](structmuda_1_1read__write__view.md) &lt;typename T&gt;<br> |
 
 
 

@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.1" xml:lang="en-US">
   <compounddef id="classmuda_1_1_c_o_o_vector_view_base" kind="class" language="C++" prot="public">
     <compoundname>muda::COOVectorViewBase</compoundname>
     <basecompoundref refid="classmuda_1_1_view_base" prot="public" virt="non-virtual">muda::ViewBase&lt; IsConst &gt;</basecompoundref>
@@ -26,7 +26,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/ext/linear_system/bcoo_vector_view.h" line="19" column="5" bodyfile="src/muda/ext/linear_system/bcoo_vector_view.h" bodystart="19" bodyend="-1"/>
+        <location file="src/muda/ext/linear_system/bcoo_vector_view.h" line="18" column="5" bodyfile="src/muda/ext/linear_system/bcoo_vector_view.h" bodystart="18" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="classmuda_1_1_c_o_o_vector_view_base_1a48141478b629b33f28b44c4e0c96822c" prot="private" static="no">
         <templateparamlist>
@@ -45,7 +45,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/ext/linear_system/bcoo_vector_view.h" line="21" column="5" bodyfile="src/muda/ext/linear_system/bcoo_vector_view.h" bodystart="21" bodyend="-1"/>
+        <location file="src/muda/ext/linear_system/bcoo_vector_view.h" line="20" column="5" bodyfile="src/muda/ext/linear_system/bcoo_vector_view.h" bodystart="20" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-type">
@@ -61,7 +61,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/ext/linear_system/bcoo_vector_view.h" line="25" column="5" bodyfile="src/muda/ext/linear_system/bcoo_vector_view.h" bodystart="25" bodyend="-1"/>
+        <location file="src/muda/ext/linear_system/bcoo_vector_view.h" line="24" column="5" bodyfile="src/muda/ext/linear_system/bcoo_vector_view.h" bodystart="24" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="classmuda_1_1_c_o_o_vector_view_base_1acddc79c5602a19d775a0a3c3c4607886" prot="public" static="no">
         <type><ref refid="classmuda_1_1_c_o_o_vector_view_base" kindref="compound">COOVectorViewBase</ref>&lt; true, T &gt;</type>
@@ -75,7 +75,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/ext/linear_system/bcoo_vector_view.h" line="26" column="5" bodyfile="src/muda/ext/linear_system/bcoo_vector_view.h" bodystart="26" bodyend="-1"/>
+        <location file="src/muda/ext/linear_system/bcoo_vector_view.h" line="25" column="5" bodyfile="src/muda/ext/linear_system/bcoo_vector_view.h" bodystart="25" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="classmuda_1_1_c_o_o_vector_view_base_1a39c11bcad18fcc5cc57a119fae2e88da" prot="public" static="no">
         <type><ref refid="classmuda_1_1_c_o_o_vector_view_base" kindref="compound">COOVectorViewBase</ref>&lt; IsConst, T &gt;</type>
@@ -89,10 +89,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/ext/linear_system/bcoo_vector_view.h" line="27" column="5" bodyfile="src/muda/ext/linear_system/bcoo_vector_view.h" bodystart="27" bodyend="-1"/>
+        <location file="src/muda/ext/linear_system/bcoo_vector_view.h" line="26" column="5" bodyfile="src/muda/ext/linear_system/bcoo_vector_view.h" bodystart="26" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="classmuda_1_1_c_o_o_vector_view_base_1a3064bb9dbabc2793df761f52bfc32f91" prot="public" static="no">
-        <type><ref refid="classmuda_1_1_c_doublet_vector_viewer" kindref="compound">CCOOVectorViewer</ref>&lt; T &gt;</type>
+        <type>CCOOVectorViewer&lt; T &gt;</type>
         <definition>using muda::COOVectorViewBase&lt; IsConst, T &gt;::CViewer =  CCOOVectorViewer&lt;T&gt;</definition>
         <argsstring></argsstring>
         <name>CViewer</name>
@@ -103,10 +103,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/ext/linear_system/bcoo_vector_view.h" line="29" column="5" bodyfile="src/muda/ext/linear_system/bcoo_vector_view.h" bodystart="29" bodyend="-1"/>
+        <location file="src/muda/ext/linear_system/bcoo_vector_view.h" line="28" column="5" bodyfile="src/muda/ext/linear_system/bcoo_vector_view.h" bodystart="28" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="classmuda_1_1_c_o_o_vector_view_base_1a5a858bc006ad7e3813efcc63ce03b5fe" prot="public" static="no">
-        <type><ref refid="classmuda_1_1_c_doublet_vector_viewer" kindref="compound">COOVectorViewer</ref>&lt; T &gt;</type>
+        <type>COOVectorViewer&lt; T &gt;</type>
         <definition>using muda::COOVectorViewBase&lt; IsConst, T &gt;::Viewer =  COOVectorViewer&lt;T&gt;</definition>
         <argsstring></argsstring>
         <name>Viewer</name>
@@ -117,10 +117,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/ext/linear_system/bcoo_vector_view.h" line="30" column="5" bodyfile="src/muda/ext/linear_system/bcoo_vector_view.h" bodystart="30" bodyend="-1"/>
+        <location file="src/muda/ext/linear_system/bcoo_vector_view.h" line="29" column="5" bodyfile="src/muda/ext/linear_system/bcoo_vector_view.h" bodystart="29" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="classmuda_1_1_c_o_o_vector_view_base_1a657043d80adff337fa8560f7bcd7194d" prot="public" static="no">
-        <type>std::conditional_t&lt; IsConst, <ref refid="classmuda_1_1_c_doublet_vector_viewer" kindref="compound">CViewer</ref>, <ref refid="classmuda_1_1_c_doublet_vector_viewer" kindref="compound">Viewer</ref> &gt;</type>
+        <type>std::conditional_t&lt; IsConst, CViewer, Viewer &gt;</type>
         <definition>using muda::COOVectorViewBase&lt; IsConst, T &gt;::ThisViewer =  std::conditional_t&lt;IsConst, CViewer, Viewer&gt;</definition>
         <argsstring></argsstring>
         <name>ThisViewer</name>
@@ -131,7 +131,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/ext/linear_system/bcoo_vector_view.h" line="31" column="5" bodyfile="src/muda/ext/linear_system/bcoo_vector_view.h" bodystart="31" bodyend="-1"/>
+        <location file="src/muda/ext/linear_system/bcoo_vector_view.h" line="30" column="5" bodyfile="src/muda/ext/linear_system/bcoo_vector_view.h" bodystart="30" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="protected-attrib">
@@ -148,7 +148,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/ext/linear_system/bcoo_vector_view.h" line="35" column="9" bodyfile="src/muda/ext/linear_system/bcoo_vector_view.h" bodystart="35" bodyend="-1"/>
+        <location file="src/muda/ext/linear_system/bcoo_vector_view.h" line="34" column="9" bodyfile="src/muda/ext/linear_system/bcoo_vector_view.h" bodystart="34" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classmuda_1_1_c_o_o_vector_view_base_1a808166c6d138f40f36dbc82cc0dd17b1" prot="protected" static="no" mutable="no">
         <type>int</type>
@@ -163,7 +163,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/ext/linear_system/bcoo_vector_view.h" line="38" column="9" bodyfile="src/muda/ext/linear_system/bcoo_vector_view.h" bodystart="38" bodyend="-1"/>
+        <location file="src/muda/ext/linear_system/bcoo_vector_view.h" line="37" column="9" bodyfile="src/muda/ext/linear_system/bcoo_vector_view.h" bodystart="37" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classmuda_1_1_c_o_o_vector_view_base_1ad47f05d127a50cfa3a5818372b2b1be4" prot="protected" static="no" mutable="no">
         <type>int</type>
@@ -178,7 +178,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/ext/linear_system/bcoo_vector_view.h" line="39" column="9" bodyfile="src/muda/ext/linear_system/bcoo_vector_view.h" bodystart="39" bodyend="-1"/>
+        <location file="src/muda/ext/linear_system/bcoo_vector_view.h" line="38" column="9" bodyfile="src/muda/ext/linear_system/bcoo_vector_view.h" bodystart="38" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classmuda_1_1_c_o_o_vector_view_base_1a9dac53facf597aa861a4c3610d08076c" prot="protected" static="no" mutable="no">
         <type>int</type>
@@ -193,7 +193,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/ext/linear_system/bcoo_vector_view.h" line="40" column="9" bodyfile="src/muda/ext/linear_system/bcoo_vector_view.h" bodystart="40" bodyend="-1"/>
+        <location file="src/muda/ext/linear_system/bcoo_vector_view.h" line="39" column="9" bodyfile="src/muda/ext/linear_system/bcoo_vector_view.h" bodystart="39" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classmuda_1_1_c_o_o_vector_view_base_1a31afd646a9e33d6c8c5efb3cfe774e5c" prot="protected" static="no" mutable="no">
         <type>auto_const_t&lt; int &gt; *</type>
@@ -208,7 +208,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/ext/linear_system/bcoo_vector_view.h" line="43" column="18" bodyfile="src/muda/ext/linear_system/bcoo_vector_view.h" bodystart="43" bodyend="-1"/>
+        <location file="src/muda/ext/linear_system/bcoo_vector_view.h" line="42" column="18" bodyfile="src/muda/ext/linear_system/bcoo_vector_view.h" bodystart="42" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classmuda_1_1_c_o_o_vector_view_base_1a165b38d9ce92cc5435c76cd73bfd9424" prot="protected" static="no" mutable="no">
         <type>auto_const_t&lt; T &gt; *</type>
@@ -223,7 +223,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/ext/linear_system/bcoo_vector_view.h" line="44" column="20" bodyfile="src/muda/ext/linear_system/bcoo_vector_view.h" bodystart="44" bodyend="-1"/>
+        <location file="src/muda/ext/linear_system/bcoo_vector_view.h" line="43" column="20" bodyfile="src/muda/ext/linear_system/bcoo_vector_view.h" bodystart="43" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classmuda_1_1_c_o_o_vector_view_base_1a6756cab37fbfe00c4f31b1e02c12ddfc" prot="protected" static="no" mutable="yes">
         <type>cusparseSpVecDescr_t</type>
@@ -238,7 +238,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/ext/linear_system/bcoo_vector_view.h" line="46" column="34" bodyfile="src/muda/ext/linear_system/bcoo_vector_view.h" bodystart="46" bodyend="-1"/>
+        <location file="src/muda/ext/linear_system/bcoo_vector_view.h" line="45" column="34" bodyfile="src/muda/ext/linear_system/bcoo_vector_view.h" bodystart="45" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-func">
@@ -254,7 +254,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/ext/linear_system/bcoo_vector_view.h" line="49" column="18"/>
+        <location file="src/muda/ext/linear_system/bcoo_vector_view.h" line="48" column="18"/>
       </memberdef>
       <memberdef kind="function" id="classmuda_1_1_c_o_o_vector_view_base_1a461aa044766bdcdcb7ad48b6b51cc0c0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>MUDA_GENERIC</type>
@@ -296,7 +296,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/ext/linear_system/bcoo_vector_view.h" line="50" column="18" bodyfile="src/muda/ext/linear_system/bcoo_vector_view.h" bodystart="50" bodyend="71"/>
+        <location file="src/muda/ext/linear_system/bcoo_vector_view.h" line="49" column="18" bodyfile="src/muda/ext/linear_system/bcoo_vector_view.h" bodystart="49" bodyend="70"/>
       </memberdef>
       <memberdef kind="function" id="classmuda_1_1_c_o_o_vector_view_base_1ae5b5a75c1890b88ee2d1b05cbbf74c90" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>MUDA_GENERIC auto</type>
@@ -310,7 +310,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/ext/linear_system/bcoo_vector_view.h" line="75" column="23" bodyfile="src/muda/ext/linear_system/bcoo_vector_view.h" bodystart="75" bodyend="84"/>
+        <location file="src/muda/ext/linear_system/bcoo_vector_view.h" line="74" column="23" bodyfile="src/muda/ext/linear_system/bcoo_vector_view.h" bodystart="74" bodyend="83"/>
       </memberdef>
       <memberdef kind="function" id="classmuda_1_1_c_o_o_vector_view_base_1ae05c9316c0aacfb76b370055a79a1797" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>MUDA_GENERIC</type>
@@ -324,7 +324,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/ext/linear_system/bcoo_vector_view.h" line="86" column="18" bodyfile="src/muda/ext/linear_system/bcoo_vector_view.h" bodystart="86" bodyend="86"/>
+        <location file="src/muda/ext/linear_system/bcoo_vector_view.h" line="85" column="18" bodyfile="src/muda/ext/linear_system/bcoo_vector_view.h" bodystart="85" bodyend="85"/>
       </memberdef>
       <memberdef kind="function" id="classmuda_1_1_c_o_o_vector_view_base_1ad336116b50b177616df6a06c832ae26f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>MUDA_GENERIC auto</type>
@@ -338,7 +338,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/ext/linear_system/bcoo_vector_view.h" line="90" column="23" bodyfile="src/muda/ext/linear_system/bcoo_vector_view.h" bodystart="90" bodyend="94"/>
+        <location file="src/muda/ext/linear_system/bcoo_vector_view.h" line="89" column="23" bodyfile="src/muda/ext/linear_system/bcoo_vector_view.h" bodystart="89" bodyend="93"/>
       </memberdef>
       <memberdef kind="function" id="classmuda_1_1_c_o_o_vector_view_base_1a15bcf3af6bb5120d5c5d0a011b02f59a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>MUDA_GENERIC auto</type>
@@ -360,7 +360,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/ext/linear_system/bcoo_vector_view.h" line="96" column="23" bodyfile="src/muda/ext/linear_system/bcoo_vector_view.h" bodystart="96" bodyend="105"/>
+        <location file="src/muda/ext/linear_system/bcoo_vector_view.h" line="95" column="23" bodyfile="src/muda/ext/linear_system/bcoo_vector_view.h" bodystart="95" bodyend="104"/>
       </memberdef>
       <memberdef kind="function" id="classmuda_1_1_c_o_o_vector_view_base_1aebb82817770b733438597aeb71bd09cc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>MUDA_GENERIC auto</type>
@@ -378,7 +378,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/ext/linear_system/bcoo_vector_view.h" line="107" column="23" bodyfile="src/muda/ext/linear_system/bcoo_vector_view.h" bodystart="107" bodyend="110"/>
+        <location file="src/muda/ext/linear_system/bcoo_vector_view.h" line="106" column="23" bodyfile="src/muda/ext/linear_system/bcoo_vector_view.h" bodystart="106" bodyend="109"/>
       </memberdef>
       <memberdef kind="function" id="classmuda_1_1_c_o_o_vector_view_base_1a5fdcd89ca7fe7cb5ac0b9c55903e207f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>MUDA_GENERIC <ref refid="classmuda_1_1_c_o_o_vector_view_base" kindref="compound">ConstView</ref></type>
@@ -400,7 +400,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/ext/linear_system/bcoo_vector_view.h" line="114" column="28" bodyfile="src/muda/ext/linear_system/bcoo_vector_view.h" bodystart="114" bodyend="117"/>
+        <location file="src/muda/ext/linear_system/bcoo_vector_view.h" line="113" column="28" bodyfile="src/muda/ext/linear_system/bcoo_vector_view.h" bodystart="113" bodyend="116"/>
       </memberdef>
       <memberdef kind="function" id="classmuda_1_1_c_o_o_vector_view_base_1afd3279717164eda90e361902a776cb5d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>MUDA_GENERIC <ref refid="classmuda_1_1_c_o_o_vector_view_base" kindref="compound">ConstView</ref></type>
@@ -418,7 +418,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/ext/linear_system/bcoo_vector_view.h" line="119" column="28" bodyfile="src/muda/ext/linear_system/bcoo_vector_view.h" bodystart="119" bodyend="122"/>
+        <location file="src/muda/ext/linear_system/bcoo_vector_view.h" line="118" column="28" bodyfile="src/muda/ext/linear_system/bcoo_vector_view.h" bodystart="118" bodyend="121"/>
       </memberdef>
       <memberdef kind="function" id="classmuda_1_1_c_o_o_vector_view_base_1a8a9c8aa2f1992cbf4f63ca7c7f17985e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>MUDA_GENERIC auto</type>
@@ -432,7 +432,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/ext/linear_system/bcoo_vector_view.h" line="124" column="23" bodyfile="src/muda/ext/linear_system/bcoo_vector_view.h" bodystart="124" bodyend="124"/>
+        <location file="src/muda/ext/linear_system/bcoo_vector_view.h" line="123" column="23" bodyfile="src/muda/ext/linear_system/bcoo_vector_view.h" bodystart="123" bodyend="123"/>
       </memberdef>
       <memberdef kind="function" id="classmuda_1_1_c_o_o_vector_view_base_1a2c52ff3d1aea6431027605bb8e38a3b1" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>MUDA_GENERIC auto</type>
@@ -446,7 +446,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/ext/linear_system/bcoo_vector_view.h" line="127" column="23" bodyfile="src/muda/ext/linear_system/bcoo_vector_view.h" bodystart="127" bodyend="127"/>
+        <location file="src/muda/ext/linear_system/bcoo_vector_view.h" line="126" column="23" bodyfile="src/muda/ext/linear_system/bcoo_vector_view.h" bodystart="126" bodyend="126"/>
       </memberdef>
       <memberdef kind="function" id="classmuda_1_1_c_o_o_vector_view_base_1a72ca3ad68e8c18623fd6602fa2e71580" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>MUDA_GENERIC auto</type>
@@ -460,7 +460,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/ext/linear_system/bcoo_vector_view.h" line="129" column="23" bodyfile="src/muda/ext/linear_system/bcoo_vector_view.h" bodystart="129" bodyend="132"/>
+        <location file="src/muda/ext/linear_system/bcoo_vector_view.h" line="128" column="23" bodyfile="src/muda/ext/linear_system/bcoo_vector_view.h" bodystart="128" bodyend="131"/>
       </memberdef>
       <memberdef kind="function" id="classmuda_1_1_c_o_o_vector_view_base_1a97737bc40e510adef2b85e310a9759c3" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>MUDA_GENERIC auto</type>
@@ -474,7 +474,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/ext/linear_system/bcoo_vector_view.h" line="134" column="23" bodyfile="src/muda/ext/linear_system/bcoo_vector_view.h" bodystart="134" bodyend="134"/>
+        <location file="src/muda/ext/linear_system/bcoo_vector_view.h" line="133" column="23" bodyfile="src/muda/ext/linear_system/bcoo_vector_view.h" bodystart="133" bodyend="133"/>
       </memberdef>
       <memberdef kind="function" id="classmuda_1_1_c_o_o_vector_view_base_1a1d990e790d31cf30e91e52715f7e14a0" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>MUDA_GENERIC auto</type>
@@ -488,7 +488,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/ext/linear_system/bcoo_vector_view.h" line="136" column="23" bodyfile="src/muda/ext/linear_system/bcoo_vector_view.h" bodystart="136" bodyend="139"/>
+        <location file="src/muda/ext/linear_system/bcoo_vector_view.h" line="135" column="23" bodyfile="src/muda/ext/linear_system/bcoo_vector_view.h" bodystart="135" bodyend="138"/>
       </memberdef>
       <memberdef kind="function" id="classmuda_1_1_c_o_o_vector_view_base_1a26242633713c7f75a0b45872c97b4412" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>MUDA_GENERIC auto</type>
@@ -502,7 +502,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/ext/linear_system/bcoo_vector_view.h" line="141" column="23" bodyfile="src/muda/ext/linear_system/bcoo_vector_view.h" bodystart="141" bodyend="141"/>
+        <location file="src/muda/ext/linear_system/bcoo_vector_view.h" line="140" column="23" bodyfile="src/muda/ext/linear_system/bcoo_vector_view.h" bodystart="140" bodyend="140"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -510,30 +510,30 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="2">
-        <label>muda::ViewBase&lt; IsConst &gt;</label>
-        <link refid="classmuda_1_1_view_base"/>
-      </node>
       <node id="1">
         <label>muda::COOVectorViewBase&lt; IsConst, T &gt;</label>
         <link refid="classmuda_1_1_c_o_o_vector_view_base"/>
         <childnode refid="2" relation="public-inheritance">
         </childnode>
+      </node>
+      <node id="2">
+        <label>muda::ViewBase&lt; IsConst &gt;</label>
+        <link refid="classmuda_1_1_view_base"/>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="2">
-        <label>muda::ViewBase&lt; IsConst &gt;</label>
-        <link refid="classmuda_1_1_view_base"/>
-      </node>
       <node id="1">
         <label>muda::COOVectorViewBase&lt; IsConst, T &gt;</label>
         <link refid="classmuda_1_1_c_o_o_vector_view_base"/>
         <childnode refid="2" relation="public-inheritance">
         </childnode>
       </node>
+      <node id="2">
+        <label>muda::ViewBase&lt; IsConst &gt;</label>
+        <link refid="classmuda_1_1_view_base"/>
+      </node>
     </collaborationgraph>
-    <location file="src/muda/ext/linear_system/bcoo_vector_view.h" line="17" column="1" bodyfile="src/muda/ext/linear_system/bcoo_vector_view.h" bodystart="18" bodyend="142"/>
+    <location file="src/muda/ext/linear_system/bcoo_vector_view.h" line="16" column="1" bodyfile="src/muda/ext/linear_system/bcoo_vector_view.h" bodystart="17" bodyend="141"/>
     <listofallmembers>
       <member refid="classmuda_1_1_c_o_o_vector_view_base_1ae5b5a75c1890b88ee2d1b05cbbf74c90" prot="public" virt="non-virtual"><scope>muda::COOVectorViewBase</scope><name>as_const</name></member>
       <member refid="classmuda_1_1_c_o_o_vector_view_base_1a48141478b629b33f28b44c4e0c96822c" prot="private" virt="non-virtual"><scope>muda::COOVectorViewBase</scope><name>auto_const_t</name></member>
@@ -547,6 +547,8 @@
       <member refid="classmuda_1_1_c_o_o_vector_view_base_1a97737bc40e510adef2b85e310a9759c3" prot="public" virt="non-virtual"><scope>muda::COOVectorViewBase</scope><name>doublet_count</name></member>
       <member refid="classmuda_1_1_c_o_o_vector_view_base_1a72ca3ad68e8c18623fd6602fa2e71580" prot="public" virt="non-virtual"><scope>muda::COOVectorViewBase</scope><name>doublet_index_offset</name></member>
       <member refid="classmuda_1_1_view_base_1a462988275a74be2325fcf57408700ce9" prot="public" virt="non-virtual"><scope>muda::COOVectorViewBase</scope><name>IsConst</name></member>
+      <member refid="classmuda_1_1_view_base_1a462988275a74be2325fcf57408700ce9" prot="public" virt="non-virtual"><scope>muda::COOVectorViewBase</scope><name>IsConst</name></member>
+      <member refid="classmuda_1_1_view_base_1ae40f0a1f86127bc4dfeae5e08027e1dc" prot="public" virt="non-virtual"><scope>muda::COOVectorViewBase</scope><name>IsNonConst</name></member>
       <member refid="classmuda_1_1_view_base_1ae40f0a1f86127bc4dfeae5e08027e1dc" prot="public" virt="non-virtual"><scope>muda::COOVectorViewBase</scope><name>IsNonConst</name></member>
       <member refid="classmuda_1_1_c_o_o_vector_view_base_1a6756cab37fbfe00c4f31b1e02c12ddfc" prot="protected" virt="non-virtual"><scope>muda::COOVectorViewBase</scope><name>m_descr</name></member>
       <member refid="classmuda_1_1_c_o_o_vector_view_base_1ad47f05d127a50cfa3a5818372b2b1be4" prot="protected" virt="non-virtual"><scope>muda::COOVectorViewBase</scope><name>m_doublet_count</name></member>
@@ -555,6 +557,7 @@
       <member refid="classmuda_1_1_c_o_o_vector_view_base_1a8605a905e42ad7cca6e0f148d938ef93" prot="protected" virt="non-virtual"><scope>muda::COOVectorViewBase</scope><name>m_size</name></member>
       <member refid="classmuda_1_1_c_o_o_vector_view_base_1a9dac53facf597aa861a4c3610d08076c" prot="protected" virt="non-virtual"><scope>muda::COOVectorViewBase</scope><name>m_total_doublet_count</name></member>
       <member refid="classmuda_1_1_c_o_o_vector_view_base_1a165b38d9ce92cc5435c76cd73bfd9424" prot="protected" virt="non-virtual"><scope>muda::COOVectorViewBase</scope><name>m_values</name></member>
+      <member refid="classmuda_1_1_view_base_1a39d227092dd2b7baba8b7c74bf018f37" prot="public" virt="non-virtual"><scope>muda::COOVectorViewBase</scope><name>non_const_enable_t</name></member>
       <member refid="classmuda_1_1_view_base_1a39d227092dd2b7baba8b7c74bf018f37" prot="public" virt="non-virtual"><scope>muda::COOVectorViewBase</scope><name>non_const_enable_t</name></member>
       <member refid="classmuda_1_1_c_o_o_vector_view_base_1a94a94f27ada358989bc7d00fa749dec2" prot="public" virt="non-virtual"><scope>muda::COOVectorViewBase</scope><name>NonConstView</name></member>
       <member refid="classmuda_1_1_c_o_o_vector_view_base_1ae05c9316c0aacfb76b370055a79a1797" prot="public" virt="non-virtual"><scope>muda::COOVectorViewBase</scope><name>operator ConstView</name></member>

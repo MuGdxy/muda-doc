@@ -1,21 +1,9 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.1" xml:lang="en-US">
   <compounddef id="classmuda_1_1_launch_core" kind="class" language="C++" prot="public">
     <compoundname>muda::LaunchCore</compoundname>
     <derivedcompoundref refid="classmuda_1_1_launch_base" prot="public" virt="non-virtual">muda::LaunchBase&lt; BufferLaunch &gt;</derivedcompoundref>
     <derivedcompoundref refid="classmuda_1_1_launch_base" prot="public" virt="non-virtual">muda::LaunchBase&lt; Derive &gt;</derivedcompoundref>
-    <derivedcompoundref refid="classmuda_1_1_launch_base" prot="public" virt="non-virtual">muda::LaunchBase&lt; DeviceHistogram &gt;</derivedcompoundref>
-    <derivedcompoundref refid="classmuda_1_1_launch_base" prot="public" virt="non-virtual">muda::LaunchBase&lt; DeviceMergeSort &gt;</derivedcompoundref>
-    <derivedcompoundref refid="classmuda_1_1_launch_base" prot="public" virt="non-virtual">muda::LaunchBase&lt; DevicePartition &gt;</derivedcompoundref>
-    <derivedcompoundref refid="classmuda_1_1_launch_base" prot="public" virt="non-virtual">muda::LaunchBase&lt; DeviceRadixSort &gt;</derivedcompoundref>
-    <derivedcompoundref refid="classmuda_1_1_launch_base" prot="public" virt="non-virtual">muda::LaunchBase&lt; DeviceReduce &gt;</derivedcompoundref>
-    <derivedcompoundref refid="classmuda_1_1_launch_base" prot="public" virt="non-virtual">muda::LaunchBase&lt; DeviceRunLengthEncode &gt;</derivedcompoundref>
-    <derivedcompoundref refid="classmuda_1_1_launch_base" prot="public" virt="non-virtual">muda::LaunchBase&lt; DeviceScan &gt;</derivedcompoundref>
-    <derivedcompoundref refid="classmuda_1_1_launch_base" prot="public" virt="non-virtual">muda::LaunchBase&lt; DeviceSegmentedRadixSort &gt;</derivedcompoundref>
-    <derivedcompoundref refid="classmuda_1_1_launch_base" prot="public" virt="non-virtual">muda::LaunchBase&lt; DeviceSegmentedReduce &gt;</derivedcompoundref>
-    <derivedcompoundref refid="classmuda_1_1_launch_base" prot="public" virt="non-virtual">muda::LaunchBase&lt; DeviceSegmentedSort &gt;</derivedcompoundref>
-    <derivedcompoundref refid="classmuda_1_1_launch_base" prot="public" virt="non-virtual">muda::LaunchBase&lt; DeviceSelect &gt;</derivedcompoundref>
-    <derivedcompoundref refid="classmuda_1_1_launch_base" prot="public" virt="non-virtual">muda::LaunchBase&lt; DeviceSpmv &gt;</derivedcompoundref>
     <derivedcompoundref refid="classmuda_1_1_launch_base" prot="public" virt="non-virtual">muda::LaunchBase&lt; Empty &gt;</derivedcompoundref>
     <derivedcompoundref refid="classmuda_1_1_launch_base" prot="public" virt="non-virtual">muda::LaunchBase&lt; FieldEntryLaunch &gt;</derivedcompoundref>
     <derivedcompoundref refid="classmuda_1_1_launch_base" prot="public" virt="non-virtual">muda::LaunchBase&lt; GraphLaunch &gt;</derivedcompoundref>
@@ -42,7 +30,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/launch/launch_base.h" line="45" column="5" bodyfile="src/muda/launch/launch_base.h" bodystart="45" bodyend="-1"/>
+        <location file="src/muda/launch/launch_base.h" line="44" column="5" bodyfile="src/muda/launch/launch_base.h" bodystart="44" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="protected-attrib">
@@ -58,7 +46,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/launch/launch_base.h" line="48" column="20" bodyfile="src/muda/launch/launch_base.h" bodystart="48" bodyend="-1"/>
+        <location file="src/muda/launch/launch_base.h" line="47" column="20" bodyfile="src/muda/launch/launch_base.h" bodystart="47" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="protected-func">
@@ -74,7 +62,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/launch/launch_base.h" line="46" column="33" bodyfile="src/muda/launch/launch_base.h" bodystart="46" bodyend="46"/>
+        <location file="src/muda/launch/launch_base.h" line="45" column="33" bodyfile="src/muda/launch/launch_base.h" bodystart="45" bodyend="45"/>
       </memberdef>
       <memberdef kind="function" id="classmuda_1_1_launch_core_1a69a5dfc8c3f8a8e4bfec94a19e5d0d5d" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>MUDA_HOST void</type>
@@ -88,7 +76,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/launch/launch_base.h" line="49" column="20"/>
+        <location file="src/muda/launch/launch_base.h" line="48" column="20"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-static-func">
@@ -108,7 +96,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/launch/launch_base.h" line="52" column="17"/>
+        <location file="src/muda/launch/launch_base.h" line="51" column="17"/>
       </memberdef>
       <memberdef kind="function" id="classmuda_1_1_launch_core_1a04a0e62050d09f8ff1a448899776d53f" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -130,7 +118,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/launch/launch_base.h" line="53" column="17"/>
+        <location file="src/muda/launch/launch_base.h" line="52" column="17"/>
       </memberdef>
       <memberdef kind="function" id="classmuda_1_1_launch_core_1a7b29e878817d4e42bc533edc0c89b645" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -148,7 +136,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/launch/launch_base.h" line="77" column="17"/>
+        <location file="src/muda/launch/launch_base.h" line="76" column="17"/>
       </memberdef>
       <memberdef kind="function" id="classmuda_1_1_launch_core_1a73d5d54a7b3b59dcf8eea792e796337b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -166,7 +154,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/launch/launch_base.h" line="78" column="17"/>
+        <location file="src/muda/launch/launch_base.h" line="77" column="17"/>
       </memberdef>
       <memberdef kind="function" id="classmuda_1_1_launch_core_1a58e970f699c546d37c70af9bb4d3a93c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -180,7 +168,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/launch/launch_base.h" line="79" column="17"/>
+        <location file="src/muda/launch/launch_base.h" line="78" column="17"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-func">
@@ -200,7 +188,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/launch/launch_base.h" line="55" column="18"/>
+        <location file="src/muda/launch/launch_base.h" line="54" column="18"/>
       </memberdef>
       <memberdef kind="function" id="classmuda_1_1_launch_core_1a38c542a99edea149552d82639e385ab5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -218,7 +206,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/launch/launch_base.h" line="57" column="10" bodyfile="src/muda/launch/launch_base.h" bodystart="57" bodyend="57"/>
+        <location file="src/muda/launch/launch_base.h" line="56" column="10" bodyfile="src/muda/launch/launch_base.h" bodystart="56" bodyend="56"/>
       </memberdef>
       <memberdef kind="function" id="classmuda_1_1_launch_core_1a5ff2a138d60f79dddf645b4da604ca9f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -236,7 +224,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/launch/launch_base.h" line="59" column="10"/>
+        <location file="src/muda/launch/launch_base.h" line="58" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classmuda_1_1_launch_core_1aa53bc976fbc8a1f3339452adcdaaef40" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -250,7 +238,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/launch/launch_base.h" line="60" column="10"/>
+        <location file="src/muda/launch/launch_base.h" line="59" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classmuda_1_1_launch_core_1a0aa7e823c55780ff22e4698400c03a1b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -273,7 +261,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/launch/launch_base.h" line="62" column="10"/>
+        <location file="src/muda/launch/launch_base.h" line="61" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classmuda_1_1_launch_core_1a925fc22c5b69ec9a39f8ddd2737477bb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -295,7 +283,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/launch/launch_base.h" line="63" column="10"/>
+        <location file="src/muda/launch/launch_base.h" line="62" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classmuda_1_1_launch_core_1a6913a96f81122fda9b1799008dce1919" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <templateparamlist>
@@ -324,7 +312,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/launch/launch_base.h" line="66" column="10"/>
+        <location file="src/muda/launch/launch_base.h" line="65" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classmuda_1_1_launch_core_1aad46b6d64ac00b0b9a4c7ca83a5b18d2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -347,7 +335,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/launch/launch_base.h" line="67" column="10"/>
+        <location file="src/muda/launch/launch_base.h" line="66" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classmuda_1_1_launch_core_1a68e568f7f7187b69331c8ddff66e20e7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -370,7 +358,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/launch/launch_base.h" line="69" column="10"/>
+        <location file="src/muda/launch/launch_base.h" line="68" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classmuda_1_1_launch_core_1ab855efc95833fde4b6bf796101ae6d03" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -392,7 +380,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/launch/launch_base.h" line="70" column="10"/>
+        <location file="src/muda/launch/launch_base.h" line="69" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classmuda_1_1_launch_core_1aba4f1e2f8b31d1988b9b11d7c94d5b55" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <templateparamlist>
@@ -421,7 +409,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/launch/launch_base.h" line="73" column="10"/>
+        <location file="src/muda/launch/launch_base.h" line="72" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classmuda_1_1_launch_core_1a75b822d8da9e2c270e7f8b54df937267" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -435,7 +423,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/launch/launch_base.h" line="74" column="10"/>
+        <location file="src/muda/launch/launch_base.h" line="73" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classmuda_1_1_launch_core_1a9aaae3b7df662ddde5571dafb1e74885" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -453,7 +441,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/launch/launch_base.h" line="75" column="10"/>
+        <location file="src/muda/launch/launch_base.h" line="74" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classmuda_1_1_launch_core_1a5e4ae3435bce9d4ad706b5e347a3040f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -467,7 +455,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/launch/launch_base.h" line="81" column="5"/>
+        <location file="src/muda/launch/launch_base.h" line="80" column="5"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -475,76 +463,196 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="33">
+      <node id="3">
+        <label>muda::BufferLaunch</label>
+        <link refid="classmuda_1_1_buffer_launch"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>muda::CubWrapper&lt; Derive &gt;</label>
+        <link refid="classmuda_1_1_cub_wrapper"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="21">
         <label>muda::CubWrapper&lt; DeviceHistogram &gt;</label>
         <link refid="classmuda_1_1_cub_wrapper"/>
-        <childnode refid="32" relation="public-inheritance">
+        <childnode refid="20" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>muda::CubWrapper&lt; DeviceMergeSort &gt;</label>
+        <link refid="classmuda_1_1_cub_wrapper"/>
+        <childnode refid="20" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>muda::CubWrapper&lt; DevicePartition &gt;</label>
+        <link refid="classmuda_1_1_cub_wrapper"/>
+        <childnode refid="20" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>muda::CubWrapper&lt; DeviceRadixSort &gt;</label>
+        <link refid="classmuda_1_1_cub_wrapper"/>
+        <childnode refid="20" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>muda::CubWrapper&lt; DeviceReduce &gt;</label>
+        <link refid="classmuda_1_1_cub_wrapper"/>
+        <childnode refid="20" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>muda::CubWrapper&lt; DeviceRunLengthEncode &gt;</label>
+        <link refid="classmuda_1_1_cub_wrapper"/>
+        <childnode refid="20" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="33">
+        <label>muda::CubWrapper&lt; DeviceScan &gt;</label>
+        <link refid="classmuda_1_1_cub_wrapper"/>
+        <childnode refid="20" relation="public-inheritance">
         </childnode>
       </node>
       <node id="35">
-        <label>muda::CubWrapper&lt; DeviceMergeSort &gt;</label>
+        <label>muda::CubWrapper&lt; DeviceSegmentedRadixSort &gt;</label>
         <link refid="classmuda_1_1_cub_wrapper"/>
-        <childnode refid="32" relation="public-inheritance">
+        <childnode refid="20" relation="public-inheritance">
         </childnode>
       </node>
       <node id="37">
-        <label>muda::CubWrapper&lt; DevicePartition &gt;</label>
+        <label>muda::CubWrapper&lt; DeviceSegmentedReduce &gt;</label>
         <link refid="classmuda_1_1_cub_wrapper"/>
-        <childnode refid="32" relation="public-inheritance">
+        <childnode refid="20" relation="public-inheritance">
         </childnode>
       </node>
       <node id="39">
-        <label>muda::CubWrapper&lt; DeviceRadixSort &gt;</label>
+        <label>muda::CubWrapper&lt; DeviceSegmentedSort &gt;</label>
         <link refid="classmuda_1_1_cub_wrapper"/>
-        <childnode refid="32" relation="public-inheritance">
+        <childnode refid="20" relation="public-inheritance">
         </childnode>
       </node>
       <node id="41">
-        <label>muda::CubWrapper&lt; DeviceReduce &gt;</label>
+        <label>muda::CubWrapper&lt; DeviceSelect &gt;</label>
         <link refid="classmuda_1_1_cub_wrapper"/>
-        <childnode refid="32" relation="public-inheritance">
+        <childnode refid="20" relation="public-inheritance">
         </childnode>
       </node>
       <node id="43">
-        <label>muda::CubWrapper&lt; DeviceRunLengthEncode &gt;</label>
-        <link refid="classmuda_1_1_cub_wrapper"/>
-        <childnode refid="32" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="45">
-        <label>muda::CubWrapper&lt; DeviceScan &gt;</label>
-        <link refid="classmuda_1_1_cub_wrapper"/>
-        <childnode refid="32" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="47">
-        <label>muda::CubWrapper&lt; DeviceSegmentedRadixSort &gt;</label>
-        <link refid="classmuda_1_1_cub_wrapper"/>
-        <childnode refid="32" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="49">
-        <label>muda::CubWrapper&lt; DeviceSegmentedReduce &gt;</label>
-        <link refid="classmuda_1_1_cub_wrapper"/>
-        <childnode refid="32" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="51">
-        <label>muda::CubWrapper&lt; DeviceSegmentedSort &gt;</label>
-        <link refid="classmuda_1_1_cub_wrapper"/>
-        <childnode refid="32" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="53">
-        <label>muda::CubWrapper&lt; DeviceSelect &gt;</label>
-        <link refid="classmuda_1_1_cub_wrapper"/>
-        <childnode refid="32" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="55">
         <label>muda::CubWrapper&lt; DeviceSpmv &gt;</label>
         <link refid="classmuda_1_1_cub_wrapper"/>
-        <childnode refid="32" relation="public-inheritance">
+        <childnode refid="20" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>muda::DeviceHistogram</label>
+        <link refid="classmuda_1_1_device_histogram"/>
+        <childnode refid="21" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>muda::DeviceMergeSort</label>
+        <link refid="classmuda_1_1_device_merge_sort"/>
+        <childnode refid="23" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>muda::DevicePartition</label>
+        <link refid="classmuda_1_1_device_partition"/>
+        <childnode refid="25" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>muda::DeviceRadixSort</label>
+        <link refid="classmuda_1_1_device_radix_sort"/>
+        <childnode refid="27" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>muda::DeviceReduce</label>
+        <link refid="classmuda_1_1_device_reduce"/>
+        <childnode refid="29" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>muda::DeviceRunLengthEncode</label>
+        <link refid="classmuda_1_1_device_run_length_encode"/>
+        <childnode refid="31" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="34">
+        <label>muda::DeviceScan</label>
+        <link refid="classmuda_1_1_device_scan"/>
+        <childnode refid="33" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="36">
+        <label>muda::DeviceSegmentedRadixSort</label>
+        <link refid="classmuda_1_1_device_segmented_radix_sort"/>
+        <childnode refid="35" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="38">
+        <label>muda::DeviceSegmentedReduce</label>
+        <link refid="classmuda_1_1_device_segmented_reduce"/>
+        <childnode refid="37" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="40">
+        <label>muda::DeviceSegmentedSort</label>
+        <link refid="classmuda_1_1_device_segmented_sort"/>
+        <childnode refid="39" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="42">
+        <label>muda::DeviceSelect</label>
+        <link refid="classmuda_1_1_device_select"/>
+        <childnode refid="41" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="44">
+        <label>muda::DeviceSpmv</label>
+        <link refid="classmuda_1_1_device_spmv"/>
+        <childnode refid="43" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>muda::Empty</label>
+        <link refid="classmuda_1_1_empty"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>muda::FieldEntryLaunch</label>
+        <link refid="classmuda_1_1_field_entry_launch"/>
+        <childnode refid="8" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>muda::GraphLaunch</label>
+        <link refid="classmuda_1_1_graph_launch"/>
+        <childnode refid="10" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>muda::HostCall</label>
+        <link refid="classmuda_1_1_host_call"/>
+        <childnode refid="12" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>muda::Launch</label>
+        <link refid="classmuda_1_1_launch"/>
+        <childnode refid="14" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>muda::LaunchBase&lt; T &gt;</label>
+        <link refid="classmuda_1_1_launch_base"/>
+        <childnode refid="1" relation="public-inheritance">
         </childnode>
       </node>
       <node id="2">
@@ -560,235 +668,43 @@
         </childnode>
       </node>
       <node id="6">
-        <label>muda::LaunchBase&lt; DeviceHistogram &gt;</label>
-        <link refid="classmuda_1_1_launch_base"/>
-        <childnode refid="1" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="7">
-        <label>muda::LaunchBase&lt; DeviceMergeSort &gt;</label>
-        <link refid="classmuda_1_1_launch_base"/>
-        <childnode refid="1" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="8">
-        <label>muda::LaunchBase&lt; DevicePartition &gt;</label>
-        <link refid="classmuda_1_1_launch_base"/>
-        <childnode refid="1" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="9">
-        <label>muda::LaunchBase&lt; DeviceRadixSort &gt;</label>
-        <link refid="classmuda_1_1_launch_base"/>
-        <childnode refid="1" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="10">
-        <label>muda::LaunchBase&lt; DeviceReduce &gt;</label>
-        <link refid="classmuda_1_1_launch_base"/>
-        <childnode refid="1" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="11">
-        <label>muda::LaunchBase&lt; DeviceRunLengthEncode &gt;</label>
-        <link refid="classmuda_1_1_launch_base"/>
-        <childnode refid="1" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="12">
-        <label>muda::LaunchBase&lt; DeviceScan &gt;</label>
-        <link refid="classmuda_1_1_launch_base"/>
-        <childnode refid="1" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="13">
-        <label>muda::LaunchBase&lt; DeviceSegmentedRadixSort &gt;</label>
-        <link refid="classmuda_1_1_launch_base"/>
-        <childnode refid="1" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="14">
-        <label>muda::LaunchBase&lt; DeviceSegmentedReduce &gt;</label>
-        <link refid="classmuda_1_1_launch_base"/>
-        <childnode refid="1" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="15">
-        <label>muda::LaunchBase&lt; DeviceSegmentedSort &gt;</label>
-        <link refid="classmuda_1_1_launch_base"/>
-        <childnode refid="1" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="16">
-        <label>muda::LaunchBase&lt; DeviceSelect &gt;</label>
-        <link refid="classmuda_1_1_launch_base"/>
-        <childnode refid="1" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="17">
-        <label>muda::LaunchBase&lt; DeviceSpmv &gt;</label>
-        <link refid="classmuda_1_1_launch_base"/>
-        <childnode refid="1" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="18">
         <label>muda::LaunchBase&lt; Empty &gt;</label>
         <link refid="classmuda_1_1_launch_base"/>
         <childnode refid="1" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="20">
+      <node id="8">
         <label>muda::LaunchBase&lt; FieldEntryLaunch &gt;</label>
         <link refid="classmuda_1_1_launch_base"/>
         <childnode refid="1" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="22">
+      <node id="10">
         <label>muda::LaunchBase&lt; GraphLaunch &gt;</label>
         <link refid="classmuda_1_1_launch_base"/>
         <childnode refid="1" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="24">
+      <node id="12">
         <label>muda::LaunchBase&lt; HostCall &gt;</label>
         <link refid="classmuda_1_1_launch_base"/>
         <childnode refid="1" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="26">
+      <node id="14">
         <label>muda::LaunchBase&lt; Launch &gt;</label>
         <link refid="classmuda_1_1_launch_base"/>
         <childnode refid="1" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="28">
+      <node id="16">
         <label>muda::LaunchBase&lt; Memory &gt;</label>
         <link refid="classmuda_1_1_launch_base"/>
         <childnode refid="1" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="30">
+      <node id="18">
         <label>muda::LaunchBase&lt; ParallelFor &gt;</label>
-        <link refid="classmuda_1_1_launch_base"/>
-        <childnode refid="1" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="3">
-        <label>muda::BufferLaunch</label>
-        <link refid="classmuda_1_1_buffer_launch"/>
-        <childnode refid="2" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="5">
-        <label>muda::CubWrapper&lt; Derive &gt;</label>
-        <link refid="classmuda_1_1_cub_wrapper"/>
-        <childnode refid="4" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="34">
-        <label>muda::DeviceHistogram</label>
-        <link refid="classmuda_1_1_device_histogram"/>
-        <childnode refid="33" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="36">
-        <label>muda::DeviceMergeSort</label>
-        <link refid="classmuda_1_1_device_merge_sort"/>
-        <childnode refid="35" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="38">
-        <label>muda::DevicePartition</label>
-        <link refid="classmuda_1_1_device_partition"/>
-        <childnode refid="37" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="40">
-        <label>muda::DeviceRadixSort</label>
-        <link refid="classmuda_1_1_device_radix_sort"/>
-        <childnode refid="39" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="42">
-        <label>muda::DeviceReduce</label>
-        <link refid="classmuda_1_1_device_reduce"/>
-        <childnode refid="41" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="44">
-        <label>muda::DeviceRunLengthEncode</label>
-        <link refid="classmuda_1_1_device_run_length_encode"/>
-        <childnode refid="43" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="46">
-        <label>muda::DeviceScan</label>
-        <link refid="classmuda_1_1_device_scan"/>
-        <childnode refid="45" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="48">
-        <label>muda::DeviceSegmentedRadixSort</label>
-        <link refid="classmuda_1_1_device_segmented_radix_sort"/>
-        <childnode refid="47" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="50">
-        <label>muda::DeviceSegmentedReduce</label>
-        <link refid="classmuda_1_1_device_segmented_reduce"/>
-        <childnode refid="49" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="52">
-        <label>muda::DeviceSegmentedSort</label>
-        <link refid="classmuda_1_1_device_segmented_sort"/>
-        <childnode refid="51" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="54">
-        <label>muda::DeviceSelect</label>
-        <link refid="classmuda_1_1_device_select"/>
-        <childnode refid="53" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="56">
-        <label>muda::DeviceSpmv</label>
-        <link refid="classmuda_1_1_device_spmv"/>
-        <childnode refid="55" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="19">
-        <label>muda::Empty</label>
-        <link refid="classmuda_1_1_empty"/>
-        <childnode refid="18" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="21">
-        <label>muda::FieldEntryLaunch</label>
-        <link refid="classmuda_1_1_field_entry_launch"/>
-        <childnode refid="20" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="23">
-        <label>muda::GraphLaunch</label>
-        <link refid="classmuda_1_1_graph_launch"/>
-        <childnode refid="22" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="25">
-        <label>muda::HostCall</label>
-        <link refid="classmuda_1_1_host_call"/>
-        <childnode refid="24" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="27">
-        <label>muda::Launch</label>
-        <link refid="classmuda_1_1_launch"/>
-        <childnode refid="26" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="32">
-        <label>muda::LaunchBase&lt; T &gt;</label>
         <link refid="classmuda_1_1_launch_base"/>
         <childnode refid="1" relation="public-inheritance">
         </childnode>
@@ -797,20 +713,20 @@
         <label>muda::LaunchCore</label>
         <link refid="classmuda_1_1_launch_core"/>
       </node>
-      <node id="29">
+      <node id="17">
         <label>muda::Memory</label>
         <link refid="classmuda_1_1_memory"/>
-        <childnode refid="28" relation="public-inheritance">
+        <childnode refid="16" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="31">
+      <node id="19">
         <label>muda::ParallelFor</label>
         <link refid="classmuda_1_1_parallel_for"/>
-        <childnode refid="30" relation="public-inheritance">
+        <childnode refid="18" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
-    <location file="src/muda/launch/launch_base.h" line="41" column="1" bodyfile="src/muda/launch/launch_base.h" bodystart="42" bodyend="82"/>
+    <location file="src/muda/launch/launch_base.h" line="40" column="1" bodyfile="src/muda/launch/launch_base.h" bodystart="41" bodyend="81"/>
     <listofallmembers>
       <member refid="classmuda_1_1_launch_core_1a9aaae3b7df662ddde5571dafb1e74885" prot="public" virt="non-virtual"><scope>muda::LaunchCore</scope><name>callback</name></member>
       <member refid="classmuda_1_1_launch_core_1a04a0e62050d09f8ff1a448899776d53f" prot="public" virt="non-virtual"><scope>muda::LaunchCore</scope><name>file_line</name></member>

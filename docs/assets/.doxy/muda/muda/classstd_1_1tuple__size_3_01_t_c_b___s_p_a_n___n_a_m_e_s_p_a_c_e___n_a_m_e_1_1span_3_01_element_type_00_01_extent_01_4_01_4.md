@@ -6,7 +6,7 @@
 
 
 
-[**ClassList**](annotated.md) **>** [**tuple\_size&lt; TCB\_SPAN\_NAMESPACE\_NAME::span&lt; ElementType, Extent &gt; &gt;**](classstd_1_1tuple__size_3_01_t_c_b___s_p_a_n___n_a_m_e_s_p_a_c_e___n_a_m_e_1_1span_3_01_element_type_00_01_extent_01_4_01_4.md)
+[**ClassList**](annotated.md) **>** [**std**](namespacestd.md) **>** [**tuple\_size&lt; TCB\_SPAN\_NAMESPACE\_NAME::span&lt; ElementType, Extent &gt; &gt;**](classstd_1_1tuple__size_3_01_t_c_b___s_p_a_n___n_a_m_e_s_p_a_c_e___n_a_m_e_1_1span_3_01_element_type_00_01_extent_01_4_01_4.md)
 
 
 

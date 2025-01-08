@@ -77,7 +77,7 @@ _distance calculation for point/edge/triangle_ [More...](#detailed-description)
 
 
 
-# Detailed Description
+## Detailed Description
 
 
 

@@ -87,7 +87,7 @@ Inherits the following classes: [muda::FieldEntryBase](classmuda_1_1_field_entry
 |  void | [**copy\_from**](#function-copy_from-33) (const [**FieldEntry**](classmuda_1_1_field_entry.md)&lt; T, SrcLayout, M, N &gt; & src) <br> |
 |  void | [**copy\_to**](#function-copy_to-12) ([**DeviceBuffer**](classmuda_1_1_device_buffer.md)&lt; ElementType &gt; & dst) const<br> |
 |  void | [**copy\_to**](#function-copy_to-22) (std::vector&lt; ElementType &gt; & dst) const<br> |
-|  CFieldEntryViewer&lt; T, Layout, M, N &gt; | [**cviewer**](#function-cviewer) () const<br> |
+|  [**CFieldEntryViewer**](classmuda_1_1_c_field_entry_viewer.md)&lt; T, Layout, M, N &gt; | [**cviewer**](#function-cviewer) () const<br> |
 |  void | [**fill**](#function-fill) (const ElementType & value) <br> |
 |  [**FieldEntryView**](classmuda_1_1_field_entry_view.md)&lt; T, Layout, M, N &gt; | [**view**](#function-view-16) () <br> |
 |  [**CFieldEntryView**](classmuda_1_1_c_field_entry_view.md)&lt; T, Layout, M, N &gt; | [**view**](#function-view-26) () const<br> |
@@ -95,7 +95,7 @@ Inherits the following classes: [muda::FieldEntryBase](classmuda_1_1_field_entry
 |  auto | [**view**](#function-view-46) (int offset) const<br> |
 |  auto | [**view**](#function-view-56) (int offset, int count) <br> |
 |  auto | [**view**](#function-view-66) (int offset, int count) const<br> |
-|  FieldEntryViewer&lt; T, Layout, M, N &gt; | [**viewer**](#function-viewer) () <br> |
+|  [**FieldEntryViewer**](classmuda_1_1_field_entry_viewer.md)&lt; T, Layout, M, N &gt; | [**viewer**](#function-viewer) () <br> |
 
 
 ## Public Functions inherited from muda::FieldEntryBase
@@ -340,7 +340,7 @@ void muda::FieldEntry::copy_to (
 ### function cviewer 
 
 ```C++
-inline CFieldEntryViewer< T, Layout, M, N > muda::FieldEntry::cviewer () const
+inline CFieldEntryViewer < T, Layout, M, N > muda::FieldEntry::cviewer () const
 ```
 
 
@@ -456,7 +456,7 @@ inline auto muda::FieldEntry::view (
 ### function viewer 
 
 ```C++
-inline FieldEntryViewer< T, Layout, M, N > muda::FieldEntry::viewer () 
+inline FieldEntryViewer < T, Layout, M, N > muda::FieldEntry::viewer () 
 ```
 
 
@@ -465,5 +465,5 @@ inline FieldEntryViewer< T, Layout, M, N > muda::FieldEntry::viewer ()
 <hr>
 
 ------------------------------
-The documentation for this class was generated from the following file `src/muda/ext/field/field_entry.h`
+The documentation for this class was generated from the following file `src/muda/ext/field/field.h`
 

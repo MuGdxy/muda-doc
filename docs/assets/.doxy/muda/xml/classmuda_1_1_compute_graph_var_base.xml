@@ -1,13 +1,18 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.1" xml:lang="en-US">
   <compounddef id="classmuda_1_1_compute_graph_var_base" kind="class" language="C++" prot="public">
     <compoundname>muda::ComputeGraphVarBase</compoundname>
+    <derivedcompoundref refid="classmuda_1_1_compute_graph_var" prot="public" virt="non-virtual">muda::ComputeGraphVar&lt; Buffer2DView&lt; T &gt; &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classmuda_1_1_compute_graph_var" prot="public" virt="non-virtual">muda::ComputeGraphVar&lt; Buffer3DView&lt; T &gt; &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classmuda_1_1_compute_graph_var" prot="public" virt="non-virtual">muda::ComputeGraphVar&lt; BufferView&lt; T &gt; &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classmuda_1_1_compute_graph_var" prot="public" virt="non-virtual">muda::ComputeGraphVar&lt; GraphViewer &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classmuda_1_1_compute_graph_var" prot="public" virt="non-virtual">muda::ComputeGraphVar&lt; VarView&lt; T &gt; &gt;</derivedcompoundref>
     <derivedcompoundref refid="classmuda_1_1_compute_graph_var" prot="public" virt="non-virtual">muda::ComputeGraphVar&lt; T &gt;</derivedcompoundref>
-    <derivedcompoundref refid="classmuda_1_1_compute_graph_var_3_01_buffer2_d_view_3_01_t_01_4_01_4" prot="public" virt="non-virtual">muda::ComputeGraphVar&lt; Buffer2DView&lt; T &gt; &gt;</derivedcompoundref>
-    <derivedcompoundref refid="classmuda_1_1_compute_graph_var_3_01_buffer3_d_view_3_01_t_01_4_01_4" prot="public" virt="non-virtual">muda::ComputeGraphVar&lt; Buffer3DView&lt; T &gt; &gt;</derivedcompoundref>
-    <derivedcompoundref refid="classmuda_1_1_compute_graph_var_3_01_buffer_view_3_01_t_01_4_01_4" prot="public" virt="non-virtual">muda::ComputeGraphVar&lt; BufferView&lt; T &gt; &gt;</derivedcompoundref>
-    <derivedcompoundref refid="classmuda_1_1_compute_graph_var_3_01_graph_viewer_01_4" prot="public" virt="non-virtual">muda::ComputeGraphVar&lt; GraphViewer &gt;</derivedcompoundref>
-    <derivedcompoundref refid="classmuda_1_1_compute_graph_var_3_01_var_view_3_01_t_01_4_01_4" prot="public" virt="non-virtual">muda::ComputeGraphVar&lt; VarView&lt; T &gt; &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classmuda_1_1_compute_graph_var" prot="public" virt="non-virtual">muda::ComputeGraphVar&lt; Buffer2DView&lt; T &gt; &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classmuda_1_1_compute_graph_var" prot="public" virt="non-virtual">muda::ComputeGraphVar&lt; Buffer3DView&lt; T &gt; &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classmuda_1_1_compute_graph_var" prot="public" virt="non-virtual">muda::ComputeGraphVar&lt; BufferView&lt; T &gt; &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classmuda_1_1_compute_graph_var" prot="public" virt="non-virtual">muda::ComputeGraphVar&lt; GraphViewer &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classmuda_1_1_compute_graph_var" prot="public" virt="non-virtual">muda::ComputeGraphVar&lt; VarView&lt; T &gt; &gt;</derivedcompoundref>
     <innerclass refid="classmuda_1_1_compute_graph_var_base_1_1_related_closure_info" prot="private">muda::ComputeGraphVarBase::RelatedClosureInfo</innerclass>
     <sectiondef kind="private-attrib">
       <memberdef kind="variable" id="classmuda_1_1_compute_graph_var_base_1a19ac635cfd2670696e4d1d994a89f494" prot="private" static="no" mutable="no">
@@ -256,7 +261,12 @@
         <argsstring>(std::ostream &amp;os, const ComputeGraphGraphvizOptions &amp;options) const</argsstring>
         <name>graphviz_def</name>
         <qualifiedname>muda::ComputeGraphVarBase::graphviz_def</qualifiedname>
-        <reimplementedby refid="classmuda_1_1_compute_graph_var_3_01_graph_viewer_01_4_1ad0a1fdfb98108b2daa332d7a34257db4">graphviz_def</reimplementedby>
+        <reimplementedby refid="classmuda_1_1_compute_graph_var_1aa9e237f244ef1d90320f75d7ee7d490b">graphviz_def</reimplementedby>
+        <reimplementedby refid="classmuda_1_1_compute_graph_var_1aa9e237f244ef1d90320f75d7ee7d490b">graphviz_def</reimplementedby>
+        <reimplementedby refid="classmuda_1_1_compute_graph_var_1aa9e237f244ef1d90320f75d7ee7d490b">graphviz_def</reimplementedby>
+        <reimplementedby refid="classmuda_1_1_compute_graph_var_1aa9e237f244ef1d90320f75d7ee7d490b">graphviz_def</reimplementedby>
+        <reimplementedby refid="classmuda_1_1_compute_graph_var_1ad0a1fdfb98108b2daa332d7a34257db4">graphviz_def</reimplementedby>
+        <reimplementedby refid="classmuda_1_1_compute_graph_var_1aa9e237f244ef1d90320f75d7ee7d490b">graphviz_def</reimplementedby>
         <reimplementedby refid="classmuda_1_1_compute_graph_var_1aa9e237f244ef1d90320f75d7ee7d490b">graphviz_def</reimplementedby>
         <param>
           <type>std::ostream &amp;</type>
@@ -500,39 +510,49 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="2">
+      <node id="7">
         <label>muda::ComputeGraphVar&lt; T &gt;</label>
         <link refid="classmuda_1_1_compute_graph_var"/>
         <childnode refid="1" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="3">
+      <node id="2">
         <label>muda::ComputeGraphVar&lt; Buffer2DView&lt; T &gt; &gt;</label>
-        <link refid="classmuda_1_1_compute_graph_var_3_01_buffer2_d_view_3_01_t_01_4_01_4"/>
+        <link refid="classmuda_1_1_compute_graph_var"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>muda::ComputeGraphVar&lt; Buffer3DView&lt; T &gt; &gt;</label>
+        <link refid="classmuda_1_1_compute_graph_var"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
         <childnode refid="1" relation="public-inheritance">
         </childnode>
       </node>
       <node id="4">
-        <label>muda::ComputeGraphVar&lt; Buffer3DView&lt; T &gt; &gt;</label>
-        <link refid="classmuda_1_1_compute_graph_var_3_01_buffer3_d_view_3_01_t_01_4_01_4"/>
+        <label>muda::ComputeGraphVar&lt; BufferView&lt; T &gt; &gt;</label>
+        <link refid="classmuda_1_1_compute_graph_var"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
         <childnode refid="1" relation="public-inheritance">
         </childnode>
       </node>
       <node id="5">
-        <label>muda::ComputeGraphVar&lt; BufferView&lt; T &gt; &gt;</label>
-        <link refid="classmuda_1_1_compute_graph_var_3_01_buffer_view_3_01_t_01_4_01_4"/>
+        <label>muda::ComputeGraphVar&lt; GraphViewer &gt;</label>
+        <link refid="classmuda_1_1_compute_graph_var"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
         <childnode refid="1" relation="public-inheritance">
         </childnode>
       </node>
       <node id="6">
-        <label>muda::ComputeGraphVar&lt; GraphViewer &gt;</label>
-        <link refid="classmuda_1_1_compute_graph_var_3_01_graph_viewer_01_4"/>
+        <label>muda::ComputeGraphVar&lt; VarView&lt; T &gt; &gt;</label>
+        <link refid="classmuda_1_1_compute_graph_var"/>
         <childnode refid="1" relation="public-inheritance">
         </childnode>
-      </node>
-      <node id="7">
-        <label>muda::ComputeGraphVar&lt; VarView&lt; T &gt; &gt;</label>
-        <link refid="classmuda_1_1_compute_graph_var_3_01_var_view_3_01_t_01_4_01_4"/>
         <childnode refid="1" relation="public-inheritance">
         </childnode>
       </node>

@@ -1,0 +1,146 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.1" xml:lang="en-US">
+  <compounddef id="classmuda_1_1_doublet_vector_viewer_t_1_1_proxy" kind="class" language="C++" prot="public">
+    <compoundname>muda::DoubletVectorViewerT::Proxy</compoundname>
+    <sectiondef kind="friend">
+      <memberdef kind="friend" id="classmuda_1_1_doublet_vector_viewer_t_1_1_proxy_1a129be38457bd92ff95297f682a7696da" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class DoubletVectorViewerT</definition>
+        <argsstring></argsstring>
+        <name>DoubletVectorViewerT</name>
+        <qualifiedname>muda::DoubletVectorViewerT::Proxy::DoubletVectorViewerT</qualifiedname>
+        <param>
+          <type><ref refid="classmuda_1_1_doublet_vector_viewer_t" kindref="compound">DoubletVectorViewerT</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/doublet_vector_viewer.h" line="44" column="22" bodyfile="src/muda/ext/linear_system/doublet_vector_viewer.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classmuda_1_1_doublet_vector_viewer_t_1_1_proxy_1a6ddbb8a83fb4508ffe3687c39368a22d" prot="private" static="no" mutable="no">
+        <type>const <ref refid="classmuda_1_1_doublet_vector_viewer_t" kindref="compound">DoubletVectorViewerT</ref> &amp;</type>
+        <definition>const DoubletVectorViewerT&amp; muda::DoubletVectorViewerT&lt; IsConst, T, N &gt;::Proxy::m_viewer</definition>
+        <argsstring></argsstring>
+        <name>m_viewer</name>
+        <qualifiedname>muda::DoubletVectorViewerT::Proxy::m_viewer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/doublet_vector_viewer.h" line="45" column="36" bodyfile="src/muda/ext/linear_system/doublet_vector_viewer.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1_doublet_vector_viewer_t_1_1_proxy_1a37096e779565a925daca1e247bcd8e29" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int muda::DoubletVectorViewerT&lt; IsConst, T, N &gt;::Proxy::m_index</definition>
+        <argsstring></argsstring>
+        <name>m_index</name>
+        <qualifiedname>muda::DoubletVectorViewerT::Proxy::m_index</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/doublet_vector_viewer.h" line="46" column="37" bodyfile="src/muda/ext/linear_system/doublet_vector_viewer.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classmuda_1_1_doublet_vector_viewer_t_1_1_proxy_1aa679e981ef0e30ee5dfa3fa6c031bbe5" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>MUDA_GENERIC</type>
+        <definition>MUDA_GENERIC muda::DoubletVectorViewerT&lt; IsConst, T, N &gt;::Proxy::Proxy</definition>
+        <argsstring>(const DoubletVectorViewerT &amp;viewer, int index)</argsstring>
+        <name>Proxy</name>
+        <qualifiedname>muda::DoubletVectorViewerT::Proxy::Proxy</qualifiedname>
+        <param>
+          <type>const <ref refid="classmuda_1_1_doublet_vector_viewer_t" kindref="compound">DoubletVectorViewerT</ref> &amp;</type>
+          <declname>viewer</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/doublet_vector_viewer.h" line="49" column="22" bodyfile="src/muda/ext/linear_system/doublet_vector_viewer.h" bodystart="49" bodyend="53"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmuda_1_1_doublet_vector_viewer_t_1_1_proxy_1a487575c7a354dc85d8fbb5fb230bd143" prot="public" static="no" const="no" explicit="no" inline="yes" refqual="rvalue" virt="non-virtual">
+        <type>MUDA_GENERIC auto</type>
+        <definition>MUDA_GENERIC auto muda::DoubletVectorViewerT&lt; IsConst, T, N &gt;::Proxy::read</definition>
+        <argsstring>() &amp;&amp;</argsstring>
+        <name>read</name>
+        <qualifiedname>muda::DoubletVectorViewerT::Proxy::read</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/doublet_vector_viewer.h" line="56" column="27" bodyfile="src/muda/ext/linear_system/doublet_vector_viewer.h" bodystart="56" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_doublet_vector_viewer_t_1_1_proxy_1a89f8eafbe531cae52d1930d4d22cac77" prot="public" static="no" const="no" explicit="no" inline="yes" refqual="rvalue" virt="non-virtual">
+        <type>MUDA_GENERIC void</type>
+        <definition>MUDA_GENERIC void muda::DoubletVectorViewerT&lt; IsConst, T, N &gt;::Proxy::write</definition>
+        <argsstring>(int segment_i, const ValueT &amp;value) &amp;&amp;</argsstring>
+        <name>write</name>
+        <qualifiedname>muda::DoubletVectorViewerT::Proxy::write</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>segment_i</declname>
+        </param>
+        <param>
+          <type>const ValueT &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/doublet_vector_viewer.h" line="58" column="27" bodyfile="src/muda/ext/linear_system/doublet_vector_viewer.h" bodystart="58" bodyend="68"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_doublet_vector_viewer_t_1_1_proxy_1a1ced9a35369a7282c8ab77f077043032" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>MUDA_GENERIC</type>
+        <definition>MUDA_GENERIC muda::DoubletVectorViewerT&lt; IsConst, T, N &gt;::Proxy::~Proxy</definition>
+        <argsstring>()=default</argsstring>
+        <name>~Proxy</name>
+        <qualifiedname>muda::DoubletVectorViewerT::Proxy::~Proxy</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/doublet_vector_viewer.h" line="70" column="22"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/muda/ext/linear_system/doublet_vector_viewer.h" line="42" column="5" bodyfile="src/muda/ext/linear_system/doublet_vector_viewer.h" bodystart="43" bodyend="71"/>
+    <listofallmembers>
+      <member refid="classmuda_1_1_doublet_vector_viewer_t_1_1_proxy_1a129be38457bd92ff95297f682a7696da" prot="private" virt="non-virtual"><scope>muda::DoubletVectorViewerT::Proxy</scope><name>DoubletVectorViewerT</name></member>
+      <member refid="classmuda_1_1_doublet_vector_viewer_t_1_1_proxy_1a37096e779565a925daca1e247bcd8e29" prot="private" virt="non-virtual"><scope>muda::DoubletVectorViewerT::Proxy</scope><name>m_index</name></member>
+      <member refid="classmuda_1_1_doublet_vector_viewer_t_1_1_proxy_1a6ddbb8a83fb4508ffe3687c39368a22d" prot="private" virt="non-virtual"><scope>muda::DoubletVectorViewerT::Proxy</scope><name>m_viewer</name></member>
+      <member refid="classmuda_1_1_doublet_vector_viewer_t_1_1_proxy_1aa679e981ef0e30ee5dfa3fa6c031bbe5" prot="private" virt="non-virtual"><scope>muda::DoubletVectorViewerT::Proxy</scope><name>Proxy</name></member>
+      <member refid="classmuda_1_1_doublet_vector_viewer_t_1_1_proxy_1a487575c7a354dc85d8fbb5fb230bd143" prot="public" virt="non-virtual"><scope>muda::DoubletVectorViewerT::Proxy</scope><name>read</name></member>
+      <member refid="classmuda_1_1_doublet_vector_viewer_t_1_1_proxy_1a89f8eafbe531cae52d1930d4d22cac77" prot="public" virt="non-virtual"><scope>muda::DoubletVectorViewerT::Proxy</scope><name>write</name></member>
+      <member refid="classmuda_1_1_doublet_vector_viewer_t_1_1_proxy_1a1ced9a35369a7282c8ab77f077043032" prot="public" virt="non-virtual"><scope>muda::DoubletVectorViewerT::Proxy</scope><name>~Proxy</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

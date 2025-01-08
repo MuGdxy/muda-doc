@@ -6,7 +6,7 @@
 
 
 
-[**ClassList**](annotated.md) **>** [**CFieldEntryViewer**](classmuda_1_1_c_field_entry_viewer.md)
+[**ClassList**](annotated.md) **>** [**muda**](namespacemuda.md) **>** [**CFieldEntryViewer**](classmuda_1_1_c_field_entry_viewer.md)
 
 
 

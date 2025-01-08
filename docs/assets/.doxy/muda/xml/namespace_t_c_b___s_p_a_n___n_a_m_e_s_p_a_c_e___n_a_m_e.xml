@@ -1,13 +1,13 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.1" xml:lang="en-US">
   <compounddef id="namespace_t_c_b___s_p_a_n___n_a_m_e_s_p_a_c_e___n_a_m_e" kind="namespace" language="C++">
     <compoundname>TCB_SPAN_NAMESPACE_NAME</compoundname>
     <innerclass refid="class_t_c_b___s_p_a_n___n_a_m_e_s_p_a_c_e___n_a_m_e_1_1span" prot="public">TCB_SPAN_NAMESPACE_NAME::span</innerclass>
     <innernamespace refid="namespace_t_c_b___s_p_a_n___n_a_m_e_s_p_a_c_e___n_a_m_e_1_1detail">TCB_SPAN_NAMESPACE_NAME::detail</innernamespace>
     <sectiondef kind="typedef">
-      <memberdef kind="typedef" id="span_8hpp_1add3514d658e15f203bfef6e0a614115b" prot="public" static="no">
+      <memberdef kind="typedef" id="span_8hpp_1a32a5d55388bdec8308d320d9d5a0a442" prot="public" static="no">
         <type>unsigned char</type>
-        <definition>using TCB_SPAN_NAMESPACE_NAME::byte = typedef unsigned char</definition>
+        <definition>using TCB_SPAN_NAMESPACE_NAME::byte =  unsigned char</definition>
         <argsstring></argsstring>
         <name>byte</name>
         <qualifiedname>TCB_SPAN_NAMESPACE_NAME::byte</qualifiedname>
@@ -49,8 +49,8 @@
             <defname>Extent</defname>
           </param>
         </templateparamlist>
-        <type>constexpr <ref refid="class_t_c_b___s_p_a_n___n_a_m_e_s_p_a_c_e___n_a_m_e_1_1span" kindref="compound">span</ref>&lt; ElementType, Extent &gt;</type>
-        <definition>constexpr span&lt; ElementType, Extent &gt; TCB_SPAN_NAMESPACE_NAME::make_span</definition>
+        <type><ref refid="class_t_c_b___s_p_a_n___n_a_m_e_s_p_a_c_e___n_a_m_e_1_1span" kindref="compound">span</ref>&lt; ElementType, Extent &gt;</type>
+        <definition>span&lt; ElementType, Extent &gt; TCB_SPAN_NAMESPACE_NAME::make_span</definition>
         <argsstring>(span&lt; ElementType, Extent &gt; s) noexcept</argsstring>
         <name>make_span</name>
         <qualifiedname>TCB_SPAN_NAMESPACE_NAME::make_span</qualifiedname>
@@ -77,8 +77,8 @@
             <defname>N</defname>
           </param>
         </templateparamlist>
-        <type>constexpr <ref refid="class_t_c_b___s_p_a_n___n_a_m_e_s_p_a_c_e___n_a_m_e_1_1span" kindref="compound">span</ref>&lt; T, N &gt;</type>
-        <definition>constexpr span&lt; T, N &gt; TCB_SPAN_NAMESPACE_NAME::make_span</definition>
+        <type><ref refid="class_t_c_b___s_p_a_n___n_a_m_e_s_p_a_c_e___n_a_m_e_1_1span" kindref="compound">span</ref>&lt; T, N &gt;</type>
+        <definition>span&lt; T, N &gt; TCB_SPAN_NAMESPACE_NAME::make_span</definition>
         <argsstring>(T(&amp;arr)[N]) noexcept</argsstring>
         <name>make_span</name>
         <qualifiedname>TCB_SPAN_NAMESPACE_NAME::make_span</qualifiedname>
@@ -151,14 +151,14 @@
         </inbodydescription>
         <location file="src/muda/mstl/tcb/span.hpp" line="551" column="1" bodyfile="src/muda/mstl/tcb/span.hpp" bodystart="551" bodyend="554"/>
       </memberdef>
-      <memberdef kind="function" id="span_8hpp_1a17cdec9b6bc4a6bffb43e8843b182659" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="span_8hpp_1a6e58bfe7f35efd36f38a977f8b4598be" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <templateparamlist>
           <param>
             <type>typename Container</type>
           </param>
         </templateparamlist>
-        <type>constexpr <ref refid="class_t_c_b___s_p_a_n___n_a_m_e_s_p_a_c_e___n_a_m_e_1_1span" kindref="compound">span</ref>&lt; typenamestd::remove_reference&lt; decltype(*detail::data(std::declval&lt; Container &amp; &gt;()))&gt;::type</type>
-        <definition>constexpr span&lt; typenamestd::remove_reference&lt; decltype(*detail::data(std::declval&lt; Container &amp; &gt;()))&gt;::type TCB_SPAN_NAMESPACE_NAME::make_span</definition>
+        <type><ref refid="class_t_c_b___s_p_a_n___n_a_m_e_s_p_a_c_e___n_a_m_e_1_1span" kindref="compound">span</ref>&lt; typename std::remove_reference&lt; decltype(*detail::data(std::declval&lt; Container &amp; &gt;()))&gt;::type &gt;</type>
+        <definition>span&lt; typename std::remove_reference&lt; decltype(*detail::data(std::declval&lt; Container &amp; &gt;()))&gt;::type &gt; TCB_SPAN_NAMESPACE_NAME::make_span</definition>
         <argsstring>(Container &amp;cont)</argsstring>
         <name>make_span</name>
         <qualifiedname>TCB_SPAN_NAMESPACE_NAME::make_span</qualifiedname>
@@ -180,8 +180,8 @@
             <type>typename Container</type>
           </param>
         </templateparamlist>
-        <type>constexpr <ref refid="class_t_c_b___s_p_a_n___n_a_m_e_s_p_a_c_e___n_a_m_e_1_1span" kindref="compound">span</ref>&lt; const typename Container::value_type &gt;</type>
-        <definition>constexpr span&lt; const typename Container::value_type &gt; TCB_SPAN_NAMESPACE_NAME::make_span</definition>
+        <type><ref refid="class_t_c_b___s_p_a_n___n_a_m_e_s_p_a_c_e___n_a_m_e_1_1span" kindref="compound">span</ref>&lt; const typename Container::value_type &gt;</type>
+        <definition>span&lt; const typename Container::value_type &gt; TCB_SPAN_NAMESPACE_NAME::make_span</definition>
         <argsstring>(const Container &amp;cont)</argsstring>
         <name>make_span</name>
         <qualifiedname>TCB_SPAN_NAMESPACE_NAME::make_span</qualifiedname>
@@ -273,9 +273,9 @@
             <defname>S</defname>
           </param>
         </templateparamlist>
-        <type>constexpr auto</type>
-        <definition>constexpr auto TCB_SPAN_NAMESPACE_NAME::get</definition>
-        <argsstring>(span&lt; E, S &gt; s) -&gt; decltype(s[N])</argsstring>
+        <type>decltype(s[N])</type>
+        <definition>decltype(s[N]) TCB_SPAN_NAMESPACE_NAME::get</definition>
+        <argsstring>(span&lt; E, S &gt; s)</argsstring>
         <name>get</name>
         <qualifiedname>TCB_SPAN_NAMESPACE_NAME::get</qualifiedname>
         <param>

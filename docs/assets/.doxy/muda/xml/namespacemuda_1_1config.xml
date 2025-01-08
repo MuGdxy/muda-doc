@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.1" xml:lang="en-US">
   <compounddef id="namespacemuda_1_1config" kind="namespace" language="C++">
     <compoundname>muda::config</compoundname>
     <sectiondef kind="func">
       <memberdef kind="function" id="muda__config_8h_1a69c96bb1550f442d5bddcf4fc421e0fd" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>constexpr bool</type>
-        <definition>constexpr bool muda::config::on</definition>
+        <type>bool</type>
+        <definition>bool muda::config::on</definition>
         <argsstring>(bool cond=false)</argsstring>
         <name>on</name>
         <qualifiedname>muda::config::on</qualifiedname>

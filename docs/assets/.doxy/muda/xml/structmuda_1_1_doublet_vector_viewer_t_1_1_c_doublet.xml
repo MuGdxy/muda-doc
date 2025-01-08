@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.1" xml:lang="en-US">
+  <compounddef id="structmuda_1_1_doublet_vector_viewer_t_1_1_c_doublet" kind="struct" language="C++" prot="public">
+    <compoundname>muda::DoubletVectorViewerT::CDoublet</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structmuda_1_1_doublet_vector_viewer_t_1_1_c_doublet_1aa76f023639178044135f44b505f3f323" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int muda::DoubletVectorViewerT&lt; IsConst, T, N &gt;::CDoublet::index</definition>
+        <argsstring></argsstring>
+        <name>index</name>
+        <qualifiedname>muda::DoubletVectorViewerT::CDoublet::index</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/doublet_vector_viewer.h" line="38" column="23" bodyfile="src/muda/ext/linear_system/doublet_vector_viewer.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmuda_1_1_doublet_vector_viewer_t_1_1_c_doublet_1ae3bd6239aa87949b1bd5562c23af37b4" prot="public" static="no" mutable="no">
+        <type>const ValueT &amp;</type>
+        <definition>const ValueT&amp; muda::DoubletVectorViewerT&lt; IsConst, T, N &gt;::CDoublet::value</definition>
+        <argsstring></argsstring>
+        <name>value</name>
+        <qualifiedname>muda::DoubletVectorViewerT::CDoublet::value</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/doublet_vector_viewer.h" line="39" column="22" bodyfile="src/muda/ext/linear_system/doublet_vector_viewer.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="structmuda_1_1_doublet_vector_viewer_t_1_1_c_doublet_1afadb3337bdd20041aa891f78037cf023" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>MUDA_GENERIC</type>
+        <definition>MUDA_GENERIC muda::DoubletVectorViewerT&lt; IsConst, T, N &gt;::CDoublet::CDoublet</definition>
+        <argsstring>(int index, const ValueT &amp;segment)</argsstring>
+        <name>CDoublet</name>
+        <qualifiedname>muda::DoubletVectorViewerT::CDoublet::CDoublet</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>const ValueT &amp;</type>
+          <declname>segment</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/doublet_vector_viewer.h" line="33" column="22" bodyfile="src/muda/ext/linear_system/doublet_vector_viewer.h" bodystart="33" bodyend="37"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/muda/ext/linear_system/doublet_vector_viewer.h" line="31" column="5" bodyfile="src/muda/ext/linear_system/doublet_vector_viewer.h" bodystart="32" bodyend="40"/>
+    <listofallmembers>
+      <member refid="structmuda_1_1_doublet_vector_viewer_t_1_1_c_doublet_1afadb3337bdd20041aa891f78037cf023" prot="public" virt="non-virtual"><scope>muda::DoubletVectorViewerT::CDoublet</scope><name>CDoublet</name></member>
+      <member refid="structmuda_1_1_doublet_vector_viewer_t_1_1_c_doublet_1aa76f023639178044135f44b505f3f323" prot="public" virt="non-virtual"><scope>muda::DoubletVectorViewerT::CDoublet</scope><name>index</name></member>
+      <member refid="structmuda_1_1_doublet_vector_viewer_t_1_1_c_doublet_1ae3bd6239aa87949b1bd5562c23af37b4" prot="public" virt="non-virtual"><scope>muda::DoubletVectorViewerT::CDoublet</scope><name>value</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.1" xml:lang="en-US">
   <compounddef id="classmuda_1_1_launch_base" kind="class" language="C++" prot="public">
     <compoundname>muda::LaunchBase</compoundname>
     <basecompoundref refid="classmuda_1_1_launch_core" prot="public" virt="non-virtual">muda::LaunchCore</basecompoundref>
@@ -33,7 +33,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/launch/launch_base.h" line="89" column="5" bodyfile="src/muda/launch/launch_base.h" bodystart="89" bodyend="-1"/>
+        <location file="src/muda/launch/launch_base.h" line="88" column="5" bodyfile="src/muda/launch/launch_base.h" bodystart="88" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-type">
@@ -49,7 +49,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/launch/launch_base.h" line="92" column="5" bodyfile="src/muda/launch/launch_base.h" bodystart="92" bodyend="-1"/>
+        <location file="src/muda/launch/launch_base.h" line="91" column="5" bodyfile="src/muda/launch/launch_base.h" bodystart="91" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="friend">
@@ -73,7 +73,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/launch/launch_base.h" line="88" column="18" bodyfile="src/muda/launch/launch_base.h" bodystart="88" bodyend="-1"/>
+        <location file="src/muda/launch/launch_base.h" line="87" column="18" bodyfile="src/muda/launch/launch_base.h" bodystart="87" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-func">
@@ -93,7 +93,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/launch/launch_base.h" line="93" column="18"/>
+        <location file="src/muda/launch/launch_base.h" line="92" column="18"/>
       </memberdef>
       <memberdef kind="function" id="classmuda_1_1_launch_base_1ad6dcaaf3ea0726809ebbdb10084c3183" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>T &amp;</type>
@@ -111,7 +111,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/launch/launch_base.h" line="102" column="7"/>
+        <location file="src/muda/launch/launch_base.h" line="101" column="7"/>
       </memberdef>
       <memberdef kind="function" id="classmuda_1_1_launch_base_1ab6b75621024e7977edcdff26c04bcdc1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>T &amp;</type>
@@ -125,7 +125,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/launch/launch_base.h" line="103" column="7"/>
+        <location file="src/muda/launch/launch_base.h" line="102" column="7"/>
       </memberdef>
       <memberdef kind="function" id="classmuda_1_1_launch_base_1ac412be72c054ac359678fff75857dd06" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>T &amp;</type>
@@ -143,7 +143,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/launch/launch_base.h" line="108" column="7"/>
+        <location file="src/muda/launch/launch_base.h" line="106" column="7"/>
       </memberdef>
       <memberdef kind="function" id="classmuda_1_1_launch_base_1aee4564eac54df98ab98085379370a2ec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>T &amp;</type>
@@ -165,7 +165,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/launch/launch_base.h" line="109" column="7"/>
+        <location file="src/muda/launch/launch_base.h" line="107" column="7"/>
       </memberdef>
       <memberdef kind="function" id="classmuda_1_1_launch_base_1ad069d4ad6219f5a3b51e7c8d9e4d596f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>T &amp;</type>
@@ -188,7 +188,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/launch/launch_base.h" line="117" column="7"/>
+        <location file="src/muda/launch/launch_base.h" line="115" column="7"/>
       </memberdef>
       <memberdef kind="function" id="classmuda_1_1_launch_base_1a12cf6b18c76787654460c1c043907547" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>T &amp;</type>
@@ -210,7 +210,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/launch/launch_base.h" line="119" column="7"/>
+        <location file="src/muda/launch/launch_base.h" line="117" column="7"/>
       </memberdef>
       <memberdef kind="function" id="classmuda_1_1_launch_base_1a77d57b9368424d70cd740af6eaf45a6f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <templateparamlist>
@@ -239,7 +239,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/launch/launch_base.h" line="123" column="7"/>
+        <location file="src/muda/launch/launch_base.h" line="121" column="7"/>
       </memberdef>
       <memberdef kind="function" id="classmuda_1_1_launch_base_1a59a525fea511ea1c90f5857be5d62d43" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>T &amp;</type>
@@ -262,7 +262,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/launch/launch_base.h" line="136" column="7"/>
+        <location file="src/muda/launch/launch_base.h" line="134" column="7"/>
       </memberdef>
       <memberdef kind="function" id="classmuda_1_1_launch_base_1a88cbf9478fbeaa7434ece7f300dc1c0e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>T &amp;</type>
@@ -285,7 +285,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/launch/launch_base.h" line="138" column="7"/>
+        <location file="src/muda/launch/launch_base.h" line="136" column="7"/>
       </memberdef>
       <memberdef kind="function" id="classmuda_1_1_launch_base_1ab0fc5fbed4ec5f69a3b599af99900d98" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>T &amp;</type>
@@ -307,7 +307,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/launch/launch_base.h" line="139" column="7"/>
+        <location file="src/muda/launch/launch_base.h" line="137" column="7"/>
       </memberdef>
       <memberdef kind="function" id="classmuda_1_1_launch_base_1acbf042e86efae1683e2ab08c95095da7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <templateparamlist>
@@ -336,7 +336,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/launch/launch_base.h" line="142" column="7"/>
+        <location file="src/muda/launch/launch_base.h" line="140" column="7"/>
       </memberdef>
       <memberdef kind="function" id="classmuda_1_1_launch_base_1abe061bff24568f9c2fcf326a62843292" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>T &amp;</type>
@@ -350,7 +350,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/launch/launch_base.h" line="146" column="7"/>
+        <location file="src/muda/launch/launch_base.h" line="144" column="7"/>
       </memberdef>
       <memberdef kind="function" id="classmuda_1_1_launch_base_1aa8490139890f43555c1b7baa57378616" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>T &amp;</type>
@@ -368,7 +368,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/launch/launch_base.h" line="150" column="7"/>
+        <location file="src/muda/launch/launch_base.h" line="148" column="7"/>
       </memberdef>
       <memberdef kind="function" id="classmuda_1_1_launch_base_1a395b0a10fee3bf2c591f49a3119df1b8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <templateparamlist>
@@ -391,7 +391,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/launch/launch_base.h" line="153" column="10"/>
+        <location file="src/muda/launch/launch_base.h" line="151" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classmuda_1_1_launch_base_1a841db3ede786d3312a6ca2de2139ad10" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <templateparamlist>
@@ -419,7 +419,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/launch/launch_base.h" line="155" column="10"/>
+        <location file="src/muda/launch/launch_base.h" line="153" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classmuda_1_1_launch_base_1a543548ac0516b2c10adba68d2ae7066b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -433,7 +433,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/launch/launch_base.h" line="157" column="5"/>
+        <location file="src/muda/launch/launch_base.h" line="155" column="5"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="protected-func">
@@ -449,7 +449,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/launch/launch_base.h" line="160" column="7"/>
+        <location file="src/muda/launch/launch_base.h" line="158" column="7"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="private-func">
@@ -465,7 +465,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/launch/launch_base.h" line="163" column="7" bodyfile="src/muda/launch/launch_base.h" bodystart="163" bodyend="163"/>
+        <location file="src/muda/launch/launch_base.h" line="161" column="7" bodyfile="src/muda/launch/launch_base.h" bodystart="161" bodyend="161"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -640,7 +640,7 @@
         <link refid="classmuda_1_1_launch_core"/>
       </node>
     </collaborationgraph>
-    <location file="src/muda/launch/launch_base.h" line="85" column="1" bodyfile="src/muda/launch/launch_base.h" bodystart="86" bodyend="164"/>
+    <location file="src/muda/launch/launch_base.h" line="84" column="1" bodyfile="src/muda/launch/launch_base.h" bodystart="85" bodyend="162"/>
     <listofallmembers>
       <member refid="classmuda_1_1_launch_base_1a9741bd9e6a081058365cbb2d48688011" prot="private" virt="non-virtual"><scope>muda::LaunchBase</scope><name>Base</name></member>
       <member refid="classmuda_1_1_launch_base_1aa8490139890f43555c1b7baa57378616" prot="public" virt="non-virtual"><scope>muda::LaunchBase</scope><name>callback</name></member>

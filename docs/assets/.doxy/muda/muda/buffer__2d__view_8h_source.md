@@ -75,7 +75,7 @@ class Buffer2DViewT : public ViewBase<IsConst>
                                const Offset2D&  offset,
                                const Extent2D&  extent) MUDA_NOEXCEPT;
 
-    ConstView as_const() const MUDA_NOEXCEPT;
+    MUDA_GENERIC ConstView as_const() const MUDA_NOEXCEPT;
 
     MUDA_GENERIC auto_const_t<T>* data(size_t x, size_t y) const MUDA_NOEXCEPT;
 
@@ -106,7 +106,7 @@ class Buffer2DViewT : public ViewBase<IsConst>
     MUDA_HOST void copy_from(const T* host) MUDA_REQUIRES(!IsConst);
 
   private:
-    MUDA_GENERIC cudaPitchedPtr cuda_pitched_ptr() const MUDA_NOEXCEPT;
+    MUDA_HOST cudaPitchedPtr cuda_pitched_ptr() const MUDA_NOEXCEPT;
 };
 
 template <typename T>
@@ -116,13 +116,13 @@ template <typename T>
 using CBuffer2DView = Buffer2DViewT<true, T>;
 
 template <typename T>
-struct read_only_viewer<Buffer2DView<T>>
+struct read_only_view<Buffer2DView<T>>
 {
     using type = CBuffer2DView<T>;
 };
 
 template <typename T>
-struct read_write_viewer<CBuffer2DView<T>>
+struct read_write_view<CBuffer2DView<T>>
 {
     using type = Buffer2DView<T>;
 };

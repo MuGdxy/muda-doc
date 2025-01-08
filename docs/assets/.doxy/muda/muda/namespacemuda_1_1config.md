@@ -51,7 +51,7 @@
 
 | Type | Name |
 | ---: | :--- |
-|  constexpr bool | [**on**](#function-on) (bool cond=false) <br> |
+|  bool | [**on**](#function-on) (bool cond=false) <br> |
 
 
 
@@ -88,7 +88,7 @@
 ### function on 
 
 ```C++
-constexpr bool muda::config::on (
+bool muda::config::on (
     bool cond=false
 ) 
 ```

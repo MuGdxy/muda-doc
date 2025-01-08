@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.1" xml:lang="en-US">
   <compounddef id="classmuda_1_1_buffer3_d_view_t" kind="class" language="C++" prot="public">
     <compoundname>muda::Buffer3DViewT</compoundname>
     <basecompoundref refid="classmuda_1_1_view_base" prot="public" virt="non-virtual">muda::ViewBase&lt; IsConst &gt;</basecompoundref>
@@ -736,22 +736,18 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="2">
-        <label>muda::ViewBase&lt; IsConst &gt;</label>
-        <link refid="classmuda_1_1_view_base"/>
-      </node>
       <node id="1">
         <label>muda::Buffer3DViewT&lt; IsConst, T &gt;</label>
         <link refid="classmuda_1_1_buffer3_d_view_t"/>
         <childnode refid="2" relation="public-inheritance">
         </childnode>
       </node>
-    </inheritancegraph>
-    <collaborationgraph>
       <node id="2">
         <label>muda::ViewBase&lt; IsConst &gt;</label>
         <link refid="classmuda_1_1_view_base"/>
       </node>
+    </inheritancegraph>
+    <collaborationgraph>
       <node id="1">
         <label>muda::Buffer3DViewT&lt; IsConst, T &gt;</label>
         <link refid="classmuda_1_1_buffer3_d_view_t"/>
@@ -772,8 +768,12 @@
         <label>muda::Offset3D</label>
         <link refid="classmuda_1_1_offset3_d"/>
       </node>
+      <node id="2">
+        <label>muda::ViewBase&lt; IsConst &gt;</label>
+        <link refid="classmuda_1_1_view_base"/>
+      </node>
     </collaborationgraph>
-    <location file="src/muda/buffer/buffer_3d_view.h" line="14" column="1" bodyfile="src/muda/buffer/buffer_3d_view.h" bodystart="15" bodyend="108"/>
+    <location file="src/muda/buffer/buffer_3d_view.h" line="14" column="1" bodyfile="src/muda/buffer/buffer_fwd.h" bodystart="36" bodyend="-1"/>
     <listofallmembers>
       <member refid="classmuda_1_1_buffer3_d_view_t_1a4963b12e1bbdf52d40e9aa9d611d01eb" prot="public" virt="non-virtual"><scope>muda::Buffer3DViewT</scope><name>as_const</name></member>
       <member refid="classmuda_1_1_buffer3_d_view_t_1ab1765dd23e95b746cf44f9293742febe" prot="private" virt="non-virtual"><scope>muda::Buffer3DViewT</scope><name>auto_const_t</name></member>
@@ -798,6 +798,8 @@
       <member refid="classmuda_1_1_buffer3_d_view_t_1ae678b7a3a7259c17a4c19ed2220a8eac" prot="public" virt="non-virtual"><scope>muda::Buffer3DViewT</scope><name>extent</name></member>
       <member refid="classmuda_1_1_buffer3_d_view_t_1a44d633047e0fbec5b87fcfe869bc2b0f" prot="public" virt="non-virtual"><scope>muda::Buffer3DViewT</scope><name>fill</name></member>
       <member refid="classmuda_1_1_view_base_1a462988275a74be2325fcf57408700ce9" prot="public" virt="non-virtual"><scope>muda::Buffer3DViewT</scope><name>IsConst</name></member>
+      <member refid="classmuda_1_1_view_base_1a462988275a74be2325fcf57408700ce9" prot="public" virt="non-virtual"><scope>muda::Buffer3DViewT</scope><name>IsConst</name></member>
+      <member refid="classmuda_1_1_view_base_1ae40f0a1f86127bc4dfeae5e08027e1dc" prot="public" virt="non-virtual"><scope>muda::Buffer3DViewT</scope><name>IsNonConst</name></member>
       <member refid="classmuda_1_1_view_base_1ae40f0a1f86127bc4dfeae5e08027e1dc" prot="public" virt="non-virtual"><scope>muda::Buffer3DViewT</scope><name>IsNonConst</name></member>
       <member refid="classmuda_1_1_buffer3_d_view_t_1a1b3ca3b434ac4f4a1351cdeaa31e4271" prot="protected" virt="non-virtual"><scope>muda::Buffer3DViewT</scope><name>m_data</name></member>
       <member refid="classmuda_1_1_buffer3_d_view_t_1ab1bbef5641d766e0736f99a36edcca68" prot="protected" virt="non-virtual"><scope>muda::Buffer3DViewT</scope><name>m_extent</name></member>
@@ -806,6 +808,7 @@
       <member refid="classmuda_1_1_buffer3_d_view_t_1ac4d07bd89d071b70522c7c79cdfae442" prot="protected" virt="non-virtual"><scope>muda::Buffer3DViewT</scope><name>m_origin_width</name></member>
       <member refid="classmuda_1_1_buffer3_d_view_t_1a1a208d6833fb128db8a7aaef582d69ca" prot="protected" virt="non-virtual"><scope>muda::Buffer3DViewT</scope><name>m_pitch_bytes</name></member>
       <member refid="classmuda_1_1_buffer3_d_view_t_1a2c9fcc9cb2f2526e8d4bd21f03d6adde" prot="protected" virt="non-virtual"><scope>muda::Buffer3DViewT</scope><name>m_pitch_bytes_area</name></member>
+      <member refid="classmuda_1_1_view_base_1a39d227092dd2b7baba8b7c74bf018f37" prot="public" virt="non-virtual"><scope>muda::Buffer3DViewT</scope><name>non_const_enable_t</name></member>
       <member refid="classmuda_1_1_view_base_1a39d227092dd2b7baba8b7c74bf018f37" prot="public" virt="non-virtual"><scope>muda::Buffer3DViewT</scope><name>non_const_enable_t</name></member>
       <member refid="classmuda_1_1_buffer3_d_view_t_1a3d90b771fd7b11603ccb2624090caaa5" prot="public" virt="non-virtual"><scope>muda::Buffer3DViewT</scope><name>NonConstView</name></member>
       <member refid="classmuda_1_1_buffer3_d_view_t_1ae3a9088ce1c182a27ddec9ffb5f83630" prot="public" virt="non-virtual"><scope>muda::Buffer3DViewT</scope><name>offset</name></member>

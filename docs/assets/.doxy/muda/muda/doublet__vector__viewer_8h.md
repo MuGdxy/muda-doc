@@ -38,16 +38,9 @@
 
 | Type | Name |
 | ---: | :--- |
-| class | [**CDoubletVectorViewer**](classmuda_1_1_c_doublet_vector_viewer.md) &lt;typename T, N&gt;<br> |
-| class | [**CDoubletVectorViewer&lt; T, 1 &gt;**](classmuda_1_1_c_doublet_vector_viewer_3_01_t_00_011_01_4.md) &lt;typename T&gt;<br> |
-| class | [**DoubletVectorViewer**](classmuda_1_1_doublet_vector_viewer.md) &lt;typename T, N&gt;<br> |
-| class | [**Proxy**](classmuda_1_1_doublet_vector_viewer_1_1_proxy.md) <br> |
-| class | [**DoubletVectorViewer&lt; T, 1 &gt;**](classmuda_1_1_doublet_vector_viewer_3_01_t_00_011_01_4.md) &lt;typename T&gt;<br> |
-| class | [**Proxy**](classmuda_1_1_doublet_vector_viewer_3_01_t_00_011_01_4_1_1_proxy.md) <br> |
-| class | [**DoubletVectorViewerBase**](classmuda_1_1_doublet_vector_viewer_base.md) &lt;IsConst, typename T, N&gt;<br> |
-| struct | [**CDoublet**](structmuda_1_1_doublet_vector_viewer_base_1_1_c_doublet.md) <br> |
-| class | [**DoubletVectorViewerBase&lt; IsConst, T, 1 &gt;**](classmuda_1_1_doublet_vector_viewer_base_3_01_is_const_00_01_t_00_011_01_4.md) &lt;IsConst, typename T&gt;<br> |
-| struct | [**CDoublet**](structmuda_1_1_doublet_vector_viewer_base_3_01_is_const_00_01_t_00_011_01_4_1_1_c_doublet.md) <br> |
+| class | [**DoubletVectorViewerT**](classmuda_1_1_doublet_vector_viewer_t.md) &lt;IsConst, typename T, N&gt;<br> |
+| struct | [**CDoublet**](structmuda_1_1_doublet_vector_viewer_t_1_1_c_doublet.md) <br> |
+| class | [**Proxy**](classmuda_1_1_doublet_vector_viewer_t_1_1_proxy.md) <br> |
 
 
 

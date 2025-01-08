@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.1" xml:lang="en-US">
   <compounddef id="device__var_8h" kind="file" language="C++">
     <compoundname>device_var.h</compoundname>
     <includes local="no">cuda.h</includes>
@@ -369,7 +369,7 @@
         <link refid="buffer_8h_source"/>
         <childnode refid="3" relation="include">
         </childnode>
-        <childnode refid="23" relation="include">
+        <childnode refid="24" relation="include">
         </childnode>
       </node>
       <node id="1">
@@ -377,27 +377,27 @@
         <link refid="device__var_8h"/>
         <childnode refid="2" relation="include">
         </childnode>
-        <childnode refid="24" relation="include">
+        <childnode refid="25" relation="include">
         </childnode>
-        <childnode refid="26" relation="include">
+        <childnode refid="9" relation="include">
         </childnode>
         <childnode refid="27" relation="include">
         </childnode>
         <childnode refid="29" relation="include">
         </childnode>
       </node>
-      <node id="25">
+      <node id="26">
         <label>src/muda/container.h</label>
         <link refid="container_8h_source"/>
         <childnode refid="3" relation="include">
         </childnode>
-        <childnode refid="23" relation="include">
+        <childnode refid="24" relation="include">
         </childnode>
       </node>
-      <node id="24">
+      <node id="25">
         <label>src/muda/container/var.h</label>
         <link refid="var_8h_source"/>
-        <childnode refid="25" relation="include">
+        <childnode refid="26" relation="include">
         </childnode>
       </node>
       <node id="6">
@@ -419,13 +419,11 @@
         </childnode>
         <childnode refid="8" relation="include">
         </childnode>
-        <childnode refid="9" relation="include">
-        </childnode>
         <childnode refid="10" relation="include">
         </childnode>
         <childnode refid="11" relation="include">
         </childnode>
-        <childnode refid="16" relation="include">
+        <childnode refid="12" relation="include">
         </childnode>
         <childnode refid="17" relation="include">
         </childnode>
@@ -438,6 +436,8 @@
         <childnode refid="21" relation="include">
         </childnode>
         <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
         </childnode>
       </node>
       <node id="4">
@@ -457,64 +457,76 @@
         <link refid="device__merge__sort_8h_source"/>
         <childnode refid="5" relation="include">
         </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
       </node>
-      <node id="9">
+      <node id="10">
         <label>src/muda/cub/device/device_partition.h</label>
         <link refid="device__partition_8h_source"/>
         <childnode refid="5" relation="include">
         </childnode>
       </node>
-      <node id="10">
+      <node id="11">
         <label>src/muda/cub/device/device_radix_sort.h</label>
         <link refid="device__radix__sort_8h_source"/>
         <childnode refid="5" relation="include">
         </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
       </node>
-      <node id="11">
+      <node id="12">
         <label>src/muda/cub/device/device_reduce.h</label>
         <link refid="device__reduce_8h_source"/>
         <childnode refid="5" relation="include">
         </childnode>
-        <childnode refid="12" relation="include">
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
         </childnode>
       </node>
-      <node id="16">
+      <node id="17">
         <label>src/muda/cub/device/device_run_length_encode.h</label>
         <link refid="device__run__length__encode_8h_source"/>
         <childnode refid="5" relation="include">
         </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
       </node>
-      <node id="17">
+      <node id="18">
         <label>src/muda/cub/device/device_scan.h</label>
         <link refid="device__scan_8h_source"/>
         <childnode refid="5" relation="include">
         </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
       </node>
-      <node id="18">
+      <node id="19">
         <label>src/muda/cub/device/device_segmented_radix_sort.h</label>
         <link refid="device__segmented__radix__sort_8h_source"/>
         <childnode refid="5" relation="include">
         </childnode>
       </node>
-      <node id="19">
+      <node id="20">
         <label>src/muda/cub/device/device_segmented_reduce.h</label>
         <link refid="device__segmented__reduce_8h_source"/>
         <childnode refid="5" relation="include">
         </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
       </node>
-      <node id="20">
+      <node id="21">
         <label>src/muda/cub/device/device_segmented_sort.h</label>
         <link refid="device__segmented__sort_8h_source"/>
         <childnode refid="5" relation="include">
         </childnode>
       </node>
-      <node id="21">
+      <node id="22">
         <label>src/muda/cub/device/device_select.h</label>
         <link refid="device__select_8h_source"/>
         <childnode refid="5" relation="include">
         </childnode>
       </node>
-      <node id="22">
+      <node id="23">
         <label>src/muda/cub/device/device_spmv.h</label>
         <link refid="device__spmv_8h_source"/>
         <childnode refid="5" relation="include">
@@ -548,38 +560,38 @@
         <childnode refid="32" relation="include">
         </childnode>
       </node>
-      <node id="14">
+      <node id="15">
         <label>src/muda/ext/geo/lbvh.h</label>
         <link refid="lbvh_8h_source"/>
       </node>
-      <node id="12">
+      <node id="13">
         <label>src/muda/ext/geo/lbvh/bvh.h</label>
         <link refid="bvh_8h_source"/>
-        <childnode refid="13" relation="include">
+        <childnode refid="14" relation="include">
         </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>src/muda/ext/geo/lbvh/lbvh.h</label>
+        <link refid="lbvh_2lbvh_8h_source"/>
         <childnode refid="15" relation="include">
         </childnode>
       </node>
-      <node id="13">
-        <label>src/muda/ext/geo/lbvh/lbvh.h</label>
-        <link refid="lbvh_2lbvh_8h_source"/>
+      <node id="16">
+        <label>src/muda/ext/geo/lbvh/query.h</label>
+        <link refid="query_8h_source"/>
         <childnode refid="14" relation="include">
         </childnode>
       </node>
-      <node id="15">
-        <label>src/muda/ext/geo/lbvh/query.h</label>
-        <link refid="query_8h_source"/>
-        <childnode refid="13" relation="include">
-        </childnode>
-      </node>
-      <node id="26">
+      <node id="9">
         <label>src/muda/ext/linear_system/matrix_format_converter_impl.h</label>
         <link refid="matrix__format__converter__impl_8h_source"/>
       </node>
       <node id="28">
         <label>src/muda/logger.h</label>
         <link refid="logger_8h_source"/>
-        <childnode refid="23" relation="include">
+        <childnode refid="24" relation="include">
         </childnode>
       </node>
       <node id="27">
@@ -588,7 +600,7 @@
         <childnode refid="28" relation="include">
         </childnode>
       </node>
-      <node id="23">
+      <node id="24">
         <label>src/muda/muda.h</label>
         <link refid="muda_8h_source"/>
       </node>
@@ -619,48 +631,48 @@
 <codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">muda</highlight></codeline>
 <codeline lineno="8"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
-<codeline lineno="10" refid="classmuda_1_1_device_var" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classmuda_1_1_device_var" kindref="compound">DeviceVar</ref></highlight></codeline>
+<codeline lineno="10" refid="classmuda_1_1_device_var" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">DeviceVar</highlight></codeline>
 <codeline lineno="11"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="12"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classmuda_1_1_buffer_launch" kindref="compound">BufferLaunch</ref>;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">BufferLaunch;</highlight></codeline>
 <codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/>T*<sp/>m_data;</highlight></codeline>
 <codeline lineno="15"><highlight class="normal"></highlight></codeline>
 <codeline lineno="16"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">value_type<sp/>=<sp/>T;</highlight></codeline>
 <codeline lineno="18"><highlight class="normal"></highlight></codeline>
-<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classmuda_1_1_device_var" kindref="compound">DeviceVar</ref>();</highlight></codeline>
-<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classmuda_1_1_device_var" kindref="compound">DeviceVar</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>T&amp;<sp/>value);</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>DeviceVar();</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>DeviceVar(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>T&amp;<sp/>value);</highlight></codeline>
 <codeline lineno="21"><highlight class="normal"></highlight></codeline>
-<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classmuda_1_1_device_var" kindref="compound">DeviceVar</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classmuda_1_1_device_var" kindref="compound">DeviceVar</ref>&amp;<sp/>other);</highlight></codeline>
-<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classmuda_1_1_device_var" kindref="compound">DeviceVar</ref>(<ref refid="classmuda_1_1_device_var" kindref="compound">DeviceVar</ref>&amp;&amp;<sp/>other)<sp/>MUDA_NOEXCEPT;</highlight></codeline>
-<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classmuda_1_1_device_var" kindref="compound">DeviceVar</ref>&amp;<sp/>operator=(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classmuda_1_1_device_var" kindref="compound">DeviceVar&lt;T&gt;</ref>&amp;<sp/>other);</highlight></codeline>
-<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classmuda_1_1_device_var" kindref="compound">DeviceVar</ref>&amp;<sp/>operator=(<ref refid="classmuda_1_1_device_var" kindref="compound">DeviceVar&lt;T&gt;</ref>&amp;&amp;<sp/>other);</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>DeviceVar(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>DeviceVar&amp;<sp/>other);</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>DeviceVar(DeviceVar&amp;&amp;<sp/>other)<sp/>MUDA_NOEXCEPT;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>DeviceVar&amp;<sp/>operator=(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>DeviceVar&lt;T&gt;&amp;<sp/>other);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>DeviceVar&amp;<sp/>operator=(DeviceVar&lt;T&gt;&amp;&amp;<sp/>other);</highlight></codeline>
 <codeline lineno="26"><highlight class="normal"></highlight></codeline>
 <codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>device<sp/>transfer</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classmuda_1_1_device_var" kindref="compound">DeviceVar</ref>&amp;<sp/>operator=(<ref refid="classmuda_1_1_var_view_t" kindref="compound">CVarView&lt;T&gt;</ref><sp/>other);</highlight></codeline>
-<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>copy_from(<ref refid="classmuda_1_1_var_view_t" kindref="compound">CVarView&lt;T&gt;</ref><sp/>other);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>DeviceVar&amp;<sp/>operator=(CVarView&lt;T&gt;<sp/>other);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>copy_from(CVarView&lt;T&gt;<sp/>other);</highlight></codeline>
 <codeline lineno="31"><highlight class="normal"></highlight></codeline>
-<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classmuda_1_1_device_var" kindref="compound">DeviceVar</ref>&amp;<sp/>operator=(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>T&amp;<sp/>val);<sp/><sp/></highlight><highlight class="comment">//<sp/>copy<sp/>from<sp/>host</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>DeviceVar&amp;<sp/>operator=(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>T&amp;<sp/>val);<sp/><sp/></highlight><highlight class="comment">//<sp/>copy<sp/>from<sp/>host</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">operator</highlight><highlight class="normal"><sp/>T()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>copy<sp/>to<sp/>host</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="34"><highlight class="normal"></highlight></codeline>
 <codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/>T*<sp/><sp/><sp/><sp/><sp/><sp/><sp/>data()<sp/>MUDA_NOEXCEPT<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_data;<sp/>}</highlight></codeline>
 <codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>T*<sp/>data()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>MUDA_NOEXCEPT<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_data;<sp/>}</highlight></codeline>
 <codeline lineno="37"><highlight class="normal"></highlight></codeline>
-<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classmuda_1_1_var_view_t" kindref="compound">VarView&lt;T&gt;</ref><sp/><sp/>view()<sp/>MUDA_NOEXCEPT<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classmuda_1_1_var_view_t" kindref="compound">VarView&lt;T&gt;</ref>{m_data};<sp/>};</highlight></codeline>
-<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classmuda_1_1_var_view_t" kindref="compound">CVarView&lt;T&gt;</ref><sp/>view()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>MUDA_NOEXCEPT<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classmuda_1_1_var_view_t" kindref="compound">CVarView&lt;T&gt;</ref>{m_data};<sp/>};</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>VarView&lt;T&gt;<sp/><sp/>view()<sp/>MUDA_NOEXCEPT<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>VarView&lt;T&gt;{m_data};<sp/>};</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>CVarView&lt;T&gt;<sp/>view()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>MUDA_NOEXCEPT<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>CVarView&lt;T&gt;{m_data};<sp/>};</highlight></codeline>
 <codeline lineno="40"><highlight class="normal"></highlight></codeline>
-<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">operator</highlight><highlight class="normal"><sp/><ref refid="classmuda_1_1_var_view_t" kindref="compound">VarView&lt;T&gt;</ref>()<sp/>MUDA_NOEXCEPT<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>view();<sp/>}</highlight></codeline>
-<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">operator</highlight><highlight class="normal"><sp/><ref refid="classmuda_1_1_var_view_t" kindref="compound">CVarView&lt;T&gt;</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>MUDA_NOEXCEPT<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>view();<sp/>}</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">operator</highlight><highlight class="normal"><sp/>VarView&lt;T&gt;()<sp/>MUDA_NOEXCEPT<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>view();<sp/>}</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">operator</highlight><highlight class="normal"><sp/>CVarView&lt;T&gt;()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>MUDA_NOEXCEPT<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>view();<sp/>}</highlight></codeline>
 <codeline lineno="43"><highlight class="normal"></highlight></codeline>
-<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classmuda_1_1_dense_viewer_t" kindref="compound">Dense&lt;T&gt;</ref><sp/><sp/>viewer()<sp/>MUDA_NOEXCEPT;</highlight></codeline>
-<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classmuda_1_1_dense_viewer_t" kindref="compound">CDense&lt;T&gt;</ref><sp/>cviewer()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>MUDA_NOEXCEPT;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>Dense&lt;T&gt;<sp/><sp/>viewer()<sp/>MUDA_NOEXCEPT;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>CDense&lt;T&gt;<sp/>cviewer()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>MUDA_NOEXCEPT;</highlight></codeline>
 <codeline lineno="46"><highlight class="normal"></highlight></codeline>
-<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classmuda_1_1_device_var" kindref="compound">~DeviceVar</ref>();</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>~DeviceVar();</highlight></codeline>
 <codeline lineno="48"><highlight class="normal">};</highlight></codeline>
 <codeline lineno="49"><highlight class="normal">}<sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>muda</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="50"><highlight class="normal"></highlight></codeline>
-<codeline lineno="51"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;details/device_var.inl&quot;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;details/device_var.inl&quot;</highlight><highlight class="normal"></highlight></codeline>
     </programlisting>
     <location file="src/muda/buffer/device_var.h"/>
   </compounddef>

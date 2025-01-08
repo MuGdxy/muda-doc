@@ -39,8 +39,8 @@
 
 | Type | Name |
 | ---: | :--- |
-|  constexpr bool | [**IsConst**](#variable-isconst)   = = IsConst\_<br> |
-|  constexpr bool | [**IsNonConst**](#variable-isnonconst)   = = !IsConst\_<br> |
+|  bool | [**IsConst**](#variable-isconst)   = = IsConst\_<br> |
+|  bool | [**IsNonConst**](#variable-isnonconst)   = = !IsConst\_<br> |
 
 
 
@@ -117,7 +117,7 @@
 ### variable IsConst 
 
 ```C++
-constexpr bool muda::ViewerBase< IsConst_ >::IsConst;
+bool muda::ViewerBase< IsConst_ >::IsConst;
 ```
 
 
@@ -130,7 +130,7 @@ constexpr bool muda::ViewerBase< IsConst_ >::IsConst;
 ### variable IsNonConst 
 
 ```C++
-constexpr bool muda::ViewerBase< IsConst_ >::IsNonConst;
+bool muda::ViewerBase< IsConst_ >::IsNonConst;
 ```
 
 

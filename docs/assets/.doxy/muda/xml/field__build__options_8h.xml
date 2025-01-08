@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.1" xml:lang="en-US">
   <compounddef id="field__build__options_8h" kind="file" language="C++">
     <compoundname>field_build_options.h</compoundname>
     <includes refid="field__entry__layout_8h" local="no">muda/ext/field/field_entry_layout.h</includes>
@@ -184,7 +184,7 @@
 <codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>min_alignment<sp/>=<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(int);<sp/><sp/></highlight><highlight class="comment">//<sp/>bytes</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>max_alignment<sp/>=<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(std::max_align_t);</highlight></codeline>
 <codeline lineno="10"><highlight class="normal">};</highlight></codeline>
-<codeline lineno="11"><highlight class="normal">}<sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>muda</highlight></codeline>
+<codeline lineno="11"><highlight class="normal">}<sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>muda</highlight><highlight class="normal"></highlight></codeline>
     </programlisting>
     <location file="src/muda/ext/field/field_build_options.h"/>
   </compounddef>

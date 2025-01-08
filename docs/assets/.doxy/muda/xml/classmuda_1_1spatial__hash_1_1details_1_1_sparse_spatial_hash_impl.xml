@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.1" xml:lang="en-US">
   <compounddef id="classmuda_1_1spatial__hash_1_1details_1_1_sparse_spatial_hash_impl" kind="class" language="C++" prot="public">
     <compoundname>muda::spatial_hash::details::SparseSpatialHashImpl</compoundname>
     <templateparamlist>
@@ -781,58 +781,52 @@
     </detaileddescription>
     <collaborationgraph>
       <node id="3">
-        <label>muda::BufferViewT&lt; muda::spatial_hash::BoundingSphere &gt;</label>
+        <label>muda::BufferViewT&lt; true, T &gt;&lt; muda::spatial_hash::BoundingSphere &gt;</label>
         <link refid="classmuda_1_1_buffer_view_t"/>
-        <childnode refid="4" relation="public-inheritance">
-        </childnode>
       </node>
-      <node id="13">
+      <node id="12">
         <label>muda::DeviceBuffer&lt; Vector3 &gt;</label>
         <link refid="classmuda_1_1_device_buffer"/>
       </node>
-      <node id="12">
+      <node id="11">
         <label>muda::DeviceBuffer&lt; float &gt;</label>
         <link refid="classmuda_1_1_device_buffer"/>
       </node>
-      <node id="11">
+      <node id="10">
         <label>muda::DeviceBuffer&lt; int &gt;</label>
         <link refid="classmuda_1_1_device_buffer"/>
       </node>
-      <node id="14">
+      <node id="13">
         <label>muda::DeviceBuffer&lt; muda::spatial_hash::CollisionPair &gt;</label>
         <link refid="classmuda_1_1_device_buffer"/>
       </node>
-      <node id="10">
+      <node id="9">
         <label>muda::DeviceBuffer&lt; muda::spatial_hash::SpatialPartitionCell &gt;</label>
         <link refid="classmuda_1_1_device_buffer"/>
       </node>
-      <node id="7">
+      <node id="6">
         <label>muda::DeviceVar&lt; Vector3 &gt;</label>
         <link refid="classmuda_1_1_device_var"/>
       </node>
-      <node id="6">
+      <node id="5">
         <label>muda::DeviceVar&lt; float &gt;</label>
         <link refid="classmuda_1_1_device_var"/>
       </node>
-      <node id="5">
+      <node id="4">
         <label>muda::DeviceVar&lt; int &gt;</label>
         <link refid="classmuda_1_1_device_var"/>
       </node>
-      <node id="8">
+      <node id="7">
         <label>muda::DeviceVar&lt; muda::spatial_hash::SpatialHashTableInfo&lt; Morton&lt; uint32_t &gt; &gt; &gt;</label>
         <link refid="classmuda_1_1_device_var"/>
-      </node>
-      <node id="9">
-        <label>muda::spatial_hash::SpatialHashTableInfo&lt; Morton&lt; uint32_t &gt; &gt;</label>
-        <link refid="classmuda_1_1spatial__hash_1_1_spatial_hash_table_info"/>
-      </node>
-      <node id="4">
-        <label>muda::ViewBase&lt; IsConst &gt;</label>
-        <link refid="classmuda_1_1_view_base"/>
       </node>
       <node id="2">
         <label>muda::Stream</label>
         <link refid="classmuda_1_1_stream"/>
+      </node>
+      <node id="8">
+        <label>muda::spatial_hash::SpatialHashTableInfo&lt; Morton&lt; uint32_t &gt; &gt;</label>
+        <link refid="classmuda_1_1spatial__hash_1_1_spatial_hash_table_info"/>
       </node>
       <node id="1">
         <label>muda::spatial_hash::details::SparseSpatialHashImpl&lt; Hash &gt;</label>
@@ -843,29 +837,29 @@
         <childnode refid="3" relation="usage">
           <edgelabel>spheres</edgelabel>
         </childnode>
-        <childnode refid="5" relation="usage">
+        <childnode refid="4" relation="usage">
           <edgelabel>cellCount</edgelabel>
           <edgelabel>pairCount</edgelabel>
           <edgelabel>uniqueKeyCount</edgelabel>
           <edgelabel>validCollisionPairCount</edgelabel>
         </childnode>
-        <childnode refid="6" relation="usage">
+        <childnode refid="5" relation="usage">
           <edgelabel>maxRadius</edgelabel>
         </childnode>
-        <childnode refid="7" relation="usage">
+        <childnode refid="6" relation="usage">
           <edgelabel>minCoord</edgelabel>
         </childnode>
-        <childnode refid="8" relation="usage">
+        <childnode refid="7" relation="usage">
           <edgelabel>spatialHashConfig</edgelabel>
         </childnode>
-        <childnode refid="9" relation="usage">
+        <childnode refid="8" relation="usage">
           <edgelabel>h_spatialHashConfig</edgelabel>
         </childnode>
-        <childnode refid="10" relation="usage">
+        <childnode refid="9" relation="usage">
           <edgelabel>cellArrayValue</edgelabel>
           <edgelabel>cellArrayValueSorted</edgelabel>
         </childnode>
-        <childnode refid="11" relation="usage">
+        <childnode refid="10" relation="usage">
           <edgelabel>cellArrayKey</edgelabel>
           <edgelabel>cellArrayKeySorted</edgelabel>
           <edgelabel>cellToCollisionPairUpperBound</edgelabel>
@@ -878,13 +872,13 @@
           <edgelabel>potentialCollisionPairIdToCellIndexBuffer</edgelabel>
           <edgelabel>...</edgelabel>
         </childnode>
-        <childnode refid="12" relation="usage">
+        <childnode refid="11" relation="usage">
           <edgelabel>allRadius</edgelabel>
         </childnode>
-        <childnode refid="13" relation="usage">
+        <childnode refid="12" relation="usage">
           <edgelabel>allCoords</edgelabel>
         </childnode>
-        <childnode refid="14" relation="usage">
+        <childnode refid="13" relation="usage">
           <edgelabel>collisionPairBuffer</edgelabel>
         </childnode>
       </node>

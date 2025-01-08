@@ -57,8 +57,8 @@
 |  cudaStream\_t | [**capture\_stream**](#function-capture_stream) () const<br> |
 |  void | [**check\_allow\_node\_adding**](#function-check_allow_node_adding) () const<br> |
 |  void | [**check\_allow\_var\_eval**](#function-check_allow_var_eval) () const<br> |
-|  auto | [**current\_closure**](#function-current_closure-12) () const<br> |
-|  auto | [**current\_closure**](#function-current_closure-22) () <br> |
+|  const std::pair&lt; std::string, [**ComputeGraphClosure**](classmuda_1_1_compute_graph_closure.md) \* &gt; & | [**current\_closure**](#function-current_closure-12) () const<br> |
+|  std::pair&lt; std::string, [**ComputeGraphClosure**](classmuda_1_1_compute_graph_closure.md) \* &gt; & | [**current\_closure**](#function-current_closure-22) () <br> |
 |  T \* | [**current\_node**](#function-current_node-13) () <br> |
 |  const [**ComputeGraphNodeBase**](classmuda_1_1_compute_graph_node_base.md) \* | [**current\_node**](#function-current_node-23) () const<br> |
 |  [**ComputeGraphNodeBase**](classmuda_1_1_compute_graph_node_base.md) \* | [**current\_node**](#function-current_node-33) () <br> |
@@ -189,7 +189,7 @@ void muda::details::ComputeGraphAccessor::check_allow_var_eval () const
 ### function current\_closure [1/2]
 
 ```C++
-auto muda::details::ComputeGraphAccessor::current_closure () const
+const std::pair< std::string, ComputeGraphClosure * > & muda::details::ComputeGraphAccessor::current_closure () const
 ```
 
 
@@ -202,7 +202,7 @@ auto muda::details::ComputeGraphAccessor::current_closure () const
 ### function current\_closure [2/2]
 
 ```C++
-auto muda::details::ComputeGraphAccessor::current_closure () 
+std::pair< std::string, ComputeGraphClosure * > & muda::details::ComputeGraphAccessor::current_closure () 
 ```
 
 

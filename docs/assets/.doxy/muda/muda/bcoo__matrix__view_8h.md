@@ -37,9 +37,9 @@
 
 | Type | Name |
 | ---: | :--- |
-| class | [**COOMatrixViewBase**](classmuda_1_1_c_o_o_matrix_view_base.md) &lt;IsConst, typename Ty&gt;<br> |
-| struct | [**read\_only\_viewer&lt; COOMatrixView&lt; T &gt; &gt;**](structmuda_1_1read__only__viewer_3_01_c_o_o_matrix_view_3_01_t_01_4_01_4.md) &lt;typename T&gt;<br> |
-| struct | [**read\_write\_viewer&lt; CCOOMatrixView&lt; T &gt; &gt;**](structmuda_1_1read__write__viewer_3_01_c_c_o_o_matrix_view_3_01_t_01_4_01_4.md) &lt;typename T&gt;<br> |
+| class | [**COOMatrixViewT**](classmuda_1_1_c_o_o_matrix_view_t.md) &lt;IsConst, typename Ty&gt;<br> |
+| struct | [**read\_only\_view**](structmuda_1_1read__only__view.md) &lt;typename T&gt;<br> |
+| struct | [**read\_write\_view**](structmuda_1_1read__write__view.md) &lt;typename T&gt;<br> |
 
 
 

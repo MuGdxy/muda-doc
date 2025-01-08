@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.1" xml:lang="en-US">
   <compounddef id="dense__0d_8h" kind="file" language="C++">
     <compoundname>dense_0d.h</compoundname>
     <includes refid="viewer__base_8h" local="no">muda/viewer/viewer_base.h</includes>
@@ -291,7 +291,7 @@
         <link refid="buffer_8h_source"/>
         <childnode refid="5" relation="include">
         </childnode>
-        <childnode refid="25" relation="include">
+        <childnode refid="26" relation="include">
         </childnode>
       </node>
       <node id="3">
@@ -299,13 +299,13 @@
         <link refid="device__buffer_8h"/>
         <childnode refid="4" relation="include">
         </childnode>
-        <childnode refid="26" relation="include">
-        </childnode>
-        <childnode refid="28" relation="include">
+        <childnode refid="27" relation="include">
         </childnode>
         <childnode refid="29" relation="include">
         </childnode>
-        <childnode refid="32" relation="include">
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
         </childnode>
         <childnode refid="37" relation="include">
         </childnode>
@@ -319,7 +319,7 @@
         </childnode>
         <childnode refid="42" relation="include">
         </childnode>
-        <childnode refid="35" relation="include">
+        <childnode refid="36" relation="include">
         </childnode>
         <childnode refid="43" relation="include">
         </childnode>
@@ -341,7 +341,7 @@
         </childnode>
         <childnode refid="52" relation="include">
         </childnode>
-        <childnode refid="36" relation="include">
+        <childnode refid="11" relation="include">
         </childnode>
         <childnode refid="54" relation="include">
         </childnode>
@@ -369,7 +369,7 @@
         <link refid="container_8h_source"/>
         <childnode refid="5" relation="include">
         </childnode>
-        <childnode refid="25" relation="include">
+        <childnode refid="26" relation="include">
         </childnode>
       </node>
       <node id="52">
@@ -405,13 +405,11 @@
         </childnode>
         <childnode refid="10" relation="include">
         </childnode>
-        <childnode refid="11" relation="include">
-        </childnode>
         <childnode refid="12" relation="include">
         </childnode>
         <childnode refid="13" relation="include">
         </childnode>
-        <childnode refid="18" relation="include">
+        <childnode refid="14" relation="include">
         </childnode>
         <childnode refid="19" relation="include">
         </childnode>
@@ -424,6 +422,8 @@
         <childnode refid="23" relation="include">
         </childnode>
         <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
         </childnode>
       </node>
       <node id="6">
@@ -443,64 +443,76 @@
         <link refid="device__merge__sort_8h_source"/>
         <childnode refid="7" relation="include">
         </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
       </node>
-      <node id="11">
+      <node id="12">
         <label>src/muda/cub/device/device_partition.h</label>
         <link refid="device__partition_8h_source"/>
         <childnode refid="7" relation="include">
         </childnode>
       </node>
-      <node id="12">
+      <node id="13">
         <label>src/muda/cub/device/device_radix_sort.h</label>
         <link refid="device__radix__sort_8h_source"/>
         <childnode refid="7" relation="include">
         </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
       </node>
-      <node id="13">
+      <node id="14">
         <label>src/muda/cub/device/device_reduce.h</label>
         <link refid="device__reduce_8h_source"/>
         <childnode refid="7" relation="include">
         </childnode>
-        <childnode refid="14" relation="include">
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
         </childnode>
       </node>
-      <node id="18">
+      <node id="19">
         <label>src/muda/cub/device/device_run_length_encode.h</label>
         <link refid="device__run__length__encode_8h_source"/>
         <childnode refid="7" relation="include">
         </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
       </node>
-      <node id="19">
+      <node id="20">
         <label>src/muda/cub/device/device_scan.h</label>
         <link refid="device__scan_8h_source"/>
         <childnode refid="7" relation="include">
         </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
       </node>
-      <node id="20">
+      <node id="21">
         <label>src/muda/cub/device/device_segmented_radix_sort.h</label>
         <link refid="device__segmented__radix__sort_8h_source"/>
         <childnode refid="7" relation="include">
         </childnode>
       </node>
-      <node id="21">
+      <node id="22">
         <label>src/muda/cub/device/device_segmented_reduce.h</label>
         <link refid="device__segmented__reduce_8h_source"/>
         <childnode refid="7" relation="include">
         </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
       </node>
-      <node id="22">
+      <node id="23">
         <label>src/muda/cub/device/device_segmented_sort.h</label>
         <link refid="device__segmented__sort_8h_source"/>
         <childnode refid="7" relation="include">
         </childnode>
       </node>
-      <node id="23">
+      <node id="24">
         <label>src/muda/cub/device/device_select.h</label>
         <link refid="device__select_8h_source"/>
         <childnode refid="7" relation="include">
         </childnode>
       </node>
-      <node id="24">
+      <node id="25">
         <label>src/muda/cub/device/device_spmv.h</label>
         <link refid="device__spmv_8h_source"/>
         <childnode refid="7" relation="include">
@@ -516,14 +528,14 @@
         <childnode refid="65" relation="include">
         </childnode>
       </node>
-      <node id="27">
+      <node id="28">
         <label>src/muda/ext/field.h</label>
         <link refid="field_8h_source"/>
       </node>
-      <node id="26">
+      <node id="27">
         <label>src/muda/ext/field/field_entry.h</label>
         <link refid="field__entry_8h_source"/>
-        <childnode refid="27" relation="include">
+        <childnode refid="28" relation="include">
         </childnode>
       </node>
       <node id="58">
@@ -533,7 +545,7 @@
       <node id="57">
         <label>src/muda/ext/field/field_entry_view.h</label>
         <link refid="field__entry__view_8h_source"/>
-        <childnode refid="26" relation="include">
+        <childnode refid="27" relation="include">
         </childnode>
         <childnode refid="58" relation="include">
         </childnode>
@@ -544,182 +556,184 @@
         <childnode refid="57" relation="include">
         </childnode>
       </node>
-      <node id="28">
+      <node id="29">
         <label>src/muda/ext/field/sub_field.h</label>
         <link refid="sub__field_8h_source"/>
       </node>
-      <node id="16">
+      <node id="17">
         <label>src/muda/ext/geo/lbvh.h</label>
         <link refid="lbvh_8h_source"/>
       </node>
-      <node id="14">
+      <node id="15">
         <label>src/muda/ext/geo/lbvh/bvh.h</label>
         <link refid="bvh_8h_source"/>
-        <childnode refid="15" relation="include">
+        <childnode refid="16" relation="include">
         </childnode>
-        <childnode refid="17" relation="include">
+        <childnode refid="18" relation="include">
         </childnode>
       </node>
       <node id="62">
         <label>src/muda/ext/geo/lbvh/bvh_viewer.h</label>
         <link refid="bvh__viewer_8h_source"/>
-        <childnode refid="14" relation="include">
-        </childnode>
-      </node>
-      <node id="15">
-        <label>src/muda/ext/geo/lbvh/lbvh.h</label>
-        <link refid="lbvh_2lbvh_8h_source"/>
-        <childnode refid="16" relation="include">
-        </childnode>
-      </node>
-      <node id="17">
-        <label>src/muda/ext/geo/lbvh/query.h</label>
-        <link refid="query_8h_source"/>
         <childnode refid="15" relation="include">
         </childnode>
       </node>
-      <node id="31">
+      <node id="16">
+        <label>src/muda/ext/geo/lbvh/lbvh.h</label>
+        <link refid="lbvh_2lbvh_8h_source"/>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>src/muda/ext/geo/lbvh/query.h</label>
+        <link refid="query_8h_source"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="32">
         <label>src/muda/ext/geo/spatial_hash.h</label>
         <link refid="spatial__hash_8h_source"/>
       </node>
-      <node id="30">
+      <node id="31">
         <label>src/muda/ext/geo/spatial_hash/sparse_spatial_hash.h</label>
         <link refid="sparse__spatial__hash_8h_source"/>
+        <childnode refid="32" relation="include">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>src/muda/ext/geo/spatial_hash/sparse_spatial_hash_impl.h</label>
+        <link refid="sparse__spatial__hash__impl_8h_source"/>
         <childnode refid="31" relation="include">
         </childnode>
       </node>
-      <node id="29">
-        <label>src/muda/ext/geo/spatial_hash/sparse_spatial_hash_impl.h</label>
-        <link refid="sparse__spatial__hash__impl_8h_source"/>
-        <childnode refid="30" relation="include">
-        </childnode>
-      </node>
-      <node id="33">
+      <node id="34">
         <label>src/muda/ext/linear_system.h</label>
         <link refid="linear__system_8h_source"/>
       </node>
       <node id="45">
         <label>src/muda/ext/linear_system/bcoo_matrix_view.h</label>
         <link refid="bcoo__matrix__view_8h_source"/>
-        <childnode refid="33" relation="include">
+        <childnode refid="34" relation="include">
         </childnode>
-        <childnode refid="32" relation="include">
+        <childnode refid="33" relation="include">
         </childnode>
       </node>
       <node id="44">
         <label>src/muda/ext/linear_system/bcoo_matrix_viewer.h</label>
         <link refid="bcoo__matrix__viewer_8h_source"/>
-        <childnode refid="33" relation="include">
+        <childnode refid="34" relation="include">
         </childnode>
         <childnode refid="45" relation="include">
         </childnode>
       </node>
-      <node id="32">
+      <node id="33">
         <label>src/muda/ext/linear_system/device_bcoo_matrix.h</label>
         <link refid="device__bcoo__matrix_8h_source"/>
-        <childnode refid="33" relation="include">
-        </childnode>
         <childnode refid="34" relation="include">
         </childnode>
-        <childnode refid="36" relation="include">
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
         </childnode>
       </node>
       <node id="37">
         <label>src/muda/ext/linear_system/device_bcoo_vector.h</label>
         <link refid="device__bcoo__vector_8h_source"/>
-        <childnode refid="33" relation="include">
-        </childnode>
         <childnode refid="34" relation="include">
         </childnode>
-        <childnode refid="36" relation="include">
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
         </childnode>
       </node>
       <node id="38">
         <label>src/muda/ext/linear_system/device_bsr_matrix.h</label>
         <link refid="device__bsr__matrix_8h_source"/>
-        <childnode refid="33" relation="include">
-        </childnode>
         <childnode refid="34" relation="include">
         </childnode>
-        <childnode refid="36" relation="include">
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
         </childnode>
       </node>
       <node id="39">
         <label>src/muda/ext/linear_system/device_csr_matrix.h</label>
         <link refid="device__csr__matrix_8h_source"/>
-        <childnode refid="33" relation="include">
-        </childnode>
         <childnode refid="34" relation="include">
         </childnode>
-        <childnode refid="36" relation="include">
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
         </childnode>
       </node>
       <node id="48">
         <label>src/muda/ext/linear_system/device_dense_matrix.h</label>
         <link refid="device__dense__matrix_8h_source"/>
-        <childnode refid="33" relation="include">
-        </childnode>
         <childnode refid="34" relation="include">
         </childnode>
-        <childnode refid="36" relation="include">
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
         </childnode>
       </node>
       <node id="40">
         <label>src/muda/ext/linear_system/device_dense_vector.h</label>
         <link refid="device__dense__vector_8h_source"/>
-        <childnode refid="33" relation="include">
-        </childnode>
         <childnode refid="34" relation="include">
         </childnode>
-        <childnode refid="36" relation="include">
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
         </childnode>
       </node>
       <node id="41">
         <label>src/muda/ext/linear_system/device_doublet_vector.h</label>
         <link refid="device__doublet__vector_8h_source"/>
-        <childnode refid="33" relation="include">
+        <childnode refid="34" relation="include">
         </childnode>
         <childnode refid="37" relation="include">
         </childnode>
-        <childnode refid="34" relation="include">
+        <childnode refid="35" relation="include">
         </childnode>
-        <childnode refid="36" relation="include">
+        <childnode refid="11" relation="include">
         </childnode>
       </node>
       <node id="42">
         <label>src/muda/ext/linear_system/device_triplet_matrix.h</label>
         <link refid="device__triplet__matrix_8h_source"/>
+        <childnode refid="34" relation="include">
+        </childnode>
         <childnode refid="33" relation="include">
         </childnode>
-        <childnode refid="32" relation="include">
+        <childnode refid="35" relation="include">
         </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="36">
+        <label>src/muda/ext/linear_system/linear_system_context.h</label>
+        <link refid="linear__system__context_8h_source"/>
+        <childnode refid="34" relation="include">
+        </childnode>
+      </node>
+      <node id="35">
+        <label>src/muda/ext/linear_system/matrix_format_converter.h</label>
+        <link refid="matrix__format__converter_8h_source"/>
         <childnode refid="34" relation="include">
         </childnode>
         <childnode refid="36" relation="include">
         </childnode>
       </node>
-      <node id="35">
-        <label>src/muda/ext/linear_system/linear_system_context.h</label>
-        <link refid="linear__system__context_8h_source"/>
-        <childnode refid="33" relation="include">
-        </childnode>
-      </node>
-      <node id="34">
-        <label>src/muda/ext/linear_system/matrix_format_converter.h</label>
-        <link refid="matrix__format__converter_8h_source"/>
-        <childnode refid="33" relation="include">
-        </childnode>
-        <childnode refid="35" relation="include">
-        </childnode>
-      </node>
-      <node id="36">
+      <node id="11">
         <label>src/muda/ext/linear_system/matrix_format_converter_impl.h</label>
         <link refid="matrix__format__converter__impl_8h_source"/>
       </node>
       <node id="46">
         <label>src/muda/ext/linear_system/triplet_matrix_view.h</label>
         <link refid="triplet__matrix__view_8h_source"/>
-        <childnode refid="33" relation="include">
+        <childnode refid="34" relation="include">
         </childnode>
         <childnode refid="45" relation="include">
         </childnode>
@@ -729,7 +743,7 @@
       <node id="43">
         <label>src/muda/ext/linear_system/triplet_matrix_viewer.h</label>
         <link refid="triplet__matrix__viewer_8h_source"/>
-        <childnode refid="33" relation="include">
+        <childnode refid="34" relation="include">
         </childnode>
         <childnode refid="44" relation="include">
         </childnode>
@@ -739,7 +753,7 @@
       <node id="55">
         <label>src/muda/logger.h</label>
         <link refid="logger_8h_source"/>
-        <childnode refid="25" relation="include">
+        <childnode refid="26" relation="include">
         </childnode>
       </node>
       <node id="54">
@@ -764,14 +778,14 @@
         <childnode refid="66" relation="include">
         </childnode>
       </node>
-      <node id="25">
+      <node id="26">
         <label>src/muda/muda.h</label>
         <link refid="muda_8h_source"/>
       </node>
       <node id="56">
         <label>src/muda/tools/host_device_config.h</label>
         <link refid="host__device__config_8h_source"/>
-        <childnode refid="26" relation="include">
+        <childnode refid="27" relation="include">
         </childnode>
         <childnode refid="57" relation="include">
         </childnode>
@@ -781,7 +795,7 @@
       <node id="67">
         <label>src/muda/viewer.h</label>
         <link refid="viewer_8h_source"/>
-        <childnode refid="25" relation="include">
+        <childnode refid="26" relation="include">
         </childnode>
       </node>
       <node id="2">
@@ -810,8 +824,8 @@
       </node>
     </invincdepgraph>
     <innerclass refid="classmuda_1_1_dense_viewer_t" prot="public">muda::DenseViewerT</innerclass>
-    <innerclass refid="structmuda_1_1read__only__viewer_3_01_dense_3_01_t_01_4_01_4" prot="public">muda::read_only_viewer&lt; Dense&lt; T &gt; &gt;</innerclass>
-    <innerclass refid="structmuda_1_1read__write__viewer_3_01_c_dense_3_01_t_01_4_01_4" prot="public">muda::read_write_viewer&lt; CDense&lt; T &gt; &gt;</innerclass>
+    <innerclass refid="structmuda_1_1read__only__view" prot="public">muda::read_only_view&lt; Dense&lt; T &gt; &gt;</innerclass>
+    <innerclass refid="structmuda_1_1read__write__view" prot="public">muda::read_write_view&lt; CDense&lt; T &gt; &gt;</innerclass>
     <innernamespace refid="namespacemuda">muda</innernamespace>
     <briefdescription>
     </briefdescription>
@@ -824,19 +838,19 @@
 <codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">muda</highlight></codeline>
 <codeline lineno="5"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>IsConst,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
-<codeline lineno="7" refid="classmuda_1_1_dense_viewer_t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classmuda_1_1_dense_viewer_t" kindref="compound">DenseViewerT</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classmuda_1_1_viewer_base" kindref="compound">ViewerBase</ref>&lt;IsConst&gt;</highlight></codeline>
+<codeline lineno="7" refid="classmuda_1_1_dense_viewer_t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">DenseViewerT<sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>ViewerBase&lt;IsConst&gt;</highlight></codeline>
 <codeline lineno="8"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="classmuda_1_1_viewer_base" kindref="compound">Base</ref><sp/>=<sp/><ref refid="classmuda_1_1_viewer_base" kindref="compound">ViewerBase&lt;IsConst&gt;</ref>;</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">Base<sp/>=<sp/>ViewerBase&lt;IsConst&gt;;</highlight></codeline>
 <codeline lineno="10"><highlight class="normal"></highlight></codeline>
 <codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>OtherIsConst,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>U&gt;</highlight></codeline>
-<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classmuda_1_1_dense_viewer_t" kindref="compound">DenseViewerT</ref>;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">DenseViewerT;</highlight></codeline>
 <codeline lineno="13"><highlight class="normal"></highlight></codeline>
-<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/>MUDA_VIEWER_COMMON_NAME(<ref refid="classmuda_1_1_dense_viewer_t" kindref="compound">DenseViewerT</ref>);</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/>MUDA_VIEWER_COMMON_NAME(DenseViewerT);</highlight></codeline>
 <codeline lineno="15"><highlight class="normal"></highlight></codeline>
 <codeline lineno="16"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="classmuda_1_1_dense_viewer_t" kindref="compound">ConstViewer</ref><sp/><sp/><sp/><sp/>=<sp/><ref refid="classmuda_1_1_dense_viewer_t" kindref="compound">DenseViewerT&lt;true, T&gt;</ref>;</highlight></codeline>
-<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="classmuda_1_1_dense_viewer_t" kindref="compound">NonConstViewer</ref><sp/>=<sp/><ref refid="classmuda_1_1_dense_viewer_t" kindref="compound">DenseViewerT&lt;false, T&gt;</ref>;</highlight></codeline>
-<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="classmuda_1_1_dense_viewer_t" kindref="compound">ThisViewer</ref><sp/><sp/><sp/><sp/><sp/>=<sp/><ref refid="classmuda_1_1_dense_viewer_t" kindref="compound">DenseViewerT&lt;IsConst, T&gt;</ref>;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">ConstViewer<sp/><sp/><sp/><sp/>=<sp/>DenseViewerT&lt;true,<sp/>T&gt;;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">NonConstViewer<sp/>=<sp/>DenseViewerT&lt;false,<sp/>T&gt;;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">ThisViewer<sp/><sp/><sp/><sp/><sp/>=<sp/>DenseViewerT&lt;IsConst,<sp/>T&gt;;</highlight></codeline>
 <codeline lineno="20"><highlight class="normal"></highlight></codeline>
 <codeline lineno="21"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>U&gt;</highlight></codeline>
@@ -847,21 +861,21 @@
 <codeline lineno="27"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">value_type<sp/>=<sp/>T;</highlight></codeline>
 <codeline lineno="29"><highlight class="normal"></highlight></codeline>
-<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>MUDA_GENERIC<sp/><ref refid="classmuda_1_1_dense_viewer_t" kindref="compound">DenseViewerT</ref>()<sp/>MUDA_NOEXCEPT<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>MUDA_GENERIC<sp/>DenseViewerT()<sp/>MUDA_NOEXCEPT<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="31"><highlight class="normal"></highlight></codeline>
-<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>MUDA_GENERIC<sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="classmuda_1_1_dense_viewer_t" kindref="compound">DenseViewerT</ref>(auto_const_t&lt;T&gt;*<sp/>p)<sp/>MUDA_NOEXCEPT<sp/>:<sp/>m_data(p)</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>MUDA_GENERIC<sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/>DenseViewerT(auto_const_t&lt;T&gt;*<sp/>p)<sp/>MUDA_NOEXCEPT<sp/>:<sp/>m_data(p)</highlight></codeline>
 <codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="35"><highlight class="normal"></highlight></codeline>
-<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/>MUDA_GENERIC<sp/><ref refid="classmuda_1_1_dense_viewer_t" kindref="compound">DenseViewerT</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classmuda_1_1_dense_viewer_t" kindref="compound">ThisViewer</ref>&amp;)<sp/>MUDA_NOEXCEPT<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/>MUDA_GENERIC<sp/>DenseViewerT(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>DenseViewerT&amp;)<sp/>MUDA_NOEXCEPT<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="37"><highlight class="normal"></highlight></codeline>
 <codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>OtherIsConst&gt;</highlight></codeline>
-<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>MUDA_GENERIC<sp/><ref refid="classmuda_1_1_dense_viewer_t" kindref="compound">DenseViewerT</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classmuda_1_1_dense_viewer_t" kindref="compound">DenseViewerT&lt;OtherIsConst, T&gt;</ref>&amp;<sp/>other)<sp/>MUDA_NOEXCEPT</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>MUDA_GENERIC<sp/>DenseViewerT(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>DenseViewerT&lt;OtherIsConst,<sp/>T&gt;&amp;<sp/>other)<sp/>MUDA_NOEXCEPT</highlight></codeline>
 <codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>m_data(other.m_data)</highlight></codeline>
 <codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="43"><highlight class="normal"></highlight></codeline>
-<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>MUDA_GENERIC<sp/><ref refid="classmuda_1_1_dense_viewer_t" kindref="compound">ThisViewer</ref>&amp;<sp/>operator=(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>T&amp;<sp/>v)<sp/>MUDA_NOEXCEPT<sp/>MUDA_REQUIRES(!IsConst)</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>MUDA_GENERIC<sp/>ThisViewer&amp;<sp/>operator=(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>T&amp;<sp/>v)<sp/>MUDA_NOEXCEPT<sp/>MUDA_REQUIRES(!IsConst)</highlight></codeline>
 <codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static_assert</highlight><highlight class="normal">(!IsConst,<sp/></highlight><highlight class="stringliteral">&quot;Cannot<sp/>assign<sp/>to<sp/>a<sp/>const<sp/>viewer&quot;</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>check();</highlight></codeline>
@@ -871,7 +885,7 @@
 <codeline lineno="51"><highlight class="normal"></highlight></codeline>
 <codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>MUDA_GENERIC<sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>as_const()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>MUDA_NOEXCEPT</highlight></codeline>
 <codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classmuda_1_1_dense_viewer_t" kindref="compound">ConstViewer</ref>{m_data};</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>ConstViewer{m_data};</highlight></codeline>
 <codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="56"><highlight class="normal"></highlight></codeline>
 <codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/>MUDA_GENERIC<sp/>auto_const_t&lt;T&gt;&amp;<sp/>operator*()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>MUDA_NOEXCEPT</highlight></codeline>
@@ -910,29 +924,29 @@
 <codeline lineno="90"><highlight class="normal">};</highlight></codeline>
 <codeline lineno="91"><highlight class="normal"></highlight></codeline>
 <codeline lineno="92"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
-<codeline lineno="93"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="classmuda_1_1_dense_viewer_t" kindref="compound">Dense</ref><sp/>=<sp/><ref refid="classmuda_1_1_dense_viewer_t" kindref="compound">DenseViewerT&lt;false, T&gt;</ref>;</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">Dense<sp/>=<sp/><ref refid="classmuda_1_1_dense_viewer_t" kindref="compound">DenseViewerT&lt;false, T&gt;</ref>;</highlight></codeline>
 <codeline lineno="94"><highlight class="normal"></highlight></codeline>
 <codeline lineno="95"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
-<codeline lineno="96"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="classmuda_1_1_dense_viewer_t" kindref="compound">CDense</ref><sp/>=<sp/><ref refid="classmuda_1_1_dense_viewer_t" kindref="compound">DenseViewerT&lt;true, T&gt;</ref>;</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">CDense<sp/>=<sp/><ref refid="classmuda_1_1_dense_viewer_t" kindref="compound">DenseViewerT&lt;true, T&gt;</ref>;</highlight></codeline>
 <codeline lineno="97"><highlight class="normal"></highlight></codeline>
 <codeline lineno="98"><highlight class="normal"></highlight><highlight class="comment">//<sp/>viewer<sp/>traits</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="99"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
-<codeline lineno="100" refid="structmuda_1_1read__only__viewer_3_01_dense_3_01_t_01_4_01_4" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structmuda_1_1read__only__viewer" kindref="compound">read_only_viewer</ref>&lt;<ref refid="classmuda_1_1_dense_viewer_t" kindref="compound">Dense</ref>&lt;T&gt;&gt;</highlight></codeline>
+<codeline lineno="100" refid="structmuda_1_1read__only__view" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structmuda_1_1read__only__view" kindref="compound">read_only_view</ref>&lt;Dense&lt;T&gt;&gt;</highlight></codeline>
 <codeline lineno="101"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="classmuda_1_1_dense_viewer_t" kindref="compound">type</ref><sp/>=<sp/><ref refid="classmuda_1_1_dense_viewer_t" kindref="compound">CDense&lt;T&gt;</ref>;</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">type<sp/>=<sp/>CDense&lt;T&gt;;</highlight></codeline>
 <codeline lineno="103"><highlight class="normal">};</highlight></codeline>
 <codeline lineno="104"><highlight class="normal"></highlight></codeline>
 <codeline lineno="105"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
-<codeline lineno="106" refid="structmuda_1_1read__write__viewer_3_01_c_dense_3_01_t_01_4_01_4" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structmuda_1_1read__write__viewer" kindref="compound">read_write_viewer</ref>&lt;<ref refid="classmuda_1_1_dense_viewer_t" kindref="compound">CDense</ref>&lt;T&gt;&gt;</highlight></codeline>
+<codeline lineno="106" refid="structmuda_1_1read__write__view" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structmuda_1_1read__write__view" kindref="compound">read_write_view</ref>&lt;CDense&lt;T&gt;&gt;</highlight></codeline>
 <codeline lineno="107"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="classmuda_1_1_dense_viewer_t" kindref="compound">type</ref><sp/>=<sp/><ref refid="classmuda_1_1_dense_viewer_t" kindref="compound">Dense&lt;T&gt;</ref>;</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">type<sp/>=<sp/>Dense&lt;T&gt;;</highlight></codeline>
 <codeline lineno="109"><highlight class="normal">};</highlight></codeline>
 <codeline lineno="110"><highlight class="normal"></highlight></codeline>
 <codeline lineno="111"><highlight class="normal"></highlight><highlight class="comment">//<sp/>make<sp/>functions</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="112"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
 <codeline lineno="113"><highlight class="normal">MUDA_INLINE<sp/>MUDA_GENERIC<sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>make_cdense(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>T*<sp/>data)<sp/>MUDA_NOEXCEPT</highlight></codeline>
 <codeline lineno="114"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classmuda_1_1_dense_viewer_t" kindref="compound">CDense&lt;T&gt;</ref>{data};</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>CDense&lt;T&gt;{data};</highlight></codeline>
 <codeline lineno="116"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="117"><highlight class="normal"></highlight></codeline>
 <codeline lineno="118"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>

@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.1" xml:lang="en-US">
   <compounddef id="classmuda_1_1_empty" kind="class" language="C++" prot="public">
     <compoundname>muda::Empty</compoundname>
     <basecompoundref refid="classmuda_1_1_launch_base" prot="public" virt="non-virtual">muda::LaunchBase&lt; Empty &gt;</basecompoundref>
@@ -21,7 +21,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/launch/launch_base.h" line="169" column="5" bodyfile="src/muda/launch/launch_base.h" bodystart="169" bodyend="172"/>
+        <location file="src/muda/launch/launch_base.h" line="167" column="5" bodyfile="src/muda/launch/launch_base.h" bodystart="167" bodyend="170"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -29,16 +29,16 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="2">
-        <label>muda::LaunchBase&lt; Empty &gt;</label>
-        <link refid="classmuda_1_1_launch_base"/>
-        <childnode refid="3" relation="public-inheritance">
-        </childnode>
-      </node>
       <node id="1">
         <label>muda::Empty</label>
         <link refid="classmuda_1_1_empty"/>
         <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>muda::LaunchBase&lt; Empty &gt;</label>
+        <link refid="classmuda_1_1_launch_base"/>
+        <childnode refid="3" relation="public-inheritance">
         </childnode>
       </node>
       <node id="3">
@@ -47,16 +47,16 @@
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="2">
-        <label>muda::LaunchBase&lt; Empty &gt;</label>
-        <link refid="classmuda_1_1_launch_base"/>
-        <childnode refid="3" relation="public-inheritance">
-        </childnode>
-      </node>
       <node id="1">
         <label>muda::Empty</label>
         <link refid="classmuda_1_1_empty"/>
         <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>muda::LaunchBase&lt; Empty &gt;</label>
+        <link refid="classmuda_1_1_launch_base"/>
+        <childnode refid="3" relation="public-inheritance">
         </childnode>
       </node>
       <node id="3">
@@ -64,7 +64,7 @@
         <link refid="classmuda_1_1_launch_core"/>
       </node>
     </collaborationgraph>
-    <location file="src/muda/launch/launch_base.h" line="166" column="1" bodyfile="src/muda/launch/launch_base.h" bodystart="167" bodyend="173"/>
+    <location file="src/muda/launch/launch_base.h" line="164" column="1" bodyfile="src/muda/launch/launch_base.h" bodystart="165" bodyend="171"/>
     <listofallmembers>
       <member refid="classmuda_1_1_launch_base_1aa8490139890f43555c1b7baa57378616" prot="public" virt="non-virtual"><scope>muda::Empty</scope><name>callback</name></member>
       <member refid="classmuda_1_1_launch_base_1a8a59e9a27775e4e12ca19a6d590790f4" prot="public" virt="non-virtual"><scope>muda::Empty</scope><name>derived_type</name></member>

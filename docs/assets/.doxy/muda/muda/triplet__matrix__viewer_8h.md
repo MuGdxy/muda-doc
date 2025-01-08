@@ -40,16 +40,9 @@
 
 | Type | Name |
 | ---: | :--- |
-| class | [**CTripletMatrixViewer**](classmuda_1_1_c_triplet_matrix_viewer.md) &lt;typename T, N&gt;<br> |
-| class | [**CTripletMatrixViewer&lt; T, 1 &gt;**](classmuda_1_1_c_triplet_matrix_viewer_3_01_t_00_011_01_4.md) &lt;typename T&gt;<br> |
-| class | [**TripletMatrixViewer**](classmuda_1_1_triplet_matrix_viewer.md) &lt;typename T, N&gt;<br> |
-| class | [**Proxy**](classmuda_1_1_triplet_matrix_viewer_1_1_proxy.md) <br> |
-| class | [**TripletMatrixViewer&lt; T, 1 &gt;**](classmuda_1_1_triplet_matrix_viewer_3_01_t_00_011_01_4.md) &lt;typename T&gt;<br> |
-| class | [**Proxy**](classmuda_1_1_triplet_matrix_viewer_3_01_t_00_011_01_4_1_1_proxy.md) <br> |
-| class | [**TripletMatrixViewerBase**](classmuda_1_1_triplet_matrix_viewer_base.md) &lt;IsConst, typename T, N&gt;<br> |
-| struct | [**CTriplet**](structmuda_1_1_triplet_matrix_viewer_base_1_1_c_triplet.md) <br> |
-| class | [**TripletMatrixViewerBase&lt; IsConst, T, 1 &gt;**](classmuda_1_1_triplet_matrix_viewer_base_3_01_is_const_00_01_t_00_011_01_4.md) &lt;IsConst, typename T&gt;<br> |
-| struct | [**CTriplet**](structmuda_1_1_triplet_matrix_viewer_base_3_01_is_const_00_01_t_00_011_01_4_1_1_c_triplet.md) <br> |
+| class | [**TripletMatrixViewerT**](classmuda_1_1_triplet_matrix_viewer_t.md) &lt;IsConst, typename T, N&gt;<br> |
+| struct | [**CTriplet**](structmuda_1_1_triplet_matrix_viewer_t_1_1_c_triplet.md) <br> |
+| class | [**Proxy**](classmuda_1_1_triplet_matrix_viewer_t_1_1_proxy.md) <br> |
 
 
 

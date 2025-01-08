@@ -1,7 +1,8 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.1" xml:lang="en-US">
   <compounddef id="classmuda_1_1_device_doublet_vector" kind="class" language="C++" prot="public">
     <compoundname>muda::DeviceDoubletVector</compoundname>
+    <derivedcompoundref refid="classmuda_1_1_device_b_c_o_o_vector" prot="public" virt="non-virtual">muda::DeviceBCOOVector&lt; T, 1 &gt;</derivedcompoundref>
     <derivedcompoundref refid="classmuda_1_1_device_b_c_o_o_vector" prot="public" virt="non-virtual">muda::DeviceBCOOVector&lt; T, N &gt;</derivedcompoundref>
     <templateparamlist>
       <param>
@@ -14,12 +15,12 @@
       </param>
     </templateparamlist>
     <sectiondef kind="public-type">
-      <memberdef kind="typedef" id="classmuda_1_1_device_doublet_vector_1a7312000511d57bbb80cc2f827d992c99" prot="public" static="no">
-        <type>Eigen::Vector&lt; T, N &gt;</type>
-        <definition>using muda::DeviceDoubletVector&lt; T, N &gt;::SegmentVector =  Eigen::Vector&lt;T, N&gt;</definition>
+      <memberdef kind="typedef" id="classmuda_1_1_device_doublet_vector_1a9cdfe5531204bb815d8530d34e768918" prot="public" static="no">
+        <type>std::conditional_t&lt; N==1, T, Eigen::Vector&lt; T, N &gt; &gt;</type>
+        <definition>using muda::DeviceDoubletVector&lt; T, N &gt;::ValueT =  std::conditional_t&lt;N == 1, T, Eigen::Vector&lt;T, N&gt;&gt;</definition>
         <argsstring></argsstring>
-        <name>SegmentVector</name>
-        <qualifiedname>muda::DeviceDoubletVector::SegmentVector</qualifiedname>
+        <name>ValueT</name>
+        <qualifiedname>muda::DeviceDoubletVector::ValueT</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -58,41 +59,58 @@
         <location file="src/muda/ext/linear_system/device_doublet_vector.h" line="18" column="18" bodyfile="src/muda/ext/linear_system/device_doublet_vector.h" bodystart="18" bodyend="-1"/>
       </memberdef>
     </sectiondef>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classmuda_1_1_device_doublet_vector_1a0252161497b9dbb17286514d7ea4f3c8" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>bool</type>
+        <definition>bool muda::DeviceDoubletVector&lt; T, N &gt;::IsSegmentVector</definition>
+        <argsstring></argsstring>
+        <name>IsSegmentVector</name>
+        <qualifiedname>muda::DeviceDoubletVector::IsSegmentVector</qualifiedname>
+        <initializer>= (N &gt; 1)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/device_doublet_vector.h" line="22" column="27" bodyfile="src/muda/ext/linear_system/device_doublet_vector.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
     <sectiondef kind="protected-attrib">
-      <memberdef kind="variable" id="classmuda_1_1_device_doublet_vector_1ad35ade3cd64e14f35b29769f08603c40" prot="protected" static="no" mutable="no">
-        <type><ref refid="classmuda_1_1_device_buffer" kindref="compound">muda::DeviceBuffer</ref>&lt; SegmentVector &gt;</type>
-        <definition>muda::DeviceBuffer&lt;SegmentVector&gt; muda::DeviceDoubletVector&lt; T, N &gt;::m_segment_values</definition>
+      <memberdef kind="variable" id="classmuda_1_1_device_doublet_vector_1a9a941d23405d0b2e589daf0fcc7da7b0" prot="protected" static="no" mutable="no">
+        <type><ref refid="classmuda_1_1_device_buffer" kindref="compound">muda::DeviceBuffer</ref>&lt; ValueT &gt;</type>
+        <definition>muda::DeviceBuffer&lt;ValueT&gt; muda::DeviceDoubletVector&lt; T, N &gt;::m_values</definition>
         <argsstring></argsstring>
-        <name>m_segment_values</name>
-        <qualifiedname>muda::DeviceDoubletVector::m_segment_values</qualifiedname>
+        <name>m_values</name>
+        <qualifiedname>muda::DeviceDoubletVector::m_values</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/ext/linear_system/device_doublet_vector.h" line="24" column="24" bodyfile="src/muda/ext/linear_system/device_doublet_vector.h" bodystart="24" bodyend="-1"/>
+        <location file="src/muda/ext/linear_system/device_doublet_vector.h" line="25" column="24" bodyfile="src/muda/ext/linear_system/device_doublet_vector.h" bodystart="25" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="classmuda_1_1_device_doublet_vector_1a870e825607970dd28bc7fbb46378b8ef" prot="protected" static="no" mutable="no">
+      <memberdef kind="variable" id="classmuda_1_1_device_doublet_vector_1a7176cccea03266df4747f37fbdece5bc" prot="protected" static="no" mutable="no">
         <type><ref refid="classmuda_1_1_device_buffer" kindref="compound">muda::DeviceBuffer</ref>&lt; int &gt;</type>
-        <definition>muda::DeviceBuffer&lt;int&gt; muda::DeviceDoubletVector&lt; T, N &gt;::m_segment_indices</definition>
+        <definition>muda::DeviceBuffer&lt;int&gt; muda::DeviceDoubletVector&lt; T, N &gt;::m_indices</definition>
         <argsstring></argsstring>
-        <name>m_segment_indices</name>
-        <qualifiedname>muda::DeviceDoubletVector::m_segment_indices</qualifiedname>
+        <name>m_indices</name>
+        <qualifiedname>muda::DeviceDoubletVector::m_indices</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/ext/linear_system/device_doublet_vector.h" line="25" column="34" bodyfile="src/muda/ext/linear_system/device_doublet_vector.h" bodystart="25" bodyend="-1"/>
+        <location file="src/muda/ext/linear_system/device_doublet_vector.h" line="26" column="27" bodyfile="src/muda/ext/linear_system/device_doublet_vector.h" bodystart="26" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="classmuda_1_1_device_doublet_vector_1a7d5d184dca11303905ca9228d980899f" prot="protected" static="no" mutable="no">
+      <memberdef kind="variable" id="classmuda_1_1_device_doublet_vector_1a6578c8f300701e7c50e3442dcf5a2221" prot="protected" static="no" mutable="no">
         <type>int</type>
-        <definition>int muda::DeviceDoubletVector&lt; T, N &gt;::m_segment_count</definition>
+        <definition>int muda::DeviceDoubletVector&lt; T, N &gt;::m_count</definition>
         <argsstring></argsstring>
-        <name>m_segment_count</name>
-        <qualifiedname>muda::DeviceDoubletVector::m_segment_count</qualifiedname>
+        <name>m_count</name>
+        <qualifiedname>muda::DeviceDoubletVector::m_count</qualifiedname>
         <initializer>= 0</initializer>
         <briefdescription>
         </briefdescription>
@@ -100,7 +118,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/ext/linear_system/device_doublet_vector.h" line="26" column="39" bodyfile="src/muda/ext/linear_system/device_doublet_vector.h" bodystart="26" bodyend="-1"/>
+        <location file="src/muda/ext/linear_system/device_doublet_vector.h" line="27" column="32" bodyfile="src/muda/ext/linear_system/device_doublet_vector.h" bodystart="27" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-func">
@@ -116,7 +134,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/ext/linear_system/device_doublet_vector.h" line="29" column="5"/>
+        <location file="src/muda/ext/linear_system/device_doublet_vector.h" line="30" column="5"/>
       </memberdef>
       <memberdef kind="function" id="classmuda_1_1_device_doublet_vector_1add4542e0c79f8c30f7b1dd3f9836cdb8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -130,7 +148,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/ext/linear_system/device_doublet_vector.h" line="30" column="5"/>
+        <location file="src/muda/ext/linear_system/device_doublet_vector.h" line="31" column="5"/>
       </memberdef>
       <memberdef kind="function" id="classmuda_1_1_device_doublet_vector_1ae33eb7a86b113a63e3e0ce6179596a06" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -148,7 +166,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/ext/linear_system/device_doublet_vector.h" line="32" column="10" bodyfile="src/muda/ext/linear_system/device_doublet_vector.h" bodystart="32" bodyend="32"/>
+        <location file="src/muda/ext/linear_system/device_doublet_vector.h" line="33" column="10" bodyfile="src/muda/ext/linear_system/device_doublet_vector.h" bodystart="33" bodyend="33"/>
       </memberdef>
       <memberdef kind="function" id="classmuda_1_1_device_doublet_vector_1ab3e9c3e324cb96a866927ccfc1b7a194" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -166,7 +184,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/ext/linear_system/device_doublet_vector.h" line="34" column="10" bodyfile="src/muda/ext/linear_system/device_doublet_vector.h" bodystart="34" bodyend="38"/>
+        <location file="src/muda/ext/linear_system/device_doublet_vector.h" line="35" column="10" bodyfile="src/muda/ext/linear_system/device_doublet_vector.h" bodystart="35" bodyend="39"/>
       </memberdef>
       <memberdef kind="function" id="classmuda_1_1_device_doublet_vector_1a77fff9612703073c15048ddb76f3d783" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -184,7 +202,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/ext/linear_system/device_doublet_vector.h" line="40" column="10" bodyfile="src/muda/ext/linear_system/device_doublet_vector.h" bodystart="40" bodyend="44"/>
+        <location file="src/muda/ext/linear_system/device_doublet_vector.h" line="41" column="10" bodyfile="src/muda/ext/linear_system/device_doublet_vector.h" bodystart="41" bodyend="45"/>
       </memberdef>
       <memberdef kind="function" id="classmuda_1_1_device_doublet_vector_1ae2ddef2fdd81b3ba7962c7a0ff262850" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -206,7 +224,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/ext/linear_system/device_doublet_vector.h" line="46" column="10" bodyfile="src/muda/ext/linear_system/device_doublet_vector.h" bodystart="46" bodyend="50"/>
+        <location file="src/muda/ext/linear_system/device_doublet_vector.h" line="47" column="10" bodyfile="src/muda/ext/linear_system/device_doublet_vector.h" bodystart="47" bodyend="51"/>
       </memberdef>
       <memberdef kind="function" id="classmuda_1_1_device_doublet_vector_1ae78af7876450a2db3616b70d76b8af43" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -220,28 +238,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/ext/linear_system/device_doublet_vector.h" line="52" column="10" bodyfile="src/muda/ext/linear_system/device_doublet_vector.h" bodystart="52" bodyend="56"/>
+        <location file="src/muda/ext/linear_system/device_doublet_vector.h" line="53" column="10" bodyfile="src/muda/ext/linear_system/device_doublet_vector.h" bodystart="53" bodyend="57"/>
       </memberdef>
-      <memberdef kind="function" id="classmuda_1_1_device_doublet_vector_1a15df6e44c7c7611c4a95b536cbc04ddb" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+      <memberdef kind="function" id="classmuda_1_1_device_doublet_vector_1ae8ae798819ed0f55b137486c1ff01d93" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>auto</type>
-        <definition>auto muda::DeviceDoubletVector&lt; T, N &gt;::segment_count</definition>
+        <definition>auto muda::DeviceDoubletVector&lt; T, N &gt;::count</definition>
         <argsstring>() const</argsstring>
-        <name>segment_count</name>
-        <qualifiedname>muda::DeviceDoubletVector::segment_count</qualifiedname>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="src/muda/ext/linear_system/device_doublet_vector.h" line="58" column="10" bodyfile="src/muda/ext/linear_system/device_doublet_vector.h" bodystart="58" bodyend="58"/>
-      </memberdef>
-      <memberdef kind="function" id="classmuda_1_1_device_doublet_vector_1a14fe46f87e25f70ae4c0682717c58ce4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>auto</type>
-        <definition>auto muda::DeviceDoubletVector&lt; T, N &gt;::segment_values</definition>
-        <argsstring>()</argsstring>
-        <name>segment_values</name>
-        <qualifiedname>muda::DeviceDoubletVector::segment_values</qualifiedname>
+        <name>count</name>
+        <qualifiedname>muda::DeviceDoubletVector::count</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -250,12 +254,12 @@
         </inbodydescription>
         <location file="src/muda/ext/linear_system/device_doublet_vector.h" line="59" column="10" bodyfile="src/muda/ext/linear_system/device_doublet_vector.h" bodystart="59" bodyend="59"/>
       </memberdef>
-      <memberdef kind="function" id="classmuda_1_1_device_doublet_vector_1a1b594159d2b414420462029f8edf4e56" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+      <memberdef kind="function" id="classmuda_1_1_device_doublet_vector_1a13676e187afc4dc96aa46a8dcbe10cb7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>auto</type>
-        <definition>auto muda::DeviceDoubletVector&lt; T, N &gt;::segment_values</definition>
-        <argsstring>() const</argsstring>
-        <name>segment_values</name>
-        <qualifiedname>muda::DeviceDoubletVector::segment_values</qualifiedname>
+        <definition>auto muda::DeviceDoubletVector&lt; T, N &gt;::values</definition>
+        <argsstring>()</argsstring>
+        <name>values</name>
+        <qualifiedname>muda::DeviceDoubletVector::values</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -264,12 +268,12 @@
         </inbodydescription>
         <location file="src/muda/ext/linear_system/device_doublet_vector.h" line="60" column="10" bodyfile="src/muda/ext/linear_system/device_doublet_vector.h" bodystart="60" bodyend="60"/>
       </memberdef>
-      <memberdef kind="function" id="classmuda_1_1_device_doublet_vector_1afbf9ccacebf5f6f831db106c8bfde8ca" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+      <memberdef kind="function" id="classmuda_1_1_device_doublet_vector_1aeb23cb5d5810cf837a4677948b7ff23b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>auto</type>
-        <definition>auto muda::DeviceDoubletVector&lt; T, N &gt;::segment_indices</definition>
-        <argsstring>()</argsstring>
-        <name>segment_indices</name>
-        <qualifiedname>muda::DeviceDoubletVector::segment_indices</qualifiedname>
+        <definition>auto muda::DeviceDoubletVector&lt; T, N &gt;::values</definition>
+        <argsstring>() const</argsstring>
+        <name>values</name>
+        <qualifiedname>muda::DeviceDoubletVector::values</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -278,12 +282,12 @@
         </inbodydescription>
         <location file="src/muda/ext/linear_system/device_doublet_vector.h" line="61" column="10" bodyfile="src/muda/ext/linear_system/device_doublet_vector.h" bodystart="61" bodyend="61"/>
       </memberdef>
-      <memberdef kind="function" id="classmuda_1_1_device_doublet_vector_1adbb40942737559aaf4844db6d23ff34f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+      <memberdef kind="function" id="classmuda_1_1_device_doublet_vector_1afc70315f4a8a002a03ea88e2eaa7b5c7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>auto</type>
-        <definition>auto muda::DeviceDoubletVector&lt; T, N &gt;::segment_indices</definition>
-        <argsstring>() const</argsstring>
-        <name>segment_indices</name>
-        <qualifiedname>muda::DeviceDoubletVector::segment_indices</qualifiedname>
+        <definition>auto muda::DeviceDoubletVector&lt; T, N &gt;::indices</definition>
+        <argsstring>()</argsstring>
+        <name>indices</name>
+        <qualifiedname>muda::DeviceDoubletVector::indices</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -291,6 +295,20 @@
         <inbodydescription>
         </inbodydescription>
         <location file="src/muda/ext/linear_system/device_doublet_vector.h" line="62" column="10" bodyfile="src/muda/ext/linear_system/device_doublet_vector.h" bodystart="62" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_device_doublet_vector_1af741549597784e928a257f0910b9b832" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto muda::DeviceDoubletVector&lt; T, N &gt;::indices</definition>
+        <argsstring>() const</argsstring>
+        <name>indices</name>
+        <qualifiedname>muda::DeviceDoubletVector::indices</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/device_doublet_vector.h" line="63" column="10" bodyfile="src/muda/ext/linear_system/device_doublet_vector.h" bodystart="63" bodyend="63"/>
       </memberdef>
       <memberdef kind="function" id="classmuda_1_1_device_doublet_vector_1a7d32a61ac6392e8e9be3b742b6b0c5eb" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>auto</type>
@@ -304,7 +322,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/ext/linear_system/device_doublet_vector.h" line="64" column="10" bodyfile="src/muda/ext/linear_system/device_doublet_vector.h" bodystart="64" bodyend="64"/>
+        <location file="src/muda/ext/linear_system/device_doublet_vector.h" line="65" column="10" bodyfile="src/muda/ext/linear_system/device_doublet_vector.h" bodystart="65" bodyend="65"/>
       </memberdef>
       <memberdef kind="function" id="classmuda_1_1_device_doublet_vector_1af2b9a5b96f254c9a23a95f3d79a01f60" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>auto</type>
@@ -318,7 +336,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/ext/linear_system/device_doublet_vector.h" line="65" column="10" bodyfile="src/muda/ext/linear_system/device_doublet_vector.h" bodystart="65" bodyend="65"/>
+        <location file="src/muda/ext/linear_system/device_doublet_vector.h" line="66" column="10" bodyfile="src/muda/ext/linear_system/device_doublet_vector.h" bodystart="66" bodyend="66"/>
       </memberdef>
       <memberdef kind="function" id="classmuda_1_1_device_doublet_vector_1a0beece712cd92e4954bbeaf3eda407d9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>auto</type>
@@ -332,7 +350,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/ext/linear_system/device_doublet_vector.h" line="67" column="10" bodyfile="src/muda/ext/linear_system/device_doublet_vector.h" bodystart="67" bodyend="73"/>
+        <location file="src/muda/ext/linear_system/device_doublet_vector.h" line="68" column="10" bodyfile="src/muda/ext/linear_system/device_doublet_vector.h" bodystart="68" bodyend="72"/>
       </memberdef>
       <memberdef kind="function" id="classmuda_1_1_device_doublet_vector_1a3ab97856ac9e0b338b5517aa1f4cc478" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>auto</type>
@@ -346,7 +364,21 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/ext/linear_system/device_doublet_vector.h" line="75" column="10" bodyfile="src/muda/ext/linear_system/device_doublet_vector.h" bodystart="75" bodyend="75"/>
+        <location file="src/muda/ext/linear_system/device_doublet_vector.h" line="74" column="10" bodyfile="src/muda/ext/linear_system/device_doublet_vector.h" bodystart="74" bodyend="74"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_device_doublet_vector_1aab3caa62839716ed4f018d1786aaa71f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto muda::DeviceDoubletVector&lt; T, N &gt;::cview</definition>
+        <argsstring>() const</argsstring>
+        <name>cview</name>
+        <qualifiedname>muda::DeviceDoubletVector::cview</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/device_doublet_vector.h" line="76" column="10" bodyfile="src/muda/ext/linear_system/device_doublet_vector.h" bodystart="76" bodyend="76"/>
       </memberdef>
       <memberdef kind="function" id="classmuda_1_1_device_doublet_vector_1aa6de60c1e6519daba55dc13f81e9ad3c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>auto</type>
@@ -376,6 +408,20 @@
         </inbodydescription>
         <location file="src/muda/ext/linear_system/device_doublet_vector.h" line="78" column="10" bodyfile="src/muda/ext/linear_system/device_doublet_vector.h" bodystart="78" bodyend="78"/>
       </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_device_doublet_vector_1a3129067f35a99c68693a943a5b9531c7" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto muda::DeviceDoubletVector&lt; T, N &gt;::cviewer</definition>
+        <argsstring>() const</argsstring>
+        <name>cviewer</name>
+        <qualifiedname>muda::DeviceDoubletVector::cviewer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/device_doublet_vector.h" line="79" column="10" bodyfile="src/muda/ext/linear_system/device_doublet_vector.h" bodystart="79" bodyend="79"/>
+      </memberdef>
     </sectiondef>
     <briefdescription>
     </briefdescription>
@@ -383,6 +429,12 @@
     </detaileddescription>
     <inheritancegraph>
       <node id="2">
+        <label>muda::DeviceBCOOVector&lt; T, 1 &gt;</label>
+        <link refid="classmuda_1_1_device_b_c_o_o_vector"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
         <label>muda::DeviceBCOOVector&lt; T, N &gt;</label>
         <link refid="classmuda_1_1_device_b_c_o_o_vector"/>
         <childnode refid="1" relation="public-inheritance">
@@ -395,7 +447,7 @@
     </inheritancegraph>
     <collaborationgraph>
       <node id="2">
-        <label>muda::DeviceBuffer&lt; SegmentVector &gt;</label>
+        <label>muda::DeviceBuffer&lt; ValueT &gt;</label>
         <link refid="classmuda_1_1_device_buffer"/>
       </node>
       <node id="3">
@@ -406,33 +458,36 @@
         <label>muda::DeviceDoubletVector&lt; T, N &gt;</label>
         <link refid="classmuda_1_1_device_doublet_vector"/>
         <childnode refid="2" relation="usage">
-          <edgelabel>m_segment_values</edgelabel>
+          <edgelabel>m_values</edgelabel>
         </childnode>
         <childnode refid="3" relation="usage">
-          <edgelabel>m_segment_indices</edgelabel>
+          <edgelabel>m_indices</edgelabel>
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="src/muda/ext/linear_system/device_doublet_vector.h" line="15" column="1" bodyfile="src/muda/ext/linear_system/device_doublet_vector.h" bodystart="16" bodyend="79"/>
+    <location file="src/muda/ext/linear_system/device_doublet_vector.h" line="15" column="1" bodyfile="src/muda/ext/linear_system/device_doublet_vector.h" bodystart="16" bodyend="80"/>
     <listofallmembers>
       <member refid="classmuda_1_1_device_doublet_vector_1ae78af7876450a2db3616b70d76b8af43" prot="public" virt="non-virtual"><scope>muda::DeviceDoubletVector</scope><name>clear</name></member>
+      <member refid="classmuda_1_1_device_doublet_vector_1ae8ae798819ed0f55b137486c1ff01d93" prot="public" virt="non-virtual"><scope>muda::DeviceDoubletVector</scope><name>count</name></member>
+      <member refid="classmuda_1_1_device_doublet_vector_1aab3caa62839716ed4f018d1786aaa71f" prot="public" virt="non-virtual"><scope>muda::DeviceDoubletVector</scope><name>cview</name></member>
+      <member refid="classmuda_1_1_device_doublet_vector_1a3129067f35a99c68693a943a5b9531c7" prot="public" virt="non-virtual"><scope>muda::DeviceDoubletVector</scope><name>cviewer</name></member>
       <member refid="classmuda_1_1_device_doublet_vector_1af08ecf9e5111e729f7c039733b5d98c3" prot="public" virt="non-virtual"><scope>muda::DeviceDoubletVector</scope><name>details::MatrixFormatConverter</name></member>
       <member refid="classmuda_1_1_device_doublet_vector_1a7b0015a6cd5b16f986ecdb457352ad67" prot="public" virt="non-virtual"><scope>muda::DeviceDoubletVector</scope><name>DeviceDoubletVector</name></member>
       <member refid="classmuda_1_1_device_doublet_vector_1af2b9a5b96f254c9a23a95f3d79a01f60" prot="public" virt="non-virtual"><scope>muda::DeviceDoubletVector</scope><name>doublet_capacity</name></member>
       <member refid="classmuda_1_1_device_doublet_vector_1a7d32a61ac6392e8e9be3b742b6b0c5eb" prot="public" virt="non-virtual"><scope>muda::DeviceDoubletVector</scope><name>doublet_count</name></member>
-      <member refid="classmuda_1_1_device_doublet_vector_1a7d5d184dca11303905ca9228d980899f" prot="protected" virt="non-virtual"><scope>muda::DeviceDoubletVector</scope><name>m_segment_count</name></member>
-      <member refid="classmuda_1_1_device_doublet_vector_1a870e825607970dd28bc7fbb46378b8ef" prot="protected" virt="non-virtual"><scope>muda::DeviceDoubletVector</scope><name>m_segment_indices</name></member>
-      <member refid="classmuda_1_1_device_doublet_vector_1ad35ade3cd64e14f35b29769f08603c40" prot="protected" virt="non-virtual"><scope>muda::DeviceDoubletVector</scope><name>m_segment_values</name></member>
+      <member refid="classmuda_1_1_device_doublet_vector_1afc70315f4a8a002a03ea88e2eaa7b5c7" prot="public" virt="non-virtual"><scope>muda::DeviceDoubletVector</scope><name>indices</name></member>
+      <member refid="classmuda_1_1_device_doublet_vector_1af741549597784e928a257f0910b9b832" prot="public" virt="non-virtual"><scope>muda::DeviceDoubletVector</scope><name>indices</name></member>
+      <member refid="classmuda_1_1_device_doublet_vector_1a0252161497b9dbb17286514d7ea4f3c8" prot="public" virt="non-virtual"><scope>muda::DeviceDoubletVector</scope><name>IsSegmentVector</name></member>
+      <member refid="classmuda_1_1_device_doublet_vector_1a6578c8f300701e7c50e3442dcf5a2221" prot="protected" virt="non-virtual"><scope>muda::DeviceDoubletVector</scope><name>m_count</name></member>
+      <member refid="classmuda_1_1_device_doublet_vector_1a7176cccea03266df4747f37fbdece5bc" prot="protected" virt="non-virtual"><scope>muda::DeviceDoubletVector</scope><name>m_indices</name></member>
+      <member refid="classmuda_1_1_device_doublet_vector_1a9a941d23405d0b2e589daf0fcc7da7b0" prot="protected" virt="non-virtual"><scope>muda::DeviceDoubletVector</scope><name>m_values</name></member>
       <member refid="classmuda_1_1_device_doublet_vector_1a77fff9612703073c15048ddb76f3d783" prot="public" virt="non-virtual"><scope>muda::DeviceDoubletVector</scope><name>reserve_doublets</name></member>
       <member refid="classmuda_1_1_device_doublet_vector_1ae33eb7a86b113a63e3e0ce6179596a06" prot="public" virt="non-virtual"><scope>muda::DeviceDoubletVector</scope><name>reshape</name></member>
       <member refid="classmuda_1_1_device_doublet_vector_1ae2ddef2fdd81b3ba7962c7a0ff262850" prot="public" virt="non-virtual"><scope>muda::DeviceDoubletVector</scope><name>resize</name></member>
       <member refid="classmuda_1_1_device_doublet_vector_1ab3e9c3e324cb96a866927ccfc1b7a194" prot="public" virt="non-virtual"><scope>muda::DeviceDoubletVector</scope><name>resize_doublets</name></member>
-      <member refid="classmuda_1_1_device_doublet_vector_1a15df6e44c7c7611c4a95b536cbc04ddb" prot="public" virt="non-virtual"><scope>muda::DeviceDoubletVector</scope><name>segment_count</name></member>
-      <member refid="classmuda_1_1_device_doublet_vector_1afbf9ccacebf5f6f831db106c8bfde8ca" prot="public" virt="non-virtual"><scope>muda::DeviceDoubletVector</scope><name>segment_indices</name></member>
-      <member refid="classmuda_1_1_device_doublet_vector_1adbb40942737559aaf4844db6d23ff34f" prot="public" virt="non-virtual"><scope>muda::DeviceDoubletVector</scope><name>segment_indices</name></member>
-      <member refid="classmuda_1_1_device_doublet_vector_1a14fe46f87e25f70ae4c0682717c58ce4" prot="public" virt="non-virtual"><scope>muda::DeviceDoubletVector</scope><name>segment_values</name></member>
-      <member refid="classmuda_1_1_device_doublet_vector_1a1b594159d2b414420462029f8edf4e56" prot="public" virt="non-virtual"><scope>muda::DeviceDoubletVector</scope><name>segment_values</name></member>
-      <member refid="classmuda_1_1_device_doublet_vector_1a7312000511d57bbb80cc2f827d992c99" prot="public" virt="non-virtual"><scope>muda::DeviceDoubletVector</scope><name>SegmentVector</name></member>
+      <member refid="classmuda_1_1_device_doublet_vector_1a13676e187afc4dc96aa46a8dcbe10cb7" prot="public" virt="non-virtual"><scope>muda::DeviceDoubletVector</scope><name>values</name></member>
+      <member refid="classmuda_1_1_device_doublet_vector_1aeb23cb5d5810cf837a4677948b7ff23b" prot="public" virt="non-virtual"><scope>muda::DeviceDoubletVector</scope><name>values</name></member>
+      <member refid="classmuda_1_1_device_doublet_vector_1a9cdfe5531204bb815d8530d34e768918" prot="public" virt="non-virtual"><scope>muda::DeviceDoubletVector</scope><name>ValueT</name></member>
       <member refid="classmuda_1_1_device_doublet_vector_1a0beece712cd92e4954bbeaf3eda407d9" prot="public" virt="non-virtual"><scope>muda::DeviceDoubletVector</scope><name>view</name></member>
       <member refid="classmuda_1_1_device_doublet_vector_1a3ab97856ac9e0b338b5517aa1f4cc478" prot="public" virt="non-virtual"><scope>muda::DeviceDoubletVector</scope><name>view</name></member>
       <member refid="classmuda_1_1_device_doublet_vector_1aa6de60c1e6519daba55dc13f81e9ad3c" prot="public" virt="non-virtual"><scope>muda::DeviceDoubletVector</scope><name>viewer</name></member>

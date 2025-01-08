@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.1" xml:lang="en-US">
   <compounddef id="device__atomic__functions_8h" kind="file" language="C++">
     <compoundname>device_atomic_functions.h</compoundname>
     <includes refid="device__atomic__functions_8h" local="no">device_atomic_functions.h</includes>
@@ -20,6 +20,8 @@
         <childnode refid="3" relation="include">
         </childnode>
         <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
         </childnode>
       </node>
       <node id="1">
@@ -45,8 +47,8 @@
         <link refid="linear__system_8h_source"/>
       </node>
       <node id="7">
-        <label>src/muda/ext/linear_system/dense_vector_view.h</label>
-        <link refid="dense__vector__view_8h_source"/>
+        <label>src/muda/ext/linear_system/dense_matrix_view.h</label>
+        <link refid="dense__matrix__view_8h_source"/>
         <childnode refid="6" relation="include">
         </childnode>
         <childnode refid="8" relation="include">
@@ -55,14 +57,42 @@
         </childnode>
       </node>
       <node id="5">
-        <label>src/muda/ext/linear_system/dense_vector_viewer.h</label>
-        <link refid="dense__vector__viewer_8h_source"/>
+        <label>src/muda/ext/linear_system/dense_matrix_viewer.h</label>
+        <link refid="dense__matrix__viewer_8h_source"/>
         <childnode refid="6" relation="include">
         </childnode>
         <childnode refid="7" relation="include">
         </childnode>
       </node>
+      <node id="13">
+        <label>src/muda/ext/linear_system/dense_vector_view.h</label>
+        <link refid="dense__vector__view_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>src/muda/ext/linear_system/dense_vector_viewer.h</label>
+        <link refid="dense__vector__viewer_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
       <node id="8">
+        <label>src/muda/ext/linear_system/device_dense_matrix.h</label>
+        <link refid="device__dense__matrix_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
         <label>src/muda/ext/linear_system/device_dense_vector.h</label>
         <link refid="device__dense__vector_8h_source"/>
         <childnode refid="6" relation="include">

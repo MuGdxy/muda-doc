@@ -72,8 +72,8 @@ See [muda::ViewBase](classmuda_1_1_view_base.md)
 
 | Type | Name |
 | ---: | :--- |
-|  constexpr bool | [**IsConst**](classmuda_1_1_view_base.md#variable-isconst)   = = IsConst\_<br> |
-|  constexpr bool | [**IsNonConst**](classmuda_1_1_view_base.md#variable-isnonconst)   = = !IsConst\_<br> |
+|  bool | [**IsConst**](classmuda_1_1_view_base.md#variable-isconst)   = = IsConst\_<br> |
+|  bool | [**IsNonConst**](classmuda_1_1_view_base.md#variable-isnonconst)   = = !IsConst\_<br> |
 
 
 
@@ -549,5 +549,5 @@ auto_const_t<T>* muda::VarViewT< IsConst, T >::m_data;
 <hr>
 
 ------------------------------
-The documentation for this class was generated from the following file `src/muda/buffer/var_view.h`
+The documentation for this class was generated from the following file `src/muda/buffer/buffer_fwd.h`
 

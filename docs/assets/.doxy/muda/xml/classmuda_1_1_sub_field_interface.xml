@@ -1,10 +1,10 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.1" xml:lang="en-US">
   <compounddef id="classmuda_1_1_sub_field_interface" kind="class" language="C++" prot="public" abstract="yes">
     <compoundname>muda::SubFieldInterface</compoundname>
-    <derivedcompoundref refid="classmuda_1_1_sub_field_impl_3_01_field_entry_layout_1_1_ao_s_01_4" prot="public" virt="non-virtual">muda::SubFieldImpl&lt; FieldEntryLayout::AoS &gt;</derivedcompoundref>
-    <derivedcompoundref refid="classmuda_1_1_sub_field_impl_3_01_field_entry_layout_1_1_ao_so_a_01_4" prot="public" virt="non-virtual">muda::SubFieldImpl&lt; FieldEntryLayout::AoSoA &gt;</derivedcompoundref>
-    <derivedcompoundref refid="classmuda_1_1_sub_field_impl_3_01_field_entry_layout_1_1_so_a_01_4" prot="public" virt="non-virtual">muda::SubFieldImpl&lt; FieldEntryLayout::SoA &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classmuda_1_1_sub_field_impl" prot="public" virt="non-virtual">muda::SubFieldImpl&lt; FieldEntryLayout::AoS &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classmuda_1_1_sub_field_impl" prot="public" virt="non-virtual">muda::SubFieldImpl&lt; FieldEntryLayout::AoSoA &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classmuda_1_1_sub_field_impl" prot="public" virt="non-virtual">muda::SubFieldImpl&lt; FieldEntryLayout::SoA &gt;</derivedcompoundref>
     <sectiondef kind="private-type">
       <memberdef kind="typedef" id="classmuda_1_1_sub_field_interface_1a6791d52db6a9457f5cb2c5bbd63fa03f" prot="private" static="no">
         <templateparamlist>
@@ -238,9 +238,9 @@
         <argsstring>()=0</argsstring>
         <name>build_impl</name>
         <qualifiedname>muda::SubFieldInterface::build_impl</qualifiedname>
-        <reimplementedby refid="classmuda_1_1_sub_field_impl_3_01_field_entry_layout_1_1_ao_s_01_4_1a818d3865250645e22f66a4b50b6fa133">build_impl</reimplementedby>
-        <reimplementedby refid="classmuda_1_1_sub_field_impl_3_01_field_entry_layout_1_1_ao_so_a_01_4_1aed44a58f476b4e4afe9bbc0e06e94830">build_impl</reimplementedby>
-        <reimplementedby refid="classmuda_1_1_sub_field_impl_3_01_field_entry_layout_1_1_so_a_01_4_1a7a60831f2b08c6daad99c3810d73a77d">build_impl</reimplementedby>
+        <reimplementedby refid="classmuda_1_1_sub_field_impl_1a818d3865250645e22f66a4b50b6fa133">build_impl</reimplementedby>
+        <reimplementedby refid="classmuda_1_1_sub_field_impl_1aed44a58f476b4e4afe9bbc0e06e94830">build_impl</reimplementedby>
+        <reimplementedby refid="classmuda_1_1_sub_field_impl_1a7a60831f2b08c6daad99c3810d73a77d">build_impl</reimplementedby>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -255,9 +255,9 @@
         <argsstring>(size_t element_count)=0</argsstring>
         <name>require_total_buffer_byte_size</name>
         <qualifiedname>muda::SubFieldInterface::require_total_buffer_byte_size</qualifiedname>
-        <reimplementedby refid="classmuda_1_1_sub_field_impl_3_01_field_entry_layout_1_1_ao_s_01_4_1ac2e315b7909b3de2c0383d47f503058b">require_total_buffer_byte_size</reimplementedby>
-        <reimplementedby refid="classmuda_1_1_sub_field_impl_3_01_field_entry_layout_1_1_ao_so_a_01_4_1aff9443c4864ee0b6053f371894d2a6f8">require_total_buffer_byte_size</reimplementedby>
-        <reimplementedby refid="classmuda_1_1_sub_field_impl_3_01_field_entry_layout_1_1_so_a_01_4_1a59b2b8c1e060b71a7c4b1d08edf03228">require_total_buffer_byte_size</reimplementedby>
+        <reimplementedby refid="classmuda_1_1_sub_field_impl_1ac2e315b7909b3de2c0383d47f503058b">require_total_buffer_byte_size</reimplementedby>
+        <reimplementedby refid="classmuda_1_1_sub_field_impl_1aff9443c4864ee0b6053f371894d2a6f8">require_total_buffer_byte_size</reimplementedby>
+        <reimplementedby refid="classmuda_1_1_sub_field_impl_1a59b2b8c1e060b71a7c4b1d08edf03228">require_total_buffer_byte_size</reimplementedby>
         <param>
           <type>size_t</type>
           <declname>element_count</declname>
@@ -276,9 +276,9 @@
         <argsstring>(std::byte *byte_buffer, size_t total_bytes, size_t element_count, span&lt; FieldEntryCore &gt; new_cores)=0</argsstring>
         <name>calculate_new_cores</name>
         <qualifiedname>muda::SubFieldInterface::calculate_new_cores</qualifiedname>
-        <reimplementedby refid="classmuda_1_1_sub_field_impl_3_01_field_entry_layout_1_1_ao_s_01_4_1aa541c84f063940ae457ed2ddd6e34cfa">calculate_new_cores</reimplementedby>
-        <reimplementedby refid="classmuda_1_1_sub_field_impl_3_01_field_entry_layout_1_1_ao_so_a_01_4_1aa43a47b1de788f905286c60389dd50e0">calculate_new_cores</reimplementedby>
-        <reimplementedby refid="classmuda_1_1_sub_field_impl_3_01_field_entry_layout_1_1_so_a_01_4_1a6690f4d58ae3deed9b4cce805951bf6e">calculate_new_cores</reimplementedby>
+        <reimplementedby refid="classmuda_1_1_sub_field_impl_1aa541c84f063940ae457ed2ddd6e34cfa">calculate_new_cores</reimplementedby>
+        <reimplementedby refid="classmuda_1_1_sub_field_impl_1aa43a47b1de788f905286c60389dd50e0">calculate_new_cores</reimplementedby>
+        <reimplementedby refid="classmuda_1_1_sub_field_impl_1a6690f4d58ae3deed9b4cce805951bf6e">calculate_new_cores</reimplementedby>
         <param>
           <type>std::byte *</type>
           <declname>byte_buffer</declname>
@@ -309,7 +309,7 @@
         <argsstring>() const</argsstring>
         <name>allow_inplace_shrink</name>
         <qualifiedname>muda::SubFieldInterface::allow_inplace_shrink</qualifiedname>
-        <reimplementedby refid="classmuda_1_1_sub_field_impl_3_01_field_entry_layout_1_1_so_a_01_4_1a0c4cd0687e75d692b202b4d5d829dc1c">allow_inplace_shrink</reimplementedby>
+        <reimplementedby refid="classmuda_1_1_sub_field_impl_1a0c4cd0687e75d692b202b4d5d829dc1c">allow_inplace_shrink</reimplementedby>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -613,19 +613,19 @@
     <inheritancegraph>
       <node id="2">
         <label>muda::SubFieldImpl&lt; FieldEntryLayout::AoS &gt;</label>
-        <link refid="classmuda_1_1_sub_field_impl_3_01_field_entry_layout_1_1_ao_s_01_4"/>
+        <link refid="classmuda_1_1_sub_field_impl"/>
         <childnode refid="1" relation="public-inheritance">
         </childnode>
       </node>
       <node id="3">
         <label>muda::SubFieldImpl&lt; FieldEntryLayout::AoSoA &gt;</label>
-        <link refid="classmuda_1_1_sub_field_impl_3_01_field_entry_layout_1_1_ao_so_a_01_4"/>
+        <link refid="classmuda_1_1_sub_field_impl"/>
         <childnode refid="1" relation="public-inheritance">
         </childnode>
       </node>
       <node id="4">
         <label>muda::SubFieldImpl&lt; FieldEntryLayout::SoA &gt;</label>
-        <link refid="classmuda_1_1_sub_field_impl_3_01_field_entry_layout_1_1_so_a_01_4"/>
+        <link refid="classmuda_1_1_sub_field_impl"/>
         <childnode refid="1" relation="public-inheritance">
         </childnode>
       </node>

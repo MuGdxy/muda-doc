@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.1" xml:lang="en-US">
   <compounddef id="classmuda_1_1_buffer_view_t" kind="class" language="C++" prot="public">
     <compoundname>muda::BufferViewT</compoundname>
     <basecompoundref refid="classmuda_1_1_view_base" prot="public" virt="non-virtual">muda::ViewBase&lt; IsConst &gt;</basecompoundref>
@@ -657,30 +657,30 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="2">
-        <label>muda::ViewBase&lt; IsConst &gt;</label>
-        <link refid="classmuda_1_1_view_base"/>
-      </node>
       <node id="1">
         <label>muda::BufferViewT&lt; IsConst, T &gt;</label>
         <link refid="classmuda_1_1_buffer_view_t"/>
         <childnode refid="2" relation="public-inheritance">
         </childnode>
+      </node>
+      <node id="2">
+        <label>muda::ViewBase&lt; IsConst &gt;</label>
+        <link refid="classmuda_1_1_view_base"/>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="2">
-        <label>muda::ViewBase&lt; IsConst &gt;</label>
-        <link refid="classmuda_1_1_view_base"/>
-      </node>
       <node id="1">
         <label>muda::BufferViewT&lt; IsConst, T &gt;</label>
         <link refid="classmuda_1_1_buffer_view_t"/>
         <childnode refid="2" relation="public-inheritance">
         </childnode>
       </node>
+      <node id="2">
+        <label>muda::ViewBase&lt; IsConst &gt;</label>
+        <link refid="classmuda_1_1_view_base"/>
+      </node>
     </collaborationgraph>
-    <location file="src/muda/buffer/buffer_view.h" line="23" column="1" bodyfile="src/muda/buffer/buffer_view.h" bodystart="24" bodyend="103"/>
+    <location file="src/muda/buffer/buffer_fwd.h" line="16" column="1" bodyfile="src/muda/buffer/buffer_view.h" bodystart="24" bodyend="103"/>
     <listofallmembers>
       <member refid="classmuda_1_1_buffer_view_t_1a55c56f20af7296dc0267f4ccb289371e" prot="public" virt="non-virtual"><scope>muda::BufferViewT</scope><name>as_const</name></member>
       <member refid="classmuda_1_1_buffer_view_t_1ad6c8473e998c20e3719518502c2bdbe4" prot="public" virt="non-virtual"><scope>muda::BufferViewT</scope><name>auto_const_t</name></member>
@@ -702,11 +702,14 @@
       <member refid="classmuda_1_1_buffer_view_t_1a7fa3017d5f1a06e3f6da6762fd033d17" prot="public" virt="non-virtual"><scope>muda::BufferViewT</scope><name>difference_type</name></member>
       <member refid="classmuda_1_1_buffer_view_t_1a1eef144c901ad4de50926056e4c485c6" prot="public" virt="non-virtual"><scope>muda::BufferViewT</scope><name>fill</name></member>
       <member refid="classmuda_1_1_view_base_1a462988275a74be2325fcf57408700ce9" prot="public" virt="non-virtual"><scope>muda::BufferViewT</scope><name>IsConst</name></member>
+      <member refid="classmuda_1_1_view_base_1a462988275a74be2325fcf57408700ce9" prot="public" virt="non-virtual"><scope>muda::BufferViewT</scope><name>IsConst</name></member>
+      <member refid="classmuda_1_1_view_base_1ae40f0a1f86127bc4dfeae5e08027e1dc" prot="public" virt="non-virtual"><scope>muda::BufferViewT</scope><name>IsNonConst</name></member>
       <member refid="classmuda_1_1_view_base_1ae40f0a1f86127bc4dfeae5e08027e1dc" prot="public" virt="non-virtual"><scope>muda::BufferViewT</scope><name>IsNonConst</name></member>
       <member refid="classmuda_1_1_buffer_view_t_1a34ba9f4fa1b69fbbecd5f22670064387" prot="public" virt="non-virtual"><scope>muda::BufferViewT</scope><name>iterator_category</name></member>
       <member refid="classmuda_1_1_buffer_view_t_1a2b84c485cb862f6cf3f2260bce4049fd" prot="protected" virt="non-virtual"><scope>muda::BufferViewT</scope><name>m_data</name></member>
       <member refid="classmuda_1_1_buffer_view_t_1a3bdeba903d152226ff8500d1154e50bb" prot="protected" virt="non-virtual"><scope>muda::BufferViewT</scope><name>m_offset</name></member>
       <member refid="classmuda_1_1_buffer_view_t_1a0eaa039a406272de933bf9ff07723ae1" prot="protected" virt="non-virtual"><scope>muda::BufferViewT</scope><name>m_size</name></member>
+      <member refid="classmuda_1_1_view_base_1a39d227092dd2b7baba8b7c74bf018f37" prot="public" virt="non-virtual"><scope>muda::BufferViewT</scope><name>non_const_enable_t</name></member>
       <member refid="classmuda_1_1_view_base_1a39d227092dd2b7baba8b7c74bf018f37" prot="public" virt="non-virtual"><scope>muda::BufferViewT</scope><name>non_const_enable_t</name></member>
       <member refid="classmuda_1_1_buffer_view_t_1a62f20e2cbe76ea9ac4523f466c7701ea" prot="public" virt="non-virtual"><scope>muda::BufferViewT</scope><name>offset</name></member>
       <member refid="classmuda_1_1_buffer_view_t_1ae920d1d936215ba0261b0cabe8eb4aef" prot="public" virt="non-virtual"><scope>muda::BufferViewT</scope><name>operator*</name></member>

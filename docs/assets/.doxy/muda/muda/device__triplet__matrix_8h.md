@@ -39,7 +39,6 @@
 | Type | Name |
 | ---: | :--- |
 | class | [**DeviceTripletMatrix**](classmuda_1_1_device_triplet_matrix.md) &lt;typename T, N&gt;<br> |
-| class | [**DeviceTripletMatrix&lt; T, 1 &gt;**](classmuda_1_1_device_triplet_matrix_3_01_t_00_011_01_4.md) &lt;typename T&gt;<br> |
 
 
 

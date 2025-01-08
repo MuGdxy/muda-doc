@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.1" xml:lang="en-US">
   <compounddef id="morton__hash_8h" kind="file" language="C++">
     <compoundname>morton_hash.h</compoundname>
     <includes refid="muda__def_8h" local="no">muda/muda_def.h</includes>
@@ -100,8 +100,8 @@
       </node>
     </invincdepgraph>
     <innerclass refid="classmuda_1_1spatial__hash_1_1_morton" prot="public">muda::spatial_hash::Morton</innerclass>
-    <innerclass refid="classmuda_1_1spatial__hash_1_1_morton_3_01uint32__t_01_4" prot="public">muda::spatial_hash::Morton&lt; uint32_t &gt;</innerclass>
-    <innerclass refid="classmuda_1_1spatial__hash_1_1_morton_3_01uint64__t_01_4" prot="public">muda::spatial_hash::Morton&lt; uint64_t &gt;</innerclass>
+    <innerclass refid="classmuda_1_1spatial__hash_1_1_morton" prot="public">muda::spatial_hash::Morton&lt; uint32_t &gt;</innerclass>
+    <innerclass refid="classmuda_1_1spatial__hash_1_1_morton" prot="public">muda::spatial_hash::Morton&lt; uint64_t &gt;</innerclass>
     <innernamespace refid="namespacemuda">muda</innernamespace>
     <innernamespace refid="namespacemuda_1_1spatial__hash">muda::spatial_hash</innernamespace>
     <briefdescription>
@@ -123,7 +123,7 @@
 <codeline lineno="12"><highlight class="normal">};</highlight></codeline>
 <codeline lineno="13"><highlight class="normal"></highlight></codeline>
 <codeline lineno="14"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;&gt;</highlight></codeline>
-<codeline lineno="15" refid="classmuda_1_1spatial__hash_1_1_morton_3_01uint32__t_01_4" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classmuda_1_1spatial__hash_1_1_morton" kindref="compound">Morton</ref>&lt;uint32_t&gt;</highlight></codeline>
+<codeline lineno="15" refid="classmuda_1_1spatial__hash_1_1_morton" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classmuda_1_1spatial__hash_1_1_morton" kindref="compound">Morton</ref>&lt;uint32_t&gt;</highlight></codeline>
 <codeline lineno="16"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="17"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">Vector3u<sp/>=<sp/>Eigen::Vector3&lt;uint32_t&gt;;</highlight></codeline>
@@ -161,7 +161,7 @@
 <codeline lineno="50"><highlight class="normal">};</highlight></codeline>
 <codeline lineno="51"><highlight class="normal"></highlight></codeline>
 <codeline lineno="52"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;&gt;</highlight></codeline>
-<codeline lineno="53" refid="classmuda_1_1spatial__hash_1_1_morton_3_01uint64__t_01_4" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classmuda_1_1spatial__hash_1_1_morton" kindref="compound">Morton</ref>&lt;uint64_t&gt;</highlight></codeline>
+<codeline lineno="53" refid="classmuda_1_1spatial__hash_1_1_morton" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classmuda_1_1spatial__hash_1_1_morton" kindref="compound">Morton</ref>&lt;uint64_t&gt;</highlight></codeline>
 <codeline lineno="54"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="55"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">Vector3u<sp/>=<sp/>Eigen::Vector3&lt;uint32_t&gt;;</highlight></codeline>

@@ -37,7 +37,7 @@
 
 | Type | Name |
 | ---: | :--- |
-| class | [**ComputeGraphVar&lt; VarView&lt; T &gt; &gt;**](classmuda_1_1_compute_graph_var_3_01_var_view_3_01_t_01_4_01_4.md) &lt;typename T&gt;<br> |
+| class | [**ComputeGraphVar**](classmuda_1_1_compute_graph_var.md) &lt;typename T&gt;<br> |
 
 
 

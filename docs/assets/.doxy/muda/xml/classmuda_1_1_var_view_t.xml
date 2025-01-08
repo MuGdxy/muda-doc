@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.1" xml:lang="en-US">
   <compounddef id="classmuda_1_1_var_view_t" kind="class" language="C++" prot="public">
     <compoundname>muda::VarViewT</compoundname>
     <basecompoundref refid="classmuda_1_1_view_base" prot="public" virt="non-virtual">muda::ViewBase&lt; IsConst &gt;</basecompoundref>
@@ -480,30 +480,30 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="2">
-        <label>muda::ViewBase&lt; IsConst &gt;</label>
-        <link refid="classmuda_1_1_view_base"/>
-      </node>
       <node id="1">
         <label>muda::VarViewT&lt; IsConst, T &gt;</label>
         <link refid="classmuda_1_1_var_view_t"/>
         <childnode refid="2" relation="public-inheritance">
         </childnode>
+      </node>
+      <node id="2">
+        <label>muda::ViewBase&lt; IsConst &gt;</label>
+        <link refid="classmuda_1_1_view_base"/>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="2">
-        <label>muda::ViewBase&lt; IsConst &gt;</label>
-        <link refid="classmuda_1_1_view_base"/>
-      </node>
       <node id="1">
         <label>muda::VarViewT&lt; IsConst, T &gt;</label>
         <link refid="classmuda_1_1_var_view_t"/>
         <childnode refid="2" relation="public-inheritance">
         </childnode>
       </node>
+      <node id="2">
+        <label>muda::ViewBase&lt; IsConst &gt;</label>
+        <link refid="classmuda_1_1_view_base"/>
+      </node>
     </collaborationgraph>
-    <location file="src/muda/buffer/var_view.h" line="10" column="1" bodyfile="src/muda/buffer/var_view.h" bodystart="11" bodyend="63"/>
+    <location file="src/muda/buffer/buffer_fwd.h" line="6" column="1" bodyfile="src/muda/buffer/var_view.h" bodystart="11" bodyend="63"/>
     <listofallmembers>
       <member refid="classmuda_1_1_var_view_t_1adbdd249c629e36dffe0e85516a779492" prot="public" virt="non-virtual"><scope>muda::VarViewT</scope><name>as_const</name></member>
       <member refid="classmuda_1_1_var_view_t_1a38c4fe3af8e1df798df1faf740060899" prot="protected" virt="non-virtual"><scope>muda::VarViewT</scope><name>auto_const_t</name></member>
@@ -518,9 +518,12 @@
       <member refid="classmuda_1_1_var_view_t_1aa256af94a472e5502fe81b08f3d0d508" prot="public" virt="non-virtual"><scope>muda::VarViewT</scope><name>difference_type</name></member>
       <member refid="classmuda_1_1_var_view_t_1a6aacef1316e17e4310828efe781db223" prot="public" virt="non-virtual"><scope>muda::VarViewT</scope><name>fill</name></member>
       <member refid="classmuda_1_1_view_base_1a462988275a74be2325fcf57408700ce9" prot="public" virt="non-virtual"><scope>muda::VarViewT</scope><name>IsConst</name></member>
+      <member refid="classmuda_1_1_view_base_1a462988275a74be2325fcf57408700ce9" prot="public" virt="non-virtual"><scope>muda::VarViewT</scope><name>IsConst</name></member>
+      <member refid="classmuda_1_1_view_base_1ae40f0a1f86127bc4dfeae5e08027e1dc" prot="public" virt="non-virtual"><scope>muda::VarViewT</scope><name>IsNonConst</name></member>
       <member refid="classmuda_1_1_view_base_1ae40f0a1f86127bc4dfeae5e08027e1dc" prot="public" virt="non-virtual"><scope>muda::VarViewT</scope><name>IsNonConst</name></member>
       <member refid="classmuda_1_1_var_view_t_1ad3d1f59b0132df0c360f9c0b70af9b1d" prot="public" virt="non-virtual"><scope>muda::VarViewT</scope><name>iterator_category</name></member>
       <member refid="classmuda_1_1_var_view_t_1ab449e5d15f33fcc299a02334ab4ec9e7" prot="protected" virt="non-virtual"><scope>muda::VarViewT</scope><name>m_data</name></member>
+      <member refid="classmuda_1_1_view_base_1a39d227092dd2b7baba8b7c74bf018f37" prot="public" virt="non-virtual"><scope>muda::VarViewT</scope><name>non_const_enable_t</name></member>
       <member refid="classmuda_1_1_view_base_1a39d227092dd2b7baba8b7c74bf018f37" prot="public" virt="non-virtual"><scope>muda::VarViewT</scope><name>non_const_enable_t</name></member>
       <member refid="classmuda_1_1_var_view_t_1afe67c8acfb16b2c975be69b68b8a8103" prot="public" virt="non-virtual"><scope>muda::VarViewT</scope><name>NonConstViewer</name></member>
       <member refid="classmuda_1_1_var_view_t_1ace2728ae88a0978855b0da622f3c5793" prot="public" virt="non-virtual"><scope>muda::VarViewT</scope><name>operator*</name></member>

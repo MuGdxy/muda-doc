@@ -586,5 +586,5 @@ muda::DeviceBuffer3D::~DeviceBuffer3D ()
 <hr>
 
 ------------------------------
-The documentation for this class was generated from the following file `src/muda/buffer/device_buffer_3d.h`
+The documentation for this class was generated from the following file `src/muda/buffer/buffer_fwd.h`
 

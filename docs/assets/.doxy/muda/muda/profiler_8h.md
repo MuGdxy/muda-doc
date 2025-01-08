@@ -17,8 +17,6 @@
 * `#include <cuda_runtime_api.h>`
 * `#include <device_launch_parameters.h>`
 * `#include <cuda_profiler_api.h>`
-* `#include <nvtx3/nvToolsExt.h>`
-* `#include <nvtx3/nvToolsExtCuda.h>`
 * `#include <muda/check/check_cuda_errors.h>`
 
 

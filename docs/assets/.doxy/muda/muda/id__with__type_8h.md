@@ -39,6 +39,7 @@
 | Type | Name |
 | ---: | :--- |
 | class | [**IdWithType**](classmuda_1_1_id_with_type.md) &lt;typename T&gt;<br> |
+| struct | [**hash&lt; muda::IdWithType&lt; T &gt; &gt;**](structstd_1_1hash_3_01muda_1_1_id_with_type_3_01_t_01_4_01_4.md) &lt;typename T&gt;<br> |
 
 
 

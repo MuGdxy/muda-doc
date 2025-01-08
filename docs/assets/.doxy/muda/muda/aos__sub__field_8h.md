@@ -36,7 +36,7 @@
 
 | Type | Name |
 | ---: | :--- |
-| class | [**SubFieldImpl&lt; FieldEntryLayout::AoS &gt;**](classmuda_1_1_sub_field_impl_3_01_field_entry_layout_1_1_ao_s_01_4.md) &lt;&gt;<br> |
+| class | [**SubFieldImpl**](classmuda_1_1_sub_field_impl.md) &lt;Layout&gt;<br> |
 
 
 

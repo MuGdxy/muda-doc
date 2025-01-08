@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.1" xml:lang="en-US">
   <compounddef id="bcoo__matrix__viewer_8h" kind="file" language="C++">
     <compoundname>bcoo_matrix_viewer.h</compoundname>
     <includes refid="triplet__matrix__viewer_8h" local="no">muda/ext/linear_system/triplet_matrix_viewer.h</includes>

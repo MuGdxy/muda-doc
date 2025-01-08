@@ -37,10 +37,10 @@
 
 | Type | Name |
 | ---: | :--- |
-| class | [**DoubletVectorViewBase**](classmuda_1_1_doublet_vector_view_base.md) &lt;IsConst, typename T, N&gt;<br> |
-| class | [**DoubletVectorViewBase&lt; IsConst, T, 1 &gt;**](classmuda_1_1_doublet_vector_view_base_3_01_is_const_00_01_t_00_011_01_4.md) &lt;IsConst, typename T&gt;<br> |
-| struct | [**read\_only\_viewer&lt; DoubletVectorView&lt; Ty, N &gt; &gt;**](structmuda_1_1read__only__viewer_3_01_doublet_vector_view_3_01_ty_00_01_n_01_4_01_4.md) &lt;typename Ty, N&gt;<br> |
-| struct | [**read\_write\_viewer&lt; CDoubletVectorView&lt; Ty, N &gt; &gt;**](structmuda_1_1read__write__viewer_3_01_c_doublet_vector_view_3_01_ty_00_01_n_01_4_01_4.md) &lt;typename Ty, N&gt;<br> |
+| class | [**DoubletVectorViewT**](classmuda_1_1_doublet_vector_view_t.md) &lt;IsConst, typename T, N&gt;<br> |
+| class | [**DoubletVectorViewT**](classmuda_1_1_doublet_vector_view_t.md) &lt;IsConst, typename T, N&gt;<br> |
+| struct | [**read\_only\_view**](structmuda_1_1read__only__view.md) &lt;typename T&gt;<br> |
+| struct | [**read\_write\_view**](structmuda_1_1read__write__view.md) &lt;typename T&gt;<br> |
 
 
 

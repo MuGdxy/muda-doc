@@ -37,14 +37,14 @@
 ## i
 
 * **is\_cuda\_arch\_v** ([**muda**](namespacemuda.md))
-* **is\_read\_only\_viewer\_v** ([**muda**](namespacemuda.md))
-* **is\_read\_write\_viewer\_v** ([**muda**](namespacemuda.md))
+* **is\_read\_only\_view\_v** ([**muda**](namespacemuda.md))
+* **is\_read\_write\_view\_v** ([**muda**](namespacemuda.md))
 * **is\_trivial\_v** ([**muda**](namespacemuda.md))
 * **is\_trivially\_constructible\_v** ([**muda**](namespacemuda.md))
 * **is\_trivially\_copy\_assignable\_v** ([**muda**](namespacemuda.md))
 * **is\_trivially\_copy\_constructible\_v** ([**muda**](namespacemuda.md))
 * **is\_trivially\_destructible\_v** ([**muda**](namespacemuda.md))
-* **is\_uniform\_viewer\_v** ([**muda**](namespacemuda.md))
+* **is\_uniform\_view\_v** ([**muda**](namespacemuda.md))
 
 
 ## l

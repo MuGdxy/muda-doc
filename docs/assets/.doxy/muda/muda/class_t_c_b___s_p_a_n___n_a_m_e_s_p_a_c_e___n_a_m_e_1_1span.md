@@ -54,7 +54,7 @@
 
 | Type | Name |
 | ---: | :--- |
-|  constexpr size\_type | [**extent**](#variable-extent)   = = Extent<br> |
+|  size\_type | [**extent**](#variable-extent)   = = Extent<br> |
 
 
 
@@ -74,10 +74,10 @@
 | Type | Name |
 | ---: | :--- |
 |  TCB\_SPAN\_CONSTEXPR11 reference | [**back**](#function-back) () const<br> |
-|  constexpr iterator | [**begin**](#function-begin) () noexcept const<br> |
-|  constexpr pointer | [**data**](#function-data) () noexcept const<br> |
+|  iterator | [**begin**](#function-begin) () noexcept const<br> |
+|  pointer | [**data**](#function-data) () noexcept const<br> |
 |  TCB\_SPAN\_NODISCARD constexpr bool | [**empty**](#function-empty) () noexcept const<br> |
-|  constexpr iterator | [**end**](#function-end) () noexcept const<br> |
+|  iterator | [**end**](#function-end) () noexcept const<br> |
 |  TCB\_SPAN\_CONSTEXPR11 [**span**](class_t_c_b___s_p_a_n___n_a_m_e_s_p_a_c_e___n_a_m_e_1_1span.md)&lt; element\_type, Count &gt; | [**first**](#function-first-12) () const<br> |
 |  TCB\_SPAN\_CONSTEXPR11 [**span**](class_t_c_b___s_p_a_n___n_a_m_e_s_p_a_c_e___n_a_m_e_1_1span.md)&lt; element\_type, dynamic\_extent &gt; | [**first**](#function-first-22) (size\_type count) const<br> |
 |  TCB\_SPAN\_CONSTEXPR11 reference | [**front**](#function-front) () const<br> |
@@ -87,8 +87,8 @@
 |  TCB\_SPAN\_CONSTEXPR11 reference | [**operator[]**](#function-operator_1) (size\_type idx) const<br> |
 |  TCB\_SPAN\_ARRAY\_CONSTEXPR reverse\_iterator | [**rbegin**](#function-rbegin) () noexcept const<br> |
 |  TCB\_SPAN\_ARRAY\_CONSTEXPR reverse\_iterator | [**rend**](#function-rend) () noexcept const<br> |
-|  constexpr size\_type | [**size**](#function-size) () noexcept const<br> |
-|  constexpr size\_type | [**size\_bytes**](#function-size_bytes) () noexcept const<br> |
+|  size\_type | [**size**](#function-size) () noexcept const<br> |
+|  size\_type | [**size\_bytes**](#function-size_bytes) () noexcept const<br> |
 |  constexpr | [**span**](#function-span-110) () noexcept<br> |
 |  TCB\_SPAN\_CONSTEXPR11 | [**span**](#function-span-210) (pointer ptr, size\_type count) <br> |
 |  TCB\_SPAN\_CONSTEXPR11 | [**span**](#function-span-310) (pointer first\_elem, pointer last\_elem) <br> |
@@ -255,7 +255,11 @@ using TCB_SPAN_NAMESPACE_NAME::span< ElementType, Extent >::size_type =  std::si
 ### typedef subspan\_return\_t 
 
 ```C++
-using TCB_SPAN_NAMESPACE_NAME::span< ElementType, Extent >::subspan_return_t =  span<ElementType, Count != dynamic_extent ? Count : (Extent != dynamic_extent ? Extent - Offset : dynamic_extent)>;
+using TCB_SPAN_NAMESPACE_NAME::span< ElementType, Extent >::subspan_return_t = 
+        span<ElementType, Count != dynamic_extent
+                              ? Count
+                              : (Extent != dynamic_extent ? Extent - Offset
+                                                          : dynamic_extent)>;
 ```
 
 
@@ -283,7 +287,7 @@ using TCB_SPAN_NAMESPACE_NAME::span< ElementType, Extent >::value_type =  typena
 ### variable extent 
 
 ```C++
-constexpr size_type TCB_SPAN_NAMESPACE_NAME::span< ElementType, Extent >::extent;
+size_type TCB_SPAN_NAMESPACE_NAME::span< ElementType, Extent >::extent;
 ```
 
 
@@ -311,7 +315,7 @@ inline TCB_SPAN_CONSTEXPR11 reference TCB_SPAN_NAMESPACE_NAME::span::back () con
 ### function begin 
 
 ```C++
-inline constexpr iterator TCB_SPAN_NAMESPACE_NAME::span::begin () noexcept const
+inline iterator TCB_SPAN_NAMESPACE_NAME::span::begin () noexcept const
 ```
 
 
@@ -324,7 +328,7 @@ inline constexpr iterator TCB_SPAN_NAMESPACE_NAME::span::begin () noexcept const
 ### function data 
 
 ```C++
-inline constexpr pointer TCB_SPAN_NAMESPACE_NAME::span::data () noexcept const
+inline pointer TCB_SPAN_NAMESPACE_NAME::span::data () noexcept const
 ```
 
 
@@ -350,7 +354,7 @@ inline TCB_SPAN_NODISCARD constexpr bool TCB_SPAN_NAMESPACE_NAME::span::empty ()
 ### function end 
 
 ```C++
-inline constexpr iterator TCB_SPAN_NAMESPACE_NAME::span::end () noexcept const
+inline iterator TCB_SPAN_NAMESPACE_NAME::span::end () noexcept const
 ```
 
 
@@ -490,7 +494,7 @@ inline TCB_SPAN_ARRAY_CONSTEXPR reverse_iterator TCB_SPAN_NAMESPACE_NAME::span::
 ### function size 
 
 ```C++
-inline constexpr size_type TCB_SPAN_NAMESPACE_NAME::span::size () noexcept const
+inline size_type TCB_SPAN_NAMESPACE_NAME::span::size () noexcept const
 ```
 
 
@@ -503,7 +507,7 @@ inline constexpr size_type TCB_SPAN_NAMESPACE_NAME::span::size () noexcept const
 ### function size\_bytes 
 
 ```C++
-inline constexpr size_type TCB_SPAN_NAMESPACE_NAME::span::size_bytes () noexcept const
+inline size_type TCB_SPAN_NAMESPACE_NAME::span::size_bytes () noexcept const
 ```
 
 

@@ -118,7 +118,7 @@ _A_ `std::vector` _like wrapper of cuda device memory, allows user to:_[More...]
 
 
 
-# Detailed Description
+## Detailed Description
 
 
 

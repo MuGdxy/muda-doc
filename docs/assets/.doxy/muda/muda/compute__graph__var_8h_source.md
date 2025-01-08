@@ -100,7 +100,7 @@ class ComputeGraphVar : public ComputeGraphVarBase
 {
   public:
     static_assert(!std::is_const_v<T>, "T must not be const");
-    using ROViewer = read_only_viewer_t<T>;
+    using ROViewer = read_only_view_t<T>;
     using RWViewer = T;
     static_assert(std::is_convertible_v<RWViewer, ROViewer>,
                   "RWViewer must be convertible to ROView");
@@ -145,24 +145,24 @@ class ComputeGraphVar : public ComputeGraphVarBase
 
 // for host memory
 template <typename T>
-struct read_only_viewer<T*>
+struct read_only_view<T*>
 {
     using type = const T*;
 };
 template <typename T>
-struct read_write_viewer<const T*>
+struct read_write_view<const T*>
 {
     using type = T*;
 };
 
 // for cuda event
 template <>
-struct read_only_viewer<cudaEvent_t>
+struct read_only_view<cudaEvent_t>
 {
     using type = cudaEvent_t;
 };
 template <>
-struct read_write_viewer<cudaEvent_t>
+struct read_write_view<cudaEvent_t>
 {
     using type = cudaEvent_t;
 };

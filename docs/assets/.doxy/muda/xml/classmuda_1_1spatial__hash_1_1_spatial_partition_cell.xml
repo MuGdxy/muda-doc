@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.1" xml:lang="en-US">
   <compounddef id="classmuda_1_1spatial__hash_1_1_spatial_partition_cell" kind="class" language="C++" prot="public">
     <compoundname>muda::spatial_hash::SpatialPartitionCell</compoundname>
     <includes refid="sparse__spatial__hash__impl_8h" local="no">sparse_spatial_hash_impl.h</includes>
@@ -79,7 +79,7 @@
         </inbodydescription>
         <location file="src/muda/ext/geo/spatial_hash/sparse_spatial_hash_impl.h" line="26" column="13" bodyfile="src/muda/ext/geo/spatial_hash/sparse_spatial_hash_impl.h" bodystart="26" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="classmuda_1_1spatial__hash_1_1_spatial_partition_cell_1a146e4a350566ecd87ce2dc436ac8d662" prot="public" static="no" mutable="no">
+      <memberdef kind="variable" id="classmuda_1_1spatial__hash_1_1_spatial_partition_cell_1a46d9143c1047113fa6253bcceeba5995" prot="public" static="no" mutable="no">
         <type>struct <ref refid="classmuda_1_1spatial__hash_1_1_spatial_partition_cell" kindref="compound">muda::spatial_hash::SpatialPartitionCell</ref></type>
         <definition>struct muda::spatial_hash::SpatialPartitionCell muda::spatial_hash::SpatialPartitionCell::ctlbit</definition>
         <argsstring></argsstring>
@@ -297,7 +297,7 @@
     <listofallmembers>
       <member refid="classmuda_1_1spatial__hash_1_1_spatial_partition_cell_1a23c3ffc6374ecd72d51460b86741bae6" prot="public" virt="non-virtual"><scope>muda::spatial_hash::SpatialPartitionCell</scope><name>allow_ignore</name></member>
       <member refid="classmuda_1_1spatial__hash_1_1_spatial_partition_cell_1a4c24ae862ff5c4593c5d8dd9f63f813b" prot="public" virt="non-virtual"><scope>muda::spatial_hash::SpatialPartitionCell</scope><name>cid</name></member>
-      <member refid="classmuda_1_1spatial__hash_1_1_spatial_partition_cell_1a146e4a350566ecd87ce2dc436ac8d662" prot="public" virt="non-virtual"><scope>muda::spatial_hash::SpatialPartitionCell</scope><name>ctlbit</name></member>
+      <member refid="classmuda_1_1spatial__hash_1_1_spatial_partition_cell_1a46d9143c1047113fa6253bcceeba5995" prot="public" virt="non-virtual"><scope>muda::spatial_hash::SpatialPartitionCell</scope><name>ctlbit</name></member>
       <member refid="classmuda_1_1spatial__hash_1_1_spatial_partition_cell_1aebcecc6a46b99d6f9046ea78f383ba4d" prot="public" virt="non-virtual"><scope>muda::spatial_hash::SpatialPartitionCell</scope><name>home</name></member>
       <member refid="classmuda_1_1spatial__hash_1_1_spatial_partition_cell_1aa191fb0c926f073eb07bde5e90773ed2" prot="public" virt="non-virtual"><scope>muda::spatial_hash::SpatialPartitionCell</scope><name>is_home</name></member>
       <member refid="classmuda_1_1spatial__hash_1_1_spatial_partition_cell_1a5a04a6d4af572ba3e2c92c152b93c7c4" prot="public" virt="non-virtual"><scope>muda::spatial_hash::SpatialPartitionCell</scope><name>is_phantom</name></member>

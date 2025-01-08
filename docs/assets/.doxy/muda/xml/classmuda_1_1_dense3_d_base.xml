@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.1" xml:lang="en-US">
   <compounddef id="classmuda_1_1_dense3_d_base" kind="class" language="C++" prot="public">
     <compoundname>muda::Dense3DBase</compoundname>
     <basecompoundref refid="classmuda_1_1_viewer_base" prot="public" virt="non-virtual">muda::ViewerBase&lt; IsConst &gt;</basecompoundref>
@@ -574,27 +574,27 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="2">
-        <label>muda::ViewerBase&lt; IsConst &gt;</label>
-        <link refid="classmuda_1_1_viewer_base"/>
-      </node>
       <node id="1">
         <label>muda::Dense3DBase&lt; IsConst, T &gt;</label>
         <link refid="classmuda_1_1_dense3_d_base"/>
         <childnode refid="2" relation="public-inheritance">
         </childnode>
+      </node>
+      <node id="2">
+        <label>muda::ViewerBase&lt; IsConst &gt;</label>
+        <link refid="classmuda_1_1_viewer_base"/>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="2">
-        <label>muda::ViewerBase&lt; IsConst &gt;</label>
-        <link refid="classmuda_1_1_viewer_base"/>
-      </node>
       <node id="1">
         <label>muda::Dense3DBase&lt; IsConst, T &gt;</label>
         <link refid="classmuda_1_1_dense3_d_base"/>
         <childnode refid="2" relation="public-inheritance">
         </childnode>
+      </node>
+      <node id="2">
+        <label>muda::ViewerBase&lt; IsConst &gt;</label>
+        <link refid="classmuda_1_1_viewer_base"/>
       </node>
     </collaborationgraph>
     <location file="src/muda/viewer/dense/dense_3d.h" line="19" column="1" bodyfile="src/muda/viewer/dense/dense_3d.h" bodystart="20" bodyend="172"/>
@@ -607,6 +607,7 @@
       <member refid="classmuda_1_1_dense3_d_base_1a1f283b9c9c2f11fcbaad34dc721100c8" prot="protected" virt="non-virtual"><scope>muda::Dense3DBase</scope><name>check_range</name></member>
       <member refid="classmuda_1_1_dense3_d_base_1a00e2c3d0d4c143b99f7f7759117515a5" prot="public" virt="non-virtual"><scope>muda::Dense3DBase</scope><name>ConstViewer</name></member>
       <member refid="classmuda_1_1_viewer_base_1a1e3c7201751bec476d5f9b9c26be94b5" prot="public" virt="non-virtual"><scope>muda::Dense3DBase</scope><name>copy_label</name></member>
+      <member refid="classmuda_1_1_viewer_base_1a1e3c7201751bec476d5f9b9c26be94b5" prot="public" virt="non-virtual"><scope>muda::Dense3DBase</scope><name>copy_label</name></member>
       <member refid="classmuda_1_1_dense3_d_base_1ac786930877d23e36c991d32c43f2aec8" prot="public" virt="non-virtual"><scope>muda::Dense3DBase</scope><name>data</name></member>
       <member refid="classmuda_1_1_dense3_d_base_1a3f82d0a51671b102d5bba50806ac8384" prot="public" virt="non-virtual"><scope>muda::Dense3DBase</scope><name>data</name></member>
       <member refid="classmuda_1_1_dense3_d_base_1a7ef73959f394fb64aba109e6ea10fcc9" prot="public" virt="non-virtual"><scope>muda::Dense3DBase</scope><name>Dense3DBase</name></member>
@@ -615,9 +616,14 @@
       <member refid="classmuda_1_1_dense3_d_base_1a0ce567407f73f73d9b0534f86f4b40f9" prot="public" virt="non-virtual"><scope>muda::Dense3DBase</scope><name>flatten</name></member>
       <member refid="classmuda_1_1_dense3_d_base_1ae120dda6e5ef585d60e466fbfc29c220" prot="public" virt="non-virtual"><scope>muda::Dense3DBase</scope><name>flatten</name></member>
       <member refid="classmuda_1_1_viewer_base_1ae9e7348b91c4dc1f3fc0de8e63335576" prot="public" virt="non-virtual"><scope>muda::Dense3DBase</scope><name>IsConst</name></member>
+      <member refid="classmuda_1_1_viewer_base_1ae9e7348b91c4dc1f3fc0de8e63335576" prot="public" virt="non-virtual"><scope>muda::Dense3DBase</scope><name>IsConst</name></member>
+      <member refid="classmuda_1_1_viewer_base_1adc31410f57cf34b15824f4f3fcb434a3" prot="public" virt="non-virtual"><scope>muda::Dense3DBase</scope><name>IsNonConst</name></member>
       <member refid="classmuda_1_1_viewer_base_1adc31410f57cf34b15824f4f3fcb434a3" prot="public" virt="non-virtual"><scope>muda::Dense3DBase</scope><name>IsNonConst</name></member>
       <member refid="classmuda_1_1_viewer_base_1a35b42fb3c890f8343c551451bceab3f1" prot="public" virt="non-virtual"><scope>muda::Dense3DBase</scope><name>kernel_file</name></member>
+      <member refid="classmuda_1_1_viewer_base_1a35b42fb3c890f8343c551451bceab3f1" prot="public" virt="non-virtual"><scope>muda::Dense3DBase</scope><name>kernel_file</name></member>
       <member refid="classmuda_1_1_viewer_base_1a3247ca184afa57b2e00f8da9e080a2a1" prot="public" virt="non-virtual"><scope>muda::Dense3DBase</scope><name>kernel_line</name></member>
+      <member refid="classmuda_1_1_viewer_base_1a3247ca184afa57b2e00f8da9e080a2a1" prot="public" virt="non-virtual"><scope>muda::Dense3DBase</scope><name>kernel_line</name></member>
+      <member refid="classmuda_1_1_viewer_base_1a9b65192d349fd93c05c8ccad4d4014d4" prot="public" virt="non-virtual"><scope>muda::Dense3DBase</scope><name>kernel_name</name></member>
       <member refid="classmuda_1_1_viewer_base_1a9b65192d349fd93c05c8ccad4d4014d4" prot="public" virt="non-virtual"><scope>muda::Dense3DBase</scope><name>kernel_name</name></member>
       <member refid="classmuda_1_1_dense3_d_base_1a5f8f037ca2ff51efe37bc3a1e46ad5fb" prot="protected" virt="non-virtual"><scope>muda::Dense3DBase</scope><name>m_data</name></member>
       <member refid="classmuda_1_1_dense3_d_base_1a83bd4a0493a666f7ef305657650f461e" prot="protected" virt="non-virtual"><scope>muda::Dense3DBase</scope><name>m_dim</name></member>
@@ -628,6 +634,10 @@
       <member refid="classmuda_1_1_viewer_base_1a4cb1c578b4abbf1b113e9cf7a3d771d8" prot="public" virt="non-virtual"><scope>muda::Dense3DBase</scope><name>name</name></member>
       <member refid="classmuda_1_1_viewer_base_1a57bbb7a9a3e4cb77a0a05bdee3a3e5fd" prot="protected" virt="non-virtual"><scope>muda::Dense3DBase</scope><name>name</name></member>
       <member refid="classmuda_1_1_viewer_base_1a31d6dd944a28c6d428e5e79cd7c034a0" prot="protected" virt="non-virtual"><scope>muda::Dense3DBase</scope><name>name</name></member>
+      <member refid="classmuda_1_1_viewer_base_1a4cb1c578b4abbf1b113e9cf7a3d771d8" prot="public" virt="non-virtual"><scope>muda::Dense3DBase</scope><name>name</name></member>
+      <member refid="classmuda_1_1_viewer_base_1a57bbb7a9a3e4cb77a0a05bdee3a3e5fd" prot="protected" virt="non-virtual"><scope>muda::Dense3DBase</scope><name>name</name></member>
+      <member refid="classmuda_1_1_viewer_base_1a31d6dd944a28c6d428e5e79cd7c034a0" prot="protected" virt="non-virtual"><scope>muda::Dense3DBase</scope><name>name</name></member>
+      <member refid="classmuda_1_1_viewer_base_1a9447a51a53c20567fcb38fcdc275d812" prot="protected" virt="non-virtual"><scope>muda::Dense3DBase</scope><name>non_const_enable_t</name></member>
       <member refid="classmuda_1_1_viewer_base_1a9447a51a53c20567fcb38fcdc275d812" prot="protected" virt="non-virtual"><scope>muda::Dense3DBase</scope><name>non_const_enable_t</name></member>
       <member refid="classmuda_1_1_dense3_d_base_1a8ab1e5de763f91f0b6372ac6d5bc942d" prot="public" virt="non-virtual"><scope>muda::Dense3DBase</scope><name>NonConstViewer</name></member>
       <member refid="classmuda_1_1_dense3_d_base_1af4a189678cf1085ccca0c4d1140facce" prot="public" virt="non-virtual"><scope>muda::Dense3DBase</scope><name>operator ConstViewer</name></member>
@@ -637,12 +647,17 @@
       <member refid="classmuda_1_1_dense3_d_base_1ae6e004360c3a36c268da80c96b4a94ed" prot="public" virt="non-virtual"><scope>muda::Dense3DBase</scope><name>operator()</name></member>
       <member refid="classmuda_1_1_viewer_base_1a8ce13df13b4a82e63c7a6230ee1e0b7c" prot="public" virt="non-virtual"><scope>muda::Dense3DBase</scope><name>operator=</name></member>
       <member refid="classmuda_1_1_viewer_base_1ac73a737a8a64ff2026adcd7bc5f2738a" prot="public" virt="non-virtual"><scope>muda::Dense3DBase</scope><name>operator=</name></member>
+      <member refid="classmuda_1_1_viewer_base_1a8ce13df13b4a82e63c7a6230ee1e0b7c" prot="public" virt="non-virtual"><scope>muda::Dense3DBase</scope><name>operator=</name></member>
+      <member refid="classmuda_1_1_viewer_base_1ac73a737a8a64ff2026adcd7bc5f2738a" prot="public" virt="non-virtual"><scope>muda::Dense3DBase</scope><name>operator=</name></member>
       <member refid="classmuda_1_1_dense3_d_base_1a28488a8a0855153301df035bdaad2ac8" prot="public" virt="non-virtual"><scope>muda::Dense3DBase</scope><name>pitch_bytes</name></member>
       <member refid="classmuda_1_1_dense3_d_base_1a00ed5b91811df098767f363f822e3520" prot="public" virt="non-virtual"><scope>muda::Dense3DBase</scope><name>pitch_bytes_area</name></member>
       <member refid="classmuda_1_1_dense3_d_base_1a64fb12c63c3b2297ca66a3dadce4e621" prot="public" virt="non-virtual"><scope>muda::Dense3DBase</scope><name>ThisViewer</name></member>
       <member refid="classmuda_1_1_dense3_d_base_1a377f0acdbbd8067d0dbf589a3394e88c" prot="public" virt="non-virtual"><scope>muda::Dense3DBase</scope><name>total_bytes</name></member>
       <member refid="classmuda_1_1_dense3_d_base_1a25671c17090c2c0f99bd98621d238a1c" prot="public" virt="non-virtual"><scope>muda::Dense3DBase</scope><name>total_size</name></member>
       <member refid="classmuda_1_1_dense3_d_base_1abd93612c2348f334bbb7a27be2d96930" prot="public" virt="non-virtual"><scope>muda::Dense3DBase</scope><name>value_type</name></member>
+      <member refid="classmuda_1_1_viewer_base_1aab07b74590e3ae50b1352372f66080f8" prot="public" virt="non-virtual"><scope>muda::Dense3DBase</scope><name>ViewerBase</name></member>
+      <member refid="classmuda_1_1_viewer_base_1aac0b5cbd86bfb6653c7dddeac2907428" prot="public" virt="non-virtual"><scope>muda::Dense3DBase</scope><name>ViewerBase</name></member>
+      <member refid="classmuda_1_1_viewer_base_1a70b803f760ff21c327b454f7c9fc0ef3" prot="public" virt="non-virtual"><scope>muda::Dense3DBase</scope><name>ViewerBase</name></member>
       <member refid="classmuda_1_1_viewer_base_1aab07b74590e3ae50b1352372f66080f8" prot="public" virt="non-virtual"><scope>muda::Dense3DBase</scope><name>ViewerBase</name></member>
       <member refid="classmuda_1_1_viewer_base_1aac0b5cbd86bfb6653c7dddeac2907428" prot="public" virt="non-virtual"><scope>muda::Dense3DBase</scope><name>ViewerBase</name></member>
       <member refid="classmuda_1_1_viewer_base_1a70b803f760ff21c327b454f7c9fc0ef3" prot="public" virt="non-virtual"><scope>muda::Dense3DBase</scope><name>ViewerBase</name></member>

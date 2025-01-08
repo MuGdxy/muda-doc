@@ -13,7 +13,7 @@
 * `#include <muda/ext/eigen/eigen_core_cxx20.h>`
 * `#include <muda/buffer/buffer_2d_view.h>`
 * `#include <muda/viewer/viewer_base.h>`
-* `#include <cublas_v2.h>`
+* `#include <muda/atomic.h>`
 * `#include "details/dense_matrix_viewer.inl"`
 
 
@@ -39,9 +39,7 @@
 
 | Type | Name |
 | ---: | :--- |
-| class | [**CDenseMatrixViewer**](classmuda_1_1_c_dense_matrix_viewer.md) &lt;typename T&gt;<br> |
-| class | [**DenseMatrixViewer**](classmuda_1_1_dense_matrix_viewer.md) &lt;typename T&gt;<br> |
-| class | [**DenseMatrixViewerBase**](classmuda_1_1_dense_matrix_viewer_base.md) &lt;IsConst, typename T&gt;<br> |
+| class | [**DenseMatrixViewerT**](classmuda_1_1_dense_matrix_viewer_t.md) &lt;IsConst, typename T&gt;<br> |
 
 
 

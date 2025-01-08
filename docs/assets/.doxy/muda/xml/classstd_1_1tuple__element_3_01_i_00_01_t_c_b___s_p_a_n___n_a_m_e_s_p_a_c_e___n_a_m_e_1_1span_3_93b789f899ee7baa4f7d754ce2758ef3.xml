@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
-  <compounddef id="classstd_1_1tuple__element_3_01_i_00_01_t_c_b___s_p_a_n___n_a_m_e_s_p_a_c_e___n_a_m_e_1_1span_3_93b789f899ee7baa4f7d754ce2758ef3" kind="class" language="C++" prot="private">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.1" xml:lang="en-US">
+  <compounddef id="classstd_1_1tuple__element_3_01_i_00_01_t_c_b___s_p_a_n___n_a_m_e_s_p_a_c_e___n_a_m_e_1_1span_3_93b789f899ee7baa4f7d754ce2758ef3" kind="class" language="C++" prot="public">
     <compoundname>std::tuple_element&lt; I, TCB_SPAN_NAMESPACE_NAME::span&lt; ElementType, Extent &gt; &gt;</compoundname>
     <templateparamlist>
       <param>

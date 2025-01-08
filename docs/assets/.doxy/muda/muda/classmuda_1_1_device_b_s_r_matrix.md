@@ -33,13 +33,18 @@
 
 | Type | Name |
 | ---: | :--- |
-| typedef Eigen::Matrix&lt; Ty, N, N &gt; | [**BlockMatrix**](#typedef-blockmatrix)  <br> |
+| typedef std::conditional\_t&lt; N==1, Ty, Eigen::Matrix&lt; Ty, N, N &gt; &gt; | [**ValueT**](#typedef-valuet)  <br> |
 
 
 
 
 
 
+## Public Static Attributes
+
+| Type | Name |
+| ---: | :--- |
+|  bool | [**IsBlockMatrix**](#variable-isblockmatrix)   = = (N &gt; 1)<br> |
 
 
 
@@ -63,19 +68,14 @@
 |   | [**DeviceBSRMatrix**](#function-devicebsrmatrix-33) ([**DeviceBSRMatrix**](classmuda_1_1_device_b_s_r_matrix.md) &&) <br> |
 |  auto | [**T**](#function-t-12) () const<br> |
 |  auto | [**T**](#function-t-22) () <br> |
-|  auto | [**block\_col\_indices**](#function-block_col_indices-12) () <br> |
-|  auto | [**block\_col\_indices**](#function-block_col_indices-22) () const<br> |
-|  auto | [**block\_cols**](#function-block_cols) () const<br> |
-|  auto | [**block\_row\_offsets**](#function-block_row_offsets-12) () <br> |
-|  auto | [**block\_row\_offsets**](#function-block_row_offsets-22) () const<br> |
-|  auto | [**block\_rows**](#function-block_rows) () const<br> |
-|  auto | [**block\_values**](#function-block_values-12) () <br> |
-|  auto | [**block\_values**](#function-block_values-22) () const<br> |
 |  void | [**clear**](#function-clear) () <br> |
+|  auto | [**col\_indices**](#function-col_indices-12) () <br> |
+|  auto | [**col\_indices**](#function-col_indices-22) () const<br> |
+|  auto | [**cols**](#function-cols) () const<br> |
 |  auto | [**cview**](#function-cview) () const<br> |
 |  cusparseSpMatDescr\_t | [**descr**](#function-descr) () const<br> |
 |  cusparseMatDescr\_t | [**legacy\_descr**](#function-legacy_descr) () const<br> |
-|  auto | [**non\_zero\_blocks**](#function-non_zero_blocks) () const<br> |
+|  auto | [**non\_zeros**](#function-non_zeros) () const<br> |
 |   | [**operator BSRMatrixView&lt; Ty, N &gt;**](#function-operator-bsrmatrixview<-ty,-n->) () <br> |
 |   | [**operator CBSRMatrixView&lt; Ty, N &gt;**](#function-operator-cbsrmatrixview<-ty,-n->) () const<br> |
 |  [**DeviceBSRMatrix**](classmuda_1_1_device_b_s_r_matrix.md) & | [**operator=**](#function-operator) (const [**DeviceBSRMatrix**](classmuda_1_1_device_b_s_r_matrix.md) &) <br> |
@@ -84,6 +84,11 @@
 |  void | [**reserve\_offsets**](#function-reserve_offsets) (int size) <br> |
 |  void | [**reshape**](#function-reshape) (int row, int col) <br> |
 |  void | [**resize**](#function-resize) (int non\_zero\_blocks) <br> |
+|  auto | [**row\_offsets**](#function-row_offsets-12) () <br> |
+|  auto | [**row\_offsets**](#function-row_offsets-22) () const<br> |
+|  auto | [**rows**](#function-rows) () const<br> |
+|  auto | [**values**](#function-values-12) () <br> |
+|  auto | [**values**](#function-values-22) () const<br> |
 |  auto | [**view**](#function-view-12) () <br> |
 |  auto | [**view**](#function-view-22) () const<br> |
 |   | [**~DeviceBSRMatrix**](#function-devicebsrmatrix) () <br> |
@@ -93,7 +98,7 @@
 
 | Type | Name |
 | ---: | :--- |
-|  constexpr int | [**block\_size**](#function-block_size) () <br> |
+|  int | [**block\_size**](#function-block_size) () <br> |
 
 
 
@@ -104,13 +109,13 @@
 
 | Type | Name |
 | ---: | :--- |
-|  [**muda::DeviceBuffer**](classmuda_1_1_device_buffer.md)&lt; int &gt; | [**m\_block\_col\_indices**](#variable-m_block_col_indices)  <br> |
-|  [**muda::DeviceBuffer**](classmuda_1_1_device_buffer.md)&lt; int &gt; | [**m\_block\_row\_offsets**](#variable-m_block_row_offsets)  <br> |
-|  [**muda::DeviceBuffer**](classmuda_1_1_device_buffer.md)&lt; BlockMatrix &gt; | [**m\_block\_values**](#variable-m_block_values)  <br> |
 |  int | [**m\_col**](#variable-m_col)   = = 0<br> |
+|  [**muda::DeviceBuffer**](classmuda_1_1_device_buffer.md)&lt; int &gt; | [**m\_col\_indices**](#variable-m_col_indices)  <br> |
 |  cusparseSpMatDescr\_t | [**m\_descr**](#variable-m_descr)   = = nullptr<br> |
 |  cusparseMatDescr\_t | [**m\_legacy\_descr**](#variable-m_legacy_descr)   = = nullptr<br> |
 |  int | [**m\_row**](#variable-m_row)   = = 0<br> |
+|  [**muda::DeviceBuffer**](classmuda_1_1_device_buffer.md)&lt; int &gt; | [**m\_row\_offsets**](#variable-m_row_offsets)  <br> |
+|  [**muda::DeviceBuffer**](classmuda_1_1_device_buffer.md)&lt; ValueT &gt; | [**m\_values**](#variable-m_values)  <br> |
 
 
 
@@ -136,10 +141,25 @@
 
 
 
-### typedef BlockMatrix 
+### typedef ValueT 
 
 ```C++
-using muda::DeviceBSRMatrix< Ty, N >::BlockMatrix =  Eigen::Matrix<Ty, N, N>;
+using muda::DeviceBSRMatrix< Ty, N >::ValueT =  std::conditional_t<N == 1, Ty, Eigen::Matrix<Ty, N, N>>;
+```
+
+
+
+
+<hr>
+## Public Static Attributes Documentation
+
+
+
+
+### variable IsBlockMatrix 
+
+```C++
+bool muda::DeviceBSRMatrix< Ty, N >::IsBlockMatrix;
 ```
 
 
@@ -220,114 +240,49 @@ inline auto muda::DeviceBSRMatrix::T ()
 
 
 
-### function block\_col\_indices [1/2]
-
-```C++
-inline auto muda::DeviceBSRMatrix::block_col_indices () 
-```
-
-
-
-
-<hr>
-
-
-
-### function block\_col\_indices [2/2]
-
-```C++
-inline auto muda::DeviceBSRMatrix::block_col_indices () const
-```
-
-
-
-
-<hr>
-
-
-
-### function block\_cols 
-
-```C++
-inline auto muda::DeviceBSRMatrix::block_cols () const
-```
-
-
-
-
-<hr>
-
-
-
-### function block\_row\_offsets [1/2]
-
-```C++
-inline auto muda::DeviceBSRMatrix::block_row_offsets () 
-```
-
-
-
-
-<hr>
-
-
-
-### function block\_row\_offsets [2/2]
-
-```C++
-inline auto muda::DeviceBSRMatrix::block_row_offsets () const
-```
-
-
-
-
-<hr>
-
-
-
-### function block\_rows 
-
-```C++
-inline auto muda::DeviceBSRMatrix::block_rows () const
-```
-
-
-
-
-<hr>
-
-
-
-### function block\_values [1/2]
-
-```C++
-inline auto muda::DeviceBSRMatrix::block_values () 
-```
-
-
-
-
-<hr>
-
-
-
-### function block\_values [2/2]
-
-```C++
-inline auto muda::DeviceBSRMatrix::block_values () const
-```
-
-
-
-
-<hr>
-
-
-
 ### function clear 
 
 ```C++
 void muda::DeviceBSRMatrix::clear () 
+```
+
+
+
+
+<hr>
+
+
+
+### function col\_indices [1/2]
+
+```C++
+inline auto muda::DeviceBSRMatrix::col_indices () 
+```
+
+
+
+
+<hr>
+
+
+
+### function col\_indices [2/2]
+
+```C++
+inline auto muda::DeviceBSRMatrix::col_indices () const
+```
+
+
+
+
+<hr>
+
+
+
+### function cols 
+
+```C++
+inline auto muda::DeviceBSRMatrix::cols () const
 ```
 
 
@@ -376,10 +331,10 @@ cusparseMatDescr_t muda::DeviceBSRMatrix::legacy_descr () const
 
 
 
-### function non\_zero\_blocks 
+### function non\_zeros 
 
 ```C++
-inline auto muda::DeviceBSRMatrix::non_zero_blocks () const
+inline auto muda::DeviceBSRMatrix::non_zeros () const
 ```
 
 
@@ -506,6 +461,71 @@ void muda::DeviceBSRMatrix::resize (
 
 
 
+### function row\_offsets [1/2]
+
+```C++
+inline auto muda::DeviceBSRMatrix::row_offsets () 
+```
+
+
+
+
+<hr>
+
+
+
+### function row\_offsets [2/2]
+
+```C++
+inline auto muda::DeviceBSRMatrix::row_offsets () const
+```
+
+
+
+
+<hr>
+
+
+
+### function rows 
+
+```C++
+inline auto muda::DeviceBSRMatrix::rows () const
+```
+
+
+
+
+<hr>
+
+
+
+### function values [1/2]
+
+```C++
+inline auto muda::DeviceBSRMatrix::values () 
+```
+
+
+
+
+<hr>
+
+
+
+### function values [2/2]
+
+```C++
+inline auto muda::DeviceBSRMatrix::values () const
+```
+
+
+
+
+<hr>
+
+
+
 ### function view [1/2]
 
 ```C++
@@ -550,7 +570,7 @@ muda::DeviceBSRMatrix::~DeviceBSRMatrix ()
 ### function block\_size 
 
 ```C++
-static inline constexpr int muda::DeviceBSRMatrix::block_size () 
+static inline int muda::DeviceBSRMatrix::block_size () 
 ```
 
 
@@ -562,49 +582,23 @@ static inline constexpr int muda::DeviceBSRMatrix::block_size ()
 
 
 
-### variable m\_block\_col\_indices 
-
-```C++
-muda::DeviceBuffer<int> muda::DeviceBSRMatrix< Ty, N >::m_block_col_indices;
-```
-
-
-
-
-<hr>
-
-
-
-### variable m\_block\_row\_offsets 
-
-```C++
-muda::DeviceBuffer<int> muda::DeviceBSRMatrix< Ty, N >::m_block_row_offsets;
-```
-
-
-
-
-<hr>
-
-
-
-### variable m\_block\_values 
-
-```C++
-muda::DeviceBuffer<BlockMatrix> muda::DeviceBSRMatrix< Ty, N >::m_block_values;
-```
-
-
-
-
-<hr>
-
-
-
 ### variable m\_col 
 
 ```C++
 int muda::DeviceBSRMatrix< Ty, N >::m_col;
+```
+
+
+
+
+<hr>
+
+
+
+### variable m\_col\_indices 
+
+```C++
+muda::DeviceBuffer<int> muda::DeviceBSRMatrix< Ty, N >::m_col_indices;
 ```
 
 
@@ -649,17 +643,44 @@ int muda::DeviceBSRMatrix< Ty, N >::m_row;
 
 
 
+<hr>
+
+
+
+### variable m\_row\_offsets 
+
+```C++
+muda::DeviceBuffer<int> muda::DeviceBSRMatrix< Ty, N >::m_row_offsets;
+```
+
+
+
+
+<hr>
+
+
+
+### variable m\_values 
+
+```C++
+muda::DeviceBuffer<ValueT> muda::DeviceBSRMatrix< Ty, N >::m_values;
+```
+
+
+
+
 <hr>## Friends Documentation
 
 
 
 
 
-### friend MatrixFormatConverter&lt; Ty, N &gt; 
+### friend MatrixFormatConverter 
 
 ```C++
-class muda::DeviceBSRMatrix::MatrixFormatConverter< Ty, N > (
-    details::MatrixFormatConverter < Ty, N >
+template<typename U, int M>
+class muda::DeviceBSRMatrix::MatrixFormatConverter (
+    details::MatrixFormatConverter
 ) 
 ```
 

@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.1" xml:lang="en-US">
   <compounddef id="classmuda_1_1_viewer_base" kind="class" language="C++" prot="public">
     <compoundname>muda::ViewerBase</compoundname>
     <templateparamlist>
@@ -52,8 +52,8 @@
     </sectiondef>
     <sectiondef kind="public-static-attrib">
       <memberdef kind="variable" id="classmuda_1_1_viewer_base_1ae9e7348b91c4dc1f3fc0de8e63335576" prot="public" static="yes" constexpr="yes" mutable="no">
-        <type>constexpr bool</type>
-        <definition>constexpr bool muda::ViewerBase&lt; IsConst_ &gt;::IsConst</definition>
+        <type>bool</type>
+        <definition>bool muda::ViewerBase&lt; IsConst_ &gt;::IsConst</definition>
         <argsstring></argsstring>
         <name>IsConst</name>
         <qualifiedname>muda::ViewerBase::IsConst</qualifiedname>
@@ -67,8 +67,8 @@
         <location file="src/muda/viewer/viewer_base.h" line="20" column="27" bodyfile="src/muda/viewer/viewer_base.h" bodystart="20" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classmuda_1_1_viewer_base_1adc31410f57cf34b15824f4f3fcb434a3" prot="public" static="yes" constexpr="yes" mutable="no">
-        <type>constexpr bool</type>
-        <definition>constexpr bool muda::ViewerBase&lt; IsConst_ &gt;::IsNonConst</definition>
+        <type>bool</type>
+        <definition>bool muda::ViewerBase&lt; IsConst_ &gt;::IsNonConst</definition>
         <argsstring></argsstring>
         <name>IsNonConst</name>
         <qualifiedname>muda::ViewerBase::IsNonConst</qualifiedname>

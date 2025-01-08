@@ -124,13 +124,13 @@ template <typename T>
 using CBuffer3DView = Buffer3DViewT<true, T>;
 
 template <typename T>
-struct read_only_viewer<Buffer3DView<T>>
+struct read_only_view<Buffer3DView<T>>
 {
     using type = CBuffer3DView<T>;
 };
 
 template <typename T>
-struct read_write_viewer<CBuffer3DView<T>>
+struct read_write_view<CBuffer3DView<T>>
 {
     using type = Buffer3DView<T>;
 };

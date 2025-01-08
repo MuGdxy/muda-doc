@@ -39,23 +39,16 @@
 
 | Type | Name |
 | ---: | :--- |
-| class | [**BSRMatrixViewBase**](classmuda_1_1_b_s_r_matrix_view_base.md) &lt;IsConst, typename Ty, N&gt;<br> |
+| class | [**BSRMatrixViewT**](classmuda_1_1_b_s_r_matrix_view_t.md) &lt;IsConst, typename Ty, N&gt;<br> |
 | class | [**Buffer2DViewT**](classmuda_1_1_buffer2_d_view_t.md) &lt;IsConst, typename T&gt;<br> |
 | class | [**Buffer3DViewT**](classmuda_1_1_buffer3_d_view_t.md) &lt;IsConst, typename T&gt;<br> |
 | class | [**BufferLaunch**](classmuda_1_1_buffer_launch.md) <br> |
 | class | [**BufferViewT**](classmuda_1_1_buffer_view_t.md) &lt;IsConst, typename T&gt;<br> |
-| class | [**CDenseMatrixView**](classmuda_1_1_c_dense_matrix_view.md) &lt;typename Ty&gt;<br> |
-| class | [**CDenseMatrixViewer**](classmuda_1_1_c_dense_matrix_viewer.md) &lt;typename T&gt;<br> |
-| class | [**CDenseVectorViewer**](classmuda_1_1_c_dense_vector_viewer.md) &lt;typename T&gt;<br> |
-| class | [**CDoubletVectorViewer**](classmuda_1_1_c_doublet_vector_viewer.md) &lt;typename T, N&gt;<br> |
-| class | [**CDoubletVectorViewer&lt; T, 1 &gt;**](classmuda_1_1_c_doublet_vector_viewer_3_01_t_00_011_01_4.md) &lt;typename T&gt;<br> |
 | class | [**CFieldEntryView**](classmuda_1_1_c_field_entry_view.md) &lt;typename T, Layout, M, N&gt;<br> |
+| class | [**CFieldEntryViewer**](classmuda_1_1_c_field_entry_viewer.md) &lt;typename T, Layout, M, N&gt;<br> |
 | class | [**CMatrixMapInfo**](classmuda_1_1_c_matrix_map_info.md) &lt;typename T, M, N&gt;<br> |
-| class | [**COOMatrixViewBase**](classmuda_1_1_c_o_o_matrix_view_base.md) &lt;IsConst, typename Ty&gt;<br> |
+| class | [**COOMatrixViewT**](classmuda_1_1_c_o_o_matrix_view_t.md) &lt;IsConst, typename Ty&gt;<br> |
 | class | [**COOVectorViewBase**](classmuda_1_1_c_o_o_vector_view_base.md) &lt;IsConst, typename T&gt;<br> |
-| class | [**CSRMatrixViewBase**](classmuda_1_1_c_s_r_matrix_view_base.md) &lt;IsConst, typename Ty&gt;<br> |
-| class | [**CTripletMatrixViewer**](classmuda_1_1_c_triplet_matrix_viewer.md) &lt;typename T, N&gt;<br> |
-| class | [**CTripletMatrixViewer&lt; T, 1 &gt;**](classmuda_1_1_c_triplet_matrix_viewer_3_01_t_00_011_01_4.md) &lt;typename T&gt;<br> |
 | class | [**ClosureId**](classmuda_1_1_closure_id.md) <br> |
 | class | [**ComputeGraph**](classmuda_1_1_compute_graph.md) <br> |
 | class | [**ComputeGraphBuilder**](classmuda_1_1_compute_graph_builder.md) <br> |
@@ -66,11 +59,11 @@
 | class | [**ComputeGraphNode**](classmuda_1_1_compute_graph_node.md) &lt;typename NodeT, Type&gt;<br> |
 | class | [**ComputeGraphNodeBase**](classmuda_1_1_compute_graph_node_base.md) <br> |
 | class | [**ComputeGraphVar**](classmuda_1_1_compute_graph_var.md) &lt;typename T&gt;<br> |
-| class | [**ComputeGraphVar&lt; Buffer2DView&lt; T &gt; &gt;**](classmuda_1_1_compute_graph_var_3_01_buffer2_d_view_3_01_t_01_4_01_4.md) &lt;typename T&gt;<br> |
-| class | [**ComputeGraphVar&lt; Buffer3DView&lt; T &gt; &gt;**](classmuda_1_1_compute_graph_var_3_01_buffer3_d_view_3_01_t_01_4_01_4.md) &lt;typename T&gt;<br> |
-| class | [**ComputeGraphVar&lt; BufferView&lt; T &gt; &gt;**](classmuda_1_1_compute_graph_var_3_01_buffer_view_3_01_t_01_4_01_4.md) &lt;typename T&gt;<br> |
-| class | [**ComputeGraphVar&lt; GraphViewer &gt;**](classmuda_1_1_compute_graph_var_3_01_graph_viewer_01_4.md) &lt;&gt;<br> |
-| class | [**ComputeGraphVar&lt; VarView&lt; T &gt; &gt;**](classmuda_1_1_compute_graph_var_3_01_var_view_3_01_t_01_4_01_4.md) &lt;typename T&gt;<br> |
+| class | [**ComputeGraphVar**](classmuda_1_1_compute_graph_var.md) &lt;typename T&gt;<br> |
+| class | [**ComputeGraphVar**](classmuda_1_1_compute_graph_var.md) &lt;typename T&gt;<br> |
+| class | [**ComputeGraphVar**](classmuda_1_1_compute_graph_var.md) &lt;typename T&gt;<br> |
+| class | [**ComputeGraphVar**](classmuda_1_1_compute_graph_var.md) &lt;typename T&gt;<br> |
+| class | [**ComputeGraphVar**](classmuda_1_1_compute_graph_var.md) &lt;typename T&gt;<br> |
 | class | [**ComputeGraphVarBase**](classmuda_1_1_compute_graph_var_base.md) <br> |
 | class | [**ComputeGraphVarManager**](classmuda_1_1_compute_graph_var_manager.md) <br> |
 | class | [**CubWrapper**](classmuda_1_1_cub_wrapper.md) &lt;typename Derive&gt;<br> |
@@ -79,27 +72,22 @@
 | class | [**Dense1DT**](classmuda_1_1_dense1_d_t.md) &lt;IsConst, typename T&gt;<br> |
 | class | [**Dense2DBase**](classmuda_1_1_dense2_d_base.md) &lt;IsConst, typename T&gt;<br> |
 | class | [**Dense3DBase**](classmuda_1_1_dense3_d_base.md) &lt;IsConst, typename T&gt;<br> |
-| class | [**DenseMatrixView**](classmuda_1_1_dense_matrix_view.md) &lt;typename Ty&gt;<br> |
-| class | [**DenseMatrixViewBase**](classmuda_1_1_dense_matrix_view_base.md) &lt;IsConst, typename Ty&gt;<br> |
-| class | [**DenseMatrixViewer**](classmuda_1_1_dense_matrix_viewer.md) &lt;typename T&gt;<br> |
-| class | [**DenseMatrixViewerBase**](classmuda_1_1_dense_matrix_viewer_base.md) &lt;IsConst, typename T&gt;<br> |
-| class | [**DenseVectorViewBase**](classmuda_1_1_dense_vector_view_base.md) &lt;IsConst, typename T&gt;<br> |
-| class | [**DenseVectorViewer**](classmuda_1_1_dense_vector_viewer.md) &lt;typename T&gt;<br> |
-| class | [**DenseVectorViewerBase**](classmuda_1_1_dense_vector_viewer_base.md) &lt;IsConst, typename T&gt;<br> |
+| class | [**DenseMatrixViewT**](classmuda_1_1_dense_matrix_view_t.md) &lt;IsConst, typename Ty&gt;<br> |
+| class | [**DenseMatrixViewerT**](classmuda_1_1_dense_matrix_viewer_t.md) &lt;IsConst, typename T&gt;<br> |
+| class | [**DenseVectorViewT**](classmuda_1_1_dense_vector_view_t.md) &lt;IsConst, typename T&gt;<br> |
+| class | [**DenseVectorViewerT**](classmuda_1_1_dense_vector_viewer_t.md) &lt;IsConst, typename T&gt;<br> |
 | class | [**DenseViewerT**](classmuda_1_1_dense_viewer_t.md) &lt;IsConst, typename T&gt;<br> |
 | class | [**DeviceBCOOMatrix**](classmuda_1_1_device_b_c_o_o_matrix.md) &lt;typename T, N&gt;<br> |
-| class | [**DeviceBCOOMatrix&lt; Ty, 1 &gt;**](classmuda_1_1_device_b_c_o_o_matrix_3_01_ty_00_011_01_4.md) &lt;typename Ty&gt;<br> |
+| class | [**DeviceBCOOMatrix**](classmuda_1_1_device_b_c_o_o_matrix.md) &lt;typename T, N&gt;<br> |
 | class | [**DeviceBCOOVector**](classmuda_1_1_device_b_c_o_o_vector.md) &lt;typename T, N&gt;<br> |
-| class | [**DeviceBCOOVector&lt; T, 1 &gt;**](classmuda_1_1_device_b_c_o_o_vector_3_01_t_00_011_01_4.md) &lt;typename T&gt;<br> |
+| class | [**DeviceBCOOVector**](classmuda_1_1_device_b_c_o_o_vector.md) &lt;typename T, N&gt;<br> |
 | class | [**DeviceBSRMatrix**](classmuda_1_1_device_b_s_r_matrix.md) &lt;typename Ty, N&gt;<br> |
 | class | [**DeviceBuffer**](classmuda_1_1_device_buffer.md) &lt;typename T&gt;<br>_A_ `std::vector` _like wrapper of cuda device memory, allows user to:_ |
 | class | [**DeviceBuffer2D**](classmuda_1_1_device_buffer2_d.md) &lt;typename T&gt;<br> |
 | class | [**DeviceBuffer3D**](classmuda_1_1_device_buffer3_d.md) &lt;typename T&gt;<br> |
-| class | [**DeviceCSRMatrix**](classmuda_1_1_device_c_s_r_matrix.md) &lt;typename Ty&gt;<br> |
 | class | [**DeviceDenseMatrix**](classmuda_1_1_device_dense_matrix.md) &lt;typename Ty&gt;<br> |
 | class | [**DeviceDenseVector**](classmuda_1_1_device_dense_vector.md) &lt;typename T&gt;<br> |
 | class | [**DeviceDoubletVector**](classmuda_1_1_device_doublet_vector.md) &lt;typename T, N&gt;<br> |
-| class | [**DeviceDoubletVector&lt; T, 1 &gt;**](classmuda_1_1_device_doublet_vector_3_01_t_00_011_01_4.md) &lt;typename T&gt;<br> |
 | class | [**DeviceHistogram**](classmuda_1_1_device_histogram.md) <br> |
 | class | [**DeviceMergeSort**](classmuda_1_1_device_merge_sort.md) <br> |
 | class | [**DevicePartition**](classmuda_1_1_device_partition.md) <br> |
@@ -113,15 +101,11 @@
 | class | [**DeviceSelect**](classmuda_1_1_device_select.md) <br> |
 | class | [**DeviceSpmv**](classmuda_1_1_device_spmv.md) <br> |
 | class | [**DeviceTripletMatrix**](classmuda_1_1_device_triplet_matrix.md) &lt;typename T, N&gt;<br> |
-| class | [**DeviceTripletMatrix&lt; T, 1 &gt;**](classmuda_1_1_device_triplet_matrix_3_01_t_00_011_01_4.md) &lt;typename T&gt;<br> |
 | class | [**DeviceVar**](classmuda_1_1_device_var.md) &lt;typename T&gt;<br> |
 | class | [**DeviceVector**](classmuda_1_1_device_vector.md) &lt;typename T&gt;<br> |
-| class | [**DoubletVectorViewBase**](classmuda_1_1_doublet_vector_view_base.md) &lt;IsConst, typename T, N&gt;<br> |
-| class | [**DoubletVectorViewBase&lt; IsConst, T, 1 &gt;**](classmuda_1_1_doublet_vector_view_base_3_01_is_const_00_01_t_00_011_01_4.md) &lt;IsConst, typename T&gt;<br> |
-| class | [**DoubletVectorViewer**](classmuda_1_1_doublet_vector_viewer.md) &lt;typename T, N&gt;<br> |
-| class | [**DoubletVectorViewer&lt; T, 1 &gt;**](classmuda_1_1_doublet_vector_viewer_3_01_t_00_011_01_4.md) &lt;typename T&gt;<br> |
-| class | [**DoubletVectorViewerBase**](classmuda_1_1_doublet_vector_viewer_base.md) &lt;IsConst, typename T, N&gt;<br> |
-| class | [**DoubletVectorViewerBase&lt; IsConst, T, 1 &gt;**](classmuda_1_1_doublet_vector_viewer_base_3_01_is_const_00_01_t_00_011_01_4.md) &lt;IsConst, typename T&gt;<br> |
+| class | [**DoubletVectorViewT**](classmuda_1_1_doublet_vector_view_t.md) &lt;IsConst, typename T, N&gt;<br> |
+| class | [**DoubletVectorViewT**](classmuda_1_1_doublet_vector_view_t.md) &lt;IsConst, typename T, N&gt;<br> |
+| class | [**DoubletVectorViewerT**](classmuda_1_1_doublet_vector_viewer_t.md) &lt;IsConst, typename T, N&gt;<br> |
 | class | [**Empty**](classmuda_1_1_empty.md) <br> |
 | class | [**Event**](classmuda_1_1_event.md) <br>_RAII wrapper for cudaEvent._  |
 | class | [**EventRecordNode**](classmuda_1_1_event_record_node.md) <br> |
@@ -140,6 +124,8 @@
 | class | [**FieldEntryView**](classmuda_1_1_field_entry_view.md) &lt;typename T, Layout, M, N&gt;<br> |
 | class | [**FieldEntryViewBase**](classmuda_1_1_field_entry_view_base.md) &lt;IsConst, typename T, Layout, M, N&gt;<br> |
 | class | [**FieldEntryViewCore**](classmuda_1_1_field_entry_view_core.md) &lt;IsConst, typename T, Layout, M, N&gt;<br> |
+| class | [**FieldEntryViewer**](classmuda_1_1_field_entry_viewer.md) &lt;typename T, Layout, M, N&gt;<br> |
+| class | [**FieldEntryViewerBase**](classmuda_1_1_field_entry_viewer_base.md) &lt;IsConst, typename T, Layout, M, N&gt;<br> |
 | class | [**FieldEntryViewerCore**](classmuda_1_1_field_entry_viewer_core.md) &lt;IsConst, typename T, Layout, M, N&gt;<br> |
 | class | [**Flags**](classmuda_1_1_flags.md) &lt;typename BitType&gt;<br> |
 | class | [**Graph**](classmuda_1_1_graph.md) <br> |
@@ -189,17 +175,14 @@
 | class | [**Stream**](classmuda_1_1_stream.md) <br>_RAII wrapper for cudaStream._  |
 | class | [**SubField**](classmuda_1_1_sub_field.md) <br> |
 | class | [**SubFieldImpl**](classmuda_1_1_sub_field_impl.md) &lt;Layout&gt;<br> |
-| class | [**SubFieldImpl&lt; FieldEntryLayout::AoS &gt;**](classmuda_1_1_sub_field_impl_3_01_field_entry_layout_1_1_ao_s_01_4.md) &lt;&gt;<br> |
-| class | [**SubFieldImpl&lt; FieldEntryLayout::AoSoA &gt;**](classmuda_1_1_sub_field_impl_3_01_field_entry_layout_1_1_ao_so_a_01_4.md) &lt;&gt;<br> |
-| class | [**SubFieldImpl&lt; FieldEntryLayout::SoA &gt;**](classmuda_1_1_sub_field_impl_3_01_field_entry_layout_1_1_so_a_01_4.md) &lt;&gt;<br> |
+| class | [**SubFieldImpl**](classmuda_1_1_sub_field_impl.md) &lt;Layout&gt;<br> |
+| class | [**SubFieldImpl**](classmuda_1_1_sub_field_impl.md) &lt;Layout&gt;<br> |
+| class | [**SubFieldImpl**](classmuda_1_1_sub_field_impl.md) &lt;Layout&gt;<br> |
 | class | [**SubFieldInterface**](classmuda_1_1_sub_field_interface.md) <br> |
 | struct | [**Tag**](structmuda_1_1_tag.md) &lt;typename T&gt;<br> |
-| class | [**TripletMatrixViewBase**](classmuda_1_1_triplet_matrix_view_base.md) &lt;IsConst, typename Ty, N&gt;<br> |
-| class | [**TripletMatrixViewBase&lt; IsConst, Ty, 1 &gt;**](classmuda_1_1_triplet_matrix_view_base_3_01_is_const_00_01_ty_00_011_01_4.md) &lt;IsConst, typename Ty&gt;<br> |
-| class | [**TripletMatrixViewer**](classmuda_1_1_triplet_matrix_viewer.md) &lt;typename T, N&gt;<br> |
-| class | [**TripletMatrixViewer&lt; T, 1 &gt;**](classmuda_1_1_triplet_matrix_viewer_3_01_t_00_011_01_4.md) &lt;typename T&gt;<br> |
-| class | [**TripletMatrixViewerBase**](classmuda_1_1_triplet_matrix_viewer_base.md) &lt;IsConst, typename T, N&gt;<br> |
-| class | [**TripletMatrixViewerBase&lt; IsConst, T, 1 &gt;**](classmuda_1_1_triplet_matrix_viewer_base_3_01_is_const_00_01_t_00_011_01_4.md) &lt;IsConst, typename T&gt;<br> |
+| class | [**TripletMatrixViewT**](classmuda_1_1_triplet_matrix_view_t.md) &lt;IsConst, typename Ty, N&gt;<br> |
+| class | [**TripletMatrixViewT**](classmuda_1_1_triplet_matrix_view_t.md) &lt;IsConst, typename Ty, N&gt;<br> |
+| class | [**TripletMatrixViewerT**](classmuda_1_1_triplet_matrix_viewer_t.md) &lt;IsConst, typename T, N&gt;<br> |
 | class | [**VarId**](classmuda_1_1_var_id.md) <br> |
 | class | [**VarViewT**](classmuda_1_1_var_view_t.md) &lt;IsConst, typename T&gt;<br> |
 | class | [**ViewBase**](classmuda_1_1_view_base.md) &lt;IsConst\_&gt;<br> |
@@ -218,50 +201,46 @@
 | class | [**logic\_error**](classmuda_1_1logic__error.md) <br> |
 | class | [**not\_implemented**](classmuda_1_1not__implemented.md) <br> |
 | class | [**out\_of\_range**](classmuda_1_1out__of__range.md) <br> |
-| struct | [**read\_only\_viewer**](structmuda_1_1read__only__viewer.md) &lt;typename T&gt;<br> |
-| struct | [**read\_only\_viewer&lt; BSRMatrixView&lt; Ty, N &gt; &gt;**](structmuda_1_1read__only__viewer_3_01_b_s_r_matrix_view_3_01_ty_00_01_n_01_4_01_4.md) &lt;typename Ty, N&gt;<br> |
-| struct | [**read\_only\_viewer&lt; Buffer2DView&lt; T &gt; &gt;**](structmuda_1_1read__only__viewer_3_01_buffer2_d_view_3_01_t_01_4_01_4.md) &lt;typename T&gt;<br> |
-| struct | [**read\_only\_viewer&lt; Buffer3DView&lt; T &gt; &gt;**](structmuda_1_1read__only__viewer_3_01_buffer3_d_view_3_01_t_01_4_01_4.md) &lt;typename T&gt;<br> |
-| struct | [**read\_only\_viewer&lt; BufferView&lt; T &gt; &gt;**](structmuda_1_1read__only__viewer_3_01_buffer_view_3_01_t_01_4_01_4.md) &lt;typename T&gt;<br> |
-| struct | [**read\_only\_viewer&lt; COOMatrixView&lt; T &gt; &gt;**](structmuda_1_1read__only__viewer_3_01_c_o_o_matrix_view_3_01_t_01_4_01_4.md) &lt;typename T&gt;<br> |
-| struct | [**read\_only\_viewer&lt; COOVectorView&lt; T &gt; &gt;**](structmuda_1_1read__only__viewer_3_01_c_o_o_vector_view_3_01_t_01_4_01_4.md) &lt;typename T&gt;<br> |
-| struct | [**read\_only\_viewer&lt; CSRMatrixView&lt; Ty &gt; &gt;**](structmuda_1_1read__only__viewer_3_01_c_s_r_matrix_view_3_01_ty_01_4_01_4.md) &lt;typename Ty&gt;<br> |
-| struct | [**read\_only\_viewer&lt; Dense1D&lt; T &gt; &gt;**](structmuda_1_1read__only__viewer_3_01_dense1_d_3_01_t_01_4_01_4.md) &lt;typename T&gt;<br> |
-| struct | [**read\_only\_viewer&lt; Dense2D&lt; T &gt; &gt;**](structmuda_1_1read__only__viewer_3_01_dense2_d_3_01_t_01_4_01_4.md) &lt;typename T&gt;<br> |
-| struct | [**read\_only\_viewer&lt; Dense3D&lt; T &gt; &gt;**](structmuda_1_1read__only__viewer_3_01_dense3_d_3_01_t_01_4_01_4.md) &lt;typename T&gt;<br> |
-| struct | [**read\_only\_viewer&lt; Dense&lt; T &gt; &gt;**](structmuda_1_1read__only__viewer_3_01_dense_3_01_t_01_4_01_4.md) &lt;typename T&gt;<br> |
-| struct | [**read\_only\_viewer&lt; DenseVectorView&lt; Ty &gt; &gt;**](structmuda_1_1read__only__viewer_3_01_dense_vector_view_3_01_ty_01_4_01_4.md) &lt;typename Ty&gt;<br> |
-| struct | [**read\_only\_viewer&lt; DenseVectorViewer&lt; T &gt; &gt;**](structmuda_1_1read__only__viewer_3_01_dense_vector_viewer_3_01_t_01_4_01_4.md) &lt;typename T&gt;<br> |
-| struct | [**read\_only\_viewer&lt; DoubletVectorView&lt; Ty, N &gt; &gt;**](structmuda_1_1read__only__viewer_3_01_doublet_vector_view_3_01_ty_00_01_n_01_4_01_4.md) &lt;typename Ty, N&gt;<br> |
-| struct | [**read\_only\_viewer&lt; FieldEntryView&lt; T, Layout, M, N &gt; &gt;**](structmuda_1_1read__only__viewer_3_01_field_entry_view_3_01_t_00_01_layout_00_01_m_00_01_n_01_4_01_4.md) &lt;typename T, Layout, M, N&gt;<br> |
-| struct | [**read\_only\_viewer&lt; GraphViewer &gt;**](structmuda_1_1read__only__viewer_3_01_graph_viewer_01_4.md) &lt;&gt;<br> |
-| struct | [**read\_only\_viewer&lt; T \* &gt;**](structmuda_1_1read__only__viewer_3_01_t_01_5_01_4.md) &lt;typename T&gt;<br> |
-| struct | [**read\_only\_viewer&lt; TripletMatrixView&lt; Ty, N &gt; &gt;**](structmuda_1_1read__only__viewer_3_01_triplet_matrix_view_3_01_ty_00_01_n_01_4_01_4.md) &lt;typename Ty, N&gt;<br> |
-| struct | [**read\_only\_viewer&lt; VarView&lt; T &gt; &gt;**](structmuda_1_1read__only__viewer_3_01_var_view_3_01_t_01_4_01_4.md) &lt;typename T&gt;<br> |
-| struct | [**read\_only\_viewer&lt; cudaEvent\_t &gt;**](structmuda_1_1read__only__viewer_3_01cuda_event__t_01_4.md) &lt;&gt;<br> |
-| struct | [**read\_only\_viewer&lt; lbvh::BVHViewer&lt; Real, Object &gt; &gt;**](structmuda_1_1read__only__viewer_3_01lbvh_1_1_b_v_h_viewer_3_01_real_00_01_object_01_4_01_4.md) &lt;typename Real, typename Object&gt;<br> |
-| struct | [**read\_write\_viewer**](structmuda_1_1read__write__viewer.md) &lt;typename T&gt;<br> |
-| struct | [**read\_write\_viewer&lt; CBSRMatrixView&lt; Ty, N &gt; &gt;**](structmuda_1_1read__write__viewer_3_01_c_b_s_r_matrix_view_3_01_ty_00_01_n_01_4_01_4.md) &lt;typename Ty, N&gt;<br> |
-| struct | [**read\_write\_viewer&lt; CBuffer2DView&lt; T &gt; &gt;**](structmuda_1_1read__write__viewer_3_01_c_buffer2_d_view_3_01_t_01_4_01_4.md) &lt;typename T&gt;<br> |
-| struct | [**read\_write\_viewer&lt; CBuffer3DView&lt; T &gt; &gt;**](structmuda_1_1read__write__viewer_3_01_c_buffer3_d_view_3_01_t_01_4_01_4.md) &lt;typename T&gt;<br> |
-| struct | [**read\_write\_viewer&lt; CBufferView&lt; T &gt; &gt;**](structmuda_1_1read__write__viewer_3_01_c_buffer_view_3_01_t_01_4_01_4.md) &lt;typename T&gt;<br> |
-| struct | [**read\_write\_viewer&lt; CCOOMatrixView&lt; T &gt; &gt;**](structmuda_1_1read__write__viewer_3_01_c_c_o_o_matrix_view_3_01_t_01_4_01_4.md) &lt;typename T&gt;<br> |
-| struct | [**read\_write\_viewer&lt; CCOOVectorView&lt; T &gt; &gt;**](structmuda_1_1read__write__viewer_3_01_c_c_o_o_vector_view_3_01_t_01_4_01_4.md) &lt;typename T&gt;<br> |
-| struct | [**read\_write\_viewer&lt; CDense1D&lt; T &gt; &gt;**](structmuda_1_1read__write__viewer_3_01_c_dense1_d_3_01_t_01_4_01_4.md) &lt;typename T&gt;<br> |
-| struct | [**read\_write\_viewer&lt; CDense2D&lt; T &gt; &gt;**](structmuda_1_1read__write__viewer_3_01_c_dense2_d_3_01_t_01_4_01_4.md) &lt;typename T&gt;<br> |
-| struct | [**read\_write\_viewer&lt; CDense3D&lt; T &gt; &gt;**](structmuda_1_1read__write__viewer_3_01_c_dense3_d_3_01_t_01_4_01_4.md) &lt;typename T&gt;<br> |
-| struct | [**read\_write\_viewer&lt; CDense&lt; T &gt; &gt;**](structmuda_1_1read__write__viewer_3_01_c_dense_3_01_t_01_4_01_4.md) &lt;typename T&gt;<br> |
-| struct | [**read\_write\_viewer&lt; CDenseVectorViewer&lt; T &gt; &gt;**](structmuda_1_1read__write__viewer_3_01_c_dense_vector_viewer_3_01_t_01_4_01_4.md) &lt;typename T&gt;<br> |
-| struct | [**read\_write\_viewer&lt; CDoubletVectorView&lt; Ty, N &gt; &gt;**](structmuda_1_1read__write__viewer_3_01_c_doublet_vector_view_3_01_ty_00_01_n_01_4_01_4.md) &lt;typename Ty, N&gt;<br> |
-| struct | [**read\_write\_viewer&lt; CFieldEntryView&lt; T, Layout, M, N &gt; &gt;**](structmuda_1_1read__write__viewer_3_01_c_field_entry_view_3_01_t_00_01_layout_00_01_m_00_01_n_01_4_01_4.md) &lt;typename T, Layout, M, N&gt;<br> |
-| struct | [**read\_write\_viewer&lt; CSRMatrixView&lt; Ty &gt; &gt;**](structmuda_1_1read__write__viewer_3_01_c_s_r_matrix_view_3_01_ty_01_4_01_4.md) &lt;typename Ty&gt;<br> |
-| struct | [**read\_write\_viewer&lt; CVarView&lt; T &gt; &gt;**](structmuda_1_1read__write__viewer_3_01_c_var_view_3_01_t_01_4_01_4.md) &lt;typename T&gt;<br> |
-| struct | [**read\_write\_viewer&lt; DenseVectorView&lt; Ty &gt; &gt;**](structmuda_1_1read__write__viewer_3_01_dense_vector_view_3_01_ty_01_4_01_4.md) &lt;typename Ty&gt;<br> |
-| struct | [**read\_write\_viewer&lt; GraphViewer &gt;**](structmuda_1_1read__write__viewer_3_01_graph_viewer_01_4.md) &lt;&gt;<br> |
-| struct | [**read\_write\_viewer&lt; TripletMatrixView&lt; Ty, N &gt; &gt;**](structmuda_1_1read__write__viewer_3_01_triplet_matrix_view_3_01_ty_00_01_n_01_4_01_4.md) &lt;typename Ty, N&gt;<br> |
-| struct | [**read\_write\_viewer&lt; const T \* &gt;**](structmuda_1_1read__write__viewer_3_01const_01_t_01_5_01_4.md) &lt;typename T&gt;<br> |
-| struct | [**read\_write\_viewer&lt; cudaEvent\_t &gt;**](structmuda_1_1read__write__viewer_3_01cuda_event__t_01_4.md) &lt;&gt;<br> |
-| struct | [**read\_write\_viewer&lt; lbvh::CBVHViewer&lt; Real, Object &gt; &gt;**](structmuda_1_1read__write__viewer_3_01lbvh_1_1_c_b_v_h_viewer_3_01_real_00_01_object_01_4_01_4.md) &lt;typename Real, typename Object&gt;<br> |
+| struct | [**read\_only\_view**](structmuda_1_1read__only__view.md) &lt;typename T&gt;<br> |
+| struct | [**read\_only\_view**](structmuda_1_1read__only__view.md) &lt;typename T&gt;<br> |
+| struct | [**read\_only\_view**](structmuda_1_1read__only__view.md) &lt;typename T&gt;<br> |
+| struct | [**read\_only\_view**](structmuda_1_1read__only__view.md) &lt;typename T&gt;<br> |
+| struct | [**read\_only\_view**](structmuda_1_1read__only__view.md) &lt;typename T&gt;<br> |
+| struct | [**read\_only\_view**](structmuda_1_1read__only__view.md) &lt;typename T&gt;<br> |
+| struct | [**read\_only\_view**](structmuda_1_1read__only__view.md) &lt;typename T&gt;<br> |
+| struct | [**read\_only\_view**](structmuda_1_1read__only__view.md) &lt;typename T&gt;<br> |
+| struct | [**read\_only\_view**](structmuda_1_1read__only__view.md) &lt;typename T&gt;<br> |
+| struct | [**read\_only\_view**](structmuda_1_1read__only__view.md) &lt;typename T&gt;<br> |
+| struct | [**read\_only\_view**](structmuda_1_1read__only__view.md) &lt;typename T&gt;<br> |
+| struct | [**read\_only\_view**](structmuda_1_1read__only__view.md) &lt;typename T&gt;<br> |
+| struct | [**read\_only\_view**](structmuda_1_1read__only__view.md) &lt;typename T&gt;<br> |
+| struct | [**read\_only\_view**](structmuda_1_1read__only__view.md) &lt;typename T&gt;<br> |
+| struct | [**read\_only\_view**](structmuda_1_1read__only__view.md) &lt;typename T&gt;<br> |
+| struct | [**read\_only\_view**](structmuda_1_1read__only__view.md) &lt;typename T&gt;<br> |
+| struct | [**read\_only\_view**](structmuda_1_1read__only__view.md) &lt;typename T&gt;<br> |
+| struct | [**read\_only\_view**](structmuda_1_1read__only__view.md) &lt;typename T&gt;<br> |
+| struct | [**read\_only\_view**](structmuda_1_1read__only__view.md) &lt;typename T&gt;<br> |
+| struct | [**read\_only\_view**](structmuda_1_1read__only__view.md) &lt;typename T&gt;<br> |
+| struct | [**read\_write\_view**](structmuda_1_1read__write__view.md) &lt;typename T&gt;<br> |
+| struct | [**read\_write\_view**](structmuda_1_1read__write__view.md) &lt;typename T&gt;<br> |
+| struct | [**read\_write\_view**](structmuda_1_1read__write__view.md) &lt;typename T&gt;<br> |
+| struct | [**read\_write\_view**](structmuda_1_1read__write__view.md) &lt;typename T&gt;<br> |
+| struct | [**read\_write\_view**](structmuda_1_1read__write__view.md) &lt;typename T&gt;<br> |
+| struct | [**read\_write\_view**](structmuda_1_1read__write__view.md) &lt;typename T&gt;<br> |
+| struct | [**read\_write\_view**](structmuda_1_1read__write__view.md) &lt;typename T&gt;<br> |
+| struct | [**read\_write\_view**](structmuda_1_1read__write__view.md) &lt;typename T&gt;<br> |
+| struct | [**read\_write\_view**](structmuda_1_1read__write__view.md) &lt;typename T&gt;<br> |
+| struct | [**read\_write\_view**](structmuda_1_1read__write__view.md) &lt;typename T&gt;<br> |
+| struct | [**read\_write\_view**](structmuda_1_1read__write__view.md) &lt;typename T&gt;<br> |
+| struct | [**read\_write\_view**](structmuda_1_1read__write__view.md) &lt;typename T&gt;<br> |
+| struct | [**read\_write\_view**](structmuda_1_1read__write__view.md) &lt;typename T&gt;<br> |
+| struct | [**read\_write\_view**](structmuda_1_1read__write__view.md) &lt;typename T&gt;<br> |
+| struct | [**read\_write\_view**](structmuda_1_1read__write__view.md) &lt;typename T&gt;<br> |
+| struct | [**read\_write\_view**](structmuda_1_1read__write__view.md) &lt;typename T&gt;<br> |
+| struct | [**read\_write\_view**](structmuda_1_1read__write__view.md) &lt;typename T&gt;<br> |
+| struct | [**read\_write\_view**](structmuda_1_1read__write__view.md) &lt;typename T&gt;<br> |
+| struct | [**read\_write\_view**](structmuda_1_1read__write__view.md) &lt;typename T&gt;<br> |
+| struct | [**read\_write\_view**](structmuda_1_1read__write__view.md) &lt;typename T&gt;<br> |
 | class | [**runtime\_error**](classmuda_1_1runtime__error.md) <br> |
 
 
@@ -269,39 +248,45 @@
 
 | Type | Name |
 | ---: | :--- |
-| typedef [**TripletMatrixView**](classmuda_1_1_triplet_matrix_view_base.md)&lt; T, N &gt; | [**BCOOMatrixView**](#typedef-bcoomatrixview)  <br> |
-| typedef [**CTripletMatrixViewer**](classmuda_1_1_c_triplet_matrix_viewer.md)&lt; T, N &gt; | [**BCOOMatrixViewer**](#typedef-bcoomatrixviewer)  <br> |
-| typedef [**DoubletVectorView**](classmuda_1_1_doublet_vector_view_base.md)&lt; T, N &gt; | [**BCOOVectorView**](#typedef-bcoovectorview)  <br> |
-| typedef [**CDoubletVectorViewer**](classmuda_1_1_c_doublet_vector_viewer.md)&lt; T, N &gt; | [**BCOOVectorViewer**](#typedef-bcoovectorviewer)  <br> |
-| typedef [**BSRMatrixViewBase**](classmuda_1_1_b_s_r_matrix_view_base.md)&lt; false, Ty, N &gt; | [**BSRMatrixView**](#typedef-bsrmatrixview)  <br> |
+| typedef [**TripletMatrixView**](classmuda_1_1_triplet_matrix_view_t.md)&lt; T, N &gt; | [**BCOOMatrixView**](#typedef-bcoomatrixview)  <br> |
+| typedef [**CTripletMatrixViewer**](classmuda_1_1_triplet_matrix_viewer_t.md)&lt; T, N &gt; | [**BCOOMatrixViewer**](#typedef-bcoomatrixviewer)  <br> |
+| typedef [**DoubletVectorView**](classmuda_1_1_doublet_vector_view_t.md)&lt; T, N &gt; | [**BCOOVectorView**](#typedef-bcoovectorview)  <br> |
+| typedef [**CDoubletVectorViewer**](classmuda_1_1_doublet_vector_viewer_t.md)&lt; T, N &gt; | [**BCOOVectorViewer**](#typedef-bcoovectorviewer)  <br> |
+| typedef [**BSRMatrixViewT**](classmuda_1_1_b_s_r_matrix_view_t.md)&lt; false, Ty, N &gt; | [**BSRMatrixView**](#typedef-bsrmatrixview)  <br> |
 | typedef [**Buffer2DViewT**](classmuda_1_1_buffer2_d_view_t.md)&lt; false, T &gt; | [**Buffer2DView**](#typedef-buffer2dview)  <br> |
 | typedef [**Buffer3DViewT**](classmuda_1_1_buffer3_d_view_t.md)&lt; false, T &gt; | [**Buffer3DView**](#typedef-buffer3dview)  <br> |
 | typedef [**BufferViewT**](classmuda_1_1_buffer_view_t.md)&lt; false, T &gt; | [**BufferView**](#typedef-bufferview)  <br> |
-| typedef [**CTripletMatrixView**](classmuda_1_1_triplet_matrix_view_base.md)&lt; T, N &gt; | [**CBCOOMatrixView**](#typedef-cbcoomatrixview)  <br> |
-| typedef [**CTripletMatrixViewer**](classmuda_1_1_c_triplet_matrix_viewer.md)&lt; T, N &gt; | [**CBCOOMatrixViewer**](#typedef-cbcoomatrixviewer)  <br> |
-| typedef [**CDoubletVectorView**](classmuda_1_1_doublet_vector_view_base.md)&lt; T, N &gt; | [**CBCOOVectorView**](#typedef-cbcoovectorview)  <br> |
-| typedef [**CDoubletVectorViewer**](classmuda_1_1_c_doublet_vector_viewer.md)&lt; T, N &gt; | [**CBCOOVectorViewer**](#typedef-cbcoovectorviewer)  <br> |
-| typedef [**BSRMatrixViewBase**](classmuda_1_1_b_s_r_matrix_view_base.md)&lt; true, Ty, N &gt; | [**CBSRMatrixView**](#typedef-cbsrmatrixview)  <br> |
+| typedef [**CTripletMatrixView**](classmuda_1_1_triplet_matrix_view_t.md)&lt; T, N &gt; | [**CBCOOMatrixView**](#typedef-cbcoomatrixview)  <br> |
+| typedef [**CTripletMatrixViewer**](classmuda_1_1_triplet_matrix_viewer_t.md)&lt; T, N &gt; | [**CBCOOMatrixViewer**](#typedef-cbcoomatrixviewer)  <br> |
+| typedef [**CDoubletVectorView**](classmuda_1_1_doublet_vector_view_t.md)&lt; T, N &gt; | [**CBCOOVectorView**](#typedef-cbcoovectorview)  <br> |
+| typedef [**CDoubletVectorViewer**](classmuda_1_1_doublet_vector_viewer_t.md)&lt; T, N &gt; | [**CBCOOVectorViewer**](#typedef-cbcoovectorviewer)  <br> |
+| typedef [**BSRMatrixViewT**](classmuda_1_1_b_s_r_matrix_view_t.md)&lt; true, Ty, N &gt; | [**CBSRMatrixView**](#typedef-cbsrmatrixview)  <br> |
 | typedef [**Buffer2DViewT**](classmuda_1_1_buffer2_d_view_t.md)&lt; true, T &gt; | [**CBuffer2DView**](#typedef-cbuffer2dview)  <br> |
 | typedef [**Buffer3DViewT**](classmuda_1_1_buffer3_d_view_t.md)&lt; true, T &gt; | [**CBuffer3DView**](#typedef-cbuffer3dview)  <br> |
 | typedef [**BufferViewT**](classmuda_1_1_buffer_view_t.md)&lt; true, T &gt; | [**CBufferView**](#typedef-cbufferview)  <br> |
-| typedef [**COOMatrixViewBase**](classmuda_1_1_c_o_o_matrix_view_base.md)&lt; true, Ty &gt; | [**CCOOMatrixView**](#typedef-ccoomatrixview)  <br> |
-| typedef [**CBCOOMatrixViewer**](classmuda_1_1_c_triplet_matrix_viewer.md)&lt; T, 1 &gt; | [**CCOOMatrixViewer**](#typedef-ccoomatrixviewer)  <br> |
+| typedef [**COOMatrixViewT**](classmuda_1_1_c_o_o_matrix_view_t.md)&lt; true, Ty &gt; | [**CCOOMatrixView**](#typedef-ccoomatrixview)  <br> |
+| typedef CBCOOMatrixViewer&lt; T, 1 &gt; | [**CCOOMatrixViewer**](#typedef-ccoomatrixviewer)  <br> |
 | typedef [**COOVectorViewBase**](classmuda_1_1_c_o_o_vector_view_base.md)&lt; true, T &gt; | [**CCOOVectorView**](#typedef-ccoovectorview)  <br> |
-| typedef [**CBCOOVectorViewer**](classmuda_1_1_c_doublet_vector_viewer.md)&lt; T, 1 &gt; | [**CCOOVectorViewer**](#typedef-ccoovectorviewer)  <br> |
-| typedef [**CSRMatrixViewBase**](classmuda_1_1_c_s_r_matrix_view_base.md)&lt; true, Ty &gt; | [**CCSRMatrixView**](#typedef-ccsrmatrixview)  <br> |
+| typedef CBCOOVectorViewer&lt; T, 1 &gt; | [**CCOOVectorViewer**](#typedef-ccoovectorviewer)  <br> |
+| typedef [**CSRMatrixViewT**](classmuda_1_1_b_s_r_matrix_view_t.md)&lt; true, Ty &gt; | [**CCSRMatrixView**](#typedef-ccsrmatrixview)  <br> |
 | typedef [**DenseViewerT**](classmuda_1_1_dense_viewer_t.md)&lt; true, T &gt; | [**CDense**](#typedef-cdense)  <br> |
 | typedef [**Dense1DT**](classmuda_1_1_dense1_d_t.md)&lt; true, T &gt; | [**CDense1D**](#typedef-cdense1d)  <br> |
 | typedef [**Dense2DBase**](classmuda_1_1_dense2_d_base.md)&lt; true, T &gt; | [**CDense2D**](#typedef-cdense2d)  <br> |
 | typedef [**Dense3DBase**](classmuda_1_1_dense3_d_base.md)&lt; true, T &gt; | [**CDense3D**](#typedef-cdense3d)  <br> |
-| typedef [**DenseVectorViewBase**](classmuda_1_1_dense_vector_view_base.md)&lt; true, Ty &gt; | [**CDenseVectorView**](#typedef-cdensevectorview)  <br> |
-| typedef [**DoubletVectorViewBase**](classmuda_1_1_doublet_vector_view_base.md)&lt; true, T, N &gt; | [**CDoubletVectorView**](#typedef-cdoubletvectorview)  <br> |
-| typedef [**COOMatrixViewBase**](classmuda_1_1_c_o_o_matrix_view_base.md)&lt; false, Ty &gt; | [**COOMatrixView**](#typedef-coomatrixview)  <br> |
-| typedef [**BCOOMatrixViewer**](classmuda_1_1_c_triplet_matrix_viewer.md)&lt; T, 1 &gt; | [**COOMatrixViewer**](#typedef-coomatrixviewer)  <br> |
+| typedef [**DenseMatrixViewT**](classmuda_1_1_dense_matrix_view_t.md)&lt; true, Ty &gt; | [**CDenseMatrixView**](#typedef-cdensematrixview)  <br> |
+| typedef [**DenseMatrixViewerT**](classmuda_1_1_dense_matrix_viewer_t.md)&lt; true, T &gt; | [**CDenseMatrixViewer**](#typedef-cdensematrixviewer)  <br> |
+| typedef [**DenseVectorViewT**](classmuda_1_1_dense_vector_view_t.md)&lt; true, Ty &gt; | [**CDenseVectorView**](#typedef-cdensevectorview)  <br> |
+| typedef [**DenseVectorViewerT**](classmuda_1_1_dense_vector_viewer_t.md)&lt; true, T &gt; | [**CDenseVectorViewer**](#typedef-cdensevectorviewer)  <br> |
+| typedef [**DoubletVectorViewT**](classmuda_1_1_doublet_vector_view_t.md)&lt; true, T, N &gt; | [**CDoubletVectorView**](#typedef-cdoubletvectorview)  <br> |
+| typedef [**DoubletVectorViewerT**](classmuda_1_1_doublet_vector_viewer_t.md)&lt; true, T, N &gt; | [**CDoubletVectorViewer**](#typedef-cdoubletvectorviewer)  <br> |
+| typedef [**COOMatrixViewT**](classmuda_1_1_c_o_o_matrix_view_t.md)&lt; false, Ty &gt; | [**COOMatrixView**](#typedef-coomatrixview)  <br> |
+| typedef BCOOMatrixViewer&lt; T, 1 &gt; | [**COOMatrixViewer**](#typedef-coomatrixviewer)  <br> |
 | typedef [**COOVectorViewBase**](classmuda_1_1_c_o_o_vector_view_base.md)&lt; false, T &gt; | [**COOVectorView**](#typedef-coovectorview)  <br> |
-| typedef [**BCOOVectorViewer**](classmuda_1_1_c_doublet_vector_viewer.md)&lt; T, 1 &gt; | [**COOVectorViewer**](#typedef-coovectorviewer)  <br> |
-| typedef [**CSRMatrixViewBase**](classmuda_1_1_c_s_r_matrix_view_base.md)&lt; false, Ty &gt; | [**CSRMatrixView**](#typedef-csrmatrixview)  <br> |
-| typedef [**TripletMatrixViewBase**](classmuda_1_1_triplet_matrix_view_base.md)&lt; true, Ty, N &gt; | [**CTripletMatrixView**](#typedef-ctripletmatrixview)  <br> |
+| typedef BCOOVectorViewer&lt; T, 1 &gt; | [**COOVectorViewer**](#typedef-coovectorviewer)  <br> |
+| typedef [**CSRMatrixViewT**](classmuda_1_1_b_s_r_matrix_view_t.md)&lt; false, Ty &gt; | [**CSRMatrixView**](#typedef-csrmatrixview)  <br> |
+| typedef [**BSRMatrixViewT**](classmuda_1_1_b_s_r_matrix_view_t.md)&lt; IsConst, Ty, 1 &gt; | [**CSRMatrixViewT**](#typedef-csrmatrixviewt)  <br> |
+| typedef [**TripletMatrixViewT**](classmuda_1_1_triplet_matrix_view_t.md)&lt; true, Ty, N &gt; | [**CTripletMatrixView**](#typedef-ctripletmatrixview)  <br> |
+| typedef [**TripletMatrixViewerT**](classmuda_1_1_triplet_matrix_viewer_t.md)&lt; true, T, N &gt; | [**CTripletMatrixViewer**](#typedef-ctripletmatrixviewer)  <br> |
 | typedef [**VarViewT**](classmuda_1_1_var_view_t.md)&lt; true, T &gt; | [**CVarView**](#typedef-cvarview)  <br> |
 | typedef [**ComputeGraphNode**](classmuda_1_1_compute_graph_node.md)&lt; [**EventRecordNode**](classmuda_1_1_event_record_node.md), ComputeGraphNodeType::EventRecordNode &gt; | [**ComputeGraphEventRecordNode**](#typedef-computegrapheventrecordnode)  <br> |
 | typedef [**ComputeGraphNode**](classmuda_1_1_compute_graph_node.md)&lt; [**EventWaitNode**](classmuda_1_1_event_wait_node.md), ComputeGraphNodeType::EventWaitNode &gt; | [**ComputeGraphEventWaitNode**](#typedef-computegrapheventwaitnode)  <br> |
@@ -317,10 +302,15 @@
 | typedef [**Dense1DT**](classmuda_1_1_dense1_d_t.md)&lt; false, T &gt; | [**Dense1D**](#typedef-dense1d)  <br> |
 | typedef [**Dense2DBase**](classmuda_1_1_dense2_d_base.md)&lt; false, T &gt; | [**Dense2D**](#typedef-dense2d)  <br> |
 | typedef [**Dense3DBase**](classmuda_1_1_dense3_d_base.md)&lt; false, T &gt; | [**Dense3D**](#typedef-dense3d)  <br> |
-| typedef [**DenseVectorViewBase**](classmuda_1_1_dense_vector_view_base.md)&lt; false, Ty &gt; | [**DenseVectorView**](#typedef-densevectorview)  <br> |
+| typedef [**DenseMatrixViewT**](classmuda_1_1_dense_matrix_view_t.md)&lt; false, Ty &gt; | [**DenseMatrixView**](#typedef-densematrixview)  <br> |
+| typedef [**DenseMatrixViewerT**](classmuda_1_1_dense_matrix_viewer_t.md)&lt; false, T &gt; | [**DenseMatrixViewer**](#typedef-densematrixviewer)  <br> |
+| typedef [**DenseVectorViewT**](classmuda_1_1_dense_vector_view_t.md)&lt; false, Ty &gt; | [**DenseVectorView**](#typedef-densevectorview)  <br> |
+| typedef [**DenseVectorViewerT**](classmuda_1_1_dense_vector_viewer_t.md)&lt; false, T &gt; | [**DenseVectorViewer**](#typedef-densevectorviewer)  <br> |
 | typedef [**DeviceBCOOMatrix**](classmuda_1_1_device_b_c_o_o_matrix.md)&lt; T, 1 &gt; | [**DeviceCOOMatrix**](#typedef-devicecoomatrix)  <br> |
 | typedef [**DeviceBCOOVector**](classmuda_1_1_device_b_c_o_o_vector.md)&lt; T, 1 &gt; | [**DeviceCOOVector**](#typedef-devicecoovector)  <br> |
-| typedef [**DoubletVectorViewBase**](classmuda_1_1_doublet_vector_view_base.md)&lt; false, T, N &gt; | [**DoubletVectorView**](#typedef-doubletvectorview)  <br> |
+| typedef [**DeviceBSRMatrix**](classmuda_1_1_device_b_s_r_matrix.md)&lt; T, 1 &gt; | [**DeviceCSRMatrix**](#typedef-devicecsrmatrix)  <br> |
+| typedef [**DoubletVectorViewT**](classmuda_1_1_doublet_vector_view_t.md)&lt; false, T, N &gt; | [**DoubletVectorView**](#typedef-doubletvectorview)  <br> |
+| typedef [**DoubletVectorViewerT**](classmuda_1_1_doublet_vector_viewer_t.md)&lt; false, T, N &gt; | [**DoubletVectorViewer**](#typedef-doubletvectorviewer)  <br> |
 | enum  | [**FieldEntryLayout**](#enum-fieldentrylayout)  <br> |
 | enum  | [**FieldEntryType**](#enum-fieldentrytype)  <br> |
 | enum  | [**GraphInstantiateFlagBit**](#enum-graphinstantiateflagbit)  <br> |
@@ -331,13 +321,14 @@
 | enum uint16\_t | [**LoggerBasicType**](#enum-loggerbasictype)  <br> |
 | typedef void(\*)(void \*formatter, const void \*obj) | [**LoggerFmtArg**](#typedef-loggerfmtarg)  <br> |
 | enum uint32\_t | [**ParallelForType**](#enum-parallelfortype)  <br> |
-| typedef [**TripletMatrixViewBase**](classmuda_1_1_triplet_matrix_view_base.md)&lt; false, Ty, N &gt; | [**TripletMatrixView**](#typedef-tripletmatrixview)  <br> |
+| typedef [**TripletMatrixViewT**](classmuda_1_1_triplet_matrix_view_t.md)&lt; false, Ty, N &gt; | [**TripletMatrixView**](#typedef-tripletmatrixview)  <br> |
+| typedef [**TripletMatrixViewerT**](classmuda_1_1_triplet_matrix_viewer_t.md)&lt; false, T, N &gt; | [**TripletMatrixViewer**](#typedef-tripletmatrixviewer)  <br> |
 | typedef [**IdWithType**](classmuda_1_1_id_with_type.md)&lt; uint32\_t &gt; | [**U32IdWithType**](#typedef-u32idwithtype)  <br> |
 | typedef [**IdWithType**](classmuda_1_1_id_with_type.md)&lt; uint64\_t &gt; | [**U64IdWithType**](#typedef-u64idwithtype)  <br> |
 | typedef [**VarViewT**](classmuda_1_1_var_view_t.md)&lt; false, T &gt; | [**VarView**](#typedef-varview)  <br> |
 | typedef std::remove\_all\_extents\_t&lt; std::remove\_reference\_t&lt; T &gt; &gt; | [**raw\_type\_t**](#typedef-raw_type_t)  <br> |
-| typedef typename [**read\_only\_viewer**](structmuda_1_1read__only__viewer.md)&lt; T &gt;::type | [**read\_only\_viewer\_t**](#typedef-read_only_viewer_t)  <br> |
-| typedef typename [**read\_write\_viewer**](structmuda_1_1read__write__viewer.md)&lt; T &gt;::type | [**read\_write\_viewer\_t**](#typedef-read_write_viewer_t)  <br> |
+| typedef typename [**read\_only\_view**](structmuda_1_1read__only__view.md)&lt; T &gt;::type | [**read\_only\_view\_t**](#typedef-read_only_view_t)  <br> |
+| typedef typename [**read\_write\_view**](structmuda_1_1read__write__view.md)&lt; T &gt;::type | [**read\_write\_view\_t**](#typedef-read_write_view_t)  <br> |
 | typedef tcb::span&lt; T &gt; | [**span**](#typedef-span)  <br> |
 
 
@@ -347,36 +338,35 @@
 
 | Type | Name |
 | ---: | :--- |
-|  constexpr bool | [**COMPUTE\_GRAPH\_ON**](#variable-compute_graph_on)   = = MUDA\_COMPUTE\_GRAPH\_ON<br> |
-|  constexpr bool | [**DEBUG\_VIEWER**](#variable-debug_viewer)   = = config::on(true)<br> |
-|  constexpr bool | [**DEFAULT\_ASYNC\_ALLOC\_FREE**](#variable-default_async_alloc_free)   = = false<br> |
-|  constexpr int | [**HEAVY\_WORKLOAD\_BLOCK\_SIZE**](#variable-heavy_workload_block_size)   = = 64<br> |
-|  constexpr int | [**LIGHT\_WORKLOAD\_BLOCK\_SIZE**](#variable-light_workload_block_size)   = = 256<br> |
-|  constexpr int | [**MIDDLE\_WORKLOAD\_BLOCK\_SIZE**](#variable-middle_workload_block_size)   = = 128<br> |
-|  constexpr bool | [**RUNTIME\_CHECK\_ON**](#variable-runtime_check_on)   = = MUDA\_CHECK\_ON<br> |
-|  constexpr bool | [**TRAP\_ON\_ERROR**](#variable-trap_on_error)   = = config::on(true)<br> |
-|  constexpr bool | [**always\_false\_v**](#variable-always_false_v)   = = [**always\_false**](structmuda_1_1always__false.md)&lt;T&gt;::value<br> |
-|  constexpr bool | [**force\_trivial\_v**](#variable-force_trivial_v)   = = [**force\_trivial**](structmuda_1_1force__trivial.md)&lt;T&gt;::value<br> |
-|  constexpr bool | [**force\_trivially\_constructible\_v**](#variable-force_trivially_constructible_v)   = = [**force\_trivially\_constructible**](structmuda_1_1force__trivially__constructible.md)&lt;T&gt;::value<br> |
-|  constexpr bool | [**force\_trivially\_copy\_assignable\_v**](#variable-force_trivially_copy_assignable_v)   = =
+|  bool | [**COMPUTE\_GRAPH\_ON**](#variable-compute_graph_on)   = = MUDA\_COMPUTE\_GRAPH\_ON<br> |
+|  bool | [**DEBUG\_VIEWER**](#variable-debug_viewer)   = = config::on(true)<br> |
+|  bool | [**DEFAULT\_ASYNC\_ALLOC\_FREE**](#variable-default_async_alloc_free)   = = false<br> |
+|  int | [**HEAVY\_WORKLOAD\_BLOCK\_SIZE**](#variable-heavy_workload_block_size)   = = 64<br> |
+|  int | [**LIGHT\_WORKLOAD\_BLOCK\_SIZE**](#variable-light_workload_block_size)   = = 256<br> |
+|  int | [**MIDDLE\_WORKLOAD\_BLOCK\_SIZE**](#variable-middle_workload_block_size)   = = 128<br> |
+|  bool | [**RUNTIME\_CHECK\_ON**](#variable-runtime_check_on)   = = MUDA\_CHECK\_ON<br> |
+|  bool | [**TRAP\_ON\_ERROR**](#variable-trap_on_error)   = = config::on(true)<br> |
+|  bool | [**always\_false\_v**](#variable-always_false_v)   = = [**always\_false**](structmuda_1_1always__false.md)&lt;T&gt;::value<br> |
+|  bool | [**force\_trivial\_v**](#variable-force_trivial_v)   = = [**force\_trivial**](structmuda_1_1force__trivial.md)&lt;T&gt;::value<br> |
+|  bool | [**force\_trivially\_constructible\_v**](#variable-force_trivially_constructible_v)   = = [**force\_trivially\_constructible**](structmuda_1_1force__trivially__constructible.md)&lt;T&gt;::value<br> |
+|  bool | [**force\_trivially\_copy\_assignable\_v**](#variable-force_trivially_copy_assignable_v)   = =
     [**force\_trivially\_copy\_assignable**](structmuda_1_1force__trivially__copy__assignable.md)&lt;T&gt;::value<br> |
-|  constexpr bool | [**force\_trivially\_copy\_constructible\_v**](#variable-force_trivially_copy_constructible_v)   = =
+|  bool | [**force\_trivially\_copy\_constructible\_v**](#variable-force_trivially_copy_constructible_v)   = =
     [**force\_trivially\_copy\_constructible**](structmuda_1_1force__trivially__copy__constructible.md)&lt;T&gt;::value<br> |
-|  constexpr bool | [**force\_trivially\_destructible\_v**](#variable-force_trivially_destructible_v)   = = [**force\_trivially\_destructible**](structmuda_1_1force__trivially__destructible.md)&lt;T&gt;::value<br> |
-|  constexpr bool | [**is\_cuda\_arch\_v**](#variable-is_cuda_arch_v)   = = is\_cuda\_arch::value<br> |
-|  constexpr bool | [**is\_read\_only\_viewer\_v**](#variable-is_read_only_viewer_v)   = = std::is\_same\_v&lt;T, read\_only\_viewer\_t&lt;T&gt;&gt;<br> |
-|  constexpr bool | [**is\_read\_write\_viewer\_v**](#variable-is_read_write_viewer_v)   = = std::is\_same\_v&lt;T, read\_write\_viewer\_t&lt;T&gt;&gt;<br> |
-|  constexpr bool | [**is\_trivial\_v**](#variable-is_trivial_v)   = = std::is\_trivial\_v&lt;T&gt; \|\| force\_trivial\_v&lt;T&gt;<br> |
-|  constexpr bool | [**is\_trivially\_constructible\_v**](#variable-is_trivially_constructible_v)   = =
+|  bool | [**force\_trivially\_destructible\_v**](#variable-force_trivially_destructible_v)   = = [**force\_trivially\_destructible**](structmuda_1_1force__trivially__destructible.md)&lt;T&gt;::value<br> |
+|  bool | [**is\_cuda\_arch\_v**](#variable-is_cuda_arch_v)   = = is\_cuda\_arch::value<br> |
+|  bool | [**is\_read\_only\_view\_v**](#variable-is_read_only_view_v)   = = std::is\_same\_v&lt;T, read\_only\_view\_t&lt;T&gt;&gt;<br> |
+|  bool | [**is\_read\_write\_view\_v**](#variable-is_read_write_view_v)   = = std::is\_same\_v&lt;T, read\_write\_view\_t&lt;T&gt;&gt;<br> |
+|  bool | [**is\_trivial\_v**](#variable-is_trivial_v)   = = std::is\_trivial\_v&lt;T&gt; \|\| force\_trivial\_v&lt;T&gt;<br> |
+|  bool | [**is\_trivially\_constructible\_v**](#variable-is_trivially_constructible_v)   = =
     std::is\_trivially\_constructible\_v&lt;T&gt; \|\| force\_trivially\_constructible\_v&lt;T&gt;<br> |
-|  constexpr bool | [**is\_trivially\_copy\_assignable\_v**](#variable-is_trivially_copy_assignable_v)   = =
+|  bool | [**is\_trivially\_copy\_assignable\_v**](#variable-is_trivially_copy_assignable_v)   = =
     std::is\_trivially\_copy\_assignable\_v&lt;T&gt; \|\| force\_trivially\_copy\_assignable\_v&lt;T&gt;<br> |
-|  constexpr bool | [**is\_trivially\_copy\_constructible\_v**](#variable-is_trivially_copy_constructible_v)   = =
+|  bool | [**is\_trivially\_copy\_constructible\_v**](#variable-is_trivially_copy_constructible_v)   = =
     std::is\_trivially\_copy\_constructible\_v&lt;T&gt; \|\| force\_trivially\_copy\_constructible\_v&lt;T&gt;<br> |
-|  constexpr bool | [**is\_trivially\_destructible\_v**](#variable-is_trivially_destructible_v)   = =
+|  bool | [**is\_trivially\_destructible\_v**](#variable-is_trivially_destructible_v)   = =
     std::is\_trivially\_destructible\_v&lt;T&gt; \|\| force\_trivially\_destructible\_v&lt;T&gt;<br> |
-|  constexpr bool | [**is\_uniform\_viewer\_v**](#variable-is_uniform_viewer_v)   = =
-    is\_read\_only\_viewer\_v&lt;T&gt; && is\_read\_write\_viewer\_v&lt;T&gt;<br> |
+|  bool | [**is\_uniform\_view\_v**](#variable-is_uniform_view_v)   = = is\_read\_only\_view\_v&lt;T&gt; && is\_read\_write\_view\_v&lt;T&gt;<br> |
 
 
 
@@ -419,11 +409,12 @@
 |  MUDA\_INLINE MUDA\_GENERIC void | [**brkpt**](#function-brkpt) () <br> |
 |  \_\_host\_\_ \_\_device\_\_ void | [**check**](#function-check) (T result, char const \*const func, const char \*const file, int const line) <br> |
 |  dim3 | [**cube**](#function-cube) (int x) <br> |
-|  constexpr cublasOperation\_t | [**cublas\_trans\_operation**](#function-cublas_trans_operation) (bool b) <br> |
-|  constexpr cudaDataType\_t | [**cuda\_data\_type**](#function-cuda_data_type) () <br> |
-|  constexpr cusparseIndexType\_t | [**cusparse\_index\_type**](#function-cusparse_index_type) () <br> |
+|  cublasOperation\_t | [**cublas\_trans\_operation**](#function-cublas_trans_operation) (bool b) <br> |
+|  cudaDataType\_t | [**cuda\_data\_type**](#function-cuda_data_type) () <br> |
+|  cusparseIndexType\_t | [**cusparse\_index\_type**](#function-cusparse_index_type) () <br> |
 |  std::string\_view | [**enum\_name**](#function-enum_name) (ComputeGraphNodeType t) <br> |
 |  MUDA\_INLINE MUDA\_GENERIC dim3 | [**grid\_dim**](#function-grid_dim) () <br> |
+|  MUDA\_GLOBAL void | [**grid\_stride\_loop\_kernel**](#function-grid_stride_loop_kernel) (ParallelForCallable&lt; F &gt; f) <br> |
 |  MUDA\_INLINE MUDA\_GENERIC decltype(auto) | [**invoke**](#function-invoke) (FHost && host, FDevice && device) <br> |
 |  MUDA\_INLINE MUDA\_GENERIC auto | [**make\_cdense**](#function-make_cdense) (const T \* data) <br> |
 |  MUDA\_INLINE MUDA\_GENERIC auto | [**make\_cdense\_1d**](#function-make_cdense_1d) (const T \* data, int dimx) <br> |
@@ -505,6 +496,7 @@
 |  bool | [**operator&gt;=**](#function-operator_56) (ComputeGraphVarUsage lhs, ComputeGraphVarUsage rhs) <br> |
 |  MUDA\_INLINE MUDA\_GENERIC MUDA\_CONSTEXPR [**Flags**](classmuda_1_1_flags.md)&lt; BitType &gt; | [**operator^**](#function-operator_57) (BitType bit, [**Flags**](classmuda_1_1_flags.md)&lt; BitType &gt; const & flags) <br> |
 |  MUDA\_INLINE MUDA\_GENERIC MUDA\_CONSTEXPR [**Flags**](classmuda_1_1_flags.md)&lt; BitType &gt; | [**operator\|**](#function-operator_58) (BitType bit, [**Flags**](classmuda_1_1_flags.md)&lt; BitType &gt; const & flags) <br> |
+|  MUDA\_GLOBAL void | [**parallel\_for\_kernel**](#function-parallel_for_kernel) (ParallelForCallable&lt; F &gt; f) <br> |
 |  MUDA\_INLINE MUDA\_GENERIC void | [**print**](#function-print) (const char \*const fmt, Args &&... arg) <br> |
 |  MUDA\_INLINE MUDA\_GENERIC const T & | [**print\_check**](#function-print_check) (const T & t) <br> |
 |  MUDA\_INLINE MUDA\_GENERIC auto | [**print\_check**](#function-print_check) (const char \* t) <br> |
@@ -513,8 +505,8 @@
 |  MUDA\_INLINE MUDA\_GENERIC const T & | [**print\_convert**](#function-print_convert) (const [**Dense**](classmuda_1_1_dense_viewer_t.md)&lt; T &gt; & v) <br> |
 |  MUDA\_INLINE MUDA\_GENERIC const T & | [**print\_convert**](#function-print_convert) (const [**CDense**](classmuda_1_1_dense_viewer_t.md)&lt; T &gt; & v) <br> |
 |  MUDA\_HOST double | [**profile\_host**](#function-profile_host) (F && f) <br> |
-|  MUDA\_GENERIC MUDA\_INLINE T \* | [**remove\_const**](#function-remove_const) (const T \* ptr) noexcept<br> |
-|  MUDA\_GENERIC MUDA\_INLINE T & | [**remove\_const**](#function-remove_const) (const T & ref) noexcept<br> |
+|  MUDA\_GENERIC MUDA\_INLINE constexpr T \* | [**remove\_const**](#function-remove_const) (const T \* ptr) noexcept<br> |
+|  MUDA\_GENERIC MUDA\_INLINE constexpr T & | [**remove\_const**](#function-remove_const) (const T & ref) noexcept<br> |
 |  dim3 | [**square**](#function-square) (int x) <br> |
 |  MUDA\_INLINE MUDA\_GENERIC dim3 | [**thread\_idx**](#function-thread_idx) () <br> |
 |  MUDA\_INLINE MUDA\_GENERIC void | [**trap**](#function-trap) () <br> |
@@ -557,7 +549,7 @@
 ### typedef BCOOMatrixView 
 
 ```C++
-using muda::BCOOMatrixView = typedef TripletMatrixView<T, N>;
+using muda::BCOOMatrixView =  TripletMatrixView<T, N>;
 ```
 
 
@@ -570,7 +562,7 @@ using muda::BCOOMatrixView = typedef TripletMatrixView<T, N>;
 ### typedef BCOOMatrixViewer 
 
 ```C++
-using muda::BCOOMatrixViewer = typedef CTripletMatrixViewer<T, N>;
+using muda::BCOOMatrixViewer =  CTripletMatrixViewer<T, N>;
 ```
 
 
@@ -583,7 +575,7 @@ using muda::BCOOMatrixViewer = typedef CTripletMatrixViewer<T, N>;
 ### typedef BCOOVectorView 
 
 ```C++
-using muda::BCOOVectorView = typedef DoubletVectorView<T, N>;
+using muda::BCOOVectorView =  DoubletVectorView<T, N>;
 ```
 
 
@@ -596,7 +588,7 @@ using muda::BCOOVectorView = typedef DoubletVectorView<T, N>;
 ### typedef BCOOVectorViewer 
 
 ```C++
-using muda::BCOOVectorViewer = typedef CDoubletVectorViewer<T, N>;
+using muda::BCOOVectorViewer =  CDoubletVectorViewer<T, N>;
 ```
 
 
@@ -609,7 +601,7 @@ using muda::BCOOVectorViewer = typedef CDoubletVectorViewer<T, N>;
 ### typedef BSRMatrixView 
 
 ```C++
-using muda::BSRMatrixView = typedef BSRMatrixViewBase<false, Ty, N>;
+using muda::BSRMatrixView =  BSRMatrixViewT<false, Ty, N>;
 ```
 
 
@@ -622,7 +614,7 @@ using muda::BSRMatrixView = typedef BSRMatrixViewBase<false, Ty, N>;
 ### typedef Buffer2DView 
 
 ```C++
-using muda::Buffer2DView = typedef Buffer2DViewT<false, T>;
+using muda::Buffer2DView =  Buffer2DViewT<false, T>;
 ```
 
 
@@ -635,7 +627,7 @@ using muda::Buffer2DView = typedef Buffer2DViewT<false, T>;
 ### typedef Buffer3DView 
 
 ```C++
-using muda::Buffer3DView = typedef Buffer3DViewT<false, T>;
+using muda::Buffer3DView =  Buffer3DViewT<false, T>;
 ```
 
 
@@ -648,7 +640,7 @@ using muda::Buffer3DView = typedef Buffer3DViewT<false, T>;
 ### typedef BufferView 
 
 ```C++
-using muda::BufferView = typedef BufferViewT<false, T>;
+using muda::BufferView =  BufferViewT<false, T>;
 ```
 
 
@@ -661,7 +653,7 @@ using muda::BufferView = typedef BufferViewT<false, T>;
 ### typedef CBCOOMatrixView 
 
 ```C++
-using muda::CBCOOMatrixView = typedef CTripletMatrixView<T, N>;
+using muda::CBCOOMatrixView =  CTripletMatrixView<T, N>;
 ```
 
 
@@ -674,7 +666,7 @@ using muda::CBCOOMatrixView = typedef CTripletMatrixView<T, N>;
 ### typedef CBCOOMatrixViewer 
 
 ```C++
-using muda::CBCOOMatrixViewer = typedef CTripletMatrixViewer<T, N>;
+using muda::CBCOOMatrixViewer =  CTripletMatrixViewer<T, N>;
 ```
 
 
@@ -687,7 +679,7 @@ using muda::CBCOOMatrixViewer = typedef CTripletMatrixViewer<T, N>;
 ### typedef CBCOOVectorView 
 
 ```C++
-using muda::CBCOOVectorView = typedef CDoubletVectorView<T, N>;
+using muda::CBCOOVectorView =  CDoubletVectorView<T, N>;
 ```
 
 
@@ -700,7 +692,7 @@ using muda::CBCOOVectorView = typedef CDoubletVectorView<T, N>;
 ### typedef CBCOOVectorViewer 
 
 ```C++
-using muda::CBCOOVectorViewer = typedef CDoubletVectorViewer<T, N>;
+using muda::CBCOOVectorViewer =  CDoubletVectorViewer<T, N>;
 ```
 
 
@@ -713,7 +705,7 @@ using muda::CBCOOVectorViewer = typedef CDoubletVectorViewer<T, N>;
 ### typedef CBSRMatrixView 
 
 ```C++
-using muda::CBSRMatrixView = typedef BSRMatrixViewBase<true, Ty, N>;
+using muda::CBSRMatrixView =  BSRMatrixViewT<true, Ty, N>;
 ```
 
 
@@ -726,7 +718,7 @@ using muda::CBSRMatrixView = typedef BSRMatrixViewBase<true, Ty, N>;
 ### typedef CBuffer2DView 
 
 ```C++
-using muda::CBuffer2DView = typedef Buffer2DViewT<true, T>;
+using muda::CBuffer2DView =  Buffer2DViewT<true, T>;
 ```
 
 
@@ -739,7 +731,7 @@ using muda::CBuffer2DView = typedef Buffer2DViewT<true, T>;
 ### typedef CBuffer3DView 
 
 ```C++
-using muda::CBuffer3DView = typedef Buffer3DViewT<true, T>;
+using muda::CBuffer3DView =  Buffer3DViewT<true, T>;
 ```
 
 
@@ -752,7 +744,7 @@ using muda::CBuffer3DView = typedef Buffer3DViewT<true, T>;
 ### typedef CBufferView 
 
 ```C++
-using muda::CBufferView = typedef BufferViewT<true, T>;
+using muda::CBufferView =  BufferViewT<true, T>;
 ```
 
 
@@ -765,7 +757,7 @@ using muda::CBufferView = typedef BufferViewT<true, T>;
 ### typedef CCOOMatrixView 
 
 ```C++
-using muda::CCOOMatrixView = typedef COOMatrixViewBase<true, Ty>;
+using muda::CCOOMatrixView =  COOMatrixViewT<true, Ty>;
 ```
 
 
@@ -778,7 +770,7 @@ using muda::CCOOMatrixView = typedef COOMatrixViewBase<true, Ty>;
 ### typedef CCOOMatrixViewer 
 
 ```C++
-using muda::CCOOMatrixViewer = typedef CBCOOMatrixViewer<T, 1>;
+using muda::CCOOMatrixViewer =  CBCOOMatrixViewer<T, 1>;
 ```
 
 
@@ -791,7 +783,7 @@ using muda::CCOOMatrixViewer = typedef CBCOOMatrixViewer<T, 1>;
 ### typedef CCOOVectorView 
 
 ```C++
-using muda::CCOOVectorView = typedef COOVectorViewBase<true, T>;
+using muda::CCOOVectorView =  COOVectorViewBase<true, T>;
 ```
 
 
@@ -804,7 +796,7 @@ using muda::CCOOVectorView = typedef COOVectorViewBase<true, T>;
 ### typedef CCOOVectorViewer 
 
 ```C++
-using muda::CCOOVectorViewer = typedef CBCOOVectorViewer<T, 1>;
+using muda::CCOOVectorViewer =  CBCOOVectorViewer<T, 1>;
 ```
 
 
@@ -817,7 +809,7 @@ using muda::CCOOVectorViewer = typedef CBCOOVectorViewer<T, 1>;
 ### typedef CCSRMatrixView 
 
 ```C++
-using muda::CCSRMatrixView = typedef CSRMatrixViewBase<true, Ty>;
+using muda::CCSRMatrixView =  CSRMatrixViewT<true, Ty>;
 ```
 
 
@@ -830,7 +822,7 @@ using muda::CCSRMatrixView = typedef CSRMatrixViewBase<true, Ty>;
 ### typedef CDense 
 
 ```C++
-using muda::CDense = typedef DenseViewerT<true, T>;
+using muda::CDense =  DenseViewerT<true, T>;
 ```
 
 
@@ -843,7 +835,7 @@ using muda::CDense = typedef DenseViewerT<true, T>;
 ### typedef CDense1D 
 
 ```C++
-using muda::CDense1D = typedef Dense1DT<true, T>;
+using muda::CDense1D =  Dense1DT<true, T>;
 ```
 
 
@@ -856,7 +848,7 @@ using muda::CDense1D = typedef Dense1DT<true, T>;
 ### typedef CDense2D 
 
 ```C++
-using muda::CDense2D = typedef Dense2DBase<true, T>;
+using muda::CDense2D =  Dense2DBase<true, T>;
 ```
 
 
@@ -869,7 +861,33 @@ using muda::CDense2D = typedef Dense2DBase<true, T>;
 ### typedef CDense3D 
 
 ```C++
-using muda::CDense3D = typedef Dense3DBase<true, T>;
+using muda::CDense3D =  Dense3DBase<true, T>;
+```
+
+
+
+
+<hr>
+
+
+
+### typedef CDenseMatrixView 
+
+```C++
+using muda::CDenseMatrixView =  DenseMatrixViewT<true, Ty>;
+```
+
+
+
+
+<hr>
+
+
+
+### typedef CDenseMatrixViewer 
+
+```C++
+using muda::CDenseMatrixViewer =  DenseMatrixViewerT<true, T>;
 ```
 
 
@@ -882,7 +900,20 @@ using muda::CDense3D = typedef Dense3DBase<true, T>;
 ### typedef CDenseVectorView 
 
 ```C++
-using muda::CDenseVectorView = typedef DenseVectorViewBase<true, Ty>;
+using muda::CDenseVectorView =  DenseVectorViewT<true, Ty>;
+```
+
+
+
+
+<hr>
+
+
+
+### typedef CDenseVectorViewer 
+
+```C++
+using muda::CDenseVectorViewer =  DenseVectorViewerT<true, T>;
 ```
 
 
@@ -895,7 +926,20 @@ using muda::CDenseVectorView = typedef DenseVectorViewBase<true, Ty>;
 ### typedef CDoubletVectorView 
 
 ```C++
-using muda::CDoubletVectorView = typedef DoubletVectorViewBase<true, T, N>;
+using muda::CDoubletVectorView =  DoubletVectorViewT<true, T, N>;
+```
+
+
+
+
+<hr>
+
+
+
+### typedef CDoubletVectorViewer 
+
+```C++
+using muda::CDoubletVectorViewer =  DoubletVectorViewerT<true, T, N>;
 ```
 
 
@@ -908,7 +952,7 @@ using muda::CDoubletVectorView = typedef DoubletVectorViewBase<true, T, N>;
 ### typedef COOMatrixView 
 
 ```C++
-using muda::COOMatrixView = typedef COOMatrixViewBase<false, Ty>;
+using muda::COOMatrixView =  COOMatrixViewT<false, Ty>;
 ```
 
 
@@ -921,7 +965,7 @@ using muda::COOMatrixView = typedef COOMatrixViewBase<false, Ty>;
 ### typedef COOMatrixViewer 
 
 ```C++
-using muda::COOMatrixViewer = typedef BCOOMatrixViewer<T, 1>;
+using muda::COOMatrixViewer =  BCOOMatrixViewer<T, 1>;
 ```
 
 
@@ -934,7 +978,7 @@ using muda::COOMatrixViewer = typedef BCOOMatrixViewer<T, 1>;
 ### typedef COOVectorView 
 
 ```C++
-using muda::COOVectorView = typedef COOVectorViewBase<false, T>;
+using muda::COOVectorView =  COOVectorViewBase<false, T>;
 ```
 
 
@@ -947,7 +991,7 @@ using muda::COOVectorView = typedef COOVectorViewBase<false, T>;
 ### typedef COOVectorViewer 
 
 ```C++
-using muda::COOVectorViewer = typedef BCOOVectorViewer<T, 1>;
+using muda::COOVectorViewer =  BCOOVectorViewer<T, 1>;
 ```
 
 
@@ -960,7 +1004,20 @@ using muda::COOVectorViewer = typedef BCOOVectorViewer<T, 1>;
 ### typedef CSRMatrixView 
 
 ```C++
-using muda::CSRMatrixView = typedef CSRMatrixViewBase<false, Ty>;
+using muda::CSRMatrixView =  CSRMatrixViewT<false, Ty>;
+```
+
+
+
+
+<hr>
+
+
+
+### typedef CSRMatrixViewT 
+
+```C++
+using muda::CSRMatrixViewT =  BSRMatrixViewT<IsConst, Ty, 1>;
 ```
 
 
@@ -973,7 +1030,20 @@ using muda::CSRMatrixView = typedef CSRMatrixViewBase<false, Ty>;
 ### typedef CTripletMatrixView 
 
 ```C++
-using muda::CTripletMatrixView = typedef TripletMatrixViewBase<true, Ty, N>;
+using muda::CTripletMatrixView =  TripletMatrixViewT<true, Ty, N>;
+```
+
+
+
+
+<hr>
+
+
+
+### typedef CTripletMatrixViewer 
+
+```C++
+using muda::CTripletMatrixViewer =  TripletMatrixViewerT<true, T, N>;
 ```
 
 
@@ -986,7 +1056,7 @@ using muda::CTripletMatrixView = typedef TripletMatrixViewBase<true, Ty, N>;
 ### typedef CVarView 
 
 ```C++
-using muda::CVarView = typedef VarViewT<true, T>;
+using muda::CVarView =  VarViewT<true, T>;
 ```
 
 
@@ -999,7 +1069,8 @@ using muda::CVarView = typedef VarViewT<true, T>;
 ### typedef ComputeGraphEventRecordNode 
 
 ```C++
-using muda::ComputeGraphEventRecordNode = typedef ComputeGraphNode<EventRecordNode, ComputeGraphNodeType::EventRecordNode>;
+using muda::ComputeGraphEventRecordNode = 
+    ComputeGraphNode<EventRecordNode, ComputeGraphNodeType::EventRecordNode>;
 ```
 
 
@@ -1012,7 +1083,8 @@ using muda::ComputeGraphEventRecordNode = typedef ComputeGraphNode<EventRecordNo
 ### typedef ComputeGraphEventWaitNode 
 
 ```C++
-using muda::ComputeGraphEventWaitNode = typedef ComputeGraphNode<EventWaitNode, ComputeGraphNodeType::EventWaitNode>;
+using muda::ComputeGraphEventWaitNode = 
+    ComputeGraphNode<EventWaitNode, ComputeGraphNodeType::EventWaitNode>;
 ```
 
 
@@ -1041,7 +1113,8 @@ enum muda::ComputeGraphFlag {
 ### typedef ComputeGraphKernelNode 
 
 ```C++
-using muda::ComputeGraphKernelNode = typedef ComputeGraphNode<KernelNode, ComputeGraphNodeType::KernelNode>;
+using muda::ComputeGraphKernelNode = 
+    ComputeGraphNode<KernelNode, ComputeGraphNodeType::KernelNode>;
 ```
 
 
@@ -1054,7 +1127,8 @@ using muda::ComputeGraphKernelNode = typedef ComputeGraphNode<KernelNode, Comput
 ### typedef ComputeGraphMemcpyNode 
 
 ```C++
-using muda::ComputeGraphMemcpyNode = typedef ComputeGraphNode<MemcpyNode, ComputeGraphNodeType::MemcpyNode>;
+using muda::ComputeGraphMemcpyNode = 
+    ComputeGraphNode<MemcpyNode, ComputeGraphNodeType::MemcpyNode>;
 ```
 
 
@@ -1067,7 +1141,8 @@ using muda::ComputeGraphMemcpyNode = typedef ComputeGraphNode<MemcpyNode, Comput
 ### typedef ComputeGraphMemsetNode 
 
 ```C++
-using muda::ComputeGraphMemsetNode = typedef ComputeGraphNode<MemsetNode, ComputeGraphNodeType::MemsetNode>;
+using muda::ComputeGraphMemsetNode = 
+    ComputeGraphNode<MemsetNode, ComputeGraphNodeType::MemsetNode>;
 ```
 
 
@@ -1140,7 +1215,7 @@ enum muda::ComputeGraphVarUsage {
 ### typedef DefaultTag 
 
 ```C++
-using muda::DefaultTag = typedef Tag<Default>;
+using muda::DefaultTag =  Tag<Default>;
 ```
 
 
@@ -1153,7 +1228,7 @@ using muda::DefaultTag = typedef Tag<Default>;
 ### typedef Dense 
 
 ```C++
-using muda::Dense = typedef DenseViewerT<false, T>;
+using muda::Dense =  DenseViewerT<false, T>;
 ```
 
 
@@ -1166,7 +1241,7 @@ using muda::Dense = typedef DenseViewerT<false, T>;
 ### typedef Dense1D 
 
 ```C++
-using muda::Dense1D = typedef Dense1DT<false, T>;
+using muda::Dense1D =  Dense1DT<false, T>;
 ```
 
 
@@ -1179,7 +1254,7 @@ using muda::Dense1D = typedef Dense1DT<false, T>;
 ### typedef Dense2D 
 
 ```C++
-using muda::Dense2D = typedef Dense2DBase<false, T>;
+using muda::Dense2D =  Dense2DBase<false, T>;
 ```
 
 
@@ -1192,7 +1267,33 @@ using muda::Dense2D = typedef Dense2DBase<false, T>;
 ### typedef Dense3D 
 
 ```C++
-using muda::Dense3D = typedef Dense3DBase<false, T>;
+using muda::Dense3D =  Dense3DBase<false, T>;
+```
+
+
+
+
+<hr>
+
+
+
+### typedef DenseMatrixView 
+
+```C++
+using muda::DenseMatrixView =  DenseMatrixViewT<false, Ty>;
+```
+
+
+
+
+<hr>
+
+
+
+### typedef DenseMatrixViewer 
+
+```C++
+using muda::DenseMatrixViewer =  DenseMatrixViewerT<false, T>;
 ```
 
 
@@ -1205,7 +1306,20 @@ using muda::Dense3D = typedef Dense3DBase<false, T>;
 ### typedef DenseVectorView 
 
 ```C++
-using muda::DenseVectorView = typedef DenseVectorViewBase<false, Ty>;
+using muda::DenseVectorView =  DenseVectorViewT<false, Ty>;
+```
+
+
+
+
+<hr>
+
+
+
+### typedef DenseVectorViewer 
+
+```C++
+using muda::DenseVectorViewer =  DenseVectorViewerT<false, T>;
 ```
 
 
@@ -1218,7 +1332,7 @@ using muda::DenseVectorView = typedef DenseVectorViewBase<false, Ty>;
 ### typedef DeviceCOOMatrix 
 
 ```C++
-using muda::DeviceCOOMatrix = typedef DeviceBCOOMatrix<T, 1>;
+using muda::DeviceCOOMatrix =  DeviceBCOOMatrix<T, 1>;
 ```
 
 
@@ -1231,7 +1345,20 @@ using muda::DeviceCOOMatrix = typedef DeviceBCOOMatrix<T, 1>;
 ### typedef DeviceCOOVector 
 
 ```C++
-using muda::DeviceCOOVector = typedef DeviceBCOOVector<T, 1>;
+using muda::DeviceCOOVector =  DeviceBCOOVector<T, 1>;
+```
+
+
+
+
+<hr>
+
+
+
+### typedef DeviceCSRMatrix 
+
+```C++
+using muda::DeviceCSRMatrix =  DeviceBSRMatrix<T, 1>;
 ```
 
 
@@ -1244,7 +1371,20 @@ using muda::DeviceCOOVector = typedef DeviceBCOOVector<T, 1>;
 ### typedef DoubletVectorView 
 
 ```C++
-using muda::DoubletVectorView = typedef DoubletVectorViewBase<false, T, N>;
+using muda::DoubletVectorView =  DoubletVectorViewT<false, T, N>;
+```
+
+
+
+
+<hr>
+
+
+
+### typedef DoubletVectorViewer 
+
+```C++
+using muda::DoubletVectorViewer =  DoubletVectorViewerT<false, T, N>;
 ```
 
 
@@ -1313,7 +1453,7 @@ enum muda::GraphInstantiateFlagBit {
 ### typedef I32IdWithType 
 
 ```C++
-using muda::I32IdWithType = typedef IdWithType<int32_t>;
+using muda::I32IdWithType =  IdWithType<int32_t>;
 ```
 
 
@@ -1326,7 +1466,7 @@ using muda::I32IdWithType = typedef IdWithType<int32_t>;
 ### typedef I64IdWithType 
 
 ```C++
-using muda::I64IdWithType = typedef IdWithType<int64_t>;
+using muda::I64IdWithType =  IdWithType<int64_t>;
 ```
 
 
@@ -1339,7 +1479,7 @@ using muda::I64IdWithType = typedef IdWithType<int64_t>;
 ### typedef KeyValuePair 
 
 ```C++
-using muda::KeyValuePair = typedef cub::KeyValuePair<Key, Value>;
+using muda::KeyValuePair =  cub::KeyValuePair<Key, Value>;
 ```
 
 
@@ -1404,7 +1544,7 @@ enum muda::LoggerBasicType {
 ### typedef LoggerFmtArg 
 
 ```C++
-using muda::LoggerFmtArg = typedef void (*)(void* formatter, const void* obj);
+using muda::LoggerFmtArg =  void (*)(void* formatter, const void* obj);
 ```
 
 
@@ -1433,7 +1573,20 @@ enum muda::ParallelForType {
 ### typedef TripletMatrixView 
 
 ```C++
-using muda::TripletMatrixView = typedef TripletMatrixViewBase<false, Ty, N>;
+using muda::TripletMatrixView =  TripletMatrixViewT<false, Ty, N>;
+```
+
+
+
+
+<hr>
+
+
+
+### typedef TripletMatrixViewer 
+
+```C++
+using muda::TripletMatrixViewer =  TripletMatrixViewerT<false, T, N>;
 ```
 
 
@@ -1446,7 +1599,7 @@ using muda::TripletMatrixView = typedef TripletMatrixViewBase<false, Ty, N>;
 ### typedef U32IdWithType 
 
 ```C++
-using muda::U32IdWithType = typedef IdWithType<uint32_t>;
+using muda::U32IdWithType =  IdWithType<uint32_t>;
 ```
 
 
@@ -1459,7 +1612,7 @@ using muda::U32IdWithType = typedef IdWithType<uint32_t>;
 ### typedef U64IdWithType 
 
 ```C++
-using muda::U64IdWithType = typedef IdWithType<uint64_t>;
+using muda::U64IdWithType =  IdWithType<uint64_t>;
 ```
 
 
@@ -1472,7 +1625,7 @@ using muda::U64IdWithType = typedef IdWithType<uint64_t>;
 ### typedef VarView 
 
 ```C++
-using muda::VarView = typedef VarViewT<false, T>;
+using muda::VarView =  VarViewT<false, T>;
 ```
 
 
@@ -1485,7 +1638,7 @@ using muda::VarView = typedef VarViewT<false, T>;
 ### typedef raw\_type\_t 
 
 ```C++
-using muda::raw_type_t = typedef std::remove_all_extents_t<std::remove_reference_t<T> >;
+using muda::raw_type_t =  std::remove_all_extents_t<std::remove_reference_t<T>>;
 ```
 
 
@@ -1495,10 +1648,10 @@ using muda::raw_type_t = typedef std::remove_all_extents_t<std::remove_reference
 
 
 
-### typedef read\_only\_viewer\_t 
+### typedef read\_only\_view\_t 
 
 ```C++
-using muda::read_only_viewer_t = typedef typename read_only_viewer<T>::type;
+using muda::read_only_view_t =  typename read_only_view<T>::type;
 ```
 
 
@@ -1508,10 +1661,10 @@ using muda::read_only_viewer_t = typedef typename read_only_viewer<T>::type;
 
 
 
-### typedef read\_write\_viewer\_t 
+### typedef read\_write\_view\_t 
 
 ```C++
-using muda::read_write_viewer_t = typedef typename read_write_viewer<T>::type;
+using muda::read_write_view_t =  typename read_write_view<T>::type;
 ```
 
 
@@ -1524,7 +1677,7 @@ using muda::read_write_viewer_t = typedef typename read_write_viewer<T>::type;
 ### typedef span 
 
 ```C++
-using muda::span = typedef tcb::span<T>;
+using muda::span =  tcb::span<T>;
 ```
 
 
@@ -1539,7 +1692,7 @@ using muda::span = typedef tcb::span<T>;
 ### variable COMPUTE\_GRAPH\_ON 
 
 ```C++
-constexpr bool muda::COMPUTE_GRAPH_ON;
+bool muda::COMPUTE_GRAPH_ON;
 ```
 
 
@@ -1552,7 +1705,7 @@ constexpr bool muda::COMPUTE_GRAPH_ON;
 ### variable DEBUG\_VIEWER 
 
 ```C++
-constexpr bool muda::DEBUG_VIEWER;
+bool muda::DEBUG_VIEWER;
 ```
 
 
@@ -1565,7 +1718,7 @@ constexpr bool muda::DEBUG_VIEWER;
 ### variable DEFAULT\_ASYNC\_ALLOC\_FREE 
 
 ```C++
-constexpr bool muda::DEFAULT_ASYNC_ALLOC_FREE;
+bool muda::DEFAULT_ASYNC_ALLOC_FREE;
 ```
 
 
@@ -1578,7 +1731,7 @@ constexpr bool muda::DEFAULT_ASYNC_ALLOC_FREE;
 ### variable HEAVY\_WORKLOAD\_BLOCK\_SIZE 
 
 ```C++
-constexpr int muda::HEAVY_WORKLOAD_BLOCK_SIZE;
+int muda::HEAVY_WORKLOAD_BLOCK_SIZE;
 ```
 
 
@@ -1591,7 +1744,7 @@ constexpr int muda::HEAVY_WORKLOAD_BLOCK_SIZE;
 ### variable LIGHT\_WORKLOAD\_BLOCK\_SIZE 
 
 ```C++
-constexpr int muda::LIGHT_WORKLOAD_BLOCK_SIZE;
+int muda::LIGHT_WORKLOAD_BLOCK_SIZE;
 ```
 
 
@@ -1604,7 +1757,7 @@ constexpr int muda::LIGHT_WORKLOAD_BLOCK_SIZE;
 ### variable MIDDLE\_WORKLOAD\_BLOCK\_SIZE 
 
 ```C++
-constexpr int muda::MIDDLE_WORKLOAD_BLOCK_SIZE;
+int muda::MIDDLE_WORKLOAD_BLOCK_SIZE;
 ```
 
 
@@ -1617,7 +1770,7 @@ constexpr int muda::MIDDLE_WORKLOAD_BLOCK_SIZE;
 ### variable RUNTIME\_CHECK\_ON 
 
 ```C++
-constexpr bool muda::RUNTIME_CHECK_ON;
+bool muda::RUNTIME_CHECK_ON;
 ```
 
 
@@ -1630,7 +1783,7 @@ constexpr bool muda::RUNTIME_CHECK_ON;
 ### variable TRAP\_ON\_ERROR 
 
 ```C++
-constexpr bool muda::TRAP_ON_ERROR;
+bool muda::TRAP_ON_ERROR;
 ```
 
 
@@ -1643,7 +1796,7 @@ constexpr bool muda::TRAP_ON_ERROR;
 ### variable always\_false\_v 
 
 ```C++
-constexpr bool muda::always_false_v;
+bool muda::always_false_v;
 ```
 
 
@@ -1656,7 +1809,7 @@ constexpr bool muda::always_false_v;
 ### variable force\_trivial\_v 
 
 ```C++
-constexpr bool muda::force_trivial_v;
+bool muda::force_trivial_v;
 ```
 
 
@@ -1669,7 +1822,7 @@ constexpr bool muda::force_trivial_v;
 ### variable force\_trivially\_constructible\_v 
 
 ```C++
-constexpr bool muda::force_trivially_constructible_v;
+bool muda::force_trivially_constructible_v;
 ```
 
 
@@ -1682,7 +1835,7 @@ constexpr bool muda::force_trivially_constructible_v;
 ### variable force\_trivially\_copy\_assignable\_v 
 
 ```C++
-constexpr bool muda::force_trivially_copy_assignable_v;
+bool muda::force_trivially_copy_assignable_v;
 ```
 
 
@@ -1695,7 +1848,7 @@ constexpr bool muda::force_trivially_copy_assignable_v;
 ### variable force\_trivially\_copy\_constructible\_v 
 
 ```C++
-constexpr bool muda::force_trivially_copy_constructible_v;
+bool muda::force_trivially_copy_constructible_v;
 ```
 
 
@@ -1708,7 +1861,7 @@ constexpr bool muda::force_trivially_copy_constructible_v;
 ### variable force\_trivially\_destructible\_v 
 
 ```C++
-constexpr bool muda::force_trivially_destructible_v;
+bool muda::force_trivially_destructible_v;
 ```
 
 
@@ -1721,7 +1874,7 @@ constexpr bool muda::force_trivially_destructible_v;
 ### variable is\_cuda\_arch\_v 
 
 ```C++
-constexpr bool muda::is_cuda_arch_v;
+bool muda::is_cuda_arch_v;
 ```
 
 
@@ -1731,10 +1884,10 @@ constexpr bool muda::is_cuda_arch_v;
 
 
 
-### variable is\_read\_only\_viewer\_v 
+### variable is\_read\_only\_view\_v 
 
 ```C++
-constexpr bool muda::is_read_only_viewer_v;
+bool muda::is_read_only_view_v;
 ```
 
 
@@ -1744,10 +1897,10 @@ constexpr bool muda::is_read_only_viewer_v;
 
 
 
-### variable is\_read\_write\_viewer\_v 
+### variable is\_read\_write\_view\_v 
 
 ```C++
-constexpr bool muda::is_read_write_viewer_v;
+bool muda::is_read_write_view_v;
 ```
 
 
@@ -1760,7 +1913,7 @@ constexpr bool muda::is_read_write_viewer_v;
 ### variable is\_trivial\_v 
 
 ```C++
-constexpr bool muda::is_trivial_v;
+bool muda::is_trivial_v;
 ```
 
 
@@ -1773,7 +1926,7 @@ constexpr bool muda::is_trivial_v;
 ### variable is\_trivially\_constructible\_v 
 
 ```C++
-constexpr bool muda::is_trivially_constructible_v;
+bool muda::is_trivially_constructible_v;
 ```
 
 
@@ -1786,7 +1939,7 @@ constexpr bool muda::is_trivially_constructible_v;
 ### variable is\_trivially\_copy\_assignable\_v 
 
 ```C++
-constexpr bool muda::is_trivially_copy_assignable_v;
+bool muda::is_trivially_copy_assignable_v;
 ```
 
 
@@ -1799,7 +1952,7 @@ constexpr bool muda::is_trivially_copy_assignable_v;
 ### variable is\_trivially\_copy\_constructible\_v 
 
 ```C++
-constexpr bool muda::is_trivially_copy_constructible_v;
+bool muda::is_trivially_copy_constructible_v;
 ```
 
 
@@ -1812,7 +1965,7 @@ constexpr bool muda::is_trivially_copy_constructible_v;
 ### variable is\_trivially\_destructible\_v 
 
 ```C++
-constexpr bool muda::is_trivially_destructible_v;
+bool muda::is_trivially_destructible_v;
 ```
 
 
@@ -1822,10 +1975,10 @@ constexpr bool muda::is_trivially_destructible_v;
 
 
 
-### variable is\_uniform\_viewer\_v 
+### variable is\_uniform\_view\_v 
 
 ```C++
-constexpr bool muda::is_uniform_viewer_v;
+bool muda::is_uniform_view_v;
 ```
 
 
@@ -2185,7 +2338,7 @@ dim3 muda::cube (
 ### function cublas\_trans\_operation 
 
 ```C++
-constexpr cublasOperation_t muda::cublas_trans_operation (
+cublasOperation_t muda::cublas_trans_operation (
     bool b
 ) 
 ```
@@ -2201,7 +2354,7 @@ constexpr cublasOperation_t muda::cublas_trans_operation (
 
 ```C++
 template<typename T>
-inline constexpr cudaDataType_t muda::cuda_data_type () 
+inline cudaDataType_t muda::cuda_data_type () 
 ```
 
 
@@ -2215,7 +2368,7 @@ inline constexpr cudaDataType_t muda::cuda_data_type ()
 
 ```C++
 template<typename T>
-constexpr cusparseIndexType_t muda::cusparse_index_type () 
+cusparseIndexType_t muda::cusparse_index_type () 
 ```
 
 
@@ -2244,6 +2397,22 @@ inline std::string_view muda::enum_name (
 
 ```C++
 MUDA_INLINE MUDA_GENERIC dim3 muda::grid_dim () 
+```
+
+
+
+
+<hr>
+
+
+
+### function grid\_stride\_loop\_kernel 
+
+```C++
+template<typename F, typename UserTag>
+MUDA_GLOBAL void muda::grid_stride_loop_kernel (
+    ParallelForCallable< F > f
+) 
 ```
 
 
@@ -3570,6 +3739,22 @@ MUDA_INLINE MUDA_GENERIC MUDA_CONSTEXPR Flags < BitType > muda::operator| (
 
 
 
+### function parallel\_for\_kernel 
+
+```C++
+template<typename F, typename UserTag>
+MUDA_GLOBAL void muda::parallel_for_kernel (
+    ParallelForCallable< F > f
+) 
+```
+
+
+
+
+<hr>
+
+
+
 ### function print 
 
 ```C++
@@ -3701,7 +3886,7 @@ MUDA_HOST double muda::profile_host (
 
 ```C++
 template<typename T>
-MUDA_GENERIC MUDA_INLINE T * muda::remove_const (
+MUDA_GENERIC MUDA_INLINE constexpr T * muda::remove_const (
     const T * ptr
 ) noexcept
 ```
@@ -3717,7 +3902,7 @@ MUDA_GENERIC MUDA_INLINE T * muda::remove_const (
 
 ```C++
 template<typename T>
-MUDA_GENERIC MUDA_INLINE T & muda::remove_const (
+MUDA_GENERIC MUDA_INLINE constexpr T & muda::remove_const (
     const T & ref
 ) noexcept
 ```

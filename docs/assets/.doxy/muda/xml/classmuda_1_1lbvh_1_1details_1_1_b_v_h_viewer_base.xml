@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.1" xml:lang="en-US">
   <compounddef id="classmuda_1_1lbvh_1_1details_1_1_b_v_h_viewer_base" kind="class" language="C++" prot="public">
     <compoundname>muda::lbvh::details::BVHViewerBase</compoundname>
     <basecompoundref refid="classmuda_1_1_viewer_base" prot="private" virt="non-virtual">muda::ViewerBase&lt; IsConst &gt;</basecompoundref>

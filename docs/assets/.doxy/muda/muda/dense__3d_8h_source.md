@@ -189,13 +189,13 @@ using CDense3D = Dense3DBase<true, T>;
 
 // viewer traits
 template <typename T>
-struct read_only_viewer<Dense3D<T>>
+struct read_only_view<Dense3D<T>>
 {
     using type = CDense3D<T>;
 };
 
 template <typename T>
-struct read_write_viewer<CDense3D<T>>
+struct read_write_view<CDense3D<T>>
 {
     using type = Dense3D<T>;
 };

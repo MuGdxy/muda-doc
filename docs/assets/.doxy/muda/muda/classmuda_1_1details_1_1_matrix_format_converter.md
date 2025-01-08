@@ -75,6 +75,7 @@ Inherits the following classes: [muda::details::MatrixFormatConverterBase](class
 | Type | Name |
 | ---: | :--- |
 |   | [**MatrixFormatConverter**](#function-matrixformatconverter) ([**LinearSystemHandles**](classmuda_1_1_linear_system_handles.md) & handles) <br> |
+|  void | [**bsr2csr**](#function-bsr2csr) (cusparseHandle\_t handle, int mb, int nb, int blockDim, cusparseMatDescr\_t descrA, const T \* bsrValA, const int \* bsrRowPtrA, const int \* bsrColIndA, int nnzb, [**DeviceCSRMatrix**](classmuda_1_1_device_b_s_r_matrix.md)&lt; T &gt; & to, [**muda::DeviceBuffer**](classmuda_1_1_device_buffer.md)&lt; int &gt; & row\_offsets, [**muda::DeviceBuffer**](classmuda_1_1_device_buffer.md)&lt; int &gt; & col\_indices, [**muda::DeviceBuffer**](classmuda_1_1_device_buffer.md)&lt; T &gt; & values) <br> |
 |  void | [**calculate\_block\_offsets**](#function-calculate_block_offsets) (const [**DeviceBCOOMatrix**](classmuda_1_1_device_b_c_o_o_matrix.md)&lt; T, N &gt; & from, [**DeviceBSRMatrix**](classmuda_1_1_device_b_s_r_matrix.md)&lt; T, N &gt; & to) <br> |
 |  void | [**convert**](#function-convert-19) (const [**DeviceTripletMatrix**](classmuda_1_1_device_triplet_matrix.md)&lt; T, N &gt; & from, [**DeviceBCOOMatrix**](classmuda_1_1_device_b_c_o_o_matrix.md)&lt; T, N &gt; & to) <br> |
 |  void | [**convert**](#function-convert-29) (const [**DeviceBCOOMatrix**](classmuda_1_1_device_b_c_o_o_matrix.md)&lt; T, N &gt; & from, [**DeviceDenseMatrix**](classmuda_1_1_device_dense_matrix.md)&lt; T &gt; & to, bool clear\_dense\_matrix=true) <br> |
@@ -84,7 +85,7 @@ Inherits the following classes: [muda::details::MatrixFormatConverterBase](class
 |  void | [**convert**](#function-convert-69) (const [**DeviceDoubletVector**](classmuda_1_1_device_doublet_vector.md)&lt; T, N &gt; & from, [**DeviceBCOOVector**](classmuda_1_1_device_b_c_o_o_vector.md)&lt; T, N &gt; & to) <br> |
 |  void | [**convert**](#function-convert-79) (const [**DeviceBCOOVector**](classmuda_1_1_device_b_c_o_o_vector.md)&lt; T, N &gt; & from, [**DeviceDenseVector**](classmuda_1_1_device_dense_vector.md)&lt; T &gt; & to, bool clear\_dense\_vector=true) <br> |
 |  void | [**convert**](#function-convert-89) (const [**DeviceDoubletVector**](classmuda_1_1_device_doublet_vector.md)&lt; T, N &gt; & from, [**DeviceDenseVector**](classmuda_1_1_device_dense_vector.md)&lt; T &gt; & to, bool clear\_dense\_vector=true) <br> |
-|  void | [**convert**](#function-convert-99) (const [**DeviceBSRMatrix**](classmuda_1_1_device_b_s_r_matrix.md)&lt; T, N &gt; & from, [**DeviceCSRMatrix**](classmuda_1_1_device_c_s_r_matrix.md)&lt; T &gt; & to) <br> |
+|  void | [**convert**](#function-convert-99) (const [**DeviceBSRMatrix**](classmuda_1_1_device_b_s_r_matrix.md)&lt; T, N &gt; & from, [**DeviceCSRMatrix**](classmuda_1_1_device_b_s_r_matrix.md)&lt; T &gt; & to) <br> |
 |  void | [**expand\_blocks**](#function-expand_blocks) (const [**DeviceBCOOMatrix**](classmuda_1_1_device_b_c_o_o_matrix.md)&lt; T, N &gt; & from, [**DeviceCOOMatrix**](classmuda_1_1_device_b_c_o_o_matrix.md)&lt; T &gt; & to) <br> |
 |  void | [**make\_unique\_blocks**](#function-make_unique_blocks) (const [**DeviceTripletMatrix**](classmuda_1_1_device_triplet_matrix.md)&lt; T, N &gt; & from, [**DeviceBCOOMatrix**](classmuda_1_1_device_b_c_o_o_matrix.md)&lt; T, N &gt; & to) <br> |
 |  void | [**make\_unique\_indices**](#function-make_unique_indices-12) (const [**DeviceTripletMatrix**](classmuda_1_1_device_triplet_matrix.md)&lt; T, N &gt; & from, [**DeviceBCOOMatrix**](classmuda_1_1_device_b_c_o_o_matrix.md)&lt; T, N &gt; & to) <br> |
@@ -94,7 +95,7 @@ Inherits the following classes: [muda::details::MatrixFormatConverterBase](class
 |  void | [**merge\_sort\_indices\_and\_blocks**](#function-merge_sort_indices_and_blocks) (const [**DeviceTripletMatrix**](classmuda_1_1_device_triplet_matrix.md)&lt; T, N &gt; & from, [**DeviceBCOOMatrix**](classmuda_1_1_device_b_c_o_o_matrix.md)&lt; T, N &gt; & to) <br> |
 |  void | [**merge\_sort\_indices\_and\_segments**](#function-merge_sort_indices_and_segments) (const [**DeviceDoubletVector**](classmuda_1_1_device_doublet_vector.md)&lt; T, N &gt; & from, [**DeviceBCOOVector**](classmuda_1_1_device_b_c_o_o_vector.md)&lt; T, N &gt; & to) <br> |
 |  void | [**radix\_sort\_indices\_and\_blocks**](#function-radix_sort_indices_and_blocks) (const [**DeviceTripletMatrix**](classmuda_1_1_device_triplet_matrix.md)&lt; T, N &gt; & from, [**DeviceBCOOMatrix**](classmuda_1_1_device_b_c_o_o_matrix.md)&lt; T, N &gt; & to) <br> |
-|  void | [**set\_unique\_segments\_to\_dense\_vector**](#function-set_unique_segments_to_dense_vector) (const [**DeviceBCOOVector**](classmuda_1_1_device_b_c_o_o_vector.md)&lt; T, N &gt; & from, [**DeviceDenseVector**](classmuda_1_1_device_dense_vector.md)&lt; T &gt; & to, bool clear\_dense\_vector) <br> |
+|  void | [**set\_unique\_values\_to\_dense\_vector**](#function-set_unique_values_to_dense_vector) (const [**DeviceBCOOVector**](classmuda_1_1_device_b_c_o_o_vector.md)&lt; T, N &gt; & from, [**DeviceDenseVector**](classmuda_1_1_device_dense_vector.md)&lt; T &gt; & to, bool clear\_dense\_vector) <br> |
 |  void | [**sort\_indices\_and\_values**](#function-sort_indices_and_values) (const [**DeviceBCOOMatrix**](classmuda_1_1_device_b_c_o_o_matrix.md)&lt; T, N &gt; & from, [**DeviceCOOMatrix**](classmuda_1_1_device_b_c_o_o_matrix.md)&lt; T &gt; & to) <br> |
 | virtual  | [**~MatrixFormatConverter**](#function-matrixformatconverter) () = default<br> |
 
@@ -197,10 +198,37 @@ inline muda::details::MatrixFormatConverter::MatrixFormatConverter (
 
 
 
+### function bsr2csr 
+
+```C++
+inline void muda::details::MatrixFormatConverter::bsr2csr (
+    cusparseHandle_t handle,
+    int mb,
+    int nb,
+    int blockDim,
+    cusparseMatDescr_t descrA,
+    const T * bsrValA,
+    const int * bsrRowPtrA,
+    const int * bsrColIndA,
+    int nnzb,
+    DeviceCSRMatrix < T > & to,
+    muda::DeviceBuffer < int > & row_offsets,
+    muda::DeviceBuffer < int > & col_indices,
+    muda::DeviceBuffer < T > & values
+) 
+```
+
+
+
+
+<hr>
+
+
+
 ### function calculate\_block\_offsets 
 
 ```C++
-void muda::details::MatrixFormatConverter::calculate_block_offsets (
+inline void muda::details::MatrixFormatConverter::calculate_block_offsets (
     const DeviceBCOOMatrix < T, N > & from,
     DeviceBSRMatrix < T, N > & to
 ) 
@@ -216,7 +244,7 @@ void muda::details::MatrixFormatConverter::calculate_block_offsets (
 ### function convert [1/9]
 
 ```C++
-void muda::details::MatrixFormatConverter::convert (
+inline void muda::details::MatrixFormatConverter::convert (
     const DeviceTripletMatrix < T, N > & from,
     DeviceBCOOMatrix < T, N > & to
 ) 
@@ -232,7 +260,7 @@ void muda::details::MatrixFormatConverter::convert (
 ### function convert [2/9]
 
 ```C++
-void muda::details::MatrixFormatConverter::convert (
+inline void muda::details::MatrixFormatConverter::convert (
     const DeviceBCOOMatrix < T, N > & from,
     DeviceDenseMatrix < T > & to,
     bool clear_dense_matrix=true
@@ -249,7 +277,7 @@ void muda::details::MatrixFormatConverter::convert (
 ### function convert [3/9]
 
 ```C++
-void muda::details::MatrixFormatConverter::convert (
+inline void muda::details::MatrixFormatConverter::convert (
     const DeviceBCOOMatrix < T, N > & from,
     DeviceCOOMatrix < T > & to
 ) 
@@ -265,7 +293,7 @@ void muda::details::MatrixFormatConverter::convert (
 ### function convert [4/9]
 
 ```C++
-void muda::details::MatrixFormatConverter::convert (
+inline void muda::details::MatrixFormatConverter::convert (
     const DeviceBCOOMatrix < T, N > & from,
     DeviceBSRMatrix < T, N > & to
 ) 
@@ -281,7 +309,7 @@ void muda::details::MatrixFormatConverter::convert (
 ### function convert [5/9]
 
 ```C++
-void muda::details::MatrixFormatConverter::convert (
+inline void muda::details::MatrixFormatConverter::convert (
     DeviceBCOOMatrix < T, N > && from,
     DeviceBSRMatrix < T, N > & to
 ) 
@@ -297,7 +325,7 @@ void muda::details::MatrixFormatConverter::convert (
 ### function convert [6/9]
 
 ```C++
-void muda::details::MatrixFormatConverter::convert (
+inline void muda::details::MatrixFormatConverter::convert (
     const DeviceDoubletVector < T, N > & from,
     DeviceBCOOVector < T, N > & to
 ) 
@@ -313,7 +341,7 @@ void muda::details::MatrixFormatConverter::convert (
 ### function convert [7/9]
 
 ```C++
-void muda::details::MatrixFormatConverter::convert (
+inline void muda::details::MatrixFormatConverter::convert (
     const DeviceBCOOVector < T, N > & from,
     DeviceDenseVector < T > & to,
     bool clear_dense_vector=true
@@ -330,7 +358,7 @@ void muda::details::MatrixFormatConverter::convert (
 ### function convert [8/9]
 
 ```C++
-void muda::details::MatrixFormatConverter::convert (
+inline void muda::details::MatrixFormatConverter::convert (
     const DeviceDoubletVector < T, N > & from,
     DeviceDenseVector < T > & to,
     bool clear_dense_vector=true
@@ -347,7 +375,7 @@ void muda::details::MatrixFormatConverter::convert (
 ### function convert [9/9]
 
 ```C++
-void muda::details::MatrixFormatConverter::convert (
+inline void muda::details::MatrixFormatConverter::convert (
     const DeviceBSRMatrix < T, N > & from,
     DeviceCSRMatrix < T > & to
 ) 
@@ -363,7 +391,7 @@ void muda::details::MatrixFormatConverter::convert (
 ### function expand\_blocks 
 
 ```C++
-void muda::details::MatrixFormatConverter::expand_blocks (
+inline void muda::details::MatrixFormatConverter::expand_blocks (
     const DeviceBCOOMatrix < T, N > & from,
     DeviceCOOMatrix < T > & to
 ) 
@@ -379,7 +407,7 @@ void muda::details::MatrixFormatConverter::expand_blocks (
 ### function make\_unique\_blocks 
 
 ```C++
-void muda::details::MatrixFormatConverter::make_unique_blocks (
+inline void muda::details::MatrixFormatConverter::make_unique_blocks (
     const DeviceTripletMatrix < T, N > & from,
     DeviceBCOOMatrix < T, N > & to
 ) 
@@ -395,7 +423,7 @@ void muda::details::MatrixFormatConverter::make_unique_blocks (
 ### function make\_unique\_indices [1/2]
 
 ```C++
-void muda::details::MatrixFormatConverter::make_unique_indices (
+inline void muda::details::MatrixFormatConverter::make_unique_indices (
     const DeviceTripletMatrix < T, N > & from,
     DeviceBCOOMatrix < T, N > & to
 ) 
@@ -411,7 +439,7 @@ void muda::details::MatrixFormatConverter::make_unique_indices (
 ### function make\_unique\_indices [2/2]
 
 ```C++
-void muda::details::MatrixFormatConverter::make_unique_indices (
+inline void muda::details::MatrixFormatConverter::make_unique_indices (
     const DeviceDoubletVector < T, N > & from,
     DeviceBCOOVector < T, N > & to
 ) 
@@ -427,7 +455,7 @@ void muda::details::MatrixFormatConverter::make_unique_indices (
 ### function make\_unique\_indices\_and\_blocks 
 
 ```C++
-void muda::details::MatrixFormatConverter::make_unique_indices_and_blocks (
+inline void muda::details::MatrixFormatConverter::make_unique_indices_and_blocks (
     const DeviceTripletMatrix < T, N > & from,
     DeviceBCOOMatrix < T, N > & to
 ) 
@@ -443,7 +471,7 @@ void muda::details::MatrixFormatConverter::make_unique_indices_and_blocks (
 ### function make\_unique\_segments 
 
 ```C++
-void muda::details::MatrixFormatConverter::make_unique_segments (
+inline void muda::details::MatrixFormatConverter::make_unique_segments (
     const DeviceDoubletVector < T, N > & from,
     DeviceBCOOVector < T, N > & to
 ) 
@@ -459,7 +487,7 @@ void muda::details::MatrixFormatConverter::make_unique_segments (
 ### function merge\_sort\_indices\_and\_blocks 
 
 ```C++
-void muda::details::MatrixFormatConverter::merge_sort_indices_and_blocks (
+inline void muda::details::MatrixFormatConverter::merge_sort_indices_and_blocks (
     const DeviceTripletMatrix < T, N > & from,
     DeviceBCOOMatrix < T, N > & to
 ) 
@@ -475,7 +503,7 @@ void muda::details::MatrixFormatConverter::merge_sort_indices_and_blocks (
 ### function merge\_sort\_indices\_and\_segments 
 
 ```C++
-void muda::details::MatrixFormatConverter::merge_sort_indices_and_segments (
+inline void muda::details::MatrixFormatConverter::merge_sort_indices_and_segments (
     const DeviceDoubletVector < T, N > & from,
     DeviceBCOOVector < T, N > & to
 ) 
@@ -491,7 +519,7 @@ void muda::details::MatrixFormatConverter::merge_sort_indices_and_segments (
 ### function radix\_sort\_indices\_and\_blocks 
 
 ```C++
-void muda::details::MatrixFormatConverter::radix_sort_indices_and_blocks (
+inline void muda::details::MatrixFormatConverter::radix_sort_indices_and_blocks (
     const DeviceTripletMatrix < T, N > & from,
     DeviceBCOOMatrix < T, N > & to
 ) 
@@ -504,10 +532,10 @@ void muda::details::MatrixFormatConverter::radix_sort_indices_and_blocks (
 
 
 
-### function set\_unique\_segments\_to\_dense\_vector 
+### function set\_unique\_values\_to\_dense\_vector 
 
 ```C++
-void muda::details::MatrixFormatConverter::set_unique_segments_to_dense_vector (
+inline void muda::details::MatrixFormatConverter::set_unique_values_to_dense_vector (
     const DeviceBCOOVector < T, N > & from,
     DeviceDenseVector < T > & to,
     bool clear_dense_vector
@@ -524,7 +552,7 @@ void muda::details::MatrixFormatConverter::set_unique_segments_to_dense_vector (
 ### function sort\_indices\_and\_values 
 
 ```C++
-void muda::details::MatrixFormatConverter::sort_indices_and_values (
+inline void muda::details::MatrixFormatConverter::sort_indices_and_values (
     const DeviceBCOOMatrix < T, N > & from,
     DeviceCOOMatrix < T > & to
 ) 
@@ -549,5 +577,5 @@ virtual muda::details::MatrixFormatConverter::~MatrixFormatConverter () = defaul
 <hr>
 
 ------------------------------
-The documentation for this class was generated from the following file `src/muda/ext/linear_system/matrix_format_converter_impl.h`
+The documentation for this class was generated from the following file `src/muda/ext/linear_system/device_bcoo_matrix.h`
 

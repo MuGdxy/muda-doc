@@ -44,8 +44,8 @@ _A view interface for any array-like liner memory, which can be constructed from
 | Type | Name |
 | ---: | :--- |
 | class | [**BufferViewT**](classmuda_1_1_buffer_view_t.md) &lt;IsConst, typename T&gt;<br> |
-| struct | [**read\_only\_viewer&lt; BufferView&lt; T &gt; &gt;**](structmuda_1_1read__only__viewer_3_01_buffer_view_3_01_t_01_4_01_4.md) &lt;typename T&gt;<br> |
-| struct | [**read\_write\_viewer&lt; CBufferView&lt; T &gt; &gt;**](structmuda_1_1read__write__viewer_3_01_c_buffer_view_3_01_t_01_4_01_4.md) &lt;typename T&gt;<br> |
+| struct | [**read\_only\_view**](structmuda_1_1read__only__view.md) &lt;typename T&gt;<br> |
+| struct | [**read\_write\_view**](structmuda_1_1read__write__view.md) &lt;typename T&gt;<br> |
 
 
 
@@ -96,7 +96,7 @@ _A view interface for any array-like liner memory, which can be constructed from
 
 
 
-# Detailed Description
+## Detailed Description
 
 
 

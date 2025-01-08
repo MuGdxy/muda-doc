@@ -24,18 +24,19 @@ namespace muda
 template <typename Ty, int N>
 class DeviceBSRMatrix
 {
-    friend class details::MatrixFormatConverter<Ty, N>;
-    static_assert(N >= 2, "Block size must be >= 2");
+    template <typename U, int M>
+    friend class details::MatrixFormatConverter;
 
   public:
-    using BlockMatrix = Eigen::Matrix<Ty, N, N>;
+    using ValueT = std::conditional_t<N == 1, Ty, Eigen::Matrix<Ty, N, N>>;
+    static constexpr bool IsBlockMatrix = (N > 1);
 
   protected:
-    muda::DeviceBuffer<BlockMatrix> m_block_values;
-    muda::DeviceBuffer<int>         m_block_row_offsets;
-    muda::DeviceBuffer<int>         m_block_col_indices;
-    mutable cusparseSpMatDescr_t    m_descr        = nullptr;
-    mutable cusparseMatDescr_t      m_legacy_descr = nullptr;
+    muda::DeviceBuffer<ValueT>   m_values;
+    muda::DeviceBuffer<int>      m_row_offsets;
+    muda::DeviceBuffer<int>      m_col_indices;
+    mutable cusparseSpMatDescr_t m_descr        = nullptr;
+    mutable cusparseMatDescr_t   m_legacy_descr = nullptr;
 
     int m_row = 0;
     int m_col = 0;
@@ -57,18 +58,18 @@ class DeviceBSRMatrix
 
     static constexpr int block_size() { return N; }
 
-    auto block_values() { return m_block_values.view(); }
-    auto block_values() const { return m_block_values.view(); }
+    auto values() { return m_values.view(); }
+    auto values() const { return m_values.view(); }
 
-    auto block_row_offsets() { return m_block_row_offsets.view(); }
-    auto block_row_offsets() const { return m_block_row_offsets.view(); }
+    auto row_offsets() { return m_row_offsets.view(); }
+    auto row_offsets() const { return m_row_offsets.view(); }
 
-    auto block_col_indices() { return m_block_col_indices.view(); }
-    auto block_col_indices() const { return m_block_col_indices.view(); }
+    auto col_indices() { return m_col_indices.view(); }
+    auto col_indices() const { return m_col_indices.view(); }
 
-    auto block_rows() const { return m_row; }
-    auto block_cols() const { return m_col; }
-    auto non_zero_blocks() const { return m_block_values.size(); }
+    auto rows() const { return m_row; }
+    auto cols() const { return m_col; }
+    auto non_zeros() const { return m_values.size(); }
 
     cusparseSpMatDescr_t descr() const;
     cusparseMatDescr_t   legacy_descr() const;
@@ -77,10 +78,10 @@ class DeviceBSRMatrix
     {
         return BSRMatrixView<Ty, N>{m_row,
                                     m_col,
-                                    m_block_row_offsets.data(),
-                                    m_block_col_indices.data(),
-                                    m_block_values.data(),
-                                    (int)m_block_values.size(),
+                                    m_row_offsets.data(),
+                                    m_col_indices.data(),
+                                    m_values.data(),
+                                    (int)m_values.size(),
                                     descr(),
                                     legacy_descr(),
                                     false};
@@ -92,10 +93,10 @@ class DeviceBSRMatrix
     {
         return CBSRMatrixView<Ty, N>{m_row,
                                      m_col,
-                                     m_block_row_offsets.data(),
-                                     m_block_col_indices.data(),
-                                     m_block_values.data(),
-                                     (int)m_block_values.size(),
+                                     m_row_offsets.data(),
+                                     m_col_indices.data(),
+                                     m_values.data(),
+                                     (int)m_values.size(),
                                      descr(),
                                      legacy_descr(),
                                      false};

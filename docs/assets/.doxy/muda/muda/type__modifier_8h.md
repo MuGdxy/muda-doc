@@ -36,8 +36,8 @@
 
 | Type | Name |
 | ---: | :--- |
-| struct | [**read\_only\_viewer**](structmuda_1_1read__only__viewer.md) &lt;typename T&gt;<br> |
-| struct | [**read\_write\_viewer**](structmuda_1_1read__write__viewer.md) &lt;typename T&gt;<br> |
+| struct | [**read\_only\_view**](structmuda_1_1read__only__view.md) &lt;typename T&gt;<br> |
+| struct | [**read\_write\_view**](structmuda_1_1read__write__view.md) &lt;typename T&gt;<br> |
 
 
 

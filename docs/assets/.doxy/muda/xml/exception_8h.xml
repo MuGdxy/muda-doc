@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.1" xml:lang="en-US">
   <compounddef id="exception_8h" kind="file" language="C++">
     <compoundname>exception.h</compoundname>
     <includes refid="muda__def_8h" local="no">muda/muda_def.h</includes>
@@ -62,7 +62,7 @@
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="45">
+      <node id="46">
         <label>src/muda/buffer.h</label>
         <link refid="buffer_8h_source"/>
         <childnode refid="13" relation="include">
@@ -75,13 +75,13 @@
         <link refid="buffer__2d__view_8h_source"/>
         <childnode refid="108" relation="include">
         </childnode>
-        <childnode refid="42" relation="include">
+        <childnode refid="43" relation="include">
         </childnode>
-        <childnode refid="58" relation="include">
+        <childnode refid="59" relation="include">
         </childnode>
-        <childnode refid="82" relation="include">
+        <childnode refid="83" relation="include">
         </childnode>
-        <childnode refid="80" relation="include">
+        <childnode refid="81" relation="include">
         </childnode>
         <childnode refid="87" relation="include">
         </childnode>
@@ -91,15 +91,15 @@
         <link refid="buffer__3d__view_8h_source"/>
         <childnode refid="109" relation="include">
         </childnode>
-        <childnode refid="43" relation="include">
+        <childnode refid="44" relation="include">
         </childnode>
-        <childnode refid="58" relation="include">
+        <childnode refid="59" relation="include">
         </childnode>
       </node>
-      <node id="50">
+      <node id="51">
         <label>src/muda/buffer/buffer_launch.h</label>
         <link refid="buffer__launch_8h_source"/>
-        <childnode refid="45" relation="include">
+        <childnode refid="46" relation="include">
         </childnode>
         <childnode refid="13" relation="include">
         </childnode>
@@ -107,19 +107,19 @@
       <node id="118">
         <label>src/muda/buffer/buffer_view.h</label>
         <link refid="buffer__view_8h"/>
-        <childnode refid="45" relation="include">
+        <childnode refid="46" relation="include">
         </childnode>
         <childnode refid="105" relation="include">
         </childnode>
-        <childnode refid="44" relation="include">
+        <childnode refid="45" relation="include">
         </childnode>
-        <childnode refid="58" relation="include">
+        <childnode refid="59" relation="include">
         </childnode>
         <childnode refid="115" relation="include">
         </childnode>
-        <childnode refid="60" relation="include">
+        <childnode refid="61" relation="include">
         </childnode>
-        <childnode refid="77" relation="include">
+        <childnode refid="78" relation="include">
         </childnode>
         <childnode refid="88" relation="include">
         </childnode>
@@ -129,13 +129,13 @@
       <node id="105">
         <label>src/muda/buffer/device_buffer.h</label>
         <link refid="device__buffer_8h"/>
-        <childnode refid="45" relation="include">
+        <childnode refid="46" relation="include">
         </childnode>
-        <childnode refid="78" relation="include">
+        <childnode refid="79" relation="include">
         </childnode>
-        <childnode refid="72" relation="include">
+        <childnode refid="73" relation="include">
         </childnode>
-        <childnode refid="54" relation="include">
+        <childnode refid="55" relation="include">
         </childnode>
         <childnode refid="99" relation="include">
         </childnode>
@@ -151,7 +151,7 @@
         </childnode>
         <childnode refid="101" relation="include">
         </childnode>
-        <childnode refid="85" relation="include">
+        <childnode refid="86" relation="include">
         </childnode>
         <childnode refid="96" relation="include">
         </childnode>
@@ -159,7 +159,7 @@
       <node id="108">
         <label>src/muda/buffer/device_buffer_2d.h</label>
         <link refid="device__buffer__2d_8h_source"/>
-        <childnode refid="83" relation="include">
+        <childnode refid="84" relation="include">
         </childnode>
       </node>
       <node id="109">
@@ -169,49 +169,49 @@
       <node id="111">
         <label>src/muda/buffer/device_var.h</label>
         <link refid="device__var_8h_source"/>
-        <childnode refid="45" relation="include">
+        <childnode refid="46" relation="include">
         </childnode>
         <childnode refid="112" relation="include">
         </childnode>
-        <childnode refid="86" relation="include">
+        <childnode refid="19" relation="include">
         </childnode>
-        <childnode refid="62" relation="include">
+        <childnode refid="63" relation="include">
         </childnode>
         <childnode refid="114" relation="include">
         </childnode>
       </node>
-      <node id="42">
+      <node id="43">
         <label>src/muda/buffer/graph_buffer_2d_view.h</label>
         <link refid="graph__buffer__2d__view_8h_source"/>
       </node>
-      <node id="43">
+      <node id="44">
         <label>src/muda/buffer/graph_buffer_3d_view.h</label>
         <link refid="graph__buffer__3d__view_8h_source"/>
       </node>
-      <node id="44">
+      <node id="45">
         <label>src/muda/buffer/graph_buffer_view.h</label>
         <link refid="graph__buffer__view_8h_source"/>
-        <childnode refid="45" relation="include">
+        <childnode refid="46" relation="include">
         </childnode>
       </node>
-      <node id="46">
+      <node id="47">
         <label>src/muda/buffer/graph_var_view.h</label>
         <link refid="graph__var__view_8h_source"/>
-        <childnode refid="45" relation="include">
+        <childnode refid="46" relation="include">
         </childnode>
       </node>
-      <node id="58">
+      <node id="59">
         <label>src/muda/buffer/reshape_nd/reserve.h</label>
         <link refid="reserve_8h_source"/>
       </node>
       <node id="110">
         <label>src/muda/buffer/var_view.h</label>
         <link refid="var__view_8h_source"/>
-        <childnode refid="45" relation="include">
+        <childnode refid="46" relation="include">
         </childnode>
         <childnode refid="111" relation="include">
         </childnode>
-        <childnode refid="46" relation="include">
+        <childnode refid="47" relation="include">
         </childnode>
       </node>
       <node id="2">
@@ -229,19 +229,19 @@
         <link refid="check__cuda__errors_8h_source"/>
         <childnode refid="4" relation="include">
         </childnode>
-        <childnode refid="40" relation="include">
+        <childnode refid="41" relation="include">
         </childnode>
-        <childnode refid="49" relation="include">
-        </childnode>
-        <childnode refid="61" relation="include">
+        <childnode refid="50" relation="include">
         </childnode>
         <childnode refid="62" relation="include">
         </childnode>
-        <childnode refid="64" relation="include">
+        <childnode refid="63" relation="include">
         </childnode>
-        <childnode refid="68" relation="include">
+        <childnode refid="65" relation="include">
         </childnode>
         <childnode refid="69" relation="include">
+        </childnode>
+        <childnode refid="70" relation="include">
         </childnode>
       </node>
       <node id="10">
@@ -266,23 +266,23 @@
         <label>src/muda/compute_graph/compute_graph_accessor.h</label>
         <link refid="compute__graph__accessor_8h_source"/>
       </node>
-      <node id="41">
+      <node id="42">
         <label>src/muda/compute_graph/compute_graph_var.h</label>
         <link refid="compute__graph__var_8h_source"/>
-        <childnode refid="42" relation="include">
-        </childnode>
         <childnode refid="43" relation="include">
         </childnode>
         <childnode refid="44" relation="include">
         </childnode>
-        <childnode refid="46" relation="include">
-        </childnode>
-        <childnode refid="10" relation="include">
+        <childnode refid="45" relation="include">
         </childnode>
         <childnode refid="47" relation="include">
         </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
       </node>
-      <node id="33">
+      <node id="34">
         <label>src/muda/compute_graph/nodes/compute_graph_catpure_node.h</label>
         <link refid="compute__graph__catpure__node_8h_source"/>
       </node>
@@ -290,7 +290,7 @@
         <label>src/muda/compute_graph/nodes/compute_graph_event_node.h</label>
         <link refid="compute__graph__event__node_8h_source"/>
       </node>
-      <node id="34">
+      <node id="35">
         <label>src/muda/compute_graph/nodes/compute_graph_kernel_node.h</label>
         <link refid="compute__graph__kernel__node_8h_source"/>
       </node>
@@ -317,7 +317,7 @@
         <link refid="vector_8h_source"/>
         <childnode refid="113" relation="include">
         </childnode>
-        <childnode refid="79" relation="include">
+        <childnode refid="80" relation="include">
         </childnode>
       </node>
       <node id="16">
@@ -339,13 +339,11 @@
         </childnode>
         <childnode refid="18" relation="include">
         </childnode>
-        <childnode refid="19" relation="include">
-        </childnode>
         <childnode refid="20" relation="include">
         </childnode>
         <childnode refid="21" relation="include">
         </childnode>
-        <childnode refid="26" relation="include">
+        <childnode refid="22" relation="include">
         </childnode>
         <childnode refid="27" relation="include">
         </childnode>
@@ -358,6 +356,8 @@
         <childnode refid="31" relation="include">
         </childnode>
         <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
         </childnode>
       </node>
       <node id="14">
@@ -377,64 +377,76 @@
         <link refid="device__merge__sort_8h_source"/>
         <childnode refid="15" relation="include">
         </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
       </node>
-      <node id="19">
+      <node id="20">
         <label>src/muda/cub/device/device_partition.h</label>
         <link refid="device__partition_8h_source"/>
         <childnode refid="15" relation="include">
         </childnode>
       </node>
-      <node id="20">
+      <node id="21">
         <label>src/muda/cub/device/device_radix_sort.h</label>
         <link refid="device__radix__sort_8h_source"/>
         <childnode refid="15" relation="include">
         </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
       </node>
-      <node id="21">
+      <node id="22">
         <label>src/muda/cub/device/device_reduce.h</label>
         <link refid="device__reduce_8h_source"/>
         <childnode refid="15" relation="include">
         </childnode>
-        <childnode refid="22" relation="include">
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
         </childnode>
       </node>
-      <node id="26">
+      <node id="27">
         <label>src/muda/cub/device/device_run_length_encode.h</label>
         <link refid="device__run__length__encode_8h_source"/>
         <childnode refid="15" relation="include">
         </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
       </node>
-      <node id="27">
+      <node id="28">
         <label>src/muda/cub/device/device_scan.h</label>
         <link refid="device__scan_8h_source"/>
         <childnode refid="15" relation="include">
         </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
       </node>
-      <node id="28">
+      <node id="29">
         <label>src/muda/cub/device/device_segmented_radix_sort.h</label>
         <link refid="device__segmented__radix__sort_8h_source"/>
         <childnode refid="15" relation="include">
         </childnode>
       </node>
-      <node id="29">
+      <node id="30">
         <label>src/muda/cub/device/device_segmented_reduce.h</label>
         <link refid="device__segmented__reduce_8h_source"/>
         <childnode refid="15" relation="include">
         </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
       </node>
-      <node id="30">
+      <node id="31">
         <label>src/muda/cub/device/device_segmented_sort.h</label>
         <link refid="device__segmented__sort_8h_source"/>
         <childnode refid="15" relation="include">
         </childnode>
       </node>
-      <node id="31">
+      <node id="32">
         <label>src/muda/cub/device/device_select.h</label>
         <link refid="device__select_8h_source"/>
         <childnode refid="15" relation="include">
         </childnode>
       </node>
-      <node id="32">
+      <node id="33">
         <label>src/muda/cub/device/device_spmv.h</label>
         <link refid="device__spmv_8h_source"/>
         <childnode refid="15" relation="include">
@@ -446,108 +458,108 @@
         <childnode refid="2" relation="include">
         </childnode>
       </node>
-      <node id="66">
+      <node id="67">
         <label>src/muda/ext/eigen.h</label>
         <link refid="eigen_8h_source"/>
       </node>
-      <node id="65">
+      <node id="66">
         <label>src/muda/ext/eigen/log_proxy.h</label>
         <link refid="log__proxy_8h_source"/>
-        <childnode refid="66" relation="include">
-        </childnode>
-      </node>
-      <node id="71">
-        <label>src/muda/ext/field.h</label>
-        <link refid="field_8h_source"/>
-      </node>
-      <node id="70">
-        <label>src/muda/ext/field/field.h</label>
-        <link refid="field_2field_8h_source"/>
-        <childnode refid="71" relation="include">
-        </childnode>
-      </node>
-      <node id="78">
-        <label>src/muda/ext/field/field_entry.h</label>
-        <link refid="field__entry_8h_source"/>
-        <childnode refid="71" relation="include">
-        </childnode>
-      </node>
-      <node id="60">
-        <label>src/muda/ext/field/field_entry_launch.h</label>
-        <link refid="field__entry__launch_8h_source"/>
-      </node>
-      <node id="77">
-        <label>src/muda/ext/field/field_entry_view.h</label>
-        <link refid="field__entry__view_8h_source"/>
-        <childnode refid="78" relation="include">
-        </childnode>
-        <childnode refid="60" relation="include">
-        </childnode>
-      </node>
-      <node id="76">
-        <label>src/muda/ext/field/field_entry_viewer.h</label>
-        <link refid="field__entry__viewer_8h_source"/>
-        <childnode refid="77" relation="include">
+        <childnode refid="67" relation="include">
         </childnode>
       </node>
       <node id="72">
-        <label>src/muda/ext/field/sub_field.h</label>
-        <link refid="sub__field_8h_source"/>
+        <label>src/muda/ext/field.h</label>
+        <link refid="field_8h_source"/>
       </node>
-      <node id="24">
-        <label>src/muda/ext/geo/lbvh.h</label>
-        <link refid="lbvh_8h_source"/>
-      </node>
-      <node id="22">
-        <label>src/muda/ext/geo/lbvh/bvh.h</label>
-        <link refid="bvh_8h_source"/>
-        <childnode refid="23" relation="include">
-        </childnode>
-        <childnode refid="25" relation="include">
+      <node id="71">
+        <label>src/muda/ext/field/field.h</label>
+        <link refid="field_2field_8h_source"/>
+        <childnode refid="72" relation="include">
         </childnode>
       </node>
       <node id="79">
-        <label>src/muda/ext/geo/lbvh/bvh_viewer.h</label>
-        <link refid="bvh__viewer_8h_source"/>
-        <childnode refid="22" relation="include">
+        <label>src/muda/ext/field/field_entry.h</label>
+        <link refid="field__entry_8h_source"/>
+        <childnode refid="72" relation="include">
         </childnode>
       </node>
-      <node id="23">
-        <label>src/muda/ext/geo/lbvh/lbvh.h</label>
-        <link refid="lbvh_2lbvh_8h_source"/>
-        <childnode refid="24" relation="include">
+      <node id="61">
+        <label>src/muda/ext/field/field_entry_launch.h</label>
+        <link refid="field__entry__launch_8h_source"/>
+      </node>
+      <node id="78">
+        <label>src/muda/ext/field/field_entry_view.h</label>
+        <link refid="field__entry__view_8h_source"/>
+        <childnode refid="79" relation="include">
         </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+      </node>
+      <node id="77">
+        <label>src/muda/ext/field/field_entry_viewer.h</label>
+        <link refid="field__entry__viewer_8h_source"/>
+        <childnode refid="78" relation="include">
+        </childnode>
+      </node>
+      <node id="73">
+        <label>src/muda/ext/field/sub_field.h</label>
+        <link refid="sub__field_8h_source"/>
       </node>
       <node id="25">
-        <label>src/muda/ext/geo/lbvh/query.h</label>
-        <link refid="query_8h_source"/>
+        <label>src/muda/ext/geo/lbvh.h</label>
+        <link refid="lbvh_8h_source"/>
+      </node>
+      <node id="23">
+        <label>src/muda/ext/geo/lbvh/bvh.h</label>
+        <link refid="bvh_8h_source"/>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+      </node>
+      <node id="80">
+        <label>src/muda/ext/geo/lbvh/bvh_viewer.h</label>
+        <link refid="bvh__viewer_8h_source"/>
         <childnode refid="23" relation="include">
         </childnode>
       </node>
-      <node id="56">
+      <node id="24">
+        <label>src/muda/ext/geo/lbvh/lbvh.h</label>
+        <link refid="lbvh_2lbvh_8h_source"/>
+        <childnode refid="25" relation="include">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>src/muda/ext/geo/lbvh/query.h</label>
+        <link refid="query_8h_source"/>
+        <childnode refid="24" relation="include">
+        </childnode>
+      </node>
+      <node id="57">
         <label>src/muda/ext/geo/spatial_hash.h</label>
         <link refid="spatial__hash_8h_source"/>
       </node>
-      <node id="55">
+      <node id="56">
         <label>src/muda/ext/geo/spatial_hash/sparse_spatial_hash.h</label>
         <link refid="sparse__spatial__hash_8h_source"/>
+        <childnode refid="57" relation="include">
+        </childnode>
+      </node>
+      <node id="55">
+        <label>src/muda/ext/geo/spatial_hash/sparse_spatial_hash_impl.h</label>
+        <link refid="sparse__spatial__hash__impl_8h_source"/>
         <childnode refid="56" relation="include">
         </childnode>
       </node>
-      <node id="54">
-        <label>src/muda/ext/geo/spatial_hash/sparse_spatial_hash_impl.h</label>
-        <link refid="sparse__spatial__hash__impl_8h_source"/>
-        <childnode refid="55" relation="include">
-        </childnode>
-      </node>
-      <node id="81">
+      <node id="82">
         <label>src/muda/ext/linear_system.h</label>
         <link refid="linear__system_8h_source"/>
       </node>
       <node id="98">
         <label>src/muda/ext/linear_system/bcoo_matrix_view.h</label>
         <link refid="bcoo__matrix__view_8h_source"/>
-        <childnode refid="81" relation="include">
+        <childnode refid="82" relation="include">
         </childnode>
         <childnode refid="99" relation="include">
         </childnode>
@@ -555,7 +567,7 @@
       <node id="97">
         <label>src/muda/ext/linear_system/bcoo_matrix_viewer.h</label>
         <link refid="bcoo__matrix__viewer_8h_source"/>
-        <childnode refid="81" relation="include">
+        <childnode refid="82" relation="include">
         </childnode>
         <childnode refid="98" relation="include">
         </childnode>
@@ -563,7 +575,7 @@
       <node id="92">
         <label>src/muda/ext/linear_system/bcoo_vector_view.h</label>
         <link refid="bcoo__vector__view_8h_source"/>
-        <childnode refid="81" relation="include">
+        <childnode refid="82" relation="include">
         </childnode>
         <childnode refid="93" relation="include">
         </childnode>
@@ -571,43 +583,43 @@
       <node id="91">
         <label>src/muda/ext/linear_system/bcoo_vector_viewer.h</label>
         <link refid="bcoo__vector__viewer_8h_source"/>
-        <childnode refid="81" relation="include">
+        <childnode refid="82" relation="include">
         </childnode>
         <childnode refid="92" relation="include">
         </childnode>
       </node>
-      <node id="82">
+      <node id="83">
         <label>src/muda/ext/linear_system/dense_matrix_view.h</label>
         <link refid="dense__matrix__view_8h_source"/>
-        <childnode refid="81" relation="include">
+        <childnode refid="82" relation="include">
         </childnode>
-        <childnode refid="83" relation="include">
+        <childnode refid="84" relation="include">
         </childnode>
-        <childnode refid="85" relation="include">
+        <childnode refid="86" relation="include">
         </childnode>
       </node>
-      <node id="80">
+      <node id="81">
         <label>src/muda/ext/linear_system/dense_matrix_viewer.h</label>
         <link refid="dense__matrix__viewer_8h_source"/>
-        <childnode refid="81" relation="include">
-        </childnode>
         <childnode refid="82" relation="include">
+        </childnode>
+        <childnode refid="83" relation="include">
         </childnode>
       </node>
       <node id="88">
         <label>src/muda/ext/linear_system/dense_vector_view.h</label>
         <link refid="dense__vector__view_8h_source"/>
-        <childnode refid="81" relation="include">
+        <childnode refid="82" relation="include">
         </childnode>
         <childnode refid="89" relation="include">
         </childnode>
-        <childnode refid="85" relation="include">
+        <childnode refid="86" relation="include">
         </childnode>
       </node>
       <node id="87">
         <label>src/muda/ext/linear_system/dense_vector_viewer.h</label>
         <link refid="dense__vector__viewer_8h_source"/>
-        <childnode refid="81" relation="include">
+        <childnode refid="82" relation="include">
         </childnode>
         <childnode refid="88" relation="include">
         </childnode>
@@ -615,91 +627,93 @@
       <node id="99">
         <label>src/muda/ext/linear_system/device_bcoo_matrix.h</label>
         <link refid="device__bcoo__matrix_8h_source"/>
-        <childnode refid="81" relation="include">
+        <childnode refid="82" relation="include">
         </childnode>
-        <childnode refid="84" relation="include">
+        <childnode refid="85" relation="include">
         </childnode>
-        <childnode refid="86" relation="include">
+        <childnode refid="19" relation="include">
         </childnode>
       </node>
       <node id="93">
         <label>src/muda/ext/linear_system/device_bcoo_vector.h</label>
         <link refid="device__bcoo__vector_8h_source"/>
-        <childnode refid="81" relation="include">
+        <childnode refid="82" relation="include">
         </childnode>
-        <childnode refid="84" relation="include">
+        <childnode refid="85" relation="include">
         </childnode>
-        <childnode refid="86" relation="include">
+        <childnode refid="19" relation="include">
         </childnode>
       </node>
       <node id="106">
         <label>src/muda/ext/linear_system/device_bsr_matrix.h</label>
         <link refid="device__bsr__matrix_8h_source"/>
-        <childnode refid="81" relation="include">
+        <childnode refid="82" relation="include">
         </childnode>
-        <childnode refid="84" relation="include">
+        <childnode refid="107" relation="include">
         </childnode>
-        <childnode refid="86" relation="include">
+        <childnode refid="85" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
         </childnode>
       </node>
       <node id="107">
         <label>src/muda/ext/linear_system/device_csr_matrix.h</label>
         <link refid="device__csr__matrix_8h_source"/>
-        <childnode refid="81" relation="include">
+        <childnode refid="82" relation="include">
         </childnode>
-        <childnode refid="84" relation="include">
+        <childnode refid="85" relation="include">
         </childnode>
-        <childnode refid="86" relation="include">
+        <childnode refid="19" relation="include">
         </childnode>
       </node>
-      <node id="83">
+      <node id="84">
         <label>src/muda/ext/linear_system/device_dense_matrix.h</label>
         <link refid="device__dense__matrix_8h_source"/>
-        <childnode refid="81" relation="include">
+        <childnode refid="82" relation="include">
         </childnode>
-        <childnode refid="84" relation="include">
+        <childnode refid="85" relation="include">
         </childnode>
-        <childnode refid="86" relation="include">
+        <childnode refid="19" relation="include">
         </childnode>
       </node>
       <node id="89">
         <label>src/muda/ext/linear_system/device_dense_vector.h</label>
         <link refid="device__dense__vector_8h_source"/>
-        <childnode refid="81" relation="include">
+        <childnode refid="82" relation="include">
         </childnode>
-        <childnode refid="84" relation="include">
+        <childnode refid="85" relation="include">
         </childnode>
-        <childnode refid="86" relation="include">
+        <childnode refid="19" relation="include">
         </childnode>
       </node>
       <node id="95">
         <label>src/muda/ext/linear_system/device_doublet_vector.h</label>
         <link refid="device__doublet__vector_8h_source"/>
-        <childnode refid="81" relation="include">
+        <childnode refid="82" relation="include">
         </childnode>
         <childnode refid="93" relation="include">
         </childnode>
-        <childnode refid="84" relation="include">
+        <childnode refid="85" relation="include">
         </childnode>
-        <childnode refid="86" relation="include">
+        <childnode refid="19" relation="include">
         </childnode>
       </node>
       <node id="101">
         <label>src/muda/ext/linear_system/device_triplet_matrix.h</label>
         <link refid="device__triplet__matrix_8h_source"/>
-        <childnode refid="81" relation="include">
+        <childnode refid="82" relation="include">
         </childnode>
         <childnode refid="99" relation="include">
         </childnode>
-        <childnode refid="84" relation="include">
+        <childnode refid="85" relation="include">
         </childnode>
-        <childnode refid="86" relation="include">
+        <childnode refid="19" relation="include">
         </childnode>
       </node>
       <node id="94">
         <label>src/muda/ext/linear_system/doublet_vector_view.h</label>
         <link refid="doublet__vector__view_8h_source"/>
-        <childnode refid="81" relation="include">
+        <childnode refid="82" relation="include">
         </childnode>
         <childnode refid="92" relation="include">
         </childnode>
@@ -709,45 +723,45 @@
       <node id="90">
         <label>src/muda/ext/linear_system/doublet_vector_viewer.h</label>
         <link refid="doublet__vector__viewer_8h_source"/>
-        <childnode refid="81" relation="include">
+        <childnode refid="82" relation="include">
         </childnode>
         <childnode refid="91" relation="include">
         </childnode>
         <childnode refid="94" relation="include">
         </childnode>
       </node>
-      <node id="85">
+      <node id="86">
         <label>src/muda/ext/linear_system/linear_system_context.h</label>
         <link refid="linear__system__context_8h_source"/>
-        <childnode refid="81" relation="include">
+        <childnode refid="82" relation="include">
         </childnode>
       </node>
       <node id="123">
         <label>src/muda/ext/linear_system/linear_system_handles.h</label>
         <link refid="linear__system__handles_8h_source"/>
+        <childnode refid="86" relation="include">
+        </childnode>
         <childnode refid="85" relation="include">
         </childnode>
-        <childnode refid="84" relation="include">
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+      <node id="85">
+        <label>src/muda/ext/linear_system/matrix_format_converter.h</label>
+        <link refid="matrix__format__converter_8h_source"/>
+        <childnode refid="82" relation="include">
         </childnode>
         <childnode refid="86" relation="include">
         </childnode>
       </node>
-      <node id="84">
-        <label>src/muda/ext/linear_system/matrix_format_converter.h</label>
-        <link refid="matrix__format__converter_8h_source"/>
-        <childnode refid="81" relation="include">
-        </childnode>
-        <childnode refid="85" relation="include">
-        </childnode>
-      </node>
-      <node id="86">
+      <node id="19">
         <label>src/muda/ext/linear_system/matrix_format_converter_impl.h</label>
         <link refid="matrix__format__converter__impl_8h_source"/>
       </node>
       <node id="100">
         <label>src/muda/ext/linear_system/triplet_matrix_view.h</label>
         <link refid="triplet__matrix__view_8h_source"/>
-        <childnode refid="81" relation="include">
+        <childnode refid="82" relation="include">
         </childnode>
         <childnode refid="98" relation="include">
         </childnode>
@@ -757,14 +771,14 @@
       <node id="96">
         <label>src/muda/ext/linear_system/triplet_matrix_viewer.h</label>
         <link refid="triplet__matrix__viewer_8h_source"/>
-        <childnode refid="81" relation="include">
+        <childnode refid="82" relation="include">
         </childnode>
         <childnode refid="97" relation="include">
         </childnode>
         <childnode refid="100" relation="include">
         </childnode>
       </node>
-      <node id="35">
+      <node id="36">
         <label>src/muda/graph.h</label>
         <link refid="graph_8h_source"/>
         <childnode refid="11" relation="include">
@@ -779,7 +793,7 @@
         </childnode>
         <childnode refid="8" relation="include">
         </childnode>
-        <childnode refid="36" relation="include">
+        <childnode refid="37" relation="include">
         </childnode>
       </node>
       <node id="8">
@@ -787,15 +801,15 @@
         <link refid="graph_2graph_8h_source"/>
         <childnode refid="9" relation="include">
         </childnode>
-        <childnode refid="33" relation="include">
+        <childnode refid="34" relation="include">
         </childnode>
         <childnode refid="7" relation="include">
         </childnode>
-        <childnode refid="34" relation="include">
+        <childnode refid="35" relation="include">
         </childnode>
         <childnode refid="12" relation="include">
         </childnode>
-        <childnode refid="35" relation="include">
+        <childnode refid="36" relation="include">
         </childnode>
       </node>
       <node id="4">
@@ -805,31 +819,31 @@
         </childnode>
         <childnode refid="8" relation="include">
         </childnode>
-        <childnode refid="36" relation="include">
-        </childnode>
         <childnode refid="37" relation="include">
         </childnode>
         <childnode refid="38" relation="include">
         </childnode>
         <childnode refid="39" relation="include">
         </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
       </node>
-      <node id="36">
+      <node id="37">
         <label>src/muda/graph/graph_exec.h</label>
         <link refid="graph__exec_8h_source"/>
         <childnode refid="8" relation="include">
         </childnode>
       </node>
-      <node id="47">
+      <node id="48">
         <label>src/muda/graph/graph_graph_viewer.h</label>
         <link refid="graph__graph__viewer_8h_source"/>
-        <childnode refid="35" relation="include">
+        <childnode refid="36" relation="include">
         </childnode>
       </node>
-      <node id="51">
+      <node id="52">
         <label>src/muda/graph/graph_launch.h</label>
         <link refid="graph__launch_8h_source"/>
-        <childnode refid="35" relation="include">
+        <childnode refid="36" relation="include">
         </childnode>
       </node>
       <node id="102">
@@ -837,30 +851,30 @@
         <link refid="graph__viewer_8h_source"/>
         <childnode refid="9" relation="include">
         </childnode>
-        <childnode refid="36" relation="include">
+        <childnode refid="37" relation="include">
         </childnode>
-        <childnode refid="47" relation="include">
+        <childnode refid="48" relation="include">
         </childnode>
       </node>
-      <node id="37">
+      <node id="38">
         <label>src/muda/graph/host_node.h</label>
         <link refid="host__node_8h_source"/>
         <childnode refid="8" relation="include">
         </childnode>
       </node>
-      <node id="38">
+      <node id="39">
         <label>src/muda/graph/kernel_node.h</label>
         <link refid="kernel__node_8h_source"/>
         <childnode refid="6" relation="include">
         </childnode>
-        <childnode refid="34" relation="include">
+        <childnode refid="35" relation="include">
         </childnode>
         <childnode refid="8" relation="include">
         </childnode>
-        <childnode refid="36" relation="include">
+        <childnode refid="37" relation="include">
         </childnode>
       </node>
-      <node id="39">
+      <node id="40">
         <label>src/muda/graph/memory_node.h</label>
         <link refid="memory__node_8h_source"/>
         <childnode refid="6" relation="include">
@@ -869,126 +883,128 @@
         </childnode>
         <childnode refid="8" relation="include">
         </childnode>
-        <childnode refid="36" relation="include">
+        <childnode refid="37" relation="include">
         </childnode>
       </node>
-      <node id="48">
+      <node id="49">
         <label>src/muda/launch.h</label>
         <link refid="launch_8h_source"/>
+        <childnode refid="19" relation="include">
+        </childnode>
         <childnode refid="11" relation="include">
         </childnode>
       </node>
-      <node id="40">
+      <node id="41">
         <label>src/muda/launch/event.h</label>
         <link refid="event_8h_source"/>
         <childnode refid="9" relation="include">
         </childnode>
-        <childnode refid="41" relation="include">
+        <childnode refid="42" relation="include">
         </childnode>
-        <childnode refid="48" relation="include">
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+      </node>
+      <node id="53">
+        <label>src/muda/launch/host_call.h</label>
+        <link refid="host__call_8h_source"/>
+        <childnode refid="49" relation="include">
+        </childnode>
+      </node>
+      <node id="75">
+        <label>src/muda/launch/kernel_label.h</label>
+        <link refid="kernel__label_8h_source"/>
+        <childnode refid="49" relation="include">
+        </childnode>
+      </node>
+      <node id="54">
+        <label>src/muda/launch/launch.h</label>
+        <link refid="launch_2launch_8h"/>
+        <childnode refid="55" relation="include">
         </childnode>
         <childnode refid="49" relation="include">
         </childnode>
       </node>
-      <node id="52">
-        <label>src/muda/launch/host_call.h</label>
-        <link refid="host__call_8h_source"/>
-        <childnode refid="48" relation="include">
-        </childnode>
-      </node>
-      <node id="74">
-        <label>src/muda/launch/kernel_label.h</label>
-        <link refid="kernel__label_8h_source"/>
-        <childnode refid="48" relation="include">
-        </childnode>
-      </node>
-      <node id="53">
-        <label>src/muda/launch/launch.h</label>
-        <link refid="launch_2launch_8h"/>
-        <childnode refid="54" relation="include">
-        </childnode>
-        <childnode refid="48" relation="include">
-        </childnode>
-      </node>
-      <node id="49">
+      <node id="50">
         <label>src/muda/launch/launch_base.h</label>
         <link refid="launch__base_8h_source"/>
-        <childnode refid="50" relation="include">
+        <childnode refid="51" relation="include">
         </childnode>
         <childnode refid="13" relation="include">
-        </childnode>
-        <childnode refid="51" relation="include">
         </childnode>
         <childnode refid="52" relation="include">
         </childnode>
         <childnode refid="53" relation="include">
         </childnode>
-        <childnode refid="57" relation="include">
-        </childnode>
-        <childnode refid="59" relation="include">
-        </childnode>
-      </node>
-      <node id="57">
-        <label>src/muda/launch/memory.h</label>
-        <link refid="memory_8h_source"/>
-        <childnode refid="58" relation="include">
-        </childnode>
-        <childnode refid="48" relation="include">
-        </childnode>
-      </node>
-      <node id="59">
-        <label>src/muda/launch/parallel_for.h</label>
-        <link refid="parallel__for_8h"/>
-        <childnode refid="60" relation="include">
-        </childnode>
         <childnode refid="54" relation="include">
         </childnode>
-        <childnode refid="48" relation="include">
+        <childnode refid="58" relation="include">
+        </childnode>
+        <childnode refid="60" relation="include">
         </childnode>
       </node>
-      <node id="61">
+      <node id="58">
+        <label>src/muda/launch/memory.h</label>
+        <link refid="memory_8h_source"/>
+        <childnode refid="59" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+      </node>
+      <node id="60">
+        <label>src/muda/launch/parallel_for.h</label>
+        <link refid="parallel__for_8h"/>
+        <childnode refid="61" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+      </node>
+      <node id="62">
         <label>src/muda/launch/stream.h</label>
         <link refid="stream_8h_source"/>
         <childnode refid="9" relation="include">
         </childnode>
         <childnode refid="13" relation="include">
         </childnode>
-        <childnode refid="48" relation="include">
+        <childnode refid="49" relation="include">
         </childnode>
       </node>
-      <node id="63">
+      <node id="64">
         <label>src/muda/logger.h</label>
         <link refid="logger_8h_source"/>
         <childnode refid="11" relation="include">
         </childnode>
       </node>
-      <node id="62">
+      <node id="63">
         <label>src/muda/logger/logger.h</label>
         <link refid="logger_2logger_8h_source"/>
-        <childnode refid="63" relation="include">
+        <childnode refid="64" relation="include">
         </childnode>
       </node>
-      <node id="67">
+      <node id="68">
         <label>src/muda/logger/logger_function.h</label>
         <link refid="logger__function_8h_source"/>
-        <childnode refid="63" relation="include">
+        <childnode refid="64" relation="include">
         </childnode>
       </node>
-      <node id="64">
+      <node id="65">
         <label>src/muda/logger/logger_viewer.h</label>
         <link refid="logger__viewer_8h_source"/>
-        <childnode refid="65" relation="include">
+        <childnode refid="66" relation="include">
         </childnode>
-        <childnode refid="62" relation="include">
+        <childnode refid="63" relation="include">
         </childnode>
-        <childnode refid="67" relation="include">
+        <childnode refid="68" relation="include">
         </childnode>
       </node>
       <node id="11">
         <label>src/muda/muda.h</label>
         <link refid="muda_8h_source"/>
       </node>
-      <node id="68">
+      <node id="69">
         <label>src/muda/profiler.h</label>
         <link refid="profiler_8h_source"/>
         <childnode refid="11" relation="include">
@@ -997,39 +1013,39 @@
       <node id="114">
         <label>src/muda/tools/host_device_config.h</label>
         <link refid="host__device__config_8h_source"/>
+        <childnode refid="79" relation="include">
+        </childnode>
         <childnode refid="78" relation="include">
         </childnode>
         <childnode refid="77" relation="include">
         </childnode>
-        <childnode refid="76" relation="include">
-        </childnode>
       </node>
-      <node id="69">
+      <node id="70">
         <label>src/muda/tools/host_device_string_cache.h</label>
         <link refid="host__device__string__cache_8h_source"/>
-        <childnode refid="70" relation="include">
-        </childnode>
-        <childnode refid="72" relation="include">
+        <childnode refid="71" relation="include">
         </childnode>
         <childnode refid="73" relation="include">
         </childnode>
-      </node>
-      <node id="73">
-        <label>src/muda/tools/launch_info_cache.h</label>
-        <link refid="launch__info__cache_8h_source"/>
         <childnode refid="74" relation="include">
         </childnode>
-        <childnode refid="49" relation="include">
-        </childnode>
+      </node>
+      <node id="74">
+        <label>src/muda/tools/launch_info_cache.h</label>
+        <link refid="launch__info__cache_8h_source"/>
         <childnode refid="75" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="76" relation="include">
         </childnode>
       </node>
       <node id="124">
         <label>src/muda/tools/temp_buffer.h</label>
         <link refid="temp__buffer_8h_source"/>
-        <childnode refid="61" relation="include">
-        </childnode>
         <childnode refid="62" relation="include">
+        </childnode>
+        <childnode refid="63" relation="include">
         </childnode>
       </node>
       <node id="116">
@@ -1051,7 +1067,7 @@
         </childnode>
         <childnode refid="115" relation="include">
         </childnode>
-        <childnode refid="64" relation="include">
+        <childnode refid="65" relation="include">
         </childnode>
         <childnode refid="116" relation="include">
         </childnode>
@@ -1086,14 +1102,14 @@
         <childnode refid="104" relation="include">
         </childnode>
       </node>
-      <node id="75">
+      <node id="76">
         <label>src/muda/viewer/viewer_base.h</label>
         <link refid="viewer__base_8h_source"/>
-        <childnode refid="76" relation="include">
-        </childnode>
-        <childnode refid="79" relation="include">
+        <childnode refid="77" relation="include">
         </childnode>
         <childnode refid="80" relation="include">
+        </childnode>
+        <childnode refid="81" relation="include">
         </childnode>
         <childnode refid="87" relation="include">
         </childnode>
@@ -1132,12 +1148,12 @@
 <codeline lineno="5"><highlight class="normal"></highlight></codeline>
 <codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">muda</highlight></codeline>
 <codeline lineno="7"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="8" refid="classmuda_1_1exception" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classmuda_1_1exception" kindref="compound">exception</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>std::exception</highlight></codeline>
+<codeline lineno="8" refid="classmuda_1_1exception" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">exception<sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>std::exception</highlight></codeline>
 <codeline lineno="9"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/>m_what;</highlight></codeline>
 <codeline lineno="11"><highlight class="normal"></highlight></codeline>
 <codeline lineno="12"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classmuda_1_1exception" kindref="compound">exception</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>msg)</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/>exception(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>msg)</highlight></codeline>
 <codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>m_what(msg)</highlight></codeline>
 <codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
@@ -1150,51 +1166,51 @@
 <codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="24"><highlight class="normal">};</highlight></codeline>
 <codeline lineno="25"><highlight class="normal"></highlight></codeline>
-<codeline lineno="26" refid="classmuda_1_1not__implemented" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classmuda_1_1not__implemented" kindref="compound">not_implemented</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classmuda_1_1exception" kindref="compound">exception</ref></highlight></codeline>
+<codeline lineno="26" refid="classmuda_1_1not__implemented" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">not_implemented<sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>exception</highlight></codeline>
 <codeline lineno="27"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="28"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classmuda_1_1not__implemented" kindref="compound">not_implemented</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>msg)</highlight></codeline>
-<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/><ref refid="classmuda_1_1exception" kindref="compound">exception</ref>(msg)</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>not_implemented(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>msg)</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>exception(msg)</highlight></codeline>
 <codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="33"><highlight class="normal">};</highlight></codeline>
 <codeline lineno="34"><highlight class="normal"></highlight></codeline>
-<codeline lineno="35" refid="classmuda_1_1invalid__argument" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classmuda_1_1invalid__argument" kindref="compound">invalid_argument</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classmuda_1_1exception" kindref="compound">exception</ref></highlight></codeline>
+<codeline lineno="35" refid="classmuda_1_1invalid__argument" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">invalid_argument<sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>exception</highlight></codeline>
 <codeline lineno="36"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="37"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classmuda_1_1invalid__argument" kindref="compound">invalid_argument</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>msg)</highlight></codeline>
-<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/><ref refid="classmuda_1_1exception" kindref="compound">exception</ref>(msg)</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>invalid_argument(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>msg)</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>exception(msg)</highlight></codeline>
 <codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="42"><highlight class="normal">};</highlight></codeline>
 <codeline lineno="43"><highlight class="normal"></highlight></codeline>
-<codeline lineno="44" refid="classmuda_1_1out__of__range" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classmuda_1_1out__of__range" kindref="compound">out_of_range</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classmuda_1_1exception" kindref="compound">exception</ref></highlight></codeline>
+<codeline lineno="44" refid="classmuda_1_1out__of__range" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">out_of_range<sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>exception</highlight></codeline>
 <codeline lineno="45"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="46"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classmuda_1_1out__of__range" kindref="compound">out_of_range</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>msg)</highlight></codeline>
-<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/><ref refid="classmuda_1_1exception" kindref="compound">exception</ref>(msg)</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>out_of_range(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>msg)</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>exception(msg)</highlight></codeline>
 <codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="51"><highlight class="normal">};</highlight></codeline>
 <codeline lineno="52"><highlight class="normal"></highlight></codeline>
-<codeline lineno="53" refid="classmuda_1_1runtime__error" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classmuda_1_1runtime__error" kindref="compound">runtime_error</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classmuda_1_1exception" kindref="compound">exception</ref></highlight></codeline>
+<codeline lineno="53" refid="classmuda_1_1runtime__error" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">runtime_error<sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>exception</highlight></codeline>
 <codeline lineno="54"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="55"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classmuda_1_1runtime__error" kindref="compound">runtime_error</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>msg)</highlight></codeline>
-<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/><ref refid="classmuda_1_1exception" kindref="compound">exception</ref>(msg)</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/>runtime_error(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>msg)</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>exception(msg)</highlight></codeline>
 <codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="60"><highlight class="normal">};</highlight></codeline>
 <codeline lineno="61"><highlight class="normal"></highlight></codeline>
-<codeline lineno="62" refid="classmuda_1_1logic__error" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classmuda_1_1logic__error" kindref="compound">logic_error</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classmuda_1_1exception" kindref="compound">exception</ref></highlight></codeline>
+<codeline lineno="62" refid="classmuda_1_1logic__error" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">logic_error<sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>exception</highlight></codeline>
 <codeline lineno="63"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="64"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classmuda_1_1logic__error" kindref="compound">logic_error</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>msg)</highlight></codeline>
-<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/><ref refid="classmuda_1_1exception" kindref="compound">exception</ref>(msg)</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/>logic_error(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>msg)</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>exception(msg)</highlight></codeline>
 <codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="69"><highlight class="normal">};</highlight></codeline>
-<codeline lineno="70"><highlight class="normal">}<sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>muda</highlight></codeline>
+<codeline lineno="70"><highlight class="normal">}<sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>muda</highlight><highlight class="normal"></highlight></codeline>
     </programlisting>
     <location file="src/muda/exception.h"/>
   </compounddef>

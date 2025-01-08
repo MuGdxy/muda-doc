@@ -44,7 +44,7 @@
 
 | Type | Name |
 | ---: | :--- |
-|  constexpr std::size\_t | [**size**](#variable-size)   = = S<br> |
+|  std::size\_t | [**size**](#variable-size)   = = S<br> |
 
 
 
@@ -116,7 +116,7 @@ E* TCB_SPAN_NAMESPACE_NAME::detail::span_storage< E, S >::ptr;
 ### variable size 
 
 ```C++
-constexpr std::size_t TCB_SPAN_NAMESPACE_NAME::detail::span_storage< E, S >::size;
+std::size_t TCB_SPAN_NAMESPACE_NAME::detail::span_storage< E, S >::size;
 ```
 
 

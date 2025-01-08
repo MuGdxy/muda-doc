@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.1" xml:lang="en-US">
   <compounddef id="namespacemuda_1_1details_1_1eigen" kind="namespace" language="C++">
     <compoundname>muda::details::eigen</compoundname>
     <innerclass refid="unionmuda_1_1details_1_1eigen_1_1un" prot="public">muda::details::eigen::un</innerclass>
@@ -135,8 +135,7 @@
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
-<para><heading level="6"></heading>
-</para>
+<para>###########################################################</para>
         </inbodydescription>
         <location file="src/muda/ext/eigen/svd/svd_impl.h" line="13" column="33" bodyfile="src/muda/ext/eigen/svd/svd_impl.h" bodystart="13" bodyend="1078"/>
       </memberdef>

@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.1" xml:lang="en-US">
   <compounddef id="svd__impl_8h" kind="file" language="C++">
     <compoundname>svd_impl.h</compoundname>
     <includes local="no">cuda.h</includes>
@@ -258,7 +258,7 @@
 <codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;GPU<sp/>q<sp/>%.20g<sp/>%.20g<sp/>%.20g<sp/>%.20g\n&quot;</highlight><highlight class="normal">,<sp/>Sqvvx.f,<sp/>Sqvvy.f,<sp/>Sqvvz.f,<sp/>Sqvs.f);</highlight></codeline>
 <codeline lineno="221"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="222"><highlight class="normal"></highlight></codeline>
-<codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>(1-&gt;3)</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>(1-&gt;3)</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Ssh.f<sp/><sp/><sp/>=<sp/>Ss32.f<sp/>*<sp/>0.5f;</highlight></codeline>
 <codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Stmp5.f<sp/>=<sp/>__fsub_rn(Ss22.f,<sp/>Ss33.f);</highlight></codeline>
 <codeline lineno="228"><highlight class="normal"></highlight></codeline>
@@ -359,8 +359,8 @@
 <codeline lineno="323"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>DEBUG_JACOBI_CONJUGATE</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="324"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;GPU<sp/>q<sp/>%.20g<sp/>%.20g<sp/>%.20g<sp/>%.20g\n&quot;</highlight><highlight class="normal">,<sp/>Sqvvx.f,<sp/>Sqvvy.f,<sp/>Sqvvz.f,<sp/>Sqvs.f);</highlight></codeline>
 <codeline lineno="325"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="326"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>1</highlight></codeline>
-<codeline lineno="328"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>1<sp/>-&gt;<sp/>2</highlight></codeline>
+<codeline lineno="326"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="328"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>1<sp/>-&gt;<sp/>2</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="330"><highlight class="normal"></highlight></codeline>
 <codeline lineno="331"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Ssh.f<sp/><sp/><sp/>=<sp/>Ss31.f<sp/>*<sp/>0.5f;</highlight></codeline>
 <codeline lineno="332"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Stmp5.f<sp/>=<sp/>__fsub_rn(Ss33.f,<sp/>Ss11.f);</highlight></codeline>

@@ -1,9 +1,10 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.1" xml:lang="en-US">
   <compounddef id="atomic_8h" kind="file" language="C++">
     <compoundname>atomic.h</compoundname>
     <includes refid="device__atomic__functions_8h" local="no">device_atomic_functions.h</includes>
     <includedby refid="ext_2eigen_2atomic_8h" local="no">src/muda/ext/eigen/atomic.h</includedby>
+    <includedby refid="dense__matrix__viewer_8h" local="no">src/muda/ext/linear_system/dense_matrix_viewer.h</includedby>
     <includedby refid="dense__vector__viewer_8h" local="no">src/muda/ext/linear_system/dense_vector_viewer.h</includedby>
     <incdepgraph>
       <node id="1">
@@ -27,6 +28,8 @@
         </childnode>
         <childnode refid="4" relation="include">
         </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
       </node>
       <node id="3">
         <label>src/muda/ext/eigen.h</label>
@@ -43,8 +46,8 @@
         <link refid="linear__system_8h_source"/>
       </node>
       <node id="6">
-        <label>src/muda/ext/linear_system/dense_vector_view.h</label>
-        <link refid="dense__vector__view_8h_source"/>
+        <label>src/muda/ext/linear_system/dense_matrix_view.h</label>
+        <link refid="dense__matrix__view_8h_source"/>
         <childnode refid="5" relation="include">
         </childnode>
         <childnode refid="7" relation="include">
@@ -53,14 +56,42 @@
         </childnode>
       </node>
       <node id="4">
-        <label>src/muda/ext/linear_system/dense_vector_viewer.h</label>
-        <link refid="dense__vector__viewer_8h_source"/>
+        <label>src/muda/ext/linear_system/dense_matrix_viewer.h</label>
+        <link refid="dense__matrix__viewer_8h_source"/>
         <childnode refid="5" relation="include">
         </childnode>
         <childnode refid="6" relation="include">
         </childnode>
       </node>
+      <node id="12">
+        <label>src/muda/ext/linear_system/dense_vector_view.h</label>
+        <link refid="dense__vector__view_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>src/muda/ext/linear_system/dense_vector_viewer.h</label>
+        <link refid="dense__vector__viewer_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
       <node id="7">
+        <label>src/muda/ext/linear_system/device_dense_matrix.h</label>
+        <link refid="device__dense__matrix_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
         <label>src/muda/ext/linear_system/device_dense_vector.h</label>
         <link refid="device__dense__vector_8h_source"/>
         <childnode refid="5" relation="include">
@@ -152,7 +183,7 @@
 <codeline lineno="55"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>atomicXor(address,<sp/>val);</highlight></codeline>
 <codeline lineno="57"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="58"><highlight class="normal">}<sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>muda</highlight></codeline>
+<codeline lineno="58"><highlight class="normal">}<sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>muda</highlight><highlight class="normal"></highlight></codeline>
     </programlisting>
     <location file="src/muda/atomic.h"/>
   </compounddef>

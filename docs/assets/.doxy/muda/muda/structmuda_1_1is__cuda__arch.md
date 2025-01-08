@@ -37,7 +37,7 @@
 
 | Type | Name |
 | ---: | :--- |
-|  constexpr bool | [**value**](#variable-value)   = = false<br> |
+|  bool | [**value**](#variable-value)   = = false<br> |
 
 
 
@@ -88,7 +88,7 @@
 ### variable value 
 
 ```C++
-constexpr bool muda::is_cuda_arch::value;
+bool muda::is_cuda_arch::value;
 ```
 
 

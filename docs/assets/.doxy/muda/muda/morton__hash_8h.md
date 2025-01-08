@@ -39,8 +39,8 @@
 | Type | Name |
 | ---: | :--- |
 | class | [**Morton**](classmuda_1_1spatial__hash_1_1_morton.md) &lt;typename T&gt;<br> |
-| class | [**Morton&lt; uint32\_t &gt;**](classmuda_1_1spatial__hash_1_1_morton_3_01uint32__t_01_4.md) &lt;&gt;<br> |
-| class | [**Morton&lt; uint64\_t &gt;**](classmuda_1_1spatial__hash_1_1_morton_3_01uint64__t_01_4.md) &lt;&gt;<br> |
+| class | [**Morton**](classmuda_1_1spatial__hash_1_1_morton.md) &lt;typename T&gt;<br> |
+| class | [**Morton**](classmuda_1_1spatial__hash_1_1_morton.md) &lt;typename T&gt;<br> |
 
 
 

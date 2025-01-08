@@ -38,9 +38,7 @@
 
 | Type | Name |
 | ---: | :--- |
-| class | [**CDenseMatrixView**](classmuda_1_1_c_dense_matrix_view.md) &lt;typename Ty&gt;<br> |
-| class | [**DenseMatrixView**](classmuda_1_1_dense_matrix_view.md) &lt;typename Ty&gt;<br> |
-| class | [**DenseMatrixViewBase**](classmuda_1_1_dense_matrix_view_base.md) &lt;IsConst, typename Ty&gt;<br> |
+| class | [**DenseMatrixViewT**](classmuda_1_1_dense_matrix_view_t.md) &lt;IsConst, typename Ty&gt;<br> |
 
 
 

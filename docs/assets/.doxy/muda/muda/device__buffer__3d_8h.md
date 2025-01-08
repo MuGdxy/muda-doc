@@ -92,7 +92,7 @@ _A light-weight wrapper of cuda device memory3D, allows user to resize, reserve,
 
 
 
-# Detailed Description
+## Detailed Description
 
 
 

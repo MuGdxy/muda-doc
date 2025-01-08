@@ -45,8 +45,8 @@
 
 | Type | Name |
 | ---: | :--- |
-|  constexpr bool | [**IsConst**](#variable-isconst)   = = IsConst\_<br> |
-|  constexpr bool | [**IsNonConst**](#variable-isnonconst)   = = !IsConst\_<br> |
+|  bool | [**IsConst**](#variable-isconst)   = = IsConst\_<br> |
+|  bool | [**IsNonConst**](#variable-isnonconst)   = = !IsConst\_<br> |
 
 
 
@@ -125,7 +125,7 @@ using muda::ViewBase< IsConst_ >::non_const_enable_t =  std::enable_if_t<IsNonCo
 ### variable IsConst 
 
 ```C++
-constexpr bool muda::ViewBase< IsConst_ >::IsConst;
+bool muda::ViewBase< IsConst_ >::IsConst;
 ```
 
 
@@ -138,7 +138,7 @@ constexpr bool muda::ViewBase< IsConst_ >::IsConst;
 ### variable IsNonConst 
 
 ```C++
-constexpr bool muda::ViewBase< IsConst_ >::IsNonConst;
+bool muda::ViewBase< IsConst_ >::IsNonConst;
 ```
 
 

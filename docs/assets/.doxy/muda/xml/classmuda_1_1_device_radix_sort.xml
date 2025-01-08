@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.1" xml:lang="en-US">
   <compounddef id="classmuda_1_1_device_radix_sort" kind="class" language="C++" prot="public">
     <compoundname>muda::DeviceRadixSort</compoundname>
     <basecompoundref refid="classmuda_1_1_cub_wrapper" prot="public" virt="non-virtual">muda::CubWrapper&lt; DeviceRadixSort &gt;</basecompoundref>
@@ -867,9 +867,6 @@
         <link refid="classmuda_1_1_cub_wrapper"/>
         <childnode refid="3" relation="public-inheritance">
         </childnode>
-        <childnode refid="5" relation="usage">
-          <edgelabel>m_muda_stream</edgelabel>
-        </childnode>
       </node>
       <node id="1">
         <label>muda::DeviceRadixSort</label>
@@ -887,28 +884,28 @@
         <label>muda::LaunchCore</label>
         <link refid="classmuda_1_1_launch_core"/>
       </node>
-      <node id="5">
-        <label>muda::Stream</label>
-        <link refid="classmuda_1_1_stream"/>
-      </node>
     </collaborationgraph>
     <location file="src/muda/cub/device/device_radix_sort.h" line="17" column="1" bodyfile="src/muda/cub/device/device_radix_sort.h" bodystart="18" bodyend="230"/>
     <listofallmembers>
       <member refid="classmuda_1_1_device_radix_sort_1a948a8237c20421b53f19b07f9d6e016b" prot="private" virt="non-virtual"><scope>muda::DeviceRadixSort</scope><name>Base</name></member>
       <member refid="classmuda_1_1_launch_base_1aa8490139890f43555c1b7baa57378616" prot="public" virt="non-virtual"><scope>muda::DeviceRadixSort</scope><name>callback</name></member>
       <member refid="classmuda_1_1_cub_wrapper_1a846ad2ff72dccee396a542f1ec0b4aeb" prot="public" virt="non-virtual"><scope>muda::DeviceRadixSort</scope><name>CubWrapper</name></member>
+      <member refid="classmuda_1_1_cub_wrapper_1a846ad2ff72dccee396a542f1ec0b4aeb" prot="public" virt="non-virtual"><scope>muda::DeviceRadixSort</scope><name>CubWrapper</name></member>
       <member refid="classmuda_1_1_launch_base_1a8a59e9a27775e4e12ca19a6d590790f4" prot="public" virt="non-virtual"><scope>muda::DeviceRadixSort</scope><name>derived_type</name></member>
       <member refid="classmuda_1_1_launch_base_1aee4564eac54df98ab98085379370a2ec" prot="public" virt="non-virtual"><scope>muda::DeviceRadixSort</scope><name>file_line</name></member>
       <member refid="classmuda_1_1_launch_core_1a38c542a99edea149552d82639e385ab5" prot="public" virt="non-virtual"><scope>muda::DeviceRadixSort</scope><name>init_stream</name></member>
       <member refid="classmuda_1_1_cub_wrapper_1a71f741726d4ab894c196264043bd2922" prot="public" virt="non-virtual"><scope>muda::DeviceRadixSort</scope><name>kernel_name</name></member>
+      <member refid="classmuda_1_1_cub_wrapper_1a71f741726d4ab894c196264043bd2922" prot="public" virt="non-virtual"><scope>muda::DeviceRadixSort</scope><name>kernel_name</name></member>
       <member refid="classmuda_1_1_launch_base_1ab73495b0bfa3a7a1864284aebceb51a8" prot="public" virt="non-virtual"><scope>muda::DeviceRadixSort</scope><name>LaunchBase</name></member>
       <member refid="classmuda_1_1_launch_core_1a8503eff885f818a12319ca57dfd75011" prot="public" virt="non-virtual"><scope>muda::DeviceRadixSort</scope><name>LaunchCore</name></member>
+      <member refid="classmuda_1_1_cub_wrapper_1a5e0f31303ea2f56ba4cfe04fb2ca7738" prot="public" virt="non-virtual"><scope>muda::DeviceRadixSort</scope><name>m_muda_stream</name></member>
       <member refid="classmuda_1_1_cub_wrapper_1a5e0f31303ea2f56ba4cfe04fb2ca7738" prot="public" virt="non-virtual"><scope>muda::DeviceRadixSort</scope><name>m_muda_stream</name></member>
       <member refid="classmuda_1_1_launch_core_1a3b5544456087d57904981118c4cdcaf8" prot="protected" virt="non-virtual"><scope>muda::DeviceRadixSort</scope><name>m_stream</name></member>
       <member refid="classmuda_1_1_launch_base_1a395b0a10fee3bf2c591f49a3119df1b8" prot="public" virt="non-virtual"><scope>muda::DeviceRadixSort</scope><name>next</name></member>
       <member refid="classmuda_1_1_launch_base_1a841db3ede786d3312a6ca2de2139ad10" prot="public" virt="non-virtual"><scope>muda::DeviceRadixSort</scope><name>next</name></member>
       <member refid="classmuda_1_1_launch_base_1a65538f7d445fa3cc56ab33e609fe566a" prot="protected" virt="non-virtual"><scope>muda::DeviceRadixSort</scope><name>pop_kernel_label</name></member>
       <member refid="classmuda_1_1_launch_base_1ab6b75621024e7977edcdff26c04bcdc1" prot="public" virt="non-virtual"><scope>muda::DeviceRadixSort</scope><name>pop_range</name></member>
+      <member refid="classmuda_1_1_cub_wrapper_1af1007ebfdee88f21fd67283499730991" prot="protected" virt="non-virtual"><scope>muda::DeviceRadixSort</scope><name>prepare_buffer</name></member>
       <member refid="classmuda_1_1_cub_wrapper_1af1007ebfdee88f21fd67283499730991" prot="protected" virt="non-virtual"><scope>muda::DeviceRadixSort</scope><name>prepare_buffer</name></member>
       <member refid="classmuda_1_1_launch_base_1ad6dcaaf3ea0726809ebbdb10084c3183" prot="public" virt="non-virtual"><scope>muda::DeviceRadixSort</scope><name>push_range</name></member>
       <member refid="classmuda_1_1_launch_base_1ad069d4ad6219f5a3b51e7c8d9e4d596f" prot="public" virt="non-virtual"><scope>muda::DeviceRadixSort</scope><name>record</name></member>

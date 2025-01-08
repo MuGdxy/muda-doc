@@ -12,6 +12,7 @@
 
 * `#include <muda/ext/linear_system/common.h>`
 * `#include <muda/view/view_base.h>`
+* `#include <muda/ext/linear_system/bsr_matrix_view.h>`
 * `#include "details/csr_matrix_view.inl"`
 
 
@@ -33,13 +34,6 @@
 | namespace | [**muda**](namespacemuda.md) <br> |
 
 
-## Classes
-
-| Type | Name |
-| ---: | :--- |
-| class | [**CSRMatrixViewBase**](classmuda_1_1_c_s_r_matrix_view_base.md) &lt;IsConst, typename Ty&gt;<br> |
-| struct | [**read\_only\_viewer&lt; CSRMatrixView&lt; Ty &gt; &gt;**](structmuda_1_1read__only__viewer_3_01_c_s_r_matrix_view_3_01_ty_01_4_01_4.md) &lt;typename Ty&gt;<br> |
-| struct | [**read\_write\_viewer&lt; CSRMatrixView&lt; Ty &gt; &gt;**](structmuda_1_1read__write__viewer_3_01_c_s_r_matrix_view_3_01_ty_01_4_01_4.md) &lt;typename Ty&gt;<br> |
 
 
 

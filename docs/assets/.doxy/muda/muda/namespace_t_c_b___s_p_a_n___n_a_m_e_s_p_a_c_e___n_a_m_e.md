@@ -73,13 +73,13 @@
 | ---: | :--- |
 |  [**span**](class_t_c_b___s_p_a_n___n_a_m_e_s_p_a_c_e___n_a_m_e_1_1span.md)&lt; const byte,((Extent==dynamic\_extent) ? dynamic\_extent :sizeof(ElementType) \*Extent)&gt; | [**as\_bytes**](#function-as_bytes) ([**span**](class_t_c_b___s_p_a_n___n_a_m_e_s_p_a_c_e___n_a_m_e_1_1span.md)&lt; ElementType, Extent &gt; s) noexcept<br> |
 |  [**span**](class_t_c_b___s_p_a_n___n_a_m_e_s_p_a_c_e___n_a_m_e_1_1span.md)&lt; byte,((Extent==dynamic\_extent) ? dynamic\_extent :sizeof(ElementType) \*Extent)&gt; | [**as\_writable\_bytes**](#function-as_writable_bytes) ([**span**](class_t_c_b___s_p_a_n___n_a_m_e_s_p_a_c_e___n_a_m_e_1_1span.md)&lt; ElementType, Extent &gt; s) noexcept<br> |
-|  constexpr auto | [**get**](#function-get) ([**span**](class_t_c_b___s_p_a_n___n_a_m_e_s_p_a_c_e___n_a_m_e_1_1span.md)&lt; E, S &gt; s) <br> |
-|  constexpr [**span**](class_t_c_b___s_p_a_n___n_a_m_e_s_p_a_c_e___n_a_m_e_1_1span.md)&lt; ElementType, Extent &gt; | [**make\_span**](#function-make_span) ([**span**](class_t_c_b___s_p_a_n___n_a_m_e_s_p_a_c_e___n_a_m_e_1_1span.md)&lt; ElementType, Extent &gt; s) noexcept<br> |
-|  constexpr [**span**](class_t_c_b___s_p_a_n___n_a_m_e_s_p_a_c_e___n_a_m_e_1_1span.md)&lt; T, N &gt; | [**make\_span**](#function-make_span) (T(&) arr) noexcept<br> |
+|  decltype(s[N]) | [**get**](#function-get) ([**span**](class_t_c_b___s_p_a_n___n_a_m_e_s_p_a_c_e___n_a_m_e_1_1span.md)&lt; E, S &gt; s) <br> |
+|  [**span**](class_t_c_b___s_p_a_n___n_a_m_e_s_p_a_c_e___n_a_m_e_1_1span.md)&lt; ElementType, Extent &gt; | [**make\_span**](#function-make_span) ([**span**](class_t_c_b___s_p_a_n___n_a_m_e_s_p_a_c_e___n_a_m_e_1_1span.md)&lt; ElementType, Extent &gt; s) noexcept<br> |
+|  [**span**](class_t_c_b___s_p_a_n___n_a_m_e_s_p_a_c_e___n_a_m_e_1_1span.md)&lt; T, N &gt; | [**make\_span**](#function-make_span) (T(&) arr) noexcept<br> |
 |  TCB\_SPAN\_ARRAY\_CONSTEXPR [**span**](class_t_c_b___s_p_a_n___n_a_m_e_s_p_a_c_e___n_a_m_e_1_1span.md)&lt; T, N &gt; | [**make\_span**](#function-make_span) (std::array&lt; T, N &gt; & arr) noexcept<br> |
 |  TCB\_SPAN\_ARRAY\_CONSTEXPR [**span**](class_t_c_b___s_p_a_n___n_a_m_e_s_p_a_c_e___n_a_m_e_1_1span.md)&lt; const T, N &gt; | [**make\_span**](#function-make_span) (const std::array&lt; T, N &gt; & arr) noexcept<br> |
-|  constexpr [**span**](class_t_c_b___s_p_a_n___n_a_m_e_s_p_a_c_e___n_a_m_e_1_1span.md)&lt; typenamestd::remove\_reference&lt; decltype(\*detail::data(std::declval&lt; Container & &gt;()))&gt;::type | [**make\_span**](#function-make_span) (Container & cont) <br> |
-|  constexpr [**span**](class_t_c_b___s_p_a_n___n_a_m_e_s_p_a_c_e___n_a_m_e_1_1span.md)&lt; const typename Container::value\_type &gt; | [**make\_span**](#function-make_span) (const Container & cont) <br> |
+|  [**span**](class_t_c_b___s_p_a_n___n_a_m_e_s_p_a_c_e___n_a_m_e_1_1span.md)&lt; typename std::remove\_reference&lt; decltype(\*detail::data(std::declval&lt; Container & &gt;()))&gt;::type &gt; | [**make\_span**](#function-make_span) (Container & cont) <br> |
+|  [**span**](class_t_c_b___s_p_a_n___n_a_m_e_s_p_a_c_e___n_a_m_e_1_1span.md)&lt; const typename Container::value\_type &gt; | [**make\_span**](#function-make_span) (const Container & cont) <br> |
 
 
 
@@ -116,7 +116,7 @@
 ### typedef byte 
 
 ```C++
-using TCB_SPAN_NAMESPACE_NAME::byte = typedef unsigned char;
+using TCB_SPAN_NAMESPACE_NAME::byte =  unsigned char;
 ```
 
 
@@ -179,7 +179,7 @@ span < byte,((Extent==dynamic_extent) ? dynamic_extent :sizeof(ElementType) *Ext
 
 ```C++
 template<std::size_t N, typename E, std::size_t S>
-constexpr auto TCB_SPAN_NAMESPACE_NAME::get (
+decltype(s[N]) TCB_SPAN_NAMESPACE_NAME::get (
     span < E, S > s
 ) 
 ```
@@ -195,7 +195,7 @@ constexpr auto TCB_SPAN_NAMESPACE_NAME::get (
 
 ```C++
 template<typename ElementType, std::size_t Extent>
-constexpr span < ElementType, Extent > TCB_SPAN_NAMESPACE_NAME::make_span (
+span < ElementType, Extent > TCB_SPAN_NAMESPACE_NAME::make_span (
     span < ElementType, Extent > s
 ) noexcept
 ```
@@ -211,7 +211,7 @@ constexpr span < ElementType, Extent > TCB_SPAN_NAMESPACE_NAME::make_span (
 
 ```C++
 template<typename T, std::size_t N>
-constexpr span < T, N > TCB_SPAN_NAMESPACE_NAME::make_span (
+span < T, N > TCB_SPAN_NAMESPACE_NAME::make_span (
     T(&) arr
 ) noexcept
 ```
@@ -259,7 +259,7 @@ TCB_SPAN_ARRAY_CONSTEXPR span < const T, N > TCB_SPAN_NAMESPACE_NAME::make_span 
 
 ```C++
 template<typename Container>
-constexpr span < typenamestd::remove_reference< decltype(*detail::data(std::declval< Container & >()))>::type TCB_SPAN_NAMESPACE_NAME::make_span (
+span < typename std::remove_reference< decltype(*detail::data(std::declval< Container & >()))>::type > TCB_SPAN_NAMESPACE_NAME::make_span (
     Container & cont
 ) 
 ```
@@ -275,7 +275,7 @@ constexpr span < typenamestd::remove_reference< decltype(*detail::data(std::decl
 
 ```C++
 template<typename Container>
-constexpr span < const typename Container::value_type > TCB_SPAN_NAMESPACE_NAME::make_span (
+span < const typename Container::value_type > TCB_SPAN_NAMESPACE_NAME::make_span (
     const Container & cont
 ) 
 ```

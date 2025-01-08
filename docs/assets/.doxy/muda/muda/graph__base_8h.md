@@ -94,30 +94,7 @@
 
 
 
-## Macros
 
-| Type | Name |
-| ---: | :--- |
-| define  | [**checkCudaErrors**](graph__base_8h.md#define-checkcudaerrors) (val) ::muda::check((val), #val, \_\_FILE\_\_, \_\_LINE\_\_)<br> |
-
-## Macro Definition Documentation
-
-
-
-
-
-### define checkCudaErrors 
-
-```C++
-#define checkCudaErrors (
-    val
-) ::muda::check((val), #val, __FILE__, __LINE__)
-```
-
-
-
-
-<hr>
 
 ------------------------------
 The documentation for this class was generated from the following file `src/muda/graph/graph_base.h`

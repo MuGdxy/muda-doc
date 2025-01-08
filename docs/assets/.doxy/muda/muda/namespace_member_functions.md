@@ -80,10 +80,10 @@
 
 * **get** ([**TCB\_SPAN\_NAMESPACE\_NAME**](namespace_t_c_b___s_p_a_n___n_a_m_e_s_p_a_c_e___n_a_m_e.md))
 * **grid\_dim** ([**muda**](namespacemuda.md))
+* **grid\_stride\_loop\_kernel** ([**muda**](namespacemuda.md), [**muda::details**](namespacemuda_1_1details.md))
 * **generic\_host\_call** ([**muda::details**](namespacemuda_1_1details.md))
 * **generic\_kernel** ([**muda::details**](namespacemuda_1_1details.md))
 * **generic\_kernel\_with\_range** ([**muda::details**](namespacemuda_1_1details.md))
-* **grid\_stride\_loop\_kernel** ([**muda::details**](namespacemuda_1_1details.md))
 * **graph\_fire\_and\_forget** ([**muda::details::stream**](namespacemuda_1_1details_1_1stream.md))
 * **graph\_tail\_launch** ([**muda::details::stream**](namespacemuda_1_1details_1_1stream.md))
 
@@ -159,7 +159,7 @@
 
 ## p
 
-* **parallel\_for\_kernel** ([**muda::details**](namespacemuda_1_1details.md))
+* **parallel\_for\_kernel** ([**muda::details**](namespacemuda_1_1details.md), [**muda**](namespacemuda.md))
 * **point\_edge\_ccd** ([**muda::distance**](namespacemuda_1_1distance.md))
 * **point\_edge\_ccd\_broadphase** ([**muda::distance**](namespacemuda_1_1distance.md))
 * **point\_edge\_cd\_broadphase** ([**muda::distance**](namespacemuda_1_1distance.md))

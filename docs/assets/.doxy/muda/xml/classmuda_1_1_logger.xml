@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.1" xml:lang="en-US">
   <compounddef id="classmuda_1_1_logger" kind="class" language="C++" prot="public">
     <compoundname>muda::Logger</compoundname>
     <sectiondef kind="private-static-attrib">
       <memberdef kind="variable" id="classmuda_1_1_logger_1adfee1be820360966974df156d350b1b5" prot="private" static="yes" constexpr="yes" mutable="no">
-        <type>constexpr size_t</type>
-        <definition>constexpr size_t muda::Logger::DEFAULT_META_SIZE</definition>
+        <type>size_t</type>
+        <definition>size_t muda::Logger::DEFAULT_META_SIZE</definition>
         <argsstring></argsstring>
         <name>DEFAULT_META_SIZE</name>
         <qualifiedname>muda::Logger::DEFAULT_META_SIZE</qualifiedname>
@@ -19,8 +19,8 @@
         <location file="src/muda/logger/logger.h" line="37" column="29" bodyfile="src/muda/logger/logger.h" bodystart="37" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classmuda_1_1_logger_1adccc017f35967be38a592f7f3fb15bd5" prot="private" static="yes" constexpr="yes" mutable="no">
-        <type>constexpr size_t</type>
-        <definition>constexpr size_t muda::Logger::DEFAULT_BUFFER_SIZE</definition>
+        <type>size_t</type>
+        <definition>size_t muda::Logger::DEFAULT_BUFFER_SIZE</definition>
         <argsstring></argsstring>
         <name>DEFAULT_BUFFER_SIZE</name>
         <qualifiedname>muda::Logger::DEFAULT_BUFFER_SIZE</qualifiedname>

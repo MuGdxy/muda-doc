@@ -11,6 +11,7 @@
 
 
 * `#include <muda/buffer/device_buffer.h>`
+* `#include <muda/ext/linear_system/device_bsr_matrix.h>`
 * `#include <cusparse.h>`
 * `#include <muda/ext/linear_system/csr_matrix_view.h>`
 * `#include "details/device_csr_matrix.inl"`
@@ -35,11 +36,6 @@
 | namespace | [**details**](namespacemuda_1_1details.md) <br> |
 
 
-## Classes
-
-| Type | Name |
-| ---: | :--- |
-| class | [**DeviceCSRMatrix**](classmuda_1_1_device_c_s_r_matrix.md) &lt;typename Ty&gt;<br> |
 
 
 

@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.1" xml:lang="en-US">
   <compounddef id="classmuda_1_1_device_buffer" kind="class" language="C++" prot="public">
     <compoundname>muda::DeviceBuffer</compoundname>
     <includes refid="device__buffer_8h" local="no">device_buffer.h</includes>
@@ -649,7 +649,7 @@
 </simplesect>
 </para>
     </detaileddescription>
-    <location file="src/muda/buffer/device_buffer.h" line="31" column="1" bodyfile="src/muda/buffer/device_buffer.h" bodystart="46" bodyend="97"/>
+    <location file="src/muda/buffer/device_buffer.h" line="31" column="1" bodyfile="src/muda/launch/stream.h" bodystart="12" bodyend="-1"/>
     <listofallmembers>
       <member refid="classmuda_1_1_device_buffer_1a3373c2e8cf6a6172637baf3c12d153ad" prot="private" virt="non-virtual"><scope>muda::DeviceBuffer</scope><name>BufferLaunch</name></member>
       <member refid="classmuda_1_1_device_buffer_1a449f3dedc80503654d486a4d14d8a85d" prot="public" virt="non-virtual"><scope>muda::DeviceBuffer</scope><name>capacity</name></member>

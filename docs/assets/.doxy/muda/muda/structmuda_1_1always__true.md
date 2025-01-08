@@ -39,7 +39,7 @@
 
 | Type | Name |
 | ---: | :--- |
-|  constexpr bool | [**value**](#variable-value)   = = true<br> |
+|  bool | [**value**](#variable-value)   = = true<br> |
 
 
 
@@ -90,7 +90,7 @@
 ### variable value 
 
 ```C++
-constexpr bool muda::always_true< T >::value;
+bool muda::always_true< T >::value;
 ```
 
 

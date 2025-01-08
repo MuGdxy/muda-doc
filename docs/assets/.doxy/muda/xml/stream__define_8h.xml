@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.1" xml:lang="en-US">
   <compounddef id="stream__define_8h" kind="file" language="C++">
     <compoundname>stream_define.h</compoundname>
     <includes local="no">cuda.h</includes>
@@ -35,10 +35,16 @@
       </node>
     </incdepgraph>
     <invincdepgraph>
+      <node id="4">
+        <label>src/muda/ext/linear_system/matrix_format_converter_impl.h</label>
+        <link refid="matrix__format__converter__impl_8h_source"/>
+      </node>
       <node id="3">
         <label>src/muda/launch.h</label>
         <link refid="launch_8h_source"/>
         <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
         </childnode>
       </node>
       <node id="2">
@@ -53,7 +59,7 @@
         <childnode refid="2" relation="include">
         </childnode>
       </node>
-      <node id="4">
+      <node id="5">
         <label>src/muda/muda.h</label>
         <link refid="muda_8h_source"/>
       </node>

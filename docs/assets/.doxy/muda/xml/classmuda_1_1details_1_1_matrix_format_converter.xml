@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.1" xml:lang="en-US">
   <compounddef id="classmuda_1_1details_1_1_matrix_format_converter" kind="class" language="C++" prot="public">
     <compoundname>muda::details::MatrixFormatConverter</compoundname>
     <basecompoundref refid="classmuda_1_1details_1_1_matrix_format_converter_base" prot="public" virt="non-virtual">muda::details::MatrixFormatConverterBase</basecompoundref>
@@ -14,33 +14,33 @@
       </param>
     </templateparamlist>
     <sectiondef kind="private-type">
-      <memberdef kind="typedef" id="classmuda_1_1details_1_1_matrix_format_converter_1a59b8cf43e1fe5a80e147ed11ff642c2b" prot="private" static="no">
-        <type>typename <ref refid="classmuda_1_1_device_triplet_matrix" kindref="compound">DeviceTripletMatrix</ref>&lt; T, N &gt;::BlockMatrix</type>
-        <definition>using muda::details::MatrixFormatConverter&lt; T, N &gt;::BlockMatrix =  typename DeviceTripletMatrix&lt;T, N&gt;::BlockMatrix</definition>
+      <memberdef kind="typedef" id="classmuda_1_1details_1_1_matrix_format_converter_1a37dc24471201da0acb93fad47c0b94a2" prot="private" static="no">
+        <type>typename <ref refid="classmuda_1_1_device_triplet_matrix" kindref="compound">DeviceTripletMatrix</ref>&lt; T, N &gt;::ValueT</type>
+        <definition>using muda::details::MatrixFormatConverter&lt; T, N &gt;::MatrixValueT =  typename DeviceTripletMatrix&lt;T, N&gt;::ValueT</definition>
         <argsstring></argsstring>
-        <name>BlockMatrix</name>
-        <qualifiedname>muda::details::MatrixFormatConverter::BlockMatrix</qualifiedname>
+        <name>MatrixValueT</name>
+        <qualifiedname>muda::details::MatrixFormatConverter::MatrixValueT</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/ext/linear_system/matrix_format_converter_impl.h" line="54" column="9" bodyfile="src/muda/ext/linear_system/matrix_format_converter_impl.h" bodystart="54" bodyend="-1"/>
+        <location file="src/muda/ext/linear_system/matrix_format_converter_impl.h" line="75" column="9" bodyfile="src/muda/ext/linear_system/matrix_format_converter_impl.h" bodystart="75" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="typedef" id="classmuda_1_1details_1_1_matrix_format_converter_1a29533dd693c14a604e4caac8890f0236" prot="private" static="no">
-        <type>typename <ref refid="classmuda_1_1_device_doublet_vector" kindref="compound">DeviceDoubletVector</ref>&lt; T, N &gt;::SegmentVector</type>
-        <definition>using muda::details::MatrixFormatConverter&lt; T, N &gt;::SegmentVector =  typename DeviceDoubletVector&lt;T, N&gt;::SegmentVector</definition>
+      <memberdef kind="typedef" id="classmuda_1_1details_1_1_matrix_format_converter_1ac5d760a2c9a7c6d0cd87a19308aae6e9" prot="private" static="no">
+        <type>typename <ref refid="classmuda_1_1_device_doublet_vector" kindref="compound">DeviceDoubletVector</ref>&lt; T, N &gt;::ValueT</type>
+        <definition>using muda::details::MatrixFormatConverter&lt; T, N &gt;::VectorValueT =  typename DeviceDoubletVector&lt;T, N&gt;::ValueT</definition>
         <argsstring></argsstring>
-        <name>SegmentVector</name>
-        <qualifiedname>muda::details::MatrixFormatConverter::SegmentVector</qualifiedname>
+        <name>VectorValueT</name>
+        <qualifiedname>muda::details::MatrixFormatConverter::VectorValueT</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/ext/linear_system/matrix_format_converter_impl.h" line="55" column="9" bodyfile="src/muda/ext/linear_system/matrix_format_converter_impl.h" bodystart="55" bodyend="-1"/>
+        <location file="src/muda/ext/linear_system/matrix_format_converter_impl.h" line="76" column="9" bodyfile="src/muda/ext/linear_system/matrix_format_converter_impl.h" bodystart="76" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="private-attrib">
@@ -56,7 +56,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/ext/linear_system/matrix_format_converter_impl.h" line="57" column="22" bodyfile="src/muda/ext/linear_system/matrix_format_converter_impl.h" bodystart="57" bodyend="-1"/>
+        <location file="src/muda/ext/linear_system/matrix_format_converter_impl.h" line="102" column="22" bodyfile="src/muda/ext/linear_system/matrix_format_converter_impl.h" bodystart="102" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classmuda_1_1details_1_1_matrix_format_converter_1ac4be3158a149f753058371069f0928b5" prot="private" static="no" mutable="no">
         <type><ref refid="classmuda_1_1_device_buffer" kindref="compound">DeviceBuffer</ref>&lt; int &gt;</type>
@@ -70,7 +70,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/ext/linear_system/matrix_format_converter_impl.h" line="58" column="22" bodyfile="src/muda/ext/linear_system/matrix_format_converter_impl.h" bodystart="58" bodyend="-1"/>
+        <location file="src/muda/ext/linear_system/matrix_format_converter_impl.h" line="103" column="22" bodyfile="src/muda/ext/linear_system/matrix_format_converter_impl.h" bodystart="103" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classmuda_1_1details_1_1_matrix_format_converter_1a5048923a5d461d73f2bcc9453f805b36" prot="private" static="no" mutable="no">
         <type><ref refid="classmuda_1_1_device_buffer" kindref="compound">DeviceBuffer</ref>&lt; int &gt;</type>
@@ -84,7 +84,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/ext/linear_system/matrix_format_converter_impl.h" line="59" column="22" bodyfile="src/muda/ext/linear_system/matrix_format_converter_impl.h" bodystart="59" bodyend="-1"/>
+        <location file="src/muda/ext/linear_system/matrix_format_converter_impl.h" line="104" column="22" bodyfile="src/muda/ext/linear_system/matrix_format_converter_impl.h" bodystart="104" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classmuda_1_1details_1_1_matrix_format_converter_1af20564059cad4916bfeab770b982d5ca" prot="private" static="no" mutable="no">
         <type><ref refid="classmuda_1_1_device_buffer" kindref="compound">DeviceBuffer</ref>&lt; int &gt;</type>
@@ -98,7 +98,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/ext/linear_system/matrix_format_converter_impl.h" line="61" column="22" bodyfile="src/muda/ext/linear_system/matrix_format_converter_impl.h" bodystart="61" bodyend="-1"/>
+        <location file="src/muda/ext/linear_system/matrix_format_converter_impl.h" line="106" column="22" bodyfile="src/muda/ext/linear_system/matrix_format_converter_impl.h" bodystart="106" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classmuda_1_1details_1_1_matrix_format_converter_1ab962d0180ef38081b6f86fe984448298" prot="private" static="no" mutable="no">
         <type><ref refid="classmuda_1_1_device_buffer" kindref="compound">DeviceBuffer</ref>&lt; int &gt;</type>
@@ -112,7 +112,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/ext/linear_system/matrix_format_converter_impl.h" line="62" column="22" bodyfile="src/muda/ext/linear_system/matrix_format_converter_impl.h" bodystart="62" bodyend="-1"/>
+        <location file="src/muda/ext/linear_system/matrix_format_converter_impl.h" line="107" column="22" bodyfile="src/muda/ext/linear_system/matrix_format_converter_impl.h" bodystart="107" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classmuda_1_1details_1_1_matrix_format_converter_1a17c50598980a4584e8651c002f0f5487" prot="private" static="no" mutable="no">
         <type><ref refid="classmuda_1_1_device_b_c_o_o_matrix" kindref="compound">DeviceBCOOMatrix</ref>&lt; T, N &gt;</type>
@@ -126,7 +126,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/ext/linear_system/matrix_format_converter_impl.h" line="64" column="26" bodyfile="src/muda/ext/linear_system/matrix_format_converter_impl.h" bodystart="64" bodyend="-1"/>
+        <location file="src/muda/ext/linear_system/matrix_format_converter_impl.h" line="109" column="26" bodyfile="src/muda/ext/linear_system/matrix_format_converter_impl.h" bodystart="109" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classmuda_1_1details_1_1_matrix_format_converter_1a382fe02df8a019c426b5139d427c83c9" prot="private" static="no" mutable="no">
         <type><ref refid="classmuda_1_1_device_b_c_o_o_vector" kindref="compound">DeviceBCOOVector</ref>&lt; T, N &gt;</type>
@@ -140,7 +140,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/ext/linear_system/matrix_format_converter_impl.h" line="65" column="26" bodyfile="src/muda/ext/linear_system/matrix_format_converter_impl.h" bodystart="65" bodyend="-1"/>
+        <location file="src/muda/ext/linear_system/matrix_format_converter_impl.h" line="110" column="26" bodyfile="src/muda/ext/linear_system/matrix_format_converter_impl.h" bodystart="110" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classmuda_1_1details_1_1_matrix_format_converter_1a06d63090c716ce783d84c5aa27d3bf10" prot="private" static="no" mutable="no">
         <type><ref refid="classmuda_1_1_device_buffer" kindref="compound">DeviceBuffer</ref>&lt; int &gt;</type>
@@ -154,7 +154,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/ext/linear_system/matrix_format_converter_impl.h" line="67" column="22" bodyfile="src/muda/ext/linear_system/matrix_format_converter_impl.h" bodystart="67" bodyend="-1"/>
+        <location file="src/muda/ext/linear_system/matrix_format_converter_impl.h" line="112" column="22" bodyfile="src/muda/ext/linear_system/matrix_format_converter_impl.h" bodystart="112" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classmuda_1_1details_1_1_matrix_format_converter_1af7f99b88d43b640fff29fa20af3596bd" prot="private" static="no" mutable="no">
         <type><ref refid="classmuda_1_1_device_buffer" kindref="compound">DeviceBuffer</ref>&lt; int &gt;</type>
@@ -168,7 +168,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/ext/linear_system/matrix_format_converter_impl.h" line="68" column="22" bodyfile="src/muda/ext/linear_system/matrix_format_converter_impl.h" bodystart="68" bodyend="-1"/>
+        <location file="src/muda/ext/linear_system/matrix_format_converter_impl.h" line="113" column="22" bodyfile="src/muda/ext/linear_system/matrix_format_converter_impl.h" bodystart="113" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classmuda_1_1details_1_1_matrix_format_converter_1a592a1ed27885844f54116a3385afabdb" prot="private" static="no" mutable="no">
         <type><ref refid="classmuda_1_1_device_buffer" kindref="compound">DeviceBuffer</ref>&lt; int &gt;</type>
@@ -182,7 +182,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/ext/linear_system/matrix_format_converter_impl.h" line="69" column="22" bodyfile="src/muda/ext/linear_system/matrix_format_converter_impl.h" bodystart="69" bodyend="-1"/>
+        <location file="src/muda/ext/linear_system/matrix_format_converter_impl.h" line="114" column="22" bodyfile="src/muda/ext/linear_system/matrix_format_converter_impl.h" bodystart="114" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classmuda_1_1details_1_1_matrix_format_converter_1a9b7a74f24ffe30749edfc3f8441d2f2d" prot="private" static="no" mutable="no">
         <type><ref refid="classmuda_1_1_device_var" kindref="compound">DeviceVar</ref>&lt; int &gt;</type>
@@ -196,7 +196,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/ext/linear_system/matrix_format_converter_impl.h" line="71" column="19" bodyfile="src/muda/ext/linear_system/matrix_format_converter_impl.h" bodystart="71" bodyend="-1"/>
+        <location file="src/muda/ext/linear_system/matrix_format_converter_impl.h" line="116" column="19" bodyfile="src/muda/ext/linear_system/matrix_format_converter_impl.h" bodystart="116" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classmuda_1_1details_1_1_matrix_format_converter_1a3731be03c69bb82d973ea403fe2a32a2" prot="private" static="no" mutable="no">
         <type><ref refid="classmuda_1_1_device_buffer" kindref="compound">DeviceBuffer</ref>&lt; int2 &gt;</type>
@@ -210,11 +210,11 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/ext/linear_system/matrix_format_converter_impl.h" line="73" column="26" bodyfile="src/muda/ext/linear_system/matrix_format_converter_impl.h" bodystart="73" bodyend="-1"/>
+        <location file="src/muda/ext/linear_system/matrix_format_converter_impl.h" line="118" column="25" bodyfile="src/muda/ext/linear_system/matrix_format_converter_impl.h" bodystart="118" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="classmuda_1_1details_1_1_matrix_format_converter_1ac094dda99bbf99444a9b137d57df27c2" prot="private" static="no" mutable="no">
-        <type><ref refid="classmuda_1_1_device_buffer" kindref="compound">DeviceBuffer</ref>&lt; uint64_t &gt;</type>
-        <definition>DeviceBuffer&lt;uint64_t&gt; muda::details::MatrixFormatConverter&lt; T, N &gt;::ij_hash</definition>
+      <memberdef kind="variable" id="classmuda_1_1details_1_1_matrix_format_converter_1a9c5d7b0547315c79d330c82521e8a932" prot="private" static="no" mutable="no">
+        <type><ref refid="classmuda_1_1_device_buffer" kindref="compound">DeviceBuffer</ref>&lt; int64_t &gt;</type>
+        <definition>DeviceBuffer&lt;int64_t&gt; muda::details::MatrixFormatConverter&lt; T, N &gt;::ij_hash</definition>
         <argsstring></argsstring>
         <name>ij_hash</name>
         <qualifiedname>muda::details::MatrixFormatConverter::ij_hash</qualifiedname>
@@ -224,11 +224,11 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/ext/linear_system/matrix_format_converter_impl.h" line="74" column="22" bodyfile="src/muda/ext/linear_system/matrix_format_converter_impl.h" bodystart="74" bodyend="-1"/>
+        <location file="src/muda/ext/linear_system/matrix_format_converter_impl.h" line="119" column="22" bodyfile="src/muda/ext/linear_system/matrix_format_converter_impl.h" bodystart="119" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="classmuda_1_1details_1_1_matrix_format_converter_1ab9270b98df5893f4a1ffdd16aa4dd03f" prot="private" static="no" mutable="no">
-        <type><ref refid="classmuda_1_1_device_buffer" kindref="compound">DeviceBuffer</ref>&lt; uint64_t &gt;</type>
-        <definition>DeviceBuffer&lt;uint64_t&gt; muda::details::MatrixFormatConverter&lt; T, N &gt;::ij_hash_input</definition>
+      <memberdef kind="variable" id="classmuda_1_1details_1_1_matrix_format_converter_1a3bb700db8c714029e5a4333d10d75229" prot="private" static="no" mutable="no">
+        <type><ref refid="classmuda_1_1_device_buffer" kindref="compound">DeviceBuffer</ref>&lt; int64_t &gt;</type>
+        <definition>DeviceBuffer&lt;int64_t&gt; muda::details::MatrixFormatConverter&lt; T, N &gt;::ij_hash_input</definition>
         <argsstring></argsstring>
         <name>ij_hash_input</name>
         <qualifiedname>muda::details::MatrixFormatConverter::ij_hash_input</qualifiedname>
@@ -238,7 +238,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/ext/linear_system/matrix_format_converter_impl.h" line="75" column="22" bodyfile="src/muda/ext/linear_system/matrix_format_converter_impl.h" bodystart="75" bodyend="-1"/>
+        <location file="src/muda/ext/linear_system/matrix_format_converter_impl.h" line="120" column="22" bodyfile="src/muda/ext/linear_system/matrix_format_converter_impl.h" bodystart="120" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classmuda_1_1details_1_1_matrix_format_converter_1ad0cc4442753c67c4b6bca369155e69ed" prot="private" static="no" mutable="no">
         <type><ref refid="classmuda_1_1_device_buffer" kindref="compound">DeviceBuffer</ref>&lt; int2 &gt;</type>
@@ -252,11 +252,11 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/ext/linear_system/matrix_format_converter_impl.h" line="76" column="26" bodyfile="src/muda/ext/linear_system/matrix_format_converter_impl.h" bodystart="76" bodyend="-1"/>
+        <location file="src/muda/ext/linear_system/matrix_format_converter_impl.h" line="121" column="25" bodyfile="src/muda/ext/linear_system/matrix_format_converter_impl.h" bodystart="121" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="classmuda_1_1details_1_1_matrix_format_converter_1a34f1e235625f5ef92bf6dae922bb48f0" prot="private" static="no" mutable="no">
-        <type><ref refid="classmuda_1_1_device_buffer" kindref="compound">muda::DeviceBuffer</ref>&lt; BlockMatrix &gt;</type>
-        <definition>muda::DeviceBuffer&lt;BlockMatrix&gt; muda::details::MatrixFormatConverter&lt; T, N &gt;::blocks_sorted</definition>
+      <memberdef kind="variable" id="classmuda_1_1details_1_1_matrix_format_converter_1a5485b5dddb29a9b12fec2d83abb935bf" prot="private" static="no" mutable="no">
+        <type><ref refid="classmuda_1_1_device_buffer" kindref="compound">muda::DeviceBuffer</ref>&lt; MatrixValueT &gt;</type>
+        <definition>muda::DeviceBuffer&lt;MatrixValueT&gt; muda::details::MatrixFormatConverter&lt; T, N &gt;::blocks_sorted</definition>
         <argsstring></argsstring>
         <name>blocks_sorted</name>
         <qualifiedname>muda::details::MatrixFormatConverter::blocks_sorted</qualifiedname>
@@ -266,11 +266,11 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/ext/linear_system/matrix_format_converter_impl.h" line="78" column="28" bodyfile="src/muda/ext/linear_system/matrix_format_converter_impl.h" bodystart="78" bodyend="-1"/>
+        <location file="src/muda/ext/linear_system/matrix_format_converter_impl.h" line="123" column="28" bodyfile="src/muda/ext/linear_system/matrix_format_converter_impl.h" bodystart="123" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="classmuda_1_1details_1_1_matrix_format_converter_1a4495283e64334e96b672980a001b9f23" prot="private" static="no" mutable="no">
-        <type><ref refid="classmuda_1_1_device_buffer" kindref="compound">DeviceBuffer</ref>&lt; BlockMatrix &gt;</type>
-        <definition>DeviceBuffer&lt;BlockMatrix&gt; muda::details::MatrixFormatConverter&lt; T, N &gt;::unique_blocks</definition>
+      <memberdef kind="variable" id="classmuda_1_1details_1_1_matrix_format_converter_1a79d121d02da4e96981d3a48758cb66ae" prot="private" static="no" mutable="no">
+        <type><ref refid="classmuda_1_1_device_buffer" kindref="compound">DeviceBuffer</ref>&lt; MatrixValueT &gt;</type>
+        <definition>DeviceBuffer&lt;MatrixValueT&gt; muda::details::MatrixFormatConverter&lt; T, N &gt;::unique_blocks</definition>
         <argsstring></argsstring>
         <name>unique_blocks</name>
         <qualifiedname>muda::details::MatrixFormatConverter::unique_blocks</qualifiedname>
@@ -280,11 +280,11 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/ext/linear_system/matrix_format_converter_impl.h" line="79" column="28" bodyfile="src/muda/ext/linear_system/matrix_format_converter_impl.h" bodystart="79" bodyend="-1"/>
+        <location file="src/muda/ext/linear_system/matrix_format_converter_impl.h" line="124" column="28" bodyfile="src/muda/ext/linear_system/matrix_format_converter_impl.h" bodystart="124" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="classmuda_1_1details_1_1_matrix_format_converter_1a3ec4464abf3776966d9c5eef3139a340" prot="private" static="no" mutable="no">
-        <type><ref refid="classmuda_1_1_device_buffer" kindref="compound">DeviceBuffer</ref>&lt; SegmentVector &gt;</type>
-        <definition>DeviceBuffer&lt;SegmentVector&gt; muda::details::MatrixFormatConverter&lt; T, N &gt;::unique_segments</definition>
+      <memberdef kind="variable" id="classmuda_1_1details_1_1_matrix_format_converter_1ae947a7439cde389dc91eed8726f0c01f" prot="private" static="no" mutable="no">
+        <type><ref refid="classmuda_1_1_device_buffer" kindref="compound">DeviceBuffer</ref>&lt; VectorValueT &gt;</type>
+        <definition>DeviceBuffer&lt;VectorValueT&gt; muda::details::MatrixFormatConverter&lt; T, N &gt;::unique_segments</definition>
         <argsstring></argsstring>
         <name>unique_segments</name>
         <qualifiedname>muda::details::MatrixFormatConverter::unique_segments</qualifiedname>
@@ -294,11 +294,11 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/ext/linear_system/matrix_format_converter_impl.h" line="80" column="26" bodyfile="src/muda/ext/linear_system/matrix_format_converter_impl.h" bodystart="80" bodyend="-1"/>
+        <location file="src/muda/ext/linear_system/matrix_format_converter_impl.h" line="125" column="28" bodyfile="src/muda/ext/linear_system/matrix_format_converter_impl.h" bodystart="125" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="classmuda_1_1details_1_1_matrix_format_converter_1aedc2ad39c554d70c8d6d04bbedbbc70c" prot="private" static="no" mutable="no">
-        <type><ref refid="classmuda_1_1_device_buffer" kindref="compound">DeviceBuffer</ref>&lt; SegmentVector &gt;</type>
-        <definition>DeviceBuffer&lt;SegmentVector&gt; muda::details::MatrixFormatConverter&lt; T, N &gt;::temp_segments</definition>
+      <memberdef kind="variable" id="classmuda_1_1details_1_1_matrix_format_converter_1a8944ecdb9428cc5dca5db4a7d72fc8eb" prot="private" static="no" mutable="no">
+        <type><ref refid="classmuda_1_1_device_buffer" kindref="compound">DeviceBuffer</ref>&lt; VectorValueT &gt;</type>
+        <definition>DeviceBuffer&lt;VectorValueT&gt; muda::details::MatrixFormatConverter&lt; T, N &gt;::temp_segments</definition>
         <argsstring></argsstring>
         <name>temp_segments</name>
         <qualifiedname>muda::details::MatrixFormatConverter::temp_segments</qualifiedname>
@@ -308,7 +308,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/ext/linear_system/matrix_format_converter_impl.h" line="81" column="26" bodyfile="src/muda/ext/linear_system/matrix_format_converter_impl.h" bodystart="81" bodyend="-1"/>
+        <location file="src/muda/ext/linear_system/matrix_format_converter_impl.h" line="126" column="28" bodyfile="src/muda/ext/linear_system/matrix_format_converter_impl.h" bodystart="126" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classmuda_1_1details_1_1_matrix_format_converter_1a3ebb7375137a64e8addb6efb6c8a7c1f" prot="private" static="no" mutable="no">
         <type><ref refid="classmuda_1_1_device_buffer" kindref="compound">DeviceBuffer</ref>&lt; T &gt;</type>
@@ -322,7 +322,37 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/ext/linear_system/matrix_format_converter_impl.h" line="83" column="22" bodyfile="src/muda/ext/linear_system/matrix_format_converter_impl.h" bodystart="83" bodyend="-1"/>
+        <location file="src/muda/ext/linear_system/matrix_format_converter_impl.h" line="128" column="22" bodyfile="src/muda/ext/linear_system/matrix_format_converter_impl.h" bodystart="128" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classmuda_1_1details_1_1_matrix_format_converter_1ae7ba32e8864dc8a38f89f35eceb05240" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>MatrixValueT</type>
+        <definition>MatrixValueT muda::details::MatrixFormatConverter&lt; T, N &gt;::MatrixValueTZero</definition>
+        <argsstring>() const</argsstring>
+        <name>MatrixValueTZero</name>
+        <qualifiedname>muda::details::MatrixFormatConverter::MatrixValueTZero</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/matrix_format_converter_impl.h" line="78" column="22" bodyfile="src/muda/ext/linear_system/matrix_format_converter_impl.h" bodystart="78" bodyend="88"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1details_1_1_matrix_format_converter_1ab8a04660684f034166e38a132f0357df" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>VectorValueT</type>
+        <definition>VectorValueT muda::details::MatrixFormatConverter&lt; T, N &gt;::VectorValueTZero</definition>
+        <argsstring>() const</argsstring>
+        <name>VectorValueTZero</name>
+        <qualifiedname>muda::details::MatrixFormatConverter::VectorValueTZero</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/matrix_format_converter_impl.h" line="90" column="22" bodyfile="src/muda/ext/linear_system/matrix_format_converter_impl.h" bodystart="90" bodyend="100"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-func">
@@ -342,7 +372,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/ext/linear_system/matrix_format_converter_impl.h" line="86" column="9" bodyfile="src/muda/ext/linear_system/matrix_format_converter_impl.h" bodystart="86" bodyend="89"/>
+        <location file="src/muda/ext/linear_system/matrix_format_converter_impl.h" line="131" column="9" bodyfile="src/muda/ext/linear_system/matrix_format_converter_impl.h" bodystart="131" bodyend="134"/>
       </memberdef>
       <memberdef kind="function" id="classmuda_1_1details_1_1_matrix_format_converter_1ab36a7ecfab5e0456744453512f2fd5e2" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type></type>
@@ -356,9 +386,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/ext/linear_system/matrix_format_converter_impl.h" line="91" column="17"/>
+        <location file="src/muda/ext/linear_system/matrix_format_converter_impl.h" line="136" column="17"/>
       </memberdef>
-      <memberdef kind="function" id="classmuda_1_1details_1_1_matrix_format_converter_1a0c0990dd97932da3b1fd17d6bc9af8ad" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classmuda_1_1details_1_1_matrix_format_converter_1a0c0990dd97932da3b1fd17d6bc9af8ad" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
         <definition>void muda::details::MatrixFormatConverter&lt; T, N &gt;::convert</definition>
         <argsstring>(const DeviceTripletMatrix&lt; T, N &gt; &amp;from, DeviceBCOOMatrix&lt; T, N &gt; &amp;to)</argsstring>
@@ -378,9 +408,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/ext/linear_system/matrix_format_converter_impl.h" line="95" column="14"/>
+        <location file="src/muda/ext/linear_system/matrix_format_converter_impl.h" line="140" column="14" bodyfile="src/muda/ext/linear_system/matrix_format_converter_impl.h" bodystart="140" bodyend="160"/>
       </memberdef>
-      <memberdef kind="function" id="classmuda_1_1details_1_1_matrix_format_converter_1abf8ce6187f5b16077d32894dd6fff8b5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classmuda_1_1details_1_1_matrix_format_converter_1abf8ce6187f5b16077d32894dd6fff8b5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
         <definition>void muda::details::MatrixFormatConverter&lt; T, N &gt;::radix_sort_indices_and_blocks</definition>
         <argsstring>(const DeviceTripletMatrix&lt; T, N &gt; &amp;from, DeviceBCOOMatrix&lt; T, N &gt; &amp;to)</argsstring>
@@ -400,9 +430,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/ext/linear_system/matrix_format_converter_impl.h" line="97" column="14"/>
+        <location file="src/muda/ext/linear_system/matrix_format_converter_impl.h" line="162" column="14" bodyfile="src/muda/ext/linear_system/matrix_format_converter_impl.h" bodystart="162" bodyend="227"/>
       </memberdef>
-      <memberdef kind="function" id="classmuda_1_1details_1_1_matrix_format_converter_1aef73e22f3d09d291c89c8d84633fedd1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classmuda_1_1details_1_1_matrix_format_converter_1aef73e22f3d09d291c89c8d84633fedd1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
         <definition>void muda::details::MatrixFormatConverter&lt; T, N &gt;::make_unique_indices_and_blocks</definition>
         <argsstring>(const DeviceTripletMatrix&lt; T, N &gt; &amp;from, DeviceBCOOMatrix&lt; T, N &gt; &amp;to)</argsstring>
@@ -422,9 +452,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/ext/linear_system/matrix_format_converter_impl.h" line="99" column="14"/>
+        <location file="src/muda/ext/linear_system/matrix_format_converter_impl.h" line="230" column="14" bodyfile="src/muda/ext/linear_system/matrix_format_converter_impl.h" bodystart="230" bodyend="265"/>
       </memberdef>
-      <memberdef kind="function" id="classmuda_1_1details_1_1_matrix_format_converter_1aaf85588ad3574f05ed8b321a1699533f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classmuda_1_1details_1_1_matrix_format_converter_1aaf85588ad3574f05ed8b321a1699533f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
         <definition>void muda::details::MatrixFormatConverter&lt; T, N &gt;::merge_sort_indices_and_blocks</definition>
         <argsstring>(const DeviceTripletMatrix&lt; T, N &gt; &amp;from, DeviceBCOOMatrix&lt; T, N &gt; &amp;to)</argsstring>
@@ -444,9 +474,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/ext/linear_system/matrix_format_converter_impl.h" line="102" column="14"/>
+        <location file="src/muda/ext/linear_system/matrix_format_converter_impl.h" line="267" column="14" bodyfile="src/muda/ext/linear_system/matrix_format_converter_impl.h" bodystart="267" bodyend="333"/>
       </memberdef>
-      <memberdef kind="function" id="classmuda_1_1details_1_1_matrix_format_converter_1a05262916532e974716c217d7a7472024" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classmuda_1_1details_1_1_matrix_format_converter_1a05262916532e974716c217d7a7472024" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
         <definition>void muda::details::MatrixFormatConverter&lt; T, N &gt;::make_unique_indices</definition>
         <argsstring>(const DeviceTripletMatrix&lt; T, N &gt; &amp;from, DeviceBCOOMatrix&lt; T, N &gt; &amp;to)</argsstring>
@@ -466,9 +496,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/ext/linear_system/matrix_format_converter_impl.h" line="104" column="14"/>
+        <location file="src/muda/ext/linear_system/matrix_format_converter_impl.h" line="335" column="14" bodyfile="src/muda/ext/linear_system/matrix_format_converter_impl.h" bodystart="335" bodyend="377"/>
       </memberdef>
-      <memberdef kind="function" id="classmuda_1_1details_1_1_matrix_format_converter_1aae9cf1499a66c9ec57a93d8671d98ff0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classmuda_1_1details_1_1_matrix_format_converter_1aae9cf1499a66c9ec57a93d8671d98ff0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
         <definition>void muda::details::MatrixFormatConverter&lt; T, N &gt;::make_unique_blocks</definition>
         <argsstring>(const DeviceTripletMatrix&lt; T, N &gt; &amp;from, DeviceBCOOMatrix&lt; T, N &gt; &amp;to)</argsstring>
@@ -488,9 +518,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/ext/linear_system/matrix_format_converter_impl.h" line="106" column="14"/>
+        <location file="src/muda/ext/linear_system/matrix_format_converter_impl.h" line="379" column="14" bodyfile="src/muda/ext/linear_system/matrix_format_converter_impl.h" bodystart="379" bodyend="410"/>
       </memberdef>
-      <memberdef kind="function" id="classmuda_1_1details_1_1_matrix_format_converter_1a657bf98763cd4758a6f2c109fdfb6681" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classmuda_1_1details_1_1_matrix_format_converter_1a657bf98763cd4758a6f2c109fdfb6681" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
         <definition>void muda::details::MatrixFormatConverter&lt; T, N &gt;::convert</definition>
         <argsstring>(const DeviceBCOOMatrix&lt; T, N &gt; &amp;from, DeviceDenseMatrix&lt; T &gt; &amp;to, bool clear_dense_matrix=true)</argsstring>
@@ -515,12 +545,12 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/ext/linear_system/matrix_format_converter_impl.h" line="111" column="14"/>
+        <location file="src/muda/ext/linear_system/matrix_format_converter_impl.h" line="414" column="14" bodyfile="src/muda/ext/linear_system/matrix_format_converter_impl.h" bodystart="414" bodyend="444"/>
       </memberdef>
-      <memberdef kind="function" id="classmuda_1_1details_1_1_matrix_format_converter_1a22bd66f64eff6e07f3ebe9b2a83bd2ee" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classmuda_1_1details_1_1_matrix_format_converter_1a5d8f9d8af10206ff8560c32bd3575186" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
         <definition>void muda::details::MatrixFormatConverter&lt; T, N &gt;::convert</definition>
-        <argsstring>(const DeviceBCOOMatrix&lt; T, N &gt; &amp;from, DeviceCOOMatrix&lt; T &gt; &amp;to)</argsstring>
+        <argsstring>(const DeviceBCOOMatrix&lt; T, N &gt; &amp;from, DeviceCOOMatrix&lt; T &gt; &amp;to) MUDA_REQUIRES(N &gt; 1)</argsstring>
         <name>convert</name>
         <qualifiedname>muda::details::MatrixFormatConverter::convert</qualifiedname>
         <param>
@@ -537,12 +567,12 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/ext/linear_system/matrix_format_converter_impl.h" line="116" column="14"/>
+        <location file="src/muda/ext/linear_system/matrix_format_converter_impl.h" line="447" column="14" bodyfile="src/muda/ext/linear_system/matrix_format_converter_impl.h" bodystart="447" bodyend="453"/>
       </memberdef>
-      <memberdef kind="function" id="classmuda_1_1details_1_1_matrix_format_converter_1adc1b3b8c251b425413473fe9f2bc614e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classmuda_1_1details_1_1_matrix_format_converter_1aa94c1231d6db001f0de9ece19aa77782" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
         <definition>void muda::details::MatrixFormatConverter&lt; T, N &gt;::expand_blocks</definition>
-        <argsstring>(const DeviceBCOOMatrix&lt; T, N &gt; &amp;from, DeviceCOOMatrix&lt; T &gt; &amp;to)</argsstring>
+        <argsstring>(const DeviceBCOOMatrix&lt; T, N &gt; &amp;from, DeviceCOOMatrix&lt; T &gt; &amp;to) MUDA_REQUIRES(N &gt; 1)</argsstring>
         <name>expand_blocks</name>
         <qualifiedname>muda::details::MatrixFormatConverter::expand_blocks</qualifiedname>
         <param>
@@ -559,12 +589,12 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/ext/linear_system/matrix_format_converter_impl.h" line="117" column="14"/>
+        <location file="src/muda/ext/linear_system/matrix_format_converter_impl.h" line="455" column="14" bodyfile="src/muda/ext/linear_system/matrix_format_converter_impl.h" bodystart="455" bodyend="507"/>
       </memberdef>
-      <memberdef kind="function" id="classmuda_1_1details_1_1_matrix_format_converter_1ab265c5d4bc8b5c07e55503576a7cf4bd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classmuda_1_1details_1_1_matrix_format_converter_1ac812f824578e1909e1543696424de207" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
         <definition>void muda::details::MatrixFormatConverter&lt; T, N &gt;::sort_indices_and_values</definition>
-        <argsstring>(const DeviceBCOOMatrix&lt; T, N &gt; &amp;from, DeviceCOOMatrix&lt; T &gt; &amp;to)</argsstring>
+        <argsstring>(const DeviceBCOOMatrix&lt; T, N &gt; &amp;from, DeviceCOOMatrix&lt; T &gt; &amp;to) MUDA_REQUIRES(N &gt; 1)</argsstring>
         <name>sort_indices_and_values</name>
         <qualifiedname>muda::details::MatrixFormatConverter::sort_indices_and_values</qualifiedname>
         <param>
@@ -581,9 +611,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/ext/linear_system/matrix_format_converter_impl.h" line="118" column="14"/>
+        <location file="src/muda/ext/linear_system/matrix_format_converter_impl.h" line="509" column="14" bodyfile="src/muda/ext/linear_system/matrix_format_converter_impl.h" bodystart="509" bodyend="556"/>
       </memberdef>
-      <memberdef kind="function" id="classmuda_1_1details_1_1_matrix_format_converter_1adda929291544fb03830ffa179d82d711" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classmuda_1_1details_1_1_matrix_format_converter_1adda929291544fb03830ffa179d82d711" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
         <definition>void muda::details::MatrixFormatConverter&lt; T, N &gt;::convert</definition>
         <argsstring>(const DeviceBCOOMatrix&lt; T, N &gt; &amp;from, DeviceBSRMatrix&lt; T, N &gt; &amp;to)</argsstring>
@@ -603,9 +633,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/ext/linear_system/matrix_format_converter_impl.h" line="122" column="14"/>
+        <location file="src/muda/ext/linear_system/matrix_format_converter_impl.h" line="559" column="14" bodyfile="src/muda/ext/linear_system/matrix_format_converter_impl.h" bodystart="559" bodyend="565"/>
       </memberdef>
-      <memberdef kind="function" id="classmuda_1_1details_1_1_matrix_format_converter_1ad0c4bf2218e31010ae82779e804e5fd2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classmuda_1_1details_1_1_matrix_format_converter_1ad0c4bf2218e31010ae82779e804e5fd2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
         <definition>void muda::details::MatrixFormatConverter&lt; T, N &gt;::convert</definition>
         <argsstring>(DeviceBCOOMatrix&lt; T, N &gt; &amp;&amp;from, DeviceBSRMatrix&lt; T, N &gt; &amp;to)</argsstring>
@@ -625,9 +655,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/ext/linear_system/matrix_format_converter_impl.h" line="123" column="14"/>
+        <location file="src/muda/ext/linear_system/matrix_format_converter_impl.h" line="567" column="14" bodyfile="src/muda/ext/linear_system/matrix_format_converter_impl.h" bodystart="567" bodyend="572"/>
       </memberdef>
-      <memberdef kind="function" id="classmuda_1_1details_1_1_matrix_format_converter_1a46986db6af4a6ba1315fd35f75ef7d58" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classmuda_1_1details_1_1_matrix_format_converter_1a46986db6af4a6ba1315fd35f75ef7d58" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
         <definition>void muda::details::MatrixFormatConverter&lt; T, N &gt;::calculate_block_offsets</definition>
         <argsstring>(const DeviceBCOOMatrix&lt; T, N &gt; &amp;from, DeviceBSRMatrix&lt; T, N &gt; &amp;to)</argsstring>
@@ -647,9 +677,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/ext/linear_system/matrix_format_converter_impl.h" line="124" column="14"/>
+        <location file="src/muda/ext/linear_system/matrix_format_converter_impl.h" line="574" column="14" bodyfile="src/muda/ext/linear_system/matrix_format_converter_impl.h" bodystart="574" bodyend="617"/>
       </memberdef>
-      <memberdef kind="function" id="classmuda_1_1details_1_1_matrix_format_converter_1a3ea668949f77ed225bfa67d2066493bc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classmuda_1_1details_1_1_matrix_format_converter_1a3ea668949f77ed225bfa67d2066493bc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
         <definition>void muda::details::MatrixFormatConverter&lt; T, N &gt;::convert</definition>
         <argsstring>(const DeviceDoubletVector&lt; T, N &gt; &amp;from, DeviceBCOOVector&lt; T, N &gt; &amp;to)</argsstring>
@@ -669,9 +699,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/ext/linear_system/matrix_format_converter_impl.h" line="128" column="14"/>
+        <location file="src/muda/ext/linear_system/matrix_format_converter_impl.h" line="620" column="14" bodyfile="src/muda/ext/linear_system/matrix_format_converter_impl.h" bodystart="620" bodyend="627"/>
       </memberdef>
-      <memberdef kind="function" id="classmuda_1_1details_1_1_matrix_format_converter_1a74dcce3d1f7d227ab6db86ed95671c79" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classmuda_1_1details_1_1_matrix_format_converter_1a74dcce3d1f7d227ab6db86ed95671c79" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
         <definition>void muda::details::MatrixFormatConverter&lt; T, N &gt;::merge_sort_indices_and_segments</definition>
         <argsstring>(const DeviceDoubletVector&lt; T, N &gt; &amp;from, DeviceBCOOVector&lt; T, N &gt; &amp;to)</argsstring>
@@ -691,9 +721,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/ext/linear_system/matrix_format_converter_impl.h" line="130" column="14"/>
+        <location file="src/muda/ext/linear_system/matrix_format_converter_impl.h" line="629" column="14" bodyfile="src/muda/ext/linear_system/matrix_format_converter_impl.h" bodystart="629" bodyend="645"/>
       </memberdef>
-      <memberdef kind="function" id="classmuda_1_1details_1_1_matrix_format_converter_1a896c23a2b5689543462ac4fa11370237" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classmuda_1_1details_1_1_matrix_format_converter_1a896c23a2b5689543462ac4fa11370237" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
         <definition>void muda::details::MatrixFormatConverter&lt; T, N &gt;::make_unique_indices</definition>
         <argsstring>(const DeviceDoubletVector&lt; T, N &gt; &amp;from, DeviceBCOOVector&lt; T, N &gt; &amp;to)</argsstring>
@@ -713,9 +743,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/ext/linear_system/matrix_format_converter_impl.h" line="132" column="14"/>
+        <location file="src/muda/ext/linear_system/matrix_format_converter_impl.h" line="647" column="14" bodyfile="src/muda/ext/linear_system/matrix_format_converter_impl.h" bodystart="647" bodyend="684"/>
       </memberdef>
-      <memberdef kind="function" id="classmuda_1_1details_1_1_matrix_format_converter_1ae9cc01d5ad26e83b6a24d634bd2e94da" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classmuda_1_1details_1_1_matrix_format_converter_1ae9cc01d5ad26e83b6a24d634bd2e94da" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
         <definition>void muda::details::MatrixFormatConverter&lt; T, N &gt;::make_unique_segments</definition>
         <argsstring>(const DeviceDoubletVector&lt; T, N &gt; &amp;from, DeviceBCOOVector&lt; T, N &gt; &amp;to)</argsstring>
@@ -735,9 +765,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/ext/linear_system/matrix_format_converter_impl.h" line="134" column="14"/>
+        <location file="src/muda/ext/linear_system/matrix_format_converter_impl.h" line="686" column="14" bodyfile="src/muda/ext/linear_system/matrix_format_converter_impl.h" bodystart="686" bodyend="708"/>
       </memberdef>
-      <memberdef kind="function" id="classmuda_1_1details_1_1_matrix_format_converter_1aadc96963bb77725550ee2bc972115a9c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classmuda_1_1details_1_1_matrix_format_converter_1aadc96963bb77725550ee2bc972115a9c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
         <definition>void muda::details::MatrixFormatConverter&lt; T, N &gt;::convert</definition>
         <argsstring>(const DeviceBCOOVector&lt; T, N &gt; &amp;from, DeviceDenseVector&lt; T &gt; &amp;to, bool clear_dense_vector=true)</argsstring>
@@ -762,14 +792,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/ext/linear_system/matrix_format_converter_impl.h" line="138" column="14"/>
+        <location file="src/muda/ext/linear_system/matrix_format_converter_impl.h" line="712" column="14" bodyfile="src/muda/ext/linear_system/matrix_format_converter_impl.h" bodystart="712" bodyend="718"/>
       </memberdef>
-      <memberdef kind="function" id="classmuda_1_1details_1_1_matrix_format_converter_1a0c819b1b057555724f2db899b3700073" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classmuda_1_1details_1_1_matrix_format_converter_1af5a41329155218da0226c2814ac19f9c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
-        <definition>void muda::details::MatrixFormatConverter&lt; T, N &gt;::set_unique_segments_to_dense_vector</definition>
+        <definition>void muda::details::MatrixFormatConverter&lt; T, N &gt;::set_unique_values_to_dense_vector</definition>
         <argsstring>(const DeviceBCOOVector&lt; T, N &gt; &amp;from, DeviceDenseVector&lt; T &gt; &amp;to, bool clear_dense_vector)</argsstring>
-        <name>set_unique_segments_to_dense_vector</name>
-        <qualifiedname>muda::details::MatrixFormatConverter::set_unique_segments_to_dense_vector</qualifiedname>
+        <name>set_unique_values_to_dense_vector</name>
+        <qualifiedname>muda::details::MatrixFormatConverter::set_unique_values_to_dense_vector</qualifiedname>
         <param>
           <type>const <ref refid="classmuda_1_1_device_b_c_o_o_vector" kindref="compound">DeviceBCOOVector</ref>&lt; T, N &gt; &amp;</type>
           <declname>from</declname>
@@ -788,9 +818,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/ext/linear_system/matrix_format_converter_impl.h" line="141" column="14"/>
+        <location file="src/muda/ext/linear_system/matrix_format_converter_impl.h" line="720" column="14" bodyfile="src/muda/ext/linear_system/matrix_format_converter_impl.h" bodystart="720" bodyend="747"/>
       </memberdef>
-      <memberdef kind="function" id="classmuda_1_1details_1_1_matrix_format_converter_1ad0866d827fb691df22d295b3ff552aa0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classmuda_1_1details_1_1_matrix_format_converter_1ad0866d827fb691df22d295b3ff552aa0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
         <definition>void muda::details::MatrixFormatConverter&lt; T, N &gt;::convert</definition>
         <argsstring>(const DeviceDoubletVector&lt; T, N &gt; &amp;from, DeviceDenseVector&lt; T &gt; &amp;to, bool clear_dense_vector=true)</argsstring>
@@ -815,12 +845,78 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/ext/linear_system/matrix_format_converter_impl.h" line="146" column="14"/>
+        <location file="src/muda/ext/linear_system/matrix_format_converter_impl.h" line="751" column="14" bodyfile="src/muda/ext/linear_system/matrix_format_converter_impl.h" bodystart="751" bodyend="771"/>
       </memberdef>
-      <memberdef kind="function" id="classmuda_1_1details_1_1_matrix_format_converter_1afcd80d19cc76b5472268888e8787610c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classmuda_1_1details_1_1_matrix_format_converter_1a3a6fffcef666cc978fab667f0804a7e4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void muda::details::MatrixFormatConverter&lt; T, N &gt;::bsr2csr</definition>
+        <argsstring>(cusparseHandle_t handle, int mb, int nb, int blockDim, cusparseMatDescr_t descrA, const T *bsrValA, const int *bsrRowPtrA, const int *bsrColIndA, int nnzb, DeviceCSRMatrix&lt; T &gt; &amp;to, muda::DeviceBuffer&lt; int &gt; &amp;row_offsets, muda::DeviceBuffer&lt; int &gt; &amp;col_indices, muda::DeviceBuffer&lt; T &gt; &amp;values)</argsstring>
+        <name>bsr2csr</name>
+        <qualifiedname>muda::details::MatrixFormatConverter::bsr2csr</qualifiedname>
+        <param>
+          <type>cusparseHandle_t</type>
+          <declname>handle</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>mb</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nb</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>blockDim</declname>
+        </param>
+        <param>
+          <type>cusparseMatDescr_t</type>
+          <declname>descrA</declname>
+        </param>
+        <param>
+          <type>const T *</type>
+          <declname>bsrValA</declname>
+        </param>
+        <param>
+          <type>const int *</type>
+          <declname>bsrRowPtrA</declname>
+        </param>
+        <param>
+          <type>const int *</type>
+          <declname>bsrColIndA</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nnzb</declname>
+        </param>
+        <param>
+          <type><ref refid="classmuda_1_1_device_b_s_r_matrix" kindref="compound">DeviceCSRMatrix</ref>&lt; T &gt; &amp;</type>
+          <declname>to</declname>
+        </param>
+        <param>
+          <type><ref refid="classmuda_1_1_device_buffer" kindref="compound">muda::DeviceBuffer</ref>&lt; int &gt; &amp;</type>
+          <declname>row_offsets</declname>
+        </param>
+        <param>
+          <type><ref refid="classmuda_1_1_device_buffer" kindref="compound">muda::DeviceBuffer</ref>&lt; int &gt; &amp;</type>
+          <declname>col_indices</declname>
+        </param>
+        <param>
+          <type><ref refid="classmuda_1_1_device_buffer" kindref="compound">muda::DeviceBuffer</ref>&lt; T &gt; &amp;</type>
+          <declname>values</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/matrix_format_converter_impl.h" line="773" column="14" bodyfile="src/muda/ext/linear_system/matrix_format_converter_impl.h" bodystart="773" bodyend="828"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1details_1_1_matrix_format_converter_1a3dfc6ebd4e1fc6662554e9e9047d41ad" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
         <definition>void muda::details::MatrixFormatConverter&lt; T, N &gt;::convert</definition>
-        <argsstring>(const DeviceBSRMatrix&lt; T, N &gt; &amp;from, DeviceCSRMatrix&lt; T &gt; &amp;to)</argsstring>
+        <argsstring>(const DeviceBSRMatrix&lt; T, N &gt; &amp;from, DeviceCSRMatrix&lt; T &gt; &amp;to) MUDA_REQUIRES(N &gt; 1)</argsstring>
         <name>convert</name>
         <qualifiedname>muda::details::MatrixFormatConverter::convert</qualifiedname>
         <param>
@@ -828,7 +924,7 @@
           <declname>from</declname>
         </param>
         <param>
-          <type><ref refid="classmuda_1_1_device_c_s_r_matrix" kindref="compound">DeviceCSRMatrix</ref>&lt; T &gt; &amp;</type>
+          <type><ref refid="classmuda_1_1_device_b_s_r_matrix" kindref="compound">DeviceCSRMatrix</ref>&lt; T &gt; &amp;</type>
           <declname>to</declname>
         </param>
         <briefdescription>
@@ -837,7 +933,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/ext/linear_system/matrix_format_converter_impl.h" line="151" column="14"/>
+        <location file="src/muda/ext/linear_system/matrix_format_converter_impl.h" line="831" column="14" bodyfile="src/muda/ext/linear_system/matrix_format_converter_impl.h" bodystart="831" bodyend="850"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -875,21 +971,21 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="src/muda/ext/linear_system/matrix_format_converter_impl.h" line="52" column="5" bodyfile="src/muda/ext/linear_system/matrix_format_converter_impl.h" bodystart="53" bodyend="152"/>
+    <location file="src/muda/ext/linear_system/device_bcoo_matrix.h" line="11" column="1" bodyfile="src/muda/ext/linear_system/matrix_format_converter_impl.h" bodystart="74" bodyend="851"/>
     <listofallmembers>
-      <member refid="classmuda_1_1details_1_1_matrix_format_converter_1a59b8cf43e1fe5a80e147ed11ff642c2b" prot="private" virt="non-virtual"><scope>muda::details::MatrixFormatConverter</scope><name>BlockMatrix</name></member>
-      <member refid="classmuda_1_1details_1_1_matrix_format_converter_1a34f1e235625f5ef92bf6dae922bb48f0" prot="private" virt="non-virtual"><scope>muda::details::MatrixFormatConverter</scope><name>blocks_sorted</name></member>
+      <member refid="classmuda_1_1details_1_1_matrix_format_converter_1a5485b5dddb29a9b12fec2d83abb935bf" prot="private" virt="non-virtual"><scope>muda::details::MatrixFormatConverter</scope><name>blocks_sorted</name></member>
+      <member refid="classmuda_1_1details_1_1_matrix_format_converter_1a3a6fffcef666cc978fab667f0804a7e4" prot="public" virt="non-virtual"><scope>muda::details::MatrixFormatConverter</scope><name>bsr2csr</name></member>
       <member refid="classmuda_1_1details_1_1_matrix_format_converter_1a46986db6af4a6ba1315fd35f75ef7d58" prot="public" virt="non-virtual"><scope>muda::details::MatrixFormatConverter</scope><name>calculate_block_offsets</name></member>
       <member refid="classmuda_1_1details_1_1_matrix_format_converter_1af20564059cad4916bfeab770b982d5ca" prot="private" virt="non-virtual"><scope>muda::details::MatrixFormatConverter</scope><name>col_tmp</name></member>
       <member refid="classmuda_1_1details_1_1_matrix_format_converter_1a0c0990dd97932da3b1fd17d6bc9af8ad" prot="public" virt="non-virtual"><scope>muda::details::MatrixFormatConverter</scope><name>convert</name></member>
       <member refid="classmuda_1_1details_1_1_matrix_format_converter_1a657bf98763cd4758a6f2c109fdfb6681" prot="public" virt="non-virtual"><scope>muda::details::MatrixFormatConverter</scope><name>convert</name></member>
-      <member refid="classmuda_1_1details_1_1_matrix_format_converter_1a22bd66f64eff6e07f3ebe9b2a83bd2ee" prot="public" virt="non-virtual"><scope>muda::details::MatrixFormatConverter</scope><name>convert</name></member>
+      <member refid="classmuda_1_1details_1_1_matrix_format_converter_1a5d8f9d8af10206ff8560c32bd3575186" prot="public" virt="non-virtual"><scope>muda::details::MatrixFormatConverter</scope><name>convert</name></member>
       <member refid="classmuda_1_1details_1_1_matrix_format_converter_1adda929291544fb03830ffa179d82d711" prot="public" virt="non-virtual"><scope>muda::details::MatrixFormatConverter</scope><name>convert</name></member>
       <member refid="classmuda_1_1details_1_1_matrix_format_converter_1ad0c4bf2218e31010ae82779e804e5fd2" prot="public" virt="non-virtual"><scope>muda::details::MatrixFormatConverter</scope><name>convert</name></member>
       <member refid="classmuda_1_1details_1_1_matrix_format_converter_1a3ea668949f77ed225bfa67d2066493bc" prot="public" virt="non-virtual"><scope>muda::details::MatrixFormatConverter</scope><name>convert</name></member>
       <member refid="classmuda_1_1details_1_1_matrix_format_converter_1aadc96963bb77725550ee2bc972115a9c" prot="public" virt="non-virtual"><scope>muda::details::MatrixFormatConverter</scope><name>convert</name></member>
       <member refid="classmuda_1_1details_1_1_matrix_format_converter_1ad0866d827fb691df22d295b3ff552aa0" prot="public" virt="non-virtual"><scope>muda::details::MatrixFormatConverter</scope><name>convert</name></member>
-      <member refid="classmuda_1_1details_1_1_matrix_format_converter_1afcd80d19cc76b5472268888e8787610c" prot="public" virt="non-virtual"><scope>muda::details::MatrixFormatConverter</scope><name>convert</name></member>
+      <member refid="classmuda_1_1details_1_1_matrix_format_converter_1a3dfc6ebd4e1fc6662554e9e9047d41ad" prot="public" virt="non-virtual"><scope>muda::details::MatrixFormatConverter</scope><name>convert</name></member>
       <member refid="classmuda_1_1details_1_1_matrix_format_converter_1a9b7a74f24ffe30749edfc3f8441d2f2d" prot="private" virt="non-virtual"><scope>muda::details::MatrixFormatConverter</scope><name>count</name></member>
       <member refid="classmuda_1_1details_1_1_matrix_format_converter_base_1a7692ec34c9d40def592b51b0fbc009bc" prot="public" virt="non-virtual"><scope>muda::details::MatrixFormatConverter</scope><name>cublas</name></member>
       <member refid="classmuda_1_1details_1_1_matrix_format_converter_base_1a744b14e6e01dffdbcd6a1384bdf9dfac" prot="public" virt="non-virtual"><scope>muda::details::MatrixFormatConverter</scope><name>cusolver_dn</name></member>
@@ -897,9 +993,9 @@
       <member refid="classmuda_1_1details_1_1_matrix_format_converter_base_1a0760b0cf0f296b8b077f1becad9dabac" prot="public" virt="non-virtual"><scope>muda::details::MatrixFormatConverter</scope><name>cusparse</name></member>
       <member refid="classmuda_1_1details_1_1_matrix_format_converter_base_1a1c08f2e3d801aeb46c1597335bdf99c8" prot="public" virt="non-virtual"><scope>muda::details::MatrixFormatConverter</scope><name>data_type</name></member>
       <member refid="classmuda_1_1details_1_1_matrix_format_converter_base_1a0e0474fdab3ce3d98c15d1bf231b2ccd" prot="public" virt="non-virtual"><scope>muda::details::MatrixFormatConverter</scope><name>dim</name></member>
-      <member refid="classmuda_1_1details_1_1_matrix_format_converter_1adc1b3b8c251b425413473fe9f2bc614e" prot="public" virt="non-virtual"><scope>muda::details::MatrixFormatConverter</scope><name>expand_blocks</name></member>
-      <member refid="classmuda_1_1details_1_1_matrix_format_converter_1ac094dda99bbf99444a9b137d57df27c2" prot="private" virt="non-virtual"><scope>muda::details::MatrixFormatConverter</scope><name>ij_hash</name></member>
-      <member refid="classmuda_1_1details_1_1_matrix_format_converter_1ab9270b98df5893f4a1ffdd16aa4dd03f" prot="private" virt="non-virtual"><scope>muda::details::MatrixFormatConverter</scope><name>ij_hash_input</name></member>
+      <member refid="classmuda_1_1details_1_1_matrix_format_converter_1aa94c1231d6db001f0de9ece19aa77782" prot="public" virt="non-virtual"><scope>muda::details::MatrixFormatConverter</scope><name>expand_blocks</name></member>
+      <member refid="classmuda_1_1details_1_1_matrix_format_converter_1a9c5d7b0547315c79d330c82521e8a932" prot="private" virt="non-virtual"><scope>muda::details::MatrixFormatConverter</scope><name>ij_hash</name></member>
+      <member refid="classmuda_1_1details_1_1_matrix_format_converter_1a3bb700db8c714029e5a4333d10d75229" prot="private" virt="non-virtual"><scope>muda::details::MatrixFormatConverter</scope><name>ij_hash_input</name></member>
       <member refid="classmuda_1_1details_1_1_matrix_format_converter_1a3731be03c69bb82d973ea403fe2a32a2" prot="private" virt="non-virtual"><scope>muda::details::MatrixFormatConverter</scope><name>ij_pairs</name></member>
       <member refid="classmuda_1_1details_1_1_matrix_format_converter_base_1a4938fea7d95f0737c0fb35ef14be9490" prot="public" virt="non-virtual"><scope>muda::details::MatrixFormatConverter</scope><name>loose_resize</name></member>
       <member refid="classmuda_1_1details_1_1_matrix_format_converter_base_1a6bd9c2a8b60097892b6145b98a92245b" prot="protected" virt="non-virtual"><scope>muda::details::MatrixFormatConverter</scope><name>m_data_type</name></member>
@@ -912,26 +1008,29 @@
       <member refid="classmuda_1_1details_1_1_matrix_format_converter_1ae9cc01d5ad26e83b6a24d634bd2e94da" prot="public" virt="non-virtual"><scope>muda::details::MatrixFormatConverter</scope><name>make_unique_segments</name></member>
       <member refid="classmuda_1_1details_1_1_matrix_format_converter_1a207bb453ead6ea162c1036ff6952ddb4" prot="public" virt="non-virtual"><scope>muda::details::MatrixFormatConverter</scope><name>MatrixFormatConverter</name></member>
       <member refid="classmuda_1_1details_1_1_matrix_format_converter_base_1aff920cf285e1fa70de4b80b6116dbc5b" prot="public" virt="non-virtual"><scope>muda::details::MatrixFormatConverter</scope><name>MatrixFormatConverterBase</name></member>
+      <member refid="classmuda_1_1details_1_1_matrix_format_converter_1a37dc24471201da0acb93fad47c0b94a2" prot="private" virt="non-virtual"><scope>muda::details::MatrixFormatConverter</scope><name>MatrixValueT</name></member>
+      <member refid="classmuda_1_1details_1_1_matrix_format_converter_1ae7ba32e8864dc8a38f89f35eceb05240" prot="private" virt="non-virtual"><scope>muda::details::MatrixFormatConverter</scope><name>MatrixValueTZero</name></member>
       <member refid="classmuda_1_1details_1_1_matrix_format_converter_1aaf85588ad3574f05ed8b321a1699533f" prot="public" virt="non-virtual"><scope>muda::details::MatrixFormatConverter</scope><name>merge_sort_indices_and_blocks</name></member>
       <member refid="classmuda_1_1details_1_1_matrix_format_converter_1a74dcce3d1f7d227ab6db86ed95671c79" prot="public" virt="non-virtual"><scope>muda::details::MatrixFormatConverter</scope><name>merge_sort_indices_and_segments</name></member>
       <member refid="classmuda_1_1details_1_1_matrix_format_converter_1a592a1ed27885844f54116a3385afabdb" prot="private" virt="non-virtual"><scope>muda::details::MatrixFormatConverter</scope><name>offsets</name></member>
       <member refid="classmuda_1_1details_1_1_matrix_format_converter_1abf8ce6187f5b16077d32894dd6fff8b5" prot="public" virt="non-virtual"><scope>muda::details::MatrixFormatConverter</scope><name>radix_sort_indices_and_blocks</name></member>
       <member refid="classmuda_1_1details_1_1_matrix_format_converter_1ab962d0180ef38081b6f86fe984448298" prot="private" virt="non-virtual"><scope>muda::details::MatrixFormatConverter</scope><name>row_tmp</name></member>
-      <member refid="classmuda_1_1details_1_1_matrix_format_converter_1a29533dd693c14a604e4caac8890f0236" prot="private" virt="non-virtual"><scope>muda::details::MatrixFormatConverter</scope><name>SegmentVector</name></member>
-      <member refid="classmuda_1_1details_1_1_matrix_format_converter_1a0c819b1b057555724f2db899b3700073" prot="public" virt="non-virtual"><scope>muda::details::MatrixFormatConverter</scope><name>set_unique_segments_to_dense_vector</name></member>
+      <member refid="classmuda_1_1details_1_1_matrix_format_converter_1af5a41329155218da0226c2814ac19f9c" prot="public" virt="non-virtual"><scope>muda::details::MatrixFormatConverter</scope><name>set_unique_values_to_dense_vector</name></member>
       <member refid="classmuda_1_1details_1_1_matrix_format_converter_1a5e336513dbf6b327d9e03716b1d3a64e" prot="private" virt="non-virtual"><scope>muda::details::MatrixFormatConverter</scope><name>sort_index</name></member>
       <member refid="classmuda_1_1details_1_1_matrix_format_converter_1ac4be3158a149f753058371069f0928b5" prot="private" virt="non-virtual"><scope>muda::details::MatrixFormatConverter</scope><name>sort_index_input</name></member>
       <member refid="classmuda_1_1details_1_1_matrix_format_converter_1a5048923a5d461d73f2bcc9453f805b36" prot="private" virt="non-virtual"><scope>muda::details::MatrixFormatConverter</scope><name>sort_index_tmp</name></member>
-      <member refid="classmuda_1_1details_1_1_matrix_format_converter_1ab265c5d4bc8b5c07e55503576a7cf4bd" prot="public" virt="non-virtual"><scope>muda::details::MatrixFormatConverter</scope><name>sort_indices_and_values</name></member>
+      <member refid="classmuda_1_1details_1_1_matrix_format_converter_1ac812f824578e1909e1543696424de207" prot="public" virt="non-virtual"><scope>muda::details::MatrixFormatConverter</scope><name>sort_indices_and_values</name></member>
       <member refid="classmuda_1_1details_1_1_matrix_format_converter_1a17c50598980a4584e8651c002f0f5487" prot="private" virt="non-virtual"><scope>muda::details::MatrixFormatConverter</scope><name>temp_bcoo_matrix</name></member>
       <member refid="classmuda_1_1details_1_1_matrix_format_converter_1a382fe02df8a019c426b5139d427c83c9" prot="private" virt="non-virtual"><scope>muda::details::MatrixFormatConverter</scope><name>temp_bcoo_vector</name></member>
-      <member refid="classmuda_1_1details_1_1_matrix_format_converter_1aedc2ad39c554d70c8d6d04bbedbbc70c" prot="private" virt="non-virtual"><scope>muda::details::MatrixFormatConverter</scope><name>temp_segments</name></member>
-      <member refid="classmuda_1_1details_1_1_matrix_format_converter_1a4495283e64334e96b672980a001b9f23" prot="private" virt="non-virtual"><scope>muda::details::MatrixFormatConverter</scope><name>unique_blocks</name></member>
+      <member refid="classmuda_1_1details_1_1_matrix_format_converter_1a8944ecdb9428cc5dca5db4a7d72fc8eb" prot="private" virt="non-virtual"><scope>muda::details::MatrixFormatConverter</scope><name>temp_segments</name></member>
+      <member refid="classmuda_1_1details_1_1_matrix_format_converter_1a79d121d02da4e96981d3a48758cb66ae" prot="private" virt="non-virtual"><scope>muda::details::MatrixFormatConverter</scope><name>unique_blocks</name></member>
       <member refid="classmuda_1_1details_1_1_matrix_format_converter_1af7f99b88d43b640fff29fa20af3596bd" prot="private" virt="non-virtual"><scope>muda::details::MatrixFormatConverter</scope><name>unique_counts</name></member>
       <member refid="classmuda_1_1details_1_1_matrix_format_converter_1ad0cc4442753c67c4b6bca369155e69ed" prot="private" virt="non-virtual"><scope>muda::details::MatrixFormatConverter</scope><name>unique_ij_pairs</name></member>
       <member refid="classmuda_1_1details_1_1_matrix_format_converter_1a06d63090c716ce783d84c5aa27d3bf10" prot="private" virt="non-virtual"><scope>muda::details::MatrixFormatConverter</scope><name>unique_indices</name></member>
-      <member refid="classmuda_1_1details_1_1_matrix_format_converter_1a3ec4464abf3776966d9c5eef3139a340" prot="private" virt="non-virtual"><scope>muda::details::MatrixFormatConverter</scope><name>unique_segments</name></member>
+      <member refid="classmuda_1_1details_1_1_matrix_format_converter_1ae947a7439cde389dc91eed8726f0c01f" prot="private" virt="non-virtual"><scope>muda::details::MatrixFormatConverter</scope><name>unique_segments</name></member>
       <member refid="classmuda_1_1details_1_1_matrix_format_converter_1a3ebb7375137a64e8addb6efb6c8a7c1f" prot="private" virt="non-virtual"><scope>muda::details::MatrixFormatConverter</scope><name>unique_values</name></member>
+      <member refid="classmuda_1_1details_1_1_matrix_format_converter_1ac5d760a2c9a7c6d0cd87a19308aae6e9" prot="private" virt="non-virtual"><scope>muda::details::MatrixFormatConverter</scope><name>VectorValueT</name></member>
+      <member refid="classmuda_1_1details_1_1_matrix_format_converter_1ab8a04660684f034166e38a132f0357df" prot="private" virt="non-virtual"><scope>muda::details::MatrixFormatConverter</scope><name>VectorValueTZero</name></member>
       <member refid="classmuda_1_1details_1_1_matrix_format_converter_1ab36a7ecfab5e0456744453512f2fd5e2" prot="public" virt="virtual"><scope>muda::details::MatrixFormatConverter</scope><name>~MatrixFormatConverter</name></member>
       <member refid="classmuda_1_1details_1_1_matrix_format_converter_base_1a6c7273eb4222167767571472ce361f80" prot="public" virt="virtual"><scope>muda::details::MatrixFormatConverter</scope><name>~MatrixFormatConverterBase</name></member>
     </listofallmembers>

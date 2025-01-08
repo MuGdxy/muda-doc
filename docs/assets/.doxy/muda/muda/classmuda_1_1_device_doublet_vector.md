@@ -17,7 +17,7 @@
 
 
 
-Inherited by the following classes: [muda::DeviceBCOOVector](classmuda_1_1_device_b_c_o_o_vector.md)
+Inherited by the following classes: [muda::DeviceBCOOVector](classmuda_1_1_device_b_c_o_o_vector.md),  [muda::DeviceBCOOVector](classmuda_1_1_device_b_c_o_o_vector.md)
 
 
 
@@ -34,13 +34,18 @@ Inherited by the following classes: [muda::DeviceBCOOVector](classmuda_1_1_devic
 
 | Type | Name |
 | ---: | :--- |
-| typedef Eigen::Vector&lt; T, N &gt; | [**SegmentVector**](#typedef-segmentvector)  <br> |
+| typedef std::conditional\_t&lt; N==1, T, Eigen::Vector&lt; T, N &gt; &gt; | [**ValueT**](#typedef-valuet)  <br> |
 
 
 
 
 
 
+## Public Static Attributes
+
+| Type | Name |
+| ---: | :--- |
+|  bool | [**IsSegmentVector**](#variable-issegmentvector)   = = (N &gt; 1)<br> |
 
 
 
@@ -61,17 +66,19 @@ Inherited by the following classes: [muda::DeviceBCOOVector](classmuda_1_1_devic
 | ---: | :--- |
 |   | [**DeviceDoubletVector**](#function-devicedoubletvector) () = default<br> |
 |  void | [**clear**](#function-clear) () <br> |
+|  auto | [**count**](#function-count) () const<br> |
+|  auto | [**cview**](#function-cview) () const<br> |
+|  auto | [**cviewer**](#function-cviewer) () const<br> |
 |  auto | [**doublet\_capacity**](#function-doublet_capacity) () const<br> |
 |  auto | [**doublet\_count**](#function-doublet_count) () const<br> |
+|  auto | [**indices**](#function-indices-12) () <br> |
+|  auto | [**indices**](#function-indices-22) () const<br> |
 |  void | [**reserve\_doublets**](#function-reserve_doublets) (size\_t nonzero\_count) <br> |
 |  void | [**reshape**](#function-reshape) (int num\_segment) <br> |
 |  void | [**resize**](#function-resize) (int num\_segment, size\_t nonzero\_count) <br> |
 |  void | [**resize\_doublets**](#function-resize_doublets) (size\_t nonzero\_count) <br> |
-|  auto | [**segment\_count**](#function-segment_count) () const<br> |
-|  auto | [**segment\_indices**](#function-segment_indices-12) () <br> |
-|  auto | [**segment\_indices**](#function-segment_indices-22) () const<br> |
-|  auto | [**segment\_values**](#function-segment_values-12) () <br> |
-|  auto | [**segment\_values**](#function-segment_values-22) () const<br> |
+|  auto | [**values**](#function-values-12) () <br> |
+|  auto | [**values**](#function-values-22) () const<br> |
 |  auto | [**view**](#function-view-12) () <br> |
 |  auto | [**view**](#function-view-22) () const<br> |
 |  auto | [**viewer**](#function-viewer-12) () <br> |
@@ -89,9 +96,9 @@ Inherited by the following classes: [muda::DeviceBCOOVector](classmuda_1_1_devic
 
 | Type | Name |
 | ---: | :--- |
-|  int | [**m\_segment\_count**](#variable-m_segment_count)   = = 0<br> |
-|  [**muda::DeviceBuffer**](classmuda_1_1_device_buffer.md)&lt; int &gt; | [**m\_segment\_indices**](#variable-m_segment_indices)  <br> |
-|  [**muda::DeviceBuffer**](classmuda_1_1_device_buffer.md)&lt; SegmentVector &gt; | [**m\_segment\_values**](#variable-m_segment_values)  <br> |
+|  int | [**m\_count**](#variable-m_count)   = = 0<br> |
+|  [**muda::DeviceBuffer**](classmuda_1_1_device_buffer.md)&lt; int &gt; | [**m\_indices**](#variable-m_indices)  <br> |
+|  [**muda::DeviceBuffer**](classmuda_1_1_device_buffer.md)&lt; ValueT &gt; | [**m\_values**](#variable-m_values)  <br> |
 
 
 
@@ -117,10 +124,25 @@ Inherited by the following classes: [muda::DeviceBCOOVector](classmuda_1_1_devic
 
 
 
-### typedef SegmentVector 
+### typedef ValueT 
 
 ```C++
-using muda::DeviceDoubletVector< T, N >::SegmentVector =  Eigen::Vector<T, N>;
+using muda::DeviceDoubletVector< T, N >::ValueT =  std::conditional_t<N == 1, T, Eigen::Vector<T, N>>;
+```
+
+
+
+
+<hr>
+## Public Static Attributes Documentation
+
+
+
+
+### variable IsSegmentVector 
+
+```C++
+bool muda::DeviceDoubletVector< T, N >::IsSegmentVector;
 ```
 
 
@@ -158,6 +180,45 @@ inline void muda::DeviceDoubletVector::clear ()
 
 
 
+### function count 
+
+```C++
+inline auto muda::DeviceDoubletVector::count () const
+```
+
+
+
+
+<hr>
+
+
+
+### function cview 
+
+```C++
+inline auto muda::DeviceDoubletVector::cview () const
+```
+
+
+
+
+<hr>
+
+
+
+### function cviewer 
+
+```C++
+inline auto muda::DeviceDoubletVector::cviewer () const
+```
+
+
+
+
+<hr>
+
+
+
 ### function doublet\_capacity 
 
 ```C++
@@ -175,6 +236,32 @@ inline auto muda::DeviceDoubletVector::doublet_capacity () const
 
 ```C++
 inline auto muda::DeviceDoubletVector::doublet_count () const
+```
+
+
+
+
+<hr>
+
+
+
+### function indices [1/2]
+
+```C++
+inline auto muda::DeviceDoubletVector::indices () 
+```
+
+
+
+
+<hr>
+
+
+
+### function indices [2/2]
+
+```C++
+inline auto muda::DeviceDoubletVector::indices () const
 ```
 
 
@@ -245,10 +332,10 @@ inline void muda::DeviceDoubletVector::resize_doublets (
 
 
 
-### function segment\_count 
+### function values [1/2]
 
 ```C++
-inline auto muda::DeviceDoubletVector::segment_count () const
+inline auto muda::DeviceDoubletVector::values () 
 ```
 
 
@@ -258,49 +345,10 @@ inline auto muda::DeviceDoubletVector::segment_count () const
 
 
 
-### function segment\_indices [1/2]
+### function values [2/2]
 
 ```C++
-inline auto muda::DeviceDoubletVector::segment_indices () 
-```
-
-
-
-
-<hr>
-
-
-
-### function segment\_indices [2/2]
-
-```C++
-inline auto muda::DeviceDoubletVector::segment_indices () const
-```
-
-
-
-
-<hr>
-
-
-
-### function segment\_values [1/2]
-
-```C++
-inline auto muda::DeviceDoubletVector::segment_values () 
-```
-
-
-
-
-<hr>
-
-
-
-### function segment\_values [2/2]
-
-```C++
-inline auto muda::DeviceDoubletVector::segment_values () const
+inline auto muda::DeviceDoubletVector::values () const
 ```
 
 
@@ -377,10 +425,10 @@ muda::DeviceDoubletVector::~DeviceDoubletVector () = default
 
 
 
-### variable m\_segment\_count 
+### variable m\_count 
 
 ```C++
-int muda::DeviceDoubletVector< T, N >::m_segment_count;
+int muda::DeviceDoubletVector< T, N >::m_count;
 ```
 
 
@@ -390,10 +438,10 @@ int muda::DeviceDoubletVector< T, N >::m_segment_count;
 
 
 
-### variable m\_segment\_indices 
+### variable m\_indices 
 
 ```C++
-muda::DeviceBuffer<int> muda::DeviceDoubletVector< T, N >::m_segment_indices;
+muda::DeviceBuffer<int> muda::DeviceDoubletVector< T, N >::m_indices;
 ```
 
 
@@ -403,10 +451,10 @@ muda::DeviceBuffer<int> muda::DeviceDoubletVector< T, N >::m_segment_indices;
 
 
 
-### variable m\_segment\_values 
+### variable m\_values 
 
 ```C++
-muda::DeviceBuffer<SegmentVector> muda::DeviceDoubletVector< T, N >::m_segment_values;
+muda::DeviceBuffer<ValueT> muda::DeviceDoubletVector< T, N >::m_values;
 ```
 
 

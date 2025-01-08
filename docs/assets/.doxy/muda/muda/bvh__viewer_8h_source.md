@@ -375,13 +375,13 @@ using CBVHViewer = details::BVHViewerBase<true, Real, Object>;
 namespace muda
 {
 template <typename Real, typename Object>
-struct read_only_viewer<lbvh::BVHViewer<Real, Object>>
+struct read_only_view<lbvh::BVHViewer<Real, Object>>
 {
     using type = lbvh::CBVHViewer<Real, Object>;
 };
 
 template <typename Real, typename Object>
-struct read_write_viewer<lbvh::CBVHViewer<Real, Object>>
+struct read_write_view<lbvh::CBVHViewer<Real, Object>>
 {
     using type = lbvh::BVHViewer<Real, Object>;
 };

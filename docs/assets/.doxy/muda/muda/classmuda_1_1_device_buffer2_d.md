@@ -572,5 +572,5 @@ muda::DeviceBuffer2D::~DeviceBuffer2D ()
 <hr>
 
 ------------------------------
-The documentation for this class was generated from the following file `src/muda/buffer/device_buffer_2d.h`
+The documentation for this class was generated from the following file `src/muda/buffer/buffer_fwd.h`
 

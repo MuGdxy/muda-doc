@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.1" xml:lang="en-US">
   <compounddef id="buffer__view_8h" kind="file" language="C++">
     <compoundname>buffer_view.h</compoundname>
     <includes local="no">cuda.h</includes>
@@ -342,7 +342,7 @@
         <link refid="buffer_8h_source"/>
         <childnode refid="3" relation="include">
         </childnode>
-        <childnode refid="23" relation="include">
+        <childnode refid="24" relation="include">
         </childnode>
       </node>
       <node id="1">
@@ -350,7 +350,7 @@
         <link refid="buffer__view_8h"/>
         <childnode refid="2" relation="include">
         </childnode>
-        <childnode refid="24" relation="include">
+        <childnode refid="25" relation="include">
         </childnode>
         <childnode refid="46" relation="include">
         </childnode>
@@ -367,18 +367,18 @@
         <childnode refid="45" relation="include">
         </childnode>
       </node>
-      <node id="24">
+      <node id="25">
         <label>src/muda/buffer/device_buffer.h</label>
         <link refid="device__buffer_8h"/>
         <childnode refid="2" relation="include">
         </childnode>
-        <childnode refid="25" relation="include">
-        </childnode>
-        <childnode refid="27" relation="include">
+        <childnode refid="26" relation="include">
         </childnode>
         <childnode refid="28" relation="include">
         </childnode>
-        <childnode refid="31" relation="include">
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
         </childnode>
         <childnode refid="36" relation="include">
         </childnode>
@@ -392,7 +392,7 @@
         </childnode>
         <childnode refid="41" relation="include">
         </childnode>
-        <childnode refid="34" relation="include">
+        <childnode refid="35" relation="include">
         </childnode>
         <childnode refid="42" relation="include">
         </childnode>
@@ -412,7 +412,7 @@
         <link refid="container_8h_source"/>
         <childnode refid="3" relation="include">
         </childnode>
-        <childnode refid="23" relation="include">
+        <childnode refid="24" relation="include">
         </childnode>
       </node>
       <node id="48">
@@ -442,13 +442,11 @@
         </childnode>
         <childnode refid="8" relation="include">
         </childnode>
-        <childnode refid="9" relation="include">
-        </childnode>
         <childnode refid="10" relation="include">
         </childnode>
         <childnode refid="11" relation="include">
         </childnode>
-        <childnode refid="16" relation="include">
+        <childnode refid="12" relation="include">
         </childnode>
         <childnode refid="17" relation="include">
         </childnode>
@@ -461,6 +459,8 @@
         <childnode refid="21" relation="include">
         </childnode>
         <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
         </childnode>
       </node>
       <node id="4">
@@ -480,77 +480,89 @@
         <link refid="device__merge__sort_8h_source"/>
         <childnode refid="5" relation="include">
         </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
       </node>
-      <node id="9">
+      <node id="10">
         <label>src/muda/cub/device/device_partition.h</label>
         <link refid="device__partition_8h_source"/>
         <childnode refid="5" relation="include">
         </childnode>
       </node>
-      <node id="10">
+      <node id="11">
         <label>src/muda/cub/device/device_radix_sort.h</label>
         <link refid="device__radix__sort_8h_source"/>
         <childnode refid="5" relation="include">
         </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
       </node>
-      <node id="11">
+      <node id="12">
         <label>src/muda/cub/device/device_reduce.h</label>
         <link refid="device__reduce_8h_source"/>
         <childnode refid="5" relation="include">
         </childnode>
-        <childnode refid="12" relation="include">
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
         </childnode>
       </node>
-      <node id="16">
+      <node id="17">
         <label>src/muda/cub/device/device_run_length_encode.h</label>
         <link refid="device__run__length__encode_8h_source"/>
         <childnode refid="5" relation="include">
         </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
       </node>
-      <node id="17">
+      <node id="18">
         <label>src/muda/cub/device/device_scan.h</label>
         <link refid="device__scan_8h_source"/>
         <childnode refid="5" relation="include">
         </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
       </node>
-      <node id="18">
+      <node id="19">
         <label>src/muda/cub/device/device_segmented_radix_sort.h</label>
         <link refid="device__segmented__radix__sort_8h_source"/>
         <childnode refid="5" relation="include">
         </childnode>
       </node>
-      <node id="19">
+      <node id="20">
         <label>src/muda/cub/device/device_segmented_reduce.h</label>
         <link refid="device__segmented__reduce_8h_source"/>
         <childnode refid="5" relation="include">
         </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
       </node>
-      <node id="20">
+      <node id="21">
         <label>src/muda/cub/device/device_segmented_sort.h</label>
         <link refid="device__segmented__sort_8h_source"/>
         <childnode refid="5" relation="include">
         </childnode>
       </node>
-      <node id="21">
+      <node id="22">
         <label>src/muda/cub/device/device_select.h</label>
         <link refid="device__select_8h_source"/>
         <childnode refid="5" relation="include">
         </childnode>
       </node>
-      <node id="22">
+      <node id="23">
         <label>src/muda/cub/device/device_spmv.h</label>
         <link refid="device__spmv_8h_source"/>
         <childnode refid="5" relation="include">
         </childnode>
       </node>
-      <node id="26">
+      <node id="27">
         <label>src/muda/ext/field.h</label>
         <link refid="field_8h_source"/>
       </node>
-      <node id="25">
+      <node id="26">
         <label>src/muda/ext/field/field_entry.h</label>
         <link refid="field__entry_8h_source"/>
-        <childnode refid="26" relation="include">
+        <childnode refid="27" relation="include">
         </childnode>
       </node>
       <node id="51">
@@ -560,77 +572,77 @@
       <node id="52">
         <label>src/muda/ext/field/field_entry_view.h</label>
         <link refid="field__entry__view_8h_source"/>
-        <childnode refid="25" relation="include">
+        <childnode refid="26" relation="include">
         </childnode>
         <childnode refid="51" relation="include">
         </childnode>
       </node>
-      <node id="27">
+      <node id="28">
         <label>src/muda/ext/field/sub_field.h</label>
         <link refid="sub__field_8h_source"/>
       </node>
-      <node id="14">
+      <node id="15">
         <label>src/muda/ext/geo/lbvh.h</label>
         <link refid="lbvh_8h_source"/>
       </node>
-      <node id="12">
+      <node id="13">
         <label>src/muda/ext/geo/lbvh/bvh.h</label>
         <link refid="bvh_8h_source"/>
-        <childnode refid="13" relation="include">
+        <childnode refid="14" relation="include">
         </childnode>
-        <childnode refid="15" relation="include">
+        <childnode refid="16" relation="include">
         </childnode>
       </node>
       <node id="50">
         <label>src/muda/ext/geo/lbvh/bvh_viewer.h</label>
         <link refid="bvh__viewer_8h_source"/>
-        <childnode refid="12" relation="include">
-        </childnode>
-      </node>
-      <node id="13">
-        <label>src/muda/ext/geo/lbvh/lbvh.h</label>
-        <link refid="lbvh_2lbvh_8h_source"/>
-        <childnode refid="14" relation="include">
-        </childnode>
-      </node>
-      <node id="15">
-        <label>src/muda/ext/geo/lbvh/query.h</label>
-        <link refid="query_8h_source"/>
         <childnode refid="13" relation="include">
         </childnode>
       </node>
-      <node id="30">
+      <node id="14">
+        <label>src/muda/ext/geo/lbvh/lbvh.h</label>
+        <link refid="lbvh_2lbvh_8h_source"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>src/muda/ext/geo/lbvh/query.h</label>
+        <link refid="query_8h_source"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="31">
         <label>src/muda/ext/geo/spatial_hash.h</label>
         <link refid="spatial__hash_8h_source"/>
       </node>
-      <node id="29">
+      <node id="30">
         <label>src/muda/ext/geo/spatial_hash/sparse_spatial_hash.h</label>
         <link refid="sparse__spatial__hash_8h_source"/>
+        <childnode refid="31" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>src/muda/ext/geo/spatial_hash/sparse_spatial_hash_impl.h</label>
+        <link refid="sparse__spatial__hash__impl_8h_source"/>
         <childnode refid="30" relation="include">
         </childnode>
       </node>
-      <node id="28">
-        <label>src/muda/ext/geo/spatial_hash/sparse_spatial_hash_impl.h</label>
-        <link refid="sparse__spatial__hash__impl_8h_source"/>
-        <childnode refid="29" relation="include">
-        </childnode>
-      </node>
-      <node id="32">
+      <node id="33">
         <label>src/muda/ext/linear_system.h</label>
         <link refid="linear__system_8h_source"/>
       </node>
       <node id="44">
         <label>src/muda/ext/linear_system/bcoo_matrix_view.h</label>
         <link refid="bcoo__matrix__view_8h_source"/>
-        <childnode refid="32" relation="include">
+        <childnode refid="33" relation="include">
         </childnode>
-        <childnode refid="31" relation="include">
+        <childnode refid="32" relation="include">
         </childnode>
       </node>
       <node id="43">
         <label>src/muda/ext/linear_system/bcoo_matrix_viewer.h</label>
         <link refid="bcoo__matrix__viewer_8h_source"/>
-        <childnode refid="32" relation="include">
+        <childnode refid="33" relation="include">
         </childnode>
         <childnode refid="44" relation="include">
         </childnode>
@@ -638,109 +650,111 @@
       <node id="53">
         <label>src/muda/ext/linear_system/dense_vector_view.h</label>
         <link refid="dense__vector__view_8h_source"/>
-        <childnode refid="32" relation="include">
+        <childnode refid="33" relation="include">
         </childnode>
         <childnode refid="39" relation="include">
         </childnode>
-        <childnode refid="34" relation="include">
+        <childnode refid="35" relation="include">
         </childnode>
       </node>
-      <node id="31">
+      <node id="32">
         <label>src/muda/ext/linear_system/device_bcoo_matrix.h</label>
         <link refid="device__bcoo__matrix_8h_source"/>
-        <childnode refid="32" relation="include">
-        </childnode>
         <childnode refid="33" relation="include">
         </childnode>
-        <childnode refid="35" relation="include">
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
         </childnode>
       </node>
       <node id="36">
         <label>src/muda/ext/linear_system/device_bcoo_vector.h</label>
         <link refid="device__bcoo__vector_8h_source"/>
-        <childnode refid="32" relation="include">
-        </childnode>
         <childnode refid="33" relation="include">
         </childnode>
-        <childnode refid="35" relation="include">
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
         </childnode>
       </node>
       <node id="37">
         <label>src/muda/ext/linear_system/device_bsr_matrix.h</label>
         <link refid="device__bsr__matrix_8h_source"/>
-        <childnode refid="32" relation="include">
-        </childnode>
         <childnode refid="33" relation="include">
         </childnode>
-        <childnode refid="35" relation="include">
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
         </childnode>
       </node>
       <node id="38">
         <label>src/muda/ext/linear_system/device_csr_matrix.h</label>
         <link refid="device__csr__matrix_8h_source"/>
-        <childnode refid="32" relation="include">
-        </childnode>
         <childnode refid="33" relation="include">
         </childnode>
-        <childnode refid="35" relation="include">
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
         </childnode>
       </node>
       <node id="39">
         <label>src/muda/ext/linear_system/device_dense_vector.h</label>
         <link refid="device__dense__vector_8h_source"/>
-        <childnode refid="32" relation="include">
-        </childnode>
         <childnode refid="33" relation="include">
         </childnode>
-        <childnode refid="35" relation="include">
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
         </childnode>
       </node>
       <node id="40">
         <label>src/muda/ext/linear_system/device_doublet_vector.h</label>
         <link refid="device__doublet__vector_8h_source"/>
-        <childnode refid="32" relation="include">
+        <childnode refid="33" relation="include">
         </childnode>
         <childnode refid="36" relation="include">
         </childnode>
-        <childnode refid="33" relation="include">
+        <childnode refid="34" relation="include">
         </childnode>
-        <childnode refid="35" relation="include">
+        <childnode refid="9" relation="include">
         </childnode>
       </node>
       <node id="41">
         <label>src/muda/ext/linear_system/device_triplet_matrix.h</label>
         <link refid="device__triplet__matrix_8h_source"/>
+        <childnode refid="33" relation="include">
+        </childnode>
         <childnode refid="32" relation="include">
         </childnode>
-        <childnode refid="31" relation="include">
+        <childnode refid="34" relation="include">
         </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="35">
+        <label>src/muda/ext/linear_system/linear_system_context.h</label>
+        <link refid="linear__system__context_8h_source"/>
+        <childnode refid="33" relation="include">
+        </childnode>
+      </node>
+      <node id="34">
+        <label>src/muda/ext/linear_system/matrix_format_converter.h</label>
+        <link refid="matrix__format__converter_8h_source"/>
         <childnode refid="33" relation="include">
         </childnode>
         <childnode refid="35" relation="include">
         </childnode>
       </node>
-      <node id="34">
-        <label>src/muda/ext/linear_system/linear_system_context.h</label>
-        <link refid="linear__system__context_8h_source"/>
-        <childnode refid="32" relation="include">
-        </childnode>
-      </node>
-      <node id="33">
-        <label>src/muda/ext/linear_system/matrix_format_converter.h</label>
-        <link refid="matrix__format__converter_8h_source"/>
-        <childnode refid="32" relation="include">
-        </childnode>
-        <childnode refid="34" relation="include">
-        </childnode>
-      </node>
-      <node id="35">
+      <node id="9">
         <label>src/muda/ext/linear_system/matrix_format_converter_impl.h</label>
         <link refid="matrix__format__converter__impl_8h_source"/>
       </node>
       <node id="45">
         <label>src/muda/ext/linear_system/triplet_matrix_view.h</label>
         <link refid="triplet__matrix__view_8h_source"/>
-        <childnode refid="32" relation="include">
+        <childnode refid="33" relation="include">
         </childnode>
         <childnode refid="44" relation="include">
         </childnode>
@@ -750,21 +764,21 @@
       <node id="42">
         <label>src/muda/ext/linear_system/triplet_matrix_viewer.h</label>
         <link refid="triplet__matrix__viewer_8h_source"/>
-        <childnode refid="32" relation="include">
+        <childnode refid="33" relation="include">
         </childnode>
         <childnode refid="43" relation="include">
         </childnode>
         <childnode refid="45" relation="include">
         </childnode>
       </node>
-      <node id="23">
+      <node id="24">
         <label>src/muda/muda.h</label>
         <link refid="muda_8h_source"/>
       </node>
     </invincdepgraph>
     <innerclass refid="classmuda_1_1_buffer_view_t" prot="public">muda::BufferViewT</innerclass>
-    <innerclass refid="structmuda_1_1read__only__viewer_3_01_buffer_view_3_01_t_01_4_01_4" prot="public">muda::read_only_viewer&lt; BufferView&lt; T &gt; &gt;</innerclass>
-    <innerclass refid="structmuda_1_1read__write__viewer_3_01_c_buffer_view_3_01_t_01_4_01_4" prot="public">muda::read_write_viewer&lt; CBufferView&lt; T &gt; &gt;</innerclass>
+    <innerclass refid="structmuda_1_1read__only__view" prot="public">muda::read_only_view&lt; BufferView&lt; T &gt; &gt;</innerclass>
+    <innerclass refid="structmuda_1_1read__write__view" prot="public">muda::read_write_view&lt; CBufferView&lt; T &gt; &gt;</innerclass>
     <innernamespace refid="namespacemuda">muda</innernamespace>
     <briefdescription>
 <para>A view interface for any array-like liner memory, which can be constructed from DeviceBuffer/DeviceVector or any thing that is a array-like liner memory, e.g. raw cuda pointer. </para>
@@ -791,20 +805,20 @@
 <codeline lineno="20"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">muda</highlight></codeline>
 <codeline lineno="21"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="22"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>IsConst,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
-<codeline lineno="23" refid="classmuda_1_1_buffer_view_t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classmuda_1_1_buffer_view_t" kindref="compound">BufferViewT</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classmuda_1_1_view_base" kindref="compound">ViewBase</ref>&lt;IsConst&gt;</highlight></codeline>
+<codeline lineno="23" refid="classmuda_1_1_buffer_view_t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">BufferViewT<sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classmuda_1_1_view_base" kindref="compound">ViewBase</ref>&lt;IsConst&gt;</highlight></codeline>
 <codeline lineno="24"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="classmuda_1_1_view_base" kindref="compound">Base</ref><sp/>=<sp/><ref refid="classmuda_1_1_view_base" kindref="compound">ViewBase&lt;IsConst&gt;</ref>;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">Base<sp/>=<sp/><ref refid="classmuda_1_1_view_base" kindref="compound">ViewBase&lt;IsConst&gt;</ref>;</highlight></codeline>
 <codeline lineno="26"><highlight class="normal"></highlight></codeline>
 <codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>OtherIsConst,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>U&gt;</highlight></codeline>
-<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classmuda_1_1_buffer_view_t" kindref="compound">BufferViewT</ref>;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">BufferViewT;</highlight></codeline>
 <codeline lineno="29"><highlight class="normal"></highlight></codeline>
 <codeline lineno="30"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static_assert</highlight><highlight class="normal">(!std::is_const_v&lt;T&gt;,<sp/></highlight><highlight class="stringliteral">&quot;Ty<sp/>must<sp/>be<sp/>non-const&quot;</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="classmuda_1_1_buffer_view_t" kindref="compound">ConstView</ref><sp/>=<sp/><ref refid="classmuda_1_1_buffer_view_t" kindref="compound">BufferViewT&lt;true, T&gt;</ref>;</highlight></codeline>
-<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="classmuda_1_1_buffer_view_t" kindref="compound">ThisView</ref><sp/><sp/>=<sp/><ref refid="classmuda_1_1_buffer_view_t" kindref="compound">BufferViewT&lt;IsConst, T&gt;</ref>;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">ConstView<sp/>=<sp/>BufferViewT&lt;true,<sp/>T&gt;;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">ThisView<sp/><sp/>=<sp/>BufferViewT&lt;IsConst,<sp/>T&gt;;</highlight></codeline>
 <codeline lineno="34"><highlight class="normal"></highlight></codeline>
-<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="classmuda_1_1_dense1_d_t" kindref="compound">CViewer</ref><sp/><sp/><sp/><sp/>=<sp/><ref refid="classmuda_1_1_dense1_d_t" kindref="compound">CDense1D&lt;T&gt;</ref>;</highlight></codeline>
-<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="classmuda_1_1_dense1_d_t" kindref="compound">Viewer</ref><sp/><sp/><sp/><sp/><sp/>=<sp/><ref refid="classmuda_1_1_dense1_d_t" kindref="compound">Dense1D&lt;T&gt;</ref>;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">CViewer<sp/><sp/><sp/><sp/>=<sp/>CDense1D&lt;T&gt;;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">Viewer<sp/><sp/><sp/><sp/><sp/>=<sp/>Dense1D&lt;T&gt;;</highlight></codeline>
 <codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">ThisViewer<sp/>=<sp/>std::conditional_t&lt;IsConst,<sp/>CViewer,<sp/>Viewer&gt;;</highlight></codeline>
 <codeline lineno="38"><highlight class="normal"></highlight></codeline>
 <codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>U&gt;</highlight></codeline>
@@ -816,19 +830,19 @@
 <codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_size<sp/><sp/><sp/>=<sp/>~0;</highlight></codeline>
 <codeline lineno="46"><highlight class="normal"></highlight></codeline>
 <codeline lineno="47"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>MUDA_GENERIC<sp/><ref refid="classmuda_1_1_buffer_view_t" kindref="compound">BufferViewT</ref>()<sp/>MUDA_NOEXCEPT<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>MUDA_GENERIC<sp/>BufferViewT()<sp/>MUDA_NOEXCEPT<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="49"><highlight class="normal"></highlight></codeline>
-<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>MUDA_GENERIC<sp/><ref refid="classmuda_1_1_buffer_view_t" kindref="compound">BufferViewT</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classmuda_1_1_buffer_view_t" kindref="compound">BufferViewT</ref>&amp;<sp/>other)<sp/>MUDA_NOEXCEPT<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>MUDA_GENERIC<sp/>BufferViewT(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>BufferViewT&amp;<sp/>other)<sp/>MUDA_NOEXCEPT<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="51"><highlight class="normal"></highlight></codeline>
-<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>MUDA_GENERIC<sp/><ref refid="classmuda_1_1_buffer_view_t" kindref="compound">BufferViewT</ref>(auto_const_t&lt;T&gt;*<sp/>data,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>offset,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>size)<sp/>MUDA_NOEXCEPT;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>MUDA_GENERIC<sp/>BufferViewT(auto_const_t&lt;T&gt;*<sp/>data,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>offset,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>size)<sp/>MUDA_NOEXCEPT;</highlight></codeline>
 <codeline lineno="53"><highlight class="normal"></highlight></codeline>
-<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>MUDA_GENERIC<sp/><ref refid="classmuda_1_1_buffer_view_t" kindref="compound">BufferViewT</ref>(auto_const_t&lt;T&gt;*<sp/>data,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>size)<sp/>MUDA_NOEXCEPT;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>MUDA_GENERIC<sp/>BufferViewT(auto_const_t&lt;T&gt;*<sp/>data,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>size)<sp/>MUDA_NOEXCEPT;</highlight></codeline>
 <codeline lineno="55"><highlight class="normal"></highlight></codeline>
 <codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>OtherIsConst&gt;</highlight></codeline>
-<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/>MUDA_GENERIC<sp/><ref refid="classmuda_1_1_buffer_view_t" kindref="compound">BufferViewT</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classmuda_1_1_buffer_view_t" kindref="compound">BufferViewT&lt;OtherIsConst, T&gt;</ref>&amp;<sp/>other)<sp/>MUDA_NOEXCEPT</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/>MUDA_GENERIC<sp/>BufferViewT(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>BufferViewT&lt;OtherIsConst,<sp/>T&gt;&amp;<sp/>other)<sp/>MUDA_NOEXCEPT</highlight></codeline>
 <codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MUDA_REQUIRES(!OtherIsConst);</highlight></codeline>
 <codeline lineno="59"><highlight class="normal"></highlight></codeline>
-<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/>MUDA_GENERIC<sp/><ref refid="classmuda_1_1_buffer_view_t" kindref="compound">ConstView</ref><sp/>as_const()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>MUDA_NOEXCEPT;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/>MUDA_GENERIC<sp/>ConstView<sp/>as_const()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>MUDA_NOEXCEPT;</highlight></codeline>
 <codeline lineno="61"><highlight class="normal"></highlight></codeline>
 <codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/>MUDA_GENERIC<sp/>auto_const_t&lt;T&gt;*<sp/>data()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>MUDA_NOEXCEPT;</highlight></codeline>
 <codeline lineno="63"><highlight class="normal"></highlight></codeline>
@@ -836,11 +850,11 @@
 <codeline lineno="65"><highlight class="normal"></highlight></codeline>
 <codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/>MUDA_GENERIC<sp/>auto_const_t&lt;T&gt;*<sp/>origin_data()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>MUDA_NOEXCEPT;</highlight></codeline>
 <codeline lineno="67"><highlight class="normal"></highlight></codeline>
-<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/>MUDA_GENERIC<sp/><ref refid="classmuda_1_1_buffer_view_t" kindref="compound">ThisView</ref><sp/>subview(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>offset,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>size<sp/>=<sp/>~0)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>MUDA_NOEXCEPT;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/>MUDA_GENERIC<sp/>ThisView<sp/>subview(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>offset,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>size<sp/>=<sp/>~0)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>MUDA_NOEXCEPT;</highlight></codeline>
 <codeline lineno="69"><highlight class="normal"></highlight></codeline>
 <codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/>MUDA_GENERIC<sp/>ThisViewer<sp/>viewer()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>MUDA_NOEXCEPT;</highlight></codeline>
 <codeline lineno="71"><highlight class="normal"></highlight></codeline>
-<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/>MUDA_GENERIC<sp/><ref refid="classmuda_1_1_dense1_d_t" kindref="compound">CViewer</ref><sp/>cviewer()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>MUDA_NOEXCEPT;</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/>MUDA_GENERIC<sp/>CViewer<sp/>cviewer()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>MUDA_NOEXCEPT;</highlight></codeline>
 <codeline lineno="73"><highlight class="normal"></highlight></codeline>
 <codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/>MUDA_GENERIC<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>size()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>MUDA_NOEXCEPT<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_size;<sp/>}</highlight></codeline>
 <codeline lineno="75"><highlight class="normal"></highlight></codeline>
@@ -848,7 +862,7 @@
 <codeline lineno="77"><highlight class="normal"></highlight></codeline>
 <codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/>MUDA_GENERIC<sp/>auto_const_t&lt;T&gt;&amp;<sp/>operator[](</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>i)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>MUDA_NOEXCEPT;</highlight></codeline>
 <codeline lineno="79"><highlight class="normal"></highlight></codeline>
-<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/>MUDA_HOST<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>copy_from(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classmuda_1_1_buffer_view_t" kindref="compound">BufferViewT&lt;true, T&gt;</ref>&amp;<sp/>other)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/>MUDA_HOST<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>copy_from(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>BufferViewT&lt;true,<sp/>T&gt;&amp;<sp/>other)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MUDA_REQUIRES(!IsConst);</highlight></codeline>
 <codeline lineno="82"><highlight class="normal"></highlight></codeline>
 <codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/>MUDA_HOST<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>fill(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>T&amp;<sp/>value)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>MUDA_REQUIRES(!IsConst);</highlight></codeline>
@@ -868,31 +882,31 @@
 <codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">iterator_category<sp/>=<sp/>std::random_access_iterator_tag;</highlight></codeline>
 <codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">difference_type<sp/><sp/><sp/>=<sp/>size_t;</highlight></codeline>
 <codeline lineno="99"><highlight class="normal"></highlight></codeline>
-<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/>MUDA_GENERIC<sp/><ref refid="classmuda_1_1_buffer_view_t" kindref="compound">ThisView</ref><sp/><sp/>operator+(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>MUDA_NOEXCEPT;</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/>MUDA_GENERIC<sp/>ThisView<sp/><sp/>operator+(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>MUDA_NOEXCEPT;</highlight></codeline>
 <codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/>MUDA_GENERIC<sp/>reference<sp/>operator*()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>MUDA_NOEXCEPT;</highlight></codeline>
 <codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/>MUDA_GENERIC<sp/>auto_const_t&lt;T&gt;&amp;<sp/>operator[](</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>MUDA_NOEXCEPT;</highlight></codeline>
 <codeline lineno="103"><highlight class="normal">};</highlight></codeline>
 <codeline lineno="104"><highlight class="normal"></highlight></codeline>
 <codeline lineno="105"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
-<codeline lineno="106"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="classmuda_1_1_buffer_view_t" kindref="compound">BufferView</ref><sp/>=<sp/><ref refid="classmuda_1_1_buffer_view_t" kindref="compound">BufferViewT&lt;false, T&gt;</ref>;</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">BufferView<sp/>=<sp/><ref refid="classmuda_1_1_buffer_view_t" kindref="compound">BufferViewT&lt;false, T&gt;</ref>;</highlight></codeline>
 <codeline lineno="107"><highlight class="normal"></highlight></codeline>
 <codeline lineno="108"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
-<codeline lineno="109"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="classmuda_1_1_buffer_view_t" kindref="compound">CBufferView</ref><sp/>=<sp/><ref refid="classmuda_1_1_buffer_view_t" kindref="compound">BufferViewT&lt;true, T&gt;</ref>;</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">CBufferView<sp/>=<sp/><ref refid="classmuda_1_1_buffer_view_t" kindref="compound">BufferViewT&lt;true, T&gt;</ref>;</highlight></codeline>
 <codeline lineno="110"><highlight class="normal"></highlight></codeline>
 <codeline lineno="111"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
-<codeline lineno="112" refid="structmuda_1_1read__only__viewer_3_01_buffer_view_3_01_t_01_4_01_4" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structmuda_1_1read__only__viewer" kindref="compound">read_only_viewer</ref>&lt;<ref refid="classmuda_1_1_buffer_view_t" kindref="compound">BufferView</ref>&lt;T&gt;&gt;</highlight></codeline>
+<codeline lineno="112" refid="structmuda_1_1read__only__view" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structmuda_1_1read__only__view" kindref="compound">read_only_view</ref>&lt;BufferView&lt;T&gt;&gt;</highlight></codeline>
 <codeline lineno="113"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="classmuda_1_1_buffer_view_t" kindref="compound">type</ref><sp/>=<sp/><ref refid="classmuda_1_1_buffer_view_t" kindref="compound">CBufferView&lt;T&gt;</ref>;</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">type<sp/>=<sp/>CBufferView&lt;T&gt;;</highlight></codeline>
 <codeline lineno="115"><highlight class="normal">};</highlight></codeline>
 <codeline lineno="116"><highlight class="normal"></highlight></codeline>
 <codeline lineno="117"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
-<codeline lineno="118" refid="structmuda_1_1read__write__viewer_3_01_c_buffer_view_3_01_t_01_4_01_4" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structmuda_1_1read__write__viewer" kindref="compound">read_write_viewer</ref>&lt;<ref refid="classmuda_1_1_buffer_view_t" kindref="compound">CBufferView</ref>&lt;T&gt;&gt;</highlight></codeline>
+<codeline lineno="118" refid="structmuda_1_1read__write__view" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structmuda_1_1read__write__view" kindref="compound">read_write_view</ref>&lt;CBufferView&lt;T&gt;&gt;</highlight></codeline>
 <codeline lineno="119"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="classmuda_1_1_buffer_view_t" kindref="compound">type</ref><sp/>=<sp/><ref refid="classmuda_1_1_buffer_view_t" kindref="compound">BufferView&lt;T&gt;</ref>;</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">type<sp/>=<sp/>BufferView&lt;T&gt;;</highlight></codeline>
 <codeline lineno="121"><highlight class="normal">};</highlight></codeline>
 <codeline lineno="122"><highlight class="normal">}<sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>muda</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="123"><highlight class="normal"></highlight></codeline>
-<codeline lineno="124"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;details/buffer_view.inl&quot;</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;details/buffer_view.inl&quot;</highlight><highlight class="normal"></highlight></codeline>
     </programlisting>
     <location file="src/muda/buffer/buffer_view.h"/>
   </compounddef>

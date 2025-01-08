@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.1" xml:lang="en-US">
   <compounddef id="classmuda_1_1_device_b_c_o_o_matrix" kind="class" language="C++" prot="public">
     <compoundname>muda::DeviceBCOOMatrix</compoundname>
     <basecompoundref refid="classmuda_1_1_device_triplet_matrix" prot="public" virt="non-virtual">muda::DeviceTripletMatrix&lt; T, N &gt;</basecompoundref>
@@ -13,22 +13,6 @@
         <defname>N</defname>
       </param>
     </templateparamlist>
-    <sectiondef kind="public-type">
-      <memberdef kind="typedef" id="classmuda_1_1_device_b_c_o_o_matrix_1ade7f6a3d37525a3c571bcb978a2f4f26" prot="public" static="no">
-        <type>Eigen::Matrix&lt; T, N, N &gt;</type>
-        <definition>using muda::DeviceBCOOMatrix&lt; T, N &gt;::BlockMatrix =  Eigen::Matrix&lt;T, N, N&gt;</definition>
-        <argsstring></argsstring>
-        <name>BlockMatrix</name>
-        <qualifiedname>muda::DeviceBCOOMatrix::BlockMatrix</qualifiedname>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="src/muda/ext/linear_system/device_bcoo_matrix.h" line="22" column="5" bodyfile="src/muda/ext/linear_system/device_bcoo_matrix.h" bodystart="22" bodyend="-1"/>
-      </memberdef>
-    </sectiondef>
     <sectiondef kind="friend">
       <memberdef kind="friend" id="classmuda_1_1_device_b_c_o_o_matrix_1a3f16dedffcf2438f2b5bcfc8c8a33995" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>class</type>
@@ -61,7 +45,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/ext/linear_system/device_bcoo_matrix.h" line="24" column="5"/>
+        <location file="src/muda/ext/linear_system/device_bcoo_matrix.h" line="22" column="5"/>
       </memberdef>
       <memberdef kind="function" id="classmuda_1_1_device_b_c_o_o_matrix_1a1833e70e9f084d7e197748b7cedfcdc8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -75,7 +59,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/ext/linear_system/device_bcoo_matrix.h" line="25" column="5"/>
+        <location file="src/muda/ext/linear_system/device_bcoo_matrix.h" line="23" column="5"/>
       </memberdef>
       <memberdef kind="function" id="classmuda_1_1_device_b_c_o_o_matrix_1ac8266e4ac19837e73160f0b019a45608" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -92,7 +76,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/ext/linear_system/device_bcoo_matrix.h" line="26" column="5"/>
+        <location file="src/muda/ext/linear_system/device_bcoo_matrix.h" line="24" column="5"/>
       </memberdef>
       <memberdef kind="function" id="classmuda_1_1_device_b_c_o_o_matrix_1a5983b22e671cf4a9c6079b3fc885ff64" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -109,7 +93,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/ext/linear_system/device_bcoo_matrix.h" line="27" column="5"/>
+        <location file="src/muda/ext/linear_system/device_bcoo_matrix.h" line="25" column="5"/>
       </memberdef>
       <memberdef kind="function" id="classmuda_1_1_device_b_c_o_o_matrix_1a1dd6ef17e7df16ecc9b0c2d434426fe4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classmuda_1_1_device_b_c_o_o_matrix" kindref="compound">DeviceBCOOMatrix</ref> &amp;</type>
@@ -126,7 +110,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/ext/linear_system/device_bcoo_matrix.h" line="28" column="22"/>
+        <location file="src/muda/ext/linear_system/device_bcoo_matrix.h" line="26" column="22"/>
       </memberdef>
       <memberdef kind="function" id="classmuda_1_1_device_b_c_o_o_matrix_1add522c2bc90b67d3d3b3e3de57714ce8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classmuda_1_1_device_b_c_o_o_matrix" kindref="compound">DeviceBCOOMatrix</ref> &amp;</type>
@@ -143,21 +127,21 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/ext/linear_system/device_bcoo_matrix.h" line="29" column="22"/>
+        <location file="src/muda/ext/linear_system/device_bcoo_matrix.h" line="27" column="22"/>
       </memberdef>
-      <memberdef kind="function" id="classmuda_1_1_device_b_c_o_o_matrix_1abcb39f152ba40d8f7c3a540841a8f1e9" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+      <memberdef kind="function" id="classmuda_1_1_device_b_c_o_o_matrix_1a895b20ad124ddc7aec674b9574d9ef8f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>auto</type>
-        <definition>auto muda::DeviceBCOOMatrix&lt; T, N &gt;::non_zero_blocks</definition>
+        <definition>auto muda::DeviceBCOOMatrix&lt; T, N &gt;::non_zeros</definition>
         <argsstring>() const</argsstring>
-        <name>non_zero_blocks</name>
-        <qualifiedname>muda::DeviceBCOOMatrix::non_zero_blocks</qualifiedname>
+        <name>non_zeros</name>
+        <qualifiedname>muda::DeviceBCOOMatrix::non_zeros</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/ext/linear_system/device_bcoo_matrix.h" line="30" column="10" bodyfile="src/muda/ext/linear_system/device_bcoo_matrix.h" bodystart="30" bodyend="30"/>
+        <location file="src/muda/ext/linear_system/device_bcoo_matrix.h" line="28" column="23" bodyfile="src/muda/ext/linear_system/device_bcoo_matrix.h" bodystart="28" bodyend="28"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -177,45 +161,39 @@
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="3">
-        <label>muda::DeviceBuffer&lt; BlockMatrix &gt;</label>
-        <link refid="classmuda_1_1_device_buffer"/>
-      </node>
-      <node id="4">
-        <label>muda::DeviceBuffer&lt; int &gt;</label>
-        <link refid="classmuda_1_1_device_buffer"/>
-      </node>
       <node id="1">
         <label>muda::DeviceBCOOMatrix&lt; T, N &gt;</label>
         <link refid="classmuda_1_1_device_b_c_o_o_matrix"/>
         <childnode refid="2" relation="public-inheritance">
         </childnode>
       </node>
+      <node id="3">
+        <label>muda::DeviceBuffer&lt; ValueT &gt;</label>
+        <link refid="classmuda_1_1_device_buffer"/>
+      </node>
+      <node id="4">
+        <label>muda::DeviceBuffer&lt; int &gt;</label>
+        <link refid="classmuda_1_1_device_buffer"/>
+      </node>
       <node id="2">
         <label>muda::DeviceTripletMatrix&lt; T, N &gt;</label>
         <link refid="classmuda_1_1_device_triplet_matrix"/>
         <childnode refid="3" relation="usage">
-          <edgelabel>m_block_values</edgelabel>
+          <edgelabel>m_values</edgelabel>
         </childnode>
         <childnode refid="4" relation="usage">
-          <edgelabel>m_block_col_indices</edgelabel>
-          <edgelabel>m_block_row_indices</edgelabel>
+          <edgelabel>m_col_indices</edgelabel>
+          <edgelabel>m_row_indices</edgelabel>
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="src/muda/ext/linear_system/device_bcoo_matrix.h" line="17" column="1" bodyfile="src/muda/ext/linear_system/device_bcoo_matrix.h" bodystart="18" bodyend="31"/>
+    <location file="src/muda/ext/linear_system/device_bcoo_matrix.h" line="17" column="1" bodyfile="src/muda/ext/linear_system/device_bcoo_matrix.h" bodystart="18" bodyend="29"/>
     <listofallmembers>
-      <member refid="classmuda_1_1_device_triplet_matrix_1aa79f391106cfda14d64e7e76070fa817" prot="public" virt="non-virtual"><scope>muda::DeviceBCOOMatrix</scope><name>block_col_indices</name></member>
-      <member refid="classmuda_1_1_device_triplet_matrix_1adfd90e53cf9438ef970caaf2fa9b1d9a" prot="public" virt="non-virtual"><scope>muda::DeviceBCOOMatrix</scope><name>block_col_indices</name></member>
-      <member refid="classmuda_1_1_device_triplet_matrix_1aa55fcb801c32548afeb9817765feca05" prot="public" virt="non-virtual"><scope>muda::DeviceBCOOMatrix</scope><name>block_cols</name></member>
       <member refid="classmuda_1_1_device_triplet_matrix_1a1ff8dbeec0279242da40b20380f7379b" prot="public" virt="non-virtual"><scope>muda::DeviceBCOOMatrix</scope><name>block_dim</name></member>
-      <member refid="classmuda_1_1_device_triplet_matrix_1aab85d156dbf3f00fa4180c166933bdea" prot="public" virt="non-virtual"><scope>muda::DeviceBCOOMatrix</scope><name>block_row_indices</name></member>
-      <member refid="classmuda_1_1_device_triplet_matrix_1abf52daa886694a6fb00221ab0e9b3233" prot="public" virt="non-virtual"><scope>muda::DeviceBCOOMatrix</scope><name>block_row_indices</name></member>
-      <member refid="classmuda_1_1_device_triplet_matrix_1a06e30e433ecc994cae286b74b93486cf" prot="public" virt="non-virtual"><scope>muda::DeviceBCOOMatrix</scope><name>block_rows</name></member>
-      <member refid="classmuda_1_1_device_triplet_matrix_1aedde12d35469d6515837597210a0eb7f" prot="public" virt="non-virtual"><scope>muda::DeviceBCOOMatrix</scope><name>block_values</name></member>
-      <member refid="classmuda_1_1_device_triplet_matrix_1af15f70a327385653fd259c56c0b8332c" prot="public" virt="non-virtual"><scope>muda::DeviceBCOOMatrix</scope><name>block_values</name></member>
-      <member refid="classmuda_1_1_device_b_c_o_o_matrix_1ade7f6a3d37525a3c571bcb978a2f4f26" prot="public" virt="non-virtual"><scope>muda::DeviceBCOOMatrix</scope><name>BlockMatrix</name></member>
       <member refid="classmuda_1_1_device_triplet_matrix_1ab7e99209b844ad107bcd5817e60a98e5" prot="public" virt="non-virtual"><scope>muda::DeviceBCOOMatrix</scope><name>clear</name></member>
+      <member refid="classmuda_1_1_device_triplet_matrix_1ae399a6267dace0828a474bcc637c1664" prot="public" virt="non-virtual"><scope>muda::DeviceBCOOMatrix</scope><name>col_indices</name></member>
+      <member refid="classmuda_1_1_device_triplet_matrix_1a538787cc18d7b4d3f7bb60ae959687bf" prot="public" virt="non-virtual"><scope>muda::DeviceBCOOMatrix</scope><name>col_indices</name></member>
+      <member refid="classmuda_1_1_device_triplet_matrix_1a59f5ce2b5fc77c9f76a5b16047fc44e4" prot="public" virt="non-virtual"><scope>muda::DeviceBCOOMatrix</scope><name>cols</name></member>
       <member refid="classmuda_1_1_device_triplet_matrix_1ad3d0f00c43731e0b1a50b572bec0a16f" prot="public" virt="non-virtual"><scope>muda::DeviceBCOOMatrix</scope><name>cview</name></member>
       <member refid="classmuda_1_1_device_triplet_matrix_1a4268a53d39dc643c4d7c15e51698a9e4" prot="public" virt="non-virtual"><scope>muda::DeviceBCOOMatrix</scope><name>cviewer</name></member>
       <member refid="classmuda_1_1_device_b_c_o_o_matrix_1a3f16dedffcf2438f2b5bcfc8c8a33995" prot="public" virt="non-virtual"><scope>muda::DeviceBCOOMatrix</scope><name>details::MatrixFormatConverter&lt; T, N &gt;</name></member>
@@ -225,12 +203,13 @@
       <member refid="classmuda_1_1_device_triplet_matrix_1a3d20e3d0128bcd3beef42b5db00c19a4" prot="public" virt="non-virtual"><scope>muda::DeviceBCOOMatrix</scope><name>DeviceTripletMatrix</name></member>
       <member refid="classmuda_1_1_device_triplet_matrix_1a23aac5f24067812059a3a5eb0000ebe7" prot="public" virt="non-virtual"><scope>muda::DeviceBCOOMatrix</scope><name>DeviceTripletMatrix</name></member>
       <member refid="classmuda_1_1_device_triplet_matrix_1af21d72d34ddefbbedd154f1032314175" prot="public" virt="non-virtual"><scope>muda::DeviceBCOOMatrix</scope><name>DeviceTripletMatrix</name></member>
-      <member refid="classmuda_1_1_device_triplet_matrix_1a0ab5de566df5ab31de1f7ea257bfa87f" prot="protected" virt="non-virtual"><scope>muda::DeviceBCOOMatrix</scope><name>m_block_col_indices</name></member>
-      <member refid="classmuda_1_1_device_triplet_matrix_1a7c9b486a5d81ed010f3df9ce3eed3949" prot="protected" virt="non-virtual"><scope>muda::DeviceBCOOMatrix</scope><name>m_block_cols</name></member>
-      <member refid="classmuda_1_1_device_triplet_matrix_1aafb1c84ee6a969e3edefe01acb48077f" prot="protected" virt="non-virtual"><scope>muda::DeviceBCOOMatrix</scope><name>m_block_row_indices</name></member>
-      <member refid="classmuda_1_1_device_triplet_matrix_1ae13c166aad8de32fdc2baa93e43da4ff" prot="protected" virt="non-virtual"><scope>muda::DeviceBCOOMatrix</scope><name>m_block_rows</name></member>
-      <member refid="classmuda_1_1_device_triplet_matrix_1a1d85728c5905de53ae47cc8df322fbd3" prot="protected" virt="non-virtual"><scope>muda::DeviceBCOOMatrix</scope><name>m_block_values</name></member>
-      <member refid="classmuda_1_1_device_b_c_o_o_matrix_1abcb39f152ba40d8f7c3a540841a8f1e9" prot="public" virt="non-virtual"><scope>muda::DeviceBCOOMatrix</scope><name>non_zero_blocks</name></member>
+      <member refid="classmuda_1_1_device_triplet_matrix_1a96920abe02646842110de19224fe2706" prot="public" virt="non-virtual"><scope>muda::DeviceBCOOMatrix</scope><name>IsBlockMatrix</name></member>
+      <member refid="classmuda_1_1_device_triplet_matrix_1ab1cb5ced0bc917f9f637072828d6dc5c" prot="protected" virt="non-virtual"><scope>muda::DeviceBCOOMatrix</scope><name>m_col_indices</name></member>
+      <member refid="classmuda_1_1_device_triplet_matrix_1a7d9be5c15bb16b46086783bcc61a05e2" prot="protected" virt="non-virtual"><scope>muda::DeviceBCOOMatrix</scope><name>m_cols</name></member>
+      <member refid="classmuda_1_1_device_triplet_matrix_1ad0a92db76e0c2a2af0690adc26406fff" prot="protected" virt="non-virtual"><scope>muda::DeviceBCOOMatrix</scope><name>m_row_indices</name></member>
+      <member refid="classmuda_1_1_device_triplet_matrix_1af078d95a478754010a4d676a28d82694" prot="protected" virt="non-virtual"><scope>muda::DeviceBCOOMatrix</scope><name>m_rows</name></member>
+      <member refid="classmuda_1_1_device_triplet_matrix_1ab2acdf570435644d85bc63dce5068c70" prot="protected" virt="non-virtual"><scope>muda::DeviceBCOOMatrix</scope><name>m_values</name></member>
+      <member refid="classmuda_1_1_device_b_c_o_o_matrix_1a895b20ad124ddc7aec674b9574d9ef8f" prot="public" virt="non-virtual"><scope>muda::DeviceBCOOMatrix</scope><name>non_zeros</name></member>
       <member refid="classmuda_1_1_device_triplet_matrix_1a6283c766bdefab1bc69e07a5ed814bbb" prot="public" virt="non-virtual"><scope>muda::DeviceBCOOMatrix</scope><name>operator CTripletMatrixView&lt; T, N &gt;</name></member>
       <member refid="classmuda_1_1_device_triplet_matrix_1a65a0aeb079ec480ba8150ae71be6967c" prot="public" virt="non-virtual"><scope>muda::DeviceBCOOMatrix</scope><name>operator TripletMatrixView&lt; T, N &gt;</name></member>
       <member refid="classmuda_1_1_device_b_c_o_o_matrix_1a1dd6ef17e7df16ecc9b0c2d434426fe4" prot="public" virt="non-virtual"><scope>muda::DeviceBCOOMatrix</scope><name>operator=</name></member>
@@ -241,8 +220,14 @@
       <member refid="classmuda_1_1_device_triplet_matrix_1a0475304efc6e1063413fbaf9b5be541e" prot="public" virt="non-virtual"><scope>muda::DeviceBCOOMatrix</scope><name>reshape</name></member>
       <member refid="classmuda_1_1_device_triplet_matrix_1aedf04ef0bccb2c8b28c8b93b069f1387" prot="public" virt="non-virtual"><scope>muda::DeviceBCOOMatrix</scope><name>resize</name></member>
       <member refid="classmuda_1_1_device_triplet_matrix_1a710c3d2811efc61b27d641c45397f1fd" prot="public" virt="non-virtual"><scope>muda::DeviceBCOOMatrix</scope><name>resize_triplets</name></member>
+      <member refid="classmuda_1_1_device_triplet_matrix_1a1b1cf7a28934ae6115e7978454e93ad3" prot="public" virt="non-virtual"><scope>muda::DeviceBCOOMatrix</scope><name>row_indices</name></member>
+      <member refid="classmuda_1_1_device_triplet_matrix_1ab19c7cf7780ede5514a62bbaacc49006" prot="public" virt="non-virtual"><scope>muda::DeviceBCOOMatrix</scope><name>row_indices</name></member>
+      <member refid="classmuda_1_1_device_triplet_matrix_1accba1b73d1412f4380c3e85bfd058f11" prot="public" virt="non-virtual"><scope>muda::DeviceBCOOMatrix</scope><name>rows</name></member>
       <member refid="classmuda_1_1_device_triplet_matrix_1ac8fe71f034161c2204d5dd6f8234ec27" prot="public" virt="non-virtual"><scope>muda::DeviceBCOOMatrix</scope><name>triplet_capacity</name></member>
       <member refid="classmuda_1_1_device_triplet_matrix_1a7e684e1e91fab3b2b26a3797ea83d811" prot="public" virt="non-virtual"><scope>muda::DeviceBCOOMatrix</scope><name>triplet_count</name></member>
+      <member refid="classmuda_1_1_device_triplet_matrix_1af8096fe7b5760440f120630600b05666" prot="public" virt="non-virtual"><scope>muda::DeviceBCOOMatrix</scope><name>values</name></member>
+      <member refid="classmuda_1_1_device_triplet_matrix_1ad61dd1fc01d69a4cb0c7d6e8de9eec24" prot="public" virt="non-virtual"><scope>muda::DeviceBCOOMatrix</scope><name>values</name></member>
+      <member refid="classmuda_1_1_device_triplet_matrix_1a7d2055b1dbff4982d306a50faa0da544" prot="public" virt="non-virtual"><scope>muda::DeviceBCOOMatrix</scope><name>ValueT</name></member>
       <member refid="classmuda_1_1_device_triplet_matrix_1ae87b19ee520ef0e77dc19f3e6782471a" prot="public" virt="non-virtual"><scope>muda::DeviceBCOOMatrix</scope><name>view</name></member>
       <member refid="classmuda_1_1_device_triplet_matrix_1aaccec7df1ea4637630e45366b056c87b" prot="public" virt="non-virtual"><scope>muda::DeviceBCOOMatrix</scope><name>view</name></member>
       <member refid="classmuda_1_1_device_triplet_matrix_1a1f237c69c3ebdd50da4fd5925778fe3a" prot="public" virt="non-virtual"><scope>muda::DeviceBCOOMatrix</scope><name>viewer</name></member>

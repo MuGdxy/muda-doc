@@ -15,7 +15,7 @@
 
 
 
-Inherited by the following classes: [muda::SubFieldImpl&lt; FieldEntryLayout::AoS &gt;](classmuda_1_1_sub_field_impl_3_01_field_entry_layout_1_1_ao_s_01_4.md),  [muda::SubFieldImpl&lt; FieldEntryLayout::AoSoA &gt;](classmuda_1_1_sub_field_impl_3_01_field_entry_layout_1_1_ao_so_a_01_4.md),  [muda::SubFieldImpl&lt; FieldEntryLayout::SoA &gt;](classmuda_1_1_sub_field_impl_3_01_field_entry_layout_1_1_so_a_01_4.md)
+Inherited by the following classes: [muda::SubFieldImpl](classmuda_1_1_sub_field_impl.md),  [muda::SubFieldImpl](classmuda_1_1_sub_field_impl.md),  [muda::SubFieldImpl](classmuda_1_1_sub_field_impl.md)
 
 
 

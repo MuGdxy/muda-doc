@@ -93,7 +93,7 @@ _A frequently used parallel for loop,_ **DynamicBlockDim** _and_**GridStrideLoop
 
 
 
-# Detailed Description
+## Detailed Description
 
 
 

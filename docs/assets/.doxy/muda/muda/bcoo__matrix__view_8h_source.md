@@ -11,6 +11,7 @@
 #pragma once
 #include <muda/ext/linear_system/triplet_matrix_view.h>
 #include <muda/ext/linear_system/bcoo_matrix_viewer.h>
+
 namespace muda
 {
 template <typename T, int N>
@@ -18,20 +19,24 @@ using BCOOMatrixView = TripletMatrixView<T, N>;
 template <typename T, int N>
 using CBCOOMatrixView = CTripletMatrixView<T, N>;
 }  // namespace muda
+
 namespace muda
 {
 template <bool IsConst, typename Ty>
-class COOMatrixViewBase : public ViewBase<IsConst>
+class COOMatrixViewT : public ViewBase<IsConst>
 {
     using Base = ViewBase<IsConst>;
-    template<typename U>
+    template <typename U>
     using auto_const_t = typename Base::template auto_const_t<U>;
+
+    template <bool OtherIsConst, typename U>
+    friend class COOMatrixViewT;
 
   public:
     static_assert(!std::is_const_v<Ty>, "Ty must be non-const");
-    using NonConstView = COOMatrixViewBase<false, Ty>;
-    using ConstView    = COOMatrixViewBase<true, Ty>;
-    using ThisView     = COOMatrixViewBase<IsConst, Ty>;
+    using NonConstView = COOMatrixViewT<false, Ty>;
+    using ConstView    = COOMatrixViewT<true, Ty>;
+    using ThisView     = COOMatrixViewT<IsConst, Ty>;
 
   protected:
     // matrix info
@@ -57,20 +62,21 @@ class COOMatrixViewBase : public ViewBase<IsConst>
     bool                         m_trans        = false;
 
   public:
-    MUDA_GENERIC COOMatrixViewBase() = default;
-    MUDA_GENERIC COOMatrixViewBase(int                  rows,
-                                   int                  cols,
-                                   int                  triplet_index_offset,
-                                   int                  triplet_count,
-                                   int                  total_triplet_count,
-                                   int2                 submatrix_offset,
-                                   int2                 submatrix_extent,
-                                   auto_const_t<int>*   row_indices,
-                                   auto_const_t<int>*   col_indices,
-                                   auto_const_t<Ty>*    values,
-                                   cusparseSpMatDescr_t descr,
-                                   cusparseMatDescr_t   legacy_descr,
-                                   bool                 trans)
+    MUDA_GENERIC COOMatrixViewT() = default;
+
+    MUDA_GENERIC COOMatrixViewT(int                  rows,
+                                int                  cols,
+                                int                  triplet_index_offset,
+                                int                  triplet_count,
+                                int                  total_triplet_count,
+                                int2                 submatrix_offset,
+                                int2                 submatrix_extent,
+                                auto_const_t<int>*   row_indices,
+                                auto_const_t<int>*   col_indices,
+                                auto_const_t<Ty>*    values,
+                                cusparseSpMatDescr_t descr,
+                                cusparseMatDescr_t   legacy_descr,
+                                bool                 trans)
 
         : m_rows(rows)
         , m_cols(cols)
@@ -112,28 +118,45 @@ class COOMatrixViewBase : public ViewBase<IsConst>
                            cols);
     }
 
-    MUDA_GENERIC COOMatrixViewBase(int                  rows,
-                                   int                  cols,
-                                   int                  total_triplet_count,
-                                   auto_const_t<int>*   row_indices,
-                                   auto_const_t<int>*   col_indices,
-                                   auto_const_t<Ty>*    values,
-                                   cusparseSpMatDescr_t descr,
-                                   cusparseMatDescr_t   legacy_descr,
-                                   bool                 trans)
-        : COOMatrixViewBase(rows,
-                            cols,
-                            0,
-                            total_triplet_count,
-                            total_triplet_count,
-                            {0, 0},
-                            {rows, cols},
-                            row_indices,
-                            col_indices,
-                            values,
-                            descr,
-                            legacy_descr,
-                            trans)
+    MUDA_GENERIC COOMatrixViewT(int                  rows,
+                                int                  cols,
+                                int                  total_triplet_count,
+                                auto_const_t<int>*   row_indices,
+                                auto_const_t<int>*   col_indices,
+                                auto_const_t<Ty>*    values,
+                                cusparseSpMatDescr_t descr,
+                                cusparseMatDescr_t   legacy_descr,
+                                bool                 trans)
+        : COOMatrixViewT(rows,
+                         cols,
+                         0,
+                         total_triplet_count,
+                         total_triplet_count,
+                         {0, 0},
+                         {rows, cols},
+                         row_indices,
+                         col_indices,
+                         values,
+                         descr,
+                         legacy_descr,
+                         trans)
+    {
+    }
+
+    template <bool OtherIsConst>
+    MUDA_GENERIC COOMatrixViewT(const COOMatrixViewT<OtherIsConst, Ty>& other)
+        : m_rows(other.m_rows)
+        , m_cols(other.m_cols)
+        , m_triplet_index_offset(other.m_triplet_index_offset)
+        , m_triplet_count(other.m_triplet_count)
+        , m_total_triplet_count(other.m_total_triplet_count)
+        , m_submatrix_offset(other.m_submatrix_offset)
+        , m_submatrix_extent(other.m_submatrix_extent)
+        , m_row_indices(other.m_row_indices)
+        , m_col_indices(other.m_col_indices)
+        , m_values(other.m_values)
+        , m_descr(other.m_descr)
+        , m_legacy_descr(other.m_legacy)
     {
     }
 
@@ -153,8 +176,6 @@ class COOMatrixViewBase : public ViewBase<IsConst>
                          m_legacy_descr,
                          m_trans};
     }
-
-    MUDA_GENERIC operator ConstView() const { return as_const(); }
 
     MUDA_GENERIC auto cviewer() const
     {
@@ -190,19 +211,13 @@ class COOMatrixViewBase : public ViewBase<IsConst>
                                           m_values};
     }
 
-    // non-const access
-    auto_const_t<Ty>*  block_values() { return m_values; }
-    auto_const_t<int>* block_row_indices() { return m_row_indices; }
-    auto_const_t<int>* block_col_indices() { return m_col_indices; }
-
-
     // const access
-    auto block_values() const { return m_values; }
-    auto block_row_indices() const { return m_row_indices; }
-    auto block_col_indices() const { return m_col_indices; }
+    auto values() const { return m_values; }
+    auto row_indices() const { return m_row_indices; }
+    auto col_indices() const { return m_col_indices; }
 
-    auto block_rows() const { return m_rows; }
-    auto block_cols() const { return m_cols; }
+    auto rows() const { return m_rows; }
+    auto cols() const { return m_cols; }
     auto triplet_count() const { return m_triplet_count; }
     auto tripet_index_offset() const { return m_triplet_index_offset; }
     auto total_triplet_count() const { return m_total_triplet_count; }
@@ -213,21 +228,21 @@ class COOMatrixViewBase : public ViewBase<IsConst>
 };
 
 template <typename Ty>
-using COOMatrixView = COOMatrixViewBase<false, Ty>;
+using COOMatrixView = COOMatrixViewT<false, Ty>;
 template <typename Ty>
-using CCOOMatrixView = COOMatrixViewBase<true, Ty>;
+using CCOOMatrixView = COOMatrixViewT<true, Ty>;
 }  // namespace muda
 
 namespace muda
 {
 template <typename T>
-struct read_only_viewer<COOMatrixView<T>>
+struct read_only_view<COOMatrixView<T>>
 {
     using type = CCOOMatrixView<T>;
 };
 
 template <typename T>
-struct read_write_viewer<CCOOMatrixView<T>>
+struct read_write_view<CCOOMatrixView<T>>
 {
     using type = COOMatrixView<T>;
 };

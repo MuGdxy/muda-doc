@@ -48,10 +48,10 @@
 | ---: | :--- |
 | class | [**ComputeGraphVar**](classmuda_1_1_compute_graph_var.md) &lt;typename T&gt;<br> |
 | class | [**ComputeGraphVarBase**](classmuda_1_1_compute_graph_var_base.md) <br> |
-| struct | [**read\_only\_viewer&lt; T \* &gt;**](structmuda_1_1read__only__viewer_3_01_t_01_5_01_4.md) &lt;typename T&gt;<br> |
-| struct | [**read\_only\_viewer&lt; cudaEvent\_t &gt;**](structmuda_1_1read__only__viewer_3_01cuda_event__t_01_4.md) &lt;&gt;<br> |
-| struct | [**read\_write\_viewer&lt; const T \* &gt;**](structmuda_1_1read__write__viewer_3_01const_01_t_01_5_01_4.md) &lt;typename T&gt;<br> |
-| struct | [**read\_write\_viewer&lt; cudaEvent\_t &gt;**](structmuda_1_1read__write__viewer_3_01cuda_event__t_01_4.md) &lt;&gt;<br> |
+| struct | [**read\_only\_view**](structmuda_1_1read__only__view.md) &lt;typename T&gt;<br> |
+| struct | [**read\_only\_view**](structmuda_1_1read__only__view.md) &lt;typename T&gt;<br> |
+| struct | [**read\_write\_view**](structmuda_1_1read__write__view.md) &lt;typename T&gt;<br> |
+| struct | [**read\_write\_view**](structmuda_1_1read__write__view.md) &lt;typename T&gt;<br> |
 
 
 

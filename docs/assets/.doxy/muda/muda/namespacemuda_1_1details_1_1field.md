@@ -93,7 +93,7 @@
 ### typedef MatStride 
 
 ```C++
-using muda::details::field::MatStride = typedef Eigen::Stride<Eigen::Dynamic, Eigen::Dynamic>;
+using muda::details::field::MatStride =  Eigen::Stride<Eigen::Dynamic, Eigen::Dynamic>;
 ```
 
 

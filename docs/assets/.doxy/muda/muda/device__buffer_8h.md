@@ -92,7 +92,7 @@ _A light-weight wrapper of cuda device memory. Like_ `std::vector` _, allow user
 
 
 
-# Detailed Description
+## Detailed Description
 
 
 

@@ -30,11 +30,6 @@ Inherits the following classes: [muda::DeviceTripletMatrix](classmuda_1_1_device
 
 
 
-## Public Types
-
-| Type | Name |
-| ---: | :--- |
-| typedef Eigen::Matrix&lt; T, N, N &gt; | [**BlockMatrix**](#typedef-blockmatrix)  <br> |
 
 
 ## Public Types inherited from muda::DeviceTripletMatrix
@@ -43,7 +38,7 @@ See [muda::DeviceTripletMatrix](classmuda_1_1_device_triplet_matrix.md)
 
 | Type | Name |
 | ---: | :--- |
-| typedef Eigen::Matrix&lt; T, N, N &gt; | [**BlockMatrix**](classmuda_1_1_device_triplet_matrix.md#typedef-blockmatrix)  <br> |
+| typedef std::conditional\_t&lt; N==1, T, Eigen::Matrix&lt; T, N, N &gt; &gt; | [**ValueT**](classmuda_1_1_device_triplet_matrix.md#typedef-valuet)  <br> |
 
 
 
@@ -56,6 +51,13 @@ See [muda::DeviceTripletMatrix](classmuda_1_1_device_triplet_matrix.md)
 
 
 
+## Public Static Attributes inherited from muda::DeviceTripletMatrix
+
+See [muda::DeviceTripletMatrix](classmuda_1_1_device_triplet_matrix.md)
+
+| Type | Name |
+| ---: | :--- |
+|  bool | [**IsBlockMatrix**](classmuda_1_1_device_triplet_matrix.md#variable-isblockmatrix)   = = (N &gt; 1)<br> |
 
 
 
@@ -89,7 +91,7 @@ See [muda::DeviceTripletMatrix](classmuda_1_1_device_triplet_matrix.md)
 |   | [**DeviceBCOOMatrix**](#function-devicebcoomatrix-13) () = default<br> |
 |   | [**DeviceBCOOMatrix**](#function-devicebcoomatrix-23) (const [**DeviceBCOOMatrix**](classmuda_1_1_device_b_c_o_o_matrix.md) &) = default<br> |
 |   | [**DeviceBCOOMatrix**](#function-devicebcoomatrix-33) ([**DeviceBCOOMatrix**](classmuda_1_1_device_b_c_o_o_matrix.md) &&) = default<br> |
-|  auto | [**non\_zero\_blocks**](#function-non_zero_blocks) () const<br> |
+|  auto | [**non\_zeros**](#function-non_zeros) () const<br> |
 |  [**DeviceBCOOMatrix**](classmuda_1_1_device_b_c_o_o_matrix.md) & | [**operator=**](#function-operator) (const [**DeviceBCOOMatrix**](classmuda_1_1_device_b_c_o_o_matrix.md) &) = default<br> |
 |  [**DeviceBCOOMatrix**](classmuda_1_1_device_b_c_o_o_matrix.md) & | [**operator=**](#function-operator_1) ([**DeviceBCOOMatrix**](classmuda_1_1_device_b_c_o_o_matrix.md) &&) = default<br> |
 |   | [**~DeviceBCOOMatrix**](#function-devicebcoomatrix) () = default<br> |
@@ -104,15 +106,10 @@ See [muda::DeviceTripletMatrix](classmuda_1_1_device_triplet_matrix.md)
 |   | [**DeviceTripletMatrix**](classmuda_1_1_device_triplet_matrix.md#function-devicetripletmatrix-13) () = default<br> |
 |   | [**DeviceTripletMatrix**](classmuda_1_1_device_triplet_matrix.md#function-devicetripletmatrix-23) (const [**DeviceTripletMatrix**](classmuda_1_1_device_triplet_matrix.md) &) = default<br> |
 |   | [**DeviceTripletMatrix**](classmuda_1_1_device_triplet_matrix.md#function-devicetripletmatrix-33) ([**DeviceTripletMatrix**](classmuda_1_1_device_triplet_matrix.md) &&) = default<br> |
-|  auto | [**block\_col\_indices**](classmuda_1_1_device_triplet_matrix.md#function-block_col_indices-12) () <br> |
-|  auto | [**block\_col\_indices**](classmuda_1_1_device_triplet_matrix.md#function-block_col_indices-22) () const<br> |
-|  auto | [**block\_cols**](classmuda_1_1_device_triplet_matrix.md#function-block_cols) () const<br> |
-|  auto | [**block\_row\_indices**](classmuda_1_1_device_triplet_matrix.md#function-block_row_indices-12) () <br> |
-|  auto | [**block\_row\_indices**](classmuda_1_1_device_triplet_matrix.md#function-block_row_indices-22) () const<br> |
-|  auto | [**block\_rows**](classmuda_1_1_device_triplet_matrix.md#function-block_rows) () const<br> |
-|  auto | [**block\_values**](classmuda_1_1_device_triplet_matrix.md#function-block_values-12) () <br> |
-|  auto | [**block\_values**](classmuda_1_1_device_triplet_matrix.md#function-block_values-22) () const<br> |
 |  void | [**clear**](classmuda_1_1_device_triplet_matrix.md#function-clear) () <br> |
+|  auto | [**col\_indices**](classmuda_1_1_device_triplet_matrix.md#function-col_indices-12) () <br> |
+|  auto | [**col\_indices**](classmuda_1_1_device_triplet_matrix.md#function-col_indices-22) () const<br> |
+|  auto | [**cols**](classmuda_1_1_device_triplet_matrix.md#function-cols) () const<br> |
 |  auto | [**cview**](classmuda_1_1_device_triplet_matrix.md#function-cview) () const<br> |
 |  auto | [**cviewer**](classmuda_1_1_device_triplet_matrix.md#function-cviewer) () const<br> |
 |   | [**operator CTripletMatrixView&lt; T, N &gt;**](classmuda_1_1_device_triplet_matrix.md#function-operator-ctripletmatrixview<-t,-n->) () const<br> |
@@ -123,8 +120,13 @@ See [muda::DeviceTripletMatrix](classmuda_1_1_device_triplet_matrix.md)
 |  void | [**reshape**](classmuda_1_1_device_triplet_matrix.md#function-reshape) (int row, int col) <br> |
 |  void | [**resize**](classmuda_1_1_device_triplet_matrix.md#function-resize) (int row, int col, size\_t nonzero\_count) <br> |
 |  void | [**resize\_triplets**](classmuda_1_1_device_triplet_matrix.md#function-resize_triplets) (size\_t nonzero\_count) <br> |
+|  auto | [**row\_indices**](classmuda_1_1_device_triplet_matrix.md#function-row_indices-12) () <br> |
+|  auto | [**row\_indices**](classmuda_1_1_device_triplet_matrix.md#function-row_indices-22) () const<br> |
+|  auto | [**rows**](classmuda_1_1_device_triplet_matrix.md#function-rows) () const<br> |
 |  auto | [**triplet\_capacity**](classmuda_1_1_device_triplet_matrix.md#function-triplet_capacity) () const<br> |
 |  auto | [**triplet\_count**](classmuda_1_1_device_triplet_matrix.md#function-triplet_count) () const<br> |
+|  auto | [**values**](classmuda_1_1_device_triplet_matrix.md#function-values-12) () <br> |
+|  auto | [**values**](classmuda_1_1_device_triplet_matrix.md#function-values-22) () const<br> |
 |  auto | [**view**](classmuda_1_1_device_triplet_matrix.md#function-view-12) () <br> |
 |  auto | [**view**](classmuda_1_1_device_triplet_matrix.md#function-view-22) () const<br> |
 |  auto | [**viewer**](classmuda_1_1_device_triplet_matrix.md#function-viewer) () <br> |
@@ -139,7 +141,7 @@ See [muda::DeviceTripletMatrix](classmuda_1_1_device_triplet_matrix.md)
 
 | Type | Name |
 | ---: | :--- |
-|  constexpr int | [**block\_dim**](classmuda_1_1_device_triplet_matrix.md#function-block_dim) () <br> |
+|  int | [**block\_dim**](classmuda_1_1_device_triplet_matrix.md#function-block_dim) () <br> |
 
 
 
@@ -158,11 +160,11 @@ See [muda::DeviceTripletMatrix](classmuda_1_1_device_triplet_matrix.md)
 
 | Type | Name |
 | ---: | :--- |
-|  [**DeviceBuffer**](classmuda_1_1_device_buffer.md)&lt; int &gt; | [**m\_block\_col\_indices**](classmuda_1_1_device_triplet_matrix.md#variable-m_block_col_indices)  <br> |
-|  int | [**m\_block\_cols**](classmuda_1_1_device_triplet_matrix.md#variable-m_block_cols)   = = 0<br> |
-|  [**DeviceBuffer**](classmuda_1_1_device_buffer.md)&lt; int &gt; | [**m\_block\_row\_indices**](classmuda_1_1_device_triplet_matrix.md#variable-m_block_row_indices)  <br> |
-|  int | [**m\_block\_rows**](classmuda_1_1_device_triplet_matrix.md#variable-m_block_rows)   = = 0<br> |
-|  [**DeviceBuffer**](classmuda_1_1_device_buffer.md)&lt; BlockMatrix &gt; | [**m\_block\_values**](classmuda_1_1_device_triplet_matrix.md#variable-m_block_values)  <br> |
+|  [**DeviceBuffer**](classmuda_1_1_device_buffer.md)&lt; int &gt; | [**m\_col\_indices**](classmuda_1_1_device_triplet_matrix.md#variable-m_col_indices)  <br> |
+|  int | [**m\_cols**](classmuda_1_1_device_triplet_matrix.md#variable-m_cols)   = = 0<br> |
+|  [**DeviceBuffer**](classmuda_1_1_device_buffer.md)&lt; int &gt; | [**m\_row\_indices**](classmuda_1_1_device_triplet_matrix.md#variable-m_row_indices)  <br> |
+|  int | [**m\_rows**](classmuda_1_1_device_triplet_matrix.md#variable-m_rows)   = = 0<br> |
+|  [**DeviceBuffer**](classmuda_1_1_device_buffer.md)&lt; ValueT &gt; | [**m\_values**](classmuda_1_1_device_triplet_matrix.md#variable-m_values)  <br> |
 
 
 
@@ -201,21 +203,6 @@ See [muda::DeviceTripletMatrix](classmuda_1_1_device_triplet_matrix.md)
 
 
 
-## Public Types Documentation
-
-
-
-
-### typedef BlockMatrix 
-
-```C++
-using muda::DeviceBCOOMatrix< T, N >::BlockMatrix =  Eigen::Matrix<T, N, N>;
-```
-
-
-
-
-<hr>
 ## Public Functions Documentation
 
 
@@ -264,10 +251,10 @@ muda::DeviceBCOOMatrix::DeviceBCOOMatrix (
 
 
 
-### function non\_zero\_blocks 
+### function non\_zeros 
 
 ```C++
-inline auto muda::DeviceBCOOMatrix::non_zero_blocks () const
+inline auto muda::DeviceBCOOMatrix::non_zeros () const
 ```
 
 

@@ -37,9 +37,9 @@
 
 | Type | Name |
 | ---: | :--- |
-| class | [**BSRMatrixViewBase**](classmuda_1_1_b_s_r_matrix_view_base.md) &lt;IsConst, typename Ty, N&gt;<br> |
-| struct | [**read\_only\_viewer&lt; BSRMatrixView&lt; Ty, N &gt; &gt;**](structmuda_1_1read__only__viewer_3_01_b_s_r_matrix_view_3_01_ty_00_01_n_01_4_01_4.md) &lt;typename Ty, N&gt;<br> |
-| struct | [**read\_write\_viewer&lt; CBSRMatrixView&lt; Ty, N &gt; &gt;**](structmuda_1_1read__write__viewer_3_01_c_b_s_r_matrix_view_3_01_ty_00_01_n_01_4_01_4.md) &lt;typename Ty, N&gt;<br> |
+| class | [**BSRMatrixViewT**](classmuda_1_1_b_s_r_matrix_view_t.md) &lt;IsConst, typename Ty, N&gt;<br> |
+| struct | [**read\_only\_view**](structmuda_1_1read__only__view.md) &lt;typename T&gt;<br> |
+| struct | [**read\_write\_view**](structmuda_1_1read__write__view.md) &lt;typename T&gt;<br> |
 
 
 

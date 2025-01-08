@@ -39,7 +39,7 @@
 
 | Type | Name |
 | ---: | :--- |
-|  constexpr bool | [**value**](#variable-value)   = = false<br> |
+|  bool | [**value**](#variable-value)   = = false<br> |
 
 
 
@@ -90,7 +90,7 @@
 ### variable value 
 
 ```C++
-constexpr bool muda::force_trivially_copy_assignable< T >::value;
+bool muda::force_trivially_copy_assignable< T >::value;
 ```
 
 

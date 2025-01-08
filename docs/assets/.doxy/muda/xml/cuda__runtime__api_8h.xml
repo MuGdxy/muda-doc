@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.1" xml:lang="en-US">
   <compounddef id="cuda__runtime__api_8h" kind="file" language="C++">
     <compoundname>cuda_runtime_api.h</compoundname>
     <includes refid="cuda__runtime__api_8h" local="no">cuda_runtime_api.h</includes>
@@ -482,6 +482,8 @@
         <link refid="device__merge__sort_8h_source"/>
         <childnode refid="23" relation="include">
         </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
       </node>
       <node id="27">
         <label>src/muda/cub/device/device_partition.h</label>
@@ -494,6 +496,8 @@
         <link refid="device__radix__sort_8h_source"/>
         <childnode refid="23" relation="include">
         </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
       </node>
       <node id="29">
         <label>src/muda/cub/device/device_reduce.h</label>
@@ -502,17 +506,23 @@
         </childnode>
         <childnode refid="30" relation="include">
         </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
       </node>
       <node id="34">
         <label>src/muda/cub/device/device_run_length_encode.h</label>
         <link refid="device__run__length__encode_8h_source"/>
         <childnode refid="23" relation="include">
         </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
       </node>
       <node id="35">
         <label>src/muda/cub/device/device_scan.h</label>
         <link refid="device__scan_8h_source"/>
         <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
         </childnode>
       </node>
       <node id="36">
@@ -525,6 +535,8 @@
         <label>src/muda/cub/device/device_segmented_reduce.h</label>
         <link refid="device__segmented__reduce_8h_source"/>
         <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
         </childnode>
       </node>
       <node id="38">
@@ -1010,6 +1022,8 @@
         <link refid="bsr__matrix__view_8h_source"/>
         <childnode refid="5" relation="include">
         </childnode>
+        <childnode refid="169" relation="include">
+        </childnode>
         <childnode refid="51" relation="include">
         </childnode>
       </node>
@@ -1087,6 +1101,8 @@
         <label>src/muda/ext/linear_system/device_bsr_matrix.h</label>
         <link refid="device__bsr__matrix_8h_source"/>
         <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
         </childnode>
         <childnode refid="6" relation="include">
         </childnode>
@@ -1326,6 +1342,8 @@
       <node id="92">
         <label>src/muda/launch.h</label>
         <link refid="launch_8h_source"/>
+        <childnode refid="8" relation="include">
+        </childnode>
         <childnode refid="41" relation="include">
         </childnode>
       </node>

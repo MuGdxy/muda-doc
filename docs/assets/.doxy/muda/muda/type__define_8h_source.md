@@ -7,7 +7,8 @@
 [Go to the documentation of this file](type__define_8h.md)
 
 
-```
+```C++
+
 ```
 
 

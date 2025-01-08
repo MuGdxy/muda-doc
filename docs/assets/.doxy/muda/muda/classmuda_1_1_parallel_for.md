@@ -297,7 +297,7 @@ See [muda::LaunchCore](classmuda_1_1_launch_core.md)
 ### typedef NodeParms 
 
 ```C++
-using muda::ParallelFor::NodeParms =  KernelNodeParms<details::ParallelForCallable<raw_type_t<F> >>;
+using muda::ParallelFor::NodeParms =  KernelNodeParms<details::ParallelForCallable<raw_type_t<F>>>;
 ```
 
 

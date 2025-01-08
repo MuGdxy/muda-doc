@@ -35,12 +35,12 @@ Inherits the following classes: [muda::ViewBase](classmuda_1_1_view_base.md)
 | Type | Name |
 | ---: | :--- |
 | typedef typename ViewerCore::ConstMatMap | [**ConstMatMap**](#typedef-constmatmap)  <br> |
-| typedef CFieldEntryViewer&lt; T, Layout, M, N &gt; | [**ConstViewer**](#typedef-constviewer)  <br> |
+| typedef [**CFieldEntryViewer**](classmuda_1_1_c_field_entry_viewer.md)&lt; T, Layout, M, N &gt; | [**ConstViewer**](#typedef-constviewer)  <br> |
 | typedef typename ViewerCore::MatStride | [**MatStride**](#typedef-matstride)  <br> |
 | typedef typename ViewerCore::NonConstMatMap | [**NonConstMatMap**](#typedef-nonconstmatmap)  <br> |
-| typedef FieldEntryViewer&lt; T, Layout, M, N &gt; | [**NonConstViewer**](#typedef-nonconstviewer)  <br> |
+| typedef [**FieldEntryViewer**](classmuda_1_1_field_entry_viewer.md)&lt; T, Layout, M, N &gt; | [**NonConstViewer**](#typedef-nonconstviewer)  <br> |
 | typedef typename ViewerCore::ThisMatMap | [**ThisMatMap**](#typedef-thismatmap)  <br> |
-| typedef std::conditional\_t&lt; IsConst, ConstViewer, NonConstViewer &gt; | [**ThisViewer**](#typedef-thisviewer)  <br> |
+| typedef std::conditional\_t&lt; IsConst, [**ConstViewer**](classmuda_1_1_c_field_entry_viewer.md), [**NonConstViewer**](classmuda_1_1_field_entry_viewer.md) &gt; | [**ThisViewer**](#typedef-thisviewer)  <br> |
 | typedef typename Base::template auto\_const\_t&lt; U &gt; | [**auto\_const\_t**](#typedef-auto_const_t)  <br> |
 
 
@@ -70,8 +70,8 @@ See [muda::ViewBase](classmuda_1_1_view_base.md)
 
 | Type | Name |
 | ---: | :--- |
-|  constexpr bool | [**IsConst**](classmuda_1_1_view_base.md#variable-isconst)   = = IsConst\_<br> |
-|  constexpr bool | [**IsNonConst**](classmuda_1_1_view_base.md#variable-isnonconst)   = = !IsConst\_<br> |
+|  bool | [**IsConst**](classmuda_1_1_view_base.md#variable-isconst)   = = IsConst\_<br> |
+|  bool | [**IsNonConst**](classmuda_1_1_view_base.md#variable-isnonconst)   = = !IsConst\_<br> |
 
 
 

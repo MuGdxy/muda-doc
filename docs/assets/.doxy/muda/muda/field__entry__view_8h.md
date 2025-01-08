@@ -47,8 +47,8 @@
 | Type | Name |
 | ---: | :--- |
 | class | [**FieldEntryViewCore**](classmuda_1_1_field_entry_view_core.md) &lt;IsConst, typename T, Layout, M, N&gt;<br> |
-| struct | [**read\_only\_viewer&lt; FieldEntryView&lt; T, Layout, M, N &gt; &gt;**](structmuda_1_1read__only__viewer_3_01_field_entry_view_3_01_t_00_01_layout_00_01_m_00_01_n_01_4_01_4.md) &lt;typename T, Layout, M, N&gt;<br> |
-| struct | [**read\_write\_viewer&lt; CFieldEntryView&lt; T, Layout, M, N &gt; &gt;**](structmuda_1_1read__write__viewer_3_01_c_field_entry_view_3_01_t_00_01_layout_00_01_m_00_01_n_01_4_01_4.md) &lt;typename T, Layout, M, N&gt;<br> |
+| struct | [**read\_only\_view**](structmuda_1_1read__only__view.md) &lt;typename T&gt;<br> |
+| struct | [**read\_write\_view**](structmuda_1_1read__write__view.md) &lt;typename T&gt;<br> |
 
 
 

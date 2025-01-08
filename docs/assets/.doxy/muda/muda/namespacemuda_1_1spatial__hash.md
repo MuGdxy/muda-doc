@@ -39,8 +39,8 @@
 | class | [**CollisionPair**](classmuda_1_1spatial__hash_1_1_collision_pair.md) <br> |
 | class | [**DefaultPredication**](classmuda_1_1spatial__hash_1_1_default_predication.md) <br> |
 | class | [**Morton**](classmuda_1_1spatial__hash_1_1_morton.md) &lt;typename T&gt;<br> |
-| class | [**Morton&lt; uint32\_t &gt;**](classmuda_1_1spatial__hash_1_1_morton_3_01uint32__t_01_4.md) &lt;&gt;<br> |
-| class | [**Morton&lt; uint64\_t &gt;**](classmuda_1_1spatial__hash_1_1_morton_3_01uint64__t_01_4.md) &lt;&gt;<br> |
+| class | [**Morton**](classmuda_1_1spatial__hash_1_1_morton.md) &lt;typename T&gt;<br> |
+| class | [**Morton**](classmuda_1_1spatial__hash_1_1_morton.md) &lt;typename T&gt;<br> |
 | class | [**SparseSpatialHash**](classmuda_1_1spatial__hash_1_1_sparse_spatial_hash.md) &lt;typename Hash&gt;<br> |
 | class | [**SpatialHashTableInfo**](classmuda_1_1spatial__hash_1_1_spatial_hash_table_info.md) &lt;typename Hash&gt;<br> |
 | class | [**SpatialPartitionCell**](classmuda_1_1spatial__hash_1_1_spatial_partition_cell.md) <br>_To represent a cell-object pair in the spatial hash 3D grid e.g. (cell\_id,object\_id) = (1024, 32) for the meaning: the 32th object overlap with the 1024th cell._  |

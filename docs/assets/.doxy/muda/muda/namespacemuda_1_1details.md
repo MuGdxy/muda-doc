@@ -46,7 +46,6 @@
 | class | [**LoggerMetaData**](classmuda_1_1details_1_1_logger_meta_data.md) <br> |
 | class | [**LoggerOffset**](classmuda_1_1details_1_1_logger_offset.md) <br> |
 | class | [**MatrixFormatConverter**](classmuda_1_1details_1_1_matrix_format_converter.md) &lt;typename T, N&gt;<br> |
-| class | [**MatrixFormatConverter&lt; T, 1 &gt;**](classmuda_1_1details_1_1_matrix_format_converter_3_01_t_00_011_01_4.md) &lt;typename T&gt;<br> |
 | class | [**MatrixFormatConverterBase**](classmuda_1_1details_1_1_matrix_format_converter_base.md) <br> |
 | class | [**MatrixFormatConverterType**](classmuda_1_1details_1_1_matrix_format_converter_type.md) <br> |
 | class | [**ParallelForCallable**](classmuda_1_1details_1_1_parallel_for_callable.md) &lt;typename F&gt;<br> |
@@ -128,7 +127,7 @@
 ### typedef ByteTempBuffer 
 
 ```C++
-using muda::details::ByteTempBuffer = typedef TempBuffer<std::byte>;
+using muda::details::ByteTempBuffer =  TempBuffer<std::byte>;
 ```
 
 
@@ -141,7 +140,7 @@ using muda::details::ByteTempBuffer = typedef TempBuffer<std::byte>;
 ### typedef vector\_base 
 
 ```C++
-using muda::details::vector_base = typedef thrust::detail::vector_base<T, Alloc>;
+using muda::details::vector_base =  thrust::detail::vector_base<T, Alloc>;
 ```
 
 

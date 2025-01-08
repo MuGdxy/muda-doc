@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.1" xml:lang="en-US">
   <compounddef id="namespacemuda_1_1lbvh" kind="namespace" language="C++">
     <compoundname>muda::lbvh</compoundname>
     <innerclass refid="structmuda_1_1lbvh_1_1_a_a_b_b" prot="public">muda::lbvh::AABB</innerclass>
@@ -8,11 +8,11 @@
     <innerclass refid="structmuda_1_1lbvh_1_1query__nearest" prot="public">muda::lbvh::query_nearest</innerclass>
     <innerclass refid="structmuda_1_1lbvh_1_1query__overlap" prot="public">muda::lbvh::query_overlap</innerclass>
     <innerclass refid="structmuda_1_1lbvh_1_1vector__of" prot="public">muda::lbvh::vector_of</innerclass>
-    <innerclass refid="structmuda_1_1lbvh_1_1vector__of_3_01double_01_4" prot="public">muda::lbvh::vector_of&lt; double &gt;</innerclass>
-    <innerclass refid="structmuda_1_1lbvh_1_1vector__of_3_01float_01_4" prot="public">muda::lbvh::vector_of&lt; float &gt;</innerclass>
+    <innerclass refid="structmuda_1_1lbvh_1_1vector__of" prot="public">muda::lbvh::vector_of&lt; double &gt;</innerclass>
+    <innerclass refid="structmuda_1_1lbvh_1_1vector__of" prot="public">muda::lbvh::vector_of&lt; float &gt;</innerclass>
     <innernamespace refid="namespacemuda_1_1lbvh_1_1details">muda::lbvh::details</innernamespace>
     <sectiondef kind="typedef">
-      <memberdef kind="typedef" id="bvh__viewer_8h_1a2998e0067a3a8de6d6714e5625440d96" prot="public" static="no">
+      <memberdef kind="typedef" id="bvh__viewer_8h_1af7ac4a70cb8f153e0b43d1bb112a0f31" prot="public" static="no">
         <templateparamlist>
           <param>
             <type>typename Real</type>
@@ -22,7 +22,7 @@
           </param>
         </templateparamlist>
         <type><ref refid="classmuda_1_1lbvh_1_1details_1_1_b_v_h_viewer_base" kindref="compound">details::BVHViewerBase</ref>&lt; false, Real, Object &gt;</type>
-        <definition>using muda::lbvh::BVHViewer = typedef details::BVHViewerBase&lt;false, Real, Object&gt;</definition>
+        <definition>using muda::lbvh::BVHViewer =  details::BVHViewerBase&lt;false, Real, Object&gt;</definition>
         <argsstring></argsstring>
         <name>BVHViewer</name>
         <qualifiedname>muda::lbvh::BVHViewer</qualifiedname>
@@ -34,7 +34,7 @@
         </inbodydescription>
         <location file="src/muda/ext/geo/lbvh/bvh_viewer.h" line="360" column="1" bodyfile="src/muda/ext/geo/lbvh/bvh_viewer.h" bodystart="360" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="typedef" id="bvh__viewer_8h_1a4c9ec450adb2477c86c98b98b8d0c482" prot="public" static="no">
+      <memberdef kind="typedef" id="bvh__viewer_8h_1a4c0b2d3338574b0595d5880d1711c36e" prot="public" static="no">
         <templateparamlist>
           <param>
             <type>typename Real</type>
@@ -44,7 +44,7 @@
           </param>
         </templateparamlist>
         <type><ref refid="classmuda_1_1lbvh_1_1details_1_1_b_v_h_viewer_base" kindref="compound">details::BVHViewerBase</ref>&lt; true, Real, Object &gt;</type>
-        <definition>using muda::lbvh::CBVHViewer = typedef details::BVHViewerBase&lt;true, Real, Object&gt;</definition>
+        <definition>using muda::lbvh::CBVHViewer =  details::BVHViewerBase&lt;true, Real, Object&gt;</definition>
         <argsstring></argsstring>
         <name>CBVHViewer</name>
         <qualifiedname>muda::lbvh::CBVHViewer</qualifiedname>
@@ -56,14 +56,14 @@
         </inbodydescription>
         <location file="src/muda/ext/geo/lbvh/bvh_viewer.h" line="362" column="1" bodyfile="src/muda/ext/geo/lbvh/bvh_viewer.h" bodystart="362" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="typedef" id="utility_8h_1a3db19ac2711fb63d64d37c0f9fc1b00b" prot="public" static="no">
+      <memberdef kind="typedef" id="utility_8h_1af735bbc8127d2d6b9aeb705fa1f17fd3" prot="public" static="no">
         <templateparamlist>
           <param>
             <type>typename T</type>
           </param>
         </templateparamlist>
         <type>typename <ref refid="structmuda_1_1lbvh_1_1vector__of" kindref="compound">vector_of</ref>&lt; T &gt;::type</type>
-        <definition>using muda::lbvh::vector_of_t = typedef typename vector_of&lt;T&gt;::type</definition>
+        <definition>using muda::lbvh::vector_of_t =  typename vector_of&lt;T&gt;::type</definition>
         <argsstring></argsstring>
         <name>vector_of_t</name>
         <qualifiedname>muda::lbvh::vector_of_t</qualifiedname>

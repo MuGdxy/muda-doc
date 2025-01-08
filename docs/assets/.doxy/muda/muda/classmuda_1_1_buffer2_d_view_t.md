@@ -67,8 +67,8 @@ See [muda::ViewBase](classmuda_1_1_view_base.md)
 
 | Type | Name |
 | ---: | :--- |
-|  constexpr bool | [**IsConst**](classmuda_1_1_view_base.md#variable-isconst)   = = IsConst\_<br> |
-|  constexpr bool | [**IsNonConst**](classmuda_1_1_view_base.md#variable-isnonconst)   = = !IsConst\_<br> |
+|  bool | [**IsConst**](classmuda_1_1_view_base.md#variable-isconst)   = = IsConst\_<br> |
+|  bool | [**IsNonConst**](classmuda_1_1_view_base.md#variable-isnonconst)   = = !IsConst\_<br> |
 
 
 
@@ -104,7 +104,7 @@ See [muda::ViewBase](classmuda_1_1_view_base.md)
 |  MUDA\_GENERIC | [**Buffer2DViewT**](#function-buffer2dviewt-46) (const [**Buffer2DViewT**](classmuda_1_1_buffer2_d_view_t.md)&lt; OtherIsConst, T &gt; & other) <br> |
 |  MUDA\_GENERIC | [**Buffer2DViewT**](#function-buffer2dviewt-56) (auto\_const\_t&lt; T &gt; \* data, size\_t pitch\_bytes, size\_t origin\_width, size\_t origin\_height, const [**Offset2D**](classmuda_1_1_offset2_d.md) & offset, const [**Extent2D**](classmuda_1_1_extent2_d.md) & extent) <br> |
 |  MUDA\_GENERIC | [**Buffer2DViewT**](#function-buffer2dviewt-66) (auto\_const\_t&lt; T &gt; \* data, size\_t pitch\_bytes, const [**Offset2D**](classmuda_1_1_offset2_d.md) & offset, const [**Extent2D**](classmuda_1_1_extent2_d.md) & extent) <br> |
-|  [**ConstView**](classmuda_1_1_buffer2_d_view_t.md) | [**as\_const**](#function-as_const) () const<br> |
+|  MUDA\_GENERIC [**ConstView**](classmuda_1_1_buffer2_d_view_t.md) | [**as\_const**](#function-as_const) () const<br> |
 |  MUDA\_HOST void | [**copy\_from**](#function-copy_from-12) (const [**Buffer2DViewT**](classmuda_1_1_buffer2_d_view_t.md)&lt; true, T &gt; & other) <br> |
 |  MUDA\_HOST void | [**copy\_from**](#function-copy_from-22) (const T \* host) <br> |
 |  MUDA\_HOST void | [**copy\_to**](#function-copy_to) (T \* host) const<br> |
@@ -342,7 +342,7 @@ MUDA_GENERIC muda::Buffer2DViewT::Buffer2DViewT (
 ### function as\_const 
 
 ```C++
-ConstView muda::Buffer2DViewT::as_const () const
+MUDA_GENERIC ConstView muda::Buffer2DViewT::as_const () const
 ```
 
 

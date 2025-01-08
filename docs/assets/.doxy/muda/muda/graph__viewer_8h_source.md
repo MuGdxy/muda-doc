@@ -36,18 +36,18 @@ class GraphViewer : public ViewerBase<true>
 };
 
 template <>
-struct read_only_viewer<GraphViewer>
+struct read_only_view<GraphViewer>
 {
     using type = GraphViewer;
 };
 
 template <>
-struct read_write_viewer<GraphViewer>
+struct read_write_view<GraphViewer>
 {
     using type = GraphViewer;
 };
 
-static_assert(is_uniform_viewer_v<GraphViewer>);
+static_assert(is_uniform_view_v<GraphViewer>);
 }  // namespace muda
 
 #include "details/graph_viewer.inl"

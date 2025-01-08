@@ -1,7 +1,12 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.1" xml:lang="en-US">
   <compounddef id="classmuda_1_1_compute_graph_node_base" kind="class" language="C++" prot="public">
     <compoundname>muda::ComputeGraphNodeBase</compoundname>
+    <derivedcompoundref refid="classmuda_1_1_compute_graph_node" prot="public" virt="non-virtual">muda::ComputeGraphNode&lt; EventRecordNode, ComputeGraphNodeType::EventRecordNode &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classmuda_1_1_compute_graph_node" prot="public" virt="non-virtual">muda::ComputeGraphNode&lt; EventWaitNode, ComputeGraphNodeType::EventWaitNode &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classmuda_1_1_compute_graph_node" prot="public" virt="non-virtual">muda::ComputeGraphNode&lt; KernelNode, ComputeGraphNodeType::KernelNode &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classmuda_1_1_compute_graph_node" prot="public" virt="non-virtual">muda::ComputeGraphNode&lt; MemcpyNode, ComputeGraphNodeType::MemcpyNode &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classmuda_1_1_compute_graph_node" prot="public" virt="non-virtual">muda::ComputeGraphNode&lt; MemsetNode, ComputeGraphNodeType::MemsetNode &gt;</derivedcompoundref>
     <derivedcompoundref refid="classmuda_1_1_compute_graph_capture_node" prot="public" virt="non-virtual">muda::ComputeGraphCaptureNode</derivedcompoundref>
     <derivedcompoundref refid="classmuda_1_1_compute_graph_node" prot="public" virt="non-virtual">muda::ComputeGraphNode&lt; NodeT, Type &gt;</derivedcompoundref>
     <sectiondef kind="protected-type">
@@ -289,14 +294,44 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="2">
+      <node id="7">
         <label>muda::ComputeGraphCaptureNode</label>
         <link refid="classmuda_1_1_compute_graph_capture_node"/>
         <childnode refid="1" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="3">
+      <node id="8">
         <label>muda::ComputeGraphNode&lt; NodeT, Type &gt;</label>
+        <link refid="classmuda_1_1_compute_graph_node"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>muda::ComputeGraphNode&lt; EventRecordNode, ComputeGraphNodeType::EventRecordNode &gt;</label>
+        <link refid="classmuda_1_1_compute_graph_node"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>muda::ComputeGraphNode&lt; EventWaitNode, ComputeGraphNodeType::EventWaitNode &gt;</label>
+        <link refid="classmuda_1_1_compute_graph_node"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>muda::ComputeGraphNode&lt; KernelNode, ComputeGraphNodeType::KernelNode &gt;</label>
+        <link refid="classmuda_1_1_compute_graph_node"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>muda::ComputeGraphNode&lt; MemcpyNode, ComputeGraphNodeType::MemcpyNode &gt;</label>
+        <link refid="classmuda_1_1_compute_graph_node"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>muda::ComputeGraphNode&lt; MemsetNode, ComputeGraphNodeType::MemsetNode &gt;</label>
         <link refid="classmuda_1_1_compute_graph_node"/>
         <childnode refid="1" relation="public-inheritance">
         </childnode>

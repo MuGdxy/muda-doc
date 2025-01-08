@@ -36,8 +36,8 @@ _A C/C++ array like viewer for kernel access, with safe checking on any input. Y
 | Type | Name |
 | ---: | :--- |
 | class | [**Dense1DT**](classmuda_1_1_dense1_d_t.md) &lt;IsConst, typename T&gt;<br> |
-| struct | [**read\_only\_viewer&lt; Dense1D&lt; T &gt; &gt;**](structmuda_1_1read__only__viewer_3_01_dense1_d_3_01_t_01_4_01_4.md) &lt;typename T&gt;<br> |
-| struct | [**read\_write\_viewer&lt; CDense1D&lt; T &gt; &gt;**](structmuda_1_1read__write__viewer_3_01_c_dense1_d_3_01_t_01_4_01_4.md) &lt;typename T&gt;<br> |
+| struct | [**read\_only\_view**](structmuda_1_1read__only__view.md) &lt;typename T&gt;<br> |
+| struct | [**read\_write\_view**](structmuda_1_1read__write__view.md) &lt;typename T&gt;<br> |
 
 
 
@@ -88,7 +88,7 @@ _A C/C++ array like viewer for kernel access, with safe checking on any input. Y
 
 
 
-# Detailed Description
+## Detailed Description
 
 
 

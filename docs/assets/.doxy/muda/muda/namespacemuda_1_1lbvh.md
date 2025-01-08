@@ -40,8 +40,8 @@
 | struct | [**query\_nearest**](structmuda_1_1lbvh_1_1query__nearest.md) &lt;typename Real&gt;<br> |
 | struct | [**query\_overlap**](structmuda_1_1lbvh_1_1query__overlap.md) &lt;typename Real&gt;<br> |
 | struct | [**vector\_of**](structmuda_1_1lbvh_1_1vector__of.md) &lt;typename T&gt;<br> |
-| struct | [**vector\_of&lt; double &gt;**](structmuda_1_1lbvh_1_1vector__of_3_01double_01_4.md) &lt;&gt;<br> |
-| struct | [**vector\_of&lt; float &gt;**](structmuda_1_1lbvh_1_1vector__of_3_01float_01_4.md) &lt;&gt;<br> |
+| struct | [**vector\_of**](structmuda_1_1lbvh_1_1vector__of.md) &lt;typename T&gt;<br> |
+| struct | [**vector\_of**](structmuda_1_1lbvh_1_1vector__of.md) &lt;typename T&gt;<br> |
 
 
 ## Public Types
@@ -134,7 +134,7 @@
 ### typedef BVHViewer 
 
 ```C++
-using muda::lbvh::BVHViewer = typedef details::BVHViewerBase<false, Real, Object>;
+using muda::lbvh::BVHViewer =  details::BVHViewerBase<false, Real, Object>;
 ```
 
 
@@ -147,7 +147,7 @@ using muda::lbvh::BVHViewer = typedef details::BVHViewerBase<false, Real, Object
 ### typedef CBVHViewer 
 
 ```C++
-using muda::lbvh::CBVHViewer = typedef details::BVHViewerBase<true, Real, Object>;
+using muda::lbvh::CBVHViewer =  details::BVHViewerBase<true, Real, Object>;
 ```
 
 
@@ -160,7 +160,7 @@ using muda::lbvh::CBVHViewer = typedef details::BVHViewerBase<true, Real, Object
 ### typedef vector\_of\_t 
 
 ```C++
-using muda::lbvh::vector_of_t = typedef typename vector_of<T>::type;
+using muda::lbvh::vector_of_t =  typename vector_of<T>::type;
 ```
 
 

@@ -37,7 +37,7 @@
 
 | Type | Name |
 | ---: | :--- |
-|  constexpr cusparseSpMVAlg\_t | [**SPMV\_ALG\_DEFAULT**](#variable-spmv_alg_default)   = = (cusparseSpMVAlg\_t)0<br> |
+|  cusparseSpMVAlg\_t | [**SPMV\_ALG\_DEFAULT**](#variable-spmv_alg_default)   = = (cusparseSpMVAlg\_t)0<br> |
 
 
 
@@ -88,7 +88,7 @@
 ### variable SPMV\_ALG\_DEFAULT 
 
 ```C++
-constexpr cusparseSpMVAlg_t muda::LinearSystemAlgorithm::SPMV_ALG_DEFAULT;
+cusparseSpMVAlg_t muda::LinearSystemAlgorithm::SPMV_ALG_DEFAULT;
 ```
 
 

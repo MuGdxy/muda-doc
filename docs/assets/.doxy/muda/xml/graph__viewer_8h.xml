@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.1" xml:lang="en-US">
   <compounddef id="graph__viewer_8h" kind="file" language="C++">
     <compoundname>graph_viewer.h</compoundname>
     <includes local="no">cuda.h</includes>
@@ -330,7 +330,7 @@
         <childnode refid="7" relation="include">
         </childnode>
       </node>
-      <node id="29">
+      <node id="30">
         <label>src/muda/compute_graph/nodes/compute_graph_catpure_node.h</label>
         <link refid="compute__graph__catpure__node_8h_source"/>
       </node>
@@ -338,7 +338,7 @@
         <label>src/muda/compute_graph/nodes/compute_graph_event_node.h</label>
         <link refid="compute__graph__event__node_8h_source"/>
       </node>
-      <node id="30">
+      <node id="31">
         <label>src/muda/compute_graph/nodes/compute_graph_kernel_node.h</label>
         <link refid="compute__graph__kernel__node_8h_source"/>
       </node>
@@ -365,13 +365,11 @@
         </childnode>
         <childnode refid="12" relation="include">
         </childnode>
-        <childnode refid="13" relation="include">
-        </childnode>
         <childnode refid="14" relation="include">
         </childnode>
         <childnode refid="15" relation="include">
         </childnode>
-        <childnode refid="20" relation="include">
+        <childnode refid="16" relation="include">
         </childnode>
         <childnode refid="21" relation="include">
         </childnode>
@@ -384,6 +382,8 @@
         <childnode refid="25" relation="include">
         </childnode>
         <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
         </childnode>
       </node>
       <node id="8">
@@ -403,125 +403,141 @@
         <link refid="device__merge__sort_8h_source"/>
         <childnode refid="9" relation="include">
         </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
       </node>
-      <node id="13">
+      <node id="14">
         <label>src/muda/cub/device/device_partition.h</label>
         <link refid="device__partition_8h_source"/>
         <childnode refid="9" relation="include">
         </childnode>
       </node>
-      <node id="14">
+      <node id="15">
         <label>src/muda/cub/device/device_radix_sort.h</label>
         <link refid="device__radix__sort_8h_source"/>
         <childnode refid="9" relation="include">
         </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
       </node>
-      <node id="15">
+      <node id="16">
         <label>src/muda/cub/device/device_reduce.h</label>
         <link refid="device__reduce_8h_source"/>
         <childnode refid="9" relation="include">
         </childnode>
-        <childnode refid="16" relation="include">
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
         </childnode>
       </node>
-      <node id="20">
+      <node id="21">
         <label>src/muda/cub/device/device_run_length_encode.h</label>
         <link refid="device__run__length__encode_8h_source"/>
         <childnode refid="9" relation="include">
         </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
       </node>
-      <node id="21">
+      <node id="22">
         <label>src/muda/cub/device/device_scan.h</label>
         <link refid="device__scan_8h_source"/>
         <childnode refid="9" relation="include">
         </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
       </node>
-      <node id="22">
+      <node id="23">
         <label>src/muda/cub/device/device_segmented_radix_sort.h</label>
         <link refid="device__segmented__radix__sort_8h_source"/>
         <childnode refid="9" relation="include">
         </childnode>
       </node>
-      <node id="23">
+      <node id="24">
         <label>src/muda/cub/device/device_segmented_reduce.h</label>
         <link refid="device__segmented__reduce_8h_source"/>
         <childnode refid="9" relation="include">
         </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
       </node>
-      <node id="24">
+      <node id="25">
         <label>src/muda/cub/device/device_segmented_sort.h</label>
         <link refid="device__segmented__sort_8h_source"/>
         <childnode refid="9" relation="include">
         </childnode>
       </node>
-      <node id="25">
+      <node id="26">
         <label>src/muda/cub/device/device_select.h</label>
         <link refid="device__select_8h_source"/>
         <childnode refid="9" relation="include">
         </childnode>
       </node>
-      <node id="26">
+      <node id="27">
         <label>src/muda/cub/device/device_spmv.h</label>
         <link refid="device__spmv_8h_source"/>
         <childnode refid="9" relation="include">
         </childnode>
       </node>
-      <node id="18">
+      <node id="19">
         <label>src/muda/ext/geo/lbvh.h</label>
         <link refid="lbvh_8h_source"/>
       </node>
-      <node id="16">
+      <node id="17">
         <label>src/muda/ext/geo/lbvh/bvh.h</label>
         <link refid="bvh_8h_source"/>
-        <childnode refid="17" relation="include">
+        <childnode refid="18" relation="include">
         </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>src/muda/ext/geo/lbvh/lbvh.h</label>
+        <link refid="lbvh_2lbvh_8h_source"/>
         <childnode refid="19" relation="include">
         </childnode>
       </node>
-      <node id="17">
-        <label>src/muda/ext/geo/lbvh/lbvh.h</label>
-        <link refid="lbvh_2lbvh_8h_source"/>
+      <node id="20">
+        <label>src/muda/ext/geo/lbvh/query.h</label>
+        <link refid="query_8h_source"/>
         <childnode refid="18" relation="include">
         </childnode>
       </node>
-      <node id="19">
-        <label>src/muda/ext/geo/lbvh/query.h</label>
-        <link refid="query_8h_source"/>
-        <childnode refid="17" relation="include">
-        </childnode>
+      <node id="13">
+        <label>src/muda/ext/linear_system/matrix_format_converter_impl.h</label>
+        <link refid="matrix__format__converter__impl_8h_source"/>
       </node>
-      <node id="31">
+      <node id="32">
         <label>src/muda/graph.h</label>
         <link refid="graph_8h_source"/>
         <childnode refid="4" relation="include">
         </childnode>
       </node>
-      <node id="28">
+      <node id="29">
         <label>src/muda/graph/graph.h</label>
         <link refid="graph_2graph_8h_source"/>
         <childnode refid="2" relation="include">
         </childnode>
-        <childnode refid="29" relation="include">
+        <childnode refid="30" relation="include">
         </childnode>
         <childnode refid="5" relation="include">
         </childnode>
-        <childnode refid="30" relation="include">
+        <childnode refid="31" relation="include">
         </childnode>
         <childnode refid="6" relation="include">
         </childnode>
-        <childnode refid="31" relation="include">
+        <childnode refid="32" relation="include">
         </childnode>
       </node>
-      <node id="27">
+      <node id="28">
         <label>src/muda/graph/graph_exec.h</label>
         <link refid="graph__exec_8h_source"/>
-        <childnode refid="28" relation="include">
+        <childnode refid="29" relation="include">
         </childnode>
       </node>
-      <node id="32">
+      <node id="33">
         <label>src/muda/graph/graph_graph_viewer.h</label>
         <link refid="graph__graph__viewer_8h_source"/>
-        <childnode refid="31" relation="include">
+        <childnode refid="32" relation="include">
         </childnode>
       </node>
       <node id="1">
@@ -529,9 +545,9 @@
         <link refid="graph__viewer_8h"/>
         <childnode refid="2" relation="include">
         </childnode>
-        <childnode refid="27" relation="include">
+        <childnode refid="28" relation="include">
         </childnode>
-        <childnode refid="32" relation="include">
+        <childnode refid="33" relation="include">
         </childnode>
       </node>
       <node id="4">
@@ -540,8 +556,8 @@
       </node>
     </invincdepgraph>
     <innerclass refid="classmuda_1_1_graph_viewer" prot="public">muda::GraphViewer</innerclass>
-    <innerclass refid="structmuda_1_1read__only__viewer_3_01_graph_viewer_01_4" prot="public">muda::read_only_viewer&lt; GraphViewer &gt;</innerclass>
-    <innerclass refid="structmuda_1_1read__write__viewer_3_01_graph_viewer_01_4" prot="public">muda::read_write_viewer&lt; GraphViewer &gt;</innerclass>
+    <innerclass refid="structmuda_1_1read__only__view" prot="public">muda::read_only_view&lt; GraphViewer &gt;</innerclass>
+    <innerclass refid="structmuda_1_1read__write__view" prot="public">muda::read_write_view&lt; GraphViewer &gt;</innerclass>
     <innernamespace refid="namespacemuda">muda</innernamespace>
     <briefdescription>
     </briefdescription>
@@ -554,13 +570,13 @@
 <codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;muda/graph/graph_instantiate_flag.h&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">muda</highlight></codeline>
 <codeline lineno="6"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="7" refid="classmuda_1_1_graph_viewer" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classmuda_1_1_graph_viewer" kindref="compound">GraphViewer</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classmuda_1_1_viewer_base" kindref="compound">ViewerBase</ref>&lt;true&gt;</highlight></codeline>
+<codeline lineno="7" refid="classmuda_1_1_graph_viewer" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">GraphViewer<sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>ViewerBase&lt;true&gt;</highlight></codeline>
 <codeline lineno="8"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/>MUDA_VIEWER_COMMON_NAME(<ref refid="classmuda_1_1_graph_viewer" kindref="compound">GraphViewer</ref>);</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/>MUDA_VIEWER_COMMON_NAME(GraphViewer);</highlight></codeline>
 <codeline lineno="10"><highlight class="normal"></highlight></codeline>
 <codeline lineno="11"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/>MUDA_GENERIC<sp/><ref refid="classmuda_1_1_graph_viewer" kindref="compound">GraphViewer</ref>()<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/>MUDA_GENERIC<sp/><ref refid="classmuda_1_1_graph_viewer" kindref="compound">GraphViewer</ref>(cudaGraphExec_t<sp/>graph,<sp/><ref refid="classmuda_1_1_flags" kindref="compound">Flags&lt;GraphInstantiateFlagBit&gt;</ref><sp/>flags);</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/>MUDA_GENERIC<sp/>GraphViewer()<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/>MUDA_GENERIC<sp/>GraphViewer(cudaGraphExec_t<sp/>graph,<sp/><ref refid="classmuda_1_1_flags" kindref="compound">Flags&lt;GraphInstantiateFlagBit&gt;</ref><sp/>flags);</highlight></codeline>
 <codeline lineno="14"><highlight class="normal"></highlight></codeline>
 <codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/>MUDA_GENERIC<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>launch(cudaStream_t<sp/>stream<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="16"><highlight class="normal"></highlight></codeline>
@@ -570,27 +586,27 @@
 <codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>MUDA_GENERIC<sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>handle()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_graph;<sp/>}</highlight></codeline>
 <codeline lineno="21"><highlight class="normal"></highlight></codeline>
 <codeline lineno="22"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classmuda_1_1_compute_graph" kindref="compound">ComputeGraph</ref>;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">ComputeGraph;</highlight></codeline>
 <codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>cudaGraphExec_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_graph<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classmuda_1_1_flags" kindref="compound">Flags&lt;GraphInstantiateFlagBit&gt;</ref><sp/>m_flags;</highlight></codeline>
 <codeline lineno="26"><highlight class="normal">};</highlight></codeline>
 <codeline lineno="27"><highlight class="normal"></highlight></codeline>
 <codeline lineno="28"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;&gt;</highlight></codeline>
-<codeline lineno="29" refid="structmuda_1_1read__only__viewer_3_01_graph_viewer_01_4" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structmuda_1_1read__only__viewer" kindref="compound">read_only_viewer</ref>&lt;<ref refid="classmuda_1_1_graph_viewer" kindref="compound">GraphViewer</ref>&gt;</highlight></codeline>
+<codeline lineno="29" refid="structmuda_1_1read__only__view" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structmuda_1_1read__only__view" kindref="compound">read_only_view</ref>&lt;<ref refid="classmuda_1_1_graph_viewer" kindref="compound">GraphViewer</ref>&gt;</highlight></codeline>
 <codeline lineno="30"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="classmuda_1_1_graph_viewer" kindref="compound">type</ref><sp/>=<sp/><ref refid="classmuda_1_1_graph_viewer" kindref="compound">GraphViewer</ref>;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">type<sp/>=<sp/><ref refid="classmuda_1_1_graph_viewer" kindref="compound">GraphViewer</ref>;</highlight></codeline>
 <codeline lineno="32"><highlight class="normal">};</highlight></codeline>
 <codeline lineno="33"><highlight class="normal"></highlight></codeline>
 <codeline lineno="34"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;&gt;</highlight></codeline>
-<codeline lineno="35" refid="structmuda_1_1read__write__viewer_3_01_graph_viewer_01_4" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structmuda_1_1read__write__viewer" kindref="compound">read_write_viewer</ref>&lt;<ref refid="classmuda_1_1_graph_viewer" kindref="compound">GraphViewer</ref>&gt;</highlight></codeline>
+<codeline lineno="35" refid="structmuda_1_1read__write__view" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structmuda_1_1read__write__view" kindref="compound">read_write_view</ref>&lt;<ref refid="classmuda_1_1_graph_viewer" kindref="compound">GraphViewer</ref>&gt;</highlight></codeline>
 <codeline lineno="36"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="classmuda_1_1_graph_viewer" kindref="compound">type</ref><sp/>=<sp/><ref refid="classmuda_1_1_graph_viewer" kindref="compound">GraphViewer</ref>;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">type<sp/>=<sp/><ref refid="classmuda_1_1_graph_viewer" kindref="compound">GraphViewer</ref>;</highlight></codeline>
 <codeline lineno="38"><highlight class="normal">};</highlight></codeline>
 <codeline lineno="39"><highlight class="normal"></highlight></codeline>
-<codeline lineno="40"><highlight class="normal"></highlight><highlight class="keyword">static_assert</highlight><highlight class="normal">(is_uniform_viewer_v&lt;GraphViewer&gt;);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="keyword">static_assert</highlight><highlight class="normal">(is_uniform_view_v&lt;GraphViewer&gt;);</highlight></codeline>
 <codeline lineno="41"><highlight class="normal">}<sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>muda</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="42"><highlight class="normal"></highlight></codeline>
-<codeline lineno="43"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;details/graph_viewer.inl&quot;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;details/graph_viewer.inl&quot;</highlight><highlight class="normal"></highlight></codeline>
     </programlisting>
     <location file="src/muda/graph/graph_viewer.h"/>
   </compounddef>

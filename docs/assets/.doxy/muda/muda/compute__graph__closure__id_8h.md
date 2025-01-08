@@ -37,6 +37,7 @@
 | Type | Name |
 | ---: | :--- |
 | class | [**ClosureId**](classmuda_1_1_closure_id.md) <br> |
+| struct | [**hash&lt; muda::ClosureId &gt;**](structstd_1_1hash_3_01muda_1_1_closure_id_01_4.md) &lt;&gt;<br> |
 
 
 

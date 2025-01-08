@@ -16,17 +16,20 @@
 namespace muda
 {
 template <bool IsConst, typename Ty, int N>
-class TripletMatrixViewBase : public ViewBase<IsConst>
+class TripletMatrixViewT : public ViewBase<IsConst>
 {
     using Base = ViewBase<IsConst>;
     template <typename U>
     using auto_const_t = typename Base::template auto_const_t<U>;
 
+    template <bool OtherIsConst, typename U, int M>
+    friend class TripletMatrixViewT;
+
   public:
     static_assert(!std::is_const_v<Ty>, "Ty must be non-const");
-    using ConstView    = TripletMatrixViewBase<true, Ty, N>;
-    using NonConstView = TripletMatrixViewBase<false, Ty, N>;
-    using ThisView     = TripletMatrixViewBase<IsConst, Ty, N>;
+    using ConstView    = TripletMatrixViewT<true, Ty, N>;
+    using NonConstView = TripletMatrixViewT<false, Ty, N>;
+    using ThisView     = TripletMatrixViewT<IsConst, Ty, N>;
 
   private:
     using ConstViewer    = CTripletMatrixViewer<Ty, N>;
@@ -56,20 +59,20 @@ class TripletMatrixViewBase : public ViewBase<IsConst>
     auto_const_t<BlockMatrix>* m_block_values      = nullptr;
 
   public:
-    MUDA_GENERIC TripletMatrixViewBase() = default;
-    MUDA_GENERIC TripletMatrixViewBase(int total_block_rows,
-                                       int total_block_cols,
+    MUDA_GENERIC TripletMatrixViewT() = default;
+    MUDA_GENERIC TripletMatrixViewT(int total_block_rows,
+                                    int total_block_cols,
 
-                                       int triplet_index_offset,
-                                       int triplet_count,
-                                       int total_triplet_count,
+                                    int triplet_index_offset,
+                                    int triplet_count,
+                                    int total_triplet_count,
 
-                                       int2 submatrix_offset,
-                                       int2 submatrix_extent,
+                                    int2 submatrix_offset,
+                                    int2 submatrix_extent,
 
-                                       auto_const_t<int>* block_row_indices,
-                                       auto_const_t<int>* block_col_indices,
-                                       auto_const_t<BlockMatrix>* block_values)
+                                    auto_const_t<int>* block_row_indices,
+                                    auto_const_t<int>* block_col_indices,
+                                    auto_const_t<BlockMatrix>* block_values)
         : m_total_block_rows(total_block_rows)
         , m_total_block_cols(total_block_cols)
         , m_triplet_index_offset(triplet_index_offset)
@@ -106,26 +109,42 @@ class TripletMatrixViewBase : public ViewBase<IsConst>
                            total_block_cols);
     }
 
-    MUDA_GENERIC TripletMatrixViewBase(int                total_block_rows,
-                                       int                total_block_cols,
-                                       int                total_triplet_count,
-                                       auto_const_t<int>* block_row_indices,
-                                       auto_const_t<int>* block_col_indices,
-                                       auto_const_t<BlockMatrix>* block_values)
-        : TripletMatrixViewBase(total_block_rows,
-                                total_block_cols,
-                                0,
-                                total_triplet_count,
-                                total_triplet_count,
-                                {0, 0},
-                                {total_block_rows, total_block_cols},
-                                block_row_indices,
-                                block_col_indices,
-                                block_values)
+    MUDA_GENERIC TripletMatrixViewT(int                total_block_rows,
+                                    int                total_block_cols,
+                                    int                total_triplet_count,
+                                    auto_const_t<int>* block_row_indices,
+                                    auto_const_t<int>* block_col_indices,
+                                    auto_const_t<BlockMatrix>* block_values)
+        : TripletMatrixViewT(total_block_rows,
+                             total_block_cols,
+                             0,
+                             total_triplet_count,
+                             total_triplet_count,
+                             {0, 0},
+                             {total_block_rows, total_block_cols},
+                             block_row_indices,
+                             block_col_indices,
+                             block_values)
     {
     }
 
-    // explicit conversion to non-const
+    template <bool OtherIsConst>
+    MUDA_GENERIC TripletMatrixViewT(const TripletMatrixViewT<OtherIsConst, Ty, N>& other) MUDA_NOEXCEPT
+        MUDA_REQUIRES(IsConst)
+        : m_total_block_rows(other.m_total_block_rows)
+        , m_total_block_cols(other.m_total_block_cols)
+        , m_triplet_index_offset(other.m_triplet_index_offset)
+        , m_triplet_count(other.m_triplet_count)
+        , m_total_triplet_count(other.m_total_triplet_count)
+        , m_submatrix_offset(other.m_submatrix_offset)
+        , m_submatrix_extent(other.m_submatrix_extent)
+        , m_block_row_indices(other.m_block_row_indices)
+        , m_block_col_indices(other.m_block_col_indices)
+        , m_block_values(other.m_block_values)
+    {
+        static_assert(IsConst);
+    }
+
     MUDA_GENERIC ConstView as_const() const
     {
         return ConstView{m_total_block_rows,
@@ -139,9 +158,6 @@ class TripletMatrixViewBase : public ViewBase<IsConst>
                          m_block_col_indices,
                          m_block_values};
     }
-
-    // implicit conversion to const
-    MUDA_GENERIC operator ConstView() const { return as_const(); }
 
     MUDA_GENERIC auto subview(int offset, int count) const
     {
@@ -182,7 +198,7 @@ class TripletMatrixViewBase : public ViewBase<IsConst>
                            m_block_values};
     }
 
-    MUDA_GENERIC auto viewer()
+    MUDA_GENERIC auto viewer() const
     {
         return ThisViewer{m_total_block_rows,
                           m_total_block_cols,
@@ -194,20 +210,6 @@ class TripletMatrixViewBase : public ViewBase<IsConst>
                           m_block_row_indices,
                           m_block_col_indices,
                           m_block_values};
-    }
-
-    // non-const access
-    MUDA_GENERIC auto_const_t<BlockMatrix>* block_values()
-    {
-        return m_block_values;
-    }
-    MUDA_GENERIC auto_const_t<int>* block_row_indices()
-    {
-        return m_block_row_indices;
-    }
-    MUDA_GENERIC auto_const_t<int>* block_col_indices()
-    {
-        return m_block_col_indices;
     }
 
     MUDA_GENERIC auto submatrix(int2 offset, int2 extent) const
@@ -241,7 +243,6 @@ class TripletMatrixViewBase : public ViewBase<IsConst>
                         m_block_values};
     }
 
-    // const access
     MUDA_GENERIC auto total_block_rows() const { return m_total_block_rows; }
     MUDA_GENERIC auto total_block_cols() const { return m_total_block_cols; }
     MUDA_GENERIC auto total_extent() const
@@ -264,7 +265,7 @@ class TripletMatrixViewBase : public ViewBase<IsConst>
 };
 
 template <bool IsConst, typename Ty>
-class TripletMatrixViewBase<IsConst, Ty, 1> : public ViewBase<IsConst>
+class TripletMatrixViewT<IsConst, Ty, 1> : public ViewBase<IsConst>
 {
     using Base = ViewBase<IsConst>;
 
@@ -272,11 +273,14 @@ class TripletMatrixViewBase<IsConst, Ty, 1> : public ViewBase<IsConst>
     template <typename U>
     using auto_const_t = typename Base::template auto_const_t<U>;
 
+    template <bool OtherIsConst, typename U, int M>
+    friend class TripletMatrixViewT;
+
   public:
     static_assert(!std::is_const_v<Ty>, "Ty must be non-const");
-    using ConstView    = TripletMatrixViewBase<true, Ty, 1>;
-    using NonConstView = TripletMatrixViewBase<false, Ty, 1>;
-    using ThisView     = TripletMatrixViewBase<IsConst, Ty, 1>;
+    using ConstView    = TripletMatrixViewT<true, Ty, 1>;
+    using NonConstView = TripletMatrixViewT<false, Ty, 1>;
+    using ThisView     = TripletMatrixViewT<IsConst, Ty, 1>;
 
   private:
     using ConstViewer    = CTripletMatrixViewer<Ty, 1>;
@@ -304,20 +308,20 @@ class TripletMatrixViewBase<IsConst, Ty, 1> : public ViewBase<IsConst>
 
 
   public:
-    MUDA_GENERIC TripletMatrixViewBase() = default;
+    MUDA_GENERIC TripletMatrixViewT() = default;
 
-    MUDA_GENERIC TripletMatrixViewBase(int total_rows,
-                                       int total_cols,
-                                       int triplet_index_offset,
-                                       int triplet_count,
-                                       int total_triplet_count,
+    MUDA_GENERIC TripletMatrixViewT(int total_rows,
+                                    int total_cols,
+                                    int triplet_index_offset,
+                                    int triplet_count,
+                                    int total_triplet_count,
 
-                                       int2 submatrix_offset,
-                                       int2 submatrix_extent,
+                                    int2 submatrix_offset,
+                                    int2 submatrix_extent,
 
-                                       auto_const_t<int>* row_indices,
-                                       auto_const_t<int>* col_indices,
-                                       auto_const_t<Ty>*  values)
+                                    auto_const_t<int>* row_indices,
+                                    auto_const_t<int>* col_indices,
+                                    auto_const_t<Ty>*  values)
         : m_total_rows(total_rows)
         , m_total_cols(total_cols)
         , m_triplet_index_offset(triplet_index_offset)
@@ -354,28 +358,42 @@ class TripletMatrixViewBase<IsConst, Ty, 1> : public ViewBase<IsConst>
                            total_cols);
     }
 
-
-    MUDA_GENERIC TripletMatrixViewBase(int                total_rows,
-                                       int                total_cols,
-                                       int                total_triplet_count,
-                                       auto_const_t<int>* row_indices,
-                                       auto_const_t<int>* col_indices,
-                                       auto_const_t<Ty>*  values)
-        : TripletMatrixViewBase(total_rows,
-                                total_cols,
-                                0,
-                                total_triplet_count,
-                                total_triplet_count,
-                                {0, 0},
-                                {total_rows, total_cols},
-                                row_indices,
-                                col_indices,
-                                values)
+    MUDA_GENERIC TripletMatrixViewT(int                total_rows,
+                                    int                total_cols,
+                                    int                total_triplet_count,
+                                    auto_const_t<int>* row_indices,
+                                    auto_const_t<int>* col_indices,
+                                    auto_const_t<Ty>*  values)
+        : TripletMatrixViewT(total_rows,
+                             total_cols,
+                             0,
+                             total_triplet_count,
+                             total_triplet_count,
+                             {0, 0},
+                             {total_rows, total_cols},
+                             row_indices,
+                             col_indices,
+                             values)
     {
     }
 
+    template <bool OtherIsConst>
+    MUDA_GENERIC TripletMatrixViewT(const TripletMatrixViewT<OtherIsConst, Ty, 1>& other) MUDA_NOEXCEPT
+        MUDA_REQUIRES(IsConst)
+        : m_total_rows(other.m_total_rows)
+        , m_total_cols(other.m_total_cols)
+        , m_triplet_index_offset(other.m_triplet_index_offset)
+        , m_triplet_count(other.m_triplet_count)
+        , m_total_triplet_count(other.m_total_triplet_count)
+        , m_submatrix_offset(other.m_submatrix_offset)
+        , m_submatrix_extent(other.m_submatrix_extent)
+        , m_row_indices(other.m_row_indices)
+        , m_col_indices(other.m_col_indices)
+        , m_values(other.m_values)
+    {
+        static_assert(IsConst);
+    }
 
-    // explicit conversion to non-const
     MUDA_GENERIC ConstView as_const() const
     {
         return ConstView{m_total_rows,
@@ -390,12 +408,9 @@ class TripletMatrixViewBase<IsConst, Ty, 1> : public ViewBase<IsConst>
                          m_values};
     }
 
-    // implicit conversion to const
-    MUDA_GENERIC operator ConstView() const { return as_const(); }
-
     MUDA_GENERIC auto subview(int offset, int count) const
     {
-        MUDA_ASSERT(offset + count < m_triplet_count,
+        MUDA_ASSERT(offset + count <= m_triplet_count,
                     "TripletMatrixView: offset is out of range, size=%d, your offset=%d, your count=%d",
                     m_triplet_count,
                     offset,
@@ -459,7 +474,7 @@ class TripletMatrixViewBase<IsConst, Ty, 1> : public ViewBase<IsConst>
                            m_values};
     }
 
-    MUDA_GENERIC auto viewer()
+    MUDA_GENERIC auto viewer() const
     {
         return ThisViewer{m_total_rows,
                           m_total_cols,
@@ -473,13 +488,6 @@ class TripletMatrixViewBase<IsConst, Ty, 1> : public ViewBase<IsConst>
                           m_values};
     }
 
-    // non-const access
-    MUDA_GENERIC auto_const_t<Ty>* values() { return m_values; }
-    MUDA_GENERIC auto_const_t<int>* row_indices() { return m_row_indices; }
-    MUDA_GENERIC auto_const_t<int>* col_indices() { return m_col_indices; }
-
-
-    // const access
     MUDA_GENERIC auto values() const { return m_values; }
     MUDA_GENERIC auto row_indices() const { return m_row_indices; }
     MUDA_GENERIC auto col_indices() const { return m_col_indices; }
@@ -506,21 +514,21 @@ class TripletMatrixViewBase<IsConst, Ty, 1> : public ViewBase<IsConst>
 };
 
 template <typename Ty, int N>
-using TripletMatrixView = TripletMatrixViewBase<false, Ty, N>;
+using TripletMatrixView = TripletMatrixViewT<false, Ty, N>;
 template <typename Ty, int N>
-using CTripletMatrixView = TripletMatrixViewBase<true, Ty, N>;
+using CTripletMatrixView = TripletMatrixViewT<true, Ty, N>;
 }  // namespace muda
 
 namespace muda
 {
 template <typename Ty, int N>
-struct read_only_viewer<TripletMatrixView<Ty, N>>
+struct read_only_view<TripletMatrixView<Ty, N>>
 {
     using type = CTripletMatrixView<Ty, N>;
 };
 
 template <typename Ty, int N>
-struct read_write_viewer<TripletMatrixView<Ty, N>>
+struct read_write_view<TripletMatrixView<Ty, N>>
 {
     using type = TripletMatrixView<Ty, N>;
 };

@@ -91,7 +91,7 @@ _cuda kernel launch in muda style._ [More...](#detailed-description)
 
 
 
-# Detailed Description
+## Detailed Description
 
 
 

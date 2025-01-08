@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.1" xml:lang="en-US">
   <compounddef id="classmuda_1_1_graph_viewer" kind="class" language="C++" prot="public">
     <compoundname>muda::GraphViewer</compoundname>
     <basecompoundref refid="classmuda_1_1_viewer_base" prot="public" virt="non-virtual">muda::ViewerBase&lt; true &gt;</basecompoundref>
@@ -176,27 +176,27 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="2">
-        <label>muda::ViewerBase&lt; true &gt;</label>
-        <link refid="classmuda_1_1_viewer_base"/>
-      </node>
       <node id="1">
         <label>muda::GraphViewer</label>
         <link refid="classmuda_1_1_graph_viewer"/>
         <childnode refid="2" relation="public-inheritance">
         </childnode>
+      </node>
+      <node id="2">
+        <label>muda::ViewerBase&lt; true &gt;</label>
+        <link refid="classmuda_1_1_viewer_base"/>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="2">
-        <label>muda::ViewerBase&lt; true &gt;</label>
-        <link refid="classmuda_1_1_viewer_base"/>
-      </node>
       <node id="1">
         <label>muda::GraphViewer</label>
         <link refid="classmuda_1_1_graph_viewer"/>
         <childnode refid="2" relation="public-inheritance">
         </childnode>
+      </node>
+      <node id="2">
+        <label>muda::ViewerBase&lt; true &gt;</label>
+        <link refid="classmuda_1_1_viewer_base"/>
       </node>
     </collaborationgraph>
     <location file="src/muda/graph/graph_viewer.h" line="7" column="1" bodyfile="src/muda/graph/graph_viewer.h" bodystart="8" bodyend="26"/>

@@ -111,13 +111,13 @@ template <typename T>
 using CBufferView = BufferViewT<true, T>;
 
 template <typename T>
-struct read_only_viewer<BufferView<T>>
+struct read_only_view<BufferView<T>>
 {
     using type = CBufferView<T>;
 };
 
 template <typename T>
-struct read_write_viewer<CBufferView<T>>
+struct read_write_view<CBufferView<T>>
 {
     using type = BufferView<T>;
 };

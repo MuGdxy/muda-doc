@@ -308,7 +308,6 @@ inline MUDA_HOST HostCall & muda::HostCall::apply (
 
 ### function as\_node\_parms 
 
-
 ```C++
 template<typename F, typename UserTag>
 inline MUDA_NODISCARD MUDA_HOST auto muda::HostCall::as_node_parms (

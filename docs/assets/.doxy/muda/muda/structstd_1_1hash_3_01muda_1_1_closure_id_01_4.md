@@ -6,7 +6,7 @@
 
 
 
-[**ClassList**](annotated.md) **>** [**hash&lt; muda::ClosureId &gt;**](structstd_1_1hash_3_01muda_1_1_closure_id_01_4.md)
+[**ClassList**](annotated.md) **>** [**std**](namespacestd.md) **>** [**hash&lt; muda::ClosureId &gt;**](structstd_1_1hash_3_01muda_1_1_closure_id_01_4.md)
 
 
 
@@ -90,7 +90,7 @@
 ### function operator() 
 
 ```C++
-inline size_t hash< muda::ClosureId >::operator() (
+inline size_t std::hash< muda::ClosureId >::operator() (
     const muda::ClosureId & s
 ) noexcept const
 ```

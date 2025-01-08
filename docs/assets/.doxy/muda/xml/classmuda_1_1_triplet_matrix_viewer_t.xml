@@ -1,0 +1,713 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.1" xml:lang="en-US">
+  <compounddef id="classmuda_1_1_triplet_matrix_viewer_t" kind="class" language="C++" prot="public">
+    <compoundname>muda::TripletMatrixViewerT</compoundname>
+    <basecompoundref refid="classmuda_1_1_viewer_base" prot="public" virt="non-virtual">muda::ViewerBase&lt; IsConst &gt;</basecompoundref>
+    <innerclass refid="structmuda_1_1_triplet_matrix_viewer_t_1_1_c_triplet" prot="public">muda::TripletMatrixViewerT::CTriplet</innerclass>
+    <innerclass refid="classmuda_1_1_triplet_matrix_viewer_t_1_1_proxy" prot="public">muda::TripletMatrixViewerT::Proxy</innerclass>
+    <templateparamlist>
+      <param>
+        <type>bool</type>
+        <declname>IsConst</declname>
+        <defname>IsConst</defname>
+      </param>
+      <param>
+        <type>typename T</type>
+      </param>
+      <param>
+        <type>int</type>
+        <declname>N</declname>
+        <defname>N</defname>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="private-type">
+      <memberdef kind="typedef" id="classmuda_1_1_triplet_matrix_viewer_t_1a283d8508759cf05d4b85eac09879600d" prot="private" static="no">
+        <type><ref refid="classmuda_1_1_viewer_base" kindref="compound">ViewerBase</ref>&lt; IsConst &gt;</type>
+        <definition>using muda::TripletMatrixViewerT&lt; IsConst, T, N &gt;::Base =  ViewerBase&lt;IsConst&gt;</definition>
+        <argsstring></argsstring>
+        <name>Base</name>
+        <qualifiedname>muda::TripletMatrixViewerT::Base</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/triplet_matrix_viewer.h" line="18" column="5" bodyfile="src/muda/ext/linear_system/triplet_matrix_viewer.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classmuda_1_1_triplet_matrix_viewer_t_1a581da576df01d64fa8ad07a855fc7d34" prot="private" static="no">
+        <templateparamlist>
+          <param>
+            <type>typename U</type>
+          </param>
+        </templateparamlist>
+        <type>typename Base::template auto_const_t&lt; U &gt;</type>
+        <definition>using muda::TripletMatrixViewerT&lt; IsConst, T, N &gt;::auto_const_t =  typename Base::template auto_const_t&lt;U&gt;</definition>
+        <argsstring></argsstring>
+        <name>auto_const_t</name>
+        <qualifiedname>muda::TripletMatrixViewerT::auto_const_t</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/triplet_matrix_viewer.h" line="20" column="5" bodyfile="src/muda/ext/linear_system/triplet_matrix_viewer.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classmuda_1_1_triplet_matrix_viewer_t_1a41d6333cc9c5a9ed6d9a9aa4e2e15e93" prot="public" static="no">
+        <type>std::conditional_t&lt; N==1, T, Eigen::Matrix&lt; T, N, N &gt; &gt;</type>
+        <definition>using muda::TripletMatrixViewerT&lt; IsConst, T, N &gt;::ValueT =  std::conditional_t&lt;N == 1, T, Eigen::Matrix&lt;T, N, N&gt;&gt;</definition>
+        <argsstring></argsstring>
+        <name>ValueT</name>
+        <qualifiedname>muda::TripletMatrixViewerT::ValueT</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/triplet_matrix_viewer.h" line="28" column="5" bodyfile="src/muda/ext/linear_system/triplet_matrix_viewer.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classmuda_1_1_triplet_matrix_viewer_t_1a362e3757cfeea16f60249584c18d4db3" prot="public" static="no">
+        <type><ref refid="classmuda_1_1_triplet_matrix_viewer_t" kindref="compound">TripletMatrixViewerT</ref>&lt; true, T, N &gt;</type>
+        <definition>using muda::TripletMatrixViewerT&lt; IsConst, T, N &gt;::ConstViewer =  TripletMatrixViewerT&lt;true, T, N&gt;</definition>
+        <argsstring></argsstring>
+        <name>ConstViewer</name>
+        <qualifiedname>muda::TripletMatrixViewerT::ConstViewer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/triplet_matrix_viewer.h" line="29" column="5" bodyfile="src/muda/ext/linear_system/triplet_matrix_viewer.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classmuda_1_1_triplet_matrix_viewer_t_1a79f31ce950bfaba8bf1eb78fb1daf46d" prot="public" static="no">
+        <type><ref refid="classmuda_1_1_triplet_matrix_viewer_t" kindref="compound">TripletMatrixViewerT</ref>&lt; false, T, N &gt;</type>
+        <definition>using muda::TripletMatrixViewerT&lt; IsConst, T, N &gt;::NonConstViewer =  TripletMatrixViewerT&lt;false, T, N&gt;</definition>
+        <argsstring></argsstring>
+        <name>NonConstViewer</name>
+        <qualifiedname>muda::TripletMatrixViewerT::NonConstViewer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/triplet_matrix_viewer.h" line="30" column="5" bodyfile="src/muda/ext/linear_system/triplet_matrix_viewer.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classmuda_1_1_triplet_matrix_viewer_t_1afff774977957c627b0458a5366153cb2" prot="public" static="no">
+        <type><ref refid="classmuda_1_1_triplet_matrix_viewer_t" kindref="compound">TripletMatrixViewerT</ref>&lt; IsConst, T, N &gt;</type>
+        <definition>using muda::TripletMatrixViewerT&lt; IsConst, T, N &gt;::ThisViewer =  TripletMatrixViewerT&lt;IsConst, T, N&gt;</definition>
+        <argsstring></argsstring>
+        <name>ThisViewer</name>
+        <qualifiedname>muda::TripletMatrixViewerT::ThisViewer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/triplet_matrix_viewer.h" line="31" column="5" bodyfile="src/muda/ext/linear_system/triplet_matrix_viewer.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="friend">
+      <memberdef kind="friend" id="classmuda_1_1_triplet_matrix_viewer_t_1abe0193b06ac87f6dec4ba139491cad7e" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>bool</type>
+            <declname>OtherIsConst</declname>
+            <defname>OtherIsConst</defname>
+          </param>
+          <param>
+            <type>typename U</type>
+          </param>
+          <param>
+            <type>int</type>
+            <declname>M</declname>
+            <defname>M</defname>
+          </param>
+        </templateparamlist>
+        <type>class</type>
+        <definition>friend class TripletMatrixViewerT</definition>
+        <argsstring></argsstring>
+        <name>TripletMatrixViewerT</name>
+        <qualifiedname>muda::TripletMatrixViewerT::TripletMatrixViewerT</qualifiedname>
+        <param>
+          <type><ref refid="classmuda_1_1_triplet_matrix_viewer_t" kindref="compound">TripletMatrixViewerT</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/triplet_matrix_viewer.h" line="23" column="18" bodyfile="src/muda/ext/linear_system/triplet_matrix_viewer.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classmuda_1_1_triplet_matrix_viewer_t_1ab04e1ec02c749d4fac3486b32b1018fa" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int muda::TripletMatrixViewerT&lt; IsConst, T, N &gt;::m_total_rows</definition>
+        <argsstring></argsstring>
+        <name>m_total_rows</name>
+        <qualifiedname>muda::TripletMatrixViewerT::m_total_rows</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/triplet_matrix_viewer.h" line="83" column="9" bodyfile="src/muda/ext/linear_system/triplet_matrix_viewer.h" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1_triplet_matrix_viewer_t_1a7ddf6a6af09b8a381acdcc7ecfcfbb3c" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int muda::TripletMatrixViewerT&lt; IsConst, T, N &gt;::m_total_cols</definition>
+        <argsstring></argsstring>
+        <name>m_total_cols</name>
+        <qualifiedname>muda::TripletMatrixViewerT::m_total_cols</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/triplet_matrix_viewer.h" line="84" column="9" bodyfile="src/muda/ext/linear_system/triplet_matrix_viewer.h" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1_triplet_matrix_viewer_t_1a2702e9a435b3b957719cc8a4ebda3411" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int muda::TripletMatrixViewerT&lt; IsConst, T, N &gt;::m_triplet_index_offset</definition>
+        <argsstring></argsstring>
+        <name>m_triplet_index_offset</name>
+        <qualifiedname>muda::TripletMatrixViewerT::m_triplet_index_offset</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/triplet_matrix_viewer.h" line="87" column="9" bodyfile="src/muda/ext/linear_system/triplet_matrix_viewer.h" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1_triplet_matrix_viewer_t_1a7798e002aad6d9cc61c127b8860cd8e6" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int muda::TripletMatrixViewerT&lt; IsConst, T, N &gt;::m_triplet_count</definition>
+        <argsstring></argsstring>
+        <name>m_triplet_count</name>
+        <qualifiedname>muda::TripletMatrixViewerT::m_triplet_count</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/triplet_matrix_viewer.h" line="88" column="9" bodyfile="src/muda/ext/linear_system/triplet_matrix_viewer.h" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1_triplet_matrix_viewer_t_1adaebcfeebb6087773f364b897a217e51" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int muda::TripletMatrixViewerT&lt; IsConst, T, N &gt;::m_total_triplet_count</definition>
+        <argsstring></argsstring>
+        <name>m_total_triplet_count</name>
+        <qualifiedname>muda::TripletMatrixViewerT::m_total_triplet_count</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/triplet_matrix_viewer.h" line="89" column="9" bodyfile="src/muda/ext/linear_system/triplet_matrix_viewer.h" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1_triplet_matrix_viewer_t_1af03af72fe63ade0ae9ddf7e29293226c" prot="protected" static="no" mutable="no">
+        <type>int2</type>
+        <definition>int2 muda::TripletMatrixViewerT&lt; IsConst, T, N &gt;::m_submatrix_offset</definition>
+        <argsstring></argsstring>
+        <name>m_submatrix_offset</name>
+        <qualifiedname>muda::TripletMatrixViewerT::m_submatrix_offset</qualifiedname>
+        <initializer>= {0, 0}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/triplet_matrix_viewer.h" line="92" column="10" bodyfile="src/muda/ext/linear_system/triplet_matrix_viewer.h" bodystart="92" bodyend="92"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1_triplet_matrix_viewer_t_1a0e38799318329f0866e92493bf6bdec5" prot="protected" static="no" mutable="no">
+        <type>int2</type>
+        <definition>int2 muda::TripletMatrixViewerT&lt; IsConst, T, N &gt;::m_submatrix_extent</definition>
+        <argsstring></argsstring>
+        <name>m_submatrix_extent</name>
+        <qualifiedname>muda::TripletMatrixViewerT::m_submatrix_extent</qualifiedname>
+        <initializer>= {0, 0}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/triplet_matrix_viewer.h" line="93" column="10" bodyfile="src/muda/ext/linear_system/triplet_matrix_viewer.h" bodystart="93" bodyend="93"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1_triplet_matrix_viewer_t_1a158db1e1ea5659d27ff9847ffc03d5a8" prot="protected" static="no" mutable="no">
+        <type>auto_const_t&lt; int &gt; *</type>
+        <definition>auto_const_t&lt;int&gt;* muda::TripletMatrixViewerT&lt; IsConst, T, N &gt;::m_row_indices</definition>
+        <argsstring></argsstring>
+        <name>m_row_indices</name>
+        <qualifiedname>muda::TripletMatrixViewerT::m_row_indices</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/triplet_matrix_viewer.h" line="96" column="21" bodyfile="src/muda/ext/linear_system/triplet_matrix_viewer.h" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1_triplet_matrix_viewer_t_1aa9f23b9466415101b0ba5245932d53c9" prot="protected" static="no" mutable="no">
+        <type>auto_const_t&lt; int &gt; *</type>
+        <definition>auto_const_t&lt;int&gt;* muda::TripletMatrixViewerT&lt; IsConst, T, N &gt;::m_col_indices</definition>
+        <argsstring></argsstring>
+        <name>m_col_indices</name>
+        <qualifiedname>muda::TripletMatrixViewerT::m_col_indices</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/triplet_matrix_viewer.h" line="97" column="21" bodyfile="src/muda/ext/linear_system/triplet_matrix_viewer.h" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1_triplet_matrix_viewer_t_1a7d4b41dea67b3186b721af95d80962af" prot="protected" static="no" mutable="no">
+        <type>auto_const_t&lt; ValueT &gt; *</type>
+        <definition>auto_const_t&lt;ValueT&gt;* muda::TripletMatrixViewerT&lt; IsConst, T, N &gt;::m_values</definition>
+        <argsstring></argsstring>
+        <name>m_values</name>
+        <qualifiedname>muda::TripletMatrixViewerT::m_values</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/triplet_matrix_viewer.h" line="98" column="18" bodyfile="src/muda/ext/linear_system/triplet_matrix_viewer.h" bodystart="98" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classmuda_1_1_triplet_matrix_viewer_t_1aa74bae819eb1e4186b78793d62ed9f30" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>muda::TripletMatrixViewerT&lt; IsConst, T, N &gt;::MUDA_VIEWER_COMMON_NAME</definition>
+        <argsstring>(TripletMatrixViewerT)</argsstring>
+        <name>MUDA_VIEWER_COMMON_NAME</name>
+        <qualifiedname>muda::TripletMatrixViewerT::MUDA_VIEWER_COMMON_NAME</qualifiedname>
+        <param>
+          <type><ref refid="classmuda_1_1_triplet_matrix_viewer_t" kindref="compound">TripletMatrixViewerT</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/triplet_matrix_viewer.h" line="25" column="5"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmuda_1_1_triplet_matrix_viewer_t_1a0fdf172de17d36c50eea6e14b592dcba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>MUDA_GENERIC</type>
+        <definition>MUDA_GENERIC muda::TripletMatrixViewerT&lt; IsConst, T, N &gt;::TripletMatrixViewerT</definition>
+        <argsstring>()=default</argsstring>
+        <name>TripletMatrixViewerT</name>
+        <qualifiedname>muda::TripletMatrixViewerT::TripletMatrixViewerT</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/triplet_matrix_viewer.h" line="102" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_triplet_matrix_viewer_t_1a58b869547b47822ee04021bcc36adc45" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>MUDA_GENERIC</type>
+        <definition>MUDA_GENERIC muda::TripletMatrixViewerT&lt; IsConst, T, N &gt;::TripletMatrixViewerT</definition>
+        <argsstring>(int total_block_rows, int total_block_cols, int triplet_index_offset, int triplet_count, int total_triplet_count, int2 submatrix_offset, int2 submatrix_extent, auto_const_t&lt; int &gt; *block_row_indices, auto_const_t&lt; int &gt; *block_col_indices, auto_const_t&lt; ValueT &gt; *block_values)</argsstring>
+        <name>TripletMatrixViewerT</name>
+        <qualifiedname>muda::TripletMatrixViewerT::TripletMatrixViewerT</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>total_block_rows</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>total_block_cols</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>triplet_index_offset</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>triplet_count</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>total_triplet_count</declname>
+        </param>
+        <param>
+          <type>int2</type>
+          <declname>submatrix_offset</declname>
+        </param>
+        <param>
+          <type>int2</type>
+          <declname>submatrix_extent</declname>
+        </param>
+        <param>
+          <type>auto_const_t&lt; int &gt; *</type>
+          <declname>block_row_indices</declname>
+        </param>
+        <param>
+          <type>auto_const_t&lt; int &gt; *</type>
+          <declname>block_col_indices</declname>
+        </param>
+        <param>
+          <type>auto_const_t&lt; ValueT &gt; *</type>
+          <declname>block_values</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/triplet_matrix_viewer.h" line="104" column="18" bodyfile="src/muda/ext/linear_system/triplet_matrix_viewer.h" bodystart="104" bodyend="166"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_triplet_matrix_viewer_t_1ad46fba5f0c1ebf569a8a6ab0262b386f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>bool</type>
+            <declname>OtherIsConst</declname>
+            <defname>OtherIsConst</defname>
+          </param>
+        </templateparamlist>
+        <type>MUDA_GENERIC</type>
+        <definition>MUDA_GENERIC muda::TripletMatrixViewerT&lt; IsConst, T, N &gt;::TripletMatrixViewerT</definition>
+        <argsstring>(const TripletMatrixViewerT&lt; OtherIsConst, T, N &gt; &amp;other)</argsstring>
+        <name>TripletMatrixViewerT</name>
+        <qualifiedname>muda::TripletMatrixViewerT::TripletMatrixViewerT</qualifiedname>
+        <param>
+          <type>const <ref refid="classmuda_1_1_triplet_matrix_viewer_t" kindref="compound">TripletMatrixViewerT</ref>&lt; OtherIsConst, T, N &gt; &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/triplet_matrix_viewer.h" line="169" column="18" bodyfile="src/muda/ext/linear_system/triplet_matrix_viewer.h" bodystart="169" bodyend="181"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_triplet_matrix_viewer_t_1a0333dc9e3d3dfb6288a888edad7e02c6" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>MUDA_GENERIC <ref refid="classmuda_1_1_triplet_matrix_viewer_t" kindref="compound">ConstViewer</ref></type>
+        <definition>MUDA_GENERIC ConstViewer muda::TripletMatrixViewerT&lt; IsConst, T, N &gt;::as_const</definition>
+        <argsstring>() const</argsstring>
+        <name>as_const</name>
+        <qualifiedname>muda::TripletMatrixViewerT::as_const</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/triplet_matrix_viewer.h" line="183" column="30" bodyfile="src/muda/ext/linear_system/triplet_matrix_viewer.h" bodystart="183" bodyend="195"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_triplet_matrix_viewer_t_1a083165717954ab930197d03dcef925c9" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>MUDA_GENERIC auto</type>
+        <definition>MUDA_GENERIC auto muda::TripletMatrixViewerT&lt; IsConst, T, N &gt;::total_rows</definition>
+        <argsstring>() const</argsstring>
+        <name>total_rows</name>
+        <qualifiedname>muda::TripletMatrixViewerT::total_rows</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/triplet_matrix_viewer.h" line="197" column="23" bodyfile="src/muda/ext/linear_system/triplet_matrix_viewer.h" bodystart="197" bodyend="197"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_triplet_matrix_viewer_t_1ae57e741cf31d2f1f65ac4434c2a38c22" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>MUDA_GENERIC auto</type>
+        <definition>MUDA_GENERIC auto muda::TripletMatrixViewerT&lt; IsConst, T, N &gt;::total_cols</definition>
+        <argsstring>() const</argsstring>
+        <name>total_cols</name>
+        <qualifiedname>muda::TripletMatrixViewerT::total_cols</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/triplet_matrix_viewer.h" line="199" column="23" bodyfile="src/muda/ext/linear_system/triplet_matrix_viewer.h" bodystart="199" bodyend="199"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_triplet_matrix_viewer_t_1a2f3f20a1877eda27e0cf31fb62827336" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>MUDA_GENERIC auto</type>
+        <definition>MUDA_GENERIC auto muda::TripletMatrixViewerT&lt; IsConst, T, N &gt;::total_extent</definition>
+        <argsstring>() const</argsstring>
+        <name>total_extent</name>
+        <qualifiedname>muda::TripletMatrixViewerT::total_extent</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/triplet_matrix_viewer.h" line="201" column="23" bodyfile="src/muda/ext/linear_system/triplet_matrix_viewer.h" bodystart="201" bodyend="204"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_triplet_matrix_viewer_t_1a8825b6b98e2278fd629ee2489e81470d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>MUDA_GENERIC auto</type>
+        <definition>MUDA_GENERIC auto muda::TripletMatrixViewerT&lt; IsConst, T, N &gt;::submatrix_offset</definition>
+        <argsstring>() const</argsstring>
+        <name>submatrix_offset</name>
+        <qualifiedname>muda::TripletMatrixViewerT::submatrix_offset</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/triplet_matrix_viewer.h" line="206" column="23" bodyfile="src/muda/ext/linear_system/triplet_matrix_viewer.h" bodystart="206" bodyend="206"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_triplet_matrix_viewer_t_1adfa1304c0e6a78d2ee1dfbc050ecca41" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>MUDA_GENERIC auto</type>
+        <definition>MUDA_GENERIC auto muda::TripletMatrixViewerT&lt; IsConst, T, N &gt;::extent</definition>
+        <argsstring>() const</argsstring>
+        <name>extent</name>
+        <qualifiedname>muda::TripletMatrixViewerT::extent</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/triplet_matrix_viewer.h" line="208" column="23" bodyfile="src/muda/ext/linear_system/triplet_matrix_viewer.h" bodystart="208" bodyend="208"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_triplet_matrix_viewer_t_1a7feeaacafa8376425f7825cc54787410" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>MUDA_GENERIC auto</type>
+        <definition>MUDA_GENERIC auto muda::TripletMatrixViewerT&lt; IsConst, T, N &gt;::triplet_count</definition>
+        <argsstring>() const</argsstring>
+        <name>triplet_count</name>
+        <qualifiedname>muda::TripletMatrixViewerT::triplet_count</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/triplet_matrix_viewer.h" line="210" column="23" bodyfile="src/muda/ext/linear_system/triplet_matrix_viewer.h" bodystart="210" bodyend="210"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_triplet_matrix_viewer_t_1ad6a874cd33c1b9fda623376d7c228083" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>MUDA_GENERIC auto</type>
+        <definition>MUDA_GENERIC auto muda::TripletMatrixViewerT&lt; IsConst, T, N &gt;::tripet_index_offset</definition>
+        <argsstring>() const</argsstring>
+        <name>tripet_index_offset</name>
+        <qualifiedname>muda::TripletMatrixViewerT::tripet_index_offset</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/triplet_matrix_viewer.h" line="212" column="23" bodyfile="src/muda/ext/linear_system/triplet_matrix_viewer.h" bodystart="212" bodyend="215"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_triplet_matrix_viewer_t_1abe5205c119026e7b8495e9f52bb90d7a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>MUDA_GENERIC auto</type>
+        <definition>MUDA_GENERIC auto muda::TripletMatrixViewerT&lt; IsConst, T, N &gt;::total_triplet_count</definition>
+        <argsstring>() const</argsstring>
+        <name>total_triplet_count</name>
+        <qualifiedname>muda::TripletMatrixViewerT::total_triplet_count</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/triplet_matrix_viewer.h" line="216" column="23" bodyfile="src/muda/ext/linear_system/triplet_matrix_viewer.h" bodystart="216" bodyend="219"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_triplet_matrix_viewer_t_1a0b6b3ba040a52f1076ffb0648e7be637" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>MUDA_GENERIC auto</type>
+        <definition>MUDA_GENERIC auto muda::TripletMatrixViewerT&lt; IsConst, T, N &gt;::operator()</definition>
+        <argsstring>(int i) const</argsstring>
+        <name>operator()</name>
+        <qualifiedname>muda::TripletMatrixViewerT::operator()</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/triplet_matrix_viewer.h" line="221" column="23" bodyfile="src/muda/ext/linear_system/triplet_matrix_viewer.h" bodystart="221" bodyend="231"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classmuda_1_1_triplet_matrix_viewer_t_1a80a3ef50744be8ee265ffaa6a4d5cfeb" prot="protected" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>MUDA_GENERIC MUDA_INLINE <ref refid="structmuda_1_1_triplet_matrix_viewer_t_1_1_c_triplet" kindref="compound">CTriplet</ref></type>
+        <definition>MUDA_GENERIC MUDA_INLINE CTriplet muda::TripletMatrixViewerT&lt; IsConst, T, N &gt;::at</definition>
+        <argsstring>(int i) const noexcept</argsstring>
+        <name>at</name>
+        <qualifiedname>muda::TripletMatrixViewerT::at</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/triplet_matrix_viewer.h" line="234" column="39" bodyfile="src/muda/ext/linear_system/triplet_matrix_viewer.h" bodystart="234" bodyend="243"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_triplet_matrix_viewer_t_1a0f9b29f63ce12e8b6c148bf14cfc932e" prot="protected" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>MUDA_INLINE MUDA_GENERIC int</type>
+        <definition>MUDA_INLINE MUDA_GENERIC int muda::TripletMatrixViewerT&lt; IsConst, T, N &gt;::get_index</definition>
+        <argsstring>(int i) const noexcept</argsstring>
+        <name>get_index</name>
+        <qualifiedname>muda::TripletMatrixViewerT::get_index</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/triplet_matrix_viewer.h" line="245" column="34" bodyfile="src/muda/ext/linear_system/triplet_matrix_viewer.h" bodystart="245" bodyend="258"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_triplet_matrix_viewer_t_1ad8d7266c6cb3b98d2fabd6f62ebb942f" prot="protected" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>MUDA_INLINE MUDA_GENERIC void</type>
+        <definition>MUDA_INLINE MUDA_GENERIC void muda::TripletMatrixViewerT&lt; IsConst, T, N &gt;::check_in_submatrix</definition>
+        <argsstring>(int i, int j) const noexcept</argsstring>
+        <name>check_in_submatrix</name>
+        <qualifiedname>muda::TripletMatrixViewerT::check_in_submatrix</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>j</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/triplet_matrix_viewer.h" line="260" column="35" bodyfile="src/muda/ext/linear_system/triplet_matrix_viewer.h" bodystart="260" bodyend="279"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>muda::TripletMatrixViewerT&lt; IsConst, T, N &gt;</label>
+        <link refid="classmuda_1_1_triplet_matrix_viewer_t"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>muda::ViewerBase&lt; IsConst &gt;</label>
+        <link refid="classmuda_1_1_viewer_base"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>muda::TripletMatrixViewerT&lt; IsConst, T, N &gt;</label>
+        <link refid="classmuda_1_1_triplet_matrix_viewer_t"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>muda::ViewerBase&lt; IsConst &gt;</label>
+        <link refid="classmuda_1_1_viewer_base"/>
+      </node>
+    </collaborationgraph>
+    <location file="src/muda/ext/linear_system/triplet_matrix_viewer.h" line="16" column="1" bodyfile="src/muda/ext/linear_system/triplet_matrix_viewer.h" bodystart="17" bodyend="280"/>
+    <listofallmembers>
+      <member refid="classmuda_1_1_triplet_matrix_viewer_t_1a0333dc9e3d3dfb6288a888edad7e02c6" prot="public" virt="non-virtual"><scope>muda::TripletMatrixViewerT</scope><name>as_const</name></member>
+      <member refid="classmuda_1_1_triplet_matrix_viewer_t_1a80a3ef50744be8ee265ffaa6a4d5cfeb" prot="protected" virt="non-virtual"><scope>muda::TripletMatrixViewerT</scope><name>at</name></member>
+      <member refid="classmuda_1_1_triplet_matrix_viewer_t_1a581da576df01d64fa8ad07a855fc7d34" prot="private" virt="non-virtual"><scope>muda::TripletMatrixViewerT</scope><name>auto_const_t</name></member>
+      <member refid="classmuda_1_1_triplet_matrix_viewer_t_1a283d8508759cf05d4b85eac09879600d" prot="private" virt="non-virtual"><scope>muda::TripletMatrixViewerT</scope><name>Base</name></member>
+      <member refid="classmuda_1_1_triplet_matrix_viewer_t_1ad8d7266c6cb3b98d2fabd6f62ebb942f" prot="protected" virt="non-virtual"><scope>muda::TripletMatrixViewerT</scope><name>check_in_submatrix</name></member>
+      <member refid="classmuda_1_1_triplet_matrix_viewer_t_1a362e3757cfeea16f60249584c18d4db3" prot="public" virt="non-virtual"><scope>muda::TripletMatrixViewerT</scope><name>ConstViewer</name></member>
+      <member refid="classmuda_1_1_viewer_base_1a1e3c7201751bec476d5f9b9c26be94b5" prot="public" virt="non-virtual"><scope>muda::TripletMatrixViewerT</scope><name>copy_label</name></member>
+      <member refid="classmuda_1_1_viewer_base_1a1e3c7201751bec476d5f9b9c26be94b5" prot="public" virt="non-virtual"><scope>muda::TripletMatrixViewerT</scope><name>copy_label</name></member>
+      <member refid="classmuda_1_1_triplet_matrix_viewer_t_1adfa1304c0e6a78d2ee1dfbc050ecca41" prot="public" virt="non-virtual"><scope>muda::TripletMatrixViewerT</scope><name>extent</name></member>
+      <member refid="classmuda_1_1_triplet_matrix_viewer_t_1a0f9b29f63ce12e8b6c148bf14cfc932e" prot="protected" virt="non-virtual"><scope>muda::TripletMatrixViewerT</scope><name>get_index</name></member>
+      <member refid="classmuda_1_1_viewer_base_1ae9e7348b91c4dc1f3fc0de8e63335576" prot="public" virt="non-virtual"><scope>muda::TripletMatrixViewerT</scope><name>IsConst</name></member>
+      <member refid="classmuda_1_1_viewer_base_1ae9e7348b91c4dc1f3fc0de8e63335576" prot="public" virt="non-virtual"><scope>muda::TripletMatrixViewerT</scope><name>IsConst</name></member>
+      <member refid="classmuda_1_1_viewer_base_1adc31410f57cf34b15824f4f3fcb434a3" prot="public" virt="non-virtual"><scope>muda::TripletMatrixViewerT</scope><name>IsNonConst</name></member>
+      <member refid="classmuda_1_1_viewer_base_1adc31410f57cf34b15824f4f3fcb434a3" prot="public" virt="non-virtual"><scope>muda::TripletMatrixViewerT</scope><name>IsNonConst</name></member>
+      <member refid="classmuda_1_1_viewer_base_1a35b42fb3c890f8343c551451bceab3f1" prot="public" virt="non-virtual"><scope>muda::TripletMatrixViewerT</scope><name>kernel_file</name></member>
+      <member refid="classmuda_1_1_viewer_base_1a35b42fb3c890f8343c551451bceab3f1" prot="public" virt="non-virtual"><scope>muda::TripletMatrixViewerT</scope><name>kernel_file</name></member>
+      <member refid="classmuda_1_1_viewer_base_1a3247ca184afa57b2e00f8da9e080a2a1" prot="public" virt="non-virtual"><scope>muda::TripletMatrixViewerT</scope><name>kernel_line</name></member>
+      <member refid="classmuda_1_1_viewer_base_1a3247ca184afa57b2e00f8da9e080a2a1" prot="public" virt="non-virtual"><scope>muda::TripletMatrixViewerT</scope><name>kernel_line</name></member>
+      <member refid="classmuda_1_1_viewer_base_1a9b65192d349fd93c05c8ccad4d4014d4" prot="public" virt="non-virtual"><scope>muda::TripletMatrixViewerT</scope><name>kernel_name</name></member>
+      <member refid="classmuda_1_1_viewer_base_1a9b65192d349fd93c05c8ccad4d4014d4" prot="public" virt="non-virtual"><scope>muda::TripletMatrixViewerT</scope><name>kernel_name</name></member>
+      <member refid="classmuda_1_1_triplet_matrix_viewer_t_1aa9f23b9466415101b0ba5245932d53c9" prot="protected" virt="non-virtual"><scope>muda::TripletMatrixViewerT</scope><name>m_col_indices</name></member>
+      <member refid="classmuda_1_1_triplet_matrix_viewer_t_1a158db1e1ea5659d27ff9847ffc03d5a8" prot="protected" virt="non-virtual"><scope>muda::TripletMatrixViewerT</scope><name>m_row_indices</name></member>
+      <member refid="classmuda_1_1_triplet_matrix_viewer_t_1a0e38799318329f0866e92493bf6bdec5" prot="protected" virt="non-virtual"><scope>muda::TripletMatrixViewerT</scope><name>m_submatrix_extent</name></member>
+      <member refid="classmuda_1_1_triplet_matrix_viewer_t_1af03af72fe63ade0ae9ddf7e29293226c" prot="protected" virt="non-virtual"><scope>muda::TripletMatrixViewerT</scope><name>m_submatrix_offset</name></member>
+      <member refid="classmuda_1_1_triplet_matrix_viewer_t_1a7ddf6a6af09b8a381acdcc7ecfcfbb3c" prot="protected" virt="non-virtual"><scope>muda::TripletMatrixViewerT</scope><name>m_total_cols</name></member>
+      <member refid="classmuda_1_1_triplet_matrix_viewer_t_1ab04e1ec02c749d4fac3486b32b1018fa" prot="protected" virt="non-virtual"><scope>muda::TripletMatrixViewerT</scope><name>m_total_rows</name></member>
+      <member refid="classmuda_1_1_triplet_matrix_viewer_t_1adaebcfeebb6087773f364b897a217e51" prot="protected" virt="non-virtual"><scope>muda::TripletMatrixViewerT</scope><name>m_total_triplet_count</name></member>
+      <member refid="classmuda_1_1_triplet_matrix_viewer_t_1a7798e002aad6d9cc61c127b8860cd8e6" prot="protected" virt="non-virtual"><scope>muda::TripletMatrixViewerT</scope><name>m_triplet_count</name></member>
+      <member refid="classmuda_1_1_triplet_matrix_viewer_t_1a2702e9a435b3b957719cc8a4ebda3411" prot="protected" virt="non-virtual"><scope>muda::TripletMatrixViewerT</scope><name>m_triplet_index_offset</name></member>
+      <member refid="classmuda_1_1_triplet_matrix_viewer_t_1a7d4b41dea67b3186b721af95d80962af" prot="protected" virt="non-virtual"><scope>muda::TripletMatrixViewerT</scope><name>m_values</name></member>
+      <member refid="classmuda_1_1_triplet_matrix_viewer_t_1aa74bae819eb1e4186b78793d62ed9f30" prot="private" virt="non-virtual"><scope>muda::TripletMatrixViewerT</scope><name>MUDA_VIEWER_COMMON_NAME</name></member>
+      <member refid="classmuda_1_1_viewer_base_1a4cb1c578b4abbf1b113e9cf7a3d771d8" prot="public" virt="non-virtual"><scope>muda::TripletMatrixViewerT</scope><name>name</name></member>
+      <member refid="classmuda_1_1_viewer_base_1a57bbb7a9a3e4cb77a0a05bdee3a3e5fd" prot="protected" virt="non-virtual"><scope>muda::TripletMatrixViewerT</scope><name>name</name></member>
+      <member refid="classmuda_1_1_viewer_base_1a31d6dd944a28c6d428e5e79cd7c034a0" prot="protected" virt="non-virtual"><scope>muda::TripletMatrixViewerT</scope><name>name</name></member>
+      <member refid="classmuda_1_1_viewer_base_1a4cb1c578b4abbf1b113e9cf7a3d771d8" prot="public" virt="non-virtual"><scope>muda::TripletMatrixViewerT</scope><name>name</name></member>
+      <member refid="classmuda_1_1_viewer_base_1a57bbb7a9a3e4cb77a0a05bdee3a3e5fd" prot="protected" virt="non-virtual"><scope>muda::TripletMatrixViewerT</scope><name>name</name></member>
+      <member refid="classmuda_1_1_viewer_base_1a31d6dd944a28c6d428e5e79cd7c034a0" prot="protected" virt="non-virtual"><scope>muda::TripletMatrixViewerT</scope><name>name</name></member>
+      <member refid="classmuda_1_1_viewer_base_1a9447a51a53c20567fcb38fcdc275d812" prot="protected" virt="non-virtual"><scope>muda::TripletMatrixViewerT</scope><name>non_const_enable_t</name></member>
+      <member refid="classmuda_1_1_viewer_base_1a9447a51a53c20567fcb38fcdc275d812" prot="protected" virt="non-virtual"><scope>muda::TripletMatrixViewerT</scope><name>non_const_enable_t</name></member>
+      <member refid="classmuda_1_1_triplet_matrix_viewer_t_1a79f31ce950bfaba8bf1eb78fb1daf46d" prot="public" virt="non-virtual"><scope>muda::TripletMatrixViewerT</scope><name>NonConstViewer</name></member>
+      <member refid="classmuda_1_1_triplet_matrix_viewer_t_1a0b6b3ba040a52f1076ffb0648e7be637" prot="public" virt="non-virtual"><scope>muda::TripletMatrixViewerT</scope><name>operator()</name></member>
+      <member refid="classmuda_1_1_viewer_base_1a8ce13df13b4a82e63c7a6230ee1e0b7c" prot="public" virt="non-virtual"><scope>muda::TripletMatrixViewerT</scope><name>operator=</name></member>
+      <member refid="classmuda_1_1_viewer_base_1ac73a737a8a64ff2026adcd7bc5f2738a" prot="public" virt="non-virtual"><scope>muda::TripletMatrixViewerT</scope><name>operator=</name></member>
+      <member refid="classmuda_1_1_viewer_base_1a8ce13df13b4a82e63c7a6230ee1e0b7c" prot="public" virt="non-virtual"><scope>muda::TripletMatrixViewerT</scope><name>operator=</name></member>
+      <member refid="classmuda_1_1_viewer_base_1ac73a737a8a64ff2026adcd7bc5f2738a" prot="public" virt="non-virtual"><scope>muda::TripletMatrixViewerT</scope><name>operator=</name></member>
+      <member refid="classmuda_1_1_triplet_matrix_viewer_t_1a8825b6b98e2278fd629ee2489e81470d" prot="public" virt="non-virtual"><scope>muda::TripletMatrixViewerT</scope><name>submatrix_offset</name></member>
+      <member refid="classmuda_1_1_triplet_matrix_viewer_t_1afff774977957c627b0458a5366153cb2" prot="public" virt="non-virtual"><scope>muda::TripletMatrixViewerT</scope><name>ThisViewer</name></member>
+      <member refid="classmuda_1_1_triplet_matrix_viewer_t_1ae57e741cf31d2f1f65ac4434c2a38c22" prot="public" virt="non-virtual"><scope>muda::TripletMatrixViewerT</scope><name>total_cols</name></member>
+      <member refid="classmuda_1_1_triplet_matrix_viewer_t_1a2f3f20a1877eda27e0cf31fb62827336" prot="public" virt="non-virtual"><scope>muda::TripletMatrixViewerT</scope><name>total_extent</name></member>
+      <member refid="classmuda_1_1_triplet_matrix_viewer_t_1a083165717954ab930197d03dcef925c9" prot="public" virt="non-virtual"><scope>muda::TripletMatrixViewerT</scope><name>total_rows</name></member>
+      <member refid="classmuda_1_1_triplet_matrix_viewer_t_1abe5205c119026e7b8495e9f52bb90d7a" prot="public" virt="non-virtual"><scope>muda::TripletMatrixViewerT</scope><name>total_triplet_count</name></member>
+      <member refid="classmuda_1_1_triplet_matrix_viewer_t_1ad6a874cd33c1b9fda623376d7c228083" prot="public" virt="non-virtual"><scope>muda::TripletMatrixViewerT</scope><name>tripet_index_offset</name></member>
+      <member refid="classmuda_1_1_triplet_matrix_viewer_t_1a7feeaacafa8376425f7825cc54787410" prot="public" virt="non-virtual"><scope>muda::TripletMatrixViewerT</scope><name>triplet_count</name></member>
+      <member refid="classmuda_1_1_triplet_matrix_viewer_t_1abe0193b06ac87f6dec4ba139491cad7e" prot="private" virt="non-virtual"><scope>muda::TripletMatrixViewerT</scope><name>TripletMatrixViewerT</name></member>
+      <member refid="classmuda_1_1_triplet_matrix_viewer_t_1a0fdf172de17d36c50eea6e14b592dcba" prot="public" virt="non-virtual"><scope>muda::TripletMatrixViewerT</scope><name>TripletMatrixViewerT</name></member>
+      <member refid="classmuda_1_1_triplet_matrix_viewer_t_1a58b869547b47822ee04021bcc36adc45" prot="public" virt="non-virtual"><scope>muda::TripletMatrixViewerT</scope><name>TripletMatrixViewerT</name></member>
+      <member refid="classmuda_1_1_triplet_matrix_viewer_t_1ad46fba5f0c1ebf569a8a6ab0262b386f" prot="public" virt="non-virtual"><scope>muda::TripletMatrixViewerT</scope><name>TripletMatrixViewerT</name></member>
+      <member refid="classmuda_1_1_triplet_matrix_viewer_t_1a41d6333cc9c5a9ed6d9a9aa4e2e15e93" prot="public" virt="non-virtual"><scope>muda::TripletMatrixViewerT</scope><name>ValueT</name></member>
+      <member refid="classmuda_1_1_viewer_base_1aab07b74590e3ae50b1352372f66080f8" prot="public" virt="non-virtual"><scope>muda::TripletMatrixViewerT</scope><name>ViewerBase</name></member>
+      <member refid="classmuda_1_1_viewer_base_1aac0b5cbd86bfb6653c7dddeac2907428" prot="public" virt="non-virtual"><scope>muda::TripletMatrixViewerT</scope><name>ViewerBase</name></member>
+      <member refid="classmuda_1_1_viewer_base_1a70b803f760ff21c327b454f7c9fc0ef3" prot="public" virt="non-virtual"><scope>muda::TripletMatrixViewerT</scope><name>ViewerBase</name></member>
+      <member refid="classmuda_1_1_viewer_base_1aab07b74590e3ae50b1352372f66080f8" prot="public" virt="non-virtual"><scope>muda::TripletMatrixViewerT</scope><name>ViewerBase</name></member>
+      <member refid="classmuda_1_1_viewer_base_1aac0b5cbd86bfb6653c7dddeac2907428" prot="public" virt="non-virtual"><scope>muda::TripletMatrixViewerT</scope><name>ViewerBase</name></member>
+      <member refid="classmuda_1_1_viewer_base_1a70b803f760ff21c327b454f7c9fc0ef3" prot="public" virt="non-virtual"><scope>muda::TripletMatrixViewerT</scope><name>ViewerBase</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

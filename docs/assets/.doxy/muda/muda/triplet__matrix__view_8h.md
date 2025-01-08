@@ -38,10 +38,10 @@
 
 | Type | Name |
 | ---: | :--- |
-| class | [**TripletMatrixViewBase**](classmuda_1_1_triplet_matrix_view_base.md) &lt;IsConst, typename Ty, N&gt;<br> |
-| class | [**TripletMatrixViewBase&lt; IsConst, Ty, 1 &gt;**](classmuda_1_1_triplet_matrix_view_base_3_01_is_const_00_01_ty_00_011_01_4.md) &lt;IsConst, typename Ty&gt;<br> |
-| struct | [**read\_only\_viewer&lt; TripletMatrixView&lt; Ty, N &gt; &gt;**](structmuda_1_1read__only__viewer_3_01_triplet_matrix_view_3_01_ty_00_01_n_01_4_01_4.md) &lt;typename Ty, N&gt;<br> |
-| struct | [**read\_write\_viewer&lt; TripletMatrixView&lt; Ty, N &gt; &gt;**](structmuda_1_1read__write__viewer_3_01_triplet_matrix_view_3_01_ty_00_01_n_01_4_01_4.md) &lt;typename Ty, N&gt;<br> |
+| class | [**TripletMatrixViewT**](classmuda_1_1_triplet_matrix_view_t.md) &lt;IsConst, typename Ty, N&gt;<br> |
+| class | [**TripletMatrixViewT**](classmuda_1_1_triplet_matrix_view_t.md) &lt;IsConst, typename Ty, N&gt;<br> |
+| struct | [**read\_only\_view**](structmuda_1_1read__only__view.md) &lt;typename T&gt;<br> |
+| struct | [**read\_write\_view**](structmuda_1_1read__write__view.md) &lt;typename T&gt;<br> |
 
 
 

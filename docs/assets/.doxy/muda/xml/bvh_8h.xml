@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.1" xml:lang="en-US">
   <compounddef id="bvh_8h" kind="file" language="C++">
     <compoundname>bvh.h</compoundname>
     <includes refid="bvh__viewer_8h" local="no">muda/ext/geo/lbvh/bvh_viewer.h</includes>
@@ -32,40 +32,40 @@
         <childnode refid="15" relation="include">
         </childnode>
       </node>
-      <node id="92">
+      <node id="90">
         <label>muda/buffer.h</label>
         <link refid="buffer_8h_source"/>
+        <childnode refid="91" relation="include">
+        </childnode>
         <childnode refid="93" relation="include">
         </childnode>
-        <childnode refid="95" relation="include">
-        </childnode>
-        <childnode refid="99" relation="include">
+        <childnode refid="97" relation="include">
         </childnode>
         <childnode refid="45" relation="include">
         </childnode>
-        <childnode refid="102" relation="include">
+        <childnode refid="100" relation="include">
         </childnode>
-        <childnode refid="96" relation="include">
+        <childnode refid="94" relation="include">
         </childnode>
-        <childnode refid="120" relation="include">
+        <childnode refid="118" relation="include">
         </childnode>
       </node>
       <node id="47">
         <label>muda/buffer/buffer_fwd.h</label>
         <link refid="buffer__fwd_8h_source"/>
       </node>
-      <node id="99">
+      <node id="97">
         <label>muda/buffer/buffer_launch.h</label>
         <link refid="buffer__launch_8h_source"/>
         <childnode refid="79" relation="include">
         </childnode>
         <childnode refid="8" relation="include">
         </childnode>
-        <childnode refid="100" relation="include">
+        <childnode refid="98" relation="include">
         </childnode>
         <childnode refid="47" relation="include">
         </childnode>
-        <childnode refid="101" relation="include">
+        <childnode refid="99" relation="include">
         </childnode>
       </node>
       <node id="45">
@@ -90,7 +90,7 @@
         <childnode refid="49" relation="include">
         </childnode>
       </node>
-      <node id="93">
+      <node id="91">
         <label>muda/buffer/device_buffer.h</label>
         <link refid="device__buffer_8h"/>
         <childnode refid="4" relation="include">
@@ -105,10 +105,10 @@
         </childnode>
         <childnode refid="45" relation="include">
         </childnode>
-        <childnode refid="94" relation="include">
+        <childnode refid="92" relation="include">
         </childnode>
       </node>
-      <node id="95">
+      <node id="93">
         <label>muda/buffer/device_var.h</label>
         <link refid="device__var_8h_source"/>
         <childnode refid="4" relation="include">
@@ -117,32 +117,32 @@
         </childnode>
         <childnode refid="6" relation="include">
         </childnode>
+        <childnode refid="94" relation="include">
+        </childnode>
         <childnode refid="96" relation="include">
         </childnode>
-        <childnode refid="98" relation="include">
-        </childnode>
       </node>
-      <node id="102">
+      <node id="100">
         <label>muda/buffer/graph_buffer_view.h</label>
         <link refid="graph__buffer__view_8h_source"/>
         <childnode refid="45" relation="include">
         </childnode>
-        <childnode refid="103" relation="include">
+        <childnode refid="101" relation="include">
+        </childnode>
+        <childnode refid="117" relation="include">
+        </childnode>
+      </node>
+      <node id="118">
+        <label>muda/buffer/graph_var_view.h</label>
+        <link refid="graph__var__view_8h_source"/>
+        <childnode refid="94" relation="include">
+        </childnode>
+        <childnode refid="101" relation="include">
         </childnode>
         <childnode refid="119" relation="include">
         </childnode>
       </node>
-      <node id="120">
-        <label>muda/buffer/graph_var_view.h</label>
-        <link refid="graph__var__view_8h_source"/>
-        <childnode refid="96" relation="include">
-        </childnode>
-        <childnode refid="103" relation="include">
-        </childnode>
-        <childnode refid="121" relation="include">
-        </childnode>
-      </node>
-      <node id="96">
+      <node id="94">
         <label>muda/buffer/var_view.h</label>
         <link refid="var__view_8h_source"/>
         <childnode refid="4" relation="include">
@@ -153,7 +153,7 @@
         </childnode>
         <childnode refid="50" relation="include">
         </childnode>
-        <childnode refid="97" relation="include">
+        <childnode refid="95" relation="include">
         </childnode>
       </node>
       <node id="24">
@@ -212,150 +212,150 @@
         <childnode refid="29" relation="include">
         </childnode>
       </node>
-      <node id="124">
+      <node id="122">
         <label>muda/compute_graph/compute_graph.h</label>
         <link refid="compute__graph_2compute__graph_8h_source"/>
-        <childnode refid="105" relation="include">
+        <childnode refid="103" relation="include">
         </childnode>
         <childnode refid="81" relation="include">
         </childnode>
+        <childnode refid="102" relation="include">
+        </childnode>
+        <childnode refid="123" relation="include">
+        </childnode>
+        <childnode refid="85" relation="include">
+        </childnode>
         <childnode refid="104" relation="include">
         </childnode>
-        <childnode refid="125" relation="include">
+        <childnode refid="126" relation="include">
         </childnode>
-        <childnode refid="87" relation="include">
+        <childnode refid="135" relation="include">
         </childnode>
-        <childnode refid="106" relation="include">
+        <childnode refid="141" relation="include">
         </childnode>
-        <childnode refid="128" relation="include">
-        </childnode>
-        <childnode refid="137" relation="include">
+        <childnode refid="142" relation="include">
         </childnode>
         <childnode refid="143" relation="include">
         </childnode>
-        <childnode refid="144" relation="include">
+        <childnode refid="115" relation="include">
+        </childnode>
+        <childnode refid="108" relation="include">
+        </childnode>
+        <childnode refid="112" relation="include">
+        </childnode>
+        <childnode refid="111" relation="include">
         </childnode>
         <childnode refid="145" relation="include">
         </childnode>
-        <childnode refid="117" relation="include">
-        </childnode>
-        <childnode refid="110" relation="include">
-        </childnode>
-        <childnode refid="114" relation="include">
-        </childnode>
         <childnode refid="113" relation="include">
         </childnode>
-        <childnode refid="147" relation="include">
-        </childnode>
-        <childnode refid="115" relation="include">
-        </childnode>
-        <childnode refid="116" relation="include">
-        </childnode>
-        <childnode refid="148" relation="include">
-        </childnode>
-      </node>
-      <node id="110">
-        <label>muda/compute_graph/compute_graph_closure_id.h</label>
-        <link refid="compute__graph__closure__id_8h_source"/>
-        <childnode refid="111" relation="include">
-        </childnode>
-      </node>
-      <node id="147">
-        <label>muda/compute_graph/compute_graph_dependency.h</label>
-        <link refid="compute__graph__dependency_8h_source"/>
-        <childnode refid="110" relation="include">
-        </childnode>
-      </node>
-      <node id="143">
-        <label>muda/compute_graph/compute_graph_flag.h</label>
-        <link refid="compute__graph__flag_8h_source"/>
-      </node>
-      <node id="116">
-        <label>muda/compute_graph/compute_graph_fwd.h</label>
-        <link refid="compute__graph__fwd_8h_source"/>
         <childnode refid="114" relation="include">
-        </childnode>
-        <childnode refid="110" relation="include">
-        </childnode>
-        <childnode refid="117" relation="include">
-        </childnode>
-        <childnode refid="113" relation="include">
-        </childnode>
-      </node>
-      <node id="117">
-        <label>muda/compute_graph/compute_graph_node_id.h</label>
-        <link refid="compute__graph__node__id_8h_source"/>
-        <childnode refid="111" relation="include">
-        </childnode>
-      </node>
-      <node id="145">
-        <label>muda/compute_graph/compute_graph_node_type.h</label>
-        <link refid="compute__graph__node__type_8h_source"/>
-        <childnode refid="22" relation="include">
         </childnode>
         <childnode refid="146" relation="include">
         </childnode>
       </node>
-      <node id="144">
+      <node id="108">
+        <label>muda/compute_graph/compute_graph_closure_id.h</label>
+        <link refid="compute__graph__closure__id_8h_source"/>
+        <childnode refid="109" relation="include">
+        </childnode>
+      </node>
+      <node id="145">
+        <label>muda/compute_graph/compute_graph_dependency.h</label>
+        <link refid="compute__graph__dependency_8h_source"/>
+        <childnode refid="108" relation="include">
+        </childnode>
+      </node>
+      <node id="141">
+        <label>muda/compute_graph/compute_graph_flag.h</label>
+        <link refid="compute__graph__flag_8h_source"/>
+      </node>
+      <node id="114">
+        <label>muda/compute_graph/compute_graph_fwd.h</label>
+        <link refid="compute__graph__fwd_8h_source"/>
+        <childnode refid="112" relation="include">
+        </childnode>
+        <childnode refid="108" relation="include">
+        </childnode>
+        <childnode refid="115" relation="include">
+        </childnode>
+        <childnode refid="111" relation="include">
+        </childnode>
+      </node>
+      <node id="115">
+        <label>muda/compute_graph/compute_graph_node_id.h</label>
+        <link refid="compute__graph__node__id_8h_source"/>
+        <childnode refid="109" relation="include">
+        </childnode>
+      </node>
+      <node id="143">
+        <label>muda/compute_graph/compute_graph_node_type.h</label>
+        <link refid="compute__graph__node__type_8h_source"/>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="144" relation="include">
+        </childnode>
+      </node>
+      <node id="142">
         <label>muda/compute_graph/compute_graph_phase.h</label>
         <link refid="compute__graph__phase_8h_source"/>
       </node>
-      <node id="103">
+      <node id="101">
         <label>muda/compute_graph/compute_graph_var.h</label>
         <link refid="compute__graph__var_8h_source"/>
         <childnode refid="27" relation="include">
         </childnode>
+        <childnode refid="102" relation="include">
+        </childnode>
+        <childnode refid="103" relation="include">
+        </childnode>
+        <childnode refid="85" relation="include">
+        </childnode>
         <childnode refid="104" relation="include">
-        </childnode>
-        <childnode refid="105" relation="include">
-        </childnode>
-        <childnode refid="87" relation="include">
-        </childnode>
-        <childnode refid="106" relation="include">
         </childnode>
         <childnode refid="38" relation="include">
         </childnode>
-        <childnode refid="110" relation="include">
+        <childnode refid="108" relation="include">
+        </childnode>
+        <childnode refid="111" relation="include">
+        </childnode>
+        <childnode refid="112" relation="include">
         </childnode>
         <childnode refid="113" relation="include">
         </childnode>
         <childnode refid="114" relation="include">
         </childnode>
-        <childnode refid="115" relation="include">
-        </childnode>
         <childnode refid="116" relation="include">
         </childnode>
-        <childnode refid="118" relation="include">
-        </childnode>
       </node>
-      <node id="114">
+      <node id="112">
         <label>muda/compute_graph/compute_graph_var_id.h</label>
         <link refid="compute__graph__var__id_8h_source"/>
-        <childnode refid="111" relation="include">
+        <childnode refid="109" relation="include">
         </childnode>
       </node>
-      <node id="113">
+      <node id="111">
         <label>muda/compute_graph/compute_graph_var_usage.h</label>
         <link refid="compute__graph__var__usage_8h_source"/>
       </node>
-      <node id="115">
+      <node id="113">
         <label>muda/compute_graph/graphviz_options.h</label>
         <link refid="graphviz__options_8h_source"/>
         <childnode refid="27" relation="include">
         </childnode>
       </node>
-      <node id="122">
+      <node id="120">
         <label>muda/container.h</label>
         <link refid="container_8h_source"/>
-        <childnode refid="123" relation="include">
+        <childnode refid="121" relation="include">
         </childnode>
         <childnode refid="40" relation="include">
         </childnode>
       </node>
-      <node id="123">
+      <node id="121">
         <label>muda/container/var.h</label>
         <link refid="var_8h_source"/>
-        <childnode refid="95" relation="include">
+        <childnode refid="93" relation="include">
         </childnode>
       </node>
       <node id="40">
@@ -385,15 +385,15 @@
         </childnode>
         <childnode refid="79" relation="include">
         </childnode>
-        <childnode refid="92" relation="include">
+        <childnode refid="90" relation="include">
+        </childnode>
+        <childnode refid="120" relation="include">
+        </childnode>
+        <childnode refid="97" relation="include">
         </childnode>
         <childnode refid="122" relation="include">
         </childnode>
-        <childnode refid="99" relation="include">
-        </childnode>
-        <childnode refid="124" relation="include">
-        </childnode>
-        <childnode refid="125" relation="include">
+        <childnode refid="123" relation="include">
         </childnode>
       </node>
       <node id="76">
@@ -401,11 +401,11 @@
         <link refid="device__reduce_8h_source"/>
         <childnode refid="77" relation="include">
         </childnode>
+        <childnode refid="147" relation="include">
+        </childnode>
+        <childnode refid="148" relation="include">
+        </childnode>
         <childnode refid="149" relation="include">
-        </childnode>
-        <childnode refid="150" relation="include">
-        </childnode>
-        <childnode refid="151" relation="include">
         </childnode>
       </node>
       <node id="83">
@@ -530,37 +530,37 @@
         <childnode refid="57" relation="include">
         </childnode>
       </node>
-      <node id="136">
+      <node id="134">
         <label>muda/graph/event_node.h</label>
         <link refid="event__node_8h_source"/>
-        <childnode refid="130" relation="include">
+        <childnode refid="128" relation="include">
         </childnode>
       </node>
-      <node id="128">
+      <node id="126">
         <label>muda/graph/graph.h</label>
         <link refid="graph_2graph_8h_source"/>
         <childnode refid="34" relation="include">
         </childnode>
-        <childnode refid="129" relation="include">
+        <childnode refid="127" relation="include">
         </childnode>
-        <childnode refid="130" relation="include">
+        <childnode refid="128" relation="include">
+        </childnode>
+        <childnode refid="131" relation="include">
+        </childnode>
+        <childnode refid="132" relation="include">
         </childnode>
         <childnode refid="133" relation="include">
         </childnode>
+        <childnode refid="139" relation="include">
+        </childnode>
         <childnode refid="134" relation="include">
-        </childnode>
-        <childnode refid="135" relation="include">
-        </childnode>
-        <childnode refid="141" relation="include">
         </childnode>
         <childnode refid="136" relation="include">
         </childnode>
-        <childnode refid="138" relation="include">
-        </childnode>
-        <childnode refid="142" relation="include">
+        <childnode refid="140" relation="include">
         </childnode>
       </node>
-      <node id="130">
+      <node id="128">
         <label>muda/graph/graph_base.h</label>
         <link refid="graph__base_8h_source"/>
         <childnode refid="41" relation="include">
@@ -569,9 +569,9 @@
         </childnode>
         <childnode refid="6" relation="include">
         </childnode>
-        <childnode refid="131" relation="include">
+        <childnode refid="129" relation="include">
         </childnode>
-        <childnode refid="132" relation="include">
+        <childnode refid="130" relation="include">
         </childnode>
         <childnode refid="36" relation="include">
         </childnode>
@@ -582,23 +582,23 @@
         <childnode refid="23" relation="include">
         </childnode>
       </node>
-      <node id="133">
+      <node id="131">
         <label>muda/graph/graph_exec.h</label>
         <link refid="graph__exec_8h_source"/>
-        <childnode refid="130" relation="include">
+        <childnode refid="128" relation="include">
+        </childnode>
+        <childnode refid="132" relation="include">
+        </childnode>
+        <childnode refid="133" relation="include">
         </childnode>
         <childnode refid="134" relation="include">
         </childnode>
         <childnode refid="135" relation="include">
         </childnode>
-        <childnode refid="136" relation="include">
-        </childnode>
-        <childnode refid="137" relation="include">
-        </childnode>
-        <childnode refid="140" relation="include">
+        <childnode refid="138" relation="include">
         </childnode>
       </node>
-      <node id="138">
+      <node id="136">
         <label>muda/graph/graph_instantiate_flag.h</label>
         <link refid="graph__instantiate__flag_8h_source"/>
         <childnode refid="4" relation="include">
@@ -606,40 +606,40 @@
         <childnode refid="41" relation="include">
         </childnode>
       </node>
-      <node id="137">
+      <node id="135">
         <label>muda/graph/graph_viewer.h</label>
         <link refid="graph__viewer_8h_source"/>
         <childnode refid="4" relation="include">
         </childnode>
         <childnode refid="3" relation="include">
         </childnode>
-        <childnode refid="138" relation="include">
+        <childnode refid="136" relation="include">
         </childnode>
-        <childnode refid="139" relation="include">
+        <childnode refid="137" relation="include">
         </childnode>
       </node>
-      <node id="141">
+      <node id="139">
         <label>muda/graph/host_node.h</label>
         <link refid="host__node_8h_source"/>
-        <childnode refid="130" relation="include">
+        <childnode refid="128" relation="include">
         </childnode>
       </node>
-      <node id="134">
+      <node id="132">
         <label>muda/graph/kernel_node.h</label>
         <link refid="kernel__node_8h_source"/>
-        <childnode refid="130" relation="include">
+        <childnode refid="128" relation="include">
         </childnode>
       </node>
-      <node id="135">
+      <node id="133">
         <label>muda/graph/memory_node.h</label>
         <link refid="memory__node_8h_source"/>
-        <childnode refid="130" relation="include">
+        <childnode refid="128" relation="include">
         </childnode>
       </node>
-      <node id="87">
+      <node id="85">
         <label>muda/launch/event.h</label>
         <link refid="event_8h_source"/>
-        <childnode refid="88" relation="include">
+        <childnode refid="86" relation="include">
         </childnode>
         <childnode refid="4" relation="include">
         </childnode>
@@ -651,10 +651,10 @@
         </childnode>
         <childnode refid="23" relation="include">
         </childnode>
-        <childnode refid="89" relation="include">
+        <childnode refid="87" relation="include">
         </childnode>
       </node>
-      <node id="90">
+      <node id="88">
         <label>muda/launch/kernel_tag.h</label>
         <link refid="kernel__tag_8h_source"/>
       </node>
@@ -679,10 +679,6 @@
         </childnode>
         <childnode refid="84" relation="include">
         </childnode>
-        <childnode refid="85" relation="include">
-        </childnode>
-        <childnode refid="86" relation="include">
-        </childnode>
         <childnode refid="38" relation="include">
         </childnode>
         <childnode refid="19" relation="include">
@@ -691,14 +687,14 @@
         </childnode>
         <childnode refid="7" relation="include">
         </childnode>
-        <childnode refid="87" relation="include">
+        <childnode refid="85" relation="include">
         </childnode>
-        <childnode refid="90" relation="include">
+        <childnode refid="88" relation="include">
         </childnode>
-        <childnode refid="91" relation="include">
+        <childnode refid="89" relation="include">
         </childnode>
       </node>
-      <node id="125">
+      <node id="123">
         <label>muda/launch/stream.h</label>
         <link refid="stream_8h_source"/>
         <childnode refid="4" relation="include">
@@ -711,9 +707,9 @@
         </childnode>
         <childnode refid="23" relation="include">
         </childnode>
-        <childnode refid="126" relation="include">
+        <childnode refid="124" relation="include">
         </childnode>
-        <childnode refid="127" relation="include">
+        <childnode refid="125" relation="include">
         </childnode>
       </node>
       <node id="21">
@@ -722,20 +718,20 @@
         <childnode refid="22" relation="include">
         </childnode>
       </node>
-      <node id="106">
+      <node id="104">
         <label>muda/mstl/span.h</label>
         <link refid="span_8h_source"/>
         <childnode refid="9" relation="include">
         </childnode>
-        <childnode refid="107" relation="include">
+        <childnode refid="105" relation="include">
         </childnode>
       </node>
-      <node id="107">
+      <node id="105">
         <label>muda/mstl/tcb/span.hpp</label>
         <link refid="span_8hpp_source"/>
-        <childnode refid="108" relation="include">
+        <childnode refid="106" relation="include">
         </childnode>
-        <childnode refid="109" relation="include">
+        <childnode refid="107" relation="include">
         </childnode>
         <childnode refid="61" relation="include">
         </childnode>
@@ -796,7 +792,7 @@
         <childnode refid="7" relation="include">
         </childnode>
       </node>
-      <node id="100">
+      <node id="98">
         <label>muda/tools/extent.h</label>
         <link refid="extent_8h_source"/>
         <childnode refid="4" relation="include">
@@ -806,7 +802,7 @@
         <childnode refid="22" relation="include">
         </childnode>
       </node>
-      <node id="88">
+      <node id="86">
         <label>muda/tools/flag.h</label>
         <link refid="flag_8h_source"/>
         <childnode refid="39" relation="include">
@@ -848,12 +844,12 @@
         <childnode refid="37" relation="include">
         </childnode>
       </node>
-      <node id="111">
+      <node id="109">
         <label>muda/tools/id_with_type.h</label>
         <link refid="id__with__type_8h_source"/>
         <childnode refid="61" relation="include">
         </childnode>
-        <childnode refid="112" relation="include">
+        <childnode refid="110" relation="include">
         </childnode>
         <childnode refid="7" relation="include">
         </childnode>
@@ -874,7 +870,7 @@
         <childnode refid="7" relation="include">
         </childnode>
       </node>
-      <node id="126">
+      <node id="124">
         <label>muda/tools/temp_buffer.h</label>
         <link refid="temp__buffer_8h_source"/>
         <childnode refid="5" relation="include">
@@ -960,7 +956,7 @@
         <childnode refid="38" relation="include">
         </childnode>
       </node>
-      <node id="108">
+      <node id="106">
         <label>array</label>
       </node>
       <node id="12">
@@ -972,7 +968,7 @@
       <node id="59">
         <label>cmath</label>
       </node>
-      <node id="109">
+      <node id="107">
         <label>cstddef</label>
       </node>
       <node id="61">
@@ -987,7 +983,7 @@
       <node id="37">
         <label>cstring</label>
       </node>
-      <node id="150">
+      <node id="148">
         <label>cub/device/device_reduce.cuh</label>
       </node>
       <node id="78">
@@ -999,7 +995,7 @@
       <node id="4">
         <label>cuda.h</label>
       </node>
-      <node id="131">
+      <node id="129">
         <label>cuda_device_runtime_api.h</label>
       </node>
       <node id="84">
@@ -1011,55 +1007,55 @@
       <node id="29">
         <label>cusparse.h</label>
       </node>
-      <node id="101">
+      <node id="99">
         <label>details/buffer_launch.inl</label>
       </node>
       <node id="49">
         <label>details/buffer_view.inl</label>
       </node>
-      <node id="148">
+      <node id="146">
         <label>details/compute_graph.inl</label>
       </node>
-      <node id="118">
+      <node id="116">
         <label>details/compute_graph_var.inl</label>
       </node>
-      <node id="149">
+      <node id="147">
         <label>details/cub_wrapper_macro_def.inl</label>
       </node>
-      <node id="151">
+      <node id="149">
         <label>details/cub_wrapper_macro_undef.inl</label>
       </node>
-      <node id="94">
+      <node id="92">
         <label>details/device_buffer.inl</label>
       </node>
-      <node id="98">
+      <node id="96">
         <label>details/device_var.inl</label>
       </node>
-      <node id="89">
+      <node id="87">
         <label>details/event.inl</label>
       </node>
-      <node id="142">
+      <node id="140">
         <label>details/graph.inl</label>
       </node>
-      <node id="119">
+      <node id="117">
         <label>details/graph_buffer_view.inl</label>
       </node>
-      <node id="140">
+      <node id="138">
         <label>details/graph_exec.inl</label>
       </node>
-      <node id="121">
+      <node id="119">
         <label>details/graph_var_view.inl</label>
       </node>
-      <node id="139">
+      <node id="137">
         <label>details/graph_viewer.inl</label>
       </node>
-      <node id="91">
+      <node id="89">
         <label>details/launch_base.inl</label>
       </node>
-      <node id="127">
+      <node id="125">
         <label>details/stream.inl</label>
       </node>
-      <node id="97">
+      <node id="95">
         <label>details/var_view.inl</label>
       </node>
       <node id="80">
@@ -1071,10 +1067,10 @@
       <node id="81">
         <label>functional</label>
       </node>
-      <node id="132">
+      <node id="130">
         <label>list</label>
       </node>
-      <node id="105">
+      <node id="103">
         <label>map</label>
       </node>
       <node id="57">
@@ -1083,16 +1079,10 @@
       <node id="82">
         <label>memory</label>
       </node>
-      <node id="85">
-        <label>nvtx3/nvToolsExt.h</label>
-      </node>
-      <node id="86">
-        <label>nvtx3/nvToolsExtCuda.h</label>
-      </node>
-      <node id="112">
+      <node id="110">
         <label>ostream</label>
       </node>
-      <node id="104">
+      <node id="102">
         <label>set</label>
       </node>
       <node id="16">
@@ -1101,7 +1091,7 @@
       <node id="27">
         <label>string</label>
       </node>
-      <node id="146">
+      <node id="144">
         <label>string_view</label>
       </node>
       <node id="42">
@@ -1161,7 +1151,7 @@
       <node id="34">
         <label>unordered_map</label>
       </node>
-      <node id="129">
+      <node id="127">
         <label>unordered_set</label>
       </node>
       <node id="36">
@@ -1234,7 +1224,7 @@
 <codeline lineno="25"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>DerivedPolicy,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>UInt&gt;</highlight></codeline>
 <codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>construct_internal_nodes(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>thrust::detail::execution_policy_base&lt;DerivedPolicy&gt;&amp;<sp/>policy,</highlight></codeline>
-<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Node*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>nodes,</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structmuda_1_1lbvh_1_1details_1_1_node" kindref="compound">Node</ref>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>nodes,</highlight></codeline>
 <codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>UInt<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">*<sp/><sp/><sp/><sp/>node_code,</highlight></codeline>
 <codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/>num_objects)</highlight></codeline>
 <codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
@@ -1267,18 +1257,18 @@
 <codeline lineno="58"><highlight class="normal">}<sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>details</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="59"><highlight class="normal"></highlight></codeline>
 <codeline lineno="60"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Real,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Object&gt;</highlight></codeline>
-<codeline lineno="61" refid="structmuda_1_1lbvh_1_1_default_morton_code_calculator" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structmuda_1_1lbvh_1_1_default_morton_code_calculator" kindref="compound">DefaultMortonCodeCalculator</ref></highlight></codeline>
+<codeline lineno="61" refid="structmuda_1_1lbvh_1_1_default_morton_code_calculator" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">DefaultMortonCodeCalculator</highlight></codeline>
 <codeline lineno="62"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structmuda_1_1lbvh_1_1_default_morton_code_calculator" kindref="compound">DefaultMortonCodeCalculator</ref>(<ref refid="structmuda_1_1lbvh_1_1_a_a_b_b" kindref="compound">AABB&lt;Real&gt;</ref><sp/>w)</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/>DefaultMortonCodeCalculator(<ref refid="structmuda_1_1lbvh_1_1_a_a_b_b" kindref="compound">AABB&lt;Real&gt;</ref><sp/>w)</highlight></codeline>
 <codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>whole(w)</highlight></codeline>
 <codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structmuda_1_1lbvh_1_1_default_morton_code_calculator" kindref="compound">DefaultMortonCodeCalculator</ref>()<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structmuda_1_1lbvh_1_1_default_morton_code_calculator" kindref="compound">~DefaultMortonCodeCalculator</ref>()<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structmuda_1_1lbvh_1_1_default_morton_code_calculator" kindref="compound">DefaultMortonCodeCalculator</ref>(<ref refid="structmuda_1_1lbvh_1_1_default_morton_code_calculator" kindref="compound">DefaultMortonCodeCalculator</ref><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">&amp;)<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structmuda_1_1lbvh_1_1_default_morton_code_calculator" kindref="compound">DefaultMortonCodeCalculator</ref>(<ref refid="structmuda_1_1lbvh_1_1_default_morton_code_calculator" kindref="compound">DefaultMortonCodeCalculator</ref>&amp;&amp;)<sp/><sp/><sp/><sp/><sp/><sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structmuda_1_1lbvh_1_1_default_morton_code_calculator" kindref="compound">DefaultMortonCodeCalculator</ref>&amp;<sp/>operator=(<ref refid="structmuda_1_1lbvh_1_1_default_morton_code_calculator" kindref="compound">DefaultMortonCodeCalculator</ref><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">&amp;)<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structmuda_1_1lbvh_1_1_default_morton_code_calculator" kindref="compound">DefaultMortonCodeCalculator</ref>&amp;<sp/>operator=(<ref refid="structmuda_1_1lbvh_1_1_default_morton_code_calculator" kindref="compound">DefaultMortonCodeCalculator</ref>&amp;&amp;)<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/>DefaultMortonCodeCalculator()<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/>~DefaultMortonCodeCalculator()<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/>DefaultMortonCodeCalculator(DefaultMortonCodeCalculator<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">&amp;)<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/>DefaultMortonCodeCalculator(DefaultMortonCodeCalculator&amp;&amp;)<sp/><sp/><sp/><sp/><sp/><sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/>DefaultMortonCodeCalculator&amp;<sp/>operator=(DefaultMortonCodeCalculator<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">&amp;)<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/>DefaultMortonCodeCalculator&amp;<sp/>operator=(DefaultMortonCodeCalculator&amp;&amp;)<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="73"><highlight class="normal"></highlight></codeline>
 <codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/>__device__<sp/>__host__<sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>uint32_t<sp/>operator()(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Object&amp;,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structmuda_1_1lbvh_1_1_a_a_b_b" kindref="compound">AABB&lt;Real&gt;</ref>&amp;<sp/>box)<sp/></highlight><highlight class="keyword">noexcept</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
@@ -1295,14 +1285,14 @@
 <codeline lineno="86"><highlight class="normal">};</highlight></codeline>
 <codeline lineno="87"><highlight class="normal"></highlight></codeline>
 <codeline lineno="88"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Real,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Object,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>AABBGetter,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>MortonCodeCalculator<sp/>=<sp/>DefaultMortonCodeCalculator&lt;Real,<sp/>Object&gt;&gt;</highlight></codeline>
-<codeline lineno="89" refid="classmuda_1_1lbvh_1_1_b_v_h" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classmuda_1_1lbvh_1_1_b_v_h" kindref="compound">BVH</ref></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classmuda_1_1lbvh_1_1_b_v_h" kindref="compound">BVH</ref></highlight></codeline>
 <codeline lineno="90"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="91"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">real_type<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>Real;</highlight></codeline>
 <codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">index_type<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>std::uint32_t;</highlight></codeline>
 <codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">object_type<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>Object;</highlight></codeline>
-<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="structmuda_1_1lbvh_1_1_a_a_b_b" kindref="compound">aabb_type</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/><ref refid="structmuda_1_1lbvh_1_1_a_a_b_b" kindref="compound">AABB&lt;real_type&gt;</ref>;</highlight></codeline>
-<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="structmuda_1_1lbvh_1_1details_1_1_node" kindref="compound">node_type</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/><ref refid="structmuda_1_1lbvh_1_1details_1_1_node" kindref="compound">details::Node</ref>;</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">aabb_type<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/><ref refid="structmuda_1_1lbvh_1_1_a_a_b_b" kindref="compound">AABB&lt;real_type&gt;</ref>;</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">node_type<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/><ref refid="structmuda_1_1lbvh_1_1details_1_1_node" kindref="compound">details::Node</ref>;</highlight></codeline>
 <codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">aabb_getter_type<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>AABBGetter;</highlight></codeline>
 <codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">morton_code_calculator_type<sp/>=<sp/>MortonCodeCalculator;</highlight></codeline>
 <codeline lineno="99"><highlight class="normal"></highlight></codeline>
@@ -1322,9 +1312,9 @@
 <codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="115"><highlight class="normal"></highlight></codeline>
-<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classmuda_1_1lbvh_1_1details_1_1_b_v_h_viewer_base" kindref="compound">BVHViewer&lt;real_type, object_type&gt;</ref><sp/>viewer()<sp/></highlight><highlight class="keyword">noexcept</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/>BVHViewer&lt;real_type,<sp/>object_type&gt;<sp/>viewer()<sp/>noexcept</highlight></codeline>
 <codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classmuda_1_1lbvh_1_1details_1_1_b_v_h_viewer_base" kindref="compound">BVHViewer&lt;real_type, object_type&gt;</ref>{</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>BVHViewer&lt;real_type,<sp/>object_type&gt;{</highlight></codeline>
 <codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="normal">uint32_t</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(m_nodes.size()),</highlight></codeline>
 <codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="normal">uint32_t</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(m_objects.size()),</highlight></codeline>
 <codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>thrust::raw_pointer_cast(m_nodes.data()),</highlight></codeline>
@@ -1332,9 +1322,9 @@
 <codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>thrust::raw_pointer_cast(m_objects.data())};</highlight></codeline>
 <codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="125"><highlight class="normal"></highlight></codeline>
-<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classmuda_1_1lbvh_1_1details_1_1_b_v_h_viewer_base" kindref="compound">CBVHViewer&lt;real_type, object_type&gt;</ref><sp/>cviewer()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">noexcept</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/>CBVHViewer&lt;real_type,<sp/>object_type&gt;<sp/>cviewer()<sp/>const<sp/>noexcept</highlight></codeline>
 <codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classmuda_1_1lbvh_1_1details_1_1_b_v_h_viewer_base" kindref="compound">CBVHViewer&lt;real_type, object_type&gt;</ref>{</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>CBVHViewer&lt;real_type,<sp/>object_type&gt;{</highlight></codeline>
 <codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="normal">uint32_t</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(m_nodes.size()),</highlight></codeline>
 <codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="normal">uint32_t</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(m_objects.size()),</highlight></codeline>
 <codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>thrust::raw_pointer_cast(m_nodes.data()),</highlight></codeline>
@@ -1363,7 +1353,7 @@
 <codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>calculate<sp/>morton<sp/>code<sp/>of<sp/>each<sp/>points</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="155"><highlight class="normal"></highlight></codeline>
 <codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>inf<sp/>=<sp/>std::numeric_limits&lt;real_type&gt;::infinity();</highlight></codeline>
-<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structmuda_1_1lbvh_1_1_a_a_b_b" kindref="compound">aabb_type</ref><sp/><sp/>default_aabb;</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>aabb_type<sp/><sp/>default_aabb;</highlight></codeline>
 <codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>default_aabb.upper.x<sp/>=<sp/>-inf;</highlight></codeline>
 <codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>default_aabb.lower.x<sp/>=<sp/>inf;</highlight></codeline>
 <codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>default_aabb.upper.y<sp/>=<sp/>-inf;</highlight></codeline>
@@ -1375,7 +1365,7 @@
 <codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_morton.resize(num_objects);</highlight></codeline>
 <codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_indices.resize(num_objects);</highlight></codeline>
 <codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_morton64.resize(num_objects);</highlight></codeline>
-<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structmuda_1_1lbvh_1_1details_1_1_node" kindref="compound">node_type</ref><sp/>default_node;</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>node_type<sp/>default_node;</highlight></codeline>
 <codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>default_node.parent_idx<sp/>=<sp/>0xFFFFFFFF;</highlight></codeline>
 <codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>default_node.left_idx<sp/><sp/><sp/>=<sp/>0xFFFFFFFF;</highlight></codeline>
 <codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>default_node.right_idx<sp/><sp/>=<sp/>0xFFFFFFFF;</highlight></codeline>
@@ -1403,7 +1393,7 @@
 <codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_aabbs.data()<sp/>+<sp/>num_internal_nodes,</highlight></codeline>
 <codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_aabbs.data()<sp/>+<sp/>m_aabbs.size(),</highlight></codeline>
 <codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>default_aabb,</highlight></codeline>
-<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[]<sp/>__device__<sp/>__host__(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structmuda_1_1lbvh_1_1_a_a_b_b" kindref="compound">aabb_type</ref>&amp;<sp/>lhs,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structmuda_1_1lbvh_1_1_a_a_b_b" kindref="compound">aabb_type</ref>&amp;<sp/>rhs)<sp/>-&gt;<sp/><ref refid="structmuda_1_1lbvh_1_1_a_a_b_b" kindref="compound">aabb_type</ref></highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[]<sp/>__device__<sp/>__host__(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>aabb_type&amp;<sp/>lhs,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>aabb_type&amp;<sp/>rhs)<sp/>-&gt;<sp/>aabb_type</highlight></codeline>
 <codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>merge(lhs,<sp/>rhs);<sp/>});</highlight></codeline>
 <codeline lineno="199"><highlight class="normal"></highlight></codeline>
 <codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>thrust::transform(policy,</highlight></codeline>
@@ -1463,7 +1453,7 @@
 <codeline lineno="254"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;m_nodes.begin()<sp/>+<sp/>num_internal_nodes,</highlight></codeline>
 <codeline lineno="255"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[]<sp/>__device__<sp/>__host__(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>index_type<sp/>idx)</highlight></codeline>
 <codeline lineno="256"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="257"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structmuda_1_1lbvh_1_1details_1_1_node" kindref="compound">node_type</ref><sp/>n;</highlight></codeline>
+<codeline lineno="257"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>node_type<sp/>n;</highlight></codeline>
 <codeline lineno="258"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>n.parent_idx<sp/>=<sp/>0xFFFFFFFF;</highlight></codeline>
 <codeline lineno="259"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>n.left_idx<sp/><sp/><sp/>=<sp/>0xFFFFFFFF;</highlight></codeline>
 <codeline lineno="260"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>n.right_idx<sp/><sp/>=<sp/>0xFFFFFFFF;</highlight></codeline>
@@ -1528,36 +1518,36 @@
 <codeline lineno="319"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>});</highlight></codeline>
 <codeline lineno="320"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="321"><highlight class="normal"></highlight></codeline>
-<codeline lineno="322"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal">&amp;<sp/>objects()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">noexcept</highlight><highlight class="normal"><sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_objects;<sp/>}</highlight></codeline>
-<codeline lineno="323"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal">&amp;<sp/><sp/><sp/><sp/><sp/><sp/><sp/>objects()<sp/></highlight><highlight class="keyword">noexcept</highlight><highlight class="normal"><sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_objects;<sp/>}</highlight></codeline>
-<codeline lineno="324"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal">&amp;<sp/>aabbs()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">noexcept</highlight><highlight class="normal"><sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_aabbs;<sp/>}</highlight></codeline>
-<codeline lineno="325"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal">&amp;<sp/>nodes()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">noexcept</highlight><highlight class="normal"><sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_nodes;<sp/>}</highlight></codeline>
+<codeline lineno="322"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal">&amp;<sp/>objects()<sp/>const<sp/>noexcept<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_objects;<sp/>}</highlight></codeline>
+<codeline lineno="323"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal">&amp;<sp/><sp/><sp/><sp/><sp/><sp/><sp/>objects()<sp/>noexcept<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_objects;<sp/>}</highlight></codeline>
+<codeline lineno="324"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal">&amp;<sp/>aabbs()<sp/>const<sp/>noexcept<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_aabbs;<sp/>}</highlight></codeline>
+<codeline lineno="325"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal">&amp;<sp/>nodes()<sp/>const<sp/>noexcept<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_nodes;<sp/>}</highlight></codeline>
 <codeline lineno="326"><highlight class="normal"></highlight></codeline>
-<codeline lineno="327"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal">&amp;<sp/>host_objects()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">noexcept</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="327"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal">&amp;<sp/>host_objects()<sp/>const<sp/>noexcept</highlight></codeline>
 <codeline lineno="328"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="329"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>download_if_dirty();</highlight></codeline>
 <codeline lineno="330"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_h_objects;</highlight></codeline>
 <codeline lineno="331"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="332"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal">&amp;<sp/>host_aabbs()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">noexcept</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="332"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal">&amp;<sp/>host_aabbs()<sp/>const<sp/>noexcept</highlight></codeline>
 <codeline lineno="333"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="334"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>download_if_dirty();</highlight></codeline>
 <codeline lineno="335"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_h_aabbs;</highlight></codeline>
 <codeline lineno="336"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="337"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal">&amp;<sp/>host_nodes()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">noexcept</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="337"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal">&amp;<sp/>host_nodes()<sp/>const<sp/>noexcept</highlight></codeline>
 <codeline lineno="338"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="339"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>download_if_dirty();</highlight></codeline>
 <codeline lineno="340"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_h_nodes;</highlight></codeline>
 <codeline lineno="341"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="342"><highlight class="normal"></highlight></codeline>
 <codeline lineno="343"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="344"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classmuda_1_1_device_vector" kindref="compound">muda::DeviceVector&lt;uint32_t&gt;</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_morton;</highlight></codeline>
-<codeline lineno="345"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classmuda_1_1_device_vector" kindref="compound">muda::DeviceVector&lt;uint32_t&gt;</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_indices;</highlight></codeline>
-<codeline lineno="346"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classmuda_1_1_device_vector" kindref="compound">muda::DeviceVector&lt;unsigned long long int&gt;</ref><sp/>m_morton64;</highlight></codeline>
-<codeline lineno="347"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classmuda_1_1_device_vector" kindref="compound">muda::DeviceVector&lt;int&gt;</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_flag_container;</highlight></codeline>
+<codeline lineno="344"><highlight class="normal"><sp/><sp/><sp/><sp/>muda::DeviceVector&lt;uint32_t&gt;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_morton;</highlight></codeline>
+<codeline lineno="345"><highlight class="normal"><sp/><sp/><sp/><sp/>muda::DeviceVector&lt;uint32_t&gt;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_indices;</highlight></codeline>
+<codeline lineno="346"><highlight class="normal"><sp/><sp/><sp/><sp/>muda::DeviceVector&lt;unsigned<sp/>long<sp/>long<sp/>int&gt;<sp/>m_morton64;</highlight></codeline>
+<codeline lineno="347"><highlight class="normal"><sp/><sp/><sp/><sp/>muda::DeviceVector&lt;int&gt;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_flag_container;</highlight></codeline>
 <codeline lineno="348"><highlight class="normal"></highlight></codeline>
-<codeline lineno="349"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classmuda_1_1_device_vector" kindref="compound">muda::DeviceVector&lt;object_type&gt;</ref><sp/>m_objects;</highlight></codeline>
-<codeline lineno="350"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classmuda_1_1_device_vector" kindref="compound">muda::DeviceVector&lt;aabb_type&gt;</ref><sp/><sp/><sp/>m_aabbs;</highlight></codeline>
-<codeline lineno="351"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classmuda_1_1_device_vector" kindref="compound">muda::DeviceVector&lt;node_type&gt;</ref><sp/><sp/><sp/>m_nodes;</highlight></codeline>
+<codeline lineno="349"><highlight class="normal"><sp/><sp/><sp/><sp/>muda::DeviceVector&lt;object_type&gt;<sp/>m_objects;</highlight></codeline>
+<codeline lineno="350"><highlight class="normal"><sp/><sp/><sp/><sp/>muda::DeviceVector&lt;aabb_type&gt;<sp/><sp/><sp/>m_aabbs;</highlight></codeline>
+<codeline lineno="351"><highlight class="normal"><sp/><sp/><sp/><sp/>muda::DeviceVector&lt;node_type&gt;<sp/><sp/><sp/>m_nodes;</highlight></codeline>
 <codeline lineno="352"><highlight class="normal"></highlight></codeline>
 <codeline lineno="353"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">mutable</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_host_dirty<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="354"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">mutable</highlight><highlight class="normal"><sp/>thrust::host_vector&lt;object_type&gt;<sp/>m_h_objects;</highlight></codeline>

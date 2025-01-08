@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.1" xml:lang="en-US">
   <compounddef id="classmuda_1_1_field_entry" kind="class" language="C++" prot="public">
     <compoundname>muda::FieldEntry</compoundname>
     <basecompoundref refid="classmuda_1_1_field_entry_base" prot="public" virt="non-virtual">muda::FieldEntryBase</basecompoundref>
@@ -229,7 +229,7 @@
         <location file="src/muda/ext/field/field_entry.h" line="114" column="10" bodyfile="src/muda/ext/field/field_entry.h" bodystart="114" bodyend="117"/>
       </memberdef>
       <memberdef kind="function" id="classmuda_1_1_field_entry_1ad14e667bec21712477a91db553cda28f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>FieldEntryViewer&lt; T, Layout, M, N &gt;</type>
+        <type><ref refid="classmuda_1_1_field_entry_viewer" kindref="compound">FieldEntryViewer</ref>&lt; T, Layout, M, N &gt;</type>
         <definition>FieldEntryViewer&lt; T, Layout, M, N &gt; muda::FieldEntry&lt; T, Layout, M, N &gt;::viewer</definition>
         <argsstring>()</argsstring>
         <name>viewer</name>
@@ -243,7 +243,7 @@
         <location file="src/muda/ext/field/field_entry.h" line="119" column="23" bodyfile="src/muda/ext/field/field_entry.h" bodystart="119" bodyend="119"/>
       </memberdef>
       <memberdef kind="function" id="classmuda_1_1_field_entry_1a8966ddedddc6d26742e8388829eae010" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
-        <type>CFieldEntryViewer&lt; T, Layout, M, N &gt;</type>
+        <type><ref refid="classmuda_1_1_c_field_entry_viewer" kindref="compound">CFieldEntryViewer</ref>&lt; T, Layout, M, N &gt;</type>
         <definition>CFieldEntryViewer&lt; T, Layout, M, N &gt; muda::FieldEntry&lt; T, Layout, M, N &gt;::cviewer</definition>
         <argsstring>() const</argsstring>
         <name>cviewer</name>
@@ -408,10 +408,6 @@
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="5">
-        <label>muda::HostDeviceConfig&lt; muda::FieldEntryCore &gt;</label>
-        <link refid="classmuda_1_1_host_device_config"/>
-      </node>
       <node id="1">
         <label>muda::FieldEntry&lt; T, Layout, M, N &gt;</label>
         <link refid="classmuda_1_1_field_entry"/>
@@ -435,12 +431,16 @@
         <label>muda::FieldEntryCore</label>
         <link refid="classmuda_1_1_field_entry_core"/>
       </node>
+      <node id="5">
+        <label>muda::HostDeviceConfig&lt; muda::FieldEntryCore &gt;</label>
+        <link refid="classmuda_1_1_host_device_config"/>
+      </node>
       <node id="3">
         <label>muda::SubField</label>
         <link refid="classmuda_1_1_sub_field"/>
       </node>
     </collaborationgraph>
-    <location file="src/muda/ext/field/field_entry.h" line="75" column="1" bodyfile="src/muda/ext/field/field_entry.h" bodystart="76" bodyend="167"/>
+    <location file="src/muda/ext/field/field.h" line="10" column="1" bodyfile="src/muda/ext/field/sub_field.h" bodystart="14" bodyend="-1"/>
     <listofallmembers>
       <member refid="classmuda_1_1_field_entry_1ae3567de9d23f06d7cff3fe4d9bc5bcf5" prot="public" virt="virtual"><scope>muda::FieldEntry</scope><name>async_copy_to_new_place</name></member>
       <member refid="classmuda_1_1_field_entry_1a382f9a47ba9fbedfb00b878ae9138935" prot="public" virt="non-virtual"><scope>muda::FieldEntry</scope><name>copy_from</name></member>

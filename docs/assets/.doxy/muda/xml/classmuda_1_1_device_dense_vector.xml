@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.1" xml:lang="en-US">
   <compounddef id="classmuda_1_1_device_dense_vector" kind="class" language="C++" prot="public">
     <compoundname>muda::DeviceDenseVector</compoundname>
     <templateparamlist>
@@ -280,7 +280,7 @@
         <location file="src/muda/ext/linear_system/device_dense_vector.h" line="40" column="23"/>
       </memberdef>
       <memberdef kind="function" id="classmuda_1_1_device_dense_vector_1af1376bffa4178c64de627847edd40bc8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type><ref refid="classmuda_1_1_dense_vector_viewer" kindref="compound">DenseVectorViewer</ref>&lt; T &gt;</type>
+        <type><ref refid="classmuda_1_1_dense_vector_viewer_t" kindref="compound">DenseVectorViewer</ref>&lt; T &gt;</type>
         <definition>DenseVectorViewer&lt; T &gt; muda::DeviceDenseVector&lt; T &gt;::viewer</definition>
         <argsstring>()</argsstring>
         <name>viewer</name>
@@ -294,7 +294,7 @@
         <location file="src/muda/ext/linear_system/device_dense_vector.h" line="42" column="24" bodyfile="src/muda/ext/linear_system/device_dense_vector.h" bodystart="42" bodyend="42"/>
       </memberdef>
       <memberdef kind="function" id="classmuda_1_1_device_dense_vector_1a79743552e95fa357c1f3f00df7d3f4ec" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
-        <type><ref refid="classmuda_1_1_c_dense_vector_viewer" kindref="compound">CDenseVectorViewer</ref>&lt; T &gt;</type>
+        <type><ref refid="classmuda_1_1_dense_vector_viewer_t" kindref="compound">CDenseVectorViewer</ref>&lt; T &gt;</type>
         <definition>CDenseVectorViewer&lt; T &gt; muda::DeviceDenseVector&lt; T &gt;::viewer</definition>
         <argsstring>() const</argsstring>
         <name>viewer</name>
@@ -364,7 +364,7 @@
         <location file="src/muda/ext/linear_system/device_dense_vector.h" line="48" column="10" bodyfile="src/muda/ext/linear_system/device_dense_vector.h" bodystart="48" bodyend="48"/>
       </memberdef>
       <memberdef kind="function" id="classmuda_1_1_device_dense_vector_1af6275969393bc2a1462d311badc436e4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="classmuda_1_1_dense_vector_view_base" kindref="compound">CDenseVectorView</ref>&lt; T &gt;</type>
+        <type><ref refid="classmuda_1_1_dense_vector_view_t" kindref="compound">CDenseVectorView</ref>&lt; T &gt;</type>
         <definition>CDenseVectorView&lt; T &gt; muda::DeviceDenseVector&lt; T &gt;::view</definition>
         <argsstring>() const</argsstring>
         <name>view</name>
@@ -378,7 +378,7 @@
         <location file="src/muda/ext/linear_system/device_dense_vector.h" line="50" column="22"/>
       </memberdef>
       <memberdef kind="function" id="classmuda_1_1_device_dense_vector_1a0140e0b5eec08db012bf911b00d2c49a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="classmuda_1_1_dense_vector_view_base" kindref="compound">DenseVectorView</ref>&lt; T &gt;</type>
+        <type><ref refid="classmuda_1_1_dense_vector_view_t" kindref="compound">DenseVectorView</ref>&lt; T &gt;</type>
         <definition>DenseVectorView&lt; T &gt; muda::DeviceDenseVector&lt; T &gt;::view</definition>
         <argsstring>()</argsstring>
         <name>view</name>
@@ -392,7 +392,7 @@
         <location file="src/muda/ext/linear_system/device_dense_vector.h" line="51" column="22"/>
       </memberdef>
       <memberdef kind="function" id="classmuda_1_1_device_dense_vector_1a0c30d24e50209941b9d6a14ace1ca5b1" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
-        <type><ref refid="classmuda_1_1_dense_vector_view_base" kindref="compound">CDenseVectorView</ref>&lt; T &gt;</type>
+        <type><ref refid="classmuda_1_1_dense_vector_view_t" kindref="compound">CDenseVectorView</ref>&lt; T &gt;</type>
         <definition>CDenseVectorView&lt; T &gt; muda::DeviceDenseVector&lt; T &gt;::cview</definition>
         <argsstring>() const</argsstring>
         <name>cview</name>

@@ -63,7 +63,7 @@
 |  auto | [**capacity**](#function-capacity) () const<br> |
 |  void | [**copy\_to**](#function-copy_to-12) (Eigen::VectorX&lt; T &gt; & vec) const<br> |
 |  void | [**copy\_to**](#function-copy_to-22) (std::vector&lt; T &gt; & vec) const<br> |
-|  [**CDenseVectorView**](classmuda_1_1_dense_vector_view_base.md)&lt; T &gt; | [**cview**](#function-cview) () const<br> |
+|  [**CDenseVectorView**](classmuda_1_1_dense_vector_view_t.md)&lt; T &gt; | [**cview**](#function-cview) () const<br> |
 |  cusparseDnVecDescr\_t | [**descr**](#function-descr) () const<br> |
 |  void | [**fill**](#function-fill) (T value) <br> |
 |   | [**operator CDenseVectorView&lt; T &gt;**](#function-operator-cdensevectorview<-t->) () const<br> |
@@ -74,10 +74,10 @@
 |  void | [**reserve**](#function-reserve) (size\_t size) <br> |
 |  void | [**resize**](#function-resize) (size\_t size) <br> |
 |  auto | [**size**](#function-size) () const<br> |
-|  [**CDenseVectorView**](classmuda_1_1_dense_vector_view_base.md)&lt; T &gt; | [**view**](#function-view-12) () const<br> |
-|  [**DenseVectorView**](classmuda_1_1_dense_vector_view_base.md)&lt; T &gt; | [**view**](#function-view-22) () <br> |
-|  [**DenseVectorViewer**](classmuda_1_1_dense_vector_viewer.md)&lt; T &gt; | [**viewer**](#function-viewer-12) () <br> |
-|  [**CDenseVectorViewer**](classmuda_1_1_c_dense_vector_viewer.md)&lt; T &gt; | [**viewer**](#function-viewer-22) () const<br> |
+|  [**CDenseVectorView**](classmuda_1_1_dense_vector_view_t.md)&lt; T &gt; | [**view**](#function-view-12) () const<br> |
+|  [**DenseVectorView**](classmuda_1_1_dense_vector_view_t.md)&lt; T &gt; | [**view**](#function-view-22) () <br> |
+|  [**DenseVectorViewer**](classmuda_1_1_dense_vector_viewer_t.md)&lt; T &gt; | [**viewer**](#function-viewer-12) () <br> |
+|  [**CDenseVectorViewer**](classmuda_1_1_dense_vector_viewer_t.md)&lt; T &gt; | [**viewer**](#function-viewer-22) () const<br> |
 |   | [**~DeviceDenseVector**](#function-devicedensevector) () <br> |
 
 

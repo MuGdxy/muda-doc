@@ -1,21 +1,16 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.1" xml:lang="en-US">
   <compounddef id="namespacemuda" kind="namespace" language="C++">
     <compoundname>muda</compoundname>
     <innerclass refid="structmuda_1_1always__false" prot="public">muda::always_false</innerclass>
     <innerclass refid="structmuda_1_1always__true" prot="public">muda::always_true</innerclass>
-    <innerclass refid="classmuda_1_1_b_s_r_matrix_view_base" prot="public">muda::BSRMatrixViewBase</innerclass>
+    <innerclass refid="classmuda_1_1_b_s_r_matrix_view_t" prot="public">muda::BSRMatrixViewT</innerclass>
     <innerclass refid="classmuda_1_1_buffer2_d_view_t" prot="public">muda::Buffer2DViewT</innerclass>
     <innerclass refid="classmuda_1_1_buffer3_d_view_t" prot="public">muda::Buffer3DViewT</innerclass>
     <innerclass refid="classmuda_1_1_buffer_launch" prot="public">muda::BufferLaunch</innerclass>
     <innerclass refid="classmuda_1_1_buffer_view_t" prot="public">muda::BufferViewT</innerclass>
-    <innerclass refid="classmuda_1_1_c_dense_matrix_view" prot="public">muda::CDenseMatrixView</innerclass>
-    <innerclass refid="classmuda_1_1_c_dense_matrix_viewer" prot="public">muda::CDenseMatrixViewer</innerclass>
-    <innerclass refid="classmuda_1_1_c_dense_vector_viewer" prot="public">muda::CDenseVectorViewer</innerclass>
-    <innerclass refid="classmuda_1_1_c_doublet_vector_viewer" prot="public">muda::CDoubletVectorViewer</innerclass>
-    <innerclass refid="classmuda_1_1_c_doublet_vector_viewer_3_01_t_00_011_01_4" prot="public">muda::CDoubletVectorViewer&lt; T, 1 &gt;</innerclass>
     <innerclass refid="classmuda_1_1_c_field_entry_view" prot="public">muda::CFieldEntryView</innerclass>
-    <innerclass refid="classmuda_1_1_c_field_entry_viewer" prot="private">muda::CFieldEntryViewer</innerclass>
+    <innerclass refid="classmuda_1_1_c_field_entry_viewer" prot="public">muda::CFieldEntryViewer</innerclass>
     <innerclass refid="classmuda_1_1_closure_id" prot="public">muda::ClosureId</innerclass>
     <innerclass refid="classmuda_1_1_c_matrix_map_info" prot="public">muda::CMatrixMapInfo</innerclass>
     <innerclass refid="classmuda_1_1_compute_graph" prot="public">muda::ComputeGraph</innerclass>
@@ -27,18 +22,15 @@
     <innerclass refid="classmuda_1_1_compute_graph_node" prot="public">muda::ComputeGraphNode</innerclass>
     <innerclass refid="classmuda_1_1_compute_graph_node_base" prot="public">muda::ComputeGraphNodeBase</innerclass>
     <innerclass refid="classmuda_1_1_compute_graph_var" prot="public">muda::ComputeGraphVar</innerclass>
-    <innerclass refid="classmuda_1_1_compute_graph_var_3_01_buffer2_d_view_3_01_t_01_4_01_4" prot="public">muda::ComputeGraphVar&lt; Buffer2DView&lt; T &gt; &gt;</innerclass>
-    <innerclass refid="classmuda_1_1_compute_graph_var_3_01_buffer3_d_view_3_01_t_01_4_01_4" prot="public">muda::ComputeGraphVar&lt; Buffer3DView&lt; T &gt; &gt;</innerclass>
-    <innerclass refid="classmuda_1_1_compute_graph_var_3_01_buffer_view_3_01_t_01_4_01_4" prot="public">muda::ComputeGraphVar&lt; BufferView&lt; T &gt; &gt;</innerclass>
-    <innerclass refid="classmuda_1_1_compute_graph_var_3_01_graph_viewer_01_4" prot="public">muda::ComputeGraphVar&lt; GraphViewer &gt;</innerclass>
-    <innerclass refid="classmuda_1_1_compute_graph_var_3_01_var_view_3_01_t_01_4_01_4" prot="public">muda::ComputeGraphVar&lt; VarView&lt; T &gt; &gt;</innerclass>
+    <innerclass refid="classmuda_1_1_compute_graph_var" prot="public">muda::ComputeGraphVar&lt; Buffer2DView&lt; T &gt; &gt;</innerclass>
+    <innerclass refid="classmuda_1_1_compute_graph_var" prot="public">muda::ComputeGraphVar&lt; Buffer3DView&lt; T &gt; &gt;</innerclass>
+    <innerclass refid="classmuda_1_1_compute_graph_var" prot="public">muda::ComputeGraphVar&lt; BufferView&lt; T &gt; &gt;</innerclass>
+    <innerclass refid="classmuda_1_1_compute_graph_var" prot="public">muda::ComputeGraphVar&lt; GraphViewer &gt;</innerclass>
+    <innerclass refid="classmuda_1_1_compute_graph_var" prot="public">muda::ComputeGraphVar&lt; VarView&lt; T &gt; &gt;</innerclass>
     <innerclass refid="classmuda_1_1_compute_graph_var_base" prot="public">muda::ComputeGraphVarBase</innerclass>
     <innerclass refid="classmuda_1_1_compute_graph_var_manager" prot="public">muda::ComputeGraphVarManager</innerclass>
-    <innerclass refid="classmuda_1_1_c_o_o_matrix_view_base" prot="public">muda::COOMatrixViewBase</innerclass>
+    <innerclass refid="classmuda_1_1_c_o_o_matrix_view_t" prot="public">muda::COOMatrixViewT</innerclass>
     <innerclass refid="classmuda_1_1_c_o_o_vector_view_base" prot="public">muda::COOVectorViewBase</innerclass>
-    <innerclass refid="classmuda_1_1_c_s_r_matrix_view_base" prot="public">muda::CSRMatrixViewBase</innerclass>
-    <innerclass refid="classmuda_1_1_c_triplet_matrix_viewer" prot="public">muda::CTripletMatrixViewer</innerclass>
-    <innerclass refid="classmuda_1_1_c_triplet_matrix_viewer_3_01_t_00_011_01_4" prot="public">muda::CTripletMatrixViewer&lt; T, 1 &gt;</innerclass>
     <innerclass refid="classmuda_1_1_cub_wrapper" prot="public">muda::CubWrapper</innerclass>
     <innerclass refid="classmuda_1_1cuda__error" prot="public">muda::cuda_error</innerclass>
     <innerclass refid="classmuda_1_1_debug" prot="public">muda::Debug</innerclass>
@@ -46,27 +38,22 @@
     <innerclass refid="classmuda_1_1_dense1_d_t" prot="public">muda::Dense1DT</innerclass>
     <innerclass refid="classmuda_1_1_dense2_d_base" prot="public">muda::Dense2DBase</innerclass>
     <innerclass refid="classmuda_1_1_dense3_d_base" prot="public">muda::Dense3DBase</innerclass>
-    <innerclass refid="classmuda_1_1_dense_matrix_view" prot="public">muda::DenseMatrixView</innerclass>
-    <innerclass refid="classmuda_1_1_dense_matrix_view_base" prot="public">muda::DenseMatrixViewBase</innerclass>
-    <innerclass refid="classmuda_1_1_dense_matrix_viewer" prot="public">muda::DenseMatrixViewer</innerclass>
-    <innerclass refid="classmuda_1_1_dense_matrix_viewer_base" prot="public">muda::DenseMatrixViewerBase</innerclass>
-    <innerclass refid="classmuda_1_1_dense_vector_view_base" prot="public">muda::DenseVectorViewBase</innerclass>
-    <innerclass refid="classmuda_1_1_dense_vector_viewer" prot="public">muda::DenseVectorViewer</innerclass>
-    <innerclass refid="classmuda_1_1_dense_vector_viewer_base" prot="public">muda::DenseVectorViewerBase</innerclass>
+    <innerclass refid="classmuda_1_1_dense_matrix_viewer_t" prot="public">muda::DenseMatrixViewerT</innerclass>
+    <innerclass refid="classmuda_1_1_dense_matrix_view_t" prot="public">muda::DenseMatrixViewT</innerclass>
+    <innerclass refid="classmuda_1_1_dense_vector_viewer_t" prot="public">muda::DenseVectorViewerT</innerclass>
+    <innerclass refid="classmuda_1_1_dense_vector_view_t" prot="public">muda::DenseVectorViewT</innerclass>
     <innerclass refid="classmuda_1_1_dense_viewer_t" prot="public">muda::DenseViewerT</innerclass>
     <innerclass refid="classmuda_1_1_device_b_c_o_o_matrix" prot="public">muda::DeviceBCOOMatrix</innerclass>
-    <innerclass refid="classmuda_1_1_device_b_c_o_o_matrix_3_01_ty_00_011_01_4" prot="public">muda::DeviceBCOOMatrix&lt; Ty, 1 &gt;</innerclass>
+    <innerclass refid="classmuda_1_1_device_b_c_o_o_matrix" prot="public">muda::DeviceBCOOMatrix&lt; Ty, 1 &gt;</innerclass>
     <innerclass refid="classmuda_1_1_device_b_c_o_o_vector" prot="public">muda::DeviceBCOOVector</innerclass>
-    <innerclass refid="classmuda_1_1_device_b_c_o_o_vector_3_01_t_00_011_01_4" prot="public">muda::DeviceBCOOVector&lt; T, 1 &gt;</innerclass>
+    <innerclass refid="classmuda_1_1_device_b_c_o_o_vector" prot="public">muda::DeviceBCOOVector&lt; T, 1 &gt;</innerclass>
     <innerclass refid="classmuda_1_1_device_b_s_r_matrix" prot="public">muda::DeviceBSRMatrix</innerclass>
     <innerclass refid="classmuda_1_1_device_buffer" prot="public">muda::DeviceBuffer</innerclass>
     <innerclass refid="classmuda_1_1_device_buffer2_d" prot="public">muda::DeviceBuffer2D</innerclass>
     <innerclass refid="classmuda_1_1_device_buffer3_d" prot="public">muda::DeviceBuffer3D</innerclass>
-    <innerclass refid="classmuda_1_1_device_c_s_r_matrix" prot="public">muda::DeviceCSRMatrix</innerclass>
     <innerclass refid="classmuda_1_1_device_dense_matrix" prot="public">muda::DeviceDenseMatrix</innerclass>
     <innerclass refid="classmuda_1_1_device_dense_vector" prot="public">muda::DeviceDenseVector</innerclass>
     <innerclass refid="classmuda_1_1_device_doublet_vector" prot="public">muda::DeviceDoubletVector</innerclass>
-    <innerclass refid="classmuda_1_1_device_doublet_vector_3_01_t_00_011_01_4" prot="public">muda::DeviceDoubletVector&lt; T, 1 &gt;</innerclass>
     <innerclass refid="classmuda_1_1_device_histogram" prot="public">muda::DeviceHistogram</innerclass>
     <innerclass refid="classmuda_1_1_device_merge_sort" prot="public">muda::DeviceMergeSort</innerclass>
     <innerclass refid="classmuda_1_1_device_partition" prot="public">muda::DevicePartition</innerclass>
@@ -80,15 +67,11 @@
     <innerclass refid="classmuda_1_1_device_select" prot="public">muda::DeviceSelect</innerclass>
     <innerclass refid="classmuda_1_1_device_spmv" prot="public">muda::DeviceSpmv</innerclass>
     <innerclass refid="classmuda_1_1_device_triplet_matrix" prot="public">muda::DeviceTripletMatrix</innerclass>
-    <innerclass refid="classmuda_1_1_device_triplet_matrix_3_01_t_00_011_01_4" prot="public">muda::DeviceTripletMatrix&lt; T, 1 &gt;</innerclass>
     <innerclass refid="classmuda_1_1_device_var" prot="public">muda::DeviceVar</innerclass>
     <innerclass refid="classmuda_1_1_device_vector" prot="public">muda::DeviceVector</innerclass>
-    <innerclass refid="classmuda_1_1_doublet_vector_view_base" prot="public">muda::DoubletVectorViewBase</innerclass>
-    <innerclass refid="classmuda_1_1_doublet_vector_view_base_3_01_is_const_00_01_t_00_011_01_4" prot="public">muda::DoubletVectorViewBase&lt; IsConst, T, 1 &gt;</innerclass>
-    <innerclass refid="classmuda_1_1_doublet_vector_viewer" prot="public">muda::DoubletVectorViewer</innerclass>
-    <innerclass refid="classmuda_1_1_doublet_vector_viewer_3_01_t_00_011_01_4" prot="public">muda::DoubletVectorViewer&lt; T, 1 &gt;</innerclass>
-    <innerclass refid="classmuda_1_1_doublet_vector_viewer_base" prot="public">muda::DoubletVectorViewerBase</innerclass>
-    <innerclass refid="classmuda_1_1_doublet_vector_viewer_base_3_01_is_const_00_01_t_00_011_01_4" prot="public">muda::DoubletVectorViewerBase&lt; IsConst, T, 1 &gt;</innerclass>
+    <innerclass refid="classmuda_1_1_doublet_vector_viewer_t" prot="public">muda::DoubletVectorViewerT</innerclass>
+    <innerclass refid="classmuda_1_1_doublet_vector_view_t" prot="public">muda::DoubletVectorViewT</innerclass>
+    <innerclass refid="classmuda_1_1_doublet_vector_view_t" prot="public">muda::DoubletVectorViewT&lt; IsConst, T, 1 &gt;</innerclass>
     <innerclass refid="classmuda_1_1_empty" prot="public">muda::Empty</innerclass>
     <innerclass refid="classmuda_1_1_event" prot="public">muda::Event</innerclass>
     <innerclass refid="classmuda_1_1_event_record_node" prot="public">muda::EventRecordNode</innerclass>
@@ -108,8 +91,8 @@
     <innerclass refid="classmuda_1_1_field_entry_view" prot="public">muda::FieldEntryView</innerclass>
     <innerclass refid="classmuda_1_1_field_entry_view_base" prot="public">muda::FieldEntryViewBase</innerclass>
     <innerclass refid="classmuda_1_1_field_entry_view_core" prot="public">muda::FieldEntryViewCore</innerclass>
-    <innerclass refid="classmuda_1_1_field_entry_viewer" prot="private">muda::FieldEntryViewer</innerclass>
-    <innerclass refid="classmuda_1_1_field_entry_viewer_base" prot="private">muda::FieldEntryViewerBase</innerclass>
+    <innerclass refid="classmuda_1_1_field_entry_viewer" prot="public">muda::FieldEntryViewer</innerclass>
+    <innerclass refid="classmuda_1_1_field_entry_viewer_base" prot="public">muda::FieldEntryViewerBase</innerclass>
     <innerclass refid="classmuda_1_1_field_entry_viewer_core" prot="public">muda::FieldEntryViewerCore</innerclass>
     <innerclass refid="classmuda_1_1_flags" prot="public">muda::Flags</innerclass>
     <innerclass refid="structmuda_1_1force__trivial" prot="public">muda::force_trivial</innerclass>
@@ -166,65 +149,58 @@
     <innerclass refid="classmuda_1_1_parallel_for_details" prot="public">muda::ParallelForDetails</innerclass>
     <innerclass refid="classmuda_1_1_profile" prot="public">muda::Profile</innerclass>
     <innerclass refid="classmuda_1_1_range_name" prot="public">muda::RangeName</innerclass>
-    <innerclass refid="structmuda_1_1read__only__viewer" prot="public">muda::read_only_viewer</innerclass>
-    <innerclass refid="structmuda_1_1read__only__viewer_3_01_b_s_r_matrix_view_3_01_ty_00_01_n_01_4_01_4" prot="public">muda::read_only_viewer&lt; BSRMatrixView&lt; Ty, N &gt; &gt;</innerclass>
-    <innerclass refid="structmuda_1_1read__only__viewer_3_01_buffer2_d_view_3_01_t_01_4_01_4" prot="public">muda::read_only_viewer&lt; Buffer2DView&lt; T &gt; &gt;</innerclass>
-    <innerclass refid="structmuda_1_1read__only__viewer_3_01_buffer3_d_view_3_01_t_01_4_01_4" prot="public">muda::read_only_viewer&lt; Buffer3DView&lt; T &gt; &gt;</innerclass>
-    <innerclass refid="structmuda_1_1read__only__viewer_3_01_buffer_view_3_01_t_01_4_01_4" prot="public">muda::read_only_viewer&lt; BufferView&lt; T &gt; &gt;</innerclass>
-    <innerclass refid="structmuda_1_1read__only__viewer_3_01_c_o_o_matrix_view_3_01_t_01_4_01_4" prot="public">muda::read_only_viewer&lt; COOMatrixView&lt; T &gt; &gt;</innerclass>
-    <innerclass refid="structmuda_1_1read__only__viewer_3_01_c_o_o_vector_view_3_01_t_01_4_01_4" prot="public">muda::read_only_viewer&lt; COOVectorView&lt; T &gt; &gt;</innerclass>
-    <innerclass refid="structmuda_1_1read__only__viewer_3_01_c_s_r_matrix_view_3_01_ty_01_4_01_4" prot="public">muda::read_only_viewer&lt; CSRMatrixView&lt; Ty &gt; &gt;</innerclass>
-    <innerclass refid="structmuda_1_1read__only__viewer_3_01cuda_event__t_01_4" prot="public">muda::read_only_viewer&lt; cudaEvent_t &gt;</innerclass>
-    <innerclass refid="structmuda_1_1read__only__viewer_3_01_dense1_d_3_01_t_01_4_01_4" prot="public">muda::read_only_viewer&lt; Dense1D&lt; T &gt; &gt;</innerclass>
-    <innerclass refid="structmuda_1_1read__only__viewer_3_01_dense2_d_3_01_t_01_4_01_4" prot="public">muda::read_only_viewer&lt; Dense2D&lt; T &gt; &gt;</innerclass>
-    <innerclass refid="structmuda_1_1read__only__viewer_3_01_dense3_d_3_01_t_01_4_01_4" prot="public">muda::read_only_viewer&lt; Dense3D&lt; T &gt; &gt;</innerclass>
-    <innerclass refid="structmuda_1_1read__only__viewer_3_01_dense_3_01_t_01_4_01_4" prot="public">muda::read_only_viewer&lt; Dense&lt; T &gt; &gt;</innerclass>
-    <innerclass refid="structmuda_1_1read__only__viewer_3_01_dense_vector_view_3_01_ty_01_4_01_4" prot="public">muda::read_only_viewer&lt; DenseVectorView&lt; Ty &gt; &gt;</innerclass>
-    <innerclass refid="structmuda_1_1read__only__viewer_3_01_dense_vector_viewer_3_01_t_01_4_01_4" prot="public">muda::read_only_viewer&lt; DenseVectorViewer&lt; T &gt; &gt;</innerclass>
-    <innerclass refid="structmuda_1_1read__only__viewer_3_01_doublet_vector_view_3_01_ty_00_01_n_01_4_01_4" prot="public">muda::read_only_viewer&lt; DoubletVectorView&lt; Ty, N &gt; &gt;</innerclass>
-    <innerclass refid="structmuda_1_1read__only__viewer_3_01_field_entry_view_3_01_t_00_01_layout_00_01_m_00_01_n_01_4_01_4" prot="public">muda::read_only_viewer&lt; FieldEntryView&lt; T, Layout, M, N &gt; &gt;</innerclass>
-    <innerclass refid="structmuda_1_1read__only__viewer_3_01_graph_viewer_01_4" prot="public">muda::read_only_viewer&lt; GraphViewer &gt;</innerclass>
-    <innerclass refid="structmuda_1_1read__only__viewer_3_01lbvh_1_1_b_v_h_viewer_3_01_real_00_01_object_01_4_01_4" prot="public">muda::read_only_viewer&lt; lbvh::BVHViewer&lt; Real, Object &gt; &gt;</innerclass>
-    <innerclass refid="structmuda_1_1read__only__viewer_3_01_t_01_5_01_4" prot="public">muda::read_only_viewer&lt; T * &gt;</innerclass>
-    <innerclass refid="structmuda_1_1read__only__viewer_3_01_triplet_matrix_view_3_01_ty_00_01_n_01_4_01_4" prot="public">muda::read_only_viewer&lt; TripletMatrixView&lt; Ty, N &gt; &gt;</innerclass>
-    <innerclass refid="structmuda_1_1read__only__viewer_3_01_var_view_3_01_t_01_4_01_4" prot="public">muda::read_only_viewer&lt; VarView&lt; T &gt; &gt;</innerclass>
-    <innerclass refid="structmuda_1_1read__write__viewer" prot="public">muda::read_write_viewer</innerclass>
-    <innerclass refid="structmuda_1_1read__write__viewer_3_01_c_b_s_r_matrix_view_3_01_ty_00_01_n_01_4_01_4" prot="public">muda::read_write_viewer&lt; CBSRMatrixView&lt; Ty, N &gt; &gt;</innerclass>
-    <innerclass refid="structmuda_1_1read__write__viewer_3_01_c_buffer2_d_view_3_01_t_01_4_01_4" prot="public">muda::read_write_viewer&lt; CBuffer2DView&lt; T &gt; &gt;</innerclass>
-    <innerclass refid="structmuda_1_1read__write__viewer_3_01_c_buffer3_d_view_3_01_t_01_4_01_4" prot="public">muda::read_write_viewer&lt; CBuffer3DView&lt; T &gt; &gt;</innerclass>
-    <innerclass refid="structmuda_1_1read__write__viewer_3_01_c_buffer_view_3_01_t_01_4_01_4" prot="public">muda::read_write_viewer&lt; CBufferView&lt; T &gt; &gt;</innerclass>
-    <innerclass refid="structmuda_1_1read__write__viewer_3_01_c_c_o_o_matrix_view_3_01_t_01_4_01_4" prot="public">muda::read_write_viewer&lt; CCOOMatrixView&lt; T &gt; &gt;</innerclass>
-    <innerclass refid="structmuda_1_1read__write__viewer_3_01_c_c_o_o_vector_view_3_01_t_01_4_01_4" prot="public">muda::read_write_viewer&lt; CCOOVectorView&lt; T &gt; &gt;</innerclass>
-    <innerclass refid="structmuda_1_1read__write__viewer_3_01_c_dense1_d_3_01_t_01_4_01_4" prot="public">muda::read_write_viewer&lt; CDense1D&lt; T &gt; &gt;</innerclass>
-    <innerclass refid="structmuda_1_1read__write__viewer_3_01_c_dense2_d_3_01_t_01_4_01_4" prot="public">muda::read_write_viewer&lt; CDense2D&lt; T &gt; &gt;</innerclass>
-    <innerclass refid="structmuda_1_1read__write__viewer_3_01_c_dense3_d_3_01_t_01_4_01_4" prot="public">muda::read_write_viewer&lt; CDense3D&lt; T &gt; &gt;</innerclass>
-    <innerclass refid="structmuda_1_1read__write__viewer_3_01_c_dense_3_01_t_01_4_01_4" prot="public">muda::read_write_viewer&lt; CDense&lt; T &gt; &gt;</innerclass>
-    <innerclass refid="structmuda_1_1read__write__viewer_3_01_c_dense_vector_viewer_3_01_t_01_4_01_4" prot="public">muda::read_write_viewer&lt; CDenseVectorViewer&lt; T &gt; &gt;</innerclass>
-    <innerclass refid="structmuda_1_1read__write__viewer_3_01_c_doublet_vector_view_3_01_ty_00_01_n_01_4_01_4" prot="public">muda::read_write_viewer&lt; CDoubletVectorView&lt; Ty, N &gt; &gt;</innerclass>
-    <innerclass refid="structmuda_1_1read__write__viewer_3_01_c_field_entry_view_3_01_t_00_01_layout_00_01_m_00_01_n_01_4_01_4" prot="public">muda::read_write_viewer&lt; CFieldEntryView&lt; T, Layout, M, N &gt; &gt;</innerclass>
-    <innerclass refid="structmuda_1_1read__write__viewer_3_01const_01_t_01_5_01_4" prot="public">muda::read_write_viewer&lt; const T * &gt;</innerclass>
-    <innerclass refid="structmuda_1_1read__write__viewer_3_01_c_s_r_matrix_view_3_01_ty_01_4_01_4" prot="public">muda::read_write_viewer&lt; CSRMatrixView&lt; Ty &gt; &gt;</innerclass>
-    <innerclass refid="structmuda_1_1read__write__viewer_3_01cuda_event__t_01_4" prot="public">muda::read_write_viewer&lt; cudaEvent_t &gt;</innerclass>
-    <innerclass refid="structmuda_1_1read__write__viewer_3_01_c_var_view_3_01_t_01_4_01_4" prot="public">muda::read_write_viewer&lt; CVarView&lt; T &gt; &gt;</innerclass>
-    <innerclass refid="structmuda_1_1read__write__viewer_3_01_dense_vector_view_3_01_ty_01_4_01_4" prot="public">muda::read_write_viewer&lt; DenseVectorView&lt; Ty &gt; &gt;</innerclass>
-    <innerclass refid="structmuda_1_1read__write__viewer_3_01_graph_viewer_01_4" prot="public">muda::read_write_viewer&lt; GraphViewer &gt;</innerclass>
-    <innerclass refid="structmuda_1_1read__write__viewer_3_01lbvh_1_1_c_b_v_h_viewer_3_01_real_00_01_object_01_4_01_4" prot="public">muda::read_write_viewer&lt; lbvh::CBVHViewer&lt; Real, Object &gt; &gt;</innerclass>
-    <innerclass refid="structmuda_1_1read__write__viewer_3_01_triplet_matrix_view_3_01_ty_00_01_n_01_4_01_4" prot="public">muda::read_write_viewer&lt; TripletMatrixView&lt; Ty, N &gt; &gt;</innerclass>
+    <innerclass refid="structmuda_1_1read__only__view" prot="public">muda::read_only_view</innerclass>
+    <innerclass refid="structmuda_1_1read__only__view" prot="public">muda::read_only_view&lt; BSRMatrixView&lt; Ty, N &gt; &gt;</innerclass>
+    <innerclass refid="structmuda_1_1read__only__view" prot="public">muda::read_only_view&lt; Buffer2DView&lt; T &gt; &gt;</innerclass>
+    <innerclass refid="structmuda_1_1read__only__view" prot="public">muda::read_only_view&lt; Buffer3DView&lt; T &gt; &gt;</innerclass>
+    <innerclass refid="structmuda_1_1read__only__view" prot="public">muda::read_only_view&lt; BufferView&lt; T &gt; &gt;</innerclass>
+    <innerclass refid="structmuda_1_1read__only__view" prot="public">muda::read_only_view&lt; COOMatrixView&lt; T &gt; &gt;</innerclass>
+    <innerclass refid="structmuda_1_1read__only__view" prot="public">muda::read_only_view&lt; COOVectorView&lt; T &gt; &gt;</innerclass>
+    <innerclass refid="structmuda_1_1read__only__view" prot="public">muda::read_only_view&lt; cudaEvent_t &gt;</innerclass>
+    <innerclass refid="structmuda_1_1read__only__view" prot="public">muda::read_only_view&lt; Dense1D&lt; T &gt; &gt;</innerclass>
+    <innerclass refid="structmuda_1_1read__only__view" prot="public">muda::read_only_view&lt; Dense2D&lt; T &gt; &gt;</innerclass>
+    <innerclass refid="structmuda_1_1read__only__view" prot="public">muda::read_only_view&lt; Dense3D&lt; T &gt; &gt;</innerclass>
+    <innerclass refid="structmuda_1_1read__only__view" prot="public">muda::read_only_view&lt; Dense&lt; T &gt; &gt;</innerclass>
+    <innerclass refid="structmuda_1_1read__only__view" prot="public">muda::read_only_view&lt; DenseVectorView&lt; Ty &gt; &gt;</innerclass>
+    <innerclass refid="structmuda_1_1read__only__view" prot="public">muda::read_only_view&lt; DoubletVectorView&lt; Ty, N &gt; &gt;</innerclass>
+    <innerclass refid="structmuda_1_1read__only__view" prot="public">muda::read_only_view&lt; FieldEntryView&lt; T, Layout, M, N &gt; &gt;</innerclass>
+    <innerclass refid="structmuda_1_1read__only__view" prot="public">muda::read_only_view&lt; GraphViewer &gt;</innerclass>
+    <innerclass refid="structmuda_1_1read__only__view" prot="public">muda::read_only_view&lt; lbvh::BVHViewer&lt; Real, Object &gt; &gt;</innerclass>
+    <innerclass refid="structmuda_1_1read__only__view" prot="public">muda::read_only_view&lt; T * &gt;</innerclass>
+    <innerclass refid="structmuda_1_1read__only__view" prot="public">muda::read_only_view&lt; TripletMatrixView&lt; Ty, N &gt; &gt;</innerclass>
+    <innerclass refid="structmuda_1_1read__only__view" prot="public">muda::read_only_view&lt; VarView&lt; T &gt; &gt;</innerclass>
+    <innerclass refid="structmuda_1_1read__write__view" prot="public">muda::read_write_view</innerclass>
+    <innerclass refid="structmuda_1_1read__write__view" prot="public">muda::read_write_view&lt; CBSRMatrixView&lt; Ty, N &gt; &gt;</innerclass>
+    <innerclass refid="structmuda_1_1read__write__view" prot="public">muda::read_write_view&lt; CBuffer2DView&lt; T &gt; &gt;</innerclass>
+    <innerclass refid="structmuda_1_1read__write__view" prot="public">muda::read_write_view&lt; CBuffer3DView&lt; T &gt; &gt;</innerclass>
+    <innerclass refid="structmuda_1_1read__write__view" prot="public">muda::read_write_view&lt; CBufferView&lt; T &gt; &gt;</innerclass>
+    <innerclass refid="structmuda_1_1read__write__view" prot="public">muda::read_write_view&lt; CCOOMatrixView&lt; T &gt; &gt;</innerclass>
+    <innerclass refid="structmuda_1_1read__write__view" prot="public">muda::read_write_view&lt; CCOOVectorView&lt; T &gt; &gt;</innerclass>
+    <innerclass refid="structmuda_1_1read__write__view" prot="public">muda::read_write_view&lt; CDense1D&lt; T &gt; &gt;</innerclass>
+    <innerclass refid="structmuda_1_1read__write__view" prot="public">muda::read_write_view&lt; CDense2D&lt; T &gt; &gt;</innerclass>
+    <innerclass refid="structmuda_1_1read__write__view" prot="public">muda::read_write_view&lt; CDense3D&lt; T &gt; &gt;</innerclass>
+    <innerclass refid="structmuda_1_1read__write__view" prot="public">muda::read_write_view&lt; CDense&lt; T &gt; &gt;</innerclass>
+    <innerclass refid="structmuda_1_1read__write__view" prot="public">muda::read_write_view&lt; CDoubletVectorView&lt; Ty, N &gt; &gt;</innerclass>
+    <innerclass refid="structmuda_1_1read__write__view" prot="public">muda::read_write_view&lt; CFieldEntryView&lt; T, Layout, M, N &gt; &gt;</innerclass>
+    <innerclass refid="structmuda_1_1read__write__view" prot="public">muda::read_write_view&lt; const T * &gt;</innerclass>
+    <innerclass refid="structmuda_1_1read__write__view" prot="public">muda::read_write_view&lt; cudaEvent_t &gt;</innerclass>
+    <innerclass refid="structmuda_1_1read__write__view" prot="public">muda::read_write_view&lt; CVarView&lt; T &gt; &gt;</innerclass>
+    <innerclass refid="structmuda_1_1read__write__view" prot="public">muda::read_write_view&lt; DenseVectorView&lt; Ty &gt; &gt;</innerclass>
+    <innerclass refid="structmuda_1_1read__write__view" prot="public">muda::read_write_view&lt; GraphViewer &gt;</innerclass>
+    <innerclass refid="structmuda_1_1read__write__view" prot="public">muda::read_write_view&lt; lbvh::CBVHViewer&lt; Real, Object &gt; &gt;</innerclass>
+    <innerclass refid="structmuda_1_1read__write__view" prot="public">muda::read_write_view&lt; TripletMatrixView&lt; Ty, N &gt; &gt;</innerclass>
     <innerclass refid="classmuda_1_1runtime__error" prot="public">muda::runtime_error</innerclass>
     <innerclass refid="classmuda_1_1_stream" prot="public">muda::Stream</innerclass>
     <innerclass refid="classmuda_1_1_sub_field" prot="public">muda::SubField</innerclass>
     <innerclass refid="classmuda_1_1_sub_field_impl" prot="public">muda::SubFieldImpl</innerclass>
-    <innerclass refid="classmuda_1_1_sub_field_impl_3_01_field_entry_layout_1_1_ao_s_01_4" prot="public">muda::SubFieldImpl&lt; FieldEntryLayout::AoS &gt;</innerclass>
-    <innerclass refid="classmuda_1_1_sub_field_impl_3_01_field_entry_layout_1_1_ao_so_a_01_4" prot="public">muda::SubFieldImpl&lt; FieldEntryLayout::AoSoA &gt;</innerclass>
-    <innerclass refid="classmuda_1_1_sub_field_impl_3_01_field_entry_layout_1_1_so_a_01_4" prot="public">muda::SubFieldImpl&lt; FieldEntryLayout::SoA &gt;</innerclass>
+    <innerclass refid="classmuda_1_1_sub_field_impl" prot="public">muda::SubFieldImpl&lt; FieldEntryLayout::AoS &gt;</innerclass>
+    <innerclass refid="classmuda_1_1_sub_field_impl" prot="public">muda::SubFieldImpl&lt; FieldEntryLayout::AoSoA &gt;</innerclass>
+    <innerclass refid="classmuda_1_1_sub_field_impl" prot="public">muda::SubFieldImpl&lt; FieldEntryLayout::SoA &gt;</innerclass>
     <innerclass refid="classmuda_1_1_sub_field_interface" prot="public">muda::SubFieldInterface</innerclass>
     <innerclass refid="structmuda_1_1_tag" prot="public">muda::Tag</innerclass>
-    <innerclass refid="classmuda_1_1_triplet_matrix_view_base" prot="public">muda::TripletMatrixViewBase</innerclass>
-    <innerclass refid="classmuda_1_1_triplet_matrix_view_base_3_01_is_const_00_01_ty_00_011_01_4" prot="public">muda::TripletMatrixViewBase&lt; IsConst, Ty, 1 &gt;</innerclass>
-    <innerclass refid="classmuda_1_1_triplet_matrix_viewer" prot="public">muda::TripletMatrixViewer</innerclass>
-    <innerclass refid="classmuda_1_1_triplet_matrix_viewer_3_01_t_00_011_01_4" prot="public">muda::TripletMatrixViewer&lt; T, 1 &gt;</innerclass>
-    <innerclass refid="classmuda_1_1_triplet_matrix_viewer_base" prot="public">muda::TripletMatrixViewerBase</innerclass>
-    <innerclass refid="classmuda_1_1_triplet_matrix_viewer_base_3_01_is_const_00_01_t_00_011_01_4" prot="public">muda::TripletMatrixViewerBase&lt; IsConst, T, 1 &gt;</innerclass>
+    <innerclass refid="classmuda_1_1_triplet_matrix_viewer_t" prot="public">muda::TripletMatrixViewerT</innerclass>
+    <innerclass refid="classmuda_1_1_triplet_matrix_view_t" prot="public">muda::TripletMatrixViewT</innerclass>
+    <innerclass refid="classmuda_1_1_triplet_matrix_view_t" prot="public">muda::TripletMatrixViewT&lt; IsConst, Ty, 1 &gt;</innerclass>
     <innerclass refid="classmuda_1_1_var_id" prot="public">muda::VarId</innerclass>
     <innerclass refid="classmuda_1_1_var_view_t" prot="public">muda::VarViewT</innerclass>
     <innerclass refid="classmuda_1_1_view_base" prot="public">muda::ViewBase</innerclass>
@@ -790,14 +766,14 @@
       </memberdef>
     </sectiondef>
     <sectiondef kind="typedef">
-      <memberdef kind="typedef" id="buffer__2d__view_8h_1aa84e3adbe5239df70a1afd937f3d101d" prot="public" static="no">
+      <memberdef kind="typedef" id="buffer__2d__view_8h_1a1b813046e9a897a1d2416a8dc0fed042" prot="public" static="no">
         <templateparamlist>
           <param>
             <type>typename T</type>
           </param>
         </templateparamlist>
         <type><ref refid="classmuda_1_1_buffer2_d_view_t" kindref="compound">Buffer2DViewT</ref>&lt; false, T &gt;</type>
-        <definition>using muda::Buffer2DView = typedef Buffer2DViewT&lt;false, T&gt;</definition>
+        <definition>using muda::Buffer2DView =  Buffer2DViewT&lt;false, T&gt;</definition>
         <argsstring></argsstring>
         <name>Buffer2DView</name>
         <qualifiedname>muda::Buffer2DView</qualifiedname>
@@ -809,14 +785,14 @@
         </inbodydescription>
         <location file="src/muda/buffer/buffer_2d_view.h" line="103" column="1" bodyfile="src/muda/buffer/buffer_2d_view.h" bodystart="103" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="typedef" id="buffer__2d__view_8h_1a86a62b615ea4c740284f3374c7127ee8" prot="public" static="no">
+      <memberdef kind="typedef" id="buffer__2d__view_8h_1ab3c4087a03898d4bdd9d5890ac64fe42" prot="public" static="no">
         <templateparamlist>
           <param>
             <type>typename T</type>
           </param>
         </templateparamlist>
         <type><ref refid="classmuda_1_1_buffer2_d_view_t" kindref="compound">Buffer2DViewT</ref>&lt; true, T &gt;</type>
-        <definition>using muda::CBuffer2DView = typedef Buffer2DViewT&lt;true, T&gt;</definition>
+        <definition>using muda::CBuffer2DView =  Buffer2DViewT&lt;true, T&gt;</definition>
         <argsstring></argsstring>
         <name>CBuffer2DView</name>
         <qualifiedname>muda::CBuffer2DView</qualifiedname>
@@ -828,14 +804,14 @@
         </inbodydescription>
         <location file="src/muda/buffer/buffer_2d_view.h" line="106" column="1" bodyfile="src/muda/buffer/buffer_2d_view.h" bodystart="106" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="typedef" id="buffer__3d__view_8h_1a07eab96eb68bab0423dfac5e4be1d257" prot="public" static="no">
+      <memberdef kind="typedef" id="buffer__3d__view_8h_1abc0424463e726face0df4f33f32b93ea" prot="public" static="no">
         <templateparamlist>
           <param>
             <type>typename T</type>
           </param>
         </templateparamlist>
         <type><ref refid="classmuda_1_1_buffer3_d_view_t" kindref="compound">Buffer3DViewT</ref>&lt; false, T &gt;</type>
-        <definition>using muda::Buffer3DView = typedef Buffer3DViewT&lt;false, T&gt;</definition>
+        <definition>using muda::Buffer3DView =  Buffer3DViewT&lt;false, T&gt;</definition>
         <argsstring></argsstring>
         <name>Buffer3DView</name>
         <qualifiedname>muda::Buffer3DView</qualifiedname>
@@ -847,14 +823,14 @@
         </inbodydescription>
         <location file="src/muda/buffer/buffer_3d_view.h" line="111" column="1" bodyfile="src/muda/buffer/buffer_3d_view.h" bodystart="111" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="typedef" id="buffer__3d__view_8h_1a974801160d1bf8d53b85c35ed34321de" prot="public" static="no">
+      <memberdef kind="typedef" id="buffer__3d__view_8h_1ad4cad9effdf3f2506199067ad322e8c7" prot="public" static="no">
         <templateparamlist>
           <param>
             <type>typename T</type>
           </param>
         </templateparamlist>
         <type><ref refid="classmuda_1_1_buffer3_d_view_t" kindref="compound">Buffer3DViewT</ref>&lt; true, T &gt;</type>
-        <definition>using muda::CBuffer3DView = typedef Buffer3DViewT&lt;true, T&gt;</definition>
+        <definition>using muda::CBuffer3DView =  Buffer3DViewT&lt;true, T&gt;</definition>
         <argsstring></argsstring>
         <name>CBuffer3DView</name>
         <qualifiedname>muda::CBuffer3DView</qualifiedname>
@@ -866,14 +842,14 @@
         </inbodydescription>
         <location file="src/muda/buffer/buffer_3d_view.h" line="114" column="1" bodyfile="src/muda/buffer/buffer_3d_view.h" bodystart="114" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="typedef" id="buffer__fwd_8h_1a5f6d76a8a0dc38a77c5b47b620ba21db" prot="public" static="no">
+      <memberdef kind="typedef" id="buffer__fwd_8h_1a004cf4d6bd9531f9ed3a144b8549cabc" prot="public" static="no">
         <templateparamlist>
           <param>
             <type>typename T</type>
           </param>
         </templateparamlist>
         <type><ref refid="classmuda_1_1_var_view_t" kindref="compound">VarViewT</ref>&lt; false, T &gt;</type>
-        <definition>using muda::VarView = typedef VarViewT&lt;false, T&gt;</definition>
+        <definition>using muda::VarView =  VarViewT&lt;false, T&gt;</definition>
         <argsstring></argsstring>
         <name>VarView</name>
         <qualifiedname>muda::VarView</qualifiedname>
@@ -885,14 +861,14 @@
         </inbodydescription>
         <location file="src/muda/buffer/buffer_fwd.h" line="9" column="1" bodyfile="src/muda/buffer/buffer_fwd.h" bodystart="9" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="typedef" id="buffer__fwd_8h_1a61bb8864ca2a3fcf98018fbb63801678" prot="public" static="no">
+      <memberdef kind="typedef" id="buffer__fwd_8h_1ae1de008cad665dc2c306e96bb1575a1c" prot="public" static="no">
         <templateparamlist>
           <param>
             <type>typename T</type>
           </param>
         </templateparamlist>
         <type><ref refid="classmuda_1_1_var_view_t" kindref="compound">VarViewT</ref>&lt; true, T &gt;</type>
-        <definition>using muda::CVarView = typedef VarViewT&lt;true, T&gt;</definition>
+        <definition>using muda::CVarView =  VarViewT&lt;true, T&gt;</definition>
         <argsstring></argsstring>
         <name>CVarView</name>
         <qualifiedname>muda::CVarView</qualifiedname>
@@ -904,14 +880,14 @@
         </inbodydescription>
         <location file="src/muda/buffer/buffer_fwd.h" line="12" column="1" bodyfile="src/muda/buffer/buffer_fwd.h" bodystart="12" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="typedef" id="buffer__fwd_8h_1a5899957b54eed3b1ed473bac58cfab04" prot="public" static="no">
+      <memberdef kind="typedef" id="buffer__fwd_8h_1aa536db4a66f45b0632115e65125259c4" prot="public" static="no">
         <templateparamlist>
           <param>
             <type>typename T</type>
           </param>
         </templateparamlist>
         <type><ref refid="classmuda_1_1_buffer_view_t" kindref="compound">BufferViewT</ref>&lt; false, T &gt;</type>
-        <definition>using muda::BufferView = typedef BufferViewT&lt;false, T&gt;</definition>
+        <definition>using muda::BufferView =  BufferViewT&lt;false, T&gt;</definition>
         <argsstring></argsstring>
         <name>BufferView</name>
         <qualifiedname>muda::BufferView</qualifiedname>
@@ -923,14 +899,14 @@
         </inbodydescription>
         <location file="src/muda/buffer/buffer_fwd.h" line="19" column="1" bodyfile="src/muda/buffer/buffer_fwd.h" bodystart="19" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="typedef" id="buffer__fwd_8h_1a91100303baea98b78697556c39de78f1" prot="public" static="no">
+      <memberdef kind="typedef" id="buffer__fwd_8h_1a883be7e827301f38b28985adbacd43ec" prot="public" static="no">
         <templateparamlist>
           <param>
             <type>typename T</type>
           </param>
         </templateparamlist>
         <type><ref refid="classmuda_1_1_buffer_view_t" kindref="compound">BufferViewT</ref>&lt; true, T &gt;</type>
-        <definition>using muda::CBufferView = typedef BufferViewT&lt;true, T&gt;</definition>
+        <definition>using muda::CBufferView =  BufferViewT&lt;true, T&gt;</definition>
         <argsstring></argsstring>
         <name>CBufferView</name>
         <qualifiedname>muda::CBufferView</qualifiedname>
@@ -942,9 +918,10 @@
         </inbodydescription>
         <location file="src/muda/buffer/buffer_fwd.h" line="22" column="1" bodyfile="src/muda/buffer/buffer_fwd.h" bodystart="22" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="typedef" id="compute__graph__event__node_8h_1a9e2f6bc0518bcf263220253a902efadc" prot="public" static="no">
+      <memberdef kind="typedef" id="compute__graph__event__node_8h_1afa057197d642011d9366e102f4c4d08a" prot="public" static="no">
         <type><ref refid="classmuda_1_1_compute_graph_node" kindref="compound">ComputeGraphNode</ref>&lt; <ref refid="classmuda_1_1_event_record_node" kindref="compound">EventRecordNode</ref>, ComputeGraphNodeType::EventRecordNode &gt;</type>
-        <definition>using muda::ComputeGraphEventRecordNode = typedef ComputeGraphNode&lt;EventRecordNode, ComputeGraphNodeType::EventRecordNode&gt;</definition>
+        <definition>using muda::ComputeGraphEventRecordNode = 
+    ComputeGraphNode&lt;EventRecordNode, ComputeGraphNodeType::EventRecordNode&gt;</definition>
         <argsstring></argsstring>
         <name>ComputeGraphEventRecordNode</name>
         <qualifiedname>muda::ComputeGraphEventRecordNode</qualifiedname>
@@ -954,11 +931,12 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/compute_graph/nodes/compute_graph_event_node.h" line="9" column="1" bodyfile="src/muda/compute_graph/nodes/compute_graph_event_node.h" bodystart="10" bodyend="-1"/>
+        <location file="src/muda/compute_graph/nodes/compute_graph_event_node.h" line="9" column="1" bodyfile="src/muda/compute_graph/nodes/compute_graph_event_node.h" bodystart="9" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="typedef" id="compute__graph__event__node_8h_1ac613ab01740fd9b4772ca822d758d22e" prot="public" static="no">
+      <memberdef kind="typedef" id="compute__graph__event__node_8h_1a0fe4145754eb0be2cb202cde98c8bdbf" prot="public" static="no">
         <type><ref refid="classmuda_1_1_compute_graph_node" kindref="compound">ComputeGraphNode</ref>&lt; <ref refid="classmuda_1_1_event_wait_node" kindref="compound">EventWaitNode</ref>, ComputeGraphNodeType::EventWaitNode &gt;</type>
-        <definition>using muda::ComputeGraphEventWaitNode = typedef ComputeGraphNode&lt;EventWaitNode, ComputeGraphNodeType::EventWaitNode&gt;</definition>
+        <definition>using muda::ComputeGraphEventWaitNode = 
+    ComputeGraphNode&lt;EventWaitNode, ComputeGraphNodeType::EventWaitNode&gt;</definition>
         <argsstring></argsstring>
         <name>ComputeGraphEventWaitNode</name>
         <qualifiedname>muda::ComputeGraphEventWaitNode</qualifiedname>
@@ -968,11 +946,12 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/compute_graph/nodes/compute_graph_event_node.h" line="11" column="1" bodyfile="src/muda/compute_graph/nodes/compute_graph_event_node.h" bodystart="12" bodyend="-1"/>
+        <location file="src/muda/compute_graph/nodes/compute_graph_event_node.h" line="11" column="1" bodyfile="src/muda/compute_graph/nodes/compute_graph_event_node.h" bodystart="11" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="typedef" id="compute__graph__kernel__node_8h_1adf1d9d78425aefb2d1ac7c9ed00049d8" prot="public" static="no">
+      <memberdef kind="typedef" id="compute__graph__kernel__node_8h_1ad4d1a24a213d177b2ef5f37b0da20e4d" prot="public" static="no">
         <type><ref refid="classmuda_1_1_compute_graph_node" kindref="compound">ComputeGraphNode</ref>&lt; <ref refid="classmuda_1_1_kernel_node" kindref="compound">KernelNode</ref>, ComputeGraphNodeType::KernelNode &gt;</type>
-        <definition>using muda::ComputeGraphKernelNode = typedef ComputeGraphNode&lt;KernelNode, ComputeGraphNodeType::KernelNode&gt;</definition>
+        <definition>using muda::ComputeGraphKernelNode = 
+    ComputeGraphNode&lt;KernelNode, ComputeGraphNodeType::KernelNode&gt;</definition>
         <argsstring></argsstring>
         <name>ComputeGraphKernelNode</name>
         <qualifiedname>muda::ComputeGraphKernelNode</qualifiedname>
@@ -982,11 +961,12 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/compute_graph/nodes/compute_graph_kernel_node.h" line="8" column="1" bodyfile="src/muda/compute_graph/nodes/compute_graph_kernel_node.h" bodystart="9" bodyend="-1"/>
+        <location file="src/muda/compute_graph/nodes/compute_graph_kernel_node.h" line="8" column="1" bodyfile="src/muda/compute_graph/nodes/compute_graph_kernel_node.h" bodystart="8" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="typedef" id="compute__graph__memory__node_8h_1a522bf0d36503928f14d71158c28d7d5b" prot="public" static="no">
+      <memberdef kind="typedef" id="compute__graph__memory__node_8h_1a087a2349ad652832c418ea4b514c9a1a" prot="public" static="no">
         <type><ref refid="classmuda_1_1_compute_graph_node" kindref="compound">ComputeGraphNode</ref>&lt; <ref refid="classmuda_1_1_memcpy_node" kindref="compound">MemcpyNode</ref>, ComputeGraphNodeType::MemcpyNode &gt;</type>
-        <definition>using muda::ComputeGraphMemcpyNode = typedef ComputeGraphNode&lt;MemcpyNode, ComputeGraphNodeType::MemcpyNode&gt;</definition>
+        <definition>using muda::ComputeGraphMemcpyNode = 
+    ComputeGraphNode&lt;MemcpyNode, ComputeGraphNodeType::MemcpyNode&gt;</definition>
         <argsstring></argsstring>
         <name>ComputeGraphMemcpyNode</name>
         <qualifiedname>muda::ComputeGraphMemcpyNode</qualifiedname>
@@ -996,11 +976,12 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/compute_graph/nodes/compute_graph_memory_node.h" line="9" column="1" bodyfile="src/muda/compute_graph/nodes/compute_graph_memory_node.h" bodystart="10" bodyend="-1"/>
+        <location file="src/muda/compute_graph/nodes/compute_graph_memory_node.h" line="9" column="1" bodyfile="src/muda/compute_graph/nodes/compute_graph_memory_node.h" bodystart="9" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="typedef" id="compute__graph__memory__node_8h_1afe0e5938b9da66f642301950ac60669d" prot="public" static="no">
+      <memberdef kind="typedef" id="compute__graph__memory__node_8h_1a8b32a07eead5fb743245aa69efc99faa" prot="public" static="no">
         <type><ref refid="classmuda_1_1_compute_graph_node" kindref="compound">ComputeGraphNode</ref>&lt; <ref refid="classmuda_1_1_memset_node" kindref="compound">MemsetNode</ref>, ComputeGraphNodeType::MemsetNode &gt;</type>
-        <definition>using muda::ComputeGraphMemsetNode = typedef ComputeGraphNode&lt;MemsetNode, ComputeGraphNodeType::MemsetNode&gt;</definition>
+        <definition>using muda::ComputeGraphMemsetNode = 
+    ComputeGraphNode&lt;MemsetNode, ComputeGraphNodeType::MemsetNode&gt;</definition>
         <argsstring></argsstring>
         <name>ComputeGraphMemsetNode</name>
         <qualifiedname>muda::ComputeGraphMemsetNode</qualifiedname>
@@ -1010,9 +991,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/compute_graph/nodes/compute_graph_memory_node.h" line="12" column="1" bodyfile="src/muda/compute_graph/nodes/compute_graph_memory_node.h" bodystart="13" bodyend="-1"/>
+        <location file="src/muda/compute_graph/nodes/compute_graph_memory_node.h" line="12" column="1" bodyfile="src/muda/compute_graph/nodes/compute_graph_memory_node.h" bodystart="12" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="typedef" id="util__type_8h_1aec6189d1fcdfdec12b5f821a078a89a6" prot="public" static="no">
+      <memberdef kind="typedef" id="util__type_8h_1aee81cb9bf538b9db752e515cc2518ceb" prot="public" static="no">
         <templateparamlist>
           <param>
             <type>typename Key</type>
@@ -1022,7 +1003,7 @@
           </param>
         </templateparamlist>
         <type>cub::KeyValuePair&lt; Key, Value &gt;</type>
-        <definition>using muda::KeyValuePair = typedef cub::KeyValuePair&lt;Key, Value&gt;</definition>
+        <definition>using muda::KeyValuePair =  cub::KeyValuePair&lt;Key, Value&gt;</definition>
         <argsstring></argsstring>
         <name>KeyValuePair</name>
         <qualifiedname>muda::KeyValuePair</qualifiedname>
@@ -1034,7 +1015,7 @@
         </inbodydescription>
         <location file="src/muda/cub/util_type.h" line="6" column="1" bodyfile="src/muda/cub/util_type.h" bodystart="6" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="typedef" id="bcoo__matrix__view_8h_1a27c695a650f239fc2e80fd957caaa1af" prot="public" static="no">
+      <memberdef kind="typedef" id="bcoo__matrix__view_8h_1a05ace05821ca4162497887ae7f2bc6a9" prot="public" static="no">
         <templateparamlist>
           <param>
             <type>typename T</type>
@@ -1045,8 +1026,8 @@
             <defname>N</defname>
           </param>
         </templateparamlist>
-        <type><ref refid="classmuda_1_1_triplet_matrix_view_base" kindref="compound">TripletMatrixView</ref>&lt; T, N &gt;</type>
-        <definition>using muda::BCOOMatrixView = typedef TripletMatrixView&lt;T, N&gt;</definition>
+        <type><ref refid="classmuda_1_1_triplet_matrix_view_t" kindref="compound">TripletMatrixView</ref>&lt; T, N &gt;</type>
+        <definition>using muda::BCOOMatrixView =  TripletMatrixView&lt;T, N&gt;</definition>
         <argsstring></argsstring>
         <name>BCOOMatrixView</name>
         <qualifiedname>muda::BCOOMatrixView</qualifiedname>
@@ -1056,9 +1037,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/ext/linear_system/bcoo_matrix_view.h" line="7" column="1" bodyfile="src/muda/ext/linear_system/bcoo_matrix_view.h" bodystart="7" bodyend="-1"/>
+        <location file="src/muda/ext/linear_system/bcoo_matrix_view.h" line="8" column="1" bodyfile="src/muda/ext/linear_system/bcoo_matrix_view.h" bodystart="8" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="typedef" id="bcoo__matrix__view_8h_1a9792cad160bdfb8a35107309f61324c9" prot="public" static="no">
+      <memberdef kind="typedef" id="bcoo__matrix__view_8h_1ad47f8eef02237c6682519dbb74ef3af7" prot="public" static="no">
         <templateparamlist>
           <param>
             <type>typename T</type>
@@ -1069,8 +1050,8 @@
             <defname>N</defname>
           </param>
         </templateparamlist>
-        <type><ref refid="classmuda_1_1_triplet_matrix_view_base" kindref="compound">CTripletMatrixView</ref>&lt; T, N &gt;</type>
-        <definition>using muda::CBCOOMatrixView = typedef CTripletMatrixView&lt;T, N&gt;</definition>
+        <type><ref refid="classmuda_1_1_triplet_matrix_view_t" kindref="compound">CTripletMatrixView</ref>&lt; T, N &gt;</type>
+        <definition>using muda::CBCOOMatrixView =  CTripletMatrixView&lt;T, N&gt;</definition>
         <argsstring></argsstring>
         <name>CBCOOMatrixView</name>
         <qualifiedname>muda::CBCOOMatrixView</qualifiedname>
@@ -1080,16 +1061,16 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/ext/linear_system/bcoo_matrix_view.h" line="9" column="1" bodyfile="src/muda/ext/linear_system/bcoo_matrix_view.h" bodystart="9" bodyend="-1"/>
+        <location file="src/muda/ext/linear_system/bcoo_matrix_view.h" line="10" column="1" bodyfile="src/muda/ext/linear_system/bcoo_matrix_view.h" bodystart="10" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="typedef" id="bcoo__matrix__view_8h_1a7965b78eb4a5308f580d2bc7d4f7d948" prot="public" static="no">
+      <memberdef kind="typedef" id="bcoo__matrix__view_8h_1ac78bab8c3d1af16e04d32050f7696ffe" prot="public" static="no">
         <templateparamlist>
           <param>
             <type>typename Ty</type>
           </param>
         </templateparamlist>
-        <type><ref refid="classmuda_1_1_c_o_o_matrix_view_base" kindref="compound">COOMatrixViewBase</ref>&lt; false, Ty &gt;</type>
-        <definition>using muda::COOMatrixView = typedef COOMatrixViewBase&lt;false, Ty&gt;</definition>
+        <type><ref refid="classmuda_1_1_c_o_o_matrix_view_t" kindref="compound">COOMatrixViewT</ref>&lt; false, Ty &gt;</type>
+        <definition>using muda::COOMatrixView =  COOMatrixViewT&lt;false, Ty&gt;</definition>
         <argsstring></argsstring>
         <name>COOMatrixView</name>
         <qualifiedname>muda::COOMatrixView</qualifiedname>
@@ -1099,16 +1080,16 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/ext/linear_system/bcoo_matrix_view.h" line="206" column="1" bodyfile="src/muda/ext/linear_system/bcoo_matrix_view.h" bodystart="206" bodyend="-1"/>
+        <location file="src/muda/ext/linear_system/bcoo_matrix_view.h" line="221" column="1" bodyfile="src/muda/ext/linear_system/bcoo_matrix_view.h" bodystart="221" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="typedef" id="bcoo__matrix__view_8h_1a3ede241ebfc2faf9fea10aeb7912f82a" prot="public" static="no">
+      <memberdef kind="typedef" id="bcoo__matrix__view_8h_1aa2a6811268f75a3cde63f0625e56c222" prot="public" static="no">
         <templateparamlist>
           <param>
             <type>typename Ty</type>
           </param>
         </templateparamlist>
-        <type><ref refid="classmuda_1_1_c_o_o_matrix_view_base" kindref="compound">COOMatrixViewBase</ref>&lt; true, Ty &gt;</type>
-        <definition>using muda::CCOOMatrixView = typedef COOMatrixViewBase&lt;true, Ty&gt;</definition>
+        <type><ref refid="classmuda_1_1_c_o_o_matrix_view_t" kindref="compound">COOMatrixViewT</ref>&lt; true, Ty &gt;</type>
+        <definition>using muda::CCOOMatrixView =  COOMatrixViewT&lt;true, Ty&gt;</definition>
         <argsstring></argsstring>
         <name>CCOOMatrixView</name>
         <qualifiedname>muda::CCOOMatrixView</qualifiedname>
@@ -1118,9 +1099,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/ext/linear_system/bcoo_matrix_view.h" line="208" column="1" bodyfile="src/muda/ext/linear_system/bcoo_matrix_view.h" bodystart="208" bodyend="-1"/>
+        <location file="src/muda/ext/linear_system/bcoo_matrix_view.h" line="223" column="1" bodyfile="src/muda/ext/linear_system/bcoo_matrix_view.h" bodystart="223" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="typedef" id="bcoo__matrix__viewer_8h_1a3cd1c38a17c4e12c58b245fc81438189" prot="public" static="no">
+      <memberdef kind="typedef" id="bcoo__matrix__viewer_8h_1ac15d8058312a85c3fb8ca4df44ae0389" prot="public" static="no">
         <templateparamlist>
           <param>
             <type>typename T</type>
@@ -1131,8 +1112,8 @@
             <defname>N</defname>
           </param>
         </templateparamlist>
-        <type><ref refid="classmuda_1_1_c_triplet_matrix_viewer" kindref="compound">CTripletMatrixViewer</ref>&lt; T, N &gt;</type>
-        <definition>using muda::BCOOMatrixViewer = typedef CTripletMatrixViewer&lt;T, N&gt;</definition>
+        <type><ref refid="classmuda_1_1_triplet_matrix_viewer_t" kindref="compound">CTripletMatrixViewer</ref>&lt; T, N &gt;</type>
+        <definition>using muda::BCOOMatrixViewer =  CTripletMatrixViewer&lt;T, N&gt;</definition>
         <argsstring></argsstring>
         <name>BCOOMatrixViewer</name>
         <qualifiedname>muda::BCOOMatrixViewer</qualifiedname>
@@ -1144,7 +1125,7 @@
         </inbodydescription>
         <location file="src/muda/ext/linear_system/bcoo_matrix_viewer.h" line="6" column="1" bodyfile="src/muda/ext/linear_system/bcoo_matrix_viewer.h" bodystart="6" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="typedef" id="bcoo__matrix__viewer_8h_1abae9020c73e4e0a8af3b0f5ea2ebf15c" prot="public" static="no">
+      <memberdef kind="typedef" id="bcoo__matrix__viewer_8h_1a67db1e9b7e9256cc235ebb3e04e8970c" prot="public" static="no">
         <templateparamlist>
           <param>
             <type>typename T</type>
@@ -1155,8 +1136,8 @@
             <defname>N</defname>
           </param>
         </templateparamlist>
-        <type><ref refid="classmuda_1_1_c_triplet_matrix_viewer" kindref="compound">CTripletMatrixViewer</ref>&lt; T, N &gt;</type>
-        <definition>using muda::CBCOOMatrixViewer = typedef CTripletMatrixViewer&lt;T, N&gt;</definition>
+        <type><ref refid="classmuda_1_1_triplet_matrix_viewer_t" kindref="compound">CTripletMatrixViewer</ref>&lt; T, N &gt;</type>
+        <definition>using muda::CBCOOMatrixViewer =  CTripletMatrixViewer&lt;T, N&gt;</definition>
         <argsstring></argsstring>
         <name>CBCOOMatrixViewer</name>
         <qualifiedname>muda::CBCOOMatrixViewer</qualifiedname>
@@ -1168,14 +1149,14 @@
         </inbodydescription>
         <location file="src/muda/ext/linear_system/bcoo_matrix_viewer.h" line="9" column="1" bodyfile="src/muda/ext/linear_system/bcoo_matrix_viewer.h" bodystart="9" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="typedef" id="bcoo__matrix__viewer_8h_1a557bc623adf1bfc23c35ded0f9ed80a1" prot="public" static="no">
+      <memberdef kind="typedef" id="bcoo__matrix__viewer_8h_1a7cad7c71ab649ef1ada0bf8f854b61f3" prot="public" static="no">
         <templateparamlist>
           <param>
             <type>typename T</type>
           </param>
         </templateparamlist>
-        <type><ref refid="classmuda_1_1_c_triplet_matrix_viewer" kindref="compound">BCOOMatrixViewer</ref>&lt; T, 1 &gt;</type>
-        <definition>using muda::COOMatrixViewer = typedef BCOOMatrixViewer&lt;T, 1&gt;</definition>
+        <type>BCOOMatrixViewer&lt; T, 1 &gt;</type>
+        <definition>using muda::COOMatrixViewer =  BCOOMatrixViewer&lt;T, 1&gt;</definition>
         <argsstring></argsstring>
         <name>COOMatrixViewer</name>
         <qualifiedname>muda::COOMatrixViewer</qualifiedname>
@@ -1187,14 +1168,14 @@
         </inbodydescription>
         <location file="src/muda/ext/linear_system/bcoo_matrix_viewer.h" line="12" column="1" bodyfile="src/muda/ext/linear_system/bcoo_matrix_viewer.h" bodystart="12" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="typedef" id="bcoo__matrix__viewer_8h_1a4de90d6168407a703de6adbef5ebb8b9" prot="public" static="no">
+      <memberdef kind="typedef" id="bcoo__matrix__viewer_8h_1aacbcb6dd618e2a9c36864ac8c81f91db" prot="public" static="no">
         <templateparamlist>
           <param>
             <type>typename T</type>
           </param>
         </templateparamlist>
-        <type><ref refid="classmuda_1_1_c_triplet_matrix_viewer" kindref="compound">CBCOOMatrixViewer</ref>&lt; T, 1 &gt;</type>
-        <definition>using muda::CCOOMatrixViewer = typedef CBCOOMatrixViewer&lt;T, 1&gt;</definition>
+        <type>CBCOOMatrixViewer&lt; T, 1 &gt;</type>
+        <definition>using muda::CCOOMatrixViewer =  CBCOOMatrixViewer&lt;T, 1&gt;</definition>
         <argsstring></argsstring>
         <name>CCOOMatrixViewer</name>
         <qualifiedname>muda::CCOOMatrixViewer</qualifiedname>
@@ -1206,7 +1187,7 @@
         </inbodydescription>
         <location file="src/muda/ext/linear_system/bcoo_matrix_viewer.h" line="15" column="1" bodyfile="src/muda/ext/linear_system/bcoo_matrix_viewer.h" bodystart="15" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="typedef" id="bcoo__vector__view_8h_1af6e8ece7a420798448acfbf983b19d44" prot="public" static="no">
+      <memberdef kind="typedef" id="bcoo__vector__view_8h_1a356cc7c53dbc50b41c1d42784fff2b40" prot="public" static="no">
         <templateparamlist>
           <param>
             <type>typename T</type>
@@ -1217,8 +1198,8 @@
             <defname>N</defname>
           </param>
         </templateparamlist>
-        <type><ref refid="classmuda_1_1_doublet_vector_view_base" kindref="compound">DoubletVectorView</ref>&lt; T, N &gt;</type>
-        <definition>using muda::BCOOVectorView = typedef DoubletVectorView&lt;T, N&gt;</definition>
+        <type><ref refid="classmuda_1_1_doublet_vector_view_t" kindref="compound">DoubletVectorView</ref>&lt; T, N &gt;</type>
+        <definition>using muda::BCOOVectorView =  DoubletVectorView&lt;T, N&gt;</definition>
         <argsstring></argsstring>
         <name>BCOOVectorView</name>
         <qualifiedname>muda::BCOOVectorView</qualifiedname>
@@ -1228,9 +1209,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/ext/linear_system/bcoo_vector_view.h" line="9" column="1" bodyfile="src/muda/ext/linear_system/bcoo_vector_view.h" bodystart="9" bodyend="-1"/>
+        <location file="src/muda/ext/linear_system/bcoo_vector_view.h" line="8" column="1" bodyfile="src/muda/ext/linear_system/bcoo_vector_view.h" bodystart="8" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="typedef" id="bcoo__vector__view_8h_1a9f6f6d3148c59b149f2057b63c6f9dd8" prot="public" static="no">
+      <memberdef kind="typedef" id="bcoo__vector__view_8h_1a10fc8cfab5a855e2eafc02191c0c458d" prot="public" static="no">
         <templateparamlist>
           <param>
             <type>typename T</type>
@@ -1241,8 +1222,8 @@
             <defname>N</defname>
           </param>
         </templateparamlist>
-        <type><ref refid="classmuda_1_1_doublet_vector_view_base" kindref="compound">CDoubletVectorView</ref>&lt; T, N &gt;</type>
-        <definition>using muda::CBCOOVectorView = typedef CDoubletVectorView&lt;T, N&gt;</definition>
+        <type><ref refid="classmuda_1_1_doublet_vector_view_t" kindref="compound">CDoubletVectorView</ref>&lt; T, N &gt;</type>
+        <definition>using muda::CBCOOVectorView =  CDoubletVectorView&lt;T, N&gt;</definition>
         <argsstring></argsstring>
         <name>CBCOOVectorView</name>
         <qualifiedname>muda::CBCOOVectorView</qualifiedname>
@@ -1252,16 +1233,16 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/ext/linear_system/bcoo_vector_view.h" line="11" column="1" bodyfile="src/muda/ext/linear_system/bcoo_vector_view.h" bodystart="11" bodyend="-1"/>
+        <location file="src/muda/ext/linear_system/bcoo_vector_view.h" line="10" column="1" bodyfile="src/muda/ext/linear_system/bcoo_vector_view.h" bodystart="10" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="typedef" id="bcoo__vector__view_8h_1ada03920b084f9222cc4ad676d340c4c0" prot="public" static="no">
+      <memberdef kind="typedef" id="bcoo__vector__view_8h_1ac78ecc87a59aa7b2783d2ec70899ab47" prot="public" static="no">
         <templateparamlist>
           <param>
             <type>typename T</type>
           </param>
         </templateparamlist>
         <type><ref refid="classmuda_1_1_c_o_o_vector_view_base" kindref="compound">COOVectorViewBase</ref>&lt; false, T &gt;</type>
-        <definition>using muda::COOVectorView = typedef COOVectorViewBase&lt;false, T&gt;</definition>
+        <definition>using muda::COOVectorView =  COOVectorViewBase&lt;false, T&gt;</definition>
         <argsstring></argsstring>
         <name>COOVectorView</name>
         <qualifiedname>muda::COOVectorView</qualifiedname>
@@ -1271,16 +1252,16 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/ext/linear_system/bcoo_vector_view.h" line="145" column="1" bodyfile="src/muda/ext/linear_system/bcoo_vector_view.h" bodystart="145" bodyend="-1"/>
+        <location file="src/muda/ext/linear_system/bcoo_vector_view.h" line="144" column="1" bodyfile="src/muda/ext/linear_system/bcoo_vector_view.h" bodystart="144" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="typedef" id="bcoo__vector__view_8h_1ad26dcbfe74d08e4aa162eb1286acd100" prot="public" static="no">
+      <memberdef kind="typedef" id="bcoo__vector__view_8h_1ab92309f5a6eb328318b15ad138ea508e" prot="public" static="no">
         <templateparamlist>
           <param>
             <type>typename T</type>
           </param>
         </templateparamlist>
         <type><ref refid="classmuda_1_1_c_o_o_vector_view_base" kindref="compound">COOVectorViewBase</ref>&lt; true, T &gt;</type>
-        <definition>using muda::CCOOVectorView = typedef COOVectorViewBase&lt;true, T&gt;</definition>
+        <definition>using muda::CCOOVectorView =  COOVectorViewBase&lt;true, T&gt;</definition>
         <argsstring></argsstring>
         <name>CCOOVectorView</name>
         <qualifiedname>muda::CCOOVectorView</qualifiedname>
@@ -1290,9 +1271,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/ext/linear_system/bcoo_vector_view.h" line="147" column="1" bodyfile="src/muda/ext/linear_system/bcoo_vector_view.h" bodystart="147" bodyend="-1"/>
+        <location file="src/muda/ext/linear_system/bcoo_vector_view.h" line="146" column="1" bodyfile="src/muda/ext/linear_system/bcoo_vector_view.h" bodystart="146" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="typedef" id="bcoo__vector__viewer_8h_1a51100504bc5260a4fc8b4598a97eb0f1" prot="public" static="no">
+      <memberdef kind="typedef" id="bcoo__vector__viewer_8h_1af3f491e6594d2265da6e216c02779b81" prot="public" static="no">
         <templateparamlist>
           <param>
             <type>typename T</type>
@@ -1303,8 +1284,8 @@
             <defname>N</defname>
           </param>
         </templateparamlist>
-        <type><ref refid="classmuda_1_1_c_doublet_vector_viewer" kindref="compound">CDoubletVectorViewer</ref>&lt; T, N &gt;</type>
-        <definition>using muda::BCOOVectorViewer = typedef CDoubletVectorViewer&lt;T, N&gt;</definition>
+        <type><ref refid="classmuda_1_1_doublet_vector_viewer_t" kindref="compound">CDoubletVectorViewer</ref>&lt; T, N &gt;</type>
+        <definition>using muda::BCOOVectorViewer =  CDoubletVectorViewer&lt;T, N&gt;</definition>
         <argsstring></argsstring>
         <name>BCOOVectorViewer</name>
         <qualifiedname>muda::BCOOVectorViewer</qualifiedname>
@@ -1316,7 +1297,7 @@
         </inbodydescription>
         <location file="src/muda/ext/linear_system/bcoo_vector_viewer.h" line="6" column="1" bodyfile="src/muda/ext/linear_system/bcoo_vector_viewer.h" bodystart="6" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="typedef" id="bcoo__vector__viewer_8h_1abfedeaf3084ce1a29e3b93cca46294d7" prot="public" static="no">
+      <memberdef kind="typedef" id="bcoo__vector__viewer_8h_1a24d028c3ba2b42cc0f0662e2de37d23d" prot="public" static="no">
         <templateparamlist>
           <param>
             <type>typename T</type>
@@ -1327,8 +1308,8 @@
             <defname>N</defname>
           </param>
         </templateparamlist>
-        <type><ref refid="classmuda_1_1_c_doublet_vector_viewer" kindref="compound">CDoubletVectorViewer</ref>&lt; T, N &gt;</type>
-        <definition>using muda::CBCOOVectorViewer = typedef CDoubletVectorViewer&lt;T, N&gt;</definition>
+        <type><ref refid="classmuda_1_1_doublet_vector_viewer_t" kindref="compound">CDoubletVectorViewer</ref>&lt; T, N &gt;</type>
+        <definition>using muda::CBCOOVectorViewer =  CDoubletVectorViewer&lt;T, N&gt;</definition>
         <argsstring></argsstring>
         <name>CBCOOVectorViewer</name>
         <qualifiedname>muda::CBCOOVectorViewer</qualifiedname>
@@ -1340,14 +1321,14 @@
         </inbodydescription>
         <location file="src/muda/ext/linear_system/bcoo_vector_viewer.h" line="9" column="1" bodyfile="src/muda/ext/linear_system/bcoo_vector_viewer.h" bodystart="9" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="typedef" id="bcoo__vector__viewer_8h_1ae35f129cd8b97e04e0c01a773ed88a6c" prot="public" static="no">
+      <memberdef kind="typedef" id="bcoo__vector__viewer_8h_1a7bbbfc928628aa005cf6f2b4dd08320a" prot="public" static="no">
         <templateparamlist>
           <param>
             <type>typename T</type>
           </param>
         </templateparamlist>
-        <type><ref refid="classmuda_1_1_c_doublet_vector_viewer" kindref="compound">BCOOVectorViewer</ref>&lt; T, 1 &gt;</type>
-        <definition>using muda::COOVectorViewer = typedef BCOOVectorViewer&lt;T, 1&gt;</definition>
+        <type>BCOOVectorViewer&lt; T, 1 &gt;</type>
+        <definition>using muda::COOVectorViewer =  BCOOVectorViewer&lt;T, 1&gt;</definition>
         <argsstring></argsstring>
         <name>COOVectorViewer</name>
         <qualifiedname>muda::COOVectorViewer</qualifiedname>
@@ -1359,14 +1340,14 @@
         </inbodydescription>
         <location file="src/muda/ext/linear_system/bcoo_vector_viewer.h" line="12" column="1" bodyfile="src/muda/ext/linear_system/bcoo_vector_viewer.h" bodystart="12" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="typedef" id="bcoo__vector__viewer_8h_1a2442b69c7dfd941d0f8556db3ae3c605" prot="public" static="no">
+      <memberdef kind="typedef" id="bcoo__vector__viewer_8h_1a98ccf64ae95f69ca332446b193ee4251" prot="public" static="no">
         <templateparamlist>
           <param>
             <type>typename T</type>
           </param>
         </templateparamlist>
-        <type><ref refid="classmuda_1_1_c_doublet_vector_viewer" kindref="compound">CBCOOVectorViewer</ref>&lt; T, 1 &gt;</type>
-        <definition>using muda::CCOOVectorViewer = typedef CBCOOVectorViewer&lt;T, 1&gt;</definition>
+        <type>CBCOOVectorViewer&lt; T, 1 &gt;</type>
+        <definition>using muda::CCOOVectorViewer =  CBCOOVectorViewer&lt;T, 1&gt;</definition>
         <argsstring></argsstring>
         <name>CCOOVectorViewer</name>
         <qualifiedname>muda::CCOOVectorViewer</qualifiedname>
@@ -1378,7 +1359,7 @@
         </inbodydescription>
         <location file="src/muda/ext/linear_system/bcoo_vector_viewer.h" line="15" column="1" bodyfile="src/muda/ext/linear_system/bcoo_vector_viewer.h" bodystart="15" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="typedef" id="bsr__matrix__view_8h_1a24705a83f8e9a23230d2f1f57e5739f5" prot="public" static="no">
+      <memberdef kind="typedef" id="bsr__matrix__view_8h_1ac63b7e3761a1c434f8ff72c5d60b905c" prot="public" static="no">
         <templateparamlist>
           <param>
             <type>typename Ty</type>
@@ -1389,8 +1370,8 @@
             <defname>N</defname>
           </param>
         </templateparamlist>
-        <type><ref refid="classmuda_1_1_b_s_r_matrix_view_base" kindref="compound">BSRMatrixViewBase</ref>&lt; false, Ty, N &gt;</type>
-        <definition>using muda::BSRMatrixView = typedef BSRMatrixViewBase&lt;false, Ty, N&gt;</definition>
+        <type><ref refid="classmuda_1_1_b_s_r_matrix_view_t" kindref="compound">BSRMatrixViewT</ref>&lt; false, Ty, N &gt;</type>
+        <definition>using muda::BSRMatrixView =  BSRMatrixViewT&lt;false, Ty, N&gt;</definition>
         <argsstring></argsstring>
         <name>BSRMatrixView</name>
         <qualifiedname>muda::BSRMatrixView</qualifiedname>
@@ -1400,9 +1381,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/ext/linear_system/bsr_matrix_view.h" line="110" column="1" bodyfile="src/muda/ext/linear_system/bsr_matrix_view.h" bodystart="110" bodyend="-1"/>
+        <location file="src/muda/ext/linear_system/bsr_matrix_view.h" line="105" column="1" bodyfile="src/muda/ext/linear_system/bsr_matrix_view.h" bodystart="105" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="typedef" id="bsr__matrix__view_8h_1a69df07e1dd28d81ddb413c00f7072773" prot="public" static="no">
+      <memberdef kind="typedef" id="bsr__matrix__view_8h_1aff0ce27ffff669171af391603a216b28" prot="public" static="no">
         <templateparamlist>
           <param>
             <type>typename Ty</type>
@@ -1413,8 +1394,8 @@
             <defname>N</defname>
           </param>
         </templateparamlist>
-        <type><ref refid="classmuda_1_1_b_s_r_matrix_view_base" kindref="compound">BSRMatrixViewBase</ref>&lt; true, Ty, N &gt;</type>
-        <definition>using muda::CBSRMatrixView = typedef BSRMatrixViewBase&lt;true, Ty, N&gt;</definition>
+        <type><ref refid="classmuda_1_1_b_s_r_matrix_view_t" kindref="compound">BSRMatrixViewT</ref>&lt; true, Ty, N &gt;</type>
+        <definition>using muda::CBSRMatrixView =  BSRMatrixViewT&lt;true, Ty, N&gt;</definition>
         <argsstring></argsstring>
         <name>CBSRMatrixView</name>
         <qualifiedname>muda::CBSRMatrixView</qualifiedname>
@@ -1424,16 +1405,40 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/ext/linear_system/bsr_matrix_view.h" line="112" column="1" bodyfile="src/muda/ext/linear_system/bsr_matrix_view.h" bodystart="112" bodyend="-1"/>
+        <location file="src/muda/ext/linear_system/bsr_matrix_view.h" line="107" column="1" bodyfile="src/muda/ext/linear_system/bsr_matrix_view.h" bodystart="107" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="typedef" id="csr__matrix__view_8h_1a42607d147e657f3950b473ed72edd9ab" prot="public" static="no">
+      <memberdef kind="typedef" id="csr__matrix__view_8h_1a476b87db83c699ef01ce461af398215a" prot="public" static="no">
+        <templateparamlist>
+          <param>
+            <type>bool</type>
+            <declname>IsConst</declname>
+            <defname>IsConst</defname>
+          </param>
+          <param>
+            <type>typename Ty</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classmuda_1_1_b_s_r_matrix_view_t" kindref="compound">BSRMatrixViewT</ref>&lt; IsConst, Ty, 1 &gt;</type>
+        <definition>using muda::CSRMatrixViewT =  BSRMatrixViewT&lt;IsConst, Ty, 1&gt;</definition>
+        <argsstring></argsstring>
+        <name>CSRMatrixViewT</name>
+        <qualifiedname>muda::CSRMatrixViewT</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/csr_matrix_view.h" line="9" column="1" bodyfile="src/muda/ext/linear_system/csr_matrix_view.h" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="csr__matrix__view_8h_1add26a5314f8b8a57fa5ea6211e844c3d" prot="public" static="no">
         <templateparamlist>
           <param>
             <type>typename Ty</type>
           </param>
         </templateparamlist>
-        <type><ref refid="classmuda_1_1_c_s_r_matrix_view_base" kindref="compound">CSRMatrixViewBase</ref>&lt; false, Ty &gt;</type>
-        <definition>using muda::CSRMatrixView = typedef CSRMatrixViewBase&lt;false, Ty&gt;</definition>
+        <type><ref refid="classmuda_1_1_b_s_r_matrix_view_t" kindref="compound">CSRMatrixViewT</ref>&lt; false, Ty &gt;</type>
+        <definition>using muda::CSRMatrixView =  CSRMatrixViewT&lt;false, Ty&gt;</definition>
         <argsstring></argsstring>
         <name>CSRMatrixView</name>
         <qualifiedname>muda::CSRMatrixView</qualifiedname>
@@ -1443,16 +1448,16 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/ext/linear_system/csr_matrix_view.h" line="89" column="1" bodyfile="src/muda/ext/linear_system/csr_matrix_view.h" bodystart="89" bodyend="-1"/>
+        <location file="src/muda/ext/linear_system/csr_matrix_view.h" line="12" column="1" bodyfile="src/muda/ext/linear_system/csr_matrix_view.h" bodystart="12" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="typedef" id="csr__matrix__view_8h_1ae2687328e5d50f600dbef9ccc60ccee5" prot="public" static="no">
+      <memberdef kind="typedef" id="csr__matrix__view_8h_1a6ba753e8d91d0af8b93b1c6d369b0462" prot="public" static="no">
         <templateparamlist>
           <param>
             <type>typename Ty</type>
           </param>
         </templateparamlist>
-        <type><ref refid="classmuda_1_1_c_s_r_matrix_view_base" kindref="compound">CSRMatrixViewBase</ref>&lt; true, Ty &gt;</type>
-        <definition>using muda::CCSRMatrixView = typedef CSRMatrixViewBase&lt;true, Ty&gt;</definition>
+        <type><ref refid="classmuda_1_1_b_s_r_matrix_view_t" kindref="compound">CSRMatrixViewT</ref>&lt; true, Ty &gt;</type>
+        <definition>using muda::CCSRMatrixView =  CSRMatrixViewT&lt;true, Ty&gt;</definition>
         <argsstring></argsstring>
         <name>CCSRMatrixView</name>
         <qualifiedname>muda::CCSRMatrixView</qualifiedname>
@@ -1462,16 +1467,92 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/ext/linear_system/csr_matrix_view.h" line="91" column="1" bodyfile="src/muda/ext/linear_system/csr_matrix_view.h" bodystart="91" bodyend="-1"/>
+        <location file="src/muda/ext/linear_system/csr_matrix_view.h" line="14" column="1" bodyfile="src/muda/ext/linear_system/csr_matrix_view.h" bodystart="14" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="typedef" id="dense__vector__view_8h_1a05d6115e96b6618dacc39edca1c9b8b7" prot="public" static="no">
+      <memberdef kind="typedef" id="dense__matrix__view_8h_1ae5fc62a8153f15fe04b56fd34b7d7054" prot="public" static="no">
         <templateparamlist>
           <param>
             <type>typename Ty</type>
           </param>
         </templateparamlist>
-        <type><ref refid="classmuda_1_1_dense_vector_view_base" kindref="compound">DenseVectorViewBase</ref>&lt; false, Ty &gt;</type>
-        <definition>using muda::DenseVectorView = typedef DenseVectorViewBase&lt;false, Ty&gt;</definition>
+        <type><ref refid="classmuda_1_1_dense_matrix_view_t" kindref="compound">DenseMatrixViewT</ref>&lt; false, Ty &gt;</type>
+        <definition>using muda::DenseMatrixView =  DenseMatrixViewT&lt;false, Ty&gt;</definition>
+        <argsstring></argsstring>
+        <name>DenseMatrixView</name>
+        <qualifiedname>muda::DenseMatrixView</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/dense_matrix_view.h" line="111" column="1" bodyfile="src/muda/ext/linear_system/dense_matrix_view.h" bodystart="111" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="dense__matrix__view_8h_1ab4fbd5604cad11c47c3d49935a42dbd5" prot="public" static="no">
+        <templateparamlist>
+          <param>
+            <type>typename Ty</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classmuda_1_1_dense_matrix_view_t" kindref="compound">DenseMatrixViewT</ref>&lt; true, Ty &gt;</type>
+        <definition>using muda::CDenseMatrixView =  DenseMatrixViewT&lt;true, Ty&gt;</definition>
+        <argsstring></argsstring>
+        <name>CDenseMatrixView</name>
+        <qualifiedname>muda::CDenseMatrixView</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/dense_matrix_view.h" line="113" column="1" bodyfile="src/muda/ext/linear_system/dense_matrix_view.h" bodystart="113" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="dense__matrix__viewer_8h_1a1bf43418b7447b6297fc1e97f0280abb" prot="public" static="no">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classmuda_1_1_dense_matrix_viewer_t" kindref="compound">DenseMatrixViewerT</ref>&lt; false, T &gt;</type>
+        <definition>using muda::DenseMatrixViewer =  DenseMatrixViewerT&lt;false, T&gt;</definition>
+        <argsstring></argsstring>
+        <name>DenseMatrixViewer</name>
+        <qualifiedname>muda::DenseMatrixViewer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/dense_matrix_viewer.h" line="232" column="1" bodyfile="src/muda/ext/linear_system/dense_matrix_viewer.h" bodystart="232" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="dense__matrix__viewer_8h_1a02d01b843b1fca6438b741a3473157e4" prot="public" static="no">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classmuda_1_1_dense_matrix_viewer_t" kindref="compound">DenseMatrixViewerT</ref>&lt; true, T &gt;</type>
+        <definition>using muda::CDenseMatrixViewer =  DenseMatrixViewerT&lt;true, T&gt;</definition>
+        <argsstring></argsstring>
+        <name>CDenseMatrixViewer</name>
+        <qualifiedname>muda::CDenseMatrixViewer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/dense_matrix_viewer.h" line="235" column="1" bodyfile="src/muda/ext/linear_system/dense_matrix_viewer.h" bodystart="235" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="dense__vector__view_8h_1abc835c91e5fe2630a10d6d278b98101f" prot="public" static="no">
+        <templateparamlist>
+          <param>
+            <type>typename Ty</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classmuda_1_1_dense_vector_view_t" kindref="compound">DenseVectorViewT</ref>&lt; false, Ty &gt;</type>
+        <definition>using muda::DenseVectorView =  DenseVectorViewT&lt;false, Ty&gt;</definition>
         <argsstring></argsstring>
         <name>DenseVectorView</name>
         <qualifiedname>muda::DenseVectorView</qualifiedname>
@@ -1481,16 +1562,16 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/ext/linear_system/dense_vector_view.h" line="117" column="1" bodyfile="src/muda/ext/linear_system/dense_vector_view.h" bodystart="117" bodyend="-1"/>
+        <location file="src/muda/ext/linear_system/dense_vector_view.h" line="119" column="1" bodyfile="src/muda/ext/linear_system/dense_vector_view.h" bodystart="119" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="typedef" id="dense__vector__view_8h_1a3adc5a3ef06f7572be2b6dfecaf720fa" prot="public" static="no">
+      <memberdef kind="typedef" id="dense__vector__view_8h_1a422ad151ed034b76c4dc810300c692e4" prot="public" static="no">
         <templateparamlist>
           <param>
             <type>typename Ty</type>
           </param>
         </templateparamlist>
-        <type><ref refid="classmuda_1_1_dense_vector_view_base" kindref="compound">DenseVectorViewBase</ref>&lt; true, Ty &gt;</type>
-        <definition>using muda::CDenseVectorView = typedef DenseVectorViewBase&lt;true, Ty&gt;</definition>
+        <type><ref refid="classmuda_1_1_dense_vector_view_t" kindref="compound">DenseVectorViewT</ref>&lt; true, Ty &gt;</type>
+        <definition>using muda::CDenseVectorView =  DenseVectorViewT&lt;true, Ty&gt;</definition>
         <argsstring></argsstring>
         <name>CDenseVectorView</name>
         <qualifiedname>muda::CDenseVectorView</qualifiedname>
@@ -1500,16 +1581,54 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/ext/linear_system/dense_vector_view.h" line="119" column="1" bodyfile="src/muda/ext/linear_system/dense_vector_view.h" bodystart="119" bodyend="-1"/>
+        <location file="src/muda/ext/linear_system/dense_vector_view.h" line="121" column="1" bodyfile="src/muda/ext/linear_system/dense_vector_view.h" bodystart="121" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="typedef" id="device__bcoo__matrix_8h_1a487e9240b7b142c7da63c50cb5983257" prot="public" static="no">
+      <memberdef kind="typedef" id="dense__vector__viewer_8h_1a9bed80dde9fa1a49399bc51228846925" prot="public" static="no">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classmuda_1_1_dense_vector_viewer_t" kindref="compound">DenseVectorViewerT</ref>&lt; false, T &gt;</type>
+        <definition>using muda::DenseVectorViewer =  DenseVectorViewerT&lt;false, T&gt;</definition>
+        <argsstring></argsstring>
+        <name>DenseVectorViewer</name>
+        <qualifiedname>muda::DenseVectorViewer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/dense_vector_viewer.h" line="210" column="1" bodyfile="src/muda/ext/linear_system/dense_vector_viewer.h" bodystart="210" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="dense__vector__viewer_8h_1a2c29da359a92bcd10093cd28b39b6cf6" prot="public" static="no">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classmuda_1_1_dense_vector_viewer_t" kindref="compound">DenseVectorViewerT</ref>&lt; true, T &gt;</type>
+        <definition>using muda::CDenseVectorViewer =  DenseVectorViewerT&lt;true, T&gt;</definition>
+        <argsstring></argsstring>
+        <name>CDenseVectorViewer</name>
+        <qualifiedname>muda::CDenseVectorViewer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/dense_vector_viewer.h" line="213" column="1" bodyfile="src/muda/ext/linear_system/dense_vector_viewer.h" bodystart="213" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="device__bcoo__matrix_8h_1afc0e99042f113b278d8da243a72fddf8" prot="public" static="no">
         <templateparamlist>
           <param>
             <type>typename T</type>
           </param>
         </templateparamlist>
         <type><ref refid="classmuda_1_1_device_b_c_o_o_matrix" kindref="compound">DeviceBCOOMatrix</ref>&lt; T, 1 &gt;</type>
-        <definition>using muda::DeviceCOOMatrix = typedef DeviceBCOOMatrix&lt;T, 1&gt;</definition>
+        <definition>using muda::DeviceCOOMatrix =  DeviceBCOOMatrix&lt;T, 1&gt;</definition>
         <argsstring></argsstring>
         <name>DeviceCOOMatrix</name>
         <qualifiedname>muda::DeviceCOOMatrix</qualifiedname>
@@ -1519,16 +1638,16 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/ext/linear_system/device_bcoo_matrix.h" line="180" column="1" bodyfile="src/muda/ext/linear_system/device_bcoo_matrix.h" bodystart="180" bodyend="-1"/>
+        <location file="src/muda/ext/linear_system/device_bcoo_matrix.h" line="178" column="1" bodyfile="src/muda/ext/linear_system/device_bcoo_matrix.h" bodystart="178" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="typedef" id="device__bcoo__vector_8h_1a91f0e2a0d3d581122f0656f935a21be6" prot="public" static="no">
+      <memberdef kind="typedef" id="device__bcoo__vector_8h_1a29df3f1a9d369e391d9ece5eeda2201b" prot="public" static="no">
         <templateparamlist>
           <param>
             <type>typename T</type>
           </param>
         </templateparamlist>
         <type><ref refid="classmuda_1_1_device_b_c_o_o_vector" kindref="compound">DeviceBCOOVector</ref>&lt; T, 1 &gt;</type>
-        <definition>using muda::DeviceCOOVector = typedef DeviceBCOOVector&lt;T, 1&gt;</definition>
+        <definition>using muda::DeviceCOOVector =  DeviceBCOOVector&lt;T, 1&gt;</definition>
         <argsstring></argsstring>
         <name>DeviceCOOVector</name>
         <qualifiedname>muda::DeviceCOOVector</qualifiedname>
@@ -1538,9 +1657,28 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/ext/linear_system/device_bcoo_vector.h" line="101" column="1" bodyfile="src/muda/ext/linear_system/device_bcoo_vector.h" bodystart="101" bodyend="-1"/>
+        <location file="src/muda/ext/linear_system/device_bcoo_vector.h" line="99" column="1" bodyfile="src/muda/ext/linear_system/device_bcoo_vector.h" bodystart="99" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="typedef" id="doublet__vector__view_8h_1a080b7d389af727bb164cef343b96cfb1" prot="public" static="no">
+      <memberdef kind="typedef" id="device__csr__matrix_8h_1a1456fd54bc119c945f423de9c77aa290" prot="public" static="no">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classmuda_1_1_device_b_s_r_matrix" kindref="compound">DeviceBSRMatrix</ref>&lt; T, 1 &gt;</type>
+        <definition>using muda::DeviceCSRMatrix =  DeviceBSRMatrix&lt;T, 1&gt;</definition>
+        <argsstring></argsstring>
+        <name>DeviceCSRMatrix</name>
+        <qualifiedname>muda::DeviceCSRMatrix</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/device_csr_matrix.h" line="16" column="1" bodyfile="src/muda/ext/linear_system/device_csr_matrix.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="doublet__vector__view_8h_1af8c12f5328423d27b92a473cd415aa6f" prot="public" static="no">
         <templateparamlist>
           <param>
             <type>typename T</type>
@@ -1551,8 +1689,8 @@
             <defname>N</defname>
           </param>
         </templateparamlist>
-        <type><ref refid="classmuda_1_1_doublet_vector_view_base" kindref="compound">DoubletVectorViewBase</ref>&lt; false, T, N &gt;</type>
-        <definition>using muda::DoubletVectorView = typedef DoubletVectorViewBase&lt;false, T, N&gt;</definition>
+        <type><ref refid="classmuda_1_1_doublet_vector_view_t" kindref="compound">DoubletVectorViewT</ref>&lt; false, T, N &gt;</type>
+        <definition>using muda::DoubletVectorView =  DoubletVectorViewT&lt;false, T, N&gt;</definition>
         <argsstring></argsstring>
         <name>DoubletVectorView</name>
         <qualifiedname>muda::DoubletVectorView</qualifiedname>
@@ -1562,9 +1700,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/ext/linear_system/doublet_vector_view.h" line="368" column="1" bodyfile="src/muda/ext/linear_system/doublet_vector_view.h" bodystart="368" bodyend="-1"/>
+        <location file="src/muda/ext/linear_system/doublet_vector_view.h" line="390" column="1" bodyfile="src/muda/ext/linear_system/doublet_vector_view.h" bodystart="390" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="typedef" id="doublet__vector__view_8h_1a57e8115a89e3c754239b40b3f2da19c7" prot="public" static="no">
+      <memberdef kind="typedef" id="doublet__vector__view_8h_1ac388c1fcefa4a46e0ec9f28ecaca4c8a" prot="public" static="no">
         <templateparamlist>
           <param>
             <type>typename T</type>
@@ -1575,8 +1713,8 @@
             <defname>N</defname>
           </param>
         </templateparamlist>
-        <type><ref refid="classmuda_1_1_doublet_vector_view_base" kindref="compound">DoubletVectorViewBase</ref>&lt; true, T, N &gt;</type>
-        <definition>using muda::CDoubletVectorView = typedef DoubletVectorViewBase&lt;true, T, N&gt;</definition>
+        <type><ref refid="classmuda_1_1_doublet_vector_view_t" kindref="compound">DoubletVectorViewT</ref>&lt; true, T, N &gt;</type>
+        <definition>using muda::CDoubletVectorView =  DoubletVectorViewT&lt;true, T, N&gt;</definition>
         <argsstring></argsstring>
         <name>CDoubletVectorView</name>
         <qualifiedname>muda::CDoubletVectorView</qualifiedname>
@@ -1586,9 +1724,57 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/ext/linear_system/doublet_vector_view.h" line="370" column="1" bodyfile="src/muda/ext/linear_system/doublet_vector_view.h" bodystart="370" bodyend="-1"/>
+        <location file="src/muda/ext/linear_system/doublet_vector_view.h" line="392" column="1" bodyfile="src/muda/ext/linear_system/doublet_vector_view.h" bodystart="392" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="typedef" id="triplet__matrix__view_8h_1a3ee038109a4edc59bc1973ad556539a0" prot="public" static="no">
+      <memberdef kind="typedef" id="doublet__vector__viewer_8h_1a8cd968463cc2a76d782442073de208c8" prot="public" static="no">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+          <param>
+            <type>int</type>
+            <declname>N</declname>
+            <defname>N</defname>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classmuda_1_1_doublet_vector_viewer_t" kindref="compound">DoubletVectorViewerT</ref>&lt; false, T, N &gt;</type>
+        <definition>using muda::DoubletVectorViewer =  DoubletVectorViewerT&lt;false, T, N&gt;</definition>
+        <argsstring></argsstring>
+        <name>DoubletVectorViewer</name>
+        <qualifiedname>muda::DoubletVectorViewer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/doublet_vector_viewer.h" line="214" column="1" bodyfile="src/muda/ext/linear_system/doublet_vector_viewer.h" bodystart="214" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="doublet__vector__viewer_8h_1a4b9d26b2c5dc8cb1c8c3f35a1911b36e" prot="public" static="no">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+          <param>
+            <type>int</type>
+            <declname>N</declname>
+            <defname>N</defname>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classmuda_1_1_doublet_vector_viewer_t" kindref="compound">DoubletVectorViewerT</ref>&lt; true, T, N &gt;</type>
+        <definition>using muda::CDoubletVectorViewer =  DoubletVectorViewerT&lt;true, T, N&gt;</definition>
+        <argsstring></argsstring>
+        <name>CDoubletVectorViewer</name>
+        <qualifiedname>muda::CDoubletVectorViewer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/doublet_vector_viewer.h" line="217" column="1" bodyfile="src/muda/ext/linear_system/doublet_vector_viewer.h" bodystart="217" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="triplet__matrix__view_8h_1a27d750ebc007149bec529a6a459b6258" prot="public" static="no">
         <templateparamlist>
           <param>
             <type>typename Ty</type>
@@ -1599,8 +1785,8 @@
             <defname>N</defname>
           </param>
         </templateparamlist>
-        <type><ref refid="classmuda_1_1_triplet_matrix_view_base" kindref="compound">TripletMatrixViewBase</ref>&lt; false, Ty, N &gt;</type>
-        <definition>using muda::TripletMatrixView = typedef TripletMatrixViewBase&lt;false, Ty, N&gt;</definition>
+        <type><ref refid="classmuda_1_1_triplet_matrix_view_t" kindref="compound">TripletMatrixViewT</ref>&lt; false, Ty, N &gt;</type>
+        <definition>using muda::TripletMatrixView =  TripletMatrixViewT&lt;false, Ty, N&gt;</definition>
         <argsstring></argsstring>
         <name>TripletMatrixView</name>
         <qualifiedname>muda::TripletMatrixView</qualifiedname>
@@ -1610,9 +1796,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/ext/linear_system/triplet_matrix_view.h" line="499" column="1" bodyfile="src/muda/ext/linear_system/triplet_matrix_view.h" bodystart="499" bodyend="-1"/>
+        <location file="src/muda/ext/linear_system/triplet_matrix_view.h" line="507" column="1" bodyfile="src/muda/ext/linear_system/triplet_matrix_view.h" bodystart="507" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="typedef" id="triplet__matrix__view_8h_1ac28a9af9b6d6ac0ac6fd478441f52021" prot="public" static="no">
+      <memberdef kind="typedef" id="triplet__matrix__view_8h_1af86f78f157d06211c27d7702c95f4765" prot="public" static="no">
         <templateparamlist>
           <param>
             <type>typename Ty</type>
@@ -1623,8 +1809,8 @@
             <defname>N</defname>
           </param>
         </templateparamlist>
-        <type><ref refid="classmuda_1_1_triplet_matrix_view_base" kindref="compound">TripletMatrixViewBase</ref>&lt; true, Ty, N &gt;</type>
-        <definition>using muda::CTripletMatrixView = typedef TripletMatrixViewBase&lt;true, Ty, N&gt;</definition>
+        <type><ref refid="classmuda_1_1_triplet_matrix_view_t" kindref="compound">TripletMatrixViewT</ref>&lt; true, Ty, N &gt;</type>
+        <definition>using muda::CTripletMatrixView =  TripletMatrixViewT&lt;true, Ty, N&gt;</definition>
         <argsstring></argsstring>
         <name>CTripletMatrixView</name>
         <qualifiedname>muda::CTripletMatrixView</qualifiedname>
@@ -1634,11 +1820,59 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/ext/linear_system/triplet_matrix_view.h" line="501" column="1" bodyfile="src/muda/ext/linear_system/triplet_matrix_view.h" bodystart="501" bodyend="-1"/>
+        <location file="src/muda/ext/linear_system/triplet_matrix_view.h" line="509" column="1" bodyfile="src/muda/ext/linear_system/triplet_matrix_view.h" bodystart="509" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="typedef" id="kernel__tag_8h_1a90861639c3037c869296cd0ebeeaf6b5" prot="public" static="no">
+      <memberdef kind="typedef" id="triplet__matrix__viewer_8h_1af58614888c533bb1b195c1a07af7db3f" prot="public" static="no">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+          <param>
+            <type>int</type>
+            <declname>N</declname>
+            <defname>N</defname>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classmuda_1_1_triplet_matrix_viewer_t" kindref="compound">TripletMatrixViewerT</ref>&lt; false, T, N &gt;</type>
+        <definition>using muda::TripletMatrixViewer =  TripletMatrixViewerT&lt;false, T, N&gt;</definition>
+        <argsstring></argsstring>
+        <name>TripletMatrixViewer</name>
+        <qualifiedname>muda::TripletMatrixViewer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/triplet_matrix_viewer.h" line="283" column="1" bodyfile="src/muda/ext/linear_system/triplet_matrix_viewer.h" bodystart="283" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="triplet__matrix__viewer_8h_1a4c69ed8b997a9a36348b161f8caab4bf" prot="public" static="no">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+          <param>
+            <type>int</type>
+            <declname>N</declname>
+            <defname>N</defname>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classmuda_1_1_triplet_matrix_viewer_t" kindref="compound">TripletMatrixViewerT</ref>&lt; true, T, N &gt;</type>
+        <definition>using muda::CTripletMatrixViewer =  TripletMatrixViewerT&lt;true, T, N&gt;</definition>
+        <argsstring></argsstring>
+        <name>CTripletMatrixViewer</name>
+        <qualifiedname>muda::CTripletMatrixViewer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/triplet_matrix_viewer.h" line="286" column="1" bodyfile="src/muda/ext/linear_system/triplet_matrix_viewer.h" bodystart="286" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="kernel__tag_8h_1a5cb512258723c058a8386066e89fa8e3" prot="public" static="no">
         <type><ref refid="structmuda_1_1_tag" kindref="compound">Tag</ref>&lt; <ref refid="structmuda_1_1_default" kindref="compound">Default</ref> &gt;</type>
-        <definition>using muda::DefaultTag = typedef Tag&lt;Default&gt;</definition>
+        <definition>using muda::DefaultTag =  Tag&lt;Default&gt;</definition>
         <argsstring></argsstring>
         <name>DefaultTag</name>
         <qualifiedname>muda::DefaultTag</qualifiedname>
@@ -1650,9 +1884,9 @@
         </inbodydescription>
         <location file="src/muda/launch/kernel_tag.h" line="13" column="1" bodyfile="src/muda/launch/kernel_tag.h" bodystart="13" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="typedef" id="logger__basic__data_8h_1a51ef7f16121c6273a2a8f9f6f1f5fc16" prot="public" static="no">
+      <memberdef kind="typedef" id="logger__basic__data_8h_1a05687fb3b66c363aa9b8741726f3bc6f" prot="public" static="no">
         <type>void(*)(void *formatter, const void *obj)</type>
-        <definition>using muda::LoggerFmtArg = typedef void (*)(void* formatter, const void* obj)</definition>
+        <definition>using muda::LoggerFmtArg =  void (*)(void* formatter, const void* obj)</definition>
         <argsstring></argsstring>
         <name>LoggerFmtArg</name>
         <qualifiedname>muda::LoggerFmtArg</qualifiedname>
@@ -1664,14 +1898,14 @@
         </inbodydescription>
         <location file="src/muda/logger/logger_basic_data.h" line="34" column="1" bodyfile="src/muda/logger/logger_basic_data.h" bodystart="34" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="typedef" id="span_8h_1a9a44959b04cd3380fc978795f55ac9cc" prot="public" static="no">
+      <memberdef kind="typedef" id="span_8h_1ad3143d24f7f3684cbeb274494eeeaa5e" prot="public" static="no">
         <templateparamlist>
           <param>
             <type>typename T</type>
           </param>
         </templateparamlist>
         <type>tcb::span&lt; T &gt;</type>
-        <definition>using muda::span = typedef tcb::span&lt;T&gt;</definition>
+        <definition>using muda::span =  tcb::span&lt;T&gt;</definition>
         <argsstring></argsstring>
         <name>span</name>
         <qualifiedname>muda::span</qualifiedname>
@@ -1683,9 +1917,9 @@
         </inbodydescription>
         <location file="src/muda/mstl/span.h" line="14" column="1" bodyfile="src/muda/mstl/span.h" bodystart="14" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="typedef" id="id__with__type_8h_1afbe2380fb9310a629c29688c0ed1a5a0" prot="public" static="no">
+      <memberdef kind="typedef" id="id__with__type_8h_1a337f0a60a614bf323d70e4513a3cfdff" prot="public" static="no">
         <type><ref refid="classmuda_1_1_id_with_type" kindref="compound">IdWithType</ref>&lt; uint64_t &gt;</type>
-        <definition>using muda::U64IdWithType = typedef IdWithType&lt;uint64_t&gt;</definition>
+        <definition>using muda::U64IdWithType =  IdWithType&lt;uint64_t&gt;</definition>
         <argsstring></argsstring>
         <name>U64IdWithType</name>
         <qualifiedname>muda::U64IdWithType</qualifiedname>
@@ -1697,9 +1931,9 @@
         </inbodydescription>
         <location file="src/muda/tools/id_with_type.h" line="53" column="1" bodyfile="src/muda/tools/id_with_type.h" bodystart="53" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="typedef" id="id__with__type_8h_1a8b281d9a4f5fc09d473ff93353f09a68" prot="public" static="no">
+      <memberdef kind="typedef" id="id__with__type_8h_1a5fb781c8cb0fbef9a7e8171e00c07dcc" prot="public" static="no">
         <type><ref refid="classmuda_1_1_id_with_type" kindref="compound">IdWithType</ref>&lt; uint32_t &gt;</type>
-        <definition>using muda::U32IdWithType = typedef IdWithType&lt;uint32_t&gt;</definition>
+        <definition>using muda::U32IdWithType =  IdWithType&lt;uint32_t&gt;</definition>
         <argsstring></argsstring>
         <name>U32IdWithType</name>
         <qualifiedname>muda::U32IdWithType</qualifiedname>
@@ -1711,9 +1945,9 @@
         </inbodydescription>
         <location file="src/muda/tools/id_with_type.h" line="54" column="1" bodyfile="src/muda/tools/id_with_type.h" bodystart="54" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="typedef" id="id__with__type_8h_1a915c4ff3cdf663db016062b099cc9d7c" prot="public" static="no">
+      <memberdef kind="typedef" id="id__with__type_8h_1a256d3c5c0c21036e873972d820591551" prot="public" static="no">
         <type><ref refid="classmuda_1_1_id_with_type" kindref="compound">IdWithType</ref>&lt; int64_t &gt;</type>
-        <definition>using muda::I64IdWithType = typedef IdWithType&lt;int64_t&gt;</definition>
+        <definition>using muda::I64IdWithType =  IdWithType&lt;int64_t&gt;</definition>
         <argsstring></argsstring>
         <name>I64IdWithType</name>
         <qualifiedname>muda::I64IdWithType</qualifiedname>
@@ -1725,9 +1959,9 @@
         </inbodydescription>
         <location file="src/muda/tools/id_with_type.h" line="55" column="1" bodyfile="src/muda/tools/id_with_type.h" bodystart="55" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="typedef" id="id__with__type_8h_1a25eb9a847f20ac995122cc655b725b8c" prot="public" static="no">
+      <memberdef kind="typedef" id="id__with__type_8h_1a64d93774a90587c5f06a4ca4332cb988" prot="public" static="no">
         <type><ref refid="classmuda_1_1_id_with_type" kindref="compound">IdWithType</ref>&lt; int32_t &gt;</type>
-        <definition>using muda::I32IdWithType = typedef IdWithType&lt;int32_t&gt;</definition>
+        <definition>using muda::I32IdWithType =  IdWithType&lt;int32_t&gt;</definition>
         <argsstring></argsstring>
         <name>I32IdWithType</name>
         <qualifiedname>muda::I32IdWithType</qualifiedname>
@@ -1739,14 +1973,14 @@
         </inbodydescription>
         <location file="src/muda/tools/id_with_type.h" line="56" column="1" bodyfile="src/muda/tools/id_with_type.h" bodystart="56" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="typedef" id="type__modifier_8h_1ac5cbee4d85ddebab719b6cd8547307a4" prot="public" static="no">
+      <memberdef kind="typedef" id="type__modifier_8h_1a16488edfca6e6a8d7f10b1353b421691" prot="public" static="no">
         <templateparamlist>
           <param>
             <type>typename T</type>
           </param>
         </templateparamlist>
         <type>std::remove_all_extents_t&lt; std::remove_reference_t&lt; T &gt; &gt;</type>
-        <definition>using muda::raw_type_t = typedef std::remove_all_extents_t&lt;std::remove_reference_t&lt;T&gt; &gt;</definition>
+        <definition>using muda::raw_type_t =  std::remove_all_extents_t&lt;std::remove_reference_t&lt;T&gt;&gt;</definition>
         <argsstring></argsstring>
         <name>raw_type_t</name>
         <qualifiedname>muda::raw_type_t</qualifiedname>
@@ -1758,17 +1992,17 @@
         </inbodydescription>
         <location file="src/muda/type_traits/type_modifier.h" line="13" column="1" bodyfile="src/muda/type_traits/type_modifier.h" bodystart="13" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="typedef" id="type__modifier_8h_1adb7a39447c5a30822cb358c08323a49b" prot="public" static="no">
+      <memberdef kind="typedef" id="type__modifier_8h_1a1f26841c4b02ab54c2c885539edc82b6" prot="public" static="no">
         <templateparamlist>
           <param>
             <type>typename T</type>
           </param>
         </templateparamlist>
-        <type>typename <ref refid="structmuda_1_1read__only__viewer" kindref="compound">read_only_viewer</ref>&lt; T &gt;::type</type>
-        <definition>using muda::read_only_viewer_t = typedef typename read_only_viewer&lt;T&gt;::type</definition>
+        <type>typename <ref refid="structmuda_1_1read__only__view" kindref="compound">read_only_view</ref>&lt; T &gt;::type</type>
+        <definition>using muda::read_only_view_t =  typename read_only_view&lt;T&gt;::type</definition>
         <argsstring></argsstring>
-        <name>read_only_viewer_t</name>
-        <qualifiedname>muda::read_only_viewer_t</qualifiedname>
+        <name>read_only_view_t</name>
+        <qualifiedname>muda::read_only_view_t</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -1777,17 +2011,17 @@
         </inbodydescription>
         <location file="src/muda/type_traits/type_modifier.h" line="33" column="1" bodyfile="src/muda/type_traits/type_modifier.h" bodystart="33" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="typedef" id="type__modifier_8h_1afccb19f6fe7db9d6c6854a55c361f6db" prot="public" static="no">
+      <memberdef kind="typedef" id="type__modifier_8h_1a3b8e4ce39bca5f9fe8766a67a5b70ac1" prot="public" static="no">
         <templateparamlist>
           <param>
             <type>typename T</type>
           </param>
         </templateparamlist>
-        <type>typename <ref refid="structmuda_1_1read__write__viewer" kindref="compound">read_write_viewer</ref>&lt; T &gt;::type</type>
-        <definition>using muda::read_write_viewer_t = typedef typename read_write_viewer&lt;T&gt;::type</definition>
+        <type>typename <ref refid="structmuda_1_1read__write__view" kindref="compound">read_write_view</ref>&lt; T &gt;::type</type>
+        <definition>using muda::read_write_view_t =  typename read_write_view&lt;T&gt;::type</definition>
         <argsstring></argsstring>
-        <name>read_write_viewer_t</name>
-        <qualifiedname>muda::read_write_viewer_t</qualifiedname>
+        <name>read_write_view_t</name>
+        <qualifiedname>muda::read_write_view_t</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -1796,14 +2030,14 @@
         </inbodydescription>
         <location file="src/muda/type_traits/type_modifier.h" line="39" column="1" bodyfile="src/muda/type_traits/type_modifier.h" bodystart="39" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="typedef" id="dense__0d_8h_1a0147a3b59a042bf32fd753006208b7ba" prot="public" static="no">
+      <memberdef kind="typedef" id="dense__0d_8h_1a35766c34ff98adac773a0d19676b52e6" prot="public" static="no">
         <templateparamlist>
           <param>
             <type>typename T</type>
           </param>
         </templateparamlist>
         <type><ref refid="classmuda_1_1_dense_viewer_t" kindref="compound">DenseViewerT</ref>&lt; false, T &gt;</type>
-        <definition>using muda::Dense = typedef DenseViewerT&lt;false, T&gt;</definition>
+        <definition>using muda::Dense =  DenseViewerT&lt;false, T&gt;</definition>
         <argsstring></argsstring>
         <name>Dense</name>
         <qualifiedname>muda::Dense</qualifiedname>
@@ -1815,14 +2049,14 @@
         </inbodydescription>
         <location file="src/muda/viewer/dense/dense_0d.h" line="93" column="1" bodyfile="src/muda/viewer/dense/dense_0d.h" bodystart="93" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="typedef" id="dense__0d_8h_1a8fe8025d14dc802db5a3bf6763b6f91d" prot="public" static="no">
+      <memberdef kind="typedef" id="dense__0d_8h_1a802b95bc7ac00770aaf9cfac77e5a955" prot="public" static="no">
         <templateparamlist>
           <param>
             <type>typename T</type>
           </param>
         </templateparamlist>
         <type><ref refid="classmuda_1_1_dense_viewer_t" kindref="compound">DenseViewerT</ref>&lt; true, T &gt;</type>
-        <definition>using muda::CDense = typedef DenseViewerT&lt;true, T&gt;</definition>
+        <definition>using muda::CDense =  DenseViewerT&lt;true, T&gt;</definition>
         <argsstring></argsstring>
         <name>CDense</name>
         <qualifiedname>muda::CDense</qualifiedname>
@@ -1834,14 +2068,14 @@
         </inbodydescription>
         <location file="src/muda/viewer/dense/dense_0d.h" line="96" column="1" bodyfile="src/muda/viewer/dense/dense_0d.h" bodystart="96" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="typedef" id="dense__1d_8h_1a6dba336e5fc8e729a4206bcf15d39ac3" prot="public" static="no">
+      <memberdef kind="typedef" id="dense__1d_8h_1a01ab791ff99bafdae007f7c3b33f6316" prot="public" static="no">
         <templateparamlist>
           <param>
             <type>typename T</type>
           </param>
         </templateparamlist>
         <type><ref refid="classmuda_1_1_dense1_d_t" kindref="compound">Dense1DT</ref>&lt; false, T &gt;</type>
-        <definition>using muda::Dense1D = typedef Dense1DT&lt;false, T&gt;</definition>
+        <definition>using muda::Dense1D =  Dense1DT&lt;false, T&gt;</definition>
         <argsstring></argsstring>
         <name>Dense1D</name>
         <qualifiedname>muda::Dense1D</qualifiedname>
@@ -1853,14 +2087,14 @@
         </inbodydescription>
         <location file="src/muda/viewer/dense/dense_1d.h" line="144" column="1" bodyfile="src/muda/viewer/dense/dense_1d.h" bodystart="144" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="typedef" id="dense__1d_8h_1a395c6dcd2bc65833a5626e9c058fa274" prot="public" static="no">
+      <memberdef kind="typedef" id="dense__1d_8h_1a13d2d41c50c09c1aa48240c9a93a3576" prot="public" static="no">
         <templateparamlist>
           <param>
             <type>typename T</type>
           </param>
         </templateparamlist>
         <type><ref refid="classmuda_1_1_dense1_d_t" kindref="compound">Dense1DT</ref>&lt; true, T &gt;</type>
-        <definition>using muda::CDense1D = typedef Dense1DT&lt;true, T&gt;</definition>
+        <definition>using muda::CDense1D =  Dense1DT&lt;true, T&gt;</definition>
         <argsstring></argsstring>
         <name>CDense1D</name>
         <qualifiedname>muda::CDense1D</qualifiedname>
@@ -1872,14 +2106,14 @@
         </inbodydescription>
         <location file="src/muda/viewer/dense/dense_1d.h" line="147" column="1" bodyfile="src/muda/viewer/dense/dense_1d.h" bodystart="147" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="typedef" id="dense__2d_8h_1afa263fc22baac6d51fa4ce7a8228519d" prot="public" static="no">
+      <memberdef kind="typedef" id="dense__2d_8h_1a11523c9c2e5c1fa72fa0c809b1503a6f" prot="public" static="no">
         <templateparamlist>
           <param>
             <type>typename T</type>
           </param>
         </templateparamlist>
         <type><ref refid="classmuda_1_1_dense2_d_base" kindref="compound">Dense2DBase</ref>&lt; false, T &gt;</type>
-        <definition>using muda::Dense2D = typedef Dense2DBase&lt;false, T&gt;</definition>
+        <definition>using muda::Dense2D =  Dense2DBase&lt;false, T&gt;</definition>
         <argsstring></argsstring>
         <name>Dense2D</name>
         <qualifiedname>muda::Dense2D</qualifiedname>
@@ -1891,14 +2125,14 @@
         </inbodydescription>
         <location file="src/muda/viewer/dense/dense_2d.h" line="166" column="1" bodyfile="src/muda/viewer/dense/dense_2d.h" bodystart="166" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="typedef" id="dense__2d_8h_1ad41d28e0ba2dc4011b6780deea94508f" prot="public" static="no">
+      <memberdef kind="typedef" id="dense__2d_8h_1af25af792c00a61cb765e564f58c2c060" prot="public" static="no">
         <templateparamlist>
           <param>
             <type>typename T</type>
           </param>
         </templateparamlist>
         <type><ref refid="classmuda_1_1_dense2_d_base" kindref="compound">Dense2DBase</ref>&lt; true, T &gt;</type>
-        <definition>using muda::CDense2D = typedef Dense2DBase&lt;true, T&gt;</definition>
+        <definition>using muda::CDense2D =  Dense2DBase&lt;true, T&gt;</definition>
         <argsstring></argsstring>
         <name>CDense2D</name>
         <qualifiedname>muda::CDense2D</qualifiedname>
@@ -1910,14 +2144,14 @@
         </inbodydescription>
         <location file="src/muda/viewer/dense/dense_2d.h" line="169" column="1" bodyfile="src/muda/viewer/dense/dense_2d.h" bodystart="169" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="typedef" id="dense__3d_8h_1a4a8f4a97ade6b66073676b230757a510" prot="public" static="no">
+      <memberdef kind="typedef" id="dense__3d_8h_1a03da0954d20ee0fcd54bf9b7747503e1" prot="public" static="no">
         <templateparamlist>
           <param>
             <type>typename T</type>
           </param>
         </templateparamlist>
         <type><ref refid="classmuda_1_1_dense3_d_base" kindref="compound">Dense3DBase</ref>&lt; false, T &gt;</type>
-        <definition>using muda::Dense3D = typedef Dense3DBase&lt;false, T&gt;</definition>
+        <definition>using muda::Dense3D =  Dense3DBase&lt;false, T&gt;</definition>
         <argsstring></argsstring>
         <name>Dense3D</name>
         <qualifiedname>muda::Dense3D</qualifiedname>
@@ -1929,14 +2163,14 @@
         </inbodydescription>
         <location file="src/muda/viewer/dense/dense_3d.h" line="175" column="1" bodyfile="src/muda/viewer/dense/dense_3d.h" bodystart="175" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="typedef" id="dense__3d_8h_1a0e087574573fdd05e20e7ef2e57a0e46" prot="public" static="no">
+      <memberdef kind="typedef" id="dense__3d_8h_1ae3db999057823f2643f9e999a124133c" prot="public" static="no">
         <templateparamlist>
           <param>
             <type>typename T</type>
           </param>
         </templateparamlist>
         <type><ref refid="classmuda_1_1_dense3_d_base" kindref="compound">Dense3DBase</ref>&lt; true, T &gt;</type>
-        <definition>using muda::CDense3D = typedef Dense3DBase&lt;true, T&gt;</definition>
+        <definition>using muda::CDense3D =  Dense3DBase&lt;true, T&gt;</definition>
         <argsstring></argsstring>
         <name>CDense3D</name>
         <qualifiedname>muda::CDense3D</qualifiedname>
@@ -1951,8 +2185,8 @@
     </sectiondef>
     <sectiondef kind="var">
       <memberdef kind="variable" id="muda__config_8h_1aece8a264a54f1d456248d1c5f3e3b2a0" prot="public" static="no" constexpr="yes" mutable="no">
-        <type>constexpr bool</type>
-        <definition>constexpr bool muda::RUNTIME_CHECK_ON</definition>
+        <type>bool</type>
+        <definition>bool muda::RUNTIME_CHECK_ON</definition>
         <argsstring></argsstring>
         <name>RUNTIME_CHECK_ON</name>
         <qualifiedname>muda::RUNTIME_CHECK_ON</qualifiedname>
@@ -1966,8 +2200,8 @@
         <location file="src/muda/muda_config.h" line="11" column="16" bodyfile="src/muda/muda_config.h" bodystart="11" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="muda__config_8h_1acbdb9426e2cdd4ee9cabe0a5c6225ddd" prot="public" static="no" constexpr="yes" mutable="no">
-        <type>constexpr bool</type>
-        <definition>constexpr bool muda::COMPUTE_GRAPH_ON</definition>
+        <type>bool</type>
+        <definition>bool muda::COMPUTE_GRAPH_ON</definition>
         <argsstring></argsstring>
         <name>COMPUTE_GRAPH_ON</name>
         <qualifiedname>muda::COMPUTE_GRAPH_ON</qualifiedname>
@@ -1981,8 +2215,8 @@
         <location file="src/muda/muda_config.h" line="12" column="16" bodyfile="src/muda/muda_config.h" bodystart="12" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="muda__config_8h_1a7ef683c20fe685387b7fbb0f1cf4b039" prot="public" static="no" constexpr="yes" mutable="no">
-        <type>constexpr bool</type>
-        <definition>constexpr bool muda::DEBUG_VIEWER</definition>
+        <type>bool</type>
+        <definition>bool muda::DEBUG_VIEWER</definition>
         <argsstring></argsstring>
         <name>DEBUG_VIEWER</name>
         <qualifiedname>muda::DEBUG_VIEWER</qualifiedname>
@@ -1996,8 +2230,8 @@
         <location file="src/muda/muda_config.h" line="21" column="16" bodyfile="src/muda/muda_config.h" bodystart="21" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="muda__config_8h_1a5f86ac87b613b9285b1ccd2e2a177d71" prot="public" static="no" constexpr="yes" mutable="no">
-        <type>constexpr bool</type>
-        <definition>constexpr bool muda::TRAP_ON_ERROR</definition>
+        <type>bool</type>
+        <definition>bool muda::TRAP_ON_ERROR</definition>
         <argsstring></argsstring>
         <name>TRAP_ON_ERROR</name>
         <qualifiedname>muda::TRAP_ON_ERROR</qualifiedname>
@@ -2011,8 +2245,8 @@
         <location file="src/muda/muda_config.h" line="23" column="16" bodyfile="src/muda/muda_config.h" bodystart="23" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="muda__config_8h_1a3db4e58bd0efd45f6e88af650e0ff984" prot="public" static="no" constexpr="yes" mutable="no">
-        <type>constexpr int</type>
-        <definition>constexpr int muda::LIGHT_WORKLOAD_BLOCK_SIZE</definition>
+        <type>int</type>
+        <definition>int muda::LIGHT_WORKLOAD_BLOCK_SIZE</definition>
         <argsstring></argsstring>
         <name>LIGHT_WORKLOAD_BLOCK_SIZE</name>
         <qualifiedname>muda::LIGHT_WORKLOAD_BLOCK_SIZE</qualifiedname>
@@ -2026,8 +2260,8 @@
         <location file="src/muda/muda_config.h" line="25" column="15" bodyfile="src/muda/muda_config.h" bodystart="25" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="muda__config_8h_1a29540809b6e7145494c38cd24190639f" prot="public" static="no" constexpr="yes" mutable="no">
-        <type>constexpr int</type>
-        <definition>constexpr int muda::MIDDLE_WORKLOAD_BLOCK_SIZE</definition>
+        <type>int</type>
+        <definition>int muda::MIDDLE_WORKLOAD_BLOCK_SIZE</definition>
         <argsstring></argsstring>
         <name>MIDDLE_WORKLOAD_BLOCK_SIZE</name>
         <qualifiedname>muda::MIDDLE_WORKLOAD_BLOCK_SIZE</qualifiedname>
@@ -2041,8 +2275,8 @@
         <location file="src/muda/muda_config.h" line="27" column="15" bodyfile="src/muda/muda_config.h" bodystart="27" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="muda__config_8h_1a1b638b3e243549fccae94f0e14fd74e2" prot="public" static="no" constexpr="yes" mutable="no">
-        <type>constexpr int</type>
-        <definition>constexpr int muda::HEAVY_WORKLOAD_BLOCK_SIZE</definition>
+        <type>int</type>
+        <definition>int muda::HEAVY_WORKLOAD_BLOCK_SIZE</definition>
         <argsstring></argsstring>
         <name>HEAVY_WORKLOAD_BLOCK_SIZE</name>
         <qualifiedname>muda::HEAVY_WORKLOAD_BLOCK_SIZE</qualifiedname>
@@ -2056,8 +2290,8 @@
         <location file="src/muda/muda_config.h" line="29" column="15" bodyfile="src/muda/muda_config.h" bodystart="29" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="version_8h_1ac719d77b50afe28b214d9dc0407aa309" prot="public" static="no" constexpr="yes" mutable="no">
-        <type>constexpr bool</type>
-        <definition>constexpr bool muda::DEFAULT_ASYNC_ALLOC_FREE</definition>
+        <type>bool</type>
+        <definition>bool muda::DEFAULT_ASYNC_ALLOC_FREE</definition>
         <argsstring></argsstring>
         <name>DEFAULT_ASYNC_ALLOC_FREE</name>
         <qualifiedname>muda::DEFAULT_ASYNC_ALLOC_FREE</qualifiedname>
@@ -2076,8 +2310,8 @@
             <type>typename T</type>
           </param>
         </templateparamlist>
-        <type>constexpr bool</type>
-        <definition>constexpr bool muda::always_false_v</definition>
+        <type>bool</type>
+        <definition>bool muda::always_false_v</definition>
         <argsstring></argsstring>
         <name>always_false_v</name>
         <qualifiedname>muda::always_false_v</qualifiedname>
@@ -2091,8 +2325,8 @@
         <location file="src/muda/type_traits/always.h" line="12" column="16" bodyfile="src/muda/type_traits/always.h" bodystart="12" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="cuda__arch_8h_1acbd76242ae3d0478ae7b2812a80dabf5" prot="public" static="no" constexpr="yes" mutable="no">
-        <type>constexpr bool</type>
-        <definition>constexpr bool muda::is_cuda_arch_v</definition>
+        <type>bool</type>
+        <definition>bool muda::is_cuda_arch_v</definition>
         <argsstring></argsstring>
         <name>is_cuda_arch_v</name>
         <qualifiedname>muda::is_cuda_arch_v</qualifiedname>
@@ -2111,8 +2345,8 @@
             <type>typename T</type>
           </param>
         </templateparamlist>
-        <type>constexpr bool</type>
-        <definition>constexpr bool muda::force_trivial_v</definition>
+        <type>bool</type>
+        <definition>bool muda::force_trivial_v</definition>
         <argsstring></argsstring>
         <name>force_trivial_v</name>
         <qualifiedname>muda::force_trivial_v</qualifiedname>
@@ -2131,8 +2365,8 @@
             <type>typename T</type>
           </param>
         </templateparamlist>
-        <type>constexpr bool</type>
-        <definition>constexpr bool muda::is_trivial_v</definition>
+        <type>bool</type>
+        <definition>bool muda::is_trivial_v</definition>
         <argsstring></argsstring>
         <name>is_trivial_v</name>
         <qualifiedname>muda::is_trivial_v</qualifiedname>
@@ -2151,8 +2385,8 @@
             <type>typename T</type>
           </param>
         </templateparamlist>
-        <type>constexpr bool</type>
-        <definition>constexpr bool muda::force_trivially_destructible_v</definition>
+        <type>bool</type>
+        <definition>bool muda::force_trivially_destructible_v</definition>
         <argsstring></argsstring>
         <name>force_trivially_destructible_v</name>
         <qualifiedname>muda::force_trivially_destructible_v</qualifiedname>
@@ -2171,8 +2405,8 @@
             <type>typename T</type>
           </param>
         </templateparamlist>
-        <type>constexpr bool</type>
-        <definition>constexpr bool muda::is_trivially_destructible_v</definition>
+        <type>bool</type>
+        <definition>bool muda::is_trivially_destructible_v</definition>
         <argsstring></argsstring>
         <name>is_trivially_destructible_v</name>
         <qualifiedname>muda::is_trivially_destructible_v</qualifiedname>
@@ -2192,8 +2426,8 @@
             <type>typename T</type>
           </param>
         </templateparamlist>
-        <type>constexpr bool</type>
-        <definition>constexpr bool muda::force_trivially_constructible_v</definition>
+        <type>bool</type>
+        <definition>bool muda::force_trivially_constructible_v</definition>
         <argsstring></argsstring>
         <name>force_trivially_constructible_v</name>
         <qualifiedname>muda::force_trivially_constructible_v</qualifiedname>
@@ -2212,8 +2446,8 @@
             <type>typename T</type>
           </param>
         </templateparamlist>
-        <type>constexpr bool</type>
-        <definition>constexpr bool muda::is_trivially_constructible_v</definition>
+        <type>bool</type>
+        <definition>bool muda::is_trivially_constructible_v</definition>
         <argsstring></argsstring>
         <name>is_trivially_constructible_v</name>
         <qualifiedname>muda::is_trivially_constructible_v</qualifiedname>
@@ -2233,8 +2467,8 @@
             <type>typename T</type>
           </param>
         </templateparamlist>
-        <type>constexpr bool</type>
-        <definition>constexpr bool muda::force_trivially_copy_constructible_v</definition>
+        <type>bool</type>
+        <definition>bool muda::force_trivially_copy_constructible_v</definition>
         <argsstring></argsstring>
         <name>force_trivially_copy_constructible_v</name>
         <qualifiedname>muda::force_trivially_copy_constructible_v</qualifiedname>
@@ -2254,8 +2488,8 @@
             <type>typename T</type>
           </param>
         </templateparamlist>
-        <type>constexpr bool</type>
-        <definition>constexpr bool muda::is_trivially_copy_constructible_v</definition>
+        <type>bool</type>
+        <definition>bool muda::is_trivially_copy_constructible_v</definition>
         <argsstring></argsstring>
         <name>is_trivially_copy_constructible_v</name>
         <qualifiedname>muda::is_trivially_copy_constructible_v</qualifiedname>
@@ -2275,8 +2509,8 @@
             <type>typename T</type>
           </param>
         </templateparamlist>
-        <type>constexpr bool</type>
-        <definition>constexpr bool muda::force_trivially_copy_assignable_v</definition>
+        <type>bool</type>
+        <definition>bool muda::force_trivially_copy_assignable_v</definition>
         <argsstring></argsstring>
         <name>force_trivially_copy_assignable_v</name>
         <qualifiedname>muda::force_trivially_copy_assignable_v</qualifiedname>
@@ -2296,8 +2530,8 @@
             <type>typename T</type>
           </param>
         </templateparamlist>
-        <type>constexpr bool</type>
-        <definition>constexpr bool muda::is_trivially_copy_assignable_v</definition>
+        <type>bool</type>
+        <definition>bool muda::is_trivially_copy_assignable_v</definition>
         <argsstring></argsstring>
         <name>is_trivially_copy_assignable_v</name>
         <qualifiedname>muda::is_trivially_copy_assignable_v</qualifiedname>
@@ -2311,18 +2545,18 @@
         </inbodydescription>
         <location file="src/muda/type_traits/type_label.h" line="70" column="16" bodyfile="src/muda/type_traits/type_label.h" bodystart="70" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="type__modifier_8h_1ab3242d12f8163497a227400a5d4089e4" prot="public" static="no" constexpr="yes" mutable="no">
+      <memberdef kind="variable" id="type__modifier_8h_1af50269379b9730ae0560f971a828d1e0" prot="public" static="no" constexpr="yes" mutable="no">
         <templateparamlist>
           <param>
             <type>typename T</type>
           </param>
         </templateparamlist>
-        <type>constexpr bool</type>
-        <definition>constexpr bool muda::is_read_only_viewer_v</definition>
+        <type>bool</type>
+        <definition>bool muda::is_read_only_view_v</definition>
         <argsstring></argsstring>
-        <name>is_read_only_viewer_v</name>
-        <qualifiedname>muda::is_read_only_viewer_v</qualifiedname>
-        <initializer>= std::is_same_v&lt;T, read_only_viewer_t&lt;T&gt;&gt;</initializer>
+        <name>is_read_only_view_v</name>
+        <qualifiedname>muda::is_read_only_view_v</qualifiedname>
+        <initializer>= std::is_same_v&lt;T, read_only_view_t&lt;T&gt;&gt;</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -2331,18 +2565,18 @@
         </inbodydescription>
         <location file="src/muda/type_traits/type_modifier.h" line="36" column="16" bodyfile="src/muda/type_traits/type_modifier.h" bodystart="36" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="type__modifier_8h_1ad0504f191f07fcd5840c9fa0e039dd2d" prot="public" static="no" constexpr="yes" mutable="no">
+      <memberdef kind="variable" id="type__modifier_8h_1a0e7261feffd2451ca1c7e163130301f3" prot="public" static="no" constexpr="yes" mutable="no">
         <templateparamlist>
           <param>
             <type>typename T</type>
           </param>
         </templateparamlist>
-        <type>constexpr bool</type>
-        <definition>constexpr bool muda::is_read_write_viewer_v</definition>
+        <type>bool</type>
+        <definition>bool muda::is_read_write_view_v</definition>
         <argsstring></argsstring>
-        <name>is_read_write_viewer_v</name>
-        <qualifiedname>muda::is_read_write_viewer_v</qualifiedname>
-        <initializer>= std::is_same_v&lt;T, read_write_viewer_t&lt;T&gt;&gt;</initializer>
+        <name>is_read_write_view_v</name>
+        <qualifiedname>muda::is_read_write_view_v</qualifiedname>
+        <initializer>= std::is_same_v&lt;T, read_write_view_t&lt;T&gt;&gt;</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -2351,19 +2585,18 @@
         </inbodydescription>
         <location file="src/muda/type_traits/type_modifier.h" line="42" column="16" bodyfile="src/muda/type_traits/type_modifier.h" bodystart="42" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="type__modifier_8h_1a332d80b3ec047d2653741f9b4bb3bd9a" prot="public" static="no" constexpr="yes" mutable="no">
+      <memberdef kind="variable" id="type__modifier_8h_1ae16a408f2787e5a0412c294a044b17ac" prot="public" static="no" constexpr="yes" mutable="no">
         <templateparamlist>
           <param>
             <type>typename T</type>
           </param>
         </templateparamlist>
-        <type>constexpr bool</type>
-        <definition>constexpr bool muda::is_uniform_viewer_v</definition>
+        <type>bool</type>
+        <definition>bool muda::is_uniform_view_v</definition>
         <argsstring></argsstring>
-        <name>is_uniform_viewer_v</name>
-        <qualifiedname>muda::is_uniform_viewer_v</qualifiedname>
-        <initializer>=
-    is_read_only_viewer_v&lt;T&gt; &amp;&amp; is_read_write_viewer_v&lt;T&gt;</initializer>
+        <name>is_uniform_view_v</name>
+        <qualifiedname>muda::is_uniform_view_v</qualifiedname>
+        <initializer>= is_read_only_view_v&lt;T&gt; &amp;&amp; is_read_write_view_v&lt;T&gt;</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -3044,8 +3277,8 @@
             <type>typename T</type>
           </param>
         </templateparamlist>
-        <type>constexpr cudaDataType_t</type>
-        <definition>constexpr cudaDataType_t muda::cuda_data_type</definition>
+        <type>cudaDataType_t</type>
+        <definition>cudaDataType_t muda::cuda_data_type</definition>
         <argsstring>()</argsstring>
         <name>cuda_data_type</name>
         <qualifiedname>muda::cuda_data_type</qualifiedname>
@@ -3058,8 +3291,8 @@
         <location file="src/muda/ext/linear_system/type_mapper/data_type_mapper.h" line="8" column="33" bodyfile="src/muda/ext/linear_system/type_mapper/data_type_mapper.h" bodystart="8" bodyend="30"/>
       </memberdef>
       <memberdef kind="function" id="data__type__mapper_8h_1a6f98725a79839f20e7440f053b4c27bc" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>constexpr cublasOperation_t</type>
-        <definition>constexpr cublasOperation_t muda::cublas_trans_operation</definition>
+        <type>cublasOperation_t</type>
+        <definition>cublasOperation_t muda::cublas_trans_operation</definition>
         <argsstring>(bool b)</argsstring>
         <name>cublas_trans_operation</name>
         <qualifiedname>muda::cublas_trans_operation</qualifiedname>
@@ -3081,8 +3314,8 @@
             <type>typename T</type>
           </param>
         </templateparamlist>
-        <type>constexpr cusparseIndexType_t</type>
-        <definition>constexpr cusparseIndexType_t muda::cusparse_index_type</definition>
+        <type>cusparseIndexType_t</type>
+        <definition>cusparseIndexType_t muda::cusparse_index_type</definition>
         <argsstring>()</argsstring>
         <name>cusparse_index_type</name>
         <qualifiedname>muda::cusparse_index_type</qualifiedname>
@@ -3146,7 +3379,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/launch/launch_base.h" line="175" column="7" declfile="src/muda/launch/launch_base.h" declline="175" declcolumn="7"/>
+        <location file="src/muda/launch/launch_base.h" line="173" column="7" declfile="src/muda/launch/launch_base.h" declline="173" declcolumn="7"/>
       </memberdef>
       <memberdef kind="function" id="launch__base_8h_1a6dde58768b6321b3d6dbafae5f3a4de2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classmuda_1_1_empty" kindref="compound">Empty</ref></type>
@@ -3160,7 +3393,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/launch/launch_base.h" line="177" column="7" declfile="src/muda/launch/launch_base.h" declline="177" declcolumn="7"/>
+        <location file="src/muda/launch/launch_base.h" line="175" column="7" declfile="src/muda/launch/launch_base.h" declline="175" declcolumn="7"/>
       </memberdef>
       <memberdef kind="function" id="launch__base_8h_1a0aaf68478ebd97ea0b7de911c979b89d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -3174,7 +3407,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/launch/launch_base.h" line="179" column="6" declfile="src/muda/launch/launch_base.h" declline="179" declcolumn="6"/>
+        <location file="src/muda/launch/launch_base.h" line="177" column="6" declfile="src/muda/launch/launch_base.h" declline="177" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="launch__base_8h_1aa0bc81850f4db121df0e1fba6b9da4a2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -3192,7 +3425,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/launch/launch_base.h" line="180" column="6" declfile="src/muda/launch/launch_base.h" declline="180" declcolumn="6"/>
+        <location file="src/muda/launch/launch_base.h" line="178" column="6" declfile="src/muda/launch/launch_base.h" declline="178" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="launch__base_8h_1a882992741d5288280c910b23e86073e9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -3210,7 +3443,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/launch/launch_base.h" line="181" column="6" declfile="src/muda/launch/launch_base.h" declline="181" declcolumn="6"/>
+        <location file="src/muda/launch/launch_base.h" line="179" column="6" declfile="src/muda/launch/launch_base.h" declline="179" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="logger__function_8h_1a7916379ad5c11e487d5686b6f5c52ba8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>MUDA_INLINE MUDA_DEVICE <ref refid="classmuda_1_1_log_proxy" kindref="compound">LogProxy</ref></type>
@@ -4316,7 +4549,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/profiler.h" line="19" column="18" bodyfile="src/muda/profiler.h" bodystart="19" bodyend="28"/>
+        <location file="src/muda/profiler.h" line="22" column="18" bodyfile="src/muda/profiler.h" bodystart="22" bodyend="31"/>
       </memberdef>
       <memberdef kind="function" id="cuda__vec__utils_8h_1a70538f7f558fc86f62adb8c984edfdd7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>MUDA_INLINE MUDA_GENERIC int2</type>
@@ -4732,14 +4965,14 @@
         </inbodydescription>
         <location file="src/muda/tools/fuzzy.h" line="58" column="31" bodyfile="src/muda/tools/fuzzy.h" bodystart="58" bodyend="65"/>
       </memberdef>
-      <memberdef kind="function" id="type__modifier_8h_1a0cce8d826d1edc763a2ef1062aa0baa4" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+      <memberdef kind="function" id="type__modifier_8h_1ae9d0d634a3d7ead5b714f3bc8596907d" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <templateparamlist>
           <param>
             <type>typename T</type>
           </param>
         </templateparamlist>
-        <type>MUDA_GENERIC MUDA_INLINE T *</type>
-        <definition>MUDA_GENERIC MUDA_INLINE T * muda::remove_const</definition>
+        <type>MUDA_GENERIC MUDA_INLINE constexpr T *</type>
+        <definition>MUDA_GENERIC MUDA_INLINE constexpr T * muda::remove_const</definition>
         <argsstring>(const T *ptr) noexcept</argsstring>
         <name>remove_const</name>
         <qualifiedname>muda::remove_const</qualifiedname>
@@ -4753,16 +4986,16 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/type_traits/type_modifier.h" line="51" column="28" bodyfile="src/muda/type_traits/type_modifier.h" bodystart="51" bodyend="54"/>
+        <location file="src/muda/type_traits/type_modifier.h" line="53" column="38" bodyfile="src/muda/type_traits/type_modifier.h" bodystart="53" bodyend="56"/>
       </memberdef>
-      <memberdef kind="function" id="type__modifier_8h_1a0639d059751bb512974e279a74d2603a" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+      <memberdef kind="function" id="type__modifier_8h_1ae421281079e2aca404198ce4e6b9f8f0" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <templateparamlist>
           <param>
             <type>typename T</type>
           </param>
         </templateparamlist>
-        <type>MUDA_GENERIC MUDA_INLINE T &amp;</type>
-        <definition>MUDA_GENERIC MUDA_INLINE T &amp; muda::remove_const</definition>
+        <type>MUDA_GENERIC MUDA_INLINE constexpr T &amp;</type>
+        <definition>MUDA_GENERIC MUDA_INLINE constexpr T &amp; muda::remove_const</definition>
         <argsstring>(const T &amp;ref) noexcept</argsstring>
         <name>remove_const</name>
         <qualifiedname>muda::remove_const</qualifiedname>
@@ -4776,7 +5009,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/type_traits/type_modifier.h" line="57" column="28" bodyfile="src/muda/type_traits/type_modifier.h" bodystart="57" bodyend="60"/>
+        <location file="src/muda/type_traits/type_modifier.h" line="59" column="38" bodyfile="src/muda/type_traits/type_modifier.h" bodystart="59" bodyend="62"/>
       </memberdef>
       <memberdef kind="function" id="dense__0d_8h_1a693109b432238d902b9df8f8564f5e28" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <templateparamlist>
@@ -5221,6 +5454,58 @@
         <inbodydescription>
         </inbodydescription>
         <location file="src/muda/viewer/dense/dense_3d.h" line="223" column="31" bodyfile="src/muda/viewer/dense/dense_3d.h" bodystart="223" bodyend="226"/>
+      </memberdef>
+      <memberdef kind="function" id="parallel__for_8h_1a4ca6d0bded526003335b37695eb38cb1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename F</type>
+          </param>
+          <param>
+            <type>typename UserTag</type>
+          </param>
+        </templateparamlist>
+        <type>MUDA_GLOBAL void</type>
+        <definition>MUDA_GLOBAL void muda::details::grid_stride_loop_kernel</definition>
+        <argsstring>(ParallelForCallable&lt; F &gt; f)</argsstring>
+        <name>grid_stride_loop_kernel</name>
+        <qualifiedname>muda::grid_stride_loop_kernel</qualifiedname>
+        <param>
+          <type>ParallelForCallable&lt; F &gt;</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/launch/parallel_for.h" line="105" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="parallel__for_8h_1a9be9287e9adecaa29efe56ef2197dc9e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename F</type>
+          </param>
+          <param>
+            <type>typename UserTag</type>
+          </param>
+        </templateparamlist>
+        <type>MUDA_GLOBAL void</type>
+        <definition>MUDA_GLOBAL void muda::details::parallel_for_kernel</definition>
+        <argsstring>(ParallelForCallable&lt; F &gt; f)</argsstring>
+        <name>parallel_for_kernel</name>
+        <qualifiedname>muda::parallel_for_kernel</qualifiedname>
+        <param>
+          <type>ParallelForCallable&lt; F &gt;</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/launch/parallel_for.h" line="106" column="1"/>
       </memberdef>
     </sectiondef>
     <briefdescription>

@@ -1,0 +1,580 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.1" xml:lang="en-US">
+  <compounddef id="classmuda_1_1_doublet_vector_viewer_t" kind="class" language="C++" prot="public">
+    <compoundname>muda::DoubletVectorViewerT</compoundname>
+    <basecompoundref refid="classmuda_1_1_viewer_base" prot="public" virt="non-virtual">muda::ViewerBase&lt; IsConst &gt;</basecompoundref>
+    <innerclass refid="structmuda_1_1_doublet_vector_viewer_t_1_1_c_doublet" prot="public">muda::DoubletVectorViewerT::CDoublet</innerclass>
+    <innerclass refid="classmuda_1_1_doublet_vector_viewer_t_1_1_proxy" prot="public">muda::DoubletVectorViewerT::Proxy</innerclass>
+    <templateparamlist>
+      <param>
+        <type>bool</type>
+        <declname>IsConst</declname>
+        <defname>IsConst</defname>
+      </param>
+      <param>
+        <type>typename T</type>
+      </param>
+      <param>
+        <type>int</type>
+        <declname>N</declname>
+        <defname>N</defname>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="private-type">
+      <memberdef kind="typedef" id="classmuda_1_1_doublet_vector_viewer_t_1a08225dff9800d48fd5ec9b4f009619af" prot="private" static="no">
+        <type><ref refid="classmuda_1_1_viewer_base" kindref="compound">ViewerBase</ref>&lt; IsConst &gt;</type>
+        <definition>using muda::DoubletVectorViewerT&lt; IsConst, T, N &gt;::Base =  ViewerBase&lt;IsConst&gt;</definition>
+        <argsstring></argsstring>
+        <name>Base</name>
+        <qualifiedname>muda::DoubletVectorViewerT::Base</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/doublet_vector_viewer.h" line="16" column="5" bodyfile="src/muda/ext/linear_system/doublet_vector_viewer.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classmuda_1_1_doublet_vector_viewer_t_1adf3188af3c71e9fc4b8df9b685994915" prot="private" static="no">
+        <templateparamlist>
+          <param>
+            <type>typename U</type>
+          </param>
+        </templateparamlist>
+        <type>typename Base::template auto_const_t&lt; U &gt;</type>
+        <definition>using muda::DoubletVectorViewerT&lt; IsConst, T, N &gt;::auto_const_t =  typename Base::template auto_const_t&lt;U&gt;</definition>
+        <argsstring></argsstring>
+        <name>auto_const_t</name>
+        <qualifiedname>muda::DoubletVectorViewerT::auto_const_t</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/doublet_vector_viewer.h" line="18" column="5" bodyfile="src/muda/ext/linear_system/doublet_vector_viewer.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classmuda_1_1_doublet_vector_viewer_t_1a8f84cd3201e7d3d1b773c2bfad39d5b5" prot="public" static="no">
+        <type>std::conditional_t&lt; N==1, T, Eigen::Matrix&lt; T, N, 1 &gt; &gt;</type>
+        <definition>using muda::DoubletVectorViewerT&lt; IsConst, T, N &gt;::ValueT =  std::conditional_t&lt;N == 1, T, Eigen::Matrix&lt;T, N, 1&gt;&gt;</definition>
+        <argsstring></argsstring>
+        <name>ValueT</name>
+        <qualifiedname>muda::DoubletVectorViewerT::ValueT</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/doublet_vector_viewer.h" line="26" column="5" bodyfile="src/muda/ext/linear_system/doublet_vector_viewer.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classmuda_1_1_doublet_vector_viewer_t_1a957e100f89a502c7f9cea41ac32a288b" prot="public" static="no">
+        <type><ref refid="classmuda_1_1_doublet_vector_viewer_t" kindref="compound">DoubletVectorViewerT</ref>&lt; true, T, N &gt;</type>
+        <definition>using muda::DoubletVectorViewerT&lt; IsConst, T, N &gt;::ConstViewer =  DoubletVectorViewerT&lt;true, T, N&gt;</definition>
+        <argsstring></argsstring>
+        <name>ConstViewer</name>
+        <qualifiedname>muda::DoubletVectorViewerT::ConstViewer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/doublet_vector_viewer.h" line="27" column="5" bodyfile="src/muda/ext/linear_system/doublet_vector_viewer.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classmuda_1_1_doublet_vector_viewer_t_1a8cc1192a79e66dc4a07b84e248789c6f" prot="public" static="no">
+        <type><ref refid="classmuda_1_1_doublet_vector_viewer_t" kindref="compound">DoubletVectorViewerT</ref>&lt; false, T, N &gt;</type>
+        <definition>using muda::DoubletVectorViewerT&lt; IsConst, T, N &gt;::NonConstViewer =  DoubletVectorViewerT&lt;false, T, N&gt;</definition>
+        <argsstring></argsstring>
+        <name>NonConstViewer</name>
+        <qualifiedname>muda::DoubletVectorViewerT::NonConstViewer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/doublet_vector_viewer.h" line="28" column="5" bodyfile="src/muda/ext/linear_system/doublet_vector_viewer.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classmuda_1_1_doublet_vector_viewer_t_1a92ec95128f0b115c38db1347d8b5eb8f" prot="public" static="no">
+        <type><ref refid="classmuda_1_1_doublet_vector_viewer_t" kindref="compound">DoubletVectorViewerT</ref>&lt; IsConst, T, N &gt;</type>
+        <definition>using muda::DoubletVectorViewerT&lt; IsConst, T, N &gt;::ThisViewer =  DoubletVectorViewerT&lt;IsConst, T, N&gt;</definition>
+        <argsstring></argsstring>
+        <name>ThisViewer</name>
+        <qualifiedname>muda::DoubletVectorViewerT::ThisViewer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/doublet_vector_viewer.h" line="29" column="5" bodyfile="src/muda/ext/linear_system/doublet_vector_viewer.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="friend">
+      <memberdef kind="friend" id="classmuda_1_1_doublet_vector_viewer_t_1a3e5d2c7bfb817007ccfb9aa91faa6755" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>bool</type>
+            <declname>OtherIsConst</declname>
+            <defname>OtherIsConst</defname>
+          </param>
+          <param>
+            <type>typename U</type>
+          </param>
+          <param>
+            <type>int</type>
+            <declname>M</declname>
+            <defname>M</defname>
+          </param>
+        </templateparamlist>
+        <type>class</type>
+        <definition>friend class DoubletVectorViewerT</definition>
+        <argsstring></argsstring>
+        <name>DoubletVectorViewerT</name>
+        <qualifiedname>muda::DoubletVectorViewerT::DoubletVectorViewerT</qualifiedname>
+        <param>
+          <type><ref refid="classmuda_1_1_doublet_vector_viewer_t" kindref="compound">DoubletVectorViewerT</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/doublet_vector_viewer.h" line="21" column="18" bodyfile="src/muda/ext/linear_system/doublet_vector_viewer.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classmuda_1_1_doublet_vector_viewer_t_1ad0aa5e1d315f99a5ae4b47859a2140fb" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int muda::DoubletVectorViewerT&lt; IsConst, T, N &gt;::m_total_segment_count</definition>
+        <argsstring></argsstring>
+        <name>m_total_segment_count</name>
+        <qualifiedname>muda::DoubletVectorViewerT::m_total_segment_count</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/doublet_vector_viewer.h" line="75" column="9" bodyfile="src/muda/ext/linear_system/doublet_vector_viewer.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1_doublet_vector_viewer_t_1a51c208c64dbc8682a3f9033dc058864b" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int muda::DoubletVectorViewerT&lt; IsConst, T, N &gt;::m_doublet_index_offset</definition>
+        <argsstring></argsstring>
+        <name>m_doublet_index_offset</name>
+        <qualifiedname>muda::DoubletVectorViewerT::m_doublet_index_offset</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/doublet_vector_viewer.h" line="78" column="9" bodyfile="src/muda/ext/linear_system/doublet_vector_viewer.h" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1_doublet_vector_viewer_t_1aca8f1245858a0bbae03de5db38813590" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int muda::DoubletVectorViewerT&lt; IsConst, T, N &gt;::m_doublet_count</definition>
+        <argsstring></argsstring>
+        <name>m_doublet_count</name>
+        <qualifiedname>muda::DoubletVectorViewerT::m_doublet_count</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/doublet_vector_viewer.h" line="79" column="9" bodyfile="src/muda/ext/linear_system/doublet_vector_viewer.h" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1_doublet_vector_viewer_t_1a65bb984f665711b00025b1e42ed8e221" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int muda::DoubletVectorViewerT&lt; IsConst, T, N &gt;::m_total_doublet_count</definition>
+        <argsstring></argsstring>
+        <name>m_total_doublet_count</name>
+        <qualifiedname>muda::DoubletVectorViewerT::m_total_doublet_count</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/doublet_vector_viewer.h" line="80" column="9" bodyfile="src/muda/ext/linear_system/doublet_vector_viewer.h" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1_doublet_vector_viewer_t_1a8472a9b1c28236311c1f8e5217cdfd87" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int muda::DoubletVectorViewerT&lt; IsConst, T, N &gt;::m_subvector_offset</definition>
+        <argsstring></argsstring>
+        <name>m_subvector_offset</name>
+        <qualifiedname>muda::DoubletVectorViewerT::m_subvector_offset</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/doublet_vector_viewer.h" line="83" column="9" bodyfile="src/muda/ext/linear_system/doublet_vector_viewer.h" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1_doublet_vector_viewer_t_1a8dc757c7b53482a6dceb45f8efd5f2ac" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int muda::DoubletVectorViewerT&lt; IsConst, T, N &gt;::m_subvector_extent</definition>
+        <argsstring></argsstring>
+        <name>m_subvector_extent</name>
+        <qualifiedname>muda::DoubletVectorViewerT::m_subvector_extent</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/doublet_vector_viewer.h" line="84" column="9" bodyfile="src/muda/ext/linear_system/doublet_vector_viewer.h" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1_doublet_vector_viewer_t_1a77216125374242fee35c0fb72679b357" prot="protected" static="no" mutable="no">
+        <type>auto_const_t&lt; int &gt; *</type>
+        <definition>auto_const_t&lt;int&gt;* muda::DoubletVectorViewerT&lt; IsConst, T, N &gt;::m_segment_indices</definition>
+        <argsstring></argsstring>
+        <name>m_segment_indices</name>
+        <qualifiedname>muda::DoubletVectorViewerT::m_segment_indices</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/doublet_vector_viewer.h" line="87" column="21" bodyfile="src/muda/ext/linear_system/doublet_vector_viewer.h" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1_doublet_vector_viewer_t_1a89bfa60e8e47e443cee6235259cf3506" prot="protected" static="no" mutable="no">
+        <type>auto_const_t&lt; ValueT &gt; *</type>
+        <definition>auto_const_t&lt;ValueT&gt;* muda::DoubletVectorViewerT&lt; IsConst, T, N &gt;::m_segment_values</definition>
+        <argsstring></argsstring>
+        <name>m_segment_values</name>
+        <qualifiedname>muda::DoubletVectorViewerT::m_segment_values</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/doublet_vector_viewer.h" line="88" column="18" bodyfile="src/muda/ext/linear_system/doublet_vector_viewer.h" bodystart="88" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classmuda_1_1_doublet_vector_viewer_t_1ac0e8a96ef36c067e2685135846e5ed07" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>muda::DoubletVectorViewerT&lt; IsConst, T, N &gt;::MUDA_VIEWER_COMMON_NAME</definition>
+        <argsstring>(DoubletVectorViewerT)</argsstring>
+        <name>MUDA_VIEWER_COMMON_NAME</name>
+        <qualifiedname>muda::DoubletVectorViewerT::MUDA_VIEWER_COMMON_NAME</qualifiedname>
+        <param>
+          <type><ref refid="classmuda_1_1_doublet_vector_viewer_t" kindref="compound">DoubletVectorViewerT</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/doublet_vector_viewer.h" line="23" column="5"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmuda_1_1_doublet_vector_viewer_t_1a281da96a1bdf07edcb8a649a00bdf6fc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>MUDA_GENERIC</type>
+        <definition>MUDA_GENERIC muda::DoubletVectorViewerT&lt; IsConst, T, N &gt;::DoubletVectorViewerT</definition>
+        <argsstring>()=default</argsstring>
+        <name>DoubletVectorViewerT</name>
+        <qualifiedname>muda::DoubletVectorViewerT::DoubletVectorViewerT</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/doublet_vector_viewer.h" line="91" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_doublet_vector_viewer_t_1a6ef371d9d4b1ee96a016b8955fdbb310" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>MUDA_GENERIC</type>
+        <definition>MUDA_GENERIC muda::DoubletVectorViewerT&lt; IsConst, T, N &gt;::DoubletVectorViewerT</definition>
+        <argsstring>(int total_segment_count, int doublet_index_offset, int doublet_count, int total_doublet_count, int subvector_offset, int subvector_extent, auto_const_t&lt; int &gt; *segment_indices, auto_const_t&lt; ValueT &gt; *segment_values)</argsstring>
+        <name>DoubletVectorViewerT</name>
+        <qualifiedname>muda::DoubletVectorViewerT::DoubletVectorViewerT</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>total_segment_count</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>doublet_index_offset</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>doublet_count</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>total_doublet_count</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>subvector_offset</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>subvector_extent</declname>
+        </param>
+        <param>
+          <type>auto_const_t&lt; int &gt; *</type>
+          <declname>segment_indices</declname>
+        </param>
+        <param>
+          <type>auto_const_t&lt; ValueT &gt; *</type>
+          <declname>segment_values</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/doublet_vector_viewer.h" line="92" column="18" bodyfile="src/muda/ext/linear_system/doublet_vector_viewer.h" bodystart="92" bodyend="126"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_doublet_vector_viewer_t_1a44020e2c4e8bae9baad2db593ace8e21" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>bool</type>
+            <declname>OtherIsConst</declname>
+            <defname>OtherIsConst</defname>
+          </param>
+        </templateparamlist>
+        <type>MUDA_GENERIC</type>
+        <definition>MUDA_GENERIC muda::DoubletVectorViewerT&lt; IsConst, T, N &gt;::DoubletVectorViewerT</definition>
+        <argsstring>(const DoubletVectorViewerT&lt; OtherIsConst, T, N &gt; &amp;other) noexcept MUDA_REQUIRES(IsConst)</argsstring>
+        <name>DoubletVectorViewerT</name>
+        <qualifiedname>muda::DoubletVectorViewerT::DoubletVectorViewerT</qualifiedname>
+        <param>
+          <type>const <ref refid="classmuda_1_1_doublet_vector_viewer_t" kindref="compound">DoubletVectorViewerT</ref>&lt; OtherIsConst, T, N &gt; &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/doublet_vector_viewer.h" line="129" column="18" bodyfile="src/muda/ext/linear_system/doublet_vector_viewer.h" bodystart="129" bodyend="141"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_doublet_vector_viewer_t_1a54c7a000e47323a61f8f05008911ac73" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>MUDA_GENERIC <ref refid="classmuda_1_1_doublet_vector_viewer_t" kindref="compound">ConstViewer</ref></type>
+        <definition>MUDA_GENERIC ConstViewer muda::DoubletVectorViewerT&lt; IsConst, T, N &gt;::as_const</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>as_const</name>
+        <qualifiedname>muda::DoubletVectorViewerT::as_const</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/doublet_vector_viewer.h" line="143" column="30" bodyfile="src/muda/ext/linear_system/doublet_vector_viewer.h" bodystart="143" bodyend="153"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_doublet_vector_viewer_t_1ac1a12a70ab8d5a2958121ebe2046ee78" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>MUDA_GENERIC int</type>
+        <definition>MUDA_GENERIC int muda::DoubletVectorViewerT&lt; IsConst, T, N &gt;::doublet_count</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>doublet_count</name>
+        <qualifiedname>muda::DoubletVectorViewerT::doublet_count</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/doublet_vector_viewer.h" line="155" column="22" bodyfile="src/muda/ext/linear_system/doublet_vector_viewer.h" bodystart="155" bodyend="155"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_doublet_vector_viewer_t_1aa2e7ba9efc0c896e29710f87fc3c11ac" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>MUDA_GENERIC int</type>
+        <definition>MUDA_GENERIC int muda::DoubletVectorViewerT&lt; IsConst, T, N &gt;::total_doublet_count</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>total_doublet_count</name>
+        <qualifiedname>muda::DoubletVectorViewerT::total_doublet_count</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/doublet_vector_viewer.h" line="157" column="22" bodyfile="src/muda/ext/linear_system/doublet_vector_viewer.h" bodystart="157" bodyend="160"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_doublet_vector_viewer_t_1a803e4c1e644b7620a5db338442220585" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>MUDA_GENERIC auto</type>
+        <definition>MUDA_GENERIC auto muda::DoubletVectorViewerT&lt; IsConst, T, N &gt;::operator()</definition>
+        <argsstring>(int i) const</argsstring>
+        <name>operator()</name>
+        <qualifiedname>muda::DoubletVectorViewerT::operator()</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/doublet_vector_viewer.h" line="162" column="23" bodyfile="src/muda/ext/linear_system/doublet_vector_viewer.h" bodystart="162" bodyend="172"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classmuda_1_1_doublet_vector_viewer_t_1a67c010b31452fc75c46458a3dcf2e935" prot="protected" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>MUDA_INLINE MUDA_GENERIC <ref refid="structmuda_1_1_doublet_vector_viewer_t_1_1_c_doublet" kindref="compound">CDoublet</ref></type>
+        <definition>MUDA_INLINE MUDA_GENERIC CDoublet muda::DoubletVectorViewerT&lt; IsConst, T, N &gt;::at</definition>
+        <argsstring>(int i) const</argsstring>
+        <name>at</name>
+        <qualifiedname>muda::DoubletVectorViewerT::at</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/doublet_vector_viewer.h" line="175" column="39" bodyfile="src/muda/ext/linear_system/doublet_vector_viewer.h" bodystart="175" bodyend="183"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_doublet_vector_viewer_t_1af77498baf4b5d41871c55149ffb62607" prot="protected" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>MUDA_INLINE MUDA_GENERIC int</type>
+        <definition>MUDA_INLINE MUDA_GENERIC int muda::DoubletVectorViewerT&lt; IsConst, T, N &gt;::get_index</definition>
+        <argsstring>(int i) const noexcept</argsstring>
+        <name>get_index</name>
+        <qualifiedname>muda::DoubletVectorViewerT::get_index</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/doublet_vector_viewer.h" line="186" column="34" bodyfile="src/muda/ext/linear_system/doublet_vector_viewer.h" bodystart="186" bodyend="198"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_doublet_vector_viewer_t_1a62ed9110b5e5e0991ef56d8524c5bc99" prot="protected" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>MUDA_INLINE MUDA_GENERIC void</type>
+        <definition>MUDA_INLINE MUDA_GENERIC void muda::DoubletVectorViewerT&lt; IsConst, T, N &gt;::check_in_subvector</definition>
+        <argsstring>(int i) const noexcept</argsstring>
+        <name>check_in_subvector</name>
+        <qualifiedname>muda::DoubletVectorViewerT::check_in_subvector</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/doublet_vector_viewer.h" line="200" column="35" bodyfile="src/muda/ext/linear_system/doublet_vector_viewer.h" bodystart="200" bodyend="210"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>muda::DoubletVectorViewerT&lt; IsConst, T, N &gt;</label>
+        <link refid="classmuda_1_1_doublet_vector_viewer_t"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>muda::ViewerBase&lt; IsConst &gt;</label>
+        <link refid="classmuda_1_1_viewer_base"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>muda::DoubletVectorViewerT&lt; IsConst, T, N &gt;</label>
+        <link refid="classmuda_1_1_doublet_vector_viewer_t"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>muda::ViewerBase&lt; IsConst &gt;</label>
+        <link refid="classmuda_1_1_viewer_base"/>
+      </node>
+    </collaborationgraph>
+    <location file="src/muda/ext/linear_system/doublet_vector_viewer.h" line="14" column="1" bodyfile="src/muda/ext/linear_system/doublet_vector_viewer.h" bodystart="15" bodyend="211"/>
+    <listofallmembers>
+      <member refid="classmuda_1_1_doublet_vector_viewer_t_1a54c7a000e47323a61f8f05008911ac73" prot="public" virt="non-virtual"><scope>muda::DoubletVectorViewerT</scope><name>as_const</name></member>
+      <member refid="classmuda_1_1_doublet_vector_viewer_t_1a67c010b31452fc75c46458a3dcf2e935" prot="protected" virt="non-virtual"><scope>muda::DoubletVectorViewerT</scope><name>at</name></member>
+      <member refid="classmuda_1_1_doublet_vector_viewer_t_1adf3188af3c71e9fc4b8df9b685994915" prot="private" virt="non-virtual"><scope>muda::DoubletVectorViewerT</scope><name>auto_const_t</name></member>
+      <member refid="classmuda_1_1_doublet_vector_viewer_t_1a08225dff9800d48fd5ec9b4f009619af" prot="private" virt="non-virtual"><scope>muda::DoubletVectorViewerT</scope><name>Base</name></member>
+      <member refid="classmuda_1_1_doublet_vector_viewer_t_1a62ed9110b5e5e0991ef56d8524c5bc99" prot="protected" virt="non-virtual"><scope>muda::DoubletVectorViewerT</scope><name>check_in_subvector</name></member>
+      <member refid="classmuda_1_1_doublet_vector_viewer_t_1a957e100f89a502c7f9cea41ac32a288b" prot="public" virt="non-virtual"><scope>muda::DoubletVectorViewerT</scope><name>ConstViewer</name></member>
+      <member refid="classmuda_1_1_viewer_base_1a1e3c7201751bec476d5f9b9c26be94b5" prot="public" virt="non-virtual"><scope>muda::DoubletVectorViewerT</scope><name>copy_label</name></member>
+      <member refid="classmuda_1_1_viewer_base_1a1e3c7201751bec476d5f9b9c26be94b5" prot="public" virt="non-virtual"><scope>muda::DoubletVectorViewerT</scope><name>copy_label</name></member>
+      <member refid="classmuda_1_1_doublet_vector_viewer_t_1ac1a12a70ab8d5a2958121ebe2046ee78" prot="public" virt="non-virtual"><scope>muda::DoubletVectorViewerT</scope><name>doublet_count</name></member>
+      <member refid="classmuda_1_1_doublet_vector_viewer_t_1a3e5d2c7bfb817007ccfb9aa91faa6755" prot="private" virt="non-virtual"><scope>muda::DoubletVectorViewerT</scope><name>DoubletVectorViewerT</name></member>
+      <member refid="classmuda_1_1_doublet_vector_viewer_t_1a281da96a1bdf07edcb8a649a00bdf6fc" prot="public" virt="non-virtual"><scope>muda::DoubletVectorViewerT</scope><name>DoubletVectorViewerT</name></member>
+      <member refid="classmuda_1_1_doublet_vector_viewer_t_1a6ef371d9d4b1ee96a016b8955fdbb310" prot="public" virt="non-virtual"><scope>muda::DoubletVectorViewerT</scope><name>DoubletVectorViewerT</name></member>
+      <member refid="classmuda_1_1_doublet_vector_viewer_t_1a44020e2c4e8bae9baad2db593ace8e21" prot="public" virt="non-virtual"><scope>muda::DoubletVectorViewerT</scope><name>DoubletVectorViewerT</name></member>
+      <member refid="classmuda_1_1_doublet_vector_viewer_t_1af77498baf4b5d41871c55149ffb62607" prot="protected" virt="non-virtual"><scope>muda::DoubletVectorViewerT</scope><name>get_index</name></member>
+      <member refid="classmuda_1_1_viewer_base_1ae9e7348b91c4dc1f3fc0de8e63335576" prot="public" virt="non-virtual"><scope>muda::DoubletVectorViewerT</scope><name>IsConst</name></member>
+      <member refid="classmuda_1_1_viewer_base_1ae9e7348b91c4dc1f3fc0de8e63335576" prot="public" virt="non-virtual"><scope>muda::DoubletVectorViewerT</scope><name>IsConst</name></member>
+      <member refid="classmuda_1_1_viewer_base_1adc31410f57cf34b15824f4f3fcb434a3" prot="public" virt="non-virtual"><scope>muda::DoubletVectorViewerT</scope><name>IsNonConst</name></member>
+      <member refid="classmuda_1_1_viewer_base_1adc31410f57cf34b15824f4f3fcb434a3" prot="public" virt="non-virtual"><scope>muda::DoubletVectorViewerT</scope><name>IsNonConst</name></member>
+      <member refid="classmuda_1_1_viewer_base_1a35b42fb3c890f8343c551451bceab3f1" prot="public" virt="non-virtual"><scope>muda::DoubletVectorViewerT</scope><name>kernel_file</name></member>
+      <member refid="classmuda_1_1_viewer_base_1a35b42fb3c890f8343c551451bceab3f1" prot="public" virt="non-virtual"><scope>muda::DoubletVectorViewerT</scope><name>kernel_file</name></member>
+      <member refid="classmuda_1_1_viewer_base_1a3247ca184afa57b2e00f8da9e080a2a1" prot="public" virt="non-virtual"><scope>muda::DoubletVectorViewerT</scope><name>kernel_line</name></member>
+      <member refid="classmuda_1_1_viewer_base_1a3247ca184afa57b2e00f8da9e080a2a1" prot="public" virt="non-virtual"><scope>muda::DoubletVectorViewerT</scope><name>kernel_line</name></member>
+      <member refid="classmuda_1_1_viewer_base_1a9b65192d349fd93c05c8ccad4d4014d4" prot="public" virt="non-virtual"><scope>muda::DoubletVectorViewerT</scope><name>kernel_name</name></member>
+      <member refid="classmuda_1_1_viewer_base_1a9b65192d349fd93c05c8ccad4d4014d4" prot="public" virt="non-virtual"><scope>muda::DoubletVectorViewerT</scope><name>kernel_name</name></member>
+      <member refid="classmuda_1_1_doublet_vector_viewer_t_1aca8f1245858a0bbae03de5db38813590" prot="protected" virt="non-virtual"><scope>muda::DoubletVectorViewerT</scope><name>m_doublet_count</name></member>
+      <member refid="classmuda_1_1_doublet_vector_viewer_t_1a51c208c64dbc8682a3f9033dc058864b" prot="protected" virt="non-virtual"><scope>muda::DoubletVectorViewerT</scope><name>m_doublet_index_offset</name></member>
+      <member refid="classmuda_1_1_doublet_vector_viewer_t_1a77216125374242fee35c0fb72679b357" prot="protected" virt="non-virtual"><scope>muda::DoubletVectorViewerT</scope><name>m_segment_indices</name></member>
+      <member refid="classmuda_1_1_doublet_vector_viewer_t_1a89bfa60e8e47e443cee6235259cf3506" prot="protected" virt="non-virtual"><scope>muda::DoubletVectorViewerT</scope><name>m_segment_values</name></member>
+      <member refid="classmuda_1_1_doublet_vector_viewer_t_1a8dc757c7b53482a6dceb45f8efd5f2ac" prot="protected" virt="non-virtual"><scope>muda::DoubletVectorViewerT</scope><name>m_subvector_extent</name></member>
+      <member refid="classmuda_1_1_doublet_vector_viewer_t_1a8472a9b1c28236311c1f8e5217cdfd87" prot="protected" virt="non-virtual"><scope>muda::DoubletVectorViewerT</scope><name>m_subvector_offset</name></member>
+      <member refid="classmuda_1_1_doublet_vector_viewer_t_1a65bb984f665711b00025b1e42ed8e221" prot="protected" virt="non-virtual"><scope>muda::DoubletVectorViewerT</scope><name>m_total_doublet_count</name></member>
+      <member refid="classmuda_1_1_doublet_vector_viewer_t_1ad0aa5e1d315f99a5ae4b47859a2140fb" prot="protected" virt="non-virtual"><scope>muda::DoubletVectorViewerT</scope><name>m_total_segment_count</name></member>
+      <member refid="classmuda_1_1_doublet_vector_viewer_t_1ac0e8a96ef36c067e2685135846e5ed07" prot="private" virt="non-virtual"><scope>muda::DoubletVectorViewerT</scope><name>MUDA_VIEWER_COMMON_NAME</name></member>
+      <member refid="classmuda_1_1_viewer_base_1a4cb1c578b4abbf1b113e9cf7a3d771d8" prot="public" virt="non-virtual"><scope>muda::DoubletVectorViewerT</scope><name>name</name></member>
+      <member refid="classmuda_1_1_viewer_base_1a57bbb7a9a3e4cb77a0a05bdee3a3e5fd" prot="protected" virt="non-virtual"><scope>muda::DoubletVectorViewerT</scope><name>name</name></member>
+      <member refid="classmuda_1_1_viewer_base_1a31d6dd944a28c6d428e5e79cd7c034a0" prot="protected" virt="non-virtual"><scope>muda::DoubletVectorViewerT</scope><name>name</name></member>
+      <member refid="classmuda_1_1_viewer_base_1a4cb1c578b4abbf1b113e9cf7a3d771d8" prot="public" virt="non-virtual"><scope>muda::DoubletVectorViewerT</scope><name>name</name></member>
+      <member refid="classmuda_1_1_viewer_base_1a57bbb7a9a3e4cb77a0a05bdee3a3e5fd" prot="protected" virt="non-virtual"><scope>muda::DoubletVectorViewerT</scope><name>name</name></member>
+      <member refid="classmuda_1_1_viewer_base_1a31d6dd944a28c6d428e5e79cd7c034a0" prot="protected" virt="non-virtual"><scope>muda::DoubletVectorViewerT</scope><name>name</name></member>
+      <member refid="classmuda_1_1_viewer_base_1a9447a51a53c20567fcb38fcdc275d812" prot="protected" virt="non-virtual"><scope>muda::DoubletVectorViewerT</scope><name>non_const_enable_t</name></member>
+      <member refid="classmuda_1_1_viewer_base_1a9447a51a53c20567fcb38fcdc275d812" prot="protected" virt="non-virtual"><scope>muda::DoubletVectorViewerT</scope><name>non_const_enable_t</name></member>
+      <member refid="classmuda_1_1_doublet_vector_viewer_t_1a8cc1192a79e66dc4a07b84e248789c6f" prot="public" virt="non-virtual"><scope>muda::DoubletVectorViewerT</scope><name>NonConstViewer</name></member>
+      <member refid="classmuda_1_1_doublet_vector_viewer_t_1a803e4c1e644b7620a5db338442220585" prot="public" virt="non-virtual"><scope>muda::DoubletVectorViewerT</scope><name>operator()</name></member>
+      <member refid="classmuda_1_1_viewer_base_1a8ce13df13b4a82e63c7a6230ee1e0b7c" prot="public" virt="non-virtual"><scope>muda::DoubletVectorViewerT</scope><name>operator=</name></member>
+      <member refid="classmuda_1_1_viewer_base_1ac73a737a8a64ff2026adcd7bc5f2738a" prot="public" virt="non-virtual"><scope>muda::DoubletVectorViewerT</scope><name>operator=</name></member>
+      <member refid="classmuda_1_1_viewer_base_1a8ce13df13b4a82e63c7a6230ee1e0b7c" prot="public" virt="non-virtual"><scope>muda::DoubletVectorViewerT</scope><name>operator=</name></member>
+      <member refid="classmuda_1_1_viewer_base_1ac73a737a8a64ff2026adcd7bc5f2738a" prot="public" virt="non-virtual"><scope>muda::DoubletVectorViewerT</scope><name>operator=</name></member>
+      <member refid="classmuda_1_1_doublet_vector_viewer_t_1a92ec95128f0b115c38db1347d8b5eb8f" prot="public" virt="non-virtual"><scope>muda::DoubletVectorViewerT</scope><name>ThisViewer</name></member>
+      <member refid="classmuda_1_1_doublet_vector_viewer_t_1aa2e7ba9efc0c896e29710f87fc3c11ac" prot="public" virt="non-virtual"><scope>muda::DoubletVectorViewerT</scope><name>total_doublet_count</name></member>
+      <member refid="classmuda_1_1_doublet_vector_viewer_t_1a8f84cd3201e7d3d1b773c2bfad39d5b5" prot="public" virt="non-virtual"><scope>muda::DoubletVectorViewerT</scope><name>ValueT</name></member>
+      <member refid="classmuda_1_1_viewer_base_1aab07b74590e3ae50b1352372f66080f8" prot="public" virt="non-virtual"><scope>muda::DoubletVectorViewerT</scope><name>ViewerBase</name></member>
+      <member refid="classmuda_1_1_viewer_base_1aac0b5cbd86bfb6653c7dddeac2907428" prot="public" virt="non-virtual"><scope>muda::DoubletVectorViewerT</scope><name>ViewerBase</name></member>
+      <member refid="classmuda_1_1_viewer_base_1a70b803f760ff21c327b454f7c9fc0ef3" prot="public" virt="non-virtual"><scope>muda::DoubletVectorViewerT</scope><name>ViewerBase</name></member>
+      <member refid="classmuda_1_1_viewer_base_1aab07b74590e3ae50b1352372f66080f8" prot="public" virt="non-virtual"><scope>muda::DoubletVectorViewerT</scope><name>ViewerBase</name></member>
+      <member refid="classmuda_1_1_viewer_base_1aac0b5cbd86bfb6653c7dddeac2907428" prot="public" virt="non-virtual"><scope>muda::DoubletVectorViewerT</scope><name>ViewerBase</name></member>
+      <member refid="classmuda_1_1_viewer_base_1a70b803f760ff21c327b454f7c9fc0ef3" prot="public" virt="non-virtual"><scope>muda::DoubletVectorViewerT</scope><name>ViewerBase</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

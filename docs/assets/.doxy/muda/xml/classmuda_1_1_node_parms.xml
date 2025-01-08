@@ -1,7 +1,9 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.1" xml:lang="en-US">
   <compounddef id="classmuda_1_1_node_parms" kind="class" language="C++" prot="public">
     <compoundname>muda::NodeParms</compoundname>
+    <derivedcompoundref refid="classmuda_1_1_kernel_node_parms" prot="public" virt="non-virtual">muda::KernelNodeParms&lt; details::LaunchCallable&lt; raw_type_t&lt; F &gt; &gt; &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classmuda_1_1_kernel_node_parms" prot="public" virt="non-virtual">muda::KernelNodeParms&lt; details::ParallelForCallable&lt; raw_type_t&lt; F &gt; &gt; &gt;</derivedcompoundref>
     <derivedcompoundref refid="classmuda_1_1_host_node_parms" prot="public" virt="non-virtual">muda::HostNodeParms&lt; T &gt;</derivedcompoundref>
     <derivedcompoundref refid="classmuda_1_1_kernel_node_parms" prot="public" virt="non-virtual">muda::KernelNodeParms&lt; U &gt;</derivedcompoundref>
     <sectiondef kind="public-func">
@@ -39,14 +41,26 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="2">
+      <node id="4">
         <label>muda::HostNodeParms&lt; T &gt;</label>
         <link refid="classmuda_1_1_host_node_parms"/>
         <childnode refid="1" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="3">
+      <node id="5">
         <label>muda::KernelNodeParms&lt; U &gt;</label>
+        <link refid="classmuda_1_1_kernel_node_parms"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>muda::KernelNodeParms&lt; details::LaunchCallable&lt; raw_type_t&lt; F &gt; &gt; &gt;</label>
+        <link refid="classmuda_1_1_kernel_node_parms"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>muda::KernelNodeParms&lt; details::ParallelForCallable&lt; raw_type_t&lt; F &gt; &gt; &gt;</label>
         <link refid="classmuda_1_1_kernel_node_parms"/>
         <childnode refid="1" relation="public-inheritance">
         </childnode>

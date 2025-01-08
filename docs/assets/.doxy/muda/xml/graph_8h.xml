@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.1" xml:lang="en-US">
   <compounddef id="graph_8h" kind="file" language="C++">
     <compoundname>graph.h</compoundname>
     <includes refid="graph_2graph_8h" local="no">muda/graph/graph.h</includes>
@@ -71,69 +71,69 @@
         <childnode refid="33" relation="include">
         </childnode>
       </node>
-      <node id="79">
+      <node id="77">
         <label>muda/compute_graph/compute_graph_closure_id.h</label>
         <link refid="compute__graph__closure__id_8h_source"/>
-        <childnode refid="80" relation="include">
+        <childnode refid="78" relation="include">
         </childnode>
       </node>
-      <node id="85">
+      <node id="83">
         <label>muda/compute_graph/compute_graph_fwd.h</label>
         <link refid="compute__graph__fwd_8h_source"/>
-        <childnode refid="83" relation="include">
+        <childnode refid="81" relation="include">
         </childnode>
-        <childnode refid="79" relation="include">
+        <childnode refid="77" relation="include">
         </childnode>
-        <childnode refid="86" relation="include">
+        <childnode refid="84" relation="include">
         </childnode>
-        <childnode refid="82" relation="include">
-        </childnode>
-      </node>
-      <node id="86">
-        <label>muda/compute_graph/compute_graph_node_id.h</label>
-        <link refid="compute__graph__node__id_8h_source"/>
         <childnode refid="80" relation="include">
         </childnode>
       </node>
-      <node id="71">
+      <node id="84">
+        <label>muda/compute_graph/compute_graph_node_id.h</label>
+        <link refid="compute__graph__node__id_8h_source"/>
+        <childnode refid="78" relation="include">
+        </childnode>
+      </node>
+      <node id="69">
         <label>muda/compute_graph/compute_graph_var.h</label>
         <link refid="compute__graph__var_8h_source"/>
         <childnode refid="31" relation="include">
         </childnode>
+        <childnode refid="70" relation="include">
+        </childnode>
+        <childnode refid="71" relation="include">
+        </childnode>
+        <childnode refid="62" relation="include">
+        </childnode>
         <childnode refid="72" relation="include">
-        </childnode>
-        <childnode refid="73" relation="include">
-        </childnode>
-        <childnode refid="64" relation="include">
-        </childnode>
-        <childnode refid="74" relation="include">
         </childnode>
         <childnode refid="50" relation="include">
         </childnode>
-        <childnode refid="79" relation="include">
+        <childnode refid="77" relation="include">
+        </childnode>
+        <childnode refid="80" relation="include">
+        </childnode>
+        <childnode refid="81" relation="include">
         </childnode>
         <childnode refid="82" relation="include">
         </childnode>
         <childnode refid="83" relation="include">
         </childnode>
-        <childnode refid="84" relation="include">
-        </childnode>
         <childnode refid="85" relation="include">
         </childnode>
-        <childnode refid="87" relation="include">
-        </childnode>
       </node>
-      <node id="83">
+      <node id="81">
         <label>muda/compute_graph/compute_graph_var_id.h</label>
         <link refid="compute__graph__var__id_8h_source"/>
-        <childnode refid="80" relation="include">
+        <childnode refid="78" relation="include">
         </childnode>
       </node>
-      <node id="82">
+      <node id="80">
         <label>muda/compute_graph/compute_graph_var_usage.h</label>
         <link refid="compute__graph__var__usage_8h_source"/>
       </node>
-      <node id="84">
+      <node id="82">
         <label>muda/compute_graph/graphviz_options.h</label>
         <link refid="graphviz__options_8h_source"/>
         <childnode refid="31" relation="include">
@@ -174,7 +174,7 @@
         </childnode>
         <childnode refid="57" relation="include">
         </childnode>
-        <childnode refid="70" relation="include">
+        <childnode refid="68" relation="include">
         </childnode>
       </node>
       <node id="41">
@@ -245,14 +245,14 @@
         <childnode refid="54" relation="include">
         </childnode>
       </node>
-      <node id="70">
+      <node id="68">
         <label>muda/graph/graph_graph_viewer.h</label>
         <link refid="graph__graph__viewer_8h_source"/>
         <childnode refid="42" relation="include">
         </childnode>
-        <childnode refid="71" relation="include">
+        <childnode refid="69" relation="include">
         </childnode>
-        <childnode refid="88" relation="include">
+        <childnode refid="86" relation="include">
         </childnode>
       </node>
       <node id="52">
@@ -268,7 +268,7 @@
         <link refid="graph__launch_8h_source"/>
         <childnode refid="58" relation="include">
         </childnode>
-        <childnode refid="69" relation="include">
+        <childnode refid="67" relation="include">
         </childnode>
       </node>
       <node id="42">
@@ -301,10 +301,10 @@
         <childnode refid="5" relation="include">
         </childnode>
       </node>
-      <node id="64">
+      <node id="62">
         <label>muda/launch/event.h</label>
         <link refid="event_8h_source"/>
-        <childnode refid="65" relation="include">
+        <childnode refid="63" relation="include">
         </childnode>
         <childnode refid="16" relation="include">
         </childnode>
@@ -316,10 +316,10 @@
         </childnode>
         <childnode refid="14" relation="include">
         </childnode>
-        <childnode refid="66" relation="include">
+        <childnode refid="64" relation="include">
         </childnode>
       </node>
-      <node id="67">
+      <node id="65">
         <label>muda/launch/kernel_tag.h</label>
         <link refid="kernel__tag_8h_source"/>
       </node>
@@ -344,10 +344,6 @@
         </childnode>
         <childnode refid="61" relation="include">
         </childnode>
-        <childnode refid="62" relation="include">
-        </childnode>
-        <childnode refid="63" relation="include">
-        </childnode>
         <childnode refid="50" relation="include">
         </childnode>
         <childnode refid="44" relation="include">
@@ -356,11 +352,11 @@
         </childnode>
         <childnode refid="18" relation="include">
         </childnode>
-        <childnode refid="64" relation="include">
+        <childnode refid="62" relation="include">
         </childnode>
-        <childnode refid="67" relation="include">
+        <childnode refid="65" relation="include">
         </childnode>
-        <childnode refid="68" relation="include">
+        <childnode refid="66" relation="include">
         </childnode>
       </node>
       <node id="46">
@@ -369,22 +365,22 @@
         <childnode refid="47" relation="include">
         </childnode>
       </node>
-      <node id="74">
+      <node id="72">
         <label>muda/mstl/span.h</label>
         <link refid="span_8h_source"/>
         <childnode refid="20" relation="include">
         </childnode>
-        <childnode refid="75" relation="include">
+        <childnode refid="73" relation="include">
         </childnode>
       </node>
-      <node id="75">
+      <node id="73">
         <label>muda/mstl/tcb/span.hpp</label>
         <link refid="span_8hpp_source"/>
+        <childnode refid="74" relation="include">
+        </childnode>
+        <childnode refid="75" relation="include">
+        </childnode>
         <childnode refid="76" relation="include">
-        </childnode>
-        <childnode refid="77" relation="include">
-        </childnode>
-        <childnode refid="78" relation="include">
         </childnode>
         <childnode refid="51" relation="include">
         </childnode>
@@ -443,7 +439,7 @@
         <childnode refid="18" relation="include">
         </childnode>
       </node>
-      <node id="65">
+      <node id="63">
         <label>muda/tools/flag.h</label>
         <link refid="flag_8h_source"/>
         <childnode refid="51" relation="include">
@@ -485,12 +481,12 @@
         <childnode refid="49" relation="include">
         </childnode>
       </node>
-      <node id="80">
+      <node id="78">
         <label>muda/tools/id_with_type.h</label>
         <link refid="id__with__type_8h_source"/>
-        <childnode refid="78" relation="include">
+        <childnode refid="76" relation="include">
         </childnode>
-        <childnode refid="81" relation="include">
+        <childnode refid="79" relation="include">
         </childnode>
         <childnode refid="18" relation="include">
         </childnode>
@@ -547,7 +543,7 @@
         <childnode refid="50" relation="include">
         </childnode>
       </node>
-      <node id="76">
+      <node id="74">
         <label>array</label>
       </node>
       <node id="23">
@@ -556,10 +552,10 @@
       <node id="47">
         <label>cinttypes</label>
       </node>
-      <node id="77">
+      <node id="75">
         <label>cstddef</label>
       </node>
-      <node id="78">
+      <node id="76">
         <label>cstdint</label>
       </node>
       <node id="17">
@@ -589,10 +585,10 @@
       <node id="33">
         <label>cusparse.h</label>
       </node>
-      <node id="87">
+      <node id="85">
         <label>details/compute_graph_var.inl</label>
       </node>
-      <node id="66">
+      <node id="64">
         <label>details/event.inl</label>
       </node>
       <node id="56">
@@ -601,16 +597,16 @@
       <node id="54">
         <label>details/graph_exec.inl</label>
       </node>
-      <node id="88">
+      <node id="86">
         <label>details/graph_graph_viewer.inl</label>
       </node>
-      <node id="69">
+      <node id="67">
         <label>details/graph_launch.inl</label>
       </node>
       <node id="53">
         <label>details/graph_viewer.inl</label>
       </node>
-      <node id="68">
+      <node id="66">
         <label>details/launch_base.inl</label>
       </node>
       <node id="59">
@@ -625,22 +621,16 @@
       <node id="10">
         <label>list</label>
       </node>
-      <node id="73">
+      <node id="71">
         <label>map</label>
       </node>
       <node id="12">
         <label>memory</label>
       </node>
-      <node id="62">
-        <label>nvtx3/nvToolsExt.h</label>
-      </node>
-      <node id="63">
-        <label>nvtx3/nvToolsExtCuda.h</label>
-      </node>
-      <node id="81">
+      <node id="79">
         <label>ostream</label>
       </node>
-      <node id="72">
+      <node id="70">
         <label>set</label>
       </node>
       <node id="27">
@@ -682,7 +672,7 @@
 <codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;muda/graph/graph.h&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;muda/graph/graph_launch.h&gt;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;muda/graph/graph_graph_viewer.h&gt;</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;muda/graph/graph_graph_viewer.h&gt;</highlight><highlight class="normal"></highlight></codeline>
     </programlisting>
     <location file="src/muda/graph.h"/>
   </compounddef>

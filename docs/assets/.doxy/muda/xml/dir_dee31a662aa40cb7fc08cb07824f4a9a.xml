@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.1" xml:lang="en-US">
   <compounddef id="dir_dee31a662aa40cb7fc08cb07824f4a9a" kind="dir">
     <compoundname>src/muda/ext</compoundname>
     <innerdir refid="dir_373cdbe7548ceaaa1c4b365fecb08d35">src/muda/ext/eigen</innerdir>

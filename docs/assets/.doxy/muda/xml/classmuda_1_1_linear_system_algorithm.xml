@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.1" xml:lang="en-US">
   <compounddef id="classmuda_1_1_linear_system_algorithm" kind="class" language="C++" prot="public">
     <compoundname>muda::LinearSystemAlgorithm</compoundname>
     <sectiondef kind="public-static-attrib">
       <memberdef kind="variable" id="classmuda_1_1_linear_system_algorithm_1adbc84c2450eeed4aed9092a8f6262f84" prot="public" static="yes" constexpr="yes" mutable="no">
-        <type>constexpr cusparseSpMVAlg_t</type>
-        <definition>constexpr cusparseSpMVAlg_t muda::LinearSystemAlgorithm::SPMV_ALG_DEFAULT</definition>
+        <type>cusparseSpMVAlg_t</type>
+        <definition>cusparseSpMVAlg_t muda::LinearSystemAlgorithm::SPMV_ALG_DEFAULT</definition>
         <argsstring></argsstring>
         <name>SPMV_ALG_DEFAULT</name>
         <qualifiedname>muda::LinearSystemAlgorithm::SPMV_ALG_DEFAULT</qualifiedname>

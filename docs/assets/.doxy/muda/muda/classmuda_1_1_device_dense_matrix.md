@@ -63,15 +63,15 @@
 |   | [**DeviceDenseMatrix**](#function-devicedensematrix-35) (const [**DeviceDenseMatrix**](classmuda_1_1_device_dense_matrix.md) &) = default<br> |
 |   | [**DeviceDenseMatrix**](#function-devicedensematrix-45) ([**DeviceDenseMatrix**](classmuda_1_1_device_dense_matrix.md) &&) <br> |
 |   | [**DeviceDenseMatrix**](#function-devicedensematrix-55) (const Eigen::MatrixX&lt; Ty &gt; &) <br> |
-|  [**DenseMatrixView**](classmuda_1_1_dense_matrix_view.md)&lt; Ty &gt; | [**T**](#function-t-12) () <br> |
-|  [**CDenseMatrixView**](classmuda_1_1_c_dense_matrix_view.md)&lt; Ty &gt; | [**T**](#function-t-22) () const<br> |
+|  [**DenseMatrixView**](classmuda_1_1_dense_matrix_view_t.md)&lt; Ty &gt; | [**T**](#function-t-12) () <br> |
+|  [**CDenseMatrixView**](classmuda_1_1_dense_matrix_view_t.md)&lt; Ty &gt; | [**T**](#function-t-22) () const<br> |
 |  auto | [**buffer\_view**](#function-buffer_view-12) () const<br> |
 |  auto | [**buffer\_view**](#function-buffer_view-22) () <br> |
 |  size\_t | [**col**](#function-col) () const<br> |
 |  void | [**copy\_to**](#function-copy_to-12) (Eigen::MatrixX&lt; Ty &gt; & mat) const<br> |
 |  void | [**copy\_to**](#function-copy_to-22) (std::vector&lt; Ty &gt; & vec) const<br> |
-|  [**CDenseMatrixView**](classmuda_1_1_c_dense_matrix_view.md)&lt; Ty &gt; | [**cview**](#function-cview) () const<br> |
-|  [**CDenseMatrixViewer**](classmuda_1_1_c_dense_matrix_viewer.md)&lt; Ty &gt; | [**cviewer**](#function-cviewer) () const<br> |
+|  [**CDenseMatrixView**](classmuda_1_1_dense_matrix_view_t.md)&lt; Ty &gt; | [**cview**](#function-cview) () const<br> |
+|  [**CDenseMatrixViewer**](classmuda_1_1_dense_matrix_viewer_t.md)&lt; Ty &gt; | [**cviewer**](#function-cviewer) () const<br> |
 |  void | [**fill**](#function-fill) (Ty value) <br> |
 |   | [**operator CDenseMatrixView&lt; Ty &gt;**](#function-operator-cdensematrixview<-ty->) () const<br> |
 |   | [**operator DenseMatrixView&lt; Ty &gt;**](#function-operator-densematrixview<-ty->) () <br> |
@@ -82,9 +82,9 @@
 |  size\_t | [**row**](#function-row) () const<br> |
 |  void | [**sym**](#function-sym-12) (bool sym=true) <br> |
 |  bool | [**sym**](#function-sym-22) () const<br> |
-|  [**DenseMatrixView**](classmuda_1_1_dense_matrix_view.md)&lt; Ty &gt; | [**view**](#function-view-12) () <br> |
-|  [**CDenseMatrixView**](classmuda_1_1_c_dense_matrix_view.md)&lt; Ty &gt; | [**view**](#function-view-22) () const<br> |
-|  [**DenseMatrixViewer**](classmuda_1_1_dense_matrix_viewer.md)&lt; Ty &gt; | [**viewer**](#function-viewer) () <br> |
+|  [**DenseMatrixView**](classmuda_1_1_dense_matrix_view_t.md)&lt; Ty &gt; | [**view**](#function-view-12) () <br> |
+|  [**CDenseMatrixView**](classmuda_1_1_dense_matrix_view_t.md)&lt; Ty &gt; | [**view**](#function-view-22) () const<br> |
+|  [**DenseMatrixViewer**](classmuda_1_1_dense_matrix_viewer_t.md)&lt; Ty &gt; | [**viewer**](#function-viewer) () <br> |
 
 
 

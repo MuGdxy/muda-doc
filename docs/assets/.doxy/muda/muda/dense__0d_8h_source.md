@@ -43,7 +43,7 @@ class DenseViewerT : public ViewerBase<IsConst>
     {
     }
 
-    MUDA_GENERIC DenseViewerT(const ThisViewer&) MUDA_NOEXCEPT = default;
+    MUDA_GENERIC DenseViewerT(const DenseViewerT&) MUDA_NOEXCEPT = default;
 
     template <bool OtherIsConst>
     MUDA_GENERIC DenseViewerT(const DenseViewerT<OtherIsConst, T>& other) MUDA_NOEXCEPT
@@ -107,13 +107,13 @@ using CDense = DenseViewerT<true, T>;
 
 // viewer traits
 template <typename T>
-struct read_only_viewer<Dense<T>>
+struct read_only_view<Dense<T>>
 {
     using type = CDense<T>;
 };
 
 template <typename T>
-struct read_write_viewer<CDense<T>>
+struct read_write_view<CDense<T>>
 {
     using type = Dense<T>;
 };

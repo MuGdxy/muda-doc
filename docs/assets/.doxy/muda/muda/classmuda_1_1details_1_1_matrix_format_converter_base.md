@@ -15,7 +15,7 @@
 
 
 
-Inherited by the following classes: [muda::details::MatrixFormatConverter](classmuda_1_1details_1_1_matrix_format_converter.md),  [muda::details::MatrixFormatConverter&lt; T, 1 &gt;](classmuda_1_1details_1_1_matrix_format_converter_3_01_t_00_011_01_4.md)
+Inherited by the following classes: [muda::details::MatrixFormatConverter](classmuda_1_1details_1_1_matrix_format_converter.md)
 
 
 

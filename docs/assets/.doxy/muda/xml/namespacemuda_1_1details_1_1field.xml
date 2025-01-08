@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.1" xml:lang="en-US">
   <compounddef id="namespacemuda_1_1details_1_1field" kind="namespace" language="C++">
     <compoundname>muda::details::field</compoundname>
     <sectiondef kind="typedef">
-      <memberdef kind="typedef" id="field__entry__viewer_8h_1ae26efac215a4cd477f35c266c1e990a6" prot="public" static="no">
+      <memberdef kind="typedef" id="field__entry__viewer_8h_1ad65d505147c77cb897f7950f9ae23786" prot="public" static="no">
         <type>Eigen::Stride&lt; Eigen::Dynamic, Eigen::Dynamic &gt;</type>
-        <definition>using muda::details::field::MatStride = typedef Eigen::Stride&lt;Eigen::Dynamic, Eigen::Dynamic&gt;</definition>
+        <definition>using muda::details::field::MatStride =  Eigen::Stride&lt;Eigen::Dynamic, Eigen::Dynamic&gt;</definition>
         <argsstring></argsstring>
         <name>MatStride</name>
         <qualifiedname>muda::details::field::MatStride</qualifiedname>

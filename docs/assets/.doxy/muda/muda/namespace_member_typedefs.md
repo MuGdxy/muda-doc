@@ -37,14 +37,20 @@
 * **CDense1D** ([**muda**](namespacemuda.md))
 * **CDense2D** ([**muda**](namespacemuda.md))
 * **CDense3D** ([**muda**](namespacemuda.md))
+* **CDenseMatrixView** ([**muda**](namespacemuda.md))
+* **CDenseMatrixViewer** ([**muda**](namespacemuda.md))
 * **CDenseVectorView** ([**muda**](namespacemuda.md))
+* **CDenseVectorViewer** ([**muda**](namespacemuda.md))
 * **CDoubletVectorView** ([**muda**](namespacemuda.md))
+* **CDoubletVectorViewer** ([**muda**](namespacemuda.md))
 * **COOMatrixView** ([**muda**](namespacemuda.md))
 * **COOMatrixViewer** ([**muda**](namespacemuda.md))
 * **COOVectorView** ([**muda**](namespacemuda.md))
 * **COOVectorViewer** ([**muda**](namespacemuda.md))
 * **CSRMatrixView** ([**muda**](namespacemuda.md))
+* **CSRMatrixViewT** ([**muda**](namespacemuda.md))
 * **CTripletMatrixView** ([**muda**](namespacemuda.md))
+* **CTripletMatrixViewer** ([**muda**](namespacemuda.md))
 * **CVarView** ([**muda**](namespacemuda.md))
 * **ComputeGraphEventRecordNode** ([**muda**](namespacemuda.md))
 * **ComputeGraphEventWaitNode** ([**muda**](namespacemuda.md))
@@ -61,10 +67,15 @@
 * **Dense1D** ([**muda**](namespacemuda.md))
 * **Dense2D** ([**muda**](namespacemuda.md))
 * **Dense3D** ([**muda**](namespacemuda.md))
+* **DenseMatrixView** ([**muda**](namespacemuda.md))
+* **DenseMatrixViewer** ([**muda**](namespacemuda.md))
 * **DenseVectorView** ([**muda**](namespacemuda.md))
+* **DenseVectorViewer** ([**muda**](namespacemuda.md))
 * **DeviceCOOMatrix** ([**muda**](namespacemuda.md))
 * **DeviceCOOVector** ([**muda**](namespacemuda.md))
+* **DeviceCSRMatrix** ([**muda**](namespacemuda.md))
 * **DoubletVectorView** ([**muda**](namespacemuda.md))
+* **DoubletVectorViewer** ([**muda**](namespacemuda.md))
 
 
 ## i
@@ -92,8 +103,8 @@
 
 * **remove\_pointer\_t** ([**TCB\_SPAN\_NAMESPACE\_NAME::detail**](namespace_t_c_b___s_p_a_n___n_a_m_e_s_p_a_c_e___n_a_m_e_1_1detail.md))
 * **raw\_type\_t** ([**muda**](namespacemuda.md))
-* **read\_only\_viewer\_t** ([**muda**](namespacemuda.md))
-* **read\_write\_viewer\_t** ([**muda**](namespacemuda.md))
+* **read\_only\_view\_t** ([**muda**](namespacemuda.md))
+* **read\_write\_view\_t** ([**muda**](namespacemuda.md))
 
 
 ## s
@@ -104,6 +115,7 @@
 ## t
 
 * **TripletMatrixView** ([**muda**](namespacemuda.md))
+* **TripletMatrixViewer** ([**muda**](namespacemuda.md))
 
 
 ## u

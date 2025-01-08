@@ -103,7 +103,7 @@ Inherits the following classes: thrust::device_vector< T, thrust::device_allocat
 ### typedef Base 
 
 ```C++
-using muda::DeviceVector< T >::Base =  thrust::device_vector<T, thrust::device_allocator<T> >;
+using muda::DeviceVector< T >::Base =  thrust::device_vector<T, thrust::device_allocator<T>>;
 ```
 
 
@@ -222,5 +222,5 @@ inline auto muda::DeviceVector::viewer ()
 <hr>
 
 ------------------------------
-The documentation for this class was generated from the following file `src/muda/container/vector.h`
+The documentation for this class was generated from the following file `src/muda/buffer/device_buffer.h`
 

@@ -5,7 +5,7 @@
 
 ## c
 
-* **checkCudaErrors** ([**check\_cuda\_errors.h**](check__cuda__errors_8h.md), [**graph\_base.h**](graph__base_8h.md))
+* **checkCudaErrors** ([**check\_cuda\_errors.h**](check__cuda__errors_8h.md))
 
 
 ## d

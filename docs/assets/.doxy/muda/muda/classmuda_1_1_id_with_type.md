@@ -17,7 +17,6 @@
 
 
 
-Inherited by the following classes: [muda::ClosureId](classmuda_1_1_closure_id.md),  [muda::NodeId](classmuda_1_1_node_id.md),  [muda::VarId](classmuda_1_1_var_id.md),  [muda::details::LocalVarId](classmuda_1_1details_1_1_local_var_id.md)
 
 
 
@@ -45,7 +44,7 @@ Inherited by the following classes: [muda::ClosureId](classmuda_1_1_closure_id.m
 
 | Type | Name |
 | ---: | :--- |
-|  constexpr auto | [**invalid\_id**](#variable-invalid_id)   = = std::numeric\_limits&lt;value\_type&gt;::max()<br> |
+|  auto | [**invalid\_id**](#variable-invalid_id)   = = std::numeric\_limits&lt;value\_type&gt;::max()<br> |
 
 
 
@@ -124,7 +123,7 @@ using muda::IdWithType< T >::value_type =  T;
 ### variable invalid\_id 
 
 ```C++
-constexpr auto muda::IdWithType< T >::invalid_id;
+auto muda::IdWithType< T >::invalid_id;
 ```
 
 

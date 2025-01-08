@@ -37,7 +37,7 @@
 
 | Type | Name |
 | ---: | :--- |
-| class | [**SubFieldImpl&lt; FieldEntryLayout::SoA &gt;**](classmuda_1_1_sub_field_impl_3_01_field_entry_layout_1_1_so_a_01_4.md) &lt;&gt;<br> |
+| class | [**SubFieldImpl**](classmuda_1_1_sub_field_impl.md) &lt;Layout&gt;<br> |
 | struct | [**SoACopyMap**](structmuda_1_1details_1_1_so_a_copy_map.md) <br> |
 
 

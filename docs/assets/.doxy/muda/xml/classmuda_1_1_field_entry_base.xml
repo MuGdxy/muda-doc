@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.1" xml:lang="en-US">
   <compounddef id="classmuda_1_1_field_entry_base" kind="class" language="C++" prot="public" abstract="yes">
     <compoundname>muda::FieldEntryBase</compoundname>
     <derivedcompoundref refid="classmuda_1_1_field_entry" prot="public" virt="non-virtual">muda::FieldEntry&lt; T, Layout, M, N &gt;</derivedcompoundref>
@@ -383,10 +383,6 @@
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="4">
-        <label>muda::HostDeviceConfig&lt; muda::FieldEntryCore &gt;</label>
-        <link refid="classmuda_1_1_host_device_config"/>
-      </node>
       <node id="1">
         <label>muda::FieldEntryBase</label>
         <link refid="classmuda_1_1_field_entry_base"/>
@@ -403,6 +399,10 @@
       <node id="3">
         <label>muda::FieldEntryCore</label>
         <link refid="classmuda_1_1_field_entry_core"/>
+      </node>
+      <node id="4">
+        <label>muda::HostDeviceConfig&lt; muda::FieldEntryCore &gt;</label>
+        <link refid="classmuda_1_1_host_device_config"/>
       </node>
       <node id="2">
         <label>muda::SubField</label>

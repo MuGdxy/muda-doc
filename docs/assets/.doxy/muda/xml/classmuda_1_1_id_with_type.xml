@@ -1,11 +1,7 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.1" xml:lang="en-US">
   <compounddef id="classmuda_1_1_id_with_type" kind="class" language="C++" prot="public">
     <compoundname>muda::IdWithType</compoundname>
-    <derivedcompoundref refid="classmuda_1_1_closure_id" prot="public" virt="non-virtual">muda::ClosureId</derivedcompoundref>
-    <derivedcompoundref refid="classmuda_1_1_node_id" prot="public" virt="non-virtual">muda::NodeId</derivedcompoundref>
-    <derivedcompoundref refid="classmuda_1_1_var_id" prot="public" virt="non-virtual">muda::VarId</derivedcompoundref>
-    <derivedcompoundref refid="classmuda_1_1details_1_1_local_var_id" prot="public" virt="non-virtual">muda::details::LocalVarId</derivedcompoundref>
     <templateparamlist>
       <param>
         <type>typename T</type>
@@ -30,8 +26,8 @@
     </sectiondef>
     <sectiondef kind="public-static-attrib">
       <memberdef kind="variable" id="classmuda_1_1_id_with_type_1ae7d66d381fca823fae8b306cacdecc73" prot="public" static="yes" constexpr="yes" mutable="no">
-        <type>constexpr auto</type>
-        <definition>constexpr auto muda::IdWithType&lt; T &gt;::invalid_id</definition>
+        <type>auto</type>
+        <definition>auto muda::IdWithType&lt; T &gt;::invalid_id</definition>
         <argsstring></argsstring>
         <name>invalid_id</name>
         <qualifiedname>muda::IdWithType::invalid_id</qualifiedname>
@@ -240,36 +236,6 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <inheritancegraph>
-      <node id="2">
-        <label>muda::ClosureId&lt; uint64_t &gt;</label>
-        <link refid="classmuda_1_1_closure_id"/>
-        <childnode refid="1" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="1">
-        <label>muda::IdWithType&lt; T &gt;</label>
-        <link refid="classmuda_1_1_id_with_type"/>
-      </node>
-      <node id="3">
-        <label>muda::NodeId&lt; uint64_t &gt;</label>
-        <link refid="classmuda_1_1_node_id"/>
-        <childnode refid="1" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="4">
-        <label>muda::VarId&lt; uint64_t &gt;</label>
-        <link refid="classmuda_1_1_var_id"/>
-        <childnode refid="1" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="5">
-        <label>muda::details::LocalVarId&lt; uint64_t &gt;</label>
-        <link refid="classmuda_1_1details_1_1_local_var_id"/>
-        <childnode refid="1" relation="public-inheritance">
-        </childnode>
-      </node>
-    </inheritancegraph>
     <location file="src/muda/tools/id_with_type.h" line="9" column="1" bodyfile="src/muda/tools/id_with_type.h" bodystart="10" bodyend="51"/>
     <listofallmembers>
       <member refid="classmuda_1_1_id_with_type_1a9bed3e81e83d2cde25ba41bea647e62a" prot="public" virt="non-virtual"><scope>muda::IdWithType</scope><name>IdWithType</name></member>

@@ -34,7 +34,7 @@ Inherits the following classes: [muda::ComputeGraphVarBase](classmuda_1_1_comput
 
 | Type | Name |
 | ---: | :--- |
-| typedef read\_only\_viewer\_t&lt; T &gt; | [**ROViewer**](#typedef-roviewer)  <br> |
+| typedef read\_only\_view\_t&lt; T &gt; | [**ROViewer**](#typedef-roviewer)  <br> |
 | typedef T | [**RWViewer**](#typedef-rwviewer)  <br> |
 
 
@@ -194,7 +194,7 @@ See [muda::ComputeGraphVarBase](classmuda_1_1_compute_graph_var_base.md)
 ### typedef ROViewer 
 
 ```C++
-using muda::ComputeGraphVar< T >::ROViewer =  read_only_viewer_t<T>;
+using muda::ComputeGraphVar< T >::ROViewer =  read_only_view_t<T>;
 ```
 
 
@@ -403,5 +403,5 @@ virtual muda::ComputeGraphVar::~ComputeGraphVar () = default
 <hr>
 
 ------------------------------
-The documentation for this class was generated from the following file `src/muda/compute_graph/compute_graph_var.h`
+The documentation for this class was generated from the following file `src/muda/buffer/buffer_launch.h`
 

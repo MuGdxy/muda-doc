@@ -80,5 +80,5 @@ Inherits the following classes: thrust::host_vector< T, std::allocator< T > >
 
 
 ------------------------------
-The documentation for this class was generated from the following file `src/muda/container/vector.h`
+The documentation for this class was generated from the following file `src/muda/buffer/device_buffer.h`
 

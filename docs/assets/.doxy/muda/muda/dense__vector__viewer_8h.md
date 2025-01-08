@@ -40,11 +40,7 @@
 
 | Type | Name |
 | ---: | :--- |
-| class | [**CDenseVectorViewer**](classmuda_1_1_c_dense_vector_viewer.md) &lt;typename T&gt;<br> |
-| class | [**DenseVectorViewer**](classmuda_1_1_dense_vector_viewer.md) &lt;typename T&gt;<br> |
-| class | [**DenseVectorViewerBase**](classmuda_1_1_dense_vector_viewer_base.md) &lt;IsConst, typename T&gt;<br> |
-| struct | [**read\_only\_viewer&lt; DenseVectorViewer&lt; T &gt; &gt;**](structmuda_1_1read__only__viewer_3_01_dense_vector_viewer_3_01_t_01_4_01_4.md) &lt;typename T&gt;<br> |
-| struct | [**read\_write\_viewer&lt; CDenseVectorViewer&lt; T &gt; &gt;**](structmuda_1_1read__write__viewer_3_01_c_dense_vector_viewer_3_01_t_01_4_01_4.md) &lt;typename T&gt;<br> |
+| class | [**DenseVectorViewerT**](classmuda_1_1_dense_vector_viewer_t.md) &lt;IsConst, typename T&gt;<br> |
 
 
 

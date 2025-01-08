@@ -15,7 +15,7 @@
 
 
 
-Inherited by the following classes: [muda::ComputeGraphVar](classmuda_1_1_compute_graph_var.md),  [muda::ComputeGraphVar&lt; Buffer2DView&lt; T &gt; &gt;](classmuda_1_1_compute_graph_var_3_01_buffer2_d_view_3_01_t_01_4_01_4.md),  [muda::ComputeGraphVar&lt; Buffer3DView&lt; T &gt; &gt;](classmuda_1_1_compute_graph_var_3_01_buffer3_d_view_3_01_t_01_4_01_4.md),  [muda::ComputeGraphVar&lt; BufferView&lt; T &gt; &gt;](classmuda_1_1_compute_graph_var_3_01_buffer_view_3_01_t_01_4_01_4.md),  [muda::ComputeGraphVar&lt; GraphViewer &gt;](classmuda_1_1_compute_graph_var_3_01_graph_viewer_01_4.md),  [muda::ComputeGraphVar&lt; VarView&lt; T &gt; &gt;](classmuda_1_1_compute_graph_var_3_01_var_view_3_01_t_01_4_01_4.md)
+Inherited by the following classes: [muda::ComputeGraphVar](classmuda_1_1_compute_graph_var.md),  [muda::ComputeGraphVar](classmuda_1_1_compute_graph_var.md),  [muda::ComputeGraphVar](classmuda_1_1_compute_graph_var.md),  [muda::ComputeGraphVar](classmuda_1_1_compute_graph_var.md),  [muda::ComputeGraphVar](classmuda_1_1_compute_graph_var.md),  [muda::ComputeGraphVar](classmuda_1_1_compute_graph_var.md),  [muda::ComputeGraphVar](classmuda_1_1_compute_graph_var.md),  [muda::ComputeGraphVar](classmuda_1_1_compute_graph_var.md),  [muda::ComputeGraphVar](classmuda_1_1_compute_graph_var.md),  [muda::ComputeGraphVar](classmuda_1_1_compute_graph_var.md),  [muda::ComputeGraphVar](classmuda_1_1_compute_graph_var.md)
 
 
 

@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.1" xml:lang="en-US">
   <compounddef id="classmuda_1_1_linear_system_context" kind="class" language="C++" prot="public">
     <compoundname>muda::LinearSystemContext</compoundname>
     <sectiondef kind="private-attrib">
@@ -452,11 +452,11 @@
         <name>sysv</name>
         <qualifiedname>muda::LinearSystemContext::sysv</qualifiedname>
         <param>
-          <type><ref refid="classmuda_1_1_dense_matrix_view" kindref="compound">DenseMatrixView</ref>&lt; T &gt;</type>
+          <type><ref refid="classmuda_1_1_dense_matrix_view_t" kindref="compound">DenseMatrixView</ref>&lt; T &gt;</type>
           <declname>A_to_fact</declname>
         </param>
         <param>
-          <type><ref refid="classmuda_1_1_dense_vector_view_base" kindref="compound">DenseVectorView</ref>&lt; T &gt;</type>
+          <type><ref refid="classmuda_1_1_dense_vector_view_t" kindref="compound">DenseVectorView</ref>&lt; T &gt;</type>
           <declname>b_to_x</declname>
         </param>
         <briefdescription>
@@ -479,11 +479,11 @@
         <name>gesv</name>
         <qualifiedname>muda::LinearSystemContext::gesv</qualifiedname>
         <param>
-          <type><ref refid="classmuda_1_1_dense_matrix_view" kindref="compound">DenseMatrixView</ref>&lt; T &gt;</type>
+          <type><ref refid="classmuda_1_1_dense_matrix_view_t" kindref="compound">DenseMatrixView</ref>&lt; T &gt;</type>
           <declname>A_to_fact</declname>
         </param>
         <param>
-          <type><ref refid="classmuda_1_1_dense_vector_view_base" kindref="compound">DenseVectorView</ref>&lt; T &gt;</type>
+          <type><ref refid="classmuda_1_1_dense_vector_view_t" kindref="compound">DenseVectorView</ref>&lt; T &gt;</type>
           <declname>b_to_x</declname>
         </param>
         <briefdescription>
@@ -616,9 +616,9 @@
         <location file="src/muda/ext/linear_system/linear_system_context.h" line="72" column="10" bodyfile="src/muda/ext/linear_system/linear_system_context.h" bodystart="72" bodyend="72"/>
       </memberdef>
       <memberdef kind="function" id="classmuda_1_1_linear_system_context_1a8f759bf12a2ec9e7da20bcc293e059eb" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
-        <type>auto</type>
-        <definition>auto muda::LinearSystemContext::label</definition>
-        <argsstring>() const -&gt; std::string_view</argsstring>
+        <type>std::string_view</type>
+        <definition>std::string_view muda::LinearSystemContext::label</definition>
+        <argsstring>() const</argsstring>
         <name>label</name>
         <qualifiedname>muda::LinearSystemContext::label</qualifiedname>
         <briefdescription>
@@ -995,7 +995,7 @@
           <declname>from</declname>
         </param>
         <param>
-          <type><ref refid="classmuda_1_1_device_c_s_r_matrix" kindref="compound">DeviceCSRMatrix</ref>&lt; T &gt; &amp;</type>
+          <type><ref refid="classmuda_1_1_device_b_s_r_matrix" kindref="compound">DeviceCSRMatrix</ref>&lt; T &gt; &amp;</type>
           <declname>to</declname>
         </param>
         <briefdescription>
@@ -1081,7 +1081,7 @@
           <declname>from</declname>
         </param>
         <param>
-          <type><ref refid="classmuda_1_1_device_c_s_r_matrix" kindref="compound">DeviceCSRMatrix</ref>&lt; T &gt; &amp;</type>
+          <type><ref refid="classmuda_1_1_device_b_s_r_matrix" kindref="compound">DeviceCSRMatrix</ref>&lt; T &gt; &amp;</type>
           <declname>to</declname>
         </param>
         <briefdescription>
@@ -1108,7 +1108,7 @@
           <declname>from</declname>
         </param>
         <param>
-          <type><ref refid="classmuda_1_1_device_c_s_r_matrix" kindref="compound">DeviceCSRMatrix</ref>&lt; T &gt; &amp;</type>
+          <type><ref refid="classmuda_1_1_device_b_s_r_matrix" kindref="compound">DeviceCSRMatrix</ref>&lt; T &gt; &amp;</type>
           <declname>to</declname>
         </param>
         <briefdescription>
@@ -1135,7 +1135,7 @@
           <declname>from</declname>
         </param>
         <param>
-          <type><ref refid="classmuda_1_1_device_b_c_o_o_vector_3_01_t_00_011_01_4" kindref="compound">DeviceCOOVector</ref>&lt; T &gt; &amp;</type>
+          <type><ref refid="classmuda_1_1_device_b_c_o_o_vector" kindref="compound">DeviceCOOVector</ref>&lt; T &gt; &amp;</type>
           <declname>to</declname>
         </param>
         <briefdescription>
@@ -1158,7 +1158,7 @@
         <name>convert</name>
         <qualifiedname>muda::LinearSystemContext::convert</qualifiedname>
         <param>
-          <type>const <ref refid="classmuda_1_1_device_b_c_o_o_vector_3_01_t_00_011_01_4" kindref="compound">DeviceCOOVector</ref>&lt; T &gt; &amp;</type>
+          <type>const <ref refid="classmuda_1_1_device_b_c_o_o_vector" kindref="compound">DeviceCOOVector</ref>&lt; T &gt; &amp;</type>
           <declname>from</declname>
         </param>
         <param>
@@ -1222,7 +1222,7 @@
         <name>norm</name>
         <qualifiedname>muda::LinearSystemContext::norm</qualifiedname>
         <param>
-          <type><ref refid="classmuda_1_1_dense_vector_view_base" kindref="compound">CDenseVectorView</ref>&lt; T &gt;</type>
+          <type><ref refid="classmuda_1_1_dense_vector_view_t" kindref="compound">CDenseVectorView</ref>&lt; T &gt;</type>
           <declname>x</declname>
         </param>
         <briefdescription>
@@ -1245,7 +1245,7 @@
         <name>norm</name>
         <qualifiedname>muda::LinearSystemContext::norm</qualifiedname>
         <param>
-          <type><ref refid="classmuda_1_1_dense_vector_view_base" kindref="compound">CDenseVectorView</ref>&lt; T &gt;</type>
+          <type><ref refid="classmuda_1_1_dense_vector_view_t" kindref="compound">CDenseVectorView</ref>&lt; T &gt;</type>
           <declname>x</declname>
         </param>
         <param>
@@ -1272,7 +1272,7 @@
         <name>norm</name>
         <qualifiedname>muda::LinearSystemContext::norm</qualifiedname>
         <param>
-          <type><ref refid="classmuda_1_1_dense_vector_view_base" kindref="compound">CDenseVectorView</ref>&lt; T &gt;</type>
+          <type><ref refid="classmuda_1_1_dense_vector_view_t" kindref="compound">CDenseVectorView</ref>&lt; T &gt;</type>
           <declname>x</declname>
         </param>
         <param>
@@ -1299,11 +1299,11 @@
         <name>dot</name>
         <qualifiedname>muda::LinearSystemContext::dot</qualifiedname>
         <param>
-          <type><ref refid="classmuda_1_1_dense_vector_view_base" kindref="compound">CDenseVectorView</ref>&lt; T &gt;</type>
+          <type><ref refid="classmuda_1_1_dense_vector_view_t" kindref="compound">CDenseVectorView</ref>&lt; T &gt;</type>
           <declname>x</declname>
         </param>
         <param>
-          <type><ref refid="classmuda_1_1_dense_vector_view_base" kindref="compound">CDenseVectorView</ref>&lt; T &gt;</type>
+          <type><ref refid="classmuda_1_1_dense_vector_view_t" kindref="compound">CDenseVectorView</ref>&lt; T &gt;</type>
           <declname>y</declname>
         </param>
         <briefdescription>
@@ -1326,11 +1326,11 @@
         <name>dot</name>
         <qualifiedname>muda::LinearSystemContext::dot</qualifiedname>
         <param>
-          <type><ref refid="classmuda_1_1_dense_vector_view_base" kindref="compound">CDenseVectorView</ref>&lt; T &gt;</type>
+          <type><ref refid="classmuda_1_1_dense_vector_view_t" kindref="compound">CDenseVectorView</ref>&lt; T &gt;</type>
           <declname>x</declname>
         </param>
         <param>
-          <type><ref refid="classmuda_1_1_dense_vector_view_base" kindref="compound">CDenseVectorView</ref>&lt; T &gt;</type>
+          <type><ref refid="classmuda_1_1_dense_vector_view_t" kindref="compound">CDenseVectorView</ref>&lt; T &gt;</type>
           <declname>y</declname>
         </param>
         <param>
@@ -1357,11 +1357,11 @@
         <name>dot</name>
         <qualifiedname>muda::LinearSystemContext::dot</qualifiedname>
         <param>
-          <type><ref refid="classmuda_1_1_dense_vector_view_base" kindref="compound">CDenseVectorView</ref>&lt; T &gt;</type>
+          <type><ref refid="classmuda_1_1_dense_vector_view_t" kindref="compound">CDenseVectorView</ref>&lt; T &gt;</type>
           <declname>x</declname>
         </param>
         <param>
-          <type><ref refid="classmuda_1_1_dense_vector_view_base" kindref="compound">CDenseVectorView</ref>&lt; T &gt;</type>
+          <type><ref refid="classmuda_1_1_dense_vector_view_t" kindref="compound">CDenseVectorView</ref>&lt; T &gt;</type>
           <declname>y</declname>
         </param>
         <param>
@@ -1392,7 +1392,7 @@
           <declname>alpha</declname>
         </param>
         <param>
-          <type><ref refid="classmuda_1_1_dense_vector_view_base" kindref="compound">CDenseVectorView</ref>&lt; T &gt;</type>
+          <type><ref refid="classmuda_1_1_dense_vector_view_t" kindref="compound">CDenseVectorView</ref>&lt; T &gt;</type>
           <declname>x</declname>
         </param>
         <param>
@@ -1400,7 +1400,7 @@
           <declname>beta</declname>
         </param>
         <param>
-          <type><ref refid="classmuda_1_1_dense_vector_view_base" kindref="compound">DenseVectorView</ref>&lt; T &gt;</type>
+          <type><ref refid="classmuda_1_1_dense_vector_view_t" kindref="compound">DenseVectorView</ref>&lt; T &gt;</type>
           <declname>y</declname>
         </param>
         <briefdescription>
@@ -1427,7 +1427,7 @@
           <declname>alpha</declname>
         </param>
         <param>
-          <type><ref refid="classmuda_1_1_dense_vector_view_base" kindref="compound">CDenseVectorView</ref>&lt; T &gt;</type>
+          <type><ref refid="classmuda_1_1_dense_vector_view_t" kindref="compound">CDenseVectorView</ref>&lt; T &gt;</type>
           <declname>x</declname>
         </param>
         <param>
@@ -1435,7 +1435,7 @@
           <declname>beta</declname>
         </param>
         <param>
-          <type><ref refid="classmuda_1_1_dense_vector_view_base" kindref="compound">DenseVectorView</ref>&lt; T &gt;</type>
+          <type><ref refid="classmuda_1_1_dense_vector_view_t" kindref="compound">DenseVectorView</ref>&lt; T &gt;</type>
           <declname>y</declname>
         </param>
         <briefdescription>
@@ -1458,15 +1458,15 @@
         <name>plus</name>
         <qualifiedname>muda::LinearSystemContext::plus</qualifiedname>
         <param>
-          <type><ref refid="classmuda_1_1_dense_vector_view_base" kindref="compound">CDenseVectorView</ref>&lt; T &gt;</type>
+          <type><ref refid="classmuda_1_1_dense_vector_view_t" kindref="compound">CDenseVectorView</ref>&lt; T &gt;</type>
           <declname>x</declname>
         </param>
         <param>
-          <type><ref refid="classmuda_1_1_dense_vector_view_base" kindref="compound">CDenseVectorView</ref>&lt; T &gt;</type>
+          <type><ref refid="classmuda_1_1_dense_vector_view_t" kindref="compound">CDenseVectorView</ref>&lt; T &gt;</type>
           <declname>y</declname>
         </param>
         <param>
-          <type><ref refid="classmuda_1_1_dense_vector_view_base" kindref="compound">DenseVectorView</ref>&lt; T &gt;</type>
+          <type><ref refid="classmuda_1_1_dense_vector_view_t" kindref="compound">DenseVectorView</ref>&lt; T &gt;</type>
           <declname>z</declname>
         </param>
         <briefdescription>
@@ -1498,11 +1498,11 @@
           <declname>a</declname>
         </param>
         <param>
-          <type><ref refid="classmuda_1_1_b_s_r_matrix_view_base" kindref="compound">CBSRMatrixView</ref>&lt; T, N &gt;</type>
+          <type><ref refid="classmuda_1_1_b_s_r_matrix_view_t" kindref="compound">CBSRMatrixView</ref>&lt; T, N &gt;</type>
           <declname>A</declname>
         </param>
         <param>
-          <type><ref refid="classmuda_1_1_dense_vector_view_base" kindref="compound">CDenseVectorView</ref>&lt; T &gt;</type>
+          <type><ref refid="classmuda_1_1_dense_vector_view_t" kindref="compound">CDenseVectorView</ref>&lt; T &gt;</type>
           <declname>x</declname>
         </param>
         <param>
@@ -1510,7 +1510,7 @@
           <declname>b</declname>
         </param>
         <param>
-          <type><ref refid="classmuda_1_1_dense_vector_view_base" kindref="compound">DenseVectorView</ref>&lt; T &gt; &amp;</type>
+          <type><ref refid="classmuda_1_1_dense_vector_view_t" kindref="compound">DenseVectorView</ref>&lt; T &gt; &amp;</type>
           <declname>y</declname>
         </param>
         <briefdescription>
@@ -1538,15 +1538,15 @@
         <name>spmv</name>
         <qualifiedname>muda::LinearSystemContext::spmv</qualifiedname>
         <param>
-          <type><ref refid="classmuda_1_1_b_s_r_matrix_view_base" kindref="compound">CBSRMatrixView</ref>&lt; T, N &gt;</type>
+          <type><ref refid="classmuda_1_1_b_s_r_matrix_view_t" kindref="compound">CBSRMatrixView</ref>&lt; T, N &gt;</type>
           <declname>A</declname>
         </param>
         <param>
-          <type><ref refid="classmuda_1_1_dense_vector_view_base" kindref="compound">CDenseVectorView</ref>&lt; T &gt;</type>
+          <type><ref refid="classmuda_1_1_dense_vector_view_t" kindref="compound">CDenseVectorView</ref>&lt; T &gt;</type>
           <declname>x</declname>
         </param>
         <param>
-          <type><ref refid="classmuda_1_1_dense_vector_view_base" kindref="compound">DenseVectorView</ref>&lt; T &gt;</type>
+          <type><ref refid="classmuda_1_1_dense_vector_view_t" kindref="compound">DenseVectorView</ref>&lt; T &gt;</type>
           <declname>y</declname>
         </param>
         <briefdescription>
@@ -1573,11 +1573,11 @@
           <declname>a</declname>
         </param>
         <param>
-          <type><ref refid="classmuda_1_1_c_s_r_matrix_view_base" kindref="compound">CCSRMatrixView</ref>&lt; T &gt;</type>
+          <type><ref refid="classmuda_1_1_b_s_r_matrix_view_t" kindref="compound">CCSRMatrixView</ref>&lt; T &gt;</type>
           <declname>A</declname>
         </param>
         <param>
-          <type><ref refid="classmuda_1_1_dense_vector_view_base" kindref="compound">CDenseVectorView</ref>&lt; T &gt;</type>
+          <type><ref refid="classmuda_1_1_dense_vector_view_t" kindref="compound">CDenseVectorView</ref>&lt; T &gt;</type>
           <declname>x</declname>
         </param>
         <param>
@@ -1585,7 +1585,7 @@
           <declname>b</declname>
         </param>
         <param>
-          <type><ref refid="classmuda_1_1_dense_vector_view_base" kindref="compound">DenseVectorView</ref>&lt; T &gt; &amp;</type>
+          <type><ref refid="classmuda_1_1_dense_vector_view_t" kindref="compound">DenseVectorView</ref>&lt; T &gt; &amp;</type>
           <declname>y</declname>
         </param>
         <briefdescription>
@@ -1608,15 +1608,15 @@
         <name>spmv</name>
         <qualifiedname>muda::LinearSystemContext::spmv</qualifiedname>
         <param>
-          <type><ref refid="classmuda_1_1_c_s_r_matrix_view_base" kindref="compound">CCSRMatrixView</ref>&lt; T &gt;</type>
+          <type><ref refid="classmuda_1_1_b_s_r_matrix_view_t" kindref="compound">CCSRMatrixView</ref>&lt; T &gt;</type>
           <declname>A</declname>
         </param>
         <param>
-          <type><ref refid="classmuda_1_1_dense_vector_view_base" kindref="compound">CDenseVectorView</ref>&lt; T &gt;</type>
+          <type><ref refid="classmuda_1_1_dense_vector_view_t" kindref="compound">CDenseVectorView</ref>&lt; T &gt;</type>
           <declname>x</declname>
         </param>
         <param>
-          <type><ref refid="classmuda_1_1_dense_vector_view_base" kindref="compound">DenseVectorView</ref>&lt; T &gt;</type>
+          <type><ref refid="classmuda_1_1_dense_vector_view_t" kindref="compound">DenseVectorView</ref>&lt; T &gt;</type>
           <declname>y</declname>
         </param>
         <briefdescription>
@@ -1648,11 +1648,11 @@
           <declname>a</declname>
         </param>
         <param>
-          <type><ref refid="classmuda_1_1_triplet_matrix_view_base" kindref="compound">CTripletMatrixView</ref>&lt; T, N &gt;</type>
+          <type><ref refid="classmuda_1_1_triplet_matrix_view_t" kindref="compound">CTripletMatrixView</ref>&lt; T, N &gt;</type>
           <declname>A</declname>
         </param>
         <param>
-          <type><ref refid="classmuda_1_1_dense_vector_view_base" kindref="compound">CDenseVectorView</ref>&lt; T &gt;</type>
+          <type><ref refid="classmuda_1_1_dense_vector_view_t" kindref="compound">CDenseVectorView</ref>&lt; T &gt;</type>
           <declname>x</declname>
         </param>
         <param>
@@ -1660,7 +1660,7 @@
           <declname>b</declname>
         </param>
         <param>
-          <type><ref refid="classmuda_1_1_dense_vector_view_base" kindref="compound">DenseVectorView</ref>&lt; T &gt; &amp;</type>
+          <type><ref refid="classmuda_1_1_dense_vector_view_t" kindref="compound">DenseVectorView</ref>&lt; T &gt; &amp;</type>
           <declname>y</declname>
         </param>
         <briefdescription>
@@ -1688,15 +1688,15 @@
         <name>spmv</name>
         <qualifiedname>muda::LinearSystemContext::spmv</qualifiedname>
         <param>
-          <type><ref refid="classmuda_1_1_triplet_matrix_view_base" kindref="compound">CTripletMatrixView</ref>&lt; T, N &gt;</type>
+          <type><ref refid="classmuda_1_1_triplet_matrix_view_t" kindref="compound">CTripletMatrixView</ref>&lt; T, N &gt;</type>
           <declname>A</declname>
         </param>
         <param>
-          <type><ref refid="classmuda_1_1_dense_vector_view_base" kindref="compound">CDenseVectorView</ref>&lt; T &gt;</type>
+          <type><ref refid="classmuda_1_1_dense_vector_view_t" kindref="compound">CDenseVectorView</ref>&lt; T &gt;</type>
           <declname>x</declname>
         </param>
         <param>
-          <type><ref refid="classmuda_1_1_dense_vector_view_base" kindref="compound">DenseVectorView</ref>&lt; T &gt;</type>
+          <type><ref refid="classmuda_1_1_dense_vector_view_t" kindref="compound">DenseVectorView</ref>&lt; T &gt;</type>
           <declname>y</declname>
         </param>
         <briefdescription>
@@ -1723,11 +1723,11 @@
           <declname>a</declname>
         </param>
         <param>
-          <type><ref refid="classmuda_1_1_c_o_o_matrix_view_base" kindref="compound">CCOOMatrixView</ref>&lt; T &gt;</type>
+          <type><ref refid="classmuda_1_1_c_o_o_matrix_view_t" kindref="compound">CCOOMatrixView</ref>&lt; T &gt;</type>
           <declname>A</declname>
         </param>
         <param>
-          <type><ref refid="classmuda_1_1_dense_vector_view_base" kindref="compound">CDenseVectorView</ref>&lt; T &gt;</type>
+          <type><ref refid="classmuda_1_1_dense_vector_view_t" kindref="compound">CDenseVectorView</ref>&lt; T &gt;</type>
           <declname>x</declname>
         </param>
         <param>
@@ -1735,7 +1735,7 @@
           <declname>b</declname>
         </param>
         <param>
-          <type><ref refid="classmuda_1_1_dense_vector_view_base" kindref="compound">DenseVectorView</ref>&lt; T &gt; &amp;</type>
+          <type><ref refid="classmuda_1_1_dense_vector_view_t" kindref="compound">DenseVectorView</ref>&lt; T &gt; &amp;</type>
           <declname>y</declname>
         </param>
         <briefdescription>
@@ -1758,15 +1758,15 @@
         <name>spmv</name>
         <qualifiedname>muda::LinearSystemContext::spmv</qualifiedname>
         <param>
-          <type><ref refid="classmuda_1_1_c_o_o_matrix_view_base" kindref="compound">CCOOMatrixView</ref>&lt; T &gt;</type>
+          <type><ref refid="classmuda_1_1_c_o_o_matrix_view_t" kindref="compound">CCOOMatrixView</ref>&lt; T &gt;</type>
           <declname>A</declname>
         </param>
         <param>
-          <type><ref refid="classmuda_1_1_dense_vector_view_base" kindref="compound">CDenseVectorView</ref>&lt; T &gt;</type>
+          <type><ref refid="classmuda_1_1_dense_vector_view_t" kindref="compound">CDenseVectorView</ref>&lt; T &gt;</type>
           <declname>x</declname>
         </param>
         <param>
-          <type><ref refid="classmuda_1_1_dense_vector_view_base" kindref="compound">DenseVectorView</ref>&lt; T &gt;</type>
+          <type><ref refid="classmuda_1_1_dense_vector_view_t" kindref="compound">DenseVectorView</ref>&lt; T &gt;</type>
           <declname>y</declname>
         </param>
         <briefdescription>
@@ -1789,7 +1789,7 @@
         <name>mv</name>
         <qualifiedname>muda::LinearSystemContext::mv</qualifiedname>
         <param>
-          <type><ref refid="classmuda_1_1_c_dense_matrix_view" kindref="compound">CDenseMatrixView</ref>&lt; T &gt;</type>
+          <type><ref refid="classmuda_1_1_dense_matrix_view_t" kindref="compound">CDenseMatrixView</ref>&lt; T &gt;</type>
           <declname>A</declname>
         </param>
         <param>
@@ -1797,7 +1797,7 @@
           <declname>alpha</declname>
         </param>
         <param>
-          <type><ref refid="classmuda_1_1_dense_vector_view_base" kindref="compound">CDenseVectorView</ref>&lt; T &gt;</type>
+          <type><ref refid="classmuda_1_1_dense_vector_view_t" kindref="compound">CDenseVectorView</ref>&lt; T &gt;</type>
           <declname>x</declname>
         </param>
         <param>
@@ -1805,7 +1805,7 @@
           <declname>beta</declname>
         </param>
         <param>
-          <type><ref refid="classmuda_1_1_dense_vector_view_base" kindref="compound">DenseVectorView</ref>&lt; T &gt;</type>
+          <type><ref refid="classmuda_1_1_dense_vector_view_t" kindref="compound">DenseVectorView</ref>&lt; T &gt;</type>
           <declname>y</declname>
         </param>
         <briefdescription>
@@ -1828,7 +1828,7 @@
         <name>mv</name>
         <qualifiedname>muda::LinearSystemContext::mv</qualifiedname>
         <param>
-          <type><ref refid="classmuda_1_1_c_dense_matrix_view" kindref="compound">CDenseMatrixView</ref>&lt; T &gt;</type>
+          <type><ref refid="classmuda_1_1_dense_matrix_view_t" kindref="compound">CDenseMatrixView</ref>&lt; T &gt;</type>
           <declname>A</declname>
         </param>
         <param>
@@ -1836,7 +1836,7 @@
           <declname>alpha</declname>
         </param>
         <param>
-          <type><ref refid="classmuda_1_1_dense_vector_view_base" kindref="compound">CDenseVectorView</ref>&lt; T &gt;</type>
+          <type><ref refid="classmuda_1_1_dense_vector_view_t" kindref="compound">CDenseVectorView</ref>&lt; T &gt;</type>
           <declname>x</declname>
         </param>
         <param>
@@ -1844,7 +1844,7 @@
           <declname>beta</declname>
         </param>
         <param>
-          <type><ref refid="classmuda_1_1_dense_vector_view_base" kindref="compound">DenseVectorView</ref>&lt; T &gt;</type>
+          <type><ref refid="classmuda_1_1_dense_vector_view_t" kindref="compound">DenseVectorView</ref>&lt; T &gt;</type>
           <declname>y</declname>
         </param>
         <briefdescription>
@@ -1867,15 +1867,15 @@
         <name>mv</name>
         <qualifiedname>muda::LinearSystemContext::mv</qualifiedname>
         <param>
-          <type><ref refid="classmuda_1_1_c_dense_matrix_view" kindref="compound">CDenseMatrixView</ref>&lt; T &gt;</type>
+          <type><ref refid="classmuda_1_1_dense_matrix_view_t" kindref="compound">CDenseMatrixView</ref>&lt; T &gt;</type>
           <declname>A</declname>
         </param>
         <param>
-          <type><ref refid="classmuda_1_1_dense_vector_view_base" kindref="compound">CDenseVectorView</ref>&lt; T &gt;</type>
+          <type><ref refid="classmuda_1_1_dense_vector_view_t" kindref="compound">CDenseVectorView</ref>&lt; T &gt;</type>
           <declname>x</declname>
         </param>
         <param>
-          <type><ref refid="classmuda_1_1_dense_vector_view_base" kindref="compound">DenseVectorView</ref>&lt; T &gt;</type>
+          <type><ref refid="classmuda_1_1_dense_vector_view_t" kindref="compound">DenseVectorView</ref>&lt; T &gt;</type>
           <declname>y</declname>
         </param>
         <briefdescription>
@@ -1898,11 +1898,11 @@
         <name>solve</name>
         <qualifiedname>muda::LinearSystemContext::solve</qualifiedname>
         <param>
-          <type><ref refid="classmuda_1_1_dense_matrix_view" kindref="compound">DenseMatrixView</ref>&lt; T &gt;</type>
+          <type><ref refid="classmuda_1_1_dense_matrix_view_t" kindref="compound">DenseMatrixView</ref>&lt; T &gt;</type>
           <declname>A_to_fact</declname>
         </param>
         <param>
-          <type><ref refid="classmuda_1_1_dense_vector_view_base" kindref="compound">DenseVectorView</ref>&lt; T &gt;</type>
+          <type><ref refid="classmuda_1_1_dense_vector_view_t" kindref="compound">DenseVectorView</ref>&lt; T &gt;</type>
           <declname>b_to_x</declname>
         </param>
         <briefdescription>
@@ -1925,15 +1925,15 @@
         <name>solve</name>
         <qualifiedname>muda::LinearSystemContext::solve</qualifiedname>
         <param>
-          <type><ref refid="classmuda_1_1_dense_vector_view_base" kindref="compound">DenseVectorView</ref>&lt; T &gt;</type>
+          <type><ref refid="classmuda_1_1_dense_vector_view_t" kindref="compound">DenseVectorView</ref>&lt; T &gt;</type>
           <declname>x</declname>
         </param>
         <param>
-          <type><ref refid="classmuda_1_1_c_s_r_matrix_view_base" kindref="compound">CCSRMatrixView</ref>&lt; T &gt;</type>
+          <type><ref refid="classmuda_1_1_b_s_r_matrix_view_t" kindref="compound">CCSRMatrixView</ref>&lt; T &gt;</type>
           <declname>A</declname>
         </param>
         <param>
-          <type><ref refid="classmuda_1_1_dense_vector_view_base" kindref="compound">CDenseVectorView</ref>&lt; T &gt;</type>
+          <type><ref refid="classmuda_1_1_dense_vector_view_t" kindref="compound">CDenseVectorView</ref>&lt; T &gt;</type>
           <declname>b</declname>
         </param>
         <briefdescription>

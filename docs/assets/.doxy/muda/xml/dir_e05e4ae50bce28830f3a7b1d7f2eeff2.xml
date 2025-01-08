@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.1" xml:lang="en-US">
   <compounddef id="dir_e05e4ae50bce28830f3a7b1d7f2eeff2" kind="dir">
     <compoundname>src/muda/ext/geo</compoundname>
     <innerdir refid="dir_eb002c7e2ab9cc8eedb85ee6f0f5ffd4">src/muda/ext/geo/distance</innerdir>

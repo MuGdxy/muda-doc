@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.1" xml:lang="en-US">
   <compounddef id="kernel_8h" kind="file" language="C++">
     <compoundname>kernel.h</compoundname>
     <includes local="no">cuda.h</includes>
@@ -84,10 +84,16 @@
       </node>
     </incdepgraph>
     <invincdepgraph>
+      <node id="3">
+        <label>src/muda/ext/linear_system/matrix_format_converter_impl.h</label>
+        <link refid="matrix__format__converter__impl_8h_source"/>
+      </node>
       <node id="2">
         <label>src/muda/launch.h</label>
         <link refid="launch_8h_source"/>
         <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
         </childnode>
       </node>
       <node id="1">
@@ -96,7 +102,7 @@
         <childnode refid="2" relation="include">
         </childnode>
       </node>
-      <node id="3">
+      <node id="4">
         <label>src/muda/muda.h</label>
         <link refid="muda_8h_source"/>
       </node>
@@ -117,7 +123,7 @@
 <codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">muda</highlight></codeline>
 <codeline lineno="8"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>F&gt;</highlight></codeline>
-<codeline lineno="10" refid="classmuda_1_1_kernel" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classmuda_1_1_kernel" kindref="compound">Kernel</ref></highlight></codeline>
+<codeline lineno="10" refid="classmuda_1_1_kernel" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">Kernel</highlight></codeline>
 <codeline lineno="11"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/>dim3<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_grid_dim;</highlight></codeline>
 <codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/>dim3<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_block_dim;</highlight></codeline>
@@ -126,7 +132,7 @@
 <codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>F<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_kernel;</highlight></codeline>
 <codeline lineno="17"><highlight class="normal"></highlight></codeline>
 <codeline lineno="18"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>MUDA_GENERIC<sp/><ref refid="classmuda_1_1_kernel" kindref="compound">Kernel</ref>(dim3<sp/>grid_dim,<sp/>dim3<sp/>m_block_dim,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>shared_memory_size,<sp/>cudaStream_t<sp/>stream,<sp/>F<sp/>f)</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>MUDA_GENERIC<sp/>Kernel(dim3<sp/>grid_dim,<sp/>dim3<sp/>m_block_dim,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>shared_memory_size,<sp/>cudaStream_t<sp/>stream,<sp/>F<sp/>f)</highlight></codeline>
 <codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>m_grid_dim(grid_dim)</highlight></codeline>
 <codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>,<sp/>m_block_dim(m_block_dim)</highlight></codeline>
 <codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>,<sp/>m_shared_memory_size(shared_memory_size)</highlight></codeline>
@@ -141,28 +147,28 @@
 <codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="33"><highlight class="normal"></highlight></codeline>
-<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>MUDA_GENERIC<sp/><ref refid="classmuda_1_1_kernel" kindref="compound">Kernel</ref>(F<sp/>f)</highlight></codeline>
-<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/><ref refid="classmuda_1_1_kernel" kindref="compound">Kernel</ref>{1,<sp/>1,<sp/>0,<sp/>0,<sp/>f}</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>MUDA_GENERIC<sp/>Kernel(F<sp/>f)</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>Kernel{1,<sp/>1,<sp/>0,<sp/>0,<sp/>f}</highlight></codeline>
 <codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="38"><highlight class="normal"></highlight></codeline>
-<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>MUDA_GENERIC<sp/><ref refid="classmuda_1_1_kernel" kindref="compound">Kernel</ref>(dim3<sp/>grid_dim,<sp/>dim3<sp/>m_block_dim,<sp/>F<sp/>f)</highlight></codeline>
-<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/><ref refid="classmuda_1_1_kernel" kindref="compound">Kernel</ref>{grid_dim,<sp/>m_block_dim,<sp/>0,<sp/>0,<sp/>f}</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>MUDA_GENERIC<sp/>Kernel(dim3<sp/>grid_dim,<sp/>dim3<sp/>m_block_dim,<sp/>F<sp/>f)</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>Kernel{grid_dim,<sp/>m_block_dim,<sp/>0,<sp/>0,<sp/>f}</highlight></codeline>
 <codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="43"><highlight class="normal"></highlight></codeline>
-<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>MUDA_GENERIC<sp/><ref refid="classmuda_1_1_kernel" kindref="compound">Kernel</ref>(dim3<sp/>grid_dim,<sp/>dim3<sp/>m_block_dim,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>shared_memory_size,<sp/>F<sp/>f)</highlight></codeline>
-<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/><ref refid="classmuda_1_1_kernel" kindref="compound">Kernel</ref>{grid_dim,<sp/>m_block_dim,<sp/>shared_memory_size,<sp/>0,<sp/>f}</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>MUDA_GENERIC<sp/>Kernel(dim3<sp/>grid_dim,<sp/>dim3<sp/>m_block_dim,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>shared_memory_size,<sp/>F<sp/>f)</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>Kernel{grid_dim,<sp/>m_block_dim,<sp/>shared_memory_size,<sp/>0,<sp/>f}</highlight></codeline>
 <codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="48"><highlight class="normal"></highlight></codeline>
-<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>MUDA_GENERIC<sp/><ref refid="classmuda_1_1_kernel" kindref="compound">Kernel</ref>(dim3<sp/>grid_dim,<sp/>dim3<sp/>m_block_dim,<sp/>cudaStream_t<sp/>stream,<sp/>F<sp/>f)</highlight></codeline>
-<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/><ref refid="classmuda_1_1_kernel" kindref="compound">Kernel</ref>{grid_dim,<sp/>m_block_dim,<sp/>0,<sp/>stream,<sp/>f}</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>MUDA_GENERIC<sp/>Kernel(dim3<sp/>grid_dim,<sp/>dim3<sp/>m_block_dim,<sp/>cudaStream_t<sp/>stream,<sp/>F<sp/>f)</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>Kernel{grid_dim,<sp/>m_block_dim,<sp/>0,<sp/>stream,<sp/>f}</highlight></codeline>
 <codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="53"><highlight class="normal"></highlight></codeline>
-<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>MUDA_GENERIC<sp/><ref refid="classmuda_1_1_kernel" kindref="compound">Kernel</ref>(cudaStream_t<sp/>stream,<sp/>F<sp/>f)</highlight></codeline>
-<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/><ref refid="classmuda_1_1_kernel" kindref="compound">Kernel</ref>{1,<sp/>1,<sp/>0,<sp/>stream,<sp/>f}</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>MUDA_GENERIC<sp/>Kernel(cudaStream_t<sp/>stream,<sp/>F<sp/>f)</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>Kernel{1,<sp/>1,<sp/>0,<sp/>stream,<sp/>f}</highlight></codeline>
 <codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="58"><highlight class="normal"></highlight></codeline>
@@ -195,10 +201,10 @@
 <codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="86"><highlight class="normal"></highlight></codeline>
 <codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>delete<sp/>copy<sp/>and<sp/>move</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/>MUDA_GENERIC<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classmuda_1_1_kernel" kindref="compound">Kernel</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classmuda_1_1_kernel" kindref="compound">Kernel</ref>&amp;)<sp/><sp/><sp/><sp/>=<sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/>MUDA_GENERIC<sp/><ref refid="classmuda_1_1_kernel" kindref="compound">Kernel</ref>&amp;<sp/>operator=(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classmuda_1_1_kernel" kindref="compound">Kernel</ref>&amp;)<sp/>=<sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/>MUDA_GENERIC<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classmuda_1_1_kernel" kindref="compound">Kernel</ref>(<ref refid="classmuda_1_1_kernel" kindref="compound">Kernel</ref>&amp;&amp;)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/>MUDA_GENERIC<sp/><ref refid="classmuda_1_1_kernel" kindref="compound">Kernel</ref>&amp;<sp/>operator=(<ref refid="classmuda_1_1_kernel" kindref="compound">Kernel</ref>&amp;&amp;)<sp/><sp/><sp/><sp/><sp/><sp/>=<sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/>MUDA_GENERIC<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Kernel(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Kernel&amp;)<sp/><sp/><sp/><sp/>=<sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/>MUDA_GENERIC<sp/>Kernel&amp;<sp/>operator=(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Kernel&amp;)<sp/>=<sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/>MUDA_GENERIC<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Kernel(Kernel&amp;&amp;)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/>MUDA_GENERIC<sp/>Kernel&amp;<sp/>operator=(Kernel&amp;&amp;)<sp/><sp/><sp/><sp/><sp/><sp/>=<sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="92"><highlight class="normal">};</highlight></codeline>
 <codeline lineno="93"><highlight class="normal">}<sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>muda</highlight><highlight class="normal"></highlight></codeline>
     </programlisting>

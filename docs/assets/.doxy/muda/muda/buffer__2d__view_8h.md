@@ -45,8 +45,8 @@
 | Type | Name |
 | ---: | :--- |
 | class | [**Buffer2DViewT**](classmuda_1_1_buffer2_d_view_t.md) &lt;IsConst, typename T&gt;<br> |
-| struct | [**read\_only\_viewer&lt; Buffer2DView&lt; T &gt; &gt;**](structmuda_1_1read__only__viewer_3_01_buffer2_d_view_3_01_t_01_4_01_4.md) &lt;typename T&gt;<br> |
-| struct | [**read\_write\_viewer&lt; CBuffer2DView&lt; T &gt; &gt;**](structmuda_1_1read__write__viewer_3_01_c_buffer2_d_view_3_01_t_01_4_01_4.md) &lt;typename T&gt;<br> |
+| struct | [**read\_only\_view**](structmuda_1_1read__only__view.md) &lt;typename T&gt;<br> |
+| struct | [**read\_write\_view**](structmuda_1_1read__write__view.md) &lt;typename T&gt;<br> |
 
 
 

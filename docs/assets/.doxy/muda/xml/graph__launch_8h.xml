@@ -1,20 +1,20 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.1" xml:lang="en-US">
   <compounddef id="graph__launch_8h" kind="file" language="C++">
     <compoundname>graph_launch.h</compoundname>
     <includes refid="launch__base_8h" local="no">muda/launch/launch_base.h</includes>
     <includes local="yes">details/graph_launch.inl</includes>
     <includedby refid="graph_8h" local="no">src/muda/graph.h</includedby>
     <incdepgraph>
-      <node id="30">
+      <node id="28">
         <label>muda/assert.h</label>
         <link refid="assert_8h_source"/>
-        <childnode refid="16" relation="include">
+        <childnode refid="14" relation="include">
         </childnode>
-        <childnode refid="31" relation="include">
+        <childnode refid="29" relation="include">
         </childnode>
       </node>
-      <node id="24">
+      <node id="22">
         <label>muda/check/check.h</label>
         <link refid="check_8h_source"/>
         <childnode refid="3" relation="include">
@@ -23,51 +23,51 @@
         </childnode>
         <childnode refid="5" relation="include">
         </childnode>
-        <childnode refid="25" relation="include">
+        <childnode refid="23" relation="include">
         </childnode>
-        <childnode refid="16" relation="include">
+        <childnode refid="14" relation="include">
         </childnode>
-        <childnode refid="26" relation="include">
+        <childnode refid="24" relation="include">
         </childnode>
-        <childnode refid="34" relation="include">
+        <childnode refid="32" relation="include">
         </childnode>
         <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
         </childnode>
         <childnode refid="36" relation="include">
         </childnode>
         <childnode refid="38" relation="include">
         </childnode>
-        <childnode refid="40" relation="include">
+      </node>
+      <node id="36">
+        <label>muda/check/check_cublas.h</label>
+        <link refid="check__cublas_8h_source"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>muda/check/check_cuda_errors.h</label>
+        <link refid="check__cuda__errors_8h_source"/>
+        <childnode refid="22" relation="include">
         </childnode>
       </node>
       <node id="38">
-        <label>muda/check/check_cublas.h</label>
-        <link refid="check__cublas_8h_source"/>
-        <childnode refid="16" relation="include">
+        <label>muda/check/check_cusolver.h</label>
+        <link refid="check__cusolver_8h_source"/>
+        <childnode refid="14" relation="include">
         </childnode>
         <childnode refid="39" relation="include">
         </childnode>
       </node>
-      <node id="23">
-        <label>muda/check/check_cuda_errors.h</label>
-        <link refid="check__cuda__errors_8h_source"/>
-        <childnode refid="24" relation="include">
-        </childnode>
-      </node>
-      <node id="40">
-        <label>muda/check/check_cusolver.h</label>
-        <link refid="check__cusolver_8h_source"/>
-        <childnode refid="16" relation="include">
-        </childnode>
-        <childnode refid="41" relation="include">
-        </childnode>
-      </node>
-      <node id="36">
+      <node id="34">
         <label>muda/check/check_cusparse.h</label>
         <link refid="check__cusparse_8h_source"/>
-        <childnode refid="16" relation="include">
+        <childnode refid="14" relation="include">
         </childnode>
-        <childnode refid="37" relation="include">
+        <childnode refid="35" relation="include">
         </childnode>
       </node>
       <node id="10">
@@ -88,12 +88,12 @@
         <childnode refid="5" relation="include">
         </childnode>
       </node>
-      <node id="34">
+      <node id="32">
         <label>muda/exception.h</label>
         <link refid="exception_8h_source"/>
-        <childnode refid="16" relation="include">
+        <childnode refid="14" relation="include">
         </childnode>
-        <childnode refid="35" relation="include">
+        <childnode refid="33" relation="include">
         </childnode>
         <childnode refid="7" relation="include">
         </childnode>
@@ -103,13 +103,13 @@
         <link refid="graph__launch_8h"/>
         <childnode refid="2" relation="include">
         </childnode>
-        <childnode refid="51" relation="include">
+        <childnode refid="49" relation="include">
         </childnode>
       </node>
-      <node id="46">
+      <node id="44">
         <label>muda/launch/event.h</label>
         <link refid="event_8h_source"/>
-        <childnode refid="47" relation="include">
+        <childnode refid="45" relation="include">
         </childnode>
         <childnode refid="3" relation="include">
         </childnode>
@@ -119,12 +119,12 @@
         </childnode>
         <childnode refid="6" relation="include">
         </childnode>
-        <childnode refid="23" relation="include">
+        <childnode refid="21" relation="include">
         </childnode>
-        <childnode refid="48" relation="include">
+        <childnode refid="46" relation="include">
         </childnode>
       </node>
-      <node id="49">
+      <node id="47">
         <label>muda/launch/kernel_tag.h</label>
         <link refid="kernel__tag_8h_source"/>
       </node>
@@ -151,51 +151,35 @@
         </childnode>
         <childnode refid="12" relation="include">
         </childnode>
-        <childnode refid="13" relation="include">
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
         </childnode>
         <childnode refid="14" relation="include">
         </childnode>
-        <childnode refid="19" relation="include">
+        <childnode refid="44" relation="include">
         </childnode>
-        <childnode refid="23" relation="include">
+        <childnode refid="47" relation="include">
         </childnode>
-        <childnode refid="16" relation="include">
-        </childnode>
-        <childnode refid="46" relation="include">
-        </childnode>
-        <childnode refid="49" relation="include">
-        </childnode>
-        <childnode refid="50" relation="include">
+        <childnode refid="48" relation="include">
         </childnode>
       </node>
-      <node id="21">
+      <node id="19">
         <label>muda/literal/unit.h</label>
         <link refid="unit_8h_source"/>
-        <childnode refid="22" relation="include">
+        <childnode refid="20" relation="include">
         </childnode>
       </node>
-      <node id="17">
+      <node id="15">
         <label>muda/muda_config.h</label>
         <link refid="muda__config_8h_source"/>
       </node>
-      <node id="16">
+      <node id="14">
         <label>muda/muda_def.h</label>
         <link refid="muda__def_8h_source"/>
-        <childnode refid="17" relation="include">
+        <childnode refid="15" relation="include">
         </childnode>
-        <childnode refid="18" relation="include">
-        </childnode>
-        <childnode refid="3" relation="include">
-        </childnode>
-        <childnode refid="4" relation="include">
-        </childnode>
-        <childnode refid="5" relation="include">
-        </childnode>
-      </node>
-      <node id="33">
-        <label>muda/print.h</label>
-        <link refid="print_8h_source"/>
-        <childnode refid="25" relation="include">
+        <childnode refid="16" relation="include">
         </childnode>
         <childnode refid="3" relation="include">
         </childnode>
@@ -205,38 +189,50 @@
         </childnode>
       </node>
       <node id="31">
-        <label>muda/tools/debug_break.h</label>
-        <link refid="debug__break_8h_source"/>
-        <childnode refid="32" relation="include">
+        <label>muda/print.h</label>
+        <link refid="print_8h_source"/>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
         </childnode>
       </node>
-      <node id="26">
+      <node id="29">
+        <label>muda/tools/debug_break.h</label>
+        <link refid="debug__break_8h_source"/>
+        <childnode refid="30" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
         <label>muda/tools/debug_log.h</label>
         <link refid="debug__log_8h_source"/>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
         <childnode refid="27" relation="include">
         </childnode>
         <childnode refid="28" relation="include">
         </childnode>
-        <childnode refid="29" relation="include">
+        <childnode refid="31" relation="include">
         </childnode>
-        <childnode refid="30" relation="include">
-        </childnode>
-        <childnode refid="33" relation="include">
-        </childnode>
-        <childnode refid="17" relation="include">
-        </childnode>
-        <childnode refid="16" relation="include">
-        </childnode>
-      </node>
-      <node id="47">
-        <label>muda/tools/flag.h</label>
-        <link refid="flag_8h_source"/>
         <childnode refid="15" relation="include">
         </childnode>
-        <childnode refid="16" relation="include">
+        <childnode refid="14" relation="include">
         </childnode>
       </node>
-      <node id="29">
+      <node id="45">
+        <label>muda/tools/flag.h</label>
+        <link refid="flag_8h_source"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="27">
         <label>muda/tools/fuzzy.h</label>
         <link refid="fuzzy_8h_source"/>
         <childnode refid="3" relation="include">
@@ -245,71 +241,71 @@
         </childnode>
         <childnode refid="5" relation="include">
         </childnode>
-        <childnode refid="16" relation="include">
+        <childnode refid="14" relation="include">
         </childnode>
       </node>
-      <node id="20">
+      <node id="18">
         <label>muda/tools/host_device_string_cache.h</label>
         <link refid="host__device__string__cache_8h_source"/>
         <childnode refid="4" relation="include">
         </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
         <childnode refid="21" relation="include">
         </childnode>
-        <childnode refid="16" relation="include">
-        </childnode>
-        <childnode refid="23" relation="include">
-        </childnode>
-        <childnode refid="42" relation="include">
+        <childnode refid="40" relation="include">
         </childnode>
         <childnode refid="7" relation="include">
         </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
         <childnode refid="43" relation="include">
         </childnode>
-        <childnode refid="44" relation="include">
-        </childnode>
-        <childnode refid="45" relation="include">
-        </childnode>
       </node>
-      <node id="19">
+      <node id="17">
         <label>muda/tools/launch_info_cache.h</label>
         <link refid="launch__info__cache_8h_source"/>
-        <childnode refid="20" relation="include">
+        <childnode refid="18" relation="include">
         </childnode>
       </node>
-      <node id="18">
+      <node id="16">
         <label>muda/tools/platform.h</label>
         <link refid="platform_8h_source"/>
       </node>
-      <node id="43">
+      <node id="41">
         <label>muda/tools/string_pointer.h</label>
         <link refid="string__pointer_8h_source"/>
-        <childnode refid="16" relation="include">
+        <childnode refid="14" relation="include">
         </childnode>
       </node>
-      <node id="14">
+      <node id="12">
         <label>muda/type_traits/type_modifier.h</label>
         <link refid="type__modifier_8h_source"/>
-        <childnode refid="15" relation="include">
+        <childnode refid="13" relation="include">
         </childnode>
-        <childnode refid="16" relation="include">
+        <childnode refid="14" relation="include">
         </childnode>
       </node>
-      <node id="28">
+      <node id="26">
         <label>cassert</label>
       </node>
-      <node id="22">
+      <node id="20">
         <label>cinttypes</label>
       </node>
-      <node id="25">
+      <node id="23">
         <label>cstdio</label>
       </node>
-      <node id="27">
+      <node id="25">
         <label>cstdlib</label>
       </node>
-      <node id="45">
+      <node id="43">
         <label>cstring</label>
       </node>
-      <node id="39">
+      <node id="37">
         <label>cublas_v2.h</label>
       </node>
       <node id="3">
@@ -318,25 +314,25 @@
       <node id="11">
         <label>cuda_profiler_api.h</label>
       </node>
-      <node id="41">
+      <node id="39">
         <label>cusolver_common.h</label>
       </node>
-      <node id="37">
+      <node id="35">
         <label>cusparse.h</label>
       </node>
-      <node id="48">
+      <node id="46">
         <label>details/event.inl</label>
       </node>
-      <node id="51">
+      <node id="49">
         <label>details/graph_launch.inl</label>
       </node>
-      <node id="50">
+      <node id="48">
         <label>details/launch_base.inl</label>
       </node>
       <node id="6">
         <label>device_launch_parameters.h</label>
       </node>
-      <node id="35">
+      <node id="33">
         <label>exception</label>
       </node>
       <node id="8">
@@ -345,25 +341,19 @@
       <node id="9">
         <label>memory</label>
       </node>
-      <node id="12">
-        <label>nvtx3/nvToolsExt.h</label>
-      </node>
-      <node id="13">
-        <label>nvtx3/nvToolsExtCuda.h</label>
-      </node>
-      <node id="32">
+      <node id="30">
         <label>signal.h</label>
       </node>
       <node id="7">
         <label>string</label>
       </node>
-      <node id="15">
+      <node id="13">
         <label>type_traits</label>
       </node>
-      <node id="42">
+      <node id="40">
         <label>unordered_map</label>
       </node>
-      <node id="44">
+      <node id="42">
         <label>vector</label>
       </node>
     </incdepgraph>
@@ -397,21 +387,21 @@
 <codeline lineno="3"><highlight class="normal"></highlight></codeline>
 <codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">muda</highlight></codeline>
 <codeline lineno="5"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">GraphViewer;</highlight></codeline>
-<codeline lineno="7" refid="classmuda_1_1_graph_launch" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classmuda_1_1_graph_launch" kindref="compound">GraphLaunch</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classmuda_1_1_launch_base" kindref="compound">LaunchBase</ref>&lt;GraphLaunch&gt;</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classmuda_1_1_graph_viewer" kindref="compound">GraphViewer</ref>;</highlight></codeline>
+<codeline lineno="7" refid="classmuda_1_1_graph_launch" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">GraphLaunch<sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>LaunchBase&lt;GraphLaunch&gt;</highlight></codeline>
 <codeline lineno="8"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="9"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classmuda_1_1_graph_launch" kindref="compound">GraphLaunch</ref>(cudaStream_t<sp/>stream<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">)</highlight></codeline>
-<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/><ref refid="classmuda_1_1_launch_base" kindref="compound">LaunchBase</ref>(stream)</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/>GraphLaunch(cudaStream_t<sp/>stream<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>LaunchBase(stream)</highlight></codeline>
 <codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classmuda_1_1_graph_launch" kindref="compound">~GraphLaunch</ref>()<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/>~GraphLaunch()<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="15"><highlight class="normal"></highlight></codeline>
-<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classmuda_1_1_graph_launch" kindref="compound">GraphLaunch</ref>&amp;<sp/>launch(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classmuda_1_1_graph_viewer" kindref="compound">GraphViewer</ref>&amp;<sp/>graph);</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>GraphLaunch&amp;<sp/>launch(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classmuda_1_1_graph_viewer" kindref="compound">GraphViewer</ref>&amp;<sp/>graph);</highlight></codeline>
 <codeline lineno="17"><highlight class="normal">};</highlight></codeline>
 <codeline lineno="18"><highlight class="normal">}<sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>muda</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="19"><highlight class="normal"></highlight></codeline>
-<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;details/graph_launch.inl&quot;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;details/graph_launch.inl&quot;</highlight><highlight class="normal"></highlight></codeline>
     </programlisting>
     <location file="src/muda/graph/graph_launch.h"/>
   </compounddef>

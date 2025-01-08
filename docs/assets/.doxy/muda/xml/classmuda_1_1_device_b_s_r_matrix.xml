@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.1" xml:lang="en-US">
   <compounddef id="classmuda_1_1_device_b_s_r_matrix" kind="class" language="C++" prot="public">
     <compoundname>muda::DeviceBSRMatrix</compoundname>
     <templateparamlist>
@@ -13,12 +13,12 @@
       </param>
     </templateparamlist>
     <sectiondef kind="public-type">
-      <memberdef kind="typedef" id="classmuda_1_1_device_b_s_r_matrix_1a6597820b9cb6b4db645dc648e3264fbb" prot="public" static="no">
-        <type>Eigen::Matrix&lt; Ty, N, N &gt;</type>
-        <definition>using muda::DeviceBSRMatrix&lt; Ty, N &gt;::BlockMatrix =  Eigen::Matrix&lt;Ty, N, N&gt;</definition>
+      <memberdef kind="typedef" id="classmuda_1_1_device_b_s_r_matrix_1aff68c920f21315e1b0aa95eee9800967" prot="public" static="no">
+        <type>std::conditional_t&lt; N==1, Ty, Eigen::Matrix&lt; Ty, N, N &gt; &gt;</type>
+        <definition>using muda::DeviceBSRMatrix&lt; Ty, N &gt;::ValueT =  std::conditional_t&lt;N == 1, Ty, Eigen::Matrix&lt;Ty, N, N&gt;&gt;</definition>
         <argsstring></argsstring>
-        <name>BlockMatrix</name>
-        <qualifiedname>muda::DeviceBSRMatrix::BlockMatrix</qualifiedname>
+        <name>ValueT</name>
+        <qualifiedname>muda::DeviceBSRMatrix::ValueT</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -29,14 +29,24 @@
       </memberdef>
     </sectiondef>
     <sectiondef kind="friend">
-      <memberdef kind="friend" id="classmuda_1_1_device_b_s_r_matrix_1a787db6307f064d5e815fb81a3704cca1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="friend" id="classmuda_1_1_device_b_s_r_matrix_1af08ecf9e5111e729f7c039733b5d98c3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename U</type>
+          </param>
+          <param>
+            <type>int</type>
+            <declname>M</declname>
+            <defname>M</defname>
+          </param>
+        </templateparamlist>
         <type>class</type>
-        <definition>friend class details::MatrixFormatConverter&lt; Ty, N &gt;</definition>
+        <definition>friend class details::MatrixFormatConverter</definition>
         <argsstring></argsstring>
-        <name>details::MatrixFormatConverter&lt; Ty, N &gt;</name>
-        <qualifiedname>muda::DeviceBSRMatrix::MatrixFormatConverter&lt; Ty, N &gt;</qualifiedname>
+        <name>details::MatrixFormatConverter</name>
+        <qualifiedname>muda::DeviceBSRMatrix::MatrixFormatConverter</qualifiedname>
         <param>
-          <type><ref refid="classmuda_1_1details_1_1_matrix_format_converter" kindref="compound">details::MatrixFormatConverter</ref>&lt; Ty, N &gt;</type>
+          <type><ref refid="classmuda_1_1details_1_1_matrix_format_converter" kindref="compound">details::MatrixFormatConverter</ref></type>
         </param>
         <briefdescription>
         </briefdescription>
@@ -44,51 +54,68 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/ext/linear_system/device_bsr_matrix.h" line="1" column="0" bodyfile="src/muda/ext/linear_system/device_bsr_matrix.h" bodystart="17" bodyend="-1"/>
+        <location file="src/muda/ext/linear_system/device_bsr_matrix.h" line="18" column="18" bodyfile="src/muda/ext/linear_system/device_bsr_matrix.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classmuda_1_1_device_b_s_r_matrix_1aaf347ce73ad257a82f023917b9e0f4f0" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>bool</type>
+        <definition>bool muda::DeviceBSRMatrix&lt; Ty, N &gt;::IsBlockMatrix</definition>
+        <argsstring></argsstring>
+        <name>IsBlockMatrix</name>
+        <qualifiedname>muda::DeviceBSRMatrix::IsBlockMatrix</qualifiedname>
+        <initializer>= (N &gt; 1)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/device_bsr_matrix.h" line="22" column="27" bodyfile="src/muda/ext/linear_system/device_bsr_matrix.h" bodystart="22" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="protected-attrib">
-      <memberdef kind="variable" id="classmuda_1_1_device_b_s_r_matrix_1a1e1dbfca0975c5df04b15bf9805644ee" prot="protected" static="no" mutable="no">
-        <type><ref refid="classmuda_1_1_device_buffer" kindref="compound">muda::DeviceBuffer</ref>&lt; BlockMatrix &gt;</type>
-        <definition>muda::DeviceBuffer&lt;BlockMatrix&gt; muda::DeviceBSRMatrix&lt; Ty, N &gt;::m_block_values</definition>
+      <memberdef kind="variable" id="classmuda_1_1_device_b_s_r_matrix_1a1666f08c2b69197f501b7af9685036ee" prot="protected" static="no" mutable="no">
+        <type><ref refid="classmuda_1_1_device_buffer" kindref="compound">muda::DeviceBuffer</ref>&lt; ValueT &gt;</type>
+        <definition>muda::DeviceBuffer&lt;ValueT&gt; muda::DeviceBSRMatrix&lt; Ty, N &gt;::m_values</definition>
         <argsstring></argsstring>
-        <name>m_block_values</name>
-        <qualifiedname>muda::DeviceBSRMatrix::m_block_values</qualifiedname>
+        <name>m_values</name>
+        <qualifiedname>muda::DeviceBSRMatrix::m_values</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/ext/linear_system/device_bsr_matrix.h" line="24" column="24" bodyfile="src/muda/ext/linear_system/device_bsr_matrix.h" bodystart="24" bodyend="-1"/>
+        <location file="src/muda/ext/linear_system/device_bsr_matrix.h" line="25" column="26" bodyfile="src/muda/ext/linear_system/device_bsr_matrix.h" bodystart="25" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="classmuda_1_1_device_b_s_r_matrix_1a5a836799ba2fb99cbadecf30be9abd08" prot="protected" static="no" mutable="no">
+      <memberdef kind="variable" id="classmuda_1_1_device_b_s_r_matrix_1aee7184cf7774f2a572a69209334d4f93" prot="protected" static="no" mutable="no">
         <type><ref refid="classmuda_1_1_device_buffer" kindref="compound">muda::DeviceBuffer</ref>&lt; int &gt;</type>
-        <definition>muda::DeviceBuffer&lt;int&gt; muda::DeviceBSRMatrix&lt; Ty, N &gt;::m_block_row_offsets</definition>
+        <definition>muda::DeviceBuffer&lt;int&gt; muda::DeviceBSRMatrix&lt; Ty, N &gt;::m_row_offsets</definition>
         <argsstring></argsstring>
-        <name>m_block_row_offsets</name>
-        <qualifiedname>muda::DeviceBSRMatrix::m_block_row_offsets</qualifiedname>
+        <name>m_row_offsets</name>
+        <qualifiedname>muda::DeviceBSRMatrix::m_row_offsets</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/ext/linear_system/device_bsr_matrix.h" line="25" column="32" bodyfile="src/muda/ext/linear_system/device_bsr_matrix.h" bodystart="25" bodyend="-1"/>
+        <location file="src/muda/ext/linear_system/device_bsr_matrix.h" line="26" column="29" bodyfile="src/muda/ext/linear_system/device_bsr_matrix.h" bodystart="26" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="classmuda_1_1_device_b_s_r_matrix_1a7b99d1e82acb0a10ba2de3c47c842b0d" prot="protected" static="no" mutable="no">
+      <memberdef kind="variable" id="classmuda_1_1_device_b_s_r_matrix_1a3b6abfddb4ba742e1a0f6d62ccf7ccf8" prot="protected" static="no" mutable="no">
         <type><ref refid="classmuda_1_1_device_buffer" kindref="compound">muda::DeviceBuffer</ref>&lt; int &gt;</type>
-        <definition>muda::DeviceBuffer&lt;int&gt; muda::DeviceBSRMatrix&lt; Ty, N &gt;::m_block_col_indices</definition>
+        <definition>muda::DeviceBuffer&lt;int&gt; muda::DeviceBSRMatrix&lt; Ty, N &gt;::m_col_indices</definition>
         <argsstring></argsstring>
-        <name>m_block_col_indices</name>
-        <qualifiedname>muda::DeviceBSRMatrix::m_block_col_indices</qualifiedname>
+        <name>m_col_indices</name>
+        <qualifiedname>muda::DeviceBSRMatrix::m_col_indices</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/ext/linear_system/device_bsr_matrix.h" line="26" column="32" bodyfile="src/muda/ext/linear_system/device_bsr_matrix.h" bodystart="26" bodyend="-1"/>
+        <location file="src/muda/ext/linear_system/device_bsr_matrix.h" line="27" column="29" bodyfile="src/muda/ext/linear_system/device_bsr_matrix.h" bodystart="27" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classmuda_1_1_device_b_s_r_matrix_1a2c8bc50bcc8afc48795aa974d3f2fae7" prot="protected" static="no" mutable="yes">
         <type>cusparseSpMatDescr_t</type>
@@ -103,7 +130,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/ext/linear_system/device_bsr_matrix.h" line="27" column="37" bodyfile="src/muda/ext/linear_system/device_bsr_matrix.h" bodystart="27" bodyend="-1"/>
+        <location file="src/muda/ext/linear_system/device_bsr_matrix.h" line="28" column="34" bodyfile="src/muda/ext/linear_system/device_bsr_matrix.h" bodystart="28" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classmuda_1_1_device_b_s_r_matrix_1a406d943a5c39237b50613993ec0da7e1" prot="protected" static="no" mutable="yes">
         <type>cusparseMatDescr_t</type>
@@ -118,7 +145,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/ext/linear_system/device_bsr_matrix.h" line="28" column="37" bodyfile="src/muda/ext/linear_system/device_bsr_matrix.h" bodystart="28" bodyend="-1"/>
+        <location file="src/muda/ext/linear_system/device_bsr_matrix.h" line="29" column="34" bodyfile="src/muda/ext/linear_system/device_bsr_matrix.h" bodystart="29" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classmuda_1_1_device_b_s_r_matrix_1a0d4d38a8566e842026bf813dbdc049b7" prot="protected" static="no" mutable="no">
         <type>int</type>
@@ -133,7 +160,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/ext/linear_system/device_bsr_matrix.h" line="30" column="9" bodyfile="src/muda/ext/linear_system/device_bsr_matrix.h" bodystart="30" bodyend="-1"/>
+        <location file="src/muda/ext/linear_system/device_bsr_matrix.h" line="31" column="9" bodyfile="src/muda/ext/linear_system/device_bsr_matrix.h" bodystart="31" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classmuda_1_1_device_b_s_r_matrix_1a186a255308d4481ecd799417ef7f204b" prot="protected" static="no" mutable="no">
         <type>int</type>
@@ -148,7 +175,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/ext/linear_system/device_bsr_matrix.h" line="31" column="9" bodyfile="src/muda/ext/linear_system/device_bsr_matrix.h" bodystart="31" bodyend="-1"/>
+        <location file="src/muda/ext/linear_system/device_bsr_matrix.h" line="32" column="9" bodyfile="src/muda/ext/linear_system/device_bsr_matrix.h" bodystart="32" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-func">
@@ -164,7 +191,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/ext/linear_system/device_bsr_matrix.h" line="34" column="5"/>
+        <location file="src/muda/ext/linear_system/device_bsr_matrix.h" line="35" column="5"/>
       </memberdef>
       <memberdef kind="function" id="classmuda_1_1_device_b_s_r_matrix_1a3293ed4b2cc88a5f6d4c3a04a97c80fb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -178,7 +205,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/ext/linear_system/device_bsr_matrix.h" line="35" column="5"/>
+        <location file="src/muda/ext/linear_system/device_bsr_matrix.h" line="36" column="5"/>
       </memberdef>
       <memberdef kind="function" id="classmuda_1_1_device_b_s_r_matrix_1aeea82bfb6abda68fb538e43deab648dd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -195,7 +222,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/ext/linear_system/device_bsr_matrix.h" line="37" column="5"/>
+        <location file="src/muda/ext/linear_system/device_bsr_matrix.h" line="38" column="5"/>
       </memberdef>
       <memberdef kind="function" id="classmuda_1_1_device_b_s_r_matrix_1a7f63e74b9b913a67fa44f5e4ec20c775" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -212,7 +239,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/ext/linear_system/device_bsr_matrix.h" line="38" column="5"/>
+        <location file="src/muda/ext/linear_system/device_bsr_matrix.h" line="39" column="5"/>
       </memberdef>
       <memberdef kind="function" id="classmuda_1_1_device_b_s_r_matrix_1a97fe2e9de809fc7501d05ca48d29e57d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classmuda_1_1_device_b_s_r_matrix" kindref="compound">DeviceBSRMatrix</ref> &amp;</type>
@@ -229,7 +256,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/ext/linear_system/device_bsr_matrix.h" line="40" column="21"/>
+        <location file="src/muda/ext/linear_system/device_bsr_matrix.h" line="41" column="21"/>
       </memberdef>
       <memberdef kind="function" id="classmuda_1_1_device_b_s_r_matrix_1a88ddec13637d4d5e6658b428849d4105" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classmuda_1_1_device_b_s_r_matrix" kindref="compound">DeviceBSRMatrix</ref> &amp;</type>
@@ -246,7 +273,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/ext/linear_system/device_bsr_matrix.h" line="41" column="21"/>
+        <location file="src/muda/ext/linear_system/device_bsr_matrix.h" line="42" column="21"/>
       </memberdef>
       <memberdef kind="function" id="classmuda_1_1_device_b_s_r_matrix_1a94462831da5ffb39348853b75446ad5a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -268,7 +295,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/ext/linear_system/device_bsr_matrix.h" line="43" column="10"/>
+        <location file="src/muda/ext/linear_system/device_bsr_matrix.h" line="44" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classmuda_1_1_device_b_s_r_matrix_1aadcf52d89c862809f56b6519a31e35d9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -286,7 +313,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/ext/linear_system/device_bsr_matrix.h" line="44" column="10"/>
+        <location file="src/muda/ext/linear_system/device_bsr_matrix.h" line="45" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classmuda_1_1_device_b_s_r_matrix_1a3a86540df6be4c3df83c7b9702752bd7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -304,7 +331,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/ext/linear_system/device_bsr_matrix.h" line="45" column="10"/>
+        <location file="src/muda/ext/linear_system/device_bsr_matrix.h" line="46" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classmuda_1_1_device_b_s_r_matrix_1af1e0e6abca71f4d2b5052de1d866d982" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -322,28 +349,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/ext/linear_system/device_bsr_matrix.h" line="46" column="10"/>
+        <location file="src/muda/ext/linear_system/device_bsr_matrix.h" line="47" column="10"/>
       </memberdef>
-      <memberdef kind="function" id="classmuda_1_1_device_b_s_r_matrix_1a82a473568b6ef6c2af22582d5a31c93a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+      <memberdef kind="function" id="classmuda_1_1_device_b_s_r_matrix_1adf12df697c998140d4cb8c4fec5568d1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>auto</type>
-        <definition>auto muda::DeviceBSRMatrix&lt; Ty, N &gt;::block_values</definition>
+        <definition>auto muda::DeviceBSRMatrix&lt; Ty, N &gt;::values</definition>
         <argsstring>()</argsstring>
-        <name>block_values</name>
-        <qualifiedname>muda::DeviceBSRMatrix::block_values</qualifiedname>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="src/muda/ext/linear_system/device_bsr_matrix.h" line="50" column="10" bodyfile="src/muda/ext/linear_system/device_bsr_matrix.h" bodystart="50" bodyend="50"/>
-      </memberdef>
-      <memberdef kind="function" id="classmuda_1_1_device_b_s_r_matrix_1af19795d20badf0394d92030fe61c6958" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
-        <type>auto</type>
-        <definition>auto muda::DeviceBSRMatrix&lt; Ty, N &gt;::block_values</definition>
-        <argsstring>() const</argsstring>
-        <name>block_values</name>
-        <qualifiedname>muda::DeviceBSRMatrix::block_values</qualifiedname>
+        <name>values</name>
+        <qualifiedname>muda::DeviceBSRMatrix::values</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -352,26 +365,26 @@
         </inbodydescription>
         <location file="src/muda/ext/linear_system/device_bsr_matrix.h" line="51" column="10" bodyfile="src/muda/ext/linear_system/device_bsr_matrix.h" bodystart="51" bodyend="51"/>
       </memberdef>
-      <memberdef kind="function" id="classmuda_1_1_device_b_s_r_matrix_1a0f0e9433d564ac26c426f15848165d4f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+      <memberdef kind="function" id="classmuda_1_1_device_b_s_r_matrix_1a755acbcda87681022b9c779441ebf508" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>auto</type>
-        <definition>auto muda::DeviceBSRMatrix&lt; Ty, N &gt;::block_row_offsets</definition>
-        <argsstring>()</argsstring>
-        <name>block_row_offsets</name>
-        <qualifiedname>muda::DeviceBSRMatrix::block_row_offsets</qualifiedname>
+        <definition>auto muda::DeviceBSRMatrix&lt; Ty, N &gt;::values</definition>
+        <argsstring>() const</argsstring>
+        <name>values</name>
+        <qualifiedname>muda::DeviceBSRMatrix::values</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/ext/linear_system/device_bsr_matrix.h" line="53" column="10" bodyfile="src/muda/ext/linear_system/device_bsr_matrix.h" bodystart="53" bodyend="53"/>
+        <location file="src/muda/ext/linear_system/device_bsr_matrix.h" line="52" column="10" bodyfile="src/muda/ext/linear_system/device_bsr_matrix.h" bodystart="52" bodyend="52"/>
       </memberdef>
-      <memberdef kind="function" id="classmuda_1_1_device_b_s_r_matrix_1a572a9d109f37ae5284201dd98de4745f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+      <memberdef kind="function" id="classmuda_1_1_device_b_s_r_matrix_1a72ab5ff89f336c631c02e5422f119ade" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>auto</type>
-        <definition>auto muda::DeviceBSRMatrix&lt; Ty, N &gt;::block_row_offsets</definition>
-        <argsstring>() const</argsstring>
-        <name>block_row_offsets</name>
-        <qualifiedname>muda::DeviceBSRMatrix::block_row_offsets</qualifiedname>
+        <definition>auto muda::DeviceBSRMatrix&lt; Ty, N &gt;::row_offsets</definition>
+        <argsstring>()</argsstring>
+        <name>row_offsets</name>
+        <qualifiedname>muda::DeviceBSRMatrix::row_offsets</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -380,26 +393,26 @@
         </inbodydescription>
         <location file="src/muda/ext/linear_system/device_bsr_matrix.h" line="54" column="10" bodyfile="src/muda/ext/linear_system/device_bsr_matrix.h" bodystart="54" bodyend="54"/>
       </memberdef>
-      <memberdef kind="function" id="classmuda_1_1_device_b_s_r_matrix_1ae56d136e4a7dcf9afd3d518bea0bf942" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+      <memberdef kind="function" id="classmuda_1_1_device_b_s_r_matrix_1ab30d3e7456bfb678da50608a944b3d8d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>auto</type>
-        <definition>auto muda::DeviceBSRMatrix&lt; Ty, N &gt;::block_col_indices</definition>
-        <argsstring>()</argsstring>
-        <name>block_col_indices</name>
-        <qualifiedname>muda::DeviceBSRMatrix::block_col_indices</qualifiedname>
+        <definition>auto muda::DeviceBSRMatrix&lt; Ty, N &gt;::row_offsets</definition>
+        <argsstring>() const</argsstring>
+        <name>row_offsets</name>
+        <qualifiedname>muda::DeviceBSRMatrix::row_offsets</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/ext/linear_system/device_bsr_matrix.h" line="56" column="10" bodyfile="src/muda/ext/linear_system/device_bsr_matrix.h" bodystart="56" bodyend="56"/>
+        <location file="src/muda/ext/linear_system/device_bsr_matrix.h" line="55" column="10" bodyfile="src/muda/ext/linear_system/device_bsr_matrix.h" bodystart="55" bodyend="55"/>
       </memberdef>
-      <memberdef kind="function" id="classmuda_1_1_device_b_s_r_matrix_1a8a7f8e622ffac3a224461c93621c5214" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+      <memberdef kind="function" id="classmuda_1_1_device_b_s_r_matrix_1a7f6cba023f7f427ee7bf3219ffe6f8a3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>auto</type>
-        <definition>auto muda::DeviceBSRMatrix&lt; Ty, N &gt;::block_col_indices</definition>
-        <argsstring>() const</argsstring>
-        <name>block_col_indices</name>
-        <qualifiedname>muda::DeviceBSRMatrix::block_col_indices</qualifiedname>
+        <definition>auto muda::DeviceBSRMatrix&lt; Ty, N &gt;::col_indices</definition>
+        <argsstring>()</argsstring>
+        <name>col_indices</name>
+        <qualifiedname>muda::DeviceBSRMatrix::col_indices</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -408,26 +421,26 @@
         </inbodydescription>
         <location file="src/muda/ext/linear_system/device_bsr_matrix.h" line="57" column="10" bodyfile="src/muda/ext/linear_system/device_bsr_matrix.h" bodystart="57" bodyend="57"/>
       </memberdef>
-      <memberdef kind="function" id="classmuda_1_1_device_b_s_r_matrix_1a4787b7473ee35ea09840be88d9f23490" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+      <memberdef kind="function" id="classmuda_1_1_device_b_s_r_matrix_1aa7fb8dca4ced42f60586188c90ea4486" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>auto</type>
-        <definition>auto muda::DeviceBSRMatrix&lt; Ty, N &gt;::block_rows</definition>
+        <definition>auto muda::DeviceBSRMatrix&lt; Ty, N &gt;::col_indices</definition>
         <argsstring>() const</argsstring>
-        <name>block_rows</name>
-        <qualifiedname>muda::DeviceBSRMatrix::block_rows</qualifiedname>
+        <name>col_indices</name>
+        <qualifiedname>muda::DeviceBSRMatrix::col_indices</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/ext/linear_system/device_bsr_matrix.h" line="59" column="10" bodyfile="src/muda/ext/linear_system/device_bsr_matrix.h" bodystart="59" bodyend="59"/>
+        <location file="src/muda/ext/linear_system/device_bsr_matrix.h" line="58" column="10" bodyfile="src/muda/ext/linear_system/device_bsr_matrix.h" bodystart="58" bodyend="58"/>
       </memberdef>
-      <memberdef kind="function" id="classmuda_1_1_device_b_s_r_matrix_1a012dc1a1c6dc371f1cd75c60d9a0d339" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+      <memberdef kind="function" id="classmuda_1_1_device_b_s_r_matrix_1a996a7636acabfbfdd856623fa549268f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>auto</type>
-        <definition>auto muda::DeviceBSRMatrix&lt; Ty, N &gt;::block_cols</definition>
+        <definition>auto muda::DeviceBSRMatrix&lt; Ty, N &gt;::rows</definition>
         <argsstring>() const</argsstring>
-        <name>block_cols</name>
-        <qualifiedname>muda::DeviceBSRMatrix::block_cols</qualifiedname>
+        <name>rows</name>
+        <qualifiedname>muda::DeviceBSRMatrix::rows</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -436,12 +449,12 @@
         </inbodydescription>
         <location file="src/muda/ext/linear_system/device_bsr_matrix.h" line="60" column="10" bodyfile="src/muda/ext/linear_system/device_bsr_matrix.h" bodystart="60" bodyend="60"/>
       </memberdef>
-      <memberdef kind="function" id="classmuda_1_1_device_b_s_r_matrix_1ad611ea035312a5fbf0673443cd3b8876" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+      <memberdef kind="function" id="classmuda_1_1_device_b_s_r_matrix_1a9f0b1de222944bb08cead26bab64a450" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>auto</type>
-        <definition>auto muda::DeviceBSRMatrix&lt; Ty, N &gt;::non_zero_blocks</definition>
+        <definition>auto muda::DeviceBSRMatrix&lt; Ty, N &gt;::cols</definition>
         <argsstring>() const</argsstring>
-        <name>non_zero_blocks</name>
-        <qualifiedname>muda::DeviceBSRMatrix::non_zero_blocks</qualifiedname>
+        <name>cols</name>
+        <qualifiedname>muda::DeviceBSRMatrix::cols</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -449,6 +462,20 @@
         <inbodydescription>
         </inbodydescription>
         <location file="src/muda/ext/linear_system/device_bsr_matrix.h" line="61" column="10" bodyfile="src/muda/ext/linear_system/device_bsr_matrix.h" bodystart="61" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_device_b_s_r_matrix_1ae9973e4ff60f9777179e70c4db3039b3" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto muda::DeviceBSRMatrix&lt; Ty, N &gt;::non_zeros</definition>
+        <argsstring>() const</argsstring>
+        <name>non_zeros</name>
+        <qualifiedname>muda::DeviceBSRMatrix::non_zeros</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/device_bsr_matrix.h" line="62" column="10" bodyfile="src/muda/ext/linear_system/device_bsr_matrix.h" bodystart="62" bodyend="62"/>
       </memberdef>
       <memberdef kind="function" id="classmuda_1_1_device_b_s_r_matrix_1ae3c287dd969b5c2afe2f4ac03f3f45fa" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>cusparseSpMatDescr_t</type>
@@ -462,7 +489,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/ext/linear_system/device_bsr_matrix.h" line="63" column="26"/>
+        <location file="src/muda/ext/linear_system/device_bsr_matrix.h" line="64" column="26"/>
       </memberdef>
       <memberdef kind="function" id="classmuda_1_1_device_b_s_r_matrix_1a0685f4d9b41ec47aa76680ce776ae6a1" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>cusparseMatDescr_t</type>
@@ -476,7 +503,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/ext/linear_system/device_bsr_matrix.h" line="64" column="26"/>
+        <location file="src/muda/ext/linear_system/device_bsr_matrix.h" line="65" column="26"/>
       </memberdef>
       <memberdef kind="function" id="classmuda_1_1_device_b_s_r_matrix_1a584d3d407019249087a90ba4bcaa6b9c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>auto</type>
@@ -490,7 +517,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/ext/linear_system/device_bsr_matrix.h" line="66" column="10" bodyfile="src/muda/ext/linear_system/device_bsr_matrix.h" bodystart="66" bodyend="77"/>
+        <location file="src/muda/ext/linear_system/device_bsr_matrix.h" line="67" column="10" bodyfile="src/muda/ext/linear_system/device_bsr_matrix.h" bodystart="67" bodyend="78"/>
       </memberdef>
       <memberdef kind="function" id="classmuda_1_1_device_b_s_r_matrix_1aac07e0f6ba15d7e43941806601e90ed7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
@@ -504,7 +531,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/ext/linear_system/device_bsr_matrix.h" line="79" column="5" bodyfile="src/muda/ext/linear_system/device_bsr_matrix.h" bodystart="79" bodyend="79"/>
+        <location file="src/muda/ext/linear_system/device_bsr_matrix.h" line="80" column="5" bodyfile="src/muda/ext/linear_system/device_bsr_matrix.h" bodystart="80" bodyend="80"/>
       </memberdef>
       <memberdef kind="function" id="classmuda_1_1_device_b_s_r_matrix_1abbb54d9ce2bec1ebe0f72a740cc5ee1e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>auto</type>
@@ -518,7 +545,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/ext/linear_system/device_bsr_matrix.h" line="81" column="10" bodyfile="src/muda/ext/linear_system/device_bsr_matrix.h" bodystart="81" bodyend="92"/>
+        <location file="src/muda/ext/linear_system/device_bsr_matrix.h" line="82" column="10" bodyfile="src/muda/ext/linear_system/device_bsr_matrix.h" bodystart="82" bodyend="93"/>
       </memberdef>
       <memberdef kind="function" id="classmuda_1_1_device_b_s_r_matrix_1ac5f924b2043032f39f1b790cc0a666b8" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
@@ -532,7 +559,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/ext/linear_system/device_bsr_matrix.h" line="94" column="5" bodyfile="src/muda/ext/linear_system/device_bsr_matrix.h" bodystart="94" bodyend="94"/>
+        <location file="src/muda/ext/linear_system/device_bsr_matrix.h" line="95" column="5" bodyfile="src/muda/ext/linear_system/device_bsr_matrix.h" bodystart="95" bodyend="95"/>
       </memberdef>
       <memberdef kind="function" id="classmuda_1_1_device_b_s_r_matrix_1ae35eebced3f9198ce8862428fa6735cd" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>auto</type>
@@ -546,7 +573,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/ext/linear_system/device_bsr_matrix.h" line="96" column="10" bodyfile="src/muda/ext/linear_system/device_bsr_matrix.h" bodystart="96" bodyend="96"/>
+        <location file="src/muda/ext/linear_system/device_bsr_matrix.h" line="97" column="10" bodyfile="src/muda/ext/linear_system/device_bsr_matrix.h" bodystart="97" bodyend="97"/>
       </memberdef>
       <memberdef kind="function" id="classmuda_1_1_device_b_s_r_matrix_1a408139cd9427e5b04837c2af83ee12fa" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>auto</type>
@@ -560,7 +587,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/ext/linear_system/device_bsr_matrix.h" line="98" column="10" bodyfile="src/muda/ext/linear_system/device_bsr_matrix.h" bodystart="98" bodyend="98"/>
+        <location file="src/muda/ext/linear_system/device_bsr_matrix.h" line="99" column="10" bodyfile="src/muda/ext/linear_system/device_bsr_matrix.h" bodystart="99" bodyend="99"/>
       </memberdef>
       <memberdef kind="function" id="classmuda_1_1_device_b_s_r_matrix_1ab455a69d8f04d4dc351ad9e6a8b5e785" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>auto</type>
@@ -574,7 +601,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/ext/linear_system/device_bsr_matrix.h" line="99" column="10" bodyfile="src/muda/ext/linear_system/device_bsr_matrix.h" bodystart="99" bodyend="99"/>
+        <location file="src/muda/ext/linear_system/device_bsr_matrix.h" line="100" column="10" bodyfile="src/muda/ext/linear_system/device_bsr_matrix.h" bodystart="100" bodyend="100"/>
       </memberdef>
       <memberdef kind="function" id="classmuda_1_1_device_b_s_r_matrix_1ad089ad2f2bb075d7b43b4d5c6983a067" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -588,12 +615,12 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/ext/linear_system/device_bsr_matrix.h" line="101" column="10"/>
+        <location file="src/muda/ext/linear_system/device_bsr_matrix.h" line="102" column="10"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-static-func">
       <memberdef kind="function" id="classmuda_1_1_device_b_s_r_matrix_1ae62c61ac452a76bebc9f87ad8255f6c1" prot="public" static="yes" constexpr="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>constexpr int</type>
+        <type>int</type>
         <definition>static constexpr int muda::DeviceBSRMatrix&lt; Ty, N &gt;::block_size</definition>
         <argsstring>()</argsstring>
         <name>block_size</name>
@@ -604,7 +631,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/ext/linear_system/device_bsr_matrix.h" line="48" column="26" bodyfile="src/muda/ext/linear_system/device_bsr_matrix.h" bodystart="48" bodyend="48"/>
+        <location file="src/muda/ext/linear_system/device_bsr_matrix.h" line="49" column="26" bodyfile="src/muda/ext/linear_system/device_bsr_matrix.h" bodystart="49" bodyend="49"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="private-func">
@@ -620,7 +647,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/ext/linear_system/device_bsr_matrix.h" line="104" column="10"/>
+        <location file="src/muda/ext/linear_system/device_bsr_matrix.h" line="105" column="10"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -628,55 +655,50 @@
     <detaileddescription>
     </detaileddescription>
     <collaborationgraph>
+      <node id="1">
+        <label>muda::DeviceBSRMatrix&lt; Ty, N &gt;</label>
+        <link refid="classmuda_1_1_device_b_s_r_matrix"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>m_values</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>m_col_indices</edgelabel>
+          <edgelabel>m_row_offsets</edgelabel>
+        </childnode>
+      </node>
       <node id="2">
-        <label>muda::DeviceBuffer&lt; BlockMatrix &gt;</label>
+        <label>muda::DeviceBuffer&lt; ValueT &gt;</label>
         <link refid="classmuda_1_1_device_buffer"/>
       </node>
       <node id="3">
         <label>muda::DeviceBuffer&lt; int &gt;</label>
         <link refid="classmuda_1_1_device_buffer"/>
       </node>
-      <node id="1">
-        <label>muda::DeviceBSRMatrix&lt; Ty, N &gt;</label>
-        <link refid="classmuda_1_1_device_b_s_r_matrix"/>
-        <childnode refid="2" relation="usage">
-          <edgelabel>m_block_values</edgelabel>
-        </childnode>
-        <childnode refid="3" relation="usage">
-          <edgelabel>m_block_col_indices</edgelabel>
-          <edgelabel>m_block_row_offsets</edgelabel>
-        </childnode>
-      </node>
     </collaborationgraph>
-    <location file="src/muda/ext/linear_system/device_bsr_matrix.h" line="15" column="1" bodyfile="src/muda/ext/linear_system/device_bsr_matrix.h" bodystart="16" bodyend="105"/>
+    <location file="src/muda/ext/linear_system/device_bsr_matrix.h" line="15" column="1" bodyfile="src/muda/ext/linear_system/device_bsr_matrix.h" bodystart="16" bodyend="106"/>
     <listofallmembers>
-      <member refid="classmuda_1_1_device_b_s_r_matrix_1ae56d136e4a7dcf9afd3d518bea0bf942" prot="public" virt="non-virtual"><scope>muda::DeviceBSRMatrix</scope><name>block_col_indices</name></member>
-      <member refid="classmuda_1_1_device_b_s_r_matrix_1a8a7f8e622ffac3a224461c93621c5214" prot="public" virt="non-virtual"><scope>muda::DeviceBSRMatrix</scope><name>block_col_indices</name></member>
-      <member refid="classmuda_1_1_device_b_s_r_matrix_1a012dc1a1c6dc371f1cd75c60d9a0d339" prot="public" virt="non-virtual"><scope>muda::DeviceBSRMatrix</scope><name>block_cols</name></member>
-      <member refid="classmuda_1_1_device_b_s_r_matrix_1a0f0e9433d564ac26c426f15848165d4f" prot="public" virt="non-virtual"><scope>muda::DeviceBSRMatrix</scope><name>block_row_offsets</name></member>
-      <member refid="classmuda_1_1_device_b_s_r_matrix_1a572a9d109f37ae5284201dd98de4745f" prot="public" virt="non-virtual"><scope>muda::DeviceBSRMatrix</scope><name>block_row_offsets</name></member>
-      <member refid="classmuda_1_1_device_b_s_r_matrix_1a4787b7473ee35ea09840be88d9f23490" prot="public" virt="non-virtual"><scope>muda::DeviceBSRMatrix</scope><name>block_rows</name></member>
       <member refid="classmuda_1_1_device_b_s_r_matrix_1ae62c61ac452a76bebc9f87ad8255f6c1" prot="public" virt="non-virtual"><scope>muda::DeviceBSRMatrix</scope><name>block_size</name></member>
-      <member refid="classmuda_1_1_device_b_s_r_matrix_1a82a473568b6ef6c2af22582d5a31c93a" prot="public" virt="non-virtual"><scope>muda::DeviceBSRMatrix</scope><name>block_values</name></member>
-      <member refid="classmuda_1_1_device_b_s_r_matrix_1af19795d20badf0394d92030fe61c6958" prot="public" virt="non-virtual"><scope>muda::DeviceBSRMatrix</scope><name>block_values</name></member>
-      <member refid="classmuda_1_1_device_b_s_r_matrix_1a6597820b9cb6b4db645dc648e3264fbb" prot="public" virt="non-virtual"><scope>muda::DeviceBSRMatrix</scope><name>BlockMatrix</name></member>
       <member refid="classmuda_1_1_device_b_s_r_matrix_1ad089ad2f2bb075d7b43b4d5c6983a067" prot="public" virt="non-virtual"><scope>muda::DeviceBSRMatrix</scope><name>clear</name></member>
+      <member refid="classmuda_1_1_device_b_s_r_matrix_1a7f6cba023f7f427ee7bf3219ffe6f8a3" prot="public" virt="non-virtual"><scope>muda::DeviceBSRMatrix</scope><name>col_indices</name></member>
+      <member refid="classmuda_1_1_device_b_s_r_matrix_1aa7fb8dca4ced42f60586188c90ea4486" prot="public" virt="non-virtual"><scope>muda::DeviceBSRMatrix</scope><name>col_indices</name></member>
+      <member refid="classmuda_1_1_device_b_s_r_matrix_1a9f0b1de222944bb08cead26bab64a450" prot="public" virt="non-virtual"><scope>muda::DeviceBSRMatrix</scope><name>cols</name></member>
       <member refid="classmuda_1_1_device_b_s_r_matrix_1ae35eebced3f9198ce8862428fa6735cd" prot="public" virt="non-virtual"><scope>muda::DeviceBSRMatrix</scope><name>cview</name></member>
       <member refid="classmuda_1_1_device_b_s_r_matrix_1ae3c287dd969b5c2afe2f4ac03f3f45fa" prot="public" virt="non-virtual"><scope>muda::DeviceBSRMatrix</scope><name>descr</name></member>
       <member refid="classmuda_1_1_device_b_s_r_matrix_1a3788af6c7f23e0d439b16632a4813e82" prot="private" virt="non-virtual"><scope>muda::DeviceBSRMatrix</scope><name>destroy_all_descr</name></member>
-      <member refid="classmuda_1_1_device_b_s_r_matrix_1a787db6307f064d5e815fb81a3704cca1" prot="public" virt="non-virtual"><scope>muda::DeviceBSRMatrix</scope><name>details::MatrixFormatConverter&lt; Ty, N &gt;</name></member>
+      <member refid="classmuda_1_1_device_b_s_r_matrix_1af08ecf9e5111e729f7c039733b5d98c3" prot="public" virt="non-virtual"><scope>muda::DeviceBSRMatrix</scope><name>details::MatrixFormatConverter</name></member>
       <member refid="classmuda_1_1_device_b_s_r_matrix_1aad0a1291bd4e092ec67603d1e675eb09" prot="public" virt="non-virtual"><scope>muda::DeviceBSRMatrix</scope><name>DeviceBSRMatrix</name></member>
       <member refid="classmuda_1_1_device_b_s_r_matrix_1aeea82bfb6abda68fb538e43deab648dd" prot="public" virt="non-virtual"><scope>muda::DeviceBSRMatrix</scope><name>DeviceBSRMatrix</name></member>
       <member refid="classmuda_1_1_device_b_s_r_matrix_1a7f63e74b9b913a67fa44f5e4ec20c775" prot="public" virt="non-virtual"><scope>muda::DeviceBSRMatrix</scope><name>DeviceBSRMatrix</name></member>
+      <member refid="classmuda_1_1_device_b_s_r_matrix_1aaf347ce73ad257a82f023917b9e0f4f0" prot="public" virt="non-virtual"><scope>muda::DeviceBSRMatrix</scope><name>IsBlockMatrix</name></member>
       <member refid="classmuda_1_1_device_b_s_r_matrix_1a0685f4d9b41ec47aa76680ce776ae6a1" prot="public" virt="non-virtual"><scope>muda::DeviceBSRMatrix</scope><name>legacy_descr</name></member>
-      <member refid="classmuda_1_1_device_b_s_r_matrix_1a7b99d1e82acb0a10ba2de3c47c842b0d" prot="protected" virt="non-virtual"><scope>muda::DeviceBSRMatrix</scope><name>m_block_col_indices</name></member>
-      <member refid="classmuda_1_1_device_b_s_r_matrix_1a5a836799ba2fb99cbadecf30be9abd08" prot="protected" virt="non-virtual"><scope>muda::DeviceBSRMatrix</scope><name>m_block_row_offsets</name></member>
-      <member refid="classmuda_1_1_device_b_s_r_matrix_1a1e1dbfca0975c5df04b15bf9805644ee" prot="protected" virt="non-virtual"><scope>muda::DeviceBSRMatrix</scope><name>m_block_values</name></member>
       <member refid="classmuda_1_1_device_b_s_r_matrix_1a186a255308d4481ecd799417ef7f204b" prot="protected" virt="non-virtual"><scope>muda::DeviceBSRMatrix</scope><name>m_col</name></member>
+      <member refid="classmuda_1_1_device_b_s_r_matrix_1a3b6abfddb4ba742e1a0f6d62ccf7ccf8" prot="protected" virt="non-virtual"><scope>muda::DeviceBSRMatrix</scope><name>m_col_indices</name></member>
       <member refid="classmuda_1_1_device_b_s_r_matrix_1a2c8bc50bcc8afc48795aa974d3f2fae7" prot="protected" virt="non-virtual"><scope>muda::DeviceBSRMatrix</scope><name>m_descr</name></member>
       <member refid="classmuda_1_1_device_b_s_r_matrix_1a406d943a5c39237b50613993ec0da7e1" prot="protected" virt="non-virtual"><scope>muda::DeviceBSRMatrix</scope><name>m_legacy_descr</name></member>
       <member refid="classmuda_1_1_device_b_s_r_matrix_1a0d4d38a8566e842026bf813dbdc049b7" prot="protected" virt="non-virtual"><scope>muda::DeviceBSRMatrix</scope><name>m_row</name></member>
-      <member refid="classmuda_1_1_device_b_s_r_matrix_1ad611ea035312a5fbf0673443cd3b8876" prot="public" virt="non-virtual"><scope>muda::DeviceBSRMatrix</scope><name>non_zero_blocks</name></member>
+      <member refid="classmuda_1_1_device_b_s_r_matrix_1aee7184cf7774f2a572a69209334d4f93" prot="protected" virt="non-virtual"><scope>muda::DeviceBSRMatrix</scope><name>m_row_offsets</name></member>
+      <member refid="classmuda_1_1_device_b_s_r_matrix_1a1666f08c2b69197f501b7af9685036ee" prot="protected" virt="non-virtual"><scope>muda::DeviceBSRMatrix</scope><name>m_values</name></member>
+      <member refid="classmuda_1_1_device_b_s_r_matrix_1ae9973e4ff60f9777179e70c4db3039b3" prot="public" virt="non-virtual"><scope>muda::DeviceBSRMatrix</scope><name>non_zeros</name></member>
       <member refid="classmuda_1_1_device_b_s_r_matrix_1aac07e0f6ba15d7e43941806601e90ed7" prot="public" virt="non-virtual"><scope>muda::DeviceBSRMatrix</scope><name>operator BSRMatrixView&lt; Ty, N &gt;</name></member>
       <member refid="classmuda_1_1_device_b_s_r_matrix_1ac5f924b2043032f39f1b790cc0a666b8" prot="public" virt="non-virtual"><scope>muda::DeviceBSRMatrix</scope><name>operator CBSRMatrixView&lt; Ty, N &gt;</name></member>
       <member refid="classmuda_1_1_device_b_s_r_matrix_1a97fe2e9de809fc7501d05ca48d29e57d" prot="public" virt="non-virtual"><scope>muda::DeviceBSRMatrix</scope><name>operator=</name></member>
@@ -685,8 +707,14 @@
       <member refid="classmuda_1_1_device_b_s_r_matrix_1a3a86540df6be4c3df83c7b9702752bd7" prot="public" virt="non-virtual"><scope>muda::DeviceBSRMatrix</scope><name>reserve_offsets</name></member>
       <member refid="classmuda_1_1_device_b_s_r_matrix_1a94462831da5ffb39348853b75446ad5a" prot="public" virt="non-virtual"><scope>muda::DeviceBSRMatrix</scope><name>reshape</name></member>
       <member refid="classmuda_1_1_device_b_s_r_matrix_1af1e0e6abca71f4d2b5052de1d866d982" prot="public" virt="non-virtual"><scope>muda::DeviceBSRMatrix</scope><name>resize</name></member>
+      <member refid="classmuda_1_1_device_b_s_r_matrix_1a72ab5ff89f336c631c02e5422f119ade" prot="public" virt="non-virtual"><scope>muda::DeviceBSRMatrix</scope><name>row_offsets</name></member>
+      <member refid="classmuda_1_1_device_b_s_r_matrix_1ab30d3e7456bfb678da50608a944b3d8d" prot="public" virt="non-virtual"><scope>muda::DeviceBSRMatrix</scope><name>row_offsets</name></member>
+      <member refid="classmuda_1_1_device_b_s_r_matrix_1a996a7636acabfbfdd856623fa549268f" prot="public" virt="non-virtual"><scope>muda::DeviceBSRMatrix</scope><name>rows</name></member>
       <member refid="classmuda_1_1_device_b_s_r_matrix_1a408139cd9427e5b04837c2af83ee12fa" prot="public" virt="non-virtual"><scope>muda::DeviceBSRMatrix</scope><name>T</name></member>
       <member refid="classmuda_1_1_device_b_s_r_matrix_1ab455a69d8f04d4dc351ad9e6a8b5e785" prot="public" virt="non-virtual"><scope>muda::DeviceBSRMatrix</scope><name>T</name></member>
+      <member refid="classmuda_1_1_device_b_s_r_matrix_1adf12df697c998140d4cb8c4fec5568d1" prot="public" virt="non-virtual"><scope>muda::DeviceBSRMatrix</scope><name>values</name></member>
+      <member refid="classmuda_1_1_device_b_s_r_matrix_1a755acbcda87681022b9c779441ebf508" prot="public" virt="non-virtual"><scope>muda::DeviceBSRMatrix</scope><name>values</name></member>
+      <member refid="classmuda_1_1_device_b_s_r_matrix_1aff68c920f21315e1b0aa95eee9800967" prot="public" virt="non-virtual"><scope>muda::DeviceBSRMatrix</scope><name>ValueT</name></member>
       <member refid="classmuda_1_1_device_b_s_r_matrix_1a584d3d407019249087a90ba4bcaa6b9c" prot="public" virt="non-virtual"><scope>muda::DeviceBSRMatrix</scope><name>view</name></member>
       <member refid="classmuda_1_1_device_b_s_r_matrix_1abbb54d9ce2bec1ebe0f72a740cc5ee1e" prot="public" virt="non-virtual"><scope>muda::DeviceBSRMatrix</scope><name>view</name></member>
       <member refid="classmuda_1_1_device_b_s_r_matrix_1a3293ed4b2cc88a5f6d4c3a04a97c80fb" prot="public" virt="non-virtual"><scope>muda::DeviceBSRMatrix</scope><name>~DeviceBSRMatrix</name></member>

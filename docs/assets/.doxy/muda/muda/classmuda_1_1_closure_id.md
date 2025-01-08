@@ -55,7 +55,7 @@ See [muda::IdWithType](classmuda_1_1_id_with_type.md)
 
 | Type | Name |
 | ---: | :--- |
-|  constexpr auto | [**invalid\_id**](classmuda_1_1_id_with_type.md#variable-invalid_id)   = = std::numeric\_limits&lt;value\_type&gt;::max()<br> |
+|  auto | [**invalid\_id**](classmuda_1_1_id_with_type.md#variable-invalid_id)   = = std::numeric\_limits&lt;value\_type&gt;::max()<br> |
 
 
 

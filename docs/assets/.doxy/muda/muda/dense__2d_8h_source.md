@@ -181,13 +181,13 @@ using CDense2D = Dense2DBase<true, T>;
 
 // viewer traits
 template <typename T>
-struct read_only_viewer<Dense2D<T>>
+struct read_only_view<Dense2D<T>>
 {
     using type = CDense2D<T>;
 };
 
 template <typename T>
-struct read_write_viewer<CDense2D<T>>
+struct read_write_view<CDense2D<T>>
 {
     using type = Dense2D<T>;
 };

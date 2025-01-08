@@ -40,7 +40,6 @@
 | Type | Name |
 | ---: | :--- |
 | class | [**DeviceDoubletVector**](classmuda_1_1_device_doublet_vector.md) &lt;typename T, N&gt;<br> |
-| class | [**DeviceDoubletVector&lt; T, 1 &gt;**](classmuda_1_1_device_doublet_vector_3_01_t_00_011_01_4.md) &lt;typename T&gt;<br> |
 
 
 

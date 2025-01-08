@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.1" xml:lang="en-US">
   <compounddef id="parallel__for_8h" kind="file" language="C++">
     <compoundname>parallel_for.h</compoundname>
     <includes refid="launch__base_8h" local="no">muda/launch/launch_base.h</includes>
@@ -11,15 +11,15 @@
     <includedby refid="sparse__spatial__hash__impl_8h" local="no">src/muda/ext/geo/spatial_hash/sparse_spatial_hash_impl.h</includedby>
     <includedby refid="launch_8h" local="no">src/muda/launch.h</includedby>
     <incdepgraph>
-      <node id="30">
+      <node id="28">
         <label>muda/assert.h</label>
         <link refid="assert_8h_source"/>
-        <childnode refid="16" relation="include">
+        <childnode refid="14" relation="include">
         </childnode>
-        <childnode refid="31" relation="include">
+        <childnode refid="29" relation="include">
         </childnode>
       </node>
-      <node id="24">
+      <node id="22">
         <label>muda/check/check.h</label>
         <link refid="check_8h_source"/>
         <childnode refid="3" relation="include">
@@ -28,51 +28,51 @@
         </childnode>
         <childnode refid="5" relation="include">
         </childnode>
-        <childnode refid="25" relation="include">
+        <childnode refid="23" relation="include">
         </childnode>
-        <childnode refid="16" relation="include">
+        <childnode refid="14" relation="include">
         </childnode>
-        <childnode refid="26" relation="include">
+        <childnode refid="24" relation="include">
         </childnode>
-        <childnode refid="34" relation="include">
+        <childnode refid="32" relation="include">
         </childnode>
         <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
         </childnode>
         <childnode refid="36" relation="include">
         </childnode>
         <childnode refid="38" relation="include">
         </childnode>
-        <childnode refid="40" relation="include">
+      </node>
+      <node id="36">
+        <label>muda/check/check_cublas.h</label>
+        <link refid="check__cublas_8h_source"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>muda/check/check_cuda_errors.h</label>
+        <link refid="check__cuda__errors_8h_source"/>
+        <childnode refid="22" relation="include">
         </childnode>
       </node>
       <node id="38">
-        <label>muda/check/check_cublas.h</label>
-        <link refid="check__cublas_8h_source"/>
-        <childnode refid="16" relation="include">
+        <label>muda/check/check_cusolver.h</label>
+        <link refid="check__cusolver_8h_source"/>
+        <childnode refid="14" relation="include">
         </childnode>
         <childnode refid="39" relation="include">
         </childnode>
       </node>
-      <node id="23">
-        <label>muda/check/check_cuda_errors.h</label>
-        <link refid="check__cuda__errors_8h_source"/>
-        <childnode refid="24" relation="include">
-        </childnode>
-      </node>
-      <node id="40">
-        <label>muda/check/check_cusolver.h</label>
-        <link refid="check__cusolver_8h_source"/>
-        <childnode refid="16" relation="include">
-        </childnode>
-        <childnode refid="41" relation="include">
-        </childnode>
-      </node>
-      <node id="36">
+      <node id="34">
         <label>muda/check/check_cusparse.h</label>
         <link refid="check__cusparse_8h_source"/>
-        <childnode refid="16" relation="include">
+        <childnode refid="14" relation="include">
         </childnode>
-        <childnode refid="37" relation="include">
+        <childnode refid="35" relation="include">
         </childnode>
       </node>
       <node id="10">
@@ -93,20 +93,20 @@
         <childnode refid="5" relation="include">
         </childnode>
       </node>
-      <node id="34">
+      <node id="32">
         <label>muda/exception.h</label>
         <link refid="exception_8h_source"/>
-        <childnode refid="16" relation="include">
+        <childnode refid="14" relation="include">
         </childnode>
-        <childnode refid="35" relation="include">
+        <childnode refid="33" relation="include">
         </childnode>
         <childnode refid="7" relation="include">
         </childnode>
       </node>
-      <node id="46">
+      <node id="44">
         <label>muda/launch/event.h</label>
         <link refid="event_8h_source"/>
-        <childnode refid="47" relation="include">
+        <childnode refid="45" relation="include">
         </childnode>
         <childnode refid="3" relation="include">
         </childnode>
@@ -116,12 +116,12 @@
         </childnode>
         <childnode refid="6" relation="include">
         </childnode>
-        <childnode refid="23" relation="include">
+        <childnode refid="21" relation="include">
         </childnode>
-        <childnode refid="48" relation="include">
+        <childnode refid="46" relation="include">
         </childnode>
       </node>
-      <node id="49">
+      <node id="47">
         <label>muda/launch/kernel_tag.h</label>
         <link refid="kernel__tag_8h_source"/>
       </node>
@@ -148,21 +148,17 @@
         </childnode>
         <childnode refid="12" relation="include">
         </childnode>
-        <childnode refid="13" relation="include">
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
         </childnode>
         <childnode refid="14" relation="include">
         </childnode>
-        <childnode refid="19" relation="include">
+        <childnode refid="44" relation="include">
         </childnode>
-        <childnode refid="23" relation="include">
+        <childnode refid="47" relation="include">
         </childnode>
-        <childnode refid="16" relation="include">
-        </childnode>
-        <childnode refid="46" relation="include">
-        </childnode>
-        <childnode refid="49" relation="include">
-        </childnode>
-        <childnode refid="50" relation="include">
+        <childnode refid="48" relation="include">
         </childnode>
       </node>
       <node id="1">
@@ -170,43 +166,31 @@
         <link refid="parallel__for_8h"/>
         <childnode refid="2" relation="include">
         </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
         <childnode refid="49" relation="include">
         </childnode>
-        <childnode refid="51" relation="include">
+        <childnode refid="33" relation="include">
         </childnode>
-        <childnode refid="35" relation="include">
-        </childnode>
-        <childnode refid="52" relation="include">
+        <childnode refid="50" relation="include">
         </childnode>
       </node>
-      <node id="21">
+      <node id="19">
         <label>muda/literal/unit.h</label>
         <link refid="unit_8h_source"/>
-        <childnode refid="22" relation="include">
+        <childnode refid="20" relation="include">
         </childnode>
       </node>
-      <node id="17">
+      <node id="15">
         <label>muda/muda_config.h</label>
         <link refid="muda__config_8h_source"/>
       </node>
-      <node id="16">
+      <node id="14">
         <label>muda/muda_def.h</label>
         <link refid="muda__def_8h_source"/>
-        <childnode refid="17" relation="include">
+        <childnode refid="15" relation="include">
         </childnode>
-        <childnode refid="18" relation="include">
-        </childnode>
-        <childnode refid="3" relation="include">
-        </childnode>
-        <childnode refid="4" relation="include">
-        </childnode>
-        <childnode refid="5" relation="include">
-        </childnode>
-      </node>
-      <node id="33">
-        <label>muda/print.h</label>
-        <link refid="print_8h_source"/>
-        <childnode refid="25" relation="include">
+        <childnode refid="16" relation="include">
         </childnode>
         <childnode refid="3" relation="include">
         </childnode>
@@ -216,38 +200,50 @@
         </childnode>
       </node>
       <node id="31">
-        <label>muda/tools/debug_break.h</label>
-        <link refid="debug__break_8h_source"/>
-        <childnode refid="32" relation="include">
+        <label>muda/print.h</label>
+        <link refid="print_8h_source"/>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
         </childnode>
       </node>
-      <node id="26">
+      <node id="29">
+        <label>muda/tools/debug_break.h</label>
+        <link refid="debug__break_8h_source"/>
+        <childnode refid="30" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
         <label>muda/tools/debug_log.h</label>
         <link refid="debug__log_8h_source"/>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
         <childnode refid="27" relation="include">
         </childnode>
         <childnode refid="28" relation="include">
         </childnode>
-        <childnode refid="29" relation="include">
+        <childnode refid="31" relation="include">
         </childnode>
-        <childnode refid="30" relation="include">
-        </childnode>
-        <childnode refid="33" relation="include">
-        </childnode>
-        <childnode refid="17" relation="include">
-        </childnode>
-        <childnode refid="16" relation="include">
-        </childnode>
-      </node>
-      <node id="47">
-        <label>muda/tools/flag.h</label>
-        <link refid="flag_8h_source"/>
         <childnode refid="15" relation="include">
         </childnode>
-        <childnode refid="16" relation="include">
+        <childnode refid="14" relation="include">
         </childnode>
       </node>
-      <node id="29">
+      <node id="45">
+        <label>muda/tools/flag.h</label>
+        <link refid="flag_8h_source"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="27">
         <label>muda/tools/fuzzy.h</label>
         <link refid="fuzzy_8h_source"/>
         <childnode refid="3" relation="include">
@@ -256,71 +252,71 @@
         </childnode>
         <childnode refid="5" relation="include">
         </childnode>
-        <childnode refid="16" relation="include">
+        <childnode refid="14" relation="include">
         </childnode>
       </node>
-      <node id="20">
+      <node id="18">
         <label>muda/tools/host_device_string_cache.h</label>
         <link refid="host__device__string__cache_8h_source"/>
         <childnode refid="4" relation="include">
         </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
         <childnode refid="21" relation="include">
         </childnode>
-        <childnode refid="16" relation="include">
-        </childnode>
-        <childnode refid="23" relation="include">
-        </childnode>
-        <childnode refid="42" relation="include">
+        <childnode refid="40" relation="include">
         </childnode>
         <childnode refid="7" relation="include">
         </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
         <childnode refid="43" relation="include">
         </childnode>
-        <childnode refid="44" relation="include">
-        </childnode>
-        <childnode refid="45" relation="include">
-        </childnode>
       </node>
-      <node id="19">
+      <node id="17">
         <label>muda/tools/launch_info_cache.h</label>
         <link refid="launch__info__cache_8h_source"/>
-        <childnode refid="20" relation="include">
+        <childnode refid="18" relation="include">
         </childnode>
       </node>
-      <node id="18">
+      <node id="16">
         <label>muda/tools/platform.h</label>
         <link refid="platform_8h_source"/>
       </node>
-      <node id="43">
+      <node id="41">
         <label>muda/tools/string_pointer.h</label>
         <link refid="string__pointer_8h_source"/>
-        <childnode refid="16" relation="include">
+        <childnode refid="14" relation="include">
         </childnode>
       </node>
-      <node id="14">
+      <node id="12">
         <label>muda/type_traits/type_modifier.h</label>
         <link refid="type__modifier_8h_source"/>
-        <childnode refid="15" relation="include">
+        <childnode refid="13" relation="include">
         </childnode>
-        <childnode refid="16" relation="include">
+        <childnode refid="14" relation="include">
         </childnode>
       </node>
-      <node id="28">
+      <node id="26">
         <label>cassert</label>
       </node>
-      <node id="22">
+      <node id="20">
         <label>cinttypes</label>
       </node>
-      <node id="25">
+      <node id="23">
         <label>cstdio</label>
       </node>
-      <node id="27">
+      <node id="25">
         <label>cstdlib</label>
       </node>
-      <node id="45">
+      <node id="43">
         <label>cstring</label>
       </node>
-      <node id="39">
+      <node id="37">
         <label>cublas_v2.h</label>
       </node>
       <node id="3">
@@ -329,25 +325,25 @@
       <node id="11">
         <label>cuda_profiler_api.h</label>
       </node>
-      <node id="41">
+      <node id="39">
         <label>cusolver_common.h</label>
       </node>
-      <node id="37">
+      <node id="35">
         <label>cusparse.h</label>
       </node>
-      <node id="48">
+      <node id="46">
         <label>details/event.inl</label>
       </node>
-      <node id="50">
+      <node id="48">
         <label>details/launch_base.inl</label>
       </node>
-      <node id="52">
+      <node id="50">
         <label>details/parallel_for.inl</label>
       </node>
       <node id="6">
         <label>device_launch_parameters.h</label>
       </node>
-      <node id="35">
+      <node id="33">
         <label>exception</label>
       </node>
       <node id="8">
@@ -356,28 +352,22 @@
       <node id="9">
         <label>memory</label>
       </node>
-      <node id="12">
-        <label>nvtx3/nvToolsExt.h</label>
-      </node>
-      <node id="13">
-        <label>nvtx3/nvToolsExtCuda.h</label>
-      </node>
-      <node id="32">
+      <node id="30">
         <label>signal.h</label>
       </node>
-      <node id="51">
+      <node id="49">
         <label>stdexcept</label>
       </node>
       <node id="7">
         <label>string</label>
       </node>
-      <node id="15">
+      <node id="13">
         <label>type_traits</label>
       </node>
-      <node id="42">
+      <node id="40">
         <label>unordered_map</label>
       </node>
-      <node id="44">
+      <node id="42">
         <label>vector</label>
       </node>
     </incdepgraph>
@@ -402,10 +392,16 @@
         <childnode refid="4" relation="include">
         </childnode>
       </node>
+      <node id="7">
+        <label>src/muda/ext/linear_system/matrix_format_converter_impl.h</label>
+        <link refid="matrix__format__converter__impl_8h_source"/>
+      </node>
       <node id="6">
         <label>src/muda/launch.h</label>
         <link refid="launch_8h_source"/>
         <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
         </childnode>
       </node>
       <node id="1">
@@ -418,7 +414,7 @@
         <childnode refid="6" relation="include">
         </childnode>
       </node>
-      <node id="7">
+      <node id="8">
         <label>src/muda/muda.h</label>
         <link refid="muda_8h_source"/>
       </node>
@@ -440,6 +436,8 @@
     </detaileddescription>
     <programlisting>
 <codeline lineno="1"><highlight class="comment">/*****************************************************************/</highlight><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
 <codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;muda/launch/launch_base.h&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;muda/launch/kernel_tag.h&gt;</highlight><highlight class="normal"></highlight></codeline>
@@ -451,13 +449,13 @@
 <codeline lineno="19"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">details</highlight></codeline>
 <codeline lineno="20"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>F&gt;</highlight></codeline>
-<codeline lineno="22" refid="classmuda_1_1details_1_1_parallel_for_callable" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classmuda_1_1details_1_1_parallel_for_callable" kindref="compound">ParallelForCallable</ref></highlight></codeline>
+<codeline lineno="22" refid="classmuda_1_1details_1_1_parallel_for_callable" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">ParallelForCallable</highlight></codeline>
 <codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>F<sp/><sp/><sp/>callable;</highlight></codeline>
 <codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>count;</highlight></codeline>
 <codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>U&gt;</highlight></codeline>
-<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MUDA_GENERIC<sp/><ref refid="classmuda_1_1details_1_1_parallel_for_callable" kindref="compound">ParallelForCallable</ref>(U&amp;&amp;<sp/>callable,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>count)<sp/>MUDA_NOEXCEPT</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MUDA_GENERIC<sp/>ParallelForCallable(U&amp;&amp;<sp/>callable,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>count)<sp/>MUDA_NOEXCEPT</highlight></codeline>
 <codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>callable(std::forward&lt;U&gt;(callable)),</highlight></codeline>
 <codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>count(count)</highlight></codeline>
 <codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
@@ -478,7 +476,7 @@
 <codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>GridStrideLoop</highlight></codeline>
 <codeline lineno="47"><highlight class="normal">};</highlight></codeline>
 <codeline lineno="48"><highlight class="normal"></highlight></codeline>
-<codeline lineno="49" refid="classmuda_1_1_parallel_for_details" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classmuda_1_1_parallel_for_details" kindref="compound">ParallelForDetails</ref></highlight></codeline>
+<codeline lineno="49" refid="classmuda_1_1_parallel_for_details" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">ParallelForDetails</highlight></codeline>
 <codeline lineno="50"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="51"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>MUDA_NODISCARD<sp/>MUDA_DEVICE<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/>active_num_in_block()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>MUDA_NOEXCEPT;</highlight></codeline>
@@ -519,7 +517,7 @@
 <codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>F,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>UserTag&gt;</highlight></codeline>
 <codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/>MUDA_GLOBAL<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>details::grid_stride_loop_kernel(ParallelForCallable&lt;F&gt;<sp/>f);</highlight></codeline>
 <codeline lineno="89"><highlight class="normal"></highlight></codeline>
-<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/>MUDA_DEVICE<sp/><ref refid="classmuda_1_1_parallel_for_details" kindref="compound">ParallelForDetails</ref>(ParallelForType<sp/>type,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>total_num)<sp/>MUDA_NOEXCEPT</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/>MUDA_DEVICE<sp/>ParallelForDetails(ParallelForType<sp/>type,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>total_num)<sp/>MUDA_NOEXCEPT</highlight></codeline>
 <codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>m_type(type),</highlight></codeline>
 <codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_total_num(total_num),</highlight></codeline>
 <codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_current_i(i)</highlight></codeline>
@@ -538,7 +536,7 @@
 <codeline lineno="106"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">details::parallel_for_kernel;</highlight></codeline>
 <codeline lineno="107"><highlight class="normal"></highlight></codeline>
 <codeline lineno="108"><highlight class="normal"></highlight></codeline>
-<codeline lineno="115" refid="classmuda_1_1_parallel_for" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classmuda_1_1_parallel_for" kindref="compound">ParallelFor</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classmuda_1_1_launch_base" kindref="compound">LaunchBase</ref>&lt;ParallelFor&gt;</highlight></codeline>
+<codeline lineno="115" refid="classmuda_1_1_parallel_for" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classmuda_1_1_parallel_for_1a38d7f6d161b783a7954bc10953b64ecc" kindref="member">ParallelFor</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>LaunchBase&lt;ParallelFor&gt;</highlight></codeline>
 <codeline lineno="116"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/>m_grid_dim;</highlight></codeline>
 <codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/>m_block_dim;</highlight></codeline>
@@ -546,10 +544,10 @@
 <codeline lineno="120"><highlight class="normal"></highlight></codeline>
 <codeline lineno="121"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>F&gt;</highlight></codeline>
-<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="classmuda_1_1_kernel_node_parms" kindref="compound">NodeParms</ref><sp/>=<sp/><ref refid="classmuda_1_1_kernel_node_parms" kindref="compound">KernelNodeParms&lt;details::ParallelForCallable&lt;raw_type_t&lt;F&gt;</ref>&gt;&gt;;</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">NodeParms<sp/>=<sp/><ref refid="classmuda_1_1_kernel_node_parms" kindref="compound">KernelNodeParms&lt;details::ParallelForCallable&lt;raw_type_t&lt;F&gt;</ref>&gt;&gt;;</highlight></codeline>
 <codeline lineno="124"><highlight class="normal"></highlight></codeline>
 <codeline lineno="142" refid="classmuda_1_1_parallel_for_1a38d7f6d161b783a7954bc10953b64ecc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>MUDA_HOST<sp/><ref refid="classmuda_1_1_parallel_for_1a38d7f6d161b783a7954bc10953b64ecc" kindref="member">ParallelFor</ref>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>shared_mem_size<sp/>=<sp/>0,<sp/>cudaStream_t<sp/>stream<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">)<sp/>MUDA_NOEXCEPT</highlight></codeline>
-<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/><ref refid="classmuda_1_1_launch_base" kindref="compound">LaunchBase</ref>(stream),</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>LaunchBase(stream),</highlight></codeline>
 <codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_grid_dim(0),</highlight></codeline>
 <codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_block_dim(-1),</highlight></codeline>
 <codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_shared_mem_size(shared_mem_size)</highlight></codeline>
@@ -557,7 +555,7 @@
 <codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="149"><highlight class="normal"></highlight></codeline>
 <codeline lineno="166" refid="classmuda_1_1_parallel_for_1a95d8677934a713c13ef242e5a02b5724" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>MUDA_HOST<sp/><ref refid="classmuda_1_1_parallel_for_1a95d8677934a713c13ef242e5a02b5724" kindref="member">ParallelFor</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>blockDim,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>shared_mem_size<sp/>=<sp/>0,<sp/>cudaStream_t<sp/>stream<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">)<sp/>MUDA_NOEXCEPT</highlight></codeline>
-<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/><ref refid="classmuda_1_1_launch_base" kindref="compound">LaunchBase</ref>(stream),</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>LaunchBase(stream),</highlight></codeline>
 <codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_grid_dim(0),</highlight></codeline>
 <codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_block_dim(blockDim),</highlight></codeline>
 <codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_shared_mem_size(shared_mem_size)</highlight></codeline>
@@ -569,7 +567,7 @@
 <codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>blockDim,</highlight></codeline>
 <codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>shared_mem_size<sp/>=<sp/>0,</highlight></codeline>
 <codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cudaStream_t<sp/>stream<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">)<sp/>MUDA_NOEXCEPT</highlight></codeline>
-<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/><ref refid="classmuda_1_1_launch_base" kindref="compound">LaunchBase</ref>(stream),</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>LaunchBase(stream),</highlight></codeline>
 <codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_grid_dim(gridDim),</highlight></codeline>
 <codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_block_dim(blockDim),</highlight></codeline>
 <codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_shared_mem_size(shared_mem_size)</highlight></codeline>
@@ -610,7 +608,7 @@
 <codeline lineno="234"><highlight class="normal">};</highlight></codeline>
 <codeline lineno="235"><highlight class="normal">}<sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>muda</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="236"><highlight class="normal"></highlight></codeline>
-<codeline lineno="237"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;details/parallel_for.inl&quot;</highlight></codeline>
+<codeline lineno="237"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;details/parallel_for.inl&quot;</highlight><highlight class="normal"></highlight></codeline>
     </programlisting>
     <location file="src/muda/launch/parallel_for.h"/>
   </compounddef>

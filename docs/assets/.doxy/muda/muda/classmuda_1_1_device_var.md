@@ -387,5 +387,5 @@ muda::DeviceVar::~DeviceVar ()
 <hr>
 
 ------------------------------
-The documentation for this class was generated from the following file `src/muda/buffer/device_var.h`
+The documentation for this class was generated from the following file `src/muda/buffer/buffer_fwd.h`
 

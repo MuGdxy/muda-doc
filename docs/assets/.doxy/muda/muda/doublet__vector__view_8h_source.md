@@ -15,17 +15,20 @@
 namespace muda
 {
 template <bool IsConst, typename T, int N>
-class DoubletVectorViewBase : public ViewBase<IsConst>
+class DoubletVectorViewT : public ViewBase<IsConst>
 {
     using Base = ViewBase<IsConst>;
     template <typename U>
     using auto_const_t = typename Base::template auto_const_t<U>;
 
+    template <bool OtherIsConst, typename U, int M>
+    friend class DoubletVectorViewT;
+
   public:
     using SegmentVector = Eigen::Matrix<T, N, 1>;
-    using ConstView     = DoubletVectorViewBase<true, T, N>;
-    using NonConstView  = DoubletVectorViewBase<false, T, N>;
-    using ThisView      = DoubletVectorViewBase<IsConst, T, N>;
+    using ConstView     = DoubletVectorViewT<true, T, N>;
+    using NonConstView  = DoubletVectorViewT<false, T, N>;
+    using ThisView      = DoubletVectorViewT<IsConst, T, N>;
 
     using ConstViewer    = CDoubletVectorViewer<T, N>;
     using NonConstViewer = DoubletVectorViewer<T, N>;
@@ -49,17 +52,17 @@ class DoubletVectorViewBase : public ViewBase<IsConst>
     auto_const_t<SegmentVector>* m_segment_values;
 
   public:
-    MUDA_GENERIC DoubletVectorViewBase() = default;
-    MUDA_GENERIC DoubletVectorViewBase(int total_segment_count,
-                                       int doublet_index_offset,
-                                       int doublet_count,
-                                       int total_doublet_count,
+    MUDA_GENERIC DoubletVectorViewT() = default;
+    MUDA_GENERIC DoubletVectorViewT(int total_segment_count,
+                                    int doublet_index_offset,
+                                    int doublet_count,
+                                    int total_doublet_count,
 
-                                       int subvector_offset,
-                                       int subvector_extent,
+                                    int subvector_offset,
+                                    int subvector_extent,
 
-                                       auto_const_t<int>* segment_indices,
-                                       auto_const_t<SegmentVector>* segment_values)
+                                    auto_const_t<int>* segment_indices,
+                                    auto_const_t<SegmentVector>* segment_values)
         : m_total_segment_count(total_segment_count)
         , m_doublet_index_offset(doublet_index_offset)
         , m_doublet_count(doublet_count)
@@ -84,22 +87,33 @@ class DoubletVectorViewBase : public ViewBase<IsConst>
                            subvector_extent);
     }
 
-    MUDA_GENERIC DoubletVectorViewBase(int                total_segment_count,
-                                       int                total_doublet_count,
-                                       auto_const_t<int>* segment_indices,
-                                       auto_const_t<SegmentVector>* segment_values)
-        : DoubletVectorViewBase(total_segment_count,
-                                0,
-                                total_doublet_count,
-                                total_doublet_count,
-                                0,
-                                total_segment_count,
-                                segment_indices,
-                                segment_values)
+    MUDA_GENERIC DoubletVectorViewT(int                total_segment_count,
+                                    int                total_doublet_count,
+                                    auto_const_t<int>* segment_indices,
+                                    auto_const_t<SegmentVector>* segment_values)
+        : DoubletVectorViewT(total_segment_count,
+                             0,
+                             total_doublet_count,
+                             total_doublet_count,
+                             0,
+                             total_segment_count,
+                             segment_indices,
+                             segment_values)
     {
     }
 
-    // implicit conversion
+    template <bool OtherIsConst>
+    MUDA_GENERIC DoubletVectorViewT(const DoubletVectorViewT<OtherIsConst, T, N>& other) noexcept
+        : m_total_segment_count(other.m_total_segment_count)
+        , m_doublet_index_offset(other.m_doublet_index_offset)
+        , m_doublet_count(other.m_doublet_count)
+        , m_total_doublet_count(other.m_total_doublet_count)
+        , m_subvector_offset(other.m_subvector_offset)
+        , m_subvector_extent(other.m_subvector_extent)
+        , m_segment_indices(other.m_segment_indices)
+        , m_segment_values(other.m_segment_values)
+    {
+    }
 
     MUDA_GENERIC ConstView as_const() const noexcept
     {
@@ -112,10 +126,6 @@ class DoubletVectorViewBase : public ViewBase<IsConst>
                          m_segment_indices,
                          m_segment_values};
     }
-
-    MUDA_GENERIC operator ConstView() const noexcept { return as_const(); }
-
-    // non-const access
 
     MUDA_GENERIC ThisView subview(int offset, int count) const noexcept
     {
@@ -202,16 +212,21 @@ class DoubletVectorViewBase : public ViewBase<IsConst>
 };
 
 template <bool IsConst, typename T>
-class DoubletVectorViewBase<IsConst, T, 1> : public ViewBase<IsConst>
+class DoubletVectorViewT<IsConst, T, 1> : public ViewBase<IsConst>
 {
     using Base = ViewBase<IsConst>;
+
+    template <bool OtherIsConst, typename U, int M>
+    friend class DoubletVectorViewT;
+
   protected:
     template <typename U>
     using auto_const_t = typename Base::template auto_const_t<U>;
+
   public:
-    using ConstView    = DoubletVectorViewBase<true, T, 1>;
-    using NonConstView = DoubletVectorViewBase<false, T, 1>;
-    using ThisView     = DoubletVectorViewBase<IsConst, T, 1>;
+    using ConstView    = DoubletVectorViewT<true, T, 1>;
+    using NonConstView = DoubletVectorViewT<false, T, 1>;
+    using ThisView     = DoubletVectorViewT<IsConst, T, 1>;
 
     using ConstViewer    = CDoubletVectorViewer<T, 1>;
     using NonConstViewer = DoubletVectorViewer<T, 1>;
@@ -232,15 +247,15 @@ class DoubletVectorViewBase<IsConst, T, 1> : public ViewBase<IsConst>
 
 
   public:
-    MUDA_GENERIC DoubletVectorViewBase() = default;
-    MUDA_GENERIC DoubletVectorViewBase(int                total_count,
-                                       int                doublet_index_offset,
-                                       int                doublet_count,
-                                       int                total_doublet_count,
-                                       int                subvector_offset,
-                                       int                subvector_extent,
-                                       auto_const_t<int>* indices,
-                                       auto_const_t<T>*   values)
+    MUDA_GENERIC DoubletVectorViewT() = default;
+    MUDA_GENERIC DoubletVectorViewT(int                total_count,
+                                    int                doublet_index_offset,
+                                    int                doublet_count,
+                                    int                total_doublet_count,
+                                    int                subvector_offset,
+                                    int                subvector_extent,
+                                    auto_const_t<int>* indices,
+                                    auto_const_t<T>*   values)
         : m_total_count(total_count)
         , m_doublet_index_offset(doublet_index_offset)
         , m_doublet_count(doublet_count)
@@ -250,31 +265,42 @@ class DoubletVectorViewBase<IsConst, T, 1> : public ViewBase<IsConst>
         , m_indices(indices)
         , m_values(values)
     {
-        MUDA_KERNEL_ASSERT(doublet_index_offset + doublet_count <= total_doublet_count,
-                           "DoubletVectorView: out of range, m_total_count=%d, "
-                           "your doublet_index_offset=%d, doublet_count=%d",
-                           m_total_doublet_count,
-                           doublet_index_offset,
-                           doublet_count);
+        MUDA_ASSERT(doublet_index_offset + doublet_count <= total_doublet_count,
+                    "DoubletVectorView: out of range, m_total_count=%d, "
+                    "your doublet_index_offset=%d, doublet_count=%d",
+                    m_total_doublet_count,
+                    doublet_index_offset,
+                    doublet_count);
 
-        MUDA_KERNEL_ASSERT(subvector_offset + subvector_extent <= total_count,
-                           "DoubletVectorView: out of range, m_total_count=%d, "
-                           "your subvector_offset=%d, subvector_extent=%d",
-                           total_count,
-                           subvector_offset,
-                           subvector_extent);
+        MUDA_ASSERT(subvector_offset + subvector_extent <= total_count,
+                    "DoubletVectorView: out of range, m_total_count=%d, "
+                    "your subvector_offset=%d, subvector_extent=%d",
+                    total_count,
+                    subvector_offset,
+                    subvector_extent);
     }
 
-    MUDA_GENERIC DoubletVectorViewBase(int                total_count,
-                                       int                total_doublet_count,
-                                       auto_const_t<int>* indices,
-                                       auto_const_t<T>*   values)
-        : DoubletVectorViewBase(
+    MUDA_GENERIC DoubletVectorViewT(int                total_count,
+                                    int                total_doublet_count,
+                                    auto_const_t<int>* indices,
+                                    auto_const_t<T>*   values)
+        : DoubletVectorViewT(
             total_count, 0, total_doublet_count, total_doublet_count, 0, total_count, indices, values)
     {
     }
 
-    // implicit conversion
+    template <bool OtherIsConst>
+    MUDA_GENERIC DoubletVectorViewT(const DoubletVectorViewT<OtherIsConst, T, 1>& other) noexcept
+        : m_total_count(other.m_total_count)
+        , m_doublet_index_offset(other.m_doublet_index_offset)
+        , m_doublet_count(other.m_doublet_count)
+        , m_total_doublet_count(other.m_total_doublet_count)
+        , m_subvector_offset(other.m_subvector_offset)
+        , m_subvector_extent(other.m_subvector_extent)
+        , m_indices(other.m_indices)
+        , m_values(other.m_values)
+    {
+    }
 
     MUDA_GENERIC ConstView as_const() const noexcept
     {
@@ -287,10 +313,6 @@ class DoubletVectorViewBase<IsConst, T, 1> : public ViewBase<IsConst>
                          m_indices,
                          m_values};
     }
-
-    MUDA_GENERIC operator ConstView() const noexcept { return as_const(); }
-
-    // non-const access
 
     MUDA_GENERIC auto subview(int offset, int count) const noexcept
     {
@@ -375,21 +397,21 @@ class DoubletVectorViewBase<IsConst, T, 1> : public ViewBase<IsConst>
 };
 
 template <typename T, int N>
-using DoubletVectorView = DoubletVectorViewBase<false, T, N>;
+using DoubletVectorView = DoubletVectorViewT<false, T, N>;
 template <typename T, int N>
-using CDoubletVectorView = DoubletVectorViewBase<true, T, N>;
+using CDoubletVectorView = DoubletVectorViewT<true, T, N>;
 }  // namespace muda
 
 namespace muda
 {
 template <typename Ty, int N>
-struct read_only_viewer<DoubletVectorView<Ty, N>>
+struct read_only_view<DoubletVectorView<Ty, N>>
 {
     using type = CDoubletVectorView<Ty, N>;
 };
 
 template <typename Ty, int N>
-struct read_write_viewer<CDoubletVectorView<Ty, N>>
+struct read_write_view<CDoubletVectorView<Ty, N>>
 {
     using type = DoubletVectorView<Ty, N>;
 };

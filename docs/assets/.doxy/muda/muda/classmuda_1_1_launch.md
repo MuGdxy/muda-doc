@@ -283,7 +283,7 @@ See [muda::LaunchCore](classmuda_1_1_launch_core.md)
 
 
 
-# Detailed Description
+## Detailed Description
 
 
 A raw cuda kernel define and launch: 
@@ -339,7 +339,7 @@ Launch(dim3{8,8,8}) // blockDim
 ### typedef NodeParms 
 
 ```C++
-using muda::Launch::NodeParms =  KernelNodeParms<details::LaunchCallable<raw_type_t<F> >>;
+using muda::Launch::NodeParms =  KernelNodeParms<details::LaunchCallable<raw_type_t<F>>>;
 ```
 
 

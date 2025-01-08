@@ -1,0 +1,816 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.1" xml:lang="en-US">
+  <compounddef id="classmuda_1_1_dense_matrix_viewer_t" kind="class" language="C++" prot="public">
+    <compoundname>muda::DenseMatrixViewerT</compoundname>
+    <basecompoundref refid="classmuda_1_1_viewer_base" prot="public" virt="non-virtual">muda::ViewerBase&lt; IsConst &gt;</basecompoundref>
+    <templateparamlist>
+      <param>
+        <type>bool</type>
+        <declname>IsConst</declname>
+        <defname>IsConst</defname>
+      </param>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="private-type">
+      <memberdef kind="typedef" id="classmuda_1_1_dense_matrix_viewer_t_1afa05e089cc2971c268c770a6ba977138" prot="private" static="no">
+        <type><ref refid="classmuda_1_1_viewer_base" kindref="compound">ViewerBase</ref>&lt; IsConst &gt;</type>
+        <definition>using muda::DenseMatrixViewerT&lt; IsConst, T &gt;::Base =  ViewerBase&lt;IsConst&gt;</definition>
+        <argsstring></argsstring>
+        <name>Base</name>
+        <qualifiedname>muda::DenseMatrixViewerT::Base</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/dense_matrix_viewer.h" line="16" column="5" bodyfile="src/muda/ext/linear_system/dense_matrix_viewer.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classmuda_1_1_dense_matrix_viewer_t_1aae437da6b0dd6b00487e39dc3ca4631d" prot="private" static="no">
+        <templateparamlist>
+          <param>
+            <type>typename U</type>
+          </param>
+        </templateparamlist>
+        <type>typename Base::template auto_const_t&lt; U &gt;</type>
+        <definition>using muda::DenseMatrixViewerT&lt; IsConst, T &gt;::auto_const_t =  typename Base::template auto_const_t&lt;U&gt;</definition>
+        <argsstring></argsstring>
+        <name>auto_const_t</name>
+        <qualifiedname>muda::DenseMatrixViewerT::auto_const_t</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/dense_matrix_viewer.h" line="18" column="5" bodyfile="src/muda/ext/linear_system/dense_matrix_viewer.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classmuda_1_1_dense_matrix_viewer_t_1a8a8ecfd6117f67a26d3e11abd8265f2b" prot="public" static="no">
+        <type>CBuffer2DView&lt; T &gt;</type>
+        <definition>using muda::DenseMatrixViewerT&lt; IsConst, T &gt;::CBuffer2DView =  CBuffer2DView&lt;T&gt;</definition>
+        <argsstring></argsstring>
+        <name>CBuffer2DView</name>
+        <qualifiedname>muda::DenseMatrixViewerT::CBuffer2DView</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/dense_matrix_viewer.h" line="25" column="5" bodyfile="src/muda/ext/linear_system/dense_matrix_viewer.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classmuda_1_1_dense_matrix_viewer_t_1a8eb396f3ff5adb4f725f04ff70dab0ae" prot="public" static="no">
+        <type>Buffer2DView&lt; T &gt;</type>
+        <definition>using muda::DenseMatrixViewerT&lt; IsConst, T &gt;::Buffer2DView =  Buffer2DView&lt;T&gt;</definition>
+        <argsstring></argsstring>
+        <name>Buffer2DView</name>
+        <qualifiedname>muda::DenseMatrixViewerT::Buffer2DView</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/dense_matrix_viewer.h" line="26" column="5" bodyfile="src/muda/ext/linear_system/dense_matrix_viewer.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classmuda_1_1_dense_matrix_viewer_t_1a5ab7cb23cfb61bd8e63fb2caf755dcae" prot="public" static="no">
+        <type>std::conditional_t&lt; IsConst, CBuffer2DView, Buffer2DView &gt;</type>
+        <definition>using muda::DenseMatrixViewerT&lt; IsConst, T &gt;::ThisBuffer2DView =  std::conditional_t&lt;IsConst, CBuffer2DView, Buffer2DView&gt;</definition>
+        <argsstring></argsstring>
+        <name>ThisBuffer2DView</name>
+        <qualifiedname>muda::DenseMatrixViewerT::ThisBuffer2DView</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/dense_matrix_viewer.h" line="27" column="5" bodyfile="src/muda/ext/linear_system/dense_matrix_viewer.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classmuda_1_1_dense_matrix_viewer_t_1a0d4f89006a7b683d4ec252f990f5c0db" prot="public" static="no">
+        <type><ref refid="classmuda_1_1_dense_matrix_viewer_t" kindref="compound">DenseMatrixViewerT</ref>&lt; true, T &gt;</type>
+        <definition>using muda::DenseMatrixViewerT&lt; IsConst, T &gt;::ConstViewer =  DenseMatrixViewerT&lt;true, T&gt;</definition>
+        <argsstring></argsstring>
+        <name>ConstViewer</name>
+        <qualifiedname>muda::DenseMatrixViewerT::ConstViewer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/dense_matrix_viewer.h" line="29" column="5" bodyfile="src/muda/ext/linear_system/dense_matrix_viewer.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classmuda_1_1_dense_matrix_viewer_t_1a6bd9388d25a65d02609a3a3c1b3ccc13" prot="public" static="no">
+        <type><ref refid="classmuda_1_1_dense_matrix_viewer_t" kindref="compound">DenseMatrixViewerT</ref>&lt; false, T &gt;</type>
+        <definition>using muda::DenseMatrixViewerT&lt; IsConst, T &gt;::NonConstViewer =  DenseMatrixViewerT&lt;false, T&gt;</definition>
+        <argsstring></argsstring>
+        <name>NonConstViewer</name>
+        <qualifiedname>muda::DenseMatrixViewerT::NonConstViewer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/dense_matrix_viewer.h" line="30" column="5" bodyfile="src/muda/ext/linear_system/dense_matrix_viewer.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classmuda_1_1_dense_matrix_viewer_t_1a565354705038eacc1e6496ace1f3b100" prot="public" static="no">
+        <type>std::conditional_t&lt; IsConst, <ref refid="classmuda_1_1_dense_matrix_viewer_t" kindref="compound">ConstViewer</ref>, <ref refid="classmuda_1_1_dense_matrix_viewer_t" kindref="compound">NonConstViewer</ref> &gt;</type>
+        <definition>using muda::DenseMatrixViewerT&lt; IsConst, T &gt;::ThisViewer =  std::conditional_t&lt;IsConst, ConstViewer, NonConstViewer&gt;</definition>
+        <argsstring></argsstring>
+        <name>ThisViewer</name>
+        <qualifiedname>muda::DenseMatrixViewerT::ThisViewer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/dense_matrix_viewer.h" line="31" column="5" bodyfile="src/muda/ext/linear_system/dense_matrix_viewer.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classmuda_1_1_dense_matrix_viewer_t_1aae7e8c2a07fb210ff0f00926271ba132" prot="public" static="no">
+        <type>Eigen::Matrix&lt; T, Eigen::Dynamic, Eigen::Dynamic, Eigen::ColMajor &gt;</type>
+        <definition>using muda::DenseMatrixViewerT&lt; IsConst, T &gt;::MatrixType =  Eigen::Matrix&lt;T, Eigen::Dynamic, Eigen::Dynamic, Eigen::ColMajor&gt;</definition>
+        <argsstring></argsstring>
+        <name>MatrixType</name>
+        <qualifiedname>muda::DenseMatrixViewerT::MatrixType</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/dense_matrix_viewer.h" line="33" column="5" bodyfile="src/muda/ext/linear_system/dense_matrix_viewer.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classmuda_1_1_dense_matrix_viewer_t_1a15050c5d39bac664713a66a7b5755d80" prot="public" static="no">
+        <templateparamlist>
+          <param>
+            <type>typename U</type>
+          </param>
+        </templateparamlist>
+        <type>Eigen::Map&lt; U, Eigen::AlignmentType::Unaligned, Eigen::Stride&lt; Eigen::Dynamic, Eigen::Dynamic &gt; &gt;</type>
+        <definition>using muda::DenseMatrixViewerT&lt; IsConst, T &gt;::MapMatrixT = 
+        Eigen::Map&lt;U, Eigen::AlignmentType::Unaligned, Eigen::Stride&lt;Eigen::Dynamic, Eigen::Dynamic&gt;&gt;</definition>
+        <argsstring></argsstring>
+        <name>MapMatrixT</name>
+        <qualifiedname>muda::DenseMatrixViewerT::MapMatrixT</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/dense_matrix_viewer.h" line="35" column="5" bodyfile="src/muda/ext/linear_system/dense_matrix_viewer.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classmuda_1_1_dense_matrix_viewer_t_1a5c6b2eaad9c13cf2c7ebe33d8686344a" prot="public" static="no">
+        <type>MapMatrixT&lt; MatrixType &gt;</type>
+        <definition>using muda::DenseMatrixViewerT&lt; IsConst, T &gt;::MapMatrix =  MapMatrixT&lt;MatrixType&gt;</definition>
+        <argsstring></argsstring>
+        <name>MapMatrix</name>
+        <qualifiedname>muda::DenseMatrixViewerT::MapMatrix</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/dense_matrix_viewer.h" line="37" column="5" bodyfile="src/muda/ext/linear_system/dense_matrix_viewer.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classmuda_1_1_dense_matrix_viewer_t_1a16a6f17a5656e48e7c67b139936e79ff" prot="public" static="no">
+        <type>MapMatrixT&lt; const MatrixType &gt;</type>
+        <definition>using muda::DenseMatrixViewerT&lt; IsConst, T &gt;::CMapMatrix =  MapMatrixT&lt;const MatrixType&gt;</definition>
+        <argsstring></argsstring>
+        <name>CMapMatrix</name>
+        <qualifiedname>muda::DenseMatrixViewerT::CMapMatrix</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/dense_matrix_viewer.h" line="38" column="5" bodyfile="src/muda/ext/linear_system/dense_matrix_viewer.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classmuda_1_1_dense_matrix_viewer_t_1a21726d99186c6d50123e8a2f74a6e3cf" prot="public" static="no">
+        <type>std::conditional_t&lt; IsConst, CMapMatrix, MapMatrix &gt;</type>
+        <definition>using muda::DenseMatrixViewerT&lt; IsConst, T &gt;::ThisMapMatrix =  std::conditional_t&lt;IsConst, CMapMatrix, MapMatrix&gt;</definition>
+        <argsstring></argsstring>
+        <name>ThisMapMatrix</name>
+        <qualifiedname>muda::DenseMatrixViewerT::ThisMapMatrix</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/dense_matrix_viewer.h" line="39" column="5" bodyfile="src/muda/ext/linear_system/dense_matrix_viewer.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="friend">
+      <memberdef kind="friend" id="classmuda_1_1_dense_matrix_viewer_t_1ae8ecda27b219a2bdf8cf6bb8c5a7bd3e" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>bool</type>
+            <declname>OtherIsConst</declname>
+            <defname>OtherIsConst</defname>
+          </param>
+          <param>
+            <type>typename U</type>
+          </param>
+        </templateparamlist>
+        <type>class</type>
+        <definition>friend class DenseMatrixViewerT</definition>
+        <argsstring></argsstring>
+        <name>DenseMatrixViewerT</name>
+        <qualifiedname>muda::DenseMatrixViewerT::DenseMatrixViewerT</qualifiedname>
+        <param>
+          <type><ref refid="classmuda_1_1_dense_matrix_viewer_t" kindref="compound">DenseMatrixViewerT</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/dense_matrix_viewer.h" line="21" column="18" bodyfile="src/muda/ext/linear_system/dense_matrix_viewer.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classmuda_1_1_dense_matrix_viewer_t_1a543bc8dcdaa65ced65a9989b7d886c9f" prot="protected" static="no" mutable="no">
+        <type>ThisBuffer2DView</type>
+        <definition>ThisBuffer2DView muda::DenseMatrixViewerT&lt; IsConst, T &gt;::m_view</definition>
+        <argsstring></argsstring>
+        <name>m_view</name>
+        <qualifiedname>muda::DenseMatrixViewerT::m_view</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/dense_matrix_viewer.h" line="44" column="22" bodyfile="src/muda/ext/linear_system/dense_matrix_viewer.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1_dense_matrix_viewer_t_1ab42362d9370d604a84df97dab9ef140f" prot="protected" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t muda::DenseMatrixViewerT&lt; IsConst, T &gt;::m_row_offset</definition>
+        <argsstring></argsstring>
+        <name>m_row_offset</name>
+        <qualifiedname>muda::DenseMatrixViewerT::m_row_offset</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/dense_matrix_viewer.h" line="45" column="22" bodyfile="src/muda/ext/linear_system/dense_matrix_viewer.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1_dense_matrix_viewer_t_1a337332b2e6fe6358ffe527534b30fe97" prot="protected" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t muda::DenseMatrixViewerT&lt; IsConst, T &gt;::m_col_offset</definition>
+        <argsstring></argsstring>
+        <name>m_col_offset</name>
+        <qualifiedname>muda::DenseMatrixViewerT::m_col_offset</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/dense_matrix_viewer.h" line="46" column="22" bodyfile="src/muda/ext/linear_system/dense_matrix_viewer.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1_dense_matrix_viewer_t_1a871d9f9b210a3bf2e3f3c0d09d82cf8f" prot="protected" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t muda::DenseMatrixViewerT&lt; IsConst, T &gt;::m_row_size</definition>
+        <argsstring></argsstring>
+        <name>m_row_size</name>
+        <qualifiedname>muda::DenseMatrixViewerT::m_row_size</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/dense_matrix_viewer.h" line="47" column="22" bodyfile="src/muda/ext/linear_system/dense_matrix_viewer.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmuda_1_1_dense_matrix_viewer_t_1a1de2dd6f8e95d0f8a8e5cdf256b61443" prot="protected" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t muda::DenseMatrixViewerT&lt; IsConst, T &gt;::m_col_size</definition>
+        <argsstring></argsstring>
+        <name>m_col_size</name>
+        <qualifiedname>muda::DenseMatrixViewerT::m_col_size</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/dense_matrix_viewer.h" line="48" column="22" bodyfile="src/muda/ext/linear_system/dense_matrix_viewer.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmuda_1_1_dense_matrix_viewer_t_1aa5c14afb7355d9f90191bc0aa8f5f08a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>muda::DenseMatrixViewerT&lt; IsConst, T &gt;::MUDA_VIEWER_COMMON_NAME</definition>
+        <argsstring>(DenseMatrixViewerT)</argsstring>
+        <name>MUDA_VIEWER_COMMON_NAME</name>
+        <qualifiedname>muda::DenseMatrixViewerT::MUDA_VIEWER_COMMON_NAME</qualifiedname>
+        <param>
+          <type><ref refid="classmuda_1_1_dense_matrix_viewer_t" kindref="compound">DenseMatrixViewerT</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/dense_matrix_viewer.h" line="41" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_dense_matrix_viewer_t_1aa51917140753ce9d25c62ae922f8024a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>MUDA_GENERIC</type>
+        <definition>MUDA_GENERIC muda::DenseMatrixViewerT&lt; IsConst, T &gt;::DenseMatrixViewerT</definition>
+        <argsstring>(ThisBuffer2DView view, size_t row_offset, size_t col_offset, size_t row_size, size_t col_size)</argsstring>
+        <name>DenseMatrixViewerT</name>
+        <qualifiedname>muda::DenseMatrixViewerT::DenseMatrixViewerT</qualifiedname>
+        <param>
+          <type>ThisBuffer2DView</type>
+          <declname>view</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>row_offset</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>col_offset</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>row_size</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>col_size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/dense_matrix_viewer.h" line="51" column="18" bodyfile="src/muda/ext/linear_system/dense_matrix_viewer.h" bodystart="51" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_dense_matrix_viewer_t_1a60fafb102baaa8f945762549ebba95fd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>bool</type>
+            <declname>OtherIsConst</declname>
+            <defname>OtherIsConst</defname>
+          </param>
+        </templateparamlist>
+        <type>MUDA_GENERIC</type>
+        <definition>MUDA_GENERIC muda::DenseMatrixViewerT&lt; IsConst, T &gt;::DenseMatrixViewerT</definition>
+        <argsstring>(const DenseMatrixViewerT&lt; OtherIsConst, T &gt; &amp;other) MUDA_REQUIRES(IsConst)</argsstring>
+        <name>DenseMatrixViewerT</name>
+        <qualifiedname>muda::DenseMatrixViewerT::DenseMatrixViewerT</qualifiedname>
+        <param>
+          <type>const <ref refid="classmuda_1_1_dense_matrix_viewer_t" kindref="compound">DenseMatrixViewerT</ref>&lt; OtherIsConst, T &gt; &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/dense_matrix_viewer.h" line="65" column="18" bodyfile="src/muda/ext/linear_system/dense_matrix_viewer.h" bodystart="65" bodyend="74"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_dense_matrix_viewer_t_1aa13a95d17dbe7f1d543df62da6289a55" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>MUDA_GENERIC auto</type>
+        <definition>MUDA_GENERIC auto muda::DenseMatrixViewerT&lt; IsConst, T &gt;::as_const</definition>
+        <argsstring>() const</argsstring>
+        <name>as_const</name>
+        <qualifiedname>muda::DenseMatrixViewerT::as_const</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/dense_matrix_viewer.h" line="76" column="23" bodyfile="src/muda/ext/linear_system/dense_matrix_viewer.h" bodystart="76" bodyend="79"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_dense_matrix_viewer_t_1acb2dd0b394c91236617a167da5ab3616" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>MUDA_GENERIC ThisViewer</type>
+        <definition>MUDA_GENERIC ThisViewer muda::DenseMatrixViewerT&lt; IsConst, T &gt;::block</definition>
+        <argsstring>(size_t row_offset, size_t col_offset, size_t row_size, size_t col_size) const</argsstring>
+        <name>block</name>
+        <qualifiedname>muda::DenseMatrixViewerT::block</qualifiedname>
+        <param>
+          <type>size_t</type>
+          <declname>row_offset</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>col_offset</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>row_size</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>col_size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/dense_matrix_viewer.h" line="81" column="29" bodyfile="src/muda/ext/linear_system/dense_matrix_viewer.h" bodystart="81" bodyend="98"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_dense_matrix_viewer_t_1a26ad617eaf64e820c9b3974a34644e47" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>int</type>
+            <declname>M</declname>
+            <defname>M</defname>
+          </param>
+          <param>
+            <type>int</type>
+            <declname>N</declname>
+            <defname>N</defname>
+          </param>
+        </templateparamlist>
+        <type>MUDA_GENERIC ThisViewer</type>
+        <definition>MUDA_GENERIC ThisViewer muda::DenseMatrixViewerT&lt; IsConst, T &gt;::block</definition>
+        <argsstring>(int row_offset, int col_offset)</argsstring>
+        <name>block</name>
+        <qualifiedname>muda::DenseMatrixViewerT::block</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>row_offset</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>col_offset</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/dense_matrix_viewer.h" line="101" column="29" bodyfile="src/muda/ext/linear_system/dense_matrix_viewer.h" bodystart="101" bodyend="104"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_dense_matrix_viewer_t_1a40a55de6a44ed5b4403d3190bad51bc7" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>MUDA_GENERIC Eigen::Block&lt; ThisMapMatrix &gt;</type>
+        <definition>MUDA_GENERIC Eigen::Block&lt; ThisMapMatrix &gt; muda::DenseMatrixViewerT&lt; IsConst, T &gt;::as_eigen</definition>
+        <argsstring>() const</argsstring>
+        <name>as_eigen</name>
+        <qualifiedname>muda::DenseMatrixViewerT::as_eigen</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/dense_matrix_viewer.h" line="105" column="31" bodyfile="src/muda/ext/linear_system/dense_matrix_viewer.h" bodystart="105" bodyend="114"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_dense_matrix_viewer_t_1abd44fac8d163e708ae4370e114b63ac7" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>MUDA_GENERIC auto_const_t&lt; T &gt; &amp;</type>
+        <definition>MUDA_GENERIC auto_const_t&lt; T &gt; &amp; muda::DenseMatrixViewerT&lt; IsConst, T &gt;::operator()</definition>
+        <argsstring>(size_t i, size_t j) const</argsstring>
+        <name>operator()</name>
+        <qualifiedname>muda::DenseMatrixViewerT::operator()</qualifiedname>
+        <param>
+          <type>size_t</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>j</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/dense_matrix_viewer.h" line="116" column="31" bodyfile="src/muda/ext/linear_system/dense_matrix_viewer.h" bodystart="116" bodyend="150"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_dense_matrix_viewer_t_1a5483673d57f358718a5c77fb3550a3f1" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>MUDA_GENERIC auto</type>
+        <definition>MUDA_GENERIC auto muda::DenseMatrixViewerT&lt; IsConst, T &gt;::buffer_view</definition>
+        <argsstring>() const</argsstring>
+        <name>buffer_view</name>
+        <qualifiedname>muda::DenseMatrixViewerT::buffer_view</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/dense_matrix_viewer.h" line="152" column="23" bodyfile="src/muda/ext/linear_system/dense_matrix_viewer.h" bodystart="152" bodyend="152"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_dense_matrix_viewer_t_1ae2430449f395c9166288978743c7a325" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>MUDA_GENERIC size_t</type>
+        <definition>MUDA_GENERIC size_t muda::DenseMatrixViewerT&lt; IsConst, T &gt;::row</definition>
+        <argsstring>() const</argsstring>
+        <name>row</name>
+        <qualifiedname>muda::DenseMatrixViewerT::row</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/dense_matrix_viewer.h" line="154" column="25" bodyfile="src/muda/ext/linear_system/dense_matrix_viewer.h" bodystart="154" bodyend="154"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_dense_matrix_viewer_t_1a4ca4e6913a9b4ee90d1f4115dd81adf1" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>MUDA_GENERIC size_t</type>
+        <definition>MUDA_GENERIC size_t muda::DenseMatrixViewerT&lt; IsConst, T &gt;::col</definition>
+        <argsstring>() const</argsstring>
+        <name>col</name>
+        <qualifiedname>muda::DenseMatrixViewerT::col</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/dense_matrix_viewer.h" line="156" column="25" bodyfile="src/muda/ext/linear_system/dense_matrix_viewer.h" bodystart="156" bodyend="156"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_dense_matrix_viewer_t_1a5a13d4bacd398c6c7488e32d421fe06e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>MUDA_GENERIC size_t</type>
+        <definition>MUDA_GENERIC size_t muda::DenseMatrixViewerT&lt; IsConst, T &gt;::origin_row</definition>
+        <argsstring>() const</argsstring>
+        <name>origin_row</name>
+        <qualifiedname>muda::DenseMatrixViewerT::origin_row</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/dense_matrix_viewer.h" line="158" column="25" bodyfile="src/muda/ext/linear_system/dense_matrix_viewer.h" bodystart="158" bodyend="163"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_dense_matrix_viewer_t_1a3d55d6f2bd861342e73464310fd71636" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>MUDA_GENERIC size_t</type>
+        <definition>MUDA_GENERIC size_t muda::DenseMatrixViewerT&lt; IsConst, T &gt;::origin_col</definition>
+        <argsstring>() const</argsstring>
+        <name>origin_col</name>
+        <qualifiedname>muda::DenseMatrixViewerT::origin_col</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/dense_matrix_viewer.h" line="165" column="25" bodyfile="src/muda/ext/linear_system/dense_matrix_viewer.h" bodystart="165" bodyend="170"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_dense_matrix_viewer_t_1afca0c27bf1ffa55324fdc4eb45e82517" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>MUDA_GENERIC auto</type>
+        <definition>MUDA_GENERIC auto muda::DenseMatrixViewerT&lt; IsConst, T &gt;::row_offset</definition>
+        <argsstring>() const</argsstring>
+        <name>row_offset</name>
+        <qualifiedname>muda::DenseMatrixViewerT::row_offset</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/dense_matrix_viewer.h" line="172" column="23" bodyfile="src/muda/ext/linear_system/dense_matrix_viewer.h" bodystart="172" bodyend="172"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_dense_matrix_viewer_t_1a713fa4784fc4b7aaa619585343afdfa5" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>MUDA_GENERIC auto</type>
+        <definition>MUDA_GENERIC auto muda::DenseMatrixViewerT&lt; IsConst, T &gt;::col_offset</definition>
+        <argsstring>() const</argsstring>
+        <name>col_offset</name>
+        <qualifiedname>muda::DenseMatrixViewerT::col_offset</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/dense_matrix_viewer.h" line="174" column="23" bodyfile="src/muda/ext/linear_system/dense_matrix_viewer.h" bodystart="174" bodyend="174"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_dense_matrix_viewer_t_1a955af90c32568fe2b4a543fb14ea5dcc" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>MUDA_DEVICE T</type>
+        <definition>MUDA_DEVICE T muda::DenseMatrixViewerT&lt; IsConst, T &gt;::atomic_add</definition>
+        <argsstring>(size_t i, size_t j, T val) const MUDA_REQUIRES(!IsConst)</argsstring>
+        <name>atomic_add</name>
+        <qualifiedname>muda::DenseMatrixViewerT::atomic_add</qualifiedname>
+        <param>
+          <type>size_t</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>j</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/dense_matrix_viewer.h" line="176" column="19" bodyfile="src/muda/ext/linear_system/dense_matrix_viewer.h" bodystart="176" bodyend="182"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_dense_matrix_viewer_t_1ad808248df212164e8084dae15aa4ab86" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>int</type>
+            <declname>M</declname>
+            <defname>M</defname>
+          </param>
+          <param>
+            <type>int</type>
+            <declname>N</declname>
+            <defname>N</defname>
+          </param>
+        </templateparamlist>
+        <type>MUDA_DEVICE Eigen::Matrix&lt; T, M, N &gt;</type>
+        <definition>MUDA_DEVICE Eigen::Matrix&lt; T, M, N &gt; muda::DenseMatrixViewerT&lt; IsConst, T &gt;::atomic_add</definition>
+        <argsstring>(const Eigen::Matrix&lt; T, M, N &gt; &amp;other) const MUDA_REQUIRES(!IsConst)</argsstring>
+        <name>atomic_add</name>
+        <qualifiedname>muda::DenseMatrixViewerT::atomic_add</qualifiedname>
+        <param>
+          <type>const Eigen::Matrix&lt; T, M, N &gt; &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/dense_matrix_viewer.h" line="185" column="31" bodyfile="src/muda/ext/linear_system/dense_matrix_viewer.h" bodystart="185" bodyend="199"/>
+      </memberdef>
+      <memberdef kind="function" id="classmuda_1_1_dense_matrix_viewer_t_1a27f4c6e996b6b00b24fd147c0cb7c376" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>int</type>
+            <declname>M</declname>
+            <defname>M</defname>
+          </param>
+          <param>
+            <type>int</type>
+            <declname>N</declname>
+            <defname>N</defname>
+          </param>
+        </templateparamlist>
+        <type>MUDA_GENERIC <ref refid="classmuda_1_1_dense_matrix_viewer_t" kindref="compound">DenseMatrixViewerT</ref> &amp;</type>
+        <definition>MUDA_GENERIC DenseMatrixViewerT &amp; muda::DenseMatrixViewerT&lt; IsConst, T &gt;::operator=</definition>
+        <argsstring>(const Eigen::Matrix&lt; T, M, N &gt; &amp;other) const MUDA_REQUIRES(!IsConst)</argsstring>
+        <name>operator=</name>
+        <qualifiedname>muda::DenseMatrixViewerT::operator=</qualifiedname>
+        <param>
+          <type>const Eigen::Matrix&lt; T, M, N &gt; &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/dense_matrix_viewer.h" line="202" column="37" bodyfile="src/muda/ext/linear_system/dense_matrix_viewer.h" bodystart="202" bodyend="213"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classmuda_1_1_dense_matrix_viewer_t_1a63d8c9bd092df6bb655c9dfcff4b41b8" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>MUDA_GENERIC void</type>
+        <definition>MUDA_GENERIC void muda::DenseMatrixViewerT&lt; IsConst, T &gt;::check_size_matching</definition>
+        <argsstring>(int M, int N) const</argsstring>
+        <name>check_size_matching</name>
+        <qualifiedname>muda::DenseMatrixViewerT::check_size_matching</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>M</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>N</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/muda/ext/linear_system/dense_matrix_viewer.h" line="216" column="23" bodyfile="src/muda/ext/linear_system/dense_matrix_viewer.h" bodystart="216" bodyend="228"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>muda::DenseMatrixViewerT&lt; IsConst, T &gt;</label>
+        <link refid="classmuda_1_1_dense_matrix_viewer_t"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>muda::ViewerBase&lt; IsConst &gt;</label>
+        <link refid="classmuda_1_1_viewer_base"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>muda::DenseMatrixViewerT&lt; IsConst, T &gt;</label>
+        <link refid="classmuda_1_1_dense_matrix_viewer_t"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>muda::ViewerBase&lt; IsConst &gt;</label>
+        <link refid="classmuda_1_1_viewer_base"/>
+      </node>
+    </collaborationgraph>
+    <location file="src/muda/ext/linear_system/dense_matrix_viewer.h" line="10" column="1" bodyfile="src/muda/ext/linear_system/dense_matrix_viewer.h" bodystart="11" bodyend="229"/>
+    <listofallmembers>
+      <member refid="classmuda_1_1_dense_matrix_viewer_t_1aa13a95d17dbe7f1d543df62da6289a55" prot="public" virt="non-virtual"><scope>muda::DenseMatrixViewerT</scope><name>as_const</name></member>
+      <member refid="classmuda_1_1_dense_matrix_viewer_t_1a40a55de6a44ed5b4403d3190bad51bc7" prot="public" virt="non-virtual"><scope>muda::DenseMatrixViewerT</scope><name>as_eigen</name></member>
+      <member refid="classmuda_1_1_dense_matrix_viewer_t_1a955af90c32568fe2b4a543fb14ea5dcc" prot="public" virt="non-virtual"><scope>muda::DenseMatrixViewerT</scope><name>atomic_add</name></member>
+      <member refid="classmuda_1_1_dense_matrix_viewer_t_1ad808248df212164e8084dae15aa4ab86" prot="public" virt="non-virtual"><scope>muda::DenseMatrixViewerT</scope><name>atomic_add</name></member>
+      <member refid="classmuda_1_1_dense_matrix_viewer_t_1aae437da6b0dd6b00487e39dc3ca4631d" prot="private" virt="non-virtual"><scope>muda::DenseMatrixViewerT</scope><name>auto_const_t</name></member>
+      <member refid="classmuda_1_1_dense_matrix_viewer_t_1afa05e089cc2971c268c770a6ba977138" prot="private" virt="non-virtual"><scope>muda::DenseMatrixViewerT</scope><name>Base</name></member>
+      <member refid="classmuda_1_1_dense_matrix_viewer_t_1acb2dd0b394c91236617a167da5ab3616" prot="public" virt="non-virtual"><scope>muda::DenseMatrixViewerT</scope><name>block</name></member>
+      <member refid="classmuda_1_1_dense_matrix_viewer_t_1a26ad617eaf64e820c9b3974a34644e47" prot="public" virt="non-virtual"><scope>muda::DenseMatrixViewerT</scope><name>block</name></member>
+      <member refid="classmuda_1_1_dense_matrix_viewer_t_1a8eb396f3ff5adb4f725f04ff70dab0ae" prot="public" virt="non-virtual"><scope>muda::DenseMatrixViewerT</scope><name>Buffer2DView</name></member>
+      <member refid="classmuda_1_1_dense_matrix_viewer_t_1a5483673d57f358718a5c77fb3550a3f1" prot="public" virt="non-virtual"><scope>muda::DenseMatrixViewerT</scope><name>buffer_view</name></member>
+      <member refid="classmuda_1_1_dense_matrix_viewer_t_1a8a8ecfd6117f67a26d3e11abd8265f2b" prot="public" virt="non-virtual"><scope>muda::DenseMatrixViewerT</scope><name>CBuffer2DView</name></member>
+      <member refid="classmuda_1_1_dense_matrix_viewer_t_1a63d8c9bd092df6bb655c9dfcff4b41b8" prot="private" virt="non-virtual"><scope>muda::DenseMatrixViewerT</scope><name>check_size_matching</name></member>
+      <member refid="classmuda_1_1_dense_matrix_viewer_t_1a16a6f17a5656e48e7c67b139936e79ff" prot="public" virt="non-virtual"><scope>muda::DenseMatrixViewerT</scope><name>CMapMatrix</name></member>
+      <member refid="classmuda_1_1_dense_matrix_viewer_t_1a4ca4e6913a9b4ee90d1f4115dd81adf1" prot="public" virt="non-virtual"><scope>muda::DenseMatrixViewerT</scope><name>col</name></member>
+      <member refid="classmuda_1_1_dense_matrix_viewer_t_1a713fa4784fc4b7aaa619585343afdfa5" prot="public" virt="non-virtual"><scope>muda::DenseMatrixViewerT</scope><name>col_offset</name></member>
+      <member refid="classmuda_1_1_dense_matrix_viewer_t_1a0d4f89006a7b683d4ec252f990f5c0db" prot="public" virt="non-virtual"><scope>muda::DenseMatrixViewerT</scope><name>ConstViewer</name></member>
+      <member refid="classmuda_1_1_viewer_base_1a1e3c7201751bec476d5f9b9c26be94b5" prot="public" virt="non-virtual"><scope>muda::DenseMatrixViewerT</scope><name>copy_label</name></member>
+      <member refid="classmuda_1_1_viewer_base_1a1e3c7201751bec476d5f9b9c26be94b5" prot="public" virt="non-virtual"><scope>muda::DenseMatrixViewerT</scope><name>copy_label</name></member>
+      <member refid="classmuda_1_1_dense_matrix_viewer_t_1ae8ecda27b219a2bdf8cf6bb8c5a7bd3e" prot="private" virt="non-virtual"><scope>muda::DenseMatrixViewerT</scope><name>DenseMatrixViewerT</name></member>
+      <member refid="classmuda_1_1_dense_matrix_viewer_t_1aa51917140753ce9d25c62ae922f8024a" prot="public" virt="non-virtual"><scope>muda::DenseMatrixViewerT</scope><name>DenseMatrixViewerT</name></member>
+      <member refid="classmuda_1_1_dense_matrix_viewer_t_1a60fafb102baaa8f945762549ebba95fd" prot="public" virt="non-virtual"><scope>muda::DenseMatrixViewerT</scope><name>DenseMatrixViewerT</name></member>
+      <member refid="classmuda_1_1_viewer_base_1ae9e7348b91c4dc1f3fc0de8e63335576" prot="public" virt="non-virtual"><scope>muda::DenseMatrixViewerT</scope><name>IsConst</name></member>
+      <member refid="classmuda_1_1_viewer_base_1ae9e7348b91c4dc1f3fc0de8e63335576" prot="public" virt="non-virtual"><scope>muda::DenseMatrixViewerT</scope><name>IsConst</name></member>
+      <member refid="classmuda_1_1_viewer_base_1adc31410f57cf34b15824f4f3fcb434a3" prot="public" virt="non-virtual"><scope>muda::DenseMatrixViewerT</scope><name>IsNonConst</name></member>
+      <member refid="classmuda_1_1_viewer_base_1adc31410f57cf34b15824f4f3fcb434a3" prot="public" virt="non-virtual"><scope>muda::DenseMatrixViewerT</scope><name>IsNonConst</name></member>
+      <member refid="classmuda_1_1_viewer_base_1a35b42fb3c890f8343c551451bceab3f1" prot="public" virt="non-virtual"><scope>muda::DenseMatrixViewerT</scope><name>kernel_file</name></member>
+      <member refid="classmuda_1_1_viewer_base_1a35b42fb3c890f8343c551451bceab3f1" prot="public" virt="non-virtual"><scope>muda::DenseMatrixViewerT</scope><name>kernel_file</name></member>
+      <member refid="classmuda_1_1_viewer_base_1a3247ca184afa57b2e00f8da9e080a2a1" prot="public" virt="non-virtual"><scope>muda::DenseMatrixViewerT</scope><name>kernel_line</name></member>
+      <member refid="classmuda_1_1_viewer_base_1a3247ca184afa57b2e00f8da9e080a2a1" prot="public" virt="non-virtual"><scope>muda::DenseMatrixViewerT</scope><name>kernel_line</name></member>
+      <member refid="classmuda_1_1_viewer_base_1a9b65192d349fd93c05c8ccad4d4014d4" prot="public" virt="non-virtual"><scope>muda::DenseMatrixViewerT</scope><name>kernel_name</name></member>
+      <member refid="classmuda_1_1_viewer_base_1a9b65192d349fd93c05c8ccad4d4014d4" prot="public" virt="non-virtual"><scope>muda::DenseMatrixViewerT</scope><name>kernel_name</name></member>
+      <member refid="classmuda_1_1_dense_matrix_viewer_t_1a337332b2e6fe6358ffe527534b30fe97" prot="protected" virt="non-virtual"><scope>muda::DenseMatrixViewerT</scope><name>m_col_offset</name></member>
+      <member refid="classmuda_1_1_dense_matrix_viewer_t_1a1de2dd6f8e95d0f8a8e5cdf256b61443" prot="protected" virt="non-virtual"><scope>muda::DenseMatrixViewerT</scope><name>m_col_size</name></member>
+      <member refid="classmuda_1_1_dense_matrix_viewer_t_1ab42362d9370d604a84df97dab9ef140f" prot="protected" virt="non-virtual"><scope>muda::DenseMatrixViewerT</scope><name>m_row_offset</name></member>
+      <member refid="classmuda_1_1_dense_matrix_viewer_t_1a871d9f9b210a3bf2e3f3c0d09d82cf8f" prot="protected" virt="non-virtual"><scope>muda::DenseMatrixViewerT</scope><name>m_row_size</name></member>
+      <member refid="classmuda_1_1_dense_matrix_viewer_t_1a543bc8dcdaa65ced65a9989b7d886c9f" prot="protected" virt="non-virtual"><scope>muda::DenseMatrixViewerT</scope><name>m_view</name></member>
+      <member refid="classmuda_1_1_dense_matrix_viewer_t_1a5c6b2eaad9c13cf2c7ebe33d8686344a" prot="public" virt="non-virtual"><scope>muda::DenseMatrixViewerT</scope><name>MapMatrix</name></member>
+      <member refid="classmuda_1_1_dense_matrix_viewer_t_1a15050c5d39bac664713a66a7b5755d80" prot="public" virt="non-virtual"><scope>muda::DenseMatrixViewerT</scope><name>MapMatrixT</name></member>
+      <member refid="classmuda_1_1_dense_matrix_viewer_t_1aae7e8c2a07fb210ff0f00926271ba132" prot="public" virt="non-virtual"><scope>muda::DenseMatrixViewerT</scope><name>MatrixType</name></member>
+      <member refid="classmuda_1_1_dense_matrix_viewer_t_1aa5c14afb7355d9f90191bc0aa8f5f08a" prot="public" virt="non-virtual"><scope>muda::DenseMatrixViewerT</scope><name>MUDA_VIEWER_COMMON_NAME</name></member>
+      <member refid="classmuda_1_1_viewer_base_1a4cb1c578b4abbf1b113e9cf7a3d771d8" prot="public" virt="non-virtual"><scope>muda::DenseMatrixViewerT</scope><name>name</name></member>
+      <member refid="classmuda_1_1_viewer_base_1a57bbb7a9a3e4cb77a0a05bdee3a3e5fd" prot="protected" virt="non-virtual"><scope>muda::DenseMatrixViewerT</scope><name>name</name></member>
+      <member refid="classmuda_1_1_viewer_base_1a31d6dd944a28c6d428e5e79cd7c034a0" prot="protected" virt="non-virtual"><scope>muda::DenseMatrixViewerT</scope><name>name</name></member>
+      <member refid="classmuda_1_1_viewer_base_1a4cb1c578b4abbf1b113e9cf7a3d771d8" prot="public" virt="non-virtual"><scope>muda::DenseMatrixViewerT</scope><name>name</name></member>
+      <member refid="classmuda_1_1_viewer_base_1a57bbb7a9a3e4cb77a0a05bdee3a3e5fd" prot="protected" virt="non-virtual"><scope>muda::DenseMatrixViewerT</scope><name>name</name></member>
+      <member refid="classmuda_1_1_viewer_base_1a31d6dd944a28c6d428e5e79cd7c034a0" prot="protected" virt="non-virtual"><scope>muda::DenseMatrixViewerT</scope><name>name</name></member>
+      <member refid="classmuda_1_1_viewer_base_1a9447a51a53c20567fcb38fcdc275d812" prot="protected" virt="non-virtual"><scope>muda::DenseMatrixViewerT</scope><name>non_const_enable_t</name></member>
+      <member refid="classmuda_1_1_viewer_base_1a9447a51a53c20567fcb38fcdc275d812" prot="protected" virt="non-virtual"><scope>muda::DenseMatrixViewerT</scope><name>non_const_enable_t</name></member>
+      <member refid="classmuda_1_1_dense_matrix_viewer_t_1a6bd9388d25a65d02609a3a3c1b3ccc13" prot="public" virt="non-virtual"><scope>muda::DenseMatrixViewerT</scope><name>NonConstViewer</name></member>
+      <member refid="classmuda_1_1_dense_matrix_viewer_t_1abd44fac8d163e708ae4370e114b63ac7" prot="public" virt="non-virtual"><scope>muda::DenseMatrixViewerT</scope><name>operator()</name></member>
+      <member refid="classmuda_1_1_dense_matrix_viewer_t_1a27f4c6e996b6b00b24fd147c0cb7c376" prot="public" virt="non-virtual"><scope>muda::DenseMatrixViewerT</scope><name>operator=</name></member>
+      <member refid="classmuda_1_1_viewer_base_1a8ce13df13b4a82e63c7a6230ee1e0b7c" prot="public" virt="non-virtual" ambiguityscope="muda::ViewerBase&lt; IsConst &gt;::"><scope>muda::DenseMatrixViewerT</scope><name>operator=</name></member>
+      <member refid="classmuda_1_1_viewer_base_1ac73a737a8a64ff2026adcd7bc5f2738a" prot="public" virt="non-virtual" ambiguityscope="muda::ViewerBase&lt; IsConst &gt;::"><scope>muda::DenseMatrixViewerT</scope><name>operator=</name></member>
+      <member refid="classmuda_1_1_dense_matrix_viewer_t_1a3d55d6f2bd861342e73464310fd71636" prot="public" virt="non-virtual"><scope>muda::DenseMatrixViewerT</scope><name>origin_col</name></member>
+      <member refid="classmuda_1_1_dense_matrix_viewer_t_1a5a13d4bacd398c6c7488e32d421fe06e" prot="public" virt="non-virtual"><scope>muda::DenseMatrixViewerT</scope><name>origin_row</name></member>
+      <member refid="classmuda_1_1_dense_matrix_viewer_t_1ae2430449f395c9166288978743c7a325" prot="public" virt="non-virtual"><scope>muda::DenseMatrixViewerT</scope><name>row</name></member>
+      <member refid="classmuda_1_1_dense_matrix_viewer_t_1afca0c27bf1ffa55324fdc4eb45e82517" prot="public" virt="non-virtual"><scope>muda::DenseMatrixViewerT</scope><name>row_offset</name></member>
+      <member refid="classmuda_1_1_dense_matrix_viewer_t_1a5ab7cb23cfb61bd8e63fb2caf755dcae" prot="public" virt="non-virtual"><scope>muda::DenseMatrixViewerT</scope><name>ThisBuffer2DView</name></member>
+      <member refid="classmuda_1_1_dense_matrix_viewer_t_1a21726d99186c6d50123e8a2f74a6e3cf" prot="public" virt="non-virtual"><scope>muda::DenseMatrixViewerT</scope><name>ThisMapMatrix</name></member>
+      <member refid="classmuda_1_1_dense_matrix_viewer_t_1a565354705038eacc1e6496ace1f3b100" prot="public" virt="non-virtual"><scope>muda::DenseMatrixViewerT</scope><name>ThisViewer</name></member>
+      <member refid="classmuda_1_1_viewer_base_1aab07b74590e3ae50b1352372f66080f8" prot="public" virt="non-virtual"><scope>muda::DenseMatrixViewerT</scope><name>ViewerBase</name></member>
+      <member refid="classmuda_1_1_viewer_base_1aac0b5cbd86bfb6653c7dddeac2907428" prot="public" virt="non-virtual"><scope>muda::DenseMatrixViewerT</scope><name>ViewerBase</name></member>
+      <member refid="classmuda_1_1_viewer_base_1a70b803f760ff21c327b454f7c9fc0ef3" prot="public" virt="non-virtual"><scope>muda::DenseMatrixViewerT</scope><name>ViewerBase</name></member>
+      <member refid="classmuda_1_1_viewer_base_1aab07b74590e3ae50b1352372f66080f8" prot="public" virt="non-virtual"><scope>muda::DenseMatrixViewerT</scope><name>ViewerBase</name></member>
+      <member refid="classmuda_1_1_viewer_base_1aac0b5cbd86bfb6653c7dddeac2907428" prot="public" virt="non-virtual"><scope>muda::DenseMatrixViewerT</scope><name>ViewerBase</name></member>
+      <member refid="classmuda_1_1_viewer_base_1a70b803f760ff21c327b454f7c9fc0ef3" prot="public" virt="non-virtual"><scope>muda::DenseMatrixViewerT</scope><name>ViewerBase</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

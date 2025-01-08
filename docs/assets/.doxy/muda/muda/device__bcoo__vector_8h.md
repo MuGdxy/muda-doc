@@ -39,7 +39,7 @@
 | Type | Name |
 | ---: | :--- |
 | class | [**DeviceBCOOVector**](classmuda_1_1_device_b_c_o_o_vector.md) &lt;typename T, N&gt;<br> |
-| class | [**DeviceBCOOVector&lt; T, 1 &gt;**](classmuda_1_1_device_b_c_o_o_vector_3_01_t_00_011_01_4.md) &lt;typename T&gt;<br> |
+| class | [**DeviceBCOOVector**](classmuda_1_1_device_b_c_o_o_vector.md) &lt;typename T, N&gt;<br> |
 
 
 

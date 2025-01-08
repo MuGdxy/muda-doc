@@ -18,8 +18,11 @@
 #include <device_launch_parameters.h>
 
 #include <cuda_profiler_api.h>
+
+#if MUDA_WITH_NVTX3
 #include <nvtx3/nvToolsExt.h>
 #include <nvtx3/nvToolsExtCuda.h>
+#endif
 
 #include <muda/check/check_cuda_errors.h>
 
@@ -48,6 +51,7 @@ class Profile
     }
     Profile(const std::string& name) MUDA_NOEXCEPT : need_pop(true)
     {
+#if MUDA_WITH_NVTX3
         nvtxEventAttributes_t eventAttrib = {0};
         eventAttrib.version               = NVTX_VERSION;
         eventAttrib.size                  = NVTX_EVENT_ATTRIB_STRUCT_SIZE;
@@ -56,14 +60,16 @@ class Profile
         eventAttrib.messageType           = NVTX_MESSAGE_TYPE_ASCII;
         eventAttrib.message.ascii         = name.c_str();
         nvtxRangePushEx(&eventAttrib);
-
+#endif
         checkCudaErrors(cudaProfilerStart());
     }
     ~Profile()
     {
         checkCudaErrors(cudaProfilerStop());
+#if MUDA_WITH_NVTX3
         if(need_pop)
             nvtxRangePop();
+#endif
     }
 };
 
@@ -72,6 +78,7 @@ class RangeName
   public:
     RangeName(const std::string& name) MUDA_NOEXCEPT
     {
+#if MUDA_WITH_NVTX3
         nvtxEventAttributes_t eventAttrib = {0};
         eventAttrib.version               = NVTX_VERSION;
         eventAttrib.size                  = NVTX_EVENT_ATTRIB_STRUCT_SIZE;
@@ -80,9 +87,14 @@ class RangeName
         eventAttrib.messageType           = NVTX_MESSAGE_TYPE_ASCII;
         eventAttrib.message.ascii         = name.c_str();
         nvtxRangePushEx(&eventAttrib);
+#endif
     }
 
-    ~RangeName() { nvtxRangePop(); }
+    ~RangeName() { 
+#if MUDA_WITH_NVTX3
+        nvtxRangePop();
+#endif
+    }
 };
 }  // namespace muda
 ```

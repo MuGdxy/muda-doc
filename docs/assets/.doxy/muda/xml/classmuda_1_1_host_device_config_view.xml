@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.1" xml:lang="en-US">
   <compounddef id="classmuda_1_1_host_device_config_view" kind="class" language="C++" prot="public">
     <compoundname>muda::HostDeviceConfigView</compoundname>
     <basecompoundref refid="classmuda_1_1_view_base" prot="public" virt="non-virtual">muda::ViewBase&lt; true &gt;</basecompoundref>
@@ -169,31 +169,32 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="2">
-        <label>muda::ViewBase&lt; true &gt;</label>
-        <link refid="classmuda_1_1_view_base"/>
-      </node>
       <node id="1">
         <label>muda::HostDeviceConfigView&lt; T &gt;</label>
         <link refid="classmuda_1_1_host_device_config_view"/>
         <childnode refid="2" relation="public-inheritance">
         </childnode>
+      </node>
+      <node id="2">
+        <label>muda::ViewBase&lt; true &gt;</label>
+        <link refid="classmuda_1_1_view_base"/>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="2">
-        <label>muda::ViewBase&lt; true &gt;</label>
-        <link refid="classmuda_1_1_view_base"/>
-      </node>
       <node id="1">
         <label>muda::HostDeviceConfigView&lt; T &gt;</label>
         <link refid="classmuda_1_1_host_device_config_view"/>
         <childnode refid="2" relation="public-inheritance">
         </childnode>
+      </node>
+      <node id="2">
+        <label>muda::ViewBase&lt; true &gt;</label>
+        <link refid="classmuda_1_1_view_base"/>
       </node>
     </collaborationgraph>
     <location file="src/muda/tools/host_device_config.h" line="11" column="1" bodyfile="src/muda/tools/host_device_config.h" bodystart="12" bodyend="46"/>
     <listofallmembers>
+      <member refid="classmuda_1_1_view_base_1afc7108a8ee7985d4b73afcb8cffae166" prot="public" virt="non-virtual"><scope>muda::HostDeviceConfigView</scope><name>auto_const_t</name></member>
       <member refid="classmuda_1_1_view_base_1afc7108a8ee7985d4b73afcb8cffae166" prot="public" virt="non-virtual"><scope>muda::HostDeviceConfigView</scope><name>auto_const_t</name></member>
       <member refid="classmuda_1_1_host_device_config_view_1a3fa3daface860181f3c9dc5dfdd848b6" prot="private" virt="non-virtual"><scope>muda::HostDeviceConfigView</scope><name>Base</name></member>
       <member refid="classmuda_1_1_host_device_config_view_1a86797c7f6e76e4cfd038a4566c46f263" prot="public" virt="non-virtual"><scope>muda::HostDeviceConfigView</scope><name>data</name></member>
@@ -201,9 +202,12 @@
       <member refid="classmuda_1_1_host_device_config_view_1a0f24eac47cec5cbb732700e416bfc516" prot="public" virt="non-virtual"><scope>muda::HostDeviceConfigView</scope><name>host_data</name></member>
       <member refid="classmuda_1_1_host_device_config_view_1af6c70f9f8b851d61e29e44d007b6de29" prot="public" virt="non-virtual"><scope>muda::HostDeviceConfigView</scope><name>HostDeviceConfigView</name></member>
       <member refid="classmuda_1_1_view_base_1a462988275a74be2325fcf57408700ce9" prot="public" virt="non-virtual"><scope>muda::HostDeviceConfigView</scope><name>IsConst</name></member>
+      <member refid="classmuda_1_1_view_base_1a462988275a74be2325fcf57408700ce9" prot="public" virt="non-virtual"><scope>muda::HostDeviceConfigView</scope><name>IsConst</name></member>
+      <member refid="classmuda_1_1_view_base_1ae40f0a1f86127bc4dfeae5e08027e1dc" prot="public" virt="non-virtual"><scope>muda::HostDeviceConfigView</scope><name>IsNonConst</name></member>
       <member refid="classmuda_1_1_view_base_1ae40f0a1f86127bc4dfeae5e08027e1dc" prot="public" virt="non-virtual"><scope>muda::HostDeviceConfigView</scope><name>IsNonConst</name></member>
       <member refid="classmuda_1_1_host_device_config_view_1a14b95cd6ede7c3c220a1ae3af8e612bf" prot="private" virt="non-virtual"><scope>muda::HostDeviceConfigView</scope><name>m_device_data</name></member>
       <member refid="classmuda_1_1_host_device_config_view_1aabe436f317dc028ccb87154cc27fd06b" prot="private" virt="non-virtual"><scope>muda::HostDeviceConfigView</scope><name>m_host_data</name></member>
+      <member refid="classmuda_1_1_view_base_1a39d227092dd2b7baba8b7c74bf018f37" prot="public" virt="non-virtual"><scope>muda::HostDeviceConfigView</scope><name>non_const_enable_t</name></member>
       <member refid="classmuda_1_1_view_base_1a39d227092dd2b7baba8b7c74bf018f37" prot="public" virt="non-virtual"><scope>muda::HostDeviceConfigView</scope><name>non_const_enable_t</name></member>
       <member refid="classmuda_1_1_host_device_config_view_1a65b98790d8354d4cba771d603aea4ed9" prot="public" virt="non-virtual"><scope>muda::HostDeviceConfigView</scope><name>operator*</name></member>
       <member refid="classmuda_1_1_host_device_config_view_1a728429835f192f875510543750f758bc" prot="public" virt="non-virtual"><scope>muda::HostDeviceConfigView</scope><name>operator-&gt;</name></member>

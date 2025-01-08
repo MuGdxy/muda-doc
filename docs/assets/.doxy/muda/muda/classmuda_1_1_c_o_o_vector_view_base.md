@@ -34,12 +34,12 @@ Inherits the following classes: [muda::ViewBase](classmuda_1_1_view_base.md)
 
 | Type | Name |
 | ---: | :--- |
-| typedef [**CCOOVectorViewer**](classmuda_1_1_c_doublet_vector_viewer.md)&lt; T &gt; | [**CViewer**](#typedef-cviewer)  <br> |
+| typedef CCOOVectorViewer&lt; T &gt; | [**CViewer**](#typedef-cviewer)  <br> |
 | typedef [**COOVectorViewBase**](classmuda_1_1_c_o_o_vector_view_base.md)&lt; true, T &gt; | [**ConstView**](#typedef-constview)  <br> |
 | typedef [**COOVectorViewBase**](classmuda_1_1_c_o_o_vector_view_base.md)&lt; false, T &gt; | [**NonConstView**](#typedef-nonconstview)  <br> |
 | typedef [**COOVectorViewBase**](classmuda_1_1_c_o_o_vector_view_base.md)&lt; IsConst, T &gt; | [**ThisView**](#typedef-thisview)  <br> |
-| typedef std::conditional\_t&lt; IsConst, [**CViewer**](classmuda_1_1_c_doublet_vector_viewer.md), [**Viewer**](classmuda_1_1_c_doublet_vector_viewer.md) &gt; | [**ThisViewer**](#typedef-thisviewer)  <br> |
-| typedef [**COOVectorViewer**](classmuda_1_1_c_doublet_vector_viewer.md)&lt; T &gt; | [**Viewer**](#typedef-viewer)  <br> |
+| typedef std::conditional\_t&lt; IsConst, CViewer, Viewer &gt; | [**ThisViewer**](#typedef-thisviewer)  <br> |
+| typedef COOVectorViewer&lt; T &gt; | [**Viewer**](#typedef-viewer)  <br> |
 
 
 ## Public Types inherited from muda::ViewBase
@@ -68,8 +68,8 @@ See [muda::ViewBase](classmuda_1_1_view_base.md)
 
 | Type | Name |
 | ---: | :--- |
-|  constexpr bool | [**IsConst**](classmuda_1_1_view_base.md#variable-isconst)   = = IsConst\_<br> |
-|  constexpr bool | [**IsNonConst**](classmuda_1_1_view_base.md#variable-isnonconst)   = = !IsConst\_<br> |
+|  bool | [**IsConst**](classmuda_1_1_view_base.md#variable-isconst)   = = IsConst\_<br> |
+|  bool | [**IsNonConst**](classmuda_1_1_view_base.md#variable-isnonconst)   = = !IsConst\_<br> |
 
 
 

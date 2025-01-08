@@ -15,7 +15,7 @@
 
 
 
-Inherited by the following classes: [muda::ComputeGraphCaptureNode](classmuda_1_1_compute_graph_capture_node.md),  [muda::ComputeGraphNode](classmuda_1_1_compute_graph_node.md)
+Inherited by the following classes: [muda::ComputeGraphNode](classmuda_1_1_compute_graph_node.md),  [muda::ComputeGraphNode](classmuda_1_1_compute_graph_node.md),  [muda::ComputeGraphNode](classmuda_1_1_compute_graph_node.md),  [muda::ComputeGraphNode](classmuda_1_1_compute_graph_node.md),  [muda::ComputeGraphNode](classmuda_1_1_compute_graph_node.md),  [muda::ComputeGraphCaptureNode](classmuda_1_1_compute_graph_capture_node.md),  [muda::ComputeGraphNode](classmuda_1_1_compute_graph_node.md)
 
 
 

@@ -15,7 +15,7 @@
 
 
 
-Inherited by the following classes: [muda::LaunchBase](classmuda_1_1_launch_base.md),  [muda::LaunchBase](classmuda_1_1_launch_base.md),  [muda::LaunchBase](classmuda_1_1_launch_base.md),  [muda::LaunchBase](classmuda_1_1_launch_base.md),  [muda::LaunchBase](classmuda_1_1_launch_base.md),  [muda::LaunchBase](classmuda_1_1_launch_base.md),  [muda::LaunchBase](classmuda_1_1_launch_base.md),  [muda::LaunchBase](classmuda_1_1_launch_base.md),  [muda::LaunchBase](classmuda_1_1_launch_base.md),  [muda::LaunchBase](classmuda_1_1_launch_base.md),  [muda::LaunchBase](classmuda_1_1_launch_base.md),  [muda::LaunchBase](classmuda_1_1_launch_base.md),  [muda::LaunchBase](classmuda_1_1_launch_base.md),  [muda::LaunchBase](classmuda_1_1_launch_base.md),  [muda::LaunchBase](classmuda_1_1_launch_base.md),  [muda::LaunchBase](classmuda_1_1_launch_base.md),  [muda::LaunchBase](classmuda_1_1_launch_base.md),  [muda::LaunchBase](classmuda_1_1_launch_base.md),  [muda::LaunchBase](classmuda_1_1_launch_base.md),  [muda::LaunchBase](classmuda_1_1_launch_base.md),  [muda::LaunchBase](classmuda_1_1_launch_base.md),  [muda::LaunchBase](classmuda_1_1_launch_base.md)
+Inherited by the following classes: [muda::LaunchBase](classmuda_1_1_launch_base.md),  [muda::LaunchBase](classmuda_1_1_launch_base.md),  [muda::LaunchBase](classmuda_1_1_launch_base.md),  [muda::LaunchBase](classmuda_1_1_launch_base.md),  [muda::LaunchBase](classmuda_1_1_launch_base.md),  [muda::LaunchBase](classmuda_1_1_launch_base.md),  [muda::LaunchBase](classmuda_1_1_launch_base.md),  [muda::LaunchBase](classmuda_1_1_launch_base.md),  [muda::LaunchBase](classmuda_1_1_launch_base.md),  [muda::LaunchBase](classmuda_1_1_launch_base.md)
 
 
 

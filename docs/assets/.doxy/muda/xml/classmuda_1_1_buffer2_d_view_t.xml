@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.1" xml:lang="en-US">
   <compounddef id="classmuda_1_1_buffer2_d_view_t" kind="class" language="C++" prot="public">
     <compoundname>muda::Buffer2DViewT</compoundname>
     <basecompoundref refid="classmuda_1_1_view_base" prot="public" virt="non-virtual">muda::ViewBase&lt; IsConst &gt;</basecompoundref>
@@ -398,9 +398,9 @@
         </inbodydescription>
         <location file="src/muda/buffer/buffer_2d_view.h" line="63" column="18"/>
       </memberdef>
-      <memberdef kind="function" id="classmuda_1_1_buffer2_d_view_t_1ae6823c521ba4ce6fe0f9d93fecd1d990" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="classmuda_1_1_buffer2_d_view_t" kindref="compound">ConstView</ref></type>
-        <definition>ConstView muda::Buffer2DViewT&lt; IsConst, T &gt;::as_const</definition>
+      <memberdef kind="function" id="classmuda_1_1_buffer2_d_view_t_1a17443cbd3fcc19c9b1a3cd13d74833c5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>MUDA_GENERIC <ref refid="classmuda_1_1_buffer2_d_view_t" kindref="compound">ConstView</ref></type>
+        <definition>MUDA_GENERIC ConstView muda::Buffer2DViewT&lt; IsConst, T &gt;::as_const</definition>
         <argsstring>() const MUDA_NOEXCEPT</argsstring>
         <name>as_const</name>
         <qualifiedname>muda::Buffer2DViewT::as_const</qualifiedname>
@@ -410,7 +410,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/buffer/buffer_2d_view.h" line="68" column="15"/>
+        <location file="src/muda/buffer/buffer_2d_view.h" line="68" column="28"/>
       </memberdef>
       <memberdef kind="function" id="classmuda_1_1_buffer2_d_view_t_1a675fe8dde68c1078ffb396e48025390e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>MUDA_GENERIC auto_const_t&lt; T &gt; *</type>
@@ -647,9 +647,9 @@
       </memberdef>
     </sectiondef>
     <sectiondef kind="private-func">
-      <memberdef kind="function" id="classmuda_1_1_buffer2_d_view_t_1a912d8995b8d391203f731ef61c350e15" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type>MUDA_GENERIC cudaPitchedPtr</type>
-        <definition>MUDA_GENERIC cudaPitchedPtr muda::Buffer2DViewT&lt; IsConst, T &gt;::cuda_pitched_ptr</definition>
+      <memberdef kind="function" id="classmuda_1_1_buffer2_d_view_t_1a93768e2ab410f5b8521025471300c2e2" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>MUDA_HOST cudaPitchedPtr</type>
+        <definition>MUDA_HOST cudaPitchedPtr muda::Buffer2DViewT&lt; IsConst, T &gt;::cuda_pitched_ptr</definition>
         <argsstring>() const MUDA_NOEXCEPT</argsstring>
         <name>cuda_pitched_ptr</name>
         <qualifiedname>muda::Buffer2DViewT::cuda_pitched_ptr</qualifiedname>
@@ -659,7 +659,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/muda/buffer/buffer_2d_view.h" line="99" column="33"/>
+        <location file="src/muda/buffer/buffer_2d_view.h" line="99" column="30"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -667,22 +667,18 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="2">
-        <label>muda::ViewBase&lt; IsConst &gt;</label>
-        <link refid="classmuda_1_1_view_base"/>
-      </node>
       <node id="1">
         <label>muda::Buffer2DViewT&lt; IsConst, T &gt;</label>
         <link refid="classmuda_1_1_buffer2_d_view_t"/>
         <childnode refid="2" relation="public-inheritance">
         </childnode>
       </node>
-    </inheritancegraph>
-    <collaborationgraph>
       <node id="2">
         <label>muda::ViewBase&lt; IsConst &gt;</label>
         <link refid="classmuda_1_1_view_base"/>
       </node>
+    </inheritancegraph>
+    <collaborationgraph>
       <node id="1">
         <label>muda::Buffer2DViewT&lt; IsConst, T &gt;</label>
         <link refid="classmuda_1_1_buffer2_d_view_t"/>
@@ -703,10 +699,14 @@
         <label>muda::Offset2D</label>
         <link refid="classmuda_1_1_offset2_d"/>
       </node>
+      <node id="2">
+        <label>muda::ViewBase&lt; IsConst &gt;</label>
+        <link refid="classmuda_1_1_view_base"/>
+      </node>
     </collaborationgraph>
-    <location file="src/muda/buffer/buffer_2d_view.h" line="14" column="1" bodyfile="src/muda/buffer/buffer_2d_view.h" bodystart="15" bodyend="100"/>
+    <location file="src/muda/buffer/buffer_2d_view.h" line="14" column="1" bodyfile="src/muda/buffer/buffer_fwd.h" bodystart="26" bodyend="-1"/>
     <listofallmembers>
-      <member refid="classmuda_1_1_buffer2_d_view_t_1ae6823c521ba4ce6fe0f9d93fecd1d990" prot="public" virt="non-virtual"><scope>muda::Buffer2DViewT</scope><name>as_const</name></member>
+      <member refid="classmuda_1_1_buffer2_d_view_t_1a17443cbd3fcc19c9b1a3cd13d74833c5" prot="public" virt="non-virtual"><scope>muda::Buffer2DViewT</scope><name>as_const</name></member>
       <member refid="classmuda_1_1_buffer2_d_view_t_1a88ff698ef26a46e7fba0606647984101" prot="private" virt="non-virtual"><scope>muda::Buffer2DViewT</scope><name>auto_const_t</name></member>
       <member refid="classmuda_1_1_buffer2_d_view_t_1abc5c22b716a105f706f1827ef2f2d5be" prot="private" virt="non-virtual"><scope>muda::Buffer2DViewT</scope><name>Base</name></member>
       <member refid="classmuda_1_1_buffer2_d_view_t_1a6b5ada8421b6676b148ace2f50d4815d" prot="private" virt="non-virtual"><scope>muda::Buffer2DViewT</scope><name>Buffer2DViewT</name></member>
@@ -720,7 +720,7 @@
       <member refid="classmuda_1_1_buffer2_d_view_t_1a4115d0f001a96eb97554be21b63a2088" prot="public" virt="non-virtual"><scope>muda::Buffer2DViewT</scope><name>copy_from</name></member>
       <member refid="classmuda_1_1_buffer2_d_view_t_1abc20f387727a65e52e66d2c5623c6387" prot="public" virt="non-virtual"><scope>muda::Buffer2DViewT</scope><name>copy_from</name></member>
       <member refid="classmuda_1_1_buffer2_d_view_t_1a25e2beac12dd29f644d5003c881aa557" prot="public" virt="non-virtual"><scope>muda::Buffer2DViewT</scope><name>copy_to</name></member>
-      <member refid="classmuda_1_1_buffer2_d_view_t_1a912d8995b8d391203f731ef61c350e15" prot="private" virt="non-virtual"><scope>muda::Buffer2DViewT</scope><name>cuda_pitched_ptr</name></member>
+      <member refid="classmuda_1_1_buffer2_d_view_t_1a93768e2ab410f5b8521025471300c2e2" prot="private" virt="non-virtual"><scope>muda::Buffer2DViewT</scope><name>cuda_pitched_ptr</name></member>
       <member refid="classmuda_1_1_buffer2_d_view_t_1a92fd113140cb4a7593eccc7ca7acf0bb" prot="public" virt="non-virtual"><scope>muda::Buffer2DViewT</scope><name>CViewer</name></member>
       <member refid="classmuda_1_1_buffer2_d_view_t_1a32d8360c08f3e4a3e60dc6c19d7b5702" prot="public" virt="non-virtual"><scope>muda::Buffer2DViewT</scope><name>cviewer</name></member>
       <member refid="classmuda_1_1_buffer2_d_view_t_1a675fe8dde68c1078ffb396e48025390e" prot="public" virt="non-virtual"><scope>muda::Buffer2DViewT</scope><name>data</name></member>
@@ -729,6 +729,8 @@
       <member refid="classmuda_1_1_buffer2_d_view_t_1a28fbbf3589e7c68e20b09399ff19a071" prot="public" virt="non-virtual"><scope>muda::Buffer2DViewT</scope><name>extent</name></member>
       <member refid="classmuda_1_1_buffer2_d_view_t_1aad653ee7efe88ee80d78b50c3791ff40" prot="public" virt="non-virtual"><scope>muda::Buffer2DViewT</scope><name>fill</name></member>
       <member refid="classmuda_1_1_view_base_1a462988275a74be2325fcf57408700ce9" prot="public" virt="non-virtual"><scope>muda::Buffer2DViewT</scope><name>IsConst</name></member>
+      <member refid="classmuda_1_1_view_base_1a462988275a74be2325fcf57408700ce9" prot="public" virt="non-virtual"><scope>muda::Buffer2DViewT</scope><name>IsConst</name></member>
+      <member refid="classmuda_1_1_view_base_1ae40f0a1f86127bc4dfeae5e08027e1dc" prot="public" virt="non-virtual"><scope>muda::Buffer2DViewT</scope><name>IsNonConst</name></member>
       <member refid="classmuda_1_1_view_base_1ae40f0a1f86127bc4dfeae5e08027e1dc" prot="public" virt="non-virtual"><scope>muda::Buffer2DViewT</scope><name>IsNonConst</name></member>
       <member refid="classmuda_1_1_buffer2_d_view_t_1aed494a05cc2ebed4755f1494254e8e39" prot="protected" virt="non-virtual"><scope>muda::Buffer2DViewT</scope><name>m_data</name></member>
       <member refid="classmuda_1_1_buffer2_d_view_t_1aa05c879cbd3c29651d8f5cbc889c5219" prot="protected" virt="non-virtual"><scope>muda::Buffer2DViewT</scope><name>m_extent</name></member>
@@ -736,6 +738,7 @@
       <member refid="classmuda_1_1_buffer2_d_view_t_1a6120772225968313f93e0221dea0382c" prot="protected" virt="non-virtual"><scope>muda::Buffer2DViewT</scope><name>m_origin_height</name></member>
       <member refid="classmuda_1_1_buffer2_d_view_t_1a4dbc1e6971890beebd1fa8e26ea8afc2" prot="protected" virt="non-virtual"><scope>muda::Buffer2DViewT</scope><name>m_origin_width</name></member>
       <member refid="classmuda_1_1_buffer2_d_view_t_1a826ca4a5070034aa122e9c76c80c1bac" prot="protected" virt="non-virtual"><scope>muda::Buffer2DViewT</scope><name>m_pitch_bytes</name></member>
+      <member refid="classmuda_1_1_view_base_1a39d227092dd2b7baba8b7c74bf018f37" prot="public" virt="non-virtual"><scope>muda::Buffer2DViewT</scope><name>non_const_enable_t</name></member>
       <member refid="classmuda_1_1_view_base_1a39d227092dd2b7baba8b7c74bf018f37" prot="public" virt="non-virtual"><scope>muda::Buffer2DViewT</scope><name>non_const_enable_t</name></member>
       <member refid="classmuda_1_1_buffer2_d_view_t_1a380ff4b2b9c25738c9e638e4faf80ef7" prot="public" virt="non-virtual"><scope>muda::Buffer2DViewT</scope><name>offset</name></member>
       <member refid="classmuda_1_1_buffer2_d_view_t_1a880992c71b8d23cad54a57ff04883de9" prot="public" virt="non-virtual"><scope>muda::Buffer2DViewT</scope><name>origin_data</name></member>

@@ -38,8 +38,8 @@
 
 | Type | Name |
 | ---: | :--- |
-| struct | [**vector\_of&lt; double &gt;**](structmuda_1_1lbvh_1_1vector__of_3_01double_01_4.md) &lt;&gt;<br> |
-| struct | [**vector\_of&lt; float &gt;**](structmuda_1_1lbvh_1_1vector__of_3_01float_01_4.md) &lt;&gt;<br> |
+| struct | [**vector\_of**](structmuda_1_1lbvh_1_1vector__of.md) &lt;typename T&gt;<br> |
+| struct | [**vector\_of**](structmuda_1_1lbvh_1_1vector__of.md) &lt;typename T&gt;<br> |
 
 
 
